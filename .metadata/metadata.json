@@ -1,0 +1,18 @@
+﻿{
+  "name": "Imperator Universalis",
+  "id": "imperatoruniversalis",
+  "version": "1",
+  "game_id": "eu5",
+  "picture": "thumbnail.png",
+  "supported_game_version": "1.0.11",
+  "short_description": "304 BC Starting Date",
+  "tags": [
+    "Gameplay"
+  ],
+  "relationships": [],
+  "game_custom_data": {
+    "replace_paths": [
+      "setup/countries"
+    ]
+  }
+}

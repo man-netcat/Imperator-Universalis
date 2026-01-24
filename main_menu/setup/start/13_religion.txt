@@ -1,0 +1,5 @@
+building_manager = {
+}
+
+religion_manager = {
+}

@@ -1,0 +1,18 @@
+current_age = age_1_traditions
+
+# own_control_core
+# own_control_integrated
+# own_control_conquered
+# own_control_colony
+# own_core
+# own_conquered
+# own_integrated
+# own_colony
+# control_core
+# control
+# our_cores_conquered_by_others
+
+countries = {
+countries = {
+}
+}
