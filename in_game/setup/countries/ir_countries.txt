@@ -6,6 +6,12 @@ BAR = {
 	culture_definition = barbarian_gfx
 }
 
+# REB -> setup/countries/rebels.txt
+REB = {
+	color = rgb { 40 40 40 }
+	culture_definition = celtic_gfx
+}
+
 # PIR -> setup/countries/pirates.txt
 PIR = {
 	color = rgb { 116 143 139 }

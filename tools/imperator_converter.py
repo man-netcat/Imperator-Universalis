@@ -35,7 +35,7 @@ def parse_eu5_localisation(eu5_root: Path):
     rx = re.compile(r"^\s*([^:\s]+)\s*:\s*\d+\s*\"(.*)\"\s*$")
     for f in sorted(loc_dir.glob("*")):
         try:
-            txt = f.read_text(encoding="utf-8")
+            txt = f.read_text(encoding="utf-8-sig")
         except Exception:
             continue
         for ln in txt.splitlines():
@@ -66,7 +66,7 @@ def parse_ir_localisation(ir_root: Path):
             continue
         for f in sorted(loc.glob("*")):
             try:
-                txt = f.read_text(encoding="utf-8")
+                txt = f.read_text(encoding="utf-8-sig")
             except Exception:
                 continue
             for ln in txt.splitlines():
@@ -292,7 +292,7 @@ def parse_ir_cultures(ir_root: Path):
     if not src.exists():
         return groups
     for f in sorted(src.glob("*.txt")):
-        text = f.read_text(encoding="utf-8")
+        text = f.read_text(encoding="utf-8-sig")
         group_base = re.sub(r"^[0-9]+_", "", f.stem)
         group_base = re.sub(r"_group$", "", group_base)
         groups[group_base] = []
@@ -445,7 +445,7 @@ def write_mod_religions(mod_root: Path, ir_root: Path):
     out_root.mkdir(parents=True, exist_ok=True)
     lines = ["# Converted Imperator religions", ""]
     for f in sorted(src.glob("*.txt")):
-        txt = f.read_text(encoding="utf-8")
+        txt = f.read_text(encoding="utf-8-sig")
         lns = txt.splitlines()
         i = 0
         while i < len(lns):
@@ -517,7 +517,7 @@ def parse_countries_list(ir_root: Path):
     tags = {}
     if not p.exists():
         return tags
-    for raw in p.read_text(encoding="utf-8").splitlines():
+    for raw in p.read_text(encoding="utf-8-sig").splitlines():
         line = raw.strip()
         if not line or line.startswith("#"):
             continue
@@ -537,7 +537,7 @@ def find_country_file_for_tag(ir_root: Path, tag: str):
     patt = re.compile(r'^\s*' + re.escape(tag) + r"\s*=\s*\{", re.M)
     for f in sorted(base.rglob("*.txt")):
         try:
-            txt = f.read_text(encoding="utf-8", errors="ignore")
+            txt = f.read_text(encoding="utf-8-sig", errors="ignore")
         except Exception:
             continue
         if patt.search(txt):
@@ -559,7 +559,7 @@ def parse_default_order(ir_root: Path):
     if not p.exists():
         return []
     try:
-        txt = p.read_text(encoding="utf-8")
+        txt = p.read_text(encoding="utf-8-sig")
     except Exception:
         return []
     # find occurrences like: SCE = {
@@ -576,7 +576,7 @@ def parse_default_order(ir_root: Path):
 
 def extract_color(file_path: Path):
     try:
-        txt = file_path.read_text(encoding="utf-8")
+        txt = file_path.read_text(encoding="utf-8-sig")
     except Exception:
         return None
     m = RE_RGB.search(txt)
@@ -594,7 +594,7 @@ def apply_hue_shifts(mod_root: Path, factor: float = 0.04):
         return []
     patched = []
     for f in sorted(cult_dir.glob("*.txt")):
-        text = f.read_text(encoding="utf-8")
+        text = f.read_text(encoding="utf-8-sig")
         lines = text.splitlines()
         blocks = []
         i = 0
@@ -657,7 +657,7 @@ def parse_ir_gfx_map(ir_root: Path):
     if not src.exists():
         return mapping
     for f in sorted(src.glob("*.txt")):
-        txt = f.read_text(encoding="utf-8")
+        txt = f.read_text(encoding="utf-8-sig")
         for m in re.finditer(r"([a-z0-9_]+)\s*=\s*\{", txt, re.I):
             name = m.group(1)
             start = txt.find("{", m.end() - 1)
@@ -713,7 +713,7 @@ def patch_tags_from_ir(mod_root: Path, ir_map: dict):
     if not mod_dir.exists():
         return
     for f in sorted(mod_dir.glob("*.txt")):
-        text = f.read_text(encoding="utf-8")
+        text = f.read_text(encoding="utf-8-sig")
         out_lines = []
         lines = text.splitlines()
         i = 0
@@ -815,7 +815,7 @@ def write_mod_countries(mod_root: Path, ir_root: Path, tags_map: dict, groups: d
     default_txt = None
     if default_setup.exists():
         try:
-            default_txt = default_setup.read_text(encoding='utf-8')
+            default_txt = default_setup.read_text(encoding='utf-8-sig')
         except Exception:
             default_txt = None
 
@@ -917,7 +917,7 @@ def write_mod_countries(mod_root: Path, ir_root: Path, tags_map: dict, groups: d
             txt = ""
             if ir_file:
                 try:
-                    txt = ir_file.read_text(encoding='utf-8')
+                    txt = ir_file.read_text(encoding='utf-8-sig')
                 except Exception:
                     txt = ""
             # prefer values from default setup if available
