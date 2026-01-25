@@ -3,170 +3,238 @@
 # BST -> setup/countries/germania/bastarnae.txt
 BST = {
 	color = rgb { 191 70 12 }
-}
-
-# SXS -> setup/countries/germania/saxones.txt
-SXS = {
-	color = rgb { 11 170 212 }
-}
-
-# CMB -> setup/countries/germania/cimbria.txt
-CMB = {
-	color = rgb { 75 75 76 }
-}
-
-# VDL -> setup/countries/germania/aetelrugia.txt
-VDL = {
-	color = rgb { 189 130 73 }
-}
-
-# TIT -> setup/countries/germania/teutonia.txt
-TIT = {
-	color = rgb { 175 175 90 }
-}
-
-# GIT -> setup/countries/germania/gutonia.txt
-GIT = {
-	color = rgb { 50 180 50 }
-}
-
-# SWE -> setup/countries/germania/suionia.txt
-SWE = {
-	color = rgb { 150 108 150 }
-}
-
-# RUG -> setup/countries/germania/grania.txt
-RUG = {
-	color = rgb { 189 179 20 }
-}
-
-# RAM -> setup/countries/germania/raumaricia.txt
-RAM = {
-	color = rgb { 121 90 119 }
-}
-
-# HRE -> setup/countries/germania/herules.txt
-HRE = {
-	color = rgb { 30 93 209 }
-}
-
-# VRI -> setup/countries/germania/varinia.txt
-VRI = {
-	color = rgb { 210 200 200 }
-}
-
-# LGI -> setup/countries/germania/lugia.txt
-LGI = {
-	color = rgb { 110 7 81 }
-}
-
-# ANG -> setup/countries/germania/anglia.txt
-ANG = {
-	color = rgb { 140 37 40 }
-}
-
-# AES -> setup/countries/germania/aestia.txt
-AES = {
-	color = rgb { 98 97 1 }
-}
-
-# LVA -> setup/countries/germania/lemovia.txt
-LVA = {
-	color = rgb { 117 9 119 }
-}
-
-# SMN -> setup/countries/germania/semnonia.txt
-SMN = {
-	color = rgb { 111 161 92 }
-}
-
-# LGB -> setup/countries/germania/langobardia.txt
-LGB = {
-	color = rgb { 175 111 16 }
-}
-
-# MCM -> setup/countries/germania/marcomannia.txt
-MCM = {
-	color = rgb { 9 11 9 }
+	culture_definition = bastarnae
+	religion_definition = germanic_religion
 }
 
 # CHC -> setup/countries/germania/chaucia.txt
 CHC = {
 	color = rgb { 221 13 99 }
+	culture_definition = saxonian
+	religion_definition = germanic_religion
 }
 
-# BUR -> setup/countries/germania/burgundia.txt
-BUR = {
-	color = rgb { 231 10 41 }
+# GIT -> setup/countries/germania/gutonia.txt
+GIT = {
+	color = rgb { 50 180 50 }
+	culture_definition = gutones
+	religion_definition = germanic_religion
 }
 
-# DAN -> setup/countries/germania/dania.txt
-DAN = {
-	color = rgb { 182 203 126 }
+# SWE -> setup/countries/germania/suionia.txt
+SWE = {
+	color = rgb { 150 108 150 }
+	culture_definition = suiones
+	religion_definition = germanic_religion
 }
 
-# LEU -> setup/countries/germania/leuonia.txt
-LEU = {
-	color = rgb { 11 146 231 }
+# RAM -> setup/countries/germania/raumaricia.txt
+RAM = {
+	color = rgb { 121 90 119 }
+	culture_definition = raumarician
+	religion_definition = germanic_religion
+}
+
+# HRE -> setup/countries/germania/herules.txt
+HRE = {
+	color = rgb { 30 93 209 }
+	culture_definition = herulian
+	religion_definition = germanic_religion
+}
+
+# TIT -> setup/countries/germania/teutonia.txt
+TIT = {
+	color = rgb { 175 175 90 }
+	culture_definition = teutonian
+	religion_definition = germanic_religion
+}
+
+# CMB -> setup/countries/germania/cimbria.txt
+CMB = {
+	color = rgb { 75 75 76 }
+	culture_definition = cimbrian
+	religion_definition = germanic_religion
+}
+
+# LVA -> setup/countries/germania/lemovia.txt
+LVA = {
+	color = rgb { 117 9 119 }
+	culture_definition = gothonic
+	religion_definition = germanic_religion
+}
+
+# VRI -> setup/countries/germania/varinia.txt
+VRI = {
+	color = rgb { 210 200 200 }
+	culture_definition = suebian
+	religion_definition = germanic_religion
+}
+
+# LGI -> setup/countries/germania/lugia.txt
+LGI = {
+	color = rgb { 110 7 81 }
+	culture_definition = vandal
+	religion_definition = germanic_religion
+}
+
+# SMN -> setup/countries/germania/semnonia.txt
+SMN = {
+	color = rgb { 111 161 92 }
+	culture_definition = suebian
+	religion_definition = germanic_religion
+}
+
+# LGB -> setup/countries/germania/langobardia.txt
+LGB = {
+	color = rgb { 175 111 16 }
+	culture_definition = suebian
+	religion_definition = germanic_religion
+}
+
+# MCM -> setup/countries/germania/marcomannia.txt
+MCM = {
+	color = rgb { 9 11 9 }
+	culture_definition = suebian
+	religion_definition = germanic_religion
+}
+
+# ANG -> setup/countries/germania/anglia.txt
+ANG = {
+	color = rgb { 140 37 40 }
+	culture_definition = anglian
+	religion_definition = germanic_religion
+}
+
+# SXS -> setup/countries/germania/saxones.txt
+SXS = {
+	color = rgb { 11 170 212 }
+	culture_definition = saxonian
+	religion_definition = germanic_religion
+}
+
+# AES -> setup/countries/germania/aestia.txt
+AES = {
+	color = rgb { 98 97 1 }
+	culture_definition = aestian
+	religion_definition = matrist_religion
 }
 
 # GTH -> setup/countries/germania/gothonia.txt
 GTH = {
 	color = rgb { 170 211 67 }
+	culture_definition = gothonic
+	religion_definition = germanic_religion
 }
 
 # RGG -> setup/countries/germania/rugiagermania.txt
 RGG = {
 	color = rgb { 39 100 2 }
+	culture_definition = gothonic
+	religion_definition = germanic_religion
 }
 
 # SCI -> setup/countries/germania/sciria.txt
 SCI = {
 	color = rgb { 69 109 144 }
+	culture_definition = vandal
+	religion_definition = germanic_religion
 }
 
 # FOS -> setup/countries/germania/fosia.txt
 FOS = {
 	color = rgb { 201 11 12 }
+	culture_definition = suebian
+	religion_definition = germanic_religion
 }
 
 # REU -> setup/countries/germania/reudignia.txt
 REU = {
 	color = rgb { 44 125 244 }
+	culture_definition = suebian
+	religion_definition = germanic_religion
 }
 
 # AVO -> setup/countries/germania/aviones.txt
 AVO = {
 	color = rgb { 160 155 4 }
+	culture_definition = saxonian
+	religion_definition = germanic_religion
 }
 
 # CRS -> setup/countries/germania/cherusci.txt
 CRS = {
 	color = rgb { 109 66 217 }
+	culture_definition = suebian
+	religion_definition = germanic_religion
 }
 
 # EUD -> setup/countries/germania/eudosi.txt
 EUD = {
 	color = rgb { 33 91 92 }
+	culture_definition = cimbrian
+	religion_definition = germanic_religion
 }
 
 # AGR -> setup/countries/germania/angrivaria.txt
 AGR = {
 	color = rgb { 100 1 10 }
+	culture_definition = saxonian
+	religion_definition = germanic_religion
+}
+
+# VDL -> setup/countries/germania/aetelrugia.txt
+VDL = {
+	color = rgb { 189 130 73 }
+	culture_definition = rugian
+	religion_definition = germanic_religion
+}
+
+# RUG -> setup/countries/germania/grania.txt
+RUG = {
+	color = rgb { 189 179 20 }
+	culture_definition = rugian
+	religion_definition = germanic_religion
+}
+
+# LEU -> setup/countries/germania/leuonia.txt
+LEU = {
+	color = rgb { 11 146 231 }
+	culture_definition = raumarician
+	religion_definition = germanic_religion
+}
+
+# DAN -> setup/countries/germania/dania.txt
+DAN = {
+	color = rgb { 182 203 126 }
+	culture_definition = gutones
+	religion_definition = germanic_religion
+}
+
+# BUR -> setup/countries/germania/burgundia.txt
+BUR = {
+	color = rgb { 231 10 41 }
+	culture_definition = herulian
+	religion_definition = germanic_religion
 }
 
 # VND -> setup/countries/germania/venedia.txt
 VND = {
 	color = rgb { 140 109 140 }
+	culture_definition = aestian
+	religion_definition = matrist_religion
 }
 
 # SUD -> setup/countries/germania/sudinoia.txt
 SUD = {
 	color = rgb { 2 3 157 }
+	culture_definition = aestian
+	religion_definition = matrist_religion
 }
 
 # SLO -> setup/countries/germania/saloia.txt
 SLO = {
 	color = rgb { 28 180 95 }
+	culture_definition = aestian
+	religion_definition = matrist_religion
 }
 

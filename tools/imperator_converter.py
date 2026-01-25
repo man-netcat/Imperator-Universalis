@@ -19,6 +19,9 @@ import colorsys
 # runtime EU5 localisation map (populated in main)
 EU5_LOC = {}
 
+# runtime I:R localisation map (populated in main)
+IR_LOC = {}
+
 # prefix for all generated files
 FILE_PREFIX = "ir_"
 
@@ -44,23 +47,52 @@ def parse_eu5_localisation(eu5_root: Path):
     return mapping
 
 
+def parse_ir_localisation(ir_root: Path):
+    """Parse Imperator localisation files (english) and return mapping key->string.
+
+    Scans common locations where Imperator stores localisation; tolerates a
+    couple of layout variants (top-level `localization/english` or
+    `in_game/localization/english`).
+    """
+    candidates = [
+        ir_root / "localization" / "english",
+        ir_root / "in_game" / "localization" / "english",
+    ]
+    mapping = {}
+    # flexible regex: key : [optional number] "value"
+    rx = re.compile(r"^\s*([^:\s]+)\s*:\s*(?:\d+\s*)?\"(.*)\"\s*$")
+    for loc in candidates:
+        if not loc.exists():
+            continue
+        for f in sorted(loc.glob("*")):
+            try:
+                txt = f.read_text(encoding="utf-8")
+            except Exception:
+                continue
+            for ln in txt.splitlines():
+                m = rx.match(ln)
+                if m:
+                    key = m.group(1).strip()
+                    val = m.group(2).strip()
+                    if key and val:
+                        mapping[key] = val
+    return mapping
+
+
 def _humanize_name(name: str):
     return name.replace("_", " ").replace("-", " ").strip().title()
 
 
 def _choose_local_text(eu5_loc: dict, candidates: list, comment: str, fallback: str):
+    # Strict localisation policy: only use Imperator localisation strings.
+    # If none of the candidate keys exist in the I:R localisation, return the
+    # literal marker "MISSING" (no fallbacks allowed).
     for k in candidates:
         if not k:
             continue
-        if k in eu5_loc:
-            return eu5_loc[k]
-    if comment:
-        c = comment.strip()
-        if c:
-            return c
-    if fallback:
-        return _humanize_name(fallback)
-    return ""
+        if k in IR_LOC:
+            return IR_LOC[k]
+    return "MISSING"
 
 
 def derive_adjective(name: str) -> str:
@@ -157,17 +189,6 @@ def derive_adjective(name: str) -> str:
 # collect localisation entries for the mod
 LOCAL_ENTRIES = {}
 
-# explicit per-tag adjective overrides (prefer these over heuristic derivation)
-ADJ_OVERRIDES = {
-    "HEM": "Minoan",
-    "BAR": "Barbarian",
-    "BOA": "Boian",
-    "BOI": "Boian",
-    "EPO": "Emporian",
-    "SRM": "Sarmatian",
-    "ABM": "Ambian",
-    "MYD": "Mariandynian",
-}
 
 
 def write_mod_localisation(mod_root: Path):
@@ -183,8 +204,12 @@ def write_mod_localisation(mod_root: Path):
         # country tags are typically uppercase 2-3 letter codes
         if k.isupper() and len(k) <= 3:
             countries[k] = v
+        # explicit culture keys
         elif k.endswith("_culture"):
             cultures[k] = v
+        # adjectives for countries (TAG_ADJ) should be grouped with countries
+        elif k.endswith("_ADJ"):
+            countries[k] = v
         else:
             # treat remaining as religions or generic keys
             religions[k] = v
@@ -200,20 +225,20 @@ def write_mod_localisation(mod_root: Path):
         path.write_text("\n".join(lines) + "\n", encoding="utf-8")
         return path
 
-    # add adjective entries for countries: prefer EU5 basegame `_ADJ` keys,
-    # else derive an adjective from the country display name using heuristics
+    # add adjective entries for countries: use I:R localisation `_ADJ` keys only.
+    # No fallbacks or derivation — if an adjective key is not present in the
+    # Imperator localisation, write the literal marker "MISSING".
     for tag in list(countries.keys()):
-        adj_key = f"{tag}_ADJ"
-        # explicit per-tag overrides (highest priority)
-        if tag in ADJ_OVERRIDES:
-            countries[adj_key] = ADJ_OVERRIDES[tag]
+        # avoid creating duplicate adjective keys for entries that are
+        # already adjective keys (e.g. TAG_ADJ). Only add TAG_ADJ for
+        # base country tags.
+        if tag.endswith("_ADJ"):
             continue
-    
-        if adj_key in EU5_LOC:
-            countries[adj_key] = EU5_LOC[adj_key]
+        adj_key = f"{tag}_ADJ"
+        if adj_key in IR_LOC:
+            countries[adj_key] = IR_LOC[adj_key]
         else:
-            derived = derive_adjective(countries.get(tag, ""))
-            countries[adj_key] = derived if derived else countries.get(tag, "")
+            countries[adj_key] = "MISSING"
 
     f_countries = _write_file(f"{FILE_PREFIX}countries_l_english.yml", countries)
     
@@ -477,6 +502,28 @@ def parse_countries_list(ir_root: Path):
     return tags
 
 
+def parse_default_order(ir_root: Path):
+    """Return a list of country tags in the order they appear in 00_default.txt.
+
+    This preserves the game's logical ordering and is used to drive the
+    generation order for the mod country output when available.
+    """
+    p = ir_root / "setup" / "main" / "00_default.txt"
+    if not p.exists():
+        return []
+    try:
+        txt = p.read_text(encoding="utf-8")
+    except Exception:
+        return []
+    # find occurrences like: SCE = {
+    tags = []
+    for m in re.finditer(r"^\s*([A-Z0-9]{2,3})\s*=\s*\{", txt, re.M):
+        tag = m.group(1)
+        if tag not in tags:
+            tags.append(tag)
+    return tags
+
+
 def extract_color(file_path: Path):
     try:
         txt = file_path.read_text(encoding="utf-8")
@@ -659,7 +706,7 @@ def patch_tags_from_ir(mod_root: Path, ir_map: dict):
             print("Updated tags from I:R gfx for", f)
 
 
-def write_mod_countries(mod_root: Path, ir_root: Path, tags_map: dict, groups: dict):
+def write_mod_countries(mod_root: Path, ir_root: Path, tags_map: dict, groups: dict, default_order: list = None):
     out_base = mod_root / "in_game" / "setup" / "countries"
     out_base.mkdir(parents=True, exist_ok=True)
     groups_out = {}
@@ -670,55 +717,165 @@ def write_mod_countries(mod_root: Path, ir_root: Path, tags_map: dict, groups: d
             groups_out[group] = []
         groups_out[group].append((tag, rel))
 
+    # If a default order is provided (from 00_default.txt), reorder the
+    # grouped entries to follow that sequence. Tags not present in the
+    # default order will be appended afterwards.
+    if default_order:
+        ordered_groups = {}
+        tag_to_rel = {t: r for t, r in tags_map.items()}
+        for tag in default_order:
+            if tag not in tag_to_rel:
+                continue
+            rel = tag_to_rel[tag]
+            p = Path(rel)
+            group = p.parent.name if p.parent.name else "root"
+            if group not in ordered_groups:
+                ordered_groups[group] = []
+            ordered_groups[group].append((tag, rel))
+        # append remaining tags that weren't in default_order
+        for group, entries in groups_out.items():
+            if group not in ordered_groups:
+                ordered_groups[group] = list(entries)
+            else:
+                existing = {t for t, _ in ordered_groups[group]}
+                for t, r in entries:
+                    if t not in existing:
+                        ordered_groups[group].append((t, r))
+        groups_out = ordered_groups
+
+    # try to read default setup file for additional country info
+    default_setup = ir_root / "setup" / "main" / "00_default.txt"
+    default_txt = None
+    if default_setup.exists():
+        try:
+            default_txt = default_setup.read_text(encoding='utf-8')
+        except Exception:
+            default_txt = None
+
+    def _extract_from_default(tag: str):
+        if not default_txt:
+            return None, None
+        # find all occurrences of the country block for this tag and inspect
+        # each full brace-delimited block. Prefer blocks that contain
+        # `primary_culture` and `religion` (in that order).
+        pattern = re.compile(r"\b" + re.escape(tag) + r"\s*=\s*\{", re.I)
+        best_r = None
+        best_c = None
+        for m in pattern.finditer(default_txt):
+            # find the full brace-delimited block starting at m.end()-1
+            i = m.end() - 1
+            depth = 0
+            block_start = i
+            block_end = None
+            while i < len(default_txt):
+                ch = default_txt[i]
+                if ch == "{":
+                    depth += 1
+                elif ch == "}":
+                    depth -= 1
+                    if depth == 0:
+                        block_end = i + 1
+                        break
+                i += 1
+            if not block_end:
+                # fallback to a limited window if braces couldn't be matched
+                start = max(0, m.start() - 500)
+                end = min(len(default_txt), m.start() + 500)
+                block = default_txt[start:end]
+            else:
+                block = default_txt[m.start():block_end]
+
+            # extract religion and culture from the block
+            r = None
+            c = None
+            rm = RE_RELIGION.search(block)
+            if rm:
+                r = rm.group(1)
+            # Prefer explicit primary_culture, then culture_definition, then culture
+            cm = re.search(r"primary_culture\s*=\s*([a-z0-9_]+)", block, re.I)
+            if not cm:
+                cm = re.search(r"culture_definition\s*=\s*([a-z0-9_]+)", block, re.I)
+            if not cm:
+                cm = re.search(r"culture\s*=\s*([a-z0-9_]+)", block, re.I)
+            if cm:
+                c = cm.group(1)
+
+            # choose the best candidate: prefer having both, then culture, then religion
+            if best_c and best_r:
+                # already have ideal candidate
+                break
+            if c and r:
+                best_c = c
+                best_r = r
+                break
+            if c and not best_c:
+                best_c = c
+            if r and not best_r:
+                best_r = r
+
+        return best_r, best_c
+
     for group, entries in groups_out.items():
         lines = [f"# ===== {group} =====", ""]
         for tag, rel in entries:
+            # only generate countries for tags that exist in the Imperator localisation
+            if tag not in IR_LOC:
+                continue
             ir_file = ir_root / rel
             color = extract_color(ir_file)
             # omit `culture_definition` for now — leave culture mapping out
             # of generated country files until reviewed
             religion = None
-            comment_text = None
             try:
                 txt = ir_file.read_text(encoding='utf-8')
-                # pick first top-of-file comment as a human name if present
-                for ln in txt.splitlines():
-                    s = ln.strip()
-                    if s.startswith('#'):
-                        comment_text = s.lstrip('#').strip()
-                        if comment_text:
-                            break
-                    elif s == '':
-                        continue
-                    else:
-                        break
+            except Exception:
+                txt = ""
+            # prefer values from default setup if available
+            r_def, c_def = _extract_from_default(tag)
+            religion = r_def
+            culture_def = c_def
+            # fall back to parsing the individual country file
+            if not religion:
                 rm = RE_RELIGION.search(txt)
                 if rm:
                     religion = rm.group(1)
-            except Exception:
-                religion = None
+            if not culture_def:
+                cm = re.search(r"culture_definition\s*=\s*([a-z0-9_]+)", txt, re.I)
+                if not cm:
+                    cm = re.search(r"culture\s*=\s*([a-z0-9_]+)", txt, re.I)
+                if cm:
+                    culture_def = cm.group(1)
 
             lines.append(f"# {tag} -> {rel}")
             if color:
                 r, g, b = color
                 lines.append(f"{tag} = {{")
                 lines.append(f"\tcolor = rgb {{ {r} {g} {b} }}")
-                # culture_definition omitted intentionally
+                if culture_def:
+                    lines.append(f"\tculture_definition = {culture_def}")
                 if religion:
                     lines.append(f"\treligion_definition = {religion}")
                 lines.append("}")
                 lines.append("")
             else:
-                lines.append(f"# {tag} (no color found)")
-                # suggested culture_definition omitted intentionally
+                # No colour found — still emit a proper country block including
+                # culture and religion if available (use I:R basegame tags).
+                lines.append(f"{tag} = {{")
+                if culture_def:
+                    lines.append(f"\tculture_definition = {culture_def}")
                 if religion:
-                    lines.append(f"# suggested religion_definition = {religion}")
+                    lines.append(f"\treligion_definition = {religion}")
+                lines.append("}")
                 lines.append("")
-            # localisation for country tag — prefer I:R file comment, fallback to filename
-            if comment_text:
-                LOCAL_ENTRIES[tag] = comment_text
+            # localisation for country tag — prefer I:R localisation string, then filename fallback
+            # localisation for country tag — use I:R localisation only; no fallback
+            LOCAL_ENTRIES[tag] = IR_LOC.get(tag, "MISSING")
+            # also include adjective key from I:R if present, otherwise mark MISSING
+            adjk = f"{tag}_ADJ"
+            if adjk in IR_LOC:
+                LOCAL_ENTRIES[adjk] = IR_LOC[adjk]
             else:
-                LOCAL_ENTRIES[tag] = _humanize_name(Path(rel).stem)
+                LOCAL_ENTRIES[adjk] = "MISSING"
         out_file = out_base / f"{FILE_PREFIX}{group}.txt"
         out_file.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
@@ -734,15 +891,17 @@ def main():
     eu5_root = Path(args.eu5_root)
     ir_root = Path(args.ir_root)
     mod_root = Path(args.mod_root)
-    # load EU5 basegame localisation to prefer existing keys
-    global EU5_LOC
+    # load EU5 basegame localisation to prefer existing keys; also load I:R localisation
+    global EU5_LOC, IR_LOC
     EU5_LOC = parse_eu5_localisation(eu5_root)
+    IR_LOC = parse_ir_localisation(ir_root)
 
     groups = parse_ir_cultures(ir_root)
     write_mod_cultures(mod_root, groups)
     write_mod_religions(mod_root, ir_root)
     tags_map = parse_countries_list(ir_root)
-    write_mod_countries(mod_root, ir_root, tags_map, groups)
+    default_order = parse_default_order(ir_root)
+    write_mod_countries(mod_root, ir_root, tags_map, groups, default_order=default_order)
     ir_map = parse_ir_gfx_map(ir_root)
     patch_tags_from_ir(mod_root, ir_map)
     patched = apply_hue_shifts(mod_root, factor=args.hue_factor)

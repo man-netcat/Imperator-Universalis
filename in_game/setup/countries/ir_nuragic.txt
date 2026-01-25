@@ -1,12 +1,16 @@
 # ===== nuragic =====
 
-# IOI -> setup/countries/nuragic/iolensia.txt
-IOI = {
-	color = rgb { 25 39 18 }
-}
-
 # BLR -> setup/countries/nuragic/balaria.txt
 BLR = {
 	color = rgb { 101 68 8 }
+	culture_definition = nuragic
+	religion_definition = carthaginian_pantheon
+}
+
+# IOI -> setup/countries/nuragic/iolensia.txt
+IOI = {
+	color = rgb { 25 39 18 }
+	culture_definition = nuragic
+	religion_definition = carthaginian_pantheon
 }
 

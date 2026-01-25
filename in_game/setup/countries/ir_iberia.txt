@@ -3,26 +3,664 @@
 # BLD -> setup/countries/iberia/balearides.txt
 BLD = {
 	color = rgb { 224 229 66 }
+	culture_definition = talaiotic
+	religion_definition = carthaginian_pantheon
 }
 
-# ASU -> setup/countries/iberia/astures.txt
-ASU = {
-	color = rgb { 25 85 181 }
+# AMC -> setup/countries/iberia/amaci.txt
+AMC = {
+	color = rgb { 171 17 225 }
+	culture_definition = asturian
+	religion_definition = druidism
+}
+
+# BDU -> setup/countries/iberia/bedunienses.txt
+BDU = {
+	color = rgb { 60 30 34 }
+	culture_definition = asturian
+	religion_definition = druidism
+}
+
+# GGR -> setup/countries/iberia/gigurri.txt
+GGR = {
+	color = rgb { 177 177 0 }
+	culture_definition = asturian
+	religion_definition = druidism
+}
+
+# LCN -> setup/countries/iberia/lancienses.txt
+LCN = {
+	color = rgb { 220 40 90 }
+	culture_definition = asturian
+	religion_definition = druidism
+}
+
+# LGO -> setup/countries/iberia/lugones.txt
+LGO = {
+	color = rgb { 60 166 143 }
+	culture_definition = asturian
+	religion_definition = druidism
+}
+
+# PSC -> setup/countries/iberia/paesici.txt
+PSC = {
+	color = rgb { 88 185 81 }
+	culture_definition = asturian
+	religion_definition = druidism
+}
+
+# SLI -> setup/countries/iberia/selini.txt
+SLI = {
+	color = rgb { 188 64 199 }
+	culture_definition = asturian
+	religion_definition = druidism
+}
+
+# SPT -> setup/countries/iberia/superatii.txt
+SPT = {
+	color = rgb { 181 50 14 }
+	culture_definition = asturian
+	religion_definition = druidism
+}
+
+# TBU -> setup/countries/iberia/tiburi.txt
+TBU = {
+	color = rgb { 180 167 255 }
+	culture_definition = asturian
+	religion_definition = druidism
+}
+
+# ZLA -> setup/countries/iberia/zoelae.txt
+ZLA = {
+	color = rgb { 13 255 80 }
+	culture_definition = asturian
+	religion_definition = druidism
 }
 
 # AUI -> setup/countries/iberia/ausetani.txt
 AUI = {
 	color = rgb { 30 178 47 }
+	culture_definition = ausetanian
+	religion_definition = animism
 }
 
 # AUG -> setup/countries/iberia/autrigones.txt
 AUG = {
 	color = rgb { 112 7 58 }
+	culture_definition = autrigonian
+	religion_definition = animism
 }
 
 # BAI -> setup/countries/iberia/bastetani.txt
 BAI = {
 	color = rgb { 14 17 104 }
+	culture_definition = bastetanian
+	religion_definition = animism
+}
+
+# EBI -> setup/countries/iberia/eburania.txt
+EBI = {
+	color = rgb { 225 0 56 }
+	culture_definition = bastetanian
+	religion_definition = animism
+}
+
+# MTS -> setup/countries/iberia/mantesania.txt
+MTS = {
+	color = rgb { 66 250 14 }
+	culture_definition = oretanian
+	religion_definition = animism
+}
+
+# GRM -> setup/countries/iberia/garmania.txt
+GRM = {
+	color = rgb { 121 70 111 }
+	culture_definition = oretanian
+	religion_definition = animism
+}
+
+# ORT -> setup/countries/iberia/oretani.txt
+ORT = {
+	color = rgb { 153 131 84 }
+	culture_definition = oretanian
+	religion_definition = animism
+}
+
+# AEB -> setup/countries/iberia/aebocosi.txt
+AEB = {
+	color = rgb { 61 166 190 }
+	culture_definition = callaecian
+	religion_definition = druidism
+}
+
+# ABO -> setup/countries/iberia/albiones.txt
+ABO = {
+	color = rgb { 67 76 199 }
+	culture_definition = callaecian
+	religion_definition = druidism
+}
+
+# ARR -> setup/countries/iberia/arroni.txt
+ARR = {
+	color = rgb { 90 65 31 }
+	culture_definition = callaecian
+	religion_definition = druidism
+}
+
+# BED -> setup/countries/iberia/baedi.txt
+BED = {
+	color = rgb { 88 77 4 }
+	culture_definition = callaecian
+	religion_definition = druidism
+}
+
+# BAN -> setup/countries/iberia/banienses.txt
+BAN = {
+	color = rgb { 111 12 200 }
+	culture_definition = callaecian
+	religion_definition = druidism
+}
+
+# BRC -> setup/countries/iberia/bracari.txt
+BRC = {
+	color = rgb { 181 225 37 }
+	culture_definition = callaecian
+	religion_definition = druidism
+}
+
+# CLD -> setup/countries/iberia/caladuni.txt
+CLD = {
+	color = rgb { 19 240 132 }
+	culture_definition = callaecian
+	religion_definition = druidism
+}
+
+# COP -> setup/countries/iberia/copori.txt
+COP = {
+	color = rgb { 227 144 144 }
+	culture_definition = callaecian
+	religion_definition = druidism
+}
+
+# GRV -> setup/countries/iberia/gravi.txt
+GRV = {
+	color = rgb { 100 100 188 }
+	culture_definition = callaecian
+	religion_definition = druidism
+}
+
+# INT -> setup/countries/iberia/interamici.txt
+INT = {
+	color = rgb { 240 240 100 }
+	culture_definition = callaecian
+	religion_definition = druidism
+}
+
+# LUN -> setup/countries/iberia/leuni.txt
+LUN = {
+	color = rgb { 81 191 90 }
+	culture_definition = callaecian
+	religion_definition = druidism
+}
+
+# NRI -> setup/countries/iberia/neri.txt
+NRI = {
+	color = rgb { 131 14 255 }
+	culture_definition = callaecian
+	religion_definition = druidism
+}
+
+# SUR -> setup/countries/iberia/seurri.txt
+SUR = {
+	color = rgb { 27 67 132 }
+	culture_definition = callaecian
+	religion_definition = druidism
+}
+
+# SLN -> setup/countries/iberia/sileni.txt
+SLN = {
+	color = rgb { 80 0 1 }
+	culture_definition = callaecian
+	religion_definition = druidism
+}
+
+# TMG -> setup/countries/iberia/tamagani.txt
+TMG = {
+	color = rgb { 18 12 66 }
+	culture_definition = callaecian
+	religion_definition = druidism
+}
+
+# VRR -> setup/countries/iberia/varrini.txt
+VRR = {
+	color = rgb { 127 167 232 }
+	culture_definition = callaecian
+	religion_definition = druidism
+}
+
+# ORM -> setup/countries/iberia/orgenomesci.txt
+ORM = {
+	color = rgb { 160 161 40 }
+	culture_definition = cantabrian
+	religion_definition = animism
+}
+
+# AVG -> setup/countries/iberia/avarigini.txt
+AVG = {
+	color = rgb { 70 70 70 }
+	culture_definition = cantabrian
+	religion_definition = animism
+}
+
+# COC -> setup/countries/iberia/concani.txt
+COC = {
+	color = rgb { 20 21 188 }
+	culture_definition = cantabrian
+	religion_definition = animism
+}
+
+# CNI -> setup/countries/iberia/conisci.txt
+CNI = {
+	color = rgb { 150 78 141 }
+	culture_definition = cantabrian
+	religion_definition = animism
+}
+
+# BLN -> setup/countries/iberia/blendii.txt
+BLN = {
+	color = rgb { 100 16 14 }
+	culture_definition = cantabrian
+	religion_definition = animism
+}
+
+# MRC -> setup/countries/iberia/morecani.txt
+MRC = {
+	color = rgb { 220 210 188 }
+	culture_definition = cantabrian
+	religion_definition = animism
+}
+
+# TMC -> setup/countries/iberia/tamarici.txt
+TMC = {
+	color = rgb { 20 210 188 }
+	culture_definition = cantabrian
+	religion_definition = animism
+}
+
+# VDI -> setup/countries/iberia/vadini.txt
+VDI = {
+	color = rgb { 20 190 47 }
+	culture_definition = cantabrian
+	religion_definition = animism
+}
+
+# CRI -> setup/countries/iberia/caristii.txt
+CRI = {
+	color = rgb { 84 74 124 }
+	culture_definition = autrigonian
+	religion_definition = animism
+}
+
+# VAD -> setup/countries/iberia/varduli.txt
+VAD = {
+	color = rgb { 180 121 223 }
+	culture_definition = vasconian
+	religion_definition = animism
+}
+
+# CNT -> setup/countries/iberia/contestani.txt
+CNT = {
+	color = rgb { 20 89 135 }
+	culture_definition = contestanian
+	religion_definition = animism
+}
+
+# ICV -> setup/countries/iberia/ilercavones.txt
+ICV = {
+	color = rgb { 60 76 68 }
+	culture_definition = ilercavonian
+	religion_definition = animism
+}
+
+# ILG -> setup/countries/iberia/ilergetes.txt
+ILG = {
+	color = rgb { 150 57 57 }
+	culture_definition = ilergetian
+	religion_definition = animism
+}
+
+# IDK -> setup/countries/iberia/indiketes.txt
+IDK = {
+	color = rgb { 211 198 12 }
+	culture_definition = indiketian
+	religion_definition = animism
+}
+
+# CSS -> setup/countries/iberia/cessetani.txt
+CSS = {
+	color = rgb { 111 108 147 }
+	culture_definition = lacetanian
+	religion_definition = animism
+}
+
+# TUR -> setup/countries/iberia/turdetani.txt
+TUR = {
+	color = rgb { 74 5 79 }
+	culture_definition = turdetanian
+	religion_definition = animism
+}
+
+# VSC -> setup/countries/iberia/vascones.txt
+VSC = {
+	color = rgb { 226 214 204 }
+	culture_definition = vasconian
+	religion_definition = animism
+}
+
+# EPO -> setup/countries/iberia/emporion.txt
+EPO = {
+	color = rgb { 39 198 95 }
+	culture_definition = massalian
+	religion_definition = roman_pantheon
+}
+
+# TAT -> setup/countries/iberia/tartessos.txt
+TAT = {
+	color = rgb { 165 14 14 }
+	culture_definition = turdetanian
+	religion_definition = animism
+}
+
+# GAD -> setup/countries/iberia/gadir.txt
+GAD = {
+	color = rgb { 114 13 135 }
+	culture_definition = carthaginian
+	religion_definition = carthaginian_pantheon
+}
+
+# MST -> setup/countries/iberia/menesthei.txt
+MST = {
+	color = rgb { 100 170 224 }
+	culture_definition = massalian
+	religion_definition = roman_pantheon
+}
+
+# MAT -> setup/countries/iberia/mastia.txt
+MAT = {
+	color = rgb { 12 47 104 }
+	culture_definition = bastetanian
+	religion_definition = animism
+}
+
+# SGS -> setup/countries/iberia/saguntines.txt
+SGS = {
+	color = rgb { 120 60 240 }
+	culture_definition = edetanian
+	religion_definition = animism
+}
+
+# PAE -> setup/countries/iberia/paesuri.txt
+PAE = {
+	color = rgb { 116 216 200 }
+	culture_definition = lusitanian
+	religion_definition = druidism
+}
+
+# TDT -> setup/countries/iberia/oppidania.txt
+TDT = {
+	color = rgb { 21 201 74 }
+	culture_definition = turdulian
+	religion_definition = druidism
+}
+
+# EBL -> setup/countries/iberia/elbocori.txt
+EBL = {
+	color = rgb { 60 30 80 }
+	culture_definition = lusitanian
+	religion_definition = druidism
+}
+
+# TPL -> setup/countries/iberia/tapoli.txt
+TPL = {
+	color = rgb { 16 18 19 }
+	culture_definition = lusitanian
+	religion_definition = druidism
+}
+
+# IGD -> setup/countries/iberia/igaedetania.txt
+IGD = {
+	color = rgb { 12 70 71 }
+	culture_definition = lusitanian
+	religion_definition = druidism
+}
+
+# LCC -> setup/countries/iberia/lanciencia.txt
+LCC = {
+	color = rgb { 112 70 71 }
+	culture_definition = lusitanian
+	religion_definition = druidism
+}
+
+# AVA -> setup/countries/iberia/aravia.txt
+AVA = {
+	color = rgb { 99 100 139 }
+	culture_definition = lusitanian
+	religion_definition = druidism
+}
+
+# TLS -> setup/countries/iberia/taluria.txt
+TLS = {
+	color = rgb { 109 99 41 }
+	culture_definition = lusitanian
+	religion_definition = druidism
+}
+
+# SFI -> setup/countries/iberia/sefia.txt
+SFI = {
+	color = rgb { 100 90 1 }
+	culture_definition = celtician
+	religion_definition = druidism
+}
+
+# CMS -> setup/countries/iberia/cempsia.txt
+CMS = {
+	color = rgb { 38 102 36 }
+	culture_definition = celtician
+	religion_definition = druidism
+}
+
+# CLC -> setup/countries/iberia/celtici.txt
+CLC = {
+	color = rgb { 208 229 206 }
+	culture_definition = celtician
+	religion_definition = druidism
+}
+
+# CNU -> setup/countries/iberia/couneii.txt
+CNU = {
+	color = rgb { 142 122 78 }
+	culture_definition = couneian
+	religion_definition = druidism
+}
+
+# TDL -> setup/countries/iberia/turduli.txt
+TDL = {
+	color = rgb { 133 22 15 }
+	culture_definition = turdulian
+	religion_definition = druidism
+}
+
+# BDL -> setup/countries/iberia/bardulia.txt
+BDL = {
+	color = rgb { 238 121 167 }
+	culture_definition = turdulian
+	religion_definition = druidism
+}
+
+# TDI -> setup/countries/iberia/turmodigia.txt
+TDI = {
+	color = rgb { 80 10 19 }
+	culture_definition = vaccaeian
+	religion_definition = druidism
+}
+
+# VCI -> setup/countries/iberia/vaccaei.txt
+VCI = {
+	color = rgb { 79 39 6 }
+	culture_definition = vaccaeian
+	religion_definition = druidism
+}
+
+# AVC -> setup/countries/iberia/arevacia.txt
+AVC = {
+	color = rgb { 16 99 103 }
+	culture_definition = celtiberian
+	religion_definition = druidism
+}
+
+# BLT -> setup/countries/iberia/bletonisia.txt
+BLT = {
+	color = rgb { 216 199 31 }
+	culture_definition = vettonian
+	religion_definition = druidism
+}
+
+# CLU -> setup/countries/iberia/caluria.txt
+CLU = {
+	color = rgb { 45 95 71 }
+	culture_definition = vettonian
+	religion_definition = druidism
+}
+
+# CRE -> setup/countries/iberia/coerensia.txt
+CRE = {
+	color = rgb { 145 195 171 }
+	culture_definition = vettonian
+	religion_definition = druidism
+}
+
+# CLO -> setup/countries/iberia/calontiensia.txt
+CLO = {
+	color = rgb { 166 11 190 }
+	culture_definition = vettonian
+	religion_definition = druidism
+}
+
+# LSN -> setup/countries/iberia/lusonia.txt
+LSN = {
+	color = rgb { 69 69 69 }
+	culture_definition = celtiberian
+	religion_definition = druidism
+}
+
+# BLL -> setup/countries/iberia/bellia.txt
+BLL = {
+	color = rgb { 141 90 81 }
+	culture_definition = celtiberian
+	religion_definition = druidism
+}
+
+# BOL -> setup/countries/iberia/boletia.txt
+BOL = {
+	color = rgb { 114 60 219 }
+	culture_definition = celtiberian
+	religion_definition = druidism
+}
+
+# OLC -> setup/countries/iberia/olcadia.txt
+OLC = {
+	color = rgb { 214 160 219 }
+	culture_definition = celtiberian
+	religion_definition = druidism
+}
+
+# TTH -> setup/countries/iberia/tithia.txt
+TTH = {
+	color = rgb { 216 180 111 }
+	culture_definition = celtiberian
+	religion_definition = druidism
+}
+
+# LBT -> setup/countries/iberia/lobetania.txt
+LBT = {
+	color = rgb { 183 105 219 }
+	culture_definition = lobetanian
+	religion_definition = druidism
+}
+
+# DNQ -> setup/countries/iberia/duniquia.txt
+DNQ = {
+	color = rgb { 44 30 80 }
+	culture_definition = carpetanian
+	religion_definition = druidism
+}
+
+# MOC -> setup/countries/iberia/moeniccia.txt
+MOC = {
+	color = rgb { 144 230 80 }
+	culture_definition = carpetanian
+	religion_definition = druidism
+}
+
+# AEL -> setup/countries/iberia/aelariquia.txt
+AEL = {
+	color = rgb { 31 12 7 }
+	culture_definition = carpetanian
+	religion_definition = druidism
+}
+
+# TRQ -> setup/countries/iberia/tirtaliquia.txt
+TRQ = {
+	color = rgb { 90 30 64 }
+	culture_definition = carpetanian
+	religion_definition = druidism
+}
+
+# DOA -> setup/countries/iberia/duitiquia.txt
+DOA = {
+	color = rgb { 2 160 177 }
+	culture_definition = carpetanian
+	religion_definition = druidism
+}
+
+# SLC -> setup/countries/iberia/solicia.txt
+SLC = {
+	color = rgb { 12 60 177 }
+	culture_definition = carpetanian
+	religion_definition = druidism
+}
+
+# SDT -> setup/countries/iberia/sedetania.txt
+SDT = {
+	color = rgb { 48 180 31 }
+	culture_definition = ilercavonian
+	religion_definition = druidism
+}
+
+# EDT -> setup/countries/iberia/edetani.txt
+EDT = {
+	color = rgb { 175 14 111 }
+	culture_definition = edetanian
+	religion_definition = animism
+}
+
+# DEI -> setup/countries/iberia/deitania.txt
+DEI = {
+	color = rgb { 99 108 77 }
+	culture_definition = contestanian
+	religion_definition = animism
+}
+
+# IBA -> setup/countries/iberia/ibasim.txt
+IBA = {
+	color = rgb { 194 39 199 }
+	culture_definition = carthaginian
+	religion_definition = carthaginian_pantheon
+}
+
+# ASU -> setup/countries/iberia/astures.txt
+ASU = {
+	color = rgb { 25 85 181 }
 }
 
 # BAL -> setup/countries/iberia/bastuli.txt
@@ -40,11 +678,6 @@ CBI = {
 	color = rgb { 135 54 71 }
 }
 
-# CRI -> setup/countries/iberia/caristii.txt
-CRI = {
-	color = rgb { 84 74 124 }
-}
-
 # CRP -> setup/countries/iberia/carpetani.txt
 CRP = {
 	color = rgb { 88 188 77 }
@@ -55,64 +688,9 @@ CLB = {
 	color = rgb { 173 169 43 }
 }
 
-# CLC -> setup/countries/iberia/celtici.txt
-CLC = {
-	color = rgb { 208 229 206 }
-}
-
-# CNT -> setup/countries/iberia/contestani.txt
-CNT = {
-	color = rgb { 20 89 135 }
-}
-
-# CNU -> setup/countries/iberia/couneii.txt
-CNU = {
-	color = rgb { 142 122 78 }
-}
-
-# EDT -> setup/countries/iberia/edetani.txt
-EDT = {
-	color = rgb { 175 14 111 }
-}
-
-# ICV -> setup/countries/iberia/ilercavones.txt
-ICV = {
-	color = rgb { 60 76 68 }
-}
-
-# ILG -> setup/countries/iberia/ilergetes.txt
-ILG = {
-	color = rgb { 150 57 57 }
-}
-
-# IDK -> setup/countries/iberia/indiketes.txt
-IDK = {
-	color = rgb { 211 198 12 }
-}
-
 # LCT -> setup/countries/iberia/lacetani.txt
 LCT = {
 	color = rgb { 106 141 145 }
-}
-
-# ORT -> setup/countries/iberia/oretani.txt
-ORT = {
-	color = rgb { 153 131 84 }
-}
-
-# TUR -> setup/countries/iberia/turdetani.txt
-TUR = {
-	color = rgb { 74 5 79 }
-}
-
-# VCI -> setup/countries/iberia/vaccaei.txt
-VCI = {
-	color = rgb { 79 39 6 }
-}
-
-# VSC -> setup/countries/iberia/vascones.txt
-VSC = {
-	color = rgb { 226 214 204 }
 }
 
 # VET -> setup/countries/iberia/vettones.txt
@@ -120,398 +698,8 @@ VET = {
 	color = rgb { 99 47 4 }
 }
 
-# EPO -> setup/countries/iberia/emporion.txt
-EPO = {
-	color = rgb { 39 198 95 }
-}
-
-# TAT -> setup/countries/iberia/tartessos.txt
-TAT = {
-	color = rgb { 165 14 14 }
-}
-
-# MST -> setup/countries/iberia/menesthei.txt
-MST = {
-	color = rgb { 100 170 224 }
-}
-
-# GAD -> setup/countries/iberia/gadir.txt
-GAD = {
-	color = rgb { 114 13 135 }
-}
-
-# MAT -> setup/countries/iberia/mastia.txt
-MAT = {
-	color = rgb { 12 47 104 }
-}
-
-# SGS -> setup/countries/iberia/saguntines.txt
-SGS = {
-	color = rgb { 120 60 240 }
-}
-
-# VAD -> setup/countries/iberia/varduli.txt
-VAD = {
-	color = rgb { 180 121 223 }
-}
-
-# ORM -> setup/countries/iberia/orgenomesci.txt
-ORM = {
-	color = rgb { 160 161 40 }
-}
-
-# AVG -> setup/countries/iberia/avarigini.txt
-AVG = {
-	color = rgb { 70 70 70 }
-}
-
-# COC -> setup/countries/iberia/concani.txt
-COC = {
-	color = rgb { 20 21 188 }
-}
-
-# CNI -> setup/countries/iberia/conisci.txt
-CNI = {
-	color = rgb { 150 78 141 }
-}
-
-# BLN -> setup/countries/iberia/blendii.txt
-BLN = {
-	color = rgb { 100 16 14 }
-}
-
-# MRC -> setup/countries/iberia/morecani.txt
-MRC = {
-	color = rgb { 220 210 188 }
-}
-
-# TMC -> setup/countries/iberia/tamarici.txt
-TMC = {
-	color = rgb { 20 210 188 }
-}
-
-# VDI -> setup/countries/iberia/vadini.txt
-VDI = {
-	color = rgb { 20 190 47 }
-}
-
-# AMC -> setup/countries/iberia/amaci.txt
-AMC = {
-	color = rgb { 171 17 225 }
-}
-
-# BDU -> setup/countries/iberia/bedunienses.txt
-BDU = {
-	color = rgb { 60 30 34 }
-}
-
-# GGR -> setup/countries/iberia/gigurri.txt
-GGR = {
-	color = rgb { 177 177 0 }
-}
-
-# LCN -> setup/countries/iberia/lancienses.txt
-LCN = {
-	color = rgb { 220 40 90 }
-}
-
-# LGO -> setup/countries/iberia/lugones.txt
-LGO = {
-	color = rgb { 60 166 143 }
-}
-
-# PSC -> setup/countries/iberia/paesici.txt
-PSC = {
-	color = rgb { 88 185 81 }
-}
-
-# SLI -> setup/countries/iberia/selini.txt
-SLI = {
-	color = rgb { 188 64 199 }
-}
-
-# SPT -> setup/countries/iberia/superatii.txt
-SPT = {
-	color = rgb { 181 50 14 }
-}
-
-# TBU -> setup/countries/iberia/tiburi.txt
-TBU = {
-	color = rgb { 180 167 255 }
-}
-
-# ZLA -> setup/countries/iberia/zoelae.txt
-ZLA = {
-	color = rgb { 13 255 80 }
-}
-
-# AEB -> setup/countries/iberia/aebocosi.txt
-AEB = {
-	color = rgb { 61 166 190 }
-}
-
-# ABO -> setup/countries/iberia/albiones.txt
-ABO = {
-	color = rgb { 67 76 199 }
-}
-
-# ARR -> setup/countries/iberia/arroni.txt
-ARR = {
-	color = rgb { 90 65 31 }
-}
-
-# BED -> setup/countries/iberia/baedi.txt
-BED = {
-	color = rgb { 88 77 4 }
-}
-
-# BAN -> setup/countries/iberia/banienses.txt
-BAN = {
-	color = rgb { 111 12 200 }
-}
-
-# BRC -> setup/countries/iberia/bracari.txt
-BRC = {
-	color = rgb { 181 225 37 }
-}
-
-# CLD -> setup/countries/iberia/caladuni.txt
-CLD = {
-	color = rgb { 19 240 132 }
-}
-
-# COP -> setup/countries/iberia/copori.txt
-COP = {
-	color = rgb { 227 144 144 }
-}
-
-# GRV -> setup/countries/iberia/gravi.txt
-GRV = {
-	color = rgb { 100 100 188 }
-}
-
-# INT -> setup/countries/iberia/interamici.txt
-INT = {
-	color = rgb { 240 240 100 }
-}
-
-# LUN -> setup/countries/iberia/leuni.txt
-LUN = {
-	color = rgb { 81 191 90 }
-}
-
-# NRI -> setup/countries/iberia/neri.txt
-NRI = {
-	color = rgb { 131 14 255 }
-}
-
-# SUR -> setup/countries/iberia/seurri.txt
-SUR = {
-	color = rgb { 27 67 132 }
-}
-
-# SLN -> setup/countries/iberia/sileni.txt
-SLN = {
-	color = rgb { 80 0 1 }
-}
-
-# TMG -> setup/countries/iberia/tamagani.txt
-TMG = {
-	color = rgb { 18 12 66 }
-}
-
-# VRR -> setup/countries/iberia/varrini.txt
-VRR = {
-	color = rgb { 127 167 232 }
-}
-
-# CSS -> setup/countries/iberia/cessetani.txt
-CSS = {
-	color = rgb { 111 108 147 }
-}
-
-# TDL -> setup/countries/iberia/turduli.txt
-TDL = {
-	color = rgb { 133 22 15 }
-}
-
-# PAE -> setup/countries/iberia/paesuri.txt
-PAE = {
-	color = rgb { 116 216 200 }
-}
-
 # LSI -> setup/countries/iberia/lusitani.txt
 LSI = {
 	color = rgb { 33 145 22 }
-}
-
-# TPL -> setup/countries/iberia/tapoli.txt
-TPL = {
-	color = rgb { 16 18 19 }
-}
-
-# SFI -> setup/countries/iberia/sefia.txt
-SFI = {
-	color = rgb { 100 90 1 }
-}
-
-# CMS -> setup/countries/iberia/cempsia.txt
-CMS = {
-	color = rgb { 38 102 36 }
-}
-
-# TDT -> setup/countries/iberia/oppidania.txt
-TDT = {
-	color = rgb { 21 201 74 }
-}
-
-# EBL -> setup/countries/iberia/elbocori.txt
-EBL = {
-	color = rgb { 60 30 80 }
-}
-
-# IGD -> setup/countries/iberia/igaedetania.txt
-IGD = {
-	color = rgb { 12 70 71 }
-}
-
-# LCC -> setup/countries/iberia/lanciencia.txt
-LCC = {
-	color = rgb { 112 70 71 }
-}
-
-# AVA -> setup/countries/iberia/aravia.txt
-AVA = {
-	color = rgb { 99 100 139 }
-}
-
-# TLS -> setup/countries/iberia/taluria.txt
-TLS = {
-	color = rgb { 109 99 41 }
-}
-
-# BDL -> setup/countries/iberia/bardulia.txt
-BDL = {
-	color = rgb { 238 121 167 }
-}
-
-# TDI -> setup/countries/iberia/turmodigia.txt
-TDI = {
-	color = rgb { 80 10 19 }
-}
-
-# AVC -> setup/countries/iberia/arevacia.txt
-AVC = {
-	color = rgb { 16 99 103 }
-}
-
-# BLT -> setup/countries/iberia/bletonisia.txt
-BLT = {
-	color = rgb { 216 199 31 }
-}
-
-# CLU -> setup/countries/iberia/caluria.txt
-CLU = {
-	color = rgb { 45 95 71 }
-}
-
-# CRE -> setup/countries/iberia/coerensia.txt
-CRE = {
-	color = rgb { 145 195 171 }
-}
-
-# CLO -> setup/countries/iberia/calontiensia.txt
-CLO = {
-	color = rgb { 166 11 190 }
-}
-
-# LSN -> setup/countries/iberia/lusonia.txt
-LSN = {
-	color = rgb { 69 69 69 }
-}
-
-# TTH -> setup/countries/iberia/tithia.txt
-TTH = {
-	color = rgb { 216 180 111 }
-}
-
-# BLL -> setup/countries/iberia/bellia.txt
-BLL = {
-	color = rgb { 141 90 81 }
-}
-
-# BOL -> setup/countries/iberia/boletia.txt
-BOL = {
-	color = rgb { 114 60 219 }
-}
-
-# OLC -> setup/countries/iberia/olcadia.txt
-OLC = {
-	color = rgb { 214 160 219 }
-}
-
-# LBT -> setup/countries/iberia/lobetania.txt
-LBT = {
-	color = rgb { 183 105 219 }
-}
-
-# DNQ -> setup/countries/iberia/duniquia.txt
-DNQ = {
-	color = rgb { 44 30 80 }
-}
-
-# MOC -> setup/countries/iberia/moeniccia.txt
-MOC = {
-	color = rgb { 144 230 80 }
-}
-
-# AEL -> setup/countries/iberia/aelariquia.txt
-AEL = {
-	color = rgb { 31 12 7 }
-}
-
-# TRQ -> setup/countries/iberia/tirtaliquia.txt
-TRQ = {
-	color = rgb { 90 30 64 }
-}
-
-# DOA -> setup/countries/iberia/duitiquia.txt
-DOA = {
-	color = rgb { 2 160 177 }
-}
-
-# SLC -> setup/countries/iberia/solicia.txt
-SLC = {
-	color = rgb { 12 60 177 }
-}
-
-# SDT -> setup/countries/iberia/sedetania.txt
-SDT = {
-	color = rgb { 48 180 31 }
-}
-
-# DEI -> setup/countries/iberia/deitania.txt
-DEI = {
-	color = rgb { 99 108 77 }
-}
-
-# EBI -> setup/countries/iberia/eburania.txt
-EBI = {
-	color = rgb { 225 0 56 }
-}
-
-# MTS -> setup/countries/iberia/mantesania.txt
-MTS = {
-	color = rgb { 66 250 14 }
-}
-
-# GRM -> setup/countries/iberia/garmania.txt
-GRM = {
-	color = rgb { 121 70 111 }
-}
-
-# IBA -> setup/countries/iberia/ibasim.txt
-IBA = {
-	color = rgb { 194 39 199 }
 }
 
