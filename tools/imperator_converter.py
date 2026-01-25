@@ -19,6 +19,9 @@ import colorsys
 # runtime EU5 localisation map (populated in main)
 EU5_LOC = {}
 
+# prefix for all generated files
+FILE_PREFIX = "ir_"
+
 
 # localisation helpers
 def parse_eu5_localisation(eu5_root: Path):
@@ -212,7 +215,7 @@ def write_mod_localisation(mod_root: Path):
             derived = derive_adjective(countries.get(tag, ""))
             countries[adj_key] = derived if derived else countries.get(tag, "")
 
-    f_countries = _write_file("ir_countries_l_english.yml", countries)
+    f_countries = _write_file(f"{FILE_PREFIX}countries_l_english.yml", countries)
     
     # tidy religion values: remove trailing descriptive words that read awkward
     # in-game (e.g. "Anatolian Religion" -> "Anatolian", "Egyptian Pantheon" -> "Egyptian")
@@ -226,8 +229,8 @@ def write_mod_localisation(mod_root: Path):
             val = val[: -len(" Pantheon")].strip()
         religions[rk] = val
 
-    f_cultures = _write_file("ir_cultures_l_english.yml", cultures)
-    f_religion = _write_file("ir_religion_l_english.yml", religions)
+    f_cultures = _write_file(f"{FILE_PREFIX}cultures_l_english.yml", cultures)
+    f_religion = _write_file(f"{FILE_PREFIX}religion_l_english.yml", religions)
 
     if f_countries:
         print("Wrote localisation to", f_countries)
@@ -379,7 +382,7 @@ def write_mod_cultures(mod_root: Path, groups: dict):
             lines.append(f"\t# source_file = {c['source']}")
             lines.append("}")
             lines.append("")
-        out_file = out_root / f"ir_{group}.txt"
+        out_file = out_root / f"{FILE_PREFIX}{group}.txt"
         out_file.write_text("\n".join(lines) + "\n", encoding="utf-8")
         print("Wrote", out_file)
 
@@ -454,7 +457,7 @@ def write_mod_religions(mod_root: Path, ir_root: Path):
                 LOCAL_ENTRIES[name] = disp
             lines.append("}")
             lines.append("")
-    out_file = out_root / "ir_religions.txt"
+    out_file = out_root / f"{FILE_PREFIX}religions.txt"
     out_file.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print("Wrote", out_file)
 
@@ -716,7 +719,7 @@ def write_mod_countries(mod_root: Path, ir_root: Path, tags_map: dict, groups: d
                 LOCAL_ENTRIES[tag] = comment_text
             else:
                 LOCAL_ENTRIES[tag] = _humanize_name(Path(rel).stem)
-        out_file = out_base / f"ir_{group}.txt"
+        out_file = out_base / f"{FILE_PREFIX}{group}.txt"
         out_file.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
