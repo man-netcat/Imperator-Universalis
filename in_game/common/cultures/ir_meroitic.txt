@@ -1,4 +1,4 @@
-# Converted from Imperator group meroitic
+﻿# Converted from Imperator group meroitic
 
 meroitic_culture = {
 	color = rgb { 153 147 92 }

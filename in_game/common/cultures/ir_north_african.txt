@@ -1,4 +1,4 @@
-# Converted from Imperator group north_african
+﻿# Converted from Imperator group north_african
 
 north_african_culture = {
 	color = rgb { 178 161 0 }

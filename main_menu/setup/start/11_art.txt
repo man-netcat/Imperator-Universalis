@@ -1,2 +1,2 @@
-work_of_art_manager = {
+﻿work_of_art_manager = {
 }

@@ -1,4 +1,4 @@
-# Converted from Imperator group tibetan
+﻿# Converted from Imperator group tibetan
 
 tibetan_culture = {
 	color = rgb { 204 0 61 }

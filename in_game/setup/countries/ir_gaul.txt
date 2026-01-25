@@ -1,4 +1,4 @@
-# ===== gaul =====
+﻿# ===== gaul =====
 
 # MAS -> setup/countries/gaul/massilia.txt
 MAS = {

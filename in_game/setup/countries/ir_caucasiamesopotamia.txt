@@ -1,4 +1,4 @@
-# ===== caucasiamesopotamia =====
+﻿# ===== caucasiamesopotamia =====
 
 # SEL -> setup/countries/caucasiamesopotamia/seleucid empire.txt
 SEL = {

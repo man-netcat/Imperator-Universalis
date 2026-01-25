@@ -1,4 +1,4 @@
-# Converted from Imperator group celtiberian
+﻿# Converted from Imperator group celtiberian
 
 celtiberian_culture = {
 	color = rgb { 129 153 31 }

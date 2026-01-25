@@ -1,4 +1,4 @@
-# ===== germania =====
+﻿# ===== germania =====
 
 # BST -> setup/countries/germania/bastarnae.txt
 BST = {

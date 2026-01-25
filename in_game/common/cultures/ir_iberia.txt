@@ -1,4 +1,4 @@
-# Converted from Imperator group iberia
+﻿# Converted from Imperator group iberia
 
 iberia_culture = {
 	color = rgb { 255 107 0 }

@@ -1,4 +1,4 @@
-# Converted from Imperator group britannic
+﻿# Converted from Imperator group britannic
 
 britannic_culture = {
 	color = rgb { 31 72 102 }

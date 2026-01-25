@@ -1,4 +1,4 @@
-# Converted from Imperator group east_levantine
+﻿# Converted from Imperator group east_levantine
 
 east_levantine_culture = {
 	color = rgb { 128 38 0 }

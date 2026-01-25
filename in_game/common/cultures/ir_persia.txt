@@ -1,4 +1,4 @@
-# Converted from Imperator group persia
+﻿# Converted from Imperator group persia
 
 persia_culture = {
 	color = rgb { 42 167 184 }

@@ -1,4 +1,4 @@
-# Converted from Imperator group caucasian
+﻿# Converted from Imperator group caucasian
 
 caucasian_culture = {
 	color = rgb { 173 152 95 }

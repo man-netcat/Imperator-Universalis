@@ -1,4 +1,4 @@
-# ===== greece =====
+﻿# ===== greece =====
 
 # MAC -> setup/countries/greece/macedonia.txt
 MAC = {

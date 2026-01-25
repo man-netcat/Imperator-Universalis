@@ -1,4 +1,4 @@
-# Converted from Imperator group south_levantine
+﻿# Converted from Imperator group south_levantine
 
 south_levantine_culture = {
 	color = rgb { 67 153 46 }

@@ -1,4 +1,4 @@
-# ===== anatolia =====
+﻿# ===== anatolia =====
 
 # RHO -> setup/countries/anatolia/rhodes.txt
 RHO = {

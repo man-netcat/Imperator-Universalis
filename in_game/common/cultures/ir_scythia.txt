@@ -1,4 +1,4 @@
-# Converted from Imperator group scythia
+﻿# Converted from Imperator group scythia
 
 scythia_culture = {
 	color = rgb { 184 204 102 }

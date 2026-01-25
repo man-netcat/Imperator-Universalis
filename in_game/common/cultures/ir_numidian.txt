@@ -1,4 +1,4 @@
-# Converted from Imperator group numidian
+﻿# Converted from Imperator group numidian
 
 numidian_culture = {
 	color = rgb { 102 66 51 }

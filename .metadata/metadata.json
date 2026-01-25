@@ -13,7 +13,9 @@
   "game_custom_data": {
     "replace_paths": [
       "setup/countries",
-      "common/cultures"
+      "common/cultures",
+      "common/culture_groups",
+      "common/religions"
     ]
   }
 }

@@ -1,4 +1,4 @@
-# Converted from Imperator group indian
+﻿# Converted from Imperator group indian
 
 indian_culture = {
 	color = rgb { 135 61 153 }

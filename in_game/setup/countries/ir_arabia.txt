@@ -1,4 +1,4 @@
-# ===== arabia =====
+﻿# ===== arabia =====
 
 # MAK -> setup/countries/arabia/maka.txt
 MAK = {

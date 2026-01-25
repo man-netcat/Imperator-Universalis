@@ -1,4 +1,4 @@
-# ===== africa =====
+﻿# ===== africa =====
 
 # EGY -> setup/countries/africa/egypt.txt
 EGY = {

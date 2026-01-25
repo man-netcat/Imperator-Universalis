@@ -1,4 +1,4 @@
-# Converted from Imperator group proto_european
+﻿# Converted from Imperator group proto_european
 
 proto_european_culture = {
 	color = rgb { 121 128 96 }

@@ -1,4 +1,4 @@
-# ===== countries =====
+﻿# ===== countries =====
 
 # BAR -> setup/countries/barbarians.txt
 BAR = {

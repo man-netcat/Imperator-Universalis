@@ -1,4 +1,4 @@
-# Converted from Imperator group illyrian
+﻿# Converted from Imperator group illyrian
 
 illyrian_culture = {
 	color = rgb { 61 102 78 }

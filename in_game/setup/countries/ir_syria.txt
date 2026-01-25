@@ -1,4 +1,4 @@
-# ===== syria =====
+﻿# ===== syria =====
 
 # JUD -> setup/countries/syria/judea.txt
 JUD = {

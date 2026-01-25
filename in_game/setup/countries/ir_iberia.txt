@@ -1,4 +1,4 @@
-# ===== iberia =====
+﻿# ===== iberia =====
 
 # BLD -> setup/countries/iberia/balearides.txt
 BLD = {

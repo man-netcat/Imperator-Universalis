@@ -1,4 +1,4 @@
-# ===== india =====
+﻿# ===== india =====
 
 # ZHZ -> setup/countries/india/zhangzhung.txt
 ZHZ = {

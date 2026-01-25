@@ -1,2 +1,2 @@
-disease_outbreak_manager = {
+﻿disease_outbreak_manager = {
 }

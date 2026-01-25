@@ -1,4 +1,4 @@
-# Converted from Imperator group germanic
+﻿# Converted from Imperator group germanic
 
 germanic_culture = {
 	color = rgb { 76 39 23 }

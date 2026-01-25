@@ -1,4 +1,4 @@
-# Converted Imperator religions
+﻿# Converted Imperator religions
 
 roman_pantheon = {
 	color = rgb { 61 75 204 }

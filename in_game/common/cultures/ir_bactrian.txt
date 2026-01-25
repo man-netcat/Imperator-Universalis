@@ -1,4 +1,4 @@
-# Converted from Imperator group bactrian
+﻿# Converted from Imperator group bactrian
 
 bactrian_culture = {
 	color = rgb { 178 76 54 }

@@ -1,4 +1,4 @@
-# Converted from Imperator group celto_pannonian
+﻿# Converted from Imperator group celto_pannonian
 
 celto_pannonian_culture = {
 	color = rgb { 37 64 10 }

@@ -1,4 +1,4 @@
-# ===== italia =====
+﻿# ===== italia =====
 
 # SYR -> setup/countries/italia/syracusae.txt
 SYR = {

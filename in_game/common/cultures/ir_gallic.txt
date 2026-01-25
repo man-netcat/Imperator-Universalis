@@ -1,4 +1,4 @@
-# Converted from Imperator group gallic
+﻿# Converted from Imperator group gallic
 
 gallic_culture = {
 	color = rgb { 45 102 31 }

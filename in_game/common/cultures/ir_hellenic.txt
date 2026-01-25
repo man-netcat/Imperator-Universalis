@@ -1,4 +1,4 @@
-# Converted from Imperator group hellenic
+﻿# Converted from Imperator group hellenic
 
 hellenic_culture = {
 	color = rgb { 61 75 204 }

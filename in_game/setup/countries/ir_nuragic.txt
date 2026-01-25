@@ -1,4 +1,4 @@
-# ===== nuragic =====
+﻿# ===== nuragic =====
 
 # BLR -> setup/countries/nuragic/balaria.txt
 BLR = {

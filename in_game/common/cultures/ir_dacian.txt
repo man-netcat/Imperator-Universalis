@@ -1,4 +1,4 @@
-# Converted from Imperator group dacian
+﻿# Converted from Imperator group dacian
 
 dacian_culture = {
 	color = rgb { 255 128 128 }

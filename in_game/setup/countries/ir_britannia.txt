@@ -1,4 +1,4 @@
-# ===== britannia =====
+﻿# ===== britannia =====
 
 # TXL -> setup/countries/britannia/taexalia.txt
 TXL = {

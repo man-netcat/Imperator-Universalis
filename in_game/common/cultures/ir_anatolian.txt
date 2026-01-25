@@ -1,4 +1,4 @@
-# Converted from Imperator group anatolian
+﻿# Converted from Imperator group anatolian
 
 anatolian_culture = {
 	color = rgb { 134 230 126 }

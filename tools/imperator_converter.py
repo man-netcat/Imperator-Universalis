@@ -222,7 +222,7 @@ def write_mod_localisation(mod_root: Path):
         for kk, vv in sorted(entries.items()):
             safe = vv.replace('"', '\\"')
             lines.append(f" {kk}: \"{safe}\"")
-        path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        path.write_text("\n".join(lines) + "\n", encoding="utf-8-sig")
         return path
 
     # add adjective entries for countries: use I:R localisation `_ADJ` keys only.
@@ -402,7 +402,7 @@ def write_mod_culture_groups(mod_root: Path, groups: dict):
         lines.append(f"{gname} = {{")
         lines.append("}")
         lines.append("")
-    out_file.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+    out_file.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8-sig")
     print("Wrote", out_file)
 
 
@@ -433,7 +433,7 @@ def write_mod_cultures(mod_root: Path, groups: dict):
             lines.append("}")
             lines.append("")
         out_file = out_root / f"{FILE_PREFIX}{group}.txt"
-        out_file.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        out_file.write_text("\n".join(lines) + "\n", encoding="utf-8-sig")
         print("Wrote", out_file)
 
 
@@ -508,7 +508,7 @@ def write_mod_religions(mod_root: Path, ir_root: Path):
             lines.append("}")
             lines.append("")
     out_file = out_root / f"{FILE_PREFIX}religions.txt"
-    out_file.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    out_file.write_text("\n".join(lines) + "\n", encoding="utf-8-sig")
     print("Wrote", out_file)
 
 
@@ -646,7 +646,7 @@ def apply_hue_shifts(mod_root: Path, factor: float = 0.04):
                         changed = True
                         break
         if changed:
-            f.write_text("\n".join(out) + "\n", encoding="utf-8")
+            f.write_text("\n".join(out) + "\n", encoding="utf-8-sig")
             patched.append(f.name)
     return patched
 
@@ -752,7 +752,7 @@ def patch_tags_from_ir(mod_root: Path, ir_map: dict):
             else:
                 out_lines.extend(bl)
         if changed:
-            f.write_text("\n".join(out_lines) + "\n", encoding="utf-8")
+            f.write_text("\n".join(out_lines) + "\n", encoding="utf-8-sig")
             print("Updated tags from I:R gfx for", f)
 
 
@@ -967,7 +967,7 @@ def write_mod_countries(mod_root: Path, ir_root: Path, tags_map: dict, groups: d
             else:
                 LOCAL_ENTRIES[adjk] = "MISSING"
         out_file = out_base / f"{FILE_PREFIX}{group}.txt"
-        out_file.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        out_file.write_text("\n".join(lines) + "\n", encoding="utf-8-sig")
 
 
 def main():

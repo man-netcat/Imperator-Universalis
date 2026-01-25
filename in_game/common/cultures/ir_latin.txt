@@ -1,4 +1,4 @@
-# Converted from Imperator group latin
+﻿# Converted from Imperator group latin
 
 latin_culture = {
 	color = rgb { 140 13 13 }

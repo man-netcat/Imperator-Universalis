@@ -1,4 +1,4 @@
-# Converted from Imperator group belgea
+﻿# Converted from Imperator group belgea
 
 belgea_culture = {
 	color = rgb { 23 115 87 }

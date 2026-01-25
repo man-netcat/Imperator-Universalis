@@ -1,4 +1,4 @@
-building_manager = {
+﻿building_manager = {
 }
 
 religion_manager = {

@@ -1,4 +1,4 @@
-# ===== bactria =====
+﻿# ===== bactria =====
 
 # BAC -> setup/countries/bactria/bactria.txt
 BAC = {

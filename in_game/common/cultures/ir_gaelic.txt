@@ -1,4 +1,4 @@
-# Converted from Imperator group gaelic
+﻿# Converted from Imperator group gaelic
 
 gaelic_culture = {
 	color = rgb { 15 153 95 }
