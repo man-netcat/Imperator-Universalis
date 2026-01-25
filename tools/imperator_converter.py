@@ -381,6 +381,31 @@ def parse_ir_cultures(ir_root: Path):
     return groups
 
 
+def write_mod_culture_groups(mod_root: Path, groups: dict):
+    """Write a culture_groups file for the mod derived from Imperator groups.
+
+    Each Imperator group becomes a `group_name_group = { }` entry to match
+    EU5 layout. The file is intentionally lightweight (empty bodies) so it
+    can be extended later with modifiers.
+    """
+    out_root = mod_root / "in_game" / "common" / "culture_groups"
+    out_root.mkdir(parents=True, exist_ok=True)
+    out_file = out_root / "00_culture_groups.txt"
+    # Header mirrors EU5 style but contains NO copied content from base game.
+    lines = [
+        "# avoid naming the same as Cultures and Languages",
+        "",
+    ]
+    for group in sorted(groups.keys()):
+        # append the EU5-style group name (ensure suffix)
+        gname = f"{group}_group" if not group.endswith("_group") else group
+        lines.append(f"{gname} = {{")
+        lines.append("}")
+        lines.append("")
+    out_file.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+    print("Wrote", out_file)
+
+
 def write_mod_cultures(mod_root: Path, groups: dict):
     out_root = mod_root / "in_game" / "common" / "cultures"
     out_root.mkdir(parents=True, exist_ok=True)
@@ -502,6 +527,28 @@ def parse_countries_list(ir_root: Path):
     return tags
 
 
+def find_country_file_for_tag(ir_root: Path, tag: str):
+    """Fallback: scan setup/countries files for a tag definition and return
+    a path relative to the ir_root if found, otherwise None.
+    """
+    base = ir_root / "setup" / "countries"
+    if not base.exists():
+        return None
+    patt = re.compile(r'^\s*' + re.escape(tag) + r"\s*=\s*\{", re.M)
+    for f in sorted(base.rglob("*.txt")):
+        try:
+            txt = f.read_text(encoding="utf-8", errors="ignore")
+        except Exception:
+            continue
+        if patt.search(txt):
+            # return a path relative to the game root to match existing tags_map values
+            try:
+                return str(f.relative_to(ir_root))
+            except Exception:
+                return str(f)
+    return None
+
+
 def parse_default_order(ir_root: Path):
     """Return a list of country tags in the order they appear in 00_default.txt.
 
@@ -519,6 +566,9 @@ def parse_default_order(ir_root: Path):
     tags = []
     for m in re.finditer(r"^\s*([A-Z0-9]{2,3})\s*=\s*\{", txt, re.M):
         tag = m.group(1)
+        # ignore purely-numeric entries (these are often non-country entries)
+        if not any(c.isalpha() for c in tag):
+            continue
         if tag not in tags:
             tags.append(tag)
     return tags
@@ -710,12 +760,29 @@ def write_mod_countries(mod_root: Path, ir_root: Path, tags_map: dict, groups: d
     out_base = mod_root / "in_game" / "setup" / "countries"
     out_base.mkdir(parents=True, exist_ok=True)
     groups_out = {}
+    # start from explicit mappings
     for tag, rel in tags_map.items():
         p = Path(rel)
         group = p.parent.name if p.parent.name else "root"
         if group not in groups_out:
             groups_out[group] = []
         groups_out[group].append((tag, rel))
+    # ensure tags that appear in 00_default.txt but are not listed in
+    # countries.txt are included using the fallback scanner
+    if default_order:
+        for tag in default_order:
+            # already present from countries.txt
+            present = any(tag == t for grp in groups_out.values() for (t, _) in grp)
+            if present:
+                continue
+            rel = find_country_file_for_tag(ir_root, tag)
+            if not rel:
+                continue
+            p = Path(rel)
+            group = p.parent.name if p.parent.name else "root"
+            if group not in groups_out:
+                groups_out[group] = []
+            groups_out[group].append((tag, rel))
 
     # If a default order is provided (from 00_default.txt), reorder the
     # grouped entries to follow that sequence. Tags not present in the
@@ -821,15 +888,38 @@ def write_mod_countries(mod_root: Path, ir_root: Path, tags_map: dict, groups: d
             # only generate countries for tags that exist in the Imperator localisation
             if tag not in IR_LOC:
                 continue
-            ir_file = ir_root / rel
-            color = extract_color(ir_file)
+            ir_file = None
+            color = None
+            # rel may be a path relative to the game root; try several candidates
+            if rel:
+                candidates = [
+                    ir_root / rel,
+                    ir_root / "setup" / rel,
+                    ir_root / "setup" / "countries" / rel,
+                    ir_root / "setup" / "countries" / Path(rel).name,
+                ]
+                for c in candidates:
+                    if c.exists():
+                        ir_file = c
+                        break
+            # if we still don't have a file, attempt scanning fallback
+            if not ir_file:
+                found = find_country_file_for_tag(ir_root, tag)
+                if found:
+                    fq = ir_root / found
+                    if fq.exists():
+                        ir_file = fq
+            if ir_file:
+                color = extract_color(ir_file)
             # omit `culture_definition` for now — leave culture mapping out
             # of generated country files until reviewed
             religion = None
-            try:
-                txt = ir_file.read_text(encoding='utf-8')
-            except Exception:
-                txt = ""
+            txt = ""
+            if ir_file:
+                try:
+                    txt = ir_file.read_text(encoding='utf-8')
+                except Exception:
+                    txt = ""
             # prefer values from default setup if available
             r_def, c_def = _extract_from_default(tag)
             religion = r_def
@@ -898,6 +988,8 @@ def main():
 
     groups = parse_ir_cultures(ir_root)
     write_mod_cultures(mod_root, groups)
+    # write culture_groups derived from the converted culture files (EU5-style, empty bodies)
+    write_mod_culture_groups(mod_root, groups)
     write_mod_religions(mod_root, ir_root)
     tags_map = parse_countries_list(ir_root)
     default_order = parse_default_order(ir_root)
