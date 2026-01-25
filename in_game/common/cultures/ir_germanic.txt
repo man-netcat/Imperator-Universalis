@@ -1,0 +1,9 @@
+# Converted from Imperator group germanic
+
+germanic_culture = {
+	color = rgb { 76 39 23 }
+	tags = { german_gfx }
+	culture_groups = { germanic_group }
+	# source_file = 00_germanic.txt
+}
+

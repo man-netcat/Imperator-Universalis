@@ -1,0 +1,362 @@
+# ===== greece =====
+
+# ATH -> setup/countries/greece/athens.txt
+ATH = {
+	color = rgb { 19 139 244 }
+}
+
+# SPA -> setup/countries/greece/sparta.txt
+SPA = {
+	color = rgb { 150 70 78 }
+}
+
+# EPI -> setup/countries/greece/epirus.txt
+EPI = {
+	color = rgb { 200 153 39 }
+}
+
+# KRK -> setup/countries/greece/korkyra.txt
+KRK = {
+	color = rgb { 49 105 152 }
+}
+
+# AET -> setup/countries/greece/aetolia.txt
+AET = {
+	color = rgb { 179 128 104 }
+}
+
+# AKR -> setup/countries/greece/akarnania.txt
+AKR = {
+	color = rgb { 195 22 140 }
+}
+
+# MSE -> setup/countries/greece/messenia.txt
+MSE = {
+	color = rgb { 210 203 25 }
+}
+
+# PTA -> setup/countries/greece/patrai.txt
+PTA = {
+	color = rgb { 229 27 84 }
+}
+
+# DYM -> setup/countries/greece/dyme.txt
+DYM = {
+	color = rgb { 90 30 180 }
+}
+
+# MGL -> setup/countries/greece/megalopolis.txt
+MGL = {
+	color = rgb { 147 22 143 }
+}
+
+# TEG -> setup/countries/greece/tegea.txt
+TEG = {
+	color = rgb { 53 164 84 }
+}
+
+# AIG -> setup/countries/greece/aigon.txt
+AIG = {
+	color = rgb { 234 139 40 }
+}
+
+# PLE -> setup/countries/greece/pellene.txt
+PLE = {
+	color = rgb { 90 20 150 }
+}
+
+# AZA -> setup/countries/greece/azania.txt
+AZA = {
+	color = rgb { 82 200 157 }
+}
+
+# ARG -> setup/countries/greece/argos.txt
+ARG = {
+	color = rgb { 136 164 26 }
+}
+
+# MTE -> setup/countries/greece/mantinea.txt
+MTE = {
+	color = rgb { 173 92 62 }
+}
+
+# ELI -> setup/countries/greece/elis.txt
+ELI = {
+	color = rgb { 167 195 133 }
+}
+
+# TRN -> setup/countries/greece/troizen.txt
+TRN = {
+	color = rgb { 160 93 99 }
+}
+
+# EPD -> setup/countries/greece/epidauros.txt
+EPD = {
+	color = rgb { 35 151 89 }
+}
+
+# PRI -> setup/countries/greece/prasiai.txt
+PRI = {
+	color = rgb { 231 80 34 }
+}
+
+# HRA -> setup/countries/greece/heraia.txt
+HRA = {
+	color = rgb { 20 86 234 }
+}
+
+# LPR -> setup/countries/greece/lepreon.txt
+LPR = {
+	color = rgb { 133 14 25 }
+}
+
+# MAC -> setup/countries/greece/macedonia.txt
+MAC = {
+	color = rgb { 16 41 202 }
+}
+
+# STP -> setup/countries/greece/stymphalia.txt
+STP = {
+	color = rgb { 234 159 40 }
+}
+
+# MGA -> setup/countries/greece/megara.txt
+MGA = {
+	color = rgb { 167 36 61 }
+}
+
+# THE -> setup/countries/greece/thebes.txt
+THE = {
+	color = rgb { 37 142 96 }
+}
+
+# EUB -> setup/countries/greece/euboea.txt
+EUB = {
+	color = rgb { 45 17 220 }
+}
+
+# BOE -> setup/countries/greece/boeotia.txt
+BOE = {
+	color = rgb { 119 49 49 }
+}
+
+# DEL -> setup/countries/greece/delos.txt
+DEL = {
+	color = rgb { 172 118 23 }
+}
+
+# ADR -> setup/countries/greece/andros.txt
+ADR = {
+	color = rgb { 68 179 201 }
+}
+
+# KOS -> setup/countries/greece/kos.txt
+KOS = {
+	color = rgb { 41 243 100 }
+}
+
+# MLO -> setup/countries/greece/miletos.txt
+MLO = {
+	color = rgb { 11 22 145 }
+}
+
+# BYZ -> setup/countries/greece/byzantion.txt
+BYZ = {
+	color = rgb { 155 26 131 }
+}
+
+# PAA -> setup/countries/greece/paeonia.txt
+PAA = {
+	color = rgb { 45 97 135 }
+}
+
+# TAN -> setup/countries/greece/tanagra.txt
+TAN = {
+	color = rgb { 120 20 145 }
+}
+
+# HRM -> setup/countries/greece/hermione.txt
+HRM = {
+	color = rgb { 59 163 45 }
+}
+
+# ORE -> setup/countries/greece/oreos.txt
+ORE = {
+	color = rgb { 90 120 120 }
+}
+
+# BPK -> setup/countries/greece/bosporus.txt
+BPK = {
+	color = rgb { 63 9 81 }
+}
+
+# SRM -> setup/countries/greece/sarmatians.txt
+SRM = {
+	color = rgb { 222 124 28 }
+}
+
+# OLB -> setup/countries/greece/olbia.txt
+OLB = {
+	color = rgb { 225 0 9 }
+}
+
+# TYS -> setup/countries/greece/tyras.txt
+TYS = {
+	color = rgb { 51 200 12 }
+}
+
+# TYG -> setup/countries/greece/tyrgetae.txt
+TYG = {
+	color = rgb { 161 34 171 }
+}
+
+# MAE -> setup/countries/greece/maeotia.txt
+MAE = {
+	color = rgb { 181 180 180 }
+}
+
+# CHS -> setup/countries/greece/chersonesus.txt
+CHS = {
+	color = rgb { 30 60 200 }
+}
+
+# ORG -> setup/countries/greece/orgame.txt
+ORG = {
+	color = rgb { 153 76 32 }
+}
+
+# ISO -> setup/countries/greece/istros.txt
+ISO = {
+	color = rgb { 0 102 204 }
+}
+
+# TMS -> setup/countries/greece/tomis.txt
+TMS = {
+	color = rgb { 204 153 255 }
+}
+
+# KTS -> setup/countries/greece/kallatis.txt
+KTS = {
+	color = rgb { 180 22 32 }
+}
+
+# KOI -> setup/countries/greece/krounoi.txt
+KOI = {
+	color = rgb { 153 255 255 }
+}
+
+# ODS -> setup/countries/greece/odessos.txt
+ODS = {
+	color = rgb { 51 102 0 }
+}
+
+# MES -> setup/countries/greece/mesembria.txt
+MES = {
+	color = rgb { 255 204 153 }
+}
+
+# APL -> setup/countries/greece/apollonia.txt
+APL = {
+	color = rgb { 204 102 0 }
+}
+
+# KNO -> setup/countries/greece/knossos.txt
+KNO = {
+	color = rgb { 40 101 22 }
+}
+
+# PYR -> setup/countries/greece/polyrrhenia.txt
+PYR = {
+	color = rgb { 11 12 191 }
+}
+
+# LYT -> setup/countries/greece/lyctus.txt
+LYT = {
+	color = rgb { 144 12 2 }
+}
+
+# KYD -> setup/countries/greece/kydonia.txt
+KYD = {
+	color = rgb { 11 193 55 }
+}
+
+# GRT -> setup/countries/greece/gortyna.txt
+GRT = {
+	color = rgb { 170 160 166 }
+}
+
+# IEP -> setup/countries/greece/ierapetra.txt
+IEP = {
+	color = rgb { 81 102 90 }
+}
+
+# TRA -> setup/countries/greece/tarra.txt
+TRA = {
+	color = rgb { 101 24 135 }
+}
+
+# PRE -> setup/countries/greece/praesos.txt
+PRE = {
+	color = rgb { 40 39 37 }
+}
+
+# ELT -> setup/countries/greece/eleutherna.txt
+ELT = {
+	color = rgb { 140 33 68 }
+}
+
+# TRE -> setup/countries/greece/thrace.txt
+TRE = {
+	color = rgb { 5 162 25 }
+}
+
+# ODR -> setup/countries/greece/odrysia.txt
+ODR = {
+	color = rgb { 208 175 24 }
+}
+
+# SCY -> setup/countries/greece/scythia_europea.txt
+SCY = {
+	color = rgb { 50 152 100 }
+}
+
+# AMP -> setup/countries/greece/amphissa.txt
+AMP = {
+	color = rgb { 130 17 17 }
+}
+
+# OPU -> setup/countries/greece/opus.txt
+OPU = {
+	color = rgb { 168 102 222 }
+}
+
+# PHO -> setup/countries/greece/phocis.txt
+PHO = {
+	color = rgb { 126 96 29 }
+}
+
+# DLP -> setup/countries/greece/delphi.txt
+DLP = {
+	color = rgb { 59 77 3 }
+}
+
+# AMK -> setup/countries/greece/ambrakia.txt
+AMK = {
+	color = rgb { 61 168 104 }
+}
+
+# LAP -> setup/countries/greece/lappa.txt
+LAP = {
+	color = rgb { 100 55 0 }
+}
+
+# ARD -> setup/countries/greece/arcades.txt
+ARD = {
+	color = rgb { 160 240 22 }
+}
+
+# MAD -> setup/countries/greece/maedia.txt
+MAD = {
+	color = rgb { 185 122 87 }
+}
+

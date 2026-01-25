@@ -1,0 +1,9 @@
+# Converted from Imperator group meroitic
+
+meroitic_culture = {
+	color = rgb { 153 147 92 }
+	tags = { egyptian_gfx }
+	culture_groups = { meroitic_group }
+	# source_file = 00_meroitic.txt
+}
+

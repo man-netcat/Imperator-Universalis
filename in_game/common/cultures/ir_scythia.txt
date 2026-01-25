@@ -1,0 +1,9 @@
+# Converted from Imperator group scythia
+
+scythia_culture = {
+	color = rgb { 184 204 102 }
+	tags = { scythian_gfx }
+	culture_groups = { scythia_group }
+	# source_file = 00_scythia.txt
+}
+

@@ -1,0 +1,47 @@
+# ===== syria =====
+
+# OSR -> setup/countries/syria/osroene.txt
+OSR = {
+	color = rgb { 167 132 39 }
+}
+
+# SOP -> setup/countries/syria/sophene.txt
+SOP = {
+	color = rgb { 169 242 27 }
+}
+
+# COM -> setup/countries/syria/commagene.txt
+COM = {
+	color = rgb { 219 169 111 }
+}
+
+# JUD -> setup/countries/syria/judea.txt
+JUD = {
+	color = rgb { 99 193 217 }
+}
+
+# SMA -> setup/countries/syria/samaria.txt
+SMA = {
+	color = rgb { 123 76 12 }
+}
+
+# BYB -> setup/countries/syria/byblos.txt
+BYB = {
+	color = rgb { 105 21 123 }
+}
+
+# ARA -> setup/countries/syria/arados.txt
+ARA = {
+	color = rgb { 92 62 189 }
+}
+
+# SID -> setup/countries/syria/sidon.txt
+SID = {
+	color = rgb { 145 113 224 }
+}
+
+# BMB -> setup/countries/syria/bambyce.txt
+BMB = {
+	color = rgb { 145 130 240 }
+}
+

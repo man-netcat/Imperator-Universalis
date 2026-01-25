@@ -1,0 +1,9 @@
+# Converted from Imperator group celto_pannonian
+
+celto_pannonian_culture = {
+	color = rgb { 37 64 10 }
+	tags = { celtic_gfx }
+	culture_groups = { celto_pannonian_group }
+	# source_file = 00_celto_pannonian.txt
+}
+

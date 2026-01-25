@@ -1,0 +1,9 @@
+# Converted from Imperator group belgea
+
+belgea_culture = {
+	color = rgb { 23 115 87 }
+	tags = { celtic_gfx }
+	culture_groups = { belgea_group }
+	# source_file = 00_belgea.txt
+}
+

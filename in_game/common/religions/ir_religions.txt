@@ -1,0 +1,90 @@
+# Converted Imperator religions
+
+roman_pantheon = {
+	color = rgb { 61 75 204 }
+}
+
+egyptian_pantheon = {
+	color = rgb { 178 161 0 }
+}
+
+carthaginian_pantheon = {
+	color = rgb { 102 19 186 }
+}
+
+shamanism = {
+	color = rgb { 255 128 128 }
+}
+
+caucasian_religion = {
+	color = rgb { 76 26 102 }
+}
+
+mesopotamian_religion = {
+	color = rgb { 128 38 0 }
+}
+
+armenian_religion = {
+	color = rgb { 76 26 51 }
+}
+
+anatolian_religion = {
+	color = rgb { 76 102 51 }
+}
+
+druidism = {
+	color = rgb { 45 102 31 }
+}
+
+animism = {
+	color = rgb { 255 107 0 }
+}
+
+judaism = {
+	color = rgb { 0 25 255 }
+}
+
+zoroaster = {
+	color = rgb { 42 167 184 }
+}
+
+berber_religion = {
+	color = rgb { 102 66 51 }
+}
+
+germanic_religion = {
+	color = rgb { 76 39 23 }
+}
+
+indo_iranian_religion = {
+	color = rgb { 184 204 102 }
+}
+
+arabian_pantheon = {
+	color = rgb { 67 153 46 }
+}
+
+buddhism = {
+	color = rgb { 255 237 77 }
+}
+
+hindu = {
+	color = rgb { 230 69 0 }
+}
+
+eastern_animism = {
+	color = rgb { 178 76 54 }
+}
+
+bon_religion = {
+	color = rgb { 204 0 61 }
+}
+
+matrist_religion = {
+	color = rgb { 107 178 178 }
+}
+
+jainism = {
+	color = rgb { 43 41 51 }
+}
+

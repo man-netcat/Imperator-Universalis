@@ -1,0 +1,222 @@
+# ===== illyria_dacia =====
+
+# CAA -> setup/countries/illyria_dacia/catari.txt
+CAA = {
+	color = rgb { 191 7 66 }
+}
+
+# DRI -> setup/countries/illyria_dacia/daorsi.txt
+DRI = {
+	color = rgb { 81 18 12 }
+}
+
+# DLM -> setup/countries/illyria_dacia/delmatae.txt
+DLM = {
+	color = rgb { 11 18 55 }
+}
+
+# DIT -> setup/countries/illyria_dacia/iapodes.txt
+DIT = {
+	color = rgb { 167 72 119 }
+}
+
+# LTB -> setup/countries/illyria_dacia/latobici.txt
+LTB = {
+	color = rgb { 198 33 18 }
+}
+
+# LBN -> setup/countries/illyria_dacia/liberni.txt
+LBN = {
+	color = rgb { 67 72 9 }
+}
+
+# PII -> setup/countries/illyria_dacia/pieri.txt
+PII = {
+	color = rgb { 227 18 2 }
+}
+
+# BCI -> setup/countries/illyria_dacia/breuci.txt
+BCI = {
+	color = rgb { 224 1 12 }
+}
+
+# ABI -> setup/countries/illyria_dacia/abrii.txt
+ABI = {
+	color = rgb { 213 88 41 }
+}
+
+# CVI -> setup/countries/illyria_dacia/cavii.txt
+CVI = {
+	color = rgb { 16 171 11 }
+}
+
+# DUI -> setup/countries/illyria_dacia/deuri.txt
+DUI = {
+	color = rgb { 64 81 11 }
+}
+
+# PNN -> setup/countries/illyria_dacia/pannoni.txt
+PNN = {
+	color = rgb { 163 71 211 }
+}
+
+# DNT -> setup/countries/illyria_dacia/ditiones.txt
+DNT = {
+	color = rgb { 24 34 89 }
+}
+
+# DND -> setup/countries/illyria_dacia/dindari.txt
+DND = {
+	color = rgb { 150 151 70 }
+}
+
+# SCD -> setup/countries/illyria_dacia/scordici.txt
+SCD = {
+	color = rgb { 101 192 40 }
+}
+
+# AMI -> setup/countries/illyria_dacia/armistae.txt
+AMI = {
+	color = rgb { 200 200 209 }
+}
+
+# OXU -> setup/countries/illyria_dacia/oxuaioi.txt
+OXU = {
+	color = rgb { 200 9 230 }
+}
+
+# OTN -> setup/countries/illyria_dacia/cotini.txt
+OTN = {
+	color = rgb { 171 190 188 }
+}
+
+# HCN -> setup/countries/illyria_dacia/hercuniati.txt
+HCN = {
+	color = rgb { 11 68 9 }
+}
+
+# EVS -> setup/countries/illyria_dacia/eravisci.txt
+EVS = {
+	color = rgb { 120 222 251 }
+}
+
+# TLT -> setup/countries/illyria_dacia/tilataei.txt
+TLT = {
+	color = rgb { 151 33 80 }
+}
+
+# MOE -> setup/countries/illyria_dacia/moesi.txt
+MOE = {
+	color = rgb { 12 33 90 }
+}
+
+# TBL -> setup/countries/illyria_dacia/triballoi.txt
+TBL = {
+	color = rgb { 12 90 31 }
+}
+
+# GTE -> setup/countries/illyria_dacia/getae.txt
+GTE = {
+	color = rgb { 112 190 71 }
+}
+
+# POT -> setup/countries/illyria_dacia/potulatenses.txt
+POT = {
+	color = rgb { 132 15 203 }
+}
+
+# SLD -> setup/countries/illyria_dacia/saldenses.txt
+SLD = {
+	color = rgb { 31 83 166 }
+}
+
+# ABN -> setup/countries/illyria_dacia/albocenses.txt
+ABN = {
+	color = rgb { 199 206 42 }
+}
+
+# BUD -> setup/countries/illyria_dacia/buridavenses.txt
+BUD = {
+	color = rgb { 66 206 66 }
+}
+
+# RAT -> setup/countries/illyria_dacia/ratacenses.txt
+RAT = {
+	color = rgb { 1 100 1 }
+}
+
+# APP -> setup/countries/illyria_dacia/appuli.txt
+APP = {
+	color = rgb { 121 100 1 }
+}
+
+# CAC -> setup/countries/illyria_dacia/caucoenses.txt
+CAC = {
+	color = rgb { 1 100 121 }
+}
+
+# ANS -> setup/countries/illyria_dacia/ansamenses.txt
+ANS = {
+	color = rgb { 221 100 21 }
+}
+
+# TYR -> setup/countries/illyria_dacia/tyrgetae.txt
+TYR = {
+	color = rgb { 1 100 221 }
+}
+
+# NRC -> setup/countries/illyria_dacia/norici.txt
+NRC = {
+	color = rgb { 111 11 21 }
+}
+
+# TSC -> setup/countries/illyria_dacia/taurisci.txt
+TSC = {
+	color = rgb { 68 180 77 }
+}
+
+# TLN -> setup/countries/illyria_dacia/taulantii.txt
+TLN = {
+	color = rgb { 110 32 173 }
+}
+
+# DRD -> setup/countries/illyria_dacia/dardani.txt
+DRD = {
+	color = rgb { 111 129 213 }
+}
+
+# SDI -> setup/countries/illyria_dacia/serdi.txt
+SDI = {
+	color = rgb { 170 23 76 }
+}
+
+# ASP -> setup/countries/illyria_dacia/asparos.txt
+ASP = {
+	color = rgb { 255 255 102 }
+}
+
+# PHA -> setup/countries/illyria_dacia/pharos.txt
+PHA = {
+	color = rgb { 136 255 41 }
+}
+
+# EPM -> setup/countries/illyria_dacia/epidaurum.txt
+EPM = {
+	color = rgb { 153 217 234 }
+}
+
+# ISA -> setup/countries/illyria_dacia/issa.txt
+ISA = {
+	color = rgb { 191 22 197 }
+}
+
+# KOK -> setup/countries/illyria_dacia/korkyramelaina.txt
+KOK = {
+	color = rgb { 46 41 29 }
+}
+
+# APO -> setup/countries/illyria_dacia/apollonia.txt
+APO = {
+	color = rgb { 255 174 201 }
+}
+

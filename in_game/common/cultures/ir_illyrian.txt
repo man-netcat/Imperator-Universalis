@@ -1,0 +1,9 @@
+# Converted from Imperator group illyrian
+
+illyrian_culture = {
+	color = rgb { 61 102 78 }
+	tags = { greek_gfx }
+	culture_groups = { illyrian_group }
+	# source_file = 00_illyrian.txt
+}
+

@@ -1,0 +1,17 @@
+# ===== countries =====
+
+# PIR -> setup/countries/pirates.txt
+PIR = {
+	color = rgb { 116 143 139 }
+}
+
+# BAR -> setup/countries/barbarians.txt
+BAR = {
+	color = rgb { 96 95 78 }
+}
+
+# MER -> setup/countries/mercenaries.txt
+MER = {
+	color = rgb { 72 85 83 }
+}
+

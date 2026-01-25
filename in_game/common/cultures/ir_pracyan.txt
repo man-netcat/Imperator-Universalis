@@ -1,0 +1,9 @@
+# Converted from Imperator group pracyan
+
+pracyan_culture = {
+	color = rgb { 13 26 0 }
+	tags = { north_indian_gfx }
+	culture_groups = { pracyan_group }
+	# source_file = 00_pracyan.txt
+}
+

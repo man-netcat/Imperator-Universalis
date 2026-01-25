@@ -1,0 +1,9 @@
+# Converted from Imperator group britannic
+
+britannic_culture = {
+	color = rgb { 31 72 102 }
+	tags = { celtic_gfx }
+	culture_groups = { britannic_group }
+	# source_file = 00_britannic.txt
+}
+

@@ -1,0 +1,9 @@
+# Converted from Imperator group proto_european
+
+proto_european_culture = {
+	color = rgb { 121 128 96 }
+	tags = { iberian_gfx }
+	culture_groups = { proto_european_group }
+	# source_file = 00_proto_european.txt
+}
+

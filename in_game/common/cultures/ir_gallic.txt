@@ -1,0 +1,9 @@
+# Converted from Imperator group gallic
+
+gallic_culture = {
+	color = rgb { 45 102 31 }
+	tags = { celtic_gfx }
+	culture_groups = { gallic_group }
+	# source_file = 00_gallic.txt
+}
+

@@ -1,0 +1,9 @@
+# Converted from Imperator group tibetan
+
+tibetan_culture = {
+	color = rgb { 204 0 61 }
+	tags = { north_indian_gfx }
+	culture_groups = { tibetan_group }
+	# source_file = 00_tibetan.txt
+}
+

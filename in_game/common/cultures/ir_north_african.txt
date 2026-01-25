@@ -1,0 +1,9 @@
+# Converted from Imperator group north_african
+
+north_african_culture = {
+	color = rgb { 178 161 0 }
+	tags = { egyptian_gfx }
+	culture_groups = { north_african_group }
+	# source_file = 00_north_african.txt
+}
+

@@ -1,0 +1,9 @@
+# Converted from Imperator group iberia
+
+iberia_culture = {
+	color = rgb { 255 107 0 }
+	tags = { iberian_gfx }
+	culture_groups = { iberia_group }
+	# source_file = 00_iberia.txt
+}
+

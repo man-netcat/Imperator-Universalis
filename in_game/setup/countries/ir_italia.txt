@@ -1,0 +1,267 @@
+# ===== italia =====
+
+# ROM -> setup/countries/italia/rome.txt
+ROM = {
+	color = rgb { 205 12 7 }
+}
+
+# SAM -> setup/countries/italia/samnium.txt
+SAM = {
+	color = rgb { 58 164 111 }
+}
+
+# ETR -> setup/countries/italia/etruscia.txt
+ETR = {
+	color = rgb { 48 30 180 }
+}
+
+# UMB -> setup/countries/italia/umbria.txt
+UMB = {
+	color = rgb { 100 40 0 }
+}
+
+# PIE -> setup/countries/italia/picentes.txt
+PIE = {
+	color = rgb { 90 150 200 }
+}
+
+# SAB -> setup/countries/italia/sabinia.txt
+SAB = {
+	color = rgb { 16 91 13 }
+}
+
+# APU -> setup/countries/italia/apulia.txt
+APU = {
+	color = rgb { 210 115 60 }
+}
+
+# NEP -> setup/countries/italia/neapolis.txt
+NEP = {
+	color = rgb { 44 10 100 }
+}
+
+# FRE -> setup/countries/italia/frentani.txt
+FRE = {
+	color = rgb { 190 200 60 }
+}
+
+# PEL -> setup/countries/italia/peligni.txt
+PEL = {
+	color = rgb { 90 15 40 }
+}
+
+# MSP -> setup/countries/italia/messapii.txt
+MSP = {
+	color = rgb { 13 180 101 }
+}
+
+# SNI -> setup/countries/italia/senonii.txt
+SNI = {
+	color = rgb { 13 210 40 }
+}
+
+# LCA -> setup/countries/italia/lucania.txt
+LCA = {
+	color = rgb { 45 99 142 }
+}
+
+# BRT -> setup/countries/italia/bruttia.txt
+BRT = {
+	color = rgb { 11 40 180 }
+}
+
+# ANO -> setup/countries/italia/ancona.txt
+ANO = {
+	color = rgb { 190 70 8 }
+}
+
+# MET -> setup/countries/italia/metapontum.txt
+MET = {
+	color = rgb { 50 20 90 }
+}
+
+# TAR -> setup/countries/italia/tarentum.txt
+TAR = {
+	color = rgb { 100 40 180 }
+}
+
+# THU -> setup/countries/italia/thurii.txt
+THU = {
+	color = rgb { 10 130 80 }
+}
+
+# HCL -> setup/countries/italia/heracleia.txt
+HCL = {
+	color = rgb { 125 45 93 }
+}
+
+# CRO -> setup/countries/italia/croton.txt
+CRO = {
+	color = rgb { 70 225 69 }
+}
+
+# LOC -> setup/countries/italia/locri.txt
+LOC = {
+	color = rgb { 170 125 255 }
+}
+
+# RHG -> setup/countries/italia/rhegium.txt
+RHG = {
+	color = rgb { 60 12 6 }
+}
+
+# HPO -> setup/countries/italia/hipponium.txt
+HPO = {
+	color = rgb { 160 212 76 }
+}
+
+# SCU -> setup/countries/italia/siculia.txt
+SCU = {
+	color = rgb { 181 103 88 }
+}
+
+# CUT -> setup/countries/italia/ceutrones.txt
+CUT = {
+	color = rgb { 192 67 219 }
+}
+
+# SLS -> setup/countries/italia/salassi.txt
+SLS = {
+	color = rgb { 17 181 74 }
+}
+
+# LPO -> setup/countries/italia/lepontii.txt
+LPO = {
+	color = rgb { 61 192 91 }
+}
+
+# LGN -> setup/countries/italia/lingones.txt
+LGN = {
+	color = rgb { 44 88 183 }
+}
+
+# TAU -> setup/countries/italia/taurini.txt
+TAU = {
+	color = rgb { 176 188 65 }
+}
+
+# INM -> setup/countries/italia/intimili.txt
+INM = {
+	color = rgb { 16 102 65 }
+}
+
+# IGN -> setup/countries/italia/ingauni.txt
+IGN = {
+	color = rgb { 20 20 20 }
+}
+
+# EPA -> setup/countries/italia/epanterii.txt
+EPA = {
+	color = rgb { 217 101 5 }
+}
+
+# INS -> setup/countries/italia/insubri.txt
+INS = {
+	color = rgb { 30 30 230 }
+}
+
+# CNM -> setup/countries/italia/cenomanni.txt
+CNM = {
+	color = rgb { 231 30 31 }
+}
+
+# KRN -> setup/countries/italia/carni.txt
+KRN = {
+	color = rgb { 77 23 6 }
+}
+
+# VNT -> setup/countries/italia/veneti.txt
+VNT = {
+	color = rgb { 20 20 203 }
+}
+
+# HIS -> setup/countries/italia/histri.txt
+HIS = {
+	color = rgb { 220 219 221 }
+}
+
+# GUN -> setup/countries/italia/genuates.txt
+GUN = {
+	color = rgb { 85 8 3 }
+}
+
+# BOI -> setup/countries/italia/boi.txt
+BOI = {
+	color = rgb { 85 7 71 }
+}
+
+# RAE -> setup/countries/italia/raeti.txt
+RAE = {
+	color = rgb { 204 21 203 }
+}
+
+# BRE -> setup/countries/italia/breuni.txt
+BRE = {
+	color = rgb { 33 21 206 }
+}
+
+# FNT -> setup/countries/italia/friniati.txt
+FNT = {
+	color = rgb { 30 125 130 }
+}
+
+# NUC -> setup/countries/italia/nocera.txt
+NUC = {
+	color = rgb { 240 240 240 }
+}
+
+# MRS -> setup/countries/italia/marsia.txt
+MRS = {
+	color = rgb { 38 73 205 }
+}
+
+# SIO -> setup/countries/italia/sipontum.txt
+SIO = {
+	color = rgb { 50 60 100 }
+}
+
+# SYR -> setup/countries/italia/syracusae.txt
+SYR = {
+	color = rgb { 240 180 80 }
+}
+
+# ACR -> setup/countries/italia/acragas.txt
+ACR = {
+	color = rgb { 65 96 186 }
+}
+
+# ELE -> setup/countries/italia/elea.txt
+ELE = {
+	color = rgb { 255 131 6 }
+}
+
+# GEL -> setup/countries/italia/gelas.txt
+GEL = {
+	color = rgb { 153 28 78 }
+}
+
+# HEM -> setup/countries/italia/herakleia_minoa.txt
+HEM = {
+	color = rgb { 29 91 129 }
+}
+
+# TYN -> setup/countries/italia/tyndaria.txt
+TYN = {
+	color = rgb { 80 5 80 }
+}
+
+# CLA -> setup/countries/italia/calactea.txt
+CLA = {
+	color = rgb { 120 13 13 }
+}
+
+# SIN -> setup/countries/italia/selinous.txt
+SIN = {
+	color = rgb { 39 71 38 }
+}
+

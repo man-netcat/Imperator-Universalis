@@ -1,0 +1,67 @@
+# ===== arabia =====
+
+# SHB -> setup/countries/arabia/sheba.txt
+SHB = {
+	color = rgb { 16 190 78 }
+}
+
+# MIN -> setup/countries/arabia/ma'in.txt
+MIN = {
+	color = rgb { 14 119 230 }
+}
+
+# QTB -> setup/countries/arabia/qataba.txt
+QTB = {
+	color = rgb { 164 19 36 }
+}
+
+# HDM -> setup/countries/arabia/hadhramut.txt
+HDM = {
+	color = rgb { 80 90 22 }
+}
+
+# HMJ -> setup/countries/arabia/himjar.txt
+HMJ = {
+	color = rgb { 11 101 31 }
+}
+
+# NBT -> setup/countries/arabia/nabatea.txt
+NBT = {
+	color = rgb { 14 20 31 }
+}
+
+# LHY -> setup/countries/arabia/lihyan.txt
+LHY = {
+	color = rgb { 80 48 189 }
+}
+
+# MAK -> setup/countries/arabia/maka.txt
+MAK = {
+	color = rgb { 101 10 221 }
+}
+
+# TYO -> setup/countries/arabia/tylos.txt
+TYO = {
+	color = rgb { 100 149 68 }
+}
+
+# GRH -> setup/countries/arabia/gerrha.txt
+GRH = {
+	color = rgb { 221 150 99 }
+}
+
+# TQF -> setup/countries/arabia/thaqif.txt
+TQF = {
+	color = rgb { 200 67 166 }
+}
+
+# THD -> setup/countries/arabia/thamud.txt
+THD = {
+	color = rgb { 100 167 66 }
+}
+
+# QDA -> setup/countries/arabia/qadaritia.txt
+QDA = {
+	color = rgb { 27 104 183 }
+}
+

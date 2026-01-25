@@ -1,0 +1,9 @@
+# Converted from Imperator group dacian
+
+dacian_culture = {
+	color = rgb { 255 128 128 }
+	tags = { greek_gfx }
+	culture_groups = { dacian_group }
+	# source_file = 00_dacian.txt
+}
+

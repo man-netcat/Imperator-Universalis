@@ -1,0 +1,442 @@
+# ===== gaul =====
+
+# ABC -> setup/countries/gaul/albici.txt
+ABC = {
+	color = rgb { 133 133 20 }
+}
+
+# ALL -> setup/countries/gaul/allobroges.txt
+ALL = {
+	color = rgb { 174 166 34 }
+}
+
+# ARC -> setup/countries/gaul/arecomici.txt
+ARC = {
+	color = rgb { 200 200 201 }
+}
+
+# AVN -> setup/countries/gaul/arverni.txt
+AVN = {
+	color = rgb { 11 12 150 }
+}
+
+# BTU -> setup/countries/gaul/bituriges.txt
+BTU = {
+	color = rgb { 13 12 181 }
+}
+
+# CDC -> setup/countries/gaul/cadurci.txt
+CDC = {
+	color = rgb { 96 8 4 }
+}
+
+# CNS -> setup/countries/gaul/consoranni.txt
+CNS = {
+	color = rgb { 100 0 102 }
+}
+
+# HVI -> setup/countries/gaul/helvii.txt
+HVI = {
+	color = rgb { 98 288 200 }
+}
+
+# NTB -> setup/countries/gaul/nitiobroges.txt
+NTB = {
+	color = rgb { 171 90 172 }
+}
+
+# RUT -> setup/countries/gaul/ruteni.txt
+RUT = {
+	color = rgb { 255 181 90 }
+}
+
+# SLV -> setup/countries/gaul/salluvi.txt
+SLV = {
+	color = rgb { 199 93 77 }
+}
+
+# SGL -> setup/countries/gaul/seguslavi.txt
+SGL = {
+	color = rgb { 24 90 14 }
+}
+
+# SRB -> setup/countries/gaul/sorbones.txt
+SRB = {
+	color = rgb { 33 233 90 }
+}
+
+# SRD -> setup/countries/gaul/sordones.txt
+SRD = {
+	color = rgb { 44 144 244 }
+}
+
+# TRB -> setup/countries/gaul/tarbelli.txt
+TRB = {
+	color = rgb { 13 12 81 }
+}
+
+# TRS -> setup/countries/gaul/tarusates.txt
+TRS = {
+	color = rgb { 44 181 81 }
+}
+
+# TCT -> setup/countries/gaul/tectosages.txt
+TCT = {
+	color = rgb { 144 67 200 }
+}
+
+# VOC -> setup/countries/gaul/vocontii.txt
+VOC = {
+	color = rgb { 16 160 166 }
+}
+
+# DCA -> setup/countries/gaul/deciates.txt
+DCA = {
+	color = rgb { 142 100 97 }
+}
+
+# OXB -> setup/countries/gaul/oxybii.txt
+OXB = {
+	color = rgb { 11 111 211 }
+}
+
+# CTR -> setup/countries/gaul/caturiges.txt
+CTR = {
+	color = rgb { 81 16 2 }
+}
+
+# ASC -> setup/countries/gaul/auscii.txt
+ASC = {
+	color = rgb { 16 120 26 }
+}
+
+# BIG -> setup/countries/gaul/bigerriones.txt
+BIG = {
+	color = rgb { 190 44 91 }
+}
+
+# CCS -> setup/countries/gaul/cocosates.txt
+CCS = {
+	color = rgb { 16 220 65 }
+}
+
+# VCT -> setup/countries/gaul/vocates.txt
+VCT = {
+	color = rgb { 198 167 16 }
+}
+
+# SBZ -> setup/countries/gaul/sibuzates.txt
+SBZ = {
+	color = rgb { 11 137 229 }
+}
+
+# PTC -> setup/countries/gaul/petrocorii.txt
+PTC = {
+	color = rgb { 9 1 101 }
+}
+
+# LMV -> setup/countries/gaul/lemovices.txt
+LMV = {
+	color = rgb { 1 102 9 }
+}
+
+# SNT -> setup/countries/gaul/santones.txt
+SNT = {
+	color = rgb { 100 9 1 }
+}
+
+# HMK -> setup/countries/gaul/hemeroskopeion.txt
+HMK = {
+	color = rgb { 31 212 213 }
+}
+
+# HVT -> setup/countries/gaul/helveti.txt
+HVT = {
+	color = rgb { 42 126 230 }
+}
+
+# VNN -> setup/countries/gaul/vennones.txt
+VNN = {
+	color = rgb { 190 89 18 }
+}
+
+# TLG -> setup/countries/gaul/tulingi.txt
+TLG = {
+	color = rgb { 74 170 61 }
+}
+
+# ESO -> setup/countries/gaul/estiones.txt
+ESO = {
+	color = rgb { 17 102 4 }
+}
+
+# BRG -> setup/countries/gaul/briganti.txt
+BRG = {
+	color = rgb { 174 27 200 }
+}
+
+# CTN -> setup/countries/gaul/catenates.txt
+CTN = {
+	color = rgb { 68 241 90 }
+}
+
+# TIG -> setup/countries/gaul/tigurini.txt
+TIG = {
+	color = rgb { 89 198 56 }
+}
+
+# TOU -> setup/countries/gaul/tougeni.txt
+TOU = {
+	color = rgb { 189 98 66 }
+}
+
+# VRB -> setup/countries/gaul/verbigeni.txt
+VRB = {
+	color = rgb { 60 12 11 }
+}
+
+# RAU -> setup/countries/gaul/rauraci.txt
+RAU = {
+	color = rgb { 80 194 211 }
+}
+
+# LTG -> setup/countries/gaul/latobrigi.txt
+LTG = {
+	color = rgb { 174 0 211 }
+}
+
+# SVC -> setup/countries/gaul/sevaces.txt
+SVC = {
+	color = rgb { 14 3 90 }
+}
+
+# BGT -> setup/countries/gaul/biturigestwo.txt
+BGT = {
+	color = rgb { 38 98 118 }
+}
+
+# CRN -> setup/countries/gaul/carnutes.txt
+CRN = {
+	color = rgb { 39 208 218 }
+}
+
+# PCS -> setup/countries/gaul/pictones.txt
+PCS = {
+	color = rgb { 179 47 98 }
+}
+
+# TRO -> setup/countries/gaul/turones.txt
+TRO = {
+	color = rgb { 111 222 8 }
+}
+
+# CMI -> setup/countries/gaul/cenomanni.txt
+CMI = {
+	color = rgb { 41 142 87 }
+}
+
+# NMN -> setup/countries/gaul/namnetes.txt
+NMN = {
+	color = rgb { 209 16 188 }
+}
+
+# ADC -> setup/countries/gaul/andecamulenses.txt
+ADC = {
+	color = rgb { 88 16 80 }
+}
+
+# RDO -> setup/countries/gaul/redones.txt
+RDO = {
+	color = rgb { 180 6 77 }
+}
+
+# EBV -> setup/countries/gaul/eburovices.txt
+EBV = {
+	color = rgb { 61 180 77 }
+}
+
+# DBL -> setup/countries/gaul/diablintes.txt
+DBL = {
+	color = rgb { 61 44 181 }
+}
+
+# LXV -> setup/countries/gaul/lexovii.txt
+LXV = {
+	color = rgb { 221 221 203 }
+}
+
+# OSM -> setup/countries/gaul/osismi.txt
+OSM = {
+	color = rgb { 85 85 12 }
+}
+
+# VTN -> setup/countries/gaul/veneti.txt
+VTN = {
+	color = rgb { 185 185 112 }
+}
+
+# CIO -> setup/countries/gaul/curiosolites.txt
+CIO = {
+	color = rgb { 219 192 91 }
+}
+
+# VNL -> setup/countries/gaul/venelli.txt
+VNL = {
+	color = rgb { 30 40 191 }
+}
+
+# ESV -> setup/countries/gaul/esuvi.txt
+ESV = {
+	color = rgb { 133 177 84 }
+}
+
+# VCL -> setup/countries/gaul/veliocasses.txt
+VCL = {
+	color = rgb { 11 172 11 }
+}
+
+# AMB -> setup/countries/gaul/ambarri.txt
+AMB = {
+	color = rgb { 11 98 51 }
+}
+
+# AED -> setup/countries/gaul/aedui.txt
+AED = {
+	color = rgb { 121 9 9 }
+}
+
+# SQI -> setup/countries/gaul/sequani.txt
+SQI = {
+	color = rgb { 15 90 53 }
+}
+
+# LNG -> setup/countries/gaul/lingones.txt
+LNG = {
+	color = rgb { 115 90 153 }
+}
+
+# MDB -> setup/countries/gaul/mandubii.txt
+MDB = {
+	color = rgb { 18 90 60 }
+}
+
+# SNN -> setup/countries/gaul/senones.txt
+SNN = {
+	color = rgb { 125 190 56 }
+}
+
+# TRC -> setup/countries/gaul/tricasses.txt
+TRC = {
+	color = rgb { 40 40 49 }
+}
+
+# PRS -> setup/countries/gaul/parisii.txt
+PRS = {
+	color = rgb { 40 42 149 }
+}
+
+# CTL -> setup/countries/gaul/catalauni.txt
+CTL = {
+	color = rgb { 140 242 41 }
+}
+
+# TBC -> setup/countries/gaul/tribocci.txt
+TBC = {
+	color = rgb { 139 108 88 }
+}
+
+# LCI -> setup/countries/gaul/leuci.txt
+LCI = {
+	color = rgb { 239 77 88 }
+}
+
+# MDM -> setup/countries/gaul/mediomatrici.txt
+MDM = {
+	color = rgb { 1 77 18 }
+}
+
+# NMI -> setup/countries/gaul/nemeti.txt
+NMI = {
+	color = rgb { 181 77 8 }
+}
+
+# TVI -> setup/countries/gaul/treveri.txt
+TVI = {
+	color = rgb { 23 108 4 }
+}
+
+# VNG -> setup/countries/gaul/vangiones.txt
+VNG = {
+	color = rgb { 60 240 30 }
+}
+
+# ADT -> setup/countries/gaul/aduatuci.txt
+ADT = {
+	color = rgb { 240 40 99 }
+}
+
+# EBS -> setup/countries/gaul/eburones.txt
+EBS = {
+	color = rgb { 160 240 230 }
+}
+
+# MNP -> setup/countries/gaul/menapi.txt
+MNP = {
+	color = rgb { 111 107 100 }
+}
+
+# CGN -> setup/countries/gaul/cugerni.txt
+CGN = {
+	color = rgb { 90 91 198 }
+}
+
+# MRN -> setup/countries/gaul/morini.txt
+MRN = {
+	color = rgb { 91 1 23 }
+}
+
+# NRV -> setup/countries/gaul/nervii.txt
+NRV = {
+	color = rgb { 91 191 80 }
+}
+
+# RMI -> setup/countries/gaul/remi.txt
+RMI = {
+	color = rgb { 13 244 197 }
+}
+
+# CLT -> setup/countries/gaul/caleti.txt
+CLT = {
+	color = rgb { 131 24 97 }
+}
+
+# BLV -> setup/countries/gaul/bellovaci.txt
+BLV = {
+	color = rgb { 200 170 150 }
+}
+
+# ABM -> setup/countries/gaul/ambiani.txt
+ABM = {
+	color = rgb { 135 174 42 }
+}
+
+# VMD -> setup/countries/gaul/viromandui.txt
+VMD = {
+	color = rgb { 85 4 2 }
+}
+
+# SSS -> setup/countries/gaul/suessiones.txt
+SSS = {
+	color = rgb { 198 198 197 }
+}
+
+# MAS -> setup/countries/gaul/massilia.txt
+MAS = {
+	color = rgb { 110 180 150 }
+}
+
+# BOA -> setup/countries/gaul/boioioi.txt
+BOA = {
+	color = rgb { 99 144 78 }
+}
+

@@ -1,0 +1,9 @@
+# Converted from Imperator group celtiberian
+
+celtiberian_culture = {
+	color = rgb { 129 153 31 }
+	tags = { celtic_gfx }
+	culture_groups = { celtiberian_group }
+	# source_file = 00_celtiberian.txt
+}
+

@@ -1,0 +1,9 @@
+# Converted from Imperator group bactrian
+
+bactrian_culture = {
+	color = rgb { 178 76 54 }
+	tags = { persian_gfx }
+	culture_groups = { bactrian_group }
+	# source_file = 00_bactrian.txt
+}
+

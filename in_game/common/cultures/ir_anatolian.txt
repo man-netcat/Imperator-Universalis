@@ -1,0 +1,9 @@
+# Converted from Imperator group anatolian
+
+anatolian_culture = {
+	color = rgb { 134 230 126 }
+	tags = { anatolian_gfx }
+	culture_groups = { anatolian_group }
+	# source_file = 00_anatolian.txt
+}
+

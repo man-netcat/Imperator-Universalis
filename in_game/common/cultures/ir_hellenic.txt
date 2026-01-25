@@ -1,0 +1,9 @@
+# Converted from Imperator group hellenic
+
+hellenic_culture = {
+	color = rgb { 61 75 204 }
+	tags = { greek_gfx }
+	culture_groups = { hellenic_group }
+	# source_file = 00_hellenic.txt
+}
+

@@ -1,0 +1,9 @@
+# Converted from Imperator group aryan
+
+aryan_culture = {
+	color = rgb { 230 69 0 }
+	tags = { north_indian_gfx }
+	culture_groups = { aryan_group }
+	# source_file = 00_aryan.txt
+}
+

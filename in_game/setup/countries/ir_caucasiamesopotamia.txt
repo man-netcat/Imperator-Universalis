@@ -1,0 +1,82 @@
+# ===== caucasiamesopotamia =====
+
+# SND -> setup/countries/caucasiamesopotamia/sindica.txt
+SND = {
+	color = rgb { 12 183 162 }
+}
+
+# SCE -> setup/countries/caucasiamesopotamia/siracia.txt
+SCE = {
+	color = rgb { 212 64 182 }
+}
+
+# LGA -> setup/countries/caucasiamesopotamia/legia.txt
+LGA = {
+	color = rgb { 31 64 80 }
+}
+
+# SCA -> setup/countries/caucasiamesopotamia/scythia.txt
+SCA = {
+	color = rgb { 181 55 44 }
+}
+
+# SEL -> setup/countries/caucasiamesopotamia/seleucid empire.txt
+SEL = {
+	color = rgb { 40 121 173 }
+}
+
+# ADI -> setup/countries/caucasiamesopotamia/adiabene.txt
+ADI = {
+	color = rgb { 66 244 104 }
+}
+
+# ARM -> setup/countries/caucasiamesopotamia/armenia.txt
+ARM = {
+	color = rgb { 172 58 52 }
+}
+
+# MAP -> setup/countries/caucasiamesopotamia/media atropatene.txt
+MAP = {
+	color = rgb { 89 107 104 }
+}
+
+# IBR -> setup/countries/caucasiamesopotamia/iberia.txt
+IBR = {
+	color = rgb { 229 221 178 }
+}
+
+# COL -> setup/countries/caucasiamesopotamia/colchis.txt
+COL = {
+	color = rgb { 0 198 107 }
+}
+
+# ALB -> setup/countries/caucasiamesopotamia/albania.txt
+ALB = {
+	color = rgb { 221 138 69 }
+}
+
+# TRZ -> setup/countries/caucasiamesopotamia/trapezous.txt
+TRZ = {
+	color = rgb { 32 150 102 }
+}
+
+# PAR -> setup/countries/caucasiamesopotamia/parthia.txt
+PAR = {
+	color = rgb { 102 106 195 }
+}
+
+# ZGY -> setup/countries/caucasiamesopotamia/zygia.txt
+ZGY = {
+	color = rgb { 45 154 217 }
+}
+
+# HNY -> setup/countries/caucasiamesopotamia/heniochia.txt
+HNY = {
+	color = rgb { 248 201 12 }
+}
+
+# PHI -> setup/countries/caucasiamesopotamia/phasis.txt
+PHI = {
+	color = rgb { 229 22 31 }
+}
+

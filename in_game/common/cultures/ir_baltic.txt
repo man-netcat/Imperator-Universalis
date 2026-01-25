@@ -1,0 +1,9 @@
+# Converted from Imperator group baltic
+
+baltic_culture = {
+	color = rgb { 107 178 178 }
+	tags = { german_gfx }
+	culture_groups = { baltic_group }
+	# source_file = 00_baltic.txt
+}
+

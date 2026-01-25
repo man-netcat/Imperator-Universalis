@@ -1,0 +1,222 @@
+# ===== anatolia =====
+
+# ION -> setup/countries/anatolia/ionian_league.txt
+ION = {
+	color = rgb { 115 250 28 }
+}
+
+# CIA -> setup/countries/anatolia/caria.txt
+CIA = {
+	color = rgb { 77 32 105 }
+}
+
+# KNI -> setup/countries/anatolia/knidos.txt
+KNI = {
+	color = rgb { 23 88 88 }
+}
+
+# IOA -> setup/countries/anatolia/aeolia.txt
+IOA = {
+	color = rgb { 22 78 33 }
+}
+
+# CDD -> setup/countries/anatolia/calchedon.txt
+CDD = {
+	color = rgb { 15 99 22 }
+}
+
+# KIO -> setup/countries/anatolia/kios.txt
+KIO = {
+	color = rgb { 44 32 125 }
+}
+
+# SNP -> setup/countries/anatolia/sinope.txt
+SNP = {
+	color = rgb { 12 125 111 }
+}
+
+# AST -> setup/countries/anatolia/astakos.txt
+AST = {
+	color = rgb { 132 15 161 }
+}
+
+# KZK -> setup/countries/anatolia/kyzikos.txt
+KZK = {
+	color = rgb { 44 66 97 }
+}
+
+# AMS -> setup/countries/anatolia/amisos.txt
+AMS = {
+	color = rgb { 200 33 65 }
+}
+
+# HKS -> setup/countries/anatolia/halikarnassos.txt
+HKS = {
+	color = rgb { 150 25 205 }
+}
+
+# KRS -> setup/countries/anatolia/kerasous.txt
+KRS = {
+	color = rgb { 30 45 99 }
+}
+
+# KYA -> setup/countries/anatolia/kotyora.txt
+KYA = {
+	color = rgb { 97 105 55 }
+}
+
+# PRY -> setup/countries/anatolia/phrygia.txt
+PRY = {
+	color = rgb { 246 223 15 }
+}
+
+# RHO -> setup/countries/anatolia/rhodes.txt
+RHO = {
+	color = rgb { 215 59 28 }
+}
+
+# BIT -> setup/countries/anatolia/bithynia.txt
+BIT = {
+	color = rgb { 117 185 234 }
+}
+
+# HCP -> setup/countries/anatolia/heraclea_pontica.txt
+HCP = {
+	color = rgb { 155 28 28 }
+}
+
+# CAP -> setup/countries/anatolia/cappadocia.txt
+CAP = {
+	color = rgb { 163 151 93 }
+}
+
+# PON -> setup/countries/anatolia/pontus.txt
+PON = {
+	color = rgb { 149 101 186 }
+}
+
+# PAP -> setup/countries/anatolia/paphlagonia.txt
+PAP = {
+	color = rgb { 32 10 166 }
+}
+
+# SLG -> setup/countries/anatolia/selgia.txt
+SLG = {
+	color = rgb { 87 0 84 }
+}
+
+# TRM -> setup/countries/anatolia/termessia.txt
+TRM = {
+	color = rgb { 16 72 215 }
+}
+
+# SSG -> setup/countries/anatolia/sagalassia.txt
+SSG = {
+	color = rgb { 93 48 0 }
+}
+
+# KTN -> setup/countries/anatolia/kotennia.txt
+KTN = {
+	color = rgb { 153 102 255 }
+}
+
+# PDL -> setup/countries/anatolia/pednelissia.txt
+PDL = {
+	color = rgb { 255 224 254 }
+}
+
+# HMD -> setup/countries/anatolia/homanadia.txt
+HMD = {
+	color = rgb { 153 204 0 }
+}
+
+# SMS -> setup/countries/anatolia/sesamos.txt
+SMS = {
+	color = rgb { 255 255 204 }
+}
+
+# TIE -> setup/countries/anatolia/tieion.txt
+TIE = {
+	color = rgb { 70 234 48 }
+}
+
+# LYC -> setup/countries/anatolia/lycia.txt
+LYC = {
+	color = rgb { 208 0 0 }
+}
+
+# ISU -> setup/countries/anatolia/isauria.txt
+ISU = {
+	color = rgb { 33 45 205 }
+}
+
+# LAR -> setup/countries/anatolia/larandia.txt
+LAR = {
+	color = rgb { 191 76 0 }
+}
+
+# MYD -> setup/countries/anatolia/mariandynia.txt
+MYD = {
+	color = rgb { 71 148 145 }
+}
+
+# AKY -> setup/countries/anatolia/arykandia.txt
+AKY = {
+	color = rgb { 255 50 156 }
+}
+
+# ORO -> setup/countries/anatolia/oroandia.txt
+ORO = {
+	color = rgb { 255 215 139 }
+}
+
+# ABL -> setup/countries/anatolia/ambladia.txt
+ABL = {
+	color = rgb { 71 218 20 }
+}
+
+# ISI -> setup/countries/anatolia/isindia.txt
+ISI = {
+	color = rgb { 6 58 54 }
+}
+
+# LAL -> setup/countries/anatolia/lalasia.txt
+LAL = {
+	color = rgb { 38 70 17 }
+}
+
+# KEN -> setup/countries/anatolia/kennataia.txt
+KEN = {
+	color = rgb { 85 45 28 }
+}
+
+# OEO -> setup/countries/anatolia/oenoandia.txt
+OEO = {
+	color = rgb { 123 118 30 }
+}
+
+# KIB -> setup/countries/anatolia/kibyratia.txt
+KIB = {
+	color = rgb { 39 203 244 }
+}
+
+# OML -> setup/countries/anatolia/ormelia.txt
+OML = {
+	color = rgb { 11 93 0 }
+}
+
+# TYM -> setup/countries/anatolia/tymandia.txt
+TYM = {
+	color = rgb { 189 255 62 }
+}
+
+# KAK -> setup/countries/anatolia/kaukonia.txt
+KAK = {
+	color = rgb { 127 61 0 }
+}
+
+# OBE -> setup/countries/anatolia/olbe.txt
+OBE = {
+	color = rgb { 130 17 11 }
+}
+

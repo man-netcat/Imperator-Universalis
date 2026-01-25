@@ -1,0 +1,172 @@
+# ===== germania =====
+
+# BST -> setup/countries/germania/bastarnae.txt
+BST = {
+	color = rgb { 191 70 12 }
+}
+
+# SXS -> setup/countries/germania/saxones.txt
+SXS = {
+	color = rgb { 11 170 212 }
+}
+
+# CMB -> setup/countries/germania/cimbria.txt
+CMB = {
+	color = rgb { 75 75 76 }
+}
+
+# VDL -> setup/countries/germania/aetelrugia.txt
+VDL = {
+	color = rgb { 189 130 73 }
+}
+
+# TIT -> setup/countries/germania/teutonia.txt
+TIT = {
+	color = rgb { 175 175 90 }
+}
+
+# GIT -> setup/countries/germania/gutonia.txt
+GIT = {
+	color = rgb { 50 180 50 }
+}
+
+# SWE -> setup/countries/germania/suionia.txt
+SWE = {
+	color = rgb { 150 108 150 }
+}
+
+# RUG -> setup/countries/germania/grania.txt
+RUG = {
+	color = rgb { 189 179 20 }
+}
+
+# RAM -> setup/countries/germania/raumaricia.txt
+RAM = {
+	color = rgb { 121 90 119 }
+}
+
+# HRE -> setup/countries/germania/herules.txt
+HRE = {
+	color = rgb { 30 93 209 }
+}
+
+# VRI -> setup/countries/germania/varinia.txt
+VRI = {
+	color = rgb { 210 200 200 }
+}
+
+# LGI -> setup/countries/germania/lugia.txt
+LGI = {
+	color = rgb { 110 7 81 }
+}
+
+# ANG -> setup/countries/germania/anglia.txt
+ANG = {
+	color = rgb { 140 37 40 }
+}
+
+# AES -> setup/countries/germania/aestia.txt
+AES = {
+	color = rgb { 98 97 1 }
+}
+
+# LVA -> setup/countries/germania/lemovia.txt
+LVA = {
+	color = rgb { 117 9 119 }
+}
+
+# SMN -> setup/countries/germania/semnonia.txt
+SMN = {
+	color = rgb { 111 161 92 }
+}
+
+# LGB -> setup/countries/germania/langobardia.txt
+LGB = {
+	color = rgb { 175 111 16 }
+}
+
+# MCM -> setup/countries/germania/marcomannia.txt
+MCM = {
+	color = rgb { 9 11 9 }
+}
+
+# CHC -> setup/countries/germania/chaucia.txt
+CHC = {
+	color = rgb { 221 13 99 }
+}
+
+# BUR -> setup/countries/germania/burgundia.txt
+BUR = {
+	color = rgb { 231 10 41 }
+}
+
+# DAN -> setup/countries/germania/dania.txt
+DAN = {
+	color = rgb { 182 203 126 }
+}
+
+# LEU -> setup/countries/germania/leuonia.txt
+LEU = {
+	color = rgb { 11 146 231 }
+}
+
+# GTH -> setup/countries/germania/gothonia.txt
+GTH = {
+	color = rgb { 170 211 67 }
+}
+
+# RGG -> setup/countries/germania/rugiagermania.txt
+RGG = {
+	color = rgb { 39 100 2 }
+}
+
+# SCI -> setup/countries/germania/sciria.txt
+SCI = {
+	color = rgb { 69 109 144 }
+}
+
+# FOS -> setup/countries/germania/fosia.txt
+FOS = {
+	color = rgb { 201 11 12 }
+}
+
+# REU -> setup/countries/germania/reudignia.txt
+REU = {
+	color = rgb { 44 125 244 }
+}
+
+# AVO -> setup/countries/germania/aviones.txt
+AVO = {
+	color = rgb { 160 155 4 }
+}
+
+# CRS -> setup/countries/germania/cherusci.txt
+CRS = {
+	color = rgb { 109 66 217 }
+}
+
+# EUD -> setup/countries/germania/eudosi.txt
+EUD = {
+	color = rgb { 33 91 92 }
+}
+
+# AGR -> setup/countries/germania/angrivaria.txt
+AGR = {
+	color = rgb { 100 1 10 }
+}
+
+# VND -> setup/countries/germania/venedia.txt
+VND = {
+	color = rgb { 140 109 140 }
+}
+
+# SUD -> setup/countries/germania/sudinoia.txt
+SUD = {
+	color = rgb { 2 3 157 }
+}
+
+# SLO -> setup/countries/germania/saloia.txt
+SLO = {
+	color = rgb { 28 180 95 }
+}
+

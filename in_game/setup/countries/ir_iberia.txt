@@ -1,0 +1,517 @@
+# ===== iberia =====
+
+# BLD -> setup/countries/iberia/balearides.txt
+BLD = {
+	color = rgb { 224 229 66 }
+}
+
+# ASU -> setup/countries/iberia/astures.txt
+ASU = {
+	color = rgb { 25 85 181 }
+}
+
+# AUI -> setup/countries/iberia/ausetani.txt
+AUI = {
+	color = rgb { 30 178 47 }
+}
+
+# AUG -> setup/countries/iberia/autrigones.txt
+AUG = {
+	color = rgb { 112 7 58 }
+}
+
+# BAI -> setup/countries/iberia/bastetani.txt
+BAI = {
+	color = rgb { 14 17 104 }
+}
+
+# BAL -> setup/countries/iberia/bastuli.txt
+BAL = {
+	color = rgb { 109 135 17 }
+}
+
+# CLL -> setup/countries/iberia/callaeci.txt
+CLL = {
+	color = rgb { 25 127 127 }
+}
+
+# CBI -> setup/countries/iberia/cantabri.txt
+CBI = {
+	color = rgb { 135 54 71 }
+}
+
+# CRI -> setup/countries/iberia/caristii.txt
+CRI = {
+	color = rgb { 84 74 124 }
+}
+
+# CRP -> setup/countries/iberia/carpetani.txt
+CRP = {
+	color = rgb { 88 188 77 }
+}
+
+# CLB -> setup/countries/iberia/celtiberi.txt
+CLB = {
+	color = rgb { 173 169 43 }
+}
+
+# CLC -> setup/countries/iberia/celtici.txt
+CLC = {
+	color = rgb { 208 229 206 }
+}
+
+# CNT -> setup/countries/iberia/contestani.txt
+CNT = {
+	color = rgb { 20 89 135 }
+}
+
+# CNU -> setup/countries/iberia/couneii.txt
+CNU = {
+	color = rgb { 142 122 78 }
+}
+
+# EDT -> setup/countries/iberia/edetani.txt
+EDT = {
+	color = rgb { 175 14 111 }
+}
+
+# ICV -> setup/countries/iberia/ilercavones.txt
+ICV = {
+	color = rgb { 60 76 68 }
+}
+
+# ILG -> setup/countries/iberia/ilergetes.txt
+ILG = {
+	color = rgb { 150 57 57 }
+}
+
+# IDK -> setup/countries/iberia/indiketes.txt
+IDK = {
+	color = rgb { 211 198 12 }
+}
+
+# LCT -> setup/countries/iberia/lacetani.txt
+LCT = {
+	color = rgb { 106 141 145 }
+}
+
+# ORT -> setup/countries/iberia/oretani.txt
+ORT = {
+	color = rgb { 153 131 84 }
+}
+
+# TUR -> setup/countries/iberia/turdetani.txt
+TUR = {
+	color = rgb { 74 5 79 }
+}
+
+# VCI -> setup/countries/iberia/vaccaei.txt
+VCI = {
+	color = rgb { 79 39 6 }
+}
+
+# VSC -> setup/countries/iberia/vascones.txt
+VSC = {
+	color = rgb { 226 214 204 }
+}
+
+# VET -> setup/countries/iberia/vettones.txt
+VET = {
+	color = rgb { 99 47 4 }
+}
+
+# EPO -> setup/countries/iberia/emporion.txt
+EPO = {
+	color = rgb { 39 198 95 }
+}
+
+# TAT -> setup/countries/iberia/tartessos.txt
+TAT = {
+	color = rgb { 165 14 14 }
+}
+
+# MST -> setup/countries/iberia/menesthei.txt
+MST = {
+	color = rgb { 100 170 224 }
+}
+
+# GAD -> setup/countries/iberia/gadir.txt
+GAD = {
+	color = rgb { 114 13 135 }
+}
+
+# MAT -> setup/countries/iberia/mastia.txt
+MAT = {
+	color = rgb { 12 47 104 }
+}
+
+# SGS -> setup/countries/iberia/saguntines.txt
+SGS = {
+	color = rgb { 120 60 240 }
+}
+
+# VAD -> setup/countries/iberia/varduli.txt
+VAD = {
+	color = rgb { 180 121 223 }
+}
+
+# ORM -> setup/countries/iberia/orgenomesci.txt
+ORM = {
+	color = rgb { 160 161 40 }
+}
+
+# AVG -> setup/countries/iberia/avarigini.txt
+AVG = {
+	color = rgb { 70 70 70 }
+}
+
+# COC -> setup/countries/iberia/concani.txt
+COC = {
+	color = rgb { 20 21 188 }
+}
+
+# CNI -> setup/countries/iberia/conisci.txt
+CNI = {
+	color = rgb { 150 78 141 }
+}
+
+# BLN -> setup/countries/iberia/blendii.txt
+BLN = {
+	color = rgb { 100 16 14 }
+}
+
+# MRC -> setup/countries/iberia/morecani.txt
+MRC = {
+	color = rgb { 220 210 188 }
+}
+
+# TMC -> setup/countries/iberia/tamarici.txt
+TMC = {
+	color = rgb { 20 210 188 }
+}
+
+# VDI -> setup/countries/iberia/vadini.txt
+VDI = {
+	color = rgb { 20 190 47 }
+}
+
+# AMC -> setup/countries/iberia/amaci.txt
+AMC = {
+	color = rgb { 171 17 225 }
+}
+
+# BDU -> setup/countries/iberia/bedunienses.txt
+BDU = {
+	color = rgb { 60 30 34 }
+}
+
+# GGR -> setup/countries/iberia/gigurri.txt
+GGR = {
+	color = rgb { 177 177 0 }
+}
+
+# LCN -> setup/countries/iberia/lancienses.txt
+LCN = {
+	color = rgb { 220 40 90 }
+}
+
+# LGO -> setup/countries/iberia/lugones.txt
+LGO = {
+	color = rgb { 60 166 143 }
+}
+
+# PSC -> setup/countries/iberia/paesici.txt
+PSC = {
+	color = rgb { 88 185 81 }
+}
+
+# SLI -> setup/countries/iberia/selini.txt
+SLI = {
+	color = rgb { 188 64 199 }
+}
+
+# SPT -> setup/countries/iberia/superatii.txt
+SPT = {
+	color = rgb { 181 50 14 }
+}
+
+# TBU -> setup/countries/iberia/tiburi.txt
+TBU = {
+	color = rgb { 180 167 255 }
+}
+
+# ZLA -> setup/countries/iberia/zoelae.txt
+ZLA = {
+	color = rgb { 13 255 80 }
+}
+
+# AEB -> setup/countries/iberia/aebocosi.txt
+AEB = {
+	color = rgb { 61 166 190 }
+}
+
+# ABO -> setup/countries/iberia/albiones.txt
+ABO = {
+	color = rgb { 67 76 199 }
+}
+
+# ARR -> setup/countries/iberia/arroni.txt
+ARR = {
+	color = rgb { 90 65 31 }
+}
+
+# BED -> setup/countries/iberia/baedi.txt
+BED = {
+	color = rgb { 88 77 4 }
+}
+
+# BAN -> setup/countries/iberia/banienses.txt
+BAN = {
+	color = rgb { 111 12 200 }
+}
+
+# BRC -> setup/countries/iberia/bracari.txt
+BRC = {
+	color = rgb { 181 225 37 }
+}
+
+# CLD -> setup/countries/iberia/caladuni.txt
+CLD = {
+	color = rgb { 19 240 132 }
+}
+
+# COP -> setup/countries/iberia/copori.txt
+COP = {
+	color = rgb { 227 144 144 }
+}
+
+# GRV -> setup/countries/iberia/gravi.txt
+GRV = {
+	color = rgb { 100 100 188 }
+}
+
+# INT -> setup/countries/iberia/interamici.txt
+INT = {
+	color = rgb { 240 240 100 }
+}
+
+# LUN -> setup/countries/iberia/leuni.txt
+LUN = {
+	color = rgb { 81 191 90 }
+}
+
+# NRI -> setup/countries/iberia/neri.txt
+NRI = {
+	color = rgb { 131 14 255 }
+}
+
+# SUR -> setup/countries/iberia/seurri.txt
+SUR = {
+	color = rgb { 27 67 132 }
+}
+
+# SLN -> setup/countries/iberia/sileni.txt
+SLN = {
+	color = rgb { 80 0 1 }
+}
+
+# TMG -> setup/countries/iberia/tamagani.txt
+TMG = {
+	color = rgb { 18 12 66 }
+}
+
+# VRR -> setup/countries/iberia/varrini.txt
+VRR = {
+	color = rgb { 127 167 232 }
+}
+
+# CSS -> setup/countries/iberia/cessetani.txt
+CSS = {
+	color = rgb { 111 108 147 }
+}
+
+# TDL -> setup/countries/iberia/turduli.txt
+TDL = {
+	color = rgb { 133 22 15 }
+}
+
+# PAE -> setup/countries/iberia/paesuri.txt
+PAE = {
+	color = rgb { 116 216 200 }
+}
+
+# LSI -> setup/countries/iberia/lusitani.txt
+LSI = {
+	color = rgb { 33 145 22 }
+}
+
+# TPL -> setup/countries/iberia/tapoli.txt
+TPL = {
+	color = rgb { 16 18 19 }
+}
+
+# SFI -> setup/countries/iberia/sefia.txt
+SFI = {
+	color = rgb { 100 90 1 }
+}
+
+# CMS -> setup/countries/iberia/cempsia.txt
+CMS = {
+	color = rgb { 38 102 36 }
+}
+
+# TDT -> setup/countries/iberia/oppidania.txt
+TDT = {
+	color = rgb { 21 201 74 }
+}
+
+# EBL -> setup/countries/iberia/elbocori.txt
+EBL = {
+	color = rgb { 60 30 80 }
+}
+
+# IGD -> setup/countries/iberia/igaedetania.txt
+IGD = {
+	color = rgb { 12 70 71 }
+}
+
+# LCC -> setup/countries/iberia/lanciencia.txt
+LCC = {
+	color = rgb { 112 70 71 }
+}
+
+# AVA -> setup/countries/iberia/aravia.txt
+AVA = {
+	color = rgb { 99 100 139 }
+}
+
+# TLS -> setup/countries/iberia/taluria.txt
+TLS = {
+	color = rgb { 109 99 41 }
+}
+
+# BDL -> setup/countries/iberia/bardulia.txt
+BDL = {
+	color = rgb { 238 121 167 }
+}
+
+# TDI -> setup/countries/iberia/turmodigia.txt
+TDI = {
+	color = rgb { 80 10 19 }
+}
+
+# AVC -> setup/countries/iberia/arevacia.txt
+AVC = {
+	color = rgb { 16 99 103 }
+}
+
+# BLT -> setup/countries/iberia/bletonisia.txt
+BLT = {
+	color = rgb { 216 199 31 }
+}
+
+# CLU -> setup/countries/iberia/caluria.txt
+CLU = {
+	color = rgb { 45 95 71 }
+}
+
+# CRE -> setup/countries/iberia/coerensia.txt
+CRE = {
+	color = rgb { 145 195 171 }
+}
+
+# CLO -> setup/countries/iberia/calontiensia.txt
+CLO = {
+	color = rgb { 166 11 190 }
+}
+
+# LSN -> setup/countries/iberia/lusonia.txt
+LSN = {
+	color = rgb { 69 69 69 }
+}
+
+# TTH -> setup/countries/iberia/tithia.txt
+TTH = {
+	color = rgb { 216 180 111 }
+}
+
+# BLL -> setup/countries/iberia/bellia.txt
+BLL = {
+	color = rgb { 141 90 81 }
+}
+
+# BOL -> setup/countries/iberia/boletia.txt
+BOL = {
+	color = rgb { 114 60 219 }
+}
+
+# OLC -> setup/countries/iberia/olcadia.txt
+OLC = {
+	color = rgb { 214 160 219 }
+}
+
+# LBT -> setup/countries/iberia/lobetania.txt
+LBT = {
+	color = rgb { 183 105 219 }
+}
+
+# DNQ -> setup/countries/iberia/duniquia.txt
+DNQ = {
+	color = rgb { 44 30 80 }
+}
+
+# MOC -> setup/countries/iberia/moeniccia.txt
+MOC = {
+	color = rgb { 144 230 80 }
+}
+
+# AEL -> setup/countries/iberia/aelariquia.txt
+AEL = {
+	color = rgb { 31 12 7 }
+}
+
+# TRQ -> setup/countries/iberia/tirtaliquia.txt
+TRQ = {
+	color = rgb { 90 30 64 }
+}
+
+# DOA -> setup/countries/iberia/duitiquia.txt
+DOA = {
+	color = rgb { 2 160 177 }
+}
+
+# SLC -> setup/countries/iberia/solicia.txt
+SLC = {
+	color = rgb { 12 60 177 }
+}
+
+# SDT -> setup/countries/iberia/sedetania.txt
+SDT = {
+	color = rgb { 48 180 31 }
+}
+
+# DEI -> setup/countries/iberia/deitania.txt
+DEI = {
+	color = rgb { 99 108 77 }
+}
+
+# EBI -> setup/countries/iberia/eburania.txt
+EBI = {
+	color = rgb { 225 0 56 }
+}
+
+# MTS -> setup/countries/iberia/mantesania.txt
+MTS = {
+	color = rgb { 66 250 14 }
+}
+
+# GRM -> setup/countries/iberia/garmania.txt
+GRM = {
+	color = rgb { 121 70 111 }
+}
+
+# IBA -> setup/countries/iberia/ibasim.txt
+IBA = {
+	color = rgb { 194 39 199 }
+}
+

@@ -1,0 +1,162 @@
+# ===== britannia =====
+
+# COR -> setup/countries/britannia/coriondia.txt
+COR = {
+	color = rgb { 185 185 20 }
+}
+
+# CAT -> setup/countries/britannia/cantiaci.txt
+CAT = {
+	color = rgb { 76 17 122 }
+}
+
+# DUR -> setup/countries/britannia/durotriges.txt
+DUR = {
+	color = rgb { 51 214 73 }
+}
+
+# PAS -> setup/countries/britannia/parisi.txt
+PAS = {
+	color = rgb { 219 10 10 }
+}
+
+# DUM -> setup/countries/britannia/dumnonii.txt
+DUM = {
+	color = rgb { 242 217 29 }
+}
+
+# ICE -> setup/countries/britannia/iceni.txt
+ICE = {
+	color = rgb { 178 26 57 }
+}
+
+# SIR -> setup/countries/britannia/silures.txt
+SIR = {
+	color = rgb { 173 19 132 }
+}
+
+# DEM -> setup/countries/britannia/demetae.txt
+DEM = {
+	color = rgb { 51 132 132 }
+}
+
+# COI -> setup/countries/britannia/coritani.txt
+COI = {
+	color = rgb { 173 130 43 }
+}
+
+# DOB -> setup/countries/britannia/dobunni.txt
+DOB = {
+	color = rgb { 79 82 124 }
+}
+
+# COV -> setup/countries/britannia/cornovii.txt
+COV = {
+	color = rgb { 184 188 54 }
+}
+
+# ORD -> setup/countries/britannia/ordovices.txt
+ORD = {
+	color = rgb { 146 211 190 }
+}
+
+# DEC -> setup/countries/britannia/deceangli.txt
+DEC = {
+	color = rgb { 196 165 135 }
+}
+
+# BRI -> setup/countries/britannia/brigantes.txt
+BRI = {
+	color = rgb { 68 109 53 }
+}
+
+# CAV -> setup/countries/britannia/carvetii.txt
+CAV = {
+	color = rgb { 153 81 121 }
+}
+
+# TRI -> setup/countries/britannia/trinovantes.txt
+TRI = {
+	color = rgb { 155 95 43 }
+}
+
+# CAL -> setup/countries/britannia/caledonia.txt
+CAL = {
+	color = rgb { 13 195 13 }
+}
+
+# VTD -> setup/countries/britannia/votadinia.txt
+VTD = {
+	color = rgb { 212 188 78 }
+}
+
+# DNN -> setup/countries/britannia/damnonia.txt
+DNN = {
+	color = rgb { 12 88 78 }
+}
+
+# TXL -> setup/countries/britannia/taexalia.txt
+TXL = {
+	color = rgb { 213 195 13 }
+}
+
+# ULT -> setup/countries/britannia/ulutia.txt
+ULT = {
+	color = rgb { 53 41 41 }
+}
+
+# DAR -> setup/countries/britannia/darinia.txt
+DAR = {
+	color = rgb { 83 21 21 }
+}
+
+# ELA -> setup/countries/britannia/eblania.txt
+ELA = {
+	color = rgb { 27 85 94 }
+}
+
+# MNA -> setup/countries/britannia/manapia.txt
+MNA = {
+	color = rgb { 223 29 40 }
+}
+
+# CAU -> setup/countries/britannia/caucia.txt
+CAU = {
+	color = rgb { 30 200 9 }
+}
+
+# IVE -> setup/countries/britannia/ivernia.txt
+IVE = {
+	color = rgb { 103 2 98 }
+}
+
+# USD -> setup/countries/britannia/usdia.txt
+USD = {
+	color = rgb { 20 20 225 }
+}
+
+# ROB -> setup/countries/britannia/robogdia.txt
+ROB = {
+	color = rgb { 180 29 29 }
+}
+
+# VEN -> setup/countries/britannia/venicnia.txt
+VEN = {
+	color = rgb { 71 90 2 }
+}
+
+# BGA -> setup/countries/britannia/brigantia.txt
+BGA = {
+	color = rgb { 160 20 245 }
+}
+
+# CAN -> setup/countries/britannia/carnonacia.txt
+CAN = {
+	color = rgb { 145 19 193 }
+}
+
+# CON -> setup/countries/britannia/cornavia.txt
+CON = {
+	color = rgb { 49 231 102 }
+}
+

@@ -1,0 +1,152 @@
+# ===== africa =====
+
+# CAR -> setup/countries/africa/carthage.txt
+CAR = {
+	color = rgb { 74 174 85 }
+}
+
+# EGY -> setup/countries/africa/egypt.txt
+EGY = {
+	color = rgb { 143 141 128 }
+}
+
+# MSS -> setup/countries/africa/massaesylia.txt
+MSS = {
+	color = rgb { 40 79 199 }
+}
+
+# MSY -> setup/countries/africa/massylia.txt
+MSY = {
+	color = rgb { 213 80 81 }
+}
+
+# CYR -> setup/countries/africa/cyrenaica.txt
+CYR = {
+	color = rgb { 34 171 230 }
+}
+
+# MSL -> setup/countries/africa/musulami.txt
+MSL = {
+	color = rgb { 248 50 40 }
+}
+
+# MAU -> setup/countries/africa/mauretania.txt
+MAU = {
+	color = rgb { 180 209 205 }
+}
+
+# KSH -> setup/countries/africa/kush.txt
+KSH = {
+	color = rgb { 86 13 37 }
+}
+
+# AXM -> setup/countries/africa/aksum.txt
+AXM = {
+	color = rgb { 39 130 27 }
+}
+
+# MYL -> setup/countries/africa/mosylon.txt
+MYL = {
+	color = rgb { 16 241 198 }
+}
+
+# OPO -> setup/countries/africa/opone.txt
+OPO = {
+	color = rgb { 100 9 98 }
+}
+
+# MND -> setup/countries/africa/mundus.txt
+MND = {
+	color = rgb { 240 67 198 }
+}
+
+# AVL -> setup/countries/africa/avalites.txt
+AVL = {
+	color = rgb { 100 209 98 }
+}
+
+# ADO -> setup/countries/africa/adouli.txt
+ADO = {
+	color = rgb { 103 201 201 }
+}
+
+# YEH -> setup/countries/africa/yeha.txt
+YEH = {
+	color = rgb { 222 80 21 }
+}
+
+# GWN -> setup/countries/africa/gwanara.txt
+GWN = {
+	color = rgb { 80 20 99 }
+}
+
+# BOR -> setup/countries/africa/boras.txt
+BOR = {
+	color = rgb { 11 15 41 }
+}
+
+# AUT -> setup/countries/africa/alut.txt
+AUT = {
+	color = rgb { 71 180 221 }
+}
+
+# BMY -> setup/countries/africa/blemmyes.txt
+BMY = {
+	color = rgb { 102 19 111 }
+}
+
+# ACO -> setup/countries/africa/achola.txt
+ACO = {
+	color = rgb { 129 225 60 }
+}
+
+# HDR -> setup/countries/africa/hadrametum.txt
+HDR = {
+	color = rgb { 23 23 99 }
+}
+
+# LPT -> setup/countries/africa/leptis.txt
+LPT = {
+	color = rgb { 124 50 180 }
+}
+
+# TPS -> setup/countries/africa/thapsus.txt
+TPS = {
+	color = rgb { 33 99 33 }
+}
+
+# UTC -> setup/countries/africa/utica.txt
+UTC = {
+	color = rgb { 174 23 55 }
+}
+
+# TRP -> setup/countries/africa/tripolitania.txt
+TRP = {
+	color = rgb { 135 11 181 }
+}
+
+# EMP -> setup/countries/africa/emporia.txt
+EMP = {
+	color = rgb { 196 2 93 }
+}
+
+# IOL -> setup/countries/africa/iol.txt
+IOL = {
+	color = rgb { 127 71 241 }
+}
+
+# KUA -> setup/countries/africa/kerkouane.txt
+KUA = {
+	color = rgb { 36 210 27 }
+}
+
+# DOD -> setup/countries/africa/dodekaschoinos.txt
+DOD = {
+	color = rgb { 38 97 156 }
+}
+
+# DAL -> setup/countries/africa/elaia.txt
+DAL = {
+	color = rgb { 70 35 45 }
+}
+

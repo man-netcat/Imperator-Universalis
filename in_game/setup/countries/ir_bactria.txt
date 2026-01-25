@@ -1,0 +1,32 @@
+# ===== bactria =====
+
+# BAC -> setup/countries/bactria/bactria.txt
+BAC = {
+	color = rgb { 208 24 58 }
+}
+
+# PRN -> setup/countries/bactria/parni.txt
+PRN = {
+	color = rgb { 131 175 103 }
+}
+
+# ZNT -> setup/countries/bactria/zanthi.txt
+ZNT = {
+	color = rgb { 180 141 109 }
+}
+
+# PSS -> setup/countries/bactria/pissuri.txt
+PSS = {
+	color = rgb { 101 141 149 }
+}
+
+# KRZ -> setup/countries/bactria/kharesmia.txt
+KRZ = {
+	color = rgb { 101 190 119 }
+}
+
+# ARS -> setup/countries/bactria/arachosia.txt
+ARS = {
+	color = rgb { 13 124 65 }
+}
+

@@ -1,0 +1,9 @@
+# Converted from Imperator group numidian
+
+numidian_culture = {
+	color = rgb { 102 66 51 }
+	tags = { numidian_gfx }
+	culture_groups = { numidian_group }
+	# source_file = 00_numidian.txt
+}
+

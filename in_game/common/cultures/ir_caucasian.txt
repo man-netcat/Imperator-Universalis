@@ -1,0 +1,9 @@
+# Converted from Imperator group caucasian
+
+caucasian_culture = {
+	color = rgb { 173 152 95 }
+	tags = { persian_gfx }
+	culture_groups = { caucasian_group }
+	# source_file = 00_caucasian.txt
+}
+
