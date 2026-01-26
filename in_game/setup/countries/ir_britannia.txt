@@ -3,224 +3,224 @@
 # TXL -> setup/countries/britannia/taexalia.txt
 TXL = {
 	color = rgb { 213 195 13 }
-	culture_definition = taexalian
-	religion_definition = druidism
+	culture_definition = ir_taexalian_culture
+	religion_definition = ir_druidism_religion
 }
 
 # CAL -> setup/countries/britannia/caledonia.txt
 CAL = {
 	color = rgb { 13 195 13 }
-	culture_definition = caledonian
-	religion_definition = druidism
+	culture_definition = ir_caledonian_culture
+	religion_definition = ir_druidism_religion
 }
 
 # VTD -> setup/countries/britannia/votadinia.txt
 VTD = {
 	color = rgb { 212 188 78 }
-	culture_definition = votadinian
-	religion_definition = druidism
+	culture_definition = ir_votadinian_culture
+	religion_definition = ir_druidism_religion
 }
 
 # DNN -> setup/countries/britannia/damnonia.txt
 DNN = {
 	color = rgb { 12 88 78 }
-	culture_definition = damnonian
-	religion_definition = druidism
+	culture_definition = ir_damnonian_culture
+	religion_definition = ir_druidism_religion
 }
 
 # ULT -> setup/countries/britannia/ulutia.txt
 ULT = {
 	color = rgb { 53 41 41 }
-	culture_definition = hibernian
-	religion_definition = druidism
+	culture_definition = ir_hibernian_culture
+	religion_definition = ir_druidism_religion
 }
 
 # CAT -> setup/countries/britannia/cantiaci.txt
 CAT = {
 	color = rgb { 76 17 122 }
-	culture_definition = cantian
-	religion_definition = druidism
+	culture_definition = ir_cantian_culture
+	religion_definition = ir_druidism_religion
 }
 
 # DUR -> setup/countries/britannia/durotriges.txt
 DUR = {
 	color = rgb { 51 214 73 }
-	culture_definition = durotrigan
-	religion_definition = druidism
+	culture_definition = ir_durotrigan_culture
+	religion_definition = ir_druidism_religion
 }
 
 # PAS -> setup/countries/britannia/parisi.txt
 PAS = {
 	color = rgb { 219 10 10 }
-	culture_definition = brigantic
-	religion_definition = druidism
+	culture_definition = ir_brigantic_culture
+	religion_definition = ir_druidism_religion
 }
 
 # DUM -> setup/countries/britannia/dumnonii.txt
 DUM = {
 	color = rgb { 242 217 29 }
-	culture_definition = dumnonian
-	religion_definition = druidism
+	culture_definition = ir_dumnonian_culture
+	religion_definition = ir_druidism_religion
 }
 
 # ICE -> setup/countries/britannia/iceni.txt
 ICE = {
 	color = rgb { 178 26 57 }
-	culture_definition = iceni
-	religion_definition = druidism
+	culture_definition = ir_iceni_culture
+	religion_definition = ir_druidism_religion
 }
 
 # SIR -> setup/countries/britannia/silures.txt
 SIR = {
 	color = rgb { 173 19 132 }
-	culture_definition = demetian
-	religion_definition = druidism
+	culture_definition = ir_demetian_culture
+	religion_definition = ir_druidism_religion
 }
 
 # DEM -> setup/countries/britannia/demetae.txt
 DEM = {
 	color = rgb { 51 132 132 }
-	culture_definition = demetian
-	religion_definition = druidism
+	culture_definition = ir_demetian_culture
+	religion_definition = ir_druidism_religion
 }
 
 # COI -> setup/countries/britannia/coritani.txt
 COI = {
 	color = rgb { 173 130 43 }
-	culture_definition = coritani
-	religion_definition = druidism
+	culture_definition = ir_coritani_culture
+	religion_definition = ir_druidism_religion
 }
 
 # DOB -> setup/countries/britannia/dobunni.txt
 DOB = {
 	color = rgb { 79 82 124 }
-	culture_definition = dobunnian
-	religion_definition = druidism
+	culture_definition = ir_dobunnian_culture
+	religion_definition = ir_druidism_religion
 }
 
 # COV -> setup/countries/britannia/cornovii.txt
 COV = {
 	color = rgb { 184 188 54 }
-	culture_definition = cornovian
-	religion_definition = druidism
+	culture_definition = ir_cornovian_culture
+	religion_definition = ir_druidism_religion
 }
 
 # ORD -> setup/countries/britannia/ordovices.txt
 ORD = {
 	color = rgb { 146 211 190 }
-	culture_definition = ordovitian
-	religion_definition = druidism
+	culture_definition = ir_ordovitian_culture
+	religion_definition = ir_druidism_religion
 }
 
 # DEC -> setup/countries/britannia/deceangli.txt
 DEC = {
 	color = rgb { 196 165 135 }
-	culture_definition = ordovitian
-	religion_definition = druidism
+	culture_definition = ir_ordovitian_culture
+	religion_definition = ir_druidism_religion
 }
 
 # BRI -> setup/countries/britannia/brigantes.txt
 BRI = {
 	color = rgb { 68 109 53 }
-	culture_definition = brigantic
-	religion_definition = druidism
+	culture_definition = ir_brigantic_culture
+	religion_definition = ir_druidism_religion
 }
 
 # CAV -> setup/countries/britannia/carvetii.txt
 CAV = {
 	color = rgb { 153 81 121 }
-	culture_definition = brigantic
-	religion_definition = druidism
+	culture_definition = ir_brigantic_culture
+	religion_definition = ir_druidism_religion
 }
 
 # TRI -> setup/countries/britannia/trinovantes.txt
 TRI = {
 	color = rgb { 155 95 43 }
-	culture_definition = trinovantian
-	religion_definition = druidism
+	culture_definition = ir_trinovantian_culture
+	religion_definition = ir_druidism_religion
 }
 
 # DAR -> setup/countries/britannia/darinia.txt
 DAR = {
 	color = rgb { 83 21 21 }
-	culture_definition = hibernian
-	religion_definition = druidism
+	culture_definition = ir_hibernian_culture
+	religion_definition = ir_druidism_religion
 }
 
 # ELA -> setup/countries/britannia/eblania.txt
 ELA = {
 	color = rgb { 27 85 94 }
-	culture_definition = hibernian
-	religion_definition = druidism
+	culture_definition = ir_hibernian_culture
+	religion_definition = ir_druidism_religion
 }
 
 # MNA -> setup/countries/britannia/manapia.txt
 MNA = {
 	color = rgb { 223 29 40 }
-	culture_definition = hibernian
-	religion_definition = druidism
+	culture_definition = ir_hibernian_culture
+	religion_definition = ir_druidism_religion
 }
 
 # CAU -> setup/countries/britannia/caucia.txt
 CAU = {
 	color = rgb { 30 200 9 }
-	culture_definition = hibernian
-	religion_definition = druidism
+	culture_definition = ir_hibernian_culture
+	religion_definition = ir_druidism_religion
 }
 
 # COR -> setup/countries/britannia/coriondia.txt
 COR = {
 	color = rgb { 185 185 20 }
-	culture_definition = hibernian
-	religion_definition = druidism
+	culture_definition = ir_hibernian_culture
+	religion_definition = ir_druidism_religion
 }
 
 # IVE -> setup/countries/britannia/ivernia.txt
 IVE = {
 	color = rgb { 103 2 98 }
-	culture_definition = hibernian
-	religion_definition = druidism
+	culture_definition = ir_hibernian_culture
+	religion_definition = ir_druidism_religion
 }
 
 # USD -> setup/countries/britannia/usdia.txt
 USD = {
 	color = rgb { 20 20 225 }
-	culture_definition = hibernian
-	religion_definition = druidism
+	culture_definition = ir_hibernian_culture
+	religion_definition = ir_druidism_religion
 }
 
 # ROB -> setup/countries/britannia/robogdia.txt
 ROB = {
 	color = rgb { 180 29 29 }
-	culture_definition = hibernian
-	religion_definition = druidism
+	culture_definition = ir_hibernian_culture
+	religion_definition = ir_druidism_religion
 }
 
 # VEN -> setup/countries/britannia/venicnia.txt
 VEN = {
 	color = rgb { 71 90 2 }
-	culture_definition = hibernian
-	religion_definition = druidism
+	culture_definition = ir_hibernian_culture
+	religion_definition = ir_druidism_religion
 }
 
 # BGA -> setup/countries/britannia/brigantia.txt
 BGA = {
 	color = rgb { 160 20 245 }
-	culture_definition = hibernian
-	religion_definition = druidism
+	culture_definition = ir_hibernian_culture
+	religion_definition = ir_druidism_religion
 }
 
 # CAN -> setup/countries/britannia/carnonacia.txt
 CAN = {
 	color = rgb { 145 19 193 }
-	culture_definition = caledonian
-	religion_definition = druidism
+	culture_definition = ir_caledonian_culture
+	religion_definition = ir_druidism_religion
 }
 
 # CON -> setup/countries/britannia/cornavia.txt
 CON = {
 	color = rgb { 49 231 102 }
-	culture_definition = caledonian
-	religion_definition = druidism
+	culture_definition = ir_caledonian_culture
+	religion_definition = ir_druidism_religion
 }
 

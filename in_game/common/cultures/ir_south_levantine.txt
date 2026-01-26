@@ -1,65 +1,65 @@
 ﻿# Converted from Imperator group south_levantine
 
-hadhrami_culture = {
-	# no color
+ir_hadhrami_culture = {
+	color = rgb { 67 153 46 }
 	tags = { arabian_gfx }
-	culture_groups = { south_levantine_group }
+	culture_groups = { ir_south_levantine_group }
 	# source_file = 00_south_levantine.txt
 }
 
-qatabanian_culture = {
-	# no color
+ir_qatabanian_culture = {
+	color = rgb { 46 153 51 }
 	tags = { arabian_gfx }
-	culture_groups = { south_levantine_group }
+	culture_groups = { ir_south_levantine_group }
 	# source_file = 00_south_levantine.txt
 }
 
-sheban_culture = {
-	# no color
+ir_sheban_culture = {
+	color = rgb { 46 153 76 }
 	tags = { arabian_gfx }
-	culture_groups = { south_levantine_group }
+	culture_groups = { ir_south_levantine_group }
 	# source_file = 00_south_levantine.txt
 }
 
-minaean_culture = {
-	# no color
+ir_minaean_culture = {
+	color = rgb { 46 153 102 }
 	tags = { arabian_gfx }
-	culture_groups = { south_levantine_group }
+	culture_groups = { ir_south_levantine_group }
 	# source_file = 00_south_levantine.txt
 }
 
-himjar_culture = {
-	# no color
+ir_himjar_culture = {
+	color = rgb { 46 153 128 }
 	tags = { arabian_gfx }
-	culture_groups = { south_levantine_group }
+	culture_groups = { ir_south_levantine_group }
 	# source_file = 00_south_levantine.txt
 }
 
-makan_culture = {
-	# no color
+ir_makan_culture = {
+	color = rgb { 46 153 153 }
 	tags = { arabian_gfx }
-	culture_groups = { south_levantine_group }
+	culture_groups = { ir_south_levantine_group }
 	# source_file = 00_south_levantine.txt
 }
 
-taif_culture = {
-	# no color
+ir_taif_culture = {
+	color = rgb { 46 127 153 }
 	tags = { arabian_gfx }
-	culture_groups = { south_levantine_group }
+	culture_groups = { ir_south_levantine_group }
 	# source_file = 00_south_levantine.txt
 }
 
-thamudi_culture = {
-	# no color
+ir_thamudi_culture = {
+	color = rgb { 46 101 153 }
 	tags = { arabian_gfx }
-	culture_groups = { south_levantine_group }
+	culture_groups = { ir_south_levantine_group }
 	# source_file = 00_south_levantine.txt
 }
 
-qedarite_culture = {
-	# no color
+ir_qedarite_culture = {
+	color = rgb { 46 76 153 }
 	tags = { arabian_gfx }
-	culture_groups = { south_levantine_group }
+	culture_groups = { ir_south_levantine_group }
 	# source_file = 00_south_levantine.txt
 }
 

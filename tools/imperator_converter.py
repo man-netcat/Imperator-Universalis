@@ -26,6 +26,43 @@ IR_LOC = {}
 FILE_PREFIX = "ir_"
 
 
+def _normalize_tag(tok: str):
+    """Return the bare tag name with any existing FILE_PREFIX removed."""
+    if not tok:
+        return None
+    s = str(tok)
+    if s.startswith(FILE_PREFIX):
+        s = s[len(FILE_PREFIX) :]
+    return s
+
+
+def _prefixed_tag(tok: str, suffix: str = ""):
+    """Return a consistently prefixed tag: FILE_PREFIX + base + suffix.
+
+    The input `tok` may already contain the prefix and/or suffix; these
+    will be removed before constructing the normalized output.
+    """
+    if not tok:
+        return None
+    base = _normalize_tag(tok)
+    if suffix and base.endswith(suffix):
+        base = base[: -len(suffix)]
+    return f"{FILE_PREFIX}{base}{suffix}"
+
+
+def write_text_file(path: Path, content: str, encoding: str = "utf-8-sig", msg: str = None):
+    """Write `content` to `path` and print a short report message.
+
+    Returns the `path` for convenience.
+    """
+    path.write_text(content, encoding=encoding)
+    if msg:
+        print(msg, path)
+    else:
+        print("Wrote", path)
+    return path
+
+
 # localisation helpers
 def parse_eu5_localisation(eu5_root: Path):
     loc_dir = eu5_root / "main_menu" / "localization" / "english"
@@ -200,6 +237,8 @@ def write_mod_localisation(mod_root: Path):
     countries = {}
     cultures = {}
     religions = {}
+    culture_groups = {}
+    religion_groups = {}
     for k, v in LOCAL_ENTRIES.items():
         # country tags are typically uppercase 2-3 letter codes
         if k.isupper() and len(k) <= 3:
@@ -210,6 +249,12 @@ def write_mod_localisation(mod_root: Path):
         # adjectives for countries (TAG_ADJ) should be grouped with countries
         elif k.endswith("_ADJ"):
             countries[k] = v
+        # culture groups
+        elif k.endswith("_group"):
+            culture_groups[k] = v
+        # religion groups (keys like religion_<cat>)
+        elif k.startswith("religion_") and not k.endswith("_religion"):
+            religion_groups[k] = v
         else:
             # treat remaining as religions or generic keys
             religions[k] = v
@@ -222,8 +267,7 @@ def write_mod_localisation(mod_root: Path):
         for kk, vv in sorted(entries.items()):
             safe = vv.replace('"', '\\"')
             lines.append(f" {kk}: \"{safe}\"")
-        path.write_text("\n".join(lines) + "\n", encoding="utf-8-sig")
-        return path
+        return write_text_file(path, "\n".join(lines) + "\n")
 
     # add adjective entries for countries: use I:R localisation `_ADJ` keys only.
     # No fallbacks or derivation — if an adjective key is not present in the
@@ -256,13 +300,21 @@ def write_mod_localisation(mod_root: Path):
 
     f_cultures = _write_file(f"{FILE_PREFIX}cultures_l_english.yml", cultures)
     f_religion = _write_file(f"{FILE_PREFIX}religion_l_english.yml", religions)
+    # write culture groups localisation
+    def _write_group_file(name: str, entries: dict):
+        if not entries:
+            return None
+        path = out_dir / name
+        lines = ["l_english:", ""]
+        for kk, vv in sorted(entries.items()):
+            safe = vv.replace('"', '\\"')
+            lines.append(f" {kk}: \"{safe}\"")
+        return write_text_file(path, "\n".join(lines) + "\n")
 
-    if f_countries:
-        print("Wrote localisation to", f_countries)
-    if f_cultures:
-        print("Wrote localisation to", f_cultures)
-    if f_religion:
-        print("Wrote localisation to", f_religion)
+    f_cult_groups = _write_group_file(f"{FILE_PREFIX}culture_groups_l_english.yml", culture_groups)
+    f_rel_groups = _write_group_file(f"{FILE_PREFIX}religion_groups_l_english.yml", religion_groups)
+
+    # helper already printed file names; nothing more to do here
 
 
 RE_BLOCK = re.compile(r"^\s*([a-z0-9_]+)\s*=\s*{", re.I | re.M)
@@ -400,8 +452,46 @@ def parse_ir_cultures(ir_root: Path):
                         float(hsv_m.group(2)),
                         float(hsv_m.group(3)),
                     )
+            # fallback: attempt to find a colour for this culture elsewhere
+            # in the Imperator culture files (some colours live in different
+            # files or are defined on the inner culture block).
+            if not color or color == (0, 0, 0):
+                try:
+                    fc = find_color_for_culture(ir_root, name)
+                    if fc:
+                        color = fc
+                except Exception:
+                    pass
+            # also fall back to a top-level file colour if present
+            if not color or color == (0, 0, 0):
+                try:
+                    rgb_m2 = RE_RGB.search(text)
+                    if rgb_m2:
+                        color = (int(rgb_m2.group(1)), int(rgb_m2.group(2)), int(rgb_m2.group(3)))
+                    else:
+                        hsv_m2 = RE_HSV.search(text)
+                        if hsv_m2:
+                            color = hsv_to_rgb_int(
+                                float(hsv_m2.group(1)),
+                                float(hsv_m2.group(2)),
+                                float(hsv_m2.group(3)),
+                            )
+                except Exception:
+                    pass
             gm2 = RE_GRAPH.search(block)
             gfx = gm2.group(1) if gm2 else top_g
+
+            # final fallback: generate a deterministic colour from the name
+            def _name_to_color(n: str):
+                # stable pseudo-random hue based on the name
+                h = (sum(ord(c) for c in n) % 360) / 360.0
+                s = 0.55
+                v = 0.72
+                return hsv_to_rgb_int(h, s, v)
+
+            if not color or color == (0, 0, 0):
+                color = _name_to_color(name)
+
             groups[group_base].append(
                 {
                     "name": name,
@@ -451,13 +541,19 @@ def write_mod_culture_groups(mod_root: Path, groups: dict):
         "",
     ]
     for group in sorted(groups.keys()):
-        # append the EU5-style group name (ensure suffix)
-        gname = f"{group}_group" if not group.endswith("_group") else group
+        # append the EU5-style group name (ensure suffix) and prefix it
+        base_g = f"{group}_group" if not group.endswith("_group") else group
+        gname = _prefixed_tag(base_g, "_group")
         lines.append(f"{gname} = {{")
         lines.append("}")
         lines.append("")
-    out_file.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8-sig")
-    print("Wrote", out_file)
+    write_text_file(out_file, "\n".join(lines).rstrip() + "\n")
+    # ensure localisation entries exist for each prefixed culture group
+    for group in sorted(groups.keys()):
+        base_g = f"{group}_group" if not group.endswith("_group") else group
+        gname = f"{FILE_PREFIX}{base_g}"
+        # prefer Imperator localisation if available, else humanize the group name
+        LOCAL_ENTRIES.setdefault(gname, _choose_local_text(EU5_LOC, [group, base_g], None, _humanize_name(group)))
 
 
 def write_mod_cultures(mod_root: Path, groups: dict):
@@ -465,11 +561,23 @@ def write_mod_cultures(mod_root: Path, groups: dict):
     out_root.mkdir(parents=True, exist_ok=True)
     for group, cultures in groups.items():
         lines = [f"# Converted from Imperator group {group}", ""]
+        seen = set()
         for c in cultures:
-            cname = f"{c['name']}_culture"
+            cname = _prefixed_tag(c['name'], "_culture")
+            if cname in seen:
+                # skip duplicate culture definitions
+                continue
+            seen.add(cname)
             # prepare localisation entry
             comment = c.get('comment') if isinstance(c, dict) else None
-            disp = _choose_local_text(EU5_LOC, [cname, c.get('name'), f"{c.get('name')}_culture"], comment, c.get('name'))
+            # Candidates include unprefixed Imperator keys so localisation
+            # lookup still succeeds against the original I:R localisation map.
+            disp = _choose_local_text(
+                EU5_LOC,
+                [c.get('name'), f"{c.get('name')}_culture", cname],
+                comment,
+                c.get('name'),
+            )
             if disp:
                 LOCAL_ENTRIES[cname] = disp
             lines.append(f"{cname} = {{")
@@ -482,13 +590,14 @@ def write_mod_cultures(mod_root: Path, groups: dict):
                 lines.append(f"\ttags = {{ {c['gfx']} }}")
             else:
                 lines.append("\ttags = { imperator_gfx }")
-            lines.append(f"\tculture_groups = {{ {group}_group }}")
+            # reference the prefixed culture group key
+            grp_pref = _prefixed_tag(group, "_group")
+            lines.append(f"\tculture_groups = {{ {grp_pref} }}")
             lines.append(f"\t# source_file = {c['source']}")
             lines.append("}")
             lines.append("")
-        out_file = out_root / f"{FILE_PREFIX}{group}.txt"
-        out_file.write_text("\n".join(lines) + "\n", encoding="utf-8-sig")
-        print("Wrote", out_file)
+        out_file = out_root / f"{_prefixed_tag(group)}.txt"
+        write_text_file(out_file, "\n".join(lines) + "\n")
 
 
 def write_mod_religions(mod_root: Path, ir_root: Path):
@@ -536,7 +645,9 @@ def write_mod_religions(mod_root: Path, ir_root: Path):
             if cat_m:
                 category = cat_m.group(1)
                 religion_categories.add(category)
-            lines.append(f"{name} = {{")
+            # prefix religion tag names for the mod to avoid collisions
+            pref_name = _prefixed_tag(name, "_religion")
+            lines.append(f"{pref_name} = {{")
             if rgb_m:
                 r, g, b = int(rgb_m.group(1)), int(rgb_m.group(2)), int(rgb_m.group(3))
                 lines.append(f"\tcolor = rgb {{ {r} {g} {b} }}")
@@ -565,16 +676,16 @@ def write_mod_religions(mod_root: Path, ir_root: Path):
                 lines.append("\t# no color")
             # write group mapping (map Imperator religion_category -> EU5 religion group)
             if category:
-                lines.append(f"\tgroup = {category}")
+                # point religions at the prefixed religion group key
+                lines.append(f"\tgroup = {_prefixed_tag(category, '_group')}")
             # localisation entry for religion
             disp = _choose_local_text(EU5_LOC, [name, name.replace('_religion', '')], comment, name)
             if disp:
-                LOCAL_ENTRIES[name] = disp
+                LOCAL_ENTRIES[pref_name] = disp
             lines.append("}")
             lines.append("")
     out_file = out_root / f"{FILE_PREFIX}religions.txt"
-    out_file.write_text("\n".join(lines) + "\n", encoding="utf-8-sig")
-    print("Wrote", out_file)
+    write_text_file(out_file, "\n".join(lines) + "\n")
 
     # write religion_groups file derived from collected Imperator religion_category values
     if religion_categories:
@@ -582,13 +693,21 @@ def write_mod_religions(mod_root: Path, ir_root: Path):
         rg_root.mkdir(parents=True, exist_ok=True)
         rg_lines = ["# Religion groups auto-generated from Imperator religion_category", ""]
         for cat in sorted(religion_categories):
-            rg_lines.append(f"{cat} = {{")
+            # prefix group name to avoid collisions and match prefixed religion tags
+            gname = _prefixed_tag(cat, "_group")
+            rg_lines.append(f"{gname} = {{")
+            # keep colour referencing the localisation key 'religion_<cat>'
             rg_lines.append(f"\tcolor = religion_{cat}")
             rg_lines.append("}")
             rg_lines.append("")
+            # ensure localisation exists for the generated group key
+            LOCAL_ENTRIES.setdefault(gname, _choose_local_text(EU5_LOC, [f"religion_{cat}", cat], None, _humanize_name(cat)))
         rg_file = rg_root / f"{FILE_PREFIX}religion_groups.txt"
-        rg_file.write_text("\n".join(rg_lines) + "\n", encoding="utf-8-sig")
-        print("Wrote", rg_file)
+        write_text_file(rg_file, "\n".join(rg_lines) + "\n")
+        # also ensure the plain religion_<cat> localisation key exists (used as colour/local label)
+        for cat in sorted(religion_categories):
+            key = f"religion_{cat}"
+            LOCAL_ENTRIES.setdefault(key, _choose_local_text(EU5_LOC, [key, cat], None, _humanize_name(cat)))
 
 
 def parse_countries_list(ir_root: Path):
@@ -664,6 +783,60 @@ def extract_color(file_path: Path):
     m = RE_HSV.search(txt)
     if m:
         return hsv_to_rgb_int(float(m.group(1)), float(m.group(2)), float(m.group(3)))
+    return None
+
+
+def find_color_for_culture(ir_root: Path, culture_name: str):
+    """Search all Imperator culture files for a colour defined for a specific culture name.
+
+    Looks for a block starting with `culture_name = {` and returns the first
+    RGB/HSV/float color found within that block.
+    """
+    candidates = [
+        ir_root / "common" / "cultures",
+        ir_root / "in_game" / "common" / "cultures",
+    ]
+    patt = re.compile(r"\b" + re.escape(culture_name) + r"\s*=\s*{", re.I)
+    for src in candidates:
+        if not src.exists():
+            continue
+        for f in sorted(src.glob("*.txt")):
+            try:
+                txt = f.read_text(encoding="utf-8-sig", errors="ignore")
+            except Exception:
+                continue
+        for m in patt.finditer(txt):
+            start = txt.find("{", m.end() - 1)
+            if start == -1:
+                continue
+            depth = 0
+            i = start
+            end = None
+            while i < len(txt):
+                if txt[i] == "{":
+                    depth += 1
+                elif txt[i] == "}":
+                    depth -= 1
+                    if depth == 0:
+                        end = i
+                        break
+                i += 1
+            if end is None:
+                continue
+            block = txt[start:end+1]
+            m_rgb = RE_RGB.search(block)
+            if m_rgb:
+                return (int(m_rgb.group(1)), int(m_rgb.group(2)), int(m_rgb.group(3)))
+            m_hsv = RE_HSV.search(block)
+            if m_hsv:
+                return hsv_to_rgb_int(float(m_hsv.group(1)), float(m_hsv.group(2)), float(m_hsv.group(3)))
+            m_float = RE_RGB_FLOAT.search(block)
+            if m_float:
+                a, b1, c = float(m_float.group(1)), float(m_float.group(2)), float(m_float.group(3))
+                if max(a, b1, c) <= 1.0:
+                    return (int(round(a*255)), int(round(b1*255)), int(round(c*255)))
+                else:
+                    return (int(round(a)), int(round(b1)), int(round(c)))
     return None
 
 
@@ -814,7 +987,12 @@ def patch_tags_from_ir(mod_root: Path, ir_map: dict):
                 if depth <= 0:
                     break
             btext = "\n".join(bl)
-            base = name.replace("_culture", "")
+            # remove mod prefix and suffix before looking up in the I:R gfx map
+            base = name
+            if base.startswith(FILE_PREFIX):
+                base = base[len(FILE_PREFIX):]
+            if base.endswith("_culture"):
+                base = base[: -len("_culture")]
             gfx = ir_map.get(base)
             if gfx:
                 if re.search(r"tags\s*=\s*\{[^}]*\}", btext, re.I):
@@ -831,7 +1009,7 @@ def patch_tags_from_ir(mod_root: Path, ir_map: dict):
             else:
                 out_lines.extend(bl)
         if changed:
-            f.write_text("\n".join(out_lines) + "\n", encoding="utf-8-sig")
+            f.write_text("\n".join(out_lines) + "\n", encoding="utf-8")
             print("Updated tags from I:R gfx for", f)
 
 
@@ -864,8 +1042,7 @@ MER = {
 }
 """
     out_file_default = out_base / "_default.txt"
-    out_file_default.write_text(hardcoded.rstrip() + "\n", encoding="utf-8-sig")
-    print("Wrote", out_file_default)
+    write_text_file(out_file_default, hardcoded.rstrip() + "\n")
     # start from explicit mappings
     for tag, rel in tags_map.items():
         p = Path(rel)
@@ -1064,10 +1241,15 @@ MER = {
                 r, g, b = color
                 lines.append(f"{tag} = {{")
                 lines.append(f"\tcolor = rgb {{ {r} {g} {b} }}")
+                # ensure country references point at the prefixed mod tags
                 if culture_def:
-                    lines.append(f"\tculture_definition = {culture_def}")
+                    ctag = _prefixed_tag(culture_def, "_culture")
+                    if ctag:
+                        lines.append(f"\tculture_definition = {ctag}")
                 if religion:
-                    lines.append(f"\treligion_definition = {religion}")
+                    rtag = _prefixed_tag(religion, "_religion")
+                    if rtag:
+                        lines.append(f"\treligion_definition = {rtag}")
                 lines.append("}")
                 lines.append("")
             else:
@@ -1075,9 +1257,13 @@ MER = {
                 # culture and religion if available (use I:R basegame tags).
                 lines.append(f"{tag} = {{")
                 if culture_def:
-                    lines.append(f"\tculture_definition = {culture_def}")
+                    ctag = _prefixed_tag(culture_def, "_culture")
+                    if ctag:
+                        lines.append(f"\tculture_definition = {ctag}")
                 if religion:
-                    lines.append(f"\treligion_definition = {religion}")
+                    rtag = _prefixed_tag(religion, "_religion")
+                    if rtag:
+                        lines.append(f"\treligion_definition = {rtag}")
                 lines.append("}")
                 lines.append("")
             # localisation for country tag — prefer I:R localisation string, then filename fallback
@@ -1089,8 +1275,8 @@ MER = {
                 LOCAL_ENTRIES[adjk] = IR_LOC[adjk]
             else:
                 LOCAL_ENTRIES[adjk] = "MISSING"
-        out_file = out_base / f"{FILE_PREFIX}{group}.txt"
-        out_file.write_text("\n".join(lines) + "\n", encoding="utf-8-sig")
+        out_file = out_base / f"{_prefixed_tag(group)}.txt"
+        write_text_file(out_file, "\n".join(lines) + "\n")
 
 
 def main():
@@ -1113,12 +1299,21 @@ def main():
     write_mod_cultures(mod_root, groups)
     # write culture_groups derived from the converted culture files (EU5-style, empty bodies)
     write_mod_culture_groups(mod_root, groups)
+    # attempt to map Imperator graphical culture names to EU5 gfx keys
+    # and patch generated culture `tags = { ... }` entries where possible
+    try:
+        ir_gfx_map = parse_ir_gfx_map(ir_root)
+        if ir_gfx_map:
+            patch_tags_from_ir(mod_root, ir_gfx_map)
+    except Exception:
+        pass
     write_mod_religions(mod_root, ir_root)
     tags_map = parse_countries_list(ir_root)
     default_order = parse_default_order(ir_root)
     write_mod_countries(mod_root, ir_root, tags_map, groups, default_order=default_order)
-    ir_map = parse_ir_gfx_map(ir_root)
-    patch_tags_from_ir(mod_root, ir_map)
+    # Note: automatic patching of `tags = { ... }` from I:R gfx mappings
+    # has been disabled to avoid unexpected replacements. If you want to
+    # re-enable it, call `parse_ir_gfx_map()` and `patch_tags_from_ir()` here.
     patched = apply_hue_shifts(mod_root, factor=args.hue_factor)
     if patched:
         print("Hue-shifted files:", len(patched))

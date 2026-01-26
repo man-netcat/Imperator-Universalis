@@ -3,210 +3,210 @@
 # EGY -> setup/countries/africa/egypt.txt
 EGY = {
 	color = rgb { 143 141 128 }
-	culture_definition = macedonian
-	religion_definition = roman_pantheon
+	culture_definition = ir_macedonian_culture
+	religion_definition = ir_roman_pantheon_religion
 }
 
 # CAR -> setup/countries/africa/carthage.txt
 CAR = {
 	color = rgb { 74 174 85 }
-	culture_definition = carthaginian
-	religion_definition = carthaginian_pantheon
+	culture_definition = ir_carthaginian_culture
+	religion_definition = ir_carthaginian_pantheon_religion
 }
 
 # UTC -> setup/countries/africa/utica.txt
 UTC = {
 	color = rgb { 174 23 55 }
-	culture_definition = carthaginian
-	religion_definition = carthaginian_pantheon
+	culture_definition = ir_carthaginian_culture
+	religion_definition = ir_carthaginian_pantheon_religion
 }
 
 # TPS -> setup/countries/africa/thapsus.txt
 TPS = {
 	color = rgb { 33 99 33 }
-	culture_definition = carthaginian
-	religion_definition = carthaginian_pantheon
+	culture_definition = ir_carthaginian_culture
+	religion_definition = ir_carthaginian_pantheon_religion
 }
 
 # LPT -> setup/countries/africa/leptis.txt
 LPT = {
 	color = rgb { 124 50 180 }
-	culture_definition = carthaginian
-	religion_definition = carthaginian_pantheon
+	culture_definition = ir_carthaginian_culture
+	religion_definition = ir_carthaginian_pantheon_religion
 }
 
 # HDR -> setup/countries/africa/hadrametum.txt
 HDR = {
 	color = rgb { 23 23 99 }
-	culture_definition = carthaginian
-	religion_definition = carthaginian_pantheon
+	culture_definition = ir_carthaginian_culture
+	religion_definition = ir_carthaginian_pantheon_religion
 }
 
 # ACO -> setup/countries/africa/achola.txt
 ACO = {
 	color = rgb { 129 225 60 }
-	culture_definition = carthaginian
-	religion_definition = carthaginian_pantheon
+	culture_definition = ir_carthaginian_culture
+	religion_definition = ir_carthaginian_pantheon_religion
 }
 
 # EMP -> setup/countries/africa/emporia.txt
 EMP = {
 	color = rgb { 196 2 93 }
-	culture_definition = carthaginian
-	religion_definition = carthaginian_pantheon
+	culture_definition = ir_carthaginian_culture
+	religion_definition = ir_carthaginian_pantheon_religion
 }
 
 # TRP -> setup/countries/africa/tripolitania.txt
 TRP = {
 	color = rgb { 135 11 181 }
-	culture_definition = carthaginian
-	religion_definition = carthaginian_pantheon
+	culture_definition = ir_carthaginian_culture
+	religion_definition = ir_carthaginian_pantheon_religion
 }
 
 # IOL -> setup/countries/africa/iol.txt
 IOL = {
 	color = rgb { 127 71 241 }
-	culture_definition = carthaginian
-	religion_definition = carthaginian_pantheon
+	culture_definition = ir_carthaginian_culture
+	religion_definition = ir_carthaginian_pantheon_religion
 }
 
 # KUA -> setup/countries/africa/kerkouane.txt
 KUA = {
 	color = rgb { 36 210 27 }
-	culture_definition = carthaginian
-	religion_definition = carthaginian_pantheon
+	culture_definition = ir_carthaginian_culture
+	religion_definition = ir_carthaginian_pantheon_religion
 }
 
 # MAU -> setup/countries/africa/mauretania.txt
 MAU = {
 	color = rgb { 180 209 205 }
-	culture_definition = socossian
-	religion_definition = berber_religion
+	culture_definition = ir_socossian_culture
+	religion_definition = ir_berber_religion
 }
 
 # MSS -> setup/countries/africa/massaesylia.txt
 MSS = {
 	color = rgb { 40 79 199 }
-	culture_definition = massaesylian
-	religion_definition = berber_religion
+	culture_definition = ir_massaesylian_culture
+	religion_definition = ir_berber_religion
 }
 
 # MSY -> setup/countries/africa/massylia.txt
 MSY = {
 	color = rgb { 213 80 81 }
-	culture_definition = massylian
-	religion_definition = berber_religion
+	culture_definition = ir_massylian_culture
+	religion_definition = ir_berber_religion
 }
 
 # MSL -> setup/countries/africa/musulami.txt
 MSL = {
 	color = rgb { 248 50 40 }
-	culture_definition = massylian
-	religion_definition = berber_religion
+	culture_definition = ir_massylian_culture
+	religion_definition = ir_berber_religion
 }
 
 # DOD -> setup/countries/africa/dodekaschoinos.txt
 DOD = {
 	color = rgb { 38 97 156 }
-	culture_definition = egyptian
-	religion_definition = egyptian_pantheon
+	culture_definition = ir_egyptian_culture
+	religion_definition = ir_egyptian_pantheon_religion
 }
 
 # CYR -> setup/countries/africa/cyrenaica.txt
 CYR = {
 	color = rgb { 34 171 230 }
-	culture_definition = cyrenaican
-	religion_definition = roman_pantheon
+	culture_definition = ir_cyrenaican_culture
+	religion_definition = ir_roman_pantheon_religion
 }
 
 # KSH -> setup/countries/africa/kush.txt
 KSH = {
 	color = rgb { 86 13 37 }
-	culture_definition = meroitic
-	religion_definition = egyptian_pantheon
+	culture_definition = ir_meroitic_culture
+	religion_definition = ir_egyptian_pantheon_religion
 }
 
 # AXM -> setup/countries/africa/aksum.txt
 AXM = {
 	color = rgb { 39 130 27 }
-	culture_definition = aksumite
-	religion_definition = arabian_pantheon
+	culture_definition = ir_aksumite_culture
+	religion_definition = ir_arabian_pantheon_religion
 }
 
 # BMY -> setup/countries/africa/blemmyes.txt
 BMY = {
 	color = rgb { 102 19 111 }
-	culture_definition = blemmyan
-	religion_definition = egyptian_pantheon
+	culture_definition = ir_blemmyan_culture
+	religion_definition = ir_egyptian_pantheon_religion
 }
 
 # BOR -> setup/countries/africa/boras.txt
 BOR = {
 	color = rgb { 11 15 41 }
-	culture_definition = meroitic
-	religion_definition = egyptian_pantheon
+	culture_definition = ir_meroitic_culture
+	religion_definition = ir_egyptian_pantheon_religion
 }
 
 # AUT -> setup/countries/africa/alut.txt
 AUT = {
 	color = rgb { 71 180 221 }
-	culture_definition = meroitic
-	religion_definition = egyptian_pantheon
+	culture_definition = ir_meroitic_culture
+	religion_definition = ir_egyptian_pantheon_religion
 }
 
 # DAL -> setup/countries/africa/elaia.txt
 DAL = {
 	color = rgb { 70 35 45 }
-	culture_definition = aksumite
-	religion_definition = arabian_pantheon
+	culture_definition = ir_aksumite_culture
+	religion_definition = ir_arabian_pantheon_religion
 }
 
 # ADO -> setup/countries/africa/adouli.txt
 ADO = {
 	color = rgb { 103 201 201 }
-	culture_definition = aksumite
-	religion_definition = arabian_pantheon
+	culture_definition = ir_aksumite_culture
+	religion_definition = ir_arabian_pantheon_religion
 }
 
 # YEH -> setup/countries/africa/yeha.txt
 YEH = {
 	color = rgb { 222 80 21 }
-	culture_definition = aksumite
-	religion_definition = arabian_pantheon
+	culture_definition = ir_aksumite_culture
+	religion_definition = ir_arabian_pantheon_religion
 }
 
 # GWN -> setup/countries/africa/gwanara.txt
 GWN = {
 	color = rgb { 80 20 99 }
-	culture_definition = aksumite
-	religion_definition = arabian_pantheon
+	culture_definition = ir_aksumite_culture
+	religion_definition = ir_arabian_pantheon_religion
 }
 
 # MND -> setup/countries/africa/mundus.txt
 MND = {
 	color = rgb { 240 67 198 }
-	culture_definition = puntic
-	religion_definition = egyptian_pantheon
+	culture_definition = ir_puntic_culture
+	religion_definition = ir_egyptian_pantheon_religion
 }
 
 # MYL -> setup/countries/africa/mosylon.txt
 MYL = {
 	color = rgb { 16 241 198 }
-	culture_definition = puntic
-	religion_definition = egyptian_pantheon
+	culture_definition = ir_puntic_culture
+	religion_definition = ir_egyptian_pantheon_religion
 }
 
 # OPO -> setup/countries/africa/opone.txt
 OPO = {
 	color = rgb { 100 9 98 }
-	culture_definition = puntic
-	religion_definition = egyptian_pantheon
+	culture_definition = ir_puntic_culture
+	religion_definition = ir_egyptian_pantheon_religion
 }
 
 # AVL -> setup/countries/africa/avalites.txt
 AVL = {
 	color = rgb { 100 209 98 }
-	culture_definition = puntic
-	religion_definition = arabian_pantheon
+	culture_definition = ir_puntic_culture
+	religion_definition = ir_arabian_pantheon_religion
 }
 

@@ -1,72 +1,72 @@
 ﻿# Converted from Imperator group bactrian
 
-bactrian_culture = {
-	# no color
+ir_bactrian_culture = {
+	color = rgb { 178 76 54 }
 	tags = { persian_gfx }
-	culture_groups = { bactrian_group }
+	culture_groups = { ir_bactrian_group }
 	# source_file = 00_bactrian.txt
 }
 
-margian_culture = {
-	# no color
+ir_margian_culture = {
+	color = rgb { 178 106 54 }
 	tags = { persian_gfx }
-	culture_groups = { bactrian_group }
+	culture_groups = { ir_bactrian_group }
 	# source_file = 00_bactrian.txt
 }
 
-sogdian_culture = {
-	# no color
+ir_sogdian_culture = {
+	color = rgb { 178 136 54 }
 	tags = { persian_gfx }
-	culture_groups = { bactrian_group }
+	culture_groups = { ir_bactrian_group }
 	# source_file = 00_bactrian.txt
 }
 
-shule_culture = {
-	# no color
+ir_shule_culture = {
+	color = rgb { 178 165 54 }
 	tags = { persian_gfx }
-	culture_groups = { bactrian_group }
+	culture_groups = { ir_bactrian_group }
 	# source_file = 00_bactrian.txt
 }
 
-phryni_culture = {
-	# no color
+ir_phryni_culture = {
+	color = rgb { 161 178 54 }
 	tags = { persian_gfx }
-	culture_groups = { bactrian_group }
+	culture_groups = { ir_bactrian_group }
 	# source_file = 00_bactrian.txt
 }
 
-tayuan_culture = {
-	# no color
+ir_tayuan_culture = {
+	color = rgb { 131 178 54 }
 	tags = { persian_gfx }
-	culture_groups = { bactrian_group }
+	culture_groups = { ir_bactrian_group }
 	# source_file = 00_bactrian.txt
 }
 
-wusun_culture = {
-	# no color
+ir_wusun_culture = {
+	color = rgb { 101 178 54 }
 	tags = { persian_gfx }
-	culture_groups = { bactrian_group }
+	culture_groups = { ir_bactrian_group }
 	# source_file = 00_bactrian.txt
 }
 
-saka_culture = {
-	# no color
+ir_saka_culture = {
+	color = rgb { 72 178 54 }
 	tags = { persian_gfx }
-	culture_groups = { bactrian_group }
+	culture_groups = { ir_bactrian_group }
 	# source_file = 00_bactrian.txt
 }
 
-yuezhi_culture = {
-	# no color
+ir_yuezhi_culture = {
+	color = rgb { 54 178 66 }
 	tags = { persian_gfx }
-	culture_groups = { bactrian_group }
+	culture_groups = { ir_bactrian_group }
 	# source_file = 00_bactrian.txt
 }
 
-tocharian_culture = {
-	# no color
+ir_tocharian_culture = {
+	color = rgb { 54 178 96 }
 	tags = { persian_gfx }
-	culture_groups = { bactrian_group }
+	culture_groups = { ir_bactrian_group }
 	# source_file = 00_bactrian.txt
 }
 

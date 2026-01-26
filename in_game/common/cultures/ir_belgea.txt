@@ -1,65 +1,65 @@
 ﻿# Converted from Imperator group belgea
 
-belgae_culture = {
-	# no color
+ir_belgae_culture = {
+	color = rgb { 23 115 87 }
 	tags = { celtic_gfx }
-	culture_groups = { belgea_group }
+	culture_groups = { ir_belgea_group }
 	# source_file = 00_belgea.txt
 }
 
-treverian_culture = {
-	# no color
+ir_treverian_culture = {
+	color = rgb { 23 115 109 }
 	tags = { celtic_gfx }
-	culture_groups = { belgea_group }
+	culture_groups = { ir_belgea_group }
 	# source_file = 00_belgea.txt
 }
 
-aduatacian_culture = {
-	# no color
+ir_aduatacian_culture = {
+	color = rgb { 23 99 115 }
 	tags = { celtic_gfx }
-	culture_groups = { belgea_group }
+	culture_groups = { ir_belgea_group }
 	# source_file = 00_belgea.txt
 }
 
-eburonian_culture = {
-	# no color
+ir_eburonian_culture = {
+	color = rgb { 23 77 115 }
 	tags = { celtic_gfx }
-	culture_groups = { belgea_group }
+	culture_groups = { ir_belgea_group }
 	# source_file = 00_belgea.txt
 }
 
-nervian_culture = {
-	# no color
+ir_nervian_culture = {
+	color = rgb { 23 55 115 }
 	tags = { celtic_gfx }
-	culture_groups = { belgea_group }
+	culture_groups = { ir_belgea_group }
 	# source_file = 00_belgea.txt
 }
 
-morinian_culture = {
-	# no color
+ir_morinian_culture = {
+	color = rgb { 23 33 115 }
 	tags = { celtic_gfx }
-	culture_groups = { belgea_group }
+	culture_groups = { ir_belgea_group }
 	# source_file = 00_belgea.txt
 }
 
-veliocassian_culture = {
-	# no color
+ir_veliocassian_culture = {
+	color = rgb { 35 23 115 }
 	tags = { celtic_gfx }
-	culture_groups = { belgea_group }
+	culture_groups = { ir_belgea_group }
 	# source_file = 00_belgea.txt
 }
 
-bellovacian_culture = {
-	# no color
+ir_bellovacian_culture = {
+	color = rgb { 58 23 115 }
 	tags = { celtic_gfx }
-	culture_groups = { belgea_group }
+	culture_groups = { ir_belgea_group }
 	# source_file = 00_belgea.txt
 }
 
-sennonian_culture = {
-	# no color
+ir_sennonian_culture = {
+	color = rgb { 80 23 115 }
 	tags = { celtic_gfx }
-	culture_groups = { belgea_group }
+	culture_groups = { ir_belgea_group }
 	# source_file = 00_belgea.txt
 }
 

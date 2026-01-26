@@ -1,44 +1,44 @@
 ﻿# Converted from Imperator group celto_pannonian
 
-celtic_pannonian_culture = {
-	# no color
+ir_celtic_pannonian_culture = {
+	color = rgb { 37 64 10 }
 	tags = { celtic_gfx }
-	culture_groups = { celto_pannonian_group }
+	culture_groups = { ir_celto_pannonian_group }
 	# source_file = 00_celto_pannonian.txt
 }
 
-letobician_culture = {
-	# no color
+ir_letobician_culture = {
+	color = rgb { 24 64 10 }
 	tags = { celtic_gfx }
-	culture_groups = { celto_pannonian_group }
+	culture_groups = { ir_celto_pannonian_group }
 	# source_file = 00_celto_pannonian.txt
 }
 
-carnian_culture = {
-	# no color
+ir_carnian_culture = {
+	color = rgb { 11 64 10 }
 	tags = { celtic_gfx }
-	culture_groups = { celto_pannonian_group }
+	culture_groups = { ir_celto_pannonian_group }
 	# source_file = 00_celto_pannonian.txt
 }
 
-noric_culture = {
-	# no color
+ir_noric_culture = {
+	color = rgb { 10 64 22 }
 	tags = { celtic_gfx }
-	culture_groups = { celto_pannonian_group }
+	culture_groups = { ir_celto_pannonian_group }
 	# source_file = 00_celto_pannonian.txt
 }
 
-boian_culture = {
-	# no color
+ir_boian_culture = {
+	color = rgb { 10 64 35 }
 	tags = { celtic_gfx }
-	culture_groups = { celto_pannonian_group }
+	culture_groups = { ir_celto_pannonian_group }
 	# source_file = 00_celto_pannonian.txt
 }
 
-eravisci_culture = {
-	# no color
+ir_eravisci_culture = {
+	color = rgb { 10 64 48 }
 	tags = { celtic_gfx }
-	culture_groups = { celto_pannonian_group }
+	culture_groups = { ir_celto_pannonian_group }
 	# source_file = 00_celto_pannonian.txt
 }
 

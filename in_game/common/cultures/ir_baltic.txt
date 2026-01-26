@@ -1,9 +1,9 @@
 ﻿# Converted from Imperator group baltic
 
-aestian_culture = {
-	# no color
+ir_aestian_culture = {
+	color = rgb { 107 178 178 }
 	tags = { german_gfx }
-	culture_groups = { baltic_group }
+	culture_groups = { ir_baltic_group }
 	# source_file = 00_baltic.txt
 }
 

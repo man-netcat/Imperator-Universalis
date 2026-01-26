@@ -1,72 +1,72 @@
 ﻿# Converted from Imperator group latin
 
-roman_culture = {
-	# no color
+ir_roman_culture = {
+	color = rgb { 140 13 13 }
 	tags = { roman_gfx }
-	culture_groups = { latin_group }
+	culture_groups = { ir_latin_group }
 	# source_file = 00_latin.txt
 }
 
-venetic_culture = {
-	# no color
+ir_venetic_culture = {
+	color = rgb { 140 43 13 }
 	tags = { roman_gfx }
-	culture_groups = { latin_group }
+	culture_groups = { ir_latin_group }
 	# source_file = 00_latin.txt
 }
 
-ligurian_culture = {
-	# no color
+ir_ligurian_culture = {
+	color = rgb { 140 74 13 }
 	tags = { roman_gfx }
-	culture_groups = { latin_group }
+	culture_groups = { ir_latin_group }
 	# source_file = 00_latin.txt
 }
 
-etruscan_culture = {
-	# no color
+ir_etruscan_culture = {
+	color = rgb { 140 104 13 }
 	tags = { roman_gfx }
-	culture_groups = { latin_group }
+	culture_groups = { ir_latin_group }
 	# source_file = 00_latin.txt
 }
 
-rhaetian_culture = {
-	# no color
+ir_rhaetian_culture = {
+	color = rgb { 140 135 13 }
 	tags = { roman_gfx }
-	culture_groups = { latin_group }
+	culture_groups = { ir_latin_group }
 	# source_file = 00_latin.txt
 }
 
-umbrian_culture = {
-	# no color
+ir_umbrian_culture = {
+	color = rgb { 115 140 13 }
 	tags = { roman_gfx }
-	culture_groups = { latin_group }
+	culture_groups = { ir_latin_group }
 	# source_file = 00_latin.txt
 }
 
-samnite_culture = {
-	# no color
+ir_samnite_culture = {
+	color = rgb { 84 140 13 }
 	tags = { roman_gfx }
-	culture_groups = { latin_group }
+	culture_groups = { ir_latin_group }
 	# source_file = 00_latin.txt
 }
 
-siculian_culture = {
-	# no color
+ir_siculian_culture = {
+	color = rgb { 54 140 13 }
 	tags = { roman_gfx }
-	culture_groups = { latin_group }
+	culture_groups = { ir_latin_group }
 	# source_file = 00_latin.txt
 }
 
-bruttian_culture = {
-	# no color
+ir_bruttian_culture = {
+	color = rgb { 23 140 13 }
 	tags = { roman_gfx }
-	culture_groups = { latin_group }
+	culture_groups = { ir_latin_group }
 	# source_file = 00_latin.txt
 }
 
-lucanian_culture = {
-	# no color
+ir_lucanian_culture = {
+	color = rgb { 13 140 33 }
 	tags = { roman_gfx }
-	culture_groups = { latin_group }
+	culture_groups = { ir_latin_group }
 	# source_file = 00_latin.txt
 }
 

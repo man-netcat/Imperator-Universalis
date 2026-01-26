@@ -1,65 +1,65 @@
 ﻿# Converted from Imperator group aryan
 
-vidharban_culture = {
-	# no color
+ir_vidharban_culture = {
+	color = rgb { 230 69 0 }
 	tags = { north_indian_gfx }
-	culture_groups = { aryan_group }
+	culture_groups = { ir_aryan_group }
 	# source_file = 00_aryan.txt
 }
 
-saurashtran_culture = {
-	# no color
+ir_saurashtran_culture = {
+	color = rgb { 230 124 0 }
 	tags = { north_indian_gfx }
-	culture_groups = { aryan_group }
+	culture_groups = { ir_aryan_group }
 	# source_file = 00_aryan.txt
 }
 
-lankan_culture = {
-	# no color
+ir_lankan_culture = {
+	color = rgb { 230 179 0 }
 	tags = { north_indian_gfx }
-	culture_groups = { aryan_group }
+	culture_groups = { ir_aryan_group }
 	# source_file = 00_aryan.txt
 }
 
-maharashtran_culture = {
-	# no color
+ir_maharashtran_culture = {
+	color = rgb { 225 230 0 }
 	tags = { north_indian_gfx }
-	culture_groups = { aryan_group }
+	culture_groups = { ir_aryan_group }
 	# source_file = 00_aryan.txt
 }
 
-gandhari_culture = {
-	# no color
+ir_gandhari_culture = {
+	color = rgb { 170 230 0 }
 	tags = { north_indian_gfx }
-	culture_groups = { aryan_group }
+	culture_groups = { ir_aryan_group }
 	# source_file = 00_aryan.txt
 }
 
-shauraseni_culture = {
-	# no color
+ir_shauraseni_culture = {
+	color = rgb { 115 230 0 }
 	tags = { north_indian_gfx }
-	culture_groups = { aryan_group }
+	culture_groups = { ir_aryan_group }
 	# source_file = 00_aryan.txt
 }
 
-avanti_culture = {
-	# no color
+ir_avanti_culture = {
+	color = rgb { 60 230 0 }
 	tags = { north_indian_gfx }
-	culture_groups = { aryan_group }
+	culture_groups = { ir_aryan_group }
 	# source_file = 00_aryan.txt
 }
 
-sindhi_culture = {
-	# no color
+ir_sindhi_culture = {
+	color = rgb { 5 230 0 }
 	tags = { north_indian_gfx }
-	culture_groups = { aryan_group }
+	culture_groups = { ir_aryan_group }
 	# source_file = 00_aryan.txt
 }
 
-dardic_culture = {
-	# no color
+ir_dardic_culture = {
+	color = rgb { 0 230 51 }
 	tags = { north_indian_gfx }
-	culture_groups = { aryan_group }
+	culture_groups = { ir_aryan_group }
 	# source_file = 00_aryan.txt
 }
 

@@ -1,142 +1,142 @@
 ﻿# Converted from Imperator group anatolian
 
-cappadocian_culture = {
-	# no color
+ir_cappadocian_culture = {
+	color = rgb { 134 230 126 }
 	tags = { anatolian_gfx }
-	culture_groups = { anatolian_group }
+	culture_groups = { ir_anatolian_group }
 	# source_file = 00_anatolian.txt
 }
 
-carian_culture = {
-	# no color
+ir_carian_culture = {
+	color = rgb { 126 230 143 }
 	tags = { anatolian_gfx }
-	culture_groups = { anatolian_group }
+	culture_groups = { ir_anatolian_group }
 	# source_file = 00_anatolian.txt
 }
 
-phrygian_culture = {
-	# no color
+ir_phrygian_culture = {
+	color = rgb { 126 230 168 }
 	tags = { anatolian_gfx }
-	culture_groups = { anatolian_group }
+	culture_groups = { ir_anatolian_group }
 	# source_file = 00_anatolian.txt
 }
 
-lycaonian_culture = {
-	# no color
+ir_lycaonian_culture = {
+	color = rgb { 126 230 193 }
 	tags = { anatolian_gfx }
-	culture_groups = { anatolian_group }
+	culture_groups = { ir_anatolian_group }
 	# source_file = 00_anatolian.txt
 }
 
-isaurian_culture = {
-	# no color
+ir_isaurian_culture = {
+	color = rgb { 126 230 218 }
 	tags = { anatolian_gfx }
-	culture_groups = { anatolian_group }
+	culture_groups = { ir_anatolian_group }
 	# source_file = 00_anatolian.txt
 }
 
-paphlagonian_culture = {
-	# no color
+ir_paphlagonian_culture = {
+	color = rgb { 126 217 230 }
 	tags = { anatolian_gfx }
-	culture_groups = { anatolian_group }
+	culture_groups = { ir_anatolian_group }
 	# source_file = 00_anatolian.txt
 }
 
-lycian_culture = {
-	# no color
+ir_lycian_culture = {
+	color = rgb { 126 192 230 }
 	tags = { anatolian_gfx }
-	culture_groups = { anatolian_group }
+	culture_groups = { ir_anatolian_group }
 	# source_file = 00_anatolian.txt
 }
 
-pamphylian_culture = {
-	# no color
+ir_pamphylian_culture = {
+	color = rgb { 126 167 230 }
 	tags = { anatolian_gfx }
-	culture_groups = { anatolian_group }
+	culture_groups = { ir_anatolian_group }
 	# source_file = 00_anatolian.txt
 }
 
-mysian_culture = {
-	# no color
+ir_mysian_culture = {
+	color = rgb { 126 142 230 }
 	tags = { anatolian_gfx }
-	culture_groups = { anatolian_group }
+	culture_groups = { ir_anatolian_group }
 	# source_file = 00_anatolian.txt
 }
 
-cilician_culture = {
-	# no color
+ir_cilician_culture = {
+	color = rgb { 135 126 230 }
 	tags = { anatolian_gfx }
-	culture_groups = { anatolian_group }
+	culture_groups = { ir_anatolian_group }
 	# source_file = 00_anatolian.txt
 }
 
-lydian_culture = {
-	# no color
+ir_lydian_culture = {
+	color = rgb { 160 126 230 }
 	tags = { anatolian_gfx }
-	culture_groups = { anatolian_group }
+	culture_groups = { ir_anatolian_group }
 	# source_file = 00_anatolian.txt
 }
 
-armenian_culture = {
-	# no color
+ir_armenian_culture = {
+	color = rgb { 185 126 230 }
 	tags = { anatolian_gfx }
-	culture_groups = { anatolian_group }
+	culture_groups = { ir_anatolian_group }
 	# source_file = 00_anatolian.txt
 }
 
-pisidian_culture = {
-	# no color
+ir_pisidian_culture = {
+	color = rgb { 210 126 230 }
 	tags = { anatolian_gfx }
-	culture_groups = { anatolian_group }
+	culture_groups = { ir_anatolian_group }
 	# source_file = 00_anatolian.txt
 }
 
-milyadian_culture = {
-	# no color
+ir_milyadian_culture = {
+	color = rgb { 230 126 226 }
 	tags = { anatolian_gfx }
-	culture_groups = { anatolian_group }
+	culture_groups = { ir_anatolian_group }
 	# source_file = 00_anatolian.txt
 }
 
-cataonian_culture = {
-	# no color
+ir_cataonian_culture = {
+	color = rgb { 230 126 201 }
 	tags = { anatolian_gfx }
-	culture_groups = { anatolian_group }
+	culture_groups = { ir_anatolian_group }
 	# source_file = 00_anatolian.txt
 }
 
-lalasian_culture = {
-	# no color
+ir_lalasian_culture = {
+	color = rgb { 230 126 176 }
 	tags = { anatolian_gfx }
-	culture_groups = { anatolian_group }
+	culture_groups = { ir_anatolian_group }
 	# source_file = 00_anatolian.txt
 }
 
-cabalian_culture = {
-	# no color
+ir_cabalian_culture = {
+	color = rgb { 230 126 151 }
 	tags = { anatolian_gfx }
-	culture_groups = { anatolian_group }
+	culture_groups = { ir_anatolian_group }
 	# source_file = 00_anatolian.txt
 }
 
-oroandian_culture = {
-	# no color
+ir_oroandian_culture = {
+	color = rgb { 230 126 126 }
 	tags = { anatolian_gfx }
-	culture_groups = { anatolian_group }
+	culture_groups = { ir_anatolian_group }
 	# source_file = 00_anatolian.txt
 }
 
-morimenian_culture = {
-	# no color
+ir_morimenian_culture = {
+	color = rgb { 230 151 126 }
 	tags = { anatolian_gfx }
-	culture_groups = { anatolian_group }
+	culture_groups = { ir_anatolian_group }
 	# source_file = 00_anatolian.txt
 }
 
-kennataian_culture = {
-	# no color
+ir_kennataian_culture = {
+	color = rgb { 230 176 126 }
 	tags = { anatolian_gfx }
-	culture_groups = { anatolian_group }
+	culture_groups = { ir_anatolian_group }
 	# source_file = 00_anatolian.txt
 }
 

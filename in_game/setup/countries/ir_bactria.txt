@@ -3,42 +3,42 @@
 # BAC -> setup/countries/bactria/bactria.txt
 BAC = {
 	color = rgb { 208 24 58 }
-	culture_definition = macedonian
-	religion_definition = roman_pantheon
+	culture_definition = ir_macedonian_culture
+	religion_definition = ir_roman_pantheon_religion
 }
 
 # ARS -> setup/countries/bactria/arachosia.txt
 ARS = {
 	color = rgb { 13 124 65 }
-	culture_definition = macedonian
-	religion_definition = roman_pantheon
+	culture_definition = ir_macedonian_culture
+	religion_definition = ir_roman_pantheon_religion
 }
 
 # PRN -> setup/countries/bactria/parni.txt
 PRN = {
 	color = rgb { 131 175 103 }
-	culture_definition = derbiccan
-	religion_definition = indo_iranian_religion
+	culture_definition = ir_derbiccan_culture
+	religion_definition = ir_indo_iranian_religion
 }
 
 # PSS -> setup/countries/bactria/pissuri.txt
 PSS = {
 	color = rgb { 101 141 149 }
-	culture_definition = derbiccan
-	religion_definition = indo_iranian_religion
+	culture_definition = ir_derbiccan_culture
+	religion_definition = ir_indo_iranian_religion
 }
 
 # ZNT -> setup/countries/bactria/zanthi.txt
 ZNT = {
 	color = rgb { 180 141 109 }
-	culture_definition = derbiccan
-	religion_definition = indo_iranian_religion
+	culture_definition = ir_derbiccan_culture
+	religion_definition = ir_indo_iranian_religion
 }
 
 # KRZ -> setup/countries/bactria/kharesmia.txt
 KRZ = {
 	color = rgb { 101 190 119 }
-	culture_definition = kharesmian
-	religion_definition = indo_iranian_religion
+	culture_definition = ir_kharesmian_culture
+	religion_definition = ir_indo_iranian_religion
 }
 

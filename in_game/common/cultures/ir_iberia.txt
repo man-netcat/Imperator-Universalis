@@ -1,79 +1,79 @@
 ﻿# Converted from Imperator group iberia
 
-oretanian_culture = {
-	# no color
+ir_oretanian_culture = {
+	color = rgb { 255 107 0 }
 	tags = { iberian_gfx }
-	culture_groups = { iberia_group }
+	culture_groups = { ir_iberia_group }
 	# source_file = 00_iberia.txt
 }
 
-contestanian_culture = {
-	# no color
+ir_contestanian_culture = {
+	color = rgb { 255 168 0 }
 	tags = { iberian_gfx }
-	culture_groups = { iberia_group }
+	culture_groups = { ir_iberia_group }
 	# source_file = 00_iberia.txt
 }
 
-bastetanian_culture = {
-	# no color
+ir_bastetanian_culture = {
+	color = rgb { 255 229 0 }
 	tags = { iberian_gfx }
-	culture_groups = { iberia_group }
+	culture_groups = { ir_iberia_group }
 	# source_file = 00_iberia.txt
 }
 
-ilercavonian_culture = {
-	# no color
+ir_ilercavonian_culture = {
+	color = rgb { 219 255 0 }
 	tags = { iberian_gfx }
-	culture_groups = { iberia_group }
+	culture_groups = { ir_iberia_group }
 	# source_file = 00_iberia.txt
 }
 
-edetanian_culture = {
-	# no color
+ir_edetanian_culture = {
+	color = rgb { 158 255 0 }
 	tags = { iberian_gfx }
-	culture_groups = { iberia_group }
+	culture_groups = { ir_iberia_group }
 	# source_file = 00_iberia.txt
 }
 
-lacetanian_culture = {
-	# no color
+ir_lacetanian_culture = {
+	color = rgb { 97 255 0 }
 	tags = { iberian_gfx }
-	culture_groups = { iberia_group }
+	culture_groups = { ir_iberia_group }
 	# source_file = 00_iberia.txt
 }
 
-indiketian_culture = {
-	# no color
+ir_indiketian_culture = {
+	color = rgb { 36 255 0 }
 	tags = { iberian_gfx }
-	culture_groups = { iberia_group }
+	culture_groups = { ir_iberia_group }
 	# source_file = 00_iberia.txt
 }
 
-ausetanian_culture = {
-	# no color
+ir_ausetanian_culture = {
+	color = rgb { 0 255 25 }
 	tags = { iberian_gfx }
-	culture_groups = { iberia_group }
+	culture_groups = { ir_iberia_group }
 	# source_file = 00_iberia.txt
 }
 
-turdetanian_culture = {
-	# no color
+ir_turdetanian_culture = {
+	color = rgb { 0 255 87 }
 	tags = { iberian_gfx }
-	culture_groups = { iberia_group }
+	culture_groups = { ir_iberia_group }
 	# source_file = 00_iberia.txt
 }
 
-couneian_culture = {
-	# no color
+ir_couneian_culture = {
+	color = rgb { 0 255 148 }
 	tags = { iberian_gfx }
-	culture_groups = { iberia_group }
+	culture_groups = { ir_iberia_group }
 	# source_file = 00_iberia.txt
 }
 
-turdulian_culture = {
-	# no color
+ir_turdulian_culture = {
+	color = rgb { 0 255 209 }
 	tags = { iberian_gfx }
-	culture_groups = { iberia_group }
+	culture_groups = { ir_iberia_group }
 	# source_file = 00_iberia.txt
 }
 

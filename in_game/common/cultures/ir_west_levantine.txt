@@ -1,30 +1,30 @@
 ﻿# Converted from Imperator group west_levantine
 
-carthaginian_culture = {
-	# no color
+ir_carthaginian_culture = {
+	color = rgb { 102 19 186 }
 	tags = { carthaginian_gfx }
-	culture_groups = { west_levantine_group }
+	culture_groups = { ir_west_levantine_group }
 	# source_file = 00_west_levantine.txt
 }
 
-phoenician_culture = {
-	# no color
+ir_phoenician_culture = {
+	color = rgb { 142 19 186 }
 	tags = { carthaginian_gfx }
-	culture_groups = { west_levantine_group }
+	culture_groups = { ir_west_levantine_group }
 	# source_file = 00_west_levantine.txt
 }
 
-hebrew_culture = {
-	# no color
+ir_hebrew_culture = {
+	color = rgb { 182 19 186 }
 	tags = { carthaginian_gfx }
-	culture_groups = { west_levantine_group }
+	culture_groups = { ir_west_levantine_group }
 	# source_file = 00_west_levantine.txt
 }
 
-nabatean_culture = {
-	# no color
+ir_nabatean_culture = {
+	color = rgb { 186 19 150 }
 	tags = { carthaginian_gfx }
-	culture_groups = { west_levantine_group }
+	culture_groups = { ir_west_levantine_group }
 	# source_file = 00_west_levantine.txt
 }
 

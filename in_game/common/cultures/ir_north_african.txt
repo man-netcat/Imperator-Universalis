@@ -1,23 +1,23 @@
 ﻿# Converted from Imperator group north_african
 
-egyptian_culture = {
-	# no color
+ir_egyptian_culture = {
+	color = rgb { 178 161 0 }
 	tags = { egyptian_gfx }
-	culture_groups = { north_african_group }
+	culture_groups = { ir_north_african_group }
 	# source_file = 00_north_african.txt
 }
 
-upper_egyptian_culture = {
-	# no color
+ir_upper_egyptian_culture = {
+	color = rgb { 152 178 0 }
 	tags = { egyptian_gfx }
-	culture_groups = { north_african_group }
+	culture_groups = { ir_north_african_group }
 	# source_file = 00_north_african.txt
 }
 
-middle_egyptian_culture = {
-	# no color
+ir_middle_egyptian_culture = {
+	color = rgb { 110 178 0 }
 	tags = { egyptian_gfx }
-	culture_groups = { north_african_group }
+	culture_groups = { ir_north_african_group }
 	# source_file = 00_north_african.txt
 }
 

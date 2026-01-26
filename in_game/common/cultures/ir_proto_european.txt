@@ -1,58 +1,58 @@
 ﻿# Converted from Imperator group proto_european
 
-vasconian_culture = {
-	# no color
+ir_vasconian_culture = {
+	color = rgb { 121 128 96 }
 	tags = { iberian_gfx }
-	culture_groups = { proto_european_group }
+	culture_groups = { ir_proto_european_group }
 	# source_file = 00_proto_european.txt
 }
 
-aquitani_culture = {
-	# no color
+ir_aquitani_culture = {
+	color = rgb { 113 128 96 }
 	tags = { iberian_gfx }
-	culture_groups = { proto_european_group }
+	culture_groups = { ir_proto_european_group }
 	# source_file = 00_proto_european.txt
 }
 
-nuragic_culture = {
-	# no color
+ir_nuragic_culture = {
+	color = rgb { 106 128 96 }
 	tags = { iberian_gfx }
-	culture_groups = { proto_european_group }
+	culture_groups = { ir_proto_european_group }
 	# source_file = 00_proto_european.txt
 }
 
-autrigonian_culture = {
-	# no color
+ir_autrigonian_culture = {
+	color = rgb { 98 128 96 }
 	tags = { iberian_gfx }
-	culture_groups = { proto_european_group }
+	culture_groups = { ir_proto_european_group }
 	# source_file = 00_proto_european.txt
 }
 
-ilergetian_culture = {
-	# no color
+ir_ilergetian_culture = {
+	color = rgb { 96 128 102 }
 	tags = { iberian_gfx }
-	culture_groups = { proto_european_group }
+	culture_groups = { ir_proto_european_group }
 	# source_file = 00_proto_european.txt
 }
 
-corsian_culture = {
-	# no color
+ir_corsian_culture = {
+	color = rgb { 96 128 109 }
 	tags = { iberian_gfx }
-	culture_groups = { proto_european_group }
+	culture_groups = { ir_proto_european_group }
 	# source_file = 00_proto_european.txt
 }
 
-cantabrian_culture = {
-	# no color
+ir_cantabrian_culture = {
+	color = rgb { 96 128 117 }
 	tags = { iberian_gfx }
-	culture_groups = { proto_european_group }
+	culture_groups = { ir_proto_european_group }
 	# source_file = 00_proto_european.txt
 }
 
-talaiotic_culture = {
-	# no color
+ir_talaiotic_culture = {
+	color = rgb { 96 128 125 }
 	tags = { iberian_gfx }
-	culture_groups = { proto_european_group }
+	culture_groups = { ir_proto_european_group }
 	# source_file = 00_proto_european.txt
 }
 

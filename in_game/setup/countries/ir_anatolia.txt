@@ -3,294 +3,294 @@
 # RHO -> setup/countries/anatolia/rhodes.txt
 RHO = {
 	color = rgb { 215 59 28 }
-	culture_definition = aegean
-	religion_definition = roman_pantheon
+	culture_definition = ir_aegean_culture
+	religion_definition = ir_roman_pantheon_religion
 }
 
 # PRY -> setup/countries/anatolia/phrygia.txt
 PRY = {
 	color = rgb { 246 223 15 }
-	culture_definition = macedonian
-	religion_definition = roman_pantheon
+	culture_definition = ir_macedonian_culture
+	religion_definition = ir_roman_pantheon_religion
 }
 
 # PON -> setup/countries/anatolia/pontus.txt
 PON = {
 	color = rgb { 149 101 186 }
-	culture_definition = cappadocian
-	religion_definition = zoroaster
+	culture_definition = ir_cappadocian_culture
+	religion_definition = ir_zoroaster_religion
 }
 
 # AST -> setup/countries/anatolia/astakos.txt
 AST = {
 	color = rgb { 132 15 161 }
-	culture_definition = thracian
-	religion_definition = roman_pantheon
+	culture_definition = ir_thracian_culture
+	religion_definition = ir_roman_pantheon_religion
 }
 
 # BIT -> setup/countries/anatolia/bithynia.txt
 BIT = {
 	color = rgb { 117 185 234 }
-	culture_definition = bithynian
-	religion_definition = roman_pantheon
+	culture_definition = ir_bithynian_culture
+	religion_definition = ir_roman_pantheon_religion
 }
 
 # HCP -> setup/countries/anatolia/heraclea_pontica.txt
 HCP = {
 	color = rgb { 155 28 28 }
-	culture_definition = greco_pontic
-	religion_definition = roman_pantheon
+	culture_definition = ir_greco_pontic_culture
+	religion_definition = ir_roman_pantheon_religion
 }
 
 # IOA -> setup/countries/anatolia/aeolia.txt
 IOA = {
 	color = rgb { 22 78 33 }
-	culture_definition = troan
-	religion_definition = roman_pantheon
+	culture_definition = ir_troan_culture
+	religion_definition = ir_roman_pantheon_religion
 }
 
 # ION -> setup/countries/anatolia/ionian_league.txt
 ION = {
 	color = rgb { 115 250 28 }
-	culture_definition = ionian
-	religion_definition = roman_pantheon
+	culture_definition = ir_ionian_culture
+	religion_definition = ir_roman_pantheon_religion
 }
 
 # SNP -> setup/countries/anatolia/sinope.txt
 SNP = {
 	color = rgb { 12 125 111 }
-	culture_definition = greco_pontic
-	religion_definition = roman_pantheon
+	culture_definition = ir_greco_pontic_culture
+	religion_definition = ir_roman_pantheon_religion
 }
 
 # CDD -> setup/countries/anatolia/calchedon.txt
 CDD = {
 	color = rgb { 15 99 22 }
-	culture_definition = thracian
-	religion_definition = roman_pantheon
+	culture_definition = ir_thracian_culture
+	religion_definition = ir_roman_pantheon_religion
 }
 
 # KNI -> setup/countries/anatolia/knidos.txt
 KNI = {
 	color = rgb { 23 88 88 }
-	culture_definition = ionian
-	religion_definition = roman_pantheon
+	culture_definition = ir_ionian_culture
+	religion_definition = ir_roman_pantheon_religion
 }
 
 # KIO -> setup/countries/anatolia/kios.txt
 KIO = {
 	color = rgb { 44 32 125 }
-	culture_definition = thracian
-	religion_definition = zoroaster
+	culture_definition = ir_thracian_culture
+	religion_definition = ir_zoroaster_religion
 }
 
 # KZK -> setup/countries/anatolia/kyzikos.txt
 KZK = {
 	color = rgb { 44 66 97 }
-	culture_definition = thracian
-	religion_definition = roman_pantheon
+	culture_definition = ir_thracian_culture
+	religion_definition = ir_roman_pantheon_religion
 }
 
 # KYA -> setup/countries/anatolia/kotyora.txt
 KYA = {
 	color = rgb { 97 105 55 }
-	culture_definition = greco_pontic
-	religion_definition = roman_pantheon
+	culture_definition = ir_greco_pontic_culture
+	religion_definition = ir_roman_pantheon_religion
 }
 
 # KRS -> setup/countries/anatolia/kerasous.txt
 KRS = {
 	color = rgb { 30 45 99 }
-	culture_definition = greco_pontic
-	religion_definition = roman_pantheon
+	culture_definition = ir_greco_pontic_culture
+	religion_definition = ir_roman_pantheon_religion
 }
 
 # HKS -> setup/countries/anatolia/halikarnassos.txt
 HKS = {
 	color = rgb { 150 25 205 }
-	culture_definition = ionian
-	religion_definition = roman_pantheon
+	culture_definition = ir_ionian_culture
+	religion_definition = ir_roman_pantheon_religion
 }
 
 # AMS -> setup/countries/anatolia/amisos.txt
 AMS = {
 	color = rgb { 200 33 65 }
-	culture_definition = greco_pontic
-	religion_definition = roman_pantheon
+	culture_definition = ir_greco_pontic_culture
+	religion_definition = ir_roman_pantheon_religion
 }
 
 # CAP -> setup/countries/anatolia/cappadocia.txt
 CAP = {
 	color = rgb { 163 151 93 }
-	culture_definition = cappadocian
-	religion_definition = zoroaster
+	culture_definition = ir_cappadocian_culture
+	religion_definition = ir_zoroaster_religion
 }
 
 # PAP -> setup/countries/anatolia/paphlagonia.txt
 PAP = {
 	color = rgb { 32 10 166 }
-	culture_definition = paphlagonian
-	religion_definition = anatolian_religion
+	culture_definition = ir_paphlagonian_culture
+	religion_definition = ir_anatolian_religion
 }
 
 # SLG -> setup/countries/anatolia/selgia.txt
 SLG = {
 	color = rgb { 87 0 84 }
-	culture_definition = pisidian
-	religion_definition = anatolian_religion
+	culture_definition = ir_pisidian_culture
+	religion_definition = ir_anatolian_religion
 }
 
 # TRM -> setup/countries/anatolia/termessia.txt
 TRM = {
 	color = rgb { 16 72 215 }
-	culture_definition = pisidian
-	religion_definition = anatolian_religion
+	culture_definition = ir_pisidian_culture
+	religion_definition = ir_anatolian_religion
 }
 
 # SSG -> setup/countries/anatolia/sagalassia.txt
 SSG = {
 	color = rgb { 93 48 0 }
-	culture_definition = pisidian
-	religion_definition = anatolian_religion
+	culture_definition = ir_pisidian_culture
+	religion_definition = ir_anatolian_religion
 }
 
 # KTN -> setup/countries/anatolia/kotennia.txt
 KTN = {
 	color = rgb { 153 102 255 }
-	culture_definition = pisidian
-	religion_definition = anatolian_religion
+	culture_definition = ir_pisidian_culture
+	religion_definition = ir_anatolian_religion
 }
 
 # PDL -> setup/countries/anatolia/pednelissia.txt
 PDL = {
 	color = rgb { 255 224 254 }
-	culture_definition = pisidian
-	religion_definition = anatolian_religion
+	culture_definition = ir_pisidian_culture
+	religion_definition = ir_anatolian_religion
 }
 
 # HMD -> setup/countries/anatolia/homanadia.txt
 HMD = {
 	color = rgb { 153 204 0 }
-	culture_definition = isaurian
-	religion_definition = anatolian_religion
+	culture_definition = ir_isaurian_culture
+	religion_definition = ir_anatolian_religion
 }
 
 # LYC -> setup/countries/anatolia/lycia.txt
 LYC = {
 	color = rgb { 208 0 0 }
-	culture_definition = lycian
-	religion_definition = roman_pantheon
+	culture_definition = ir_lycian_culture
+	religion_definition = ir_roman_pantheon_religion
 }
 
 # ISU -> setup/countries/anatolia/isauria.txt
 ISU = {
 	color = rgb { 33 45 205 }
-	culture_definition = isaurian
-	religion_definition = anatolian_religion
+	culture_definition = ir_isaurian_culture
+	religion_definition = ir_anatolian_religion
 }
 
 # LAR -> setup/countries/anatolia/larandia.txt
 LAR = {
 	color = rgb { 191 76 0 }
-	culture_definition = isaurian
-	religion_definition = anatolian_religion
+	culture_definition = ir_isaurian_culture
+	religion_definition = ir_anatolian_religion
 }
 
 # MYD -> setup/countries/anatolia/mariandynia.txt
 MYD = {
 	color = rgb { 71 148 145 }
-	culture_definition = mariandynian
-	religion_definition = roman_pantheon
+	culture_definition = ir_mariandynian_culture
+	religion_definition = ir_roman_pantheon_religion
 }
 
 # SMS -> setup/countries/anatolia/sesamos.txt
 SMS = {
 	color = rgb { 255 255 204 }
-	culture_definition = greco_pontic
-	religion_definition = roman_pantheon
+	culture_definition = ir_greco_pontic_culture
+	religion_definition = ir_roman_pantheon_religion
 }
 
 # TIE -> setup/countries/anatolia/tieion.txt
 TIE = {
 	color = rgb { 70 234 48 }
-	culture_definition = greco_pontic
-	religion_definition = roman_pantheon
+	culture_definition = ir_greco_pontic_culture
+	religion_definition = ir_roman_pantheon_religion
 }
 
 # AKY -> setup/countries/anatolia/arykandia.txt
 AKY = {
 	color = rgb { 255 50 156 }
-	culture_definition = milyadian
-	religion_definition = anatolian_religion
+	culture_definition = ir_milyadian_culture
+	religion_definition = ir_anatolian_religion
 }
 
 # ORO -> setup/countries/anatolia/oroandia.txt
 ORO = {
 	color = rgb { 255 215 139 }
-	culture_definition = oroandian
-	religion_definition = anatolian_religion
+	culture_definition = ir_oroandian_culture
+	religion_definition = ir_anatolian_religion
 }
 
 # ABL -> setup/countries/anatolia/ambladia.txt
 ABL = {
 	color = rgb { 71 218 20 }
-	culture_definition = oroandian
-	religion_definition = anatolian_religion
+	culture_definition = ir_oroandian_culture
+	religion_definition = ir_anatolian_religion
 }
 
 # ISI -> setup/countries/anatolia/isindia.txt
 ISI = {
 	color = rgb { 6 58 54 }
-	culture_definition = milyadian
-	religion_definition = anatolian_religion
+	culture_definition = ir_milyadian_culture
+	religion_definition = ir_anatolian_religion
 }
 
 # LAL -> setup/countries/anatolia/lalasia.txt
 LAL = {
 	color = rgb { 38 70 17 }
-	culture_definition = lalasian
-	religion_definition = anatolian_religion
+	culture_definition = ir_lalasian_culture
+	religion_definition = ir_anatolian_religion
 }
 
 # OEO -> setup/countries/anatolia/oenoandia.txt
 OEO = {
 	color = rgb { 123 118 30 }
-	culture_definition = cabalian
-	religion_definition = anatolian_religion
+	culture_definition = ir_cabalian_culture
+	religion_definition = ir_anatolian_religion
 }
 
 # KIB -> setup/countries/anatolia/kibyratia.txt
 KIB = {
 	color = rgb { 39 203 244 }
-	culture_definition = cabalian
-	religion_definition = anatolian_religion
+	culture_definition = ir_cabalian_culture
+	religion_definition = ir_anatolian_religion
 }
 
 # OML -> setup/countries/anatolia/ormelia.txt
 OML = {
 	color = rgb { 11 93 0 }
-	culture_definition = milyadian
-	religion_definition = anatolian_religion
+	culture_definition = ir_milyadian_culture
+	religion_definition = ir_anatolian_religion
 }
 
 # TYM -> setup/countries/anatolia/tymandia.txt
 TYM = {
 	color = rgb { 189 255 62 }
-	culture_definition = milyadian
-	religion_definition = anatolian_religion
+	culture_definition = ir_milyadian_culture
+	religion_definition = ir_anatolian_religion
 }
 
 # KAK -> setup/countries/anatolia/kaukonia.txt
 KAK = {
 	color = rgb { 127 61 0 }
-	culture_definition = mariandynian
-	religion_definition = roman_pantheon
+	culture_definition = ir_mariandynian_culture
+	religion_definition = ir_roman_pantheon_religion
 }
 
 # OBE -> setup/countries/anatolia/olbe.txt
 OBE = {
 	color = rgb { 130 17 11 }
-	culture_definition = lalasian
-	religion_definition = anatolian_religion
+	culture_definition = ir_lalasian_culture
+	religion_definition = ir_anatolian_religion
 }
 

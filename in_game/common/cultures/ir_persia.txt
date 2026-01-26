@@ -1,121 +1,121 @@
 ﻿# Converted from Imperator group persia
 
-elamite_culture = {
-	# no color
+ir_elamite_culture = {
+	color = rgb { 42 167 184 }
 	tags = { persian_gfx }
-	culture_groups = { persia_group }
+	culture_groups = { ir_persia_group }
 	# source_file = 00_persia.txt
 }
 
-utian_culture = {
-	# no color
+ir_utian_culture = {
+	color = rgb { 42 133 184 }
 	tags = { persian_gfx }
-	culture_groups = { persia_group }
+	culture_groups = { ir_persia_group }
 	# source_file = 00_persia.txt
 }
 
-pasargadi_culture = {
-	# no color
+ir_pasargadi_culture = {
+	color = rgb { 42 99 184 }
 	tags = { persian_gfx }
-	culture_groups = { persia_group }
+	culture_groups = { ir_persia_group }
 	# source_file = 00_persia.txt
 }
 
-sagartian_culture = {
-	# no color
+ir_sagartian_culture = {
+	color = rgb { 42 65 184 }
 	tags = { persian_gfx }
-	culture_groups = { persia_group }
+	culture_groups = { ir_persia_group }
 	# source_file = 00_persia.txt
 }
 
-uxian_culture = {
-	# no color
+ir_uxian_culture = {
+	color = rgb { 53 42 184 }
 	tags = { persian_gfx }
-	culture_groups = { persia_group }
+	culture_groups = { ir_persia_group }
 	# source_file = 00_persia.txt
 }
 
-amardian_culture = {
-	# no color
+ir_amardian_culture = {
+	color = rgb { 87 42 184 }
 	tags = { persian_gfx }
-	culture_groups = { persia_group }
+	culture_groups = { ir_persia_group }
 	# source_file = 00_persia.txt
 }
 
-sarangian_culture = {
-	# no color
+ir_sarangian_culture = {
+	color = rgb { 121 42 184 }
 	tags = { persian_gfx }
-	culture_groups = { persia_group }
+	culture_groups = { ir_persia_group }
 	# source_file = 00_persia.txt
 }
 
-pactyan_culture = {
-	# no color
+ir_pactyan_culture = {
+	color = rgb { 156 42 184 }
 	tags = { persian_gfx }
-	culture_groups = { persia_group }
+	culture_groups = { ir_persia_group }
 	# source_file = 00_persia.txt
 }
 
-cossian_culture = {
-	# no color
+ir_cossian_culture = {
+	color = rgb { 184 42 178 }
 	tags = { persian_gfx }
-	culture_groups = { persia_group }
+	culture_groups = { ir_persia_group }
 	# source_file = 00_persia.txt
 }
 
-cadusian_culture = {
-	# no color
+ir_cadusian_culture = {
+	color = rgb { 184 42 144 }
 	tags = { persian_gfx }
-	culture_groups = { persia_group }
+	culture_groups = { ir_persia_group }
 	# source_file = 00_persia.txt
 }
 
-parthian_culture = {
-	# no color
+ir_parthian_culture = {
+	color = rgb { 184 42 110 }
 	tags = { persian_gfx }
-	culture_groups = { persia_group }
+	culture_groups = { ir_persia_group }
 	# source_file = 00_persia.txt
 }
 
-parecanian_culture = {
-	# no color
+ir_parecanian_culture = {
+	color = rgb { 184 42 76 }
 	tags = { persian_gfx }
-	culture_groups = { persia_group }
+	culture_groups = { ir_persia_group }
 	# source_file = 00_persia.txt
 }
 
-carmanian_culture = {
-	# no color
+ir_carmanian_culture = {
+	color = rgb { 184 42 42 }
 	tags = { persian_gfx }
-	culture_groups = { persia_group }
+	culture_groups = { ir_persia_group }
 	# source_file = 00_persia.txt
 }
 
-median_culture = {
-	# no color
+ir_median_culture = {
+	color = rgb { 184 76 42 }
 	tags = { persian_gfx }
-	culture_groups = { persia_group }
+	culture_groups = { ir_persia_group }
 	# source_file = 00_persia.txt
 }
 
-gedrosian_culture = {
-	# no color
+ir_gedrosian_culture = {
+	color = rgb { 184 110 42 }
 	tags = { persian_gfx }
-	culture_groups = { persia_group }
+	culture_groups = { ir_persia_group }
 	# source_file = 00_persia.txt
 }
 
-hyrcanian_culture = {
-	# no color
+ir_hyrcanian_culture = {
+	color = rgb { 184 144 42 }
 	tags = { persian_gfx }
-	culture_groups = { persia_group }
+	culture_groups = { ir_persia_group }
 	# source_file = 00_persia.txt
 }
 
-sattagydian_culture = {
-	# no color
+ir_sattagydian_culture = {
+	color = rgb { 184 178 42 }
 	tags = { persian_gfx }
-	culture_groups = { persia_group }
+	culture_groups = { ir_persia_group }
 	# source_file = 00_persia.txt
 }
 

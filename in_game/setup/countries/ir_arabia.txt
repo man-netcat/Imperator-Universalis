@@ -3,91 +3,91 @@
 # MAK -> setup/countries/arabia/maka.txt
 MAK = {
 	color = rgb { 101 10 221 }
-	culture_definition = makan
-	religion_definition = arabian_pantheon
+	culture_definition = ir_makan_culture
+	religion_definition = ir_arabian_pantheon_religion
 }
 
 # GRH -> setup/countries/arabia/gerrha.txt
 GRH = {
 	color = rgb { 221 150 99 }
-	culture_definition = makan
-	religion_definition = arabian_pantheon
+	culture_definition = ir_makan_culture
+	religion_definition = ir_arabian_pantheon_religion
 }
 
 # TYO -> setup/countries/arabia/tylos.txt
 TYO = {
 	color = rgb { 100 149 68 }
-	culture_definition = babylonian
-	religion_definition = arabian_pantheon
+	culture_definition = ir_babylonian_culture
+	religion_definition = ir_arabian_pantheon_religion
 }
 
 # SHB -> setup/countries/arabia/sheba.txt
 SHB = {
 	color = rgb { 16 190 78 }
-	culture_definition = sheban
-	religion_definition = arabian_pantheon
+	culture_definition = ir_sheban_culture
+	religion_definition = ir_arabian_pantheon_religion
 }
 
 # QDA -> setup/countries/arabia/qadaritia.txt
 QDA = {
 	color = rgb { 27 104 183 }
-	culture_definition = qedarite
-	religion_definition = arabian_pantheon
+	culture_definition = ir_qedarite_culture
+	religion_definition = ir_arabian_pantheon_religion
 }
 
 # MIN -> setup/countries/arabia/ma'in.txt
 MIN = {
 	color = rgb { 14 119 230 }
-	culture_definition = minaean
-	religion_definition = arabian_pantheon
+	culture_definition = ir_minaean_culture
+	religion_definition = ir_arabian_pantheon_religion
 }
 
 # HDM -> setup/countries/arabia/hadhramut.txt
 HDM = {
 	color = rgb { 80 90 22 }
-	culture_definition = hadhrami
-	religion_definition = arabian_pantheon
+	culture_definition = ir_hadhrami_culture
+	religion_definition = ir_arabian_pantheon_religion
 }
 
 # QTB -> setup/countries/arabia/qataba.txt
 QTB = {
 	color = rgb { 164 19 36 }
-	culture_definition = qatabanian
-	religion_definition = arabian_pantheon
+	culture_definition = ir_qatabanian_culture
+	religion_definition = ir_arabian_pantheon_religion
 }
 
 # HMJ -> setup/countries/arabia/himjar.txt
 HMJ = {
 	color = rgb { 11 101 31 }
-	culture_definition = himjar
-	religion_definition = arabian_pantheon
+	culture_definition = ir_himjar_culture
+	religion_definition = ir_arabian_pantheon_religion
 }
 
 # NBT -> setup/countries/arabia/nabatea.txt
 NBT = {
 	color = rgb { 14 20 31 }
-	culture_definition = nabatean
-	religion_definition = arabian_pantheon
+	culture_definition = ir_nabatean_culture
+	religion_definition = ir_arabian_pantheon_religion
 }
 
 # LHY -> setup/countries/arabia/lihyan.txt
 LHY = {
 	color = rgb { 80 48 189 }
-	culture_definition = nabatean
-	religion_definition = arabian_pantheon
+	culture_definition = ir_nabatean_culture
+	religion_definition = ir_arabian_pantheon_religion
 }
 
 # TQF -> setup/countries/arabia/thaqif.txt
 TQF = {
 	color = rgb { 200 67 166 }
-	culture_definition = taif
-	religion_definition = arabian_pantheon
+	culture_definition = ir_taif_culture
+	religion_definition = ir_arabian_pantheon_religion
 }
 
 # THD -> setup/countries/arabia/thamud.txt
 THD = {
 	color = rgb { 100 167 66 }
-	culture_definition = thamudi
-	religion_definition = arabian_pantheon
+	culture_definition = ir_thamudi_culture
+	religion_definition = ir_arabian_pantheon_religion
 }
 

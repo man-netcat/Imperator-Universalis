@@ -1,112 +1,112 @@
 ﻿# Converted Imperator religions
 
-roman_pantheon = {
+ir_roman_pantheon_religion = {
 	color = rgb { 61 75 204 }
-	group = pantheon
+	group = ir_pantheon_group
 }
 
-egyptian_pantheon = {
+ir_egyptian_pantheon_religion = {
 	color = rgb { 178 161 0 }
-	group = pantheon
+	group = ir_pantheon_group
 }
 
-carthaginian_pantheon = {
+ir_carthaginian_pantheon_religion = {
 	color = rgb { 102 19 186 }
-	group = pantheon
+	group = ir_pantheon_group
 }
 
-shamanism = {
+ir_shamanism_religion = {
 	color = rgb { 255 128 128 }
-	group = pantheon
+	group = ir_pantheon_group
 }
 
-caucasian_religion = {
+ir_caucasian_religion = {
 	color = rgb { 76 26 102 }
-	group = pantheon
+	group = ir_pantheon_group
 }
 
-mesopotamian_religion = {
+ir_mesopotamian_religion = {
 	color = rgb { 128 38 0 }
-	group = pantheon
+	group = ir_pantheon_group
 }
 
-armenian_religion = {
+ir_armenian_religion = {
 	color = rgb { 76 26 51 }
-	group = pantheon
+	group = ir_pantheon_group
 }
 
-anatolian_religion = {
+ir_anatolian_religion = {
 	color = rgb { 76 102 51 }
-	group = pantheon
+	group = ir_pantheon_group
 }
 
-druidism = {
+ir_druidism_religion = {
 	color = rgb { 45 102 31 }
-	group = pantheon
+	group = ir_pantheon_group
 }
 
-animism = {
+ir_animism_religion = {
 	color = rgb { 255 107 0 }
-	group = pantheon
+	group = ir_pantheon_group
 }
 
-judaism = {
+ir_judaism_religion = {
 	color = rgb { 0 25 255 }
-	group = prophets
+	group = ir_prophets_group
 }
 
-zoroaster = {
+ir_zoroaster_religion = {
 	color = rgb { 42 167 184 }
-	group = firetemples
+	group = ir_firetemples_group
 }
 
-berber_religion = {
+ir_berber_religion = {
 	color = rgb { 102 66 51 }
-	group = pantheon
+	group = ir_pantheon_group
 }
 
-germanic_religion = {
+ir_germanic_religion = {
 	color = rgb { 76 39 23 }
-	group = pantheon
+	group = ir_pantheon_group
 }
 
-indo_iranian_religion = {
+ir_indo_iranian_religion = {
 	color = rgb { 184 204 102 }
-	group = pantheon
+	group = ir_pantheon_group
 }
 
-arabian_pantheon = {
+ir_arabian_pantheon_religion = {
 	color = rgb { 67 153 46 }
-	group = pantheon
+	group = ir_pantheon_group
 }
 
-buddhism = {
+ir_buddhism_religion = {
 	color = rgb { 255 237 77 }
-	group = sages
+	group = ir_sages_group
 }
 
-hindu = {
+ir_hindu_religion = {
 	color = rgb { 230 69 0 }
-	group = pantheon
+	group = ir_pantheon_group
 }
 
-eastern_animism = {
+ir_eastern_animism_religion = {
 	color = rgb { 178 76 54 }
-	group = pantheon
+	group = ir_pantheon_group
 }
 
-bon_religion = {
+ir_bon_religion = {
 	color = rgb { 204 0 61 }
-	group = pantheon
+	group = ir_pantheon_group
 }
 
-matrist_religion = {
+ir_matrist_religion = {
 	color = rgb { 107 178 178 }
-	group = pantheon
+	group = ir_pantheon_group
 }
 
-jainism = {
+ir_jainism_religion = {
 	color = rgb { 43 41 51 }
-	group = sages
+	group = ir_sages_group
 }
 
