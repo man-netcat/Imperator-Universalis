@@ -1,7 +1,175 @@
 ﻿# Converted from Imperator group hellenic
 
-hellenic_culture = {
-	color = rgb { 61 75 204 }
+macedonian_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { hellenic_group }
+	# source_file = 00_hellenic.txt
+}
+
+italiotian_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { hellenic_group }
+	# source_file = 00_hellenic.txt
+}
+
+thracian_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { hellenic_group }
+	# source_file = 00_hellenic.txt
+}
+
+cretan_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { hellenic_group }
+	# source_file = 00_hellenic.txt
+}
+
+achaean_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { hellenic_group }
+	# source_file = 00_hellenic.txt
+}
+
+argolian_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { hellenic_group }
+	# source_file = 00_hellenic.txt
+}
+
+arcadian_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { hellenic_group }
+	# source_file = 00_hellenic.txt
+}
+
+epirote_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { hellenic_group }
+	# source_file = 00_hellenic.txt
+}
+
+boeotian_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { hellenic_group }
+	# source_file = 00_hellenic.txt
+}
+
+peloponnesian_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { hellenic_group }
+	# source_file = 00_hellenic.txt
+}
+
+athenian_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { hellenic_group }
+	# source_file = 00_hellenic.txt
+}
+
+euboean_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { hellenic_group }
+	# source_file = 00_hellenic.txt
+}
+
+aetolian_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { hellenic_group }
+	# source_file = 00_hellenic.txt
+}
+
+aegean_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { hellenic_group }
+	# source_file = 00_hellenic.txt
+}
+
+greco_pontic_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { hellenic_group }
+	# source_file = 00_hellenic.txt
+}
+
+aeolian_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { hellenic_group }
+	# source_file = 00_hellenic.txt
+}
+
+troan_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { hellenic_group }
+	# source_file = 00_hellenic.txt
+}
+
+ionian_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { hellenic_group }
+	# source_file = 00_hellenic.txt
+}
+
+cypriot_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { hellenic_group }
+	# source_file = 00_hellenic.txt
+}
+
+thessalian_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { hellenic_group }
+	# source_file = 00_hellenic.txt
+}
+
+bosporan_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { hellenic_group }
+	# source_file = 00_hellenic.txt
+}
+
+syracusan_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { hellenic_group }
+	# source_file = 00_hellenic.txt
+}
+
+cyrenaican_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { hellenic_group }
+	# source_file = 00_hellenic.txt
+}
+
+massalian_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { hellenic_group }
+	# source_file = 00_hellenic.txt
+}
+
+hellenistic_culture = {
+	# no color
 	tags = { greek_gfx }
 	culture_groups = { hellenic_group }
 	# source_file = 00_hellenic.txt

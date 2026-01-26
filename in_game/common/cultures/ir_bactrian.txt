@@ -1,7 +1,70 @@
 ﻿# Converted from Imperator group bactrian
 
 bactrian_culture = {
-	color = rgb { 178 76 54 }
+	# no color
+	tags = { persian_gfx }
+	culture_groups = { bactrian_group }
+	# source_file = 00_bactrian.txt
+}
+
+margian_culture = {
+	# no color
+	tags = { persian_gfx }
+	culture_groups = { bactrian_group }
+	# source_file = 00_bactrian.txt
+}
+
+sogdian_culture = {
+	# no color
+	tags = { persian_gfx }
+	culture_groups = { bactrian_group }
+	# source_file = 00_bactrian.txt
+}
+
+shule_culture = {
+	# no color
+	tags = { persian_gfx }
+	culture_groups = { bactrian_group }
+	# source_file = 00_bactrian.txt
+}
+
+phryni_culture = {
+	# no color
+	tags = { persian_gfx }
+	culture_groups = { bactrian_group }
+	# source_file = 00_bactrian.txt
+}
+
+tayuan_culture = {
+	# no color
+	tags = { persian_gfx }
+	culture_groups = { bactrian_group }
+	# source_file = 00_bactrian.txt
+}
+
+wusun_culture = {
+	# no color
+	tags = { persian_gfx }
+	culture_groups = { bactrian_group }
+	# source_file = 00_bactrian.txt
+}
+
+saka_culture = {
+	# no color
+	tags = { persian_gfx }
+	culture_groups = { bactrian_group }
+	# source_file = 00_bactrian.txt
+}
+
+yuezhi_culture = {
+	# no color
+	tags = { persian_gfx }
+	culture_groups = { bactrian_group }
+	# source_file = 00_bactrian.txt
+}
+
+tocharian_culture = {
+	# no color
 	tags = { persian_gfx }
 	culture_groups = { bactrian_group }
 	# source_file = 00_bactrian.txt

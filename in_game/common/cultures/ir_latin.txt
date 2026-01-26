@@ -1,7 +1,70 @@
 ﻿# Converted from Imperator group latin
 
-latin_culture = {
-	color = rgb { 140 13 13 }
+roman_culture = {
+	# no color
+	tags = { roman_gfx }
+	culture_groups = { latin_group }
+	# source_file = 00_latin.txt
+}
+
+venetic_culture = {
+	# no color
+	tags = { roman_gfx }
+	culture_groups = { latin_group }
+	# source_file = 00_latin.txt
+}
+
+ligurian_culture = {
+	# no color
+	tags = { roman_gfx }
+	culture_groups = { latin_group }
+	# source_file = 00_latin.txt
+}
+
+etruscan_culture = {
+	# no color
+	tags = { roman_gfx }
+	culture_groups = { latin_group }
+	# source_file = 00_latin.txt
+}
+
+rhaetian_culture = {
+	# no color
+	tags = { roman_gfx }
+	culture_groups = { latin_group }
+	# source_file = 00_latin.txt
+}
+
+umbrian_culture = {
+	# no color
+	tags = { roman_gfx }
+	culture_groups = { latin_group }
+	# source_file = 00_latin.txt
+}
+
+samnite_culture = {
+	# no color
+	tags = { roman_gfx }
+	culture_groups = { latin_group }
+	# source_file = 00_latin.txt
+}
+
+siculian_culture = {
+	# no color
+	tags = { roman_gfx }
+	culture_groups = { latin_group }
+	# source_file = 00_latin.txt
+}
+
+bruttian_culture = {
+	# no color
+	tags = { roman_gfx }
+	culture_groups = { latin_group }
+	# source_file = 00_latin.txt
+}
+
+lucanian_culture = {
+	# no color
 	tags = { roman_gfx }
 	culture_groups = { latin_group }
 	# source_file = 00_latin.txt

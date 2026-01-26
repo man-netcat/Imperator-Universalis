@@ -1,7 +1,63 @@
 ﻿# Converted from Imperator group aryan
 
-aryan_culture = {
-	color = rgb { 230 69 0 }
+vidharban_culture = {
+	# no color
+	tags = { north_indian_gfx }
+	culture_groups = { aryan_group }
+	# source_file = 00_aryan.txt
+}
+
+saurashtran_culture = {
+	# no color
+	tags = { north_indian_gfx }
+	culture_groups = { aryan_group }
+	# source_file = 00_aryan.txt
+}
+
+lankan_culture = {
+	# no color
+	tags = { north_indian_gfx }
+	culture_groups = { aryan_group }
+	# source_file = 00_aryan.txt
+}
+
+maharashtran_culture = {
+	# no color
+	tags = { north_indian_gfx }
+	culture_groups = { aryan_group }
+	# source_file = 00_aryan.txt
+}
+
+gandhari_culture = {
+	# no color
+	tags = { north_indian_gfx }
+	culture_groups = { aryan_group }
+	# source_file = 00_aryan.txt
+}
+
+shauraseni_culture = {
+	# no color
+	tags = { north_indian_gfx }
+	culture_groups = { aryan_group }
+	# source_file = 00_aryan.txt
+}
+
+avanti_culture = {
+	# no color
+	tags = { north_indian_gfx }
+	culture_groups = { aryan_group }
+	# source_file = 00_aryan.txt
+}
+
+sindhi_culture = {
+	# no color
+	tags = { north_indian_gfx }
+	culture_groups = { aryan_group }
+	# source_file = 00_aryan.txt
+}
+
+dardic_culture = {
+	# no color
 	tags = { north_indian_gfx }
 	culture_groups = { aryan_group }
 	# source_file = 00_aryan.txt

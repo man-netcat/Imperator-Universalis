@@ -1,7 +1,56 @@
 ﻿# Converted from Imperator group numidian
 
 numidian_culture = {
-	color = rgb { 102 66 51 }
+	# no color
+	tags = { numidian_gfx }
+	culture_groups = { numidian_group }
+	# source_file = 00_numidian.txt
+}
+
+berber_culture = {
+	# no color
+	tags = { numidian_gfx }
+	culture_groups = { numidian_group }
+	# source_file = 00_numidian.txt
+}
+
+gaetulian_culture = {
+	# no color
+	tags = { numidian_gfx }
+	culture_groups = { numidian_group }
+	# source_file = 00_numidian.txt
+}
+
+socossian_culture = {
+	# no color
+	tags = { numidian_gfx }
+	culture_groups = { numidian_group }
+	# source_file = 00_numidian.txt
+}
+
+massaesylian_culture = {
+	# no color
+	tags = { numidian_gfx }
+	culture_groups = { numidian_group }
+	# source_file = 00_numidian.txt
+}
+
+massylian_culture = {
+	# no color
+	tags = { numidian_gfx }
+	culture_groups = { numidian_group }
+	# source_file = 00_numidian.txt
+}
+
+garamantic_culture = {
+	# no color
+	tags = { numidian_gfx }
+	culture_groups = { numidian_group }
+	# source_file = 00_numidian.txt
+}
+
+libyan_culture = {
+	# no color
 	tags = { numidian_gfx }
 	culture_groups = { numidian_group }
 	# source_file = 00_numidian.txt

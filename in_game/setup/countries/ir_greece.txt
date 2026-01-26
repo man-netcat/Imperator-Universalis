@@ -497,8 +497,3 @@ LAP = {
 	religion_definition = roman_pantheon
 }
 
-# PRI -> setup/countries/greece/prasiai.txt
-PRI = {
-	color = rgb { 231 80 34 }
-}
-

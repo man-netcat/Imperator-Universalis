@@ -1,7 +1,77 @@
 ﻿# Converted from Imperator group scythia
 
-scythia_culture = {
-	color = rgb { 184 204 102 }
+scythian_culture = {
+	# no color
+	tags = { scythian_gfx }
+	culture_groups = { scythia_group }
+	# source_file = 00_scythia.txt
+}
+
+sarmatian_culture = {
+	# no color
+	tags = { scythian_gfx }
+	culture_groups = { scythia_group }
+	# source_file = 00_scythia.txt
+}
+
+kharesmian_culture = {
+	# no color
+	tags = { scythian_gfx }
+	culture_groups = { scythia_group }
+	# source_file = 00_scythia.txt
+}
+
+derbiccan_culture = {
+	# no color
+	tags = { scythian_gfx }
+	culture_groups = { scythia_group }
+	# source_file = 00_scythia.txt
+}
+
+sindi_culture = {
+	# no color
+	tags = { scythian_gfx }
+	culture_groups = { scythia_group }
+	# source_file = 00_scythia.txt
+}
+
+siraci_culture = {
+	# no color
+	tags = { scythian_gfx }
+	culture_groups = { scythia_group }
+	# source_file = 00_scythia.txt
+}
+
+maeotian_culture = {
+	# no color
+	tags = { scythian_gfx }
+	culture_groups = { scythia_group }
+	# source_file = 00_scythia.txt
+}
+
+sakan_culture = {
+	# no color
+	tags = { scythian_gfx }
+	culture_groups = { scythia_group }
+	# source_file = 00_scythia.txt
+}
+
+thyssagetaen_culture = {
+	# no color
+	tags = { scythian_gfx }
+	culture_groups = { scythia_group }
+	# source_file = 00_scythia.txt
+}
+
+legian_culture = {
+	# no color
+	tags = { scythian_gfx }
+	culture_groups = { scythia_group }
+	# source_file = 00_scythia.txt
+}
+
+agathyrsian_culture = {
+	# no color
 	tags = { scythian_gfx }
 	culture_groups = { scythia_group }
 	# source_file = 00_scythia.txt

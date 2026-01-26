@@ -1,7 +1,140 @@
 ﻿# Converted from Imperator group germanic
 
-germanic_culture = {
-	color = rgb { 76 39 23 }
+saxonian_culture = {
+	# no color
+	tags = { german_gfx }
+	culture_groups = { germanic_group }
+	# source_file = 00_germanic.txt
+}
+
+anglian_culture = {
+	# no color
+	tags = { german_gfx }
+	culture_groups = { germanic_group }
+	# source_file = 00_germanic.txt
+}
+
+reudingian_culture = {
+	# no color
+	tags = { german_gfx }
+	culture_groups = { germanic_group }
+	# source_file = 00_germanic.txt
+}
+
+teutonian_culture = {
+	# no color
+	tags = { german_gfx }
+	culture_groups = { germanic_group }
+	# source_file = 00_germanic.txt
+}
+
+cimbrian_culture = {
+	# no color
+	tags = { german_gfx }
+	culture_groups = { germanic_group }
+	# source_file = 00_germanic.txt
+}
+
+herulian_culture = {
+	# no color
+	tags = { german_gfx }
+	culture_groups = { germanic_group }
+	# source_file = 00_germanic.txt
+}
+
+rugian_culture = {
+	# no color
+	tags = { german_gfx }
+	culture_groups = { germanic_group }
+	# source_file = 00_germanic.txt
+}
+
+helveconian_culture = {
+	# no color
+	tags = { german_gfx }
+	culture_groups = { germanic_group }
+	# source_file = 00_germanic.txt
+}
+
+bastarnae_culture = {
+	# no color
+	tags = { german_gfx }
+	culture_groups = { germanic_group }
+	# source_file = 00_germanic.txt
+}
+
+gutones_culture = {
+	# no color
+	tags = { german_gfx }
+	culture_groups = { germanic_group }
+	# source_file = 00_germanic.txt
+}
+
+suiones_culture = {
+	# no color
+	tags = { german_gfx }
+	culture_groups = { germanic_group }
+	# source_file = 00_germanic.txt
+}
+
+vandal_culture = {
+	# no color
+	tags = { german_gfx }
+	culture_groups = { germanic_group }
+	# source_file = 00_germanic.txt
+}
+
+raumarician_culture = {
+	# no color
+	tags = { german_gfx }
+	culture_groups = { germanic_group }
+	# source_file = 00_germanic.txt
+}
+
+irminonic_culture = {
+	# no color
+	tags = { german_gfx }
+	culture_groups = { germanic_group }
+	# source_file = 00_germanic.txt
+}
+
+istvaeonic_culture = {
+	# no color
+	tags = { german_gfx }
+	culture_groups = { germanic_group }
+	# source_file = 00_germanic.txt
+}
+
+ingvaeonic_culture = {
+	# no color
+	tags = { german_gfx }
+	culture_groups = { germanic_group }
+	# source_file = 00_germanic.txt
+}
+
+suebian_culture = {
+	# no color
+	tags = { german_gfx }
+	culture_groups = { germanic_group }
+	# source_file = 00_germanic.txt
+}
+
+lemovian_culture = {
+	# no color
+	tags = { german_gfx }
+	culture_groups = { germanic_group }
+	# source_file = 00_germanic.txt
+}
+
+gothonic_culture = {
+	# no color
+	tags = { german_gfx }
+	culture_groups = { germanic_group }
+	# source_file = 00_germanic.txt
+}
+
+frisian_culture = {
+	# no color
 	tags = { german_gfx }
 	culture_groups = { germanic_group }
 	# source_file = 00_germanic.txt

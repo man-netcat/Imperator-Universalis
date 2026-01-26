@@ -12,17 +12,6 @@
   "relationships": [],
   "game_custom_data": {
     "replace_paths": [
-      "common/avatars",
-      "common/culture_groups",
-      "common/cultures",
-      "common/gods",
-      "common/holy_sites",
-      "common/international_organizations",
-      "common/religions",
-      "common/religious_aspects",
-      "common/resolutions",
-      "common/situations",
-      "map_data",
       "setup/countries"
     ]
   }

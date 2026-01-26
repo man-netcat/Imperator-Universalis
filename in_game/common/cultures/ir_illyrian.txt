@@ -1,7 +1,84 @@
 ﻿# Converted from Imperator group illyrian
 
-illyrian_culture = {
-	color = rgb { 61 102 78 }
+taulantian_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { illyrian_group }
+	# source_file = 00_illyrian.txt
+}
+
+abrian_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { illyrian_group }
+	# source_file = 00_illyrian.txt
+}
+
+dardanian_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { illyrian_group }
+	# source_file = 00_illyrian.txt
+}
+
+greco_illyrian_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { illyrian_group }
+	# source_file = 00_illyrian.txt
+}
+
+histrian_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { illyrian_group }
+	# source_file = 00_illyrian.txt
+}
+
+liburnian_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { illyrian_group }
+	# source_file = 00_illyrian.txt
+}
+
+liburnian_culture_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { illyrian_group }
+	# source_file = 00_illyrian.txt
+}
+
+catari_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { illyrian_group }
+	# source_file = 00_illyrian.txt
+}
+
+deraemestian_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { illyrian_group }
+	# source_file = 00_illyrian.txt
+}
+
+deurian_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { illyrian_group }
+	# source_file = 00_illyrian.txt
+}
+
+messapian_culture = {
+	# no color
+	tags = { greek_gfx }
+	culture_groups = { illyrian_group }
+	# source_file = 00_illyrian.txt
+}
+
+paeonian_culture = {
+	# no color
 	tags = { greek_gfx }
 	culture_groups = { illyrian_group }
 	# source_file = 00_illyrian.txt

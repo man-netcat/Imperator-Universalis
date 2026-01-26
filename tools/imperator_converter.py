@@ -265,7 +265,7 @@ def write_mod_localisation(mod_root: Path):
         print("Wrote localisation to", f_religion)
 
 
-RE_BLOCK = re.compile(r"^([a-z0-9_]+)\s*=\s*{", re.I)
+RE_BLOCK = re.compile(r"^\s*([a-z0-9_]+)\s*=\s*{", re.I | re.M)
 RE_INNER = re.compile(r"^\s*([a-z0-9_]+)\s*=\s*{", re.I)
 RE_RGB = re.compile(r"color\s*=\s*rgb\s*\{\s*(\d+)\s+(\d+)\s+(\d+)\s*\}", re.I)
 RE_HSV = re.compile(
@@ -297,21 +297,73 @@ def parse_ir_cultures(ir_root: Path):
         group_base = re.sub(r"^[0-9]+_", "", f.stem)
         group_base = re.sub(r"_group$", "", group_base)
         groups[group_base] = []
+        # determine top-level graphical culture for fallback
         top_g = None
         gm = RE_GRAPH.search(text)
         if gm:
             top_g = gm.group(1)
-        for bm in RE_BLOCK.finditer(text):
+
+        # find the top-level group block for this file (matching the filename-derived group)
+        group_pat = re.compile(r"\b" + re.escape(group_base) + r"\s*=\s*{", re.I)
+        m = group_pat.search(text)
+        group_block_text = text
+        if m:
+            # locate the full brace-delimited group block
+            i = text.find("{", m.end() - 1)
+            if i != -1:
+                depth = 0
+                j = i
+                while j < len(text):
+                    if text[j] == "{":
+                        depth += 1
+                    elif text[j] == "}":
+                        depth -= 1
+                        if depth == 0:
+                            end = j
+                            break
+                    j += 1
+                if i <= end:
+                    group_block_text = text[i + 1 : end]
+
+        # find the inner `culture = { ... }` block if present and parse only its entries
+        cult_m = re.search(r"culture\s*=\s*{", group_block_text, re.I)
+        inner_search_space = group_block_text
+        if cult_m:
+            si = group_block_text.find("{", cult_m.end() - 1)
+            if si != -1:
+                depth = 0
+                j = si
+                while j < len(group_block_text):
+                    if group_block_text[j] == "{":
+                        depth += 1
+                    elif group_block_text[j] == "}":
+                        depth -= 1
+                        if depth == 0:
+                            ei = j
+                            break
+                    j += 1
+                if si <= ei:
+                    inner_search_space = group_block_text[si + 1 : ei]
+
+        # now find culture entries within the selected search space (handles indented names)
+        for bm in RE_BLOCK.finditer(inner_search_space):
+            # ensure the match is a direct child of the `culture = {}` block
+            pos = bm.start()
+            prefix = inner_search_space[:pos]
+            # depth 0 => direct child entries; nested blocks (e.g. family)
+            # will have depth > 0 and should be ignored here.
+            if prefix.count("{") - prefix.count("}") != 0:
+                continue
             name = bm.group(1)
-            i = text.find("{", bm.end() - 1)
+            i = inner_search_space.find("{", bm.end() - 1)
             if i == -1:
                 continue
             depth = 0
             j = i
-            while j < len(text):
-                if text[j] == "{":
+            while j < len(inner_search_space):
+                if inner_search_space[j] == "{":
                     depth += 1
-                elif text[j] == "}":
+                elif inner_search_space[j] == "}":
                     depth -= 1
                     if depth == 0:
                         end = j
@@ -319,12 +371,10 @@ def parse_ir_cultures(ir_root: Path):
                 j += 1
             else:
                 continue
-            block = text[i : end + 1]
-            if name == "culture" or name.endswith("_group"):
-                continue
+            block = inner_search_space[i : end + 1]
             # collect preceding comment(s) as a human-readable name if available
             comment = None
-            prev = text[: bm.start()]
+            prev = inner_search_space[: bm.start()]
             pls = prev.rstrip().splitlines()
             comments = []
             for ln in reversed(pls[-8:]):
@@ -361,8 +411,9 @@ def parse_ir_cultures(ir_root: Path):
                     "comment": comment,
                 }
             )
+
+        # fallback: if no inner cultures were found, treat the whole file/group as a single culture
         if not groups[group_base]:
-            # fallback: use group name as single culture
             name = group_base
             rgb_m = RE_RGB.search(text)
             color = None
@@ -391,7 +442,9 @@ def write_mod_culture_groups(mod_root: Path, groups: dict):
     """
     out_root = mod_root / "in_game" / "common" / "culture_groups"
     out_root.mkdir(parents=True, exist_ok=True)
-    out_file = out_root / "00_culture_groups.txt"
+    # write to a mod-specific filename to avoid unintentionally replacing
+    # the base game's `00_culture_groups.txt` when the mod is loaded
+    out_file = out_root / "ir_culture_groups.txt"
     # Header mirrors EU5 style but contains NO copied content from base game.
     lines = [
         "# avoid naming the same as Cultures and Languages",
@@ -786,6 +839,33 @@ def write_mod_countries(mod_root: Path, ir_root: Path, tags_map: dict, groups: d
     out_base = mod_root / "in_game" / "setup" / "countries"
     out_base.mkdir(parents=True, exist_ok=True)
     groups_out = {}
+    # Write a hardcoded `_default.txt` file per user request. This replaces the
+    # dynamic `ir_countries.txt` output for the base countries listing.
+    hardcoded = """# ===== countries =====
+
+# BAR -> setup/countries/barbarians.txt
+BAR = {
+	color = rgb { 96 95 78 }
+}
+
+# REB -> setup/countries/rebels.txt
+REB = {
+	color = rgb { 40 40 40 }
+}
+
+# PIR -> setup/countries/pirates.txt
+PIR = {
+	color = rgb { 116 143 139 }
+}
+
+# MER -> setup/countries/mercenaries.txt
+MER = {
+	color = rgb { 72 85 83 }
+}
+"""
+    out_file_default = out_base / "_default.txt"
+    out_file_default.write_text(hardcoded.rstrip() + "\n", encoding="utf-8-sig")
+    print("Wrote", out_file_default)
     # start from explicit mappings
     for tag, rel in tags_map.items():
         p = Path(rel)
@@ -793,6 +873,9 @@ def write_mod_countries(mod_root: Path, ir_root: Path, tags_map: dict, groups: d
         if group not in groups_out:
             groups_out[group] = []
         groups_out[group].append((tag, rel))
+    # Prevent writing a generated `ir_countries.txt` by dropping any
+    # group named 'countries' after building the mappings from `tags_map`.
+    groups_out.pop("countries", None)
     # ensure tags that appear in 00_default.txt but are not listed in
     # countries.txt are included using the fallback scanner
     if default_order:
@@ -809,6 +892,20 @@ def write_mod_countries(mod_root: Path, ir_root: Path, tags_map: dict, groups: d
             if group not in groups_out:
                 groups_out[group] = []
             groups_out[group].append((tag, rel))
+
+    # If a default order is provided, restrict output to only those tags
+    # that appear in 00_default.txt. This prevents writing country files
+    # for tags not present in the main default setup.
+    if default_order:
+        allowed = set(default_order)
+        for grp in list(groups_out.keys()):
+            entries = groups_out.get(grp, [])
+            filtered = [(t, r) for (t, r) in entries if t in allowed]
+            if filtered:
+                groups_out[grp] = filtered
+            else:
+                # remove empty groups to avoid emitting empty files
+                groups_out.pop(grp, None)
 
     # If a default order is provided (from 00_default.txt), reorder the
     # grouped entries to follow that sequence. Tags not present in the
@@ -909,11 +1006,11 @@ def write_mod_countries(mod_root: Path, ir_root: Path, tags_map: dict, groups: d
         return best_r, best_c
 
     for group, entries in groups_out.items():
+        # ensure we never write a generated `ir_countries.txt` file
+        if group == "countries":
+            continue
         lines = [f"# ===== {group} =====", ""]
         for tag, rel in entries:
-            # only generate countries for tags that exist in the Imperator localisation
-            if tag not in IR_LOC:
-                continue
             ir_file = None
             color = None
             # rel may be a path relative to the game root; try several candidates
@@ -998,9 +1095,9 @@ def write_mod_countries(mod_root: Path, ir_root: Path, tags_map: dict, groups: d
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("eu5_root")
-    ap.add_argument("ir_root")
-    ap.add_argument("mod_root")
+    ap.add_argument("eu5_root", nargs="?", default="/home/rick/Paradox/Games/Europa Universalis V/game")
+    ap.add_argument("ir_root", nargs="?", default="/home/rick/Paradox/Games/Imperator Rome/game")
+    ap.add_argument("mod_root", nargs="?", default="/home/rick/Paradox/Documents/Europa Universalis V/mod/Imperator Universalis")
     ap.add_argument("--hue-factor", type=float, default=0.04)
     args = ap.parse_args()
 
@@ -1029,7 +1126,5 @@ def main():
     write_mod_localisation(mod_root)
 
 
-if __name__ == "__main__":
-    main()
 if __name__ == "__main__":
     main()

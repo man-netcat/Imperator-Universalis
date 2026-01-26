@@ -1,6 +1,6 @@
 ﻿# Converted from Imperator group celtiberian
 
-celt_iberia_culture = {
+celtiberian_culture = {
 	color = rgb { 129 153 31 }
 	tags = { celtic_gfx }
 	culture_groups = { celtiberian_group }

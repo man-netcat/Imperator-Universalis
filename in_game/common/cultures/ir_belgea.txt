@@ -1,7 +1,63 @@
 ﻿# Converted from Imperator group belgea
 
-belgea_culture = {
-	color = rgb { 23 115 87 }
+belgae_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { belgea_group }
+	# source_file = 00_belgea.txt
+}
+
+treverian_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { belgea_group }
+	# source_file = 00_belgea.txt
+}
+
+aduatacian_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { belgea_group }
+	# source_file = 00_belgea.txt
+}
+
+eburonian_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { belgea_group }
+	# source_file = 00_belgea.txt
+}
+
+nervian_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { belgea_group }
+	# source_file = 00_belgea.txt
+}
+
+morinian_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { belgea_group }
+	# source_file = 00_belgea.txt
+}
+
+veliocassian_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { belgea_group }
+	# source_file = 00_belgea.txt
+}
+
+bellovacian_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { belgea_group }
+	# source_file = 00_belgea.txt
+}
+
+sennonian_culture = {
+	# no color
 	tags = { celtic_gfx }
 	culture_groups = { belgea_group }
 	# source_file = 00_belgea.txt

@@ -1,7 +1,119 @@
 ﻿# Converted from Imperator group persia
 
-persia_culture = {
-	color = rgb { 42 167 184 }
+elamite_culture = {
+	# no color
+	tags = { persian_gfx }
+	culture_groups = { persia_group }
+	# source_file = 00_persia.txt
+}
+
+utian_culture = {
+	# no color
+	tags = { persian_gfx }
+	culture_groups = { persia_group }
+	# source_file = 00_persia.txt
+}
+
+pasargadi_culture = {
+	# no color
+	tags = { persian_gfx }
+	culture_groups = { persia_group }
+	# source_file = 00_persia.txt
+}
+
+sagartian_culture = {
+	# no color
+	tags = { persian_gfx }
+	culture_groups = { persia_group }
+	# source_file = 00_persia.txt
+}
+
+uxian_culture = {
+	# no color
+	tags = { persian_gfx }
+	culture_groups = { persia_group }
+	# source_file = 00_persia.txt
+}
+
+amardian_culture = {
+	# no color
+	tags = { persian_gfx }
+	culture_groups = { persia_group }
+	# source_file = 00_persia.txt
+}
+
+sarangian_culture = {
+	# no color
+	tags = { persian_gfx }
+	culture_groups = { persia_group }
+	# source_file = 00_persia.txt
+}
+
+pactyan_culture = {
+	# no color
+	tags = { persian_gfx }
+	culture_groups = { persia_group }
+	# source_file = 00_persia.txt
+}
+
+cossian_culture = {
+	# no color
+	tags = { persian_gfx }
+	culture_groups = { persia_group }
+	# source_file = 00_persia.txt
+}
+
+cadusian_culture = {
+	# no color
+	tags = { persian_gfx }
+	culture_groups = { persia_group }
+	# source_file = 00_persia.txt
+}
+
+parthian_culture = {
+	# no color
+	tags = { persian_gfx }
+	culture_groups = { persia_group }
+	# source_file = 00_persia.txt
+}
+
+parecanian_culture = {
+	# no color
+	tags = { persian_gfx }
+	culture_groups = { persia_group }
+	# source_file = 00_persia.txt
+}
+
+carmanian_culture = {
+	# no color
+	tags = { persian_gfx }
+	culture_groups = { persia_group }
+	# source_file = 00_persia.txt
+}
+
+median_culture = {
+	# no color
+	tags = { persian_gfx }
+	culture_groups = { persia_group }
+	# source_file = 00_persia.txt
+}
+
+gedrosian_culture = {
+	# no color
+	tags = { persian_gfx }
+	culture_groups = { persia_group }
+	# source_file = 00_persia.txt
+}
+
+hyrcanian_culture = {
+	# no color
+	tags = { persian_gfx }
+	culture_groups = { persia_group }
+	# source_file = 00_persia.txt
+}
+
+sattagydian_culture = {
+	# no color
 	tags = { persian_gfx }
 	culture_groups = { persia_group }
 	# source_file = 00_persia.txt

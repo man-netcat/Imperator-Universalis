@@ -1,7 +1,42 @@
 ﻿# Converted from Imperator group pracyan
 
-pracyan_culture = {
-	color = rgb { 13 26 0 }
+kalingan_culture = {
+	# no color
+	tags = { north_indian_gfx }
+	culture_groups = { pracyan_group }
+	# source_file = 00_pracyan.txt
+}
+
+kamarupi_culture = {
+	# no color
+	tags = { north_indian_gfx }
+	culture_groups = { pracyan_group }
+	# source_file = 00_pracyan.txt
+}
+
+bangli_culture = {
+	# no color
+	tags = { north_indian_gfx }
+	culture_groups = { pracyan_group }
+	# source_file = 00_pracyan.txt
+}
+
+atavi_culture = {
+	# no color
+	tags = { north_indian_gfx }
+	culture_groups = { pracyan_group }
+	# source_file = 00_pracyan.txt
+}
+
+magadhi_culture = {
+	# no color
+	tags = { north_indian_gfx }
+	culture_groups = { pracyan_group }
+	# source_file = 00_pracyan.txt
+}
+
+himalayan_culture = {
+	# no color
 	tags = { north_indian_gfx }
 	culture_groups = { pracyan_group }
 	# source_file = 00_pracyan.txt

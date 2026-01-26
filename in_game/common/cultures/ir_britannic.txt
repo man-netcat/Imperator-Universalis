@@ -1,7 +1,112 @@
 ﻿# Converted from Imperator group britannic
 
 britannic_culture = {
-	color = rgb { 31 72 102 }
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { britannic_group }
+	# source_file = 00_britannic.txt
+}
+
+caledonian_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { britannic_group }
+	# source_file = 00_britannic.txt
+}
+
+iceni_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { britannic_group }
+	# source_file = 00_britannic.txt
+}
+
+trinovantian_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { britannic_group }
+	# source_file = 00_britannic.txt
+}
+
+cantian_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { britannic_group }
+	# source_file = 00_britannic.txt
+}
+
+durotrigan_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { britannic_group }
+	# source_file = 00_britannic.txt
+}
+
+dumnonian_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { britannic_group }
+	# source_file = 00_britannic.txt
+}
+
+dobunnian_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { britannic_group }
+	# source_file = 00_britannic.txt
+}
+
+demetian_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { britannic_group }
+	# source_file = 00_britannic.txt
+}
+
+ordovitian_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { britannic_group }
+	# source_file = 00_britannic.txt
+}
+
+coritani_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { britannic_group }
+	# source_file = 00_britannic.txt
+}
+
+cornovian_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { britannic_group }
+	# source_file = 00_britannic.txt
+}
+
+brigantic_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { britannic_group }
+	# source_file = 00_britannic.txt
+}
+
+votadinian_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { britannic_group }
+	# source_file = 00_britannic.txt
+}
+
+damnonian_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { britannic_group }
+	# source_file = 00_britannic.txt
+}
+
+taexalian_culture = {
+	# no color
 	tags = { celtic_gfx }
 	culture_groups = { britannic_group }
 	# source_file = 00_britannic.txt

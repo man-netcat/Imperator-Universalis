@@ -17,7 +17,7 @@ BAR = {
 MER = {
 	pattern = "pattern_solid.tga"
 	color1 = "ck2_black"
-	color2 = "roman_red"
+	color2 = "_red"
 
 	textured_emblem = {
 		texture = "te_mercenary.dds"
@@ -49,34 +49,34 @@ ETR = {
 
 ROM = {
 	pattern = "pattern_solid.tga"
-	color1 = "roman_red"
-	color2 = "roman_gold"
+	color1 = "_red"
+	color2 = "_gold"
 
 	colored_emblem = {
-		texture = "ce_roman_eagle.dds"
-		color1 = "roman_gold"
+		texture = "ce__eagle.dds"
+		color1 = "_gold"
 	}
 }
 
 EASTERN_ROME_FLAG = {
 	pattern = "pattern_solid.tga"
 	color1 = "ck2_purple"
-	color2 = "roman_gold"
+	color2 = "_gold"
 
 	colored_emblem = {
-		texture = "ce_roman_eagle.dds"
-		color1 = "roman_gold"
+		texture = "ce__eagle.dds"
+		color1 = "_gold"
 	}
 }
 
 ROM_REVOLT = {
 	pattern = "pattern_solid.tga"
 	color1 = "offwhite"
-	color2 = "roman_red"
+	color2 = "_red"
 
 	colored_emblem = {
-		texture = "ce_roman_eagle.dds"
-		color1 = "roman_red"
+		texture = "ce__eagle.dds"
+		color1 = "_red"
 	}
 }
 
@@ -84,11 +84,11 @@ ROM_REVOLT = {
 MAC = {
 	pattern = "pattern_solid.tga"
 	color1 = "macedonian_blue"
-	color2 = "roman_gold"
+	color2 = "_gold"
 
 	colored_emblem = {
 		texture = "ce_macedonian_sun.dds"
-		color1 = "roman_gold"
+		color1 = "_gold"
 	}
 }
 
@@ -105,7 +105,7 @@ SMC = {
 
 MAC_REVOLT = {
 	pattern = "pattern_solid.tga"
-	color1 = "roman_gold"
+	color1 = "_gold"
 	color2 = "macedonian_blue"
 
 	colored_emblem = {
@@ -117,18 +117,18 @@ MAC_REVOLT = {
 PRY = {
 	pattern = "pattern_solid.tga"
 	color1 = "phrygia_red"
-	color2 = "roman_gold"
+	color2 = "_gold"
 
 	colored_emblem = {
 		texture = "ce_phrygia.dds"
-		color1 = "roman_gold"
-		color2 = "roman_gold"
+		color1 = "_gold"
+		color2 = "_gold"
 	}
 	
 	colored_emblem = {
 		texture = "ce_border_stars_01.dds"
-		color1 = "roman_gold"
-		color2 = "roman_gold"
+		color1 = "_gold"
+		color2 = "_gold"
 		instance = { rotation = 0 }
 		instance = { rotation = 90 }
 		instance = { rotation = 180 }
@@ -138,7 +138,7 @@ PRY = {
 
 PRY_REVOLT = {
 	pattern = "pattern_solid.tga"
-	color1 = "roman_gold"
+	color1 = "_gold"
 	color2 = "phrygia_red"
 
 	colored_emblem = {
@@ -161,17 +161,17 @@ PRY_REVOLT = {
 EGY = {
 	pattern = "pattern_solid.tga"
 	color1 = "pitch_black"
-	color2 = "roman_gold"
+	color2 = "_gold"
 
 	colored_emblem = {
 		texture = "ce_egypt.dds"
-		color1 = "roman_gold"
+		color1 = "_gold"
 	}
 }
 
 EGY_REVOLT = {
 	pattern = "pattern_solid.tga"
-	color1 = "roman_gold"
+	color1 = "_gold"
 	color2 = "pitch_black"
 
 	colored_emblem = {
@@ -228,7 +228,7 @@ SPA = {
 	colored_emblem = {
 		texture = "ce_border_simple_02.tga"
 		color1 = "offwhite"
-		color2 = "roman_gold"
+		color2 = "_gold"
 		instance = { rotation = 0 }
 		instance = { rotation = 180 }
 	}
@@ -335,7 +335,7 @@ MRY = {
 
 SYR = {
 	pattern = "pattern_vertical_split_01.tga"
-	color1 = "roman_gold"
+	color1 = "_gold"
 	color2 = "spartan_rust"
 	color3 = "pink_skin"
 
@@ -348,7 +348,7 @@ SYR = {
 	colored_emblem = {
 		texture = "ce_head_02.dds"
 		color1 = "pink_skin"
-		color2 = "roman_gold"
+		color2 = "_gold"
 		instance = { scale = { 0.4  0.4 } }
 	}
 }
@@ -369,7 +369,7 @@ SWE = {
 
 BYZ = {
 	pattern = "pattern_solid.tga"
-	color1= "roman_red"
+	color1= "_red"
 	color2= "ck2_yellow"
 	
 	colored_emblem = {
@@ -427,13 +427,13 @@ CIO = {
 SXS = {
 	pattern = "pattern_solid.tga"
 	color1= "spartan_rust"
-	color2= "roman_gold"
+	color2= "_gold"
 	color3= "offwhite"
 	
 	colored_emblem = {
 		texture = "ce_sword_01.dds"
 		color1 = "offwhite"
-		color2 = "roman_gold"
+		color2 = "_gold"
 		
 		
 		instance = { rotation = -90 scale = { 0.75 0.75 }  position = { 0.5 0.25 } }
@@ -474,12 +474,12 @@ JUD = {
 
 ARM = {
 	pattern = "pattern_solid.tga"
-	color1 = "roman_red"
-	color2 = "roman_gold"
+	color1 = "_red"
+	color2 = "_gold"
 
 	colored_emblem = {
 		texture = "ce_armenia_symbol.dds"
-		color1 = "roman_gold"
+		color1 = "_gold"
 	}
 }
 
@@ -497,11 +497,11 @@ TRE = {
 RHO = {
 	pattern = "pattern_solid.tga"
 	color1 = "rhodes_color"
-	color2 = "roman_red"
+	color2 = "_red"
 
 	colored_emblem = {
 		texture = "ce_rhodes.dds"
-		color1 = "roman_red"
+		color1 = "_red"
 		color2 = "ck2_green"
 	}
 }
@@ -543,11 +543,11 @@ BIT = {
 HCP = {
 	pattern = "pattern_solid.tga"
 	color1 = "pitch_black"
-	color2 = "roman_gold"
+	color2 = "_gold"
 
 	colored_emblem = {
 		texture = "ce_heraklea_pontica.dds"
-		color1 = "roman_gold"
+		color1 = "_gold"
 	}
 }
 
@@ -645,8 +645,8 @@ CLC = {
 
 MAP={
 	pattern="pattern_solid.tga"
-	color1=pitch_black	color2=bone_white	color3=roman_red	colored_emblem={
-		color1=roman_gold		color2=roman_red		texture="ce_gryphon_01.dds"
+	color1=pitch_black	color2=bone_white	color3=_red	colored_emblem={
+		color1=_gold		color2=_red		texture="ce_gryphon_01.dds"
 		mask={
 			1 2 3 
 		}
@@ -658,7 +658,7 @@ MAP={
 		}
 	}
 	colored_emblem={
-		color1=roman_gold		color2=roman_red		texture="ce_border_simple_02.tga"
+		color1=_gold		color2=_red		texture="ce_border_simple_02.tga"
 		mask={
 			1 2 3 
 		}
@@ -673,11 +673,11 @@ MAP={
 
 BAC = {
 	pattern="pattern_solid.tga"
-	color1=roman_red
+	color1=_red
 	color2=pitch_black
 	color3=bone_white
 	colored_emblem={
-		color1=roman_gold
+		color1=_gold
 		color2=ck2_green
 		texture="ce_elephant_01.dds"
 		mask={
@@ -691,7 +691,7 @@ BAC = {
 		}
 	}
 	colored_emblem={
-		color1=roman_gold
+		color1=_gold
 		color2=ck2_green
 		texture="ce_border_triangles_02.dds"
 		mask={
@@ -770,8 +770,8 @@ PERSIA_SATRAPY_FLAG = {
 
 DAHAE_FLAG={
 	pattern="pattern_solid.tga"
-	color1=etruscan_blue	color2=roman_gold	color3=maurya_brown	colored_emblem={
-		color1=roman_gold		color2=navy_blue		texture="ce_circle_wheel_01.dds"
+	color1=etruscan_blue	color2=_gold	color3=maurya_brown	colored_emblem={
+		color1=_gold		color2=navy_blue		texture="ce_circle_wheel_01.dds"
 		mask={
 			1 2 3 
 		}
@@ -783,7 +783,7 @@ DAHAE_FLAG={
 		}
 	}
 	colored_emblem={
-		color1=roman_gold		color2=navy_blue		texture="ce_border_zigzag_02.dds"
+		color1=_gold		color2=navy_blue		texture="ce_border_zigzag_02.dds"
 		mask={
 			1 2 3 
 		}
@@ -805,7 +805,7 @@ DAHAE_FLAG={
 EGYPTIAN_FLAG = {
 	pattern="pattern_solid.tga"
 	color1=ck2_blue	
-	color2=roman_gold	
+	color2=_gold	
 	color3=navy_blue	
 
 	colored_emblem={
@@ -1096,7 +1096,7 @@ SICILY_FLAG = {
 	colored_emblem = {
 		texture = "ce_border_meander_02.tga"
 		color1 = "offwhite"
-		color2 = "roman_red"
+		color2 = "_red"
 		instance = { rotation = 0 }
 		instance = { rotation = 180 }
 	}
@@ -1104,7 +1104,7 @@ SICILY_FLAG = {
 	colored_emblem = {
 		texture = "ce_syracuse.dds"
 		color1 = "offwhite"
-		color2= "roman_red"
+		color2= "_red"
 		instance = { scale = { 0.9 0.9 }  }
 	}
 }
@@ -1211,7 +1211,7 @@ ARGEAD_FLAG = {
 
 ARGEAD_REVOLTER_FLAG = {
 	pattern = "pattern_solid.tga"
-	color1 = "roman_red"
+	color1 = "_red"
 	color2 = "sun_yellow"
 
 	colored_emblem = {
@@ -1399,7 +1399,7 @@ ALBION_FLAG = {
 	colored_emblem = {
 		texture = "ce_bow_01.dds"
 		color1 = "ck2_blue"
-		color2= "roman_red"
+		color2= "_red"
 		instance = { scale = { 0.9 0.9 }  }
 	}
 }
@@ -1469,7 +1469,7 @@ ROME_SUBJECT_FLAG = {
 	color2 = "silver"
 
 	colored_emblem = {
-		texture = "ce_roman_eagle.dds"
+		texture = "ce__eagle.dds"
 		color1 = "silver"
 	}
 }
@@ -2141,11 +2141,11 @@ AMK = {
 EPI_MAC = {
 	pattern = "pattern_solid.tga"
 	color1 = "pitch_black"
-	color2 = "roman_gold"
+	color2 = "_gold"
 
 	colored_emblem = {
 		texture = "ce_macedonian_sun.dds"
-		color1 = "roman_gold"
+		color1 = "_gold"
 	}
 }
 
@@ -2234,14 +2234,14 @@ PERGAMON_FLAG = {
 	colored_emblem = {
 		texture = "ce_border_meander_01.tga"
 		color1 = "pitch_black"
-		color2 = "roman_gold"
+		color2 = "_gold"
 		instance = { rotation = 0 }
 		instance = { rotation = 180 }
 	}
 
 	colored_emblem = {
 		texture = "ce_snake_02.dds"
-		color1 = "roman_gold"
+		color1 = "_gold"
 		color2= "bone_white"
 		instance = {
 			scale = { 0.8 0.8 }
@@ -2256,7 +2256,7 @@ WESTERN_NESIOTIC_FLAG = {
 
 	colored_emblem = {
 		texture = "ce_star_8.dds"
-		color1 = "roman_gold"
+		color1 = "_gold"
 		instance = { 
 			scale = { 0.33 0.33 }
 			position = { 0.17 0.5 }
@@ -2280,15 +2280,15 @@ MIT_FLAG = {
 	colored_emblem = {
 		texture = "ce_border_meander_01.tga"
 		color1 = "ck2_purple"
-		color2 = "roman_gold"
+		color2 = "_gold"
 		instance = { rotation = 0 }
 		instance = { rotation = 180 }
 	}
 
 	colored_emblem = {
 		texture = "ce_water_nymph_01.dds"
-		color1 = "roman_gold"
-		color2= "roman_gold"
+		color1 = "_gold"
+		color2= "_gold"
 		instance = {
 			scale = { 0.8 0.8 }
 		}
@@ -2301,36 +2301,36 @@ TELMESSOS_FLAG = {
 
 	colored_emblem = {
 		texture = "ce_thrace.dds"
-		color1 = "roman_gold"
+		color1 = "_gold"
 	}
 }
 
 MAC_PRY = {
 	pattern = "pattern_solid.tga"
 	color1 = "phrygia_red"
-	color2 = "roman_gold"
+	color2 = "_gold"
 
 	colored_emblem = {
 		texture = "ce_macedonian_sun.dds"
-		color1 = "roman_gold"
+		color1 = "_gold"
 	}
 }
 
 PRY_MAC = {
 	pattern = "pattern_solid.tga"
 	color1 = "macedonian_blue"
-	color2 = "roman_gold"
+	color2 = "_gold"
 
 	colored_emblem = {
 		texture = "ce_phrygia.dds"
-		color1 = "roman_gold"
-		color2 = "roman_gold"
+		color1 = "_gold"
+		color2 = "_gold"
 	}
 	
 	colored_emblem = {
 		texture = "ce_border_stars_01.dds"
-		color1 = "roman_gold"
-		color2 = "roman_gold"
+		color1 = "_gold"
+		color2 = "_gold"
 		instance = { rotation = 0 }
 		instance = { rotation = 90 }
 		instance = { rotation = 180 }
@@ -2341,12 +2341,12 @@ PRY_MAC = {
 SARDIS_FLAG = {
 	pattern = "pattern_solid.tga"
 	color1 = "pitch_black"
-	color2 = "roman_gold"
+	color2 = "_gold"
 
 	colored_emblem = {
 		texture = "ce_cat_01.dds"
 		color1 = "lighter_dark_orange"
-		color2 = "roman_gold"
+		color2 = "_gold"
 	}
 	
 	colored_emblem = {
@@ -2361,12 +2361,12 @@ SARDIS_FLAG = {
 PHRYGIA_SATRAPY_FLAG = {
 	pattern = "pattern_solid.tga"
 	color1 = "dark_green"
-	color2 = "roman_gold"
+	color2 = "_gold"
 
 	colored_emblem = {
 		texture = "ce_eagle_03.dds"
-		color1 = "roman_gold"
-		color2 = "roman_gold"
+		color1 = "_gold"
+		color2 = "_gold"
 		instance = {
 			scale = { 0.9 0.9 }
 		}
@@ -2375,7 +2375,7 @@ PHRYGIA_SATRAPY_FLAG = {
 	colored_emblem = {
 		texture = "ce_border_rug_01.tga"
 		color1 = "dark_green"
-		color2 = "roman_gold"
+		color2 = "_gold"
 		instance = { rotation = 0 }
 		instance = { rotation = 180 }
 	}
@@ -2384,18 +2384,18 @@ PHRYGIA_SATRAPY_FLAG = {
 CARIA_SATRAPY_FLAG = {
 	pattern = "pattern_solid.tga"
 	color1 = "navy_blue"
-	color2 = "roman_gold"
+	color2 = "_gold"
 
 	colored_emblem = {
 		texture = "ce_pegasus_01.dds"
-		color1 = "roman_gold"
-		color2 = "roman_gold"
+		color1 = "_gold"
+		color2 = "_gold"
 	}
 	
 	colored_emblem = {
 		texture = "ce_border_stars_01.dds"
-		color1 = "roman_gold"
-		color2 = "roman_gold"
+		color1 = "_gold"
+		color2 = "_gold"
 		instance = { rotation = 0 }
 		instance = { rotation = 90 }
 		instance = { rotation = 180 }
@@ -2406,19 +2406,19 @@ CARIA_SATRAPY_FLAG = {
 PHA = {
 	pattern = "pattern_solid.tga"
 	color1 = "dark_green"
-	color2 = "roman_gold"
+	color2 = "_gold"
 
 	colored_emblem = {
 		texture = "ce_hellenic_1.dds"
-		color1 = "roman_gold"
-		color2 = "roman_gold"
+		color1 = "_gold"
+		color2 = "_gold"
 		instance = { scale = { 1.05 1.05 }  }
 	}
 
 	colored_emblem = {
 		texture = "ce_13.dds"
-		color1 = "roman_gold"
-		color2 = "roman_gold"
+		color1 = "_gold"
+		color2 = "_gold"
 		instance = { scale = { 0.5 0.5 }  }
 	}
 }
@@ -2426,12 +2426,12 @@ PHA = {
 ASP = {
 	pattern = "pattern_solid.tga"
 	color1 = "navy_blue"
-	color2 = "roman_gold"
+	color2 = "_gold"
 
 	colored_emblem = {
 		texture = "ce_fish_01.dds"
 		color1 = "light_yellow"
-		color2 = "roman_gold"
+		color2 = "_gold"
 	}
 	
 	colored_emblem = {
@@ -2446,12 +2446,12 @@ ASP = {
 EPM = {
 	pattern = "pattern_solid.tga"
 	color1 = "judea_blue"
-	color2 = "roman_gold"
+	color2 = "_gold"
 
 	colored_emblem = {
 		texture = "ce_hellenic_3.dds"
 		color1 = "pitch_black"
-		color2 = "roman_gold"
+		color2 = "_gold"
 	}
 }
 
@@ -2525,7 +2525,7 @@ ION = {
 
 	colored_emblem = {
 		texture = "ce_3.dds"
-		color1 = "roman_gold"
+		color1 = "_gold"
 		instance = {
 			position = { 0.5 0.53 }
 		}
@@ -2703,14 +2703,14 @@ ISI = {
 	colored_emblem = {
 		texture = "ce_border_zigzag_01.dds"
 		color1 = "pitch_black"
-		color2 = "roman_gold"
+		color2 = "_gold"
 		instance = { rotation = 0 }
 		instance = { rotation = 180 }
 	}
 
 	colored_emblem = {
 		texture = "ce_horse_02.dds"
-		color1 = "roman_gold"
+		color1 = "_gold"
 		instance = {
 			scale = { 0.9 0.9 }
 			position = { 0.5 0.52 }
@@ -2725,7 +2725,7 @@ KTN = {
 
 	colored_emblem = {
 		texture = "ce_border_rug_01.tga"
-		color1 = "roman_gold"
+		color1 = "_gold"
 		color2 = "purple"
 		instance = { rotation = 90 }
 		instance = { rotation = 270 }
@@ -2733,7 +2733,7 @@ KTN = {
 
 	colored_emblem = {
 		texture = "ce_goddess_01.dds"
-		color1 = "roman_gold"
+		color1 = "_gold"
 		instance = {
 			scale = { -0.9 0.9 }
 			rotation = 0
@@ -2773,7 +2773,7 @@ OEO = {
 	colored_emblem = {
 		texture = "ce_square_03.dds"
 		color1 = "pitch_black"
-		color2 = "roman_gold"
+		color2 = "_gold"
 		instance = {
 			scale = { 1.4 1.4 }
 		}
@@ -2781,7 +2781,7 @@ OEO = {
 
 	colored_emblem = {
 		texture = "ce_eagle_03.dds"
-		color1 = "roman_gold"
+		color1 = "_gold"
 		instance = {
 			scale = { -0.8 0.8 }
 			position = { 0.534 0.5 }
@@ -2923,14 +2923,14 @@ PPH = {
 	colored_emblem = {
 		texture = "ce_border_leaves_01.dds"
 		color1 = "ocean_blue"
-		color2 = "roman_gold"
+		color2 = "_gold"
 		instance = { rotation = 0 }
 		instance = { rotation = 180 }
 	}
 
 	colored_emblem = {
 		texture = "ce_antlers_01.dds"
-		color1 = "roman_gold"
+		color1 = "_gold"
 		color2 = "ocean_blue"
 		instance = {
 			scale = { -0.9 0.9 }
@@ -3020,7 +3020,7 @@ CAB = {
 
 	colored_emblem = {
 		texture = "ce_square_03.dds"
-		color1 = "roman_gold"
+		color1 = "_gold"
 		instance = { scale = { -1.3 1.3 }  }
 	}
 
@@ -3038,7 +3038,7 @@ CAB = {
 
 	colored_emblem = {
 		texture = "ce_eagle_01.dds"
-		color1 = "roman_gold"
+		color1 = "_gold"
 		instance = {
 			scale = { -0.8 0.8 }
 			position = { 0.5 0.5 }

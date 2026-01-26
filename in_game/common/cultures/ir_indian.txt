@@ -1,7 +1,21 @@
 ﻿# Converted from Imperator group indian
 
-indian_culture = {
-	color = rgb { 135 61 153 }
+kannadan_culture = {
+	# no color
+	tags = { south_indian_gfx }
+	culture_groups = { indian_group }
+	# source_file = 00_indian.txt
+}
+
+tamil_culture = {
+	# no color
+	tags = { south_indian_gfx }
+	culture_groups = { indian_group }
+	# source_file = 00_indian.txt
+}
+
+telugu_culture = {
+	# no color
 	tags = { south_indian_gfx }
 	culture_groups = { indian_group }
 	# source_file = 00_indian.txt

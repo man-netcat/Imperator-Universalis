@@ -1,7 +1,21 @@
 ﻿# Converted from Imperator group east_levantine
 
-east_levantine_culture = {
-	color = rgb { 128 38 0 }
+aramaic_culture = {
+	# no color
+	tags = { persian_gfx }
+	culture_groups = { east_levantine_group }
+	# source_file = 00_east_levantine.txt
+}
+
+assyrian_culture = {
+	# no color
+	tags = { persian_gfx }
+	culture_groups = { east_levantine_group }
+	# source_file = 00_east_levantine.txt
+}
+
+babylonian_culture = {
+	# no color
 	tags = { persian_gfx }
 	culture_groups = { east_levantine_group }
 	# source_file = 00_east_levantine.txt

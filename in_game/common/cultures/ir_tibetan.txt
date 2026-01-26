@@ -1,7 +1,28 @@
 ﻿# Converted from Imperator group tibetan
 
-tibetan_culture = {
-	color = rgb { 204 0 61 }
+zhangzhung_culture = {
+	# no color
+	tags = { north_indian_gfx }
+	culture_groups = { tibetan_group }
+	# source_file = 00_tibetan.txt
+}
+
+sumpa_culture = {
+	# no color
+	tags = { north_indian_gfx }
+	culture_groups = { tibetan_group }
+	# source_file = 00_tibetan.txt
+}
+
+yarlung_culture = {
+	# no color
+	tags = { north_indian_gfx }
+	culture_groups = { tibetan_group }
+	# source_file = 00_tibetan.txt
+}
+
+tsang_culture = {
+	# no color
 	tags = { north_indian_gfx }
 	culture_groups = { tibetan_group }
 	# source_file = 00_tibetan.txt

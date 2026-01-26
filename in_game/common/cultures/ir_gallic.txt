@@ -1,7 +1,98 @@
 ﻿# Converted from Imperator group gallic
 
-gallic_culture = {
-	color = rgb { 45 102 31 }
+aremorican_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { gallic_group }
+	# source_file = 00_gallic.txt
+}
+
+lepontic_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { gallic_group }
+	# source_file = 00_gallic.txt
+}
+
+vindelician_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { gallic_group }
+	# source_file = 00_gallic.txt
+}
+
+helvetian_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { gallic_group }
+	# source_file = 00_gallic.txt
+}
+
+biturigan_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { gallic_group }
+	# source_file = 00_gallic.txt
+}
+
+volcae_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { gallic_group }
+	# source_file = 00_gallic.txt
+}
+
+salluvian_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { gallic_group }
+	# source_file = 00_gallic.txt
+}
+
+haedui_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { gallic_group }
+	# source_file = 00_gallic.txt
+}
+
+carnuti_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { gallic_group }
+	# source_file = 00_gallic.txt
+}
+
+santonian_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { gallic_group }
+	# source_file = 00_gallic.txt
+}
+
+lemovician_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { gallic_group }
+	# source_file = 00_gallic.txt
+}
+
+pictonian_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { gallic_group }
+	# source_file = 00_gallic.txt
+}
+
+aulercian_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { gallic_group }
+	# source_file = 00_gallic.txt
+}
+
+arverni_culture = {
+	# no color
 	tags = { celtic_gfx }
 	culture_groups = { gallic_group }
 	# source_file = 00_gallic.txt

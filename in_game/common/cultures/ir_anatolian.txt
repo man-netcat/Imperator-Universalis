@@ -1,7 +1,140 @@
 ﻿# Converted from Imperator group anatolian
 
-anatolian_culture = {
-	color = rgb { 134 230 126 }
+cappadocian_culture = {
+	# no color
+	tags = { anatolian_gfx }
+	culture_groups = { anatolian_group }
+	# source_file = 00_anatolian.txt
+}
+
+carian_culture = {
+	# no color
+	tags = { anatolian_gfx }
+	culture_groups = { anatolian_group }
+	# source_file = 00_anatolian.txt
+}
+
+phrygian_culture = {
+	# no color
+	tags = { anatolian_gfx }
+	culture_groups = { anatolian_group }
+	# source_file = 00_anatolian.txt
+}
+
+lycaonian_culture = {
+	# no color
+	tags = { anatolian_gfx }
+	culture_groups = { anatolian_group }
+	# source_file = 00_anatolian.txt
+}
+
+isaurian_culture = {
+	# no color
+	tags = { anatolian_gfx }
+	culture_groups = { anatolian_group }
+	# source_file = 00_anatolian.txt
+}
+
+paphlagonian_culture = {
+	# no color
+	tags = { anatolian_gfx }
+	culture_groups = { anatolian_group }
+	# source_file = 00_anatolian.txt
+}
+
+lycian_culture = {
+	# no color
+	tags = { anatolian_gfx }
+	culture_groups = { anatolian_group }
+	# source_file = 00_anatolian.txt
+}
+
+pamphylian_culture = {
+	# no color
+	tags = { anatolian_gfx }
+	culture_groups = { anatolian_group }
+	# source_file = 00_anatolian.txt
+}
+
+mysian_culture = {
+	# no color
+	tags = { anatolian_gfx }
+	culture_groups = { anatolian_group }
+	# source_file = 00_anatolian.txt
+}
+
+cilician_culture = {
+	# no color
+	tags = { anatolian_gfx }
+	culture_groups = { anatolian_group }
+	# source_file = 00_anatolian.txt
+}
+
+lydian_culture = {
+	# no color
+	tags = { anatolian_gfx }
+	culture_groups = { anatolian_group }
+	# source_file = 00_anatolian.txt
+}
+
+armenian_culture = {
+	# no color
+	tags = { anatolian_gfx }
+	culture_groups = { anatolian_group }
+	# source_file = 00_anatolian.txt
+}
+
+pisidian_culture = {
+	# no color
+	tags = { anatolian_gfx }
+	culture_groups = { anatolian_group }
+	# source_file = 00_anatolian.txt
+}
+
+milyadian_culture = {
+	# no color
+	tags = { anatolian_gfx }
+	culture_groups = { anatolian_group }
+	# source_file = 00_anatolian.txt
+}
+
+cataonian_culture = {
+	# no color
+	tags = { anatolian_gfx }
+	culture_groups = { anatolian_group }
+	# source_file = 00_anatolian.txt
+}
+
+lalasian_culture = {
+	# no color
+	tags = { anatolian_gfx }
+	culture_groups = { anatolian_group }
+	# source_file = 00_anatolian.txt
+}
+
+cabalian_culture = {
+	# no color
+	tags = { anatolian_gfx }
+	culture_groups = { anatolian_group }
+	# source_file = 00_anatolian.txt
+}
+
+oroandian_culture = {
+	# no color
+	tags = { anatolian_gfx }
+	culture_groups = { anatolian_group }
+	# source_file = 00_anatolian.txt
+}
+
+morimenian_culture = {
+	# no color
+	tags = { anatolian_gfx }
+	culture_groups = { anatolian_group }
+	# source_file = 00_anatolian.txt
+}
+
+kennataian_culture = {
+	# no color
 	tags = { anatolian_gfx }
 	culture_groups = { anatolian_group }
 	# source_file = 00_anatolian.txt

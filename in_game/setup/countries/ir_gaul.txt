@@ -588,18 +588,3 @@ RMI = {
 	religion_definition = druidism
 }
 
-# CDC -> setup/countries/gaul/cadurci.txt
-CDC = {
-	color = rgb { 96 8 4 }
-}
-
-# SRD -> setup/countries/gaul/sordones.txt
-SRD = {
-	color = rgb { 44 144 244 }
-}
-
-# HVT -> setup/countries/gaul/helveti.txt
-HVT = {
-	color = rgb { 42 126 230 }
-}
-

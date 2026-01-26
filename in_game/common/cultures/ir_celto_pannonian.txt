@@ -1,7 +1,42 @@
 ﻿# Converted from Imperator group celto_pannonian
 
-celto_pannonian_culture = {
-	color = rgb { 37 64 10 }
+celtic_pannonian_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { celto_pannonian_group }
+	# source_file = 00_celto_pannonian.txt
+}
+
+letobician_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { celto_pannonian_group }
+	# source_file = 00_celto_pannonian.txt
+}
+
+carnian_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { celto_pannonian_group }
+	# source_file = 00_celto_pannonian.txt
+}
+
+noric_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { celto_pannonian_group }
+	# source_file = 00_celto_pannonian.txt
+}
+
+boian_culture = {
+	# no color
+	tags = { celtic_gfx }
+	culture_groups = { celto_pannonian_group }
+	# source_file = 00_celto_pannonian.txt
+}
+
+eravisci_culture = {
+	# no color
 	tags = { celtic_gfx }
 	culture_groups = { celto_pannonian_group }
 	# source_file = 00_celto_pannonian.txt

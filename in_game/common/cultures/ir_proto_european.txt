@@ -1,7 +1,56 @@
 ﻿# Converted from Imperator group proto_european
 
-proto_european_culture = {
-	color = rgb { 121 128 96 }
+vasconian_culture = {
+	# no color
+	tags = { iberian_gfx }
+	culture_groups = { proto_european_group }
+	# source_file = 00_proto_european.txt
+}
+
+aquitani_culture = {
+	# no color
+	tags = { iberian_gfx }
+	culture_groups = { proto_european_group }
+	# source_file = 00_proto_european.txt
+}
+
+nuragic_culture = {
+	# no color
+	tags = { iberian_gfx }
+	culture_groups = { proto_european_group }
+	# source_file = 00_proto_european.txt
+}
+
+autrigonian_culture = {
+	# no color
+	tags = { iberian_gfx }
+	culture_groups = { proto_european_group }
+	# source_file = 00_proto_european.txt
+}
+
+ilergetian_culture = {
+	# no color
+	tags = { iberian_gfx }
+	culture_groups = { proto_european_group }
+	# source_file = 00_proto_european.txt
+}
+
+corsian_culture = {
+	# no color
+	tags = { iberian_gfx }
+	culture_groups = { proto_european_group }
+	# source_file = 00_proto_european.txt
+}
+
+cantabrian_culture = {
+	# no color
+	tags = { iberian_gfx }
+	culture_groups = { proto_european_group }
+	# source_file = 00_proto_european.txt
+}
+
+talaiotic_culture = {
+	# no color
 	tags = { iberian_gfx }
 	culture_groups = { proto_european_group }
 	# source_file = 00_proto_european.txt

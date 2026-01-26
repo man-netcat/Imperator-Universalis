@@ -364,8 +364,3 @@ SIN = {
 	religion_definition = roman_pantheon
 }
 
-# NEP -> setup/countries/italia/neapolis.txt
-NEP = {
-	color = rgb { 44 10 100 }
-}
-
