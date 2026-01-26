@@ -1,0 +1,114 @@
+﻿# ===== caucasiamesopotamia =====
+
+# SEL -> setup/countries/caucasiamesopotamia/seleucid empire.txt
+SEL = {
+	color = rgb { 40 121 173 }
+	culture_definition = ir_macedonian_culture
+	religion_definition = ir_roman_pantheon_religion
+}
+
+# PAR -> setup/countries/caucasiamesopotamia/parthia.txt
+PAR = {
+	color = rgb { 102 106 195 }
+	culture_definition = ir_macedonian_culture
+	religion_definition = ir_roman_pantheon_religion
+}
+
+# ADI -> setup/countries/caucasiamesopotamia/adiabene.txt
+ADI = {
+	color = rgb { 66 244 104 }
+	culture_definition = ir_assyrian_culture
+	religion_definition = ir_zoroaster_religion
+}
+
+# ARM -> setup/countries/caucasiamesopotamia/armenia.txt
+ARM = {
+	color = rgb { 172 58 52 }
+	culture_definition = ir_armenian_culture
+	religion_definition = ir_zoroaster_religion
+}
+
+# MAP -> setup/countries/caucasiamesopotamia/media atropatene.txt
+MAP = {
+	color = rgb { 89 107 104 }
+	culture_definition = ir_median_culture
+	religion_definition = ir_zoroaster_religion
+}
+
+# IBR -> setup/countries/caucasiamesopotamia/iberia.txt
+IBR = {
+	color = rgb { 229 221 178 }
+	culture_definition = ir_ibero_culture
+	religion_definition = ir_caucasian_religion
+}
+
+# COL -> setup/countries/caucasiamesopotamia/colchis.txt
+COL = {
+	color = rgb { 0 198 107 }
+	culture_definition = ir_colchian_culture
+	religion_definition = ir_caucasian_religion
+}
+
+# ALB -> setup/countries/caucasiamesopotamia/albania.txt
+ALB = {
+	color = rgb { 221 138 69 }
+	culture_definition = ir_albanian_culture
+	religion_definition = ir_caucasian_religion
+}
+
+# LGA -> setup/countries/caucasiamesopotamia/legia.txt
+LGA = {
+	color = rgb { 31 64 80 }
+	culture_definition = ir_legian_culture
+	religion_definition = ir_indo_iranian_religion
+}
+
+# SCA -> setup/countries/caucasiamesopotamia/scythia.txt
+SCA = {
+	color = rgb { 181 55 44 }
+	culture_definition = ir_sakan_culture
+	religion_definition = ir_indo_iranian_religion
+}
+
+# TRZ -> setup/countries/caucasiamesopotamia/trapezous.txt
+TRZ = {
+	color = rgb { 32 150 102 }
+	culture_definition = ir_greco_pontic_culture
+	religion_definition = ir_roman_pantheon_religion
+}
+
+# SND -> setup/countries/caucasiamesopotamia/sindica.txt
+SND = {
+	color = rgb { 12 183 162 }
+	culture_definition = ir_sindi_culture
+	religion_definition = ir_indo_iranian_religion
+}
+
+# SCE -> setup/countries/caucasiamesopotamia/siracia.txt
+SCE = {
+	color = rgb { 212 64 182 }
+	culture_definition = ir_siraci_culture
+	religion_definition = ir_indo_iranian_religion
+}
+
+# ZGY -> setup/countries/caucasiamesopotamia/zygia.txt
+ZGY = {
+	color = rgb { 45 154 217 }
+	culture_definition = ir_sindi_culture
+	religion_definition = ir_indo_iranian_religion
+}
+
+# HNY -> setup/countries/caucasiamesopotamia/heniochia.txt
+HNY = {
+	color = rgb { 248 201 12 }
+	culture_definition = ir_colchian_culture
+	religion_definition = ir_caucasian_religion
+}
+
+# PHI -> setup/countries/caucasiamesopotamia/phasis.txt
+PHI = {
+	color = rgb { 229 22 31 }
+	culture_definition = ir_greco_pontic_culture
+	religion_definition = ir_roman_pantheon_religion
+}
+

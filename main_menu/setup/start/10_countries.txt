@@ -1,6 +1,22 @@
-﻿countries = {
+current_age = age_1_traditions
+
+# own_control_core
+# own_control_integrated
+# own_control_conquered
+# own_control_colony
+# own_core
+# own_conquered
+# own_integrated
+# own_colony
+# control_core
+# control
+# our_cores_conquered_by_others
+
 countries = {
-	ROM = {
+	countries = {
+
+		ROM = {
+		# Rome
 		own_control_core = {
 			rome
 		}
@@ -11,6 +27,7 @@ countries = {
 	}
 
 	BYZ = {
+		# Byzantion
 		own_control_core = {
 			constantinople
 		}
@@ -19,5 +36,6 @@ countries = {
 		include = "expl_mediterranean"
 		capital = constantinople
 	}
+
 }
 }

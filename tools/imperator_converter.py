@@ -10,6 +10,7 @@ Usage:
   python3 imperator_converter.py <eu5_root> <ir_root> <mod_root> [--hue-factor 0.04]
 """
 from pathlib import Path
+import shutil
 import argparse
 import re
 import sys
@@ -534,7 +535,7 @@ def write_mod_culture_groups(mod_root: Path, groups: dict):
     out_root.mkdir(parents=True, exist_ok=True)
     # write to a mod-specific filename to avoid unintentionally replacing
     # the base game's `00_culture_groups.txt` when the mod is loaded
-    out_file = out_root / "ir_culture_groups.txt"
+    out_file = out_root / f"{FILE_PREFIX}culture_groups.txt"
     # Header mirrors EU5 style but contains NO copied content from base game.
     lines = [
         "# avoid naming the same as Cultures and Languages",
@@ -1275,7 +1276,7 @@ MER = {
                 LOCAL_ENTRIES[adjk] = IR_LOC[adjk]
             else:
                 LOCAL_ENTRIES[adjk] = "MISSING"
-        out_file = out_base / f"{_prefixed_tag(group)}.txt"
+        out_file = out_base / f"00_ir_{_normalize_tag(group)}.txt"
         write_text_file(out_file, "\n".join(lines) + "\n")
 
 
@@ -1290,10 +1291,36 @@ def main():
     eu5_root = Path(args.eu5_root)
     ir_root = Path(args.ir_root)
     mod_root = Path(args.mod_root)
+    # clear any existing generated files in target mod directories
+    def clear_output_dirs(root: Path):
+        dirs = [
+            root / "in_game" / "localization" / "english",
+            root / "in_game" / "common" / "culture_groups",
+            root / "in_game" / "common" / "cultures",
+            root / "in_game" / "common" / "religions",
+            root / "in_game" / "common" / "religion_groups",
+            root / "in_game" / "setup" / "countries",
+        ]
+        for d in dirs:
+            if not d.exists():
+                continue
+            try:
+                for child in list(d.iterdir()):
+                    if child.is_file() or child.is_symlink():
+                        child.unlink()
+                    else:
+                        shutil.rmtree(child)
+            except Exception:
+                # best-effort: ignore failures and continue
+                pass
+
     # load EU5 basegame localisation to prefer existing keys; also load I:R localisation
     global EU5_LOC, IR_LOC
     EU5_LOC = parse_eu5_localisation(eu5_root)
     IR_LOC = parse_ir_localisation(ir_root)
+
+    # ensure old generated files are removed before we write anything
+    clear_output_dirs(mod_root)
 
     groups = parse_ir_cultures(ir_root)
     write_mod_cultures(mod_root, groups)
@@ -1301,12 +1328,12 @@ def main():
     write_mod_culture_groups(mod_root, groups)
     # attempt to map Imperator graphical culture names to EU5 gfx keys
     # and patch generated culture `tags = { ... }` entries where possible
-    try:
-        ir_gfx_map = parse_ir_gfx_map(ir_root)
-        if ir_gfx_map:
-            patch_tags_from_ir(mod_root, ir_gfx_map)
-    except Exception:
-        pass
+    # Automatic patching of `tags = { ... }` from I:R gfx mappings
+    # has been intentionally disabled to avoid unexpected replacements
+    # and noisy update messages. To re-enable, call:
+    # ir_gfx_map = parse_ir_gfx_map(ir_root)
+    # if ir_gfx_map:
+    #     patch_tags_from_ir(mod_root, ir_gfx_map)
     write_mod_religions(mod_root, ir_root)
     tags_map = parse_countries_list(ir_root)
     default_order = parse_default_order(ir_root)

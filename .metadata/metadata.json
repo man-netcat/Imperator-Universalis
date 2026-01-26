@@ -12,7 +12,6 @@
   "relationships": [],
   "game_custom_data": {
     "replace_paths": [
-      "setup/countries"
     ]
   }
 }

@@ -1,0 +1,338 @@
+﻿# ===== india =====
+
+# ZHZ -> setup/countries/india/zhangzhung.txt
+ZHZ = {
+	color = rgb { 188 15 11 }
+	culture_definition = ir_zhangzhung_culture
+	religion_definition = ir_bon_religion
+}
+
+# ATV -> setup/countries/india/atavia.txt
+ATV = {
+	color = rgb { 32 217 219 }
+	culture_definition = ir_atavi_culture
+	religion_definition = ir_hindu_religion
+}
+
+# HYA -> setup/countries/india/haihaya.txt
+HYA = {
+	color = rgb { 123 22 90 }
+	culture_definition = ir_avanti_culture
+	religion_definition = ir_hindu_religion
+}
+
+# PLD -> setup/countries/india/palada.txt
+PLD = {
+	color = rgb { 248 17 76 }
+	culture_definition = ir_vidharban_culture
+	religion_definition = ir_hindu_religion
+}
+
+# RHN -> setup/countries/india/ruhunu.txt
+RHN = {
+	color = rgb { 113 205 109 }
+	culture_definition = ir_lankan_culture
+	religion_definition = ir_hindu_religion
+}
+
+# MLY -> setup/countries/india/malaya.txt
+MLY = {
+	color = rgb { 222 39 30 }
+	culture_definition = ir_lankan_culture
+	religion_definition = ir_hindu_religion
+}
+
+# PRB -> setup/countries/india/parambu.txt
+PRB = {
+	color = rgb { 243 231 36 }
+	culture_definition = ir_tamil_culture
+	religion_definition = ir_hindu_religion
+}
+
+# KSR -> setup/countries/india/kosar.txt
+KSR = {
+	color = rgb { 20 149 16 }
+	culture_definition = ir_tamil_culture
+	religion_definition = ir_jainism_religion
+}
+
+# ADG -> setup/countries/india/adagaiman.txt
+ADG = {
+	color = rgb { 234 14 19 }
+	culture_definition = ir_tamil_culture
+	religion_definition = ir_hindu_religion
+}
+
+# GHA -> setup/countries/india/gandhara.txt
+GHA = {
+	color = rgb { 243 92 72 }
+	culture_definition = ir_gandhari_culture
+	religion_definition = ir_hindu_religion
+}
+
+# PRA -> setup/countries/india/paurava.txt
+PRA = {
+	color = rgb { 172 29 219 }
+	culture_definition = ir_gandhari_culture
+	religion_definition = ir_hindu_religion
+}
+
+# YDD -> setup/countries/india/yadheuya.txt
+YDD = {
+	color = rgb { 255 240 75 }
+	culture_definition = ir_shauraseni_culture
+	religion_definition = ir_hindu_religion
+}
+
+# KHB -> setup/countries/india/khambojas.txt
+KHB = {
+	color = rgb { 33 130 99 }
+	culture_definition = ir_gandhari_culture
+	religion_definition = ir_hindu_religion
+}
+
+# KLS -> setup/countries/india/kalasas.txt
+KLS = {
+	color = rgb { 130 16 129 }
+	culture_definition = ir_dardic_culture
+	religion_definition = ir_hindu_religion
+}
+
+# NBA -> setup/countries/india/nabha.txt
+NBA = {
+	color = rgb { 240 100 30 }
+	culture_definition = ir_dardic_culture
+	religion_definition = ir_hindu_religion
+}
+
+# NBP -> setup/countries/india/nabapankti.txt
+NBP = {
+	color = rgb { 123 43 23 }
+	culture_definition = ir_himalayan_culture
+	religion_definition = ir_buddhism_religion
+}
+
+# SMT -> setup/countries/india/samatata.txt
+SMT = {
+	color = rgb { 234 134 16 }
+	culture_definition = ir_bangli_culture
+	religion_definition = ir_hindu_religion
+}
+
+# TSA -> setup/countries/india/tsang.txt
+TSA = {
+	color = rgb { 222 211 111 }
+	culture_definition = ir_tsang_culture
+	religion_definition = ir_bon_religion
+}
+
+# YRL -> setup/countries/india/yarlung.txt
+YRL = {
+	color = rgb { 188 215 11 }
+	culture_definition = ir_yarlung_culture
+	religion_definition = ir_bon_religion
+}
+
+# SMP -> setup/countries/india/sumpa.txt
+SMP = {
+	color = rgb { 8 15 111 }
+	culture_definition = ir_sumpa_culture
+	religion_definition = ir_bon_religion
+}
+
+# ALU -> setup/countries/india/alupa.txt
+ALU = {
+	color = rgb { 10 20 199 }
+	culture_definition = ir_kannadan_culture
+	religion_definition = ir_hindu_religion
+}
+
+# KUN -> setup/countries/india/kuntala.txt
+KUN = {
+	color = rgb { 187 113 99 }
+	culture_definition = ir_kannadan_culture
+	religion_definition = ir_hindu_religion
+}
+
+# PIT -> setup/countries/india/pitinika.txt
+PIT = {
+	color = rgb { 21 24 26 }
+	culture_definition = ir_maharashtran_culture
+	religion_definition = ir_hindu_religion
+}
+
+# BOJ -> setup/countries/india/bhoja.txt
+BOJ = {
+	color = rgb { 21 113 199 }
+	culture_definition = ir_vidharban_culture
+	religion_definition = ir_hindu_religion
+}
+
+# RTI -> setup/countries/india/rathikas.txt
+RTI = {
+	color = rgb { 7 189 30 }
+	culture_definition = ir_maharashtran_culture
+	religion_definition = ir_hindu_religion
+}
+
+# ASM -> setup/countries/india/ashmaka.txt
+ASM = {
+	color = rgb { 190 192 191 }
+	culture_definition = ir_telugu_culture
+	religion_definition = ir_hindu_religion
+}
+
+# ANH -> setup/countries/india/andhra.txt
+ANH = {
+	color = rgb { 70 35 165 }
+	culture_definition = ir_telugu_culture
+	religion_definition = ir_hindu_religion
+}
+
+# KAL -> setup/countries/india/kalinga.txt
+KAL = {
+	color = rgb { 190 35 34 }
+	culture_definition = ir_kalingan_culture
+	religion_definition = ir_hindu_religion
+}
+
+# KRP -> setup/countries/india/kamarupa.txt
+KRP = {
+	color = rgb { 15 79 24 }
+	culture_definition = ir_kamarupi_culture
+	religion_definition = ir_hindu_religion
+}
+
+# ANU -> setup/countries/india/anuradhapura.txt
+ANU = {
+	color = rgb { 108 98 180 }
+	culture_definition = ir_lankan_culture
+	religion_definition = ir_hindu_religion
+}
+
+# MSH -> setup/countries/india/mahisha.txt
+MSH = {
+	color = rgb { 19 106 44 }
+	culture_definition = ir_kannadan_culture
+	religion_definition = ir_hindu_religion
+}
+
+# IDR -> setup/countries/india/indravana.txt
+IDR = {
+	color = rgb { 116 7 189 }
+	culture_definition = ir_telugu_culture
+	religion_definition = ir_hindu_religion
+}
+
+# PND -> setup/countries/india/pandyas.txt
+PND = {
+	color = rgb { 111 99 2 }
+	culture_definition = ir_tamil_culture
+	religion_definition = ir_hindu_religion
+}
+
+# KRA -> setup/countries/india/karusa.txt
+KRA = {
+	color = rgb { 53 90 123 }
+	culture_definition = ir_atavi_culture
+	religion_definition = ir_hindu_religion
+}
+
+# CHL -> setup/countries/india/cholas.txt
+CHL = {
+	color = rgb { 223 16 100 }
+	culture_definition = ir_tamil_culture
+	religion_definition = ir_hindu_religion
+}
+
+# AYY -> setup/countries/india/ay.txt
+AYY = {
+	color = rgb { 14 220 91 }
+	culture_definition = ir_tamil_culture
+	religion_definition = ir_hindu_religion
+}
+
+# CHR -> setup/countries/india/cheras.txt
+CHR = {
+	color = rgb { 13 188 41 }
+	culture_definition = ir_tamil_culture
+	religion_definition = ir_hindu_religion
+}
+
+# STY -> setup/countries/india/satiyaputa.txt
+STY = {
+	color = rgb { 13 78 189 }
+	culture_definition = ir_tamil_culture
+	religion_definition = ir_hindu_religion
+}
+
+# PSH -> setup/countries/india/pishan.txt
+PSH = {
+	color = rgb { 48 108 91 }
+	culture_definition = ir_saka_culture
+	religion_definition = ir_eastern_animism_religion
+}
+
+# KSA -> setup/countries/india/kusan.txt
+KSA = {
+	color = rgb { 221 13 222 }
+	culture_definition = ir_tocharian_culture
+	religion_definition = ir_eastern_animism_religion
+}
+
+# KHT -> setup/countries/india/khotan.txt
+KHT = {
+	color = rgb { 180 130 40 }
+	culture_definition = ir_saka_culture
+	religion_definition = ir_eastern_animism_religion
+}
+
+# LOL -> setup/countries/india/loulan.txt
+LOL = {
+	color = rgb { 13 136 117 }
+	culture_definition = ir_saka_culture
+	religion_definition = ir_eastern_animism_religion
+}
+
+# MRY -> setup/countries/india/mauryas.txt
+MRY = {
+	color = rgb { 186 140 48 }
+	culture_definition = ir_magadhi_culture
+	religion_definition = ir_hindu_religion
+}
+
+# SHU -> setup/countries/india/shule.txt
+SHU = {
+	color = rgb { 13 140 41 }
+	culture_definition = ir_tocharian_culture
+	religion_definition = ir_eastern_animism_religion
+}
+
+# PHY -> setup/countries/india/phryni.txt
+PHY = {
+	color = rgb { 88 4 18 }
+	culture_definition = ir_saka_culture
+	religion_definition = ir_eastern_animism_religion
+}
+
+# TAY -> setup/countries/india/tayuan.txt
+TAY = {
+	color = rgb { 111 116 78 }
+	culture_definition = ir_tayuan_culture
+	religion_definition = ir_eastern_animism_religion
+}
+
+# WUS -> setup/countries/india/wusun.txt
+WUS = {
+	color = rgb { 88 5 98 }
+	culture_definition = ir_tocharian_culture
+	religion_definition = ir_eastern_animism_religion
+}
+
+# SOG -> setup/countries/india/sogdia.txt
+SOG = {
+	color = rgb { 8 216 178 }
+	culture_definition = ir_sogdian_culture
+	religion_definition = ir_eastern_animism_religion
+}
+
