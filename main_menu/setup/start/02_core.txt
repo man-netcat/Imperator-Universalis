@@ -1,4 +1,4 @@
-﻿institution_manager = {
+institution_manager = {
 }
 
 religion_manager = {

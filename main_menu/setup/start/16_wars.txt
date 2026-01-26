@@ -1,2 +1,2 @@
-﻿war_manager = {
+war_manager = {
 }

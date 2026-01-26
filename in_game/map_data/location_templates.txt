@@ -1,0 +1,19 @@
+rome = {
+	topography = flatland
+	vegetation = farmland
+	climate = mediterranean
+	religion = catholic
+	culture = roman_pantheon
+	raw_material = wheat
+	natural_harbor_suitability = 0
+}
+
+constantinople = {
+	topography = flatland
+	vegetation = farmland
+	climate = mediterranean
+	religion = roman_pantheon
+	culture = thracian
+	raw_material = silk
+	natural_harbor_suitability = 1
+}

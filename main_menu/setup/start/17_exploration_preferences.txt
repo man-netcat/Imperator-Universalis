@@ -1,2 +1,2 @@
-﻿exploration_manager = {
+exploration_manager = {
 }

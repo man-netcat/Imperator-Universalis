@@ -12,10 +12,28 @@
   "relationships": [],
   "game_custom_data": {
     "replace_paths": [
-      "setup/countries",
-      "common/cultures",
+      "common/advances",
+      "common/avatars",
+      "common/building_types",
       "common/culture_groups",
-      "common/religions"
+      "common/cultures",
+      "common/gods",
+      "common/goods_demand",
+      "common/holy_sites",
+      "common/international_organizations",
+      "common/laws",
+      "common/levies",
+      "common/on_action",
+      "common/religions",
+      "common/religious_aspects",
+      "common/resolutions",
+      "common/situations",
+      "common/town_setups",
+      "common/unit_categories",
+      "common/unit_types",
+      "events",
+      "map_data",
+      "setup/countries"
     ]
   }
 }

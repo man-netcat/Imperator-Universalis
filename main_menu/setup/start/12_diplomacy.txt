@@ -1,2 +1,2 @@
-﻿diplomacy_manager = {
+diplomacy_manager = {
 }

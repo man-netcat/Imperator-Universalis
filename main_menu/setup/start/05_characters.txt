@@ -1,4 +1,4 @@
-﻿#Remember to write sons and daughters ALWAYS after their parents to avoid crashes
+#Remember to write sons and daughters ALWAYS after their parents to avoid crashes
 
 character_db={
 }

@@ -1,2 +1,2 @@
-﻿market_manager = {
+market_manager = {
 }

@@ -1,2 +1,2 @@
-﻿situation_manager={
+situation_manager={
 }

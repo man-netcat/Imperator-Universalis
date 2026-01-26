@@ -1,213 +1,23 @@
-﻿# Auto-generated from tools/ir_to_eu5_pixel_map.json + owners
+﻿countries = {
 countries = {
-	ADI = {
-		own_control_core = {
-		indian_capricorn_tropic
-		patos_lagoon
-		}
-	}
-	ALU = {
-		own_control_core = {
-		arochukwu
-		}
-	}
-	ANU = {
-		own_control_core = {
-		atlantic_irminger_current9
-		}
-	}
-	ATH = {
-		own_control_core = {
-		atlantic_southcurrent1
-		atlantic_southcurrent60
-		}
-	}
-	BAC = {
-		own_control_core = {
-		waziblo
-		}
-	}
-	BMB = {
-		own_control_core = {
-		kyzylkum_desert
-		}
-	}
-	BYZ = {
-		own_control_core = {
-		constantinople
-		}
-	}
-	CAP = {
-		own_control_core = {
-		north_indian_countercurrent
-		}
-	}
-	CAR = {
-		own_control_core = {
-		chastoozerye
-		jade_bay
-		pacific_capricorn_tropic
-		}
-	}
-	CHL = {
-		own_control_core = {
-		south_pacific_countercurrent
-		}
-	}
-	CYR = {
-		own_control_core = {
-		ye_ya_xabine
-		}
-	}
-	DOD = {
-		own_control_core = {
-		atlantic_gulf_stream18
-		}
-	}
-	DRD = {
-		own_control_core = {
-		central_atlantic
-		}
-	}
-	EGY = {
-		own_control_core = {
-		indian_capricorn_tropic
-		}
-	}
-	EPI = {
-		own_control_core = {
-		north_pacific_countercurrent
-		}
-	}
-	ETR = {
-		own_control_core = {
-		atlantic_south_sainthelenacurrent4
-		indian_capricorn_tropic
-		pacific_capricorn_tropic
-		}
-	}
-	HCP = {
-		own_control_core = {
-		north_atlantic_countercurrent
-		}
-	}
-	HYA = {
-		own_control_core = {
-		indian_southcurrent6
-		}
-	}
-	IBR = {
-		own_control_core = {
-		tocantis_amazon_jungle
-		}
-	}
-	ION = {
-		own_control_core = {
-		tessawa
-		}
-	}
-	JUD = {
-		own_control_core = {
-		pacific_north_current23
-		}
-	}
-	MAC = {
-		own_control_core = {
-		atlantic_capricorn_tropic
-		mbai_yuru
-		}
-	}
-	MAP = {
-		own_control_core = {
-		pacific_south_equatorial_current22
-		}
-	}
-	MLO = {
-		own_control_core = {
-		indian_coast6
-		}
-	}
-	MRY = {
-		own_control_core = {
-		atlantic_capricorn_tropic
-		iny_karaja
-		}
-	}
-	ODR = {
-		own_control_core = {
-		yoreme
-		}
-	}
-	PND = {
-		own_control_core = {
-		cassipore_mouth
-		}
-	}
-	PRB = {
-		own_control_core = {
-		atlantic_southcurrent17
-		}
-	}
-	PRY = {
-		own_control_core = {
-		pacific_south_current65
-		}
-	}
-	RHO = {
-		own_control_core = {
-		tenere
-		}
-	}
 	ROM = {
 		own_control_core = {
-		rome
+			rome
 		}
+
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		capital = rome
 	}
-	SAM = {
+
+	BYZ = {
 		own_control_core = {
-		atlantic_capricorn_tropic
-		indian_southequatorialcurrent3
-		patos_coast
+			constantinople
 		}
+
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		capital = constantinople
 	}
-	SCE = {
-		own_control_core = {
-		baskamyr
-		}
-	}
-	SCY = {
-		own_control_core = {
-		brig
-		}
-	}
-	SEL = {
-		own_control_core = {
-		amiq_coast5
-		}
-	}
-	SID = {
-		own_control_core = {
-		central_atlantic
-		}
-	}
-	SMA = {
-		own_control_core = {
-		teulada_cape
-		}
-	}
-	SNP = {
-		own_control_core = {
-		qalat_ghilji
-		}
-	}
-	SYR = {
-		own_control_core = {
-		indian_capricorn_tropic
-		}
-	}
-	TLN = {
-		own_control_core = {
-		tademait_plateau1
-		}
-	}
+}
 }
