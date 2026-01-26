@@ -273,6 +273,7 @@ RE_HSV = re.compile(
 )
 RE_GRAPH = re.compile(r"graphical_culture\s*=\s*([a-z0-9_]+)", re.I)
 RE_RELIGION = re.compile(r"religion\s*=\s*([a-z0-9_]+)", re.I)
+RE_RELIGION_CATEGORY = re.compile(r"religion_category\s*=\s*([a-z0-9_]+)", re.I)
 RE_COUNTRY_LINE = re.compile(r"^([A-Z0-9]{2,3})\s*=\s*\"([^\"]+)\"$")
 RE_RGB_FLOAT = re.compile(
     r"color\s*=\s*\{\s*([0-9.]+)\s+([0-9.]+)\s+([0-9.]+)\s*\}", re.I
@@ -444,6 +445,8 @@ def write_mod_religions(mod_root: Path, ir_root: Path):
     out_root = mod_root / "in_game" / "common" / "religions"
     out_root.mkdir(parents=True, exist_ok=True)
     lines = ["# Converted Imperator religions", ""]
+    # collect categories to write religion_groups file
+    religion_categories = set()
     for f in sorted(src.glob("*.txt")):
         txt = f.read_text(encoding="utf-8-sig")
         lns = txt.splitlines()
@@ -474,6 +477,12 @@ def write_mod_religions(mod_root: Path, ir_root: Path):
             rgb_m = RE_RGB.search(block_text)
             hsv_m = RE_HSV.search(block_text)
             float_m = RE_RGB_FLOAT.search(block_text)
+            # try to extract an Imperator religion_category and record it
+            cat_m = RE_RELIGION_CATEGORY.search(block_text)
+            category = None
+            if cat_m:
+                category = cat_m.group(1)
+                religion_categories.add(category)
             lines.append(f"{name} = {{")
             if rgb_m:
                 r, g, b = int(rgb_m.group(1)), int(rgb_m.group(2)), int(rgb_m.group(3))
@@ -501,6 +510,9 @@ def write_mod_religions(mod_root: Path, ir_root: Path):
                 lines.append(f"\tcolor = rgb {{ {r} {g} {b} }}")
             else:
                 lines.append("\t# no color")
+            # write group mapping (map Imperator religion_category -> EU5 religion group)
+            if category:
+                lines.append(f"\tgroup = {category}")
             # localisation entry for religion
             disp = _choose_local_text(EU5_LOC, [name, name.replace('_religion', '')], comment, name)
             if disp:
@@ -510,6 +522,20 @@ def write_mod_religions(mod_root: Path, ir_root: Path):
     out_file = out_root / f"{FILE_PREFIX}religions.txt"
     out_file.write_text("\n".join(lines) + "\n", encoding="utf-8-sig")
     print("Wrote", out_file)
+
+    # write religion_groups file derived from collected Imperator religion_category values
+    if religion_categories:
+        rg_root = mod_root / "in_game" / "common" / "religion_groups"
+        rg_root.mkdir(parents=True, exist_ok=True)
+        rg_lines = ["# Religion groups auto-generated from Imperator religion_category", ""]
+        for cat in sorted(religion_categories):
+            rg_lines.append(f"{cat} = {{")
+            rg_lines.append(f"\tcolor = religion_{cat}")
+            rg_lines.append("}")
+            rg_lines.append("")
+        rg_file = rg_root / f"{FILE_PREFIX}religion_groups.txt"
+        rg_file.write_text("\n".join(rg_lines) + "\n", encoding="utf-8-sig")
+        print("Wrote", rg_file)
 
 
 def parse_countries_list(ir_root: Path):

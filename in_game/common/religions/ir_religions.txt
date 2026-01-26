@@ -2,89 +2,111 @@
 
 roman_pantheon = {
 	color = rgb { 61 75 204 }
+	group = pantheon
 }
 
 egyptian_pantheon = {
 	color = rgb { 178 161 0 }
+	group = pantheon
 }
 
 carthaginian_pantheon = {
 	color = rgb { 102 19 186 }
+	group = pantheon
 }
 
 shamanism = {
 	color = rgb { 255 128 128 }
+	group = pantheon
 }
 
 caucasian_religion = {
 	color = rgb { 76 26 102 }
+	group = pantheon
 }
 
 mesopotamian_religion = {
 	color = rgb { 128 38 0 }
+	group = pantheon
 }
 
 armenian_religion = {
 	color = rgb { 76 26 51 }
+	group = pantheon
 }
 
 anatolian_religion = {
 	color = rgb { 76 102 51 }
+	group = pantheon
 }
 
 druidism = {
 	color = rgb { 45 102 31 }
+	group = pantheon
 }
 
 animism = {
 	color = rgb { 255 107 0 }
+	group = pantheon
 }
 
 judaism = {
 	color = rgb { 0 25 255 }
+	group = prophets
 }
 
 zoroaster = {
 	color = rgb { 42 167 184 }
+	group = firetemples
 }
 
 berber_religion = {
 	color = rgb { 102 66 51 }
+	group = pantheon
 }
 
 germanic_religion = {
 	color = rgb { 76 39 23 }
+	group = pantheon
 }
 
 indo_iranian_religion = {
 	color = rgb { 184 204 102 }
+	group = pantheon
 }
 
 arabian_pantheon = {
 	color = rgb { 67 153 46 }
+	group = pantheon
 }
 
 buddhism = {
 	color = rgb { 255 237 77 }
+	group = sages
 }
 
 hindu = {
 	color = rgb { 230 69 0 }
+	group = pantheon
 }
 
 eastern_animism = {
 	color = rgb { 178 76 54 }
+	group = pantheon
 }
 
 bon_religion = {
 	color = rgb { 204 0 61 }
+	group = pantheon
 }
 
 matrist_religion = {
 	color = rgb { 107 178 178 }
+	group = pantheon
 }
 
 jainism = {
 	color = rgb { 43 41 51 }
+	group = sages
 }
 

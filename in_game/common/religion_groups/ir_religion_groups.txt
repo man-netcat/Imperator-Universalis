@@ -1,0 +1,18 @@
+﻿# Religion groups auto-generated from Imperator religion_category
+
+firetemples = {
+	color = religion_firetemples
+}
+
+pantheon = {
+	color = religion_pantheon
+}
+
+prophets = {
+	color = religion_prophets
+}
+
+sages = {
+	color = religion_sages
+}
+
