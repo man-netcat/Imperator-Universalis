@@ -93,7 +93,6 @@ def extract_culture_data():
         for group_tag, group_data in tree.items():
             [(_, ethnicity)] = group_data["ethnicities"].items()
             cultures = group_data["culture"]
-            print(f"ir_{group_data['graphical_culture']}")
             culture_blocks.append(
                 {
                     "tag": f"ir_{group_tag}",

@@ -64,6 +64,11 @@ def write_blocks(
     return out_path
 
 
+def write_culture_group_data(culture_data: list):
+    blocks = [(culture_group["tag"], []) for culture_group in culture_data]
+    write_blocks(iu_culture_groups, blocks)
+
+
 def write_culture_data(culture_data: list):
     for culture_group in culture_data:
         blocks: List[Tuple[str, List[object]]] = []
