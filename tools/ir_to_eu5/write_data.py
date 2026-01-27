@@ -1,6 +1,23 @@
-from .paths import *
 from pathlib import Path
-from typing import List, Union, Tuple
+from typing import List, Tuple, Union
+
+import pyradox
+import pyradox.datatype as _pydt
+
+from .paths import *
+
+pyradox.Color = _pydt.Color
+
+
+def convert_color(color: _pydt.Color) -> str:
+    if color.colorspace == "rgb":
+        r, g, b = (int(c * 255) for c in color.channels)
+        return f"rgb {{ {r} {g} {b} }}"
+    elif color.colorspace == "hsv":
+        h, s, v = color.channels
+        return f"hsv {{ {h:.2f} {s:.2f} {v:.2f} }}"
+    else:
+        raise ValueError(f"Unsupported color space: {color.colorspace}")
 
 
 def make_block(
@@ -71,7 +88,7 @@ def write_culture_group_data(culture_data: list):
 
 def write_culture_data(culture_data: list):
     for culture_group in culture_data:
-        blocks: List[Tuple[str, List[object]]] = []
+        blocks = []
 
         for culture in culture_group["cultures"]:
             lines = [
@@ -85,3 +102,12 @@ def write_culture_data(culture_data: list):
         out_path = iu_cultures / f"{culture_group['tag']}.txt"
 
         write_blocks(out_path, blocks)
+
+
+def write_religion_group_data(religion_data: list):
+    blocks = []
+    for religion_group in religion_data:
+        color = convert_color(religion_group["color"])
+        block = (religion_group["tag"], [f"color = {color}"])
+        blocks.append(block)
+    write_blocks(iu_religion_groups, blocks)

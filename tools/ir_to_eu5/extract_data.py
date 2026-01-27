@@ -119,6 +119,7 @@ def extract_religion_data():
     religion_blocks = []
 
     for religion_tag, religion_data in religion_tree.items():
+        print(religion_tag, religion_data["color"])
         religion_blocks.append(
             {
                 "tag": f"ir_{religion_tag}",
@@ -158,15 +159,3 @@ def extract_country_data():
         )
 
     return country_blocks
-
-
-# ---------- Run and write ----------
-
-if __name__ == "__main__":
-    culture_data = extract_culture_data()
-    religion_data = extract_religion_data()
-    country_data = extract_country_data()
-
-    write_json(culture_data, mod_root / "cultures.json")
-    write_json(religion_data, mod_root / "religions.json")
-    write_json(country_data, mod_root / "countries.json")
