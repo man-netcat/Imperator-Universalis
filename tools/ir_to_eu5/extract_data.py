@@ -33,10 +33,7 @@ def _make_serializable(o: Any):
     elif isinstance(o, list):
         return [_make_serializable(v) for v in o]
     elif isinstance(o, _pydt.Color):
-        with warnings.catch_warnings():
-            warnings.simplefilter("ignore")
-            rgb_color = o.to_rgb()
-        return [x for x in rgb_color]
+        return {"colorspace": o.colorspace, "values": o.channels}
     else:
         return str(o)
 
