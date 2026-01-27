@@ -1,0 +1,12 @@
+ir_meroitic = {
+    color = hsv { 0.15 0.40 0.60 }
+    tags = { ir_egyptian_gfx }
+    culture_groups = { ir_meroitic_group }
+}
+
+ir_blemmyan = {
+    color = hsv { 0.15 0.40 0.60 }
+    tags = { ir_egyptian_gfx }
+    culture_groups = { ir_meroitic_group }
+}
+

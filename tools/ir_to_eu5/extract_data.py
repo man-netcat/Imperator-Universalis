@@ -93,20 +93,21 @@ def extract_culture_data():
         for group_tag, group_data in tree.items():
             [(_, ethnicity)] = group_data["ethnicities"].items()
             cultures = group_data["culture"]
+            print(f"ir_{group_data['graphical_culture']}")
             culture_blocks.append(
                 {
-                    "tag": group_tag,
+                    "tag": f"ir_{group_tag}",
                     "name": culture_loc[group_tag],
                     "cultures": [
                         {
-                            "tag": culture_tag,
+                            "tag": f"ir_{culture_tag}",
                             "name": culture_loc[culture_tag],
                         }
                         for culture_tag in cultures
                     ],
                     "color": group_data["color"],
-                    "graphical_culture": group_data["graphical_culture"],
-                    "ethnicities": ethnicity,
+                    "graphical_culture": f"ir_{group_data['graphical_culture']}",
+                    "ethnicities": f"ir_{ethnicity}",
                 }
             )
 
@@ -121,7 +122,7 @@ def extract_religion_data():
     for religion_tag, religion_data in religion_tree.items():
         religion_blocks.append(
             {
-                "tag": religion_tag,
+                "tag": f"ir_{religion_tag}",
                 "name": religion_loc[religion_tag],
                 "color": religion_data["color"],
             }
@@ -151,8 +152,8 @@ def extract_country_data():
                 "tag": country_tag,
                 "name": country_name,
                 "name_adj": country_name_adj,
-                "culture": country_data["primary_culture"],
-                "religion": country_data["religion"],
+                "culture": f"ir_{country_data['culture']}",
+                "religion": f"ir_{country_data['religion']}",
                 "color": country_setup_tree["color"],
             }
         )

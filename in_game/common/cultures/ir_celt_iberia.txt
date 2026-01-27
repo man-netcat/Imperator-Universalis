@@ -1,0 +1,72 @@
+ir_caristian = {
+    color = hsv { 0.20 0.80 0.60 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_celt_iberia }
+}
+
+ir_celtician = {
+    color = hsv { 0.20 0.80 0.60 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_celt_iberia }
+}
+
+ir_lusitanian = {
+    color = hsv { 0.20 0.80 0.60 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_celt_iberia }
+}
+
+ir_vettonian = {
+    color = hsv { 0.20 0.80 0.60 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_celt_iberia }
+}
+
+ir_carpetanian = {
+    color = hsv { 0.20 0.80 0.60 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_celt_iberia }
+}
+
+ir_celtiberian = {
+    color = hsv { 0.20 0.80 0.60 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_celt_iberia }
+}
+
+ir_lobetanian = {
+    color = hsv { 0.20 0.80 0.60 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_celt_iberia }
+}
+
+ir_sedetanian = {
+    color = hsv { 0.20 0.80 0.60 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_celt_iberia }
+}
+
+ir_vaccaeian = {
+    color = hsv { 0.20 0.80 0.60 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_celt_iberia }
+}
+
+ir_asturian = {
+    color = hsv { 0.20 0.80 0.60 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_celt_iberia }
+}
+
+ir_callaecian = {
+    color = hsv { 0.20 0.80 0.60 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_celt_iberia }
+}
+
+ir_vardulian = {
+    color = hsv { 0.20 0.80 0.60 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_celt_iberia }
+}
+

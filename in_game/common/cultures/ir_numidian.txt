@@ -1,58 +1,48 @@
-﻿# Converted from Imperator group numidian
-
-ir_numidian_culture = {
-	color = rgb { 102 66 51 }
-	tags = { numidian_gfx }
-	culture_groups = { ir_numidian_group }
-	# source_file = 00_numidian.txt
+ir_numidian = {
+    color = hsv { 0.05 0.50 0.40 }
+    tags = { ir_numidian_gfx }
+    culture_groups = { ir_numidian }
 }
 
-ir_berber_culture = {
-	color = rgb { 102 78 51 }
-	tags = { numidian_gfx }
-	culture_groups = { ir_numidian_group }
-	# source_file = 00_numidian.txt
+ir_berber = {
+    color = hsv { 0.05 0.50 0.40 }
+    tags = { ir_numidian_gfx }
+    culture_groups = { ir_numidian }
 }
 
-ir_gaetulian_culture = {
-	color = rgb { 102 90 51 }
-	tags = { numidian_gfx }
-	culture_groups = { ir_numidian_group }
-	# source_file = 00_numidian.txt
+ir_gaetulian = {
+    color = hsv { 0.05 0.50 0.40 }
+    tags = { ir_numidian_gfx }
+    culture_groups = { ir_numidian }
 }
 
-ir_socossian_culture = {
-	color = rgb { 101 102 51 }
-	tags = { numidian_gfx }
-	culture_groups = { ir_numidian_group }
-	# source_file = 00_numidian.txt
+ir_socossian = {
+    color = hsv { 0.05 0.50 0.40 }
+    tags = { ir_numidian_gfx }
+    culture_groups = { ir_numidian }
 }
 
-ir_massaesylian_culture = {
-	color = rgb { 89 102 51 }
-	tags = { numidian_gfx }
-	culture_groups = { ir_numidian_group }
-	# source_file = 00_numidian.txt
+ir_massaesylian = {
+    color = hsv { 0.05 0.50 0.40 }
+    tags = { ir_numidian_gfx }
+    culture_groups = { ir_numidian }
 }
 
-ir_massylian_culture = {
-	color = rgb { 77 102 51 }
-	tags = { numidian_gfx }
-	culture_groups = { ir_numidian_group }
-	# source_file = 00_numidian.txt
+ir_massylian = {
+    color = hsv { 0.05 0.50 0.40 }
+    tags = { ir_numidian_gfx }
+    culture_groups = { ir_numidian }
 }
 
-ir_garamantic_culture = {
-	color = rgb { 65 102 51 }
-	tags = { numidian_gfx }
-	culture_groups = { ir_numidian_group }
-	# source_file = 00_numidian.txt
+ir_garamantic = {
+    color = hsv { 0.05 0.50 0.40 }
+    tags = { ir_numidian_gfx }
+    culture_groups = { ir_numidian }
 }
 
-ir_libyan_culture = {
-	color = rgb { 52 102 51 }
-	tags = { numidian_gfx }
-	culture_groups = { ir_numidian_group }
-	# source_file = 00_numidian.txt
+ir_libyan = {
+    color = hsv { 0.05 0.50 0.40 }
+    tags = { ir_numidian_gfx }
+    culture_groups = { ir_numidian }
 }
 

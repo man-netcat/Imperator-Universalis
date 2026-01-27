@@ -1,72 +1,60 @@
-﻿# Converted from Imperator group latin
-
-ir_roman_culture = {
-	color = rgb { 140 13 13 }
-	tags = { roman_gfx }
-	culture_groups = { ir_latin_group }
-	# source_file = 00_latin.txt
+ir_roman = {
+    color = hsv { 0.00 0.91 0.55 }
+    tags = { ir_roman_gfx }
+    culture_groups = { ir_latin }
 }
 
-ir_venetic_culture = {
-	color = rgb { 140 43 13 }
-	tags = { roman_gfx }
-	culture_groups = { ir_latin_group }
-	# source_file = 00_latin.txt
+ir_venetic = {
+    color = hsv { 0.00 0.91 0.55 }
+    tags = { ir_roman_gfx }
+    culture_groups = { ir_latin }
 }
 
-ir_ligurian_culture = {
-	color = rgb { 140 74 13 }
-	tags = { roman_gfx }
-	culture_groups = { ir_latin_group }
-	# source_file = 00_latin.txt
+ir_ligurian = {
+    color = hsv { 0.00 0.91 0.55 }
+    tags = { ir_roman_gfx }
+    culture_groups = { ir_latin }
 }
 
-ir_etruscan_culture = {
-	color = rgb { 140 104 13 }
-	tags = { roman_gfx }
-	culture_groups = { ir_latin_group }
-	# source_file = 00_latin.txt
+ir_etruscan = {
+    color = hsv { 0.00 0.91 0.55 }
+    tags = { ir_roman_gfx }
+    culture_groups = { ir_latin }
 }
 
-ir_rhaetian_culture = {
-	color = rgb { 140 135 13 }
-	tags = { roman_gfx }
-	culture_groups = { ir_latin_group }
-	# source_file = 00_latin.txt
+ir_rhaetian = {
+    color = hsv { 0.00 0.91 0.55 }
+    tags = { ir_roman_gfx }
+    culture_groups = { ir_latin }
 }
 
-ir_umbrian_culture = {
-	color = rgb { 115 140 13 }
-	tags = { roman_gfx }
-	culture_groups = { ir_latin_group }
-	# source_file = 00_latin.txt
+ir_umbrian = {
+    color = hsv { 0.00 0.91 0.55 }
+    tags = { ir_roman_gfx }
+    culture_groups = { ir_latin }
 }
 
-ir_samnite_culture = {
-	color = rgb { 84 140 13 }
-	tags = { roman_gfx }
-	culture_groups = { ir_latin_group }
-	# source_file = 00_latin.txt
+ir_samnite = {
+    color = hsv { 0.00 0.91 0.55 }
+    tags = { ir_roman_gfx }
+    culture_groups = { ir_latin }
 }
 
-ir_siculian_culture = {
-	color = rgb { 54 140 13 }
-	tags = { roman_gfx }
-	culture_groups = { ir_latin_group }
-	# source_file = 00_latin.txt
+ir_siculian = {
+    color = hsv { 0.00 0.91 0.55 }
+    tags = { ir_roman_gfx }
+    culture_groups = { ir_latin }
 }
 
-ir_bruttian_culture = {
-	color = rgb { 23 140 13 }
-	tags = { roman_gfx }
-	culture_groups = { ir_latin_group }
-	# source_file = 00_latin.txt
+ir_bruttian = {
+    color = hsv { 0.00 0.91 0.55 }
+    tags = { ir_roman_gfx }
+    culture_groups = { ir_latin }
 }
 
-ir_lucanian_culture = {
-	color = rgb { 13 140 33 }
-	tags = { roman_gfx }
-	culture_groups = { ir_latin_group }
-	# source_file = 00_latin.txt
+ir_lucanian = {
+    color = hsv { 0.00 0.91 0.55 }
+    tags = { ir_roman_gfx }
+    culture_groups = { ir_latin }
 }
 

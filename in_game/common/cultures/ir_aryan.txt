@@ -1,65 +1,54 @@
-﻿# Converted from Imperator group aryan
-
-ir_vidharban_culture = {
-	color = rgb { 230 69 0 }
-	tags = { north_indian_gfx }
-	culture_groups = { ir_aryan_group }
-	# source_file = 00_aryan.txt
+ir_vidharban = {
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { ir_north_indian_gfx }
+    culture_groups = { ir_aryan }
 }
 
-ir_saurashtran_culture = {
-	color = rgb { 230 124 0 }
-	tags = { north_indian_gfx }
-	culture_groups = { ir_aryan_group }
-	# source_file = 00_aryan.txt
+ir_saurashtran = {
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { ir_north_indian_gfx }
+    culture_groups = { ir_aryan }
 }
 
-ir_lankan_culture = {
-	color = rgb { 230 179 0 }
-	tags = { north_indian_gfx }
-	culture_groups = { ir_aryan_group }
-	# source_file = 00_aryan.txt
+ir_lankan = {
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { ir_north_indian_gfx }
+    culture_groups = { ir_aryan }
 }
 
-ir_maharashtran_culture = {
-	color = rgb { 225 230 0 }
-	tags = { north_indian_gfx }
-	culture_groups = { ir_aryan_group }
-	# source_file = 00_aryan.txt
+ir_maharashtran = {
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { ir_north_indian_gfx }
+    culture_groups = { ir_aryan }
 }
 
-ir_gandhari_culture = {
-	color = rgb { 170 230 0 }
-	tags = { north_indian_gfx }
-	culture_groups = { ir_aryan_group }
-	# source_file = 00_aryan.txt
+ir_gandhari = {
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { ir_north_indian_gfx }
+    culture_groups = { ir_aryan }
 }
 
-ir_shauraseni_culture = {
-	color = rgb { 115 230 0 }
-	tags = { north_indian_gfx }
-	culture_groups = { ir_aryan_group }
-	# source_file = 00_aryan.txt
+ir_shauraseni = {
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { ir_north_indian_gfx }
+    culture_groups = { ir_aryan }
 }
 
-ir_avanti_culture = {
-	color = rgb { 60 230 0 }
-	tags = { north_indian_gfx }
-	culture_groups = { ir_aryan_group }
-	# source_file = 00_aryan.txt
+ir_avanti = {
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { ir_north_indian_gfx }
+    culture_groups = { ir_aryan }
 }
 
-ir_sindhi_culture = {
-	color = rgb { 5 230 0 }
-	tags = { north_indian_gfx }
-	culture_groups = { ir_aryan_group }
-	# source_file = 00_aryan.txt
+ir_sindhi = {
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { ir_north_indian_gfx }
+    culture_groups = { ir_aryan }
 }
 
-ir_dardic_culture = {
-	color = rgb { 0 230 51 }
-	tags = { north_indian_gfx }
-	culture_groups = { ir_aryan_group }
-	# source_file = 00_aryan.txt
+ir_dardic = {
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { ir_north_indian_gfx }
+    culture_groups = { ir_aryan }
 }
 

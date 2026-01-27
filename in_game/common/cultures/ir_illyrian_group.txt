@@ -1,0 +1,72 @@
+ir_taulantian = {
+    color = hsv { 0.40 0.40 0.40 }
+    tags = { ir_greek_gfx }
+    culture_groups = { ir_illyrian_group }
+}
+
+ir_abrian = {
+    color = hsv { 0.40 0.40 0.40 }
+    tags = { ir_greek_gfx }
+    culture_groups = { ir_illyrian_group }
+}
+
+ir_dardanian = {
+    color = hsv { 0.40 0.40 0.40 }
+    tags = { ir_greek_gfx }
+    culture_groups = { ir_illyrian_group }
+}
+
+ir_greco_illyrian = {
+    color = hsv { 0.40 0.40 0.40 }
+    tags = { ir_greek_gfx }
+    culture_groups = { ir_illyrian_group }
+}
+
+ir_histrian = {
+    color = hsv { 0.40 0.40 0.40 }
+    tags = { ir_greek_gfx }
+    culture_groups = { ir_illyrian_group }
+}
+
+ir_liburnian = {
+    color = hsv { 0.40 0.40 0.40 }
+    tags = { ir_greek_gfx }
+    culture_groups = { ir_illyrian_group }
+}
+
+ir_liburnian_culture = {
+    color = hsv { 0.40 0.40 0.40 }
+    tags = { ir_greek_gfx }
+    culture_groups = { ir_illyrian_group }
+}
+
+ir_catari = {
+    color = hsv { 0.40 0.40 0.40 }
+    tags = { ir_greek_gfx }
+    culture_groups = { ir_illyrian_group }
+}
+
+ir_deraemestian = {
+    color = hsv { 0.40 0.40 0.40 }
+    tags = { ir_greek_gfx }
+    culture_groups = { ir_illyrian_group }
+}
+
+ir_deurian = {
+    color = hsv { 0.40 0.40 0.40 }
+    tags = { ir_greek_gfx }
+    culture_groups = { ir_illyrian_group }
+}
+
+ir_messapian = {
+    color = hsv { 0.40 0.40 0.40 }
+    tags = { ir_greek_gfx }
+    culture_groups = { ir_illyrian_group }
+}
+
+ir_paeonian = {
+    color = hsv { 0.40 0.40 0.40 }
+    tags = { ir_greek_gfx }
+    culture_groups = { ir_illyrian_group }
+}
+

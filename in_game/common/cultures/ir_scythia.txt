@@ -1,79 +1,66 @@
-﻿# Converted from Imperator group scythia
-
-ir_scythian_culture = {
-	color = rgb { 184 204 102 }
-	tags = { scythian_gfx }
-	culture_groups = { ir_scythia_group }
-	# source_file = 00_scythia.txt
+ir_scythian = {
+    color = hsv { 0.20 0.50 0.80 }
+    tags = { ir_scythian_gfx }
+    culture_groups = { ir_scythia }
 }
 
-ir_sarmatian_culture = {
-	color = rgb { 160 204 102 }
-	tags = { scythian_gfx }
-	culture_groups = { ir_scythia_group }
-	# source_file = 00_scythia.txt
+ir_sarmatian = {
+    color = hsv { 0.20 0.50 0.80 }
+    tags = { ir_scythian_gfx }
+    culture_groups = { ir_scythia }
 }
 
-ir_kharesmian_culture = {
-	color = rgb { 135 204 102 }
-	tags = { scythian_gfx }
-	culture_groups = { ir_scythia_group }
-	# source_file = 00_scythia.txt
+ir_kharesmian = {
+    color = hsv { 0.20 0.50 0.80 }
+    tags = { ir_scythian_gfx }
+    culture_groups = { ir_scythia }
 }
 
-ir_derbiccan_culture = {
-	color = rgb { 111 204 102 }
-	tags = { scythian_gfx }
-	culture_groups = { ir_scythia_group }
-	# source_file = 00_scythia.txt
+ir_derbiccan = {
+    color = hsv { 0.20 0.50 0.80 }
+    tags = { ir_scythian_gfx }
+    culture_groups = { ir_scythia }
 }
 
-ir_sindi_culture = {
-	color = rgb { 102 204 118 }
-	tags = { scythian_gfx }
-	culture_groups = { ir_scythia_group }
-	# source_file = 00_scythia.txt
+ir_sindi = {
+    color = hsv { 0.20 0.50 0.80 }
+    tags = { ir_scythian_gfx }
+    culture_groups = { ir_scythia }
 }
 
-ir_siraci_culture = {
-	color = rgb { 102 204 142 }
-	tags = { scythian_gfx }
-	culture_groups = { ir_scythia_group }
-	# source_file = 00_scythia.txt
+ir_siraci = {
+    color = hsv { 0.20 0.50 0.80 }
+    tags = { ir_scythian_gfx }
+    culture_groups = { ir_scythia }
 }
 
-ir_maeotian_culture = {
-	color = rgb { 102 204 167 }
-	tags = { scythian_gfx }
-	culture_groups = { ir_scythia_group }
-	# source_file = 00_scythia.txt
+ir_maeotian = {
+    color = hsv { 0.20 0.50 0.80 }
+    tags = { ir_scythian_gfx }
+    culture_groups = { ir_scythia }
 }
 
-ir_sakan_culture = {
-	color = rgb { 102 204 191 }
-	tags = { scythian_gfx }
-	culture_groups = { ir_scythia_group }
-	# source_file = 00_scythia.txt
+ir_sakan = {
+    color = hsv { 0.20 0.50 0.80 }
+    tags = { ir_scythian_gfx }
+    culture_groups = { ir_scythia }
 }
 
-ir_thyssagetaen_culture = {
-	color = rgb { 102 192 204 }
-	tags = { scythian_gfx }
-	culture_groups = { ir_scythia_group }
-	# source_file = 00_scythia.txt
+ir_thyssagetaen = {
+    color = hsv { 0.20 0.50 0.80 }
+    tags = { ir_scythian_gfx }
+    culture_groups = { ir_scythia }
 }
 
-ir_legian_culture = {
-	color = rgb { 102 168 204 }
-	tags = { scythian_gfx }
-	culture_groups = { ir_scythia_group }
-	# source_file = 00_scythia.txt
+ir_legian = {
+    color = hsv { 0.20 0.50 0.80 }
+    tags = { ir_scythian_gfx }
+    culture_groups = { ir_scythia }
 }
 
-ir_agathyrsian_culture = {
-	color = rgb { 102 143 204 }
-	tags = { scythian_gfx }
-	culture_groups = { ir_scythia_group }
-	# source_file = 00_scythia.txt
+ir_agathyrsian = {
+    color = hsv { 0.20 0.50 0.80 }
+    tags = { ir_scythian_gfx }
+    culture_groups = { ir_scythia }
 }
 

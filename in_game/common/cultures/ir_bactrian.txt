@@ -1,72 +1,60 @@
-﻿# Converted from Imperator group bactrian
-
-ir_bactrian_culture = {
-	color = rgb { 178 76 54 }
-	tags = { persian_gfx }
-	culture_groups = { ir_bactrian_group }
-	# source_file = 00_bactrian.txt
+ir_bactrian = {
+    color = hsv { 0.03 0.70 0.70 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_bactrian }
 }
 
-ir_margian_culture = {
-	color = rgb { 178 106 54 }
-	tags = { persian_gfx }
-	culture_groups = { ir_bactrian_group }
-	# source_file = 00_bactrian.txt
+ir_margian = {
+    color = hsv { 0.03 0.70 0.70 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_bactrian }
 }
 
-ir_sogdian_culture = {
-	color = rgb { 178 136 54 }
-	tags = { persian_gfx }
-	culture_groups = { ir_bactrian_group }
-	# source_file = 00_bactrian.txt
+ir_sogdian = {
+    color = hsv { 0.03 0.70 0.70 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_bactrian }
 }
 
-ir_shule_culture = {
-	color = rgb { 178 165 54 }
-	tags = { persian_gfx }
-	culture_groups = { ir_bactrian_group }
-	# source_file = 00_bactrian.txt
+ir_shule = {
+    color = hsv { 0.03 0.70 0.70 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_bactrian }
 }
 
-ir_phryni_culture = {
-	color = rgb { 161 178 54 }
-	tags = { persian_gfx }
-	culture_groups = { ir_bactrian_group }
-	# source_file = 00_bactrian.txt
+ir_phryni = {
+    color = hsv { 0.03 0.70 0.70 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_bactrian }
 }
 
-ir_tayuan_culture = {
-	color = rgb { 131 178 54 }
-	tags = { persian_gfx }
-	culture_groups = { ir_bactrian_group }
-	# source_file = 00_bactrian.txt
+ir_tayuan = {
+    color = hsv { 0.03 0.70 0.70 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_bactrian }
 }
 
-ir_wusun_culture = {
-	color = rgb { 101 178 54 }
-	tags = { persian_gfx }
-	culture_groups = { ir_bactrian_group }
-	# source_file = 00_bactrian.txt
+ir_wusun = {
+    color = hsv { 0.03 0.70 0.70 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_bactrian }
 }
 
-ir_saka_culture = {
-	color = rgb { 72 178 54 }
-	tags = { persian_gfx }
-	culture_groups = { ir_bactrian_group }
-	# source_file = 00_bactrian.txt
+ir_saka = {
+    color = hsv { 0.03 0.70 0.70 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_bactrian }
 }
 
-ir_yuezhi_culture = {
-	color = rgb { 54 178 66 }
-	tags = { persian_gfx }
-	culture_groups = { ir_bactrian_group }
-	# source_file = 00_bactrian.txt
+ir_yuezhi = {
+    color = hsv { 0.03 0.70 0.70 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_bactrian }
 }
 
-ir_tocharian_culture = {
-	color = rgb { 54 178 96 }
-	tags = { persian_gfx }
-	culture_groups = { ir_bactrian_group }
-	# source_file = 00_bactrian.txt
+ir_tocharian = {
+    color = hsv { 0.03 0.70 0.70 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_bactrian }
 }
 

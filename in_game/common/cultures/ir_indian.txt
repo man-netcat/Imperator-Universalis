@@ -1,23 +1,18 @@
-﻿# Converted from Imperator group indian
-
-ir_kannadan_culture = {
-	color = rgb { 135 61 153 }
-	tags = { south_indian_gfx }
-	culture_groups = { ir_indian_group }
-	# source_file = 00_indian.txt
+ir_kannadan = {
+    color = hsv { 0.80 0.60 0.60 }
+    tags = { ir_south_indian_gfx }
+    culture_groups = { ir_indian }
 }
 
-ir_tamil_culture = {
-	color = rgb { 153 61 149 }
-	tags = { south_indian_gfx }
-	culture_groups = { ir_indian_group }
-	# source_file = 00_indian.txt
+ir_tamil = {
+    color = hsv { 0.80 0.60 0.60 }
+    tags = { ir_south_indian_gfx }
+    culture_groups = { ir_indian }
 }
 
-ir_telugu_culture = {
-	color = rgb { 153 61 127 }
-	tags = { south_indian_gfx }
-	culture_groups = { ir_indian_group }
-	# source_file = 00_indian.txt
+ir_telugu = {
+    color = hsv { 0.80 0.60 0.60 }
+    tags = { ir_south_indian_gfx }
+    culture_groups = { ir_indian }
 }
 

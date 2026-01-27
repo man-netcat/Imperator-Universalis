@@ -1,114 +1,96 @@
-﻿# Converted from Imperator group britannic
-
-ir_britannic_culture = {
-	color = rgb { 31 72 102 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_britannic_group }
-	# source_file = 00_britannic.txt
+ir_britannic = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic }
 }
 
-ir_caledonian_culture = {
-	color = rgb { 31 55 102 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_britannic_group }
-	# source_file = 00_britannic.txt
+ir_caledonian = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic }
 }
 
-ir_iceni_culture = {
-	color = rgb { 31 38 102 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_britannic_group }
-	# source_file = 00_britannic.txt
+ir_iceni = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic }
 }
 
-ir_trinovantian_culture = {
-	color = rgb { 41 31 102 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_britannic_group }
-	# source_file = 00_britannic.txt
+ir_trinovantian = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic }
 }
 
-ir_cantian_culture = {
-	color = rgb { 58 31 102 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_britannic_group }
-	# source_file = 00_britannic.txt
+ir_cantian = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic }
 }
 
-ir_durotrigan_culture = {
-	color = rgb { 75 31 102 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_britannic_group }
-	# source_file = 00_britannic.txt
+ir_durotrigan = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic }
 }
 
-ir_dumnonian_culture = {
-	color = rgb { 92 31 102 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_britannic_group }
-	# source_file = 00_britannic.txt
+ir_dumnonian = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic }
 }
 
-ir_dobunnian_culture = {
-	color = rgb { 102 31 95 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_britannic_group }
-	# source_file = 00_britannic.txt
+ir_dobunnian = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic }
 }
 
-ir_demetian_culture = {
-	color = rgb { 102 31 78 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_britannic_group }
-	# source_file = 00_britannic.txt
+ir_demetian = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic }
 }
 
-ir_ordovitian_culture = {
-	color = rgb { 102 31 61 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_britannic_group }
-	# source_file = 00_britannic.txt
+ir_ordovitian = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic }
 }
 
-ir_coritani_culture = {
-	color = rgb { 102 31 44 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_britannic_group }
-	# source_file = 00_britannic.txt
+ir_coritani = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic }
 }
 
-ir_cornovian_culture = {
-	color = rgb { 102 35 31 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_britannic_group }
-	# source_file = 00_britannic.txt
+ir_cornovian = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic }
 }
 
-ir_brigantic_culture = {
-	color = rgb { 102 52 31 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_britannic_group }
-	# source_file = 00_britannic.txt
+ir_brigantic = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic }
 }
 
-ir_votadinian_culture = {
-	color = rgb { 102 70 31 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_britannic_group }
-	# source_file = 00_britannic.txt
+ir_votadinian = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic }
 }
 
-ir_damnonian_culture = {
-	color = rgb { 102 87 31 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_britannic_group }
-	# source_file = 00_britannic.txt
+ir_damnonian = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic }
 }
 
-ir_taexalian_culture = {
-	color = rgb { 100 102 31 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_britannic_group }
-	# source_file = 00_britannic.txt
+ir_taexalian = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic }
 }
 

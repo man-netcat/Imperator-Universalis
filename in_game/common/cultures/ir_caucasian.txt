@@ -1,23 +1,18 @@
-﻿# Converted from Imperator group caucasian
-
-ir_albanian_culture = {
-	color = rgb { 173 152 95 }
-	tags = { persian_gfx }
-	culture_groups = { ir_caucasian_group }
-	# source_file = 00_caucasian.txt
+ir_albanian = {
+    color = hsv { 0.12 0.45 0.68 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_caucasian }
 }
 
-ir_ibero_culture = {
-	color = rgb { 173 171 95 }
-	tags = { persian_gfx }
-	culture_groups = { ir_caucasian_group }
-	# source_file = 00_caucasian.txt
+ir_ibero = {
+    color = hsv { 0.12 0.45 0.68 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_caucasian }
 }
 
-ir_colchian_culture = {
-	color = rgb { 157 173 95 }
-	tags = { persian_gfx }
-	culture_groups = { ir_caucasian_group }
-	# source_file = 00_caucasian.txt
+ir_colchian = {
+    color = hsv { 0.12 0.45 0.68 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_caucasian }
 }
 

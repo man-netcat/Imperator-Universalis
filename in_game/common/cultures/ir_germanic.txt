@@ -1,142 +1,120 @@
-﻿# Converted from Imperator group germanic
-
-ir_saxonian_culture = {
-	color = rgb { 76 39 23 }
-	tags = { german_gfx }
-	culture_groups = { ir_germanic_group }
-	# source_file = 00_germanic.txt
+ir_saxonian = {
+    color = hsv { 0.05 0.70 0.30 }
+    tags = { ir_german_gfx }
+    culture_groups = { ir_germanic }
 }
 
-ir_anglian_culture = {
-	color = rgb { 76 52 23 }
-	tags = { german_gfx }
-	culture_groups = { ir_germanic_group }
-	# source_file = 00_germanic.txt
+ir_anglian = {
+    color = hsv { 0.05 0.70 0.30 }
+    tags = { ir_german_gfx }
+    culture_groups = { ir_germanic }
 }
 
-ir_reudingian_culture = {
-	color = rgb { 76 64 23 }
-	tags = { german_gfx }
-	culture_groups = { ir_germanic_group }
-	# source_file = 00_germanic.txt
+ir_reudingian = {
+    color = hsv { 0.05 0.70 0.30 }
+    tags = { ir_german_gfx }
+    culture_groups = { ir_germanic }
 }
 
-ir_teutonian_culture = {
-	color = rgb { 75 76 23 }
-	tags = { german_gfx }
-	culture_groups = { ir_germanic_group }
-	# source_file = 00_germanic.txt
+ir_teutonian = {
+    color = hsv { 0.05 0.70 0.30 }
+    tags = { ir_german_gfx }
+    culture_groups = { ir_germanic }
 }
 
-ir_cimbrian_culture = {
-	color = rgb { 62 76 23 }
-	tags = { german_gfx }
-	culture_groups = { ir_germanic_group }
-	# source_file = 00_germanic.txt
+ir_cimbrian = {
+    color = hsv { 0.05 0.70 0.30 }
+    tags = { ir_german_gfx }
+    culture_groups = { ir_germanic }
 }
 
-ir_herulian_culture = {
-	color = rgb { 49 76 23 }
-	tags = { german_gfx }
-	culture_groups = { ir_germanic_group }
-	# source_file = 00_germanic.txt
+ir_herulian = {
+    color = hsv { 0.05 0.70 0.30 }
+    tags = { ir_german_gfx }
+    culture_groups = { ir_germanic }
 }
 
-ir_rugian_culture = {
-	color = rgb { 37 76 23 }
-	tags = { german_gfx }
-	culture_groups = { ir_germanic_group }
-	# source_file = 00_germanic.txt
+ir_rugian = {
+    color = hsv { 0.05 0.70 0.30 }
+    tags = { ir_german_gfx }
+    culture_groups = { ir_germanic }
 }
 
-ir_helveconian_culture = {
-	color = rgb { 24 76 23 }
-	tags = { german_gfx }
-	culture_groups = { ir_germanic_group }
-	# source_file = 00_germanic.txt
+ir_helveconian = {
+    color = hsv { 0.05 0.70 0.30 }
+    tags = { ir_german_gfx }
+    culture_groups = { ir_germanic }
 }
 
-ir_bastarnae_culture = {
-	color = rgb { 23 76 35 }
-	tags = { german_gfx }
-	culture_groups = { ir_germanic_group }
-	# source_file = 00_germanic.txt
+ir_bastarnae = {
+    color = hsv { 0.05 0.70 0.30 }
+    tags = { ir_german_gfx }
+    culture_groups = { ir_germanic }
 }
 
-ir_gutones_culture = {
-	color = rgb { 23 76 47 }
-	tags = { german_gfx }
-	culture_groups = { ir_germanic_group }
-	# source_file = 00_germanic.txt
+ir_gutones = {
+    color = hsv { 0.05 0.70 0.30 }
+    tags = { ir_german_gfx }
+    culture_groups = { ir_germanic }
 }
 
-ir_suiones_culture = {
-	color = rgb { 23 76 60 }
-	tags = { german_gfx }
-	culture_groups = { ir_germanic_group }
-	# source_file = 00_germanic.txt
+ir_suiones = {
+    color = hsv { 0.05 0.70 0.30 }
+    tags = { ir_german_gfx }
+    culture_groups = { ir_germanic }
 }
 
-ir_vandal_culture = {
-	color = rgb { 23 76 73 }
-	tags = { german_gfx }
-	culture_groups = { ir_germanic_group }
-	# source_file = 00_germanic.txt
+ir_vandal = {
+    color = hsv { 0.05 0.70 0.30 }
+    tags = { ir_german_gfx }
+    culture_groups = { ir_germanic }
 }
 
-ir_raumarician_culture = {
-	color = rgb { 23 66 76 }
-	tags = { german_gfx }
-	culture_groups = { ir_germanic_group }
-	# source_file = 00_germanic.txt
+ir_raumarician = {
+    color = hsv { 0.05 0.70 0.30 }
+    tags = { ir_german_gfx }
+    culture_groups = { ir_germanic }
 }
 
-ir_irminonic_culture = {
-	color = rgb { 23 54 76 }
-	tags = { german_gfx }
-	culture_groups = { ir_germanic_group }
-	# source_file = 00_germanic.txt
+ir_irminonic = {
+    color = hsv { 0.05 0.70 0.30 }
+    tags = { ir_german_gfx }
+    culture_groups = { ir_germanic }
 }
 
-ir_istvaeonic_culture = {
-	color = rgb { 23 41 76 }
-	tags = { german_gfx }
-	culture_groups = { ir_germanic_group }
-	# source_file = 00_germanic.txt
+ir_istvaeonic = {
+    color = hsv { 0.05 0.70 0.30 }
+    tags = { ir_german_gfx }
+    culture_groups = { ir_germanic }
 }
 
-ir_ingvaeonic_culture = {
-	color = rgb { 23 28 76 }
-	tags = { german_gfx }
-	culture_groups = { ir_germanic_group }
-	# source_file = 00_germanic.txt
+ir_ingvaeonic = {
+    color = hsv { 0.05 0.70 0.30 }
+    tags = { ir_german_gfx }
+    culture_groups = { ir_germanic }
 }
 
-ir_suebian_culture = {
-	color = rgb { 31 23 76 }
-	tags = { german_gfx }
-	culture_groups = { ir_germanic_group }
-	# source_file = 00_germanic.txt
+ir_suebian = {
+    color = hsv { 0.05 0.70 0.30 }
+    tags = { ir_german_gfx }
+    culture_groups = { ir_germanic }
 }
 
-ir_lemovian_culture = {
-	color = rgb { 43 23 76 }
-	tags = { german_gfx }
-	culture_groups = { ir_germanic_group }
-	# source_file = 00_germanic.txt
+ir_lemovian = {
+    color = hsv { 0.05 0.70 0.30 }
+    tags = { ir_german_gfx }
+    culture_groups = { ir_germanic }
 }
 
-ir_gothonic_culture = {
-	color = rgb { 56 23 76 }
-	tags = { german_gfx }
-	culture_groups = { ir_germanic_group }
-	# source_file = 00_germanic.txt
+ir_gothonic = {
+    color = hsv { 0.05 0.70 0.30 }
+    tags = { ir_german_gfx }
+    culture_groups = { ir_germanic }
 }
 
-ir_frisian_culture = {
-	color = rgb { 69 23 76 }
-	tags = { german_gfx }
-	culture_groups = { ir_germanic_group }
-	# source_file = 00_germanic.txt
+ir_frisian = {
+    color = hsv { 0.05 0.70 0.30 }
+    tags = { ir_german_gfx }
+    culture_groups = { ir_germanic }
 }
 

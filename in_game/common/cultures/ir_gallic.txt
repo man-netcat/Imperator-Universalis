@@ -1,100 +1,84 @@
-﻿# Converted from Imperator group gallic
-
-ir_aremorican_culture = {
-	color = rgb { 45 102 31 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_gallic_group }
-	# source_file = 00_gallic.txt
+ir_aremorican = {
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_gallic }
 }
 
-ir_lepontic_culture = {
-	color = rgb { 31 102 34 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_gallic_group }
-	# source_file = 00_gallic.txt
+ir_lepontic = {
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_gallic }
 }
 
-ir_vindelician_culture = {
-	color = rgb { 31 102 51 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_gallic_group }
-	# source_file = 00_gallic.txt
+ir_vindelician = {
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_gallic }
 }
 
-ir_helvetian_culture = {
-	color = rgb { 31 102 68 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_gallic_group }
-	# source_file = 00_gallic.txt
+ir_helvetian = {
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_gallic }
 }
 
-ir_biturigan_culture = {
-	color = rgb { 31 102 85 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_gallic_group }
-	# source_file = 00_gallic.txt
+ir_biturigan = {
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_gallic }
 }
 
-ir_volcae_culture = {
-	color = rgb { 31 102 102 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_gallic_group }
-	# source_file = 00_gallic.txt
+ir_volcae = {
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_gallic }
 }
 
-ir_salluvian_culture = {
-	color = rgb { 31 85 102 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_gallic_group }
-	# source_file = 00_gallic.txt
+ir_salluvian = {
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_gallic }
 }
 
-ir_haedui_culture = {
-	color = rgb { 31 68 102 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_gallic_group }
-	# source_file = 00_gallic.txt
+ir_haedui = {
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_gallic }
 }
 
-ir_carnuti_culture = {
-	color = rgb { 31 51 102 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_gallic_group }
-	# source_file = 00_gallic.txt
+ir_carnuti = {
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_gallic }
 }
 
-ir_santonian_culture = {
-	color = rgb { 31 34 102 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_gallic_group }
-	# source_file = 00_gallic.txt
+ir_santonian = {
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_gallic }
 }
 
-ir_lemovician_culture = {
-	color = rgb { 45 31 102 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_gallic_group }
-	# source_file = 00_gallic.txt
+ir_lemovician = {
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_gallic }
 }
 
-ir_pictonian_culture = {
-	color = rgb { 62 31 102 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_gallic_group }
-	# source_file = 00_gallic.txt
+ir_pictonian = {
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_gallic }
 }
 
-ir_aulercian_culture = {
-	color = rgb { 79 31 102 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_gallic_group }
-	# source_file = 00_gallic.txt
+ir_aulercian = {
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_gallic }
 }
 
-ir_arverni_culture = {
-	color = rgb { 97 31 102 }
-	tags = { celtic_gfx }
-	culture_groups = { ir_gallic_group }
-	# source_file = 00_gallic.txt
+ir_arverni = {
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_gallic }
 }
 
