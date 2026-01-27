@@ -1,15 +1,13 @@
-import colorsys
 import json
 import re
-import warnings
 from pathlib import Path
-from pprint import pprint
 from typing import Any
 
 import pyradox
 import pyradox.datatype as _pydt
-from paths import *
 from pyradox.filetype.txt import parse as parse_txt
+
+from .paths import *
 
 pyradox.Tree = _pydt.Tree
 pyradox.Color = _pydt.Color
@@ -93,6 +91,7 @@ def extract_culture_data():
         tree = parse_tree(path)
 
         for group_tag, group_data in tree.items():
+            [(_, ethnicity)] = group_data["ethnicities"].items()
             cultures = group_data["culture"]
             culture_blocks.append(
                 {
@@ -106,7 +105,8 @@ def extract_culture_data():
                         for culture_tag in cultures
                     ],
                     "color": group_data["color"],
-                    "tags": group_data["graphical_culture"],
+                    "graphical_culture": group_data["graphical_culture"],
+                    "ethnicities": ethnicity,
                 }
             )
 
