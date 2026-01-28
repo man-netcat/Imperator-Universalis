@@ -1,112 +1,110 @@
-﻿# Converted Imperator religions
-
-ir_roman_pantheon_religion = {
-	color = rgb { 61 75 204 }
-	group = ir_pantheon_group
+ir_roman_pantheon = {
+    color = hsv { 0.65 0.70 0.80 }
+    group = { ir_religion_group }
 }
 
-ir_egyptian_pantheon_religion = {
-	color = rgb { 178 161 0 }
-	group = ir_pantheon_group
+ir_egyptian_pantheon = {
+    color = hsv { 0.15 1.00 0.70 }
+    group = { ir_religion_group }
 }
 
-ir_carthaginian_pantheon_religion = {
-	color = rgb { 102 19 186 }
-	group = ir_pantheon_group
+ir_carthaginian_pantheon = {
+    color = hsv { 0.75 0.90 0.73 }
+    group = { ir_religion_group }
 }
 
-ir_shamanism_religion = {
-	color = rgb { 255 128 128 }
-	group = ir_pantheon_group
+ir_shamanism = {
+    color = hsv { 0.00 0.50 1.00 }
+    group = { ir_religion_group }
 }
 
 ir_caucasian_religion = {
-	color = rgb { 76 26 102 }
-	group = ir_pantheon_group
+    color = hsv { 0.30 0.10 0.40 }
+    group = { ir_religion_group }
 }
 
 ir_mesopotamian_religion = {
-	color = rgb { 128 38 0 }
-	group = ir_pantheon_group
+    color = hsv { 0.05 1.00 0.50 }
+    group = { ir_religion_group }
 }
 
 ir_armenian_religion = {
-	color = rgb { 76 26 51 }
-	group = ir_pantheon_group
+    color = hsv { 0.30 0.10 0.20 }
+    group = { ir_religion_group }
 }
 
 ir_anatolian_religion = {
-	color = rgb { 76 102 51 }
-	group = ir_pantheon_group
+    color = hsv { 0.30 0.40 0.20 }
+    group = { ir_religion_group }
 }
 
-ir_druidism_religion = {
-	color = rgb { 45 102 31 }
-	group = ir_pantheon_group
+ir_druidism = {
+    color = hsv { 0.30 0.70 0.40 }
+    group = { ir_religion_group }
 }
 
-ir_animism_religion = {
-	color = rgb { 255 107 0 }
-	group = ir_pantheon_group
+ir_animism = {
+    color = hsv { 0.07 1.00 1.00 }
+    group = { ir_religion_group }
 }
 
-ir_judaism_religion = {
-	color = rgb { 0 25 255 }
-	group = ir_prophets_group
+ir_judaism = {
+    color = hsv { 0.65 1.00 1.00 }
+    group = { ir_religion_group }
 }
 
-ir_zoroaster_religion = {
-	color = rgb { 42 167 184 }
-	group = ir_firetemples_group
+ir_zoroaster = {
+    color = hsv { 0.52 0.77 0.72 }
+    group = { ir_religion_group }
 }
 
 ir_berber_religion = {
-	color = rgb { 102 66 51 }
-	group = ir_pantheon_group
+    color = hsv { 0.05 0.50 0.40 }
+    group = { ir_religion_group }
 }
 
 ir_germanic_religion = {
-	color = rgb { 76 39 23 }
-	group = ir_pantheon_group
+    color = hsv { 0.05 0.70 0.30 }
+    group = { ir_religion_group }
 }
 
 ir_indo_iranian_religion = {
-	color = rgb { 184 204 102 }
-	group = ir_pantheon_group
+    color = hsv { 0.20 0.50 0.80 }
+    group = { ir_religion_group }
 }
 
-ir_arabian_pantheon_religion = {
-	color = rgb { 67 153 46 }
-	group = ir_pantheon_group
+ir_arabian_pantheon = {
+    color = hsv { 0.30 0.70 0.60 }
+    group = { ir_religion_group }
 }
 
-ir_buddhism_religion = {
-	color = rgb { 255 237 77 }
-	group = ir_sages_group
+ir_buddhism = {
+    color = hsv { 0.15 0.70 1.00 }
+    group = { ir_religion_group }
 }
 
-ir_hindu_religion = {
-	color = rgb { 230 69 0 }
-	group = ir_pantheon_group
+ir_hindu = {
+    color = hsv { 0.05 1.00 0.90 }
+    group = { ir_religion_group }
 }
 
-ir_eastern_animism_religion = {
-	color = rgb { 178 76 54 }
-	group = ir_pantheon_group
+ir_eastern_animism = {
+    color = hsv { 0.03 0.70 0.70 }
+    group = { ir_religion_group }
 }
 
 ir_bon_religion = {
-	color = rgb { 204 0 61 }
-	group = ir_pantheon_group
+    color = hsv { 0.95 1.00 0.80 }
+    group = { ir_religion_group }
 }
 
 ir_matrist_religion = {
-	color = rgb { 107 178 178 }
-	group = ir_pantheon_group
+    color = hsv { 0.50 0.40 0.70 }
+    group = { ir_religion_group }
 }
 
-ir_jainism_religion = {
-	color = rgb { 43 41 51 }
-	group = ir_sages_group
+ir_jainism = {
+    color = hsv { 0.70 0.20 0.20 }
+    group = { ir_religion_group }
 }
 

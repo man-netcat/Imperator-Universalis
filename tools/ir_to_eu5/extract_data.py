@@ -119,7 +119,6 @@ def extract_religion_data():
     religion_blocks = []
 
     for religion_tag, religion_data in religion_tree.items():
-        print(religion_tag, religion_data["color"])
         religion_blocks.append(
             {
                 "tag": f"ir_{religion_tag}",
