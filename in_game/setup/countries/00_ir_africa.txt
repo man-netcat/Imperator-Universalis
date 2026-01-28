@@ -1,4 +1,4 @@
-UTC = {
+﻿UTC = {
     # UTC -> setup/countries/africa/utica.txt
     color = rgb { 174 23 55 }
     culture_definition = ir_carthaginian

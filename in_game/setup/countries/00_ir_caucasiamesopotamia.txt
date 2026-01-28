@@ -1,4 +1,4 @@
-SEL = {
+﻿SEL = {
     # SEL -> setup/countries/caucasiamesopotamia/seleucid empire.txt
     color = rgb { 40 121 173 }
     culture_definition = ir_macedonian

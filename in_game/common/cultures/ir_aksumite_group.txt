@@ -1,4 +1,4 @@
-ir_puntic = {
+﻿ir_puntic = {
     color = hsv { 0.00 0.00 0.00 }
     tags = { ir_nubian_gfx }
     culture_groups = { ir_aksumite_group }

@@ -1,4 +1,4 @@
-BLR = {
+﻿BLR = {
     # BLR -> setup/countries/nuragic/balaria.txt
     color = rgb { 101 68 8 }
     culture_definition = ir_nuragic

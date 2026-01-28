@@ -1,4 +1,4 @@
-ir_roman_pantheon = {
+﻿ir_roman_pantheon = {
     color = hsv { 0.65 0.70 0.80 }
     group = { ir_religion_group }
 }

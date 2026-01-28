@@ -1,4 +1,4 @@
-RHO = {
+﻿RHO = {
     # RHO -> setup/countries/anatolia/rhodes.txt
     color = rgb { 215 59 28 }
     culture_definition = ir_aegean

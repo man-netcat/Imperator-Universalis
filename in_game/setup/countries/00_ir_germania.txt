@@ -1,4 +1,4 @@
-BST = {
+﻿BST = {
     # BST -> setup/countries/germania/bastarnae.txt
     color = rgb { 191 70 12 }
     culture_definition = ir_bastarnae

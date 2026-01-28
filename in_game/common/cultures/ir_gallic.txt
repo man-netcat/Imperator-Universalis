@@ -1,4 +1,4 @@
-ir_aremorican = {
+﻿ir_aremorican = {
     color = hsv { 0.30 0.70 0.40 }
     tags = { ir_celtic_gfx }
     culture_groups = { ir_gallic }

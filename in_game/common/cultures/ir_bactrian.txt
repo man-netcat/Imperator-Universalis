@@ -1,4 +1,4 @@
-ir_bactrian = {
+﻿ir_bactrian = {
     color = hsv { 0.03 0.70 0.70 }
     tags = { ir_persian_gfx }
     culture_groups = { ir_bactrian }

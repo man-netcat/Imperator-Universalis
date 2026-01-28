@@ -1,4 +1,4 @@
-ROM = {
+﻿ROM = {
     # ROM -> setup/countries/italia/rome.txt
     color = rgb { 139 16 13 }
     culture_definition = ir_roman

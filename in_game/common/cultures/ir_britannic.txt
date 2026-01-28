@@ -1,4 +1,4 @@
-ir_britannic = {
+﻿ir_britannic = {
     color = hsv { 0.57 0.70 0.40 }
     tags = { ir_celtic_gfx }
     culture_groups = { ir_britannic }

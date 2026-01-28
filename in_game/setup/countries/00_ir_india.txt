@@ -1,4 +1,4 @@
-ZHZ = {
+﻿ZHZ = {
     # ZHZ -> setup/countries/india/zhangzhung.txt
     color = rgb { 188 15 11 }
     culture_definition = ir_zhangzhung

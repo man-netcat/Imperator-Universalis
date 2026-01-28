@@ -1,4 +1,4 @@
-ir_zhangzhung = {
+﻿ir_zhangzhung = {
     color = hsv { 0.95 1.00 0.80 }
     tags = { ir_north_indian_gfx }
     culture_groups = { ir_tibetan }

@@ -1,4 +1,4 @@
-ir_religion_group = {
+﻿ir_religion_group = {
     # Will probably need to change this manually later
     color = rgb { 255 255 255 }
 }

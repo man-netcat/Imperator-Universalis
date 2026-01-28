@@ -1,4 +1,4 @@
-TXL = {
+﻿TXL = {
     # TXL -> setup/countries/britannia/taexalia.txt
     color = rgb { 213 195 13 }
     culture_definition = ir_taexalian

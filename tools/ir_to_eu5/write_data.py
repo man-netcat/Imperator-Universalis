@@ -54,7 +54,7 @@ def write_blocks(
         List[Union[str, Tuple[str, List[object]]]],
     ],
     mode: str = "w",
-    encoding: str = "utf-8",
+    encoding: str = "utf-8-sig",
     indent_str: str = "    ",
 ) -> Path:
     # normalize to a list of blocks
@@ -184,6 +184,6 @@ def write_localisation_files(
         country_lines.append(f"  {country['tag']}: \"{country['name']}\"")
         country_lines.append(f"  {country['tag']}_ADJ: \"{country['name_adj']}\"")
 
-    write_blocks(iu_localisation / "cultures_l_english.yml", culture_lines)
-    write_blocks(iu_localisation / "religions_l_english.yml", religion_lines)
-    write_blocks(iu_localisation / "countries_l_english.yml", country_lines)
+    write_blocks(iu_localisation / "ir_cultures_l_english.yml", culture_lines)
+    write_blocks(iu_localisation / "ir_religions_l_english.yml", religion_lines)
+    write_blocks(iu_localisation / "ir_countries_l_english.yml", country_lines)

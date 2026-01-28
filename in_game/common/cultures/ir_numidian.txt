@@ -1,4 +1,4 @@
-ir_numidian = {
+﻿ir_numidian = {
     color = hsv { 0.05 0.50 0.40 }
     tags = { ir_numidian_gfx }
     culture_groups = { ir_numidian }

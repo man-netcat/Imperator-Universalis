@@ -1,4 +1,4 @@
-BAC = {
+﻿BAC = {
     # BAC -> setup/countries/bactria/bactria.txt
     color = rgb { 208 24 58 }
     culture_definition = ir_macedonian

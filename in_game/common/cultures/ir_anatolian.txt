@@ -1,4 +1,4 @@
-ir_cappadocian = {
+﻿ir_cappadocian = {
     color = hsv { 0.32 0.45 0.90 }
     tags = { ir_anatolian_gfx }
     culture_groups = { ir_anatolian }

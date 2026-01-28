@@ -1,4 +1,4 @@
-MAS = {
+﻿MAS = {
     # MAS -> setup/countries/gaul/massilia.txt
     color = rgb { 110 180 150 }
     culture_definition = ir_massalian

@@ -1,4 +1,4 @@
-JUD = {
+﻿JUD = {
     # JUD -> setup/countries/syria/judea.txt
     color = rgb { 99 193 217 }
     culture_definition = ir_hebrew

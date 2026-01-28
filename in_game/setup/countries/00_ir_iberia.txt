@@ -1,4 +1,4 @@
-BLD = {
+﻿BLD = {
     # BLD -> setup/countries/iberia/balearides.txt
     color = rgb { 224 229 66 }
     culture_definition = ir_talaiotic

@@ -1,4 +1,4 @@
-MAK = {
+﻿MAK = {
     # MAK -> setup/countries/arabia/maka.txt
     color = rgb { 101 10 221 }
     culture_definition = ir_makan
