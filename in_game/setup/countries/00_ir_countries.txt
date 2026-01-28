@@ -1,0 +1,7 @@
+BAR = {
+    # BAR -> setup/countries/countries/barbarians.txt
+    color = rgb { 96 95 78 }
+    culture_definition = ir_None
+    religion_definition = ir_None
+}
+

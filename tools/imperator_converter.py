@@ -7,6 +7,7 @@ from ir_to_eu5.extract_data import (
 )
 from ir_to_eu5.paths import mod_root
 from ir_to_eu5.write_data import (
+    write_country_setup,
     write_culture_data,
     write_culture_group_data,
     write_religion_data,
@@ -26,3 +27,4 @@ if __name__ == "__main__":
     write_culture_data(culture_data)
     write_religion_group_data(religion_data)
     write_religion_data(religion_data)
+    write_country_setup(country_data)

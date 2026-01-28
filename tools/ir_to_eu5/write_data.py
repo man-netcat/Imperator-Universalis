@@ -1,3 +1,4 @@
+from collections import defaultdict
 from pathlib import Path
 from typing import List, Tuple, Union
 
@@ -11,7 +12,7 @@ pyradox.Color = _pydt.Color
 
 def convert_color(color: _pydt.Color) -> str:
     if color.colorspace == "rgb":
-        r, g, b = (int(c * 255) for c in color.channels)
+        r, g, b = color.channels
         return f"rgb {{ {r} {g} {b} }}"
     elif color.colorspace == "hsv":
         h, s, v = color.channels
@@ -132,3 +133,20 @@ def write_religion_data(religion_data: list):
     out_path = iu_religions / f"ir_religions.txt"
 
     write_blocks(out_path, blocks)
+
+
+def write_country_setup(country_data: list):
+    setup_dir_dict = defaultdict(list)
+
+    for country in country_data:
+        lines = [
+            f"# {country['tag']} -> {ir_countries_dir.relative_to(ir_game)}/{country['setup_dir']}/{country['setup_file']}",
+            f"color = {convert_color(country['color'])}",
+            f"culture_definition = {country['culture']}",
+            f"religion_definition = {country['religion']}",
+        ]
+        setup_dir_dict[country["setup_dir"]].append((country["tag"], lines))
+
+    for setup_dir, country_blocks in setup_dir_dict.items():
+        out_path = iu_countries / f"00_ir_{setup_dir}.txt"
+        write_blocks(out_path, country_blocks)

@@ -140,7 +140,7 @@ def extract_country_data():
     country_blocks = []
 
     for country_tag, country_data in country_tree.items():
-        country_setup_file = ir_game / setup_dirs.get(country_tag)
+        country_setup_file: Path = ir_game / setup_dirs.get(country_tag)
         country_setup_tree = parse_tree(country_setup_file)
 
         country_name = country_loc[country_tag]
@@ -151,9 +151,11 @@ def extract_country_data():
                 "tag": country_tag,
                 "name": country_name,
                 "name_adj": country_name_adj,
-                "culture": f"ir_{country_data['culture']}",
+                "culture": f"ir_{country_data['primary_culture']}",
                 "religion": f"ir_{country_data['religion']}",
                 "color": country_setup_tree["color"],
+                "setup_dir": country_setup_file.parent.name,
+                "setup_file": country_setup_file.name,
             }
         )
 
