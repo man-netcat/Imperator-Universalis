@@ -72,12 +72,16 @@ def write_blocks(
             if isinstance(block, tuple) and len(block) == 2:
                 tag, lines = block
                 f.write(make_block(tag, lines, indent_level=0, indent_str=indent_str))
+                # Keep a blank line after a generated block for readability
+                f.write("\n")
             else:
                 s = str(block)
                 f.write(s)
                 if not s.endswith("\n"):
                     f.write("\n")
-            f.write("\n")
+                # For localisation files (YAML) we don't want blank lines between lines
+                if out_path.suffix not in (".yml", ".yaml"):
+                    f.write("\n")
 
     return out_path
 
@@ -154,3 +158,32 @@ def write_country_setup(country_data: list):
     for setup_dir, country_blocks in setup_dir_dict.items():
         out_path = iu_countries / f"00_ir_{setup_dir}.txt"
         write_blocks(out_path, country_blocks)
+
+
+def write_localisation_files(
+    culture_data: list, religion_data: list, country_data: list
+):
+    culture_lines = [
+        f" l_english:",
+    ]
+    for culture_group in culture_data:
+        culture_lines.append(f"  {culture_group['tag']}: \"{culture_group['name']}\"")
+        for culture in culture_group["cultures"]:
+            culture_lines.append(f"  {culture['tag']}: \"{culture['name']}\"")
+
+    religion_lines = [
+        f" l_english:",
+    ]
+    for religion in religion_data:
+        religion_lines.append(f"  {religion['tag']}: \"{religion['name']}\"")
+
+    country_lines = [
+        f" l_english:",
+    ]
+    for country in country_data:
+        country_lines.append(f"  {country['tag']}: \"{country['name']}\"")
+        country_lines.append(f"  {country['tag']}_ADJ: \"{country['name_adj']}\"")
+
+    write_blocks(iu_localisation / "cultures_l_english.yml", culture_lines)
+    write_blocks(iu_localisation / "religions_l_english.yml", religion_lines)
+    write_blocks(iu_localisation / "countries_l_english.yml", country_lines)

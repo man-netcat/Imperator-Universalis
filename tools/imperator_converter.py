@@ -10,6 +10,7 @@ from ir_to_eu5.write_data import (
     write_country_setup,
     write_culture_data,
     write_culture_group_data,
+    write_localisation_files,
     write_religion_data,
     write_religion_group_data,
 )
@@ -28,3 +29,5 @@ if __name__ == "__main__":
     write_religion_group_data(religion_data)
     write_religion_data(religion_data)
     write_country_setup(country_data)
+
+    write_localisation_files(culture_data, religion_data, country_data)
