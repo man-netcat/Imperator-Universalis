@@ -1,91 +1,90 @@
-﻿# avoid naming the same as Cultures and Languages
+ir_celto_pannonian_group = {
+}
+
+ir_celt_iberia = {
+}
+
+ir_tibetan = {
+}
+
+ir_numidian = {
+}
 
 ir_aksumite_group = {
 }
 
-ir_anatolian_group = {
+ir_scythia = {
 }
 
-ir_aryan_group = {
+ir_belgae_group = {
 }
 
-ir_bactrian_group = {
+ir_iberia = {
 }
 
-ir_baltic_group = {
+ir_south_levantine = {
 }
 
-ir_belgea_group = {
+ir_hellenic = {
 }
 
-ir_britannic_group = {
+ir_indian = {
 }
 
-ir_caucasian_group = {
+ir_aryan = {
 }
 
-ir_celtiberian_group = {
+ir_dacia_group = {
 }
 
-ir_celto_pannonian_group = {
+ir_north_african = {
 }
 
-ir_dacian_group = {
+ir_persia = {
 }
 
-ir_east_levantine_group = {
+ir_latin = {
 }
 
-ir_gaelic_group = {
-}
-
-ir_gallic_group = {
-}
-
-ir_germanic_group = {
-}
-
-ir_hellenic_group = {
-}
-
-ir_iberia_group = {
+ir_east_levantine = {
 }
 
 ir_illyrian_group = {
 }
 
-ir_indian_group = {
+ir_proto_european = {
 }
 
-ir_latin_group = {
+ir_baltic = {
+}
+
+ir_gaelic = {
+}
+
+ir_britannic = {
+}
+
+ir_anatolian = {
+}
+
+ir_pracyan = {
+}
+
+ir_caucasian = {
+}
+
+ir_germanic = {
+}
+
+ir_bactrian = {
 }
 
 ir_meroitic_group = {
 }
 
-ir_north_african_group = {
+ir_west_levantine = {
 }
 
-ir_numidian_group = {
+ir_gallic = {
 }
 
-ir_persia_group = {
-}
-
-ir_pracyan_group = {
-}
-
-ir_proto_european_group = {
-}
-
-ir_scythia_group = {
-}
-
-ir_south_levantine_group = {
-}
-
-ir_tibetan_group = {
-}
-
-ir_west_levantine_group = {
-}

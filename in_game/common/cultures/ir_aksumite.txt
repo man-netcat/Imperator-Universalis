@@ -1,9 +1,0 @@
-﻿# Converted from Imperator group aksumite
-
-ir_aksumite_culture = {
-	color = rgb { 0 0 0 }
-	tags = { nubian_gfx }
-	culture_groups = { ir_aksumite_group }
-	# source_file = 00_aksumite_group.txt
-}
-

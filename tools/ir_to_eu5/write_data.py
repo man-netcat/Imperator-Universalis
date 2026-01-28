@@ -84,7 +84,8 @@ def write_blocks(
 
 def write_culture_group_data(culture_data: list):
     blocks = [(culture_group["tag"], []) for culture_group in culture_data]
-    write_blocks(iu_culture_groups, blocks)
+    out_path = iu_culture_groups / f"ir_culture_groups.txt"
+    write_blocks(out_path, blocks)
 
 
 def write_culture_data(culture_data: list):
@@ -110,12 +111,15 @@ def write_religion_group_data(religion_data: list):
         (
             "ir_religion_group",
             [
+                "# Will probably need to change this manually later",
                 f"color = rgb {{ 255 255 255 }}",
             ],
         )
     ]
 
-    write_blocks(iu_religion_groups, blocks)
+    out_path = iu_religion_groups / f"ir_default.txt"
+
+    write_blocks(out_path, blocks)
 
 
 def write_religion_data(religion_data: list):
@@ -123,7 +127,7 @@ def write_religion_data(religion_data: list):
         (
             religion["tag"],
             [
-                f"color = {convert_color(religion["color"])}",
+                f"color = {convert_color(religion['color'])}",
                 f"group = {{ ir_religion_group }}",
             ],
         )
