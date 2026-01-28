@@ -6,6 +6,7 @@ from ir_to_eu5.extract_data import (
     extract_religion_data,
     write_json,
 )
+from ir_to_eu5.map_data import parse_definitions, port_map_data
 from ir_to_eu5.paths import mod_root
 from ir_to_eu5.port_gfx import port_coa_gfx
 from ir_to_eu5.write_data import (
@@ -23,6 +24,7 @@ if __name__ == "__main__":
     religion_data = extract_religion_data()
     country_data = extract_country_data()
     coa_data = extract_coa_data()
+    named_locations = {t[0]: t[1] for t in parse_definitions()}
 
     write_json(culture_data, mod_root / "cultures.json")
     write_json(religion_data, mod_root / "religions.json")
@@ -39,3 +41,5 @@ if __name__ == "__main__":
     write_localisation_files(culture_data, religion_data, country_data)
 
     port_coa_gfx()
+
+    port_map_data()

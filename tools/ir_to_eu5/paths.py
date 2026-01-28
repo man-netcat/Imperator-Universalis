@@ -20,6 +20,7 @@ ir_prescripted_coa = (
     / "00_pre_scripted_countries.txt"
 )
 ir_coa_gfx = ir_game / "gfx" / "coat_of_arms"
+ir_map_data = ir_game / "map_data"
 
 # Imperator Universalis mod paths
 mod_root = Path(
@@ -41,3 +42,4 @@ iu_prescripted_coa = (
     / "coat_of_arms"
     / "zz_ir_pre_scripted_countries.txt"
 )
+iu_map_data = mod_root / "main_menu" / "map_data"
