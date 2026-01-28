@@ -1,6 +1,0 @@
-﻿ir_aestian = {
-    color = hsv { 0.50 0.40 0.70 }
-    tags = { ir_german_gfx }
-    culture_groups = { ir_baltic }
-}
-

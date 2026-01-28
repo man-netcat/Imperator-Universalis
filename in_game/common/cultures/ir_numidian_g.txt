@@ -1,0 +1,48 @@
+﻿ir_numidian = {
+    color = hsv { 0.05 0.50 0.40 }
+    tags = { ir_numidian_gfx }
+    culture_groups = { ir_numidian_g }
+}
+
+ir_berber = {
+    color = hsv { 0.05 0.50 0.40 }
+    tags = { ir_numidian_gfx }
+    culture_groups = { ir_numidian_g }
+}
+
+ir_gaetulian = {
+    color = hsv { 0.05 0.50 0.40 }
+    tags = { ir_numidian_gfx }
+    culture_groups = { ir_numidian_g }
+}
+
+ir_socossian = {
+    color = hsv { 0.05 0.50 0.40 }
+    tags = { ir_numidian_gfx }
+    culture_groups = { ir_numidian_g }
+}
+
+ir_massaesylian = {
+    color = hsv { 0.05 0.50 0.40 }
+    tags = { ir_numidian_gfx }
+    culture_groups = { ir_numidian_g }
+}
+
+ir_massylian = {
+    color = hsv { 0.05 0.50 0.40 }
+    tags = { ir_numidian_gfx }
+    culture_groups = { ir_numidian_g }
+}
+
+ir_garamantic = {
+    color = hsv { 0.05 0.50 0.40 }
+    tags = { ir_numidian_gfx }
+    culture_groups = { ir_numidian_g }
+}
+
+ir_libyan = {
+    color = hsv { 0.05 0.50 0.40 }
+    tags = { ir_numidian_gfx }
+    culture_groups = { ir_numidian_g }
+}
+

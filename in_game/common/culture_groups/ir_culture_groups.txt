@@ -1,90 +1,90 @@
-﻿ir_celto_pannonian_group = {
+﻿ir_celto_pannonian_group_g = {
 }
 
-ir_celt_iberia = {
+ir_celt_iberia_g = {
 }
 
-ir_tibetan = {
+ir_tibetan_g = {
 }
 
-ir_numidian = {
+ir_numidian_g = {
 }
 
-ir_aksumite_group = {
+ir_aksumite_group_g = {
 }
 
-ir_scythia = {
+ir_scythia_g = {
 }
 
-ir_belgae_group = {
+ir_belgae_group_g = {
 }
 
-ir_iberia = {
+ir_iberia_g = {
 }
 
-ir_south_levantine = {
+ir_south_levantine_g = {
 }
 
-ir_hellenic = {
+ir_hellenic_g = {
 }
 
-ir_indian = {
+ir_indian_g = {
 }
 
-ir_aryan = {
+ir_aryan_g = {
 }
 
-ir_dacia_group = {
+ir_dacia_group_g = {
 }
 
-ir_north_african = {
+ir_north_african_g = {
 }
 
-ir_persia = {
+ir_persia_g = {
 }
 
-ir_latin = {
+ir_latin_g = {
 }
 
-ir_east_levantine = {
+ir_east_levantine_g = {
 }
 
-ir_illyrian_group = {
+ir_illyrian_group_g = {
 }
 
-ir_proto_european = {
+ir_proto_european_g = {
 }
 
-ir_baltic = {
+ir_baltic_g = {
 }
 
-ir_gaelic = {
+ir_gaelic_g = {
 }
 
-ir_britannic = {
+ir_britannic_g = {
 }
 
-ir_anatolian = {
+ir_anatolian_g = {
 }
 
-ir_pracyan = {
+ir_pracyan_g = {
 }
 
-ir_caucasian = {
+ir_caucasian_g = {
 }
 
-ir_germanic = {
+ir_germanic_g = {
 }
 
-ir_bactrian = {
+ir_bactrian_g = {
 }
 
-ir_meroitic_group = {
+ir_meroitic_group_g = {
 }
 
-ir_west_levantine = {
+ir_west_levantine_g = {
 }
 
-ir_gallic = {
+ir_gallic_g = {
 }
 

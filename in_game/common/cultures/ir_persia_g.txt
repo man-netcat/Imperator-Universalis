@@ -1,0 +1,102 @@
+﻿ir_elamite = {
+    color = hsv { 0.52 0.77 0.72 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_persia_g }
+}
+
+ir_utian = {
+    color = hsv { 0.52 0.77 0.72 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_persia_g }
+}
+
+ir_pasargadi = {
+    color = hsv { 0.52 0.77 0.72 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_persia_g }
+}
+
+ir_sagartian = {
+    color = hsv { 0.52 0.77 0.72 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_persia_g }
+}
+
+ir_uxian = {
+    color = hsv { 0.52 0.77 0.72 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_persia_g }
+}
+
+ir_amardian = {
+    color = hsv { 0.52 0.77 0.72 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_persia_g }
+}
+
+ir_sarangian = {
+    color = hsv { 0.52 0.77 0.72 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_persia_g }
+}
+
+ir_pactyan = {
+    color = hsv { 0.52 0.77 0.72 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_persia_g }
+}
+
+ir_cossian = {
+    color = hsv { 0.52 0.77 0.72 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_persia_g }
+}
+
+ir_cadusian = {
+    color = hsv { 0.52 0.77 0.72 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_persia_g }
+}
+
+ir_parthian = {
+    color = hsv { 0.52 0.77 0.72 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_persia_g }
+}
+
+ir_parecanian = {
+    color = hsv { 0.52 0.77 0.72 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_persia_g }
+}
+
+ir_carmanian = {
+    color = hsv { 0.52 0.77 0.72 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_persia_g }
+}
+
+ir_median = {
+    color = hsv { 0.52 0.77 0.72 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_persia_g }
+}
+
+ir_gedrosian = {
+    color = hsv { 0.52 0.77 0.72 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_persia_g }
+}
+
+ir_hyrcanian = {
+    color = hsv { 0.52 0.77 0.72 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_persia_g }
+}
+
+ir_sattagydian = {
+    color = hsv { 0.52 0.77 0.72 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_persia_g }
+}
+

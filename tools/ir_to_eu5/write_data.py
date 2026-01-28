@@ -8,6 +8,7 @@ import pyradox.datatype as _pydt
 from .paths import *
 
 pyradox.Color = _pydt.Color
+pyradox.Tree = _pydt.Tree
 
 
 def convert_color(color: _pydt.Color) -> str:
@@ -19,6 +20,54 @@ def convert_color(color: _pydt.Color) -> str:
         return f"hsv {{ {h:.2f} {s:.2f} {v:.2f} }}"
     else:
         raise ValueError(f"Unsupported color space: {color.colorspace}")
+
+
+def convert_tree_to_blocks(
+    tree: _pydt.Tree,
+) -> List[Union[str, Tuple[str, List[object]]]]:
+    blocks: List[Union[str, Tuple[str, List[object]]]] = []
+
+    grouped: dict[str, list] = {}
+
+    # Group repeated keys
+    for key, value in tree.items():
+        if key not in grouped:
+            grouped[key] = []
+        grouped[key].append(value)
+
+    for key, values in grouped.items():
+        # All scalar values → aggregate into one line
+        if all(not isinstance(v, (_pydt.Tree, list)) for v in values):
+            formatted_values = [
+                f'"{v}"' if isinstance(v, str) else str(v) for v in values
+            ]
+            if len(formatted_values) == 1:
+                blocks.append(f"{key} = {formatted_values[0]}")
+            else:
+                items = " ".join(formatted_values)
+                blocks.append(f"{key} = {{ {items} }}")
+
+        else:
+            # Complex values: trees or lists
+            for v in values:
+                if isinstance(v, _pydt.Tree):
+                    # Use the parent key as the tag, not the "tag" inside the tree
+                    subblocks = convert_tree_to_blocks(v)
+                    blocks.append((key, subblocks))
+                elif isinstance(v, list):
+                    for item in v:
+                        if isinstance(item, _pydt.Tree):
+                            # Again, parent key is used to avoid double nesting
+                            subblocks = convert_tree_to_blocks(item)
+                            blocks.append((key, subblocks))
+                        else:
+                            # Scalar inside a list
+                            formatted = (
+                                f'"{item}"' if isinstance(item, str) else str(item)
+                            )
+                            blocks.append(f"{key} = {formatted}")
+
+    return blocks
 
 
 def make_block(
@@ -62,6 +111,8 @@ def write_blocks(
         blocks_list = [blocks]
     elif isinstance(blocks, list):
         blocks_list = blocks
+    elif isinstance(blocks, _pydt.Tree):
+        blocks_list = convert_tree_to_blocks(blocks)
     else:
         raise TypeError("blocks must be a str, a (tag, lines) tuple, or a list")
 
@@ -132,7 +183,7 @@ def write_religion_data(religion_data: list):
             religion["tag"],
             [
                 f"color = {convert_color(religion['color'])}",
-                f"group = {{ ir_religion_group }}",
+                f"group = ir_religion_group",
             ],
         )
         for religion in religion_data
@@ -163,27 +214,33 @@ def write_country_setup(country_data: list):
 def write_localisation_files(
     culture_data: list, religion_data: list, country_data: list
 ):
-    culture_lines = [
-        f" l_english:",
-    ]
+    culture_lines = [f"l_english:"]
     for culture_group in culture_data:
-        culture_lines.append(f"  {culture_group['tag']}: \"{culture_group['name']}\"")
+        culture_lines.append(f'  {culture_group["tag"]}: "{culture_group["name"]}"')
+        culture_lines.append(
+            f'  {culture_group["tag"]}_desc: "{culture_group["name_desc"]}"'
+        )
         for culture in culture_group["cultures"]:
-            culture_lines.append(f"  {culture['tag']}: \"{culture['name']}\"")
+            culture_lines.append(f'  {culture["tag"]}: "{culture["name"]}"')
 
-    religion_lines = [
-        f" l_english:",
-    ]
+    religion_lines = [f"l_english:"]
+    religion_lines.append(f'  ir_religion_group: "Ir religion group"')
+    religion_lines.append(f'  ir_religion_group_ADJ: "Ir religion group"')
+    religion_lines.append(f'  ir_religion_group_desc: "Ir religion group"')
     for religion in religion_data:
-        religion_lines.append(f"  {religion['tag']}: \"{religion['name']}\"")
+        religion_lines.append(f'  {religion["tag"]}: "{religion["name"]}"')
+        religion_lines.append(f'  {religion["tag"]}_ADJ: "{religion["name_adj"]}"')
+        religion_lines.append(f'  {religion["tag"]}_desc: "{religion["name_desc"]}"')
 
-    country_lines = [
-        f" l_english:",
-    ]
+    country_lines = [f"l_english:"]
     for country in country_data:
-        country_lines.append(f"  {country['tag']}: \"{country['name']}\"")
-        country_lines.append(f"  {country['tag']}_ADJ: \"{country['name_adj']}\"")
+        country_lines.append(f'  {country["tag"]}: "{country["name"]}"')
+        country_lines.append(f'  {country["tag"]}_ADJ: "{country["name_adj"]}"')
 
     write_blocks(iu_localisation / "ir_cultures_l_english.yml", culture_lines)
     write_blocks(iu_localisation / "ir_religions_l_english.yml", religion_lines)
     write_blocks(iu_localisation / "ir_countries_l_english.yml", country_lines)
+
+
+def write_coa_file(coa_data: _pydt.Tree):
+    write_blocks(iu_prescripted_coa, coa_data)

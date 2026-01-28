@@ -1,0 +1,36 @@
+﻿ir_kalingan = {
+    color = hsv { 0.25 1.00 0.10 }
+    tags = { ir_north_indian_gfx }
+    culture_groups = { ir_pracyan_g }
+}
+
+ir_kamarupi = {
+    color = hsv { 0.25 1.00 0.10 }
+    tags = { ir_north_indian_gfx }
+    culture_groups = { ir_pracyan_g }
+}
+
+ir_bangli = {
+    color = hsv { 0.25 1.00 0.10 }
+    tags = { ir_north_indian_gfx }
+    culture_groups = { ir_pracyan_g }
+}
+
+ir_atavi = {
+    color = hsv { 0.25 1.00 0.10 }
+    tags = { ir_north_indian_gfx }
+    culture_groups = { ir_pracyan_g }
+}
+
+ir_magadhi = {
+    color = hsv { 0.25 1.00 0.10 }
+    tags = { ir_north_indian_gfx }
+    culture_groups = { ir_pracyan_g }
+}
+
+ir_himalayan = {
+    color = hsv { 0.25 1.00 0.10 }
+    tags = { ir_north_indian_gfx }
+    culture_groups = { ir_pracyan_g }
+}
+

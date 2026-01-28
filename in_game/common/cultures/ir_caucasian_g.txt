@@ -1,0 +1,18 @@
+﻿ir_albanian = {
+    color = hsv { 0.12 0.45 0.68 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_caucasian_g }
+}
+
+ir_ibero = {
+    color = hsv { 0.12 0.45 0.68 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_caucasian_g }
+}
+
+ir_colchian = {
+    color = hsv { 0.12 0.45 0.68 }
+    tags = { ir_persian_gfx }
+    culture_groups = { ir_caucasian_g }
+}
+

@@ -1,0 +1,84 @@
+﻿ir_aremorican = {
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_gallic_g }
+}
+
+ir_lepontic = {
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_gallic_g }
+}
+
+ir_vindelician = {
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_gallic_g }
+}
+
+ir_helvetian = {
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_gallic_g }
+}
+
+ir_biturigan = {
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_gallic_g }
+}
+
+ir_volcae = {
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_gallic_g }
+}
+
+ir_salluvian = {
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_gallic_g }
+}
+
+ir_haedui = {
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_gallic_g }
+}
+
+ir_carnuti = {
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_gallic_g }
+}
+
+ir_santonian = {
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_gallic_g }
+}
+
+ir_lemovician = {
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_gallic_g }
+}
+
+ir_pictonian = {
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_gallic_g }
+}
+
+ir_aulercian = {
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_gallic_g }
+}
+
+ir_arverni = {
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_gallic_g }
+}
+

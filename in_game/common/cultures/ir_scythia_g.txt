@@ -1,0 +1,66 @@
+﻿ir_scythian = {
+    color = hsv { 0.20 0.50 0.80 }
+    tags = { ir_scythian_gfx }
+    culture_groups = { ir_scythia_g }
+}
+
+ir_sarmatian = {
+    color = hsv { 0.20 0.50 0.80 }
+    tags = { ir_scythian_gfx }
+    culture_groups = { ir_scythia_g }
+}
+
+ir_kharesmian = {
+    color = hsv { 0.20 0.50 0.80 }
+    tags = { ir_scythian_gfx }
+    culture_groups = { ir_scythia_g }
+}
+
+ir_derbiccan = {
+    color = hsv { 0.20 0.50 0.80 }
+    tags = { ir_scythian_gfx }
+    culture_groups = { ir_scythia_g }
+}
+
+ir_sindi = {
+    color = hsv { 0.20 0.50 0.80 }
+    tags = { ir_scythian_gfx }
+    culture_groups = { ir_scythia_g }
+}
+
+ir_siraci = {
+    color = hsv { 0.20 0.50 0.80 }
+    tags = { ir_scythian_gfx }
+    culture_groups = { ir_scythia_g }
+}
+
+ir_maeotian = {
+    color = hsv { 0.20 0.50 0.80 }
+    tags = { ir_scythian_gfx }
+    culture_groups = { ir_scythia_g }
+}
+
+ir_sakan = {
+    color = hsv { 0.20 0.50 0.80 }
+    tags = { ir_scythian_gfx }
+    culture_groups = { ir_scythia_g }
+}
+
+ir_thyssagetaen = {
+    color = hsv { 0.20 0.50 0.80 }
+    tags = { ir_scythian_gfx }
+    culture_groups = { ir_scythia_g }
+}
+
+ir_legian = {
+    color = hsv { 0.20 0.50 0.80 }
+    tags = { ir_scythian_gfx }
+    culture_groups = { ir_scythia_g }
+}
+
+ir_agathyrsian = {
+    color = hsv { 0.20 0.50 0.80 }
+    tags = { ir_scythian_gfx }
+    culture_groups = { ir_scythia_g }
+}
+

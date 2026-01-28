@@ -1,0 +1,36 @@
+﻿ir_celtic_pannonian = {
+    color = hsv { 0.25 0.85 0.25 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_celto_pannonian_group_g }
+}
+
+ir_letobician = {
+    color = hsv { 0.25 0.85 0.25 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_celto_pannonian_group_g }
+}
+
+ir_carnian = {
+    color = hsv { 0.25 0.85 0.25 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_celto_pannonian_group_g }
+}
+
+ir_noric = {
+    color = hsv { 0.25 0.85 0.25 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_celto_pannonian_group_g }
+}
+
+ir_boian = {
+    color = hsv { 0.25 0.85 0.25 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_celto_pannonian_group_g }
+}
+
+ir_eravisci = {
+    color = hsv { 0.25 0.85 0.25 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_celto_pannonian_group_g }
+}
+

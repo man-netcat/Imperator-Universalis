@@ -1,0 +1,24 @@
+﻿ir_carthaginian = {
+    color = hsv { 0.75 0.90 0.73 }
+    tags = { ir_carthaginian_gfx }
+    culture_groups = { ir_west_levantine_g }
+}
+
+ir_phoenician = {
+    color = hsv { 0.75 0.90 0.73 }
+    tags = { ir_carthaginian_gfx }
+    culture_groups = { ir_west_levantine_g }
+}
+
+ir_hebrew = {
+    color = hsv { 0.75 0.90 0.73 }
+    tags = { ir_carthaginian_gfx }
+    culture_groups = { ir_west_levantine_g }
+}
+
+ir_nabatean = {
+    color = hsv { 0.75 0.90 0.73 }
+    tags = { ir_carthaginian_gfx }
+    culture_groups = { ir_west_levantine_g }
+}
+

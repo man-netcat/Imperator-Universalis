@@ -1,0 +1,60 @@
+﻿ir_roman = {
+    color = hsv { 0.00 0.91 0.55 }
+    tags = { ir_roman_gfx }
+    culture_groups = { ir_latin_g }
+}
+
+ir_venetic = {
+    color = hsv { 0.00 0.91 0.55 }
+    tags = { ir_roman_gfx }
+    culture_groups = { ir_latin_g }
+}
+
+ir_ligurian = {
+    color = hsv { 0.00 0.91 0.55 }
+    tags = { ir_roman_gfx }
+    culture_groups = { ir_latin_g }
+}
+
+ir_etruscan = {
+    color = hsv { 0.00 0.91 0.55 }
+    tags = { ir_roman_gfx }
+    culture_groups = { ir_latin_g }
+}
+
+ir_rhaetian = {
+    color = hsv { 0.00 0.91 0.55 }
+    tags = { ir_roman_gfx }
+    culture_groups = { ir_latin_g }
+}
+
+ir_umbrian = {
+    color = hsv { 0.00 0.91 0.55 }
+    tags = { ir_roman_gfx }
+    culture_groups = { ir_latin_g }
+}
+
+ir_samnite = {
+    color = hsv { 0.00 0.91 0.55 }
+    tags = { ir_roman_gfx }
+    culture_groups = { ir_latin_g }
+}
+
+ir_siculian = {
+    color = hsv { 0.00 0.91 0.55 }
+    tags = { ir_roman_gfx }
+    culture_groups = { ir_latin_g }
+}
+
+ir_bruttian = {
+    color = hsv { 0.00 0.91 0.55 }
+    tags = { ir_roman_gfx }
+    culture_groups = { ir_latin_g }
+}
+
+ir_lucanian = {
+    color = hsv { 0.00 0.91 0.55 }
+    tags = { ir_roman_gfx }
+    culture_groups = { ir_latin_g }
+}
+

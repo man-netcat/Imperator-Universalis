@@ -12,6 +12,20 @@ from .paths import *
 pyradox.Tree = _pydt.Tree
 pyradox.Color = _pydt.Color
 
+governments = {
+    "aristocratic_monarchy": "monarchy",
+    "despotic_monarchy": "monarchy",
+    "stratocratic_monarchy": "monarchy",
+    "aristocratic_republic": "republic",
+    "plutocratic_republic": "republic",
+    "oligarchic_republic": "republic",
+    "democratic_republic": "republic",
+    "theocratic_monarchy": "theocracy",
+    "tribal_kingdom": "tribal",
+    "tribal_federation": "tribal",
+    "tribal_chiefdom": "tribal",
+}
+
 
 # ---------- Helper ----------
 
@@ -95,8 +109,9 @@ def extract_culture_data():
             cultures = group_data["culture"]
             culture_blocks.append(
                 {
-                    "tag": f"ir_{group_tag}",
-                    "name": culture_loc[group_tag],
+                    "tag": f"ir_{group_tag}_g",
+                    "name": f"{culture_loc[group_tag]}",
+                    "name_desc": culture_loc.get(f"{group_tag}_desc", "REPLACE ME"),
                     "cultures": [
                         {
                             "tag": f"ir_{culture_tag}",
@@ -123,6 +138,8 @@ def extract_religion_data():
             {
                 "tag": f"ir_{religion_tag}",
                 "name": religion_loc[religion_tag],
+                "name_adj": religion_loc.get(f"{religion_tag}_ADJ", "REPLACE ME"),
+                "name_desc": religion_loc.get(f"{religion_tag}_desc", "REPLACE ME"),
                 "color": religion_data["color"],
             }
         )
@@ -153,6 +170,8 @@ def extract_country_data():
                 "name_adj": country_name_adj,
                 "culture": f"ir_{country_data['primary_culture']}",
                 "religion": f"ir_{country_data['religion']}",
+                "government": country_data["government"],
+                "government_type": governments.get(country_data["government"]),
                 "color": country_setup_tree["color"],
                 "setup_dir": country_setup_file.parent.name,
                 "setup_file": country_setup_file.name,
@@ -160,3 +179,42 @@ def extract_country_data():
         )
 
     return country_blocks
+
+
+def extract_coa_data():
+    coa_tree = parse_tree(ir_prescripted_coa)
+
+    def _replace_tga_with_dds(obj: Any) -> None:
+        def _update_str(s: str) -> str:
+            return re.sub(r"(?i)\.tga\b", ".dds", s)
+
+        if isinstance(obj, dict):
+            for k, v in list(obj.items()):
+                if isinstance(v, str):
+                    new_v = _update_str(v)
+                    if new_v != v:
+                        obj[k] = new_v
+                else:
+                    _replace_tga_with_dds(v)
+        elif isinstance(obj, list):
+            for i, v in enumerate(obj):
+                if isinstance(v, str):
+                    new_v = _update_str(v)
+                    if new_v != v:
+                        obj[i] = new_v
+                else:
+                    _replace_tga_with_dds(v)
+        elif isinstance(obj, _pydt.Tree):
+            # pyradox.Tree behaves like a dict
+            for k, v in list(obj.items()):
+                if isinstance(v, str):
+                    new_v = _update_str(v)
+                    if new_v != v:
+                        obj[k] = new_v
+                else:
+                    _replace_tga_with_dds(v)
+
+    # Only convert .tga -> .dds for coat of arms data
+    _replace_tga_with_dds(coa_tree)
+
+    return coa_tree

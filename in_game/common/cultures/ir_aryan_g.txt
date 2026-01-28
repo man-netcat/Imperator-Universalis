@@ -1,0 +1,54 @@
+﻿ir_vidharban = {
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { ir_north_indian_gfx }
+    culture_groups = { ir_aryan_g }
+}
+
+ir_saurashtran = {
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { ir_north_indian_gfx }
+    culture_groups = { ir_aryan_g }
+}
+
+ir_lankan = {
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { ir_north_indian_gfx }
+    culture_groups = { ir_aryan_g }
+}
+
+ir_maharashtran = {
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { ir_north_indian_gfx }
+    culture_groups = { ir_aryan_g }
+}
+
+ir_gandhari = {
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { ir_north_indian_gfx }
+    culture_groups = { ir_aryan_g }
+}
+
+ir_shauraseni = {
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { ir_north_indian_gfx }
+    culture_groups = { ir_aryan_g }
+}
+
+ir_avanti = {
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { ir_north_indian_gfx }
+    culture_groups = { ir_aryan_g }
+}
+
+ir_sindhi = {
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { ir_north_indian_gfx }
+    culture_groups = { ir_aryan_g }
+}
+
+ir_dardic = {
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { ir_north_indian_gfx }
+    culture_groups = { ir_aryan_g }
+}
+

@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 from ir_to_eu5.extract_data import (
+    extract_coa_data,
     extract_country_data,
     extract_culture_data,
     extract_religion_data,
     write_json,
 )
 from ir_to_eu5.paths import mod_root
+from ir_to_eu5.port_gfx import port_coa_gfx
 from ir_to_eu5.write_data import (
+    write_coa_file,
     write_country_setup,
     write_culture_data,
     write_culture_group_data,
@@ -19,15 +22,20 @@ if __name__ == "__main__":
     culture_data = extract_culture_data()
     religion_data = extract_religion_data()
     country_data = extract_country_data()
+    coa_data = extract_coa_data()
 
     write_json(culture_data, mod_root / "cultures.json")
     write_json(religion_data, mod_root / "religions.json")
     write_json(country_data, mod_root / "countries.json")
+    write_json(coa_data, mod_root / "coats_of_arms.json")
 
     write_culture_group_data(culture_data)
     write_culture_data(culture_data)
     write_religion_group_data(religion_data)
     write_religion_data(religion_data)
     write_country_setup(country_data)
+    write_coa_file(coa_data)
 
     write_localisation_files(culture_data, religion_data, country_data)
+
+    port_coa_gfx()

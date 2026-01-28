@@ -1,110 +1,110 @@
 ﻿ir_roman_pantheon = {
     color = hsv { 0.65 0.70 0.80 }
-    group = { ir_religion_group }
+    group = ir_religion_group
 }
 
 ir_egyptian_pantheon = {
     color = hsv { 0.15 1.00 0.70 }
-    group = { ir_religion_group }
+    group = ir_religion_group
 }
 
 ir_carthaginian_pantheon = {
     color = hsv { 0.75 0.90 0.73 }
-    group = { ir_religion_group }
+    group = ir_religion_group
 }
 
 ir_shamanism = {
     color = hsv { 0.00 0.50 1.00 }
-    group = { ir_religion_group }
+    group = ir_religion_group
 }
 
 ir_caucasian_religion = {
     color = hsv { 0.30 0.10 0.40 }
-    group = { ir_religion_group }
+    group = ir_religion_group
 }
 
 ir_mesopotamian_religion = {
     color = hsv { 0.05 1.00 0.50 }
-    group = { ir_religion_group }
+    group = ir_religion_group
 }
 
 ir_armenian_religion = {
     color = hsv { 0.30 0.10 0.20 }
-    group = { ir_religion_group }
+    group = ir_religion_group
 }
 
 ir_anatolian_religion = {
     color = hsv { 0.30 0.40 0.20 }
-    group = { ir_religion_group }
+    group = ir_religion_group
 }
 
 ir_druidism = {
     color = hsv { 0.30 0.70 0.40 }
-    group = { ir_religion_group }
+    group = ir_religion_group
 }
 
 ir_animism = {
     color = hsv { 0.07 1.00 1.00 }
-    group = { ir_religion_group }
+    group = ir_religion_group
 }
 
 ir_judaism = {
     color = hsv { 0.65 1.00 1.00 }
-    group = { ir_religion_group }
+    group = ir_religion_group
 }
 
 ir_zoroaster = {
     color = hsv { 0.52 0.77 0.72 }
-    group = { ir_religion_group }
+    group = ir_religion_group
 }
 
 ir_berber_religion = {
     color = hsv { 0.05 0.50 0.40 }
-    group = { ir_religion_group }
+    group = ir_religion_group
 }
 
 ir_germanic_religion = {
     color = hsv { 0.05 0.70 0.30 }
-    group = { ir_religion_group }
+    group = ir_religion_group
 }
 
 ir_indo_iranian_religion = {
     color = hsv { 0.20 0.50 0.80 }
-    group = { ir_religion_group }
+    group = ir_religion_group
 }
 
 ir_arabian_pantheon = {
     color = hsv { 0.30 0.70 0.60 }
-    group = { ir_religion_group }
+    group = ir_religion_group
 }
 
 ir_buddhism = {
     color = hsv { 0.15 0.70 1.00 }
-    group = { ir_religion_group }
+    group = ir_religion_group
 }
 
 ir_hindu = {
     color = hsv { 0.05 1.00 0.90 }
-    group = { ir_religion_group }
+    group = ir_religion_group
 }
 
 ir_eastern_animism = {
     color = hsv { 0.03 0.70 0.70 }
-    group = { ir_religion_group }
+    group = ir_religion_group
 }
 
 ir_bon_religion = {
     color = hsv { 0.95 1.00 0.80 }
-    group = { ir_religion_group }
+    group = ir_religion_group
 }
 
 ir_matrist_religion = {
     color = hsv { 0.50 0.40 0.70 }
-    group = { ir_religion_group }
+    group = ir_religion_group
 }
 
 ir_jainism = {
     color = hsv { 0.70 0.20 0.20 }
-    group = { ir_religion_group }
+    group = ir_religion_group
 }
 

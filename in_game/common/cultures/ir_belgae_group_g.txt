@@ -1,0 +1,54 @@
+﻿ir_belgae = {
+    color = hsv { 0.45 0.80 0.45 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_belgae_group_g }
+}
+
+ir_treverian = {
+    color = hsv { 0.45 0.80 0.45 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_belgae_group_g }
+}
+
+ir_aduatacian = {
+    color = hsv { 0.45 0.80 0.45 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_belgae_group_g }
+}
+
+ir_eburonian = {
+    color = hsv { 0.45 0.80 0.45 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_belgae_group_g }
+}
+
+ir_nervian = {
+    color = hsv { 0.45 0.80 0.45 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_belgae_group_g }
+}
+
+ir_morinian = {
+    color = hsv { 0.45 0.80 0.45 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_belgae_group_g }
+}
+
+ir_veliocassian = {
+    color = hsv { 0.45 0.80 0.45 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_belgae_group_g }
+}
+
+ir_bellovacian = {
+    color = hsv { 0.45 0.80 0.45 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_belgae_group_g }
+}
+
+ir_sennonian = {
+    color = hsv { 0.45 0.80 0.45 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_belgae_group_g }
+}
+

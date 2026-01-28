@@ -1,0 +1,48 @@
+﻿ir_vasconian = {
+    color = hsv { 0.20 0.25 0.50 }
+    tags = { ir_iberian_gfx }
+    culture_groups = { ir_proto_european_g }
+}
+
+ir_aquitani = {
+    color = hsv { 0.20 0.25 0.50 }
+    tags = { ir_iberian_gfx }
+    culture_groups = { ir_proto_european_g }
+}
+
+ir_nuragic = {
+    color = hsv { 0.20 0.25 0.50 }
+    tags = { ir_iberian_gfx }
+    culture_groups = { ir_proto_european_g }
+}
+
+ir_autrigonian = {
+    color = hsv { 0.20 0.25 0.50 }
+    tags = { ir_iberian_gfx }
+    culture_groups = { ir_proto_european_g }
+}
+
+ir_ilergetian = {
+    color = hsv { 0.20 0.25 0.50 }
+    tags = { ir_iberian_gfx }
+    culture_groups = { ir_proto_european_g }
+}
+
+ir_corsian = {
+    color = hsv { 0.20 0.25 0.50 }
+    tags = { ir_iberian_gfx }
+    culture_groups = { ir_proto_european_g }
+}
+
+ir_cantabrian = {
+    color = hsv { 0.20 0.25 0.50 }
+    tags = { ir_iberian_gfx }
+    culture_groups = { ir_proto_european_g }
+}
+
+ir_talaiotic = {
+    color = hsv { 0.20 0.25 0.50 }
+    tags = { ir_iberian_gfx }
+    culture_groups = { ir_proto_european_g }
+}
+

@@ -1,0 +1,66 @@
+﻿ir_oretanian = {
+    color = hsv { 0.07 1.00 1.00 }
+    tags = { ir_iberian_gfx }
+    culture_groups = { ir_iberia_g }
+}
+
+ir_contestanian = {
+    color = hsv { 0.07 1.00 1.00 }
+    tags = { ir_iberian_gfx }
+    culture_groups = { ir_iberia_g }
+}
+
+ir_bastetanian = {
+    color = hsv { 0.07 1.00 1.00 }
+    tags = { ir_iberian_gfx }
+    culture_groups = { ir_iberia_g }
+}
+
+ir_ilercavonian = {
+    color = hsv { 0.07 1.00 1.00 }
+    tags = { ir_iberian_gfx }
+    culture_groups = { ir_iberia_g }
+}
+
+ir_edetanian = {
+    color = hsv { 0.07 1.00 1.00 }
+    tags = { ir_iberian_gfx }
+    culture_groups = { ir_iberia_g }
+}
+
+ir_lacetanian = {
+    color = hsv { 0.07 1.00 1.00 }
+    tags = { ir_iberian_gfx }
+    culture_groups = { ir_iberia_g }
+}
+
+ir_indiketian = {
+    color = hsv { 0.07 1.00 1.00 }
+    tags = { ir_iberian_gfx }
+    culture_groups = { ir_iberia_g }
+}
+
+ir_ausetanian = {
+    color = hsv { 0.07 1.00 1.00 }
+    tags = { ir_iberian_gfx }
+    culture_groups = { ir_iberia_g }
+}
+
+ir_turdetanian = {
+    color = hsv { 0.07 1.00 1.00 }
+    tags = { ir_iberian_gfx }
+    culture_groups = { ir_iberia_g }
+}
+
+ir_couneian = {
+    color = hsv { 0.07 1.00 1.00 }
+    tags = { ir_iberian_gfx }
+    culture_groups = { ir_iberia_g }
+}
+
+ir_turdulian = {
+    color = hsv { 0.07 1.00 1.00 }
+    tags = { ir_iberian_gfx }
+    culture_groups = { ir_iberia_g }
+}
+

@@ -1,5 +1,4 @@
 current_age = age_1_traditions
-
 # own_control_core
 # own_control_integrated
 # own_control_conquered
@@ -11,31 +10,33 @@ current_age = age_1_traditions
 # control_core
 # control
 # our_cores_conquered_by_others
-
 countries = {
 	countries = {
-
 		ROM = {
-		# Rome
-		own_control_core = {
-			rome
+			# Rome
+			own_control_core = {
+				rome
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			starting_technology_level = 3
+			include = "expl_mediterranean"
+			capital = rome
 		}
-
-		starting_technology_level = 3
-		include = "expl_mediterranean"
-		capital = rome
-	}
-
-	BYZ = {
-		# Byzantion
-		own_control_core = {
-			constantinople
+		BYZ = {
+			# Byzantion
+			own_control_core = {
+				constantinople
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			starting_technology_level = 3
+			include = "expl_mediterranean"
+			capital = constantinople
 		}
-
-		starting_technology_level = 3
-		include = "expl_mediterranean"
-		capital = constantinople
 	}
-
-}
 }

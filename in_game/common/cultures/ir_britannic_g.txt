@@ -1,0 +1,96 @@
+﻿ir_britannic = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic_g }
+}
+
+ir_caledonian = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic_g }
+}
+
+ir_iceni = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic_g }
+}
+
+ir_trinovantian = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic_g }
+}
+
+ir_cantian = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic_g }
+}
+
+ir_durotrigan = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic_g }
+}
+
+ir_dumnonian = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic_g }
+}
+
+ir_dobunnian = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic_g }
+}
+
+ir_demetian = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic_g }
+}
+
+ir_ordovitian = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic_g }
+}
+
+ir_coritani = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic_g }
+}
+
+ir_cornovian = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic_g }
+}
+
+ir_brigantic = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic_g }
+}
+
+ir_votadinian = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic_g }
+}
+
+ir_damnonian = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic_g }
+}
+
+ir_taexalian = {
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { ir_celtic_gfx }
+    culture_groups = { ir_britannic_g }
+}
+
