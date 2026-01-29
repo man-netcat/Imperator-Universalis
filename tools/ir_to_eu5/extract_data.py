@@ -1,5 +1,6 @@
 import json
 import re
+from collections import defaultdict
 from pathlib import Path
 from typing import Any
 
@@ -178,7 +179,22 @@ def extract_country_data():
             }
         )
 
-    return country_blocks
+    # Read EU5 countries for writing overrides
+    override_blocks = defaultdict(list)
+
+    for eu5_country_file in eu5_countries.iterdir():
+        eu5_countries_tree = parse_tree(eu5_country_file)
+        for country_tag, country_data in eu5_countries_tree.items():
+            override_blocks[eu5_country_file.relative_to(eu5_game)].append(
+                {
+                    "tag": country_tag,
+                    "culture": country_data["culture_definition"],
+                    "religion": country_data["religion_definition"],
+                    "color": country_data["color"],
+                }
+            )
+
+    return country_blocks, override_blocks
 
 
 def extract_coa_data():

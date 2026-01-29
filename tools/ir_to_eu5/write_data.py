@@ -202,9 +202,10 @@ def write_religion_data(religion_data: list):
     write_blocks(out_path, blocks)
 
 
-def write_country_setup(country_data: list):
+def write_country_setup(country_data: list, override_data: list):
     setup_dir_dict = defaultdict(list)
 
+    # --- normal country setup ---
     for country in country_data:
         lines = [
             f"# {country['tag']} -> {ir_countries_dir.relative_to(ir_game)}/{country['setup_dir']}/{country['setup_file']}",
@@ -217,6 +218,23 @@ def write_country_setup(country_data: list):
     for setup_dir, country_blocks in setup_dir_dict.items():
         out_path = iu_countries / f"00_ir_{setup_dir}.txt"
         write_blocks(out_path, country_blocks)
+
+    # --- overrides: COLLECT, THEN WRITE ONCE ---
+
+    for path, countries in override_data.items():
+        override_blocks = []
+        for country in countries:
+            lines = [
+                f"# Override for {country['tag']}",
+                f"color = {convert_color(country['color']) if isinstance(country['color'], _pydt.Tree) else country['color']}",
+                f"culture_definition = {country['culture']}",
+                f"religion_definition = {country['religion']}",
+                f"is_historic = yes",
+            ]
+            override_blocks.append((country["tag"], lines))
+
+        out_path = mod_root / path
+        write_blocks(out_path, override_blocks)
 
 
 def write_localisation_files(

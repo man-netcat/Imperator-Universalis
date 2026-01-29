@@ -22,6 +22,10 @@ ir_prescripted_coa = (
 ir_coa_gfx = ir_game / "gfx" / "coat_of_arms"
 ir_map_data = ir_game / "map_data"
 
+# EU5 game paths
+eu5_game = Path("/home/rick/Paradox/Games/Europa Universalis V/game")
+eu5_countries = eu5_game / "in_game" / "setup" / "countries"
+
 # Imperator Universalis mod paths
 mod_root = Path(
     "/home/rick/Paradox/Documents/Europa Universalis V/mod/Imperator Universalis"

@@ -22,7 +22,7 @@ from ir_to_eu5.write_data import (
 if __name__ == "__main__":
     culture_data = extract_culture_data()
     religion_data = extract_religion_data()
-    country_data = extract_country_data()
+    country_data, country_overrides = extract_country_data()
     coa_data = extract_coa_data()
     named_locations = {t[0]: t[1] for t in parse_definitions()}
 
@@ -35,7 +35,7 @@ if __name__ == "__main__":
     write_culture_data(culture_data)
     write_religion_group_data(religion_data)
     write_religion_data(religion_data)
-    write_country_setup(country_data)
+    write_country_setup(country_data, country_overrides)
     write_coa_file(coa_data)
 
     write_localisation_files(culture_data, religion_data, country_data)
