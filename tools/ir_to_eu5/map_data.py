@@ -176,7 +176,13 @@ def write_csv(file_path: Path, data: list[dict], fieldnames: list[str]):
 
 
 def parse_definitions() -> list[tuple[int, str, int, int, int, str]]:
+    """
+    Parse definition.csv but generate keys from the localisation file.
+    Returns: (prov_id, key, r, g, b, name)
+    """
     definition_file = ir_map_data / "definition.csv"
+    ir_loc = read_localisation_file(ir_localisation)  # read all localisation
+
     rows = []
     counts = defaultdict(int)
     skipped_first = False
@@ -187,22 +193,24 @@ def parse_definitions() -> list[tuple[int, str, int, int, int, str]]:
             if not row or row[0].startswith("#"):
                 continue
 
-            prov_id, r, g, b, name = (
-                int(row[0]),
-                int(row[1]),
-                int(row[2]),
-                int(row[3]),
-                row[4].strip(),
-            )
+            prov_id, r, g, b = int(row[0]), int(row[1]), int(row[2]), int(row[3])
 
             # Skip the first valid entry (the 0 entry)
             if not skipped_first:
                 skipped_first = True
                 continue
 
-            key = clean_name(name)
+            # Get the name from localisation if possible, fallback to "unnamed"
+            loc_name = ir_loc.get(
+                f"PROV{prov_id}", row[4].strip() if len(row) > 4 else f"PROV{prov_id}"
+            )
+            if not loc_name.strip():
+                loc_name = "unnamed"
+
+            key = clean_name(loc_name)
+
             counts[key] += 1
-            rows.append((prov_id, key, r, g, b, name))
+            rows.append((prov_id, key, r, g, b, loc_name))
 
     # Handle duplicate keys
     used = defaultdict(int)
