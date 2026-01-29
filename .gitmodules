@@ -1,0 +1,3 @@
+[submodule "tools/pyradox"]
+	path = tools/pyradox
+	url = https://github.com/man-netcat/pyradox.git
