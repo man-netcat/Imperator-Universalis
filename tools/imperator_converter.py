@@ -42,4 +42,4 @@ if __name__ == "__main__":
 
     port_coa_gfx()
 
-    port_map_data()
+    # port_map_data()
