@@ -801,90 +801,7 @@ sea_zones = {
     unnamed_543
 }
 
-wasteland = {
-    aguila
-    alania
-    arabia_deserta_ulterior
-    arabian_desert
-    aral
-    caspica
-    cidamus
-    fennia
-    garama
-    gholaia
-    hejaz
-    high_atlas
-    himalayan_highland
-    inner_mauritania
-    karakoram
-    masht
-    maurian_plateau
-    middle_atlas
-    pontic_steppe
-    sarmatia
-    sylvana
-    thenteos
-    unnamed_1
-    unnamed_17
-    unnamed_308
-    unnamed_309
-    unnamed_310
-    unnamed_311
-    unnamed_312
-    unnamed_313
-    unnamed_314
-    unnamed_315
-    unnamed_316
-    unnamed_317
-    unnamed_318
-    unnamed_319
-    unnamed_320
-    unnamed_321
-    unnamed_322
-    unnamed_323
-    unnamed_324
-    unnamed_325
-    unnamed_326
-    unnamed_327
-    unnamed_328
-    unnamed_329
-    unnamed_330
-    unnamed_331
-    unnamed_332
-    unnamed_333
-    unnamed_334
-    unnamed_335
-    unnamed_337
-    unnamed_338
-    unnamed_339
-    unnamed_340
-    unnamed_341
-    unnamed_342
-    unnamed_343
-    unnamed_344
-    unnamed_349
-    unnamed_350
-    unnamed_351
-    unnamed_355
-    unnamed_357
-    unnamed_488
-    unnamed_530
-    unnamed_531
-    unnamed_532
-    unnamed_533
-    unnamed_534
-    unnamed_535
-    unnamed_536
-    unnamed_537
-    unnamed_538
-    unnamed_539
-    unnamed_540
-    unnamed_541
-    unnamed_542
-    unnamed_543
-}
-
-impassable_terrain = {
+impassable_mountains = {
     abhiria
     abhiria_secunda
     abnoba_mons
@@ -1456,8 +1373,10 @@ impassable_terrain = {
     zagros
 }
 
-uninhabitable = {
+non_ownable = {
+    aguila
     akkum
+    alania
     altinasar
     amanian_gates
     arabia_deserta_0
@@ -1485,29 +1404,42 @@ uninhabitable = {
     arabia_deserta_7
     arabia_deserta_8
     arabia_deserta_9
+    arabia_deserta_ulterior
     arabia_relicta_0
     arabia_relicta_1
     arabia_relicta_2
     arabia_relicta_3
     arabia_relicta_4
+    arabian_desert
+    aral
     baraq
     besta
     birim
     boloustana_pass
     boot
     brili
+    caspica
     chattisgarh_jungle
+    cidamus
     cilician_gates
     commagenian_gates
+    fennia
+    garama
+    gholaia
     gondogoro_pass_0
     gondogoro_pass_1
     gondogoro_pass_2
     great_kavir_0
     great_kavir_1
+    hejaz
+    high_atlas
+    himalayan_highland
     iberian_gates
+    inner_mauritania
     janaqala
     jaxartia
     jiddat_al_harasis
+    karakoram
     kavir_desert_0
     kavir_desert_1
     khanus
@@ -1524,11 +1456,15 @@ uninhabitable = {
     mangyul_takmo_dzong
     maru_desert_0
     maru_desert_1
+    masht
+    maurian_plateau
+    middle_atlas
     modra_pass
     mon_shampo
     pakpa
     palisha
     petra_pass
+    pontic_steppe
     portae
     punt_desert_0
     punt_desert_1
@@ -1539,7 +1475,9 @@ uninhabitable = {
     punt_desert_6
     punt_desert_7
     qala
+    sarmatia
     sophon_pass
+    sylvana
     syria_deserta
     syrian_gates_1
     taklamakan_0
@@ -1548,6 +1486,65 @@ uninhabitable = {
     taklamakan_3
     taklamakan_4
     tempe_pass
+    thenteos
+    unnamed_1
+    unnamed_17
+    unnamed_308
+    unnamed_309
+    unnamed_310
+    unnamed_311
+    unnamed_312
+    unnamed_313
+    unnamed_314
+    unnamed_315
+    unnamed_316
+    unnamed_317
+    unnamed_318
+    unnamed_319
+    unnamed_320
+    unnamed_321
+    unnamed_322
+    unnamed_323
+    unnamed_324
+    unnamed_325
+    unnamed_326
+    unnamed_327
+    unnamed_328
+    unnamed_329
+    unnamed_330
+    unnamed_331
+    unnamed_332
+    unnamed_333
+    unnamed_334
+    unnamed_335
+    unnamed_337
+    unnamed_338
+    unnamed_339
+    unnamed_340
+    unnamed_341
+    unnamed_342
+    unnamed_343
+    unnamed_344
+    unnamed_349
+    unnamed_350
+    unnamed_351
+    unnamed_355
+    unnamed_357
+    unnamed_488
+    unnamed_530
+    unnamed_531
+    unnamed_532
+    unnamed_533
+    unnamed_534
+    unnamed_535
+    unnamed_536
+    unnamed_537
+    unnamed_538
+    unnamed_539
+    unnamed_540
+    unnamed_541
+    unnamed_542
+    unnamed_543
     upper_terai
     yangikent
     zantak

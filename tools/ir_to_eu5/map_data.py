@@ -397,10 +397,27 @@ def build_default_map(id_to_key: dict[int, str]):
 
 def write_default_map(ir_default_map_data: dict):
     """
-    Writes the default.map file for Imperator / EU modding.
+    Writes the default.map file for Imperator / EU modding, mapping and aggregating categories.
     ir_default_map_data: { category_name: set of province keys }
     """
     default_map = iu_map_data / "default.map"
+
+    # Category mapping
+    category_mapping = {
+        "sea_zones": "sea_zones",
+        "lakes": "lakes",
+        "impassable_terrain": "impassable_mountains",
+        "uninhabitable": "non_ownable",
+        "wasteland": "non_ownable",
+        "river_provinces": "river_provinces",
+    }
+
+    # Aggregate wasteland into non_ownable if present
+    if "wasteland" in ir_default_map_data:
+        ir_default_map_data.setdefault("uninhabitable", set()).update(
+            ir_default_map_data["wasteland"]
+        )
+        ir_default_map_data.pop("wasteland")
 
     init_lines = [
         'provinces = "locations.png"',
@@ -427,9 +444,10 @@ def write_default_map(ir_default_map_data: dict):
                 f.write(f"    {key}\n")
             f.write("}\n\n")
 
-        # Write each category in the aggregated data
+        # Write each category in the aggregated data using mapping
         for category, keys in ir_default_map_data.items():
-            write_category(category, keys)
+            mapped_category = category_mapping.get(category, category)
+            write_category(mapped_category, keys)
 
 
 def port_map_data():
