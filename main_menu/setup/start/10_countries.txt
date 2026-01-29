@@ -37,7 +37,6 @@ countries = {
 				type = republic
 				ruler = random
 			}
-			starting_technology_level = 3
 			include = "expl_mediterranean"
 			capital = rome
 		}
@@ -70,9 +69,129 @@ countries = {
 				type = republic
 				ruler = random
 			}
-			starting_technology_level = 3
 			include = "expl_mediterranean"
 			capital = grosseto
+		}
+		VNT = {
+			# Veneto
+			own_control_core = {
+				belluno
+				pieve
+				feltre
+				aquileia
+				cividale
+				gemona
+				tolmezzo
+				pordenone
+				spilimbergo
+				udine
+				padova
+				este
+				monselice
+				venice
+				mestre
+				treviso
+				castelfranco
+				ceneda
+				conegliano
+				verona
+				peschiera
+				vicenza
+				bassano
+				schio
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_mediterranean"
+			capital = venice
+		}
+		LGN = {
+			# Lingonia
+			own_control_core = {
+				ferrara
+				argenta
+				comacchio
+				ficarolo
+				rovigo
+				chioggia
+				ravenna
+				legnago
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_mediterranean"
+			capital = ravenna
+		}
+		ANO = {
+			# Ancona
+			own_control_core = {
+				ancona
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_mediterranean"
+			capital = ancona
+		}
+		SNI = {
+			# Senones
+			own_control_core = {
+				rimini
+				cesena
+				faenza
+				imola
+				pesaro
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_mediterranean"
+			capital = pesaro
+		}
+		FNT = {
+			# Friniatia
+			own_control_core = {
+				ucca massa pescia  prato
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_mediterranean"
+			capital = urbino
+		}
+		HIS = {
+			# Istria
+			own_control_core = {
+				pola
+				buzet
+				pazin
+				rovinj
+			}
+			government = {
+				type = tribe
+				ruler = random
+			}
+			include = "expl_mediterranean"
+			capital = rovinj
+		}
+		ASP = {
+			# Chersos
+			own_control_core = {
+				pag
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_mediterranean"
+			capital = pag
 		}
 		SYR = {
 			# Syracusae
@@ -89,7 +208,6 @@ countries = {
 				type = monarchy
 				ruler = random
 			}
-			starting_technology_level = 3
 			include = "expl_mediterranean"
 			capital = syracuse
 		}
@@ -102,7 +220,6 @@ countries = {
 				type = republic
 				ruler = random
 			}
-			starting_technology_level = 3
 			include = "expl_mediterranean"
 			capital = patti
 		}
@@ -115,7 +232,6 @@ countries = {
 				type = republic
 				ruler = random
 			}
-			starting_technology_level = 3
 			include = "expl_mediterranean"
 			capital = terranovasic
 		}
@@ -129,7 +245,6 @@ countries = {
 				type = republic
 				ruler = random
 			}
-			starting_technology_level = 3
 			include = "expl_mediterranean"
 			capital = carthage
 		}
@@ -212,7 +327,6 @@ countries = {
 				type = monarchy
 				ruler = random
 			}
-			starting_technology_level = 3
 			include = "expl_mediterranean"
 			capital = alexandria
 		}
@@ -236,7 +350,6 @@ countries = {
 				type = monarchy
 				ruler = random
 			}
-			starting_technology_level = 3
 			include = "expl_mediterranean"
 			capital = al_bayda
 		}
@@ -252,7 +365,6 @@ countries = {
 				type = republic
 				ruler = random
 			}
-			starting_technology_level = 3
 			include = "expl_mediterranean"
 			capital = constantinople
 		}
@@ -265,7 +377,6 @@ countries = {
 				type = republic
 				ruler = random
 			}
-			starting_technology_level = 3
 			include = "expl_mediterranean"
 			capital = uskudar
 		}
@@ -278,7 +389,6 @@ countries = {
 				type = republic
 				ruler = random
 			}
-			starting_technology_level = 3
 			include = "expl_mediterranean"
 			capital = giresun
 		}
@@ -293,7 +403,6 @@ countries = {
 				type = republic
 				ruler = random
 			}
-			starting_technology_level = 3
 			include = "expl_mediterranean"
 			capital = trebizond
 		}
