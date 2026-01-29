@@ -9,6 +9,7 @@ from .extract_data import parse_tree, read_localisation_file
 from .paths import ir_localisation, ir_map_data, iu_localisation, iu_map_data
 from .write_data import write_blocks
 
+### THIS FILE IS EXPERIMENTAL AND CURRENTLY NOT USED ###
 # ---------------- Static Mappings ---------------- #
 
 continent_map = {"continent": ["europe", "asia", "africa"]}
