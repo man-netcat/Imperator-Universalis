@@ -1,1 +1,152 @@
 From;To;Type;Through;x1;y1;x2;y2;Comment
+messana;rhegium;sea;sea_1;1935;2041;1937;2037;Strait of Messina
+byzantion_0;chalcedon;sea;sea_122;2814;2425;2821;2425;Byzantion-Rhebas
+byzantion_0;rhebas;sea;sea_122;2811;2409;2819;2409;Byzantion-Chalcedon
+priene;samos;sea;sea_94;2743;2090;2739;2095;Samos-Priene
+naupaktos;patrai;sea;sinus_patraius;2366;2095;2368;2091;Patrai-Naupaktos
+karystos;andros;sea;sea_104;2562;2093;2576;2087;Karystos-Andros
+andros;tenos;sea;sea_108;2596;2069;2600;2066;Andros-Tenos
+tenos;delos;sea;sea_108;2618;2060;-1;-1;Tenos-Delos
+tenos;syros;sea;sea_108;2607;2061;-1;-1;Tenos-Syros
+naxos_1;paros_0;sea;sea_107;-1;-1;-1;-1;Naxos-Paros
+naxos_1;ios;sea;sea_107;2643;1998;2641;1986;Naxos-Ios
+naxos_1;amorgos;sea;sea_107;2659;2006;-1;-1;Naxos-Amorgos
+thorikos;kea;sea;mare_myrtoum_0;2538;2060;-1;-1;Thorikos-Kea
+kea;kythnos;sea;sea_103;2555;2051;-1;-1;Kea-Kythnos
+kythnos;seriphos;sea;sea_106;2564;2031;-1;-1;Kythnos-Seriphos
+seriphos;siphnos;sea;sea_106;2573;2016;2586;2006;Seriphos-Siphnos
+siphnos;milos;sea;sea_106;2589;2001;2583;1987;Siphnos-Melos
+halikarnassos;kos;sea;sea_93;2769;2033;2768;2024;Halikarnassos-Kos
+knidos;kos;sea;sea_89;2785;2014;2772;2021;Knidos-Kos
+halikarnassos;kalymnos;sea;sea_93;2766;2039;2752;2032;Halikarnassos-Kalymnos
+kalymnos;leros;sea;sea_93;2744;2033;2739;2043;Kalymnos-Leros
+erythrai;chios;sea;sea_116;2668;2146;2679;2143;Erythrai-Chios
+antigoneia;eresos;sea;sea_116;2652;2240;2659;2229;Antigoneia-Eresos
+sestos;lampsakos;sea;sea_117;2668;2322;-1;-1;Sestos-Lampsakos
+sestos;abydos_0;sea;sea_117;2658;2308;-1;-1;Sestos-Abydos
+sestos;ilium;sea;sea_117;2646;2292;-1;-1;Sestos-Ilium
+sestos;imbros;sea;sea_117;2644;2312;2626;2302;Sestos-Imbros
+imbros;samothrake;sea;sea_120;2613;2298;2601;2316;Imbros-Samothrake
+imbros;lemnos;sea;sea_120;2608;2291;2594;2278;Imbros-Lemnos
+populonium;ilva;sea;sea_45;1571;2456;-1;-1;Populonium-Ilva
+tyndaris;liparae;sea;sea_0;1888;2040;-1;-1;Tyndaris-Liparae
+epidauros_limera;kythera;sea;sea_533;2482;1942;-1;-1;Epidauros-Kythera
+demetrias_0;peparethos;sea;sea_113;2463;2184;2486;2183;Demtrias-Peparethos
+neapolis_1;thasos;sea;sea_115;2531;2348;-1;-1;Neapolis-Thasos
+bosporus;phanagoria;sea;sea_247;3202;2904;3212;2906;Bosporus-Phanagoria
+iustinianopolis;cercina;sea;sea_66;1623;1751;1632;1740;Iustinianopolis-Cercina
+oichalia_0;skyros;sea;sea_113;2524;2145;-1;-1;Oichalia-Skyros
+phoinike;korkyra;sea;sea_112;2226;2208;2221;2207;Phoinike-Korkyra
+thyrrheion;leucas;sea;sea_112;2288;2129;2285;2124;Thyrrheion-Leucas
+leucas;kefalonia;sea;sea_111;2283;2111;2280;2096;Leucas-Kefalonia
+elis;zakynthos;sea;sea_110;2326;2047;2311;2039;Elis-Zakynthos
+tragurium;pharus;sea;sea_37;1948;2520;1958;2510;Tragurium-Pharus
+novae_0;pharus;sea;sea_37;1993;2508;1984;2505;Novae-Pharus
+curicum;apsarus;sea;sea_12;1819;2652;1815;2647;Curicum-Apsarus
+arsinoe_2;okelis;sea;s_19;-1;-1;-1;-1;Arsinoe-Okelis
+oreine;alalaiou;sea;s_15;-1;-1;-1;-1;Oreine-Alalaiou
+baitus;devada;sea;s_14;-1;-1;-1;-1;Baitus-Devada
+drepanum_unsettled;rhaithou;sea;s_0;-1;-1;-1;-1;Drepanum-Rhaithou
+phlaouiopolis;rhodos;sea;sea_88;2845;1996;2835;2014;Physkos-Rhodos
+phikaria;viniolae;sea;sea_191;1473;2328;1482;2297;Phikaria-Viniolae
+gerrha;tylos;sea;sea_312;4735;1633;4750;1636;Gerrha-Tylos
+tylos;gylus;sea;sea_312;4775;1624;4805;1620;Tylos-Gylus
+helios_limen;harmozeia_0;sea;sea_307;5182;1860;5169;1936;HeliosLimen-Hormirzad
+sura;bissai;sea;sea_353;6179;2233;6204;2205;Sura-Bissai
+vallai;kanthi;sea;sea_354;6308;2281;6287;2269;Vallai-Kanthi
+anartta;kaccha;sea;sea_355;-1;-1;-1;-1;Anarrta-Kaccha
+tingis;baelo;sea;sea_229;429;1915;427;1934;Tingis-Baelo
+anglia_insula;herulia_meridionalis;sea;sea_733;1564;3522;1581;3517;AngliaInsula-HeruliaMeridionalis
+sardonia;herulia_meridionalis;sea;sea_734;1585;3483;1595;3504;Sardonia-HeruliaMeridionalis
+reudingia_minores;herulia_septentrionalis;sea;sea_731;1558;3567;1585;3582;ReudingiaMinores-HeruliaSeptentrionalis
+herulia_orientalis;scandia_2;sea;sea_730;1653;3606;1668;3619;HeruliaOrientalis-Scandiaaaaaaaa
+scandia_0;scandia_3;sea;sea_737;-1;-1;-1;-1;Scandia-Scandia
+scandia_6;scandia_8;sea;sea_740;-1;-1;-1;-1;Scandia-Scandia
+novantae;darinia_meridionalis;sea;sea_630;735;3575;705;3551;Novanta-DariniaMeridionalis
+ouirouedroum_akron;orcades;sea;sea_659;876;3896;878;3914;OuirouedroumAkron-Orcades
+scitis;dumna_septentrionalis;sea;sea_651;701;3827;700;3861;Scitis-DumnaSeptentrionalis
+scitis;dumna_meridionalis;sea;sea_651;693;3818;666;3822;Scitis-DumnaMeridionalis
+scitis;dumna_meridionalis;sea;sea_651;693;3818;666;3822;Scitis-DumnaMeridionalis
+reudingia_maiores;cobandia_maiores;sea;sea_731;1520;3579;1512;3583;Reudinga Maiores-Cobandia Maiores
+robogdia_orientalis;epidion_akron;sea;sea_632;-1;-1;-1;-1;Robogdia Orientalis-Epidion Akron
+caesarea_1;cosedia;sea;sea_585;823;3057;851;3040;Andion-Cosedia
+teutonia_minores;teutonia_maiores;sea;lake_30;1435;3671;1435;3688;Teutonia Minores-Teutonia Maiores
+venedicana;veltaea_australis;sea;sea_744;2112;3607;2114;3630;Venedicana-Veltaea Australis
+gigthis;tipasa_2;sea;sea_67;1595;1630;1602;1639;Gigthis-Tipaza
+meninge;tipasa_2;sea;sea_67;1620;1626;1616;1638;Gergis-Tipaza
+nikopolis;thyrrheion;sea;sea_112;2287;2146;2292;2137;Kassope-Thyrreion
+athens;salamis_1;sea;sea_103;2498;2078;2493;2077;Athens-Salamis
+megara;salamis_1;sea;sea_103;2482;2080;2487;2075;Megara-Salamis
+pelusium;thenessos;river_large;river_6;3263;1591;3255;1597;Pilousion-Thenessos
+bubastis;leontopolis_hel;river_large;river_1;3201;1525;3205;1521;Boubastos-Leonton Polis
+leontopolis;isieion;river_large;river_9;3176;1551;3167;1549;Leontopolis-Isieion
+bubastis;leontopolis;river_large;river_3;3197;1532;3193;1535;Boubastis-Leontopolis (North)
+isieion;atarbechis_aphroditopolis;river_large;river_13;3153;1536;3149;1532;Iseion-Atarbechis
+athribis_0;nikiou;river_large;river_7;3175;1510;3164;1508;Athribis-Nikiou
+perseos_skope;bolbitine;river_large;river_16;3109;1587;3104;1581;Perseos Skope-Bolbitine
+_2;serapieion;river_large;river_18;3262;1535;3271;1537;Heroopolis-Serapieion
+alexandrou_1;barbarikon;river_large;river_22;6063;2221;6064;2231;Alexandrou Limen-Barbarikon
+abad_1;samarabriai;river_large;river_24;6008;2302;6012;2310;Abad-Samarabriai
+oumbrai;roruka;river_large;river_28;5941;2456;5951;2455;Oumbrai-Roruka
+bisambritai;alexandria__indus;river_large;river_21;6000;2648;6007;2653;Bisambritai-Alexandreia Indos
+pataliputra;nadikagama;river_large;river_37;7122;3118;7122;3127;Pataliputra-Nadikagama
+kushtia;puthia;river_large;river_32;7390;3204;7387;3212;Kushtia-Puthia
+campa;purnia;river_large;river_35;7259;3218;7255;3225;Campa-Purnia
+barisal;karmanta;river_large;river_30;7587;3225;7591;3232;Barisal-Karmanta
+karnasuvarna;aganagara;river_large;ganges_0;7380;3164;7390;3170;Karnasurvarna-Aganagara
+nabadwipa;selampoura;river_large;ganges_2;7451;3119;7451;3129;Nabadwipa-Selampoura
+jessore;fathabad;river_large;ganges_6;7511;3178;7520;3182;Jessore-Fathabad
+varendra;nagarpur;river_large;dyardanes_1;7447;3270;7450;3282;Varendra-Nagarpur
+varendra;mukund;river_large;river_32;7459;3227;7463;3215;Varendra-Mukund
+methone;thessalonica;river_large;river_38;2396;2310;2404;2313;Aigai-Thessalonike
+eridu;uruk;river_large;river_47;4238;1899;4235;1908;Eridu-Uruk
+nina;alexandria_spasinou_charax;river_large;river_40;4356;1941;4364;1942;Nina-Alexandreia Sousiane
+apologos;ampe;river_large;river_39;4411;1907;4411;1915;Apologos-Ampe
+kashkar;madhar;river_large;river_41;4306;2002;4311;2008;Madhar-Kashkar
+apamea_1;lawami;river_large;river_43;4196;2019;4188;2027;Apameia Tigrei-Lawami
+bingium;aquae_mattiacorum;river_large;river_59;1403;3084;1408;3092;Bingium-Aquae Mattiacorum
+bonna;tenctheria;river_large;river_56;1357;3155;1361;3159;Bonna-Tenctheria
+castra_vetera;chattuaria;river_large;river_54;1327;3235;1332;3240;Castra Vetera-Chattuaria
+manaritum;traiectum;river_large;river_53;1257;3265;1258;3272;Manaritum-Traiectum
+hasta_0;tartessos;river_large;sea_762;390;2007;380;2019;Menesthei Limin-Tartessos
+urgia;olontigi;river_large;baetis_0;410;2036;406;2045;Urgia-Olontigi
+vicus_carnalocensis;aritium;river_large;tagus_2;318;2261;319;2268;Vicus Carnalocensis-Aritium
+malateca;arabriga;river_large;tagus_1;253;2237;250;2246;Malateca-Arabriga
+troesmis;noviodunum_1;river_large;ister_0;2695;2774;2701;2785;Troesmis-Nobiodounos
+durostorum;piephigia;river_large;ister_4;2626;2651;2619;2665;Durostorum-Piephigia
+oescus;castris_novis;river_large;ister_7;2460;2586;2453;2598;Oescus-Castris Novis
+bononia_1;castra_bistria;river_large;ister_8;2361;2600;2373;2601;Bononia Moesia-Castra Bistria
+arelate;nemausus;river_large;rhodanus;1193;2538;1184;2542;Arelatis-Nemausus
+balsa;praesidium;river_large;flumen_anas_0;310;2065;320;2065;Balsa-Praesidium
+ratiatum;namnetum;river_large;liger_1;835;2886;839;2878;Namnetum-Ratiarum
+caracotinum;iuliobona;river_large;sequana_0;960;3061;961;3074;Esta-Caracotinum
+olbia_1;hippolaou;river_large;borysthenes_0;2920;2950;2935;2947;Olbia-Hippolaou
+syti;uttar;river_large;borysthenes_0;2987;2978;2973;2985;Syti-Uttar
+aghonor;ghasett;river_large;borysthenes_4;3053;3097;3038;3093;Aghonor-Ghasett
+ahgranika;aggrat;river_large;borysthenes_6;2927;3173;2922;3164;Ahgranika-Aggrat
+tyras_0;nikonia;river_large;tyras_1;2757;2900;2761;2911;Tyras-Nikonion
+saxonnia;mariones;river_large;albis_0;1477;3421;1483;3432;Saxonnia-Mariones
+langobardia;avarpi;river_large;albis_2;1586;3363;1595;3372;Langobardia-Avarpi
+samos;irakia;sea;sea_94;2710;2090;2692;2081;Samos-Oinon Ikaros
+herakleia_1;mytilene;sea;sea_116;2678;2219;2686;2228;Atarna-Mytilene
+augusta_1;phlaouiopolis;sea;sea_89;2818;2007;2829;2017;Phykous-Syme
+knidos;nisyros;sea;sea_89;2769;1997;2784;2011;Nisyros-Knidos
+knidos;telos;sea;sea_89;2790;2008;2787;1986;Telos-Knidos
+kalymnos;kos;sea;sea_93;-1;-1;-1;-1;Kalymnos-Kos
+kamiros;telos;sea;sea_89;2789;1984;2822;1977;Kameiros-Telos
+hatria;hadriani;river_large;po_0;1661;2648;1665;2641;Hatria-Corniculani
+bedriacum;brixellum;river_large;po_3;1570;2638;1572;2631;Bedricaum-Brixellum
+cremona;placentia;river_large;po_4;1532;2649;1534;2653;Cremona-Placentia
+hostilia;vicus_varianus;river_large;po_2;1608;2652;1608;2646;Hostilia-Vicus Varianus
+londinium;camulodunum;river_large;thames;973;3256;974;3250;Londinium-Noviomagus
+ganka;katys;river_large;tanais_1;3356;3125;3359;3118;Ganka-Katys
+khang;syutnich;river_large;tanais_3;3440;3184;3443;3176;Khang-Syutnich
+urvel;agharite;river_large;tanais_4;3504;3229;3511;3224;Urvel-Agharite
+pass_22;moslar;river_large;rha_0;3886;3224;3881;3216;Enim-Sechtra
+monok;iska;river_large;rha_1;3799;3265;3796;3255;Monok-Iska
+dertosa;indibilis;river_large;iberus_0;909;2292;905;2288;Dertosa-Indiblis
+issa;pharus;sea;sea_37;1946;2481;1953;2490;Issa-Pharos
+korkyra_melaina;pharus;sea;sea_37;1976;2475;1971;2489;Korkya Melaina-Pharos
+mallos;aigaiai;river_large;pyramos_0;3342;2148;3348;2148;Mallos-Aigaiai
+cissa;vegium;sea;sea_12;1855;2603;1867;2603;Cissa-Vegium
+UNKNOWN_-1;UNKNOWN_-1;;UNKNOWN_-1;-1;;;;
