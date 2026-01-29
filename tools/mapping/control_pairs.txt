@@ -1,9 +1,0 @@
-1 -> rome
-1453 -> constantinople
-1734 -> trebizond
-80 -> messina
-1469 -> ciudadela_de_menorca
-2000 -> truro
-6004 -> hammershus
-4043 -> pag
-1471 -> malta

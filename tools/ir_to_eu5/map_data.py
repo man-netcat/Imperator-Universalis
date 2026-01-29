@@ -5,8 +5,8 @@ from pathlib import Path
 
 import pyradox.datatype as _pydt
 
-from .extract_data import parse_tree
-from .paths import ir_map_data, iu_map_data
+from .extract_data import parse_tree, read_localisation_file
+from .paths import ir_localisation, ir_map_data, iu_localisation, iu_map_data
 from .write_data import write_blocks
 
 # ---------------- Static Mappings ---------------- #
@@ -175,7 +175,7 @@ def write_csv(file_path: Path, data: list[dict], fieldnames: list[str]):
 # ---------------- Parsing Functions ---------------- #
 
 
-def parse_definitions() -> list[tuple[int, str, int, int, int]]:
+def parse_definitions() -> list[tuple[int, str, int, int, int, str]]:
     definition_file = ir_map_data / "definition.csv"
     rows = []
     counts = defaultdict(int)
@@ -202,16 +202,16 @@ def parse_definitions() -> list[tuple[int, str, int, int, int]]:
 
             key = clean_name(name)
             counts[key] += 1
-            rows.append((prov_id, key, r, g, b))
+            rows.append((prov_id, key, r, g, b, name))
 
     # Handle duplicate keys
     used = defaultdict(int)
     final_rows = []
-    for prov_id, key, r, g, b in rows:
+    for prov_id, key, r, g, b, name in rows:
         final_key = f"{key}_{used[key]}" if counts[key] > 1 else key
         if counts[key] > 1:
             used[key] += 1
-        final_rows.append((prov_id, final_key, r, g, b))
+        final_rows.append((prov_id, final_key, r, g, b, name))
 
     return final_rows
 
@@ -348,6 +348,82 @@ def hierarchy_to_blocks(data: dict) -> list[tuple[str, list]]:
     return blocks
 
 
+def build_default_map(id_to_key: dict[int, str]):
+    """
+    Parses default.map and returns a dictionary:
+    { category_name_lowercase: set of province keys }
+    """
+    default_map = ir_map_data / "default.map"
+    data = {}
+
+    # Patterns
+    list_pattern = re.compile(r"(\w+)\s*=\s*LIST\s*{\s*([\d\s]+)\s*}")
+    range_pattern = re.compile(r"(\w+)\s*=\s*RANGE\s*{\s*(\d+)\s+(\d+)\s*}")
+
+    with open(default_map, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+
+            # LIST entry
+            list_match = list_pattern.match(line)
+            if list_match:
+                category, numbers = list_match.groups()
+                category = category.lower()  # normalize to lowercase
+                keys = {id_to_key[int(n)] for n in numbers.split()}
+                data.setdefault(category, set()).update(keys)
+                continue
+
+            # RANGE entry
+            range_match = range_pattern.match(line)
+            if range_match:
+                category, start, end = range_match.groups()
+                category = category.lower()  # normalize to lowercase
+                keys = {id_to_key[n] for n in range(int(start), int(end) + 1)}
+                data.setdefault(category, set()).update(keys)
+                continue
+
+    return data
+
+
+def write_default_map(ir_default_map_data: dict):
+    """
+    Writes the default.map file for Imperator / EU modding.
+    ir_default_map_data: { category_name: set of province keys }
+    """
+    default_map = iu_map_data / "default.map"
+
+    init_lines = [
+        'provinces = "locations.png"',
+        'rivers = "rivers.png"',
+        'topology = "heightmap.heightmap"',
+        'adjacencies = "adjacencies.csv"',
+        'setup = "definitions.txt"',
+        'ports = "ports.csv"',
+        'location_templates = "location_templates.txt"',
+        "equator_y = 3340",
+        "wrap_x = no",
+    ]
+
+    with default_map.open("w", encoding="utf-8") as f:
+        # Write header/init lines
+        for line in init_lines:
+            f.write(f"{line}\n")
+        f.write("\n")
+
+        # Helper: write a category as a LIST block
+        def write_category(cat_name: str, keys: set):
+            f.write(f"{cat_name} = {{\n")
+            for key in sorted(keys):
+                f.write(f"    {key}\n")
+            f.write("}\n\n")
+
+        # Write each category in the aggregated data
+        for category, keys in ir_default_map_data.items():
+            write_category(category, keys)
+
+
 def port_map_data():
     """Parse definitions, write named locations, adjacencies, ports, and check areas."""
     named_locations = parse_definitions()
@@ -357,8 +433,16 @@ def port_map_data():
     named_path = iu_map_data / "named_locations"
     named_path.mkdir(parents=True, exist_ok=True)
     with open(named_path / "00_default.txt", "w", encoding="utf-8-sig") as f:
-        for _, key, r, g, b in named_locations:
+        for _, key, r, g, b, _ in named_locations:
             f.write(f"{key} = {r:02x}{g:02x}{b:02x}\n")
+
+    # ---------------- Reference ID-to-Key File ---------------- #
+    ref_file = Path(__file__).parent / "province_id_to_key.csv"
+    write_csv(
+        ref_file,
+        [{"ID": prov_id, "Key": key} for prov_id, key, *_ in named_locations],
+        fieldnames=["ID", "Key"],
+    )
 
     # Adjacencies CSV
     write_csv(
@@ -384,3 +468,32 @@ def port_map_data():
         iu_map_data / "definitions.txt",
         blocks,
     )
+
+    # Localisation: provinces, areas, regions
+    loc_lines = ["l_english:"]
+
+    # Prefer existing Imperator localisation if present
+    ir_loc = read_localisation_file(ir_localisation)
+
+    # --- Provinces ---
+    for prov_id, key, *_ in named_locations:
+        name = ir_loc[f"PROV{prov_id}"]
+        loc_lines.append(f'  {key}: "{name}"')
+
+    # --- Regions ---
+    for region_tag in regions:
+        name = ir_loc[region_tag]
+        loc_lines.append(f'  {region_tag}: "{name}"')
+
+    # --- Areas ---
+    for area_list in regions.values():
+        for area_tag in area_list:
+            name = ir_loc[area_tag]
+            loc_lines.append(f'  {area_tag}: "{name}"')
+
+    # Write localisation file
+    write_blocks(iu_localisation / "ir_map_l_english.yml", loc_lines)
+
+    default_map = build_default_map(id_to_key)
+
+    write_default_map(default_map)
