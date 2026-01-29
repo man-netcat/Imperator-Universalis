@@ -6,9 +6,137 @@ from pathlib import Path
 import pyradox.datatype as _pydt
 
 from .extract_data import parse_tree
-from .maps import *
 from .paths import ir_map_data, iu_map_data
 from .write_data import write_blocks
+
+# ---------------- Static Mappings ---------------- #
+
+continent_map = {"continent": ["europe", "asia", "africa"]}
+
+superregion_map = {
+    "europe": {
+        "italy": [
+            "central_italy_region",
+            "magna_graecia_region",
+            "cisalpine_gaul_region",
+            "mediterranean_region",  # Italy "owns" it
+        ],
+        "germany": [
+            "belgica_region",
+            "germania_region",
+            "germania_superior_region",
+            "rhaetia_region",
+            "bohemia_area",
+        ],
+        "france": [
+            "transalpine_gaul_region",
+            "central_gaul_region",
+            "armorica_region",
+            "aquitaine_region",
+        ],
+        "iberia": [
+            "lusitania_region",
+            "tarraconensis_region",
+            "baetica_region",
+            "contestania_region",
+        ],
+        "britain": [
+            "britain_region",
+            "caledonia_region",
+        ],
+        "north_sea": [
+            "scandinavia_region",
+            "baltic_sea_region",
+            "atlantic_region",
+        ],
+        "balkans": [
+            "greece_region",
+            "macedonia_region",
+            "illyria_region",
+            "albania_region",
+            "thrace_region",
+            "moesia_region",
+        ],
+        "eastern_europe": [
+            "dacia_region",
+            "sarmatia_europea_region",
+            "vistulia_region",
+            "venedia_region",
+            "pannonia_region",
+        ],
+    },
+    "asia": {
+        "anatolia": [
+            "asia_region",
+            "bithynia_region",
+            "galatia_region",
+            "cappadocia_region",
+            "cappadocia_pontica_region",
+            "cilicia_region",
+            "pontus_region",
+        ],
+        "middle_east": [
+            "taurica_region",
+            "sarmatia_asiatica_region",
+            "assyria_region",
+            "mesopotamia_region",
+            "gedrosia_region",
+            "persis_region",
+            "media_region",
+            "bactriana_region",
+            "ariana_region",
+            "parthia_region",
+            "syria_region",
+            "palestine_region",
+            "arabia_region",
+            "arabia_felix_region",
+            "persian_gulf_region",
+            "red_sea_region",
+            "cilician_river_region",
+            "mesopotamia_river_region",
+        ],
+        "india": [
+            "gandhara_region",
+            "maru_region",
+            "avanti_region",
+            "madhyadesa_region",
+            "pracya_region",
+            "vindhyaprstha_region",
+            "dravida_region",
+            "aparanta_region",
+            "karnata_region",
+            "indo_gangetic_region",
+            "indian_ocean_region",
+        ],
+        "central_asia": [
+            "tibet_region",
+            "himalayan_region",
+            "sogdiana_region",
+            "scythia_region",
+            "don_river_region",
+        ],
+    },
+    "africa": {
+        "north_africa": [
+            "cyrenaica_region",
+            "numidia_region",
+            "mauretainia_region",
+            "africa_region",
+        ],
+        "egypt": [
+            "upper_egypt_region",
+            "lower_egypt_region",
+            "nubia_region",
+            "nile_region",
+        ],
+        "red_sea_region_group": [
+            "punt_region",
+            "red_sea_region",
+            "indian_ocean_region",
+        ],
+    },
+}
+
 
 # ---------------- Utility Functions ---------------- #
 
@@ -48,17 +176,17 @@ def write_csv(file_path: Path, data: list[dict], fieldnames: list[str]):
 
 
 def parse_definitions() -> list[tuple[int, str, int, int, int]]:
-    """Parse definition.csv into (province_id, key, r, g, b)."""
     definition_file = ir_map_data / "definition.csv"
     rows = []
     counts = defaultdict(int)
+    skipped_first = False
 
     with open(definition_file, newline="", encoding="utf-8") as f:
         reader = csv.reader(f, delimiter=";")
-        next(reader)  # skip header / 0 row
         for row in reader:
             if not row or row[0].startswith("#"):
                 continue
+
             prov_id, r, g, b, name = (
                 int(row[0]),
                 int(row[1]),
@@ -66,6 +194,12 @@ def parse_definitions() -> list[tuple[int, str, int, int, int]]:
                 int(row[3]),
                 row[4].strip(),
             )
+
+            # Skip the first valid entry (the 0 entry)
+            if not skipped_first:
+                skipped_first = True
+                continue
+
             key = clean_name(name)
             counts[key] += 1
             rows.append((prov_id, key, r, g, b))
@@ -146,6 +280,8 @@ def build_regions(id_to_key: dict[int, str]):
     areas = parse_tree(ir_map_data / "areas.txt").to_python()
     regions = parse_tree(ir_map_data / "regions.txt").to_python()
 
+    # print(list(regions.keys()))
+
     region_map = {
         region: {
             area: [id_to_key[pid] for pid in as_list(areas[area]["provinces"])]
@@ -220,7 +356,7 @@ def port_map_data():
     # Named locations file
     named_path = iu_map_data / "named_locations"
     named_path.mkdir(parents=True, exist_ok=True)
-    with open(named_path / "00_default.txt", "w", encoding="utf-8") as f:
+    with open(named_path / "00_default.txt", "w", encoding="utf-8-sig") as f:
         for _, key, r, g, b in named_locations:
             f.write(f"{key} = {r:02x}{g:02x}{b:02x}\n")
 

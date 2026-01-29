@@ -1,4 +1,4 @@
-﻿eurasia = {
+﻿continent = {
     europe = {
         italy = {
             central_italy_region = {
@@ -31,6 +31,23 @@
                 transpadana_area = { forum_vibii polentia augusta_taurinorum hasta_1 mustiae_calmes segusio industria vardagate fulvii_valentinum augusta_bagiennorum eporedia }
                 west_insubria_area = { dertona vercellae laumellum victimulae novaria sebuinus_vicus plumbia mediolanium_0 clastidium ticinum comum forum_licinii }
                 ferraria_area = { hostilia hatria hadriani brundulum ad_portum auraei aponus patavium vicetia }
+            }
+            mediterranean_region = {
+                mare_aegyptum_area = { sea_73 sea_74 sea_75 sea_76 sea_95 sea_96 sea_99 sea_100 sea_155 sea_157 sea_158 sea_159 sea_160 sea_161 sea_162 sea_163 sea_164 sea_165 sea_166 sea_167 sea_169 sea_172 sea_174 sea_175 sea_77 sea_78 sea_173 }
+                mare_aegaeum_area = { sea_118 sea_119 sea_120 sea_121 sea_116 sea_107 sea_108 sea_93 sea_94 sea_113 sea_114 sea_115 sea_103 sea_104 sea_106 sea_757 sea_102 sea_89 sea_91 sea_92 lake_113 lake_128 lake_129 sinus_patraius sinus_corinthus mare_myrtoum_0 mare_myrtoum_1 pagasaeus_sinus sinus_malianus sinus_nigrum }
+                mare_creticum_area = { sea_97 sea_98 sea_101 sea_105 }
+                mare_lycium_area = { sea_177 sea_86 sea_87 sea_88 sea_90 sea_179 sea_84 sea_85 }
+                mare_phoenicium_area = { sea_79 sea_80 sea_81 sea_82 sea_83 sea_168 sea_170 sea_171 sea_176 sea_178 }
+                mare_adriaticum_area = { sea_7 sea_8 sea_9 sea_12 sea_15 sea_27 sea_28 sea_29 sea_31 sea_32 sea_34 sea_35 sea_36 sea_37 sea_38 sea_39 sea_40 sea_41 sea_42 sea_43 sea_44 sea_30 }
+                mare_ionium_area = { sea_109 sea_110 sea_112 sea_137 sea_138 sea_146 sea_147 sea_148 sea_149 sea_150 sea_151 sea_154 sea_156 sea_1 sea_33 sea_13 sea_22 sea_10 sea_11 sea_18 sea_14 sea_111 sea_532 sea_533 }
+                mare_libycum_area = { sea_153 sea_144 sea_145 sea_139 sea_140 sea_141 sea_130 sea_131 sea_132 sea_133 sea_134 sea_135 sea_136 sea_125 sea_126 sea_127 sea_128 sea_68 sea_69 sea_66 sea_67 sea_70 sea_71 sea_72 sea_142 sea_143 sea_152 sea_129 sea_16 sea_19 sea_65 }
+                canalis_sicium_area = { sea_64 sea_124 sea_20 sea_17 sea_123 sea_63 }
+                mare_tyrrenum_area = { sea_180 sea_181 sea_182 sea_183 sea_184 sea_185 sea_186 sea_188 sea_190 sea_192 sea_196 sea_197 sea_198 sea_199 sea_0 sea_3 sea_4 sea_5 sea_6 sea_21 sea_45 sea_2 }
+                mare_ligusticum_area = { sea_193 sea_194 sea_195 sea_48 sea_46 sea_47 }
+                mare_sardonium_area = { sea_49 sea_187 sea_189 sea_191 sea_202 sea_203 sea_205 sea_207 sea_208 sea_209 sea_210 sea_211 sea_212 sea_213 sea_216 sea_219 sea_204 sea_201 sea_200 sea_62 sea_61 }
+                sinus_gallicus_area = { sea_50 sea_51 sea_206 }
+                mare_balearicum_area = { sea_214 sea_218 sea_220 sea_221 sea_24 sea_23 sea_52 }
+                mare_ibericum_area = { sea_215 sea_217 sea_222 sea_223 sea_224 sea_225 sea_226 sea_227 sea_228 sea_25 sea_53 sea_54 sea_55 sea_56 sea_57 sea_58 sea_59 sea_60 sea_229 }
             }
         }
         germany = {
@@ -378,6 +395,11 @@
                 pisidia_area = { pednelissos termessos selge tityassos adada seleucia_sidera sagalassos cremna prostanna ariassos baris_1 amblada }
                 milyas_area = { cibyra salda olbasa oenoanda lyrna balboura sinda podalia isinda kormasa eriza_1 pogla }
             }
+            pontus_region = {
+                pontus_euxinus_area = { sea_231 sea_232 sea_233 sea_234 sea_235 sea_236 sea_237 sea_238 sea_239 sea_240 sea_241 sea_242 sea_243 sea_244 sea_245 sea_246 sea_253 sea_254 sea_255 sea_256 sea_257 sea_258 sea_259 sea_260 sea_261 sea_262 sea_263 sea_264 sea_265 sea_266 sea_267 sea_268 sea_269 sea_270 sea_271 sea_272 sea_273 sea_274 sea_275 sea_276 sea_277 sea_278 sea_230 pontus_euxinus }
+                palus_maeotis_area = { sea_250 sea_248 sea_252 sea_249 sea_247 sea_251 }
+                helespontine_area = { sea_117 sea_122 }
+            }
         }
         middle_east = {
             taurica_region = {
@@ -509,6 +531,16 @@
                 hadramut_occidentalis_area = { harai shabwa sau sabata maipha qana tretos hadrama rabun mhrta }
                 hadramut_orientalis_area = { thialematt qishan ausara_1 neogilla saliah abyssa sidh uninhabitable_35 uninhabitable_36 uninhabitable_37 uninhabitable_38 }
             }
+            persian_gulf_region = {
+            }
+            red_sea_region = {
+            }
+            cilician_river_region = {
+                pyramus_river_area = { pyramos_0 pyramos_1 }
+                cydnus_river_area = { cydnus }
+            }
+            mesopotamia_river_region = {
+            }
         }
         india = {
             gandhara_region = {
@@ -598,6 +630,16 @@
                 north_mahishamandala_area = { huliyar chitradurga isila mangalavada paravipura penugonda brahmagiri siddapura uccasrngi kadiri suvarnagiri belgola }
                 south_mahishamandala_area = { kongu tennagora ricavatta talavanapura kaveri bendakaluru tagadur tiruperur kuvalalapura chintamani nandagiri madana }
             }
+            indo_gangetic_region = {
+                indus_river_area = { river_21 river_22 river_23 river_24 river_25 river_26 river_27 river_28 river_29 }
+                ganges_river_area = { river_30 river_31 river_32 river_33 river_34 river_35 river_36 river_37 ganges_0 ganges_1 ganges_2 ganges_3 ganges_4 ganges_5 ganges_6 ganges_7 ganges_8 ganges_9 }
+                dyardanes_river_area = { dyardanes_0 dyardanes_1 dyardanes_2 }
+            }
+            indian_ocean_region = {
+                sinus_adenensis_area = { sea_280 sea_281 sea_282 sea_283 sea_284 sea_285 sea_286 sea_288 s_19 }
+                mare_erythraeum_area = { sea_287 sea_289 sea_290 sea_291 sea_292 sea_293 sea_294 sea_295 sea_296 sea_297 sea_299 sea_300 sea_301 sea_302 sea_303 sea_304 sea_305 sea_306 sea_322 sea_323 sea_324 sea_325 sea_326 sea_327 sea_328 sea_329 sea_330 sea_331 sea_332 sea_333 sea_334 sea_335 sea_336 sea_337 sea_338 sea_339 sea_340 sea_341 sea_342 sea_343 sea_344 sea_345 sea_346 sea_347 sea_348 sea_349 sea_350 sea_351 sea_352 sea_353 sea_354 sea_355 sea_356 sea_357 sea_358 sea_359 sea_360 sea_361 sea_362 sea_363 sea_364 sea_365 sea_366 sea_367 sea_368 sea_369 sea_370 sea_371 sea_372 sea_373 sea_374 sea_375 sea_376 sea_377 sea_378 sea_379 sea_380 sea_381 sea_382 sea_383 sea_384 sea_385 sea_386 sea_387 sea_388 sea_389 sea_390 sea_391 sea_392 sea_393 sea_394 sea_395 sea_396 sea_397 sea_398 sea_399 sea_400 sea_401 sea_402 sea_403 sea_404 sea_405 sea_406 sea_407 sea_408 sea_409 sea_410 sea_411 sea_412 sea_413 sea_414 sea_415 sea_416 sea_417 sea_418 sea_419 sea_420 sea_421 sea_422 sea_423 sea_424 sea_425 sea_426 sea_427 sea_428 sea_429 sea_430 sea_431 sea_432 sea_433 sea_434 sea_435 sea_436 sea_437 sea_438 sea_439 sea_440 sea_441 sea_442 sea_443 sea_448 sea_449 sea_450 sea_298 }
+                mare_gangeticus_area = { sea_444 sea_445 sea_446 sea_447 sea_451 sea_452 sea_453 sea_454 sea_455 sea_456 sea_457 sea_458 sea_459 sea_460 sea_461 sea_462 sea_463 sea_464 sea_465 sea_466 sea_467 sea_468 sea_469 sea_470 sea_471 sea_472 sea_473 sea_474 sea_475 sea_476 sea_477 sea_478 sea_479 sea_480 sea_481 sea_482 sea_483 sea_484 sea_485 sea_486 }
+            }
         }
         central_asia = {
             tibet_region = {
@@ -625,6 +667,109 @@
                 talas_area = { balasaghun suyab nevaket yul ashpara narin shura kulan barskhan shelji }
                 ferghana_area = { alexandria_eschate namakan andijan osh shakrikhan dawan akhsiket chust khavakand massargetia makhram }
                 kharesmia_superior = { rapete kogon shenia tahiriya ghore buxoro chadracarta kushmekhan burguchi khazarekdepe shor depe }
+            }
+            scythia_region = {
+                hyrcania_superior_area = { achtab yrbent sarden porach reama shachel kumetta yonnav abach ermel kurnsck chroda }
+                atara_area = { gonnema vorena iska taksaty gyashech norom uvra pass_21 pass_22 pass_23 moslar }
+                transhyrcania_area = { uyennik arzhahk vhingad khorolats monok urmonok zale arzhale arkhonnt khonnt ashina schelats }
+                darn_area = { vyoros satticha usch pass_24 azgar nassin pass_25 pass_26 kholan alsita chevka }
+                scythia_ultima_area = { ustret zhanit vyache tamaasan thurissa donom kylorica kurchina gyranchi erim gyoshach yanmal }
+                scythia_prima_area = { sthura kilich dyruzh zantem moinak tubek cammei gyesch sechoria gran thema tirim kupir baraq birim qala zantak palisha lek ziram boot }
+                dahaea_area = { shalak oshin zatra yatsha palimek murna dnem khrischatach bela kraz azkoi talaykhan }
+                scythia_ad_pontem_area = { garam khanash yetteka ziri shakthara mroshika vyenim byrshchre karon teike shachkra dyram }
+                kharesmia_area = { jirbend sariq qanga vezir shahsenem gurganj hayvan mizdaqahn zamakshahr dharakh hazarasp khiva }
+            }
+            don_river_region = {
+                don_river_area = { tanais_1 tanais_2 tanais_3 tanais_4 tanais_5 }
+                volga_river_area = { rha_0 rha_1 rha_2 }
+            }
+        }
+    }
+    africa = {
+        north_africa = {
+            cyrenaica_region = {
+                tripolitania_centralis_area = { abrotonum zanazia oea amarea gaphara leptis_magna kinypes thubactis base thebunte }
+                tripolitania_orientalis_area = { annesel auxiu dysopon euphranta iscina aulazon ad_palmam digdida_selorum arae_philaenorum automalax mendrion astrochonda }
+                cyrenaica_inferioris_area = { comicianum noetu kainon serapeion amastor talliamunera chersis euesperides barke zau_taberna hadrianopolis chairekla }
+                cyrenaica_superioris_area = { arsinoe_1 balagrae agabis marandis ptolemais phykous cyrene apollonia_4 darnis aziris_0 paliouros }
+                marmarica_occidentalis_area = { petras_mikros batrachos gonia antipyrgos kyrthanion menelaos catabathmus_magnus }
+                marmarica_orientalis_area = { nesus chettaia selenis apis paraetonium kallias leuke_akte pnigeus pedonia derras }
+                ammon_area = { ammon carnasa gargara zethin areg varias alexandrou_0 sanus klimax graias abid sitra }
+            }
+            numidia_region = {
+                numidia_occidentalis_area = { igilgivi cuicul mopth zarai lamasba diana_veteranorum thenebrestia milevum tucca chullu verecunda subzuaritanum constantina celtianis }
+                numidia_centralis_area = { rusicade culucitanis calama zattara thibilis tipasa_1 asuccuris hippo_regius madauros thuburnica pagus_malarensium tuniza funda_thavagalensis fabatianum }
+                mauretania_caesariensis_orientalis_area = { zabi equizeto vanisnesi ad_sava_municipium lesbia muslubium choba satafis sitifis lobrinia lemellia macri }
+                gaetulia_occidentalis_area = { thubunae aqua_viva mesarietta gemellae aurasius_mons_0 burgus_speculatorius tabudium badias nicivibus lambafundi claudi aurasius_mons_1 }
+                gaetulia_centralis_area = { mascula_tiberia vegesela leges_maiores midili casae_nigrae ubaza_castellum ad_aquas_caesaris theveste vatari cerva ad_speculum }
+                gaetulia_septentrionalis_area = { thalades bagai gadiaufala castellum_siguitanorum macomades casaea marcimeni nattabutum saltus_sorothensis vasampus thaesactum ammaedara }
+                mauretania_caesariensis_maioris_area = { tipasa_0 zucchabar icosium lambdia sufasar rusguniae rusuccuru rusippisir bida rusazus saldae oppidum_definum gunugus }
+                mauretania_caesariensis_minoris_area = { tubusuctu sertei aras tatiliti ausum auzia bessemium bessemium_septentrionalis rapidum thanaramusa_castra phruraesius_mons cinnaba_mons }
+            }
+            mauretainia_region = {
+                rutubis_area = { rutubis anfa frej amar bouzerrara amrane haouzia ziaida safim azama zaakna mizab }
+                tadla_area = { zemmour ait_roba beni_mousa beni_amer meskine ouardigha ifran tiflet mdakra mzamza }
+                mauretania_tingitana_septentrionalis_area = { tingis lixus arzeila tabernae_1 tamuda ad_novas_1 oppidum_novum tremulae viposcianae aelia frigidae }
+                mauretania_tingitana_meridionalis_area = { thamusida sala thamusida_meridionalis banasa tocolosida volubilis gilda aquae_dacicae mons_semita visum_montis mons_ambulatis khedis }
+                mauretania_caesariensis_occidentalis_area = { oppidum_et_portus lemnis syrorum siga pomaria altava tepidae albulae castra_puerorum caputtasaccora portus_divinus regiae tasaccora lucu portus_magnus }
+                mauretania_caesariensis_centralis_area = { aquae_sirenses castra_nova quiza_xenitana mina portus_magulus gaudum_castra arsennaria cartenae castellum_tingitanum castra_germanorum cartilli ala_miliaria breucorum cenavicum columnata }
+            }
+            africa_region = {
+                carthage_area = { hippo_diarrhytus utica thuburbis_minor thisika membressa thimida carthago inuca thuburbo_maius uthina nepheris carpis missua }
+                africa_septentrionalis_area = { aspis neapolis_4 pupput ziqua bisica_lucana furnos_maius seressi abthugni pheradi_maius muzuc mediccera unizibbira cossyra }
+                africa_meridionalis_area = { vicus_augusti aeliae hadrametum leptis_minor thysdrus bararus thapsus iustinianopolis usula taparura thaenae macomades_minores bennata cercina }
+                numidia_maioris_area = { thabraca bulla_regia sicca_veneria lares obba septimia thimida_bure aunobaris agbia zama_regia assuras thibursicum_bure thignica rucuma }
+                numidia_minoris_area = { althiburos thala_1 menegesum sufetula thugga_terebenthina uzappa mactaris sufes masclinae aquae_regiae aquae_casae }
+                gaetulia_orientalis_area = { castra_neptitana castellum_thigensium gemellia thelepte capsa_iustiniana cillium nara_0 oviscae tabira silesva turris_tamalleni }
+                tripolitania_occidentalis_area = { bezereos tacape gigthis tipasa_2 meninge zitha putea_pallene zouchis pisida locri_1 }
+            }
+        }
+        egypt = {
+            upper_egypt_region = {
+                luxor_area = { diospolis_mikra tenthyris apollonopolis_parva petemout diospolis_magna_luxor memnonia terkythis hermonthis pathyris latopolis }
+                troglodytica_area = { eileithyiopolis hydreuma_to_epi_tou_paneiou berenike vetus_hydreuma lahami sukkari nechesia aristonis falacro novum_hydreuma }
+                myos_hormos_area = { kainepolis_0 koptos persou myos_hormos semna_0 siqdit ghuzza quei lykabettus_porphyrites_mons drepanum_unsettled }
+                kharga_area = { pohe gebara erebe gibra hibis amura thenete kellis mothis trimithis debiri }
+                khargana_area = { parammon tabenesse perusekh kysis cykaminia precariton hameka cataphri simbel boron tchonemyris }
+                hema_nome_area = { hermopolis_magna_schmun besa koussai moirai lykopolis hypsele antaiopolis panopolis athribis_1 ptolemais_hermeiou thinis abydos_1 }
+                farfara_area = { minqar tawar bishaya farafra elassa thumat tablarum poka mandish siwa }
+            }
+            lower_egypt_region = {
+                western_delta_area = { naukratis alexandria_0 hermopolis_mikra buto atarbechis_aphroditopolis kanopos bolbitine psenemphaia chaireon mareia antiphrai perseos_skope }
+                eastern_delta_area = { _1 tanis pelusium daphnai phakoussai pharbaithos sile ostrakine serapieion rinokoloura maghara thenessos }
+                central_delta_area = { leontopolis sais xois sebennytos diospolis_kato pakhnemounis onouphis_ano isieion chemmis mendes hermopolis tamiathis }
+                memphis_area = { memphis _0 bubastis leontopolis_hel letopolis athribis_0 nikiou babylon__egypt panarachthis takyris bilbeis }
+                heptanomis_area = { aphroditopolis krokodilopolis dionysias karanis ankyropolis nilopolis herakleopolis oxyrhynchus kynopolis chysis alabastronpolis philoteris }
+                sinai_area = { klysma arsinoe_0 marah phoinikon pharan rhaithou ain_hudera nuweiba horeb_mons tell_el_mashraba naqb_jedid sina_meridionalis }
+                parva_area = { thynis gerum murta magrab shunne parva colira oxyrhincus sinary kerkethoris nakala varam }
+            }
+            nubia_region = {
+                south_nubia_area = { kedurma paroa acina prummu orsum direla patigga urbim breues mulon pago bagada }
+                napata_area = { segasa arcas zamnes tergendum mambil dumuna cortum kuru nuri napata fourth_cataract kurgus }
+                alana_area = { marru hashem alana sankole scammos gora abale darou galim mallo sakolche seserem }
+                meroe_area = { tadu epis meroe summarum araba naqa ganagaras anak rocat borassa }
+                alut_area = { ameta toprate petta soba sobra alwa attrah syuta korin kuria }
+                aswan_area = { apollonopolis_magna omboi syene talmis pselkis tachampso kortia aramum tene premis cambusis }
+                north_nubia_area = { pachora serra boon tamania tila semna_1 firke saye pderme noa soleb gugo }
+            }
+            nile_region = {
+            }
+        }
+        red_sea_region_group = {
+            punt_region = {
+                mosylon_area = { dacca mundus emporion_1 motta_2 mosylon diattica elephas_limen yehta pano dioscoridus opone aromata }
+                tana_area = { dbark gwara agawe adefa roha mekele esheta shire uikra karmille dire_dawa awash }
+                aksum_area = { aksum matara yeha sazila adigrat koloe oreine adouli aziris_1 alalaiou uninhabitable_18 uninhabitable_17 }
+                punt_area = { punte deire arsinoe_2 aualites uninhabitable_15 uninhabitable_16 harar jijiga tanetjer atule dumar malao }
+                ptolemais_area = { erascum sabaste sabraiton arachos canarbis setronon elephas_agrum ptolemais_theron uninhabitable_22 uninhabitable_19 uninhabitable_20 uninhabitable_21 }
+                atbaras_area = { dmut durai thana abliata demora zithaa acranoe druka sumita tanachtala }
+            }
+            red_sea_region = {
+            }
+            indian_ocean_region = {
+                sinus_adenensis_area = { sea_280 sea_281 sea_282 sea_283 sea_284 sea_285 sea_286 sea_288 s_19 }
+                mare_erythraeum_area = { sea_287 sea_289 sea_290 sea_291 sea_292 sea_293 sea_294 sea_295 sea_296 sea_297 sea_299 sea_300 sea_301 sea_302 sea_303 sea_304 sea_305 sea_306 sea_322 sea_323 sea_324 sea_325 sea_326 sea_327 sea_328 sea_329 sea_330 sea_331 sea_332 sea_333 sea_334 sea_335 sea_336 sea_337 sea_338 sea_339 sea_340 sea_341 sea_342 sea_343 sea_344 sea_345 sea_346 sea_347 sea_348 sea_349 sea_350 sea_351 sea_352 sea_353 sea_354 sea_355 sea_356 sea_357 sea_358 sea_359 sea_360 sea_361 sea_362 sea_363 sea_364 sea_365 sea_366 sea_367 sea_368 sea_369 sea_370 sea_371 sea_372 sea_373 sea_374 sea_375 sea_376 sea_377 sea_378 sea_379 sea_380 sea_381 sea_382 sea_383 sea_384 sea_385 sea_386 sea_387 sea_388 sea_389 sea_390 sea_391 sea_392 sea_393 sea_394 sea_395 sea_396 sea_397 sea_398 sea_399 sea_400 sea_401 sea_402 sea_403 sea_404 sea_405 sea_406 sea_407 sea_408 sea_409 sea_410 sea_411 sea_412 sea_413 sea_414 sea_415 sea_416 sea_417 sea_418 sea_419 sea_420 sea_421 sea_422 sea_423 sea_424 sea_425 sea_426 sea_427 sea_428 sea_429 sea_430 sea_431 sea_432 sea_433 sea_434 sea_435 sea_436 sea_437 sea_438 sea_439 sea_440 sea_441 sea_442 sea_443 sea_448 sea_449 sea_450 sea_298 }
+                mare_gangeticus_area = { sea_444 sea_445 sea_446 sea_447 sea_451 sea_452 sea_453 sea_454 sea_455 sea_456 sea_457 sea_458 sea_459 sea_460 sea_461 sea_462 sea_463 sea_464 sea_465 sea_466 sea_467 sea_468 sea_469 sea_470 sea_471 sea_472 sea_473 sea_474 sea_475 sea_476 sea_477 sea_478 sea_479 sea_480 sea_481 sea_482 sea_483 sea_484 sea_485 sea_486 }
             }
         }
     }
