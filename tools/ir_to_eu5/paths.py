@@ -42,4 +42,4 @@ iu_prescripted_coa = (
     / "coat_of_arms"
     / "zz_ir_pre_scripted_countries.txt"
 )
-iu_map_data = mod_root / "main_menu" / "map_data"
+iu_map_data = mod_root / "in_game" / "map_data"

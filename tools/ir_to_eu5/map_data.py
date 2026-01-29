@@ -3,9 +3,12 @@ import re
 from collections import defaultdict
 from pathlib import Path
 
-from .extract_data import parse_tree
-from .paths import ir_map_data, iu_map_data
+import pyradox.datatype as _pydt
 
+from .extract_data import parse_tree
+from .maps import *
+from .paths import ir_map_data, iu_map_data
+from .write_data import write_blocks
 
 # ---------------- Utility Functions ---------------- #
 
@@ -132,20 +135,81 @@ def parse_ports(id_to_key: dict[int, str]) -> list[dict]:
 # ---------------- Area Validation ---------------- #
 
 
-def build_definitions(id_to_key: dict[int, str]):
-    """Check areas and regions against known province IDs."""
-    areas_tree = parse_tree(ir_map_data / "areas.txt")
-    regions_tree = parse_tree(ir_map_data / "regions.txt")
+def build_regions(id_to_key: dict[int, str]):
+    def as_list(x):
+        if isinstance(x, list):
+            return x
+        if isinstance(x, dict):
+            return list(x.values())
+        return [x]
 
-    for area, locs in areas_tree.items():
-        for loc_id in locs.values():
-            key = id_to_key.get(loc_id)
-            if key is None:
-                continue
-            
+    areas = parse_tree(ir_map_data / "areas.txt").to_python()
+    regions = parse_tree(ir_map_data / "regions.txt").to_python()
+
+    region_map = {
+        region: {
+            area: [id_to_key[pid] for pid in as_list(areas[area]["provinces"])]
+            for area in region_data["areas"]
+            if area in areas
+        }
+        for region, region_data in regions.items()
+    }
+
+    return region_map
 
 
 # ---------------- Main Port Map Function ---------------- #
+
+
+def build_full_hierarchy(region_map, superregion_map, continent_map):
+    """
+    region_map: { region_tag: { area_tag: [province_keys] } }
+    superregion_map: { subcontinent: { superregion: [region_tags] } }
+    continent_map: { continent: [subcontinents] }
+    """
+    nested = {}
+
+    for continent, subcontinents in continent_map.items():
+        nested[continent] = {}
+        for subcontinent in subcontinents:
+            nested[continent][subcontinent] = {}
+            if subcontinent not in superregion_map:
+                continue
+            for superregion, regions in superregion_map[subcontinent].items():
+                nested[continent][subcontinent][superregion] = {}
+                for region in regions:
+                    if region not in region_map:
+                        continue
+                    nested[continent][subcontinent][superregion][region] = {}
+                    for area, provinces in region_map[region].items():
+                        nested[continent][subcontinent][superregion][region][
+                            area
+                        ] = provinces
+    return nested
+
+
+def hierarchy_to_blocks(data: dict) -> list[tuple[str, list]]:
+    """
+    Converts nested dicts into (tag, lines) blocks compatible with write_blocks.
+    Leaf values must be lists of province keys.
+    """
+    blocks = []
+
+    for tag, value in data.items():
+        # Leaf: area -> [province_keys]
+        if isinstance(value, list):
+            province_list = " ".join(value)
+            blocks.append(f"{tag} = {{ {province_list} }}")
+
+        # Node: higher-level grouping
+        elif isinstance(value, dict):
+            sublines = hierarchy_to_blocks(value)
+            blocks.append((tag, sublines))
+
+        else:
+            raise TypeError(f"Unsupported hierarchy value type: {type(value)}")
+
+    return blocks
 
 
 def port_map_data():
@@ -175,4 +239,12 @@ def port_map_data():
     )
 
     # Area validation
-    build_definitions(id_to_key)
+    regions = build_regions(id_to_key)
+    nested = build_full_hierarchy(regions, superregion_map, continent_map)
+
+    blocks = hierarchy_to_blocks(nested)
+
+    write_blocks(
+        iu_map_data / "definitions.txt",
+        blocks,
+    )
