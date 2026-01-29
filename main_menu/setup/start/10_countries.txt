@@ -12,10 +12,26 @@ current_age = age_1_traditions
 # our_cores_conquered_by_others
 countries = {
 	countries = {
+		# Italy
 		ROM = {
 			# Rome
 			own_control_core = {
 				rome
+				velletri
+				terracina
+				anagni
+				palestrina
+				sabina
+				tivoli
+				naples
+				caserta
+				gaeta
+				nola
+				piedimonte
+				sora
+				venafro
+				orte
+				bracciano
 			}
 			government = {
 				type = republic
@@ -25,10 +41,212 @@ countries = {
 			include = "expl_mediterranean"
 			capital = rome
 		}
+		ETR = {
+			# Etruria
+			own_control_core = {
+				civitavecchia
+				corneto
+				orvietano
+				viterbo
+				grosseto
+				massamar
+				pitigliano
+				piombino
+				siena
+				chiusi
+				montalcino
+				pisa
+				livorno
+				pontedera
+				volterra
+				poggibonsi
+				florence
+				perugia
+				marsciano
+				arezzo
+				cortona
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			starting_technology_level = 3
+			include = "expl_mediterranean"
+			capital = grosseto
+		}
+		SYR = {
+			# Syracusae
+			own_control_core = {
+				syracuse
+				caltagirone
+				malta
+				modica
+				noto
+				messina
+				catania
+			}
+			government = {
+				type = monarchy
+				ruler = random
+			}
+			starting_technology_level = 3
+			include = "expl_mediterranean"
+			capital = syracuse
+		}
+		TYN = {
+			# Tyndaria
+			own_control_core = {
+				patti
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			starting_technology_level = 3
+			include = "expl_mediterranean"
+			capital = patti
+		}
+		GEL = {
+			# Gelas
+			own_control_core = {
+				terranovasic
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			starting_technology_level = 3
+			include = "expl_mediterranean"
+			capital = terranovasic
+		}
+		# North Africa
+		CAR = {
+			# Carthage
+			own_control_core = {
+				malta
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			starting_technology_level = 3
+			include = "expl_mediterranean"
+			capital = carthage
+		}
+		EGY = {
+			# Egypt
+			own_control_core = {
+				akhmim
+				al_mima
+				alexandria
+				ashmunayn
+				asyut
+				atfih
+				bahariyya
+				baris
+				beni_suef
+				bilbeis
+				cairo
+				dakahla
+				damanhur
+				damietta
+				edfu
+				el_alamein
+				el_arish
+				el_bahnasa
+				el_balyana
+				el_burullus
+				el_buwit
+				el_jundi
+				el_mahalla
+				el_qasr
+				el_qoseir
+				el_tor
+				el_tor
+				esna
+				faiyum
+				faqus
+				faran
+				fuwa
+				giza
+				hiw
+				kafr_saqr
+				kharga
+				kharibta
+				lake_bardawil
+				manfalut
+				mansoura
+				matruh
+				menouf
+				minya
+				nekhel
+				qalyub
+				qasr_farafra
+				qatya
+				qena
+				qus
+				ramsis
+				ras_gharib
+				rashid
+				safaga
+				saint_anthony
+				saint_katrine
+				saint_paul_anchorite
+				sallum
+				samanoud
+				sharuna
+				siwa
+				suez
+				tahna
+				tarrana
+				tidah
+				tinnis
+				ushmum_tannah
+				wadi_el_natrun
+				warrada
+				kom_ombo
+				aswan
+				tobruk
+			}
+			government = {
+				type = monarchy
+				ruler = random
+			}
+			starting_technology_level = 3
+			include = "expl_mediterranean"
+			capital = alexandria
+		}
+		CYR = {
+			# Cyrenaica
+			own_control_core = {
+				al_bayda
+				derna
+				tmimi
+				benghazi
+				ajdabiya
+				barca
+				el_agheila
+				qaminis
+				mechili
+				al_khuimat
+				msus
+				suluntah
+			}
+			government = {
+				type = monarchy
+				ruler = random
+			}
+			starting_technology_level = 3
+			include = "expl_mediterranean"
+			capital = al_bayda
+		}
+		# Anatolia
 		BYZ = {
 			# Byzantion
 			own_control_core = {
 				constantinople
+				catalca
+				silivri
 			}
 			government = {
 				type = republic
@@ -37,6 +255,47 @@ countries = {
 			starting_technology_level = 3
 			include = "expl_mediterranean"
 			capital = constantinople
+		}
+		CDD = {
+			# Chalcedon
+			own_control_core = {
+				uskudar
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			starting_technology_level = 3
+			include = "expl_mediterranean"
+			capital = uskudar
+		}
+		KRS = {
+			# Kerasous
+			own_control_core = {
+				giresun
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			starting_technology_level = 3
+			include = "expl_mediterranean"
+			capital = giresun
+		}
+		TRZ = {
+			# Trapezous
+			own_control_core = {
+				trebizond
+				gorele
+				surmene
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			starting_technology_level = 3
+			include = "expl_mediterranean"
+			capital = trebizond
 		}
 	}
 }
