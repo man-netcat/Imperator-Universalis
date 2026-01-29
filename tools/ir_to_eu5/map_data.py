@@ -473,7 +473,7 @@ def port_map_data():
     # Adjacencies CSV
     write_csv(
         iu_map_data / "adjacencies.csv",
-        parse_adjacencies(id_to_key),
+        parse_adjacencies(id_to_key)[:-1],
         ["From", "To", "Type", "Through", "x1", "y1", "x2", "y2", "Comment"],
     )
 
