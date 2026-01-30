@@ -759,7 +759,7 @@ countries = {
 				ruler = random
 			}
 			include = "expl_imperator_rome"
-			capital = carthage
+			capital = palma
 		}
 		IBA = {
 			# Ibasim
