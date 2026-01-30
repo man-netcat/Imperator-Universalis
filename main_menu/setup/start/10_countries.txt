@@ -43,6 +43,7 @@ countries = {
 				type = republic
 				ruler = random
 			}
+			country_rank = rank_duchy
 			include = "expl_imperator_rome"
 			capital = rome
 		}
@@ -774,6 +775,259 @@ countries = {
 			capital = ibiza
 		}
 		# Greece
+		EPI = {
+			# Epirus
+			own_control_core = {
+				avlonya
+				argyrokastro
+				butrint
+				kleisoura_epirus
+				konitsa
+				ioannina
+				parga
+				preveza
+			}
+			government = {
+				type = monarchy
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = ioannina
+		}
+		AMK = {
+			# Ambracia
+			own_control_core = {
+				arta
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = arta
+		}
+		TRE = {
+			# Thrace
+			own_control_core = {
+				demotica
+				traianopolis
+				komotini
+				xanthia
+				gallipoli
+				enez
+				hayrabolu
+				malgara
+				rodoscuk
+				kesan
+				smolyan
+				ustra
+				perperek
+				vize
+				corlu
+				kiyikoy
+				ahtopol
+				kirklareli
+				luleburgaz
+				edirne
+			}
+			government = {
+				type = monarchy
+				ruler = random
+			}
+			country_rank = rank_kingdom
+			include = "expl_imperator_rome"
+			capital = gallipoli
+		}
+		MAC = {
+			# Macedon
+			own_control_core = {
+				edessa
+				giannitsa
+				gynaikokastro
+				hatera
+				kilkis
+				veria
+				thessaloniki
+				kassandreia
+				mount_athos
+				polygyros
+				serres
+				drama
+				kavala
+				rentina
+				thasos
+				melnik
+				bansko
+				krupnik
+				dospat
+				nevrokop
+				prilep
+				bitola
+				florina
+				kicevo
+				ohrid
+				tetovo
+				grevena
+				kastoria
+				servia
+				siatista
+				ostrovo
+				skopje
+				prosek
+				kocani
+				kratovo
+				kumanovo
+				shtip
+				strumica
+				veles
+				larissa
+				demetrias
+				elassona
+				farsala
+				karditsa
+				stomio
+				trikala
+				tyrnavos
+				zetounion
+				neopatras
+				bodonitsa
+				# Achaea
+				corinth
+			}
+			government = {
+				type = monarchy
+				ruler = random
+			}
+			country_rank = rank_kingdom
+			include = "expl_imperator_rome"
+			capital = thessaloniki
+		}
+		OPU = {
+			# Opus
+			own_control_core = {
+				atalanti
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = atalanti
+		}
+		BOE = {
+			# Boeotia
+			own_control_core = {
+				livadeia
+				gravia
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = livadeia
+		}
+		AET = {
+			# Aetolia
+			own_control_core = {
+				angelokastron
+				nafpaktos
+				cephalonia
+				zakynthos
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = angelokastron
+		}
+		AKR = {
+			# Akarnania
+			own_control_core = {
+				leukas
+				vonitsa
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = vonitsa
+		}
+		PTA = {
+			# Patrai
+			own_control_core = {
+				patras
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = patras
+		}
+		AIG = {
+			# Aigion
+			own_control_core = {
+				vostitsa
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = vostitsa
+		}
+		DYM = {
+			# Dyme
+			own_control_core = {
+				chalandritsa
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = chalandritsa
+		}
+		ELI = {
+			# Elis
+			own_control_core = {
+				andravida
+				pontikokastro
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = andravida
+		}
+		AZA = {
+			# Azania
+			own_control_core = {
+				kalavryta
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = kalavryta
+		}
+		PLE = {
+			# Pellene
+			own_control_core = {
+				xylokastro
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = xylokastro
+		}
 		SPA = {
 			# Sparta
 			own_control_core = {
@@ -786,8 +1040,60 @@ countries = {
 				type = monarchy
 				ruler = random
 			}
+			country_rank = rank_kingdom
 			include = "expl_imperator_rome"
 			capital = mystras
+		}
+		LPR = {
+			# Lepreon
+			own_control_core = {
+				andritsaina
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = andritsaina
+		}
+		MGL = {
+			# Megalopolis
+			own_control_core = {
+				veligosti
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = veligosti
+		}
+		MTE = {
+			# Mantineia
+			own_control_core = {
+				tripolitsa
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = tripolitsa
+		}
+		MSE = {
+			# Messenia
+			own_control_core = {
+				kalamata
+				leuktron
+				modon
+				kyparissia
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = kalamata
 		}
 		HRM = {
 			# Hermione
@@ -818,6 +1124,10 @@ countries = {
 			# Athens
 			own_control_core = {
 				athens
+				lemnos
+				imbros
+				andros
+				kythnos
 			}
 			government = {
 				type = republic
@@ -825,6 +1135,22 @@ countries = {
 			}
 			include = "expl_imperator_rome"
 			capital = athens
+		}
+		DEL = {
+			# Nesiotic League
+			own_control_core = {
+				milos
+				kythnos
+				naxos
+				mykonos
+				amorgos # sus
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = mykonos
 		}
 		EPD = {
 			# Epidauros
@@ -1029,6 +1355,7 @@ countries = {
 				type = monarchy
 				ruler = random
 			}
+			country_rank = rank_kingdom
 			include = "expl_imperator_rome"
 			capital = alexandria
 		}
