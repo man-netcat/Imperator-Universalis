@@ -222,7 +222,7 @@ def write_country_setup(country_data: list, override_data: list):
     # --- overrides: COLLECT, THEN WRITE ONCE ---
 
     for path, countries in override_data.items():
-        if path == "_default.txt":
+        if path.name.endswith("_default.txt"):
             continue
         override_blocks = []
         for country in countries:
