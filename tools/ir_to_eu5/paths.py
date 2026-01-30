@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-from pathlib import Path
 import json
-from typing import Dict, Any
-
+import sys
+from pathlib import Path
+from typing import Any, Dict
 
 # Load user settings from `settings.json` placed next to the base script.
 BASE = Path(__file__).resolve().parent
@@ -10,16 +10,20 @@ BASE = Path(__file__).resolve().parent
 
 def _load_settings() -> Dict[str, Any]:
     settings_path = BASE.parent / "settings.json"
-    if not settings_path.exists():
-        raise RuntimeError(
+    try:
+        with settings_path.open(encoding="utf-8") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        print(
             f"Missing settings file: {settings_path}\n"
             "Create tools/settings.json with keys: 'ir_game' and 'eu5_game'."
         )
-    try:
-        with settings_path.open() as f:
-            return json.load(f)
+    except json.JSONDecodeError:
+        print(f"Invalid JSON in settings file: {settings_path}")
     except Exception as e:
-        raise RuntimeError(f"Failed to load settings from {settings_path}: {e}")
+        print(f"Failed to load settings from {settings_path}: {e}")
+
+    sys.exit(1)
 
 
 _settings = _load_settings()

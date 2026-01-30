@@ -7,13 +7,16 @@ import sys
 mod_root = Path(__file__).resolve().parent.parent
 script_dir = Path(__file__).resolve().parent
 tools_pyradox_src = script_dir / "pyradox" / "src"
-if tools_pyradox_src.exists():
-    sys.path.insert(0, str(tools_pyradox_src))
-else:
-    raise RuntimeError(
+
+if not tools_pyradox_src.is_dir():
+    print(
         f"Required tools pyradox not found at {tools_pyradox_src}.\n"
-        "Please ensure tools/pyradox/src exists and contains the pyradox package."
+        "Run 'git submodule update --init --recursive' from the repository root."
     )
+    sys.exit(1)
+
+sys.path.insert(0, str(tools_pyradox_src))
+
 from ir_to_eu5.extract_data import (
     extract_coa_data,
     extract_country_data,
