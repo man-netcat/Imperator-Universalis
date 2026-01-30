@@ -274,7 +274,6 @@ countries = {
 				vicenza
 				bassano
 				schio
-				trieste
 			}
 			government = {
 				type = republic
@@ -463,6 +462,7 @@ countries = {
 				buzet
 				pazin
 				rovinj
+				trieste
 			}
 			government = {
 				type = tribe
@@ -585,6 +585,61 @@ countries = {
 			}
 			include = "expl_imperator_rome"
 			capital = cotrone
+		}
+		HPO = {
+			# Hipponion
+			own_control_core = {
+				monteleone
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = monteleone
+		}
+		RHG = {
+			# Rhegium
+			own_control_core = {
+				palmi
+				reggiocal
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = reggiocal
+		}
+		LOC = {
+			# Locri
+			own_control_core = {
+				gerace
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = gerace
+		}
+		BRT = {
+			# Bruttia
+			own_control_core = {
+				scalea
+				castrovillari
+				rossano
+				cosenza
+				paola
+				nicastro
+				catanzaro
+			}
+			government = {
+				type = tribe
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = cosenza
 		}
 		SYR = {
 			# Syracusae
