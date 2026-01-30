@@ -1,6 +1,6 @@
 # Imperator Universalis
 
-This repository contains the **Imperator Universalis** mod.
+This repository contains the **Imperator Universalis** mod, a 304BC start date for Europa Universalis V based on Imperator Rome.
 The `tools/` directory includes helper utilities, most notably `imperator_converter.py`, which can generate mod files from installed game data.
 
 ## Quick Start
