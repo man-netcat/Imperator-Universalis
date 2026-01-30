@@ -32,6 +32,7 @@ countries = {
 				venafro
 				orte
 				bracciano
+				celano
 			}
 			government = {
 				type = republic
@@ -39,6 +40,18 @@ countries = {
 			}
 			include = "expl_mediterranean"
 			capital = rome
+		}
+		PEL = {
+			# Pelignia
+			own_control_core = {
+				sulmona
+			}
+			government = {
+				type = tribe
+				ruler = random
+			}
+			include = "expl_mediterranean"
+			capital = sulmona
 		}
 		ETR = {
 			# Etruria
@@ -64,6 +77,13 @@ countries = {
 				marsciano
 				arezzo
 				cortona
+
+				# Corsica
+				bastia
+				corte
+				aleria
+				calvi
+
 			}
 			government = {
 				type = republic
@@ -99,6 +119,7 @@ countries = {
 				vicenza
 				bassano
 				schio
+				trieste
 			}
 			government = {
 				type = republic
@@ -118,6 +139,7 @@ countries = {
 				chioggia
 				ravenna
 				legnago
+				ostiglia
 			}
 			government = {
 				type = republic
@@ -125,6 +147,63 @@ countries = {
 			}
 			include = "expl_mediterranean"
 			capital = ravenna
+		}
+		BOI = {
+			# Boi
+			own_control_core = {
+				medicina
+				bologna
+				nonantola
+				mirandola
+				guastalla
+				parma
+				sandonnino
+				fiorenzuola			
+				reggioem
+				modena
+			}
+			government = {
+				type = tribe
+				ruler = random
+			}
+			include = "expl_mediterranean"
+			capital = bologna
+		}
+		UMB = {
+			# Umbria
+			own_control_core = {
+				urbino
+				montefeltro
+				macerata
+				fabriano
+				camerino
+				assisi
+				spoleto
+				cittacastello
+				gubbio				
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_mediterranean"
+			capital = spoleto
+		}
+		SAB = {
+			# Sabinia
+			own_control_core = {
+				todi
+				narni
+				rieti 
+				cittaducale
+				aquila
+			}
+			government = {
+				type = tribe
+				ruler = random
+			}
+			include = "expl_mediterranean"
+			capital = aquila
 		}
 		ANO = {
 			# Ancona
@@ -154,17 +233,39 @@ countries = {
 			include = "expl_mediterranean"
 			capital = pesaro
 		}
-		FNT = {
-			# Friniatia
+		GUN = {
+			# Genuatia
 			own_control_core = {
-				ucca massa pescia  prato
+				genoa
+				lavagna
+				sarzana
+				fosdinovo
+				novi
+				rovegno
+				bardi
+
 			}
 			government = {
 				type = republic
 				ruler = random
 			}
 			include = "expl_mediterranean"
-			capital = urbino
+			capital = genoa
+		}
+		FNT = {
+			# Friniatia
+			own_control_core = {
+				lucca
+				massa
+				pescia
+				prato
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_mediterranean"
+			capital = lucca
 		}
 		HIS = {
 			# Istria
@@ -181,6 +282,71 @@ countries = {
 			include = "expl_mediterranean"
 			capital = rovinj
 		}
+		DIT = {
+			# Iapodia
+			own_control_core = {
+				senj
+				krk
+				rijeka
+				crikvenica
+				kaseg
+				otocac
+			}
+			government = {
+				type = tribe
+				ruler = random
+			}
+			include = "expl_mediterranean"
+			capital = senj
+		}
+		LBN = {
+			# Libernia
+			own_control_core = {
+				zadar
+				kaseg
+				novigrad
+				srb
+				sibenik
+				knin
+			}
+			government = {
+				type = tribe
+				ruler = random
+			}
+			include = "expl_mediterranean"
+			capital = zadar
+		}
+		DLM = {
+			# Delmatia
+			own_control_core = {
+				knin
+				makarska
+				split
+				sinj
+				metkovic
+				drijeva
+				nevesinje
+			}
+			government = {
+				type = tribe
+				ruler = random
+			}
+			include = "expl_mediterranean"
+			capital = knin
+		}
+		PHA = {
+			# Issa
+			own_control_core = {
+				slano
+				brac
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_mediterranean"
+			capital = brac
+		}
 		ASP = {
 			# Chersos
 			own_control_core = {
@@ -192,6 +358,33 @@ countries = {
 			}
 			include = "expl_mediterranean"
 			capital = pag
+		}
+		BLR = {
+			# Balaria
+			own_control_core = {
+				macomer
+				bitti
+				ozieri
+				thiesi
+			}
+			government = {
+				type = tribe
+				ruler = random
+			}
+			include = "expl_mediterranean"
+			capital = ozieri
+		}
+		IOI = {
+			# Iliensia
+			own_control_core = {
+				ales sorgono isili
+			}
+			government = {
+				type = tribe
+				ruler = random
+			}
+			include = "expl_mediterranean"
+			capital = ales
 		}
 		SYR = {
 			# Syracusae
@@ -210,6 +403,30 @@ countries = {
 			}
 			include = "expl_mediterranean"
 			capital = syracuse
+		}
+		BLD = {
+			# Gymnaesia
+			own_control_core = {
+				palma ciudadela_de_menorca manacor pollensa
+			}
+			government = {
+				type = tribe
+				ruler = random
+			}
+			include = "expl_mediterranean"
+			capital = carthage
+		}
+		IBA = {
+			# Ibasim
+			own_control_core = {
+				ibiza
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_mediterranean"
+			capital = ibiza
 		}
 		TYN = {
 			# Tyndaria
@@ -240,6 +457,24 @@ countries = {
 			# Carthage
 			own_control_core = {
 				malta
+				# Sardinia
+				terralba
+				cagliari
+				tratalias
+				villa_di_chiesa
+				isili
+				muravera
+				seddori
+				tortoli
+				terranova_pausania
+				orosei
+				posada
+				tempiopausania
+				sassari
+				alghero
+				bosa
+				castelsardo
+				oristano
 			}
 			government = {
 				type = republic
