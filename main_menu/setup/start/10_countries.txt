@@ -804,7 +804,8 @@ countries = {
 		ARG = {
 			# Argos
 			own_control_core = {
-				argos astros
+				argos
+				astros
 			}
 			government = {
 				type = republic
@@ -980,7 +981,6 @@ countries = {
 				el_qasr
 				el_qoseir
 				el_tor
-				el_tor
 				esna
 				faiyum
 				faqus
@@ -991,7 +991,6 @@ countries = {
 				kafr_saqr
 				kharga
 				kharibta
-				lake_bardawil
 				manfalut
 				mansoura
 				matruh
