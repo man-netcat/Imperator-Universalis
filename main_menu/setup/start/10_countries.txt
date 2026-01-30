@@ -773,6 +773,146 @@ countries = {
 			include = "expl_imperator_rome"
 			capital = ibiza
 		}
+		# Greece
+		SPA = {
+			# Sparta
+			own_control_core = {
+				mystras
+				kythira
+				monemvasia
+				oitylo
+			}
+			government = {
+				type = monarchy
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = mystras
+		}
+		HRM = {
+			# Hermione
+			own_control_core = {
+				ermioni
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = ermioni
+		}
+		ARG = {
+			# Argos
+			own_control_core = {
+				argos astros
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = argo
+		}
+		ATH = {
+			# Athens
+			own_control_core = {
+				athens
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = athens
+		}
+		EPD = {
+			# Epidauros
+			own_control_core = {
+				nafplio
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = nafplio
+		}
+		TRN = {
+			# Troizen
+			own_control_core = {
+				damala
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = damala
+		}
+		MGA = {
+			# Megara
+			own_control_core = {
+				megara
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = megara
+		}
+		THE = {
+			# Thebes
+			own_control_core = {
+				thebes
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = thebes
+		}
+		PRY = {
+			# Antigonids
+			own_control_core = {
+				antioch
+				negroponte
+			}
+			government = {
+				type = monarchy
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = antioch
+		}
+		ORE = {
+			# Oreos
+			own_control_core = {
+				oreos
+				kleisoura
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = oreos
+		}
+		EUB = {
+			# Eretria
+			own_control_core = {
+				eretreia
+				kymi
+				karystos
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = eretreia
+		}
 		# North Africa
 		CAR = {
 			# Carthage
