@@ -2,7 +2,8 @@ from pathlib import Path
 
 from PIL import Image
 
-from .paths import ir_coa_gfx, iu_coa_gfx
+from .paths import ir_coa_gfx, iu_coa_gfx, mod_root
+from .write_data import print_written
 
 
 def replace_magenta_red_channel(img: Image.Image, strength: float = 0.7) -> Image.Image:
@@ -66,6 +67,7 @@ def convert_images(
 
             out_path = output_dir / (path.stem + ".dds")
             resized.save(out_path, format="DDS")
+            print_written("image", out_path)
 
 
 def port_coa_gfx():

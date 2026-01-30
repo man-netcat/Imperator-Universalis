@@ -6,8 +6,8 @@ from pathlib import Path
 import pyradox.datatype as _pydt
 
 from .extract_data import parse_tree, read_localisation_file
-from .paths import ir_localisation, ir_map_data, iu_localisation, iu_map_data
-from .write_data import write_blocks
+from .paths import ir_localisation, ir_map_data, iu_localisation, iu_map_data, mod_root
+from .write_data import write_blocks, print_written
 
 ### THIS FILE IS EXPERIMENTAL AND CURRENTLY NOT USED ###
 # ---------------- Static Mappings ---------------- #
@@ -171,6 +171,7 @@ def write_csv(file_path: Path, data: list[dict], fieldnames: list[str]):
         writer.writeheader()
         for row in data:
             writer.writerow({k: row.get(k, "") for k in fieldnames})
+    print_written("CSV", file_path)
 
 
 # ---------------- Parsing Functions ---------------- #
@@ -449,6 +450,7 @@ def write_default_map(ir_default_map_data: dict):
         for category, keys in ir_default_map_data.items():
             mapped_category = category_mapping.get(category, category)
             write_category(mapped_category, keys)
+    print_written("file", default_map)
 
 
 def port_map_data():
@@ -462,6 +464,7 @@ def port_map_data():
     with open(named_path / "00_default.txt", "w", encoding="utf-8-sig") as f:
         for _, key, r, g, b, _ in named_locations:
             f.write(f"{key} = {r:02x}{g:02x}{b:02x}\n")
+    print_written("file", named_path / "00_default.txt")
 
     # ---------------- Reference ID-to-Key File ---------------- #
     ref_file = Path(__file__).parent / "province_id_to_key.csv"

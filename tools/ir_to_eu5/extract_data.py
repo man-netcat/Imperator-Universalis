@@ -9,6 +9,7 @@ import pyradox.datatype as _pydt
 from pyradox.filetype.txt import parse as parse_txt
 
 from .paths import *
+from .write_data import print_written
 
 pyradox.Tree = _pydt.Tree
 pyradox.Color = _pydt.Color
@@ -60,6 +61,7 @@ def write_json(data: Any, out_path: Path) -> Path:
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with out_path.open("w", encoding="utf-8") as f:
         json.dump(serializable, f, ensure_ascii=False, indent=2)
+    print_written("JSON", out_path)
     return out_path
 
 

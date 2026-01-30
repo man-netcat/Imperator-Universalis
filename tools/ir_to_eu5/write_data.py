@@ -1,6 +1,7 @@
 from collections import defaultdict
 from pathlib import Path
 from typing import List, Tuple, Union
+import os
 
 import pyradox
 import pyradox.datatype as _pydt
@@ -16,6 +17,18 @@ AUTO_GENERATED_HEADER = (
     "#  Any manual changes will be OVERWRITTEN upon regeneration!  #\n"
     "# =========================================================== #\n\n"
 )
+
+
+def print_written(kind: str, out_path: Path) -> None:
+    """Print a concise relative write message for `out_path`.
+
+    `kind` should be a short label like 'file', 'JSON', 'CSV', or 'image'.
+    """
+    try:
+        rel = os.path.relpath(str(out_path), start=str(mod_root))
+    except Exception:
+        rel = str(out_path)
+    print(f"Writing {kind}: {rel}")
 
 
 def convert_color(color: _pydt.Color) -> str:
@@ -142,7 +155,9 @@ def write_blocks(
                 if out_path.suffix not in (".yml", ".yaml"):
                     f.write("\n")
 
+    print_written("file", out_path)
     return out_path
+
 
 
 def write_culture_group_data(culture_data: list):
