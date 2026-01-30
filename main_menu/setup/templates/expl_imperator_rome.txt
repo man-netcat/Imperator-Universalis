@@ -28,9 +28,7 @@ discovered_areas = {
 	caspian_sea_area
 	#maghreb_region
 	morocco_area
-	sus_area
 	algiers_area
-	atlas_high_plateau
 	tunis_area
 	tripolitania_area
 	alboran_sea_area
@@ -89,6 +87,9 @@ discovered_provinces = {
 	guban_province
 	maakhir_province
 	majerteen_province
+
+	hodna_province
+	aures_province
 }
 discovered_areas = {
 
