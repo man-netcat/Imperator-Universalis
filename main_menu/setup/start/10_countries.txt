@@ -232,13 +232,11 @@ countries = {
 				marsciano
 				arezzo
 				cortona
-
 				# Corsica
 				bastia
 				corte
 				aleria
 				calvi
-
 			}
 			government = {
 				type = republic
@@ -312,7 +310,7 @@ countries = {
 				guastalla
 				parma
 				sandonnino
-				fiorenzuola			
+				fiorenzuola
 				reggioem
 				modena
 			}
@@ -334,7 +332,7 @@ countries = {
 				assisi
 				spoleto
 				cittacastello
-				gubbio				
+				gubbio
 			}
 			government = {
 				type = republic
@@ -382,7 +380,7 @@ countries = {
 			own_control_core = {
 				todi
 				narni
-				rieti 
+				rieti
 				cittaducale
 				aquila
 			}
@@ -431,7 +429,6 @@ countries = {
 				novi
 				rovegno
 				bardi
-
 			}
 			government = {
 				type = republic
@@ -565,7 +562,9 @@ countries = {
 		IOI = {
 			# Iliensia
 			own_control_core = {
-				ales sorgono isili
+				ales
+				sorgono
+				isili
 			}
 			government = {
 				type = tribe
@@ -641,6 +640,7 @@ countries = {
 			include = "expl_imperator_rome"
 			capital = cosenza
 		}
+		# Sicily
 		SYR = {
 			# Syracusae
 			own_control_core = {
@@ -657,30 +657,6 @@ countries = {
 			}
 			include = "expl_imperator_rome"
 			capital = syracuse
-		}
-		BLD = {
-			# Gymnaesia
-			own_control_core = {
-				palma ciudadela_de_menorca manacor pollensa
-			}
-			government = {
-				type = tribe
-				ruler = random
-			}
-			include = "expl_imperator_rome"
-			capital = carthage
-		}
-		IBA = {
-			# Ibasim
-			own_control_core = {
-				ibiza
-			}
-			government = {
-				type = republic
-				ruler = random
-			}
-			include = "expl_imperator_rome"
-			capital = ibiza
 		}
 		TYN = {
 			# Tyndaria
@@ -706,10 +682,108 @@ countries = {
 			include = "expl_imperator_rome"
 			capital = terranovasic
 		}
+		SCU = {
+			# Siculia
+			own_control_core = {
+				nicosiasic
+				piazza
+				caltanisetta
+			}
+			government = {
+				type = tribe
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = piazza
+		}
+		ACR = {
+			# Acragas
+			own_control_core = {
+				girgenti
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = girgenti
+		}
+		HEM = {
+			# Herakleia Minoa
+			own_control_core = {
+				sciacca
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = sciacca
+		}
+		SIN = {
+			# Selinous
+			own_control_core = {
+				mazara
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = mazara
+		}
+		CLA = {
+			# Calactea
+			own_control_core = {
+				mistretta
+				cefalu
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = mistretta
+		}
+		# Iberian Peninsula
+		BLD = {
+			# Gymnaesia
+			own_control_core = {
+				palma
+				ciudadela_de_menorca
+				manacor
+				pollensa
+			}
+			government = {
+				type = tribe
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = carthage
+		}
+		IBA = {
+			# Ibasim
+			own_control_core = {
+				ibiza
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = ibiza
+		}
 		# North Africa
 		CAR = {
 			# Carthage
 			own_control_core = {
+				# Sicily
+				trapani
+				salemi
+				palermo
+				corleone
+				termini
+				bivona
 				malta
 				# Sardinia
 				terralba
