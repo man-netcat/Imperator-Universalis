@@ -1,4 +1,19 @@
 #!/usr/bin/env python3
+from pathlib import Path
+import sys
+
+# Ensure the module's bundled `pyradox` package is used by inserting
+# the tools' pyradox `src` into `sys.path` and failing if absent.
+mod_root = Path(__file__).resolve().parent.parent
+script_dir = Path(__file__).resolve().parent
+tools_pyradox_src = script_dir / "pyradox" / "src"
+if tools_pyradox_src.exists():
+    sys.path.insert(0, str(tools_pyradox_src))
+else:
+    raise RuntimeError(
+        f"Required tools pyradox not found at {tools_pyradox_src}.\n"
+        "Please ensure tools/pyradox/src exists and contains the pyradox package."
+    )
 from ir_to_eu5.extract_data import (
     extract_coa_data,
     extract_country_data,
@@ -18,6 +33,7 @@ from ir_to_eu5.write_data import (
     write_religion_data,
     write_religion_group_data,
 )
+
 
 if __name__ == "__main__":
     culture_data = extract_culture_data()
