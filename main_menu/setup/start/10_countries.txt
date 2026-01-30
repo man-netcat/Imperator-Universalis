@@ -33,13 +33,57 @@ countries = {
 				orte
 				bracciano
 				celano
+				# Disconnected
+				rotondo
+				foggia
+				lucera
+				sansevero
 			}
 			government = {
 				type = republic
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = rome
+		}
+		APU = {
+			# Apulia
+			own_control_core = {
+				bari
+				barletta
+				altamura
+				monopoli
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = bari
+		}
+		ELE = {
+			# Elea
+			own_control_core = {
+				vallo
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = vallo
+		}
+		NUC = {
+			# Nuceria
+			own_control_core = {
+				salerno
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = salerno
 		}
 		PEL = {
 			# Pelignia
@@ -50,8 +94,119 @@ countries = {
 				type = tribe
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = sulmona
+		}
+		SIO = {
+			# Sipontum
+			own_control_core = {
+				manfredonia
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = manfredonia
+		}
+		THU = {
+			# Thuria
+			own_control_core = {
+				cassano
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = cassano
+		}
+		SAM = {
+			# Samnium
+			own_control_core = {
+				bovino
+				potenza
+				melfi
+				ariano
+				santangelo
+				benevento
+				avellino
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = bovino
+		}
+		LCA = {
+			# Lucania
+			own_control_core = {
+				campagna
+				salacon
+				lagonegro
+				santarcangelo
+				acerenza
+				montepeloso
+				andria
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = heraclea
+		}
+		TAR = {
+			# Tarentum
+			own_control_core = {
+				taranto
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = taranto
+		}
+		MSP = {
+			# Messapia
+			own_control_core = {
+				brindisi
+				lecce
+				francavilla
+				gallipoliita
+			}
+			government = {
+				type = tribe
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = brindisi
+		}
+		HCL = {
+			# Herakleia
+			own_control_core = {
+				matera
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = matera
+		}
+		MET = {
+			# Metapontum
+			own_control_core = {
+				martinafr
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = martinafr
 		}
 		ETR = {
 			# Etruria
@@ -89,7 +244,7 @@ countries = {
 				type = republic
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = grosseto
 		}
 		VNT = {
@@ -125,7 +280,7 @@ countries = {
 				type = republic
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = venice
 		}
 		LGN = {
@@ -145,7 +300,7 @@ countries = {
 				type = republic
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = ravenna
 		}
 		BOI = {
@@ -166,7 +321,7 @@ countries = {
 				type = tribe
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = bologna
 		}
 		UMB = {
@@ -186,8 +341,42 @@ countries = {
 				type = republic
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = spoleto
+		}
+		PIE = {
+			# Picentia
+			own_control_core = {
+				fermo
+				ascolipiceno
+				atri
+				teramo
+				csantangelo
+			}
+			government = {
+				type = tribe
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = atri
+		}
+		FRE = {
+			# Frentania
+			own_control_core = {
+				chieti
+				lanciano
+				vasto
+				larino
+				trivento
+				isernia
+				bojano
+			}
+			government = {
+				type = tribe
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = chieti
 		}
 		SAB = {
 			# Sabinia
@@ -202,7 +391,7 @@ countries = {
 				type = tribe
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = aquila
 		}
 		ANO = {
@@ -214,7 +403,7 @@ countries = {
 				type = republic
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = ancona
 		}
 		SNI = {
@@ -230,7 +419,7 @@ countries = {
 				type = republic
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = pesaro
 		}
 		GUN = {
@@ -249,7 +438,7 @@ countries = {
 				type = republic
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = genoa
 		}
 		FNT = {
@@ -264,7 +453,7 @@ countries = {
 				type = republic
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = lucca
 		}
 		HIS = {
@@ -279,7 +468,7 @@ countries = {
 				type = tribe
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = rovinj
 		}
 		DIT = {
@@ -289,14 +478,13 @@ countries = {
 				krk
 				rijeka
 				crikvenica
-				kaseg
 				otocac
 			}
 			government = {
 				type = tribe
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = senj
 		}
 		LBN = {
@@ -313,7 +501,7 @@ countries = {
 				type = tribe
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = zadar
 		}
 		DLM = {
@@ -331,7 +519,7 @@ countries = {
 				type = tribe
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = knin
 		}
 		PHA = {
@@ -344,7 +532,7 @@ countries = {
 				type = republic
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = brac
 		}
 		ASP = {
@@ -356,7 +544,7 @@ countries = {
 				type = republic
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = pag
 		}
 		BLR = {
@@ -371,7 +559,7 @@ countries = {
 				type = tribe
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = ozieri
 		}
 		IOI = {
@@ -383,15 +571,26 @@ countries = {
 				type = tribe
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = ales
+		}
+		CRO = {
+			# Croton
+			own_control_core = {
+				cotrone
+			}
+			government = {
+				type = republic
+				ruler = random
+			}
+			include = "expl_imperator_rome"
+			capital = cotrone
 		}
 		SYR = {
 			# Syracusae
 			own_control_core = {
 				syracuse
 				caltagirone
-				malta
 				modica
 				noto
 				messina
@@ -401,7 +600,7 @@ countries = {
 				type = monarchy
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = syracuse
 		}
 		BLD = {
@@ -413,7 +612,7 @@ countries = {
 				type = tribe
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = carthage
 		}
 		IBA = {
@@ -425,7 +624,7 @@ countries = {
 				type = republic
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = ibiza
 		}
 		TYN = {
@@ -437,7 +636,7 @@ countries = {
 				type = republic
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = patti
 		}
 		GEL = {
@@ -449,7 +648,7 @@ countries = {
 				type = republic
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = terranovasic
 		}
 		# North Africa
@@ -480,7 +679,7 @@ countries = {
 				type = republic
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = carthage
 		}
 		EGY = {
@@ -562,7 +761,7 @@ countries = {
 				type = monarchy
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = alexandria
 		}
 		CYR = {
@@ -585,7 +784,7 @@ countries = {
 				type = monarchy
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = al_bayda
 		}
 		# Anatolia
@@ -600,7 +799,7 @@ countries = {
 				type = republic
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = constantinople
 		}
 		CDD = {
@@ -612,7 +811,7 @@ countries = {
 				type = republic
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = uskudar
 		}
 		KRS = {
@@ -624,7 +823,7 @@ countries = {
 				type = republic
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = giresun
 		}
 		TRZ = {
@@ -638,7 +837,7 @@ countries = {
 				type = republic
 				ruler = random
 			}
-			include = "expl_mediterranean"
+			include = "expl_imperator_rome"
 			capital = trebizond
 		}
 	}
