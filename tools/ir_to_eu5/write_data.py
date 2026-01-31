@@ -400,41 +400,32 @@ def write_10_countries(ten_countries_data, country_data, eu5_map_data):
     blocks = []
     comment_tags = set()
 
+    location_to_province = (
+        _build_location_to_province_map(eu5_map_data)
+        if eu5_map_data is not None
+        else {}
+    )
+
     for country in country_data:
         tag = country["tag"]
+        country_name = country.get("name", tag)
         government_type = government_map[country_map[tag]["government"]]
 
+        # --- start from base, preserve everything ---
         base = ten_countries_data.get(tag, {})
-        base_government = base.get("government", {})
+        merged = dict(base)  # shallow copy
+
+        # --- own_control_core ---
         value = base.get("own_control_core", [])
-
-        # Normalize to a list
-        if value is None:
-            locations = []
-        else:
-            locations = value if isinstance(value, list) else [value]
-
-        country_name = country.get("name", tag)
-        ruler = base_government.get("ruler", "random")
-        gov_lines = [f"ruler = {ruler}", f"type = {government_type}"]
-
-        # Initialize lines
-        lines: list = []
-
-        # Start with country comment
-        lines.append(f"# {country_name}")
-        if not locations:
-            comment_tags.add(tag)
-
-        # Build mapping location -> province
-        location_to_province = (
-            _build_location_to_province_map(eu5_map_data)
-            if eu5_map_data is not None
-            else {}
+        locations = (
+            [] if value is None else value if isinstance(value, list) else [value]
         )
 
-        if locations:
-            # Group locations by province
+        if not locations:
+            comment_tags.add(tag)
+            # IMPORTANT: force inline empty block
+            merged["own_control_core"] = "{ }"
+        else:
             prov_map: dict[str, list] = {}
             for loc in locations:
                 key = str(loc)
@@ -444,45 +435,61 @@ def write_10_countries(ten_countries_data, country_data, eu5_map_data):
             own_sublines: list[str] = []
             for prov, locs in sorted(prov_map.items()):
                 own_sublines.append(f"# {prov}")
-                own_sublines.append(" ".join(str(x) for x in locs))
+                own_sublines.append(" ".join(locs))
 
-            lines.append(("own_control_core", own_sublines))
-        else:
-            # Empty block, leave own_control_core for manual fill
-            lines.append("own_control_core = { }")
+            merged["own_control_core"] = own_sublines
 
-        # Government sub-block
-        lines.append(("government", gov_lines))
+        # --- government (merge, don’t overwrite) ---
+        base_government = base.get("government", {})
+        merged_government = dict(base_government)
 
-        # Includes
+        merged_government.setdefault("ruler", base_government.get("ruler", "random"))
+        merged_government["type"] = government_type
+
+        merged["government"] = merged_government
+
+        # --- includes (preserve all, only normalize) ---
         raw_include = base.get("include", [])
-        if raw_include is None:
-            include_items = []
-        else:
-            include_items = (
-                raw_include if isinstance(raw_include, list) else [raw_include]
-            )
+        include_items = raw_include if isinstance(raw_include, list) else [raw_include]
 
         if "expl_imperator_rome" not in include_items:
-            include_items.insert(0, "expl_imperator_rome")
+            include_items = ["expl_imperator_rome", *include_items]
 
-        # Only quote include items
-        for x in include_items:
-            lines.append(f'include = "{x}"')
+        merged["include"] = include_items
 
-        # Other fields
-        rank = base.get("country_rank", "rank_county")
-        lines.append(f"country_rank = {rank}")
-        capital = base.get("capital", "REPLACE_ME")
-        lines.append(f"capital = {capital}")
+        # --- simple defaults ---
+        merged.setdefault("country_rank", "rank_county")
+        merged.setdefault("capital", "REPLACE_ME")
 
-        # Add block
+        # --- emit ---
+        lines: list = []
+        lines.append(f"# {country_name}")
+
+        for key, value in merged.items():
+            if key == "include":
+                for x in value:
+                    lines.append(f'include = "{x}"')
+
+            elif isinstance(value, dict):
+                sub = []
+                for k, v in value.items():
+                    sub.append(f"{k} = {v}")
+                lines.append((key, sub))
+
+            elif isinstance(value, list):
+                lines.append((key, value))
+
+            else:
+                # strings, numbers, AND inline "{ }"
+                lines.append(f"{key} = {value}")
+
         blocks.append((tag, lines))
 
-    # Wrap everything inside countries = { countries = { ... } }
     nested = ("countries", [("countries", blocks)])
-    # Insert current age line before countries so it's written at top-level
     top_line = "current_age = age_1_traditions"
+
     write_blocks_with_comments(
-        iu_10_countries, [top_line, nested], comment_tags=comment_tags
+        iu_10_countries,
+        [top_line, nested],
+        comment_tags=comment_tags,
     )
