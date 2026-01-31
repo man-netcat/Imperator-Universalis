@@ -3760,17 +3760,20 @@ countries = {
             country_rank = rank_county
             capital = thebes
         }
-#         KRK = {
-#             # Korkyra
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = monarchy
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        KRK = {
+            # Korkyra
+            own_control_core = {
+                # ionian_islands_province
+                corfu
+            }
+            government = {
+                ruler = random
+                type = monarchy
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = corfu
+        }
         AET = {
             # Aetolia
             own_control_core = {
@@ -4277,39 +4280,50 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         AST = {
-#             # Astakos
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         BIT = {
-#             # Bithynia
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = monarchy
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         HCP = {
-#             # Heraclea Pontica
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = monarchy
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        AST = {
+            # Astakos
+            own_control_core = {
+                # kocaeli_province
+                izmit
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = izmit
+        }
+        BIT = {
+            # Bithynia
+            own_control_core = {
+                # bolu_province
+                akyazi
+                # kocaeli_province
+                silli atpazari
+            }
+            government = {
+                ruler = random
+                type = monarchy
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = akyazi
+        }
+        HCP = {
+            # Heraclea Pontica
+            own_control_core = {
+                # bolu_province
+                akcasehir
+            }
+            government = {
+                ruler = random
+                type = monarchy
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = akcasehir
+        }
 #         IOA = {
 #             # Aeolia
 #             own_control_core = { }
@@ -4332,17 +4346,20 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         SNP = {
-#             # Sinope
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = monarchy
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        SNP = {
+            # Sinope
+            own_control_core = {
+                # sinop_province
+                sinop gerze
+            }
+            government = {
+                ruler = random
+                type = monarchy
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = sinop
+        }
         CDD = {
             # Calchedon
             own_control_core = {
@@ -4368,39 +4385,48 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         KIO = {
-#             # Kios
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = monarchy
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         KZK = {
-#             # Kyzikos
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         KYA = {
-#             # Kotyora
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        KIO = {
+            # Kios
+            own_control_core = {
+                # hudavendigar_province
+                iznik bursa
+            }
+            government = {
+                ruler = random
+                type = monarchy
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = iznik
+        }
+        KZK = {
+            # Kyzikos
+            own_control_core = {
+                # biga_province
+                bandirma
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = bandirma
+        }
+        KYA = {
+            # Kotyora
+            own_control_core = {
+                # canik_province
+                bayramlu
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = bayramlu
+        }
         KRS = {
             # Kerausous
             own_control_core = {
@@ -4426,17 +4452,20 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         AMS = {
-#             # Amisos
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        AMS = {
+            # Amisos
+            own_control_core = {
+                # sinop_province
+                samsun
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = samsun
+        }
         PRY = {
             # Antigonid Kingdom
             own_control_core = {
@@ -6597,17 +6626,20 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         TIE = {
-#             # Tieion
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        TIE = {
+            # Tieion
+            own_control_core = {
+                # bolu_province
+                eregli
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = eregli
+        }
 #         AKY = {
 #             # Arykandia
 #             own_control_core = { }
@@ -6707,17 +6739,20 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         KAK = {
-#             # Kaukonia
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = tribe
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        KAK = {
+            # Kaukonia
+            own_control_core = {
+                # safranbolu_province
+                bartin ulus mengen yenicepazari
+            }
+            government = {
+                ruler = random
+                type = tribe
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = bartin
+        }
 #         OBE = {
 #             # Olbe
 #             own_control_core = { }
