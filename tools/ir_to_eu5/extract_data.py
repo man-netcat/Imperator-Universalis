@@ -2,6 +2,7 @@ import json
 import re
 from collections import defaultdict
 from pathlib import Path
+from pprint import pprint
 from typing import Any
 
 import pyradox
@@ -248,47 +249,60 @@ def extract_10_countries():
 
 
 def extract_formable_data():
-    def find_tags(obj, target_tag=None, inside_not=False):
-        """Recursively find positive and negative tags."""
-        pos_tags = []
-        neg_tags = []
+    def find_values(obj, key_name, inside_not=False):
+        """Recursively extract positive and negative values for a single key."""
+        pos_values = []
+        neg_values = []
 
         if isinstance(obj, dict):
             for key, value in obj.items():
-                if key.upper() == "NOT":
-                    # Anything under NOT is negative
-                    pt, nt = find_tags(value, target_tag, inside_not=True)
-                    neg_tags.extend(pt + nt)
-                elif key == "tag":
+                upper_key = key.upper()
+                if upper_key in ("NOT", "NOR"):
+                    sub_pos, sub_neg = find_values(value, key_name, inside_not=True)
+                    neg_values.extend(sub_pos + sub_neg)
+                elif key == key_name:
+                    target_pos, target_neg = pos_values, neg_values
+                    if inside_not:
+                        target_pos, target_neg = neg_values, pos_values
+
                     if isinstance(value, list):
-                        for v in value:
-                            if not inside_not:
-                                pos_tags.append(v)
-                            else:
-                                neg_tags.append(v)
+                        target_pos.extend(value)
                     else:
-                        if not inside_not:
-                            pos_tags.append(value)
+                        val_lower = str(value).lower()
+                        if val_lower == "yes":
+                            target_pos.append("yes")
+                        elif val_lower == "no":
+                            target_neg.append("no")
                         else:
-                            neg_tags.append(value)
+                            target_pos.append(value)
                 else:
-                    pt, nt = find_tags(value, target_tag, inside_not)
-                    pos_tags.extend(pt)
-                    neg_tags.extend(nt)
+                    sub_pos, sub_neg = find_values(value, key_name, inside_not)
+                    pos_values.extend(sub_pos)
+                    neg_values.extend(sub_neg)
 
         elif isinstance(obj, list):
             for item in obj:
-                pt, nt = find_tags(item, target_tag, inside_not)
-                pos_tags.extend(pt)
-                neg_tags.extend(nt)
+                sub_pos, sub_neg = find_values(item, key_name, inside_not)
+                pos_values.extend(sub_pos)
+                neg_values.extend(sub_neg)
 
-        return pos_tags, neg_tags
+        return pos_values, neg_values
 
-    formables = []
+    # Keys we are already handling separately
+    handled_keys = [
+        "tag",
+        "primary_culture",
+        "country_culture_group",
+        "religion",
+        "is_tribal",
+        "is_monarchy",
+        "is_republic",
+    ]
+
+    formables = defaultdict(dict)
 
     for tier in [ir_tier_1_formables, ir_tier_2_formables, ir_tier_3_formables]:
         for path in tier.iterdir():
-            print(path)
             if path.suffix != ".txt" or not path.is_file():
                 continue
 
@@ -296,12 +310,15 @@ def extract_formable_data():
             country_decisions = tree["country_decisions"]
 
             for decision, decision_data in country_decisions.items():
-                print(decision)
                 decision_dict = decision_data["potential"].to_python()
-                pos, neg = find_tags(decision_dict)
-                print("Positive tags:", pos, "Negative tags:", neg)
-                formables.append(
-                    {"decision": decision, "positive_tags": pos, "negative_tags": neg}
-                )
 
+                for key in handled_keys:
+                    values = find_values(decision_dict, key)
+                    # Only include if not a tuple of two empty lists
+                    if values and (values != ([], [])):
+                        formables[decision][key] = values
+
+                formables[decision]["tier"] = tier.name
+
+    pprint(formables)
     return formables
