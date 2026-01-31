@@ -1,0 +1,1723 @@
+country_flavor = {
+	type = country
+	text = {
+		localization_key = country_rank_people
+		trigger = {
+			country_type = pop
+			government_type = government_type:tribe
+		}
+	}
+	text = {
+		localization_key = country_rank_league
+		trigger = {
+			tag = DEL
+			government_type = government_type:republic
+		}
+	}
+	# Colonies
+	text = {
+		localization_key = country_rank_colony_viceroyalty
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = country_rank_colony
+		trigger = {
+			is_subject_type = colonial_nation
+		}
+	}
+	text = {
+		localization_key = country_rank_governor
+		trigger = {
+			OR = {
+				has_reform = government_reform:soyurghal_governor_reform
+				has_reform = government_reform:soyurghal_governor_banished_reform
+				has_reform = government_reform:soyurghal_governor_effective_governor_reform
+			}
+		}
+	}
+	text = {
+		localization_key = rank_confederation
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = country_rank_cossacks_reform
+		trigger = {
+			has_reform = government_reform:cossacks_reform
+			country_rank != country_rank:rank_empire
+		}
+	}
+	text = {
+		localization_key = country_rank_empire_cossacks_reform
+		trigger = {
+			has_reform = government_reform:cossacks_reform
+			country_rank_is_empire = yes
+		}
+	}
+	################## EMPIRE ##################
+	text = {
+		localization_key = rank_empire_revolutionary
+		trigger = {
+			country_rank_is_empire = yes
+			government_type = government_type:monarchy
+			is_revolutionary = yes
+		}
+	}
+	text = {
+		localization_key = rank_empire_conquistador
+		trigger = {
+			country_rank_is_empire = yes
+			has_reform = government_reform:conquistador_country
+		}
+	}
+	text = {
+		localization_key = rank_empire_czech_commonwealth
+		trigger = {
+			has_reform = government_reform:bohemian_commonwealth_reform
+		}
+	}
+	# Republic
+	text = {
+		localization_key = rank_county_republic_maya
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_empire_pirate_republic
+		trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+			country_rank_is_empire = yes
+			government_type = government_type:republic
+		}
+	}
+	text = {
+		localization_key = rank_empire_republic_revolutionary
+		trigger = {
+			country_rank_is_empire = yes
+			government_type = government_type:republic
+			is_revolutionary = yes
+		}
+	}
+	text = {
+		localization_key = rank_empire_republic_judicate_reform
+		trigger = {
+			country_rank_is_empire = yes
+			has_reform = government_reform:judicate_reform
+		}
+	}
+	text = {
+		localization_key = rank_empire_bank
+		trigger = {
+			country_rank_is_empire = yes
+			has_reform = government_reform:banking_country
+		}
+	}
+	text = {
+		localization_key = rank_empire_union
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_united_states
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_empire_latin_empire
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_commonwealth_british_republic
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_empire_imperial_provinces
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_empire_signoria
+		trigger = {
+			country_rank_is_empire = yes
+			government_type = government_type:republic
+			has_reform = government_reform:dynastic_signoria_reform
+		}
+	}
+	text = {
+		localization_key = rank_empire_republic_high_alemannic
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_empire_republic
+		trigger = {
+			country_rank_is_empire = yes
+			government_type = government_type:republic
+		}
+	}
+	# Theocracy
+	text = {
+		localization_key = rank_kingdom_papacy
+		trigger = {
+			country_rank_is_empire = yes
+			government_type = government_type:theocracy
+			has_reform = government_reform:papacy_reform
+		}
+	}
+	text = {
+		localization_key = rank_empire_order
+		trigger = {
+			country_rank_is_empire = yes
+			government_type = government_type:theocracy
+			has_reform = government_reform:military_order_reform
+		}
+	}
+	text = {
+		localization_key = rank_empire_abbey
+		trigger = {
+			country_rank_is_empire = yes
+			government_type = government_type:theocracy
+			has_reform = government_reform:abbey_reform
+		}
+	}
+	text = {
+		localization_key = rank_empire_bishopric
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_empire_theocracy_dharmic
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_empire_theocracy
+		trigger = {
+			country_rank_is_empire = yes
+			government_type = government_type:theocracy
+		}
+	}
+	# Horde
+	text = {
+		localization_key = rank_empire_horde
+		trigger = {
+			country_rank_is_empire = yes
+			government_type = government_type:steppe_horde
+		}
+	}
+	# Tribe
+	text = {
+		localization_key = rank_empire_nu_tireni
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_empire_tribe
+		trigger = {
+			country_rank_is_empire = yes
+			government_type = government_type:tribe
+		}
+	}
+	# Mali
+	text = {
+		localization_key = rank_empire_mali
+		trigger = {
+			always = no
+		}
+	}
+	# Incan
+	text = {
+		localization_key = rank_empire_inca
+		trigger = {
+			always = no
+		}
+	}
+	# Aymara
+	text = {
+		localization_key = rank_empire_aymara
+		trigger = {
+			always = no
+		}
+	}
+	# Jurchen
+	text = {
+		localization_key = rank_empire_jurchen
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_empire_korean
+		trigger = {
+			always = no
+		}
+	}
+	# Default
+	text = {
+		localization_key = rank_kingdom_seven_kingdoms
+		trigger = {
+			always = no
+		}
+	}
+	#---- Dynasties ----
+	text = {
+		localization_key = rank_empire_ilkhanate
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_empire_persian
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_empire_muslim_mamluk
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_empire_muslim_marinids
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_empire_muslim_zayyanids
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_empire_muslim_hafsids
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_empire_muslim_nasrids
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_empire_tsar
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_empire_dynasty
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_empire_ethiopia
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_empire_kanem
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_empire_vietnamese
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_japanese_court
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_japanese_shogunate
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_empire_catholic_spain
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_empire_byzantine
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_empire_turkish
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_empire_nahua
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_empire
+		trigger = {
+			country_rank_is_empire = yes
+		}
+	}
+	################## KINGDOM ##################
+	text = {
+		localization_key = rank_kingdom_revolutionary
+		trigger = {
+			country_rank_is_kingdom = yes
+			government_type = government_type:monarchy
+			is_revolutionary = yes
+		}
+	}
+	# Republic
+	text = {
+		localization_key = rank_kingdom_pirate_republic
+		trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+			country_rank_is_kingdom = yes
+			government_type = government_type:republic
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_republic_revolutionary
+		trigger = {
+			country_rank_is_kingdom = yes
+			government_type = government_type:republic
+			is_revolutionary = yes
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_republic_judicate_reform
+		trigger = {
+			country_rank_is_kingdom = yes
+			has_reform = government_reform:judicate_reform
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_conquistador
+		trigger = {
+			has_reform = government_reform:conquistador_country
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_bank
+		trigger = {
+			country_rank_is_kingdom = yes
+			has_reform = government_reform:banking_country
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_maori
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_maya
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_united_provinces
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_united_states
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_republic_genoa
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_psihipqua
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_hoa
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_republic_venice
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_empire_signoria
+		trigger = {
+			country_rank_is_kingdom = yes
+			government_type = government_type:republic
+			has_reform = government_reform:dynastic_signoria_reform
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_commonwealth_british_republic
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_frisian_freedom
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_republic_high_alemannic
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_republic_novgorod
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_republic
+		trigger = {
+			country_rank_is_kingdom = yes
+			government_type = government_type:republic
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_catholic_spain
+		trigger = {
+			always = no
+		}
+	}
+	# Theocracy
+	text = {
+		localization_key = rank_kingdom_papacy
+		trigger = {
+			country_rank_is_kingdom = yes
+			government_type = government_type:theocracy
+			has_reform = government_reform:papacy_reform
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_order
+		trigger = {
+			country_rank_is_kingdom = yes
+			government_type = government_type:theocracy
+			has_reform = government_reform:military_order_reform
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_abbey
+		trigger = {
+			country_rank_is_kingdom = yes
+			government_type = government_type:theocracy
+			has_reform = government_reform:abbey_reform
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_bishopric
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_theocracy_dharmic
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_theocracy
+		trigger = {
+			country_rank_is_kingdom = yes
+			government_type = government_type:theocracy
+		}
+	}
+	# Horde
+	text = {
+		localization_key = rank_kingdom_horde
+		trigger = {
+			government_type = government_type:steppe_horde
+		}
+	}
+	# Tribe
+	text = {
+		localization_key = rank_kingdom_nu_tireni
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_tribe
+		trigger = {
+			country_rank_is_kingdom = yes
+			government_type = government_type:tribe
+		}
+	}
+	# Default
+	# Kanem
+	text = {
+		localization_key = rank_kingdom_kanem
+		trigger = {
+			always = no
+		}
+	}
+	# Mali
+	text = {
+		localization_key = rank_kingdom_mali
+		trigger = {
+			always = no
+		}
+	}
+	#Zimbabwe
+	text = {
+		localization_key = rank_kingdom_mutapa
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_zimbabwe
+		trigger = {
+			always = no
+		}
+	}
+	#--- Dynasties ---
+	text = {
+		localization_key = rank_kingdom_persian
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_muslim_mamluk
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_muslim_marinids
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_muslim_zayyanids
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_muslim_hafsids
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_muslim_nasrids
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_muslim
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_indian
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_commonwealth_polish_lithuanian
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_celtic_welsh
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_celtic
+		trigger = {
+			country_rank_is_kingdom = yes
+			has_reform = government_reform:celtic_traditions_reform
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_united_kingdom_british
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_grand_principality_slavic
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_crown
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_ethiopia
+		trigger = {
+			always = no
+		}
+	}
+	# Incan
+	text = {
+		localization_key = rank_kingdom_inca
+		trigger = {
+			always = no
+		}
+	}
+	# Aymara
+	text = {
+		localization_key = rank_kingdom_aymara
+		trigger = {
+			always = no
+		}
+	}
+	# Jurchen
+	text = {
+		localization_key = rank_kingdom_jurchen
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_japanese_daimyo
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_japanese_clan
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_vietnamese
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_russian_prince
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom
+		trigger = {
+			country_rank_is_kingdom = yes
+		}
+	}
+	################## DUCHY ##################
+	text = {
+		localization_key = rank_duchy_revolutionary
+		trigger = {
+			country_rank_is_duchy = yes
+			government_type = government_type:monarchy
+			is_revolutionary = yes
+		}
+	}
+	# Republic
+	text = {
+		localization_key = rank_duchy_pirate_republic
+		trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+			country_rank_is_duchy = yes
+			government_type = government_type:republic
+		}
+	}
+	text = {
+		localization_key = rank_duchy_republic_revolutionary
+		trigger = {
+			country_rank_is_duchy = yes
+			government_type = government_type:republic
+			is_revolutionary = yes
+		}
+	}
+	text = {
+		localization_key = rank_duchy_republic_judicate_reform
+		trigger = {
+			country_rank_is_duchy = yes
+			has_reform = government_reform:judicate_reform
+		}
+	}
+	text = {
+		localization_key = rank_duchy_bank
+		trigger = {
+			country_rank_is_duchy = yes
+			has_reform = government_reform:banking_country
+		}
+	}
+	text = {
+		localization_key = rank_duchy_united_provinces
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_ajawil
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_irechikwa
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_republic_genoa
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_republic_venice
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_grand_duchy_LIT
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_empire_signoria
+		trigger = {
+			country_rank_is_duchy = yes
+			government_type = government_type:republic
+			has_reform = government_reform:dynastic_signoria_reform
+		}
+	}
+	text = {
+		localization_key = rank_duchy_free_city
+		trigger = {
+			country_rank_is_duchy = yes
+			government_type = government_type:republic
+			international_organization:hre ?= {
+				country_has_special_status = {
+					type = special_status:free_city
+					country = prev
+				}
+			}
+		}
+	}
+	#Frisian
+	text = {
+		localization_key = rank_duchy_frisian_freedom
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_republic_high_alemannic
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_republic_novgorod
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_republic
+		trigger = {
+			country_rank_is_duchy = yes
+			government_type = government_type:republic
+		}
+	}
+	# Theocracy
+	text = {
+		localization_key = rank_empire_muslim
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_papacy
+		trigger = {
+			country_rank_is_duchy = yes
+			government_type = government_type:theocracy
+			has_reform = government_reform:papacy_reform
+		}
+	}
+	text = {
+		localization_key = rank_duchy_order_german_subject
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_order_subject
+		trigger = {
+			is_subject = yes
+			overlord ?= {
+				has_reform = government_reform:military_order_reform
+			}
+			country_rank_is_duchy = yes
+			government_type = government_type:theocracy
+			has_reform = government_reform:military_order_reform
+		}
+	}
+	text = {
+		localization_key = rank_duchy_order_german
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_order
+		trigger = {
+			country_rank_is_duchy = yes
+			government_type = government_type:theocracy
+			has_reform = government_reform:military_order_reform
+		}
+	}
+	text = {
+		localization_key = rank_duchy_abbey
+		trigger = {
+			country_rank_is_duchy = yes
+			government_type = government_type:theocracy
+			has_reform = government_reform:abbey_reform
+		}
+	}
+	text = {
+		localization_key = rank_duchy_bishopric
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_theocracy_dharmic
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_theocracy
+		trigger = {
+			country_rank_is_duchy = yes
+			government_type = government_type:theocracy
+		}
+	}
+	# Tribe
+	text = {
+		localization_key = rank_duchy_celtic_welsh
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_celtic_irish
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_tribe_maori
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_tribe_haudenosaunee
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_tribe
+		trigger = {
+			country_rank_is_duchy = yes
+			government_type = government_type:tribe
+		}
+	}
+	# Default
+	text = {
+		localization_key = rank_duchy_turkish
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_voivode
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_persian
+		trigger = {
+			always = no
+		}
+	}
+	#--- Dynasties ----
+	text = {
+		localization_key = rank_duchy_andalusi
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_muslim_marinids
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_muslim_zayyanids
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_muslim_hafsids
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_muslim_nasrids
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_muslim
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_indian
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_dauphiny
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_palatinate
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_principality
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_principality_slavic
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_free_city
+		trigger = {
+			international_organization:hre ?= {
+				country_has_special_status = {
+					type = special_status:free_city
+					country = ROOT
+				}
+			}
+		}
+	}
+	text = {
+		localization_key = rank_duchy_electorate
+		trigger = {
+			international_organization:hre ?= {
+				country_has_special_status = {
+					type = special_status:elector
+					country = ROOT
+				}
+			}
+		}
+	}
+	text = {
+		localization_key = rank_duchy_lordship
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_grandduchy
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_ethiopia
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_kanem
+		trigger = {
+			always = no
+		}
+	}
+	# Mali
+	text = {
+		localization_key = rank_duchy_mali
+		trigger = {
+			always = no
+		}
+	}
+	# Incan
+	text = {
+		localization_key = rank_duchy_inca
+		trigger = {
+			always = no
+		}
+	}
+	# Aymara
+	text = {
+		localization_key = rank_duchy_aymara
+		trigger = {
+			always = no
+		}
+	}
+	# Jurchen
+	text = {
+		localization_key = rank_duchy_jurchen
+		trigger = {
+			always = no
+		}
+	}
+	#Austria
+	text = {
+		localization_key = rank_duchy_archduchy
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_vietnamese
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_russian_prince
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_nahua
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy_thai
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_duchy
+		trigger = {
+			country_rank_is_duchy = yes
+		}
+	}
+	################## COUNTY ##################
+	text = {
+		localization_key = rank_county_revolutionary
+		trigger = {
+			country_rank_is_county = yes
+			government_type = government_type:monarchy
+			is_revolutionary = yes
+		}
+	}
+	# Republic
+	text = {
+		localization_key = rank_county_pirate_republic
+		trigger = {
+			has_reform = government_reform:pirate_brethren_reform
+			country_rank_is_county = yes
+			government_type = government_type:republic
+		}
+	}
+	text = {
+		localization_key = rank_county_republic_revolutionary
+		trigger = {
+			country_rank_is_county = yes
+			government_type = government_type:republic
+			is_revolutionary = yes
+		}
+	}
+	text = {
+		localization_key = rank_county_republic_judicate_reform
+		trigger = {
+			country_rank_is_county = yes
+			has_reform = government_reform:judicate_reform
+		}
+	}
+	text = {
+		localization_key = rank_county_bank
+		trigger = {
+			country_rank_is_county = yes
+			has_reform = government_reform:banking_country
+		}
+	}
+	text = {
+		localization_key = rank_county_united_province
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_county_burgh
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_county_city
+		trigger = {
+			country_rank_is_county = yes
+			government_type = government_type:republic
+			international_organization:hre ?= {
+				country_has_special_status = {
+					type = special_status:free_city
+					country = prev
+				}
+			}
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_republic_venice
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_empire_signoria
+		trigger = {
+			country_rank_is_county = yes
+			government_type = government_type:republic
+			has_reform = government_reform:dynastic_signoria_reform
+		}
+	}
+	text = {
+		localization_key = rank_county_republic_high_alemannic
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_county_republic
+		trigger = {
+			country_rank_is_county = yes
+			government_type = government_type:republic
+		}
+	}
+	# Theocracy
+	text = {
+		localization_key = rank_kingdom_papacy
+		trigger = {
+			country_rank_is_county = yes
+			government_type = government_type:theocracy
+			has_reform = government_reform:papacy_reform
+		}
+	}
+	text = {
+		localization_key = rank_county_theocracy_maya
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_county_order_german
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_county_order
+		trigger = {
+			country_rank_is_county = yes
+			government_type = government_type:theocracy
+			has_reform = government_reform:military_order_reform
+		}
+	}
+	text = {
+		localization_key = rank_county_abbey
+		trigger = {
+			country_rank_is_county = yes
+			government_type = government_type:theocracy
+			has_reform = government_reform:abbey_reform
+		}
+	}
+	text = {
+		localization_key = rank_county_bishopric
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_county_theocracy_dharmic
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_county_theocracy
+		trigger = {
+			country_rank_is_county = yes
+			government_type = government_type:theocracy
+		}
+	}
+	# Tribe
+	text = {
+		localization_key = rank_county_celtic_irish
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_county_tribe_maori
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_county_tribe_haudenosaunee
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_county_tribe
+		trigger = {
+			country_rank_is_county = yes
+			government_type = government_type:tribe
+		}
+	}
+	# Default
+	text = {
+		localization_key = rank_county_landgraviate
+		trigger = {
+			country_rank_is_county = yes
+			has_reform = government_reform:landgraviate
+		}
+	}
+	text = {
+		localization_key = rank_county_margraviate
+		trigger = {
+			country_rank_is_county = yes
+			has_reform = government_reform:margraviate
+		}
+	}
+	text = {
+		localization_key = rank_county_turkish
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_county_arabic
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_county_indian
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_county_jarldom
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_county_mormaerdom
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_county_kuchkabal
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_county_iya
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_county_iarldom
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_county_earldom
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_county_kanem
+		trigger = {
+			always = no
+		}
+	}
+	# Jersey
+	text = {
+		localization_key = rank_county_bailiwick
+		trigger = {
+			always = no
+		}
+	}
+	# Mali
+	text = {
+		localization_key = rank_county_mali
+		trigger = {
+			always = no
+		}
+	}
+	# Incan
+	text = {
+		localization_key = rank_county_inca
+		trigger = {
+			always = no
+		}
+	}
+	# Aymara
+	text = {
+		localization_key = rank_county_aymara
+		trigger = {
+			always = no
+		}
+	}
+	# Jurchen
+	text = {
+		localization_key = rank_county_jurchen
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_county_vietnamese
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_county_nahua
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_county_barangay
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_county_thai
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_county
+		fallback = yes
+	}
+}
+
+country_flavor_prefix = {
+	parent = country_flavor
+	suffix = "_prefix"
+	log_loc_errors = no
+	if_invalid_loc = return_empty
+}
+
+country_flavor_ADJ = {
+	parent = country_flavor
+	suffix = "_ADJ"
+	log_loc_errors = no
+	if_invalid_loc = fallback_to_next_entry
+}
+
+country_flavor_ruler_suffix_female = {
+	parent = country_flavor
+	suffix = "_ruler_suffix_female"
+	log_loc_errors = no
+	if_invalid_loc = return_empty
+}
+
+country_flavor_ruler_suffix_male = {
+	parent = country_flavor
+	suffix = "_ruler_suffix_male"
+	log_loc_errors = no
+	if_invalid_loc = return_empty
+}
+
+country_flavor_ruler_female = {
+	parent = country_flavor
+	suffix = "_ruler_female"
+	log_loc_errors = no
+	if_invalid_loc = fallback_to_next_entry
+}
+
+country_flavor_ruler_male = {
+	parent = country_flavor
+	suffix = "_ruler_male"
+	log_loc_errors = no
+	if_invalid_loc = fallback_to_next_entry
+}
+
+country_flavor_heir = {
+	type = country
+	text = {
+		localization_key = country_flavor_heir_successor
+		trigger = {
+			OR = {
+				government_type = government_type:theocracy
+				government_type = government_type:republic
+			}
+		}
+	}
+	text = {
+		localization_key = country_flavor_heir_tanist
+		trigger = {
+			succession_law = heir_selection:tanistry_elective
+		}
+	}
+	text = {
+		localization_key = country_flavor_heir_viscount
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_inca_heir
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_maya
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_maya_heir
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_japanese_court_heir
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = country_flavor_france_dauphin
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = country_flavor_heir_crown_prince
+		trigger = {
+			country_rank_level >= 3			# kingdom
+			government_type = government_type:monarchy
+		}
+	}
+	text = {
+		localization_key = country_flavor_heir
+		fallback = yes
+	}
+}
+
+country_flavor_heir_suffix = {
+	parent = country_flavor_heir
+	suffix = "_suffix"
+	log_loc_errors = no
+	if_invalid_loc = return_empty
+}
+
+country_flavor_heir_suffix_female = {
+	parent = country_flavor_heir
+	suffix = "_suffix_female"
+	log_loc_errors = no
+	if_invalid_loc = return_empty
+}
+
+country_flavor_heir_female = {
+	parent = country_flavor_heir
+	suffix = "_female"
+	log_loc_errors = no
+	if_invalid_loc = return_loc_key
+}
+
+country_flavor_regent = {
+	type = country
+	text = {
+		localization_key = country_flavor_regent_head_of_the_papal_conclave
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = country_flavor_regent_guardian
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = country_flavor_regent_administrator
+		trigger = {
+			government_type = government_type:republic
+		}
+	}
+	text = {
+		localization_key = country_flavor_regent
+		fallback = yes
+	}
+}
+
+country_flavor_regent_female = {
+	parent = country_flavor_regent
+	suffix = "_female"
+	log_loc_errors = yes
+	if_invalid_loc = return_loc_key
+}
+
+country_flavor_courtier = {
+	type = country
+	text = {
+		localization_key = country_flavor_courtier
+		fallback = yes
+	}
+}
+
+country_flavor_courtier_female = {
+	parent = country_flavor_courtier
+	suffix = "_female"
+	log_loc_errors = yes
+	if_invalid_loc = return_loc_key
+}
+
+country_flavor_consort = {
+	type = country
+	text = {
+		localization_key = country_flavor_consort_united_states
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = rank_japanese_court_consort
+		trigger = {
+			always = no
+		}
+	}
+	text = {
+		localization_key = country_flavor_consort
+		fallback = yes
+	}
+}
+
+country_flavor_consort_suffix = {
+	parent = country_flavor_consort
+	suffix = "_suffix"
+	log_loc_errors = no
+	if_invalid_loc = return_empty
+}
+
+country_flavor_consort_suffix_female = {
+	parent = country_flavor_consort
+	suffix = "_suffix_female"
+	log_loc_errors = no
+	if_invalid_loc = return_empty
+}
+
+country_flavor_consort_female = {
+	parent = country_flavor_consort
+	suffix = "_female"
+	log_loc_errors = no
+	if_invalid_loc = return_loc_key
+}

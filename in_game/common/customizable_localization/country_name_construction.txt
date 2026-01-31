@@ -39,6 +39,18 @@
 			OR = {
 				country_rank = country_rank:rank_empire
 				country_type = pop
+				AND = {
+					government_type = government_type:monarchy
+					OR = {
+						tag = SEL
+						tag = BPK
+						tag = PRY
+					}
+				}
+				AND = {
+					tag = DEL
+					government_type = government_type:republic
+				}
 			}
 		}
 	}
