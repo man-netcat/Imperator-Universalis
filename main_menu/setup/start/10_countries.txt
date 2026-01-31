@@ -3705,6 +3705,8 @@ countries = {
                 thessaloniki kassandreia mount_athos polygyros
                 # corinthia_province
                 corinth
+                # lemnos_province
+                sporades
                 # lower_macedonia_province
                 serres drama kavala rentina thasos
                 # neopatras_province
@@ -3961,17 +3963,20 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         KOS = {
-#             # Kos
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        KOS = {
+            # Kos
+            own_control_core = {
+                # rodos_province
+                kos
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = kos
+        }
         MGL = {
             # Megalopolis
             own_control_core = {
@@ -4106,17 +4111,19 @@ countries = {
             country_rank = rank_county
             capital = nafplio
         }
-#         HRA = {
-#             # Heraia
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        HRA = {
+            # Heraia
+            own_control_core = { 
+                karytaina
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = karytaina
+        }
         LPR = {
             # Lepreon
             own_control_core = {
@@ -4170,28 +4177,34 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         ELT = {
-#             # Eleutherna
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = monarchy
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         PYR = {
-#             # Polyrrhenia
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        ELT = {
+            # Eleutherna
+            own_control_core = {
+                # crete_province
+                candia
+            }
+            government = {
+                ruler = random
+                type = monarchy
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = candia
+        }
+        PYR = {
+            # Polyrrhenia
+            own_control_core = {
+                # crete_province
+                chania
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = chania
+        }
 #         LYT = {
 #             # Lyctus
 #             own_control_core = { }
@@ -4214,50 +4227,62 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         GRT = {
-#             # Gortyna
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         IEP = {
-#             # Ierapetra
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = monarchy
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         TRA = {
-#             # Tarrha
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         PRE = {
-#             # Praesos
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        GRT = {
+            # Gortyna
+            own_control_core = {
+                # crete_province
+                gergeri
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = gergeri
+        }
+        IEP = {
+            # Ierapetra
+            own_control_core = {
+                # crete_province
+                elounda
+            }
+            government = {
+                ruler = random
+                type = monarchy
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = elounda
+        }
+        TRA = {
+            # Tarrha
+            own_control_core = {
+                # crete_province
+                hagios_pavlos
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = hagios_pavlos
+        }
+        PRE = {
+            # Praesos
+            own_control_core = {
+                # crete_province
+                siteia
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = siteia
+        }
 #         MLO = {
 #             # Miletos
 #             own_control_core = { }
@@ -4269,17 +4294,22 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         RHO = {
-#             # Rhodes
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        RHO = {
+            # Rhodes
+            own_control_core = {
+                # mugla_province
+                marmaris yuksekkum
+                # rodos_province
+                rodos karpathos
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = rodos
+        }
         AST = {
             # Astakos
             own_control_core = {
@@ -4441,17 +4471,20 @@ countries = {
             country_rank = rank_county
             capital = giresun
         }
-#         HKS = {
-#             # Halikarnassos
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        HKS = {
+            # Halikarnassos
+            own_control_core = {
+                # mugla_province
+                bodrum
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = bodrum
+        }
         AMS = {
             # Amisos
             own_control_core = {
@@ -4471,8 +4504,16 @@ countries = {
             own_control_core = {
                 # antakya_province
                 antioch
+                # antalya_province
+                antalya
+                # cyprus_province
+                famagusta kyrenia larnaca limassol morphou paphos nicosia_cyp
                 # euboea_province
                 negroponte
+                # mugla_province
+                gokabat
+                # tarsus_province
+                tarsus
             }
             government = {
                 ruler = random
@@ -6433,28 +6474,34 @@ countries = {
             country_rank = rank_county
             capital = arta
         }
-#         ARD = {
-#             # Arkades
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         LAP = {
-#             # Lappa
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        ARD = {
+            # Arkades
+            own_control_core = {
+                # crete_province
+                viannos
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = viannos
+        }
+        LAP = {
+            # Lappa
+            own_control_core = {
+                # crete_province
+                rethymno
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = rethymno
+        }
         ASP = {
             # Chersos
             own_control_core = {
@@ -6571,17 +6618,22 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         LYC = {
-#             # Lycia
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        LYC = {
+            # Lycia
+            own_control_core = {
+                # antalya_province
+                kas finike
+                # mugla_province
+                megri
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = megri
+        }
 #         ISU = {
 #             # Isauria
 #             own_control_core = { }
@@ -6640,17 +6692,20 @@ countries = {
             country_rank = rank_county
             capital = eregli
         }
-#         AKY = {
-#             # Arykandia
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = tribe
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        AKY = {
+            # Arykandia
+            own_control_core = {
+                # antalya_province
+                elmali
+            }
+            government = {
+                ruler = random
+                type = tribe
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = elmali
+        }
 #         ORO = {
 #             # Oroandia
 #             own_control_core = { }
@@ -6673,50 +6728,62 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         ISI = {
-#             # Isindia
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = tribe
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         LAL = {
-#             # Lalasia
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = tribe
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         OEO = {
-#             # Oinoandia
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = tribe
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         KIB = {
-#             # Kibyratia
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = tribe
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        ISI = {
+            # Isindia
+            own_control_core = {
+                # antalya_province
+                istanoz
+            }
+            government = {
+                ruler = random
+                type = tribe
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = istanoz
+        }
+        LAL = {
+            # Lalasia
+            own_control_core = {
+                # icel_province
+                anamur silifke mut ermenek
+            }
+            government = {
+                ruler = random
+                type = tribe
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = anamur
+        }
+        OEO = {
+            # Oinoandia
+            own_control_core = {
+                # hamid_province
+                stefani
+            }
+            government = {
+                ruler = random
+                type = tribe
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = stefani
+        }
+        KIB = {
+            # Kibyratia
+            own_control_core = {
+                # mugla_province
+                golhisar
+            }
+            government = {
+                ruler = random
+                type = tribe
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = golhisar
+        }
 #         OML = {
 #             # Ormelia
 #             own_control_core = { }
@@ -6753,17 +6820,20 @@ countries = {
             country_rank = rank_county
             capital = bartin
         }
-#         OBE = {
-#             # Olbe
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = theocracy
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        OBE = {
+            # Olbe
+            own_control_core = {
+                # tarsus_province
+                corycus candir_cil
+            }
+            government = {
+                ruler = random
+                type = theocracy
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = corycus
+        }
         IBA = {
             # Ibasim
             own_control_core = {
