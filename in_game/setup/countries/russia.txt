@@ -53,7 +53,7 @@ MOS = {
 
 PZL = {
     # Override for PZL
-    color = 181
+    color = rgb { 175 65 181 }
     culture_definition = muscovite
     religion_definition = orthodox
     is_historic = yes
@@ -61,7 +61,7 @@ PZL = {
 
 KLM = {
     # Override for KLM
-    color = 81
+    color = rgb { 75 265 81 }
     culture_definition = muscovite
     religion_definition = orthodox
     is_historic = yes
@@ -69,7 +69,7 @@ KLM = {
 
 VLR = {
     # Override for VLR
-    color = 175
+    color = rgb { 112 165 175 }
     culture_definition = muscovite
     religion_definition = orthodox
     is_historic = yes
@@ -77,7 +77,7 @@ VLR = {
 
 UGL = {
     # Override for UGL
-    color = 75
+    color = rgb { 212 65 75 }
     culture_definition = muscovite
     religion_definition = orthodox
     is_historic = yes
@@ -85,7 +85,7 @@ UGL = {
 
 YRV = {
     # Override for YRV
-    color = 75
+    color = rgb { 12 165 75 }
     culture_definition = muscovite
     religion_definition = orthodox
     is_historic = yes
@@ -93,7 +93,7 @@ YRV = {
 
 TPS = {
     # Override for TPS
-    color = 175
+    color = rgb { 12 65 175 }
     culture_definition = novgorodian
     religion_definition = orthodox
     is_historic = yes
@@ -109,7 +109,7 @@ BLO = {
 
 YAR = {
     # Override for YAR
-    color = 242
+    color = rgb { 131 141 242 }
     culture_definition = muscovite
     religion_definition = orthodox
     is_historic = yes
@@ -117,7 +117,7 @@ YAR = {
 
 RSO = {
     # Override for RSO
-    color = 77
+    color = rgb { 227 221 77 }
     culture_definition = muscovite
     religion_definition = orthodox
     is_historic = yes
@@ -125,7 +125,7 @@ RSO = {
 
 TVE = {
     # Override for TVE
-    color = 183
+    color = rgb { 136 158 183 }
     culture_definition = muscovite
     religion_definition = orthodox
     is_historic = yes
@@ -133,7 +133,7 @@ TVE = {
 
 KAS = {
     # Override for KAS
-    color = 255
+    color = rgb { 15 102 255 }
     culture_definition = muscovite
     religion_definition = orthodox
     is_historic = yes
@@ -141,7 +141,7 @@ KAS = {
 
 KLN = {
     # Override for KLN
-    color = 147
+    color = rgb { 120 102 147 }
     culture_definition = muscovite
     religion_definition = orthodox
     is_historic = yes
@@ -149,7 +149,7 @@ KLN = {
 
 ZUB = {
     # Override for ZUB
-    color = 233
+    color = rgb { 150 82 233 }
     culture_definition = muscovite
     religion_definition = orthodox
     is_historic = yes
@@ -157,7 +157,7 @@ ZUB = {
 
 DMI = {
     # Override for DMI
-    color = 189
+    color = rgb { 189 189 189 }
     culture_definition = muscovite
     religion_definition = orthodox
     is_historic = yes
@@ -165,7 +165,7 @@ DMI = {
 
 GLM = {
     # Override for GLM
-    color = 76
+    color = rgb { 187 43 76 }
     culture_definition = muscovite
     religion_definition = orthodox
     is_historic = yes
