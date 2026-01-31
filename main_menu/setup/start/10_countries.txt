@@ -3939,7 +3939,7 @@ countries = {
             capital = xylokastro
         }
         DEL = {
-            # Nesiotic League
+            # Nesio
             own_control_core = {
                 # naxos_province
                 milos kythnos naxos mykonos amorgos
@@ -4113,7 +4113,8 @@ countries = {
         }
         HRA = {
             # Heraia
-            own_control_core = { 
+            own_control_core = {
+                # arcadia_province
                 karytaina
             }
             government = {
@@ -4500,7 +4501,7 @@ countries = {
             capital = samsun
         }
         PRY = {
-            # Antigonid Kingdom
+            # Antigonids
             own_control_core = {
                 # antakya_province
                 antioch
@@ -4755,7 +4756,7 @@ countries = {
 #             capital = REPLACE_ME
 #         }
 #         SEL = {
-#             # Seleukid Empire
+#             # Seleucids
 #             own_control_core = { }
 #             government = {
 #                 ruler = random
@@ -5451,7 +5452,7 @@ countries = {
 #             capital = REPLACE_ME
 #         }
 #         BPK = {
-#             # Bosporan Kingdom
+#             # Bospora
 #             own_control_core = { }
 #             government = {
 #                 ruler = random

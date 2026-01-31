@@ -149,7 +149,18 @@ def extract_country_data():
         country_setup_file: Path = ir_game / setup_dirs.get(country_tag)
         country_setup_tree = parse_tree(country_setup_file)
 
-        country_name = country_loc[country_tag]
+        tag_loc_overrides = {
+            "DEL": "Nesio",  # Nesiotic League
+            "SEL": "Seleucids",  # Seleucid Empire
+            "BPK": "Bospora",  # Bosporan Kingdom
+            "PRY": "Antigonids",  # Antigonid Kingdom
+        }
+
+        country_name = (
+            country_loc[country_tag]
+            if country_tag not in tag_loc_overrides
+            else tag_loc_overrides[country_tag]
+        )
         country_name_adj = country_loc[f"{country_tag}_ADJ"]
 
         country_blocks.append(

@@ -60,7 +60,6 @@ if __name__ == "__main__":
     write_religion_data(religion_data)
     write_country_setup(country_data, country_overrides)
     write_10_countries(ten_countries_data, country_data, eu5_map_data)
-    exit()  # deleteme
     write_coa_file(coa_data)
 
     write_localisation_files(culture_data, religion_data, country_data)
