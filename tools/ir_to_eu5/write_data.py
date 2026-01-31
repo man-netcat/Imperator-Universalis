@@ -1,11 +1,12 @@
+import os
 from collections import defaultdict
 from pathlib import Path
 from typing import List, Tuple, Union
-import os
 
 import pyradox
 import pyradox.datatype as _pydt
 
+from .data import government_map
 from .paths import *
 
 pyradox.Color = _pydt.Color
@@ -145,10 +146,14 @@ def write_blocks(
         for block in blocks_list:
             if isinstance(block, tuple) and len(block) == 2:
                 tag, lines = block
-                f.write(make_block(tag, lines, indent_level=0, indent_str=indent_str))
+                content = make_block(tag, lines, indent_level=0, indent_str=indent_str)
+                # Collapse accidental double-empty-brace sequences (e.g. "{ {} }")
+                content = content.replace("{ {} }", "{}")
+                f.write(content)
                 f.write("\n")
             else:
                 s = str(block)
+                s = s.replace("{ {} }", "{}")
                 f.write(s)
                 if not s.endswith("\n"):
                     f.write("\n")
@@ -157,7 +162,6 @@ def write_blocks(
 
     print_written("file", out_path)
     return out_path
-
 
 
 def write_culture_group_data(culture_data: list):
@@ -287,3 +291,198 @@ def write_localisation_files(
 
 def write_coa_file(coa_data: _pydt.Tree):
     write_blocks(iu_prescripted_coa, coa_data)
+
+
+def _build_location_to_province_map(tree) -> dict:
+    """Build a mapping from location -> province key by walking the eu5 map tree.
+
+    The tree is a nested dict/Tree structure where the smallest keys are location
+    identifiers and their parent is the province (the second-smallest tier).
+    """
+    mapping: dict = {}
+
+    def walk(node, parent=None):
+        # pyradox.Tree behaves like dict
+        if isinstance(node, (_pydt.Tree, dict)):
+            for k, v in node.items():
+                if isinstance(v, (_pydt.Tree, dict)):
+                    # k is a grouping key (could be province or higher); recurse
+                    walk(v, k)
+                elif isinstance(v, list):
+                    # list of scalar locations or subtrees
+                    for item in v:
+                        if isinstance(item, (_pydt.Tree, dict)):
+                            walk(item, k)
+                        else:
+                            mapping[str(item)] = k
+                else:
+                    # leaf value: k is likely a location name, parent is province
+                    mapping[str(k)] = parent if parent is not None else k
+        elif isinstance(node, list):
+            for item in node:
+                walk(item, parent)
+
+    walk(tree, None)
+    return mapping
+
+
+def write_blocks_with_comments(
+    out_path: Path,
+    blocks: List[Tuple[str, List[object]]],
+    comment_tags: set[str] | None = None,
+    mode: str = "w",
+    encoding: str = "utf-8",
+    indent_str: str = "    ",
+) -> Path:
+    if comment_tags is None:
+        comment_tags = set()
+
+    def render_block(tag: str, lines: list, level: int = 0) -> list[str]:
+        prefix = indent_str * level
+        inner_prefix = indent_str * (level + 1)
+        output: list[str] = []
+
+        # Check if we need to comment out this entire block
+        comment_block = tag in comment_tags
+
+        # Opening line
+        open_line = f"{prefix}{tag} = {{"
+        if comment_block:
+            open_line = "# " + open_line
+        output.append(open_line)
+
+        for line in lines:
+            if isinstance(line, tuple) and len(line) == 2:
+                subtag, sublines = line
+                sublines_rendered = render_block(subtag, sublines, level + 1)
+                if comment_block:
+                    # Prefix every line of sub-block
+                    sublines_rendered = [
+                        f"# {l}" if not l.startswith("#") else l
+                        for l in sublines_rendered
+                    ]
+                output.extend(sublines_rendered)
+            else:
+                l = f"{inner_prefix}{line}"
+                if comment_block:
+                    l = "# " + l if not l.startswith("#") else l
+                output.append(l)
+
+        # Closing brace
+        close_line = f"{prefix}}}"
+        if comment_block:
+            close_line = "# " + close_line
+        output.append(close_line)
+
+        return output
+
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+
+    with out_path.open(mode, encoding=encoding) as f:
+        for block in blocks:
+            if isinstance(block, tuple) and len(block) == 2:
+                tag, lines = block
+                rendered_lines = render_block(tag, lines, level=0)
+                f.write("\n".join(rendered_lines) + "\n")
+            else:
+                # raw string block
+                s = str(block)
+                f.write(s)
+                if not s.endswith("\n"):
+                    f.write("\n")
+
+    print_written("file", out_path)
+    return out_path
+
+
+def write_10_countries(ten_countries_data, country_data, eu5_map_data):
+    country_map = {country["tag"]: country for country in country_data}
+    blocks = []
+    comment_tags = set()
+
+    for country in country_data:
+        tag = country["tag"]
+        government_type = government_map[country_map[tag]["government"]]
+
+        base = ten_countries_data.get(tag, {})
+        base_government = base.get("government", {})
+        value = base.get("own_control_core", [])
+
+        # Normalize to a list
+        if value is None:
+            locations = []
+        else:
+            locations = value if isinstance(value, list) else [value]
+
+        country_name = country.get("name", tag)
+        ruler = base_government.get("ruler", "random")
+        gov_lines = [f"ruler = {ruler}", f"type = {government_type}"]
+
+        # Initialize lines
+        lines: list = []
+
+        # Start with country comment
+        lines.append(f"# {country_name}")
+        if not locations:
+            comment_tags.add(tag)
+
+        # Build mapping location -> province
+        location_to_province = (
+            _build_location_to_province_map(eu5_map_data)
+            if eu5_map_data is not None
+            else {}
+        )
+
+        if locations:
+            # Group locations by province
+            prov_map: dict[str, list] = {}
+            for loc in locations:
+                key = str(loc)
+                prov = location_to_province.get(key, "unknown")
+                prov_map.setdefault(prov, []).append(key)
+
+            own_sublines: list[str] = []
+            for prov, locs in sorted(prov_map.items()):
+                own_sublines.append(f"# {prov}")
+                own_sublines.append(" ".join(str(x) for x in locs))
+
+            lines.append(("own_control_core", own_sublines))
+        else:
+            # Empty block, leave own_control_core for manual fill
+            lines.append("own_control_core = { }")
+
+        # Government sub-block
+        lines.append(("government", gov_lines))
+
+        # Includes
+        raw_include = base.get("include", [])
+        if raw_include is None:
+            include_items = []
+        else:
+            include_items = (
+                raw_include if isinstance(raw_include, list) else [raw_include]
+            )
+
+        if "expl_imperator_rome" not in include_items:
+            include_items.insert(0, "expl_imperator_rome")
+
+        # Only quote include items
+        for x in include_items:
+            lines.append(f'include = "{x}"')
+
+        # Other fields
+        rank = base.get("country_rank", "rank_county")
+        lines.append(f"country_rank = {rank}")
+        capital = base.get("capital", "REPLACE_ME")
+        lines.append(f"capital = {capital}")
+
+        # Add block
+        blocks.append((tag, lines))
+
+    # Wrap everything inside countries = { countries = { ... } }
+    nested = ("countries", [("countries", blocks)])
+    # Insert current age line before countries so it's written at top-level
+    top_line = "current_age = age_1_traditions"
+    write_blocks_with_comments(
+        iu_10_countries, [top_line, nested], comment_tags=comment_tags
+    )

@@ -63,6 +63,7 @@ ir_map_data = ir_game / "map_data"
 # EU5 game paths
 eu5_game = _p("eu5_game")
 eu5_countries = eu5_game / "in_game" / "setup" / "countries"
+eu5_map_data = eu5_game / "in_game" / "map_data" / "definitions.txt"
 
 # Imperator Universalis mod paths
 # `mod_root` is derived from the location of this `tools` directory (two parents up).
@@ -84,3 +85,4 @@ iu_prescripted_coa = (
     / "zz_ir_pre_scripted_countries.txt"
 )
 iu_map_data = mod_root / "in_game" / "map_data"
+iu_10_countries = mod_root / "main_menu" / "setup" / "start" / "10_countries.txt"

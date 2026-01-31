@@ -8,26 +8,12 @@ import pyradox
 import pyradox.datatype as _pydt
 from pyradox.filetype.txt import parse as parse_txt
 
+from .data import government_map
 from .paths import *
 from .write_data import print_written
 
 pyradox.Tree = _pydt.Tree
 pyradox.Color = _pydt.Color
-
-governments = {
-    "aristocratic_monarchy": "monarchy",
-    "despotic_monarchy": "monarchy",
-    "stratocratic_monarchy": "monarchy",
-    "aristocratic_republic": "republic",
-    "plutocratic_republic": "republic",
-    "oligarchic_republic": "republic",
-    "democratic_republic": "republic",
-    "theocratic_monarchy": "theocracy",
-    "tribal_kingdom": "tribal",
-    "tribal_federation": "tribal",
-    "tribal_chiefdom": "tribal",
-}
-
 
 # ---------- Helper ----------
 
@@ -174,7 +160,7 @@ def extract_country_data():
                 "culture": f"ir_{country_data['primary_culture']}",
                 "religion": f"ir_{country_data['religion']}",
                 "government": country_data["government"],
-                "government_type": governments.get(country_data["government"]),
+                "government_type": government_map.get(country_data["government"]),
                 "color": country_setup_tree["color"],
                 "setup_dir": country_setup_file.parent.name,
                 "setup_file": country_setup_file.name,
@@ -236,3 +222,15 @@ def extract_coa_data():
     _replace_tga_with_dds(coa_tree)
 
     return coa_tree
+
+
+def extract_eu5_map_data():
+    tree = parse_tree(eu5_map_data).to_python()
+    return tree
+
+
+def extract_10_countries():
+    # Extracts the data for the countries that are currently already written to 10_countries.txt
+    tree = parse_tree(iu_10_countries)
+    countries = tree["countries"]["countries"].to_python()
+    return countries
