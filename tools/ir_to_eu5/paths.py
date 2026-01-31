@@ -59,6 +59,10 @@ ir_prescripted_coa = (
 )
 ir_coa_gfx = ir_game / "gfx" / "coat_of_arms"
 ir_map_data = ir_game / "map_data"
+ir_tier_1_formables = ir_game / "decisions" / "tier_1_formables"
+ir_tier_2_formables = ir_game / "decisions" / "tier_2_formables"
+ir_tier_3_formables = ir_game / "decisions" / "endgame_tags"
+
 
 # EU5 game paths
 eu5_game = _p("eu5_game")

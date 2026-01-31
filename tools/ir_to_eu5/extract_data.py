@@ -245,3 +245,63 @@ def extract_10_countries():
     tree = parse_tree(iu_10_countries)
     countries = tree["countries"]["countries"].to_python()
     return countries
+
+
+def extract_formable_data():
+    def find_tags(obj, target_tag=None, inside_not=False):
+        """Recursively find positive and negative tags."""
+        pos_tags = []
+        neg_tags = []
+
+        if isinstance(obj, dict):
+            for key, value in obj.items():
+                if key.upper() == "NOT":
+                    # Anything under NOT is negative
+                    pt, nt = find_tags(value, target_tag, inside_not=True)
+                    neg_tags.extend(pt + nt)
+                elif key == "tag":
+                    if isinstance(value, list):
+                        for v in value:
+                            if not inside_not:
+                                pos_tags.append(v)
+                            else:
+                                neg_tags.append(v)
+                    else:
+                        if not inside_not:
+                            pos_tags.append(value)
+                        else:
+                            neg_tags.append(value)
+                else:
+                    pt, nt = find_tags(value, target_tag, inside_not)
+                    pos_tags.extend(pt)
+                    neg_tags.extend(nt)
+
+        elif isinstance(obj, list):
+            for item in obj:
+                pt, nt = find_tags(item, target_tag, inside_not)
+                pos_tags.extend(pt)
+                neg_tags.extend(nt)
+
+        return pos_tags, neg_tags
+
+    formables = []
+
+    for tier in [ir_tier_1_formables, ir_tier_2_formables, ir_tier_3_formables]:
+        for path in tier.iterdir():
+            print(path)
+            if path.suffix != ".txt" or not path.is_file():
+                continue
+
+            tree = parse_tree(path)
+            country_decisions = tree["country_decisions"]
+
+            for decision, decision_data in country_decisions.items():
+                print(decision)
+                decision_dict = decision_data["potential"].to_python()
+                pos, neg = find_tags(decision_dict)
+                print("Positive tags:", pos, "Negative tags:", neg)
+                formables.append(
+                    {"decision": decision, "positive_tags": pos, "negative_tags": neg}
+                )
+
+    return formables

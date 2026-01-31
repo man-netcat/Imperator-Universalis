@@ -23,6 +23,7 @@ from ir_to_eu5.extract_data import (
     extract_country_data,
     extract_culture_data,
     extract_eu5_map_data,
+    extract_formable_data,
     extract_religion_data,
     write_json,
 )
@@ -48,6 +49,7 @@ if __name__ == "__main__":
     named_locations = {t[0]: t[1] for t in parse_definitions()}
     ten_countries_data = extract_10_countries()
     eu5_map_data = extract_eu5_map_data()
+    formable_data = extract_formable_data()
 
     write_json(culture_data, mod_root / "cultures.json")
     write_json(religion_data, mod_root / "religions.json")
