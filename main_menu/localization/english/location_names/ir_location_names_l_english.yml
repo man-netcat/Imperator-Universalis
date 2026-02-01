@@ -1,0 +1,1240 @@
+﻿l_english:
+
+ ##### NOTE: These are taken from the base game and are mostly meant for flavour.
+ ##### They're not really meant to be historically accurate for now.    
+ ##### For the future, move these somewhere else.
+
+ # Italy (Latinised only)
+ rome: "Roma"
+ ostia: "Ostia"
+ tivoli: "Tibur"
+ palestrina: "Praeneste"
+ velletri: "Velitrae"
+ terracina: "Anxur"
+ gaeta: "Caieta"
+ sora: "Sora"
+ sabina: "Sabinum"
+ rietI: "Reate"
+ narni: "Narnia"
+ spoleto: "Spoletium"
+ todi: "Tuder"
+ orvietano: "Volsinii"
+ viterbo: "Viterbium"
+ corneto: "Tarquinii"
+ chiusi: "Clusium"
+ perugia: "Perusia"
+ gubbio: "Iguvium"
+ assisi: "Asisium"
+ cittacastello: "Tifernum Tiberinum"
+ urbino: "Urbinum"
+ rimini: "Ariminum"
+ pesaro: "Pisaurum"
+ ancona: "Ancona"
+ ascolipiceno: "Asculum"
+ fermo: "Firmum"
+ teramo: "Interamnia"
+ atri: "Hatria"
+ chieti: "Teate"
+ lanciano: "Anxanum"
+ vasto: "Histonium"
+ aquila: "Aquila"
+ sulmona: "Sulmo"
+ celano: "Marruvium"
+ venafro: "Venafrum"
+ bojano: "Bovianum"
+ isernia: "Aesernia"
+ larino: "Larinum"
+ trivento: "Triventum"
+ benevento: "Beneventum"
+ nola: "Nola"
+ caserta: "Capua"
+ 
+ florence: "Florentia"
+ pisa: "Pisae"
+ lucca: "Luca"
+ arezzo: "Arretium"
+ siena: "Saena"
+ volterra: "Volaterrae"
+ cortona: "Cortona"
+ montalcino: "Mons Ilcinus"
+ grosseto: "Rusellae"
+ piombino: "Populonium"
+ 
+ bologna: "Bononia"
+ modena: "Mutina"
+ reggioem: "Regium Lepidi"
+ parma: "Parma"
+ piacenza: "Placentia"
+ imola: "Forum Cornelii"
+ faenza: "Faventia"
+ cesena: "Caesena"
+ ravenna: "Ravenna"
+ ferrara: "Forum Alieni"
+ 
+ milano: "Mediolanum"
+ pavia: "Ticinum"
+ brescia: "Brixia"
+ bergamo: "Bergomum"
+ como: "Comum"
+ cremona: "Cremona"
+ lodi: "Laus Pompeia"
+ mantova: "Mantua"
+ soncino: "Soncinium"
+ 
+ turin: "Augusta Taurinorum"
+ asti: "Hasta"
+ alba: "Alba Pompeia"
+ ivrea: "Eporedia"
+ vercelli: "Vercellae"
+ novara: "Novaria"
+ casale: "Vardacate"
+ susa: "Segusio"
+ 
+ verona: "Verona"
+ vicenza: "Vicetia"
+ padova: "Patavium"
+ este: "Ateste"
+ rovigo: "Rhodigium"
+ treviso: "Tarvisium"
+ aquileia: "Aquileia"
+ trento: "Tridentum"
+ bolzano: "Pons Drusi"
+
+
+ #### Greek ####
+ acerenza: "Acherontía"
+ acre: "Antióchia Ptolemais"
+ adakli: "Ártales"
+ adana: "Ádana"
+ adranos: "Adrianoí"
+ afrin: "Oinopáras"
+ afsin: "Arábissos"
+ ahlat: "Katála"
+ ahtopol: "Agathoúpolis"
+ ajdabiya: "Keratophylê" #Corniclanum is the latin name of the place which translates to Horn tribe i hellenized it a bit
+ akcasehir: "Dióspolis" 
+ akdagmadeni: "Argyríōn"
+ akhisar: "Thyáteira"
+ akhmim: "Panópolis"
+ akkus: "Kainón Chorión" 
+ aksaray: "Kolóneia"
+ aksehir: "Philomêlion"
+ akyazi: "Dēmêtrion"
+ al_bab: "Batnai" #no idea about the accent or if it has a better name
+ al_bayda: "Balagrae"
+ alaiye: "Korakêsion"
+ alasehir: "Philadélphia"
+ aleppo: "Véroia Syrías"
+ alexandria: "Alexándreia kat' Aígypton"
+ altamura: "Altilía"
+ altinekin: "Kóngoustos" 
+ altintas: "Sóa"
+ amadiya: "Aménti"
+ amasra: "Ámastris"
+ amasya: "Amáseia"
+ amman: "Philadélpheia Petraías"
+ anagni: "Anagnía"
+ anamur: "Anemoúrion"
+ anavarza: "Anázarbos"
+ andria: "Netion"
+ ankara: "Ánkyra"
+ antalya: "Attáleia"
+ antioch: "Antióchia"
+ aqaba: "Áila"
+ arac: "Otreía"
+ arak: "Aracha"
+ arapgir: "Arábrakes"
+ archar: "Razaría"
+ argenta: "Augoústa"
+ arguvan: "Argaoús"
+ ariano: "Arianó"
+ arsuz: "Rhōsós" 
+ artah: "Imma" #no idea where to put the accent
+ artanuji: "Artánissa"
+ ashmunayn: "Hermoúpolis Megálē"
+ aslanapa: "Aizianoí"
+ aswan: "Syênē"
+ asyut: "Lykópolis"
+ atfih: "Aphroditópolis"
+ athens: "Athina"
+ atpazari: "Agrilion"
+ avellino: "Avéllinon"
+ ayas: "Aigaí"
+ ayasuluk: "Ágios Theológos"
+ aydincik: "Gazíoura"
+ ayntab: "Antióchia Taúrou"
+ ayvacik: "Ássos"
+ baalbek: "Helioúpoli Syrías"
+ babadag: "Orgamê"
+ bafra: "Gadilôn"
+ bahariyya: "Óasis Mikra"
+ bahcesaray: "Nymphaíon"
+ balat: "Mílētos"
+ balikesir: "Palaiókastron"
+ baliseyh: "Lassóra"
+ ballsh: "Býllis"
+ balya: "Argýreia"
+ banaz: "Panásion" 
+ bandrima: "Pánormos"
+ baniyas: "Balanéai"
+ bansko.greek_lguage: "Bánsko"
+ bar_cg.greek_lguage: "Antivárion"
+ barca.greek_lguage: "Bárkē"
+ bargiri: "Perkí"
+ bari: "Bárion"
+ baris: "Kysis"
+ barletta: "Bardulos"
+ bartin: "Parthénios"
+ baskale: "Alouáka"
+ bayat: "Ximéni"
+ bayburt: "Baibérdon"
+ bayramic: "Sképsis"
+ bayramlu: "Kotýora"
+ beersheba: "Birosaba"
+ beirut: "Laodíkeia en tē Phoiníkē"
+ bekarlar: "Nazianzós"
+ belgrad: "Siggidónon"
+ benghazi: "Hesperís"
+ berat: "Poulcheriópolis"
+ bergama: "Pérgamon"
+ besni: "Býsson"
+ beypazari: "Lagánia"
+ beysehir: "Místheia"
+ biga: "Pēgaí"
+ bigadic: "Pigádia"
+ bihac: "Raetinium" #roman/latin
+ bilbeis: "Phelbes"
+ bilecik: "Bēlokômē"
+ bingol: "Rōmanoúpolis"
+ birgi: "Pyrgíon"
+ bitlis: "Balaleíson"
+ bitola: "Vitôlia"
+ bjelovar: "Mpiélobar"
+ bodrum: "Alikarnassós"
+ bogazliyan: "Kymbalaíos"
+ bolu: "Bithýnion" #alt. Klavdioúpolis, even Hadriana or Hadrianopolis all 4 names were used to refer to it
+ bolvadin: "Polýboton"
+ bor: "Thyána"
+ borac: "Kastra" #latin/roman is Castra, Hellenized it by using K
+ boruy: "Eirēnoúpolis"
+ bosra: "Vósra"
+ bovino: "Vibinum" #latin/roman
+ boyabat: "Ámnia"
+ bozan: "Potamós"
+ bozok: "Távia"
+ brac: "Elaphoússa"
+ branicevo: "Branítzova"
+ brindisi: "Brentésion"
+ burdur: "Polydōrion"
+ burraq: "Aenos"
+ bursa: "Prousa"
+ busir_quridis: "Bousiris"
+ butrint: "Bouthrōtón"
+ buzet: "Piquentum" #latin/roman name
+ cairo: "Helioúpolis"
+ can: "Palaiskepsis" 
+ canakkale: "Dardanéllia"
+ candir: "Évaissa"
+ candir_cil: "Papiríon"
+ cankiri: "Gángra"
+ cassano: "Thoúrioi"
+ castrovillari: "Neon Sassonion"
+ catak: "Satáks"
+ catalca: "Métrai"
+ catanzaro: "Skyllêtion"
+ caxud: "Augoústa" 
+ celje: "Kéleia" 
+ celtik: "Tolastochóra"
+ cemisgezek: "Tzimiskés"
+ cerkes: "Antonioúpolis"
+ cernavoda: "Axioúpolis"
+ cesme: "Erythraí"
+ cine: "Alábanda"
+ civitavecchia: "Kentoukéllai"
+ comacchio: "Spína"
+ constanta: "Tómis"
+ constantinople: "Kōnstantinoúpolis"
+ corfu: "Kérkyra"
+ corlu: "Tzouroulós"
+ corum: "Efcháneia"
+ corycus: "Kôrykos"
+ cosenza: "Kōsentía"
+ cotrone: "Kroton"
+ crikvenica: "Ad Turres" #latin/roman
+ cubuk: "Ikotárion"
+ cumra: "Kórna"
+ dabiq: "Minnica"
+ Damanhur: "Hermoúpolis Mikrá"
+ damascus: "Damaskós"
+ damietta: "Tamíathis"
+ dara: "Adráa"
+ darende: "Táranta"
+ dasmenda: "Dasméndron"
+ debar: "Azdra"
+ deir_ez_zor: "Dívra"
+ deir_qamar: "Baithmare"
+ deliktash: "Kángara"
+ demirci: "Aríandos"
+ derna: "Dárnis"
+ develi: "Kýzistra"
+ devol: "Deávolis"
+ devrekani: "Devletháni"
+ dina: "Boukephála" 
+ dinar: "Apámeia"
+ dinek_keskin: "Sarmalía"
+ divigri: "Sarmalía"
+ divrigi: "Leontokômē"
+ dluk: "Dolíxē Syrías"
+ domanic: "Domanítis"
+ dospat: "Despáti"
+ drastar: "Douróstoron"
+ drijeva: "Narenti" #latin/roman
+ dubica: "Ad Praetorium" #latin/roman
+ dubrovnik: "Ráousin"
+ dupnitsa: "Tobínitsa"
+ durres: "Dyrrháchion"
+ dursunbey: "Hadrianeion"
+ edfu: "Apollinòpolis Megálē"
+ edirne: "Adrianoúpolis"
+ edremit: "Adramýttion"
+ egin: "Vereísso"
+ egridir: "Akrōtêri"
+ eksil: "Sávatra" 
+ el_arish: "Rinokóroura" 
+ el_bahnasa: "Oxýrrhykhos"
+ el_balyana: "Polýbios"
+ el_burullus: "Parálios"
+ el_buwit: "Hierákōn Kômē"
+ el_jundi: "Poseideion"
+ el_mahalla: "Theodosiou"
+ el_qasr: "Môthis"
+ el_qoseir: "Leukós Limên"
+ el_tor: "Rhaithou"
+ elbasan: "Skámpis"
+ elbistan: "Plastentía"
+ elmali: "Akarassós" 
+ emet: "Tiberioúpolis" 
+ emirdag: "Amórion"
+ enez: "Aínos"
+ enguzud: "Lýkandos" 
+ enisala: "Almyrís"
+ ercis: "Árzes"
+ eregli: "Herákleia Pontikê" 
+ eregli_kar: "Irákleia Kyvístra"
+ ermenek: "Germanikópolis"
+ erzincan: "Kelezēnê"
+ erzurum: "Theodosiópolis"
+ esna: "Latópolis"
+ eynegol: "Angelókōmis"
+ faiyum: "Krocodilópolis"
+ famagusta: "Ammóchōstos"
+ faqus: "Phákousa"
+ faran: "Pharán"
+ finike: "Phoínix"
+ fiorenzuola: "Florentióla"
+ foca: "Phôkaia"
+ foggia: "Argórippa"
+ francavilla: "Yría"
+ fuwa: "Paua"
+ gadegara: "Theacliodiópolis"
+ gallipoli: "Kallípolis"
+ gallipoliita: "Kallípolis Apoylías"
+ gaza: "Seleúkia" #Gaza, kadytis, Seleucia
+ gediz: "Kádoi"
+ gemerek: "Ármaxa"
+ gerace: "Gerákion"
+ gerede: "Krateía"
+ gerger: "Arsámeia"
+ gerze: "Karoúsa"
+ gigen: "Oískos" #Oescus in roman/latin
+ giresun: "Kerasoús"
+ giza: "Phylakê"
+ gjakova: "Tzakóbitsa"
+ glamoc: "Salvium" #roman/latin
+ gokabat: "Ídyma"
+ goksun: "Koukousós"
+ golhisar: "Kívyra" 
+ gonen: "Ártemis Thermaía"
+ gordes: "Górdos"
+ gorele: "Kóralla"
+ gorizia: "Gkorítsia" #hellenized 
+ goynuk: "Koinon Gallikanon"
+ gradina: "Alata" #seems like a greek locations near the area
+ gradiski_brod: "Servitium" #roman/latin
+ guastalla: "Bríxellon"
+ gumus: "Diákopa"
+ gumushane: "Tzántzakon"
+ gurun: "Gávraina"
+ guzelhisar: "Trálleis" 
+ hacibektas: "Salánda"
+ hafik: "Kámisa"
+ hakkari: "Xekári"
+ hama: "Emathoùs"
+ hargan: "Kábassos"
+ harmancik: "Kyvéli"
+ harput: "Karkathiókerta"
+ harsova: "Carsium" #roman/latin
+ haskovo: "Mársa"
+ hatunsaray: "Lýstra"
+ hayrabolu: "Charioúpolis"
+ hebron: "Xebrônas"
+ herat: "Alexándria Areíōn"
+ hiw: "Dióspolis Mikrá"
+ hizan: "Xízan"
+ homs: "Émesa"
+ honaz: "Chonaí"
+ huseyinabad: "Mithridátion"
+ huwwarin: "Euaria"
+ idlib: "Seremyn" #couldn't find any more info than this name could be wrong about it
+ ilgin: "Tyraíon" 
+ ilic: "Análiba"
+ ilirska_bistrica: "Mpistríka Illyrías"
+ ilok: "Kókkio" # Cuccium
+ inebolu: "Iōnópolis"
+ inonu: "Basilika"
+ insuyu: "Pillitokómi"
+ irbid: "Árbēla"
+ isaccea: "Noviodunum" #roman/latin
+ iskenderun: "Alexandrétta"
+ iskilip: "Asklipieíon"
+ isparta: "Váris"
+ ispir: "Spér"
+ istanoz: "Ísinda" 
+ ithriya: "Seriana"
+ izmit: "Nikomêdeia" 
+ iznik: "Nikaía"
+ jabbul: "Gabula"
+ jableh: "Gábala"
+ jagodina: "Ad Octavum" #roman/latin
+ jajce: "Apeva" #roman/latin
+ jayrud: "Geroda"
+ jerusalem: "Hierosólyma"
+ kafartab: "Kapharda"
+ kahta: "Karakoús"
+ kalecik: "Malós"
+ kaliakra: "Kalê Ákrē"
+ kapan: "Kokoúsos"
+ karahisar_i_sahib: "Nikópolis"
+ karahisar_i_teke: "Áspendos"
+ karak: "Charach"
+ karakecili: "Áspona"
+ karapinar: "Thívasa"
+ karlovac: "Karoloúpolis" #Hellenized, not official
+ kars_armenia: "Phlauiópolis"
+ karvuna: "Dionysópolis"
+ kas: "Antíphellos"
+ kaseg: "Ancus" #might be roman/latin
+ kastamonu: "Kastamôn"
+ kavaje: "Kabágia"
+ kaymaz: "Trónka"
+ kayseri: "Kaisáreia"
+ kaysun: "Kabágia"
+ keban: "Sophēnê"
+ kelkit: "Sátala"
+ kemah: "Kámachon"
+ kesan: "Roúsion"
+ kharga: "Óasis h Esōtérō"
+ kharibta: "Archandropolis"
+ khujand: "Alexandria Eschata"
+ khupati: "Kíssa" #alt. Chópa 
+ kibrus: "Kýberē"
+ kicevo: "Kitsabis"
+ kilis: "Kiliza" #don't know where to put the accent
+ kirklareli: "Saránta Ekklisiés"
+ kirsehir: "Ioustinianoúpolis"
+ kiyikoy: "Mídeia"
+ kizilca: "Kokkinothérmai"
+ kljuc: "Klioúts" #hellenized
+ knin: "Burnum" #latin/roman
+ kocani: "Kótsanē" 
+ kochisar: "Parnassós"
+ koman: "Komani"
+ konrapa: "Proúsa prós tô Yppíô" #alt. Prusias, Proúsa Yppíou
+ konya: "Ikónion" 
+ koprivnica: "Kopribnítsa" #just hellenized, not official
+ kotor: "Dekatera" #Ascrivium in latin
+ koyulhisar: "Nikópolis Armenías"
+ kran: "Seuthopolis"
+ kranj: "Kranio" #cranium
+ kratovo: "Tranatoúra"
+ krk: "Kýrikon"
+ kruje: "Kroaí"
+ krupnik: "Scaptopára"
+ kula: "Iáza"
+ kulu: "Kínna"
+ kumanovo: "Vicianus"
+ kure_i_mamure: "Kýtorōn"
+ kursunlu: "Anadýnata"
+ kutahya: "Kotýaion"
+ kutina: "Varianis"
+ kutlovitsa: "Castra ad Montanesium" #latin/roman
+ kyrenia: "Kerýneia"
+ ladik: "Klaudiolaodíkeia"
+ ladik_pontus: "Laodíkeia Pontikí"
+ lagonegro: "Skídros"
+ lapseki: "Lápsakos"
+ lardeja: "Ladréa"
+ larende: "Láranda"
+ larnaca: "Lárnaka"
+ latakia: "Laodíkeia"
+ lazkiye: "Hierápolis"
+ lecce: "Loupía"
+ lezha: "Lissós"
+ limassol: "Lemesós"
+ livno: "Bariduum" #roman/latin
+ ljubljana: "Ēmona"
+ lom: "Artánes"
+ lovech: "Xisária" #possibly roman/latin 
+ lucera: "Loukería"
+ luleburgaz: "Arkadioúpolis"
+ maan: "Ammatha"
+ majdal: "Askálōna"
+ makarska: "Muccurum" #latin/roman
+ malatya: "Melitênē"
+ manavgat: "Sídē"
+ manbij: "Bambýcē"
+ manfalut: "Balot"
+ manfredonia: "Sipoús" 
+ manisa: "Magnēsía"
+ mansoura: "Phernouphis"
+ manyas: "Poimánēnon"
+ marash: "Germaníkeia"
+ marmaris: "Marmarída"
+ marrat: "Arra"
+ martinafr: "Kailía"
+ maskanah: "Barbalissous"
+ masyaf: "Marsyas"
+ matera: "Metapóntion"
+ matruh: "Ammōnía"
+ mazara: "Selinoúnta"
+ medicina: "Cláterna"
+ medveda: "Idimum" #roman/latin
+ megri: "Mákrē"
+ melfi: "Ouenousía"
+ melnik: "Melaéniko"
+ menemen: "Maineméni"
+ mengen: "Timónion"
+ menouf: "Onouphis Káto"
+ merzifon: "Myrsyfôn"
+ mesudiye: "Mêlas"
+ metkovic: "Narōna"
+ mihalic: "Militópolis"
+ mihaliccik: "Michalítsa"
+ milas: "Mýlasa"
+ minya: "Skēnaí Mándrai"
+ minyat_khubays: "Hermopolis"
+ mitrovica: "Ágios Dēmêtrios"
+ molevon: "Mapsoukrínai"
+ monopolis: "Monópolē"
+ monteleone: "Ippónion"
+ morphou: "Mórphou"
+ msus: "Masous"
+ mudurnu: "Módra"
+ mugla: "Moúgla"
+ mus: "Apostóli"
+ mut: "Klaudiópolis Kilikías"
+ nabek: "Casama"
+ nablus: "Flávia Neápolis"
+ nalli: "Milía"
+ naples: "Neápolis"
+ nawa: "Nauaí"
+ nazilli: "Mástaura"
+ nevrokop: "Nevrokópi"
+ nevsehir: "Neápolis Kappadokías"
+ nicastro: "Neókastron Kalabrías"
+ nicosia_cyp: "Leukousía"
+ nigde: "Nígdi"
+ nikopol: "Nikópolis"
+ niksar: "Neokaisáreia"
+ nis: "Nysós"
+ novigrad: "Neápolis"
+ novo_brdo: "Damástion"
+ novo_mesto: "Néo Mésto"
+ nuweiba: "Noubéimpa"
+ obruk: "Pétra"
+ ohrid: "Ochrída"
+ olovo: "Plumbum" #latin/roman
+ onogost: "Anderba" #latin/roman
+ orte: "Okríkolon"
+ oryahovo: "Variana" #latin/roman
+ osijek: "Mursa"
+ otocac: "Arupium" #latin/roman 
+ ovech: "Provat"
+ pakrac: "Pákrats" #hellenized, not official
+ palmira: "Métauron"
+ palu: "Paliós"
+ pangalia: "Kallátis"
+ paola: "Lampéteia"
+ paphos: "Páphos"
+ pazin: "Pétina"
+ peja: "Siparantum" #latin/roman
+ perperek: "Perperikón"
+ pertek: "Anzíta"
+ petrinja: "Pétrinia"
+ petrovaradin: "Pétrikon"
+ piedimonte: "Állifa"
+ pirloganda: "Ástra"
+ pirot: "Turres" #roman/latin
+ pleven: "Storgosia" #roman/latin
+ pljevlja: "Komini" #roman/latin, unsure
+ plovdiv: "Philippópolis"
+ podgorica: "Diockleía"
+ pola: "Póla"
+ polatli: "Górdion"
+ postojna: "Postónia"
+ potenza: "Potentía"
+ pozega: "Possega" #latin/roman 
+ pristina: "Ulpiana" #latin/roman
+ prizren: "Theranda" #latin/roman
+ prokuplje: "Komplos"
+ prosek: "Stenaí"
+ ptuj: "Poetóvio"
+ qalyub: "Calliópē"
+ qaryatayn: "Nazala"
+ qasr_farafra: "Farafra"
+ qastal: "Castellum" #latin/roman
+ qatya: "Gérron"
+ qena: "Chenobóskion"
+ qus: "Apóllōnos Mikrá"
+ qusayr: "Kadýtis"
+ qutayfah: "Adariná"
+ ramsis: "Khairéon"
+ rashid: "Bolbitínē"
+ razgrad: "Abritus"
+ reggiocalabria: "Rêgion" 
+ rijeka: "Vitópolis"
+ rize: "Rizaíon" 
+ rodoscuk: "Raidestós"
+ rossano: "Rhusianum"
+ rovinj: "Roubínio"
+ ruse: "Sexaginta Prista" #latin/roman
+ sabanozu: "Klóssama" 
+ safaga: "Philōtéra"
+ safed: "Sépph"
+ safranbolu: "Saphrámpolis"
+ saint_anthony: "Agíou Antôniou"
+ saint_katrine: "Hagías Aikaterínēs"
+ saint_paul_anchorite: "Agíou Paulou Thēbaíou"
+ sakhad: "Trikomia"
+ salacon: "Poseidōnía"
+ salamiyya: "Salamias"
+ salerno: "Sálernon"
+ sallum: "Tetrapýrgia"
+ samanoud: "Sebénnytos"
+ samsat: "Samósata"
+ samsun: "Amisós"
+ sandikli: "Hierápolis"
+ sansevero: " Castrum Drionis" #latin/roman
+ santangelo: "Cômpsa"
+ santarcangelo: "Herákleia"
+ sariyahsi: "Nýssa"
+ sarkikaraagac: "Adrianoúpolis Pisidías"
+ sarkisla: "Malandará"
+ scalea: "Láos"
+ sebinkarahisar: "Kolôneia"
+ selinti: "Selinoús"
+ semdinli: "Semzinán"
+ senj: "Athyinites" #don't see an accent, ancient greek 
+ seydisehir: "Ámblada"
+ seyhli: "Dionysiópolis" 
+ seyitgazi: "Nakóleia"
+ sharuna: "Hipponon"
+ shkoder: "Skódra"
+ shtip: "Stípeon"
+ shumen: "Simeonis"
+ sibenik: "Skárdōn"
+ sidon: "Sidôna"
+ silifke: "Seleúkia Kilikías"
+ silivri: "Silymvría"
+ silli: "Khēlaita"
+ simav: "Sýnaos"
+ sinj: "Aequum" #latin/roman
+ sinop: "Sinôpē"
+ siran: "Khērianá"
+ sis: "Sísion"
+ sisak: "Siskía"
+ sivas: "Sevásteia"
+ sivrice: "Cólchis"
+ sivrihisar: "Spaleía"
+ siwa: "Ámmōnos Ierón"
+ skofja_loka: "Skófia Lóka"
+ skopje: "Skoúpi"
+ sliven: "Sêlymnos"
+ slovenj_gradec: "Colatio"
+ slunj: "Slóbin" #hellenized, not official
+ smederevo: "Semendría"
+ smyrna: "Smýrni"
+ sogut: "Thēbásion"
+ soma: "Apollōnía"
+ sonisa: "Boínasa"
+ sorgun: "Evagína"
+ sozopol: "Apollōnía Pontikê"
+ split: "Aspálathos"
+ srebrenica: "Argentaria" #roman/latin
+ sredets: "Serdonópolis"
+ sremska_mitrovica: "Sírmion"
+ stanimaka: "Stenímachos"
+ strumica: "Stroumítsa"
+ suez: "Arsinóē"
+ sughar: "Pétra Hadrianoú"
+ suhut: "Sýnnada"
+ sukhnah: "Sikne"
+ sultanonu: "Dorýlaion"
+ suluklu: "Tolastochóra"
+ sulusaray: "Herakleioúpolis"
+ sungurlu: "Verinoúpolis"
+ surmene: "Soúrmena"
+ susurluk: "Mékestos"
+ suwayda: "Dionysiás"
+ tabqah: "Dausara"
+ tadmur: "Palmýra"
+ tahna: "Akoris"
+ taranto: "Táras"
+ tarsus: "Antiócheia Kilikías" #alt. Antiócheia Kýdnoy , Tarsós
+ tartus: "Antiarádos"
+ taskopru: "Pompēioúpolis" 
+ tatvan: "Dyzanás"
+ tavas: "Tauaí"
+ tavsanli: "Palox"
+ taybah: "Dausara"
+ tercan: "Derzēnê"
+ terme: "Themískyra"
+ tetovo: "Oaíneon"
+ thebes: "Thíva"
+ theodoro: "Chersónēsos"
+ tidah: "Phragonis"
+ tinnis: "Tanis"
+ tirana: "Tirkan"
+ tire: "Theíra"
+ tobruk: "Antípyrgos"
+ tokat: "Eudoksía"
+ tomarza: "Tomárza"
+ tosya: "Theodosía Paphlagonías"
+ trapessac: "Xáraks Meleágrou" #Meleagrum
+ trebinje: "Terboúnia"
+ trebizond: "Trapezoús"
+ trieste: "Tergéstē"
+ tripoli_syria: "Trípolis"
+ tsaribrod: "Translitis" #roman/latin
+ tsepina: "Tzépaina"
+ tulcea: "Aígissos"
+ turgut: "Klanéos"
+ tutrakan: "Transmarisca" #roman/latin
+ ulnia: "Oulnía"
+ uluborlu: "Sōzópolis"
+ ulus: "Olous"
+ unye: "Oinóē"
+ urgup: "Ágios Prokópios"
+ urla: "Klazomenaí"
+ usak: "Timenothýra"
+ uskudar: "Chalkedóna" 
+ uzice: "Capedunum" #roman/latin
+ vallo: "Eléa"
+ van: "Eúa" 
+ varazdin: "Bárazntin" #hellenized it, not official
+ varna: "Pautalía" 
+ vaska: "Báska" #hellenized, not official
+ velbuzd: "Odēssós" 
+ veles: "Velesá"
+ veliki_preslav: "Nikópolis pros ton Ístron"
+ vidin: "Vidýnē"
+ virovitica: "Birobítitsa" #hellenized it, not official
+ vize: "Bizýi"
+ vrhbosna: "Katerá"
+ vukovar: "Kórnakon"
+ warrada: "Kerkásōros" 
+ yahyali: "Rodandos" 
+ yalvac: "Antiócheia Pisidías" 
+ yenicepazari: "Genitsá" 
+ yuksekkum: "Kaúnos"
+ zadar: "Ídassa"
+ zagreb: "Andautónion"
+ zakho: "Xasanía"
+ zara: "Zára"
+ zardana: "Zardánia" #hellenized it, not official
+ zenica: "Bistua Nuova" #roman/latin
+ zile: "Zêla"
+
+ #### Gaelic ####
+
+ ### Region 'ireland_region' (Ireland) ###
+
+ ## Area 'leinster_area' (Leinster) ##
+ # Province 'dublin_province' (Dublin) #
+ dublin: "Dubh Linn"
+ fingal: "Mullach Íde" # Malahide
+ wicklow: "Cill Mhantáin"
+ glendalough: "Gleann Dá Loch"
+ # Province 'meath_province' (Meath) #
+ trim: "Baile Átha Troim"
+ kells: "Ceanannas"
+ mullingar: "An Muileann gCearr"
+ longford: "An Longfort"
+ ardagh: "Árdach"
+ ballymore: "An Baile Mór"
+ tullamore: "Tulach Mhór"
+ navan: "An Uaimh"
+ # Province 'wexford_province' (Wexford) #
+ wexford: "Loch Garman"
+ new_ross: "Ros Mhic Thriúin" # New Ross
+ ferns: "Fearna"
+ carlow: "Ceatharlach"
+ # Province 'kildare_province' (Kildare) #
+ kildare: "Cill Dara"
+ naas: "Nás na Ríogh"
+ athy: "Baile Átha Í"
+ dunamase: "Dún Másc"
+ daingean: "An Daingean"
+ # Province 'kilkenny' (Kilkenny) #
+ kilkenny: "Cill Chainnigh"
+ cullahill: "An Chúlchoill" # Cullohill
+
+ ## Area 'ulster_area' (Ulster) ##
+ # Province 'antrim_province' (Antrim) #
+ carrickfergus: "Carraig Fhearghais"
+ belfast: "Béal Feirste"
+ ballymena: "Aontroim" # Antrim
+ ballycastle: "Gleann Arma" # Glenarm
+ dunluce: "Dún Libhse"
+ # Province 'down_province' (Down) #
+ downpatrick: "Dún Pádraig"
+ iveagh: "Ráth Fraoileann" # Rathfriland
+ newtownards: "Beannchor" # Bangor
+ # Province 'tyrone_province' (Tyrone) #
+ dungannon: "Dún Geanainn"
+ strabane: "An Srath Bán"
+ clogher: "Cloch Oir"
+ enniskillen: "Lios na Scéithe" # Lisnaskea
+ belcoo: "Béal Cú"
+ # Province 'derry_province' (Derry) #
+ derry: "Doire"
+ derry_londonderry: "Londaindoire"
+ coleraine: "Cúil Raithin"
+ magherafelt: "Machaire Fíolta"
+ # Province 'donegal_province' (Donegal) #
+ donegal: "Dún na nGall"
+ kilmacrennan: "Leitir Ceanainn" # Letterkenny
+ inishowen: "Bun Cranncha" # Buncranna
+ raphoe: "Ráth Bhoth"
+ # Province 'oriel_province' (Oriel) #
+ monaghan: "Muineachán"
+ carrickmacross: "Inis Caoin" # Inniskeen
+ armagh: "Ard Mhacha"
+ oriel: "An Iúraigh" # Newry
+ dundalk: "Dún Dealgan"
+ drogheda: "Droichead Átha"
+
+ ## Area 'connaught_area' (Connaught) ##
+ # Province 'galway_province' (Galway) #
+ galway: "Gaillimh"
+ clifden: "Eanach Dhúin" # Annaghdown
+ athenry: "Baile Átha an Rí"
+ tuam: "Tuaim"
+ kilconnell: "Cill Chonaill"
+ # Province 'roscommon_province' (Roscommon) #
+ roscommon: "Ros Comáin"
+ castlereagh: "Caisleán Riabhach" # Castlerea
+ sligo: "Sligeach"
+ athlone: "Baile Átha Luain"
+ skreen: "An Scrín"
+ # Province 'breifne_province' (Breifne) #
+ dromahair: "Droim Dhá Thiar"
+ leitrim: "Liatroim"
+ killeshandra: "Béal Átha Conaill" # Ballyconnell
+ cavan: "An Cabhán"
+ killycolly: "Coill Choille"
+ # Province 'mayo_province' (Mayo) #
+ castlebar: "Caisleán an Bharraigh"
+ burrishoole: "Muirisc" # Murrisk
+ erris: "Cill Ala" # Kilalla
+ ballaghaderreen: "Bealach an Doirín"
+
+ ## Area 'munster_area' (Munster) ##
+ # Province 'cork_province' (Cork) #
+ cork: "Corcaigh"
+ fermoy: "Mala" # Mallow
+ kinsale: "Cionn tSáile"
+ youghal: "Eochaill"
+ # Province 'desmond_province' (Desmond) #
+ killarney: "Cill Airne"
+ carbery: "Dún Baoith" # Dunboy
+ kilbrittain: "Cill Briotáin"
+ muskerry: "Blarna" # Blarney
+ dunhallow: "Ceann Toirc" # Kanturk
+ # Province 'limerick_province' (Limerick) #
+ tralee: "Trá Lí"
+ dingle: "An Daingean Uí Chúis"
+ limerick: "Luimneach"
+ killmallock: "Cill Mocheallóg"
+ adare: "Áth Dara"
+ castleconnell: "Caisleán Uí Chonaill"
+ # Province 'clare_province' (Clare) #
+ ennis: "Inis"
+ bunratty: "Bun Raite"
+ moyarta: "Cill Rois" # Kilrush
+ # Province 'tipperary_province' (Tipperary) #
+ tipperary: "Tiobraid Árann"
+ nenagh: "Aonach Urmhumhan"
+ clonmel: "Cluain Meala"
+ cashel: "Caiseal"
+ roscrea: "Ros Cré"
+ moycarn: "Biorra" # Birr
+ # Province 'waterford_province' (Waterford) #
+ waterford: "Port Láirge"
+ dungarvan: "Dún Garbhán"
+ carrickbeg: "Cill Miodáin" # Kilmeaden
+
+ ### Region 'great_britain_region' (Britain) ###
+
+ ## Area 'scottish_highlands_area' (Highlands) ##
+ # Province 'moray_province' (Moray) #
+ inverness: "Inbhir Nis"
+ urquhart: "Urchadain"
+ elgin: "Eilginn"
+ badenoch: "Bàideanach"
+ # Province 'ross_province' (Ross) #
+ dingwall: "Inbhir Pheofharain"
+ gairloch: "Geàrrloch"
+ ullapool: "Asainn" # Assynt
+ # Province 'sutherland_province' (Sutherland) #
+ dornoch: "Dòrnach"
+ durness: "Diùirinis"
+ tongue: "Tunga"
+ thurso: "Inbhir Theòrsa"
+ # Province 'argyll_province' (Argyll) #
+ inverary: "Inbhir Aora"
+ oban: "Latharna" # Lorne
+ cowal: "Comhghall"
+ lochaber: "Loch Abar"
+ ardtornish: "Àird Tòrranais"
+ kintyre: "Ceann Tìre"
+
+ ## Area 'hebrides_area' (Hebrides) ##
+ # Province 'outer_hebrides_province' (Outer Hebrides) #
+ lewis: "Leòdhas"
+ uist: "Uibhist"
+ harris: "Na Hearadh"
+ skye: "An t-Eilean Sgitheanach"
+ # Province 'inner_hebrides_province' (Inner Hebrides) #
+ arran: "Árainn"
+ mull: "Muile"
+ islay: "Ìle"
+ mann: "Mannainn"
+
+ #### Brythonic ####
+ ### Region 'great_britain_region' (Britain) ###
+
+ ## Area 'home_counties_area' (Home Counties) ##
+ # Province 'middlesex_province' (Middlesex) #
+ london: "Llundein" # London
+ # Province 'surrey_province' (Surrey) #
+ reigate: "Rheigat" # Reigate
+ guildford: "Cilgordd" # Guildford
+ woking: "Gwgwcyn" # Woking
+ kingston: "Trefybrênin" # Kingston
+ # Province 'hampshire_province' (Hampshire) #
+ southampton: "Aberhant" # Southampton
+ portsmouth: "Porthwth" # Portsmouth
+ winchester: "Caerwyn" # Winchester
+ lymington: "Lymglynn" # Lymington
+ wight: "Ynys Wydd" # Wight
+ basingstoke: "Afonbas" # Basingstoke
+ # Province 'kent_province' (Kent) #
+ dover: "Dofr" # Dover
+ canterbury: "Caergaint" # Canterbury
+ rochester: "Rhwddr" # Rochester
+ hythe: "Ystwyth" # Hythe
+ tonbridge: "Ponttwyn" # Tunbridge
+ # Province 'sussex_province' (Sussex) #
+ shoreham: "Abertraeth" # Shoreham
+ lewes: "Llewys" # Lewes
+ hastings: "Hasting" # Hastings
+ chichester: "Caerfaddon" # Chichester
+ # Province 'bedfordshire_province' (Bedfordshire) #
+ dunstable: "Trefdwnstabl" # Dunstable
+ bedford: "Rhydfarch" # Bedford
+ # Province 'oxfordshire_province' (Oxfordshire) #
+ oxford: "Rhydychen" # Oxford
+ henley: "Henlle" # Henley
+ banbury: "Banbri" # Banbury
+ # Province 'berkshire_province' (Berkshire) #
+ windsor: "Wyntyr" # Windsor
+ reading: "Rhedyn" # Reading
+ abingdon: "Abingdwn" # Abingdon
+ # Province 'buckinghamshire_province' (Buckinghamshire) #
+ buckingham: "Bucheiniawg" # Buckingham
+ aylesbury: "Aylesbri" # Aylesbury
+ wycombe: "Gwychwm" # Wycombe
+
+ ## Area 'midlands_area' (Mercia) ##
+ # Province 'leicestershire_province' (Leicestershire) #
+ leicester: "Caerlŷr" # Leicester
+ loughborough: "Caerlwch" # Loughborough
+ bosworth: "Boswerdd" # Bosworth
+ rutland: "Rhydlan" # Oakham
+ # Province 'derbyshire_province' (Derbyshire) #
+ derby: "Derbei" # Derby
+ glossop: "Glosob" # Glossop
+ chesterfield: "Maescaer" # Chesterfield
+ # Province 'nottinghamshire_province' (Nottinghamshire) #
+ nottingham: "Tigguocobauc" # Nottingham
+ newark: "Newar" # Newark
+ retford: "Rhydffordd" # Retford
+ # Province 'lincolnshire_province' (Lincolnshire) #
+ lincoln: "Lindocolyn" # Lincoln
+ boston: "Rhydgwas" # Boston
+ grimsby: "Abergrym" # Grimsby
+ grantham: "Grauntham" # Grantham
+ louth: "Llwdd" # Louth
+ spalding: "Ysbyldin" # Spalding
+ # Province 'northamptonshire_province' (Northamptonshire) #
+ northampton: "Trefoeth" # Northampton
+ daventry: "Dyfenty" # Daventry
+ kettering: "Ceteryn" # Kettering
+ # Province 'warwickshire_province' (Warwickshire) #
+ coventry: "Caerfent" # Coventry
+ birmingham: "Abermyrddin" # Birmingham
+ stratford: "Rhydfford" # Stratford
+ # Province 'shropshire_province' (Shropshire) #
+ shrewsbury: "Amwythig" # Shrewsbury
+ oswestry: "Croesoswallt" # Oswestry
+ ludlow: "Llwydlo" # Ludlow
+ # Province 'herefordshire_province' (Herefordshire) #
+ hereford: "Henffordd" # Hereford
+ ewyas: "Ewias" # Longtown
+ wigmore: "Coedwigfa" # Wigmore
+ # Province 'worcestershire_province' (Worcestershire) #
+ worcester: "Caerwrangon" # Worcester
+ kidderminster: "Pencoed" # Kidderminster
+ # Province 'staffordshire_province' (Staffordshire) #
+ stafford: "Rhydystaf" # Stafford
+ stoke: "Ystog" # Stoke
+ tamworth: "Tamwrd" # Lichfield
+
+ ## Area 'northumbria_area' (Northumbria) ##
+ # Province 'lancashire_province' (Lancashire) #
+ lancaster: "Caerlanc" # Lancaster
+ blackburn: "Aberddu" # Blackburn
+ liverpool: "Lerpwl" # Liverpool
+ preston: "Prestatwn" # Preston
+ manchester: "Manceinion" # Manchester
+ # Province 'north_riding_province' (North Riding) #
+ york: "Efrog" # York
+ scarborough: "Aberysgar" # Scarborough
+ bedale: "Beddale" # Bedale
+ richmond: "Catraeth" # Richmond
+ whitby: "Gwynfa" # Whitby
+ # Province 'east_riding_province' (East Riding) #
+ hull: "Cyll" # Hull
+ bridlington: "Penllin" # Bridlington
+ selby: "Selyf" # Selby
+ norton: "Trefnor" # Norton
+ # Province 'west_riding_province' (West Riding) #
+ leeds: "Lleds" # Leeds
+ pontefract: "Pontffrac" # Pontefract
+ skipton: "Ysgibtwn" # Skipton
+ wakefield: "Maescodi" # Huddersfield
+ doncaster: "Caerdon" # Doncaster
+ ripon: "Rhibon" # Ripon
+ # Province 'northumberland_province' (Northumberland) #
+ newcastle: "Castellnewydd" # Newcastle
+ hexham: "Hecsant" # Hexham
+ alnwick: "Alnwyg" # Alnwick
+ morpeth: "Merbedd" # Morpeth
+ billingham: "Beling" # Bellingham
+ # Province 'cumberland_province' (Cumberland) #
+ carlisle: "Caerliwelydd" # Carlisle
+ cockermouth: "Abercogwr" # Cockermouth
+ penrith: "Penrhudd" # Penrith
+ egremont: "Egrymon" # Egremont
+ # Province 'westmorland_province' (Westmorland) #
+ kendal: "Cyndal" # Kendal
+ appleby: "Afelbi" # Appleby
+ # Province 'durham_province' (Durham) #
+ durham: "Dunelm" # Durham
+ darlington: "Darnle" # Darlington
+ stockton: "Ystogtan" # Stockton
+ # Province 'cheshire_province' (Cheshire) #
+ chester: "Caer" # Chester
+ macclesfield: "Maesyclawdd" # Macclesfield
+ nantwich: "Nantgwin" # Nantwich
+
+ ## Area 'east_anglia_area' (East Anglia) ##
+ # Province 'norfolk_province' (Norfolk) #
+ norwich: "Caerwydd" # Norwich
+ lynn: "Lun" # Lynn
+ yarmouth: "Aberiar" # Yarmouth
+ thetford: "Rhydgoed" # Thetford
+ fakenham: "Ffacnham" # Fakenham
+ # Province 'essex_province' (Essex) #
+ colchester: "Caercolun" # Colchester
+ chelmsford: "Rhydgell" # Chelmsford
+ prittlewell: "Pryddel" # Prittlewell
+ hedingham: "Penhedyn" # Hedingham
+ walden: "Nantwall" # Walden
+ barking: "Tirferecin" # Barking
+ # Province 'suffolk_province' (Suffolk) #
+ ipswich: "Aberips" # Ipswich
+ bury: "Buri" # Bury
+ lowestoft: "Trwyngwastad" # Lowestoft
+ lavenham: "Lafan" # Lavenham
+ # Province 'cambridgeshire_province' (Cambridgeshire) #
+ cambridge: "Caergrawnt" # Cambridge
+ ely: "Elyg" # Ely
+ huntingdon: "Penhela" # Huntingdon
+ royston: "Rhostwn" # Royston
+ # Province 'hertfordshire_province' (Hertfordshire) #
+ hertford: "Rhydfardd" # Hertford
+ st_albans: "San Alban" # St Albans
+
+ ## Area 'west_country_area' (West Country) ##
+ # Province 'cornwall_province' (Cornwall) #
+ launceston: "Lanstevan" # Launceston
+ truro: "Truru" # Truro
+ bodmin: "Bodmenn" # Bodmin
+ # Province 'somerset_province' (Somerset) #
+ wells: "Gwynfynydd" # Wells
+ taunton: "Tawynton" # Taunton
+ bath: "Caerfaddon" # Bath
+ portishead: "Penporth" # Portishead
+ minehead: "Penfwyn" # Minehead
+ # Province 'devon_province' (Devon) #
+ plymouth: "Aberplym" # Plymouth
+ exeter: "Caerwysg" # Exeter
+ barnstaple: "Barntopil" # Barnstaple
+ bideford: "Aberfed" # Bideford
+ bampton: "Bamton" # Bampton
+ okehampton: "Ogamtwn" # Okehampton
+ # Province 'dorset_province' (Dorset) #
+ poole: "Pwll" # Poole
+ weymouth: "Aberweun" # Weymouth
+ dorchester: "Caerdwr" # Dorchester
+ shaftesbury: "Caersiafft" # Shaftesbury
+ # Province 'wiltshire_province' (Wiltshire) #
+ salisbury: "Caersallwg" # Salisbury
+ trowbridge: "Ponttrwyn" # Trowbridge
+ chippenham: "Cibyn" # Chippenham
+ amesbury: "Caerafon" # Amesbury
+ # Province 'gloucestershire_province' (Gloucestershire) #
+ bristol: "Bryste" # Bristol
+ gloucester: "Caerloyw" # Gloucester
+ cheltenham: "Celtan" # Cheltenham
+ cirencester: "Caerceri" # Cirencester
+
+ ## Area 'scottish_lowlands_area' (Lowlands) ##
+ # Province 'lothian_province' (Lothian) #
+ edinburgh: "Din Eidyn" # Edinburgh
+ dunbar: "Dinas Bar" # Dunbar
+ linlithgow: "Llynllaith" # Linlithgow
+ stirling: "Iuddeu" # Stirling
+ # Province 'galloway_province' (Galloway) #
+ stranraer: "Penrhiw" # Stranraer
+ ayr: "Aerdon" # Ayr
+ kirkcudbright: "Llan Cuddfan" # Kirkcudbright
+ irvine: "Yrfaen" # Irvine
+ kenmure: "Cynmur" # Kenmure
+ dumfries: "Dymffrês" # Dumfries
+ # Province 'strathclyde_province' (Strathclyde) #
+ glasgow: "Glasgw" # Glasgow
+ lanark: "Llanaerch" # Lanark
+ paisley: "Plasli" # Paisley
+ dumbarton: "Dun Brython" # Dumbarton
+ # Province 'teviotdale_province' (Teviotdale) #
+ roxburgh: "Rhosberw" # Roxburgh
+ selkirk: "Llanserch" # Selkirk
+ duns: "Dwns" # Duns
+ berwick: "Aberwig" # Berwick
+ # Province 'fife_province' (Fife) #
+ dunfermline: "Dinfairlyn" # Dunfermline
+ st_andrews: "San Andreas" # St Andrews
+ cupar: "Cwpar" # Cupar
+ # Province 'perthshire_province' (Perthshire) #
+ perth: "Peirth" # Perth
+ aberfeldy: "Aberfelin" # Aberfeldy
+ clackmannan: "Clagmanan" # Clackmannan
+ scone: "Duncellen" # Dunkeld
+ strathearn: "Stradarn" # Strathearn
+ # Province 'angus_province' (Angus) #
+ dundee: "Dwndei" # Dundee
+ forfar: "Ffordd-fâr" # Forfar
+ arbroath: "Aberbrith" # Arbroath
+ stonehaven: "Cyncardyn" # Kincardine
+ # Province 'aberdeenshire_province' (Aberdeenshire) #
+ aberdeen: "Aberdon" # Aberdeen
+ buchan: "Treffraser" # Fraserburgh
+ banff: "Banfa" # Banff
+ mar: "Braegmar" # Braemar
+ inverurie: "Aberuri" # Inverurie
+
+ ## Area 'wales_area' (Wales) ##
+ # Province 'deheubarth_province' (Deheubarth) #
+ carmarthen: "Caerfyrddin" # Carmarthen
+ pembroke: "Penfro" # Pembroke
+ fishguard: "Abergwaun" # Fishguard
+ kidwelly: "Cydweli" # Kidwelly
+ cardigan: "Aberteifi" # Cardigan
+ aberystwyth: "Aberystwyth" # Aberystwyth
+ # Province 'gwynedd_province' (Gwynedd) #
+ carnarvon: "Caernarfon" # Carnarvon
+ anglesey: "Ynys Môn" # Anglesey
+ conwy: "Conwy" # Conway
+ harlech: "Harlech" # Harlech
+ flint: "Fflint" # Flint
+ penllyn: "Penllyn" # Penllyn
+ denbigh: "Dinbych" # Denbigh
+ # Province 'powys_province' (Powys) #
+ montgomery: "Trefaldwyn" # Montgomery
+ machynlleth: "Machynlleth" # Machynlleth
+ llangollen: "Llangollen" # Wrexham
+ # Province 'brecon_province' (Brecon) #
+ brecknock: "Brycheiniog" # Brecknock
+ builth: "Buellt" # Builth
+ radnor: "Maesyfed" # Radnor
+ # Province 'glamorgan_province' (Glamorgan) #
+ cardiff: "Caerdydd" # Cardiff
+ monmouth: "Trefynwy" # Monmouth
+ newport: "Casnewydd" # Newport
+ neath: "Nedd" # Neath
+ swansea: "Abertawe" # Swansea
+ caerphilly: "Caerffili" # Caerphilly
+
+# Breton
+ quimper: "Kemper"
+ saint_brieuc: "Sant-Brieg"
+ treguier: "Treger"
+ 
+ nantes: "Naoned"
+ chateaubriant: "Kastell-Briant"
+ guerande: "Gwenrann"
+ machecoul: "Machikoul"
+ 
+ rennes: "Roazhon"
+ saint_malo: "Sant-Maloù"
+ vitre: "Gwitreg"
+ 
+ vannes: "Gwened"
+ josselin: "Josilin"
+ ploermel: "Ploermael"
+ rohan: "Roc'han"
+
+
+ ## Area 'northern_isles_area' (Northern Isles) ##
+ # Province 'northern_isles_province' (Northern Isles) #
+ orkney: "Erc"
+ shetland: "Sietlan"
+ torshavn: "Torshafn"
+
+ #### Armenian ####
+ bayazit: "Daronyk"
+ diyarbekir: "Tigrankert"
+ hasankale: "Pasēn"
+ hinis: "Khnus"
+ igdir: "Ts'olakert"
+ julfa: "Jugha"
+ kagizman: "Kaghzwan"
+ kars: "Ghars" 
+ maku: "Artaz"
+ nakhchivan: "Nakhijevan"
+ sason: "Sasun"
+ shusha: "Shushi"
+ surmali: "Surb Mari"

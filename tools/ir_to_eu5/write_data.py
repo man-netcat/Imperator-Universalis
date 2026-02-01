@@ -258,6 +258,9 @@ def write_country_setup(country_data: list, override_data: list):
         write_blocks(out_path, override_blocks)
 
 
+from collections import OrderedDict
+
+
 def write_localisation_files(
     culture_data: list,
     religion_data: list,
@@ -269,6 +272,18 @@ def write_localisation_files(
         """Keep the first line (header) and sort the rest alphabetically."""
         return [lines[0]] + sorted(lines[1:])
 
+    def remove_duplicate_keys(lines: list[str]) -> list[str]:
+        """Remove duplicate keys, keeping only the first occurrence."""
+        header, *body = lines
+        seen_keys = set()
+        unique_lines = []
+        for line in body:
+            key = line.split(":", 1)[0].strip()
+            if key not in seen_keys:
+                seen_keys.add(key)
+                unique_lines.append(line)
+        return [header] + unique_lines
+
     # -------- Cultures --------
     culture_lines = ["l_english:"]
     for group in culture_data:
@@ -276,13 +291,12 @@ def write_localisation_files(
         culture_lines.append(f'  {group["tag"]}_desc: "{group["name_desc"]}"')
         for culture in group["cultures"]:
             culture_lines.append(f'  {culture["tag"]}: "{culture["name"]}"')
-    culture_lines = sort_lines(culture_lines)
+    culture_lines = remove_duplicate_keys(sort_lines(culture_lines))
 
     # -------- Religions --------
     religion_lines = ["l_english:"]
     religion_lines.extend(
         [
-            # TODO: Change these
             '  ir_religion_group: "Religions"',
             '  ir_religion_group_ADJ: "Religious"',
             '  ir_religion_group_desc: "Imperator Universalis Religions"',
@@ -292,14 +306,14 @@ def write_localisation_files(
         religion_lines.append(f'  {religion["tag"]}: "{religion["name"]}"')
         religion_lines.append(f'  {religion["tag"]}_ADJ: "{religion["name"]}"')
         religion_lines.append(f'  {religion["tag"]}_desc: "{religion["name_desc"]}"')
-    religion_lines = sort_lines(religion_lines)
+    religion_lines = remove_duplicate_keys(sort_lines(religion_lines))
 
     # -------- Countries --------
     country_lines = ["l_english:"]
     for country in country_data:
         country_lines.append(f'  {country["tag"]}: "{country["name"]}"')
         country_lines.append(f'  {country["tag"]}_ADJ: "{country["name_adj"]}"')
-    country_lines = sort_lines(country_lines)
+    country_lines = remove_duplicate_keys(sort_lines(country_lines))
 
     # -------- Characters --------
     character_lines = ["l_english:"]
@@ -309,13 +323,13 @@ def write_localisation_files(
         for c in character_data
         if c.get("nickname")
     )
-    character_lines = sort_lines(character_lines)
+    character_lines = remove_duplicate_keys(sort_lines(character_lines))
 
     # -------- Dynasties --------
     dynasty_lines = ["l_english:"]
     for d in dynasties:
         dynasty_lines.append(f'  {d["tag"]}: "{d["name"]}"')
-    dynasty_lines = sort_lines(dynasty_lines)
+    dynasty_lines = remove_duplicate_keys(sort_lines(dynasty_lines))
 
     # -------- Write Files --------
     write_blocks(iu_localisation / "ir_cultures_l_english.yml", culture_lines)
