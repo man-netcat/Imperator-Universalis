@@ -265,48 +265,59 @@ def write_localisation_files(
     character_data: list,
     dynasties: list,
 ):
-    culture_lines = [f"l_english:"]
-    for culture_group in culture_data:
-        culture_lines.append(f'  {culture_group["tag"]}: "{culture_group["name"]}"')
-        culture_lines.append(
-            f'  {culture_group["tag"]}_desc: "{culture_group["name_desc"]}"'
-        )
-        for culture in culture_group["cultures"]:
-            culture_lines.append(f'  {culture["tag"]}: "{culture["name"]}"')
+    def sort_lines(lines: list[str]) -> list[str]:
+        """Keep the first line (header) and sort the rest alphabetically."""
+        return [lines[0]] + sorted(lines[1:])
 
-    religion_lines = [f"l_english:"]
-    religion_lines.append(f'  ir_religion_group: "Ir religion group"')
-    religion_lines.append(f'  ir_religion_group_ADJ: "Ir religion group"')
-    religion_lines.append(f'  ir_religion_group_desc: "Ir religion group"')
+    # -------- Cultures --------
+    culture_lines = ["l_english:"]
+    for group in culture_data:
+        culture_lines.append(f'  {group["tag"]}: "{group["name"]}"')
+        culture_lines.append(f'  {group["tag"]}_desc: "{group["name_desc"]}"')
+        for culture in group["cultures"]:
+            culture_lines.append(f'  {culture["tag"]}: "{culture["name"]}"')
+    culture_lines = sort_lines(culture_lines)
+
+    # -------- Religions --------
+    religion_lines = ["l_english:"]
+    religion_lines.extend(
+        [
+            # TODO: Change these
+            '  ir_religion_group: "Religions"',
+            '  ir_religion_group_ADJ: "Religious"',
+            '  ir_religion_group_desc: "Imperator Universalis Religions"',
+        ]
+    )
     for religion in religion_data:
         religion_lines.append(f'  {religion["tag"]}: "{religion["name"]}"')
-        religion_lines.append(f'  {religion["tag"]}_ADJ: "{religion["name_adj"]}"')
+        religion_lines.append(f'  {religion["tag"]}_ADJ: "{religion["name"]}"')
         religion_lines.append(f'  {religion["tag"]}_desc: "{religion["name_desc"]}"')
+    religion_lines = sort_lines(religion_lines)
 
-    country_lines = [f"l_english:"]
+    # -------- Countries --------
+    country_lines = ["l_english:"]
     for country in country_data:
         country_lines.append(f'  {country["tag"]}: "{country["name"]}"')
         country_lines.append(f'  {country["tag"]}_ADJ: "{country["name_adj"]}"')
+    country_lines = sort_lines(country_lines)
 
-    character_lines = [f"l_english:"]
+    # -------- Characters --------
+    character_lines = ["l_english:"]
+    character_lines.extend(f'  {c["name_tag"]}: "{c["name"]}"' for c in character_data)
     character_lines.extend(
-        {
-            f'  {character["name_tag"]}: "{character["name"]}"'
-            for character in character_data
-        }
+        f'  {c["nickname_tag"]}: "{c["nickname"]}"'
+        for c in character_data
+        if c.get("nickname")
     )
-    character_lines.extend(
-        {
-            f'  {character["nickname_tag"]}: "{character["nickname"]}"'
-            for character in character_data
-            if character["nickname"]
-        }
-    )
+    character_lines = sort_lines(character_lines)
 
-    dynasty_lines = [f"l_english:"]
-    for dynasty in dynasties:
-        dynasty_lines.append(f'  {dynasty["tag"]}: "{dynasty["name"]}"')
+    # -------- Dynasties --------
+    dynasty_lines = ["l_english:"]
+    for d in dynasties:
+        dynasty_lines.append(f'  {d["tag"]}: "{d["name"]}"')
+    dynasty_lines = sort_lines(dynasty_lines)
 
+    # -------- Write Files --------
     write_blocks(iu_localisation / "ir_cultures_l_english.yml", culture_lines)
     write_blocks(iu_localisation / "ir_religions_l_english.yml", religion_lines)
     write_blocks(iu_localisation / "ir_countries_l_english.yml", country_lines)
