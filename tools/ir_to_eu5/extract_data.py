@@ -384,6 +384,7 @@ def extract_character_data():
                     "nickname_tag": nickname_tag,
                     "nickname": nickname,
                     "birth_date": char_data["birth_date"],
+                    "death_date": char_data["death_date"] if "death_date" in char_data else None,
                     "father": father,
                     "mother": mother,
                     "female": char_data["female"] if "female" in char_data else False,

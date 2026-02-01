@@ -663,6 +663,7 @@ character_db = {
         religion = ir_judaism
         tag = JUD
         birth_date = 1.1.2
+        death_date = 60.1.2
     }
     jud_deborah_kalinga = {
         # Deborah
@@ -672,6 +673,7 @@ character_db = {
         religion = ir_judaism
         tag = JUD
         birth_date = 1.1.2
+        death_date = 40.1.2
     }
     jud_ezekiel_kalinga = {
         # Ezekiel
@@ -680,6 +682,7 @@ character_db = {
         religion = ir_judaism
         tag = JUD
         birth_date = 132.1.2
+        death_date = 184.1.2
     }
     jud_ezra_kalinga = {
         # Ezra
@@ -688,6 +691,7 @@ character_db = {
         religion = ir_judaism
         tag = JUD
         birth_date = 270.1.2
+        death_date = 314.1.2
     }
     jud_esther_kalinga = {
         # Esther
@@ -697,6 +701,7 @@ character_db = {
         religion = ir_judaism
         tag = JUD
         birth_date = 268.1.2
+        death_date = 289.1.2
     }
     jud_joseph_kalinga = {
         # Joseph
@@ -705,6 +710,7 @@ character_db = {
         religion = ir_judaism
         tag = JUD
         birth_date = 1.1.2
+        death_date = 110.1.2
     }
     jud_abraham_kalinga = {
         # Abraham
@@ -713,6 +719,7 @@ character_db = {
         religion = ir_judaism
         tag = JUD
         birth_date = 1.1.2
+        death_date = 175.1.2
     }
     jud_caleb_kalinga = {
         # Caleb
@@ -721,6 +728,7 @@ character_db = {
         religion = ir_judaism
         tag = JUD
         birth_date = 1.1.2
+        death_date = 60.1.2
     }
     jud_david_kalinga = {
         # David
@@ -729,6 +737,7 @@ character_db = {
         religion = ir_judaism
         tag = JUD
         birth_date = 1.1.2
+        death_date = 70.1.2
     }
     jud_solomon_kalinga = {
         # Solomon
@@ -737,6 +746,7 @@ character_db = {
         religion = ir_judaism
         tag = JUD
         birth_date = 1.1.2
+        death_date = 59.1.2
     }
     jud_moses_kalinga = {
         # Moses
@@ -745,6 +755,7 @@ character_db = {
         religion = ir_judaism
         tag = JUD
         birth_date = 1.1.2
+        death_date = 120.1.2
     }
     jud_daniel_kalinga = {
         # Daniel
@@ -753,6 +764,7 @@ character_db = {
         religion = ir_judaism
         tag = JUD
         birth_date = 1.1.2
+        death_date = 120.1.2
     }
     syr_alkia_kalinga = {
         # Alkia
@@ -1362,6 +1374,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 320.1.1
+        death_date = 378.10.1
     }
     mac_magas_magid = {
         # Magasmagid_dynasty
@@ -1371,6 +1384,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 379.6.17
+        death_date = 436.12.11
     }
     mac_nikesipolis_antipatrid = {
         # Nikesipolis
@@ -1380,6 +1394,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 379.1.1
+        death_date = 409.10.1
     }
     mac_philippos_aiakid = {
         # Philippos
@@ -1389,6 +1404,7 @@ character_db = {
         tag = MAC
         birth_date = 372.1.1
         nickname = NICKNAME_II
+        death_date = 418.10.1
     }
     mac_alexander_aiakid = {
         # Alexander
@@ -1398,6 +1414,7 @@ character_db = {
         tag = MAC
         birth_date = 398.7.21
         nickname = NICKNAME_THE_GREAT
+        death_date = 431.6.11
     }
     mac_alexandros_aiakid = {
         # Alexandros
@@ -1407,6 +1424,7 @@ character_db = {
         tag = MAC
         birth_date = 431.8.1
         nickname = NICKNAME_AIGOS
+        death_date = 445.8.1
     }
     mac_orontes_antipatrid = {
         # Orontes
@@ -1415,6 +1433,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 367.4.12
+        death_date = 421.8.1
     }
     mac_eumenes_antipatrid = {
         # Eumenes
@@ -1423,6 +1442,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 392.7.3
+        death_date = 438.3.7
     }
     mac_andromenes_antipatrid = {
         # Andromenes
@@ -1431,6 +1451,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 369.7.8
+        death_date = 425.9.12
     }
     mac_philotas_antipatrid = {
         # Philotas
@@ -1439,6 +1460,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 316.8.10
+        death_date = 377.7.6
     }
     syr_karkinos_agathoklid_2 = {
         # Karkinosagathoklid_dynasty
@@ -1448,6 +1470,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = SYR
         birth_date = 367.1.2
+        death_date = 443.2.3
     }
     pry_krateros_agathoklid = {
         # Krateros
@@ -1456,6 +1479,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = PRY
         birth_date = 384.8.22
+        death_date = 433.7.15
     }
     pry_gygaia_agathoklid = {
         # Gygaia
@@ -1465,6 +1489,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = PRY
         birth_date = 332.8.11
+        death_date = 387.1.23
     }
     pry_philippos_agathoklid = {
         # Philippos
@@ -1473,6 +1498,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = PRY
         birth_date = 326.7.6
+        death_date = 395.3.23
     }
     map_zoroaster_antigonid = {
         # Zoroaster
@@ -1481,6 +1507,7 @@ character_db = {
         religion = ir_zoroaster
         tag = MAP
         birth_date = 1.1.2
+        death_date = 60.1.2
     }
     epi_alketas_aiakid = {
         # Alketasaiakid_dynasty
@@ -1491,6 +1518,7 @@ character_db = {
         tag = EPI
         birth_date = 327.1.1
         nickname = NICKNAME_I
+        death_date = 384.7.2
     }
     epi_neoptolemos_aiakid_2 = {
         # Neoptolemosaiakid_dynasty
@@ -1501,6 +1529,7 @@ character_db = {
         tag = EPI
         birth_date = 353.1.1
         nickname = NICKNAME_II
+        death_date = 397.10.9
     }
     epi_arybbas_aiakid = {
         # Arybbasaiakid_dynasty
@@ -1510,6 +1539,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = EPI
         birth_date = 355.1.1
+        death_date = 411.4.3
     }
     tre_agathokles_alkimachid = {
         # Agathoklesalkimachid_dynasty
@@ -1519,6 +1549,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = TRE
         birth_date = 363.5.15
+        death_date = 417.7.1
     }
     sel_laodike_seleukid_2 = {
         # Laodikeseleukid_dynasty
@@ -1529,6 +1560,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = SEL
         birth_date = 372.6.7
+        death_date = 441.2.10
     }
     sel_seleukos_seleukid_3 = {
         # Seleukosseleukid_dynasty
@@ -1538,6 +1570,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = SEL
         birth_date = 327.7.8
+        death_date = 396.4.9
     }
     egy_lagos_lagid = {
         # Lagoslagid_dynasty
@@ -1547,6 +1580,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = EGY
         birth_date = 359.2.12
+        death_date = 433.6.7
     }
     ath_demochares_demostenid = {
         # Democharesdemostenid_dynasty
@@ -2057,6 +2091,7 @@ character_db = {
         religion = ir_buddhism
         tag = MRY
         birth_date = 274.1.1
+        death_date = 354.1.1
     }
     mry_mahavira_skydrothemid = {
         # Mahavira
@@ -2065,6 +2100,7 @@ character_db = {
         religion = ir_jainism
         tag = MRY
         birth_date = 257.1.1
+        death_date = 329.1.1
     }
     msp_petrus_skydrothemid = {
         # Petrus
@@ -2367,6 +2403,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = PRY
         birth_date = 357.7.20
+        death_date = 419.4.2
     }
     pry_satrya_antigonid = {
         # Satrya
@@ -2460,6 +2497,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = SAM
         birth_date = 419.9.28
+        death_date = 440.1.1
     }
     sam_novius_calavii = {
         # Noviuscalavii_dynasty
@@ -2470,6 +2508,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = SAM
         birth_date = 420.6.1
+        death_date = 440.1.1
     }
     rom_lucius_cornelii_2 = {
         # Luciuscornelii_dynasty
@@ -2724,6 +2763,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 357.2.13
+        death_date = 429.7.8
     }
     mac_antipatros_antipatrid_5 = {
         # Antipatrosantipatrid_dynasty
@@ -2734,6 +2774,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 354.9.12
+        death_date = 435.7.6
     }
     mac_thessalonike_antipatrid = {
         # Thessalonike
@@ -2765,6 +2806,7 @@ character_db = {
         tag = MAC
         birth_date = 395.2.6
         nickname = NICKNAME_ARRIDAIOS
+        death_date = 437.9.28
     }
     mac_perdikkas_antipatrid = {
         # Perdikkas
@@ -2774,6 +2816,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 399.6.5
+        death_date = 434.1.6
     }
     mac_alketas_antipatrid = {
         # Alketas
@@ -2783,6 +2826,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 402.7.1
+        death_date = 434.2.12
     }
     mac_atalante_antipatrid = {
         # Atalante
@@ -2793,6 +2837,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 404.8.12
+        death_date = 434.2.12
     }
     mac_attalos_antipatrid = {
         # Attalos
@@ -2802,6 +2847,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 397.7.6
+        death_date = 448.6.1
     }
     mac_amyntas_antipatrid = {
         # Amyntas
@@ -2811,6 +2857,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 400.5.7
+        death_date = 448.6.1
     }
     mac_simmias_antipatrid = {
         # Simmias
@@ -2820,6 +2867,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 403.7.9
+        death_date = 448.6.1
     }
     mac_parmenion_antipatrid = {
         # Parmenion
@@ -2829,6 +2877,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 354.2.4
+        death_date = 424.8.5
     }
     mac_agathon_antipatrid = {
         # Agathon
@@ -2838,6 +2887,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 358.5.3
+        death_date = 437.6.1
     }
     mac_asander_antipatrid = {
         # Asander
@@ -2847,6 +2897,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 362.7.9
+        death_date = 437.6.1
     }
     syr_agathokles_agathoklid = {
         # Agathoklesagathoklid_dynasty
@@ -2879,6 +2930,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = PRY
         birth_date = 375.7.18
+        death_date = 431.2.11
     }
     pry_ptolemaios_antigonid = {
         # Ptolemaiosantigonid_dynasty
@@ -2890,6 +2942,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = PRY
         birth_date = 375.6.17
+        death_date = 441.1.16
     }
     pry_demetrios_antigonid = {
         # Demetriosantigonid_dynasty
@@ -2901,6 +2954,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = PRY
         birth_date = 368.3.2
+        death_date = 414.7.28
     }
     pry_antigonos_antigonid = {
         # Antigonosantigonid_dynasty
@@ -2925,6 +2979,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 379.1.1
+        death_date = 438.10.1
     }
     epi_alexandros_aiakid_2 = {
         # Alexandrosaiakid_dynasty
@@ -2935,6 +2990,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = EPI
         birth_date = 383.1.1
+        death_date = 423.11.12
     }
     epi_aiakides_aiakid = {
         # Aiakidesaiakid_dynasty
@@ -2945,6 +3001,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = EPI
         birth_date = 391.1.1
+        death_date = 441.7.24
     }
     epi_alketas_aiakid_2 = {
         # Alketasaiakid_dynasty
@@ -2956,6 +3013,7 @@ character_db = {
         tag = EPI
         birth_date = 388.1.1
         nickname = NICKNAME_II
+        death_date = 448.12.15
     }
     tre_philippos_alkimachid = {
         # Philipposalkimachid_dynasty
@@ -2966,6 +3024,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = TRE
         birth_date = 400.7.5
+        death_date = 426.12.11
     }
     tre_lysimachos_alkimachid = {
         # Lysimachosalkimachid_dynasty
@@ -3007,6 +3066,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = SEL
         birth_date = 352.4.6
+        death_date = 429.12.1
     }
     sel_ptolemaios_seleukid_2 = {
         # Ptolemaiosseleukid_dynasty
@@ -3017,6 +3077,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = SEL
         birth_date = 357.2.8
+        death_date = 421.7.12
     }
     egy_ptolemaios_lagid = {
         # Ptolemaioslagid_dynasty
@@ -3305,6 +3366,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 385.1.3
+        death_date = 441.8.5
     }
     mac_philippos_antipatrid = {
         # Philipposantipatrid_dynasty
@@ -3335,6 +3397,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 407.1.2
+        death_date = 444.2.3
     }
     mac_nikanor_antipatrid_2 = {
         # Nikanorantipatrid_dynasty
@@ -3345,6 +3408,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 414.7.12
+        death_date = 437.6.2
     }
     mlo_eurydike_antipatrid = {
         # Eurydikeantipatrid_dynasty
@@ -3378,6 +3442,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 429.8.4
+        death_date = 438.10.1
     }
     mac_kleopatra_antipatrid = {
         # Kleopatra
@@ -3389,6 +3454,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 432.6.5
+        death_date = 438.10.1
     }
     tre_andromenes_alkimachid = {
         # Andromenes
@@ -3408,6 +3474,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 389.5.2
+        death_date = 424.7.2
     }
     mac_nikanor_antipatrid = {
         # Nikanor
@@ -3417,6 +3484,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 392.7.8
+        death_date = 424.7.2
     }
     mac_hektor_antipatrid = {
         # Hektor
@@ -3426,6 +3494,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 396.8.1
+        death_date = 424.7.2
     }
     mac_asander_antipatrid_2 = {
         # Asander
@@ -3435,6 +3504,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 399.12.12
+        death_date = 424.7.2
     }
     syr_lanassa_agathoklid = {
         # Lanassaagathoklid_dynasty
@@ -3468,6 +3538,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = SYR
         birth_date = 416.12.12
+        death_date = 447.6.15
     }
     syr_herakleides_agathoklid = {
         # Herakleidesagathoklid_dynasty
@@ -3478,6 +3549,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = SYR
         birth_date = 418.11.11
+        death_date = 447.6.15
     }
     syr_karkinos_agathoklid = {
         # Karkinosagathoklid_dynasty
@@ -3508,6 +3580,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = PRY
         birth_date = 397.3.22
+        death_date = 445.7.28
     }
     pry_ptolemaios_antigonid_2 = {
         # Ptolemaiosantigonid_dynasty
@@ -3518,6 +3591,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = PRY
         birth_date = 400.7.16
+        death_date = 445.7.28
     }
     pry_philippos_antigonid = {
         # Philipposantigonid_dynasty
@@ -3529,6 +3603,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = PRY
         birth_date = 420.9.12
+        death_date = 448.7.3
     }
     pry_demetrios_antigonid_2 = {
         # Demetriosantigonid_dynasty
@@ -3553,6 +3628,7 @@ character_db = {
         religion = ir_roman_pantheon
         tag = MAC
         birth_date = 400.5.20
+        death_date = 446.1.18
     }
     epi_pyrrhos_aiakid = {
         # Pyrrhosaiakid_dynasty

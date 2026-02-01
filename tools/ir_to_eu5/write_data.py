@@ -624,6 +624,8 @@ def write_05_characters(five_characters_data, character_data):
 
         merged["tag"] = character["country"]
         merged["birth_date"] = character["birth_date"]
+        if "death_date" in character and character["death_date"]:
+            merged["death_date"] = character["death_date"]
 
         if character.get("nickname_tag"):
             merged["nickname"] = character["nickname_tag"]
