@@ -59,6 +59,7 @@ ir_prescripted_coa = (
 )
 ir_coa_gfx = ir_game / "gfx" / "coat_of_arms"
 ir_map_data = ir_game / "map_data"
+ir_character_data = ir_game / "setup" / "characters"
 
 # EU5 game paths
 eu5_game = _p("eu5_game")

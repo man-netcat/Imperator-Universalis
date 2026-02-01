@@ -1,3 +1,63 @@
 dynasty_manager = {
-	default_dynasty = { name = { name = default_dynasty } home = vattnajokull }				#just for default coat of arms
+	default_dynasty = {
+		#just for default coat of arms
+		name = {
+			name = default_dynasty
+		}
+		home = vattnajokull
+	}
+	ptolemaic_dynasty = {
+		name = {
+			name = ptolemaic_dynasty
+		}
+		home = alexandria
+	}
+	antigonid_dynasty = {
+		name = {
+			name = antigonid_dynasty
+		}
+		home = antioch
+	}
+	seleucid_dynasty = {
+		name = {
+			name = seleucid_dynasty
+		}
+		home = antioch
+	}
+	aechid_dynasty = {
+		name = {
+			name = aechid_dynasty
+		}
+		home = salamis_cyprus
+	}
+	agiad_dynasty = {
+		name = {
+			name = agiad_dynasty
+		}
+		home = sparta
+	}
+	eurypontid_dynasty = {
+		name = {
+			name = eurypontid_dynasty
+		}
+		home = delphi
+	}
+	argead_dynasty = {
+		name = {
+			name = argead_dynasty
+		}
+		home = aegae
+	}
+	lysimachid_dynasty = {
+		name = {
+			name = lysimachid_dynasty
+		}
+		home = thessalonica
+	}
+	antipatrid_dynasty = {
+		name = {
+			name = antipatrid_dynasty
+		}
+		home = pella
+	}
 }

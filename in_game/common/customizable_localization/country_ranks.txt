@@ -1,4 +1,4 @@
-country_flavor = {
+﻿country_flavor = {
 	type = country
 	text = {
 		localization_key = country_rank_people

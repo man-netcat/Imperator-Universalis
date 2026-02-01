@@ -245,3 +245,67 @@ def extract_10_countries():
     tree = parse_tree(iu_10_countries)
     countries = tree["countries"]["countries"].to_python()
     return countries
+
+
+def extract_character_data():
+    def is_ruler(char_data):
+        for key, value in char_data.items():
+            if key.startswith("c:") and value["set_as_ruler"]:
+                return True
+        return False
+
+    characters = []
+    tag_counts = {}  # keep track of how many times each tag has appeared
+
+    for path in ir_character_data.iterdir():
+        if path.suffix != ".txt" or not path.is_file():
+            continue
+
+        tree = parse_tree(path)
+        for country_tag, country_characters in tree.items():
+            for char_id, char_data in country_characters.items():
+                if char_id == "country":
+                    continue
+
+                if "first_name" not in char_data:
+                    continue  # Skip characters without a first name
+
+                ruler_flag = is_ruler(char_data)
+                family = (
+                    char_data["family"].split(":")[2] if "family" in char_data else None
+                )
+
+                # Construct base unique tag
+                parts = [country_tag]
+                if family:
+                    parts.append(family)
+                parts.append(char_data["first_name"])
+                base_tag = "_".join(parts).lower()
+
+                # Make tag truly unique
+                if base_tag in tag_counts:
+                    tag_counts[base_tag] += 1
+                    unique_tag = f"{base_tag}_{tag_counts[base_tag]}"
+                else:
+                    tag_counts[base_tag] = 1
+                    unique_tag = base_tag
+
+                data = {
+                    "id": char_id,
+                    "name": char_data["first_name"],
+                    "family": family,
+                    "nickname": char_data["nickname"],
+                    "birth_date": char_data["birth_date"],
+                    "father": char_data["father"],
+                    "mother": char_data["mother"],
+                    "female": char_data["female"] if "female" in char_data else False,
+                    "spouse": char_data["marry_character"],
+                    "culture": f"ir_{char_data['culture']}",
+                    "religion": f"ir_{char_data['religion']}",
+                    "country": country_tag,
+                    "scope": char_data["save_scope_as"],
+                    "is_ruler": ruler_flag,
+                    "tag": unique_tag,  # final unique tag
+                }
+                characters.append(data)
+    return characters

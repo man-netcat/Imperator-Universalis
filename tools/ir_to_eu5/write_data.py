@@ -259,7 +259,7 @@ def write_country_setup(country_data: list, override_data: list):
 
 
 def write_localisation_files(
-    culture_data: list, religion_data: list, country_data: list
+    culture_data: list, religion_data: list, country_data: list, character_data: list
 ):
     culture_lines = [f"l_english:"]
     for culture_group in culture_data:
@@ -395,11 +395,12 @@ def write_blocks_with_comments(
     return out_path
 
 
-def write_10_countries(ten_countries_data, country_data, eu5_map_data):
+def write_10_countries(ten_countries_data, country_data, eu5_map_data, country_rulers):
     country_map = {country["tag"]: country for country in country_data}
     blocks = []
     comment_tags = set()
 
+    # build province mapping if provided
     location_to_province = (
         _build_location_to_province_map(eu5_map_data)
         if eu5_map_data is not None
@@ -410,6 +411,7 @@ def write_10_countries(ten_countries_data, country_data, eu5_map_data):
         tag = country["tag"]
         country_name = country.get("name", tag)
         government_type = government_map[country_map[tag]["government"]]
+        ruler = country_rulers.get(tag)  # optional override
 
         # --- start from base, preserve everything ---
         base = ten_countries_data.get(tag, {})
@@ -423,7 +425,7 @@ def write_10_countries(ten_countries_data, country_data, eu5_map_data):
 
         if not locations:
             comment_tags.add(tag)
-            # IMPORTANT: force inline empty block
+            # force inline empty block
             merged["own_control_core"] = "{ }"
         else:
             prov_map: dict[str, list] = {}
@@ -439,16 +441,19 @@ def write_10_countries(ten_countries_data, country_data, eu5_map_data):
 
             merged["own_control_core"] = own_sublines
 
-        # --- government (merge, don’t overwrite) ---
+        # --- government (merge, override ruler if exists) ---
         base_government = base.get("government", {})
-        merged_government = dict(base_government)
+        merged_government = dict(base_government)  # copy existing fields
 
-        merged_government.setdefault("ruler", base_government.get("ruler", "random"))
+        if ruler:
+            merged_government["ruler"] = ruler
+        else:
+            merged_government["ruler"] = base_government.get("ruler", "random")
+
         merged_government["type"] = government_type
-
         merged["government"] = merged_government
 
-        # --- includes (preserve all, only normalize) ---
+        # --- includes (preserve all, normalize) ---
         raw_include = base.get("include", [])
         include_items = raw_include if isinstance(raw_include, list) else [raw_include]
 
@@ -493,3 +498,7 @@ def write_10_countries(ten_countries_data, country_data, eu5_map_data):
         [top_line, nested],
         comment_tags=comment_tags,
     )
+
+
+def write_character_data(character_data):
+    pass

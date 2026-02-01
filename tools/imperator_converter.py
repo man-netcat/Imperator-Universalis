@@ -19,6 +19,7 @@ sys.path.insert(0, str(tools_pyradox_src))
 
 from ir_to_eu5.extract_data import (
     extract_10_countries,
+    extract_character_data,
     extract_coa_data,
     extract_country_data,
     extract_culture_data,
@@ -31,6 +32,7 @@ from ir_to_eu5.paths import mod_root
 from ir_to_eu5.port_gfx import port_coa_gfx
 from ir_to_eu5.write_data import (
     write_10_countries,
+    write_character_data,
     write_coa_file,
     write_country_setup,
     write_culture_data,
@@ -43,6 +45,8 @@ from ir_to_eu5.write_data import (
 if __name__ == "__main__":
     culture_data = extract_culture_data()
     religion_data = extract_religion_data()
+    character_data = extract_character_data()
+    country_rulers = {c["country"]: c["tag"] for c in character_data if c["is_ruler"]}
     country_data, country_overrides = extract_country_data()
     coa_data = extract_coa_data()
     named_locations = {t[0]: t[1] for t in parse_definitions()}
@@ -53,16 +57,17 @@ if __name__ == "__main__":
     write_json(religion_data, mod_root / "religions.json")
     write_json(country_data, mod_root / "countries.json")
     write_json(coa_data, mod_root / "coats_of_arms.json")
-
+    write_json(character_data, mod_root / "characters.json")
     write_culture_group_data(culture_data)
     write_culture_data(culture_data)
     write_religion_group_data(religion_data)
     write_religion_data(religion_data)
     write_country_setup(country_data, country_overrides)
-    write_10_countries(ten_countries_data, country_data, eu5_map_data)
+    write_character_data(character_data)
+    write_10_countries(ten_countries_data, country_data, eu5_map_data, country_rulers)
     write_coa_file(coa_data)
 
-    write_localisation_files(culture_data, religion_data, country_data)
+    write_localisation_files(culture_data, religion_data, country_data, character_data)
 
     port_coa_gfx()
 
