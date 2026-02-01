@@ -500,5 +500,73 @@ def write_10_countries(ten_countries_data, country_data, eu5_map_data, country_r
     )
 
 
-def write_character_data(character_data):
-    pass
+def write_05_characters(five_characters_data, character_data):
+    character_map = {character["id"]: character["tag"] for character in character_data}
+    blocks = []
+    comment_tags = set()
+
+    for character in character_data:
+        tag = character["tag"]
+        character_name = character["name"]
+        character_family = character["family"]
+
+        # --- start from base, preserve everything ---
+        base = five_characters_data.get(tag, {})
+        merged = dict(base)  # shallow copy
+        if character_name == "random":
+            merged["first_name"] = character_name
+        else:
+            merged["first_name"] = f"{{ name = {character_name} }}"
+        if character_family:
+            merged["dynasty"] = character_family
+
+        # --- emit ---
+        lines: list = []
+        comment = f"# {character_name}"
+        if character_family:
+            comment += f" of House {character_family}"
+        lines.append(comment)
+
+        if character["father"]:
+            merged["father"] = character_map[character["father"]]
+        if character["mother"]:
+            merged["mother"] = character_map[character["mother"]]
+        if character["spouse"]:
+            merged["spouse"] = character_map[character["spouse"]]
+        if character["culture"]:
+            merged["culture"] = character["culture"]
+        if character["female"]:
+            merged["female"] = "yes"
+        if character["religion"]:
+            merged["religion"] = character["religion"]
+
+        merged["tag"] = character["country"]
+
+        merged["birth_date"] = character["birth_date"]
+
+        if "nickname" in character and character["nickname"]:
+            merged["nickname"] = character["nickname"]
+
+        for key, value in merged.items():
+            if isinstance(value, dict):
+                sub = []
+                for k, v in value.items():
+                    sub.append(f"{k} = {v}")
+                lines.append((key, sub))
+
+            elif isinstance(value, list):
+                lines.append((key, value))
+
+            else:
+                # strings, numbers, AND inline "{ }"
+                lines.append(f"{key} = {value}")
+
+        blocks.append((tag, lines))
+
+    nested = ("character_db", blocks)
+
+    write_blocks_with_comments(
+        iu_05_characters,
+        [nested],
+        comment_tags=comment_tags,
+    )

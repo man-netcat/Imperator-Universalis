@@ -19,6 +19,7 @@ sys.path.insert(0, str(tools_pyradox_src))
 
 from ir_to_eu5.extract_data import (
     extract_10_countries,
+    extract_05_characters,
     extract_character_data,
     extract_coa_data,
     extract_country_data,
@@ -32,7 +33,7 @@ from ir_to_eu5.paths import mod_root
 from ir_to_eu5.port_gfx import port_coa_gfx
 from ir_to_eu5.write_data import (
     write_10_countries,
-    write_character_data,
+    write_05_characters,
     write_coa_file,
     write_country_setup,
     write_culture_data,
@@ -50,6 +51,7 @@ if __name__ == "__main__":
     country_data, country_overrides = extract_country_data()
     coa_data = extract_coa_data()
     named_locations = {t[0]: t[1] for t in parse_definitions()}
+    five_characters_data = extract_05_characters()
     ten_countries_data = extract_10_countries()
     eu5_map_data = extract_eu5_map_data()
 
@@ -63,8 +65,8 @@ if __name__ == "__main__":
     write_religion_group_data(religion_data)
     write_religion_data(religion_data)
     write_country_setup(country_data, country_overrides)
-    write_character_data(character_data)
     write_10_countries(ten_countries_data, country_data, eu5_map_data, country_rulers)
+    write_05_characters(five_characters_data, character_data)
     write_coa_file(coa_data)
 
     write_localisation_files(culture_data, religion_data, country_data, character_data)

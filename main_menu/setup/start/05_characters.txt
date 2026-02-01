@@ -1,4 +1,4049 @@
-#Remember to write sons and daughters ALWAYS after their parents to avoid crashes
-
-character_db={
+character_db = {
+    etr_vulturreno_elbio = {
+        # Elbio of House Vulturreno
+        first_name = { name = Elbio }
+        dynasty = Vulturreno
+        tag = ETR
+        religion = ir_roman_pantheon
+        culture = ir_etruscan
+        birth_date = 430.6.26
+    }
+    etr_laurentius = {
+        # Laurentius
+        first_name = { name = Laurentius }
+        tag = ETR
+        religion = ir_roman_pantheon
+        culture = ir_etruscan
+        birth_date = 416.9.12
+        nickname = Porcius
+    }
+    etr_spurinas_velthur = {
+        # Velthur of House Spurinas
+        first_name = { name = Velthur }
+        dynasty = Spurinas
+        tag = ETR
+        religion = ir_roman_pantheon
+        culture = ir_etruscan
+        birth_date = 400.5.6
+    }
+    ebs_carutus = {
+        # Carutus
+        first_name = { name = Carutus }
+        tag = EBS
+        religion = ir_germanic_religion
+        culture = ir_belgae
+        birth_date = 420.11.1
+    }
+    col_kujid_kuji = {
+        # Kuji of House Kujid
+        first_name = { name = Kuji }
+        dynasty = Kujid
+        tag = COL
+        religion = ir_caucasian_religion
+        culture = ir_colchian
+        birth_date = 424.12.21
+    }
+    osm_michalus = {
+        # Michalus
+        first_name = { name = Michalus }
+        tag = OSM
+        religion = ir_druidism
+        culture = ir_aremorican
+        birth_date = 426.10.16
+    }
+    mas_krateros = {
+        # Krateros
+        first_name = { name = Krateros }
+        tag = MAS
+        religion = ir_roman_pantheon
+        culture = ir_massalian
+        birth_date = 422.4.5
+    }
+    mas_pytheas = {
+        # Pytheas
+        first_name = { name = Pytheas }
+        tag = MAS
+        religion = ir_roman_pantheon
+        culture = ir_massalian
+        birth_date = 400.8.25
+    }
+    msy_ailymasid_ailymas = {
+        # Ailymas of House Ailymasid
+        first_name = { name = Ailymas }
+        dynasty = Ailymasid
+        tag = MSY
+        religion = ir_berber_religion
+        culture = ir_massylian
+        birth_date = 400.4.7
+    }
+    mry_maurya_chandragupta = {
+        # Chandragupta of House Maurya
+        first_name = { name = Chandragupta }
+        dynasty = Maurya
+        tag = MRY
+        religion = ir_hindu
+        culture = ir_magadhi
+        birth_date = 412.5.9
+    }
+    mry_maurya_bindusara = {
+        # Bindusara of House Maurya
+        first_name = { name = Bindusara }
+        dynasty = Maurya
+        father = mry_maurya_chandragupta
+        tag = MRY
+        religion = ir_hindu
+        culture = ir_magadhi
+        birth_date = 434.5.7
+    }
+    mry_maurya_ashoka = {
+        # Ashoka of House Maurya
+        first_name = { name = Ashoka }
+        dynasty = Maurya
+        father = mry_maurya_bindusara
+        tag = MRY
+        religion = ir_hindu
+        culture = ir_magadhi
+        birth_date = 450.4.19
+    }
+    mry_chanakya = {
+        # Chanakya
+        first_name = { name = Chanakya }
+        tag = MRY
+        religion = ir_hindu
+        culture = ir_magadhi
+        birth_date = 410.3.4
+    }
+    mry_maurya_susima = {
+        # Susima of House Maurya
+        first_name = { name = Susima }
+        dynasty = Maurya
+        father = mry_maurya_bindusara
+        tag = MRY
+        religion = ir_hindu
+        culture = ir_magadhi
+        birth_date = 448.10.18
+    }
+    mry_maurya_shashigupta = {
+        # Shashigupta of House Maurya
+        first_name = { name = Shashigupta }
+        dynasty = Maurya
+        tag = MRY
+        religion = ir_hindu
+        culture = ir_magadhi
+        birth_date = 412.5.9
+    }
+    mry_maurya_sugatra = {
+        # Sugatra of House Maurya
+        first_name = { name = Sugatra }
+        dynasty = Maurya
+        tag = MRY
+        religion = ir_hindu
+        culture = ir_magadhi
+        birth_date = 420.1.29
+    }
+    cyr_theodoros = {
+        # Theodoros
+        first_name = { name = Theodoros }
+        tag = CYR
+        religion = ir_roman_pantheon
+        culture = ir_cyrenaican
+        birth_date = 414.1.13
+        nickname = NICKNAME_ATHEOS
+    }
+    cyr_aristippos = {
+        # Aristippos
+        first_name = { name = Aristippos }
+        tag = CYR
+        religion = ir_roman_pantheon
+        culture = ir_cyrenaican
+        birth_date = 380.6.14
+        nickname = NICKNAME_METRODIDAKTOS
+    }
+    cyr_charinid_epimenes = {
+        # Epimenes of House Charinid
+        first_name = { name = Epimenes }
+        dynasty = Charinid
+        tag = CYR
+        religion = ir_roman_pantheon
+        culture = ir_cyrenaican
+        birth_date = 406.8.9
+    }
+    cap_amyntid_amyntas = {
+        # Amyntas of House Amyntid
+        first_name = { name = Amyntas }
+        dynasty = Amyntid
+        tag = CAP
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 408.12.3
+    }
+    epi_phthia = {
+        # Phthia
+        first_name = { name = Phthia }
+        tag = EPI
+        religion = ir_roman_pantheon
+        culture = ir_thessalian
+        female = yes
+        birth_date = 408.6.28
+    }
+    epi_aiakid_pyrrhos = {
+        # Pyrrhos of House Aiakid
+        first_name = { name = Pyrrhos }
+        dynasty = Aiakid
+        father = elysium_epi_aiakid_aiakides
+        mother = epi_phthia
+        tag = EPI
+        religion = ir_roman_pantheon
+        culture = ir_epirote
+        birth_date = 436.1.11
+    }
+    epi_aiakid_deidamia = {
+        # Deidamia of House Aiakid
+        first_name = { name = Deidamia }
+        dynasty = Aiakid
+        father = elysium_epi_aiakid_aiakides
+        mother = epi_phthia
+        tag = EPI
+        religion = ir_roman_pantheon
+        culture = ir_epirote
+        female = yes
+        birth_date = 432.9.30
+    }
+    epi_aiakid_troias = {
+        # Troias of House Aiakid
+        first_name = { name = Troias }
+        dynasty = Aiakid
+        father = elysium_epi_aiakid_aiakides
+        mother = epi_phthia
+        tag = EPI
+        religion = ir_roman_pantheon
+        culture = ir_epirote
+        female = yes
+        birth_date = 438.9.14
+    }
+    epi_aiakid_neoptolemos = {
+        # Neoptolemos of House Aiakid
+        first_name = { name = Neoptolemos }
+        dynasty = Aiakid
+        father = elysium_epi_aiakid_alexandros
+        mother = elysium_mac_kleopatra
+        tag = EPI
+        religion = ir_roman_pantheon
+        culture = ir_epirote
+        birth_date = 418.4.5
+    }
+    epi_aiakid_kadmeia = {
+        # Kadmeia of House Aiakid
+        first_name = { name = Kadmeia }
+        dynasty = Aiakid
+        father = elysium_epi_aiakid_alexandros
+        mother = elysium_mac_kleopatra
+        tag = EPI
+        religion = ir_roman_pantheon
+        culture = ir_epirote
+        female = yes
+        birth_date = 420.1.29
+    }
+    epi_aimilia = {
+        # Aimilia
+        first_name = { name = Aimilia }
+        tag = EPI
+        religion = ir_roman_pantheon
+        culture = ir_epirote
+        female = yes
+        birth_date = 420.11.1
+    }
+    epi_megaklid_megakles = {
+        # Megakles of House Megaklid
+        first_name = { name = Megakles }
+        dynasty = Megaklid
+        tag = EPI
+        religion = ir_roman_pantheon
+        culture = ir_epirote
+        birth_date = 424.12.21
+    }
+    epi_aiakid_ptolemaios = {
+        # Ptolemaios of House Aiakid
+        first_name = { name = Ptolemaios }
+        dynasty = Aiakid
+        tag = EPI
+        religion = ir_roman_pantheon
+        culture = ir_epirote
+        birth_date = 430.6.26
+    }
+    epi_aiakid_alexandros = {
+        # Alexandros of House Aiakid
+        first_name = { name = Alexandros }
+        dynasty = Aiakid
+        tag = EPI
+        religion = ir_roman_pantheon
+        culture = ir_epirote
+        birth_date = 428.8.11
+    }
+    epi_kineas = {
+        # Kineas
+        first_name = { name = Kineas }
+        tag = EPI
+        religion = ir_roman_pantheon
+        culture = ir_thessalian
+        birth_date = 403.1.15
+    }
+    epi_gelid_gelon = {
+        # Gelon of House Gelid
+        first_name = { name = Gelon }
+        dynasty = Gelid
+        tag = EPI
+        religion = ir_roman_pantheon
+        culture = ir_epirote
+        birth_date = 421.7.19
+    }
+    epi_alexiokrates = {
+        # Alexiokrates
+        first_name = { name = Alexiokrates }
+        tag = EPI
+        religion = ir_roman_pantheon
+        culture = ir_epirote
+        birth_date = 438.8.21
+    }
+    epi_aeropos = {
+        # Aeropos
+        first_name = { name = Aeropos }
+        tag = EPI
+        religion = ir_roman_pantheon
+        culture = ir_epirote
+        birth_date = 424.1.12
+    }
+    anu_vijaya_mutasiva = {
+        # Mutasiva of House Vijaya
+        first_name = { name = Mutasiva }
+        dynasty = Vijaya
+        tag = ANU
+        religion = ir_hindu
+        culture = ir_lankan
+        birth_date = 414.11.17
+    }
+    vdl_magne = {
+        # Magne
+        first_name = { name = Magne }
+        tag = VDL
+        religion = ir_germanic_religion
+        culture = ir_rugian
+        birth_date = 426.2.14
+    }
+    zhz_weikwan = {
+        # Weikwan
+        first_name = { name = Weikwan }
+        tag = ZHZ
+        religion = ir_bon_religion
+        culture = ir_zhangzhung
+        birth_date = 414.11.17
+    }
+    mac_antipatrid_kassandros = {
+        # Kassandros of House Antipatrid
+        first_name = { name = Kassandros }
+        dynasty = Antipatrid
+        father = elysium_mac_antipatrid_antipatros
+        tag = MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 402.12.19
+    }
+    mac_prepelaos = {
+        # Prepelaos
+        first_name = { name = Prepelaos }
+        tag = MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 426.2.14
+    }
+    mac_eupolemos = {
+        # Eupolemos
+        first_name = { name = Eupolemos }
+        tag = MAC
+        religion = ir_roman_pantheon
+        culture = ir_ionian
+        birth_date = 424.12.21
+    }
+    mac_antipatrid_philippos = {
+        # Philippos of House Antipatrid
+        first_name = { name = Philippos }
+        dynasty = Antipatrid
+        father = elysium_mac_antipatrid_antipatros
+        tag = MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 410.12.12
+    }
+    mac_timokratos = {
+        # Timokratos
+        first_name = { name = Timokratos }
+        tag = MAC
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 416.9.12
+    }
+    mac_antipatrid_pleistarchos = {
+        # Pleistarchos of House Antipatrid
+        first_name = { name = Pleistarchos }
+        dynasty = Antipatrid
+        father = elysium_mac_antipatrid_antipatros
+        tag = MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 405.10.14
+    }
+    mac_antipatrid_alexarchos = {
+        # Alexarchos of House Antipatrid
+        first_name = { name = Alexarchos }
+        dynasty = Antipatrid
+        father = elysium_mac_antipatrid_antipatros
+        tag = MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 412.8.9
+    }
+    mac_nikomakos = {
+        # Nikomakos
+        first_name = { name = Nikomakos }
+        tag = MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 430.6.26
+    }
+    mac_thessalonike = {
+        # Thessalonike
+        first_name = { name = Thessalonike }
+        mother = elysium_mac_nikesipolis
+        spouse = mac_antipatrid_kassandros
+        tag = MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        female = yes
+        birth_date = 404.10.14
+    }
+    mac_antipatrid_philippos_2 = {
+        # Philippos of House Antipatrid
+        first_name = { name = Philippos }
+        dynasty = Antipatrid
+        father = mac_antipatrid_kassandros
+        mother = mac_thessalonike
+        tag = MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 438.9.14
+    }
+    mac_antipatrid_antipatros = {
+        # Antipatros of House Antipatrid
+        first_name = { name = Antipatros }
+        dynasty = Antipatrid
+        father = mac_antipatrid_kassandros
+        mother = mac_thessalonike
+        tag = MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 440.5.23
+    }
+    mac_antipatrid_alexandros = {
+        # Alexandros of House Antipatrid
+        first_name = { name = Alexandros }
+        dynasty = Antipatrid
+        father = mac_antipatrid_kassandros
+        mother = mac_thessalonike
+        tag = MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 442.1.27
+    }
+    mac_antipatrid_antipatros_2 = {
+        # Antipatros of House Antipatrid
+        first_name = { name = Antipatros }
+        dynasty = Antipatrid
+        father = mac_antipatrid_philippos
+        tag = MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 438.3.18
+    }
+    mac_random = {
+        # random
+        first_name = random
+        spouse = mac_antipatrid_pleistarchos
+        tag = MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        female = yes
+        birth_date = 413.8.1
+    }
+    mac_antipatrid_antipatros_3 = {
+        # Antipatros of House Antipatrid
+        first_name = { name = Antipatros }
+        dynasty = Antipatrid
+        father = mac_antipatrid_pleistarchos
+        mother = mac_random
+        tag = MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 436.8.8
+    }
+    sma_samarian_daliah = {
+        # Daliah of House Samarian
+        first_name = { name = Daliah }
+        dynasty = Samarian
+        tag = SMA
+        religion = ir_judaism
+        culture = ir_hebrew
+        birth_date = 400.4.7
+    }
+    abm_rodus = {
+        # Rodus
+        first_name = { name = Rodus }
+        tag = ABM
+        religion = ir_druidism
+        culture = ir_belgae
+        birth_date = 426.10.16
+    }
+    byz_ioannes = {
+        # Ioannes
+        first_name = { name = Ioannes }
+        tag = BYZ
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 420.11.1
+        nickname = NICKNAME_CAESAR
+    }
+    byz_random = {
+        # random
+        first_name = random
+        tag = BYZ
+        religion = ir_roman_pantheon
+        culture = ir_thracian
+        birth_date = 416.6.8
+    }
+    tau_claudia = {
+        # Claudia
+        first_name = { name = Claudia }
+        tag = TAU
+        religion = ir_druidism
+        culture = ir_salluvian
+        female = yes
+        birth_date = 419.7.11
+    }
+    sel_seleukid_seleukos = {
+        # Seleukos of House Seleukid
+        first_name = { name = Seleukos }
+        dynasty = Seleukid
+        father = elysium_sel_seleukid_antiochos
+        mother = elysium_sel_seleukid_laodike
+        tag = SEL
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 396.7.6
+        nickname = NICKNAME_NICATOR
+    }
+    sel_apama = {
+        # Apama
+        first_name = { name = Apama }
+        spouse = sel_seleukid_seleukos
+        tag = SEL
+        religion = ir_zoroaster
+        culture = ir_sogdian
+        female = yes
+        birth_date = 412.5.9
+    }
+    sel_seleukid_antiochos = {
+        # Antiochos of House Seleukid
+        first_name = { name = Antiochos }
+        dynasty = Seleukid
+        father = sel_seleukid_seleukos
+        mother = sel_apama
+        tag = SEL
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 430.6.26
+    }
+    sel_seleukid_laodike = {
+        # Laodike of House Seleukid
+        first_name = { name = Laodike }
+        dynasty = Seleukid
+        father = sel_seleukid_seleukos
+        mother = sel_apama
+        tag = SEL
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        female = yes
+        birth_date = 434.7.26
+    }
+    sel_frataraka_wahbarz = {
+        # Wahbarz of House Frataraka
+        first_name = { name = Wahbarz }
+        dynasty = Frataraka
+        tag = SEL
+        religion = ir_zoroaster
+        culture = ir_pasargadi
+        birth_date = 430.1.29
+    }
+    sel_seleukid_achaios = {
+        # Achaios of House Seleukid
+        first_name = { name = Achaios }
+        dynasty = Seleukid
+        father = sel_seleukid_seleukos
+        mother = sel_apama
+        tag = SEL
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 434.5.7
+    }
+    sel_seleukid_phila = {
+        # Phila of House Seleukid
+        first_name = { name = Phila }
+        dynasty = Seleukid
+        father = sel_seleukid_seleukos
+        mother = sel_apama
+        tag = SEL
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        female = yes
+        birth_date = 440.5.23
+    }
+    sel_deimachos = {
+        # Deimachos
+        first_name = { name = Deimachos }
+        tag = SEL
+        religion = ir_roman_pantheon
+        culture = ir_boeotian
+        birth_date = 400.4.7
+    }
+    sel_demodamas = {
+        # Demodamas
+        first_name = { name = Demodamas }
+        tag = SEL
+        religion = ir_roman_pantheon
+        culture = ir_carian
+        birth_date = 420.1.29
+    }
+    sel_antiochos = {
+        # Antiochos
+        first_name = { name = Antiochos }
+        tag = SEL
+        religion = ir_roman_pantheon
+        culture = ir_cypriot
+        birth_date = 430.6.26
+        nickname = NICKNAME_GELOTOPOIOS
+    }
+    sel_molon = {
+        # Molon
+        first_name = { name = Molon }
+        tag = SEL
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 440.5.23
+    }
+    sel_menippos = {
+        # Menippos
+        first_name = { name = Menippos }
+        tag = SEL
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 450.4.19
+    }
+    sel_eutychides = {
+        # Eutychides
+        first_name = { name = Eutychides }
+        tag = SEL
+        religion = ir_roman_pantheon
+        culture = ir_achaean
+        birth_date = 420.1.29
+    }
+    sel_patrokles = {
+        # Patrokles
+        first_name = { name = Patrokles }
+        tag = SEL
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 420.1.29
+    }
+    sel_megasthenes = {
+        # Megasthenes
+        first_name = { name = Megasthenes }
+        tag = SEL
+        religion = ir_roman_pantheon
+        culture = ir_aeolian
+        birth_date = 406.4.23
+    }
+    sel_telesarchos = {
+        # Telesarchos
+        first_name = { name = Telesarchos }
+        tag = SEL
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 424.12.21
+    }
+    sel_hermogenes = {
+        # Hermogenes
+        first_name = { name = Hermogenes }
+        tag = SEL
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 420.1.29
+    }
+    sel_dionysios = {
+        # Dionysios
+        first_name = { name = Dionysios }
+        tag = SEL
+        religion = ir_roman_pantheon
+        culture = ir_aegean
+        birth_date = 428.8.11
+    }
+    sel_seleukid_deidamia = {
+        # Deidamia of House Seleukid
+        first_name = { name = Deidamia }
+        dynasty = Seleukid
+        father = elysium_sel_seleukid_antiochos
+        mother = elysium_sel_seleukid_laodike
+        tag = SEL
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        female = yes
+        birth_date = 400.4.7
+    }
+    sel_nikomedes = {
+        # Nikomedes
+        first_name = { name = Nikomedes }
+        spouse = sel_seleukid_deidamia
+        tag = SEL
+        religion = ir_roman_pantheon
+        culture = ir_thessalian
+        birth_date = 389.4.4
+    }
+    sel_seleukid_nikanor = {
+        # Nikanor of House Seleukid
+        first_name = { name = Nikanor }
+        dynasty = Seleukid
+        father = sel_nikomedes
+        mother = sel_seleukid_deidamia
+        tag = SEL
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 430.6.26
+    }
+    sel_seleukid_nikomedes = {
+        # Nikomedes of House Seleukid
+        first_name = { name = Nikomedes }
+        dynasty = Seleukid
+        father = sel_nikomedes
+        mother = sel_seleukid_deidamia
+        tag = SEL
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 432.9.30
+    }
+    sel_seleukid_seleukos_2 = {
+        # Seleukos of House Seleukid
+        first_name = { name = Seleukos }
+        dynasty = Seleukid
+        father = elysium_sel_seleukid_ptolemaios
+        tag = SEL
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 394.2.8
+    }
+    sel_seleukid_ptolemaios = {
+        # Ptolemaios of House Seleukid
+        first_name = { name = Ptolemaios }
+        dynasty = Seleukid
+        father = sel_seleukid_seleukos_2
+        tag = SEL
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 426.3.1
+    }
+    sxs_nilis = {
+        # Nilis
+        first_name = { name = Nilis }
+        tag = SXS
+        religion = ir_druidism
+        culture = ir_belgae
+        birth_date = 420.11.1
+    }
+    del_anaximander = {
+        # Anaximander
+        first_name = { name = Anaximander }
+        tag = DEL
+        religion = ir_roman_pantheon
+        culture = ir_herulian
+        birth_date = 416.9.12
+        nickname = NICKNAME_CHARTOGRAFOS
+    }
+    del_random = {
+        # random
+        first_name = random
+        tag = DEL
+        religion = ir_roman_pantheon
+        culture = ir_aegean
+        birth_date = 410.8.9
+    }
+    bpk_spartokid_spartokos = {
+        # Spartokos of House Spartokid
+        first_name = { name = Spartokos }
+        dynasty = Spartokid
+        tag = BPK
+        religion = ir_roman_pantheon
+        culture = ir_bosporan
+        birth_date = 424.6.10
+    }
+    bpk_spartokid_pairisades = {
+        # Pairisades of House Spartokid
+        first_name = { name = Pairisades }
+        dynasty = Spartokid
+        tag = BPK
+        religion = ir_roman_pantheon
+        culture = ir_bosporan
+        birth_date = 430.6.26
+    }
+    kio_mithridatid_artakama = {
+        # Artakama of House Mithridatid
+        first_name = { name = Artakama }
+        dynasty = Mithridatid
+        tag = KIO
+        religion = ir_zoroaster
+        culture = ir_median
+        female = yes
+        birth_date = 374.7.4
+    }
+    kio_mithridatid_mithradates = {
+        # Mithradates of House Mithridatid
+        first_name = { name = Mithradates }
+        dynasty = Mithridatid
+        spouse = kio_mithridatid_artakama
+        tag = KIO
+        religion = ir_zoroaster
+        culture = ir_median
+        birth_date = 368.5.13
+    }
+    kio_mithridatid_mandane = {
+        # Mandane of House Mithridatid
+        first_name = { name = Mandane }
+        dynasty = Mithridatid
+        father = kio_mithridatid_mithradates
+        mother = kio_mithridatid_artakama
+        tag = KIO
+        religion = ir_zoroaster
+        culture = ir_median
+        female = yes
+        birth_date = 414.1.13
+    }
+    kio_mithridatid_anzaza = {
+        # Anzaza of House Mithridatid
+        first_name = { name = Anzaza }
+        dynasty = Mithridatid
+        father = kio_mithridatid_mithradates
+        mother = kio_mithridatid_artakama
+        tag = KIO
+        religion = ir_zoroaster
+        culture = ir_median
+        female = yes
+        birth_date = 420.11.1
+    }
+    kio_mithridatid_ariobarzanes = {
+        # Ariobarzanes of House Mithridatid
+        first_name = { name = Ariobarzanes }
+        dynasty = Mithridatid
+        tag = KIO
+        religion = ir_zoroaster
+        culture = ir_median
+        birth_date = 430.6.26
+    }
+    kio_mithridatid_pharnakes = {
+        # Pharnakes of House Mithridatid
+        first_name = { name = Pharnakes }
+        dynasty = Mithridatid
+        tag = KIO
+        religion = ir_zoroaster
+        culture = ir_median
+        birth_date = 432.3.2
+    }
+    kio_mithridatid_dareios = {
+        # Dareios of House Mithridatid
+        first_name = { name = Dareios }
+        dynasty = Mithridatid
+        tag = KIO
+        religion = ir_zoroaster
+        culture = ir_median
+        birth_date = 430.12.5
+    }
+    pas_arheo = {
+        # Arheo
+        first_name = { name = Arheo }
+        tag = PAS
+        religion = ir_druidism
+        culture = ir_belgae
+        birth_date = 420.1.29
+        nickname = NICKNAME_CANTOR
+    }
+    ars_sibyrtid_sibyrtios = {
+        # Sibyrtios of House Sibyrtid
+        first_name = { name = Sibyrtios }
+        dynasty = Sibyrtid
+        tag = ARS
+        religion = ir_roman_pantheon
+        culture = ir_cretan
+        birth_date = 394.9.10
+    }
+    arm_orontids_orontes = {
+        # Orontes of House Orontids
+        first_name = { name = Orontes }
+        dynasty = Orontids
+        tag = ARM
+        religion = ir_zoroaster
+        culture = ir_armenian
+        birth_date = 418.7.8
+    }
+    arm_ariarathes = {
+        # Ariarathes
+        first_name = { name = Ariarathes }
+        tag = ARM
+        religion = ir_zoroaster
+        culture = ir_cappadocian
+        birth_date = 422.8.27
+    }
+    kal_kalinga_anantha = {
+        # Anantha of House Kalinga
+        first_name = { name = Anantha }
+        dynasty = Kalinga
+        tag = KAL
+        religion = ir_buddhism
+        culture = ir_kalingan
+        birth_date = 414.11.17
+        nickname = NICKNAME_PADMANABHAN
+    }
+    arg_matthias = {
+        # Matthias
+        first_name = { name = Matthias }
+        tag = ARG
+        religion = ir_roman_pantheon
+        culture = ir_peloponnesian
+        birth_date = 425.11.1
+    }
+    clc_aemilius = {
+        # Aemilius
+        first_name = { name = Aemilius }
+        tag = CLC
+        religion = ir_druidism
+        culture = ir_celtician
+        birth_date = 414.1.13
+    }
+    bri_samus = {
+        # Samus
+        first_name = { name = Samus }
+        tag = BRI
+        religion = ir_druidism
+        culture = ir_britannic
+        birth_date = 422.4.5
+    }
+    git_philipp = {
+        # Philipp
+        first_name = { name = Philipp }
+        tag = GIT
+        religion = ir_germanic_religion
+        culture = ir_gutones
+        birth_date = 422.4.5
+    }
+    heaven_jud_samuel = {
+        # Samuel
+        first_name = { name = Samuel }
+        tag = Heaven_JUD
+        religion = ir_judaism
+        culture = ir_hebrew
+        birth_date = 1.1.2
+    }
+    heaven_jud_deborah = {
+        # Deborah
+        first_name = { name = Deborah }
+        tag = Heaven_JUD
+        religion = ir_judaism
+        culture = ir_hebrew
+        female = yes
+        birth_date = 1.1.2
+    }
+    heaven_jud_ezekiel = {
+        # Ezekiel
+        first_name = { name = Ezekiel }
+        tag = Heaven_JUD
+        religion = ir_judaism
+        culture = ir_hebrew
+        birth_date = 132.1.2
+    }
+    heaven_jud_ezra = {
+        # Ezra
+        first_name = { name = Ezra }
+        tag = Heaven_JUD
+        religion = ir_judaism
+        culture = ir_hebrew
+        birth_date = 270.1.2
+    }
+    heaven_jud_esther = {
+        # Esther
+        first_name = { name = Esther }
+        tag = Heaven_JUD
+        religion = ir_judaism
+        culture = ir_hebrew
+        female = yes
+        birth_date = 268.1.2
+    }
+    heaven_jud_joseph = {
+        # Joseph
+        first_name = { name = Joseph }
+        tag = Heaven_JUD
+        religion = ir_judaism
+        culture = ir_hebrew
+        birth_date = 1.1.2
+    }
+    heaven_jud_abraham = {
+        # Abraham
+        first_name = { name = Abraham }
+        tag = Heaven_JUD
+        religion = ir_judaism
+        culture = ir_hebrew
+        birth_date = 1.1.2
+    }
+    heaven_jud_caleb = {
+        # Caleb
+        first_name = { name = Caleb }
+        tag = Heaven_JUD
+        religion = ir_judaism
+        culture = ir_hebrew
+        birth_date = 1.1.2
+    }
+    heaven_jud_david = {
+        # David
+        first_name = { name = David }
+        tag = Heaven_JUD
+        religion = ir_judaism
+        culture = ir_hebrew
+        birth_date = 1.1.2
+    }
+    heaven_jud_solomon = {
+        # Solomon
+        first_name = { name = Solomon }
+        tag = Heaven_JUD
+        religion = ir_judaism
+        culture = ir_hebrew
+        birth_date = 1.1.2
+    }
+    heaven_jud_moses = {
+        # Moses
+        first_name = { name = Moses }
+        tag = Heaven_JUD
+        religion = ir_judaism
+        culture = ir_hebrew
+        birth_date = 1.1.2
+    }
+    heaven_jud_daniel = {
+        # Daniel
+        first_name = { name = Daniel }
+        tag = Heaven_JUD
+        religion = ir_judaism
+        culture = ir_hebrew
+        birth_date = 1.1.2
+    }
+    syr_alkia = {
+        # Alkia
+        first_name = { name = Alkia }
+        tag = SYR
+        religion = ir_roman_pantheon
+        culture = ir_syracusan
+        female = yes
+        birth_date = 408.6.28
+    }
+    syr_agathoklid_agathokles = {
+        # Agathokles of House Agathoklid
+        first_name = { name = Agathokles }
+        dynasty = Agathoklid
+        father = elysium_syr_agathoklid_karkinos
+        spouse = syr_alkia
+        tag = SYR
+        religion = ir_roman_pantheon
+        culture = ir_syracusan
+        birth_date = 392.1.15
+    }
+    syr_agathoklid_lanassa = {
+        # Lanassa of House Agathoklid
+        first_name = { name = Lanassa }
+        dynasty = Agathoklid
+        father = syr_agathoklid_agathokles
+        mother = syr_alkia
+        tag = SYR
+        religion = ir_roman_pantheon
+        culture = ir_syracusan
+        female = yes
+        birth_date = 427.12.21
+    }
+    syr_agathoklid_archagathos = {
+        # Archagathos of House Agathoklid
+        first_name = { name = Archagathos }
+        dynasty = Agathoklid
+        father = elysium_syr_agathoklid_archagathos
+        tag = SYR
+        religion = ir_roman_pantheon
+        culture = ir_syracusan
+        birth_date = 441.9.30
+    }
+    syr_agathoklid_antander = {
+        # Antander of House Agathoklid
+        first_name = { name = Antander }
+        dynasty = Agathoklid
+        father = elysium_syr_agathoklid_karkinos
+        tag = SYR
+        religion = ir_roman_pantheon
+        culture = ir_syracusan
+        birth_date = 390.5.11
+    }
+    syr_agathoklid_agathokles_2 = {
+        # Agathokles of House Agathoklid
+        first_name = { name = Agathokles }
+        dynasty = Agathoklid
+        father = syr_agathoklid_agathokles
+        mother = syr_alkia
+        tag = SYR
+        religion = ir_roman_pantheon
+        culture = ir_syracusan
+        birth_date = 431.10.16
+    }
+    syr_deinokrates = {
+        # Deinokrates
+        first_name = { name = Deinokrates }
+        tag = SYR
+        religion = ir_roman_pantheon
+        culture = ir_syracusan
+        birth_date = 396.8.1
+    }
+    syr_agathoklid_karkinos = {
+        # Karkinos of House Agathoklid
+        first_name = { name = Karkinos }
+        dynasty = Agathoklid
+        father = syr_agathoklid_antander
+        tag = SYR
+        religion = ir_roman_pantheon
+        culture = ir_syracusan
+        birth_date = 414.6.22
+    }
+    sid_elonimid_abd-elonim = {
+        # Abd-Elonim of House Elonimid
+        first_name = { name = Abd-Elonim }
+        dynasty = Elonimid
+        tag = SID
+        religion = ir_carthaginian_pantheon
+        culture = ir_phoenician
+        birth_date = 380.6.14
+    }
+    gte_dromichaetes = {
+        # Dromichaetes
+        first_name = { name = Dromichaetes }
+        tag = GTE
+        religion = ir_shamanism
+        culture = ir_getian
+        birth_date = 397.4.6
+    }
+    kos_berossus = {
+        # Berossus
+        first_name = { name = Berossus }
+        tag = KOS
+        religion = ir_mesopotamian_religion
+        culture = ir_babylonian
+        birth_date = 424.6.10
+    }
+    kos_philetas = {
+        # Philetas
+        first_name = { name = Philetas }
+        tag = KOS
+        religion = ir_roman_pantheon
+        culture = ir_aegean
+        birth_date = 424.6.10
+    }
+    kos_herodas = {
+        # Herodas
+        first_name = { name = Herodas }
+        tag = KOS
+        religion = ir_roman_pantheon
+        culture = ir_aegean
+        birth_date = 424.6.10
+    }
+    kos_random = {
+        # random
+        first_name = random
+        tag = KOS
+        religion = ir_roman_pantheon
+        culture = ir_aegean
+        birth_date = 418.12.1
+    }
+    spa_phylarchos = {
+        # Phylarchos
+        first_name = { name = Phylarchos }
+        tag = SPA
+        religion = ir_roman_pantheon
+        culture = ir_peloponnesian
+        birth_date = 400.4.7
+    }
+    spa_agiad_areus = {
+        # Areus of House Agiad
+        first_name = { name = Areus }
+        dynasty = Agiad
+        tag = SPA
+        religion = ir_roman_pantheon
+        culture = ir_peloponnesian
+        birth_date = 430.6.26
+    }
+    spa_agiad_kleonymos = {
+        # Kleonymos of House Agiad
+        first_name = { name = Kleonymos }
+        dynasty = Agiad
+        tag = SPA
+        religion = ir_roman_pantheon
+        culture = ir_peloponnesian
+        birth_date = 410.3.4
+    }
+    spa_agiad_akrotatos = {
+        # Akrotatos of House Agiad
+        first_name = { name = Akrotatos }
+        dynasty = Agiad
+        father = spa_agiad_areus
+        tag = SPA
+        religion = ir_roman_pantheon
+        culture = ir_peloponnesian
+        birth_date = 448.10.18
+    }
+    spa_thoukydides = {
+        # Thoukydides
+        first_name = { name = Thoukydides }
+        tag = SPA
+        religion = ir_roman_pantheon
+        culture = ir_peloponnesian
+        birth_date = 406.4.23
+    }
+    spa_agiad_kleombrotos = {
+        # Kleombrotos of House Agiad
+        first_name = { name = Kleombrotos }
+        dynasty = Agiad
+        tag = SPA
+        religion = ir_roman_pantheon
+        culture = ir_peloponnesian
+        birth_date = 432.3.2
+    }
+    spa_agiad_anaxandridas = {
+        # Anaxandridas of House Agiad
+        first_name = { name = Anaxandridas }
+        dynasty = Agiad
+        tag = SPA
+        religion = ir_roman_pantheon
+        culture = ir_peloponnesian
+        birth_date = 420.1.29
+    }
+    sam_varriani_gaius = {
+        # Gaius of House Varriani
+        first_name = { name = Gaius }
+        dynasty = Varriani
+        tag = SAM
+        religion = ir_roman_pantheon
+        culture = ir_samnite
+        birth_date = 410.9.28
+        nickname = NICKNAME_PONTIUS
+    }
+    sam_drikus = {
+        # Drikus
+        first_name = { name = Drikus }
+        tag = SAM
+        religion = ir_roman_pantheon
+        culture = ir_samnite
+        birth_date = 421.8.14
+        nickname = NICKNAME_BIGGUS
+    }
+    sam_incontinentia = {
+        # Incontinentia
+        first_name = { name = Incontinentia }
+        spouse = sam_drikus
+        tag = SAM
+        religion = ir_roman_pantheon
+        culture = ir_samnite
+        female = yes
+        birth_date = 422.1.16
+        nickname = NICKNAME_BUTTOCKS
+    }
+    sam_varriani_gellius = {
+        # Gellius of House Varriani
+        first_name = { name = Gellius }
+        dynasty = Varriani
+        tag = SAM
+        religion = ir_roman_pantheon
+        culture = ir_samnite
+        birth_date = 410.9.28
+    }
+    sam_calavii_ofilius = {
+        # Ofilius of House Calavii
+        first_name = { name = Ofilius }
+        dynasty = Calavii
+        tag = SAM
+        religion = ir_roman_pantheon
+        culture = ir_samnite
+        birth_date = 400.3.1
+    }
+    sam_calavii_ovius = {
+        # Ovius of House Calavii
+        first_name = { name = Ovius }
+        dynasty = Calavii
+        father = sam_calavii_ofilius
+        tag = SAM
+        religion = ir_roman_pantheon
+        culture = ir_samnite
+        birth_date = 419.9.28
+    }
+    sam_calavii_novius = {
+        # Novius of House Calavii
+        first_name = { name = Novius }
+        dynasty = Calavii
+        father = sam_calavii_ofilius
+        tag = SAM
+        religion = ir_roman_pantheon
+        culture = ir_samnite
+        birth_date = 420.6.1
+    }
+    sam_gellii_statius = {
+        # Statius of House Gellii
+        first_name = { name = Statius }
+        dynasty = Gellii
+        tag = SAM
+        religion = ir_roman_pantheon
+        culture = ir_samnite
+        birth_date = 405.12.24
+    }
+    dob_aine = {
+        # Aine
+        first_name = { name = Aine }
+        tag = DOB
+        religion = ir_druidism
+        culture = ir_dobunnian
+        female = yes
+        birth_date = 412.7.24
+    }
+    rom_gnaeus = {
+        # Gnaeus
+        first_name = { name = Gnaeus }
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 402.12.19
+    }
+    rom_cornelii_lucius = {
+        # Lucius of House Cornelii
+        first_name = { name = Lucius }
+        dynasty = Cornelii
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 416.3.20
+        nickname = NICKNAME_SCIPIO
+    }
+    rom_cornelii_lucius_2 = {
+        # Lucius of House Cornelii
+        first_name = { name = Lucius }
+        dynasty = Cornelii
+        father = rom_cornelii_lucius
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 444.8.29
+        nickname = NICKNAME_SCIPIO
+    }
+    rom_marcus = {
+        # Marcus
+        first_name = { name = Marcus }
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 380.6.14
+        nickname = NICKNAME_CORVUS
+    }
+    rom_marcus_2 = {
+        # Marcus
+        first_name = { name = Marcus }
+        father = rom_marcus
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 418.5.25
+        nickname = NICKNAME_CORVINUS
+    }
+    rom_quintus = {
+        # Quintus
+        first_name = { name = Quintus }
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 408.6.28
+        nickname = NICKNAME_PANSA
+    }
+    rom_quintus_2 = {
+        # Quintus
+        first_name = { name = Quintus }
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 400.4.7
+        nickname = NICKNAME_TREMULUS
+    }
+    rom_marcus_3 = {
+        # Marcus
+        first_name = { name = Marcus }
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 412.7.24
+        nickname = NICKNAME_PAETINUS
+    }
+    rom_lucius = {
+        # Lucius
+        first_name = { name = Lucius }
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 408.6.28
+        nickname = NICKNAME_LIBO
+    }
+    rom_lucius_2 = {
+        # Lucius
+        first_name = { name = Lucius }
+        father = rom_lucius
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 442.11.3
+        nickname = NICKNAME_LIBO
+    }
+    rom_quintus_3 = {
+        # Quintus
+        first_name = { name = Quintus }
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 420.11.1
+    }
+    rom_gnaeus_2 = {
+        # Gnaeus
+        first_name = { name = Gnaeus }
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 422.8.27
+    }
+    rom_manius = {
+        # Manius
+        first_name = { name = Manius }
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 424.12.21
+        nickname = NICKNAME_DENTATUS
+    }
+    rom_sebastianus = {
+        # Sebastianus
+        first_name = { name = Sebastianus }
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 420.11.1
+        nickname = NICKNAME_CATTUS
+    }
+    rom_lucius_3 = {
+        # Lucius
+        first_name = { name = Lucius }
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 390.5.11
+        nickname = NICKNAME_CURSOR
+    }
+    rom_publius = {
+        # Publius
+        first_name = { name = Publius }
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 406.4.23
+        nickname = NICKNAME_MUS
+    }
+    rom_marcus_4 = {
+        # Marcus
+        first_name = { name = Marcus }
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 406.8.9
+        nickname = NICKNAME_CURVUS
+    }
+    rom_lucius_4 = {
+        # Lucius
+        first_name = { name = Lucius }
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 402.12.19
+        nickname = NICKNAME_MEGELLUS
+    }
+    rom_cornelii_publius = {
+        # Publius of House Cornelii
+        first_name = { name = Publius }
+        dynasty = Cornelii
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 402.12.19
+        nickname = NICKNAME_ARVINA
+    }
+    rom_gaius = {
+        # Gaius
+        first_name = { name = Gaius }
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 400.4.7
+        nickname = NICKNAME_BUBULCUS
+    }
+    rom_marcus_5 = {
+        # Marcus
+        first_name = { name = Marcus }
+        father = rom_marcus_2
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 448.2.12
+        nickname = NICKNAME_CORVINUS
+    }
+    rom_lucius_5 = {
+        # Lucius
+        first_name = { name = Lucius }
+        father = rom_lucius_3
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 416.9.12
+        nickname = NICKNAME_CURSOR
+    }
+    rom_publius_2 = {
+        # Publius
+        first_name = { name = Publius }
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 401.11.17
+        nickname = NICKNAME_SAVERRIO
+    }
+    rom_fabii_quintus = {
+        # Quintus of House Fabii
+        first_name = { name = Quintus }
+        dynasty = Fabii
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 398.1.31
+        nickname = NICKNAME_RULLIANUS
+    }
+    rom_fabii_gaius = {
+        # Gaius of House Fabii
+        first_name = { name = Gaius }
+        dynasty = Fabii
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 428.8.11
+        nickname = NICKNAME_LICINUS
+    }
+    rom_cornelii_publius_2 = {
+        # Publius of House Cornelii
+        first_name = { name = Publius }
+        dynasty = Cornelii
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 400.4.7
+        nickname = NICKNAME_BARBATUS
+    }
+    rom_fabii_quintus_2 = {
+        # Quintus of House Fabii
+        first_name = { name = Quintus }
+        dynasty = Fabii
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 420.11.1
+        nickname = NICKNAME_GURGES
+    }
+    rom_publius_3 = {
+        # Publius
+        first_name = { name = Publius }
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 400.8.25
+        nickname = NICKNAME_SOPHUS
+    }
+    rom_publius_4 = {
+        # Publius
+        first_name = { name = Publius }
+        father = rom_publius_2
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 429.9.11
+        nickname = NICKNAME_SAVERRIO
+    }
+    rom_claudii_gaius = {
+        # Gaius of House Claudii
+        first_name = { name = Gaius }
+        dynasty = Claudii
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 381.7.2
+        nickname = NICKNAME_CRASSUS
+    }
+    rom_claudii_appius = {
+        # Appius of House Claudii
+        first_name = { name = Appius }
+        dynasty = Claudii
+        father = rom_claudii_gaius
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 414.1.13
+        nickname = NICKNAME_CAECUS
+    }
+    rom_claudii_appius_2 = {
+        # Appius of House Claudii
+        first_name = { name = Appius }
+        dynasty = Claudii
+        father = rom_claudii_gaius
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 438.10.7
+        nickname = NICKNAME_RUSSUS
+    }
+    rom_claudii_appius_3 = {
+        # Appius of House Claudii
+        first_name = { name = Appius }
+        dynasty = Claudii
+        father = rom_claudii_gaius
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 447.2.6
+        nickname = NICKNAME_PULCHER
+    }
+    rom_claudii_appius_4 = {
+        # Appius of House Claudii
+        first_name = { name = Appius }
+        dynasty = Claudii
+        father = rom_claudii_gaius
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 449.8.2
+        nickname = NICKNAME_CENTHO
+    }
+    rom_lucius_6 = {
+        # Lucius
+        first_name = { name = Lucius }
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 414.1.13
+        nickname = NICKNAME_VIOLENS
+    }
+    rom_aulus = {
+        # Aulus
+        first_name = { name = Aulus }
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 390.5.11
+    }
+    rom_aulia = {
+        # Aulia
+        first_name = { name = Aulia }
+        father = rom_aulus
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        female = yes
+        birth_date = 420.11.1
+    }
+    rom_publius_5 = {
+        # Publius
+        first_name = { name = Publius }
+        father = rom_publius_3
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 430.8.2
+        nickname = NICKNAME_SOPHUS
+    }
+    rom_claudii_appius_5 = {
+        # Appius of House Claudii
+        first_name = { name = Appius }
+        dynasty = Claudii
+        father = rom_claudii_gaius
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 424.7.3
+        nickname = NICKNAME_CAUDEX
+    }
+    rom_quintus_4 = {
+        # Quintus
+        first_name = { name = Quintus }
+        father = rom_quintus_2
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 432.9.30
+        nickname = NICKNAME_PHILIPPUS
+    }
+    rom_fabii_quintus_3 = {
+        # Quintus of House Fabii
+        first_name = { name = Quintus }
+        dynasty = Fabii
+        father = rom_fabii_quintus_2
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 447.7.3
+        nickname = NICKNAME_GURGES
+    }
+    rom_marcus_6 = {
+        # Marcus
+        first_name = { name = Marcus }
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 411.3.4
+        nickname = NICKNAME_PAULLUS
+    }
+    rom_marcus_7 = {
+        # Marcus
+        first_name = { name = Marcus }
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 432.8.12
+        nickname = NICKNAME_LEPIDUS
+    }
+    rom_decimus = {
+        # Decimus
+        first_name = { name = Decimus }
+        tag = ROM
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 432.6.7
+        nickname = NICKNAME_BRUTUS
+    }
+    hre_fricus = {
+        # Fricus
+        first_name = { name = Fricus }
+        tag = HRE
+        religion = ir_germanic_religion
+        culture = ir_herulian
+        birth_date = 406.8.9
+    }
+    bac_sophytid_sophytes = {
+        # Sophytes of House Sophytid
+        first_name = { name = Sophytes }
+        dynasty = Sophytid
+        tag = BAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 400.4.7
+    }
+    drd_dardanid_kleitos = {
+        # Kleitos of House Dardanid
+        first_name = { name = Kleitos }
+        dynasty = Dardanid
+        tag = DRD
+        religion = ir_roman_pantheon
+        culture = ir_dardanian
+        birth_date = 380.6.14
+    }
+    drd_dardanid_bardylis = {
+        # Bardylis of House Dardanid
+        first_name = { name = Bardylis }
+        dynasty = Dardanid
+        father = drd_dardanid_kleitos
+        tag = DRD
+        religion = ir_roman_pantheon
+        culture = ir_dardanian
+        birth_date = 400.4.7
+    }
+    drd_dardanid_monounios = {
+        # Monounios of House Dardanid
+        first_name = { name = Monounios }
+        dynasty = Dardanid
+        father = drd_dardanid_bardylis
+        tag = DRD
+        religion = ir_roman_pantheon
+        culture = ir_dardanian
+        birth_date = 428.3.17
+    }
+    drd_dardanid_birkenna = {
+        # Birkenna of House Dardanid
+        first_name = { name = Birkenna }
+        dynasty = Dardanid
+        father = drd_dardanid_bardylis
+        tag = DRD
+        religion = ir_roman_pantheon
+        culture = ir_dardanian
+        female = yes
+        birth_date = 433.12.29
+    }
+    tln_taulantid_glaukias = {
+        # Glaukias of House Taulantid
+        first_name = { name = Glaukias }
+        dynasty = Taulantid
+        tag = TLN
+        religion = ir_roman_pantheon
+        culture = ir_taulantian
+        birth_date = 394.9.10
+    }
+    tln_beroaia = {
+        # Beroaia
+        first_name = { name = Beroaia }
+        spouse = tln_taulantid_glaukias
+        tag = TLN
+        religion = ir_roman_pantheon
+        culture = ir_epirote
+        female = yes
+        birth_date = 400.4.7
+    }
+    tln_taulantid_taulas = {
+        # Taulas of House Taulantid
+        first_name = { name = Taulas }
+        dynasty = Taulantid
+        father = tln_taulantid_glaukias
+        mother = tln_beroaia
+        tag = TLN
+        religion = ir_roman_pantheon
+        culture = ir_taulantian
+        birth_date = 422.4.5
+    }
+    tln_taulantid_pleuratas = {
+        # Pleuratas of House Taulantid
+        first_name = { name = Pleuratas }
+        dynasty = Taulantid
+        father = tln_taulantid_glaukias
+        mother = tln_beroaia
+        tag = TLN
+        religion = ir_roman_pantheon
+        culture = ir_taulantian
+        birth_date = 426.2.14
+    }
+    tln_taulantid_sirras = {
+        # Sirras of House Taulantid
+        first_name = { name = Sirras }
+        dynasty = Taulantid
+        father = tln_taulantid_glaukias
+        mother = tln_beroaia
+        tag = TLN
+        religion = ir_roman_pantheon
+        culture = ir_taulantian
+        birth_date = 428.8.11
+    }
+    tln_taulantid_gentiana = {
+        # Gentiana of House Taulantid
+        first_name = { name = Gentiana }
+        dynasty = Taulantid
+        father = tln_taulantid_glaukias
+        mother = tln_beroaia
+        tag = TLN
+        religion = ir_roman_pantheon
+        culture = ir_taulantian
+        female = yes
+        birth_date = 432.3.2
+    }
+    tln_taulantid_teuta = {
+        # Teuta of House Taulantid
+        first_name = { name = Teuta }
+        dynasty = Taulantid
+        father = tln_taulantid_glaukias
+        mother = tln_beroaia
+        tag = TLN
+        religion = ir_roman_pantheon
+        culture = ir_taulantian
+        female = yes
+        birth_date = 434.7.26
+    }
+    odr_odrysid_seuthes = {
+        # Seuthes of House Odrysid
+        first_name = { name = Seuthes }
+        dynasty = Odrysid
+        tag = ODR
+        religion = ir_shamanism
+        culture = ir_odrysi
+        birth_date = 394.9.10
+    }
+    odr_odrysid_kotys = {
+        # Kotys of House Odrysid
+        first_name = { name = Kotys }
+        dynasty = Odrysid
+        father = odr_odrysid_seuthes
+        tag = ODR
+        religion = ir_shamanism
+        culture = ir_odrysi
+        birth_date = 426.6.2
+    }
+    dod_wakekiye_sesen = {
+        # Sesen of House Wakekiye
+        first_name = { name = Sesen }
+        dynasty = Wakekiye
+        tag = DOD
+        religion = ir_egyptian_pantheon
+        culture = ir_egyptian
+        birth_date = 380.6.14
+    }
+    rho_demaratid_demaratos = {
+        # Demaratos of House Demaratid
+        first_name = { name = Demaratos }
+        dynasty = Demaratid
+        tag = RHO
+        religion = ir_roman_pantheon
+        culture = ir_aegean
+        birth_date = 420.1.29
+    }
+    hcp_achaimenid_amastris = {
+        # Amastris of House Achaimenid
+        first_name = { name = Amastris }
+        dynasty = Achaimenid
+        tag = HCP
+        religion = ir_zoroaster
+        culture = ir_pasargadi
+        female = yes
+        birth_date = 410.9.28
+    }
+    hcp_achaimenid_oxyathres = {
+        # Oxyathres of House Achaimenid
+        first_name = { name = Oxyathres }
+        dynasty = Achaimenid
+        mother = hcp_achaimenid_amastris
+        tag = HCP
+        religion = ir_zoroaster
+        culture = ir_pasargadi
+        birth_date = 428.8.11
+    }
+    hcp_achaimenid_klearchos = {
+        # Klearchos of House Achaimenid
+        first_name = { name = Klearchos }
+        dynasty = Achaimenid
+        mother = hcp_achaimenid_amastris
+        tag = HCP
+        religion = ir_zoroaster
+        culture = ir_pasargadi
+        birth_date = 430.12.5
+    }
+    egy_magid_berenike = {
+        # Berenike of House Magid
+        first_name = { name = Berenike }
+        dynasty = Magid
+        father = elysium_mac_magid_magas
+        mother = elysium_mac_antipatrid_antigone
+        tag = EGY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        female = yes
+        birth_date = 414.1.13
+    }
+    egy_lagid_ptolemaios = {
+        # Ptolemaios of House Lagid
+        first_name = { name = Ptolemaios }
+        dynasty = Lagid
+        father = elysium_egy_lagid_lagos
+        spouse = egy_magid_berenike
+        tag = EGY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 386.12.1
+        nickname = NICKNAME_SOTER
+    }
+    egy_lagid_ptolemaios_2 = {
+        # Ptolemaios of House Lagid
+        first_name = { name = Ptolemaios }
+        dynasty = Lagid
+        father = egy_lagid_ptolemaios
+        mother = mlo_antipatrid_eurydike
+        tag = EGY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 430.12.5
+        nickname = NICKNAME_KERAUNOS
+    }
+    egy_eukleides = {
+        # Eukleides
+        first_name = { name = Eukleides }
+        tag = EGY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 402.6.12
+    }
+    egy_lagid_ptolemaios_3 = {
+        # Ptolemaios of House Lagid
+        first_name = { name = Ptolemaios }
+        dynasty = Lagid
+        father = egy_lagid_ptolemaios
+        mother = egy_magid_berenike
+        tag = EGY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 446.6.8
+        nickname = NICKNAME_PHILADELPHUS
+    }
+    egy_magid_magas = {
+        # Magas of House Magid
+        first_name = { name = Magas }
+        dynasty = Magid
+        mother = egy_magid_berenike
+        tag = EGY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 430.12.5
+    }
+    egy_lagid_menelaos = {
+        # Menelaos of House Lagid
+        first_name = { name = Menelaos }
+        dynasty = Lagid
+        father = elysium_egy_lagid_lagos
+        tag = EGY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 390.6.2
+    }
+    egy_lagid_arsinoe = {
+        # Arsinoe of House Lagid
+        first_name = { name = Arsinoe }
+        dynasty = Lagid
+        father = egy_lagid_ptolemaios
+        mother = egy_magid_berenike
+        tag = EGY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        female = yes
+        birth_date = 438.3.18
+    }
+    egy_magid_theoxene = {
+        # Theoxene of House Magid
+        first_name = { name = Theoxene }
+        dynasty = Magid
+        mother = egy_magid_berenike
+        tag = EGY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        female = yes
+        birth_date = 436.11.19
+    }
+    egy_manetho = {
+        # Manetho
+        first_name = { name = Manetho }
+        tag = EGY
+        religion = ir_egyptian_pantheon
+        culture = ir_egyptian
+        birth_date = 400.4.7
+    }
+    egy_lagid_meleagros = {
+        # Meleagros of House Lagid
+        first_name = { name = Meleagros }
+        dynasty = Lagid
+        father = egy_lagid_ptolemaios
+        mother = mlo_antipatrid_eurydike
+        tag = EGY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 432.9.30
+    }
+    egy_lagid_lysandra = {
+        # Lysandra of House Lagid
+        first_name = { name = Lysandra }
+        dynasty = Lagid
+        father = egy_lagid_ptolemaios
+        mother = mlo_antipatrid_eurydike
+        tag = EGY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        female = yes
+        birth_date = 436.7.26
+    }
+    egy_lagid_philotera = {
+        # Philotera of House Lagid
+        first_name = { name = Philotera }
+        dynasty = Lagid
+        father = egy_lagid_ptolemaios
+        mother = egy_magid_berenike
+        tag = EGY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        female = yes
+        birth_date = 444.8.29
+    }
+    egy_magid_antigone = {
+        # Antigone of House Magid
+        first_name = { name = Antigone }
+        dynasty = Magid
+        mother = egy_magid_berenike
+        tag = EGY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        female = yes
+        birth_date = 436.1.11
+    }
+    egy_marcus = {
+        # Marcus
+        first_name = { name = Marcus }
+        tag = EGY
+        religion = ir_roman_pantheon
+        culture = ir_roman
+        birth_date = 426.2.14
+    }
+    egy_thais = {
+        # Thais
+        first_name = { name = Thais }
+        tag = EGY
+        religion = ir_roman_pantheon
+        culture = ir_athenian
+        female = yes
+        birth_date = 400.4.7
+    }
+    egy_lagos = {
+        # Lagos
+        first_name = { name = Lagos }
+        father = egy_lagid_ptolemaios
+        mother = egy_thais
+        tag = EGY
+        religion = ir_roman_pantheon
+        culture = ir_athenian
+        birth_date = 430.6.26
+    }
+    egy_leontiskos = {
+        # Leontiskos
+        first_name = { name = Leontiskos }
+        father = egy_lagid_ptolemaios
+        mother = egy_thais
+        tag = EGY
+        religion = ir_roman_pantheon
+        culture = ir_athenian
+        birth_date = 430.12.5
+    }
+    egy_eirene = {
+        # Eirene
+        first_name = { name = Eirene }
+        father = egy_lagid_ptolemaios
+        mother = egy_thais
+        tag = EGY
+        religion = ir_roman_pantheon
+        culture = ir_athenian
+        female = yes
+        birth_date = 432.3.2
+    }
+    egy_magid_philippos = {
+        # Philippos of House Magid
+        first_name = { name = Philippos }
+        dynasty = Magid
+        tag = EGY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 434.7.26
+    }
+    egy_philippos = {
+        # Philippos
+        first_name = { name = Philippos }
+        tag = EGY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 417.12.29
+    }
+    egy_eunostos = {
+        # Eunostos
+        first_name = { name = Eunostos }
+        spouse = egy_eirene
+        tag = EGY
+        religion = ir_roman_pantheon
+        culture = ir_cypriot
+        birth_date = 419.7.14
+    }
+    elysium_mac_antipatrid_iollas = {
+        # Iollas of House Antipatrid
+        first_name = { name = Iollas }
+        dynasty = Antipatrid
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 320.1.1
+    }
+    elysium_mac_magid_magas = {
+        # Magas of House Magid
+        first_name = { name = Magas }
+        dynasty = Magid
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 379.6.17
+    }
+    elysium_mac_antipatrid_kassandros = {
+        # Kassandros of House Antipatrid
+        first_name = { name = Kassandros }
+        dynasty = Antipatrid
+        father = elysium_mac_antipatrid_iollas
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 357.2.13
+    }
+    elysium_mac_antipatrid_antigone = {
+        # Antigone of House Antipatrid
+        first_name = { name = Antigone }
+        dynasty = Antipatrid
+        father = elysium_mac_antipatrid_kassandros
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        female = yes
+        birth_date = 385.1.3
+    }
+    elysium_mac_antipatrid_antipatros = {
+        # Antipatros of House Antipatrid
+        first_name = { name = Antipatros }
+        dynasty = Antipatrid
+        father = elysium_mac_antipatrid_iollas
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 354.9.12
+    }
+    elysium_mac_nikesipolis = {
+        # Nikesipolis
+        first_name = { name = Nikesipolis }
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        female = yes
+        birth_date = 379.1.1
+    }
+    elysium_mac_aiakid_olympias = {
+        # Olympias of House Aiakid
+        first_name = { name = Olympias }
+        dynasty = Aiakid
+        father = elysium_epi_aiakid_neoptolemos
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_epirote
+        female = yes
+        birth_date = 379.1.1
+    }
+    elysium_mac_philippos = {
+        # Philippos
+        first_name = { name = Philippos }
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 372.1.1
+        nickname = NICKNAME_II
+    }
+    elysium_mac_alexander = {
+        # Alexander
+        first_name = { name = Alexander }
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 398.7.21
+        nickname = NICKNAME_THE_GREAT
+    }
+    elysium_mac_kleopatra = {
+        # Kleopatra
+        first_name = { name = Kleopatra }
+        father = elysium_mac_philippos
+        mother = elysium_mac_aiakid_olympias
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        female = yes
+        birth_date = 400.5.20
+    }
+    elysium_mac_alexandros = {
+        # Alexandros
+        first_name = { name = Alexandros }
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 431.8.1
+        nickname = NICKNAME_AIGOS
+    }
+    elysium_mac_antipatrid_iollas_2 = {
+        # Iollas of House Antipatrid
+        first_name = { name = Iollas }
+        dynasty = Antipatrid
+        father = elysium_mac_antipatrid_antipatros
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 407.1.2
+    }
+    elysium_mac_philippos_2 = {
+        # Philippos
+        first_name = { name = Philippos }
+        father = elysium_mac_philippos
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 395.2.6
+        nickname = NICKNAME_ARRIDAIOS
+    }
+    elysium_mac_orontes = {
+        # Orontes
+        first_name = { name = Orontes }
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 367.4.12
+    }
+    elysium_mac_eumenes = {
+        # Eumenes
+        first_name = { name = Eumenes }
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_thracian
+        birth_date = 392.7.3
+    }
+    elysium_mac_perdikkas = {
+        # Perdikkas
+        first_name = { name = Perdikkas }
+        father = elysium_mac_orontes
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 399.6.5
+    }
+    elysium_mac_alketas = {
+        # Alketas
+        first_name = { name = Alketas }
+        father = elysium_mac_orontes
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 402.7.1
+    }
+    elysium_mac_atalante = {
+        # Atalante
+        first_name = { name = Atalante }
+        father = elysium_mac_orontes
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        female = yes
+        birth_date = 404.8.12
+    }
+    elysium_mac_andromenes = {
+        # Andromenes
+        first_name = { name = Andromenes }
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 369.7.8
+    }
+    elysium_mac_attalos = {
+        # Attalos
+        first_name = { name = Attalos }
+        father = elysium_mac_andromenes
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 397.7.6
+    }
+    elysium_mac_amyntas = {
+        # Amyntas
+        first_name = { name = Amyntas }
+        father = elysium_mac_andromenes
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 400.5.7
+    }
+    elysium_mac_simmias = {
+        # Simmias
+        first_name = { name = Simmias }
+        father = elysium_mac_andromenes
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 403.7.9
+    }
+    elysium_mac_philotas = {
+        # Philotas
+        first_name = { name = Philotas }
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 316.8.10
+    }
+    elysium_mac_parmenion = {
+        # Parmenion
+        first_name = { name = Parmenion }
+        father = elysium_mac_philotas
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 354.2.4
+    }
+    elysium_mac_agathon = {
+        # Agathon
+        first_name = { name = Agathon }
+        father = elysium_mac_philotas
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 358.5.3
+    }
+    elysium_mac_asander = {
+        # Asander
+        first_name = { name = Asander }
+        father = elysium_mac_philotas
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 362.7.9
+    }
+    elysium_mac_philotas_2 = {
+        # Philotas
+        first_name = { name = Philotas }
+        father = elysium_mac_parmenion
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 389.5.2
+    }
+    elysium_mac_nikanor = {
+        # Nikanor
+        first_name = { name = Nikanor }
+        father = elysium_mac_parmenion
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 392.7.8
+    }
+    elysium_mac_hektor = {
+        # Hektor
+        first_name = { name = Hektor }
+        father = elysium_mac_parmenion
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 396.8.1
+    }
+    elysium_mac_asander_2 = {
+        # Asander
+        first_name = { name = Asander }
+        father = elysium_mac_agathon
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 399.12.12
+    }
+    elysium_mac_atalante_2 = {
+        # Atalante
+        first_name = { name = Atalante }
+        father = elysium_mac_attalos
+        mother = elysium_mac_atalante
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        female = yes
+        birth_date = 429.8.4
+    }
+    elysium_mac_kleopatra_2 = {
+        # Kleopatra
+        first_name = { name = Kleopatra }
+        father = elysium_mac_attalos
+        mother = elysium_mac_atalante
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        female = yes
+        birth_date = 432.6.5
+    }
+    elysium_mac_antipatrid_nikanor = {
+        # Nikanor of House Antipatrid
+        first_name = { name = Nikanor }
+        dynasty = Antipatrid
+        father = elysium_mac_antipatrid_antipatros
+        tag = Elysium_MAC
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 414.7.12
+    }
+    elysium_syr_agathoklid_karkinos = {
+        # Karkinos of House Agathoklid
+        first_name = { name = Karkinos }
+        dynasty = Agathoklid
+        tag = Elysium_SYR
+        religion = ir_roman_pantheon
+        culture = ir_syracusan
+        birth_date = 367.1.2
+    }
+    elysium_syr_agathoklid_archagathos = {
+        # Archagathos of House Agathoklid
+        first_name = { name = Archagathos }
+        dynasty = Agathoklid
+        father = syr_agathoklid_agathokles
+        tag = Elysium_SYR
+        religion = ir_roman_pantheon
+        culture = ir_syracusan
+        birth_date = 416.12.12
+    }
+    elysium_syr_agathoklid_herakleides = {
+        # Herakleides of House Agathoklid
+        first_name = { name = Herakleides }
+        dynasty = Agathoklid
+        father = syr_agathoklid_agathokles
+        tag = Elysium_SYR
+        religion = ir_roman_pantheon
+        culture = ir_syracusan
+        birth_date = 418.11.11
+    }
+    elysium_pry_krateros = {
+        # Krateros
+        first_name = { name = Krateros }
+        tag = Elysium_PRY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 384.8.22
+    }
+    elysium_pry_gygaia = {
+        # Gygaia
+        first_name = { name = Gygaia }
+        tag = Elysium_PRY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        female = yes
+        birth_date = 332.8.11
+    }
+    elysium_pry_philippos = {
+        # Philippos
+        first_name = { name = Philippos }
+        tag = Elysium_PRY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 326.7.6
+    }
+    elysium_pry_antigonid_amyntas = {
+        # Amyntas of House Antigonid
+        first_name = { name = Amyntas }
+        dynasty = Antigonid
+        father = elysium_pry_philippos
+        mother = elysium_pry_gygaia
+        tag = Elysium_PRY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 375.7.18
+    }
+    elysium_pry_antigonid_ptolemaios = {
+        # Ptolemaios of House Antigonid
+        first_name = { name = Ptolemaios }
+        dynasty = Antigonid
+        father = elysium_pry_philippos
+        mother = elysium_pry_gygaia
+        tag = Elysium_PRY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 375.6.17
+    }
+    elysium_pry_antigonid_dioskourides = {
+        # Dioskourides of House Antigonid
+        first_name = { name = Dioskourides }
+        dynasty = Antigonid
+        father = elysium_pry_antigonid_ptolemaios
+        tag = Elysium_PRY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 397.3.22
+    }
+    elysium_pry_antigonid_ptolemaios_2 = {
+        # Ptolemaios of House Antigonid
+        first_name = { name = Ptolemaios }
+        dynasty = Antigonid
+        father = elysium_pry_antigonid_ptolemaios
+        tag = Elysium_PRY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 400.7.16
+    }
+    elysium_pry_antigonid_philippos = {
+        # Philippos of House Antigonid
+        first_name = { name = Philippos }
+        dynasty = Antigonid
+        father = pry_antigonid_antigonos
+        mother = pry_stratonike
+        tag = Elysium_PRY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 420.9.12
+    }
+    elysium_pry_antigonid_demetrios = {
+        # Demetrios of House Antigonid
+        first_name = { name = Demetrios }
+        dynasty = Antigonid
+        father = elysium_pry_philippos
+        mother = elysium_pry_gygaia
+        tag = Elysium_PRY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 368.3.2
+    }
+    elysium_map_zoroaster = {
+        # Zoroaster
+        first_name = { name = Zoroaster }
+        tag = Elysium_MAP
+        religion = ir_zoroaster
+        culture = ir_bactrian
+        birth_date = 1.1.2
+    }
+    elysium_epi_aiakid_alketas = {
+        # Alketas of House Aiakid
+        first_name = { name = Alketas }
+        dynasty = Aiakid
+        tag = Elysium_EPI
+        religion = ir_roman_pantheon
+        culture = ir_epirote
+        birth_date = 327.1.1
+        nickname = NICKNAME_I
+    }
+    elysium_epi_aiakid_neoptolemos = {
+        # Neoptolemos of House Aiakid
+        first_name = { name = Neoptolemos }
+        dynasty = Aiakid
+        tag = Elysium_EPI
+        religion = ir_roman_pantheon
+        culture = ir_epirote
+        birth_date = 353.1.1
+        nickname = NICKNAME_II
+    }
+    elysium_epi_aiakid_arybbas = {
+        # Arybbas of House Aiakid
+        first_name = { name = Arybbas }
+        dynasty = Aiakid
+        tag = Elysium_EPI
+        religion = ir_roman_pantheon
+        culture = ir_epirote
+        birth_date = 355.1.1
+    }
+    elysium_epi_aiakid_alexandros = {
+        # Alexandros of House Aiakid
+        first_name = { name = Alexandros }
+        dynasty = Aiakid
+        father = elysium_epi_aiakid_neoptolemos
+        tag = Elysium_EPI
+        religion = ir_roman_pantheon
+        culture = ir_epirote
+        birth_date = 383.1.1
+    }
+    elysium_epi_aiakid_aiakides = {
+        # Aiakides of House Aiakid
+        first_name = { name = Aiakides }
+        dynasty = Aiakid
+        father = elysium_epi_aiakid_arybbas
+        tag = Elysium_EPI
+        religion = ir_roman_pantheon
+        culture = ir_epirote
+        birth_date = 391.1.1
+    }
+    elysium_epi_aiakid_alketas_2 = {
+        # Alketas of House Aiakid
+        first_name = { name = Alketas }
+        dynasty = Aiakid
+        father = elysium_epi_aiakid_arybbas
+        tag = Elysium_EPI
+        religion = ir_roman_pantheon
+        culture = ir_epirote
+        birth_date = 388.1.1
+        nickname = NICKNAME_II
+    }
+    elysium_tre_alkimachid_agathokles = {
+        # Agathokles of House Alkimachid
+        first_name = { name = Agathokles }
+        dynasty = Alkimachid
+        tag = Elysium_TRE
+        religion = ir_roman_pantheon
+        culture = ir_thessalian
+        birth_date = 363.5.15
+    }
+    elysium_tre_alkimachid_philippos = {
+        # Philippos of House Alkimachid
+        first_name = { name = Philippos }
+        dynasty = Alkimachid
+        father = elysium_tre_alkimachid_agathokles
+        tag = Elysium_TRE
+        religion = ir_roman_pantheon
+        culture = ir_thessalian
+        birth_date = 400.7.5
+    }
+    elysium_sel_seleukid_laodike = {
+        # Laodike of House Seleukid
+        first_name = { name = Laodike }
+        dynasty = Seleukid
+        tag = Elysium_SEL
+        religion = ir_roman_pantheon
+        culture = ir_boeotian
+        female = yes
+        birth_date = 372.6.7
+    }
+    elysium_sel_seleukid_seleukos = {
+        # Seleukos of House Seleukid
+        first_name = { name = Seleukos }
+        dynasty = Seleukid
+        tag = Elysium_SEL
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 327.7.8
+    }
+    elysium_sel_seleukid_antiochos = {
+        # Antiochos of House Seleukid
+        first_name = { name = Antiochos }
+        dynasty = Seleukid
+        father = elysium_sel_seleukid_seleukos
+        tag = Elysium_SEL
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 352.4.6
+    }
+    elysium_sel_seleukid_ptolemaios = {
+        # Ptolemaios of House Seleukid
+        first_name = { name = Ptolemaios }
+        dynasty = Seleukid
+        father = elysium_sel_seleukid_seleukos
+        tag = Elysium_SEL
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 357.2.8
+    }
+    elysium_egy_lagid_lagos = {
+        # Lagos of House Lagid
+        first_name = { name = Lagos }
+        dynasty = Lagid
+        tag = Elysium_EGY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 359.2.12
+    }
+    ath_demostenid_demochares = {
+        # Demochares of House Demostenid
+        first_name = { name = Demochares }
+        dynasty = Demostenid
+        tag = ATH
+        religion = ir_roman_pantheon
+        culture = ir_athenian
+        birth_date = 412.5.9
+    }
+    ath_stratoklid_stratokles = {
+        # Stratokles of House Stratoklid
+        first_name = { name = Stratokles }
+        dynasty = Stratoklid
+        tag = ATH
+        religion = ir_roman_pantheon
+        culture = ir_athenian
+        birth_date = 420.1.29
+    }
+    ath_anaxikrates = {
+        # Anaxikrates
+        first_name = { name = Anaxikrates }
+        tag = ATH
+        religion = ir_roman_pantheon
+        culture = ir_athenian
+        birth_date = 410.3.4
+    }
+    ath_koroibos = {
+        # Koroibos
+        first_name = { name = Koroibos }
+        tag = ATH
+        religion = ir_roman_pantheon
+        culture = ir_athenian
+        birth_date = 400.4.7
+    }
+    ath_euxenippos = {
+        # Euxenippos
+        first_name = { name = Euxenippos }
+        tag = ATH
+        religion = ir_roman_pantheon
+        culture = ir_athenian
+        birth_date = 404.10.14
+    }
+    ath_pherekles = {
+        # Pherekles
+        first_name = { name = Pherekles }
+        tag = ATH
+        religion = ir_roman_pantheon
+        culture = ir_athenian
+        birth_date = 394.9.10
+    }
+    ath_leostratos = {
+        # Leostratos
+        first_name = { name = Leostratos }
+        tag = ATH
+        religion = ir_roman_pantheon
+        culture = ir_athenian
+        birth_date = 380.6.14
+    }
+    ath_nikokles = {
+        # Nikokles
+        first_name = { name = Nikokles }
+        tag = ATH
+        religion = ir_roman_pantheon
+        culture = ir_athenian
+        birth_date = 398.10.30
+    }
+    ath_kalliarchos = {
+        # Kalliarchos
+        first_name = { name = Kalliarchos }
+        tag = ATH
+        religion = ir_roman_pantheon
+        culture = ir_athenian
+        birth_date = 400.4.7
+    }
+    ath_hegemachos = {
+        # Hegemachos
+        first_name = { name = Hegemachos }
+        tag = ATH
+        religion = ir_roman_pantheon
+        culture = ir_athenian
+        birth_date = 420.1.29
+    }
+    ath_euktemon = {
+        # Euktemon
+        first_name = { name = Euktemon }
+        tag = ATH
+        religion = ir_roman_pantheon
+        culture = ir_athenian
+        birth_date = 430.6.26
+    }
+    ath_mnesidemos = {
+        # Mnesidemos
+        first_name = { name = Mnesidemos }
+        tag = ATH
+        religion = ir_roman_pantheon
+        culture = ir_athenian
+        birth_date = 410.3.4
+    }
+    ath_epikouros = {
+        # Epikouros
+        first_name = { name = Epikouros }
+        tag = ATH
+        religion = ir_roman_pantheon
+        culture = ir_athenian
+        birth_date = 412.7.24
+    }
+    ath_zenon = {
+        # Zenon
+        first_name = { name = Zenon }
+        tag = ATH
+        religion = ir_roman_pantheon
+        culture = ir_cypriot
+        birth_date = 420.1.29
+    }
+    ath_kleanthes = {
+        # Kleanthes
+        first_name = { name = Kleanthes }
+        tag = ATH
+        religion = ir_roman_pantheon
+        culture = ir_troan
+        birth_date = 424.6.10
+        nickname = NICKNAME_FREANTLIS
+    }
+    ath_tyrtamos = {
+        # Tyrtamos
+        first_name = { name = Tyrtamos }
+        tag = ATH
+        religion = ir_roman_pantheon
+        culture = ir_aegean
+        birth_date = 382.10.12
+        nickname = NICKNAME_THEOPHRASTOS
+    }
+    ath_polemon = {
+        # Polemon
+        first_name = { name = Polemon }
+        tag = ATH
+        religion = ir_roman_pantheon
+        culture = ir_athenian
+        birth_date = 410.9.28
+    }
+    ath_hemarkhos = {
+        # Hemarkhos
+        first_name = { name = Hemarkhos }
+        tag = ATH
+        religion = ir_roman_pantheon
+        culture = ir_aegean
+        birth_date = 428.8.11
+    }
+    ath_timaios = {
+        # Timaios
+        first_name = { name = Timaios }
+        tag = ATH
+        religion = ir_roman_pantheon
+        culture = ir_athenian
+        birth_date = 396.5.27
+    }
+    ath_lachares = {
+        # Lachares
+        first_name = { name = Lachares }
+        tag = ATH
+        religion = ir_roman_pantheon
+        culture = ir_athenian
+        birth_date = 411.7.5
+    }
+    byb_aynelid_aynel = {
+        # Aynel of House Aynelid
+        first_name = { name = Aynel }
+        dynasty = Aynelid
+        tag = BYB
+        religion = ir_carthaginian_pantheon
+        culture = ir_phoenician
+        birth_date = 374.7.4
+    }
+    ibr_azonid_azo = {
+        # Azo of House Azonid
+        first_name = { name = Azo }
+        dynasty = Azonid
+        tag = IBR
+        religion = ir_caucasian_religion
+        culture = ir_ibero
+        birth_date = 400.8.25
+    }
+    ibr_pharnavaz = {
+        # Pharnavaz
+        first_name = { name = Pharnavaz }
+        tag = IBR
+        religion = ir_caucasian_religion
+        culture = ir_ibero
+        birth_date = 430.6.26
+    }
+    jud_zadokite_simon = {
+        # Simon of House Zadokite
+        first_name = { name = Simon }
+        dynasty = Zadokite
+        tag = JUD
+        religion = ir_judaism
+        culture = ir_hebrew
+        birth_date = 410.3.4
+    }
+    jud_zadokite_eleazar = {
+        # Eleazar of House Zadokite
+        first_name = { name = Eleazar }
+        dynasty = Zadokite
+        tag = JUD
+        religion = ir_judaism
+        culture = ir_hebrew
+        birth_date = 412.5.9
+    }
+    jud_zadokite_mannaseh = {
+        # Mannaseh of House Zadokite
+        first_name = { name = Mannaseh }
+        dynasty = Zadokite
+        tag = JUD
+        religion = ir_judaism
+        culture = ir_hebrew
+        birth_date = 400.4.7
+    }
+    jud_zadokite_onias = {
+        # Onias of House Zadokite
+        first_name = { name = Onias }
+        dynasty = Zadokite
+        father = jud_zadokite_simon
+        tag = JUD
+        religion = ir_judaism
+        culture = ir_hebrew
+        birth_date = 430.6.26
+    }
+    jud_joseph = {
+        # Joseph
+        first_name = { name = Joseph }
+        tag = JUD
+        religion = ir_judaism
+        culture = ir_hebrew
+        birth_date = 426.2.14
+        nickname = NICKNAME_CYNICUS
+    }
+    stp_timon = {
+        # Timon
+        first_name = { name = Timon }
+        tag = STP
+        religion = ir_roman_pantheon
+        culture = ir_achaean
+        birth_date = 434.5.7
+    }
+    ram_jokim = {
+        # Jokim
+        first_name = { name = Jokim }
+        tag = RAM
+        religion = ir_germanic_religion
+        culture = ir_raumarician
+        birth_date = 420.11.1
+    }
+    ram_axinder = {
+        # Axinder
+        first_name = { name = Axinder }
+        tag = RAM
+        religion = ir_germanic_religion
+        culture = ir_suiones
+        birth_date = 420.11.1
+    }
+    ara_gerasthartid_gerasthart = {
+        # Gerasthart of House Gerasthartid
+        first_name = { name = Gerasthart }
+        dynasty = Gerasthartid
+        tag = ARA
+        religion = ir_carthaginian_pantheon
+        culture = ir_phoenician
+        birth_date = 384.8.7
+    }
+    ara_abd-'ashtart = {
+        # Abd-'Ashtart
+        first_name = { name = Abd-'Ashtart }
+        father = ara_gerasthartid_gerasthart
+        tag = ARA
+        religion = ir_carthaginian_pantheon
+        culture = ir_phoenician
+        birth_date = 400.4.7
+    }
+    sni_nicolaus = {
+        # Nicolaus
+        first_name = { name = Nicolaus }
+        tag = SNI
+        religion = ir_druidism
+        culture = ir_lepontic
+        birth_date = 420.11.1
+    }
+    cat_matthus = {
+        # Matthus
+        first_name = { name = Matthus }
+        tag = CAT
+        religion = ir_druidism
+        culture = ir_britannic
+        birth_date = 430.6.26
+    }
+    paa_argestaiid_audoleon = {
+        # Audoleon of House Argestaiid
+        first_name = { name = Audoleon }
+        dynasty = Argestaiid
+        tag = PAA
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 420.1.29
+    }
+    paa_argestaiid_ariston = {
+        # Ariston of House Argestaiid
+        first_name = { name = Ariston }
+        dynasty = Argestaiid
+        father = paa_argestaiid_audoleon
+        tag = PAA
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 440.5.23
+    }
+    paa_argestaiid_mika = {
+        # Mika of House Argestaiid
+        first_name = { name = Mika }
+        dynasty = Argestaiid
+        father = paa_argestaiid_audoleon
+        tag = PAA
+        religion = ir_roman_pantheon
+        culture = ir_dardanian
+        female = yes
+        birth_date = 442.1.3
+    }
+    sce_aripharnid_aripharnes = {
+        # Aripharnes of House Aripharnid
+        first_name = { name = Aripharnes }
+        dynasty = Aripharnid
+        tag = SCE
+        religion = ir_indo_iranian_religion
+        culture = ir_siraci
+        birth_date = 400.4.7
+    }
+    zgy_vaisali_jnanasene = {
+        # Jnanasene of House Vaisali
+        first_name = { name = Jnanasene }
+        dynasty = Vaisali
+        tag = ZGY
+        religion = ir_indo_iranian_religion
+        culture = ir_sindi
+        birth_date = 414.1.13
+    }
+    scy_agarid_agarus = {
+        # Agarus of House Agarid
+        first_name = { name = Agarus }
+        dynasty = Agarid
+        tag = SCY
+        religion = ir_indo_iranian_religion
+        culture = ir_scythian
+        birth_date = 410.3.4
+    }
+    mlo_antipatrid_eurydike = {
+        # Eurydike of House Antipatrid
+        first_name = { name = Eurydike }
+        dynasty = Antipatrid
+        father = elysium_mac_antipatrid_antipatros
+        tag = MLO
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        female = yes
+        birth_date = 407.3.4
+    }
+    mlo_aristodemid_aristodemus = {
+        # Aristodemus of House Aristodemid
+        first_name = { name = Aristodemus }
+        dynasty = Aristodemid
+        tag = MLO
+        religion = ir_roman_pantheon
+        culture = ir_ionian
+        birth_date = 410.3.4
+    }
+    mlo_lagid_ptolemais = {
+        # Ptolemais of House Lagid
+        first_name = { name = Ptolemais }
+        dynasty = Lagid
+        father = egy_lagid_ptolemaios
+        mother = mlo_antipatrid_eurydike
+        tag = MLO
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        female = yes
+        birth_date = 434.4.23
+    }
+    ore_sophia = {
+        # Sophia
+        first_name = { name = Sophia }
+        tag = ORE
+        religion = ir_roman_pantheon
+        culture = ir_euboean
+        female = yes
+        birth_date = 421.3.23
+    }
+    swe_davidus = {
+        # Davidus
+        first_name = { name = Davidus }
+        tag = SWE
+        religion = ir_druidism
+        culture = ir_britannic
+        birth_date = 424.6.10
+        nickname = NICKNAME_SANCTUS
+    }
+    pho_xanthippid_xanthippos = {
+        # Xanthippos of House Xanthippid
+        first_name = { name = Xanthippos }
+        dynasty = Xanthippid
+        tag = PHO
+        religion = ir_roman_pantheon
+        culture = ir_boeotian
+        birth_date = 414.1.13
+    }
+    map_atropatids_atropates = {
+        # Atropates of House Atropatids
+        first_name = { name = Atropates }
+        dynasty = Atropatids
+        tag = MAP
+        religion = ir_zoroaster
+        culture = ir_median
+        birth_date = 386.6.30
+    }
+    map_damaspia = {
+        # Damaspia
+        first_name = { name = Damaspia }
+        spouse = map_atropatids_atropates
+        tag = MAP
+        religion = ir_zoroaster
+        culture = ir_median
+        female = yes
+        birth_date = 392.1.15
+    }
+    map_atropatids_parmys = {
+        # Parmys of House Atropatids
+        first_name = { name = Parmys }
+        dynasty = Atropatids
+        father = map_atropatids_atropates
+        mother = map_damaspia
+        tag = MAP
+        religion = ir_zoroaster
+        culture = ir_median
+        female = yes
+        birth_date = 406.8.9
+    }
+    map_atropatids_datames = {
+        # Datames of House Atropatids
+        first_name = { name = Datames }
+        dynasty = Atropatids
+        father = map_atropatids_atropates
+        mother = map_damaspia
+        tag = MAP
+        religion = ir_zoroaster
+        culture = ir_median
+        birth_date = 410.9.28
+    }
+    map_atropatids_atossa = {
+        # Atossa of House Atropatids
+        first_name = { name = Atossa }
+        dynasty = Atropatids
+        father = map_atropatids_atropates
+        mother = map_damaspia
+        tag = MAP
+        religion = ir_zoroaster
+        culture = ir_median
+        female = yes
+        birth_date = 414.1.13
+    }
+    map_atropatids_anaphes = {
+        # Anaphes of House Atropatids
+        first_name = { name = Anaphes }
+        dynasty = Atropatids
+        father = map_atropatids_atropates
+        mother = map_damaspia
+        tag = MAP
+        religion = ir_zoroaster
+        culture = ir_median
+        birth_date = 418.7.8
+    }
+    mga_stilpon = {
+        # Stilpon
+        first_name = { name = Stilpon }
+        tag = MGA
+        religion = ir_roman_pantheon
+        culture = ir_athenian
+        birth_date = 392.11.15
+    }
+    mga_bryson = {
+        # Bryson
+        first_name = { name = Bryson }
+        tag = MGA
+        religion = ir_roman_pantheon
+        culture = ir_achaean
+        birth_date = 418.5.25
+    }
+    adt_sacarix = {
+        # Sacarix
+        first_name = { name = Sacarix }
+        tag = ADT
+        religion = ir_druidism
+        culture = ir_aduatacian
+        birth_date = 422.4.17
+    }
+    alu_mushika_nannan = {
+        # Nannan of House Mushika
+        first_name = { name = Nannan }
+        dynasty = Mushika
+        tag = ALU
+        religion = ir_hindu
+        culture = ir_kannadan
+        birth_date = 414.11.17
+    }
+    agr_hagriato = {
+        # Hagriato
+        first_name = { name = Hagriato }
+        tag = AGR
+        religion = ir_germanic_religion
+        culture = ir_saxonian
+        birth_date = 418.7.8
+    }
+    boe_pisis = {
+        # Pisis
+        first_name = { name = Pisis }
+        tag = BOE
+        religion = ir_roman_pantheon
+        culture = ir_boeotian
+        birth_date = 417.3.12
+    }
+    ksh_meroid_aktisanes = {
+        # Aktisanes of House Meroid
+        first_name = { name = Aktisanes }
+        dynasty = Meroid
+        tag = KSH
+        religion = ir_egyptian_pantheon
+        culture = ir_meroitic
+        birth_date = 404.10.14
+    }
+    ksh_alakhebasken = {
+        # Alakhebasken
+        first_name = { name = Alakhebasken }
+        spouse = ksh_meroid_aktisanes
+        tag = KSH
+        religion = ir_egyptian_pantheon
+        culture = ir_meroitic
+        female = yes
+        birth_date = 408.6.28
+    }
+    ksh_meroid_aryamani = {
+        # Aryamani of House Meroid
+        first_name = { name = Aryamani }
+        dynasty = Meroid
+        father = ksh_meroid_aktisanes
+        mother = ksh_alakhebasken
+        tag = KSH
+        religion = ir_egyptian_pantheon
+        culture = ir_meroitic
+        birth_date = 424.6.10
+    }
+    ksh_meroid_kash = {
+        # Kash of House Meroid
+        first_name = { name = Kash }
+        dynasty = Meroid
+        father = ksh_meroid_aktisanes
+        mother = ksh_alakhebasken
+        tag = KSH
+        religion = ir_egyptian_pantheon
+        culture = ir_meroitic
+        birth_date = 428.4.21
+    }
+    ksh_meroid_sabrakamani = {
+        # Sabrakamani of House Meroid
+        first_name = { name = Sabrakamani }
+        dynasty = Meroid
+        father = ksh_meroid_aktisanes
+        mother = ksh_alakhebasken
+        tag = KSH
+        religion = ir_egyptian_pantheon
+        culture = ir_meroitic
+        birth_date = 430.6.26
+    }
+    pnd_pandya_koon = {
+        # Koon of House Pandya
+        first_name = { name = Koon }
+        dynasty = Pandya
+        tag = PND
+        religion = ir_hindu
+        culture = ir_tamil
+        birth_date = 414.11.17
+    }
+    snp_skydrothemid_skydrothemis = {
+        # Skydrothemis of House Skydrothemid
+        first_name = { name = Skydrothemis }
+        dynasty = Skydrothemid
+        tag = SNP
+        religion = ir_roman_pantheon
+        culture = ir_cappadocian
+        birth_date = 410.3.4
+    }
+    eli_pyrrhon = {
+        # Pyrrhon
+        first_name = { name = Pyrrhon }
+        tag = ELI
+        religion = ir_roman_pantheon
+        culture = ir_aetolian
+        birth_date = 394.3.22
+    }
+    his_augustus = {
+        # Augustus
+        first_name = { name = Augustus }
+        tag = HIS
+        religion = ir_roman_pantheon
+        culture = ir_venetic
+        birth_date = 418.5.25
+        nickname = NICKNAME_VALERIAN
+    }
+    his_nicolaus = {
+        # Nicolaus
+        first_name = { name = Nicolaus }
+        tag = HIS
+        religion = ir_roman_pantheon
+        culture = ir_venetic
+        birth_date = 418.5.25
+    }
+    his_milicia = {
+        # Milicia
+        first_name = { name = Milicia }
+        tag = HIS
+        religion = ir_roman_pantheon
+        culture = ir_histrian
+        female = yes
+        birth_date = 426.4.4
+    }
+    chs_ioakeim = {
+        # Ioakeim
+        first_name = { name = Ioakeim }
+        tag = CHS
+        religion = ir_roman_pantheon
+        culture = ir_bosporan
+        birth_date = 422.4.5
+    }
+    chs_random = {
+        # random
+        first_name = random
+        tag = CHS
+        religion = ir_roman_pantheon
+        culture = ir_bosporan
+        birth_date = 424.7.8
+    }
+    nirvana_mry_siddhartha = {
+        # Siddhartha
+        first_name = { name = Siddhartha }
+        tag = Nirvana_MRY
+        religion = ir_buddhism
+        culture = ir_himalayan
+        birth_date = 274.1.1
+    }
+    nirvana_mry_mahavira = {
+        # Mahavira
+        first_name = { name = Mahavira }
+        tag = Nirvana_MRY
+        religion = ir_jainism
+        culture = ir_magadhi
+        birth_date = 257.1.1
+    }
+    msp_petrus = {
+        # Petrus
+        first_name = { name = Petrus }
+        tag = MSP
+        religion = ir_roman_pantheon
+        culture = ir_italiotian
+        birth_date = 418.7.8
+    }
+    chl_chola_kochaet = {
+        # Kochaet of House Chola
+        first_name = { name = Kochaet }
+        dynasty = Chola
+        tag = CHL
+        religion = ir_hindu
+        culture = ir_tamil
+        birth_date = 414.11.17
+        nickname = NICKNAME_CENNI
+    }
+    the_krates = {
+        # Krates
+        first_name = { name = Krates }
+        tag = THE
+        religion = ir_roman_pantheon
+        culture = ir_athenian
+        birth_date = 390.5.11
+    }
+    the_hipparchia = {
+        # Hipparchia
+        first_name = { name = Hipparchia }
+        spouse = the_krates
+        tag = THE
+        religion = ir_roman_pantheon
+        culture = ir_thracian
+        female = yes
+        birth_date = 420.1.29
+    }
+    the_demetrios = {
+        # Demetrios
+        first_name = { name = Demetrios }
+        tag = THE
+        religion = ir_roman_pantheon
+        culture = ir_athenian
+        birth_date = 404.2.16
+    }
+    bit_zipoeteid_zipoetes = {
+        # Zipoetes of House Zipoeteid
+        first_name = { name = Zipoetes }
+        dynasty = Zipoeteid
+        tag = BIT
+        religion = ir_roman_pantheon
+        culture = ir_bithynian
+        birth_date = 400.4.7
+    }
+    bit_dida = {
+        # Dida
+        first_name = { name = Dida }
+        spouse = bit_zipoeteid_zipoetes
+        tag = BIT
+        religion = ir_roman_pantheon
+        culture = ir_thracian
+        female = yes
+        birth_date = 413.4.5
+    }
+    bit_zipoeteid_boteiras = {
+        # Boteiras of House Zipoeteid
+        first_name = { name = Boteiras }
+        dynasty = Zipoeteid
+        father = bit_zipoeteid_zipoetes
+        mother = bit_dida
+        tag = BIT
+        religion = ir_roman_pantheon
+        culture = ir_bithynian
+        birth_date = 433.4.5
+    }
+    bit_etazeta = {
+        # Etazeta
+        first_name = { name = Etazeta }
+        tag = BIT
+        religion = ir_roman_pantheon
+        culture = ir_bithynian
+        female = yes
+        birth_date = 432.9.30
+    }
+    bit_zipoeteid_zipoetes_2 = {
+        # Zipoetes of House Zipoeteid
+        first_name = { name = Zipoetes }
+        dynasty = Zipoeteid
+        father = bit_zipoeteid_zipoetes
+        mother = bit_dida
+        tag = BIT
+        religion = ir_roman_pantheon
+        culture = ir_bithynian
+        birth_date = 436.4.5
+    }
+    bit_zipoeteid_bas = {
+        # Bas of House Zipoeteid
+        first_name = { name = Bas }
+        dynasty = Zipoeteid
+        father = bit_zipoeteid_zipoetes
+        mother = bit_dida
+        tag = BIT
+        religion = ir_roman_pantheon
+        culture = ir_bithynian
+        birth_date = 429.1.29
+    }
+    bmb_atargatid_abd-hadad = {
+        # Abd-Hadad of House Atargatid
+        first_name = { name = Abd-Hadad }
+        dynasty = Atargatid
+        tag = BMB
+        religion = ir_carthaginian_pantheon
+        culture = ir_aramaic
+        birth_date = 380.6.14
+    }
+    ion_hipparchid_hipparchos = {
+        # Hipparchos of House Hipparchid
+        first_name = { name = Hipparchos }
+        dynasty = Hipparchid
+        tag = ION
+        religion = ir_roman_pantheon
+        culture = ir_cyrenaican
+        birth_date = 422.8.27
+    }
+    ion_nausiphanes = {
+        # Nausiphanes
+        first_name = { name = Nausiphanes }
+        tag = ION
+        religion = ir_roman_pantheon
+        culture = ir_aeolian
+        birth_date = 428.8.11
+    }
+    car_maharbal = {
+        # Maharbal
+        first_name = { name = Maharbal }
+        tag = CAR
+        religion = ir_carthaginian_pantheon
+        culture = ir_carthaginian
+        birth_date = 410.3.4
+    }
+    car_barcid_himilco = {
+        # Himilco of House Barcid
+        first_name = { name = Himilco }
+        dynasty = Barcid
+        tag = CAR
+        religion = ir_carthaginian_pantheon
+        culture = ir_carthaginian
+        birth_date = 400.4.7
+    }
+    car_hannid_hanno = {
+        # Hanno of House Hannid
+        first_name = { name = Hanno }
+        dynasty = Hannid
+        tag = CAR
+        religion = ir_carthaginian_pantheon
+        culture = ir_carthaginian
+        birth_date = 410.1.7
+    }
+    car_gisgoid_gisco = {
+        # Gisco of House Gisgoid
+        first_name = { name = Gisco }
+        dynasty = Gisgoid
+        tag = CAR
+        religion = ir_carthaginian_pantheon
+        culture = ir_carthaginian
+        birth_date = 400.9.3
+    }
+    aes_hamprecht = {
+        # Hamprecht
+        first_name = { name = Hamprecht }
+        tag = AES
+        religion = ir_germanic_religion
+        culture = ir_irminonic
+        birth_date = 424.6.10
+    }
+    tre_nikaia = {
+        # Nikaia
+        first_name = { name = Nikaia }
+        father = elysium_mac_antipatrid_antipatros
+        tag = TRE
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        female = yes
+        birth_date = 419.7.8
+    }
+    tre_alkimachid_lysimachos = {
+        # Lysimachos of House Alkimachid
+        first_name = { name = Lysimachos }
+        dynasty = Alkimachid
+        father = elysium_tre_alkimachid_agathokles
+        spouse = tre_nikaia
+        tag = TRE
+        religion = ir_roman_pantheon
+        culture = ir_thessalian
+        birth_date = 392.11.15
+    }
+    tre_sosthenes = {
+        # Sosthenes
+        first_name = { name = Sosthenes }
+        tag = TRE
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 418.11.16
+    }
+    tre_hippostratos = {
+        # Hippostratos
+        first_name = { name = Hippostratos }
+        tag = TRE
+        religion = ir_roman_pantheon
+        culture = ir_ionian
+        birth_date = 420.1.29
+    }
+    tre_alkimachid_eurydike = {
+        # Eurydike of House Alkimachid
+        first_name = { name = Eurydike }
+        dynasty = Alkimachid
+        father = tre_alkimachid_lysimachos
+        mother = tre_nikaia
+        tag = TRE
+        religion = ir_roman_pantheon
+        culture = ir_thessalian
+        female = yes
+        birth_date = 438.9.14
+    }
+    tre_alkimachid_arsinoe = {
+        # Arsinoe of House Alkimachid
+        first_name = { name = Arsinoe }
+        dynasty = Alkimachid
+        father = tre_alkimachid_lysimachos
+        mother = tre_nikaia
+        tag = TRE
+        religion = ir_roman_pantheon
+        culture = ir_thessalian
+        female = yes
+        birth_date = 444.4.3
+    }
+    tre_alkimachid_agathokles = {
+        # Agathokles of House Alkimachid
+        first_name = { name = Agathokles }
+        dynasty = Alkimachid
+        father = tre_alkimachid_lysimachos
+        mother = tre_nikaia
+        tag = TRE
+        religion = ir_roman_pantheon
+        culture = ir_thessalian
+        birth_date = 440.7.10
+    }
+    tre_alkimachid_autolykos = {
+        # Autolykos of House Alkimachid
+        first_name = { name = Autolykos }
+        dynasty = Alkimachid
+        father = elysium_tre_alkimachid_agathokles
+        tag = TRE
+        religion = ir_roman_pantheon
+        culture = ir_thessalian
+        birth_date = 396.9.10
+    }
+    tre_adeia = {
+        # Adeia
+        first_name = { name = Adeia }
+        spouse = tre_alkimachid_autolykos
+        tag = TRE
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        female = yes
+        birth_date = 425.4.7
+    }
+    tre_alkimachid_alexandros = {
+        # Alexandros of House Alkimachid
+        first_name = { name = Alexandros }
+        dynasty = Alkimachid
+        father = tre_alkimachid_lysimachos
+        tag = TRE
+        religion = ir_roman_pantheon
+        culture = ir_thessalian
+        birth_date = 436.7.26
+    }
+    tre_sosthenes_2 = {
+        # Sosthenes
+        first_name = { name = Sosthenes }
+        tag = TRE
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 411.4.7
+    }
+    tre_alkimachid_alkimachos = {
+        # Alkimachos of House Alkimachid
+        first_name = { name = Alkimachos }
+        dynasty = Alkimachid
+        father = elysium_tre_alkimachid_agathokles
+        tag = TRE
+        religion = ir_roman_pantheon
+        culture = ir_thessalian
+        birth_date = 389.6.18
+    }
+    tre_alkimachid_alkimachos_2 = {
+        # Alkimachos of House Alkimachid
+        first_name = { name = Alkimachos }
+        dynasty = Alkimachid
+        father = tre_alkimachid_alkimachos
+        tag = TRE
+        religion = ir_roman_pantheon
+        culture = ir_thessalian
+        birth_date = 425.2.20
+    }
+    tre_alkimachid_philippos = {
+        # Philippos of House Alkimachid
+        first_name = { name = Philippos }
+        dynasty = Alkimachid
+        father = tre_alkimachid_alkimachos
+        tag = TRE
+        religion = ir_roman_pantheon
+        culture = ir_thessalian
+        birth_date = 429.11.5
+    }
+    tre_alkimachid_lysippos = {
+        # Lysippos of House Alkimachid
+        first_name = { name = Lysippos }
+        dynasty = Alkimachid
+        father = tre_alkimachid_alkimachos_2
+        tag = TRE
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 449.12.5
+    }
+    tre_alkimachid_autolykos_2 = {
+        # Autolykos of House Alkimachid
+        first_name = { name = Autolykos }
+        dynasty = Alkimachid
+        father = tre_alkimachid_autolykos
+        mother = tre_adeia
+        tag = TRE
+        religion = ir_roman_pantheon
+        culture = ir_thessalian
+        birth_date = 445.1.15
+    }
+    tre_agathon = {
+        # Agathon
+        first_name = { name = Agathon }
+        father = elysium_mac_asander_2
+        tag = TRE
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 427.5.2
+    }
+    tre_andromenes = {
+        # Andromenes
+        first_name = { name = Andromenes }
+        father = elysium_mac_attalos
+        mother = elysium_mac_atalante
+        tag = TRE
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 427.5.2
+    }
+    macedonians_in_phrygia_antipatrid_phila = {
+        # Phila of House Antipatrid
+        first_name = { name = Phila }
+        dynasty = Antipatrid
+        father = elysium_mac_antipatrid_antipatros
+        tag = macedonians_in_phrygia
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        female = yes
+        birth_date = 404.10.14
+    }
+    mithridates_in_phrygia_mithridatid_mithradates = {
+        # Mithradates of House Mithridatid
+        first_name = { name = Mithradates }
+        dynasty = Mithridatid
+        father = kio_mithridatid_mithradates
+        mother = kio_mithridatid_artakama
+        tag = mithridates_in_phrygia
+        religion = ir_zoroaster
+        culture = ir_median
+        birth_date = 416.9.12
+    }
+    mithridates_in_phrygia_mithridatid_ariobarzanes = {
+        # Ariobarzanes of House Mithridatid
+        first_name = { name = Ariobarzanes }
+        dynasty = Mithridatid
+        father = mithridates_in_phrygia_mithridatid_mithradates
+        tag = mithridates_in_phrygia
+        religion = ir_zoroaster
+        culture = ir_mysian
+        birth_date = 446.1.3
+    }
+    pry_eurydike = {
+        # Eurydike
+        first_name = { name = Eurydike }
+        tag = PRY
+        religion = ir_roman_pantheon
+        culture = ir_athenian
+        female = yes
+        birth_date = 404.2.16
+    }
+    pry_stratonike = {
+        # Stratonike
+        first_name = { name = Stratonike }
+        tag = PRY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        female = yes
+        birth_date = 390.5.11
+    }
+    pry_antigonid_antigonos = {
+        # Antigonos of House Antigonid
+        first_name = { name = Antigonos }
+        dynasty = Antigonid
+        father = elysium_pry_philippos
+        mother = elysium_pry_gygaia
+        spouse = pry_stratonike
+        tag = PRY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 372.3.24
+        nickname = NICKNAME_MONOPHTHALMUS
+    }
+    pry_antigonid_demetrios = {
+        # Demetrios of House Antigonid
+        first_name = { name = Demetrios }
+        dynasty = Antigonid
+        father = pry_antigonid_antigonos
+        mother = pry_stratonike
+        spouse = pry_eurydike
+        tag = PRY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 416.9.12
+        nickname = NICKNAME_POLIORCETES
+    }
+    pry_attalos = {
+        # Attalos
+        first_name = { name = Attalos }
+        tag = PRY
+        religion = ir_roman_pantheon
+        culture = ir_greco_pontic
+        birth_date = 396.2.15
+    }
+    pry_boa = {
+        # Boa
+        first_name = { name = Boa }
+        spouse = pry_attalos
+        tag = PRY
+        religion = ir_roman_pantheon
+        culture = ir_paphlagonian
+        female = yes
+        birth_date = 405.3.12
+    }
+    pry_nearchos = {
+        # Nearchos
+        first_name = { name = Nearchos }
+        tag = PRY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 394.3.22
+    }
+    pry_dokimos = {
+        # Dokimos
+        first_name = { name = Dokimos }
+        tag = PRY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 390.5.11
+    }
+    pry_phoinix = {
+        # Phoinix
+        first_name = { name = Phoinix }
+        tag = PRY
+        religion = ir_roman_pantheon
+        culture = ir_troan
+        birth_date = 400.8.25
+    }
+    pry_krateros = {
+        # Krateros
+        first_name = { name = Krateros }
+        father = elysium_pry_krateros
+        mother = macedonians_in_phrygia_antipatrid_phila
+        tag = PRY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 433.5.7
+    }
+    pry_antigonid_korragos = {
+        # Korragos of House Antigonid
+        first_name = { name = Korragos }
+        dynasty = Antigonid
+        father = pry_antigonid_demetrios
+        mother = pry_eurydike
+        tag = PRY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 448.10.18
+    }
+    pry_antigonid_antigonos_2 = {
+        # Antigonos of House Antigonid
+        first_name = { name = Antigonos }
+        dynasty = Antigonid
+        father = pry_antigonid_demetrios
+        mother = macedonians_in_phrygia_antipatrid_phila
+        tag = PRY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 435.7.26
+        nickname = NICKNAME_GONATAS
+    }
+    pry_antigonid_stratonike = {
+        # Stratonike of House Antigonid
+        first_name = { name = Stratonike }
+        dynasty = Antigonid
+        father = pry_antigonid_demetrios
+        mother = macedonians_in_phrygia_antipatrid_phila
+        tag = PRY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        female = yes
+        birth_date = 436.11.19
+    }
+    pry_asklepiades = {
+        # Asklepiades
+        first_name = { name = Asklepiades }
+        tag = PRY
+        religion = ir_roman_pantheon
+        culture = ir_achaean
+        birth_date = 404.2.16
+    }
+    pry_menedemos = {
+        # Menedemos
+        first_name = { name = Menedemos }
+        tag = PRY
+        religion = ir_roman_pantheon
+        culture = ir_euboean
+        birth_date = 408.12.3
+    }
+    pry_aleuadid_medeios = {
+        # Medeios of House Aleuadid
+        first_name = { name = Medeios }
+        dynasty = Aleuadid
+        tag = PRY
+        religion = ir_roman_pantheon
+        culture = ir_thessalian
+        birth_date = 400.4.7
+    }
+    pry_pantaokos = {
+        # Pantaokos
+        first_name = { name = Pantaokos }
+        tag = PRY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 420.1.29
+    }
+    pry_philokles = {
+        # Philokles
+        first_name = { name = Philokles }
+        tag = PRY
+        religion = ir_carthaginian_pantheon
+        culture = ir_phoenician
+        birth_date = 424.2.7
+    }
+    pry_hieronymos = {
+        # Hieronymos
+        first_name = { name = Hieronymos }
+        tag = PRY
+        religion = ir_roman_pantheon
+        culture = ir_thracian
+        birth_date = 400.4.7
+    }
+    pry_periandros = {
+        # Periandros
+        first_name = { name = Periandros }
+        tag = PRY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 357.7.20
+    }
+    pry_marsyas = {
+        # Marsyas
+        first_name = { name = Marsyas }
+        father = pry_periandros
+        mother = elysium_pry_gygaia
+        tag = PRY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 398.1.31
+    }
+    pry_antigonid_telesphoros = {
+        # Telesphoros of House Antigonid
+        first_name = { name = Telesphoros }
+        dynasty = Antigonid
+        father = elysium_pry_antigonid_amyntas
+        tag = PRY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 414.11.17
+    }
+    pry_philetairos = {
+        # Philetairos
+        first_name = { name = Philetairos }
+        father = pry_attalos
+        mother = pry_boa
+        tag = PRY
+        religion = ir_roman_pantheon
+        culture = ir_greco_pontic
+        birth_date = 427.6.10
+    }
+    pry_eumenes = {
+        # Eumenes
+        first_name = { name = Eumenes }
+        father = pry_attalos
+        mother = pry_boa
+        tag = PRY
+        religion = ir_roman_pantheon
+        culture = ir_greco_pontic
+        birth_date = 429.5.7
+    }
+    pry_satrya = {
+        # Satrya
+        first_name = { name = Satrya }
+        spouse = pry_eumenes
+        tag = PRY
+        religion = ir_roman_pantheon
+        culture = ir_greco_pontic
+        female = yes
+        birth_date = 431.3.12
+    }
+    pry_eumenes_2 = {
+        # Eumenes
+        first_name = { name = Eumenes }
+        father = pry_eumenes
+        mother = pry_satrya
+        tag = PRY
+        religion = ir_roman_pantheon
+        culture = ir_greco_pontic
+        birth_date = 448.5.7
+    }
+    pry_attalos_2 = {
+        # Attalos
+        first_name = { name = Attalos }
+        father = pry_attalos
+        mother = pry_boa
+        tag = PRY
+        religion = ir_roman_pantheon
+        culture = ir_greco_pontic
+        birth_date = 439.5.7
+    }
+    pry_archelaos = {
+        # Archelaos
+        first_name = { name = Archelaos }
+        tag = PRY
+        religion = ir_roman_pantheon
+        culture = ir_macedonian
+        birth_date = 381.2.3
+    }
 }

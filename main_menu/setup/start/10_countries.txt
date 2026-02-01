@@ -3546,7 +3546,7 @@ countries = {
                 constantinople catalca silivri
             }
             government = {
-                ruler = random
+                ruler = byz_random
                 type = republic
             }
             include = "expl_imperator_rome"
@@ -3945,7 +3945,7 @@ countries = {
                 milos kythnos naxos mykonos amorgos
             }
             government = {
-                ruler = random
+                ruler = del_random
                 type = republic
             }
             include = "expl_imperator_rome"
@@ -3970,7 +3970,7 @@ countries = {
                 kos
             }
             government = {
-                ruler = random
+                ruler = kos_random
                 type = republic
             }
             include = "expl_imperator_rome"
@@ -5466,7 +5466,7 @@ countries = {
 #             # Chersonesus
 #             own_control_core = { }
 #             government = {
-#                 ruler = random
+#                 ruler = chs_random
 #                 type = republic
 #             }
 #             include = "expl_imperator_rome"

@@ -247,6 +247,13 @@ def extract_10_countries():
     return countries
 
 
+def extract_05_characters():
+    # Extract the data from the characters that are currently already written to 05_characters.txt
+    tree = parse_tree(iu_05_characters)
+    characters = tree["character_db"].to_python()
+    return characters
+
+
 def extract_character_data():
     def is_ruler(char_data):
         for key, value in char_data.items():
@@ -267,19 +274,48 @@ def extract_character_data():
                 if char_id == "country":
                     continue
 
-                if "first_name" not in char_data:
-                    continue  # Skip characters without a first name
-
                 ruler_flag = is_ruler(char_data)
+                first_name = (
+                    char_data["first_name"] if "first_name" in char_data else "random"
+                )
                 family = (
                     char_data["family"].split(":")[2] if "family" in char_data else None
                 )
+
+                father = (
+                    (
+                        int(char_data["father"].split(":")[1])
+                        if char_data["father"].startswith("char:")
+                        else None
+                    )
+                    if "father" in char_data
+                    else None
+                )
+                mother = (
+                    (
+                        int(char_data["mother"].split(":")[1])
+                        if char_data["mother"].startswith("char:")
+                        else None
+                    )
+                    if "mother" in char_data
+                    else None
+                )
+                spouse = (
+                    (
+                        int(char_data["marry_character"].split(":")[1])
+                        if char_data["marry_character"].startswith("char:")
+                        else None
+                    )
+                    if "marry_character" in char_data
+                    else None
+                )
+
 
                 # Construct base unique tag
                 parts = [country_tag]
                 if family:
                     parts.append(family)
-                parts.append(char_data["first_name"])
+                parts.append(first_name)
                 base_tag = "_".join(parts).lower()
 
                 # Make tag truly unique
@@ -291,15 +327,15 @@ def extract_character_data():
                     unique_tag = base_tag
 
                 data = {
-                    "id": char_id,
-                    "name": char_data["first_name"],
+                    "id": int(char_id),
+                    "name": first_name,
                     "family": family,
                     "nickname": char_data["nickname"],
                     "birth_date": char_data["birth_date"],
-                    "father": char_data["father"],
-                    "mother": char_data["mother"],
+                    "father": father,
+                    "mother": mother,
                     "female": char_data["female"] if "female" in char_data else False,
-                    "spouse": char_data["marry_character"],
+                    "spouse": spouse,
                     "culture": f"ir_{char_data['culture']}",
                     "religion": f"ir_{char_data['religion']}",
                     "country": country_tag,
