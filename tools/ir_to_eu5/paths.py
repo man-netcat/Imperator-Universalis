@@ -86,5 +86,4 @@ iu_prescripted_coa = (
     / "zz_ir_pre_scripted_countries.txt"
 )
 iu_map_data = mod_root / "in_game" / "map_data"
-iu_10_countries = mod_root / "main_menu" / "setup" / "start" / "10_countries.txt"
-iu_05_characters = mod_root / "main_menu" / "setup" / "start" / "05_characters.txt"
+iu_setup_start = mod_root / "main_menu" / "setup" / "start"

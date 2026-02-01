@@ -242,19 +242,28 @@ def extract_eu5_map_data():
 
 def extract_10_countries():
     # Extracts the data for the countries that are currently already written to 10_countries.txt
-    tree = parse_tree(iu_10_countries)
+    tree = parse_tree(iu_setup_start / "10_countries.txt")
     countries = tree["countries"]["countries"].to_python()
     return countries
 
 
 def extract_05_characters():
     # Extract the data from the characters that are currently already written to 05_characters.txt
-    tree = parse_tree(iu_05_characters)
+    tree = parse_tree(iu_setup_start / "05_characters.txt")
     characters = tree["character_db"].to_python()
     return characters
 
 
+def extract_04_dynasties():
+    # Extract the data from the dynasties that are currently already written to 04_dynasties.txt
+    tree = parse_tree(iu_setup_start / "04_dynasties.txt")
+    dynasties = tree["dynasty_manager"].to_python()
+    return dynasties
+
+
 def extract_character_data():
+    character_loc = read_localisation_file(ir_localisation)
+
     def is_ruler(char_data):
         for key, value in char_data.items():
             if key.startswith("c:") and value["set_as_ruler"]:
@@ -262,25 +271,63 @@ def extract_character_data():
         return False
 
     characters = []
-    tag_counts = {}  # keep track of how many times each tag has appeared
+    dynasties = []
+    tag_counts = {}
+    dynasty_tags_seen = set()  # track which dynasties we've already added
 
     for path in ir_character_data.iterdir():
         if path.suffix != ".txt" or not path.is_file():
             continue
 
-        tree = parse_tree(path)
-        for country_tag, country_characters in tree.items():
+        character_tree = parse_tree(path)
+        for _, country_characters in character_tree.items():
             for char_id, char_data in country_characters.items():
                 if char_id == "country":
+                    # Set country tag for this loop
+                    country_tag = char_data
                     continue
 
                 ruler_flag = is_ruler(char_data)
-                first_name = (
-                    char_data["first_name"] if "first_name" in char_data else "random"
-                )
-                family = (
-                    char_data["family"].split(":")[2] if "family" in char_data else None
-                )
+                if "first_name" in char_data:
+                    ir_name_tag = char_data["first_name"]
+                    name_tag = char_data["first_name"]
+                    name = (
+                        character_loc[ir_name_tag]
+                        if ir_name_tag in character_loc
+                        else ir_name_tag
+                    )
+                else:
+                    name_tag = None
+
+                if "nickname" in char_data:
+                    nickname_tag = char_data["nickname"]
+                    nickname = (
+                        (
+                            character_loc[char_data["nickname"]]
+                            if nickname_tag in character_loc
+                            else nickname_tag
+                        )
+                        .strip("'")
+                        .replace(" ", "_")
+                    )
+                else:
+                    nickname_tag = None
+                    nickname = None
+
+                if "family" in char_data:
+                    if char_data["family"].startswith("c:"):
+                        dynasty = f"{char_data['family'].split(':')[2].lower()}"
+                    else:
+                        dynasty = char_data["family"]
+                    dynasty_tag = f"{dynasty.lower()}_dynasty"
+                    dynasty_name = dynasty.capitalize()
+                    dynasty = dynasty.lower().replace(" ", "_")
+                    if dynasty_tag not in dynasty_tags_seen:
+                        dynasties.append({"tag": dynasty_tag, "name": dynasty_name})
+                        dynasty_tags_seen.add(dynasty_tag)
+                else:
+                    dynasty_tag = None
+                    dynasty_name = None
 
                 father = (
                     (
@@ -310,12 +357,14 @@ def extract_character_data():
                     else None
                 )
 
-
                 # Construct base unique tag
                 parts = [country_tag]
-                if family:
-                    parts.append(family)
-                parts.append(first_name)
+                if name:
+                    parts.append(name.lower().replace(" ", "_"))
+                else:
+                    parts.append("char")
+                if dynasty:
+                    parts.append(dynasty.lower().replace(" ", "_"))
                 base_tag = "_".join(parts).lower()
 
                 # Make tag truly unique
@@ -328,9 +377,12 @@ def extract_character_data():
 
                 data = {
                     "id": int(char_id),
-                    "name": first_name,
-                    "family": family,
-                    "nickname": char_data["nickname"],
+                    "name_tag": name_tag,
+                    "name": name,
+                    "dynasty_tag": dynasty_tag,
+                    "dynasty_name": (dynasty.capitalize() if dynasty else None),
+                    "nickname_tag": nickname_tag,
+                    "nickname": nickname,
                     "birth_date": char_data["birth_date"],
                     "father": father,
                     "mother": mother,
@@ -344,4 +396,4 @@ def extract_character_data():
                     "tag": unique_tag,  # final unique tag
                 }
                 characters.append(data)
-    return characters
+    return characters, dynasties

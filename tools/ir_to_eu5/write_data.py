@@ -259,7 +259,11 @@ def write_country_setup(country_data: list, override_data: list):
 
 
 def write_localisation_files(
-    culture_data: list, religion_data: list, country_data: list, character_data: list
+    culture_data: list,
+    religion_data: list,
+    country_data: list,
+    character_data: list,
+    dynasties: list,
 ):
     culture_lines = [f"l_english:"]
     for culture_group in culture_data:
@@ -284,9 +288,30 @@ def write_localisation_files(
         country_lines.append(f'  {country["tag"]}: "{country["name"]}"')
         country_lines.append(f'  {country["tag"]}_ADJ: "{country["name_adj"]}"')
 
+    character_lines = [f"l_english:"]
+    character_lines.extend(
+        {
+            f'  {character["name_tag"]}: "{character["name"]}"'
+            for character in character_data
+        }
+    )
+    character_lines.extend(
+        {
+            f'  {character["nickname_tag"]}: "{character["nickname"]}"'
+            for character in character_data
+            if character["nickname"]
+        }
+    )
+
+    dynasty_lines = [f"l_english:"]
+    for dynasty in dynasties:
+        dynasty_lines.append(f'  {dynasty["tag"]}: "{dynasty["name"]}"')
+
     write_blocks(iu_localisation / "ir_cultures_l_english.yml", culture_lines)
     write_blocks(iu_localisation / "ir_religions_l_english.yml", religion_lines)
     write_blocks(iu_localisation / "ir_countries_l_english.yml", country_lines)
+    write_blocks(iu_localisation / "ir_characters_l_english.yml", character_lines)
+    write_blocks(iu_localisation / "ir_dynasties_l_english.yml", dynasty_lines)
 
 
 def write_coa_file(coa_data: _pydt.Tree):
@@ -494,71 +519,129 @@ def write_10_countries(ten_countries_data, country_data, eu5_map_data, country_r
     top_line = "current_age = age_1_traditions"
 
     write_blocks_with_comments(
-        iu_10_countries,
+        iu_setup_start / "10_countries.txt",
         [top_line, nested],
         comment_tags=comment_tags,
     )
 
 
+from collections import defaultdict
+
+
 def write_05_characters(five_characters_data, character_data):
-    character_map = {character["id"]: character["tag"] for character in character_data}
+    # --- helpers ---
+    char_by_id = {c["id"]: c for c in character_data}
+    character_map = {c["id"]: c["tag"] for c in character_data}
+
+    # --- build parent dependencies ---
+    deps = defaultdict(set)
+    for c in character_data:
+        cid = c["id"]
+        if c.get("father"):
+            deps[cid].add(c["father"])
+        if c.get("mother"):
+            deps[cid].add(c["mother"])
+
+    # --- topological sort (parents first) ---
+    indeg = {c["id"]: 0 for c in character_data}
+    for child, parents in deps.items():
+        indeg[child] += len(parents)
+
+    queue = [cid for cid, d in indeg.items() if d == 0]
+    topo_order = []
+
+    while queue:
+        cid = queue.pop(0)
+        topo_order.append(cid)
+        for c, parents in deps.items():
+            if cid in parents:
+                indeg[c] -= 1
+                if indeg[c] == 0:
+                    queue.append(c)
+
+    # --- enforce spouse adjacency ---
+    used = set()
+    final_order = []
+
+    for cid in topo_order:
+        if cid in used:
+            continue
+
+        c = char_by_id[cid]
+        spouse = c.get("spouse")
+
+        if spouse and spouse not in used:
+            final_order.append(cid)
+            final_order.append(spouse)
+            used.add(cid)
+            used.add(spouse)
+        else:
+            final_order.append(cid)
+            used.add(cid)
+
+    # --- emit blocks ---
     blocks = []
     comment_tags = set()
+    spouse_emitted = set()
 
-    for character in character_data:
+    for cid in final_order:
+        character = char_by_id[cid]
+
         tag = character["tag"]
-        character_name = character["name"]
-        character_family = character["family"]
+        name = character["name"]
+        name_tag = character["name_tag"]
+        dynasty = character["dynasty_tag"]
 
         # --- start from base, preserve everything ---
         base = five_characters_data.get(tag, {})
-        merged = dict(base)  # shallow copy
-        if character_name == "random":
-            merged["first_name"] = character_name
+        merged = dict(base)
+
+        if name_tag:
+            merged["first_name"] = f"{{ name = {name_tag} }}"
         else:
-            merged["first_name"] = f"{{ name = {character_name} }}"
-        if character_family:
-            merged["dynasty"] = character_family
+            merged["first_name"] = "random"
 
-        # --- emit ---
-        lines: list = []
-        comment = f"# {character_name}"
-        if character_family:
-            comment += f" of House {character_family}"
-        lines.append(comment)
+        if dynasty:
+            merged["dynasty"] = dynasty
 
-        if character["father"]:
+        # --- relations ---
+        if character.get("father"):
             merged["father"] = character_map[character["father"]]
-        if character["mother"]:
+        if character.get("mother"):
             merged["mother"] = character_map[character["mother"]]
-        if character["spouse"]:
+
+        if character.get("spouse") and cid not in spouse_emitted:
             merged["spouse"] = character_map[character["spouse"]]
-        if character["culture"]:
+            spouse_emitted.add(character["spouse"])
+
+        # --- attributes ---
+        if character.get("culture"):
             merged["culture"] = character["culture"]
-        if character["female"]:
+        if character.get("female"):
             merged["female"] = "yes"
-        if character["religion"]:
+        if character.get("religion"):
             merged["religion"] = character["religion"]
 
         merged["tag"] = character["country"]
-
         merged["birth_date"] = character["birth_date"]
 
-        if "nickname" in character and character["nickname"]:
-            merged["nickname"] = character["nickname"]
+        if character.get("nickname_tag"):
+            merged["nickname"] = character["nickname_tag"]
+
+        # --- emit ---
+        lines = []
+        comment = f"# {name}"
+        if dynasty:
+            comment += dynasty
+        lines.append(comment)
 
         for key, value in merged.items():
             if isinstance(value, dict):
-                sub = []
-                for k, v in value.items():
-                    sub.append(f"{k} = {v}")
+                sub = [f"{k} = {v}" for k, v in value.items()]
                 lines.append((key, sub))
-
             elif isinstance(value, list):
                 lines.append((key, value))
-
             else:
-                # strings, numbers, AND inline "{ }"
                 lines.append(f"{key} = {value}")
 
         blocks.append((tag, lines))
@@ -566,7 +649,56 @@ def write_05_characters(five_characters_data, character_data):
     nested = ("character_db", blocks)
 
     write_blocks_with_comments(
-        iu_05_characters,
+        iu_setup_start / "05_characters.txt",
+        [nested],
+        comment_tags=comment_tags,
+    )
+
+
+def write_04_dynasties(four_dynasties_data: dict, dynasties_data: list[dict]):
+    blocks = []
+    comment_tags = set()
+
+    # --- merge new dynasties into existing dict ---
+    for dynasty in dynasties_data:
+        dynasty_tag = dynasty["tag"]
+
+        # start from existing base if present
+        base = four_dynasties_data.get(dynasty_tag, {})
+        merged = dict(base)
+
+        # override/add new fields
+        merged.update(dynasty)
+
+        # convert 'name' to single-level nested like default_dynasty
+        merged["name"] = f"{{ name = {dynasty_tag} }}"
+
+        # store back
+        four_dynasties_data[dynasty_tag] = merged
+
+    # --- emit all dynasties ---
+    for dynasty_tag in sorted(four_dynasties_data):
+        dynasty = four_dynasties_data[dynasty_tag]
+        lines = []
+
+        for key, value in dynasty.items():
+            if key == "tag":
+                continue  # skip tag entirely
+            elif isinstance(value, dict):
+                sub = [f"{k} = {v}" for k, v in value.items()]
+                lines.append((key, sub))
+            elif isinstance(value, list):
+                lines.append((key, value))
+            else:
+                # simple scalar, including name
+                lines.append(f"{key} = {value}")
+
+        blocks.append((dynasty_tag, lines))
+
+    nested = ("dynasty_manager", blocks)
+
+    write_blocks_with_comments(
+        iu_setup_start / "04_dynasties.txt",
         [nested],
         comment_tags=comment_tags,
     )

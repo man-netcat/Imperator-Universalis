@@ -29,7 +29,7 @@ countries = {
                 orte bracciano
             }
             government = {
-                ruler = rom_publius_3
+                ruler = rom_publius_fabii
                 type = republic
             }
             include = "expl_imperator_rome"
@@ -47,7 +47,7 @@ countries = {
                 ariano santangelo benevento avellino
             }
             government = {
-                ruler = sam_varriani_gaius
+                ruler = sam_gaius_varriani
                 type = republic
             }
             include = "expl_imperator_rome"
@@ -130,7 +130,7 @@ countries = {
                 siena chiusi montalcino
             }
             government = {
-                ruler = etr_vulturreno_elbio
+                ruler = etr_elbio_vulturreno
                 type = republic
             }
             include = "expl_imperator_rome"
@@ -760,7 +760,7 @@ countries = {
                 malta
             }
             government = {
-                ruler = car_maharbal
+                ruler = car_maharbal_hipparchid
                 type = republic
             }
             include = "expl_imperator_rome"
@@ -793,7 +793,7 @@ countries = {
 #             # Massylia
 #             own_control_core = { }
 #             government = {
-#                 ruler = msy_ailymasid_ailymas
+#                 ruler = msy_ailymas_ailymasid
 #                 type = tribe
 #             }
 #             include = "expl_imperator_rome"
@@ -834,7 +834,7 @@ countries = {
                 syracuse caltagirone modica noto
             }
             government = {
-                ruler = syr_agathoklid_agathokles
+                ruler = syr_agathokles_agathoklid
                 type = monarchy
             }
             include = "expl_imperator_rome"
@@ -845,7 +845,7 @@ countries = {
 #             # Dodekaschoinos
 #             own_control_core = { }
 #             government = {
-#                 ruler = dod_wakekiye_sesen
+#                 ruler = dod_sesen_wakekiye
 #                 type = theocracy
 #             }
 #             include = "expl_imperator_rome"
@@ -887,7 +887,7 @@ countries = {
                 el_jundi el_tor faran saint_katrine
             }
             government = {
-                ruler = egy_lagid_ptolemaios
+                ruler = egy_ptolemaios_lagid
                 type = monarchy
             }
             include = "expl_imperator_rome"
@@ -905,7 +905,7 @@ countries = {
                 mechili al_khuimat msus suluntah
             }
             government = {
-                ruler = cyr_charinid_epimenes
+                ruler = cyr_epimenes_charinid
                 type = monarchy
             }
             include = "expl_imperator_rome"
@@ -916,7 +916,7 @@ countries = {
 #             # Massilia
 #             own_control_core = { }
 #             government = {
-#                 ruler = mas_krateros
+#                 ruler = mas_krateros_kujid
 #                 type = republic
 #             }
 #             include = "expl_imperator_rome"
@@ -3345,7 +3345,7 @@ countries = {
 #             # Taulantia
 #             own_control_core = { }
 #             government = {
-#                 ruler = tln_taulantid_glaukias
+#                 ruler = tln_glaukias_taulantid
 #                 type = monarchy
 #             }
 #             include = "expl_imperator_rome"
@@ -3367,7 +3367,7 @@ countries = {
 #             # Dardania
 #             own_control_core = { }
 #             government = {
-#                 ruler = drd_dardanid_kleitos
+#                 ruler = drd_kleitos_dardanid
 #                 type = tribe
 #             }
 #             include = "expl_imperator_rome"
@@ -3411,7 +3411,7 @@ countries = {
 #             # Getia
 #             own_control_core = { }
 #             government = {
-#                 ruler = gte_dromichaetes
+#                 ruler = gte_dromichaetes_elonimid
 #                 type = tribe
 #             }
 #             include = "expl_imperator_rome"
@@ -3546,7 +3546,7 @@ countries = {
                 constantinople catalca silivri
             }
             government = {
-                ruler = byz_random
+                ruler = byz_ioannes_samarian_2
                 type = republic
             }
             include = "expl_imperator_rome"
@@ -3656,7 +3656,7 @@ countries = {
                 smolyan ustra perperek
             }
             government = {
-                ruler = tre_alkimachid_lysimachos
+                ruler = tre_lysimachos_alkimachid
                 type = monarchy
             }
             include = "expl_imperator_rome"
@@ -3667,7 +3667,7 @@ countries = {
 #             # Odrysia
 #             own_control_core = { }
 #             government = {
-#                 ruler = odr_odrysid_seuthes
+#                 ruler = odr_seuthes_odrysid
 #                 type = tribe
 #             }
 #             include = "expl_imperator_rome"
@@ -3678,7 +3678,7 @@ countries = {
 #             # Paeonia
 #             own_control_core = { }
 #             government = {
-#                 ruler = paa_argestaiid_audoleon
+#                 ruler = paa_audoleon_argestaiid
 #                 type = tribe
 #             }
 #             include = "expl_imperator_rome"
@@ -3723,7 +3723,7 @@ countries = {
                 skopje prosek kocani kratovo kumanovo shtip strumica veles
             }
             government = {
-                ruler = mac_antipatrid_kassandros
+                ruler = mac_kassandros_antipatrid
                 type = monarchy
             }
             include = "expl_imperator_rome"
@@ -3741,7 +3741,7 @@ countries = {
                 andros kythnos
             }
             government = {
-                ruler = ath_pherekles
+                ruler = ath_pherekles_stratoklid
                 type = republic
             }
             include = "expl_imperator_rome"
@@ -3817,7 +3817,7 @@ countries = {
                 ioannina parga preveza
             }
             government = {
-                ruler = epi_aiakid_pyrrhos
+                ruler = epi_pyrrhos_aiakid
                 type = monarchy
             }
             include = "expl_imperator_rome"
@@ -3945,7 +3945,7 @@ countries = {
                 milos kythnos naxos mykonos amorgos
             }
             government = {
-                ruler = del_random
+                ruler = del_anaximander_seleukid_2
                 type = republic
             }
             include = "expl_imperator_rome"
@@ -3970,7 +3970,7 @@ countries = {
                 kos
             }
             government = {
-                ruler = kos_random
+                ruler = kos_herodas_elonimid_2
                 type = republic
             }
             include = "expl_imperator_rome"
@@ -4160,7 +4160,7 @@ countries = {
                 mystras kythira monemvasia oitylo
             }
             government = {
-                ruler = spa_agiad_areus
+                ruler = spa_areus_agiad
                 type = monarchy
             }
             include = "expl_imperator_rome"
@@ -4288,7 +4288,7 @@ countries = {
 #             # Miletos
 #             own_control_core = { }
 #             government = {
-#                 ruler = mlo_aristodemid_aristodemus
+#                 ruler = mlo_aristodemus_aristodemid
 #                 type = republic
 #             }
 #             include = "expl_imperator_rome"
@@ -4304,7 +4304,7 @@ countries = {
                 rodos karpathos
             }
             government = {
-                ruler = rho_demaratid_demaratos
+                ruler = rho_demaratos_demaratid
                 type = republic
             }
             include = "expl_imperator_rome"
@@ -4334,7 +4334,7 @@ countries = {
                 silli atpazari
             }
             government = {
-                ruler = bit_zipoeteid_zipoetes
+                ruler = bit_zipoetes_zipoeteid
                 type = monarchy
             }
             include = "expl_imperator_rome"
@@ -4348,7 +4348,7 @@ countries = {
                 akcasehir
             }
             government = {
-                ruler = hcp_achaimenid_amastris
+                ruler = hcp_amastris_achaimenid
                 type = monarchy
             }
             include = "expl_imperator_rome"
@@ -4370,7 +4370,7 @@ countries = {
 #             # Ionia
 #             own_control_core = { }
 #             government = {
-#                 ruler = ion_hipparchid_hipparchos
+#                 ruler = ion_hipparchos_hipparchid
 #                 type = republic
 #             }
 #             include = "expl_imperator_rome"
@@ -4384,7 +4384,7 @@ countries = {
                 sinop gerze
             }
             government = {
-                ruler = snp_skydrothemid_skydrothemis
+                ruler = snp_skydrothemis_skydrothemid
                 type = monarchy
             }
             include = "expl_imperator_rome"
@@ -4423,7 +4423,7 @@ countries = {
                 iznik bursa
             }
             government = {
-                ruler = kio_mithridatid_mithradates
+                ruler = kio_mithradates_mithridatid
                 type = monarchy
             }
             include = "expl_imperator_rome"
@@ -4517,7 +4517,7 @@ countries = {
                 tarsus
             }
             government = {
-                ruler = pry_antigonid_antigonos
+                ruler = pry_antigonos_antigonid
                 type = monarchy
             }
             include = "expl_imperator_rome"
@@ -4528,7 +4528,7 @@ countries = {
 #             # Cappadocia
 #             own_control_core = { }
 #             government = {
-#                 ruler = cap_amyntid_amyntas
+#                 ruler = cap_amyntas_amyntid
 #                 type = monarchy
 #             }
 #             include = "expl_imperator_rome"
@@ -4682,7 +4682,7 @@ countries = {
 #             # Judea
 #             own_control_core = { }
 #             government = {
-#                 ruler = jud_zadokite_simon
+#                 ruler = jud_simon_zadokite
 #                 type = theocracy
 #             }
 #             include = "expl_imperator_rome"
@@ -4693,7 +4693,7 @@ countries = {
 #             # Samaria
 #             own_control_core = { }
 #             government = {
-#                 ruler = sma_samarian_daliah
+#                 ruler = sma_daliah_samarian
 #                 type = theocracy
 #             }
 #             include = "expl_imperator_rome"
@@ -4704,7 +4704,7 @@ countries = {
 #             # Sidon
 #             own_control_core = { }
 #             government = {
-#                 ruler = sid_elonimid_abd-elonim
+#                 ruler = sid_abd-elonim_elonimid
 #                 type = monarchy
 #             }
 #             include = "expl_imperator_rome"
@@ -4715,7 +4715,7 @@ countries = {
 #             # Arados
 #             own_control_core = { }
 #             government = {
-#                 ruler = ara_gerasthartid_gerasthart
+#                 ruler = ara_gerasthart_gerasthartid
 #                 type = monarchy
 #             }
 #             include = "expl_imperator_rome"
@@ -4726,7 +4726,7 @@ countries = {
 #             # Byblos
 #             own_control_core = { }
 #             government = {
-#                 ruler = byb_aynelid_aynel
+#                 ruler = byb_aynel_aynelid
 #                 type = monarchy
 #             }
 #             include = "expl_imperator_rome"
@@ -4748,7 +4748,7 @@ countries = {
 #             # Bambyce
 #             own_control_core = { }
 #             government = {
-#                 ruler = bmb_atargatid_abd-hadad
+#                 ruler = bmb_abd-hadad_atargatid
 #                 type = theocracy
 #             }
 #             include = "expl_imperator_rome"
@@ -4759,7 +4759,7 @@ countries = {
 #             # Seleucids
 #             own_control_core = { }
 #             government = {
-#                 ruler = sel_seleukid_seleukos
+#                 ruler = sel_seleukos_seleukid
 #                 type = monarchy
 #             }
 #             include = "expl_imperator_rome"
@@ -4770,7 +4770,7 @@ countries = {
 #             # Bactria
 #             own_control_core = { }
 #             government = {
-#                 ruler = bac_sophytid_sophytes
+#                 ruler = bac_sophytes_sophytid
 #                 type = monarchy
 #             }
 #             include = "expl_imperator_rome"
@@ -4781,7 +4781,7 @@ countries = {
 #             # Arachosia
 #             own_control_core = { }
 #             government = {
-#                 ruler = ars_sibyrtid_sibyrtios
+#                 ruler = ars_sibyrtios_sibyrtid
 #                 type = monarchy
 #             }
 #             include = "expl_imperator_rome"
@@ -4814,7 +4814,7 @@ countries = {
 #             # Armenia
 #             own_control_core = { }
 #             government = {
-#                 ruler = arm_orontids_orontes
+#                 ruler = arm_orontes_orontids
 #                 type = monarchy
 #             }
 #             include = "expl_imperator_rome"
@@ -4825,7 +4825,7 @@ countries = {
 #             # Atropatene
 #             own_control_core = { }
 #             government = {
-#                 ruler = map_atropatids_atropates
+#                 ruler = map_atropates_atropatids
 #                 type = monarchy
 #             }
 #             include = "expl_imperator_rome"
@@ -4836,7 +4836,7 @@ countries = {
 #             # Iberia
 #             own_control_core = { }
 #             government = {
-#                 ruler = ibr_azonid_azo
+#                 ruler = ibr_azo_azonid
 #                 type = monarchy
 #             }
 #             include = "expl_imperator_rome"
@@ -4847,7 +4847,7 @@ countries = {
 #             # Colchis
 #             own_control_core = { }
 #             government = {
-#                 ruler = col_kujid_kuji
+#                 ruler = col_kuji_kujid
 #                 type = monarchy
 #             }
 #             include = "expl_imperator_rome"
@@ -5125,7 +5125,7 @@ countries = {
 #             # Alupa
 #             own_control_core = { }
 #             government = {
-#                 ruler = alu_mushika_nannan
+#                 ruler = alu_nannan_mushika
 #                 type = tribe
 #             }
 #             include = "expl_imperator_rome"
@@ -5202,7 +5202,7 @@ countries = {
 #             # Kalinga
 #             own_control_core = { }
 #             government = {
-#                 ruler = kal_kalinga_anantha
+#                 ruler = kal_anantha_kalinga
 #                 type = monarchy
 #             }
 #             include = "expl_imperator_rome"
@@ -5224,7 +5224,7 @@ countries = {
 #             # Anuradhapura
 #             own_control_core = { }
 #             government = {
-#                 ruler = anu_vijaya_mutasiva
+#                 ruler = anu_mutasiva_vijaya
 #                 type = monarchy
 #             }
 #             include = "expl_imperator_rome"
@@ -5257,7 +5257,7 @@ countries = {
 #             # Pandya
 #             own_control_core = { }
 #             government = {
-#                 ruler = pnd_pandya_koon
+#                 ruler = pnd_koon_pandya
 #                 type = monarchy
 #             }
 #             include = "expl_imperator_rome"
@@ -5279,7 +5279,7 @@ countries = {
 #             # Chola
 #             own_control_core = { }
 #             government = {
-#                 ruler = chl_chola_kochaet
+#                 ruler = chl_kochaet_chola
 #                 type = monarchy
 #             }
 #             include = "expl_imperator_rome"
@@ -5367,7 +5367,7 @@ countries = {
 #             # Maurya
 #             own_control_core = { }
 #             government = {
-#                 ruler = mry_maurya_chandragupta
+#                 ruler = mry_chandragupta_maurya
 #                 type = monarchy
 #             }
 #             include = "expl_imperator_rome"
@@ -5444,7 +5444,7 @@ countries = {
 #             # Siracia
 #             own_control_core = { }
 #             government = {
-#                 ruler = sce_aripharnid_aripharnes
+#                 ruler = sce_aripharnes_aripharnid
 #                 type = tribe
 #             }
 #             include = "expl_imperator_rome"
@@ -5455,7 +5455,7 @@ countries = {
 #             # Bospora
 #             own_control_core = { }
 #             government = {
-#                 ruler = bpk_spartokid_spartokos
+#                 ruler = bpk_spartokos_spartokid
 #                 type = monarchy
 #             }
 #             include = "expl_imperator_rome"
@@ -5466,7 +5466,7 @@ countries = {
 #             # Chersonesus
 #             own_control_core = { }
 #             government = {
-#                 ruler = chs_random
+#                 ruler = chs_ioakeim_skydrothemid_2
 #                 type = republic
 #             }
 #             include = "expl_imperator_rome"
@@ -5477,7 +5477,7 @@ countries = {
 #             # Scythia
 #             own_control_core = { }
 #             government = {
-#                 ruler = scy_agarid_agarus
+#                 ruler = scy_agarus_agarid
 #                 type = tribe
 #             }
 #             include = "expl_imperator_rome"
@@ -5488,7 +5488,7 @@ countries = {
 #             # Zygia
 #             own_control_core = { }
 #             government = {
-#                 ruler = zgy_vaisali_jnanasene
+#                 ruler = zgy_jnanasene_vaisali
 #                 type = tribe
 #             }
 #             include = "expl_imperator_rome"
@@ -5576,7 +5576,7 @@ countries = {
 #             # Kush
 #             own_control_core = { }
 #             government = {
-#                 ruler = ksh_meroid_aktisanes
+#                 ruler = ksh_aktisanes_meroid
 #                 type = monarchy
 #             }
 #             include = "expl_imperator_rome"
@@ -6432,7 +6432,7 @@ countries = {
 #             # Elatea
 #             own_control_core = { }
 #             government = {
-#                 ruler = pho_xanthippid_xanthippos
+#                 ruler = pho_xanthippos_xanthippid
 #                 type = monarchy
 #             }
 #             include = "expl_imperator_rome"
