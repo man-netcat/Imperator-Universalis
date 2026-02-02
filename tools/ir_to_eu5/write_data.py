@@ -376,6 +376,85 @@ def _build_location_to_province_map(tree) -> dict:
     return mapping
 
 
+def audit_country_locations(
+    ten_countries_data: dict,
+    country_data: list,
+    eu5_map_data,
+) -> None:
+    """
+    Audit own_control_core locations and capitals after writing 10_countries.
+
+    Reports:
+    - locations assigned to multiple country tags (only valid locations)
+    - locations not present in the map (unknown)
+    - capitals not present in the map (unknown)
+    """
+
+    location_to_province = (
+        _build_location_to_province_map(eu5_map_data)
+        if eu5_map_data is not None
+        else {}
+    )
+
+    owners: dict[str, set[str]] = defaultdict(set)
+    unknown_locations: list[tuple[str, str]] = []
+    unknown_capitals: list[tuple[str, str]] = []
+
+    for country in country_data:
+        tag = country["tag"]
+        base = ten_countries_data.get(tag, {})
+
+        # --- own_control_core ---
+        value = base.get("own_control_core", [])
+        locations = (
+            [] if value is None else value if isinstance(value, list) else [value]
+        )
+
+        for loc in locations:
+            loc_key = str(loc)
+            if loc_key not in location_to_province:
+                unknown_locations.append((loc_key, tag))
+            else:
+                owners[loc_key].add(tag)
+
+        # --- capital ---
+        capital = base.get("capital")
+        if capital:
+            cap_key = str(capital)
+            if cap_key not in location_to_province:
+                unknown_capitals.append((cap_key, tag))
+            else:
+                owners[cap_key].add(tag)
+
+    # --- REPORT ---
+    conflicts = {loc: tags for loc, tags in owners.items() if len(tags) > 1}
+
+    if not conflicts and not unknown_locations and not unknown_capitals:
+        print(
+            "Location audit: OK (no conflicts, no unknown locations, no unknown capitals)"
+        )
+        return
+
+    print("\n=== LOCATION AUDIT REPORT ===")
+
+    if conflicts:
+        print("\nLocations assigned to multiple countries:")
+        for loc, tags in sorted(conflicts.items()):
+            print(f"  {loc}: {', '.join(sorted(tags))}")
+
+    if unknown_locations:
+        print("\nUnknown locations (own_control_core):")
+        for loc, tag in sorted(unknown_locations):
+            print(f"  {loc}: assigned to {tag}")
+
+    if unknown_capitals:
+        print("\nUnknown capitals:")
+        for loc, tag in sorted(unknown_capitals):
+            print(f"  {loc}: capital of {tag}")
+
+    print("\n=== END LOCATION AUDIT ===\n")
+
+
 def write_blocks_with_comments(
     out_path: Path,
     blocks: List[Tuple[str, List[object]]],
@@ -554,8 +633,8 @@ def write_10_countries(ten_countries_data, country_data, eu5_map_data, country_r
         comment_tags=comment_tags,
     )
 
-
-from collections import defaultdict
+    # --- audit pass ---
+    audit_country_locations(ten_countries_data, country_data, eu5_map_data)
 
 
 def write_05_characters(five_characters_data, character_data):
