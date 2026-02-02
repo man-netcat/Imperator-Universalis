@@ -233,7 +233,7 @@ countries = {
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
-            capital = heraclea
+            capital = acerenza
         }
         BRT = {
             # Bruttia
@@ -642,130 +642,195 @@ countries = {
             country_rank = rank_county
             capital = piazza
         }
-#         UTC = {
-#             # Utica
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         TPS = {
-#             # Thapsus
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         LPT = {
-#             # Leptis Minor
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         HDR = {
-#             # Hadrametum
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         ACO = {
-#             # Achola
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         EMP = {
-#             # Emporia
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         TRP = {
-#             # Tripolitania
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         IOL = {
-#             # Iol
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         KUA = {
-#             # Kerkouane
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        UTC = {
+            # Utica
+            own_control_core = {
+                # bizerte_province
+                bizerte
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = bizerte
+        }
+        TPS = {
+            # Thapsus
+            own_control_core = {
+                # sahel_TUN_province
+                mahdia
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = mahdia
+        }
+        LPT = {
+            # Leptis Minor
+            own_control_core = {
+                # sahel_TUN_province
+                el_jem
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = el_jem
+        }
+        HDR = {
+            # Hadrametum
+            own_control_core = {
+                # sahel_TUN_province
+                monastir
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = monastir
+        }
+        ACO = {
+            # Achola
+            own_control_core = {
+                # sahel_TUN_province
+                chebba
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = chebba
+        }
+        EMP = {
+            # Emporia
+            own_control_core = {
+                # djafara_province
+                medenine ajim zarzis
+                # qabisa_province
+                mahres gabes
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = gabes
+        }
+        TRP = {
+            # Tripolitania
+            own_control_core = {
+                # djafara_province
+                zuwarah
+                # misratah_province
+                misratah
+                # tripolitania_province
+                zliten al_khums tripoli al_kadwa zawiya
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = tripoli
+        }
+        IOL = {
+            # Iol
+            own_control_core = {
+                # mitidja_province
+                algiers tamentfoust
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = algiers
+        }
+        KUA = {
+            # Kerkouane
+            own_control_core = {
+                # tunis_province
+                kelibia
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = kelibia
+        }
         CAR = {
             # Carthage
             own_control_core = {
+                # annaba_province
+                el_kala annaba tekouch skikda collo el_milia jijel
                 # arborea_province
                 terralba oristano
+                # azghar_province
+                larache
+                # bizerte_province
+                tebourba mateur sejnane tabarka
                 # cagliari_province
                 cagliari tratalias villa_di_chiesa muravera seddori tortoli
+                # dahra_province
+                tenes
+                # fez_province
+                la_mamora sale
                 # gallura_province
                 terranova_pausania orosei posada tempiopausania
                 # girgenti_province
                 termini bivona
+                # habat_province
+                tetouan ceuta tangier asilah tazroute
+                # kabylia_province
+                mansouria bejaia azeffoun tedelles
+                # kairouan_province
+                kairouan sbikha kesra
+                # kert_province
+                melilla
                 # logudoro_province
                 sassari alghero bosa castelsardo
                 # mazara_province
                 trapani salemi palermo corleone
+                # medjerda_province
+                medjez_el_bab beja_TUN jama_TUN el_ksour souk_el_arba
                 # noto_province
                 malta
+                # oran_province
+                tamazaghrane oran ksar_ibn_senane
+                # qabisa_province
+                sidi_fredj sfaqes bou_hajla
+                # qamuda_province
+                subaytila sbiba
+                # sahel_TUN_province
+                sousse
+                # tamasna_province
+                rabat
+                # tunis_province
+                hammamet zaghouan nabeul tunis el_fahs
             }
             government = {
                 ruler = car_maharbal_hipparchid
                 type = republic
             }
             include = "expl_imperator_rome"
-            country_rank = rank_county
-            capital = carthage
+            country_rank = rank_kingdom
+            capital = tunis
         }
 #         MAU = {
 #             # Mauretania
@@ -789,28 +854,48 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         MSY = {
-#             # Massylia
-#             own_control_core = { }
-#             government = {
-#                 ruler = msy_ailymas_ailymasid
-#                 type = tribe
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         MSL = {
-#             # Musulamia
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = tribe
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        MSY = {
+            # Massylia
+            own_control_core = {
+                # annaba_province
+                cheffia guelma
+                # baghai_province
+                tiffech meskiana baghai dufanat
+                # constantine_province
+                constantine_ALG tijis ngaous bazer_sakhra ikjan mila
+                # hodna_province
+                maqqara
+                # medjerda_province
+                el_kef thagaste
+            }
+            government = {
+                ruler = msy_ailymas_ailymasid
+                type = tribe
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = constantine_ALG
+        }
+        MSL = {
+            # Musulamia
+            own_control_core = {
+                # baghai_province
+                tebessa
+                # djerid_province
+                gafsa
+                # qabisa_province
+                madjul
+                # qamuda_province
+                feriana thala kasserine
+            }
+            government = {
+                ruler = random
+                type = tribe
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = thala
+        }
         ACR = {
             # Acragas
             own_control_core = {
@@ -838,7 +923,7 @@ countries = {
                 type = monarchy
             }
             include = "expl_imperator_rome"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = syracuse
         }
 #         DOD = {
@@ -3176,17 +3261,20 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         DRI = {
-#             # Daorsia
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = tribe
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        DRI = {
+            # Daorsia
+            own_control_core = {
+                # zeta_province
+                onogost kotor
+            }
+            government = {
+                ruler = random
+                type = tribe
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = onogost
+        }
 #         CAA = {
 #             # Cataria
 #             own_control_core = { }
@@ -3209,28 +3297,34 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         ABI = {
-#             # Abria
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = tribe
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         CVI = {
-#             # Cavia
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = tribe
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        ABI = {
+            # Abria
+            own_control_core = {
+                # zeta_province
+                bar_cg
+            }
+            government = {
+                ruler = random
+                type = tribe
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = bar_cg
+        }
+        CVI = {
+            # Cavia
+            own_control_core = {
+                # illyria_province
+                shkoder
+            }
+            government = {
+                ruler = random
+                type = tribe
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = shkoder
+        }
 #         DNT = {
 #             # Ditionia
 #             own_control_core = { }
@@ -3341,17 +3435,22 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         TLN = {
-#             # Taulantia
-#             own_control_core = { }
-#             government = {
-#                 ruler = tln_glaukias_taulantid
-#                 type = monarchy
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        TLN = {
+            # Taulantia
+            own_control_core = {
+                # albania_province
+                devol elbasan berat kavaje durres tirana kruje
+                # illyria_province
+                lezha
+            }
+            government = {
+                ruler = tln_glaukias_taulantid
+                type = monarchy
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = REPLACE_ME
+        }
 #         TLT = {
 #             # Tilataeia
 #             own_control_core = { }
@@ -4028,7 +4127,7 @@ countries = {
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
-            capital = argo
+            capital = argos
         }
         AZA = {
             # Azania
