@@ -479,10 +479,15 @@ def write_10_countries(ten_countries_data, country_data, eu5_map_data, country_r
             merged["own_control_core"] = "{ }"
         else:
             prov_map: dict[str, list] = {}
+            used_locations = set()  # track all locations globally
+
             for loc in locations:
                 key = str(loc)
+                if key in used_locations:
+                    continue  # skip duplicates across provinces
                 prov = location_to_province.get(key, "unknown")
                 prov_map.setdefault(prov, []).append(key)
+                used_locations.add(key)
 
             own_sublines: list[str] = []
             for prov, locs in sorted(prov_map.items()):

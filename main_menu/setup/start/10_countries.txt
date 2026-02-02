@@ -4284,17 +4284,20 @@ countries = {
             country_rank = rank_county
             capital = siteia
         }
-#         MLO = {
-#             # Miletos
-#             own_control_core = { }
-#             government = {
-#                 ruler = mlo_aristodemus_aristodemid
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        MLO = {
+            # Miletos
+            own_control_core = {
+                # aydin_province
+                milas
+            }
+            government = {
+                ruler = mlo_aristodemus_aristodemid
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = milas
+        }
         RHO = {
             # Rhodes
             own_control_core = {
@@ -4355,28 +4358,46 @@ countries = {
             country_rank = rank_county
             capital = akcasehir
         }
-#         IOA = {
-#             # Aeolia
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         ION = {
-#             # Ionia
-#             own_control_core = { }
-#             government = {
-#                 ruler = ion_hipparchos_hipparchid
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        IOA = {
+            # Aeolia
+            own_control_core = {
+                # biga_province
+                biga ayvacik bayramic can canakkale lapseki
+                # karasi_province
+                bergama edremit
+                # lemnos_province
+                molyvos mitilene
+                # saruhan_province
+                foca
+                # smyrna_province
+                menemen
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = REPLACE_ME
+        }
+        ION = {
+            # Ionia
+            own_control_core = {
+                # aydin_province
+                balat
+                # chios_province
+                chios ikaria samos
+                # smyrna_province
+                smyrna ayasuluk cesme urla
+            }
+            government = {
+                ruler = ion_hipparchos_hipparchid
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = balat
+        }
         SNP = {
             # Sinope
             own_control_core = {
@@ -4503,18 +4524,34 @@ countries = {
         PRY = {
             # Antigonids
             own_control_core = {
+                # adana_province
+                adana ayas iskenderun kars_armenia
+                # alaiye_province
+                selinti alaiye manavgat karahisar_i_teke
                 # antakya_province
-                antioch
+                antioch afrin arsuz artah idlib
                 # antalya_province
                 antalya
                 # cyprus_province
                 famagusta kyrenia larnaca limassol morphou paphos nicosia_cyp
                 # euboea_province
                 negroponte
+                # halab_province
+                aleppo al_bab dabiq jabbul manbij marrat maskanah zardana
+                # hawran_province
+                bosra azraq dara irbid nawa salkhad suwayda
+                # hims_province
+                homs hama kafartab khanaser masyaf qastal qusayr salamiyya
                 # mugla_province
                 gokabat
+                # shaam_province
+                damascus burraq jayrud nabek qutayfah
+                # sis_province
+                anavarza caxud sis
+                # tadmur_province
+                tadmur arak huwwarin qaryatayn
                 # tarsus_province
-                tarsus
+                tarsus molevon
             }
             government = {
                 ruler = pry_antigonos_antigonid
@@ -4524,39 +4561,70 @@ countries = {
             country_rank = rank_kingdom
             capital = antioch
         }
-#         CAP = {
-#             # Cappadocia
-#             own_control_core = { }
-#             government = {
-#                 ruler = cap_amyntas_amyntid
-#                 type = monarchy
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         PON = {
-#             # Pontus
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = tribe
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         PAP = {
-#             # Paphlagonia
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = monarchy
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        CAP = {
+            # Cappadocia
+            own_control_core = {
+                # kirsehir_province
+                nevsehir kirsehir
+            }
+            government = {
+                ruler = cap_amyntas_amyntid
+                type = monarchy
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = REPLACE_ME
+        }
+        PON = {
+            # Pontus
+            own_control_core = {
+                # amasya_province
+                gadegara ladik_pontus amasya merzifon sonisa
+                # canik_province
+                terme unye akkus
+                # corum_province
+                gumus corum
+                # sinop_province
+                bafra
+                # tokat_province
+                zile niksar akdagmadeni tokat sulusaray aydincik
+            }
+            government = {
+                ruler = random
+                type = tribe
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = amasya
+        }
+        PAP = {
+            # Paphlagonia
+            own_control_core = {
+                # ankara_province
+                karakecili kalecik
+                # bozok_province
+                dinek_keskin
+                # cankiri_province
+                tosya cerkes kursunlu bayat cankiri sabanozu
+                # corum_province
+                iskilip
+                # kastamonu_province
+                kure_i_mamure inebolu devrekani taskopru arac kastamonu
+                # safranbolu_province
+                safranbolu
+                # sinop_province
+                boyabat
+                # sivrihisar_province
+                kizilca
+            }
+            government = {
+                ruler = random
+                type = monarchy
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = REPLACE_ME
+        }
 #         MAK = {
 #             # Maka
 #             own_control_core = { }
@@ -4678,61 +4746,78 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         JUD = {
-#             # Judea
-#             own_control_core = { }
-#             government = {
-#                 ruler = jud_simon_zadokite
-#                 type = theocracy
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         SMA = {
-#             # Samaria
-#             own_control_core = { }
-#             government = {
-#                 ruler = sma_daliah_samarian
-#                 type = theocracy
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         SID = {
-#             # Sidon
-#             own_control_core = { }
-#             government = {
-#                 ruler = sid_abd-elonim_elonimid
-#                 type = monarchy
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         ARA = {
-#             # Arados
-#             own_control_core = { }
-#             government = {
-#                 ruler = ara_gerasthart_gerasthartid
-#                 type = monarchy
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         BYB = {
-#             # Byblos
-#             own_control_core = { }
-#             government = {
-#                 ruler = byb_aynel_aynelid
-#                 type = monarchy
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        JUD = {
+            # Judea
+            own_control_core = {
+                # filastin_province
+                hebron jerusalem
+                # sharat_province
+                madaba karak sughar shoubak amman
+            }
+            government = {
+                ruler = jud_simon_zadokite
+                type = theocracy
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = jerusalem
+        }
+        SMA = {
+            # Samaria
+            own_control_core = {
+                # filastin_province
+                nablus
+            }
+            government = {
+                ruler = sma_daliah_samarian
+                type = theocracy
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = nablus
+        }
+        SID = {
+            # Sidon
+            own_control_core = {
+                # lebanon_province
+                sidon
+            }
+            government = {
+                ruler = sid_abd-elonim_elonimid
+                type = monarchy
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = sidon
+        }
+        ARA = {
+            # Arados
+            own_control_core = {
+                # latakia_province
+                tartus baniyas
+            }
+            government = {
+                ruler = ara_gerasthart_gerasthartid
+                type = monarchy
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = tartus
+        }
+        BYB = {
+            # Byblos
+            own_control_core = {
+                # lebanon_province
+                beirut
+            }
+            government = {
+                ruler = byb_aynel_aynelid
+                type = monarchy
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = beirut
+        }
 #         COM = {
 #             # Commagene
 #             own_control_core = { }
@@ -4744,17 +4829,26 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         BMB = {
-#             # Bambyce
-#             own_control_core = { }
-#             government = {
-#                 ruler = bmb_abd-hadad_atargatid
-#                 type = theocracy
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        BMB = {
+            # Bambyce
+            own_control_core = {
+                # ar_ruha_province
+                suruc
+                # ayntab_province
+                dluk
+                # halab_province
+                manbij
+                # malatya_province
+                kaysun
+            }
+            government = {
+                ruler = bmb_abd-hadad_atargatid
+                type = theocracy
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = manbij
+        }
 #         SEL = {
 #             # Seleucids
 #             own_control_core = { }
@@ -6668,17 +6762,20 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         SMS = {
-#             # Sesamos
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        SMS = {
+            # Sesamos
+            own_control_core = {
+                # safranbolu_province
+                amasra
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = REPLACE_ME
+        }
         TIE = {
             # Tieion
             own_control_core = {

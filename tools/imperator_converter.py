@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import argparse
 import sys
 from pathlib import Path
 
@@ -46,23 +47,42 @@ from ir_to_eu5.write_data import (
 )
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="IR → EU5 data converter")
+    parser.add_argument(
+        "--no-images",
+        action="store_true",
+        help="Skip writing image-related data (COA files and gfx)",
+    )
+    parser.add_argument(
+        "--no-localisation",
+        action="store_true",
+        help="Skip writing localisation files",
+    )
+    parser.add_argument(
+        "--json",
+        action="store_true",
+        help="Write raw extracted JSON data files",
+    )
+    args = parser.parse_args()
     culture_data = extract_culture_data()
     religion_data = extract_religion_data()
     character_data, dynasty_data = extract_character_data()
     country_rulers = {c["country"]: c["tag"] for c in character_data if c["is_ruler"]}
     country_data, country_overrides = extract_country_data()
-    coa_data = extract_coa_data()
     named_locations = {t[0]: t[1] for t in parse_definitions()}
     four_dynasties_data = extract_04_dynasties()
     five_characters_data = extract_05_characters()
     ten_countries_data = extract_10_countries()
     eu5_map_data = extract_eu5_map_data()
+    if not args.no_images:
+        coa_data = extract_coa_data()
 
-    write_json(culture_data, mod_root / "cultures.json")
-    write_json(religion_data, mod_root / "religions.json")
-    write_json(country_data, mod_root / "countries.json")
-    write_json(coa_data, mod_root / "coats_of_arms.json")
-    write_json(character_data, mod_root / "characters.json")
+    if args.json:
+        write_json(culture_data, mod_root / "cultures.json")
+        write_json(religion_data, mod_root / "religions.json")
+        write_json(country_data, mod_root / "countries.json")
+        write_json(coa_data, mod_root / "coats_of_arms.json")
+        write_json(character_data, mod_root / "characters.json")
     write_culture_group_data(culture_data)
     write_culture_data(culture_data)
     write_religion_group_data(religion_data)
@@ -71,12 +91,15 @@ if __name__ == "__main__":
     write_04_dynasties(four_dynasties_data, dynasty_data)
     write_05_characters(five_characters_data, character_data)
     write_10_countries(ten_countries_data, country_data, eu5_map_data, country_rulers)
-    write_coa_file(coa_data)
+    if not args.no_images:
+        write_coa_file(coa_data)
 
-    write_localisation_files(
-        culture_data, religion_data, country_data, character_data, dynasty_data
-    )
+    if not args.no_localisation:
+        write_localisation_files(
+            culture_data, religion_data, country_data, character_data, dynasty_data
+        )
 
-    port_coa_gfx()
+    if not args.no_images:
+        port_coa_gfx()
 
     # port_map_data()
