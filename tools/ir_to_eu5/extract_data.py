@@ -1,16 +1,20 @@
 import json
 import re
+import warnings
 from collections import defaultdict
 from pathlib import Path
 from typing import Any
 
 import pyradox
 import pyradox.datatype as _pydt
+from pyradox.filetype.txt import ParseWarning
 from pyradox.filetype.txt import parse as parse_txt
 
 from .data import government_map
 from .paths import *
 from .write_data import print_written
+
+warnings.filterwarnings("error", category=ParseWarning)
 
 pyradox.Tree = _pydt.Tree
 pyradox.Color = _pydt.Color

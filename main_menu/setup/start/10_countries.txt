@@ -4332,9 +4332,11 @@ countries = {
             # Bithynia
             own_control_core = {
                 # bolu_province
-                akyazi
+                akyazi konrapa bolu mudurnu
                 # kocaeli_province
                 silli atpazari
+                # safranbolu_province
+                gerede mengen
             }
             government = {
                 ruler = bit_zipoetes_zipoeteid
@@ -4526,32 +4528,70 @@ countries = {
             own_control_core = {
                 # adana_province
                 adana ayas iskenderun kars_armenia
+                # aksaray_province
+                kulu_turkey
                 # alaiye_province
                 selinti alaiye manavgat karahisar_i_teke
+                # ankara_province
+                polatli
                 # antakya_province
                 antioch afrin arsuz artah idlib
                 # antalya_province
                 antalya
+                # aydin_province
+                tire alasehir birgi cine guzelhisar nazilli
+                # ayntab_province
+                ayntab kilis trapessac
+                # biga_province
+                gonen
                 # cyprus_province
                 famagusta kyrenia larnaca limassol morphou paphos nicosia_cyp
+                # erzurum_province
+                erzurum bayburt erzincan ilic kelkit kemah sebinkarahisar siran tercan
                 # euboea_province
                 negroponte
+                # filastin_province
+                acre safed jaffa majdal gaza beersheba
                 # halab_province
                 aleppo al_bab dabiq jabbul manbij marrat maskanah zardana
+                # hamid_province
+                burdur dinar
                 # hawran_province
                 bosra azraq dara irbid nawa salkhad suwayda
                 # hims_province
                 homs hama kafartab khanaser masyaf qastal qusayr salamiyya
+                # hudavendigar_province
+                adranos dursunbey harmancik
+                # karahisar_province
+                karahisar_i_sahib altintas emirdag sandikli seyitgazi suhut
+                # karasi_province
+                mihalic manyas balya soma balikesir susurluk bigadic
+                # kutahya_province
+                kutahya aslanapa domanic emet simav tavsanli
+                # latakia_province
+                latakia jableh
+                # lebanon_province
+                tripoli_syria baalbek deir_qamar
+                # marash_province
+                marash
                 # mugla_province
-                gokabat
+                gokabat mugla tavas
+                # saruhan_province
+                manisa akhisar demirci gordes kula lake_marmara
                 # shaam_province
                 damascus burraq jayrud nabek qutayfah
                 # sis_province
                 anavarza caxud sis
+                # sivrihisar_province
+                beypazari kibrus bozan mihaliccik kaymaz sivrihisar
+                # sultanonu_province
+                nalli goynuk bilecik eynegol sultanonu inonu sogut
                 # tadmur_province
                 tadmur arak huwwarin qaryatayn
                 # tarsus_province
                 tarsus molevon
+                # usak_province
+                usak banaz gediz honaz lazkiye seyhli
             }
             government = {
                 ruler = pry_antigonos_antigonid
@@ -4564,8 +4604,20 @@ countries = {
         CAP = {
             # Cappadocia
             own_control_core = {
+                # aksaray_province
+                kochisar aksaray
+                # bozok_province
+                bozok sorgun candir
+                # corum_province
+                huseyinabad
+                # kayseri_province
+                kayseri bogazliyan
                 # kirsehir_province
-                nevsehir kirsehir
+                nevsehir kirsehir sariyahsi urgup hacibektas
+                # nigde_province
+                bekarlar
+                # sivas_province
+                sivas darende dasmenda deliktash gemerek gurun hafik sarkisla zara
             }
             government = {
                 ruler = cap_amyntas_amyntid
@@ -4601,13 +4653,13 @@ countries = {
             # Paphlagonia
             own_control_core = {
                 # ankara_province
-                karakecili kalecik
+                karakecili kalecik cubuk ankara haymana
                 # bozok_province
-                dinek_keskin
+                dinek_keskin baliseyh
                 # cankiri_province
                 tosya cerkes kursunlu bayat cankiri sabanozu
                 # corum_province
-                iskilip
+                iskilip sungurlu
                 # kastamonu_province
                 kure_i_mamure inebolu devrekani taskopru arac kastamonu
                 # safranbolu_province
@@ -4818,17 +4870,22 @@ countries = {
             country_rank = rank_county
             capital = beirut
         }
-#         COM = {
-#             # Commagene
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = monarchy
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        COM = {
+            # Commagene
+            own_control_core = {
+                # malatya_province
+                samsat kahta gerger besni
+                # marash_province
+                enguzud ulnia kapan
+            }
+            government = {
+                ruler = random
+                type = monarchy
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = samsat
+        }
         BMB = {
             # Bambyce
             own_control_core = {
@@ -4849,17 +4906,20 @@ countries = {
             country_rank = rank_county
             capital = manbij
         }
-#         SEL = {
-#             # Seleucids
-#             own_control_core = { }
-#             government = {
-#                 ruler = sel_seleukos_seleukid
-#                 type = monarchy
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        SEL = {
+            # Seleucids
+            own_control_core = {
+                # harput_province
+                keban harput sivrice
+            }
+            government = {
+                ruler = sel_seleukos_seleukid
+                type = monarchy
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_empire
+            capital = REPLACE_ME
+        }
 #         BAC = {
 #             # Bactria
 #             own_control_core = { }
@@ -4904,61 +4964,152 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         ARM = {
-#             # Armenia
-#             own_control_core = { }
-#             government = {
-#                 ruler = arm_orontes_orontids
-#                 type = monarchy
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         MAP = {
-#             # Atropatene
-#             own_control_core = { }
-#             government = {
-#                 ruler = map_atropates_atropatids
-#                 type = monarchy
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         IBR = {
-#             # Iberia
-#             own_control_core = { }
-#             government = {
-#                 ruler = ibr_azo_azonid
-#                 type = monarchy
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         COL = {
-#             # Colchis
-#             own_control_core = { }
-#             government = {
-#                 ruler = col_kuji_kujid
-#                 type = monarchy
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         ALB = {
-#             # Albania
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = tribe
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        ARM = {
+            # Armenia
+            own_control_core = {
+                # ani_province
+                ani amberd artashavan
+                # bitlis_province
+                mus
+                # divrigi_province
+                divrigi arapgir arguvan egin
+                # erzurum_province
+                erzurum bayburt erzincan ilic kelkit kemah sebinkarahisar siran tercan
+                # harput_province
+                adakli bingol cemisgezek genc kuzucan palu pertek
+                # kachen_province
+                haterk gandzasar goroz kashatagh shusha
+                # kars_province
+                surmali kagizman
+                # khoy_province
+                khoy bayazit maku hadishahr marand nazok_olya qarahziaoddin siah_cheshmeh
+                # malazgirt_province
+                malazgirt hinis karakilise hasankale tekman tutak varto
+                # meskheti_province
+                ispir tortum oltu
+                # sivas_province
+                hafik zara
+                # syunik_province
+                kapan_armenia gladzor goris julfa nakhchivan tatev
+                # tokat_province
+                koyulhisar
+                # urmia_province
+                khameneh
+                # van_province
+                van ahlat bargiri ercis hosap tatvan
+                # yerevan_province
+                sotk bjni yerevan igdir khor_virap lake_sevan
+            }
+            government = {
+                ruler = arm_orontes_orontids
+                type = monarchy
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_kingdom
+            capital = surmali
+        }
+        MAP = {
+            # Atropatene
+            own_control_core = {
+                # ardabil_province
+                ardabil ahar aslanduz kaleybar khiyav mardanaqom qahqaheh nir
+                # barza_province
+                bukan malekan miandoab sain takht_e_soleyman
+                # daylam_province
+                rudbar shahrestan_sofla shamiram sirdan
+                # gilan_province
+                rasht fuman lahijan
+                # miyaneh_province
+                miyaneh aghkand hashatjin hashtrud khalkhal
+                # mughan_province
+                mughan baciravan bilasuvar germi salyan varsan
+                # tabriz_province
+                tabriz heris maragheh sarab tufarqan ujan
+                # talish_province
+                dulab astara bandar_e_anzali lankaran
+                # urmia_province
+                urmia mahabad osnavieh salmas
+                # zanjan_province
+                zanjan mahneshan sarcham sojas soltaniyeh
+            }
+            government = {
+                ruler = map_atropates_atropatids
+                type = monarchy
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_kingdom
+            capital = malekan
+        }
+        IBR = {
+            # Iberia
+            own_control_core = {
+                # ani_province
+                kumayri
+                # imereti_province
+                shorapani
+                # kakheti_province
+                telavi rustavi gremi alaverdi
+                # kars_province
+                kars
+                # kartli_province
+                tbilisi mtskheta gori kldekari dmanisi
+                # meskheti_province
+                parkhali artanuji savsat khikhani panaskerti
+                # samtskhe_province
+                akhaltsikhe tmogvi ardahan akhalkalaki
+                # tashir_province
+                kayen khunani gagi lori spitak
+            }
+            government = {
+                ruler = ibr_azo_azonid
+                type = monarchy
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_kingdom
+            capital = tbilisi
+        }
+        COL = {
+            # Colchis
+            own_control_core = {
+                # imereti_province
+                kutaisi skande vartsikhe
+                # samegrelo_province
+                batumi ozurgeti anaklia tsalenjikha
+                # trebizond_province
+                rize khupati
+            }
+            government = {
+                ruler = col_kuji_kujid
+                type = monarchy
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = kutaisi
+        }
+        ALB = {
+            # Albania
+            own_control_core = {
+                # arran_province
+                ganja barda beylagan gardman lemberan shamkir
+                # baku_province
+                baku javad mahmudabad maraza qobustan shamakhi
+                # hereti_province
+                hereti khornabuji balakan qakh bodbe
+                # lezgistan_province
+                kubachi khuchni kurakh rutul tpig
+                # shaki_province
+                shaki agsu aresh goychay qabala vartashen zardab
+                # shirvan_province
+                shirvan derbent niyazabad quba shabran
+            }
+            government = {
+                ruler = random
+                type = tribe
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = qabala
+        }
 #         LGA = {
 #             # Legia
 #             own_control_core = { }
@@ -5589,28 +5740,38 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         HNY = {
-#             # Heniochia
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = tribe
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         PHI = {
-#             # Phasis
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        HNY = {
+            # Heniochia
+            own_control_core = {
+                # abkhazia_province
+                anacopia pitsunda
+                # tuapse_province
+                costa
+            }
+            government = {
+                ruler = random
+                type = tribe
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = anacopia
+        }
+        PHI = {
+            # Phasis
+            own_control_core = {
+                # abkhazia_province
+                sukhumi
+                # samegrelo_province
+                bedia poti_caucasus
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = poti_caucasus
+        }
 #         SRM = {
 #             # Sarmatia
 #             own_control_core = { }
@@ -6636,17 +6797,20 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         APO = {
-#             # Apollonia
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        APO = {
+            # Apollonia
+            own_control_core = {
+                # albania_province
+                ballsh
+            }
+            government = {
+                ruler = random
+                type = republic
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = REPLACE_ME
+        }
 #         SLG = {
 #             # Selgia
 #             own_control_core = { }
@@ -6702,17 +6866,20 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         HMD = {
-#             # Homonadia
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = tribe
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        HMD = {
+            # Homonadia
+            own_control_core = {
+                # beysehir_province
+                seydisehir
+            }
+            government = {
+                ruler = random
+                type = tribe
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = seydisehir
+        }
         LYC = {
             # Lycia
             own_control_core = {
@@ -6729,28 +6896,34 @@ countries = {
             country_rank = rank_county
             capital = megri
         }
-#         ISU = {
-#             # Isauria
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = tribe
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         LAR = {
-#             # Larandia
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = tribe
-#             }
-#             include = "expl_imperator_rome"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        ISU = {
+            # Isauria
+            own_control_core = {
+                # larende_province
+                hatunsaray
+            }
+            government = {
+                ruler = random
+                type = tribe
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = hatunsaray
+        }
+        LAR = {
+            # Larandia
+            own_control_core = {
+                # larende_province
+                larende
+            }
+            government = {
+                ruler = random
+                type = tribe
+            }
+            include = "expl_imperator_rome"
+            country_rank = rank_county
+            capital = larende
+        }
 #         MYD = {
 #             # Mariandynia
 #             own_control_core = { }
@@ -6774,7 +6947,7 @@ countries = {
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
-            capital = REPLACE_ME
+            capital = amasra
         }
         TIE = {
             # Tieion
@@ -6908,7 +7081,7 @@ countries = {
             # Kaukonia
             own_control_core = {
                 # safranbolu_province
-                bartin ulus mengen yenicepazari
+                bartin ulus yenicepazari
             }
             government = {
                 ruler = random
