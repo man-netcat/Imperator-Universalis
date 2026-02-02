@@ -1,0 +1,9 @@
+﻿l_english:
+  feudatory: "Feudatory"
+  feudatory_desc: "A nation that is a feudatory is bound in a special relationship to its liege, providing military support and paying tribute in exchange for protection and autonomy."
+  satrapy: "Satrapy"
+  satrapy_desc: "A satrapy is a province or territory governed by a satrap, who acts as a representative of the central authority, often enjoying a degree of autonomy while still being subject to the overarching rule of the empire."
+  client_state: "Client State"
+  client_state_desc: "A client state is economically, politically, or militarily subordinate to a stronger nation, relying on it for support while keeping its own government."
+  vassal_tribe: "Vassal Tribe"
+  vassal_tribe_desc: "A vassal tribe is a smaller tribal group that pledges allegiance to a more powerful tribe or nation, providing military support and tribute in exchange for protection and recognition."

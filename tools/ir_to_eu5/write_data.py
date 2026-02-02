@@ -813,3 +813,48 @@ def write_04_dynasties(four_dynasties_data: dict, dynasties_data: list[dict]):
         [nested],
         comment_tags=comment_tags,
     )
+
+
+def write_12_diplomacy(twelve_diplomacy_data: dict, diplomatic_relationships: list):
+    blocks = []
+    comment_tags = set()
+
+    for relationship in diplomatic_relationships:
+        attrs = " ".join(
+            f"{key} = {value}" for key, value in relationship.items() if key != "tag"
+        )
+        block = f"{relationship['tag']} = {{ {attrs} }}"
+        blocks.append(block)
+
+    nested = ("diplomacy_manager", blocks)
+
+    write_blocks_with_comments(
+        iu_setup_start / "12_diplomacy.txt",
+        [nested],
+        comment_tags=comment_tags,
+    )
+
+
+def write_15_international_organizations(
+    fifteen_international_organizations_data: dict,
+    international_organizations: list,
+):
+    blocks = []
+    comment_tags = set()
+
+    for io in international_organizations:
+        type = io["type"]
+        members = " ".join(io["members"])
+        block = (
+            "add_international_organization",
+            [f"type = {type}", f"members = {{ {members} }}"],
+        )
+        blocks.append(block)
+
+    nested = ("international_organization_manager", blocks)
+
+    write_blocks_with_comments(
+        iu_setup_start / "15_international_organizations.txt",
+        [nested],
+        comment_tags=comment_tags,
+    )

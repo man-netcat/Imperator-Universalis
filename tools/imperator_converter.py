@@ -19,15 +19,14 @@ if not tools_pyradox_src.is_dir():
 sys.path.insert(0, str(tools_pyradox_src))
 
 from ir_to_eu5.extract_data import (
-    extract_04_dynasties,
-    extract_05_characters,
-    extract_10_countries,
     extract_character_data,
     extract_coa_data,
     extract_country_data,
     extract_culture_data,
+    extract_diplomacy_data,
     extract_eu5_map_data,
     extract_religion_data,
+    extract_start_data,
     write_json,
 )
 from ir_to_eu5.map_data import parse_definitions, port_map_data
@@ -37,6 +36,8 @@ from ir_to_eu5.write_data import (
     write_04_dynasties,
     write_05_characters,
     write_10_countries,
+    write_12_diplomacy,
+    write_15_international_organizations,
     write_coa_file,
     write_country_setup,
     write_culture_data,
@@ -69,10 +70,18 @@ if __name__ == "__main__":
     character_data, dynasty_data = extract_character_data()
     country_rulers = {c["country"]: c["tag"] for c in character_data if c["is_ruler"]}
     country_data, country_overrides = extract_country_data()
+    diplomatic_relationships, international_organisations = extract_diplomacy_data()
     named_locations = {t[0]: t[1] for t in parse_definitions()}
-    four_dynasties_data = extract_04_dynasties()
-    five_characters_data = extract_05_characters()
-    ten_countries_data = extract_10_countries()
+    ten_countries_data = extract_start_data(
+        "10_countries.txt", "countries", "countries"
+    )
+    five_characters_data = extract_start_data("05_characters.txt", "character_db")
+    four_dynasties_data = extract_start_data("04_dynasties.txt", "dynasty_manager")
+    twelve_diplomacy_data = extract_start_data("12_diplomacy.txt", "diplomacy_manager")
+    fifteen_international_organizations_data = extract_start_data(
+        "15_international_organizations.txt", "international_organization_manager"
+    )
+
     eu5_map_data = extract_eu5_map_data()
     if not args.no_images:
         coa_data = extract_coa_data()
@@ -91,6 +100,11 @@ if __name__ == "__main__":
     write_04_dynasties(four_dynasties_data, dynasty_data)
     write_05_characters(five_characters_data, character_data)
     write_10_countries(ten_countries_data, country_data, eu5_map_data, country_rulers)
+    write_12_diplomacy(twelve_diplomacy_data, diplomatic_relationships)
+    write_15_international_organizations(
+        fifteen_international_organizations_data, international_organisations
+    )
+
     if not args.no_images:
         write_coa_file(coa_data)
 

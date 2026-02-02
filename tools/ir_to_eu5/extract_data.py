@@ -244,25 +244,12 @@ def extract_eu5_map_data():
     return tree
 
 
-def extract_10_countries():
-    # Extracts the data for the countries that are currently already written to 10_countries.txt
-    tree = parse_tree(iu_setup_start / "10_countries.txt")
-    countries = tree["countries"]["countries"].to_python()
-    return countries
-
-
-def extract_05_characters():
-    # Extract the data from the characters that are currently already written to 05_characters.txt
-    tree = parse_tree(iu_setup_start / "05_characters.txt")
-    characters = tree["character_db"].to_python()
-    return characters
-
-
-def extract_04_dynasties():
-    # Extract the data from the dynasties that are currently already written to 04_dynasties.txt
-    tree = parse_tree(iu_setup_start / "04_dynasties.txt")
-    dynasties = tree["dynasty_manager"].to_python()
-    return dynasties
+def extract_start_data(file_name, root_key, sub_key=None):
+    tree = parse_tree(iu_setup_start / file_name)
+    data = tree[root_key]
+    if sub_key:
+        data = data[sub_key]
+    return data.to_python()
 
 
 def extract_character_data():
@@ -388,7 +375,9 @@ def extract_character_data():
                     "nickname_tag": nickname_tag,
                     "nickname": nickname,
                     "birth_date": char_data["birth_date"],
-                    "death_date": char_data["death_date"] if "death_date" in char_data else None,
+                    "death_date": (
+                        char_data["death_date"] if "death_date" in char_data else None
+                    ),
                     "father": father,
                     "mother": mother,
                     "female": char_data["female"] if "female" in char_data else False,
@@ -402,3 +391,52 @@ def extract_character_data():
                 }
                 characters.append(data)
     return characters, dynasties
+
+
+def extract_diplomacy_data():
+    diplomacy_data = parse_tree(ir_default)["diplomacy"]
+    diplomatic_relationships = []
+    international_organizations = []
+    for diplomacy_type, data in diplomacy_data.items():
+        if diplomacy_type == "defensive_league":
+            # Should be done through International Organisation
+            international_organizations.append(
+                {
+                    "type": "defensive_league",
+                    "members": [member for member in data.values()],
+                }
+            )
+        elif diplomacy_type == "dependency":
+            # Actual vassal relationships
+            diplomatic_relationships.append(
+                {
+                    "tag": "dependency",
+                    "first": data["first"],
+                    "second": data["second"],
+                    "subject_type": data["subject_type"],
+                }
+            )
+        elif diplomacy_type == "alliance":
+            # scripted_mutual with type = alliance
+            diplomatic_relationships.append(
+                {
+                    "tag": "scripted_mutual",
+                    "first": data["first"],
+                    "second": data["second"],
+                    "type": "alliance",
+                }
+            )
+        elif diplomacy_type == "guarantee":
+            # scripted_oneway with type = guarantee
+            diplomatic_relationships.append(
+                {
+                    "tag": "scripted_oneway",
+                    "first": data["first"],
+                    "second": data["second"],
+                    "type": "guarantee",
+                }
+            )
+        else:
+            # TODO: Handle trade_access
+            pass
+    return diplomatic_relationships, international_organizations

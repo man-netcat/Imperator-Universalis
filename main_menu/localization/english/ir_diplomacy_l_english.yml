@@ -1,0 +1,12 @@
+﻿l_english:
+ LEAD_feudatory: "$LIST$ is a [SUBJECT_TYPE.GetName]"
+ AM_feudatory: "[SUBJECT_TYPE.GetName] of $LIST$."
+
+ LEAD_satrapy: "$LIST$ is a [SUBJECT_TYPE.GetName]"
+ AM_satrapy: "[SUBJECT_TYPE.GetName] of $LIST$."
+
+ LEAD_tribal_vassal: "$LIST$ is a [SUBJECT_TYPE.GetName]"
+ AM_tribal_vassal: "[SUBJECT_TYPE.GetName] of $LIST$."
+
+ LEAD_client_state: "$LIST$ is a [SUBJECT_TYPE.GetName]"
+ AM_client_state: "[SUBJECT_TYPE.GetName] of $LIST$."
