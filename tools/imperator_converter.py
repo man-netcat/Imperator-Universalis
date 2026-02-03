@@ -24,6 +24,7 @@ from ir_to_eu5.extract_data import (
     extract_country_data,
     extract_culture_data,
     extract_diplomacy_data,
+    extract_dynasty_data,
     extract_eu5_map_data,
     extract_religion_data,
     extract_start_data,
@@ -67,7 +68,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
     culture_data = extract_culture_data()
     religion_data = extract_religion_data()
-    character_data, dynasty_data = extract_character_data()
+    character_data = extract_character_data()
+    dynasty_data = extract_dynasty_data()
     country_rulers = {c["country"]: c["tag"] for c in character_data if c["is_ruler"]}
     country_data, country_overrides = extract_country_data()
     diplomatic_relationships, international_organisations = extract_diplomacy_data()

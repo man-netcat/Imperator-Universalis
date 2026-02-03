@@ -262,9 +262,7 @@ def extract_character_data():
         return False
 
     characters = []
-    dynasties = []
     tag_counts = {}
-    dynasty_tags_seen = set()  # track which dynasties we've already added
 
     for path in ir_character_data.iterdir():
         if path.suffix != ".txt" or not path.is_file():
@@ -310,12 +308,8 @@ def extract_character_data():
                         dynasty = f"{char_data['family'].split(':')[2].lower()}"
                     else:
                         dynasty = char_data["family"]
-                    dynasty_tag = f"{dynasty.lower()}_dynasty"
-                    dynasty_name = dynasty.capitalize()
-                    dynasty = dynasty.lower().replace(" ", "_")
-                    if dynasty_tag not in dynasty_tags_seen:
-                        dynasties.append({"tag": dynasty_tag, "name": dynasty_name})
-                        dynasty_tags_seen.add(dynasty_tag)
+                    dynasty_tag = f"{dynasty.lower().replace(' ', '_')}_dynasty"
+                    dynasty_name = dynasty
                 else:
                     dynasty_tag = None
                     dynasty_name = None
@@ -390,7 +384,30 @@ def extract_character_data():
                     "tag": unique_tag,  # final unique tag
                 }
                 characters.append(data)
-    return characters, dynasties
+    return characters
+
+
+def extract_dynasty_data():
+    """Extract dynasties from IR default family database."""
+    default_tree = parse_tree(ir_default)
+    family_tree = default_tree["family"] if "family" in default_tree else {}
+    families_tree = family_tree["families"] if "families" in family_tree else {}
+
+    dynasties = []
+    seen = set()
+
+    for _, family in families_tree.items():
+        if isinstance(family, (_pydt.Tree, dict)) and "key" in family:
+            name = str(family["key"])
+        else:
+            continue
+        tag = f"{name.lower().replace(' ', '_')}_dynasty"
+        if tag in seen:
+            continue
+        seen.add(tag)
+        dynasties.append({"tag": tag, "name": name})
+
+    return dynasties
 
 
 def extract_diplomacy_data():
