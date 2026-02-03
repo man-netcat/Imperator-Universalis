@@ -7,6 +7,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -31,6 +34,9 @@ countries = {
             government = {
                 ruler = rom_publius_fabii
                 type = republic
+                reforms = {
+                    ir_aristocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_duchy
@@ -49,6 +55,9 @@ countries = {
             government = {
                 ruler = sam_gaius_varriani
                 type = republic
+                reforms = {
+                    ir_aristocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -60,6 +69,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -74,6 +86,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -88,6 +103,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -104,6 +122,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -132,6 +153,9 @@ countries = {
             government = {
                 ruler = etr_elbio_vulturreno
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -148,6 +172,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -164,6 +191,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -184,6 +214,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_aristocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -198,6 +231,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -212,6 +248,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -230,6 +269,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -246,6 +288,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -260,6 +305,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -276,6 +324,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -290,6 +341,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -301,6 +355,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -312,6 +369,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -332,6 +392,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -343,6 +406,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -354,6 +420,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -365,6 +434,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -376,6 +448,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -398,6 +473,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -420,6 +498,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -444,6 +525,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -460,6 +544,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -471,6 +558,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -482,6 +572,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -493,6 +586,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -507,6 +603,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -521,6 +620,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -535,6 +637,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -549,6 +654,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -563,6 +671,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -577,6 +688,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -591,6 +705,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -607,6 +724,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -621,6 +741,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -637,6 +760,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -651,6 +777,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -665,6 +794,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -679,6 +811,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -693,6 +828,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -707,6 +845,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -723,6 +864,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -741,6 +885,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -755,6 +902,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -769,6 +919,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -827,6 +980,9 @@ countries = {
             government = {
                 ruler = car_maharbal_hipparchid
                 type = republic
+                reforms = {
+                    ir_aristocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_kingdom
@@ -838,6 +994,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -866,6 +1025,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_kingdom
@@ -888,6 +1050,9 @@ countries = {
             government = {
                 ruler = msy_ailymas_ailymasid
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_kingdom
@@ -908,6 +1073,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -922,6 +1090,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -938,6 +1109,9 @@ countries = {
             government = {
                 ruler = syr_agathokles_agathoklid
                 type = monarchy
+                reforms = {
+                    ir_aristocratic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_kingdom
@@ -949,6 +1123,9 @@ countries = {
 #             government = {
 #                 ruler = dod_sesen_wakekiye
 #                 type = theocracy
+#                 reforms = {
+#                     ir_theocratic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -991,6 +1168,9 @@ countries = {
             government = {
                 ruler = egy_ptolemaios_lagid
                 type = monarchy
+                reforms = {
+                    ir_aristocratic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_kingdom
@@ -1009,6 +1189,9 @@ countries = {
             government = {
                 ruler = cyr_epimenes_charinid
                 type = monarchy
+                reforms = {
+                    ir_despotic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -1020,6 +1203,9 @@ countries = {
 #             government = {
 #                 ruler = mas_krateros_kujid
 #                 type = republic
+#                 reforms = {
+#                     ir_plutocratic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1031,6 +1217,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_plutocratic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1042,6 +1231,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1053,6 +1245,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1064,6 +1259,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1075,6 +1273,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1086,6 +1287,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1097,6 +1301,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1108,6 +1315,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1119,6 +1329,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1130,6 +1343,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1141,6 +1357,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1152,6 +1371,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1163,6 +1385,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1174,6 +1399,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1185,6 +1413,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1196,6 +1427,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1207,6 +1441,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1218,6 +1455,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1229,6 +1469,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1240,6 +1483,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1251,6 +1497,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1265,6 +1514,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_federation
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -1276,6 +1528,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1287,6 +1542,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1298,6 +1556,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1309,6 +1570,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1320,6 +1584,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1331,6 +1598,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1342,6 +1612,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1353,6 +1626,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1364,6 +1640,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1375,6 +1654,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1386,6 +1668,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1397,6 +1682,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1408,6 +1696,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1419,6 +1710,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1430,6 +1724,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1441,6 +1738,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1452,6 +1752,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_federation
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1463,6 +1766,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1474,6 +1780,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1485,6 +1794,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1496,6 +1808,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1507,6 +1822,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1518,6 +1836,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1529,6 +1850,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1540,6 +1864,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1551,6 +1878,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1562,6 +1892,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1573,6 +1906,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1584,6 +1920,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1595,6 +1934,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1606,6 +1948,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1617,6 +1962,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1628,6 +1976,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1639,6 +1990,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1650,6 +2004,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1661,6 +2018,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1672,6 +2032,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1683,6 +2046,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1694,6 +2060,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1705,6 +2074,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1716,6 +2088,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1727,6 +2102,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1738,6 +2116,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1749,6 +2130,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1760,6 +2144,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1771,6 +2158,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1782,6 +2172,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1793,6 +2186,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1804,6 +2200,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1815,6 +2214,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1826,6 +2228,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_plutocratic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1837,6 +2242,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1848,6 +2256,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_plutocratic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1859,6 +2270,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_plutocratic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1870,6 +2284,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1881,6 +2298,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1892,6 +2312,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1903,6 +2326,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1914,6 +2340,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1925,6 +2354,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1936,6 +2368,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1947,6 +2382,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1958,6 +2396,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1969,6 +2410,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1980,6 +2424,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -1991,6 +2438,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2002,6 +2452,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2013,6 +2466,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2024,6 +2480,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2035,6 +2494,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2046,6 +2508,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2057,6 +2522,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_federation
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2068,6 +2536,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2079,6 +2550,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2090,6 +2564,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2101,6 +2578,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2112,6 +2592,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2123,6 +2606,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2134,6 +2620,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2145,6 +2634,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2156,6 +2648,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2167,6 +2662,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2178,6 +2676,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2189,6 +2690,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2200,6 +2704,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2211,6 +2718,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2222,6 +2732,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2233,6 +2746,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2244,6 +2760,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2255,6 +2774,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2266,6 +2788,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2277,6 +2802,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2288,6 +2816,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2299,6 +2830,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2310,6 +2844,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2321,6 +2858,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2332,6 +2872,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2343,6 +2886,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2354,6 +2900,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2365,6 +2914,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2376,6 +2928,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2387,6 +2942,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2398,6 +2956,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2409,6 +2970,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2420,6 +2984,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2431,6 +2998,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2442,6 +3012,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2453,6 +3026,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2464,6 +3040,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2475,6 +3054,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2486,6 +3068,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2497,6 +3082,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2508,6 +3096,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2519,6 +3110,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2530,6 +3124,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2541,6 +3138,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2552,6 +3152,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2563,6 +3166,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2574,6 +3180,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2585,6 +3194,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2596,6 +3208,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2607,6 +3222,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2618,6 +3236,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2629,6 +3250,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2640,6 +3264,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2651,6 +3278,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2662,6 +3292,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2673,6 +3306,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2684,6 +3320,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2695,6 +3334,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2706,6 +3348,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2717,6 +3362,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2728,6 +3376,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2739,6 +3390,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2750,6 +3404,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2761,6 +3418,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2772,6 +3432,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2783,6 +3446,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2794,6 +3460,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2805,6 +3474,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2816,6 +3488,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2827,6 +3502,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2838,6 +3516,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2849,6 +3530,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2860,6 +3544,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2871,6 +3558,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2882,6 +3572,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2893,6 +3586,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2904,6 +3600,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2915,6 +3614,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2926,6 +3628,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2937,6 +3642,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2948,6 +3656,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2959,6 +3670,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2970,6 +3684,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2981,6 +3698,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -2992,6 +3712,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3003,6 +3726,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3014,6 +3740,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3025,6 +3754,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3036,6 +3768,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3047,6 +3782,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3058,6 +3796,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3069,6 +3810,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3080,6 +3824,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3091,6 +3838,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3102,6 +3852,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3113,6 +3866,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3124,6 +3880,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3135,6 +3894,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3146,6 +3908,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3157,6 +3922,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3168,6 +3936,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3179,6 +3950,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3190,6 +3964,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3201,6 +3978,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3212,6 +3992,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3226,6 +4009,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -3244,6 +4030,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -3262,6 +4051,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -3273,6 +4065,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3287,6 +4082,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -3298,6 +4096,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3309,6 +4110,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3323,6 +4127,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -3337,6 +4144,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -3348,6 +4158,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3359,6 +4172,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3370,6 +4186,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3381,6 +4200,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3392,6 +4214,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3403,6 +4228,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3414,6 +4242,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3425,6 +4256,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3436,6 +4270,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3447,6 +4284,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3463,6 +4303,9 @@ countries = {
             government = {
                 ruler = tln_glaukias_taulantid
                 type = monarchy
+                reforms = {
+                    ir_despotic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -3474,6 +4317,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3485,6 +4331,9 @@ countries = {
 #             government = {
 #                 ruler = drd_kleitos_dardanid
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3496,6 +4345,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3507,6 +4359,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3518,6 +4373,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3529,6 +4387,9 @@ countries = {
 #             government = {
 #                 ruler = gte_dromichaetes_elonimid
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3540,6 +4401,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3551,6 +4415,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3562,6 +4429,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3573,6 +4443,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3584,6 +4457,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3595,6 +4471,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3606,6 +4485,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3617,6 +4499,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3628,6 +4513,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3639,6 +4527,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3650,6 +4541,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3664,6 +4558,9 @@ countries = {
             government = {
                 ruler = byz_ioannes_samarian_2
                 type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -3675,6 +4572,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_plutocratic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3686,6 +4586,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_plutocratic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3697,6 +4600,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_plutocratic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3708,6 +4614,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_plutocratic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3719,6 +4628,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_plutocratic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3730,6 +4642,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_plutocratic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3741,6 +4656,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_plutocratic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3752,6 +4670,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_plutocratic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3774,6 +4695,9 @@ countries = {
             government = {
                 ruler = tre_lysimachos_alkimachid
                 type = monarchy
+                reforms = {
+                    ir_aristocratic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_kingdom
@@ -3785,6 +4709,9 @@ countries = {
 #             government = {
 #                 ruler = odr_seuthes_odrysid
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3796,6 +4723,9 @@ countries = {
 #             government = {
 #                 ruler = paa_audoleon_argestaiid
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3807,6 +4737,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -3841,6 +4774,9 @@ countries = {
             government = {
                 ruler = mac_kassandros_antipatrid
                 type = monarchy
+                reforms = {
+                    ir_aristocratic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_kingdom
@@ -3859,6 +4795,9 @@ countries = {
             government = {
                 ruler = ath_pherekles_stratoklid
                 type = republic
+                reforms = {
+                    ir_democratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -3873,6 +4812,9 @@ countries = {
             government = {
                 ruler = random
                 type = monarchy
+                reforms = {
+                    ir_despotic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -3887,6 +4829,9 @@ countries = {
             government = {
                 ruler = random
                 type = monarchy
+                reforms = {
+                    ir_despotic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -3903,6 +4848,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -3919,6 +4867,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -3935,6 +4886,9 @@ countries = {
             government = {
                 ruler = epi_pyrrhos_aiakid
                 type = monarchy
+                reforms = {
+                    ir_aristocratic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -3949,6 +4903,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -3963,6 +4920,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -3977,6 +4937,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -3993,6 +4956,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4007,6 +4973,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4021,6 +4990,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4035,6 +5007,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4049,6 +5024,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4063,6 +5041,9 @@ countries = {
             government = {
                 ruler = del_anaximander_seleukid_2
                 type = republic
+                reforms = {
+                    ir_democratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4074,6 +5055,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_oligarchic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -4088,6 +5072,9 @@ countries = {
             government = {
                 ruler = kos_herodas_elonimid_2
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4102,6 +5089,9 @@ countries = {
             government = {
                 ruler = random
                 type = monarchy
+                reforms = {
+                    ir_despotic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4113,6 +5103,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_oligarchic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -4127,6 +5120,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4141,6 +5137,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4155,6 +5154,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4169,6 +5171,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4183,6 +5188,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4197,6 +5205,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4208,6 +5219,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_oligarchic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -4222,6 +5236,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4236,6 +5253,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4250,6 +5270,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4264,6 +5287,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4278,6 +5304,9 @@ countries = {
             government = {
                 ruler = spa_areus_agiad
                 type = monarchy
+                reforms = {
+                    ir_stratocratic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_kingdom
@@ -4289,6 +5318,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -4303,6 +5335,9 @@ countries = {
             government = {
                 ruler = random
                 type = monarchy
+                reforms = {
+                    ir_despotic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4317,6 +5352,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_aristocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4328,6 +5366,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_oligarchic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -4339,6 +5380,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_plutocratic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -4353,6 +5397,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_democratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4367,6 +5414,9 @@ countries = {
             government = {
                 ruler = random
                 type = monarchy
+                reforms = {
+                    ir_despotic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4381,6 +5431,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_democratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4395,6 +5448,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4409,6 +5465,9 @@ countries = {
             government = {
                 ruler = mlo_aristodemus_aristodemid
                 type = republic
+                reforms = {
+                    ir_democratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4425,6 +5484,9 @@ countries = {
             government = {
                 ruler = rho_demaratos_demaratid
                 type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4439,6 +5501,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4457,6 +5522,9 @@ countries = {
             government = {
                 ruler = bit_zipoetes_zipoeteid
                 type = monarchy
+                reforms = {
+                    ir_aristocratic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4471,6 +5539,9 @@ countries = {
             government = {
                 ruler = hcp_amastris_achaimenid
                 type = monarchy
+                reforms = {
+                    ir_aristocratic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4493,6 +5564,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_democratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4511,6 +5585,9 @@ countries = {
             government = {
                 ruler = ion_hipparchos_hipparchid
                 type = republic
+                reforms = {
+                    ir_democratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4525,6 +5602,9 @@ countries = {
             government = {
                 ruler = snp_skydrothemis_skydrothemid
                 type = monarchy
+                reforms = {
+                    ir_despotic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4539,6 +5619,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4550,6 +5633,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_plutocratic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -4564,6 +5650,9 @@ countries = {
             government = {
                 ruler = kio_mithradates_mithridatid
                 type = monarchy
+                reforms = {
+                    ir_aristocratic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4578,6 +5667,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4592,6 +5684,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4606,6 +5701,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4620,6 +5718,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4634,6 +5735,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4728,6 +5832,9 @@ countries = {
             government = {
                 ruler = pry_antigonos_antigonid
                 type = monarchy
+                reforms = {
+                    ir_aristocratic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_kingdom
@@ -4760,6 +5867,9 @@ countries = {
             government = {
                 ruler = cap_amyntas_amyntid
                 type = monarchy
+                reforms = {
+                    ir_despotic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_kingdom
@@ -4782,6 +5892,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4810,6 +5923,9 @@ countries = {
             government = {
                 ruler = random
                 type = monarchy
+                reforms = {
+                    ir_despotic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4832,6 +5948,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4843,6 +5962,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_democratic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -4854,6 +5976,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_plutocratic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -4865,6 +5990,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -4876,6 +6004,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -4887,6 +6018,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -4898,6 +6032,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -4909,6 +6046,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -4920,6 +6060,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -4940,6 +6083,9 @@ countries = {
             government = {
                 ruler = random
                 type = monarchy
+                reforms = {
+                    ir_despotic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4951,6 +6097,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -4967,6 +6116,9 @@ countries = {
             government = {
                 ruler = jud_simon_zadokite
                 type = theocracy
+                reforms = {
+                    ir_theocratic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4981,6 +6133,9 @@ countries = {
             government = {
                 ruler = sma_daliah_samarian
                 type = theocracy
+                reforms = {
+                    ir_theocratic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -4995,6 +6150,9 @@ countries = {
             government = {
                 ruler = sid_abd-elonim_elonimid
                 type = monarchy
+                reforms = {
+                    ir_despotic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -5009,6 +6167,9 @@ countries = {
             government = {
                 ruler = ara_gerasthart_gerasthartid
                 type = monarchy
+                reforms = {
+                    ir_despotic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -5023,6 +6184,9 @@ countries = {
             government = {
                 ruler = byb_aynel_aynelid
                 type = monarchy
+                reforms = {
+                    ir_despotic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -5039,6 +6203,9 @@ countries = {
             government = {
                 ruler = random
                 type = monarchy
+                reforms = {
+                    ir_despotic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -5057,6 +6224,9 @@ countries = {
             government = {
                 ruler = bmb_abd-hadad_atargatid
                 type = theocracy
+                reforms = {
+                    ir_theocratic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -5177,6 +6347,9 @@ countries = {
             government = {
                 ruler = sel_seleukos_seleukid
                 type = monarchy
+                reforms = {
+                    ir_aristocratic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_empire
@@ -5188,6 +6361,9 @@ countries = {
 #             government = {
 #                 ruler = bac_sophytes_sophytid
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5199,6 +6375,9 @@ countries = {
 #             government = {
 #                 ruler = ars_sibyrtios_sibyrtid
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5210,6 +6389,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5226,6 +6408,9 @@ countries = {
             government = {
                 ruler = random
                 type = monarchy
+                reforms = {
+                    ir_despotic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -5270,6 +6455,9 @@ countries = {
             government = {
                 ruler = arm_orontes_orontids
                 type = monarchy
+                reforms = {
+                    ir_despotic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_kingdom
@@ -5302,6 +6490,9 @@ countries = {
             government = {
                 ruler = map_atropates_atropatids
                 type = monarchy
+                reforms = {
+                    ir_despotic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_kingdom
@@ -5330,6 +6521,9 @@ countries = {
             government = {
                 ruler = ibr_azo_azonid
                 type = monarchy
+                reforms = {
+                    ir_despotic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_kingdom
@@ -5348,6 +6542,9 @@ countries = {
             government = {
                 ruler = col_kuji_kujid
                 type = monarchy
+                reforms = {
+                    ir_despotic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -5372,6 +6569,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_chiefdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -5383,6 +6583,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5394,6 +6597,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5408,6 +6614,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -5419,6 +6628,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5430,6 +6642,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5441,6 +6656,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = monarchy
+#                 reforms = {
+#                     ir_aristocratic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5452,6 +6670,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5463,6 +6684,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = monarchy
+#                 reforms = {
+#                     ir_aristocratic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5474,6 +6698,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = monarchy
+#                 reforms = {
+#                     ir_aristocratic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5485,6 +6712,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5496,6 +6726,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5507,6 +6740,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5518,6 +6754,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5529,6 +6768,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_oligarchic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5540,6 +6782,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_oligarchic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5551,6 +6796,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5562,6 +6810,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5573,6 +6824,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5584,6 +6838,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5595,6 +6852,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5606,6 +6866,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5617,6 +6880,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5628,6 +6894,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5639,6 +6908,9 @@ countries = {
 #             government = {
 #                 ruler = alu_nannan_mushika
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5650,6 +6922,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5661,6 +6936,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5672,6 +6950,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5683,6 +6964,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5694,6 +6978,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5705,6 +6992,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5716,6 +7006,9 @@ countries = {
 #             government = {
 #                 ruler = kal_anantha_kalinga
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5727,6 +7020,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5738,6 +7034,9 @@ countries = {
 #             government = {
 #                 ruler = anu_mutasiva_vijaya
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5749,6 +7048,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5760,6 +7062,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5771,6 +7076,9 @@ countries = {
 #             government = {
 #                 ruler = pnd_koon_pandya
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5782,6 +7090,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5793,6 +7104,9 @@ countries = {
 #             government = {
 #                 ruler = chl_kochaet_chola
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5804,6 +7118,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5815,6 +7132,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5826,6 +7146,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5837,6 +7160,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5848,6 +7174,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5859,6 +7188,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5870,6 +7202,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5881,6 +7216,9 @@ countries = {
 #             government = {
 #                 ruler = mry_chandragupta_maurya
 #                 type = monarchy
+#                 reforms = {
+#                     ir_aristocratic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5892,6 +7230,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5903,6 +7244,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5914,6 +7258,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5925,6 +7272,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5936,6 +7286,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5947,6 +7300,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5958,6 +7314,9 @@ countries = {
 #             government = {
 #                 ruler = sce_aripharnes_aripharnid
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5969,6 +7328,9 @@ countries = {
 #             government = {
 #                 ruler = bpk_spartokos_spartokid
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5980,6 +7342,9 @@ countries = {
 #             government = {
 #                 ruler = chs_ioakeim_skydrothemid_2
 #                 type = republic
+#                 reforms = {
+#                     ir_democratic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -5991,6 +7356,9 @@ countries = {
 #             government = {
 #                 ruler = scy_agarus_agarid
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6002,6 +7370,9 @@ countries = {
 #             government = {
 #                 ruler = zgy_jnanasene_vaisali
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6018,6 +7389,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -6034,6 +7408,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -6045,6 +7422,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6056,6 +7436,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6067,6 +7450,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_democratic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6078,6 +7464,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_democratic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6089,6 +7478,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6100,6 +7492,9 @@ countries = {
 #             government = {
 #                 ruler = ksh_aktisanes_meroid
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6111,6 +7506,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6122,6 +7520,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6133,6 +7534,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_federation
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6144,6 +7548,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6155,6 +7562,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6166,6 +7576,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6177,6 +7590,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6188,6 +7604,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6199,6 +7618,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = theocracy
+#                 reforms = {
+#                     ir_theocratic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6210,6 +7632,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6221,6 +7646,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_plutocratic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6232,6 +7660,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_plutocratic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6243,6 +7674,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_plutocratic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6254,6 +7688,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = monarchy
+#                 reforms = {
+#                     ir_despotic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6265,6 +7702,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6276,6 +7716,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6287,6 +7730,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6298,6 +7744,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6309,6 +7758,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6320,6 +7772,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6331,6 +7786,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6342,6 +7800,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6353,6 +7814,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6364,6 +7828,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6375,6 +7842,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6386,6 +7856,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6397,6 +7870,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6408,6 +7884,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6419,6 +7898,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6430,6 +7912,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6441,6 +7926,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6452,6 +7940,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6463,6 +7954,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6474,6 +7968,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6485,6 +7982,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6496,6 +7996,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6507,6 +8010,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6518,6 +8024,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6529,6 +8038,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6540,6 +8052,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6551,6 +8066,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6562,6 +8080,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6573,6 +8094,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6584,6 +8108,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6595,6 +8122,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6606,6 +8136,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6617,6 +8150,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6628,6 +8164,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6639,6 +8178,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6653,6 +8195,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_federation
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -6669,6 +8214,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -6680,6 +8228,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6691,6 +8242,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6702,6 +8256,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6713,6 +8270,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6724,6 +8284,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6735,6 +8298,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6746,6 +8312,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6757,6 +8326,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6768,6 +8340,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6779,6 +8354,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6790,6 +8368,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6801,6 +8382,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_kingdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6812,6 +8396,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6823,6 +8410,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6834,6 +8424,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6848,6 +8441,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -6862,6 +8458,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -6876,6 +8475,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -6890,6 +8492,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -6906,6 +8511,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -6920,6 +8528,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -6931,6 +8542,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_oligarchic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6945,6 +8559,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -6956,6 +8573,9 @@ countries = {
 #             government = {
 #                 ruler = pho_xanthippos_xanthippid
 #                 type = monarchy
+#                 reforms = {
+#                     ir_aristocratic_monarchy
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6967,6 +8587,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_oligarchic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6978,6 +8601,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_oligarchic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -6992,6 +8618,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -7006,6 +8635,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -7020,6 +8652,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -7034,6 +8669,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -7048,6 +8686,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -7059,6 +8700,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = republic
+#                 reforms = {
+#                     ir_oligarchic_republic
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -7073,6 +8717,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -7087,6 +8734,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_federation
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -7098,6 +8748,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_federation
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -7112,6 +8765,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_federation
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -7123,6 +8779,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_federation
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -7137,6 +8796,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_federation
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -7151,6 +8813,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_federation
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -7167,6 +8832,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -7181,6 +8849,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_federation
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -7195,6 +8866,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_federation
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -7206,6 +8880,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_chiefdom
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -7220,6 +8897,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -7234,6 +8914,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_oligarchic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -7248,6 +8931,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_federation
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -7259,6 +8945,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_federation
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -7273,6 +8962,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_federation
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -7287,6 +8979,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_federation
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -7301,6 +8996,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_federation
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -7315,6 +9013,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_federation
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -7329,6 +9030,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_federation
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -7340,6 +9044,9 @@ countries = {
 #             government = {
 #                 ruler = random
 #                 type = tribe
+#                 reforms = {
+#                     ir_tribal_federation
+#                 }
 #             }
 #             include = "expl_imperator_rome"
 #             country_rank = rank_county
@@ -7354,6 +9061,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_federation
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -7368,6 +9078,9 @@ countries = {
             government = {
                 ruler = random
                 type = tribe
+                reforms = {
+                    ir_tribal_chiefdom
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -7382,6 +9095,9 @@ countries = {
             government = {
                 ruler = random
                 type = theocracy
+                reforms = {
+                    ir_theocratic_monarchy
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county
@@ -7396,6 +9112,9 @@ countries = {
             government = {
                 ruler = random
                 type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
             }
             include = "expl_imperator_rome"
             country_rank = rank_county

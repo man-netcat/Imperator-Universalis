@@ -20,6 +20,10 @@ AUTO_GENERATED_HEADER = (
 )
 
 
+def ensure_list(value):
+    return value if isinstance(value, list) else [value]
+
+
 def print_written(kind: str, out_path: Path) -> None:
     """Print a concise relative write message for `out_path`.
 
@@ -585,6 +589,28 @@ def write_10_countries(ten_countries_data, country_data, eu5_map_data, country_r
             merged_government["ruler"] = base_government.get("ruler", "random")
 
         merged_government["type"] = government_type
+
+        # --- include IR-specific starting government reform if available ---
+        try:
+            ir_gov_key = country_map[tag]["government"]
+        except Exception:
+            ir_gov_key = None
+
+        if ir_gov_key:
+            reform_id = f"ir_{ir_gov_key}"
+            raw = merged_government.get("reforms", [])
+            normalized = [str(item) for item in ensure_list(raw) if item not in (None, "")]
+
+            normalized.append(reform_id)
+            seen = set()
+            deduped = []
+            for r in normalized:
+                if r not in seen:
+                    seen.add(r)
+                    deduped.append(r)
+
+            merged_government["reforms"] = deduped
+
         merged["government"] = merged_government
 
         # --- includes (preserve all, normalize) ---
@@ -612,7 +638,10 @@ def write_10_countries(ten_countries_data, country_data, eu5_map_data, country_r
             elif isinstance(value, dict):
                 sub = []
                 for k, v in value.items():
-                    sub.append(f"{k} = {v}")
+                    if isinstance(v, list):
+                        sub.append((k, v))
+                    else:
+                        sub.append(f"{k} = {v}")
                 lines.append((key, sub))
 
             elif isinstance(value, list):
