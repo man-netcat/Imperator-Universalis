@@ -56,6 +56,7 @@ def convert_images(
     output_dir: Path,
     size=(384, 256),
     stretch: bool = False,
+    stretch_predicate=None,
     colour_shift: bool = False,
     tolerance: int = 96,
 ):
@@ -71,7 +72,11 @@ def convert_images(
             if colour_shift:
                 img = remap_ir_colored_emblem_palette(img, tolerance)
 
-            if stretch:
+            should_stretch = stretch
+            if stretch_predicate is not None:
+                should_stretch = bool(stretch_predicate(path))
+
+            if should_stretch:
                 resized = img.resize(size, Image.LANCZOS)
             else:
                 resized = Image.new("RGBA", size, (0, 0, 0, 0))
@@ -95,8 +100,16 @@ def port_coa_gfx():
     out_patterns = iu_coa_gfx / "patterns"
     out_textured_emblems = iu_coa_gfx / "textured_emblems"
 
+    def is_border_emblem(path: Path) -> bool:
+        # Border emblems are designed to reach the edges; stretch to fit EU5's 3:2 aspect.
+        return path.stem.startswith("ce_border_")
+
     convert_images(
-        colored_emblems, out_colored_emblems, stretch=False, colour_shift=True
+        colored_emblems,
+        out_colored_emblems,
+        stretch=False,
+        stretch_predicate=is_border_emblem,
+        colour_shift=True,
     )
     convert_images(patterns, out_patterns, stretch=True)
     convert_images(textured_emblems, out_textured_emblems, stretch=False)
