@@ -5,8 +5,8 @@
  LEAD_satrapy: "$LIST$ is a [SUBJECT_TYPE.GetName]"
  AM_satrapy: "[SUBJECT_TYPE.GetName] of $LIST$."
 
- LEAD_tribal_vassal: "$LIST$ is a [SUBJECT_TYPE.GetName]"
- AM_tribal_vassal: "[SUBJECT_TYPE.GetName] of $LIST$."
+ LEAD_vassal_tribe: "$LIST$ is a [SUBJECT_TYPE.GetName]"
+ AM_vassal_tribe: "[SUBJECT_TYPE.GetName] of $LIST$."
 
  LEAD_client_state: "$LIST$ is a [SUBJECT_TYPE.GetName]"
  AM_client_state: "[SUBJECT_TYPE.GetName] of $LIST$."
