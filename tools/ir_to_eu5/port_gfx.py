@@ -6,31 +6,47 @@ from .paths import ir_coa_gfx, iu_coa_gfx, mod_root
 from .write_data import print_written
 
 
-def replace_magenta_red_channel(img: Image.Image, strength: float = 0.7) -> Image.Image:
+def remap_ir_colored_emblem_palette(
+    img: Image.Image,
+    tolerance: int = 96,
+    min_r: int = 128,
+    max_g_for_pink: int = 160,
+    min_g_for_yellow: int = 128,
+    max_rg_delta_for_yellow: int = 80,
+    min_rg_delta_for_pink: int = 20,
+) -> Image.Image:
     """
-    Shift pixels that are magenta-ish toward blue, keeping subtle differences.
-    strength: 0.0 = no change, 1.0 = full replacement
+    Convert I:R colored-emblem palette to EU5 colored-emblem palette.
+
+    I:R colored emblems use:
+      - pink (255, 0, 128) for color1
+      - light yellow (255, 255, 128) for color2
+      - blue channel as brightness (0..255)
+
+    EU5 colored emblems use:
+      - color1 marker: (0, 0, 128)
+      - color2 marker: (0, 255, 128)
+      - blue channel as brightness (0..255)
+
+    We remap R/G to EU5 markers while preserving B and alpha.
     """
     pixels = img.load()
     width, height = img.size
-
-    # Source "magenta-ish" color
-    fr, fg, fb = 255, 0, 128
-    # Target color
-    tr, tg, tb = 0, 0, 128
 
     for y in range(height):
         for x in range(width):
             r, g, b, a = pixels[x, y]
 
-            # Compute difference from source
-            diff = abs(r - fr) + abs(g - fg) + abs(b - fb)
-            if diff < 100:  # adjust threshold as needed
-                # Blend channels proportionally
-                r_new = int(r + (tr - r) * strength)
-                g_new = int(g + (tg - g) * strength)
-                b_new = int(b + (tb - b) * strength)
-                pixels[x, y] = (r_new, g_new, b_new, a)
+            # Compare only R/G to allow variable brightness in B.
+            # Use a mix of distance and threshold checks to catch antialiasing.
+            if (r >= min_r and g <= max_g_for_pink and (r - g) >= min_rg_delta_for_pink) or (
+                abs(r - 255) + abs(g - 0) <= tolerance
+            ):
+                pixels[x, y] = (0, 0, b, a)
+            elif (r >= min_r and g >= min_g_for_yellow and abs(r - g) <= max_rg_delta_for_yellow) or (
+                abs(r - 255) + abs(g - 255) <= tolerance
+            ):
+                pixels[x, y] = (0, 255, b, a)
 
     return img
 
@@ -41,7 +57,7 @@ def convert_images(
     size=(384, 256),
     stretch: bool = False,
     colour_shift: bool = False,
-    tolerance: int = 10,
+    tolerance: int = 96,
 ):
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -53,7 +69,7 @@ def convert_images(
             img = img.convert("RGBA")
 
             if colour_shift:
-                img = replace_magenta_red_channel(img, tolerance)
+                img = remap_ir_colored_emblem_palette(img, tolerance)
 
             if stretch:
                 resized = img.resize(size, Image.LANCZOS)
