@@ -6,7 +6,11 @@ from typing import List, Tuple, Union
 import pyradox
 import pyradox.datatype as _pydt
 
-from .data import government_map
+from .data import (
+    government_map,
+    ir_culture_group_language_map,
+    ir_culture_language_overrides,
+)
 from .paths import *
 
 pyradox.Color = _pydt.Color
@@ -528,10 +532,23 @@ def write_blocks_with_comments(
     return out_path
 
 
-def write_10_countries(ten_countries_data, country_data, eu5_map_data, country_rulers):
+def write_10_countries(
+    ten_countries_data,
+    country_data,
+    eu5_map_data,
+    country_rulers,
+    culture_data=None,
+):
     country_map = {country["tag"]: country for country in country_data}
     blocks = []
     comment_tags = set()
+
+    culture_to_group = {}
+    if culture_data:
+        for group in culture_data:
+            group_tag = group.get("tag")
+            for culture in group.get("cultures", []):
+                culture_to_group[culture.get("tag")] = group_tag
 
     # build province mapping if provided
     location_to_province = (
@@ -612,6 +629,17 @@ def write_10_countries(ten_countries_data, country_data, eu5_map_data, country_r
             merged_government["reforms"] = deduped
 
         merged["government"] = merged_government
+
+        # --- court language ---
+        culture_tag = country.get("culture")
+        if culture_tag:
+            court_language = ir_culture_language_overrides.get(culture_tag)
+            if not court_language:
+                group_tag = culture_to_group.get(culture_tag)
+                if group_tag:
+                    court_language = ir_culture_group_language_map.get(group_tag)
+            if court_language:
+                merged["court_language"] = court_language
 
         # --- include societal values template based on IR government type ---
         societal_template_keys = {

@@ -101,7 +101,13 @@ if __name__ == "__main__":
     write_country_setup(country_data, country_overrides)
     write_04_dynasties(four_dynasties_data, dynasty_data)
     write_05_characters(five_characters_data, character_data)
-    write_10_countries(ten_countries_data, country_data, eu5_map_data, country_rulers)
+    write_10_countries(
+        ten_countries_data,
+        country_data,
+        eu5_map_data,
+        country_rulers,
+        culture_data,
+    )
     write_12_diplomacy(twelve_diplomacy_data, diplomatic_relationships)
     write_15_international_organizations(
         fifteen_international_organizations_data, international_organisations
