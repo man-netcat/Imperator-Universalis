@@ -10,6 +10,8 @@ from .data import (
     government_map,
     ir_culture_group_language_map,
     ir_culture_language_overrides,
+    ir_culture_group_graphical_map,
+    ir_culture_graphical_overrides,
 )
 from .paths import *
 
@@ -182,10 +184,54 @@ def write_culture_data(culture_data: list):
     for culture_group in culture_data:
         blocks = []
 
+        def resolve_gfx_tags(value):
+            tags = ensure_list(value) if value is not None else []
+            resolved: list[str] = []
+            for tag in tags:
+                if isinstance(tag, str) and tag.startswith("ir_") and tag.endswith("_gfx"):
+                    continue
+                resolved.append(tag)
+
+            seen = set()
+            deduped = []
+            for tag in resolved:
+                if tag not in seen:
+                    seen.add(tag)
+                    deduped.append(tag)
+            return deduped
+
+        group_tag = culture_group.get("tag")
+        group_gfx = None
+        if group_tag:
+            group_gfx = ir_culture_group_graphical_map.get(group_tag)
+        if not group_gfx:
+            group_gfx = culture_group["graphical_culture"]
+
+        group_gfx = resolve_gfx_tags(group_gfx)
+
         for culture in culture_group["cultures"]:
+            culture_tag = culture.get("tag")
+            gfx_tag = (
+                ir_culture_graphical_overrides.get(culture_tag)
+                if culture_tag
+                else None
+            )
+            if not gfx_tag:
+                gfx_tag = group_gfx
+
+            gfx_tags = resolve_gfx_tags(gfx_tag)
+            gfx_tags_str = " ".join(gfx_tags)
+
+            culture_language = None
+            if culture_tag:
+                culture_language = ir_culture_language_overrides.get(culture_tag)
+            if not culture_language and group_tag:
+                culture_language = ir_culture_group_language_map.get(group_tag)
+
             lines = [
+                f"language = {culture_language}",
                 f"color = {culture_group['color']}",
-                f"tags = {{ {culture_group['graphical_culture']} }}",
+                f"tags = {{ {gfx_tags_str} }}",
                 f"culture_groups = {{ {culture_group['tag']} }}",
             ]
 

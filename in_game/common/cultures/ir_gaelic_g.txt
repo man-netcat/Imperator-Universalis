@@ -4,14 +4,16 @@
 # =========================================================== #
 
 ir_hibernian = {
+    language = gaelic_language
     color = hsv { 0.43 0.90 0.60 }
-    tags = { ir_celtic_gfx }
+    tags = { western_european_gfx }
     culture_groups = { ir_gaelic_g }
 }
 
 ir_manavian = {
+    language = gaelic_language
     color = hsv { 0.43 0.90 0.60 }
-    tags = { ir_celtic_gfx }
+    tags = { western_european_gfx }
     culture_groups = { ir_gaelic_g }
 }
 

@@ -4,20 +4,23 @@
 # =========================================================== #
 
 ir_albanian = {
+    language = georgian_language
     color = hsv { 0.12 0.45 0.68 }
-    tags = { ir_persian_gfx }
+    tags = { caucasian_gfx middle_east_gfx }
     culture_groups = { ir_caucasian_g }
 }
 
 ir_ibero = {
+    language = georgian_language
     color = hsv { 0.12 0.45 0.68 }
-    tags = { ir_persian_gfx }
+    tags = { caucasian_gfx middle_east_gfx }
     culture_groups = { ir_caucasian_g }
 }
 
 ir_colchian = {
+    language = georgian_language
     color = hsv { 0.12 0.45 0.68 }
-    tags = { ir_persian_gfx }
+    tags = { caucasian_gfx middle_east_gfx }
     culture_groups = { ir_caucasian_g }
 }
 

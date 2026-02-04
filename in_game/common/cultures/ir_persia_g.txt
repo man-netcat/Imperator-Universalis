@@ -4,104 +4,121 @@
 # =========================================================== #
 
 ir_elamite = {
+    language = persian_language
     color = hsv { 0.52 0.77 0.72 }
-    tags = { ir_persian_gfx }
+    tags = { persian_gfx persianate_gfx middle_east_gfx }
     culture_groups = { ir_persia_g }
 }
 
 ir_utian = {
+    language = persian_language
     color = hsv { 0.52 0.77 0.72 }
-    tags = { ir_persian_gfx }
+    tags = { persian_gfx persianate_gfx middle_east_gfx }
     culture_groups = { ir_persia_g }
 }
 
 ir_pasargadi = {
+    language = persian_language
     color = hsv { 0.52 0.77 0.72 }
-    tags = { ir_persian_gfx }
+    tags = { persian_gfx persianate_gfx middle_east_gfx }
     culture_groups = { ir_persia_g }
 }
 
 ir_sagartian = {
+    language = persian_language
     color = hsv { 0.52 0.77 0.72 }
-    tags = { ir_persian_gfx }
+    tags = { persian_gfx persianate_gfx middle_east_gfx }
     culture_groups = { ir_persia_g }
 }
 
 ir_uxian = {
+    language = persian_language
     color = hsv { 0.52 0.77 0.72 }
-    tags = { ir_persian_gfx }
+    tags = { persian_gfx persianate_gfx middle_east_gfx }
     culture_groups = { ir_persia_g }
 }
 
 ir_amardian = {
+    language = persian_language
     color = hsv { 0.52 0.77 0.72 }
-    tags = { ir_persian_gfx }
+    tags = { persian_gfx persianate_gfx middle_east_gfx }
     culture_groups = { ir_persia_g }
 }
 
 ir_sarangian = {
+    language = persian_language
     color = hsv { 0.52 0.77 0.72 }
-    tags = { ir_persian_gfx }
+    tags = { persian_gfx persianate_gfx middle_east_gfx }
     culture_groups = { ir_persia_g }
 }
 
 ir_pactyan = {
+    language = persian_language
     color = hsv { 0.52 0.77 0.72 }
-    tags = { ir_persian_gfx }
+    tags = { persian_gfx persianate_gfx middle_east_gfx }
     culture_groups = { ir_persia_g }
 }
 
 ir_cossian = {
+    language = persian_language
     color = hsv { 0.52 0.77 0.72 }
-    tags = { ir_persian_gfx }
+    tags = { persian_gfx persianate_gfx middle_east_gfx }
     culture_groups = { ir_persia_g }
 }
 
 ir_cadusian = {
+    language = persian_language
     color = hsv { 0.52 0.77 0.72 }
-    tags = { ir_persian_gfx }
+    tags = { persian_gfx persianate_gfx middle_east_gfx }
     culture_groups = { ir_persia_g }
 }
 
 ir_parthian = {
+    language = persian_language
     color = hsv { 0.52 0.77 0.72 }
-    tags = { ir_persian_gfx }
+    tags = { persian_gfx persianate_gfx middle_east_gfx }
     culture_groups = { ir_persia_g }
 }
 
 ir_parecanian = {
+    language = persian_language
     color = hsv { 0.52 0.77 0.72 }
-    tags = { ir_persian_gfx }
+    tags = { persian_gfx persianate_gfx middle_east_gfx }
     culture_groups = { ir_persia_g }
 }
 
 ir_carmanian = {
+    language = persian_language
     color = hsv { 0.52 0.77 0.72 }
-    tags = { ir_persian_gfx }
+    tags = { persian_gfx persianate_gfx middle_east_gfx }
     culture_groups = { ir_persia_g }
 }
 
 ir_median = {
+    language = persian_language
     color = hsv { 0.52 0.77 0.72 }
-    tags = { ir_persian_gfx }
+    tags = { persian_gfx persianate_gfx middle_east_gfx }
     culture_groups = { ir_persia_g }
 }
 
 ir_gedrosian = {
+    language = persian_language
     color = hsv { 0.52 0.77 0.72 }
-    tags = { ir_persian_gfx }
+    tags = { persian_gfx persianate_gfx middle_east_gfx }
     culture_groups = { ir_persia_g }
 }
 
 ir_hyrcanian = {
+    language = persian_language
     color = hsv { 0.52 0.77 0.72 }
-    tags = { ir_persian_gfx }
+    tags = { persian_gfx persianate_gfx middle_east_gfx }
     culture_groups = { ir_persia_g }
 }
 
 ir_sattagydian = {
+    language = persian_language
     color = hsv { 0.52 0.77 0.72 }
-    tags = { ir_persian_gfx }
+    tags = { persian_gfx persianate_gfx middle_east_gfx }
     culture_groups = { ir_persia_g }
 }
 

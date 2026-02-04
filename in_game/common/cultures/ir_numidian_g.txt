@@ -4,50 +4,58 @@
 # =========================================================== #
 
 ir_numidian = {
+    language = tamazight_language
     color = hsv { 0.05 0.50 0.40 }
-    tags = { ir_numidian_gfx }
+    tags = { amazigh_gfx maghrebi_gfx african_gfx }
     culture_groups = { ir_numidian_g }
 }
 
 ir_berber = {
+    language = tamazight_language
     color = hsv { 0.05 0.50 0.40 }
-    tags = { ir_numidian_gfx }
+    tags = { amazigh_gfx maghrebi_gfx african_gfx }
     culture_groups = { ir_numidian_g }
 }
 
 ir_gaetulian = {
+    language = tamazight_language
     color = hsv { 0.05 0.50 0.40 }
-    tags = { ir_numidian_gfx }
+    tags = { amazigh_gfx maghrebi_gfx african_gfx }
     culture_groups = { ir_numidian_g }
 }
 
 ir_socossian = {
+    language = tamazight_language
     color = hsv { 0.05 0.50 0.40 }
-    tags = { ir_numidian_gfx }
+    tags = { amazigh_gfx maghrebi_gfx african_gfx }
     culture_groups = { ir_numidian_g }
 }
 
 ir_massaesylian = {
+    language = tamazight_language
     color = hsv { 0.05 0.50 0.40 }
-    tags = { ir_numidian_gfx }
+    tags = { amazigh_gfx maghrebi_gfx african_gfx }
     culture_groups = { ir_numidian_g }
 }
 
 ir_massylian = {
+    language = tamazight_language
     color = hsv { 0.05 0.50 0.40 }
-    tags = { ir_numidian_gfx }
+    tags = { amazigh_gfx maghrebi_gfx african_gfx }
     culture_groups = { ir_numidian_g }
 }
 
 ir_garamantic = {
+    language = tamazight_language
     color = hsv { 0.05 0.50 0.40 }
-    tags = { ir_numidian_gfx }
+    tags = { amazigh_gfx maghrebi_gfx african_gfx }
     culture_groups = { ir_numidian_g }
 }
 
 ir_libyan = {
+    language = tamazight_language
     color = hsv { 0.05 0.50 0.40 }
-    tags = { ir_numidian_gfx }
+    tags = { amazigh_gfx maghrebi_gfx african_gfx }
     culture_groups = { ir_numidian_g }
 }
 

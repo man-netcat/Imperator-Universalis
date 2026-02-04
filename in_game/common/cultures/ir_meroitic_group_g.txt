@@ -4,14 +4,16 @@
 # =========================================================== #
 
 ir_meroitic = {
+    language = nubian_language
     color = hsv { 0.15 0.40 0.60 }
-    tags = { ir_egyptian_gfx }
+    tags = { egyptian_gfx east_african_gfx african_gfx }
     culture_groups = { ir_meroitic_group_g }
 }
 
 ir_blemmyan = {
+    language = nubian_language
     color = hsv { 0.15 0.40 0.60 }
-    tags = { ir_egyptian_gfx }
+    tags = { egyptian_gfx east_african_gfx african_gfx }
     culture_groups = { ir_meroitic_group_g }
 }
 

@@ -4,56 +4,65 @@
 # =========================================================== #
 
 ir_hadhrami = {
+    language = aramaic_language
     color = hsv { 0.30 0.70 0.60 }
-    tags = { ir_arabian_gfx }
+    tags = { arabian_gfx levantine_gfx middle_east_gfx }
     culture_groups = { ir_south_levantine_g }
 }
 
 ir_qatabanian = {
+    language = aramaic_language
     color = hsv { 0.30 0.70 0.60 }
-    tags = { ir_arabian_gfx }
+    tags = { arabian_gfx levantine_gfx middle_east_gfx }
     culture_groups = { ir_south_levantine_g }
 }
 
 ir_sheban = {
+    language = aramaic_language
     color = hsv { 0.30 0.70 0.60 }
-    tags = { ir_arabian_gfx }
+    tags = { arabian_gfx levantine_gfx middle_east_gfx }
     culture_groups = { ir_south_levantine_g }
 }
 
 ir_minaean = {
+    language = aramaic_language
     color = hsv { 0.30 0.70 0.60 }
-    tags = { ir_arabian_gfx }
+    tags = { arabian_gfx levantine_gfx middle_east_gfx }
     culture_groups = { ir_south_levantine_g }
 }
 
 ir_himjar = {
+    language = aramaic_language
     color = hsv { 0.30 0.70 0.60 }
-    tags = { ir_arabian_gfx }
+    tags = { arabian_gfx levantine_gfx middle_east_gfx }
     culture_groups = { ir_south_levantine_g }
 }
 
 ir_makan = {
+    language = aramaic_language
     color = hsv { 0.30 0.70 0.60 }
-    tags = { ir_arabian_gfx }
+    tags = { arabian_gfx levantine_gfx middle_east_gfx }
     culture_groups = { ir_south_levantine_g }
 }
 
 ir_taif = {
+    language = aramaic_language
     color = hsv { 0.30 0.70 0.60 }
-    tags = { ir_arabian_gfx }
+    tags = { arabian_gfx levantine_gfx middle_east_gfx }
     culture_groups = { ir_south_levantine_g }
 }
 
 ir_thamudi = {
+    language = aramaic_language
     color = hsv { 0.30 0.70 0.60 }
-    tags = { ir_arabian_gfx }
+    tags = { arabian_gfx levantine_gfx middle_east_gfx }
     culture_groups = { ir_south_levantine_g }
 }
 
 ir_qedarite = {
+    language = aramaic_language
     color = hsv { 0.30 0.70 0.60 }
-    tags = { ir_arabian_gfx }
+    tags = { arabian_gfx levantine_gfx middle_east_gfx }
     culture_groups = { ir_south_levantine_g }
 }
 

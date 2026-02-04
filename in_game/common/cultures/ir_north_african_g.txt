@@ -4,20 +4,23 @@
 # =========================================================== #
 
 ir_egyptian = {
+    language = coptic_language
     color = hsv { 0.15 1.00 0.70 }
-    tags = { ir_egyptian_gfx }
+    tags = { egyptian_gfx maghrebi_gfx african_gfx }
     culture_groups = { ir_north_african_g }
 }
 
 ir_upper_egyptian = {
+    language = coptic_language
     color = hsv { 0.15 1.00 0.70 }
-    tags = { ir_egyptian_gfx }
+    tags = { egyptian_gfx maghrebi_gfx african_gfx }
     culture_groups = { ir_north_african_g }
 }
 
 ir_middle_egyptian = {
+    language = coptic_language
     color = hsv { 0.15 1.00 0.70 }
-    tags = { ir_egyptian_gfx }
+    tags = { egyptian_gfx maghrebi_gfx african_gfx }
     culture_groups = { ir_north_african_g }
 }
 

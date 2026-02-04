@@ -4,86 +4,100 @@
 # =========================================================== #
 
 ir_aremorican = {
+    language = brythonic_language
     color = hsv { 0.30 0.70 0.40 }
-    tags = { ir_celtic_gfx }
+    tags = { western_european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_lepontic = {
+    language = brythonic_language
     color = hsv { 0.30 0.70 0.40 }
-    tags = { ir_celtic_gfx }
+    tags = { western_european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_vindelician = {
+    language = brythonic_language
     color = hsv { 0.30 0.70 0.40 }
-    tags = { ir_celtic_gfx }
+    tags = { western_european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_helvetian = {
+    language = brythonic_language
     color = hsv { 0.30 0.70 0.40 }
-    tags = { ir_celtic_gfx }
+    tags = { western_european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_biturigan = {
+    language = brythonic_language
     color = hsv { 0.30 0.70 0.40 }
-    tags = { ir_celtic_gfx }
+    tags = { western_european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_volcae = {
+    language = brythonic_language
     color = hsv { 0.30 0.70 0.40 }
-    tags = { ir_celtic_gfx }
+    tags = { western_european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_salluvian = {
+    language = brythonic_language
     color = hsv { 0.30 0.70 0.40 }
-    tags = { ir_celtic_gfx }
+    tags = { western_european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_haedui = {
+    language = brythonic_language
     color = hsv { 0.30 0.70 0.40 }
-    tags = { ir_celtic_gfx }
+    tags = { western_european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_carnuti = {
+    language = brythonic_language
     color = hsv { 0.30 0.70 0.40 }
-    tags = { ir_celtic_gfx }
+    tags = { western_european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_santonian = {
+    language = brythonic_language
     color = hsv { 0.30 0.70 0.40 }
-    tags = { ir_celtic_gfx }
+    tags = { western_european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_lemovician = {
+    language = brythonic_language
     color = hsv { 0.30 0.70 0.40 }
-    tags = { ir_celtic_gfx }
+    tags = { western_european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_pictonian = {
+    language = brythonic_language
     color = hsv { 0.30 0.70 0.40 }
-    tags = { ir_celtic_gfx }
+    tags = { western_european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_aulercian = {
+    language = brythonic_language
     color = hsv { 0.30 0.70 0.40 }
-    tags = { ir_celtic_gfx }
+    tags = { western_european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_arverni = {
+    language = brythonic_language
     color = hsv { 0.30 0.70 0.40 }
-    tags = { ir_celtic_gfx }
+    tags = { western_european_gfx }
     culture_groups = { ir_gallic_g }
 }
 

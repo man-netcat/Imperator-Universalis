@@ -4,56 +4,65 @@
 # =========================================================== #
 
 ir_vidharban = {
+    language = marathi_language
     color = hsv { 0.05 1.00 0.90 }
-    tags = { ir_north_indian_gfx }
+    tags = { persianate_gfx }
     culture_groups = { ir_aryan_g }
 }
 
 ir_saurashtran = {
+    language = gujarati_language
     color = hsv { 0.05 1.00 0.90 }
-    tags = { ir_north_indian_gfx }
+    tags = { persianate_gfx }
     culture_groups = { ir_aryan_g }
 }
 
 ir_lankan = {
+    language = sinhala_language
     color = hsv { 0.05 1.00 0.90 }
-    tags = { ir_north_indian_gfx }
+    tags = { persianate_gfx }
     culture_groups = { ir_aryan_g }
 }
 
 ir_maharashtran = {
+    language = marathi_language
     color = hsv { 0.05 1.00 0.90 }
-    tags = { ir_north_indian_gfx }
+    tags = { persianate_gfx }
     culture_groups = { ir_aryan_g }
 }
 
 ir_gandhari = {
+    language = sanskrit_language
     color = hsv { 0.05 1.00 0.90 }
-    tags = { ir_north_indian_gfx }
+    tags = { persianate_gfx }
     culture_groups = { ir_aryan_g }
 }
 
 ir_shauraseni = {
+    language = bihari_language
     color = hsv { 0.05 1.00 0.90 }
-    tags = { ir_north_indian_gfx }
+    tags = { persianate_gfx }
     culture_groups = { ir_aryan_g }
 }
 
 ir_avanti = {
+    language = bihari_language
     color = hsv { 0.05 1.00 0.90 }
-    tags = { ir_north_indian_gfx }
+    tags = { persianate_gfx }
     culture_groups = { ir_aryan_g }
 }
 
 ir_sindhi = {
+    language = sindhi_language
     color = hsv { 0.05 1.00 0.90 }
-    tags = { ir_north_indian_gfx }
+    tags = { persianate_gfx }
     culture_groups = { ir_aryan_g }
 }
 
 ir_dardic = {
+    language = sanskrit_language
     color = hsv { 0.05 1.00 0.90 }
-    tags = { ir_north_indian_gfx }
+    tags = { persianate_gfx }
     culture_groups = { ir_aryan_g }
 }
 

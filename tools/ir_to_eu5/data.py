@@ -47,6 +47,57 @@ ir_culture_group_language_map = {
     "ir_proto_european_g": "latin_language",
 }
 
+# Map IR culture groups to EU5 graphical culture tags for culture gfx assignment.
+# These are best-effort mappings to existing EU5 graphical culture identifiers.
+ir_culture_group_graphical_map = {
+    "ir_hellenic_g": ["greek_gfx", "east_mediterranean_gfx", "mediterranean_gfx"],
+    "ir_latin_g": [
+        "north_italian_gfx",
+        "south_italian_gfx",
+        "west_mediterranean_gfx",
+        "mediterranean_gfx",
+    ],
+    "ir_illyrian_group_g": ["south_slavic_gfx", "romanian_gfx", "mediterranean_gfx"],
+    "ir_dacia_group_g": ["romanian_gfx", "eastern_european_gfx"],
+    "ir_baltic_g": ["baltic_gfx", "eastern_european_gfx"],
+    "ir_germanic_g": ["german_gfx", "north_german_gfx", "western_european_gfx"],
+    "ir_britannic_g": ["western_european_gfx"],
+    "ir_gaelic_g": ["western_european_gfx"],
+    "ir_gallic_g": ["western_european_gfx"],
+    "ir_belgae_group_g": ["western_european_gfx"],
+    "ir_celto_pannonian_group_g": ["western_european_gfx", "eastern_european_gfx"],
+    "ir_celt_iberia_g": [
+        "castilian_gfx",
+        "portuguese_gfx",
+        "west_mediterranean_gfx",
+        "mediterranean_gfx",
+    ],
+    "ir_iberia_g": [
+        "castilian_gfx",
+        "portuguese_gfx",
+        "basque_gfx",
+        "west_mediterranean_gfx",
+        "mediterranean_gfx",
+    ],
+    "ir_scythia_g": ["central_asian_gfx", "turkic_gfx", "mongol_gfx"],
+    "ir_persia_g": ["persian_gfx", "persianate_gfx", "middle_east_gfx"],
+    "ir_bactrian_g": ["persianate_gfx", "central_asian_gfx", "persian_gfx"],
+    "ir_aryan_g": ["persianate_gfx"],
+    "ir_pracyan_g": ["persianate_gfx"],
+    "ir_indian_g": ["persianate_gfx"],
+    "ir_tibetan_g": ["tibetan_gfx", "east_asian_gfx"],
+    "ir_anatolian_g": ["turkish_gfx", "east_mediterranean_gfx", "mediterranean_gfx"],
+    "ir_caucasian_g": ["caucasian_gfx", "middle_east_gfx"],
+    "ir_east_levantine_g": ["levantine_gfx", "middle_east_gfx"],
+    "ir_west_levantine_g": ["levantine_gfx", "east_mediterranean_gfx", "maghrebi_gfx"],
+    "ir_south_levantine_g": ["arabian_gfx", "levantine_gfx", "middle_east_gfx"],
+    "ir_north_african_g": ["egyptian_gfx", "maghrebi_gfx", "african_gfx"],
+    "ir_numidian_g": ["amazigh_gfx", "maghrebi_gfx", "african_gfx"],
+    "ir_meroitic_group_g": ["egyptian_gfx", "east_african_gfx", "african_gfx"],
+    "ir_aksumite_group_g": ["east_african_gfx", "african_gfx"],
+    "ir_proto_european_g": ["western_european_gfx"],
+}
+
 # Per-culture overrides when a specific culture should use a more precise language.
 ir_culture_language_overrides = {
     "ir_hebrew": "hebrew_language",
@@ -70,3 +121,10 @@ ir_culture_language_overrides = {
     "ir_atavi": "munda_language",
     "ir_magadhi": "bihari_language",
 }
+
+# Per-culture overrides when a specific culture should use a more precise gfx tag.
+ir_culture_graphical_overrides = {
+    "ir_armenian": ["caucasian_gfx", "middle_east_gfx"],
+    "ir_hebrew": ["israelite_gfx", "levantine_gfx"],
+}
+

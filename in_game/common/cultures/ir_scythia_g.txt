@@ -4,68 +4,79 @@
 # =========================================================== #
 
 ir_scythian = {
+    language = alanic_language
     color = hsv { 0.20 0.50 0.80 }
-    tags = { ir_scythian_gfx }
+    tags = { central_asian_gfx turkic_gfx mongol_gfx }
     culture_groups = { ir_scythia_g }
 }
 
 ir_sarmatian = {
+    language = alanic_language
     color = hsv { 0.20 0.50 0.80 }
-    tags = { ir_scythian_gfx }
+    tags = { central_asian_gfx turkic_gfx mongol_gfx }
     culture_groups = { ir_scythia_g }
 }
 
 ir_kharesmian = {
+    language = alanic_language
     color = hsv { 0.20 0.50 0.80 }
-    tags = { ir_scythian_gfx }
+    tags = { central_asian_gfx turkic_gfx mongol_gfx }
     culture_groups = { ir_scythia_g }
 }
 
 ir_derbiccan = {
+    language = alanic_language
     color = hsv { 0.20 0.50 0.80 }
-    tags = { ir_scythian_gfx }
+    tags = { central_asian_gfx turkic_gfx mongol_gfx }
     culture_groups = { ir_scythia_g }
 }
 
 ir_sindi = {
+    language = alanic_language
     color = hsv { 0.20 0.50 0.80 }
-    tags = { ir_scythian_gfx }
+    tags = { central_asian_gfx turkic_gfx mongol_gfx }
     culture_groups = { ir_scythia_g }
 }
 
 ir_siraci = {
+    language = alanic_language
     color = hsv { 0.20 0.50 0.80 }
-    tags = { ir_scythian_gfx }
+    tags = { central_asian_gfx turkic_gfx mongol_gfx }
     culture_groups = { ir_scythia_g }
 }
 
 ir_maeotian = {
+    language = alanic_language
     color = hsv { 0.20 0.50 0.80 }
-    tags = { ir_scythian_gfx }
+    tags = { central_asian_gfx turkic_gfx mongol_gfx }
     culture_groups = { ir_scythia_g }
 }
 
 ir_sakan = {
+    language = alanic_language
     color = hsv { 0.20 0.50 0.80 }
-    tags = { ir_scythian_gfx }
+    tags = { central_asian_gfx turkic_gfx mongol_gfx }
     culture_groups = { ir_scythia_g }
 }
 
 ir_thyssagetaen = {
+    language = alanic_language
     color = hsv { 0.20 0.50 0.80 }
-    tags = { ir_scythian_gfx }
+    tags = { central_asian_gfx turkic_gfx mongol_gfx }
     culture_groups = { ir_scythia_g }
 }
 
 ir_legian = {
+    language = alanic_language
     color = hsv { 0.20 0.50 0.80 }
-    tags = { ir_scythian_gfx }
+    tags = { central_asian_gfx turkic_gfx mongol_gfx }
     culture_groups = { ir_scythia_g }
 }
 
 ir_agathyrsian = {
+    language = alanic_language
     color = hsv { 0.20 0.50 0.80 }
-    tags = { ir_scythian_gfx }
+    tags = { central_asian_gfx turkic_gfx mongol_gfx }
     culture_groups = { ir_scythia_g }
 }
 
