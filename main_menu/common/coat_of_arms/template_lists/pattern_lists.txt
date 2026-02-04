@@ -1,0 +1,97 @@
+pattern_texture_lists = {
+	
+	simple = {
+		20 = "pattern_solid.dds"
+	}
+	
+	divisions = {
+		1 = "pattern_horizontal_split_01.dds"
+		1 = "pattern_horizontal_split_02.dds"
+		
+		4 = "pattern_checkers_2x2.dds"
+		4 = "pattern_checkers_2x2_reversed.dds"
+		
+		1 = "pattern_checkers_diagonal_01.dds"
+		1 = "pattern_checkers_diagonal_02.dds"
+		
+		1 = "pattern_vertical_split_01.dds"
+		1 = "pattern_vertical_split_02.dds"
+		
+		
+		1 = "pattern_diagonal_split_01.dds"
+		1 = "pattern_diagonal_split_02.dds"
+		1 = "pattern_diagonal_split_03.dds"
+		1 = "pattern_diagonal_split_04.dds"
+	}
+	
+	central_emblem = {
+		1 = "pattern_diagonal_line_fat_01.dds"
+		1 = "pattern_diagonal_line_fat_02.dds"
+		1 = "pattern_horizontal_bar_01.dds"
+		1 = "pattern_vertical_bar_01.dds"
+	}
+	
+	doublet_horizontal = {
+		1 = "pattern_solid.dds"
+		5 = "pattern_vertical_split_01.dds"
+	}
+	
+	doublet_vertical = {
+		1 = "pattern_solid.dds"
+		5 = "pattern_horizontal_split_01.dds"
+	}
+	
+	tricolors = {
+		1 = "pattern_tricolor_horizontal_01.dds"
+		1 = "pattern_tricolor_vertical_01.dds"
+	}
+	
+	masks = {
+		3 = "pattern_canton_01.dds"
+		3 = "pattern_canton_02.dds"
+		
+		40 = "pattern_checkers_2x2.dds"
+		40 = "pattern_checkers_2x2_reversed.dds"
+		
+		10 = "pattern_checkers_diagonal_01.dds"
+		10 = "pattern_checkers_diagonal_02.dds"
+		
+		#1 = "pattern_circle_01.dds"
+		#1 = "pattern_circle_02.dds"
+		
+		10 = "pattern_diagonal_line_fat_01.dds"
+		10 = "pattern_diagonal_line_fat_02.dds"
+		10 = "pattern_diagonal_line_fat_03.dds"
+		10 = "pattern_diagonal_line_fat_04.dds"
+		
+		10 = "pattern_diagonal_split_01.dds"
+		10 = "pattern_diagonal_split_02.dds"
+		10 = "pattern_diagonal_split_03.dds"
+		10 = "pattern_diagonal_split_04.dds"
+		
+		10 = "pattern_horizontal_split_01.dds"
+		10 = "pattern_horizontal_split_02.dds"
+		
+		10 = "pattern_horizontal_bar_01.dds"
+		10 = "pattern_horizontal_bar_02.dds"
+		10 = "pattern_horizontal_bar_03.dds"
+		10 = "pattern_horizontal_bar_04.dds"
+		
+		#1 = "pattern_horizontal_stripes_01.dds"
+		#1 = "pattern_horizontal_stripes_02.dds"
+		
+		#1 = "pattern_vertical_stripes_01.dds"
+		#1 = "pattern_vertical_stripes_02.dds"
+		
+		10 = "pattern_solid.dds"
+		
+		10 = "pattern_vertical_bar_01.dds"
+		10 = "pattern_vertical_bar_02.dds"
+		10 = "pattern_vertical_bar_03.dds"
+		10 = "pattern_vertical_bar_04.dds"
+		
+		
+		10 = "pattern_vertical_split_01.dds"
+		10 = "pattern_vertical_split_02.dds"
+	}
+}

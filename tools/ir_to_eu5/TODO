@@ -1,7 +1,7 @@
 - Add Formables
 + Fix flags
 + Fix flag emblem aspect ratios
-- Add COA
++ Add COA
 + Fix families from data in IR/game/setup/main/00_default.txt
 - Implement diplomatic subject types: feudatory, satrapy, client_state, vassal_tribe (currently copy pasted from vassals)
 + Implement different governent types

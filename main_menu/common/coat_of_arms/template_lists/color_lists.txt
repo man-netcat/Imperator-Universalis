@@ -1,0 +1,77 @@
+color_lists = {
+	triggered_colors_list1 = {
+		1 = "roman_red"
+		1 = "maurya_brown"
+		1 = "ck2_green"
+		1 = "ck2_blue"
+		1 = "navy_blue"
+		1 = "purple"
+		1 = "pitch_black"
+	}
+	
+	triggered_colors_list2 = {
+		1 = "ck2_white"
+		1 = "bone_white"
+		1 = "roman_gold"
+	}
+	
+	triggered_colors_list3 = {
+		1 = "roman_red"
+		1 = "maurya_brown"
+		1 = "ck2_green"
+		1 = "ck2_blue"
+		1 = "navy_blue"
+		1 = "purple"
+		1 = "pitch_black"
+		1 = "bone_white"
+		1 = "roman_gold"
+	}
+	
+	metal_colors_list = {
+		2 = "ck2_white"
+		3 = "bone_white"
+		2 = "roman_gold"
+		#1 = "samnite_beige"
+		#2 = "light_gold"
+		##1 = "sun_yellow"
+		##1 = "bright_yellow"
+		#1 = "ck2_yellow"
+		##1 = "mint_green"
+		##1 = "frost_blue"
+		#3 = "offwhite"
+		#1 = "epirus_light_yellow"
+		#1 = "pink_skin"
+	}
+	standard_colors_list = {
+		10 = "navy_blue"
+		10 = "ck2_blue"
+		#10 = "ck2_red"
+		10 = "roman_red"
+		10 = "ck2_green"
+		10 = "green"
+		10 = "ck2_black"
+		10 = "dark_purple"
+		10 = "macedonian_blue"
+		10 = "samnite_green"
+		10 = "samnite_red"
+		10 = "athens_blue"
+		10 = "desaturated_green"
+		10 = "mid_grey"
+		10 = "dark_burgundy"
+		10 = "yellowish_grey"
+		10 = "red_nougat"
+		10 = "dark_chocolate"
+		10 = "rust_brown"
+		10 = "etruscan_blue"
+		10 = "phrygia_red"
+		10 = "phrygia_red"
+		10 = "pitch_black"
+		10 = "ocean_blue"
+		10 = "spartan_brown"
+		10 = "spartan_rust"
+		10 = "spartan_ocra"
+		10 = "dark_green"
+		10 = "maurya_brown"
+		10 = "dark_rust"
+	}
+}

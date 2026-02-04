@@ -1,1 +1,242 @@
-﻿
+﻿has_barbarian_flag_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = {
+			OR = {
+				has_culture_group = culture_group:ir_gallic_g
+				has_culture_group = culture_group:ir_belgae_group_g
+				has_culture_group = culture_group:ir_celto_pannonian_group_g
+				has_culture_group = culture_group:ir_britannic_g
+				has_culture_group = culture_group:ir_gaelic_g
+				has_culture_group = culture_group:ir_celt_iberia_g
+				has_culture_group = culture_group:ir_iberia_g
+				has_culture_group = culture_group:ir_germanic_g
+				has_culture_group = culture_group:ir_scythia_g
+				has_culture_group = culture_group:ir_baltic_g
+				has_culture_group = culture_group:ir_dacia_group_g
+				has_culture_group = culture_group:ir_illyrian_group_g
+				has_culture_group = culture_group:ir_proto_european_g
+			}
+		}
+	}
+}
+
+has_celtic_flag_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = {
+			OR = {
+				has_culture_group = culture_group:ir_gallic_g
+				has_culture_group = culture_group:ir_belgae_group_g
+				has_culture_group = culture_group:ir_celto_pannonian_group_g
+				has_culture_group = culture_group:ir_britannic_g
+				has_culture_group = culture_group:ir_gaelic_g
+				has_culture_group = culture_group:ir_celt_iberia_g
+				has_culture_group = culture_group:ir_iberia_g
+			}
+		}
+	}
+}
+
+coa_def_ir_gallic_culture_group_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:ir_gallic_g }
+	}
+}
+
+coa_def_ir_celto_pannonian_culture_group_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:ir_celto_pannonian_group_g }
+	}
+}
+
+coa_def_ir_belgae_culture_group_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:ir_belgae_group_g }
+	}
+}
+
+coa_def_ir_britannic_culture_group_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:ir_britannic_g }
+	}
+}
+
+coa_def_ir_gaelic_culture_group_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:ir_gaelic_g }
+	}
+}
+
+coa_def_ir_celt_iberia_culture_group_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:ir_celt_iberia_g }
+	}
+}
+
+coa_def_ir_iberia_culture_group_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:ir_iberia_g }
+	}
+}
+
+coa_def_ir_germanic_culture_group_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:ir_germanic_g }
+	}
+}
+
+coa_def_ir_dacia_culture_group_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:ir_dacia_group_g }
+	}
+}
+
+coa_def_ir_bactrian_culture_group_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:ir_bactrian_g }
+	}
+}
+
+coa_def_ir_latin_culture_group_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:ir_latin_g }
+	}
+}
+
+coa_def_ir_hellenic_culture_group_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:ir_hellenic_g }
+	}
+}
+
+coa_def_ir_illyrian_culture_group_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:ir_illyrian_group_g }
+	}
+}
+
+coa_def_ir_south_levantine_culture_group_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:ir_south_levantine_g }
+	}
+}
+
+coa_def_ir_aksumite_culture_group_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:ir_aksumite_group_g }
+	}
+}
+
+coa_def_ir_west_levantine_culture_group_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:ir_west_levantine_g }
+	}
+}
+
+coa_def_ir_persia_culture_group_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:ir_persia_g }
+	}
+}
+
+coa_def_ir_anatolian_culture_group_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:ir_anatolian_g }
+	}
+}
+
+coa_def_ir_caucasian_culture_group_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:ir_caucasian_g }
+	}
+}
+
+coa_def_ir_scythia_culture_group_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:ir_scythia_g }
+	}
+}
+
+coa_def_ir_aryan_culture_group_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:ir_aryan_g }
+	}
+}
+
+coa_def_ir_pracyan_culture_group_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:ir_pracyan_g }
+	}
+}
+
+coa_def_ir_east_levantine_culture_group_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:ir_east_levantine_g }
+	}
+}
+
+coa_def_ir_indian_culture_group_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:ir_indian_g }
+	}
+}
+
+coa_def_ir_north_african_culture_group_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:ir_north_african_g }
+	}
+}
+
+coa_def_ir_meroitic_culture_group_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:ir_meroitic_group_g }
+	}
+}
+
+coa_def_ir_numidian_culture_group_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = { has_culture_group = culture_group:ir_numidian_g }
+	}
+}
+
+coa_def_ir_hebrew_culture_trigger = {
+	scope:actor ?= {
+		exists = culture
+		culture = culture:ir_hebrew
+	}
+}
+
+coa_def_ir_judaism_religion_trigger = {
+	scope:actor ?= {
+		exists = religion
+		religion = religion:ir_judaism
+	}
+}

@@ -1,0 +1,65 @@
+template = {
+	dynasty_simple_emblem = {
+		pattern = list "simple"
+		color1 = list "triggered_colors_list1"
+		color2 = list "triggered_colors_list2"
+		color3 = list "triggered_colors_list3"
+		
+		colored_emblem = {
+			texture = list "symbols"
+			color1 = list "triggered_colors_list2"
+			color2 = list "triggered_colors_list1"
+			instance = { scale = { 0.85 0.85 } }
+		}
+	}
+	
+	dynasty_simple_emblem_divisions = {
+		pattern = list "divisions"
+		color1 = list "triggered_colors_list1"
+		color2 = list "triggered_colors_list3"
+		color3 = list "triggered_colors_list2"
+		
+		colored_emblem = {
+			texture = list "symbols"
+			color1 = list "triggered_colors_list2"
+			color2 = list "triggered_colors_list3"
+			instance = { scale = { 0.85 0.85 } }
+		}
+	}
+	
+	dynasty_bordered_emblem = {
+		pattern = "pattern_solid.dds"
+		color1 = list "triggered_colors_list1"
+		color2 = list "triggered_colors_list2"
+		color3 = list "triggered_colors_list3"
+		
+		colored_emblem = {
+			texture = list "symbols"
+			color1 = list "triggered_colors_list2"
+			color2 = list "triggered_colors_list3"
+			instance = { scale = { 0.7 0.7 } }
+		}
+		colored_emblem = {
+			texture = list "borders"
+			color1 = list "triggered_colors_list2"
+			color2 = list "triggered_colors_list3"
+			instance = { rotation = 90 scale = { -1 1 } }
+			instance = { rotation = 270 scale = { -1 1 } }
+			instance = { rotation = 0 }
+			instance = { rotation = 180 }
+		}
+	}
+	
+	dynasty_central_emblem = {
+		pattern = list "central_emblem"
+		color1 = list "triggered_colors_list1"
+		color2 = list "triggered_colors_list2"
+		color3 = list "triggered_colors_list3"
+		colored_emblem = {
+			texture = list "symbols"
+			color1 = list "triggered_colors_list3"
+			color2 = list "triggered_colors_list2"
+			instance = { scale = { 0.45 0.45 } }
+		}
+	}
+}
