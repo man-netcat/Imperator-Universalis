@@ -613,12 +613,34 @@ def write_10_countries(ten_countries_data, country_data, eu5_map_data, country_r
 
         merged["government"] = merged_government
 
+        # --- include societal values template based on IR government type ---
+        societal_template_keys = {
+            "aristocratic_monarchy",
+            "despotic_monarchy",
+            "stratocratic_monarchy",
+            "theocratic_monarchy",
+            "aristocratic_republic",
+            "democratic_republic",
+            "oligarchic_republic",
+            "plutocratic_republic",
+            "tribal_chiefdom",
+            "tribal_federation",
+            "tribal_kingdom",
+        }
+
         # --- includes (preserve all, normalize) ---
         raw_include = base.get("include", [])
         include_items = raw_include if isinstance(raw_include, list) else [raw_include]
 
         if "expl_imperator_rome" not in include_items:
             include_items = ["expl_imperator_rome", *include_items]
+
+        if ir_gov_key in societal_template_keys:
+            societal_template = f"ir_{ir_gov_key}"
+            if societal_template not in include_items:
+                include_items = ["expl_imperator_rome", societal_template] + [
+                    x for x in include_items if x != "expl_imperator_rome"
+                ]
 
         merged["include"] = include_items
 

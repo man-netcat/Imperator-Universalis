@@ -1,0 +1,16 @@
+government = {
+	# Societal Values
+	centralization_vs_decentralization = 80
+	traditionalist_vs_innovative = -50
+	spiritualist_vs_humanist = -40
+	aristocracy_vs_plutocracy = -40
+	serfdom_vs_free_subjects = 20
+	mercantilism_vs_free_trade = 40
+	belligerent_vs_conciliatory = 30
+	quality_vs_quantity = -20
+	offensive_vs_defensive = 10
+	land_vs_naval = -50
+	capital_economy_vs_traditional_economy = 90
+	individualism_vs_communalism = 10
+	outward_vs_inward = 10
+}

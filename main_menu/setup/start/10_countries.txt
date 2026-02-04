@@ -12,6 +12,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -39,6 +40,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_aristocratic_republic"
             country_rank = rank_duchy
             capital = rome
         }
@@ -60,6 +62,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_aristocratic_republic"
             country_rank = rank_county
             capital = bovino
         }
@@ -74,6 +77,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -91,6 +95,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = manfredonia
         }
@@ -108,6 +113,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = salerno
         }
@@ -127,6 +133,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = atri
         }
@@ -158,6 +165,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = grosseto
         }
@@ -177,6 +185,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = lucca
         }
@@ -196,6 +205,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = aquila
         }
@@ -219,6 +229,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_aristocratic_republic"
             country_rank = rank_county
             capital = spoleto
         }
@@ -236,6 +247,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = bari
         }
@@ -253,6 +265,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = brindisi
         }
@@ -274,6 +287,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = acerenza
         }
@@ -293,6 +307,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = cosenza
         }
@@ -310,6 +325,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = ancona
         }
@@ -329,6 +345,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = pesaro
         }
@@ -346,6 +363,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = monteleone
         }
@@ -360,6 +378,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -374,6 +393,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -397,6 +417,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = genoa
         }
@@ -411,6 +432,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -425,6 +447,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -439,6 +462,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -453,6 +477,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -478,6 +503,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = bologna
         }
@@ -503,6 +529,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = ravenna
         }
@@ -530,6 +557,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = venice
         }
@@ -549,6 +577,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = rovinj
         }
@@ -563,6 +592,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -577,6 +607,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -591,6 +622,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -608,6 +640,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = martinafr
         }
@@ -625,6 +658,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = taranto
         }
@@ -642,6 +676,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = cassano
         }
@@ -659,6 +694,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = matera
         }
@@ -676,6 +712,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = cotrone
         }
@@ -693,6 +730,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = gerace
         }
@@ -710,6 +748,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = reggiocal
         }
@@ -729,6 +768,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = chieti
         }
@@ -746,6 +786,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = sulmona
         }
@@ -765,6 +806,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = piazza
         }
@@ -782,6 +824,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = bizerte
         }
@@ -799,6 +842,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = mahdia
         }
@@ -816,6 +860,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = el_jem
         }
@@ -833,6 +878,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = monastir
         }
@@ -850,6 +896,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = chebba
         }
@@ -869,6 +916,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = gabes
         }
@@ -890,6 +938,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = tripoli
         }
@@ -907,6 +956,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = algiers
         }
@@ -924,6 +974,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = kelibia
         }
@@ -985,6 +1036,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_aristocratic_republic"
             country_rank = rank_kingdom
             capital = tunis
         }
@@ -999,6 +1051,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1030,6 +1083,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = nedroma
         }
@@ -1055,6 +1109,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = constantine_ALG
         }
@@ -1078,6 +1133,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = thala
         }
@@ -1095,6 +1151,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = girgenti
         }
@@ -1114,6 +1171,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_aristocratic_monarchy"
             country_rank = rank_kingdom
             capital = syracuse
         }
@@ -1128,6 +1186,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_theocratic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1173,6 +1232,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_aristocratic_monarchy"
             country_rank = rank_kingdom
             capital = alexandria
         }
@@ -1194,6 +1254,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_despotic_monarchy"
             country_rank = rank_county
             capital = al_bayda
         }
@@ -1208,6 +1269,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_plutocratic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1222,6 +1284,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_plutocratic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1236,6 +1299,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1250,6 +1314,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1264,6 +1329,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1278,6 +1344,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1292,6 +1359,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1306,6 +1374,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1320,6 +1389,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1334,6 +1404,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1348,6 +1419,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1362,6 +1434,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1376,6 +1449,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1390,6 +1464,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1404,6 +1479,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1418,6 +1494,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1432,6 +1509,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1446,6 +1524,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1460,6 +1539,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1474,6 +1554,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1488,6 +1569,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1502,6 +1584,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1519,6 +1602,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_federation"
             country_rank = rank_county
             capital = palma
         }
@@ -1533,6 +1617,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1547,6 +1632,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1561,6 +1647,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1575,6 +1662,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1589,6 +1677,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1603,6 +1692,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1617,6 +1707,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1631,6 +1722,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1645,6 +1737,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1659,6 +1752,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1673,6 +1767,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1687,6 +1782,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1701,6 +1797,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1715,6 +1812,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1729,6 +1827,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1743,6 +1842,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1757,6 +1857,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_federation"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1771,6 +1872,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1785,6 +1887,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1799,6 +1902,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1813,6 +1917,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1827,6 +1932,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1841,6 +1947,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1855,6 +1962,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1869,6 +1977,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1883,6 +1992,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1897,6 +2007,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1911,6 +2022,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1925,6 +2037,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1939,6 +2052,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1953,6 +2067,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1967,6 +2082,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1981,6 +2097,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -1995,6 +2112,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2009,6 +2127,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2023,6 +2142,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2037,6 +2157,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2051,6 +2172,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2065,6 +2187,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2079,6 +2202,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2093,6 +2217,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2107,6 +2232,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2121,6 +2247,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2135,6 +2262,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2149,6 +2277,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2163,6 +2292,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2177,6 +2307,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2191,6 +2322,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2205,6 +2337,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2219,6 +2352,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2233,6 +2367,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_plutocratic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2247,6 +2382,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2261,6 +2397,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_plutocratic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2275,6 +2412,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_plutocratic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2289,6 +2427,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2303,6 +2442,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2317,6 +2457,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2331,6 +2472,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2345,6 +2487,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2359,6 +2502,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2373,6 +2517,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2387,6 +2532,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2401,6 +2547,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2415,6 +2562,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2429,6 +2577,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2443,6 +2592,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2457,6 +2607,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2471,6 +2622,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2485,6 +2637,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2499,6 +2652,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2513,6 +2667,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2527,6 +2682,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_federation"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2541,6 +2697,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2555,6 +2712,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2569,6 +2727,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2583,6 +2742,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2597,6 +2757,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2611,6 +2772,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2625,6 +2787,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2639,6 +2802,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2653,6 +2817,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2667,6 +2832,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2681,6 +2847,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2695,6 +2862,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2709,6 +2877,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2723,6 +2892,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2737,6 +2907,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2751,6 +2922,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2765,6 +2937,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2779,6 +2952,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2793,6 +2967,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2807,6 +2982,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2821,6 +2997,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2835,6 +3012,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2849,6 +3027,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2863,6 +3042,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2877,6 +3057,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2891,6 +3072,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2905,6 +3087,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2919,6 +3102,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2933,6 +3117,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2947,6 +3132,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2961,6 +3147,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2975,6 +3162,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -2989,6 +3177,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3003,6 +3192,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3017,6 +3207,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3031,6 +3222,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3045,6 +3237,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3059,6 +3252,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3073,6 +3267,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3087,6 +3282,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3101,6 +3297,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3115,6 +3312,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3129,6 +3327,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3143,6 +3342,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3157,6 +3357,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3171,6 +3372,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3185,6 +3387,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3199,6 +3402,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3213,6 +3417,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3227,6 +3432,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3241,6 +3447,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3255,6 +3462,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3269,6 +3477,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3283,6 +3492,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3297,6 +3507,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3311,6 +3522,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3325,6 +3537,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3339,6 +3552,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3353,6 +3567,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3367,6 +3582,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3381,6 +3597,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3395,6 +3612,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3409,6 +3627,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3423,6 +3642,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3437,6 +3657,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3451,6 +3672,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3465,6 +3687,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3479,6 +3702,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3493,6 +3717,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3507,6 +3732,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3521,6 +3747,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3535,6 +3762,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3549,6 +3777,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3563,6 +3792,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3577,6 +3807,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3591,6 +3822,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3605,6 +3837,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3619,6 +3852,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3633,6 +3867,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3647,6 +3882,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3661,6 +3897,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3675,6 +3912,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3689,6 +3927,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3703,6 +3942,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3717,6 +3957,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3731,6 +3972,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3745,6 +3987,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3759,6 +4002,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3773,6 +4017,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3787,6 +4032,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3801,6 +4047,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3815,6 +4062,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3829,6 +4077,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3843,6 +4092,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3857,6 +4107,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3871,6 +4122,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3885,6 +4137,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3899,6 +4152,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3913,6 +4167,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3927,6 +4182,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3941,6 +4197,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3955,6 +4212,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3969,6 +4227,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3983,6 +4242,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -3997,6 +4257,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4014,6 +4275,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = senj
         }
@@ -4035,6 +4297,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = zadar
         }
@@ -4056,6 +4319,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = knin
         }
@@ -4070,6 +4334,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4087,6 +4352,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = onogost
         }
@@ -4101,6 +4367,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4115,6 +4382,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4132,6 +4400,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = bar_cg
         }
@@ -4149,6 +4418,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = shkoder
         }
@@ -4163,6 +4433,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4177,6 +4448,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4191,6 +4463,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4205,6 +4478,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4219,6 +4493,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4233,6 +4508,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4247,6 +4523,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4261,6 +4538,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4275,6 +4553,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4289,6 +4568,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4308,6 +4588,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_despotic_monarchy"
             country_rank = rank_county
             capital = REPLACE_ME
         }
@@ -4322,6 +4603,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4336,6 +4618,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4350,6 +4633,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4364,6 +4648,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4378,6 +4663,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4392,6 +4678,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4406,6 +4693,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4420,6 +4708,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4434,6 +4723,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4448,6 +4738,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4462,6 +4753,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4476,6 +4768,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4490,6 +4783,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4504,6 +4798,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4518,6 +4813,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4532,6 +4828,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4546,6 +4843,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4563,6 +4861,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = constantinople
         }
@@ -4577,6 +4876,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_plutocratic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4591,6 +4891,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_plutocratic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4605,6 +4906,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_plutocratic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4619,6 +4921,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_plutocratic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4633,6 +4936,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_plutocratic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4647,6 +4951,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_plutocratic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4661,6 +4966,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_plutocratic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4675,6 +4981,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_plutocratic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4700,6 +5007,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_aristocratic_monarchy"
             country_rank = rank_kingdom
             capital = gallipoli
         }
@@ -4714,6 +5022,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4728,6 +5037,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4742,6 +5052,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -4779,6 +5090,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_aristocratic_monarchy"
             country_rank = rank_kingdom
             capital = thessaloniki
         }
@@ -4800,6 +5112,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_democratic_republic"
             country_rank = rank_county
             capital = athens
         }
@@ -4817,6 +5130,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_despotic_monarchy"
             country_rank = rank_county
             capital = thebes
         }
@@ -4834,6 +5148,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_despotic_monarchy"
             country_rank = rank_county
             capital = corfu
         }
@@ -4853,6 +5168,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = angelokastron
         }
@@ -4872,6 +5188,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = vonitsa
         }
@@ -4891,6 +5208,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_aristocratic_monarchy"
             country_rank = rank_county
             capital = ioannina
         }
@@ -4908,6 +5226,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = kalamata
         }
@@ -4925,6 +5244,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = eretreia
         }
@@ -4942,6 +5262,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = oreos
         }
@@ -4961,6 +5282,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = livadeia
         }
@@ -4978,6 +5300,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = patras
         }
@@ -4995,6 +5318,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = chalandritsa
         }
@@ -5012,6 +5336,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = vostitsa
         }
@@ -5029,6 +5354,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = xylokastro
         }
@@ -5046,6 +5372,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_democratic_republic"
             country_rank = rank_county
             capital = mykonos
         }
@@ -5060,6 +5387,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_oligarchic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -5077,6 +5405,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = kos
         }
@@ -5094,6 +5423,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_despotic_monarchy"
             country_rank = rank_county
             capital = veligosti
         }
@@ -5108,6 +5438,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_oligarchic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -5125,6 +5456,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = tripolitsa
         }
@@ -5142,6 +5474,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = argos
         }
@@ -5159,6 +5492,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = kalavryta
         }
@@ -5176,6 +5510,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = andravida
         }
@@ -5193,6 +5528,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = damala
         }
@@ -5210,6 +5546,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = ermioni
         }
@@ -5224,6 +5561,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_oligarchic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -5241,6 +5579,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = nafplio
         }
@@ -5258,6 +5597,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = karytaina
         }
@@ -5275,6 +5615,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = andritsaina
         }
@@ -5292,6 +5633,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = megara
         }
@@ -5309,6 +5651,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_stratocratic_monarchy"
             country_rank = rank_kingdom
             capital = mystras
         }
@@ -5323,6 +5666,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -5340,6 +5684,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_despotic_monarchy"
             country_rank = rank_county
             capital = candia
         }
@@ -5357,6 +5702,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_aristocratic_republic"
             country_rank = rank_county
             capital = chania
         }
@@ -5371,6 +5717,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_oligarchic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -5385,6 +5732,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_plutocratic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -5402,6 +5750,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_democratic_republic"
             country_rank = rank_county
             capital = gergeri
         }
@@ -5419,6 +5768,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_despotic_monarchy"
             country_rank = rank_county
             capital = elounda
         }
@@ -5436,6 +5786,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_democratic_republic"
             country_rank = rank_county
             capital = hagios_pavlos
         }
@@ -5453,6 +5804,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = siteia
         }
@@ -5470,6 +5822,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_democratic_republic"
             country_rank = rank_county
             capital = milas
         }
@@ -5489,6 +5842,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = rodos
         }
@@ -5506,6 +5860,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = izmit
         }
@@ -5527,6 +5882,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_aristocratic_monarchy"
             country_rank = rank_county
             capital = akyazi
         }
@@ -5544,6 +5900,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_aristocratic_monarchy"
             country_rank = rank_county
             capital = akcasehir
         }
@@ -5569,6 +5926,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_democratic_republic"
             country_rank = rank_county
             capital = REPLACE_ME
         }
@@ -5590,6 +5948,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_democratic_republic"
             country_rank = rank_county
             capital = balat
         }
@@ -5607,6 +5966,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_despotic_monarchy"
             country_rank = rank_county
             capital = sinop
         }
@@ -5624,6 +5984,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = uskudar
         }
@@ -5638,6 +5999,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_plutocratic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -5655,6 +6017,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_aristocratic_monarchy"
             country_rank = rank_county
             capital = iznik
         }
@@ -5672,6 +6035,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = bandirma
         }
@@ -5689,6 +6053,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = bayramlu
         }
@@ -5706,6 +6071,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = giresun
         }
@@ -5723,6 +6089,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = bodrum
         }
@@ -5740,6 +6107,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = samsun
         }
@@ -5837,6 +6205,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_aristocratic_monarchy"
             country_rank = rank_kingdom
             capital = antioch
         }
@@ -5872,6 +6241,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = kayseri
         }
@@ -5897,6 +6267,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = amasya
         }
@@ -5928,6 +6299,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_despotic_monarchy"
             country_rank = rank_county
             capital = REPLACE_ME
         }
@@ -5953,6 +6325,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = saham
         }
@@ -5967,6 +6340,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_democratic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -5981,6 +6355,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_plutocratic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -5995,6 +6370,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6009,6 +6385,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6023,6 +6400,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6037,6 +6415,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6051,6 +6430,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6065,6 +6445,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6088,6 +6469,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_despotic_monarchy"
             country_rank = rank_county
             capital = al_quwayrah
         }
@@ -6102,6 +6484,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6121,6 +6504,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_theocratic_monarchy"
             country_rank = rank_county
             capital = jerusalem
         }
@@ -6138,6 +6522,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_theocratic_monarchy"
             country_rank = rank_county
             capital = nablus
         }
@@ -6155,6 +6540,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_despotic_monarchy"
             country_rank = rank_county
             capital = sidon
         }
@@ -6172,6 +6558,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_despotic_monarchy"
             country_rank = rank_county
             capital = tartus
         }
@@ -6189,6 +6576,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_despotic_monarchy"
             country_rank = rank_county
             capital = beirut
         }
@@ -6208,6 +6596,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_despotic_monarchy"
             country_rank = rank_county
             capital = samsat
         }
@@ -6229,6 +6618,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_theocratic_monarchy"
             country_rank = rank_county
             capital = manbij
         }
@@ -6352,6 +6742,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_aristocratic_monarchy"
             country_rank = rank_empire
             capital = baghdad
         }
@@ -6366,6 +6757,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6380,6 +6772,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6394,6 +6787,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6413,6 +6807,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_despotic_monarchy"
             country_rank = rank_county
             capital = akre
         }
@@ -6460,6 +6855,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = surmali
         }
@@ -6495,6 +6891,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = malekan
         }
@@ -6526,6 +6923,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = tbilisi
         }
@@ -6547,6 +6945,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_despotic_monarchy"
             country_rank = rank_county
             capital = kutaisi
         }
@@ -6574,6 +6973,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = qabala
         }
@@ -6588,6 +6988,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6602,6 +7003,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6619,6 +7021,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = trebizond
         }
@@ -6633,6 +7036,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6647,6 +7051,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6661,6 +7066,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_aristocratic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6675,6 +7081,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6689,6 +7096,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_aristocratic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6703,6 +7111,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_aristocratic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6717,6 +7126,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6731,6 +7141,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6745,6 +7156,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6759,6 +7171,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6773,6 +7186,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_oligarchic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6787,6 +7201,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_oligarchic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6801,6 +7216,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6815,6 +7231,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6829,6 +7246,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6843,6 +7261,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6857,6 +7276,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6871,6 +7291,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6885,6 +7306,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6899,6 +7321,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6913,6 +7336,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6927,6 +7351,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6941,6 +7366,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6955,6 +7381,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6969,6 +7396,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6983,6 +7411,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -6997,6 +7426,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7011,6 +7441,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7025,6 +7456,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7039,6 +7471,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7053,6 +7486,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7067,6 +7501,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7081,6 +7516,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7095,6 +7531,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7109,6 +7546,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7123,6 +7561,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7137,6 +7576,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7151,6 +7591,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7165,6 +7606,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7179,6 +7621,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7193,6 +7636,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7207,6 +7651,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7221,6 +7666,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_aristocratic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7235,6 +7681,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7249,6 +7696,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7263,6 +7711,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7277,6 +7726,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7291,6 +7741,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7305,6 +7756,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7319,6 +7771,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7333,6 +7786,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7347,6 +7801,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_democratic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7361,6 +7816,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7375,6 +7831,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7394,6 +7851,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = anacopia
         }
@@ -7413,6 +7871,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = poti_caucasus
         }
@@ -7427,6 +7886,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7441,6 +7901,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7455,6 +7916,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_democratic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7469,6 +7931,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_democratic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7483,6 +7946,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7497,6 +7961,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7511,6 +7976,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7525,6 +7991,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7539,6 +8006,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_federation"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7553,6 +8021,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7567,6 +8036,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7581,6 +8051,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7595,6 +8066,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7609,6 +8081,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7623,6 +8096,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_theocratic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7637,6 +8111,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7651,6 +8126,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_plutocratic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7665,6 +8141,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_plutocratic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7679,6 +8156,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_plutocratic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7693,6 +8171,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_despotic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7707,6 +8186,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7721,6 +8201,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7735,6 +8216,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7749,6 +8231,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7763,6 +8246,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7777,6 +8261,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7791,6 +8276,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7805,6 +8291,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7819,6 +8306,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7833,6 +8321,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7847,6 +8336,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7861,6 +8351,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7875,6 +8366,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7889,6 +8381,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7903,6 +8396,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7917,6 +8411,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7931,6 +8426,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7945,6 +8441,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7959,6 +8456,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7973,6 +8471,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -7987,6 +8486,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8001,6 +8501,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8015,6 +8516,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8029,6 +8531,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8043,6 +8546,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8057,6 +8561,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8071,6 +8576,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8085,6 +8591,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8099,6 +8606,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8113,6 +8621,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8127,6 +8636,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8141,6 +8651,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8155,6 +8666,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8169,6 +8681,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8183,6 +8696,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8200,6 +8714,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_federation"
             country_rank = rank_county
             capital = ozieri
         }
@@ -8219,6 +8734,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = ales
         }
@@ -8233,6 +8749,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8247,6 +8764,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8261,6 +8779,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8275,6 +8794,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8289,6 +8809,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8303,6 +8824,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8317,6 +8839,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8331,6 +8854,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8345,6 +8869,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8359,6 +8884,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8373,6 +8899,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8387,6 +8914,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_kingdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8401,6 +8929,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8415,6 +8944,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8429,6 +8959,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8446,6 +8977,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = vallo
         }
@@ -8463,6 +8995,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = terranovasic
         }
@@ -8480,6 +9013,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = sciacca
         }
@@ -8497,6 +9031,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = patti
         }
@@ -8516,6 +9051,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = mistretta
         }
@@ -8533,6 +9069,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = mazara
         }
@@ -8547,6 +9084,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_oligarchic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8564,6 +9102,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = atalanti
         }
@@ -8578,6 +9117,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_aristocratic_monarchy"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8592,6 +9132,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_oligarchic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8606,6 +9147,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_oligarchic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8623,6 +9165,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = arta
         }
@@ -8640,6 +9183,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = viannos
         }
@@ -8657,6 +9201,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = rethymno
         }
@@ -8674,6 +9219,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = pag
         }
@@ -8691,6 +9237,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = brac
         }
@@ -8705,6 +9252,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_oligarchic_republic"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8722,6 +9270,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = ballsh
         }
@@ -8739,6 +9288,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_federation"
             country_rank = rank_county
             capital = sarkikaraagac
         }
@@ -8753,6 +9303,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_federation"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8770,6 +9321,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_federation"
             country_rank = rank_county
             capital = isparta
         }
@@ -8784,6 +9336,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_federation"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8801,6 +9354,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_federation"
             country_rank = rank_county
             capital = egirdir
         }
@@ -8818,6 +9372,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_federation"
             country_rank = rank_county
             capital = seydisehir
         }
@@ -8837,6 +9392,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = megri
         }
@@ -8854,6 +9410,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_federation"
             country_rank = rank_county
             capital = hatunsaray
         }
@@ -8871,6 +9428,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_federation"
             country_rank = rank_county
             capital = larende
         }
@@ -8885,6 +9443,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_chiefdom"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8902,6 +9461,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = amasra
         }
@@ -8919,6 +9479,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = eregli
         }
@@ -8936,6 +9497,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_federation"
             country_rank = rank_county
             capital = elmali
         }
@@ -8950,6 +9512,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_federation"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -8967,6 +9530,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_federation"
             country_rank = rank_county
             capital = beysehir
         }
@@ -8984,6 +9548,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_federation"
             country_rank = rank_county
             capital = istanoz
         }
@@ -9001,6 +9566,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_federation"
             country_rank = rank_county
             capital = anamur
         }
@@ -9018,6 +9584,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_federation"
             country_rank = rank_county
             capital = stefani
         }
@@ -9035,6 +9602,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_federation"
             country_rank = rank_county
             capital = golhisar
         }
@@ -9049,6 +9617,7 @@ countries = {
 #                 }
 #             }
 #             include = "expl_imperator_rome"
+#             include = "ir_tribal_federation"
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
@@ -9066,6 +9635,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_federation"
             country_rank = rank_county
             capital = uluborlu
         }
@@ -9083,6 +9653,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = bartin
         }
@@ -9100,6 +9671,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_theocratic_monarchy"
             country_rank = rank_county
             capital = corycus
         }
@@ -9117,6 +9689,7 @@ countries = {
                 }
             }
             include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = ibiza
         }
