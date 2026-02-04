@@ -6,140 +6,140 @@
 ir_saxonian = {
     language = german_language
     color = hsv { 0.05 0.70 0.30 }
-    tags = { german_gfx north_german_gfx western_european_gfx }
+    tags = { german_gfx north_german_gfx western_european_gfx european_gfx }
     culture_groups = { ir_germanic_g }
 }
 
 ir_anglian = {
     language = german_language
     color = hsv { 0.05 0.70 0.30 }
-    tags = { german_gfx north_german_gfx western_european_gfx }
+    tags = { german_gfx north_german_gfx western_european_gfx european_gfx }
     culture_groups = { ir_germanic_g }
 }
 
 ir_reudingian = {
     language = german_language
     color = hsv { 0.05 0.70 0.30 }
-    tags = { german_gfx north_german_gfx western_european_gfx }
+    tags = { german_gfx north_german_gfx western_european_gfx european_gfx }
     culture_groups = { ir_germanic_g }
 }
 
 ir_teutonian = {
     language = german_language
     color = hsv { 0.05 0.70 0.30 }
-    tags = { german_gfx north_german_gfx western_european_gfx }
+    tags = { german_gfx north_german_gfx western_european_gfx european_gfx }
     culture_groups = { ir_germanic_g }
 }
 
 ir_cimbrian = {
     language = german_language
     color = hsv { 0.05 0.70 0.30 }
-    tags = { german_gfx north_german_gfx western_european_gfx }
+    tags = { german_gfx north_german_gfx western_european_gfx european_gfx }
     culture_groups = { ir_germanic_g }
 }
 
 ir_herulian = {
     language = german_language
     color = hsv { 0.05 0.70 0.30 }
-    tags = { german_gfx north_german_gfx western_european_gfx }
+    tags = { german_gfx north_german_gfx western_european_gfx european_gfx }
     culture_groups = { ir_germanic_g }
 }
 
 ir_rugian = {
     language = german_language
     color = hsv { 0.05 0.70 0.30 }
-    tags = { german_gfx north_german_gfx western_european_gfx }
+    tags = { german_gfx north_german_gfx western_european_gfx european_gfx }
     culture_groups = { ir_germanic_g }
 }
 
 ir_helveconian = {
     language = german_language
     color = hsv { 0.05 0.70 0.30 }
-    tags = { german_gfx north_german_gfx western_european_gfx }
+    tags = { german_gfx north_german_gfx western_european_gfx european_gfx }
     culture_groups = { ir_germanic_g }
 }
 
 ir_bastarnae = {
     language = german_language
     color = hsv { 0.05 0.70 0.30 }
-    tags = { german_gfx north_german_gfx western_european_gfx }
+    tags = { german_gfx north_german_gfx western_european_gfx european_gfx }
     culture_groups = { ir_germanic_g }
 }
 
 ir_gutones = {
     language = german_language
     color = hsv { 0.05 0.70 0.30 }
-    tags = { german_gfx north_german_gfx western_european_gfx }
+    tags = { german_gfx north_german_gfx western_european_gfx european_gfx }
     culture_groups = { ir_germanic_g }
 }
 
 ir_suiones = {
     language = german_language
     color = hsv { 0.05 0.70 0.30 }
-    tags = { german_gfx north_german_gfx western_european_gfx }
+    tags = { german_gfx north_german_gfx western_european_gfx european_gfx }
     culture_groups = { ir_germanic_g }
 }
 
 ir_vandal = {
     language = german_language
     color = hsv { 0.05 0.70 0.30 }
-    tags = { german_gfx north_german_gfx western_european_gfx }
+    tags = { german_gfx north_german_gfx western_european_gfx european_gfx }
     culture_groups = { ir_germanic_g }
 }
 
 ir_raumarician = {
     language = german_language
     color = hsv { 0.05 0.70 0.30 }
-    tags = { german_gfx north_german_gfx western_european_gfx }
+    tags = { german_gfx north_german_gfx western_european_gfx european_gfx }
     culture_groups = { ir_germanic_g }
 }
 
 ir_irminonic = {
     language = german_language
     color = hsv { 0.05 0.70 0.30 }
-    tags = { german_gfx north_german_gfx western_european_gfx }
+    tags = { german_gfx north_german_gfx western_european_gfx european_gfx }
     culture_groups = { ir_germanic_g }
 }
 
 ir_istvaeonic = {
     language = german_language
     color = hsv { 0.05 0.70 0.30 }
-    tags = { german_gfx north_german_gfx western_european_gfx }
+    tags = { german_gfx north_german_gfx western_european_gfx european_gfx }
     culture_groups = { ir_germanic_g }
 }
 
 ir_ingvaeonic = {
     language = german_language
     color = hsv { 0.05 0.70 0.30 }
-    tags = { german_gfx north_german_gfx western_european_gfx }
+    tags = { german_gfx north_german_gfx western_european_gfx european_gfx }
     culture_groups = { ir_germanic_g }
 }
 
 ir_suebian = {
     language = german_language
     color = hsv { 0.05 0.70 0.30 }
-    tags = { german_gfx north_german_gfx western_european_gfx }
+    tags = { german_gfx north_german_gfx western_european_gfx european_gfx }
     culture_groups = { ir_germanic_g }
 }
 
 ir_lemovian = {
     language = german_language
     color = hsv { 0.05 0.70 0.30 }
-    tags = { german_gfx north_german_gfx western_european_gfx }
+    tags = { german_gfx north_german_gfx western_european_gfx european_gfx }
     culture_groups = { ir_germanic_g }
 }
 
 ir_gothonic = {
     language = german_language
     color = hsv { 0.05 0.70 0.30 }
-    tags = { german_gfx north_german_gfx western_european_gfx }
+    tags = { german_gfx north_german_gfx western_european_gfx european_gfx }
     culture_groups = { ir_germanic_g }
 }
 
 ir_frisian = {
     language = german_language
     color = hsv { 0.05 0.70 0.30 }
-    tags = { german_gfx north_german_gfx western_european_gfx }
+    tags = { german_gfx north_german_gfx western_european_gfx european_gfx }
     culture_groups = { ir_germanic_g }
 }
 

@@ -6,7 +6,7 @@
 ir_aestian = {
     language = baltic_language
     color = hsv { 0.50 0.40 0.70 }
-    tags = { baltic_gfx eastern_european_gfx }
+    tags = { baltic_gfx eastern_european_gfx european_gfx }
     culture_groups = { ir_baltic_g }
 }
 

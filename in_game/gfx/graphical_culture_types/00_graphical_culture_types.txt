@@ -1,8 +1,0 @@
-﻿ir_greek_gfx = {
-	priority = 400	# regional
-	culture_tag = ir_greek_gfx
-	ethnicities = {
-		80 = mediterranean_hellenic_ethnicity
-		20 = mediterranean_balkanic_ethnicity
-	}
-}

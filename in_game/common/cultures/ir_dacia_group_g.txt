@@ -6,91 +6,91 @@
 ir_dacian = {
     language = greek_language
     color = hsv { 0.00 0.50 1.00 }
-    tags = { romanian_gfx eastern_european_gfx }
+    tags = { romanian_gfx eastern_european_gfx european_gfx }
     culture_groups = { ir_dacia_group_g }
 }
 
 ir_getian = {
     language = greek_language
     color = hsv { 0.00 0.50 1.00 }
-    tags = { romanian_gfx eastern_european_gfx }
+    tags = { romanian_gfx eastern_european_gfx european_gfx }
     culture_groups = { ir_dacia_group_g }
 }
 
 ir_triballoi = {
     language = greek_language
     color = hsv { 0.00 0.50 1.00 }
-    tags = { romanian_gfx eastern_european_gfx }
+    tags = { romanian_gfx eastern_european_gfx european_gfx }
     culture_groups = { ir_dacia_group_g }
 }
 
 ir_moesi = {
     language = greek_language
     color = hsv { 0.00 0.50 1.00 }
-    tags = { romanian_gfx eastern_european_gfx }
+    tags = { romanian_gfx eastern_european_gfx european_gfx }
     culture_groups = { ir_dacia_group_g }
 }
 
 ir_harpii = {
     language = greek_language
     color = hsv { 0.00 0.50 1.00 }
-    tags = { romanian_gfx eastern_european_gfx }
+    tags = { romanian_gfx eastern_european_gfx european_gfx }
     culture_groups = { ir_dacia_group_g }
 }
 
 ir_costoboci = {
     language = greek_language
     color = hsv { 0.00 0.50 1.00 }
-    tags = { romanian_gfx eastern_european_gfx }
+    tags = { romanian_gfx eastern_european_gfx european_gfx }
     culture_groups = { ir_dacia_group_g }
 }
 
 ir_buridavensi = {
     language = greek_language
     color = hsv { 0.00 0.50 1.00 }
-    tags = { romanian_gfx eastern_european_gfx }
+    tags = { romanian_gfx eastern_european_gfx european_gfx }
     culture_groups = { ir_dacia_group_g }
 }
 
 ir_caucoensi = {
     language = greek_language
     color = hsv { 0.00 0.50 1.00 }
-    tags = { romanian_gfx eastern_european_gfx }
+    tags = { romanian_gfx eastern_european_gfx european_gfx }
     culture_groups = { ir_dacia_group_g }
 }
 
 ir_ratacensi = {
     language = greek_language
     color = hsv { 0.00 0.50 1.00 }
-    tags = { romanian_gfx eastern_european_gfx }
+    tags = { romanian_gfx eastern_european_gfx european_gfx }
     culture_groups = { ir_dacia_group_g }
 }
 
 ir_biephi = {
     language = greek_language
     color = hsv { 0.00 0.50 1.00 }
-    tags = { romanian_gfx eastern_european_gfx }
+    tags = { romanian_gfx eastern_european_gfx european_gfx }
     culture_groups = { ir_dacia_group_g }
 }
 
 ir_odrysi = {
     language = greek_language
     color = hsv { 0.00 0.50 1.00 }
-    tags = { romanian_gfx eastern_european_gfx }
+    tags = { romanian_gfx eastern_european_gfx european_gfx }
     culture_groups = { ir_dacia_group_g }
 }
 
 ir_bithynian = {
     language = greek_language
     color = hsv { 0.00 0.50 1.00 }
-    tags = { romanian_gfx eastern_european_gfx }
+    tags = { romanian_gfx eastern_european_gfx european_gfx }
     culture_groups = { ir_dacia_group_g }
 }
 
 ir_mariandynian = {
     language = greek_language
     color = hsv { 0.00 0.50 1.00 }
-    tags = { romanian_gfx eastern_european_gfx }
+    tags = { romanian_gfx eastern_european_gfx european_gfx }
     culture_groups = { ir_dacia_group_g }
 }
 

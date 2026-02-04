@@ -6,21 +6,21 @@
 ir_kannadan = {
     language = kannada_language
     color = hsv { 0.80 0.60 0.60 }
-    tags = { persianate_gfx }
+    tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_indian_g }
 }
 
 ir_tamil = {
     language = sanskrit_language
     color = hsv { 0.80 0.60 0.60 }
-    tags = { persianate_gfx }
+    tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_indian_g }
 }
 
 ir_telugu = {
     language = telugu_language
     color = hsv { 0.80 0.60 0.60 }
-    tags = { persianate_gfx }
+    tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_indian_g }
 }
 
