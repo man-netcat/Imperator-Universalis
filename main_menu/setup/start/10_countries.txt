@@ -1036,13 +1036,15 @@ countries = {
                 # arborea_province
                 terralba oristano
                 # azghar_province
-                larache
+                larache ksar_el_kebir
                 # bizerte_province
                 tebourba mateur sejnane tabarka
                 # cagliari_province
                 cagliari tratalias villa_di_chiesa muravera seddori tortoli
                 # dahra_province
                 tenes
+                # dukkala_province
+                asfi tit mazaghan
                 # fez_province
                 la_mamora sale
                 # gallura_province
@@ -1066,7 +1068,7 @@ countries = {
                 # noto_province
                 malta
                 # oran_province
-                tamazaghrane oran ksar_ibn_senane
+                tamazaghrane oran ksar_ibn_senane arzew
                 # qabisa_province
                 sidi_fredj sfaqes bou_hajla
                 # qamuda_province
@@ -1091,22 +1093,31 @@ countries = {
             capital = tunis
             court_language = aramaic_language
         }
-#         MAU = {
-#             # Mauretania
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = monarchy
-#                 reforms = {
-#                     ir_despotic_monarchy
-#                 }
-#             }
-#             court_language = tamazight_language
-#             include = "expl_imperator_rome"
-#             include = "ir_despotic_monarchy"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        MAU = {
+            # Mauretania
+            own_control_core = {
+                # azghar_province
+                ouezzane
+                # fez_province
+                tefelfelt volubilis fez meknes baht
+                # habat_province
+                basra_al_hamra amergo
+                # tamasna_province
+                settat thagia
+            }
+            government = {
+                ruler = random
+                type = monarchy
+                reforms = {
+                    ir_despotic_monarchy
+                }
+            }
+            court_language = tamazight_language
+            include = "expl_imperator_rome"
+            include = "ir_despotic_monarchy"
+            country_rank = rank_county
+            capital = fez
+        }
         MSS = {
             # Massaesylia
             own_control_core = {
@@ -1119,13 +1130,13 @@ countries = {
                 # mitidja_province
                 tablat medea
                 # oran_province
-                arzew nedroma arshgul
+                nedroma arshgul
                 # ouarsenis_province
                 miliana al_khadra_ALG chlef ksar_el_kaoua mazouna yellel
                 # oujda_province
-                ras_al_ain
+                ras_al_ain oujda jarawah_abu_al_aysh
                 # tlemcen_province
-                mascara saida tessala
+                mascara saida tessala tlemcen madinat_alawiyyin
             }
             government = {
                 ruler = random
@@ -4888,70 +4899,100 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         DRD = {
-#             # Dardania
-#             own_control_core = { }
-#             government = {
-#                 ruler = drd_kleitos_dardanid
-#                 type = tribe
-#                 reforms = {
-#                     ir_tribal_kingdom
-#                 }
-#             }
-#             court_language = albanian_language
-#             include = "expl_imperator_rome"
-#             include = "ir_tribal_kingdom"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         SDI = {
-#             # Serdia
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = tribe
-#                 reforms = {
-#                     ir_tribal_kingdom
-#                 }
-#             }
-#             court_language = brythonic_language
-#             include = "expl_imperator_rome"
-#             include = "ir_tribal_kingdom"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         TBL = {
-#             # Triballia
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = tribe
-#                 reforms = {
-#                     ir_tribal_kingdom
-#                 }
-#             }
-#             court_language = greek_language
-#             include = "expl_imperator_rome"
-#             include = "ir_tribal_kingdom"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         MOE = {
-#             # Moesia
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = tribe
-#                 reforms = {
-#                     ir_tribal_kingdom
-#                 }
-#             }
-#             court_language = greek_language
-#             include = "expl_imperator_rome"
-#             include = "ir_tribal_kingdom"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        DRD = {
+            # Dardania
+            own_control_core = {
+                # kosovo_province
+                novo_brdo
+                # nis_province
+                vranje medveda
+                # sredets_province
+                velbuzd
+                # vardar_province
+                skopje kumanovo kratovo
+            }
+            government = {
+                ruler = drd_kleitos_dardanid
+                type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
+            }
+            court_language = albanian_language
+            include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
+            country_rank = rank_county
+            capital = skopje
+        }
+        SDI = {
+            # Serdia
+            own_control_core = {
+                # sredets_province
+                dupnitsa sredets samokov
+            }
+            government = {
+                ruler = random
+                type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
+            }
+            court_language = brythonic_language
+            include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
+            country_rank = rank_county
+            capital = sredets
+        }
+        TBL = {
+            # Triballia
+            own_control_core = {
+                # nis_province
+                glubocica nis
+                # pleven_province
+                dobrolak pleven gigen oryahovo
+                # sredets_province
+                tsaribrod pirot svoge
+                # vidin_province
+                vratsa kutlovitsa lom archar svrljig
+            }
+            government = {
+                ruler = random
+                type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
+            }
+            court_language = greek_language
+            include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
+            country_rank = rank_county
+            capital = oryahovo
+        }
+        MOE = {
+            # Moesia
+            own_control_core = {
+                # pleven_province
+                hotalich lovech
+                # preslav_province
+                ktenia veliki_preslav targoviste_BUL shumen razgrad
+                # south_dobruja_province
+                kladentsi drastar tutrakan
+                # tarnovo_province
+                nikopol tarnovo lyaskovets ruse cherven tryavna
+            }
+            government = {
+                ruler = random
+                type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
+            }
+            court_language = greek_language
+            include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
+            country_rank = rank_county
+            capital = ruse
+        }
 #         GTE = {
 #             # Getia
 #             own_control_core = { }
@@ -4968,22 +5009,27 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         POT = {
-#             # Potulatensia
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = tribe
-#                 reforms = {
-#                     ir_tribal_kingdom
-#                 }
-#             }
-#             court_language = greek_language
-#             include = "expl_imperator_rome"
-#             include = "ir_tribal_kingdom"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        POT = {
+            # Potulatensia
+            own_control_core = {
+                # south_oltenia_province
+                caracal corabia radovanu calafat plenita strehaia
+                # vidin_province
+                vidin
+            }
+            government = {
+                ruler = random
+                type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
+            }
+            court_language = greek_language
+            include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
+            country_rank = rank_county
+            capital = calafat
+        }
 #         SLD = {
 #             # Saldensia
 #             own_control_core = { }
@@ -5163,38 +5209,44 @@ countries = {
             capital = constantinople
             court_language = greek_language
         }
-#         ORG = {
-#             # Orgame
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#                 reforms = {
-#                     ir_plutocratic_republic
-#                 }
-#             }
-#             court_language = greek_language
-#             include = "expl_imperator_rome"
-#             include = "ir_plutocratic_republic"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         ISO = {
-#             # Istros
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#                 reforms = {
-#                     ir_plutocratic_republic
-#                 }
-#             }
-#             court_language = greek_language
-#             include = "expl_imperator_rome"
-#             include = "ir_plutocratic_republic"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        ORG = {
+            # Orgame
+            own_control_core = {
+                # north_dobruja_province
+                babadag
+            }
+            government = {
+                ruler = random
+                type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
+            }
+            court_language = greek_language
+            include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
+            country_rank = rank_county
+            capital = babadag
+        }
+        ISO = {
+            # Istros
+            own_control_core = {
+                # north_dobruja_province
+                cernavoda constanta
+            }
+            government = {
+                ruler = random
+                type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
+            }
+            court_language = greek_language
+            include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
+            country_rank = rank_county
+            capital = constanta
+        }
 #         TMS = {
 #             # Tomis
 #             own_control_core = { }
@@ -5211,86 +5263,101 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         KTS = {
-#             # Kallatis
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#                 reforms = {
-#                     ir_plutocratic_republic
-#                 }
-#             }
-#             court_language = greek_language
-#             include = "expl_imperator_rome"
-#             include = "ir_plutocratic_republic"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         KOI = {
-#             # Krounoi
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#                 reforms = {
-#                     ir_plutocratic_republic
-#                 }
-#             }
-#             court_language = greek_language
-#             include = "expl_imperator_rome"
-#             include = "ir_plutocratic_republic"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         ODS = {
-#             # Odessos
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#                 reforms = {
-#                     ir_plutocratic_republic
-#                 }
-#             }
-#             court_language = greek_language
-#             include = "expl_imperator_rome"
-#             include = "ir_plutocratic_republic"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         MES = {
-#             # Mesembria
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#                 reforms = {
-#                     ir_plutocratic_republic
-#                 }
-#             }
-#             court_language = greek_language
-#             include = "expl_imperator_rome"
-#             include = "ir_plutocratic_republic"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         APL = {
-#             # Apollonia Pontica
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#                 reforms = {
-#                     ir_plutocratic_republic
-#                 }
-#             }
-#             court_language = greek_language
-#             include = "expl_imperator_rome"
-#             include = "ir_plutocratic_republic"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        KTS = {
+            # Kallatis
+            own_control_core = {
+                # south_dobruja_province
+                kaliakra pangalia
+            }
+            government = {
+                ruler = random
+                type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
+            }
+            court_language = greek_language
+            include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
+            country_rank = rank_county
+            capital = pangalia
+        }
+        KOI = {
+            # Krounoi
+            own_control_core = {
+                # south_dobruja_province
+                karvuna
+            }
+            government = {
+                ruler = random
+                type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
+            }
+            court_language = greek_language
+            include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
+            country_rank = rank_county
+            capital = karvuna
+        }
+        ODS = {
+            # Odessos
+            own_control_core = {
+                # preslav_province
+                varna ovech
+            }
+            government = {
+                ruler = random
+                type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
+            }
+            court_language = greek_language
+            include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
+            country_rank = rank_county
+            capital = varna
+        }
+        MES = {
+            # Mesembria
+            own_control_core = {
+                # burgas_province
+                anhialo aytos
+            }
+            government = {
+                ruler = random
+                type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
+            }
+            court_language = greek_language
+            include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
+            country_rank = rank_county
+            capital = anhialo
+        }
+        APL = {
+            # Apollonia Pontica
+            own_control_core = {
+                # burgas_province
+                sozopol burgas rusokastro
+            }
+            government = {
+                ruler = random
+                type = republic
+                reforms = {
+                    ir_plutocratic_republic
+                }
+            }
+            court_language = greek_language
+            include = "expl_imperator_rome"
+            include = "ir_plutocratic_republic"
+            country_rank = rank_county
+            capital = sozopol
+        }
         TRE = {
             # Thrace
             own_control_core = {
@@ -5298,10 +5365,14 @@ countries = {
                 vize corlu
                 # dardanelles_province
                 gallipoli enez hayrabolu malgara rodoscuk kesan
+                # east_muntenia_province
+                viziru braila
                 # edirne_province
                 kiyikoy ahtopol kirklareli luleburgaz edirne
                 # evros_province
                 demotica traianopolis komotini xanthia
+                # north_dobruja_province
+                enisala isaccea harsova
                 # rhodopes_province
                 smolyan ustra perperek
             }
@@ -5318,22 +5389,31 @@ countries = {
             capital = gallipoli
             court_language = greek_language
         }
-#         ODR = {
-#             # Odrysia
-#             own_control_core = { }
-#             government = {
-#                 ruler = odr_seuthes_odrysid
-#                 type = tribe
-#                 reforms = {
-#                     ir_tribal_kingdom
-#                 }
-#             }
-#             court_language = greek_language
-#             include = "expl_imperator_rome"
-#             include = "ir_tribal_kingdom"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        ODR = {
+            # Odrysia
+            own_control_core = {
+                # burgas_province
+                lardeja
+                # rhodopes_province
+                ormenio haskovo
+                # sliven_province
+                sliven boruy constantia_bul bukelon elhovo hiambouli
+                # zagore_province
+                plovdiv strelcha stipon kran
+            }
+            government = {
+                ruler = odr_seuthes_odrysid
+                type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
+            }
+            court_language = greek_language
+            include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
+            country_rank = rank_kingdom
+            capital = kran
+        }
 #         PAA = {
 #             # Paeonia
 #             own_control_core = { }
@@ -5350,22 +5430,25 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         MAD = {
-#             # Maedia
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = tribe
-#                 reforms = {
-#                     ir_tribal_kingdom
-#                 }
-#             }
-#             court_language = albanian_language
-#             include = "expl_imperator_rome"
-#             include = "ir_tribal_kingdom"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        MAD = {
+            # Maedia
+            own_control_core = {
+                # pirin_province
+                melnik krupnik bansko
+            }
+            government = {
+                ruler = random
+                type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
+            }
+            court_language = albanian_language
+            include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
+            country_rank = rank_county
+            capital = REPLACE_ME
+        }
         MAC = {
             # Macedon
             own_control_core = {
@@ -5382,15 +5465,15 @@ countries = {
                 # neopatras_province
                 zetounion neopatras bodonitsa
                 # pirin_province
-                melnik bansko krupnik dospat nevrokop
+                dospat nevrokop
                 # prilep_province
-                prilep bitola florina kicevo ohrid tetovo
+                prilep bitola florina ohrid
                 # thessaly_province
                 larissa demetrias elassona farsala karditsa stomio trikala tyrnavos
                 # upper_macedonia_province
                 grevena kastoria servia siatista ostrovo
                 # vardar_province
-                skopje prosek kocani kratovo kumanovo shtip strumica veles
+                prosek strumica
             }
             government = {
                 ruler = mac_kassandros_antipatrid
@@ -6671,7 +6754,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
             country_rank = rank_county
-            capital = REPLACE_ME
+            capital = ankara
             court_language = greek_language
         }
         MAK = {
@@ -7376,22 +7459,35 @@ countries = {
             capital = qabala
             court_language = georgian_language
         }
-#         LGA = {
-#             # Legia
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = tribe
-#                 reforms = {
-#                     ir_tribal_chiefdom
-#                 }
-#             }
-#             court_language = alanic_language
-#             include = "expl_imperator_rome"
-#             include = "ir_tribal_chiefdom"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        LGA = {
+            # Legia
+            own_control_core = {
+                # alania_province
+                dzhulat tatartup
+                # dardeling_province
+                dardeling kok_usn
+                # majar_province
+                zelenokumsk novopavlovsk yessentuq
+                # simsir_province
+                simsir argun tsontaroy_kala alkhan_kala nazran
+                # tarki_province
+                terek tarki boynak endirey temirkhan_shura
+                # terek_province
+                kara_bazaar kurskaya naurskaya terekli_mekteb kamysh_burun
+            }
+            government = {
+                ruler = random
+                type = tribe
+                reforms = {
+                    ir_tribal_chiefdom
+                }
+            }
+            court_language = alanic_language
+            include = "expl_imperator_rome"
+            include = "ir_tribal_chiefdom"
+            country_rank = rank_kingdom
+            capital = terek
+        }
 #         SCA = {
 #             # Sakia
 #             own_control_core = { }
@@ -8195,22 +8291,27 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         SND = {
-#             # Sindica
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = tribe
-#                 reforms = {
-#                     ir_tribal_kingdom
-#                 }
-#             }
-#             court_language = alanic_language
-#             include = "expl_imperator_rome"
-#             include = "ir_tribal_kingdom"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        SND = {
+            # Sindica
+            own_control_core = {
+                # labinsk_province
+                belorechensk
+                # taman_province
+                shanjir siba_circassia
+            }
+            government = {
+                ruler = random
+                type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
+            }
+            court_language = alanic_language
+            include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
+            country_rank = rank_county
+            capital = shanjir
+        }
 #         SCE = {
 #             # Siracia
 #             own_control_core = { }
@@ -8227,38 +8328,54 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         BPK = {
-#             # Bospora
-#             own_control_core = { }
-#             government = {
-#                 ruler = bpk_spartokos_spartokid
-#                 type = monarchy
-#                 reforms = {
-#                     ir_despotic_monarchy
-#                 }
-#             }
-#             court_language = greek_language
-#             include = "expl_imperator_rome"
-#             include = "ir_despotic_monarchy"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         CHS = {
-#             # Chersonesus
-#             own_control_core = { }
-#             government = {
-#                 ruler = chs_ioakeim_skydrothemid_2
-#                 type = republic
-#                 reforms = {
-#                     ir_democratic_republic
-#                 }
-#             }
-#             court_language = greek_language
-#             include = "expl_imperator_rome"
-#             include = "ir_democratic_republic"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        BPK = {
+            # Bospora
+            own_control_core = {
+                # akhtar_province
+                akhtar
+                # azov_province
+                balzimachi kanevskaya
+                # cafa_province
+                soldaia solkhat kaffa vosporo
+                # gothia_province
+                lusta qarasuvbazar
+                # taman_province
+                taman copa mapa
+            }
+            government = {
+                ruler = bpk_spartokos_spartokid
+                type = monarchy
+                reforms = {
+                    ir_despotic_monarchy
+                }
+            }
+            court_language = greek_language
+            include = "expl_imperator_rome"
+            include = "ir_despotic_monarchy"
+            country_rank = rank_kingdom
+            capital = vosporo
+        }
+        CHS = {
+            # Chersonesus
+            own_control_core = {
+                # gothia_province
+                theodoro qirq_yer
+                # or_qapi_province
+                kezlev aqmecit
+            }
+            government = {
+                ruler = chs_ioakeim_skydrothemid_2
+                type = republic
+                reforms = {
+                    ir_democratic_republic
+                }
+            }
+            court_language = greek_language
+            include = "expl_imperator_rome"
+            include = "ir_democratic_republic"
+            country_rank = rank_county
+            capital = theodoro
+        }
 #         SCY = {
 #             # Scythia
 #             own_control_core = { }
@@ -8275,22 +8392,27 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         ZGY = {
-#             # Zygia
-#             own_control_core = { }
-#             government = {
-#                 ruler = zgy_jnanasene_vaisali
-#                 type = tribe
-#                 reforms = {
-#                     ir_tribal_kingdom
-#                 }
-#             }
-#             court_language = alanic_language
-#             include = "expl_imperator_rome"
-#             include = "ir_tribal_kingdom"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        ZGY = {
+            # Zygia
+            own_control_core = {
+                # taman_province
+                susaco
+                # tuapse_province
+                tuapse
+            }
+            government = {
+                ruler = zgy_jnanasene_vaisali
+                type = tribe
+                reforms = {
+                    ir_tribal_kingdom
+                }
+            }
+            court_language = alanic_language
+            include = "expl_imperator_rome"
+            include = "ir_tribal_kingdom"
+            country_rank = rank_county
+            capital = susaco
+        }
         HNY = {
             # Heniochia
             own_control_core = {
@@ -8365,54 +8487,75 @@ countries = {
 #             country_rank = rank_county
 #             capital = REPLACE_ME
 #         }
-#         OLB = {
-#             # Olbia
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#                 reforms = {
-#                     ir_democratic_republic
-#                 }
-#             }
-#             court_language = greek_language
-#             include = "expl_imperator_rome"
-#             include = "ir_democratic_republic"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         TYS = {
-#             # Tyras
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = republic
-#                 reforms = {
-#                     ir_democratic_republic
-#                 }
-#             }
-#             court_language = greek_language
-#             include = "expl_imperator_rome"
-#             include = "ir_democratic_republic"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
-#         TYG = {
-#             # Tyrgetae
-#             own_control_core = { }
-#             government = {
-#                 ruler = random
-#                 type = tribe
-#                 reforms = {
-#                     ir_tribal_chiefdom
-#                 }
-#             }
-#             court_language = greek_language
-#             include = "expl_imperator_rome"
-#             include = "ir_tribal_chiefdom"
-#             country_rank = rank_county
-#             capital = REPLACE_ME
-#         }
+        OLB = {
+            # Olbia
+            own_control_core = {
+                # boh_province
+                vithold_hammami dashev
+                # oleshia_province
+                oleshia
+                # qalancak_province
+                ordu_bazar
+            }
+            government = {
+                ruler = random
+                type = republic
+                reforms = {
+                    ir_democratic_republic
+                }
+            }
+            court_language = greek_language
+            include = "expl_imperator_rome"
+            include = "ir_democratic_republic"
+            country_rank = rank_county
+            capital = vithold_hammami
+        }
+        TYS = {
+            # Tyras
+            own_control_core = {
+                # basarabia_province
+                cetatea_alba
+                # khadjibey_province
+                khadjibey teligol
+            }
+            government = {
+                ruler = random
+                type = republic
+                reforms = {
+                    ir_democratic_republic
+                }
+            }
+            court_language = greek_language
+            include = "expl_imperator_rome"
+            include = "ir_democratic_republic"
+            country_rank = rank_county
+            capital = cetatea_alba
+        }
+        TYG = {
+            # Tyrgetae
+            own_control_core = {
+                # basarabia_province
+                reni ismail chilia sarata palada cahul
+                # iasi_province
+                husi targul_saratii
+                # north_dobruja_province
+                tulcea
+                # orhei_province
+                orhei chisinau tuzara gura_galbenei tighina targu_lapusnei
+            }
+            government = {
+                ruler = random
+                type = tribe
+                reforms = {
+                    ir_tribal_chiefdom
+                }
+            }
+            court_language = greek_language
+            include = "expl_imperator_rome"
+            include = "ir_tribal_chiefdom"
+            country_rank = rank_county
+            capital = reni
+        }
 #         KSH = {
 #             # Kush
 #             own_control_core = { }
@@ -9707,7 +9850,7 @@ countries = {
             }
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = arta
             court_language = greek_language
         }

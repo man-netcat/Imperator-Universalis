@@ -42,14 +42,23 @@
 				AND = {
 					government_type = government_type:monarchy
 					OR = {
+						tag = ODR
 						tag = SEL
 						tag = BPK
 						tag = PRY
 					}
 				}
 				AND = {
-					tag = DEL
 					government_type = government_type:republic
+					OR = {
+						tag = DEL
+					}
+				}
+				AND = {
+					government_type = government_type:tribe
+					OR = {
+						tag = ODR
+					}
 				}
 			}
 		}
