@@ -1,4 +1,4 @@
-ir_aristocratic_monarchy = {
+﻿ir_aristocratic_monarchy = {
 	government = monarchy
 
 	country_modifier = {
