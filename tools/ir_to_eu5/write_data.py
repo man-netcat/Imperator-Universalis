@@ -584,6 +584,9 @@ def write_10_countries(
     eu5_map_data,
     country_rulers,
     culture_data=None,
+    ir_country_locations=None,
+    id_to_key=None,
+    location_keys=None,
 ):
     country_map = {country["tag"]: country for country in country_data}
     blocks = []
@@ -603,6 +606,14 @@ def write_10_countries(
         else {}
     )
 
+    def normalize_value(value):
+        if isinstance(value, str):
+            v = value.strip()
+            if len(v) >= 2 and v[0] == '"' and v[-1] == '"':
+                return v[1:-1]
+            return v
+        return value
+
     for country in country_data:
         tag = country["tag"]
         country_name = country.get("name", tag)
@@ -614,10 +625,23 @@ def write_10_countries(
         merged = dict(base)  # shallow copy
 
         # --- own_control_core ---
-        value = base.get("own_control_core", [])
-        locations = (
-            [] if value is None else value if isinstance(value, list) else [value]
-        )
+        ir_locations = None
+        if ir_country_locations and id_to_key and tag in ir_country_locations:
+            ir_locations = []
+            for pid in ir_country_locations[tag]:
+                if pid in id_to_key:
+                    loc = id_to_key.get(pid)
+                    if loc is None:
+                        continue
+                    if location_keys is None or loc in location_keys:
+                        ir_locations.append(loc)
+        if ir_locations is not None:
+            locations = ir_locations
+        else:
+            value = base.get("own_control_core", [])
+            locations = (
+                [] if value is None else value if isinstance(value, list) else [value]
+            )
 
         if not locations:
             comment_tags.add(tag)
@@ -722,6 +746,14 @@ def write_10_countries(
         merged.setdefault("country_rank", "rank_county")
         merged.setdefault("capital", "REPLACE_ME")
 
+        # --- ensure capital is a valid location ---
+        if locations:
+            cap = merged.get("capital")
+            if cap in ("REPLACE_ME", None) or (
+                location_keys is not None and cap not in location_keys
+            ):
+                merged["capital"] = locations[0]
+
         # --- emit ---
         lines: list = []
         lines.append(f"# {country_name}")
@@ -737,7 +769,7 @@ def write_10_countries(
                     if isinstance(v, list):
                         sub.append((k, v))
                     else:
-                        sub.append(f"{k} = {v}")
+                        sub.append(f"{k} = {normalize_value(v)}")
                 lines.append((key, sub))
 
             elif isinstance(value, list):
@@ -745,7 +777,7 @@ def write_10_countries(
 
             else:
                 # strings, numbers, AND inline "{ }"
-                lines.append(f"{key} = {value}")
+                lines.append(f"{key} = {normalize_value(value)}")
 
         blocks.append((tag, lines))
 

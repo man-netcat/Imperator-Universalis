@@ -240,7 +240,10 @@ def extract_coa_data():
 
 
 def extract_eu5_map_data():
-    tree = parse_tree(eu5_map_data).to_python()
+    defs_path = iu_map_data / "definitions.txt"
+    if not defs_path.exists():
+        defs_path = eu5_map_data
+    tree = parse_tree(defs_path).to_python()
     return tree
 
 
@@ -250,6 +253,34 @@ def extract_start_data(file_name, root_key, sub_key=None):
     if sub_key:
         data = data[sub_key]
     return data.to_python()
+
+
+def extract_ir_country_locations():
+    """Return mapping of country tag -> list of province IDs from IR own_control_core."""
+    tree = parse_tree(ir_default)
+    countries = tree["country"]["countries"]
+    result: dict[str, list[int]] = {}
+
+    for tag, data in countries.items():
+        prov_ids: list[int] = []
+        for key, value in data.items():
+            if key != "own_control_core":
+                continue
+            if isinstance(value, list):
+                for v in value:
+                    try:
+                        prov_ids.append(int(v))
+                    except Exception:
+                        continue
+            else:
+                try:
+                    prov_ids.append(int(value))
+                except Exception:
+                    continue
+        if prov_ids:
+            result[tag] = prov_ids
+
+    return result
 
 
 def extract_character_data():

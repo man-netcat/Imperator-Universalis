@@ -26,6 +26,7 @@ from ir_to_eu5.extract_data import (
     extract_diplomacy_data,
     extract_dynasty_data,
     extract_eu5_map_data,
+    extract_ir_country_locations,
     extract_religion_data,
     extract_start_data,
     write_json,
@@ -65,6 +66,11 @@ if __name__ == "__main__":
         action="store_true",
         help="Write raw extracted JSON data files",
     )
+    parser.add_argument(
+        "--port-map",
+        action="store_true",
+        help="Port EU5 map data from Imperator",
+    )
     args = parser.parse_args()
     culture_data = extract_culture_data()
     religion_data = extract_religion_data()
@@ -74,6 +80,7 @@ if __name__ == "__main__":
     country_data, country_overrides = extract_country_data()
     diplomatic_relationships, international_organisations = extract_diplomacy_data()
     named_locations = {t[0]: t[1] for t in parse_definitions()}
+    ir_country_locations = extract_ir_country_locations()
     ten_countries_data = extract_start_data(
         "10_countries.txt", "countries", "countries"
     )
@@ -101,12 +108,24 @@ if __name__ == "__main__":
     write_country_setup(country_data, country_overrides)
     write_04_dynasties(four_dynasties_data, dynasty_data)
     write_05_characters(five_characters_data, character_data)
+    # Defaults for location templates and capital fallbacks
+    default_culture = None
+    for group in culture_data:
+        cultures = group.get("cultures", [])
+        if cultures:
+            default_culture = cultures[0].get("tag")
+            break
+    default_religion = religion_data[0].get("tag") if religion_data else None
+
     write_10_countries(
         ten_countries_data,
         country_data,
         eu5_map_data,
         country_rulers,
         culture_data,
+        ir_country_locations=ir_country_locations,
+        id_to_key=named_locations,
+        location_keys=set(named_locations.values()),
     )
     write_12_diplomacy(twelve_diplomacy_data, diplomatic_relationships)
     write_15_international_organizations(
@@ -124,4 +143,5 @@ if __name__ == "__main__":
     if not args.no_images:
         port_coa_gfx()
 
-    # port_map_data()
+    if args.port_map:
+        port_map_data(default_culture=default_culture, default_religion=default_religion)

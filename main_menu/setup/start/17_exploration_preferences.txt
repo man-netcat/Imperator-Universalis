@@ -1,2 +1,72 @@
 exploration_manager = {
+	#ENG USA/CANADA Preference
+	add_exploration_preference = {
+		country = ENG
+		modifier = 2
+
+
+	}
+
+	#ENG Africa/India preference
+	add_exploration_preference = {
+		country = ENG
+		modifier = 2
+
+	}
+
+	#PORTUGAL
+	add_exploration_preference = {
+		country = POR
+		modifier = 0.75
+		continent = africa
+	}
+	add_exploration_preference = {
+		country = POR
+		modifier = 0.95
+	}
+	add_exploration_preference = {
+		country = POR
+		modifier = 3
+
+		#Add Naval Regions on the way to preferred land
+	}
+
+	#CASTILE
+	add_exploration_preference = {
+		country = CAS
+		modifier = 3
+
+		#Add Naval Regions on the way to preferred land
+	}
+
+	add_exploration_preference = {
+		country = CAS
+		modifier = 2.5
+
+		#area preference for staging colonies needed to extend range
+	}
+
+	#adding brazil as a negative after adding south america as a positive will override what came before
+	add_exploration_preference = {
+		country = CAS
+		modifier = -0.5
+	}
+
+
+	#SWEDEN
+	add_exploration_preference = {
+		country = SWE
+		modifier = 3.0
+	}
+
+	add_exploration_preference = {
+		country = SWE
+		modifier = 2.0
+	}
+
+	#NORWAY
+		add_exploration_preference = {
+		country = NOR
+		modifier = 2.0
+	}
 }
