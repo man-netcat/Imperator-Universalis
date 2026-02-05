@@ -1,4 +1,4 @@
-namespace = mercs
+﻿namespace = mercs
 mercs.1 = {
 	hide_portraits = no
 	type = country_event

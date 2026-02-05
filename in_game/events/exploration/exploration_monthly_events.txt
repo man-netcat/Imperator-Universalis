@@ -1,4 +1,4 @@
-namespace = exploration_monthly
+﻿namespace = exploration_monthly
 
 exploration_monthly.1 = {
 	type = exploration_event

@@ -1,4 +1,4 @@
-namespace = flavor_tur
+﻿namespace = flavor_tur
 
 scripted_trigger is_persian_power = {
 	culture = culture:farsi_culture

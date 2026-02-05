@@ -1,4 +1,4 @@
-namespace = decline_of_empire
+﻿namespace = decline_of_empire
 
 
 decline_of_empire.1 = {	#Start event

@@ -1,4 +1,4 @@
-namespace = hussite_flavor
+﻿namespace = hussite_flavor
 
 scripted_trigger hussite_loc_with_other_christian_dominant = {
 	dominant_religion.group = religion_group:christian

@@ -1,4 +1,4 @@
-namespace = nanban_trade
+﻿namespace = nanban_trade
 
 nanban_trade.1 = { #Nanban Bōeki
 	type = country_event

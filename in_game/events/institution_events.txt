@@ -1,4 +1,4 @@
-namespace = institution_events
+﻿namespace = institution_events
 
 #################################
 # Feudalism Events				#

@@ -1,4 +1,4 @@
-namespace = flavor_eth
+﻿namespace = flavor_eth
 flavor_eth.10 = { #Pêro da Covilhã
 	type = country_event
 	title = flavor_eth.10.title

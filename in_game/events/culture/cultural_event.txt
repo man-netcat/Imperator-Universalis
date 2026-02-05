@@ -1,4 +1,4 @@
-namespace = cultural_event
+﻿namespace = cultural_event
 cultural_event.1 = {
 	type = country_event
 	title = cultural_event.1.title

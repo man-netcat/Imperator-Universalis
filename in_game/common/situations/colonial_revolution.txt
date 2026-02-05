@@ -1,4 +1,4 @@
-colonial_revolution = {
+﻿colonial_revolution = {
 	monthly_spawn_chance = monthly_spawn_chance_very_low
 	hint_tag = hint_colonial_revolution
 	

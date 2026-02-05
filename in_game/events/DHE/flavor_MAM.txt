@@ -1,4 +1,4 @@
-namespace = flavor_mam
+﻿namespace = flavor_mam
 
 flavor_mam.1 = {
 	hide_portraits = yes

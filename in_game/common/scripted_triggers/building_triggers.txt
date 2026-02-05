@@ -1,4 +1,4 @@
-is_adjacent_to_owned_or_subject_owns = {
+﻿is_adjacent_to_owned_or_subject_owns = {
 	custom_tooltip = {
 		text = is_adjacent_to_owned_or_subject_owns
 		any_neighbor_location = {

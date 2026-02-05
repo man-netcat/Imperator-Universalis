@@ -1,4 +1,4 @@
-namespace = dynastic
+﻿namespace = dynastic
 dynastic.1 = {
 	type = country_event
 	title = dynastic.1.title

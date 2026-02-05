@@ -1,4 +1,4 @@
-hundred_years_war = {
+﻿hundred_years_war = {
 	monthly_spawn_chance = monthly_spawn_chance_unique
 	hint_tag = hint_hundred_years_war
 	

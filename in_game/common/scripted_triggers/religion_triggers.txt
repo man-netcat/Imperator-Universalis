@@ -1,4 +1,4 @@
-#Excommunication Triggers
+﻿#Excommunication Triggers
 is_excommunicated = {
 	custom_description = {
 		text = is_excommunicated_text

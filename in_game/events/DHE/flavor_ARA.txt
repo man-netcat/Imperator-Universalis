@@ -1,4 +1,4 @@
-namespace = flavor_ara
+﻿namespace = flavor_ara
 flavor_ara.1 = { #Consulate of the Sea
 	type = country_event
 	title = flavor_ara.1.title

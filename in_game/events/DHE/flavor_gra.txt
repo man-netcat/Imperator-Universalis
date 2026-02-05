@@ -1,4 +1,4 @@
-namespace = flavor_gra
+﻿namespace = flavor_gra
 
 flavor_gra.1 = {
 	type = country_event

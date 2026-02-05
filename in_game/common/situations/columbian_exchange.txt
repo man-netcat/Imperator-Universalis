@@ -1,4 +1,4 @@
-columbian_exchange = {
+﻿columbian_exchange = {
 	monthly_spawn_chance = monthly_spawn_chance_unique
 	hint_tag = hint_columbian_exchange
 	

@@ -1,4 +1,4 @@
-namespace = calvinist
+﻿namespace = calvinist
 
 calvinist.1 = {
 	type = country_event

@@ -1,4 +1,4 @@
-namespace = flavor_glh
+﻿namespace = flavor_glh
 
 # Tatar Yoke
 flavor_glh.1 = {

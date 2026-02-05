@@ -1,4 +1,4 @@
-namespace = flavor_chi
+﻿namespace = flavor_chi
 
 # Scripted Trigger to determine what nations should be informed about Treasure Voyages, put into major_trigger
 scripted_trigger possibly_impacted_by_treasure_voyages = {

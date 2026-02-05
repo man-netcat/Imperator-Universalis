@@ -1,4 +1,4 @@
-namespace = subject_interaction_events
+﻿namespace = subject_interaction_events
 subject_interaction_events.1 = {
 	hide_portraits = yes
 	type = country_event

@@ -1,4 +1,4 @@
-namespace = flavor_mos
+﻿namespace = flavor_mos
 
 #Simeon Ivanovich's Campaigns against Novgorod
 flavor_mos.1 = {

@@ -1,4 +1,4 @@
-namespace = kirishitan
+﻿namespace = kirishitan
 
 kirishitan.1 = { #A New Buddha?
 	type = country_event

@@ -1,4 +1,4 @@
-namespace = flavor_ira
+﻿namespace = flavor_ira
 
 scripted_effect qizilbash_estate_satisfaction = {
 	if = {

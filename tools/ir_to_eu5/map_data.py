@@ -8,7 +8,16 @@ from pathlib import Path
 import pyradox.datatype as _pydt
 
 from .extract_data import parse_tree, read_localisation_file
-from .paths import ir_localisation, ir_map_data, iu_localisation, iu_map_data, mod_root, eu5_game
+from .paths import (
+    ir_game,
+    ir_localisation,
+    ir_map_data,
+    iu_localisation,
+    iu_map_data,
+    iu_setup_start,
+    mod_root,
+    eu5_game,
+)
 from .write_data import write_blocks, print_written
 
 ### THIS FILE IS EXPERIMENTAL AND CURRENTLY NOT USED ###
@@ -154,7 +163,9 @@ def clean_name(name: str) -> str:
                 new_name += "_"
             new_name += c
         name = new_name
-    return re.sub(r"[^a-z0-9_]", "", name.lower())
+    name = re.sub(r"[^a-z0-9_]", "", name.lower())
+    name = re.sub(r"_+", "_", name).strip("_")
+    return name or "unnamed"
 
 
 def read_csv(file_path: Path, skip_header=True):
@@ -259,6 +270,8 @@ def parse_definitions() -> list[tuple[int, str, int, int, int, str]]:
                 loc_name = "unnamed"
 
             key = clean_name(loc_name)
+            if key == "unnamed":
+                key = f"unnamed_{prov_id}"
 
             counts[key] += 1
             rows.append((prov_id, key, r, g, b, loc_name))
@@ -275,9 +288,14 @@ def parse_definitions() -> list[tuple[int, str, int, int, int, str]]:
     return final_rows
 
 
-def parse_adjacencies(id_to_key: dict[int, str]) -> list[dict]:
+def parse_adjacencies(id_to_key: dict[int, str], location_keys: set[str] | None = None) -> list[dict]:
     """Parse adjacencies.csv into dictionaries."""
     file = ir_map_data / "adjacencies.csv"
+    type_map = {
+        "river_large": "sea",
+    }
+    if location_keys is None:
+        location_keys = set(id_to_key.values())
     adjacencies = []
     for row in read_csv(file, skip_header=True):
         if len(row) < 4:
@@ -286,12 +304,23 @@ def parse_adjacencies(id_to_key: dict[int, str]) -> list[dict]:
             from_id, to_id, through_id = int(row[0]), int(row[1]), int(row[3])
         except ValueError:
             continue
+        raw_type = row[2].strip()
+        adj_type = type_map.get(raw_type, raw_type)
+        from_key = id_to_key.get(from_id, "")
+        to_key = id_to_key.get(to_id, "")
+        through_key = id_to_key.get(through_id, "")
+        if not from_key or not to_key:
+            continue
+        if from_key not in location_keys or to_key not in location_keys:
+            continue
+        if not through_key or through_key not in location_keys:
+            through_key = from_key
         adjacencies.append(
             {
-                "From": id_to_key.get(from_id, f"UNKNOWN_{from_id}"),
-                "To": id_to_key.get(to_id, f"UNKNOWN_{to_id}"),
-                "Through": id_to_key.get(through_id, f"UNKNOWN_{through_id}"),
-                "Type": row[2],
+                "From": from_key,
+                "To": to_key,
+                "Through": through_key,
+                "Type": adj_type,
                 "x1": int(row[4]) if len(row) > 4 and row[4] else "",
                 "y1": int(row[5]) if len(row) > 5 and row[5] else "",
                 "x2": int(row[6]) if len(row) > 6 and row[6] else "",
@@ -341,14 +370,21 @@ def build_regions(id_to_key: dict[int, str]):
 
     # print(list(regions.keys()))
 
-    region_map = {
-        region: {
-            area: [id_to_key[pid] for pid in as_list(areas[area]["provinces"])]
-            for area in region_data["areas"]
-            if area in areas
-        }
-        for region, region_data in regions.items()
-    }
+    region_map = {}
+    for region, region_data in regions.items():
+        area_map = {}
+        for area in region_data["areas"]:
+            if area not in areas:
+                continue
+            province_ids = as_list(areas[area]["provinces"])
+            if not province_ids:
+                continue
+            provinces = [id_to_key[pid] for pid in province_ids if pid in id_to_key]
+            if not provinces:
+                continue
+            area_map[area] = provinces
+        if area_map:
+            region_map[region] = area_map
 
     return region_map
 
@@ -425,14 +461,16 @@ def hierarchy_to_blocks(data: dict) -> list[tuple[str, list]]:
     for tag, value in data.items():
         # Leaf: area -> [province_keys]
         if isinstance(value, list):
-            unique_values = list(dict.fromkeys(value))
+            cleaned_values = [v for v in value if isinstance(v, str) and v.strip()]
+            unique_values = list(dict.fromkeys(cleaned_values))
             province_list = " ".join(unique_values)
             blocks.append(f"{tag} = {{ {province_list} }}")
 
         # Node: higher-level grouping
         elif isinstance(value, dict):
             sublines = hierarchy_to_blocks(value)
-            blocks.append((tag, sublines))
+            if sublines:
+                blocks.append((tag, sublines))
 
         else:
             raise TypeError(f"Unsupported hierarchy value type: {type(value)}")
@@ -533,6 +571,125 @@ def build_default_map(id_to_key: dict[int, str]):
     return data
 
 
+def _get_tree_value(data, key: str):
+    if isinstance(data, _pydt.Tree):
+        return data[key] if key in data else None
+    if isinstance(data, dict):
+        return data.get(key)
+    return None
+
+
+def _prefix_ir(tag: str | None) -> str | None:
+    if not tag:
+        return None
+    return tag if tag.startswith("ir_") else f"ir_{tag}"
+
+
+def build_ir_pops(id_to_key: dict[int, str]) -> dict[str, list[str]]:
+    """Build EU5 pop blocks from Imperator province setup data.
+
+    Returns: { location_key: [define_pop_line, ...] }
+    """
+    province_dir = ir_game / "setup" / "provinces"
+    if not province_dir.exists():
+        return {}
+
+    pop_type_map = {
+        "nobles": "nobles",
+        "citizen": "burghers",
+        "freemen": "peasants",
+        "slaves": "slaves",
+        "tribesmen": "tribesmen",
+    }
+
+    def format_size(value) -> str:
+        try:
+            num = float(value)
+        except Exception:
+            return "0"
+        return f"{num:.3f}"
+
+    locations: dict[str, list[str]] = {}
+
+    for path in sorted(province_dir.glob("*.txt")):
+        tree = parse_tree(path)
+        for raw_id, data in tree.items():
+            try:
+                prov_id = int(raw_id)
+            except Exception:
+                continue
+            if prov_id not in id_to_key:
+                continue
+            if not isinstance(data, (_pydt.Tree, dict)):
+                continue
+
+            province_culture = _get_tree_value(data, "culture")
+            province_religion = _get_tree_value(data, "religion")
+
+            for pop_key, pop_value in data.items():
+                if pop_key not in pop_type_map:
+                    continue
+                entries = pop_value if isinstance(pop_value, list) else [pop_value]
+                for entry in entries:
+                    if not isinstance(entry, (_pydt.Tree, dict)):
+                        continue
+                    amount = _get_tree_value(entry, "amount")
+                    if amount is None:
+                        continue
+                    culture = _get_tree_value(entry, "culture") or province_culture
+                    religion = _get_tree_value(entry, "religion") or province_religion
+                    culture = _prefix_ir(str(culture)) if culture else None
+                    religion = _prefix_ir(str(religion)) if religion else None
+                    if not culture or not religion:
+                        continue
+
+                    loc_key = id_to_key[prov_id]
+                    pop_type = pop_type_map[pop_key]
+                    size = format_size(amount)
+                    line = (
+                        "define_pop = { "
+                        f"type = {pop_type} "
+                        f"size = {size} "
+                        f"culture = {culture} "
+                        f"religion = {religion} "
+                        "}"
+                    )
+                    locations.setdefault(loc_key, []).append(line)
+
+    return locations
+
+
+def build_ir_location_ranks(
+    id_to_key: dict[int, str],
+    locations_with_pops: set[str],
+    town_setup: str,
+) -> dict[str, str]:
+    """Build EU5 location rank data from Imperator province setup data."""
+    province_dir = ir_game / "setup" / "provinces"
+    if not province_dir.exists():
+        return {}
+
+    ranks: dict[str, str] = {}
+
+    for path in sorted(province_dir.glob("*.txt")):
+        tree = parse_tree(path)
+        for raw_id, data in tree.items():
+            try:
+                prov_id = int(raw_id)
+            except Exception:
+                continue
+            loc_key = id_to_key.get(prov_id)
+            if not loc_key or loc_key not in locations_with_pops:
+                continue
+            if not isinstance(data, (_pydt.Tree, dict)):
+                continue
+
+            # Map all IR ranks to EU5 town per user preference.
+            ranks[loc_key] = f"rank = town town_setup = {town_setup}"
+
+    return ranks
+
+
 def write_default_map(ir_default_map_data: dict):
     """
     Writes the default.map file for Imperator / EU modding, mapping and aggregating categories.
@@ -620,7 +777,7 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     # Adjacencies CSV
     write_csv(
         iu_map_data / "adjacencies.csv",
-        parse_adjacencies(id_to_key)[:-1],
+        parse_adjacencies(id_to_key, location_keys)[:-1],
         ["From", "To", "Type", "Through", "x1", "y1", "x2", "y2", "Comment"],
     )
 
@@ -636,25 +793,41 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
 
     # Area validation
     regions = build_regions(id_to_key)
+    assigned_provinces = {
+        province
+        for area_map in regions.values()
+        for provinces in area_map.values()
+        if isinstance(provinces, list)
+        for province in provinces
+    }
+
     river_provinces = default_map.get("river_provinces", set()) if isinstance(default_map, dict) else set()
-    if river_provinces:
+    river_unassigned = set(river_provinces) - assigned_provinces
+    if river_unassigned:
         regions.setdefault("river_provinces_region", {})["river_provinces_area"] = sorted(
-            set(river_provinces)
+            river_unassigned
         )
 
     sea_zones = default_map.get("sea_zones", set()) if isinstance(default_map, dict) else set()
-    if sea_zones:
-        regions.setdefault("sea_zones_region", {})["sea_zones_area"] = sorted(set(sea_zones))
+    sea_unassigned = set(sea_zones) - assigned_provinces
+    if sea_unassigned:
+        regions.setdefault("sea_zones_region", {})["sea_zones_area"] = sorted(sea_unassigned)
 
     lakes = default_map.get("lakes", set()) if isinstance(default_map, dict) else set()
-    if lakes:
-        regions.setdefault("lakes_region", {})["lakes_area"] = sorted(set(lakes))
+    lakes_unassigned = set(lakes) - assigned_provinces
+    if lakes_unassigned:
+        regions.setdefault("lakes_region", {})["lakes_area"] = sorted(lakes_unassigned)
 
     non_ownable = set()
     for key in ("impassable_terrain", "uninhabitable", "wasteland"):
         non_ownable.update(default_map.get(key, set()) if isinstance(default_map, dict) else set())
-    if non_ownable:
-        regions.setdefault("non_ownable_region", {})["non_ownable_area"] = sorted(set(non_ownable))
+    # Avoid overlaps between non-ownable and other special buckets.
+    non_ownable = set(non_ownable) - set(sea_zones) - set(lakes) - set(river_provinces)
+    non_ownable_unassigned = set(non_ownable) - assigned_provinces
+    if non_ownable_unassigned:
+        regions.setdefault("non_ownable_region", {})["non_ownable_area"] = sorted(
+            non_ownable_unassigned
+        )
     region_keys = set(regions.keys())
     area_keys = {area for region in regions.values() for area in region.keys()}
     known_provinces = {
@@ -757,6 +930,20 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
         if key not in existing_loc:
             loc_lines.append(f'  {key}: "{ir_loc.get(key, _title_key(key))}"')
 
+    # --- Generated map helper regions/areas ---
+    for key in (
+        "lakes_region",
+        "lakes_area",
+        "non_ownable_region",
+        "non_ownable_area",
+        "river_provinces_region",
+        "river_provinces_area",
+        "sea_zones_region",
+        "sea_zones_area",
+    ):
+        if key not in existing_loc:
+            loc_lines.append(f'  {key}: "{_title_key(key)}"')
+
     # Write localisation file
     write_blocks(iu_localisation / "ir_map_l_english.yml", loc_lines)
 
@@ -793,7 +980,7 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     if src_building_triggers.exists():
         dst_building_triggers.parent.mkdir(parents=True, exist_ok=True)
         with src_building_triggers.open(encoding="utf-8-sig") as src, dst_building_triggers.open(
-            "w", encoding="utf-8"
+            "w", encoding="utf-8-sig"
         ) as dst:
             for line in src:
                 stripped = line.strip()
@@ -976,7 +1163,7 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
 
         if changed:
             dst_path.parent.mkdir(parents=True, exist_ok=True)
-            dst_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+            dst_path.write_text("\n".join(lines) + "\n", encoding="utf-8-sig")
             print_written("file", dst_path)
 
     script_roots = [
@@ -996,7 +1183,6 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     setup_start_dir = eu5_game / "main_menu" / "setup" / "start"
     dst_setup_start_dir = mod_root / "main_menu" / "setup" / "start"
     location_keyed_files = {
-        "06_pops.txt",
         "07_cities_and_buildings.txt",
         "08_institutions.txt",
         "14_development.txt",
@@ -1012,7 +1198,27 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
             for tag, data in tree.items():
                 if tag in location_keys:
                     filtered[tag] = data
-            write_blocks(dst_setup_start_dir / filename, filtered)
+            write_blocks(dst_setup_start_dir / filename, filtered, encoding="utf-8")
+
+    # --- Port Imperator population data (locations) ---
+    pops_by_location = build_ir_pops(id_to_key)
+    pops_blocks = []
+    for loc_key in sorted(pops_by_location.keys()):
+        pops_blocks.append((loc_key, pops_by_location[loc_key]))
+    write_blocks(iu_setup_start / "06_pops.txt", [("locations", pops_blocks)], encoding="utf-8")
+
+    # --- Port Imperator location ranks (towns/cities) ---
+    rank_lines = build_ir_location_ranks(
+        id_to_key,
+        set(pops_by_location.keys()),
+        town_setup="italian_city",
+    )
+    rank_blocks = [(loc_key, [rank_lines[loc_key]]) for loc_key in sorted(rank_lines.keys())]
+    write_blocks(
+        iu_setup_start / "07_cities_and_buildings.txt",
+        [("locations", rank_blocks)],
+        encoding="utf-8",
+    )
 
     # --- Filter markets (locations) ---
     markets_src = eu5_game / "main_menu" / "setup" / "start" / "03_markets.txt"
@@ -1035,19 +1241,23 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     roads_src = eu5_game / "main_menu" / "setup" / "start" / "09_roads.txt"
     roads_dst = mod_root / "main_menu" / "setup" / "start" / "09_roads.txt"
     if roads_src.exists():
-        lines = []
+        road_lines = []
         for line in roads_src.read_text(encoding="utf-8-sig").splitlines():
             stripped = line.strip()
-            if "=" in stripped and not stripped.startswith("#"):
-                left, right = [s.strip() for s in stripped.split("=", 1)]
-                if left and right and left in location_keys and right.split()[0] in location_keys:
-                    lines.append(line)
-                else:
-                    continue
-            else:
-                lines.append(line)
+            if not stripped or stripped.startswith("#"):
+                continue
+            if "=" not in stripped:
+                continue
+            left, right = [s.strip() for s in stripped.split("=", 1)]
+            right_key = right.split()[0] if right else ""
+            if left and right_key and left in location_keys and right_key in location_keys:
+                road_lines.append(f"\t{left} = {right_key}")
+
         roads_dst.parent.mkdir(parents=True, exist_ok=True)
-        roads_dst.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        roads_dst.write_text(
+            "road_network = {\n" + "\n".join(road_lines) + "\n}\n",
+            encoding="utf-8",
+        )
         print_written("file", roads_dst)
 
     # --- Filter exploration preferences (areas/regions) ---

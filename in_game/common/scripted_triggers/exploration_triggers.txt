@@ -1,4 +1,4 @@
-discovered_any_in_americas_trigger = {
+﻿discovered_any_in_americas_trigger = {
 	OR = {
 		has_discovered_area = area:canadian_atlantic_coast_area
 		has_discovered_area = area:east_coast_sea_zones_area

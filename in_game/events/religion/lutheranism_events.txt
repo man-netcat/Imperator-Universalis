@@ -1,4 +1,4 @@
-namespace = lutheranism_events
+﻿namespace = lutheranism_events
 lutheranism_events.1 = {
 	hide_portraits = yes
 	type = country_event

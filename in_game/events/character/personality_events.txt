@@ -1,4 +1,4 @@
-namespace = personality_events
+﻿namespace = personality_events
 
 ###################################
 # Scholar

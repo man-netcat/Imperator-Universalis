@@ -1,4 +1,4 @@
-namespace = black_death
+﻿namespace = black_death
 
 black_death.1 = {
 	type = country_event

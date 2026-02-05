@@ -1,4 +1,4 @@
-black_death = {
+﻿black_death = {
 	#can always start if disease:bubonic_plague is around
 	monthly_spawn_chance = monthly_spawn_chance_unique
 	hint_tag = hint_black_death

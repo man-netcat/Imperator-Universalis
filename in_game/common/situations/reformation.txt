@@ -1,4 +1,4 @@
-reformation = {
+﻿reformation = {
 	monthly_spawn_chance = monthly_spawn_chance_high
 	hint_tag = hint_reformation
 	can_start = {

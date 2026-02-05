@@ -1,4 +1,4 @@
-namespace = flavor_dlh
+﻿namespace = flavor_dlh
 
 scripted_effect set_head_scope = {
 	if = {

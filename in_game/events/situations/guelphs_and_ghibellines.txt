@@ -1,4 +1,4 @@
-namespace = guelphs_and_ghibellines
+﻿namespace = guelphs_and_ghibellines
 
 guelphs_and_ghibellines.1 = {
 	type = country_event

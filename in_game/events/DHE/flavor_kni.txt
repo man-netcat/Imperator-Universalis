@@ -1,4 +1,4 @@
-namespace = flavor_kni
+﻿namespace = flavor_kni
 
 flavor_kni.3 = {
 	type = country_event

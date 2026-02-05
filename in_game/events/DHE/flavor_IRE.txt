@@ -1,4 +1,4 @@
-namespace = ireland
+﻿namespace = ireland
 
 scripted_trigger country_is_bardic_trigger = {
 	has_reform = government_reform:celtic_traditions_reform

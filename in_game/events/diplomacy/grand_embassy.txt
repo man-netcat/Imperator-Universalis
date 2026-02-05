@@ -1,4 +1,4 @@
-namespace = grand_embassy
+﻿namespace = grand_embassy
 
 scripted_trigger is_valid_embassy_country = {
 	opinion = { target = root value >= 10 }

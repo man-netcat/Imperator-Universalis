@@ -1,4 +1,4 @@
-namespace = language
+﻿namespace = language
 
 # Our court language is the same as a war enemy, should we change it?
 language.1 = {

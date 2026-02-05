@@ -1,4 +1,4 @@
-namespace = flavor_wls
+﻿namespace = flavor_wls
 
 scripted_trigger country_eisteddfod_trigger = {
 	NOT = { culture = culture:welsh }

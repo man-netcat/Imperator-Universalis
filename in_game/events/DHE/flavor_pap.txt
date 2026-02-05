@@ -1,4 +1,4 @@
-namespace = flavor_pap
+﻿namespace = flavor_pap
 
 #######################
 # Age of Renaissance

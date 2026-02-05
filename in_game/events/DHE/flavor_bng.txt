@@ -1,4 +1,4 @@
-namespace = flavor_bng
+﻿namespace = flavor_bng
 
 flavor_bng.1 = { #Nur Qutb Alam and the Chishti Order
 	type = country_event

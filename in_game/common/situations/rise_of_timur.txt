@@ -1,4 +1,4 @@
-rise_of_timur = {
+﻿rise_of_timur = {
 	monthly_spawn_chance = monthly_spawn_chance_unique
 	hint_tag = hint_rise_of_timur
 	can_start = {

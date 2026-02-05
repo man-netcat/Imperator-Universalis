@@ -1,4 +1,4 @@
-namespace = flavor_mlo
+﻿namespace = flavor_mlo
 
 flavor_mlo.3 = {
 	type = country_event

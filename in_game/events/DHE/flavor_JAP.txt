@@ -1,4 +1,4 @@
-namespace = flavor_jap
+﻿namespace = flavor_jap
 
 flavor_jap.1 = { #The Sakoku Law
 	type = country_event

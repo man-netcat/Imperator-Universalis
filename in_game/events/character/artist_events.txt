@@ -1,4 +1,4 @@
-namespace = artist_events
+﻿namespace = artist_events
 
 scripted_trigger artist_events_1_character_trigger = {
 	artist_skill >= 0.7

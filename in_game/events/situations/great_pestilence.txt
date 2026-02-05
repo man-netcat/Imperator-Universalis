@@ -1,4 +1,4 @@
-namespace = great_pestilence
+﻿namespace = great_pestilence
 
 #Country gets infected
 great_pestilence.1 = {

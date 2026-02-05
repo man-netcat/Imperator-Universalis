@@ -1,4 +1,4 @@
-#Generic Situation triggers
+﻿#Generic Situation triggers
 has_enabled_situation_trigger = {
 	custom_description = {
 		text = has_enabled_situation_trigger_text

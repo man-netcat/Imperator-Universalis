@@ -1,6 +1,5 @@
-
+road_network = {
 	parma = cremona
 	bhadohi = varanasi
 	burhanpur = pachora
-
 }

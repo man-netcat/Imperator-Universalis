@@ -1,4 +1,4 @@
-namespace = generic_mission_events
+﻿namespace = generic_mission_events
 
 #Estate Cooperation Events
 #Generic

@@ -1,4 +1,4 @@
-namespace = flavor_geo
+﻿namespace = flavor_geo
 
 #The [ShowCultureGroupNameWithNoTooltip('mongolian_group')] Expulsion
 flavor_geo.1 = {

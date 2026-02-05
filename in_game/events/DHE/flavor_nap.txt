@@ -1,4 +1,4 @@
-namespace = flavor_nap
+﻿namespace = flavor_nap
 
 flavor_nap.3 = { #Renaissance in Naples
 	type = country_event

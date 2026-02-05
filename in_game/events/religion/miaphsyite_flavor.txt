@@ -1,4 +1,4 @@
-namespace = miaphysite_flavor
+﻿namespace = miaphysite_flavor
 
 miaphysite_flavor.1 = {
 	hide_portraits = yes

@@ -1,4 +1,4 @@
-namespace = flavor_mei
+﻿namespace = flavor_mei
 
 flavor_mei.1 = { #Second Freiberger Berggeschrey
 	type = country_event

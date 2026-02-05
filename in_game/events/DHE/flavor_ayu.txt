@@ -1,4 +1,4 @@
-namespace = flavor_ayu
+﻿namespace = flavor_ayu
 
 flavor_ayu.1 = { #Formation of Ayutthaya
 	type = country_event

@@ -1,4 +1,4 @@
-namespace = flavor_chi
+﻿namespace = flavor_chi
 
 scripted_trigger is_yuan_china = {
 	culture = culture:mongolian_culture

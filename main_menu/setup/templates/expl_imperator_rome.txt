@@ -32,7 +32,6 @@ discovered_areas = {
 	avanti_region
 	bactriana_region
 	baetica_region
-	baltic_sea_region
 	belgica_region
 	bithynia_region
 	black_sea_river_region
@@ -59,10 +58,8 @@ discovered_areas = {
 	gandhara_region
 	gedrosia_region
 	germania_region
-	germania_river_region
 	germania_superior_region
 	greece_region
-	greek_river_region
 	himalayan_region
 	iberian_river_region
 	illyria_region
@@ -80,24 +77,18 @@ discovered_areas = {
 	media_region
 	mediterranean_region
 	mesopotamia_region
-	mesopotamia_river_region
 	moesia_region
-	nile_region
 	non_ownable_region
 	nubia_region
 	numidia_region
-	padus_river_region
 	palestine_region
 	pannonia_region
 	parthia_region
-	persian_gulf_region
 	persis_region
 	pontus_region
 	pracya_region
 	punt_region
-	red_sea_region
 	rhaetia_region
-	rhine_region
 	river_provinces_region
 	sarmatia_asiatica_region
 	sarmatia_europea_region
@@ -197,11 +188,9 @@ discovered_provinces = {
 	bamyan_area
 	bassetia_area
 	bastetania_area
-	bekhyria_area
 	bellovacia_area
 	beth_daraye_area
 	biggeronia_area
-	bithynia_area
 	bithynia_inferior_area
 	bithynia_superior_area
 	bituriga_occidentalis_area

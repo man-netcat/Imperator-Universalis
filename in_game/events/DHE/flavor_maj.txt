@@ -1,4 +1,4 @@
-namespace = flavor_maj
+﻿namespace = flavor_maj
 
 flavor_maj.1 = {  #The Book of Kings
 	type = country_event

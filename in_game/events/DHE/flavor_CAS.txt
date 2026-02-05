@@ -1,4 +1,4 @@
-namespace = flavor_cas
+﻿namespace = flavor_cas
 
 flavor_cas.1 = { # Columbus triggered from flavor_por.1
 	type = country_event

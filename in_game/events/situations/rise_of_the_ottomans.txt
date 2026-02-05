@@ -1,4 +1,4 @@
-namespace = rise_of_the_ottomans
+﻿namespace = rise_of_the_ottomans
 
 ######################################
 # The start of the situation events

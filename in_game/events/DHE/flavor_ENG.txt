@@ -1,4 +1,4 @@
-namespace = flavor_eng
+﻿namespace = flavor_eng
 
 
 # The Lollard Heresy

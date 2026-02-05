@@ -1,4 +1,4 @@
-namespace = english_civil_war
+﻿namespace = english_civil_war
 
 #English Civil War related Events
 

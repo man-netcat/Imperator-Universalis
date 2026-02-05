@@ -1,4 +1,4 @@
-namespace = flavor_gen
+﻿namespace = flavor_gen
 
 scripted_trigger is_corsica = {
 	OR = {

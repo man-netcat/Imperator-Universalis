@@ -1,4 +1,4 @@
-namespace = flavor_por
+﻿namespace = flavor_por
 
 flavor_por.1 = { #Christopher Columbus in Portugal
 	hide_portraits = yes

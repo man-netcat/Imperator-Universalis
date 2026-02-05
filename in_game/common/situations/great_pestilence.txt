@@ -1,4 +1,4 @@
-great_pestilence = {
+﻿great_pestilence = {
 	#https://en.wikipedia.org/wiki/Cocoliztli_epidemics
 	#https://en.wikipedia.org/wiki/Columbian_exchange#Of_diseases
 	#https://en.wikipedia.org/wiki/Native_American_disease_and_epidemics

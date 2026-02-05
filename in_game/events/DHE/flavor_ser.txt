@@ -1,4 +1,4 @@
-namespace = flavor_ser
+﻿namespace = flavor_ser
 
 scripted_trigger ser_valid_male_for_ruler = {
 	is_adult = yes

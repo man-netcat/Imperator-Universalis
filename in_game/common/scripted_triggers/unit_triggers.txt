@@ -1,4 +1,4 @@
-unit_kerns_pop_trigger = {
+﻿unit_kerns_pop_trigger = {
 	culture = { 
 		# irish
 		has_culture_group = culture_group:hibernian_group

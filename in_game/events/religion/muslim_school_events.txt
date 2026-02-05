@@ -1,4 +1,4 @@
-namespace = muslim_school_events
+﻿namespace = muslim_school_events
 muslim_school_events.1 = {
 	type = country_event
 	title = muslim_school_events.1.title

@@ -1,4 +1,4 @@
-namespace = little_ice_age
+﻿namespace = little_ice_age
 
 little_ice_age.1 = {
 	type = country_event

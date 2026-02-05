@@ -1,4 +1,4 @@
-namespace = republics
+﻿namespace = republics
 republics.1 = {
 	type = country_event
 	title = republics.1.title

@@ -1,4 +1,4 @@
-namespace = flavor_dan
+﻿namespace = flavor_dan
 
 scripted_effect drown_pops = { #used for flavor_dan.1
 	every_pop = {

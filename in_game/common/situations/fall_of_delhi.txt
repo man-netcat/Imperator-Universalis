@@ -1,4 +1,4 @@
-fall_of_delhi = {
+﻿fall_of_delhi = {
 	monthly_spawn_chance = monthly_spawn_chance_low
 	hint_tag = hint_fall_of_delhi
 	resolution = "fall_of_delhi_resolution"

@@ -1,4 +1,4 @@
-namespace = colonial_charter
+﻿namespace = colonial_charter
 
 colonial_charter.1 = {
 	hide_portraits = yes

@@ -1,4 +1,4 @@
-namespace = flavor_kni_pap
+﻿namespace = flavor_kni_pap
 
 # Smyrniote Crusade Announced
 flavor_kni_pap.1 = {

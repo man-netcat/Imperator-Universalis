@@ -1,4 +1,4 @@
-namespace = flavor_sco
+﻿namespace = flavor_sco
 flavor_sco.1 = {
 	type = country_event
 	title = flavor_sco.1.title

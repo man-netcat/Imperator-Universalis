@@ -1,4 +1,4 @@
-namespace = flavor_mal
+﻿namespace = flavor_mal
 
 #Zenith of the Mali Empire
 flavor_mal.1 = {

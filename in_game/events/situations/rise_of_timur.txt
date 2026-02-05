@@ -1,4 +1,4 @@
-namespace = rise_of_timur
+﻿namespace = rise_of_timur
 
 ######################################
 # The start of the situation events

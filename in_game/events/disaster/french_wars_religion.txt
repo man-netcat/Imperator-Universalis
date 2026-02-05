@@ -1,4 +1,4 @@
-namespace = french_wars_religion
+﻿namespace = french_wars_religion
 
 #French Wars of Religion related Events
 

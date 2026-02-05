@@ -1,4 +1,4 @@
-rise_of_the_ottomans = {
+﻿rise_of_the_ottomans = {
 	monthly_spawn_chance = monthly_spawn_chance_unique
 	hint_tag = hint_rise_of_the_ottomans
 	

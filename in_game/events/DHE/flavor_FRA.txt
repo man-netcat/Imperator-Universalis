@@ -1,4 +1,4 @@
-namespace = flavor_fra
+﻿namespace = flavor_fra
 
 flavor_fra.1 = { # Birth of a Permanent Taxation System
 	type = country_event

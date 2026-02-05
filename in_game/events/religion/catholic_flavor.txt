@@ -1,4 +1,4 @@
-namespace = catholic_flavor
+﻿namespace = catholic_flavor
 
 catholic_flavor.1 = { #Influential Preacher
 	type = country_event

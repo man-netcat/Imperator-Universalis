@@ -1,4 +1,4 @@
-namespace = prices
+﻿namespace = prices
 prices.1 = {
 	type = country_event
 	fire_only_once = yes

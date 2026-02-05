@@ -1,4 +1,4 @@
-namespace = flavor_rus
+﻿namespace = flavor_rus
 
 # The Pomjestija Reform
 flavor_rus.1 = {

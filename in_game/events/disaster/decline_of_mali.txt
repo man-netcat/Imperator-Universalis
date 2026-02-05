@@ -1,4 +1,4 @@
-namespace = decline_of_mali
+﻿namespace = decline_of_mali
 
 #Start event
 decline_of_mali.1 = {

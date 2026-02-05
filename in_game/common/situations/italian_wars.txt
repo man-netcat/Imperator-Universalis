@@ -1,4 +1,4 @@
-italian_wars = {
+﻿italian_wars = {
 	monthly_spawn_chance = monthly_spawn_chance_unique
 	hint_tag = hint_italian_wars
 	

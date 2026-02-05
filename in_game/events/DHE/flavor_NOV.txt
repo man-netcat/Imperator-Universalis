@@ -1,4 +1,4 @@
-namespace = flavor_nov
+﻿namespace = flavor_nov
 
 scripted_trigger is_dvina_lands = {
 	OR = {

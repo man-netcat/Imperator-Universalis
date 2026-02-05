@@ -1,4 +1,4 @@
-country_can_ennoble_trigger = {
+﻿country_can_ennoble_trigger = {
 	OR = {
 		NOR = {
 			government_type = government_type:republic

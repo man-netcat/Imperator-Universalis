@@ -1,4 +1,4 @@
-namespace = random_event
+﻿namespace = random_event
 
 ########################
 # Comet Sighted

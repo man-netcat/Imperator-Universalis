@@ -1,4 +1,4 @@
-is_owned_by_target_or_subject = {
+﻿is_owned_by_target_or_subject = {
 	OR = {
 		owner = $owner$
 		owner = { is_subject_of = $owner$ }

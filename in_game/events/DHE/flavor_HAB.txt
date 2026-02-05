@@ -1,4 +1,4 @@
-namespace = flavor_hab
+﻿namespace = flavor_hab
 
 flavor_hab.1 = { #Johann Ribi von Lenzburg
 	type = country_event

@@ -1,4 +1,4 @@
-namespace = flavor_kor
+﻿namespace = flavor_kor
 #The Mongol Control
 flavor_kor.1 = {
 	hide_portraits = yes

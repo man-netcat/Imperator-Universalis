@@ -1,4 +1,4 @@
-namespace = cossack_estate_events
+﻿namespace = cossack_estate_events
 
 scripted_trigger is_steppe_location = {
 	is_ownable = yes

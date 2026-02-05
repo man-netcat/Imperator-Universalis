@@ -1,4 +1,4 @@
-namespace = flavor_hun
+﻿namespace = flavor_hun
 flavor_hun.100 = {
 	hide_portraits = yes
 	type = country_event

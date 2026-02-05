@@ -1,4 +1,4 @@
-namespace = revolutionary_chaos
+﻿namespace = revolutionary_chaos
 
 scripted_effect rev_chaos_side_effect = {
 	if = {

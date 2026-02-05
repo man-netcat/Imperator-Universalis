@@ -1,4 +1,4 @@
-namespace = treaty_of_tordesillas
+﻿namespace = treaty_of_tordesillas
 
 #First Event
 #root = country

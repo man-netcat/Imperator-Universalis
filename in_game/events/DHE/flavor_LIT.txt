@@ -1,4 +1,4 @@
-namespace = flavor_lit
+﻿namespace = flavor_lit
 flavor_lit.1 = {
 	type = country_event
 	title = flavor_lit.1.title

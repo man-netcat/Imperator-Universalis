@@ -1,4 +1,4 @@
-namespace = banking
+﻿namespace = banking
 
 #################################
 # The Rise of the Fuggers
