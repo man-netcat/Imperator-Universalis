@@ -8160,6 +8160,7 @@ l_english:
   padus_river_region: ""
   british_river_region: ""
   don_river_region: ""
+  river_provinces_region: "river_provinces_region"
   roma_area: "Latium"
   south_etruria_area: "Tuscia"
   north_etruria_area: "Dodecapolis"
@@ -8761,3 +8762,4 @@ l_english:
   hull_river_area: ""
   don_river_area: ""
   volga_river_area: ""
+  river_provinces_area: "river_provinces_area"

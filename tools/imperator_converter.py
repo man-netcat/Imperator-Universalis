@@ -81,9 +81,8 @@ if __name__ == "__main__":
     diplomatic_relationships, international_organisations = extract_diplomacy_data()
     named_locations = {t[0]: t[1] for t in parse_definitions()}
     ir_country_locations = extract_ir_country_locations()
-    ten_countries_data = extract_start_data(
-        "10_countries.txt", "countries", "countries"
-    )
+    # Do not seed from EU5 base 10_countries; generate from IR data only.
+    ten_countries_data = {}
     five_characters_data = extract_start_data("05_characters.txt", "character_db")
     four_dynasties_data = extract_start_data("04_dynasties.txt", "dynasty_manager")
     twelve_diplomacy_data = extract_start_data("12_diplomacy.txt", "diplomacy_manager")

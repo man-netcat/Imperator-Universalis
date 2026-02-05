@@ -1,4 +1,5 @@
 import os
+import re
 from collections import defaultdict
 from pathlib import Path
 from typing import List, Tuple, Union
@@ -28,6 +29,13 @@ AUTO_GENERATED_HEADER = (
 
 def ensure_list(value):
     return value if isinstance(value, list) else [value]
+
+
+def _clean_key(value: str) -> str:
+    cleaned = value.strip().lower()
+    cleaned = re.sub(r"[\s\-]+", "_", cleaned)
+    cleaned = re.sub(r"[^a-z0-9_]", "", cleaned)
+    return cleaned
 
 
 def print_written(kind: str, out_path: Path) -> None:
@@ -626,9 +634,9 @@ def write_10_countries(
 
         # --- own_control_core ---
         ir_locations = None
-        if ir_country_locations and id_to_key and tag in ir_country_locations:
+        if ir_country_locations is not None and id_to_key is not None:
             ir_locations = []
-            for pid in ir_country_locations[tag]:
+            for pid in ir_country_locations.get(tag, []):
                 if pid in id_to_key:
                     loc = id_to_key.get(pid)
                     if loc is None:
@@ -644,8 +652,7 @@ def write_10_countries(
             )
 
         if not locations:
-            comment_tags.add(tag)
-            # force inline empty block
+            # force inline empty block (keep country enabled)
             merged["own_control_core"] = "{ }"
         else:
             prov_map: dict[str, list] = {}
@@ -668,6 +675,10 @@ def write_10_countries(
 
         # --- government (merge, override ruler if exists) ---
         base_government = base.get("government", {})
+        if isinstance(base_government, _pydt.Tree):
+            base_government = dict(base_government)
+        if not isinstance(base_government, dict):
+            base_government = {}
         merged_government = dict(base_government)  # copy existing fields
 
         if ruler:

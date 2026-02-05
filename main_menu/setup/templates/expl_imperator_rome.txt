@@ -96,6 +96,7 @@ discovered_areas = {
 	red_sea_region
 	rhaetia_region
 	rhine_region
+	river_provinces_region
 	sarmatia_asiatica_region
 	sarmatia_europea_region
 	scandinavia_region
@@ -576,6 +577,7 @@ discovered_provinces = {
 	rhagai_area
 	rhodanus_river_area
 	rhodope_area
+	river_provinces_area
 	roma_area
 	rugia_area
 	rutubis_area

@@ -248,7 +248,11 @@ def extract_eu5_map_data():
 
 
 def extract_start_data(file_name, root_key, sub_key=None):
-    tree = parse_tree(iu_setup_start / file_name)
+    base_start = eu5_game / "main_menu" / "setup" / "start"
+    if file_name == "10_countries.txt" and (base_start / file_name).exists():
+        tree = parse_tree(base_start / file_name)
+    else:
+        tree = parse_tree(iu_setup_start / file_name)
     data = tree[root_key]
     if sub_key:
         data = data[sub_key]
@@ -257,28 +261,57 @@ def extract_start_data(file_name, root_key, sub_key=None):
 
 def extract_ir_country_locations():
     """Return mapping of country tag -> list of province IDs from IR own_control_core."""
+    def _collect_ids(value: Any, out: list[int]) -> None:
+        if value is None:
+            return
+        if isinstance(value, (int,)):
+            out.append(int(value))
+            return
+        if isinstance(value, _pydt.Color):
+            for channel in value.channels:
+                try:
+                    out.append(int(channel))
+                except Exception:
+                    continue
+            return
+        if isinstance(value, str):
+            try:
+                out.append(int(value))
+            except Exception:
+                return
+            return
+        if isinstance(value, (list, tuple)):
+            for v in value:
+                _collect_ids(v, out)
+            return
+        if isinstance(value, (_pydt.Tree, dict)):
+            for k, v in value.items():
+                _collect_ids(k, out)
+                _collect_ids(v, out)
+            return
+
     tree = parse_tree(ir_default)
     countries = tree["country"]["countries"]
     result: dict[str, list[int]] = {}
 
     for tag, data in countries.items():
         prov_ids: list[int] = []
-        for key, value in data.items():
-            if key != "own_control_core":
-                continue
-            if isinstance(value, list):
-                for v in value:
-                    try:
-                        prov_ids.append(int(v))
-                    except Exception:
-                        continue
-            else:
-                try:
-                    prov_ids.append(int(value))
-                except Exception:
-                    continue
+        try:
+            values = list(data.find_all("own_control_core"))
+        except Exception:
+            values = []
+
+        for value in values:
+            _collect_ids(value, prov_ids)
+
         if prov_ids:
-            result[tag] = prov_ids
+            seen = set()
+            deduped = []
+            for pid in prov_ids:
+                if pid not in seen:
+                    seen.add(pid)
+                    deduped.append(pid)
+            result[tag] = deduped
 
     return result
 

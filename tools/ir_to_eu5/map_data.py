@@ -453,7 +453,7 @@ def build_default_map(id_to_key: dict[int, str]):
 
     with open(default_map, encoding="utf-8") as f:
         for line in f:
-            line = line.strip()
+            line = line.split("#", 1)[0].strip()
             if not line or line.startswith("#"):
                 continue
 
@@ -576,8 +576,16 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
         ["LandProvince", "SeaZone", "x", "y"],
     )
 
+    # Default map categories (for sea zones, rivers, etc.)
+    default_map = build_default_map(id_to_key)
+
     # Area validation
     regions = build_regions(id_to_key)
+    river_provinces = default_map.get("river_provinces", set()) if isinstance(default_map, dict) else set()
+    if river_provinces:
+        regions.setdefault("river_provinces_region", {})["river_provinces_area"] = sorted(
+            river_provinces
+        )
     region_keys = set(regions.keys())
     area_keys = {area for region in regions.values() for area in region.keys()}
     nested = build_full_hierarchy(regions, superregion_map, continent_map)
@@ -630,19 +638,17 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
 
     # --- Regions ---
     for region_tag in regions:
-        name = ir_loc[region_tag]
+        name = ir_loc.get(region_tag, region_tag)
         loc_lines.append(f'  {region_tag}: "{name}"')
 
     # --- Areas ---
     for area_list in regions.values():
         for area_tag in area_list:
-            name = ir_loc[area_tag]
+            name = ir_loc.get(area_tag, area_tag)
             loc_lines.append(f'  {area_tag}: "{name}"')
 
     # Write localisation file
     write_blocks(iu_localisation / "ir_map_l_english.yml", loc_lines)
-
-    default_map = build_default_map(id_to_key)
 
     write_default_map(default_map)
 

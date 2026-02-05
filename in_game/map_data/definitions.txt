@@ -834,6 +834,9 @@ unmapped_continent = {
             }
             rhine_region = {
             }
+            river_provinces_region = {
+                river_provinces_area = { abus albis_0 albis_1 albis_2 albis_3 albis_4 baetis_0 baetis_1 borysthenes_0 borysthenes_1 borysthenes_2 borysthenes_3 borysthenes_4 borysthenes_5 borysthenes_6 borysthenes_7 borysthenes_8 borysthenes_9 canal_of_the_pharaohs_0 canal_of_the_pharaohs_1 canal_of_the_pharaohs_2 canal_of_the_pharaohs_3 canal_of_the_pharaohs_4 canal_of_the_pharaohs_5 cydnus dyardanes_0 dyardanes_1 dyardanes_2 echedoros euphrates_0 euphrates_1 euphrates_2 euphrates_3 euphrates_4 flumen_anas_0 flumen_anas_1 ganges_0 ganges_1 ganges_10 ganges_11 ganges_12 ganges_13 ganges_14 ganges_15 ganges_16 ganges_17 ganges_2 ganges_3 ganges_4 ganges_5 ganges_6 ganges_7 ganges_8 ganges_9 garumna_0 garumna_1 iberus_0 iberus_1 iberus_2 indus_0 indus_1 indus_2 indus_3 indus_4 indus_5 indus_6 indus_7 indus_8 ister_0 ister_1 ister_2 ister_3 ister_4 ister_5 ister_6 ister_7 ister_8 ister_9 lacus_ligustinus liger_0 liger_1 liger_2 liger_3 nile nile_the_bolbitine_0 nile_the_bolbitine_1 nile_the_bolbitine_2 nile_the_bolbitine_3 nile_the_bolbitine_4 nile_the_pelusiac_0 nile_the_pelusiac_1 nile_the_pelusiac_2 nile_the_pelusiac_3 nile_the_pelusiac_4 nile_the_phatnitic_0 nile_the_phatnitic_1 nile_the_phatnitic_2 nile_the_phatnitic_3 nile_the_phatnitic_4 padus_0 padus_1 padus_2 padus_3 padus_4 prov7741 pyramus_0 pyramus_1 rha_0 rha_1 rha_2 rhenus_0 rhenus_1 rhenus_2 rhenus_3 rhenus_4 rhenus_5 rhenus_6 rhenus_7 rhodanus sequana_0 sequana_1 sequana_2 tagus_0 tagus_1 tagus_2 tagus_3 tamesis tanais_1 tanais_2 tanais_3 tanais_4 tanais_5 tigris_0 tigris_1 tigris_2 tigris_3 tigris_4 tigris_5 tigris_6 tigris_7 tyras_1 tyras_2 tyras_3 }
+            }
         }
     }
 }
