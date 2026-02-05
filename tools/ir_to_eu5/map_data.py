@@ -425,7 +425,8 @@ def hierarchy_to_blocks(data: dict) -> list[tuple[str, list]]:
     for tag, value in data.items():
         # Leaf: area -> [province_keys]
         if isinstance(value, list):
-            province_list = " ".join(value)
+            unique_values = list(dict.fromkeys(value))
+            province_list = " ".join(unique_values)
             blocks.append(f"{tag} = {{ {province_list} }}")
 
         # Node: higher-level grouping
@@ -446,34 +447,88 @@ def build_default_map(id_to_key: dict[int, str]):
     """
     default_map = ir_map_data / "default.map"
     data = {}
+    mode = None
+    current_category = None
+    buffer: list[str] = []
 
-    # Patterns
-    list_pattern = re.compile(r"(\w+)\s*=\s*LIST\s*{\s*([\d\s]+)\s*}")
-    range_pattern = re.compile(r"(\w+)\s*=\s*RANGE\s*{\s*(\d+)\s+(\d+)\s*}")
+    def _add_list(category: str, values: list[str]) -> None:
+        keys = {
+            id_to_key[int(n)]
+            for n in values
+            if n.isdigit() and int(n) in id_to_key
+        }
+        if keys:
+            data.setdefault(category, set()).update(keys)
+
+    def _add_range(category: str, values: list[str]) -> None:
+        if len(values) < 2:
+            return
+        try:
+            start = int(values[0])
+            end = int(values[1])
+        except Exception:
+            return
+        keys = {
+            id_to_key[n]
+            for n in range(start, end + 1)
+            if n in id_to_key
+        }
+        if keys:
+            data.setdefault(category, set()).update(keys)
 
     with open(default_map, encoding="utf-8") as f:
-        for line in f:
-            line = line.split("#", 1)[0].strip()
-            if not line or line.startswith("#"):
+        for raw_line in f:
+            line = raw_line.split("#", 1)[0].strip()
+            if not line:
                 continue
 
-            # LIST entry
-            list_match = list_pattern.match(line)
-            if list_match:
-                category, numbers = list_match.groups()
-                category = category.lower()  # normalize to lowercase
-                keys = {id_to_key[int(n)] for n in numbers.split()}
-                data.setdefault(category, set()).update(keys)
+            tokens = line.replace("{", " { ").replace("}", " } ").split()
+            if not tokens:
                 continue
 
-            # RANGE entry
-            range_match = range_pattern.match(line)
-            if range_match:
-                category, start, end = range_match.groups()
-                category = category.lower()  # normalize to lowercase
-                keys = {id_to_key[n] for n in range(int(start), int(end) + 1)}
-                data.setdefault(category, set()).update(keys)
-                continue
+            if mode is None:
+                if "=" not in tokens:
+                    continue
+                eq_idx = tokens.index("=")
+                if eq_idx == 0 or eq_idx + 1 >= len(tokens):
+                    continue
+                category = tokens[0].lower()
+                type_token = tokens[eq_idx + 1].upper()
+                if type_token not in ("LIST", "RANGE"):
+                    continue
+                if "{" in tokens:
+                    brace_idx = tokens.index("{")
+                    tail = tokens[brace_idx + 1 :]
+                    if "}" in tail:
+                        end_idx = tail.index("}")
+                        values = tail[:end_idx]
+                        if type_token == "LIST":
+                            _add_list(category, values)
+                        else:
+                            _add_range(category, values)
+                        continue
+                    else:
+                        buffer = tail
+                        mode = type_token
+                        current_category = category
+                else:
+                    buffer = []
+                    mode = type_token
+                    current_category = category
+            else:
+                if "}" in tokens:
+                    end_idx = tokens.index("}")
+                    buffer.extend([t for t in tokens[:end_idx] if t not in ("{", "}")])
+                    if current_category:
+                        if mode == "LIST":
+                            _add_list(current_category, buffer)
+                        else:
+                            _add_range(current_category, buffer)
+                    buffer = []
+                    mode = None
+                    current_category = None
+                else:
+                    buffer.extend([t for t in tokens if t not in ("{", "}")])
 
     return data
 
@@ -584,10 +639,39 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     river_provinces = default_map.get("river_provinces", set()) if isinstance(default_map, dict) else set()
     if river_provinces:
         regions.setdefault("river_provinces_region", {})["river_provinces_area"] = sorted(
-            river_provinces
+            set(river_provinces)
         )
+
+    sea_zones = default_map.get("sea_zones", set()) if isinstance(default_map, dict) else set()
+    if sea_zones:
+        regions.setdefault("sea_zones_region", {})["sea_zones_area"] = sorted(set(sea_zones))
+
+    lakes = default_map.get("lakes", set()) if isinstance(default_map, dict) else set()
+    if lakes:
+        regions.setdefault("lakes_region", {})["lakes_area"] = sorted(set(lakes))
+
+    non_ownable = set()
+    for key in ("impassable_terrain", "uninhabitable", "wasteland"):
+        non_ownable.update(default_map.get(key, set()) if isinstance(default_map, dict) else set())
+    if non_ownable:
+        regions.setdefault("non_ownable_region", {})["non_ownable_area"] = sorted(set(non_ownable))
     region_keys = set(regions.keys())
     area_keys = {area for region in regions.values() for area in region.keys()}
+    known_provinces = {
+        province
+        for region in regions.values()
+        for provinces in region.values()
+        if isinstance(provinces, list)
+        for province in provinces
+    }
+    continent_keys = set()
+    if isinstance(continent_map, dict):
+        for key, value in continent_map.items():
+            if isinstance(value, list):
+                continent_keys.update(value)
+            else:
+                continent_keys.add(key)
+    subcontinent_keys = set(superregion_map.keys()) if isinstance(superregion_map, dict) else set()
     nested = build_full_hierarchy(regions, superregion_map, continent_map)
 
     blocks = hierarchy_to_blocks(nested)
@@ -601,9 +685,10 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     template_path = mod_root / "main_menu" / "setup" / "templates" / "expl_imperator_rome.txt"
     template_path.parent.mkdir(parents=True, exist_ok=True)
 
-    discovered_regions = sorted(
+    superregion_keys = sorted(
         {superregion for sub in superregion_map.values() for superregion in sub.keys()}
     )
+    discovered_regions = sorted(superregion_keys)
     discovered_areas = sorted(region_keys)
     discovered_provinces = sorted(area_keys)
 
@@ -630,10 +715,16 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
 
     # Prefer existing Imperator localisation if present
     ir_loc = read_localisation_file(ir_localisation)
+    location_names_dir = iu_localisation / "location_names"
+    existing_loc = (
+        read_localisation_file(location_names_dir) if location_names_dir.exists() else {}
+    )
 
     # --- Provinces ---
     for prov_id, key, *_ in named_locations:
-        name = ir_loc[f"PROV{prov_id}"]
+        if key in existing_loc:
+            continue
+        name = ir_loc.get(f"PROV{prov_id}", key)
         loc_lines.append(f'  {key}: "{name}"')
 
     # --- Regions ---
@@ -646,6 +737,25 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
         for area_tag in area_list:
             name = ir_loc.get(area_tag, area_tag)
             loc_lines.append(f'  {area_tag}: "{name}"')
+
+    # --- Superregions, subcontinents, and continents ---
+    def _title_key(key: str) -> str:
+        return key.replace("_", " ").strip().title() if key else key
+
+    superregion_keys = sorted(
+        {superregion for sub in superregion_map.values() for superregion in sub.keys()}
+    )
+    for key in superregion_keys:
+        if key not in existing_loc:
+            loc_lines.append(f'  {key}: "{ir_loc.get(key, _title_key(key))}"')
+
+    for key in sorted(subcontinent_keys):
+        if key not in existing_loc:
+            loc_lines.append(f'  {key}: "{ir_loc.get(key, _title_key(key))}"')
+
+    for key in sorted(continent_keys):
+        if key not in existing_loc:
+            loc_lines.append(f'  {key}: "{ir_loc.get(key, _title_key(key))}"')
 
     # Write localisation file
     write_blocks(iu_localisation / "ir_map_l_english.yml", loc_lines)
@@ -807,14 +917,6 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     else:
         fallback_location = None
     fallback_region = next(iter(sorted(region_keys))) if region_keys else None
-    continent_keys = set()
-    if isinstance(continent_map, dict):
-        for key, value in continent_map.items():
-            if isinstance(value, list):
-                continent_keys.update(value)
-            else:
-                continent_keys.add(key)
-    subcontinent_keys = set(superregion_map.keys()) if isinstance(superregion_map, dict) else set()
     fallback_continent = next(iter(sorted(continent_keys))) if continent_keys else None
     fallback_subcontinent = next(iter(sorted(subcontinent_keys))) if subcontinent_keys else None
 

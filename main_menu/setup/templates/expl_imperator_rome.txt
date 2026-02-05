@@ -69,6 +69,7 @@ discovered_areas = {
 	indian_ocean_region
 	indo_gangetic_region
 	karnata_region
+	lakes_region
 	lower_egypt_region
 	lusitania_region
 	macedonia_region
@@ -82,6 +83,7 @@ discovered_areas = {
 	mesopotamia_river_region
 	moesia_region
 	nile_region
+	non_ownable_region
 	nubia_region
 	numidia_region
 	padus_river_region
@@ -101,6 +103,7 @@ discovered_areas = {
 	sarmatia_europea_region
 	scandinavia_region
 	scythia_region
+	sea_zones_region
 	sogdiana_region
 	syria_region
 	tarraconensis_region
@@ -406,6 +409,7 @@ discovered_provinces = {
 	kossioi_area
 	kuntala_area
 	kuru_area
+	lakes_area
 	langobardia_area
 	latobrigia_area
 	lemovicia_area
@@ -500,6 +504,7 @@ discovered_provinces = {
 	neapolis_area
 	nervia_area
 	niniveh_area
+	non_ownable_area
 	noricum_mediterranum_area
 	north_etruria_area
 	north_mahishamandala_area
@@ -600,6 +605,7 @@ discovered_provinces = {
 	scythia_prima_area
 	scythia_trans_montem_area
 	scythia_ultima_area
+	sea_zones_area
 	semnonia_area
 	senonia_area
 	sentonia_maioris_area
