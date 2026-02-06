@@ -9,19 +9,15 @@ international_organization_manager = {
     }
     add_international_organization = {
         type = defensive_league
-        members = { GAD MST }
-    }
-    add_international_organization = {
-        type = defensive_league
         members = { OPO MYL MND }
     }
     add_international_organization = {
         type = defensive_league
-        members = { MTE STP MGL AZA HRA TEG MSE }
+        members = { KRS TRZ }
     }
     add_international_organization = {
         type = defensive_league
-        members = { SCU TYN CLA }
+        members = { ELI AET KEF }
     }
     add_international_organization = {
         type = defensive_league
@@ -29,10 +25,10 @@ international_organization_manager = {
     }
     add_international_organization = {
         type = defensive_league
-        members = { KRK APO }
+        members = { HCP SMS TIE }
     }
     add_international_organization = {
         type = defensive_league
-        members = { HCP SMS TIE }
+        members = { GAD KUS LIX RSS MGD }
     }
 }

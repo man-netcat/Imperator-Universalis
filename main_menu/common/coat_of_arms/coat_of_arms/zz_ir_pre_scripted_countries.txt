@@ -5,14 +5,14 @@
 
 REB = {
     pattern = "pattern_diagonal_split_01.dds"
-    color1 = "phrygia_red"
-    color2 = "pitch_black"
+    color1 = phrygia_red
+    color2 = pitch_black
 }
 
 BAR = {
     pattern = "pattern_solid.dds"
-    color1 = "ck2_black"
-    color2 = "phrygia_red"
+    color1 = ck2_black
+    color2 = phrygia_red
     textured_emblem = {
         texture = "te_skull_goat.dds"
     }
@@ -20,8 +20,8 @@ BAR = {
 
 MER = {
     pattern = "pattern_solid.dds"
-    color1 = "ck2_black"
-    color2 = "roman_red"
+    color1 = ck2_black
+    color2 = roman_red
     textured_emblem = {
         texture = "te_mercenary.dds"
     }
@@ -29,98 +29,98 @@ MER = {
 
 PIR = {
     pattern = "pattern_solid.dds"
-    color1 = "pitch_black"
-    color2 = "bone_white"
+    color1 = pitch_black
+    color2 = bone_white
     colored_emblem = {
         texture = "ce_pirates.dds"
-        color1 = "bone_white"
-        color2 = "ck2_green"
+        color1 = bone_white
+        color2 = ck2_green
     }
 }
 
 ETR = {
     pattern = "pattern_solid.dds"
-    color1 = "etruscan_blue"
-    color2 = "bone_white"
+    color1 = etruscan_blue
+    color2 = bone_white
     colored_emblem = {
         texture = "ce_chimera.dds"
-        color1 = "bone_white"
+        color1 = bone_white
     }
 }
 
 ROM = {
     pattern = "pattern_solid.dds"
-    color1 = "roman_red"
-    color2 = "roman_gold"
+    color1 = roman_red
+    color2 = roman_gold
     colored_emblem = {
         texture = "ce_roman_eagle.dds"
-        color1 = "roman_gold"
+        color1 = roman_gold
     }
 }
 
 EASTERN_ROME_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "ck2_purple"
-    color2 = "roman_gold"
+    color1 = ck2_purple
+    color2 = roman_gold
     colored_emblem = {
         texture = "ce_roman_eagle.dds"
-        color1 = "roman_gold"
+        color1 = roman_gold
     }
 }
 
 ROM_REVOLT = {
     pattern = "pattern_solid.dds"
-    color1 = "offwhite"
-    color2 = "roman_red"
+    color1 = offwhite
+    color2 = roman_red
     colored_emblem = {
         texture = "ce_roman_eagle.dds"
-        color1 = "roman_red"
+        color1 = roman_red
     }
 }
 
 MAC = {
     pattern = "pattern_solid.dds"
-    color1 = "macedonian_blue"
-    color2 = "roman_gold"
+    color1 = macedonian_blue
+    color2 = roman_gold
     colored_emblem = {
         texture = "ce_macedonian_sun.dds"
-        color1 = "roman_gold"
+        color1 = roman_gold
     }
 }
 
 SMC = {
     pattern = "pattern_solid.dds"
-    color1 = "bone_white"
-    color2 = "dark_rust"
+    color1 = bone_white
+    color2 = dark_rust
     colored_emblem = {
         texture = "ce_macedonian_sun.dds"
-        color1 = "dark_rust"
+        color1 = dark_rust
     }
 }
 
 MAC_REVOLT = {
     pattern = "pattern_solid.dds"
-    color1 = "roman_gold"
-    color2 = "macedonian_blue"
+    color1 = roman_gold
+    color2 = macedonian_blue
     colored_emblem = {
         texture = "ce_macedonian_sun.dds"
-        color1 = "macedonian_blue"
+        color1 = macedonian_blue
     }
 }
 
 PRY = {
     pattern = "pattern_solid.dds"
-    color1 = "phrygia_red"
-    color2 = "roman_gold"
+    color1 = phrygia_red
+    color2 = roman_gold
     colored_emblem = {
         texture = "ce_phrygia.dds"
-        color1 = "roman_gold"
-        color2 = "roman_gold"
+        color1 = roman_gold
+        color2 = roman_gold
     }
     colored_emblem = {
         texture = "ce_border_stars_01.dds"
-        color1 = "roman_gold"
-        color2 = "roman_gold"
+        color1 = roman_gold
+        color2 = roman_gold
         instance = {
             rotation = 0
         }
@@ -138,17 +138,17 @@ PRY = {
 
 PRY_REVOLT = {
     pattern = "pattern_solid.dds"
-    color1 = "roman_gold"
-    color2 = "phrygia_red"
+    color1 = roman_gold
+    color2 = phrygia_red
     colored_emblem = {
         texture = "ce_phrygia.dds"
-        color1 = "phrygia_red"
-        color2 = "phrygia_red"
+        color1 = phrygia_red
+        color2 = phrygia_red
     }
     colored_emblem = {
         texture = "ce_border_stars_01.dds"
-        color1 = "phrygia_red"
-        color2 = "phrygia_red"
+        color1 = phrygia_red
+        color2 = phrygia_red
         instance = {
             rotation = 0
         }
@@ -166,39 +166,39 @@ PRY_REVOLT = {
 
 EGY = {
     pattern = "pattern_solid.dds"
-    color1 = "pitch_black"
-    color2 = "roman_gold"
+    color1 = pitch_black
+    color2 = roman_gold
     colored_emblem = {
         texture = "ce_egypt.dds"
-        color1 = "roman_gold"
+        color1 = roman_gold
     }
 }
 
 EGY_REVOLT = {
     pattern = "pattern_solid.dds"
-    color1 = "roman_gold"
-    color2 = "pitch_black"
+    color1 = roman_gold
+    color2 = pitch_black
     colored_emblem = {
         texture = "ce_egypt.dds"
-        color1 = "pitch_black"
+        color1 = pitch_black
     }
 }
 
 SEL = {
     pattern = "pattern_solid.dds"
-    color1 = "ocean_blue"
-    color2 = "frost_blue"
+    color1 = ocean_blue
+    color2 = frost_blue
     colored_emblem = {
         texture = "ce_selucid_crossbow.dds"
-        color1 = "frost_blue"
+        color1 = frost_blue
         instance = {
             scale = { 0.75 0.75 }
         }
     }
     colored_emblem = {
         texture = "ce_border_rug_01.dds"
-        color1 = "frost_blue"
-        color2 = "ocean_blue"
+        color1 = frost_blue
+        color2 = ocean_blue
         instance = {
             rotation = 0
         }
@@ -210,19 +210,19 @@ SEL = {
 
 SEL_REVOLT = {
     pattern = "pattern_solid.dds"
-    color1 = "frost_blue"
-    color2 = "ocean_blue"
+    color1 = frost_blue
+    color2 = ocean_blue
     colored_emblem = {
         texture = "ce_selucid_crossbow.dds"
-        color1 = "ocean_blue"
+        color1 = ocean_blue
         instance = {
             scale = { 0.75 0.75 }
         }
     }
     colored_emblem = {
         texture = "ce_border_rug_01.dds"
-        color1 = "ocean_blue"
-        color2 = "frost_blue"
+        color1 = ocean_blue
+        color2 = frost_blue
         instance = {
             rotation = 0
         }
@@ -234,12 +234,12 @@ SEL_REVOLT = {
 
 SPA = {
     pattern = "pattern_solid.dds"
-    color1 = "spartan_brown"
-    color2 = "spartan_rust"
+    color1 = spartan_brown
+    color2 = spartan_rust
     colored_emblem = {
         texture = "ce_border_simple_02.dds"
-        color1 = "offwhite"
-        color2 = "roman_gold"
+        color1 = offwhite
+        color2 = roman_gold
         instance = {
             rotation = 0
         }
@@ -249,8 +249,8 @@ SPA = {
     }
     colored_emblem = {
         texture = "ce_sparta.dds"
-        color1 = "spartan_ocra"
-        color2 = "spartan_rust"
+        color1 = spartan_ocra
+        color2 = spartan_rust
         instance = {
             scale = { 0.75 0.75 }
         }
@@ -259,12 +259,12 @@ SPA = {
 
 CAR = {
     pattern = "pattern_solid.dds"
-    color1 = "offwhite"
-    color2 = "dark_green"
+    color1 = offwhite
+    color2 = dark_green
     colored_emblem = {
         texture = "ce_border_simple_02.dds"
-        color1 = "dark_green"
-        color2 = "offwhite"
+        color1 = dark_green
+        color2 = offwhite
         instance = {
             rotation = 0
         }
@@ -274,7 +274,7 @@ CAR = {
     }
     colored_emblem = {
         texture = "ce_tanit_01.dds"
-        color1 = "dark_green"
+        color1 = dark_green
         instance = {
             scale = { 0.75 0.75 }
         }
@@ -283,12 +283,12 @@ CAR = {
 
 CAR_REVOLT = {
     pattern = "pattern_solid.dds"
-    color1 = "dark_green"
-    color2 = "offwhite"
+    color1 = dark_green
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_simple_02.dds"
-        color1 = "offwhite"
-        color2 = "dark_green"
+        color1 = offwhite
+        color2 = dark_green
         instance = {
             rotation = 0
         }
@@ -298,7 +298,7 @@ CAR_REVOLT = {
     }
     colored_emblem = {
         texture = "ce_tanit_01.dds"
-        color1 = "offwhite"
+        color1 = offwhite
         instance = {
             scale = { 0.75 0.75 }
         }
@@ -307,8 +307,8 @@ CAR_REVOLT = {
 
 SAM = {
     pattern = "pattern_solid.dds"
-    color1 = "samnite_green"
-    color2 = "samnite_red"
+    color1 = samnite_green
+    color2 = samnite_red
     colored_emblem = {
         texture = "ce_samnite.dds"
         instance = {
@@ -327,55 +327,55 @@ SAM = {
             position = { 0.7 0.7 }
             scale = { -0.4 -0.4 }
         }
-        color1 = "samnite_beige"
-        color2 = "samnite_red"
+        color1 = samnite_beige
+        color2 = samnite_red
     }
 }
 
 EPI = {
     pattern = "pattern_solid.dds"
-    color1 = "epirus_light_yellow"
-    color2 = "pitch_black"
+    color1 = epirus_light_yellow
+    color2 = pitch_black
     colored_emblem = {
         texture = "ce_epirus.dds"
-        color1 = "pitch_black"
+        color1 = pitch_black
     }
 }
 
 ATH = {
     pattern = "pattern_solid.dds"
-    color1 = "athens_blue"
-    color2 = "pure_white"
+    color1 = athens_blue
+    color2 = pure_white
     colored_emblem = {
         texture = "ce_owl.dds"
-        color1 = "pure_white"
+        color1 = pure_white
     }
 }
 
 MRY = {
     pattern = "pattern_solid.dds"
-    color1 = "maurya_brown"
-    color2 = "pure_white"
+    color1 = maurya_brown
+    color2 = pure_white
     colored_emblem = {
         texture = "ce_maurya.dds"
-        color1 = "pure_white"
+        color1 = pure_white
     }
 }
 
 SYR = {
     pattern = "pattern_vertical_split_01.dds"
-    color1 = "roman_gold"
-    color2 = "spartan_rust"
-    color3 = "pink_skin"
+    color1 = roman_gold
+    color2 = spartan_rust
+    color3 = pink_skin
     colored_emblem = {
         texture = "ce_syracuse.dds"
-        color1 = "pink_skin"
-        color2 = "offwhite"
+        color1 = pink_skin
+        color2 = offwhite
     }
     colored_emblem = {
         texture = "ce_head_02.dds"
-        color1 = "pink_skin"
-        color2 = "roman_gold"
+        color1 = pink_skin
+        color2 = roman_gold
         instance = {
             scale = { 0.4 0.4 }
         }
@@ -384,11 +384,11 @@ SYR = {
 
 SWE = {
     pattern = "pattern_solid.dds"
-    color1 = "athens_blue"
-    color2 = "ck2_yellow"
+    color1 = athens_blue
+    color2 = ck2_yellow
     colored_emblem = {
         texture = "ce_crescent_02.dds"
-        color1 = "ck2_yellow"
+        color1 = ck2_yellow
         instance = {
             position = { 0.25 0.33 }
             scale = { 0.4 0.4 }
@@ -406,11 +406,11 @@ SWE = {
 
 BYZ = {
     pattern = "pattern_solid.dds"
-    color1 = "roman_red"
-    color2 = "ck2_yellow"
+    color1 = roman_red
+    color2 = ck2_yellow
     colored_emblem = {
         texture = "ce_writing_greek_beta.dds"
-        color1 = "ck2_yellow"
+        color1 = ck2_yellow
         instance = {
             position = { 0.3 0.3 }
             scale = { -0.35 0.35 }
@@ -432,9 +432,9 @@ BYZ = {
 
 OSM = {
     pattern = "pattern_horizontal_bar_01.dds"
-    color1 = "ck2_black"
-    color2 = "ck2_green"
-    color3 = "ck2_yellow"
+    color1 = ck2_black
+    color2 = ck2_green
+    color3 = ck2_yellow
     colored_emblem = {
         texture = "ce_circle_01.dds"
         instance = {
@@ -449,22 +449,22 @@ OSM = {
             position = { 0.83 0.5 }
             scale = { 0.3 0.3 }
         }
-        color1 = "ck2_yellow"
+        color1 = ck2_yellow
     }
 }
 
 CIO = {
     pattern = "pattern_horizontal_split_01.dds"
-    color1 = "ck2_green"
-    color2 = "ck2_white"
-    color3 = "ck2_blue"
+    color1 = ck2_green
+    color2 = ck2_white
+    color3 = ck2_blue
     colored_emblem = {
         texture = "ce_circle_concentric_01.dds"
         instance = {
             position = { 0.5 0.25 }
             scale = { 0.4 0.4 }
         }
-        color1 = "ck2_yellow"
+        color1 = ck2_yellow
     }
     colored_emblem = {
         texture = "ce_circle_01.dds"
@@ -476,27 +476,27 @@ CIO = {
             position = { 0.83 0.25 }
             scale = { 0.2 0.2 }
         }
-        color1 = "ck2_yellow"
+        color1 = ck2_yellow
     }
     colored_emblem = {
         instance = {
-            position = { 0.5 1.0 }
+            position = { 0.5 1. }
         }
         texture = "ce_stripes_vertical_16.dds"
-        color1 = "ck2_blue"
-        color2 = "ck2_white"
+        color1 = ck2_blue
+        color2 = ck2_white
     }
 }
 
 SXS = {
     pattern = "pattern_solid.dds"
-    color1 = "spartan_rust"
-    color2 = "roman_gold"
-    color3 = "offwhite"
+    color1 = spartan_rust
+    color2 = roman_gold
+    color3 = offwhite
     colored_emblem = {
         texture = "ce_sword_01.dds"
-        color1 = "offwhite"
-        color2 = "roman_gold"
+        color1 = offwhite
+        color2 = roman_gold
         instance = {
             rotation = -90
             scale = { 0.75 0.75 }
@@ -517,11 +517,11 @@ SXS = {
 
 ANG = {
     pattern = "pattern_solid.dds"
-    color1 = "offwhite"
-    color2 = "phrygia_red"
+    color1 = offwhite
+    color2 = phrygia_red
     colored_emblem = {
         texture = "ce_knot_01.dds"
-        color1 = "phrygia_red"
+        color1 = phrygia_red
         instance = {
             scale = { 0.75 0.75 }
         }
@@ -530,18 +530,18 @@ ANG = {
 
 JUD = {
     pattern = "pattern_solid.dds"
-    color1 = "judea_blue"
-    color2 = "ck2_white"
+    color1 = judea_blue
+    color2 = ck2_white
     colored_emblem = {
         texture = "ce_judea_symbol.dds"
-        color1 = "ck2_white"
+        color1 = ck2_white
     }
     colored_emblem = {
         texture = "ce_border_leaves_01.dds"
-        color1 = "judea_blue"
-        color2 = "ck2_white"
+        color1 = judea_blue
+        color2 = ck2_white
         instance = {
-            scale = { 1.0 1.0 }
+            scale = { 1. 1. }
             position = { 0.5 0.5 }
             rotation = 180
         }
@@ -550,114 +550,114 @@ JUD = {
 
 ARM = {
     pattern = "pattern_solid.dds"
-    color1 = "roman_red"
-    color2 = "roman_gold"
+    color1 = roman_red
+    color2 = roman_gold
     colored_emblem = {
         texture = "ce_armenia_symbol.dds"
-        color1 = "roman_gold"
+        color1 = roman_gold
     }
 }
 
 TRE = {
     pattern = "pattern_solid.dds"
-    color1 = "ck2_green"
-    color2 = "pitch_black"
+    color1 = ck2_green
+    color2 = pitch_black
     colored_emblem = {
         texture = "ce_thrace.dds"
-        color1 = "pitch_black"
+        color1 = pitch_black
     }
 }
 
 RHO = {
     pattern = "pattern_solid.dds"
-    color1 = "rhodes_color"
-    color2 = "roman_red"
+    color1 = rhodes_color
+    color2 = roman_red
     colored_emblem = {
         texture = "ce_rhodes.dds"
-        color1 = "roman_red"
-        color2 = "ck2_green"
+        color1 = roman_red
+        color2 = ck2_green
     }
 }
 
 PON = {
     pattern = "pattern_solid.dds"
-    color1 = "pitch_black"
-    color2 = "light_purple"
+    color1 = pitch_black
+    color2 = light_purple
     colored_emblem = {
         texture = "ce_pontus.dds"
-        color1 = "light_purple"
+        color1 = light_purple
     }
 }
 
 NBT = {
     pattern = "pattern_solid.dds"
-    color1 = "pitch_black"
-    color2 = "yellowish_grey"
+    color1 = pitch_black
+    color2 = yellowish_grey
     colored_emblem = {
         texture = "ce_nabatea.dds"
-        color1 = "bone_white"
-        color2 = "yellowish_grey"
+        color1 = bone_white
+        color2 = yellowish_grey
     }
 }
 
 BIT = {
     pattern = "pattern_solid.dds"
-    color1 = "light_purple"
-    color2 = "pitch_black"
+    color1 = light_purple
+    color2 = pitch_black
     colored_emblem = {
         texture = "ce_bithynia.dds"
-        color1 = "pitch_black"
+        color1 = pitch_black
     }
 }
 
 HCP = {
     pattern = "pattern_solid.dds"
-    color1 = "pitch_black"
-    color2 = "roman_gold"
+    color1 = pitch_black
+    color2 = roman_gold
     colored_emblem = {
         texture = "ce_heraklea_pontica.dds"
-        color1 = "roman_gold"
+        color1 = roman_gold
     }
 }
 
 CAP = {
     pattern = "pattern_solid.dds"
-    color1 = "rhodes_color"
-    color2 = "maurya_brown"
+    color1 = rhodes_color
+    color2 = maurya_brown
     colored_emblem = {
         texture = "ce_cappadocia.dds"
-        color1 = "maurya_brown"
-        color2 = "pitch_black"
+        color1 = maurya_brown
+        color2 = pitch_black
     }
 }
 
 BPK = {
     pattern = "pattern_solid.dds"
-    color1 = "maurya_brown"
-    color2 = "rhodes_color"
+    color1 = maurya_brown
+    color2 = rhodes_color
     colored_emblem = {
         texture = "ce_bosporan_kingdom.dds"
-        color1 = "rhodes_color"
+        color1 = rhodes_color
     }
 }
 
 COM = {
     pattern = "pattern_solid.dds"
-    color1 = "bone_white"
-    color2 = "dark_grey"
+    color1 = bone_white
+    color2 = dark_grey
     colored_emblem = {
         texture = "ce_commagene.dds"
-        color1 = "dark_grey"
+        color1 = dark_grey
     }
 }
 
 VDL = {
     pattern = "pattern_solid.dds"
-    color1 = "rust_brown"
-    color2 = "offwhite"
+    color1 = rust_brown
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_star_4.dds"
-        color1 = "offwhite"
+        color1 = offwhite
         instance = {
             scale = { 0.25 0.25 }
             position = { 0.5 0.25 }
@@ -679,11 +679,11 @@ VDL = {
 
 CMB = {
     pattern = "pattern_vertical_split_02.dds"
-    color1 = "CMB_yellow"
-    color2 = "CMB_brown"
+    color1 = CMB_yellow
+    color2 = CMB_brown
     colored_emblem = {
         texture = "ce_crescent_02.dds"
-        color1 = "offwhite"
+        color1 = offwhite
         instance = {
             scale = { 0.25 0.25 }
             position = { 0.5 0.15 }
@@ -695,7 +695,7 @@ CMB = {
     }
     colored_emblem = {
         texture = "ce_hellenic_4.dds"
-        color1 = "CMB_dark"
+        color1 = CMB_dark
         instance = {
             scale = { 0.5 0.5 }
         }
@@ -704,11 +704,11 @@ CMB = {
 
 CLC = {
     pattern = "pattern_solid.dds"
-    color1 = "ck2_black"
-    color2 = "offwhite"
+    color1 = ck2_black
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_tree_01.dds"
-        color1 = "offwhite"
+        color1 = offwhite
         instance = {
             scale = { 0.75 0.75 }
             position = { 0.5 0.5 }
@@ -716,13 +716,13 @@ CLC = {
     }
     colored_emblem = {
         texture = "ce_border_triangles_01.dds"
-        color1 = "offwhite"
+        color1 = offwhite
         instance = {
-            scale = { 1.0 1.0 }
+            scale = { 1. 1. }
             position = { 0.5 0.5 }
         }
         instance = {
-            scale = { 1.0 1.0 }
+            scale = { 1. 1. }
             position = { 0.5 0.5 }
             rotation = 180
         }
@@ -731,12 +731,12 @@ CLC = {
 
 MAP = {
     pattern = "pattern_solid.dds"
-    color1 = "pitch_black"
-    color2 = "bone_white"
-    color3 = "roman_red"
+    color1 = pitch_black
+    color2 = bone_white
+    color3 = roman_red
     colored_emblem = {
-        color1 = "roman_gold"
-        color2 = "roman_red"
+        color1 = roman_gold
+        color2 = roman_red
         texture = "ce_gryphon_01.dds"
         mask = { 1 2 3 }
         instance = {
@@ -747,13 +747,13 @@ MAP = {
         }
     }
     colored_emblem = {
-        color1 = "roman_gold"
-        color2 = "roman_red"
+        color1 = roman_gold
+        color2 = roman_red
         texture = "ce_border_simple_02.dds"
         mask = { 1 2 3 }
         instance = {
             position = { 0.5 0.5 }
-            scale = { 1.0 1.0 }
+            scale = { 1. 1. }
             depth = 0.01
             rotation = 0
         }
@@ -762,12 +762,12 @@ MAP = {
 
 BAC = {
     pattern = "pattern_solid.dds"
-    color1 = "roman_red"
-    color2 = "pitch_black"
-    color3 = "bone_white"
+    color1 = roman_red
+    color2 = pitch_black
+    color3 = bone_white
     colored_emblem = {
-        color1 = "roman_gold"
-        color2 = "ck2_green"
+        color1 = roman_gold
+        color2 = ck2_green
         texture = "ce_elephant_01.dds"
         mask = { 1 2 3 }
         instance = {
@@ -778,19 +778,19 @@ BAC = {
         }
     }
     colored_emblem = {
-        color1 = "roman_gold"
-        color2 = "ck2_green"
+        color1 = roman_gold
+        color2 = ck2_green
         texture = "ce_border_triangles_02.dds"
         mask = { 1 2 3 }
         instance = {
             position = { 0.5 0.5 }
-            scale = { 1.0 1.0 }
+            scale = { 1. 1. }
             depth = 0.01
             rotation = 90
         }
         instance = {
             position = { 0.5 0.5 }
-            scale = { 1.0 1.0 }
+            scale = { 1. 1. }
             depth = 0.01
             rotation = 270
         }
@@ -799,12 +799,12 @@ BAC = {
 
 ADI = {
     pattern = "pattern_solid.dds"
-    color1 = "ck2_green"
-    color2 = "bone_white"
-    color3 = "pitch_black"
+    color1 = ck2_green
+    color2 = bone_white
+    color3 = pitch_black
     colored_emblem = {
-        color1 = "bone_white"
-        color2 = "ck2_blue"
+        color1 = bone_white
+        color2 = ck2_blue
         texture = "ce_lamassu_01.dds"
         mask = { 1 2 3 }
         instance = {
@@ -815,19 +815,19 @@ ADI = {
         }
     }
     colored_emblem = {
-        color1 = "bone_white"
-        color2 = "ck2_blue"
+        color1 = bone_white
+        color2 = ck2_blue
         texture = "ce_border_simple_02.dds"
         mask = { 1 2 3 }
         instance = {
             position = { 0.5 0.5 }
-            scale = { 1.0 1.0 }
+            scale = { 1. 1. }
             depth = 0.01
             rotation = 90
         }
         instance = {
             position = { 0.5 0.5 }
-            scale = { 1.0 1.0 }
+            scale = { 1. 1. }
             depth = 0.01
             rotation = 270
         }
@@ -836,11 +836,11 @@ ADI = {
 
 ACHAEMENID_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "achaemenid_mauve"
-    color2 = "offwhite"
+    color1 = achaemenid_mauve
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_achaemenid_empire.dds"
-        color1 = "light_gold"
+        color1 = light_gold
         instance = {
             scale = { 0.75 0.75 }
             position = { 0.5 0.5 }
@@ -850,11 +850,11 @@ ACHAEMENID_FLAG = {
 
 PERSIA_SATRAPY_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "achaemenid_mauve"
-    color2 = "light_gold"
+    color1 = achaemenid_mauve
+    color2 = light_gold
     colored_emblem = {
         texture = "ce_achaemenid_empire.dds"
-        color1 = "light_gold"
+        color1 = light_gold
         instance = {
             scale = { 0.75 0.75 }
             position = { 0.5 0.5 }
@@ -864,12 +864,12 @@ PERSIA_SATRAPY_FLAG = {
 
 DAHAE_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "etruscan_blue"
-    color2 = "roman_gold"
-    color3 = "maurya_brown"
+    color1 = etruscan_blue
+    color2 = roman_gold
+    color3 = maurya_brown
     colored_emblem = {
-        color1 = "roman_gold"
-        color2 = "navy_blue"
+        color1 = roman_gold
+        color2 = navy_blue
         texture = "ce_circle_wheel_01.dds"
         mask = { 1 2 3 }
         instance = {
@@ -880,19 +880,19 @@ DAHAE_FLAG = {
         }
     }
     colored_emblem = {
-        color1 = "roman_gold"
-        color2 = "navy_blue"
+        color1 = roman_gold
+        color2 = navy_blue
         texture = "ce_border_zigzag_02.dds"
         mask = { 1 2 3 }
         instance = {
             position = { 0.5 0.5 }
-            scale = { 1.0 1.0 }
+            scale = { 1. 1. }
             depth = 0.01
             rotation = 0
         }
         instance = {
             position = { 0.5 0.5 }
-            scale = { 1.0 1.0 }
+            scale = { 1. 1. }
             depth = 0.01
             rotation = 180
         }
@@ -901,17 +901,17 @@ DAHAE_FLAG = {
 
 EGYPTIAN_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "ck2_blue"
-    color2 = "roman_gold"
-    color3 = "navy_blue"
+    color1 = ck2_blue
+    color2 = roman_gold
+    color3 = navy_blue
     colored_emblem = {
-        color1 = "bone_white"
-        color2 = "ck2_blue"
+        color1 = bone_white
+        color2 = ck2_blue
         texture = "ce_egyptian_05.dds"
         mask = { 1 2 3 }
         instance = {
             position = { 0.5 0.5 }
-            scale = { -1.0 1.0 }
+            scale = { -1. 1. }
             depth = 0.01
             rotation = 0
         }
@@ -920,17 +920,17 @@ EGYPTIAN_FLAG = {
 
 EGS_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "bone_white"
-    color2 = "pitch_black"
-    color3 = "offwhite"
+    color1 = bone_white
+    color2 = pitch_black
+    color3 = offwhite
     colored_emblem = {
-        color1 = "bone_white"
-        color2 = "offwhite"
+        color1 = bone_white
+        color2 = offwhite
         texture = "ce_egyptian_05.dds"
         mask = { 1 2 3 }
         instance = {
             position = { 0.5 0.5 }
-            scale = { -1.0 1.0 }
+            scale = { -1. 1. }
             depth = 0.01
             rotation = 0
         }
@@ -939,12 +939,12 @@ EGS_FLAG = {
 
 MAS = {
     pattern = "pattern_solid.dds"
-    color1 = "light_green"
-    color2 = "pitch_black"
-    color3 = "bone_white"
+    color1 = light_green
+    color2 = pitch_black
+    color3 = bone_white
     colored_emblem = {
-        color1 = "bone_white"
-        color2 = "bone_white"
+        color1 = bone_white
+        color2 = bone_white
         texture = "ce_cat_01.dds"
         mask = { 1 2 3 }
         instance = {
@@ -955,19 +955,19 @@ MAS = {
         }
     }
     colored_emblem = {
-        color1 = "ck2_green"
-        color2 = "bone_white"
+        color1 = ck2_green
+        color2 = bone_white
         texture = "ce_border_leaves_01.dds"
         mask = { 1 2 3 }
         instance = {
             position = { 0.5 0.5 }
-            scale = { 1.0 1.0 }
+            scale = { 1. 1. }
             depth = 0.01
             rotation = 0
         }
         instance = {
             position = { 0.5 0.5 }
-            scale = { 1.0 1.0 }
+            scale = { 1. 1. }
             depth = 0.01
             rotation = 180
         }
@@ -976,12 +976,12 @@ MAS = {
 
 ELE = {
     pattern = "pattern_solid.dds"
-    color1 = "navy_blue"
-    color2 = "pitch_black"
-    color3 = "bone_white"
+    color1 = navy_blue
+    color2 = pitch_black
+    color3 = bone_white
     colored_emblem = {
-        color1 = "bharatavarsha_orange_color"
-        color2 = "judea_blue"
+        color1 = bharatavarsha_orange_color
+        color2 = judea_blue
         texture = "ce_ship_01.dds"
         mask = { 1 2 3 }
         instance = {
@@ -992,19 +992,19 @@ ELE = {
         }
     }
     colored_emblem = {
-        color1 = "bharatavarsha_orange_color"
-        color2 = "navy_blue"
+        color1 = bharatavarsha_orange_color
+        color2 = navy_blue
         texture = "ce_border_meander_01.dds"
         mask = { 1 2 3 }
         instance = {
             position = { 0.5 0.5 }
-            scale = { 1.0 1.0 }
+            scale = { 1. 1. }
             depth = 0.01
             rotation = 0
         }
         instance = {
             position = { 0.5 0.5 }
-            scale = { 1.0 1.0 }
+            scale = { 1. 1. }
             depth = 0.01
             rotation = 180
         }
@@ -1013,12 +1013,12 @@ ELE = {
 
 CARTHAGO_NOVA_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "navy_blue"
-    color2 = "offwhite"
+    color1 = navy_blue
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_simple_02.dds"
-        color1 = "offwhite"
-        color2 = "navy_blue"
+        color1 = offwhite
+        color2 = navy_blue
         instance = {
             rotation = 0
         }
@@ -1028,7 +1028,7 @@ CARTHAGO_NOVA_FLAG = {
     }
     colored_emblem = {
         texture = "ce_tanit_01.dds"
-        color1 = "offwhite"
+        color1 = offwhite
         instance = {
             scale = { 0.75 0.75 }
         }
@@ -1037,34 +1037,34 @@ CARTHAGO_NOVA_FLAG = {
 
 ARMORICA_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "armorica_color"
-    color2 = "offwhite"
+    color1 = armorica_color
+    color2 = offwhite
     colored_emblem = {
-        color1 = "bone_white"
-        color2 = "armorica_color"
+        color1 = bone_white
+        color2 = armorica_color
         texture = "ce_25.dds"
         mask = { 1 2 3 }
         instance = {
             position = { 0.5 0.5 }
-            scale = { -1.0 1.0 }
+            scale = { -1. 1. }
             depth = 0.01
             rotation = 0
         }
     }
     colored_emblem = {
-        color1 = "offwhite"
-        color2 = "ck2_green"
+        color1 = offwhite
+        color2 = ck2_green
         texture = "ce_border_leaves_01.dds"
         mask = { 1 2 3 }
         instance = {
             position = { 0.5 0.5 }
-            scale = { 1.0 1.0 }
+            scale = { 1. 1. }
             depth = 0.01
             rotation = 0
         }
         instance = {
             position = { 0.5 0.5 }
-            scale = { 1.0 1.0 }
+            scale = { 1. 1. }
             depth = 0.01
             rotation = 180
         }
@@ -1073,34 +1073,34 @@ ARMORICA_FLAG = {
 
 GAUL_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "desaturated_green"
-    color2 = "offwhite"
+    color1 = desaturated_green
+    color2 = offwhite
     colored_emblem = {
-        color1 = "bone_white"
-        color2 = "gaul_color"
+        color1 = bone_white
+        color2 = gaul_color
         texture = "ce_15.dds"
         mask = { 1 2 3 }
         instance = {
             position = { 0.5 0.5 }
-            scale = { -1.0 1.0 }
+            scale = { -1. 1. }
             depth = 0.01
             rotation = 0
         }
     }
     colored_emblem = {
-        color1 = "bone_white"
-        color2 = "dark_purple"
+        color1 = bone_white
+        color2 = dark_purple
         texture = "ce_border_meander_01.dds"
         mask = { 1 2 3 }
         instance = {
             position = { 0.5 0.5 }
-            scale = { 1.0 1.0 }
+            scale = { 1. 1. }
             depth = 0.01
             rotation = 0
         }
         instance = {
             position = { 0.5 0.5 }
-            scale = { 1.0 1.0 }
+            scale = { 1. 1. }
             depth = 0.01
             rotation = 180
         }
@@ -1109,12 +1109,12 @@ GAUL_FLAG = {
 
 EPIKRATEIA_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "cretan_blue"
-    color2 = "offwhite"
+    color1 = cretan_blue
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_meander_03.dds"
-        color1 = "offwhite"
-        color2 = "cretan_blue"
+        color1 = offwhite
+        color2 = cretan_blue
         instance = {
             rotation = 0
         }
@@ -1124,7 +1124,7 @@ EPIKRATEIA_FLAG = {
     }
     colored_emblem = {
         texture = "ce_syracuse.dds"
-        color1 = "offwhite"
+        color1 = offwhite
         instance = {
             scale = { 0.75 0.75 }
         }
@@ -1133,12 +1133,12 @@ EPIKRATEIA_FLAG = {
 
 CRETE_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "cretan_blue"
-    color2 = "offwhite"
+    color1 = cretan_blue
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_simple_02.dds"
-        color1 = "offwhite"
-        color2 = "cretan_blue"
+        color1 = offwhite
+        color2 = cretan_blue
         instance = {
             rotation = 0
         }
@@ -1148,7 +1148,7 @@ CRETE_FLAG = {
     }
     colored_emblem = {
         texture = "ce_bull_02.dds"
-        color1 = "offwhite"
+        color1 = offwhite
         instance = {
             scale = { 0.75 0.75 }
         }
@@ -1157,12 +1157,12 @@ CRETE_FLAG = {
 
 NUMIDIA_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "rust_brown"
-    color2 = "numidia_yellow"
+    color1 = rust_brown
+    color2 = numidia_yellow
     colored_emblem = {
         texture = "ce_border_stars_01.dds"
-        color1 = "numidia_yellow"
-        color2 = "rust_brown"
+        color1 = numidia_yellow
+        color2 = rust_brown
         instance = {
             rotation = 0
         }
@@ -1172,7 +1172,7 @@ NUMIDIA_FLAG = {
     }
     colored_emblem = {
         texture = "ce_horse_07.dds"
-        color1 = "numidia_yellow"
+        color1 = numidia_yellow
         instance = {
             scale = { 0.75 0.75 }
         }
@@ -1181,12 +1181,12 @@ NUMIDIA_FLAG = {
 
 SICILY_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "sicily_color"
-    color2 = "offwhite"
+    color1 = sicily_color
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_meander_02.dds"
-        color1 = "offwhite"
-        color2 = "roman_red"
+        color1 = offwhite
+        color2 = roman_red
         instance = {
             rotation = 0
         }
@@ -1196,8 +1196,8 @@ SICILY_FLAG = {
     }
     colored_emblem = {
         texture = "ce_syracuse.dds"
-        color1 = "offwhite"
-        color2 = "roman_red"
+        color1 = offwhite
+        color2 = roman_red
         instance = {
             scale = { 0.9 0.9 }
         }
@@ -1206,12 +1206,12 @@ SICILY_FLAG = {
 
 MAGNA_GRAECIA_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "magna_graecia_color"
-    color2 = "offwhite"
+    color1 = magna_graecia_color
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_meander_02.dds"
-        color1 = "offwhite"
-        color2 = "magna_graecia_color"
+        color1 = offwhite
+        color2 = magna_graecia_color
         instance = {
             rotation = 90
         }
@@ -1221,8 +1221,8 @@ MAGNA_GRAECIA_FLAG = {
     }
     colored_emblem = {
         texture = "ce_magna_graecia.dds"
-        color1 = "offwhite"
-        color2 = "magna_graecia_color"
+        color1 = offwhite
+        color2 = magna_graecia_color
         instance = {
             scale = { 1 1 }
         }
@@ -1231,26 +1231,26 @@ MAGNA_GRAECIA_FLAG = {
 
 PHOENICIA_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "helvetia_color"
-    color2 = "offwhite"
+    color1 = helvetia_color
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_circle_01.dds"
-        color1 = "offwhite"
+        color1 = offwhite
         instance = {
             scale = { 1.48 1.48 }
         }
     }
     colored_emblem = {
         texture = "ce_circle_01.dds"
-        color1 = "helvetia_color"
+        color1 = helvetia_color
         instance = {
             scale = { 1.4 1.4 }
         }
     }
     colored_emblem = {
         texture = "ce_tanit_01.dds"
-        color1 = "offwhite"
-        color2 = "helvetia_color"
+        color1 = offwhite
+        color2 = helvetia_color
         instance = {
             scale = { 0.85 0.85 }
         }
@@ -1259,12 +1259,12 @@ PHOENICIA_FLAG = {
 
 DACIA_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "dacia_color"
-    color2 = "offwhite"
+    color1 = dacia_color
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_rug_01.dds"
-        color1 = "dacia_color"
-        color2 = "offwhite"
+        color1 = dacia_color
+        color2 = offwhite
         instance = {
             rotation = 0
         }
@@ -1274,8 +1274,8 @@ DACIA_FLAG = {
     }
     colored_emblem = {
         texture = "ce_snake_01.dds"
-        color1 = "offwhite"
-        color2 = "dacia_color"
+        color1 = offwhite
+        color2 = dacia_color
         instance = {
             scale = { 0.85 0.85 }
         }
@@ -1284,12 +1284,12 @@ DACIA_FLAG = {
 
 HELLENIC_LEAGUE_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "helvetia_color"
-    color2 = "pan_hellenic_blue"
+    color1 = helvetia_color
+    color2 = pan_hellenic_blue
     colored_emblem = {
         texture = "ce_pegasus_01.dds"
-        color1 = "pan_hellenic_blue"
-        color2 = "helvetia_color"
+        color1 = pan_hellenic_blue
+        color2 = helvetia_color
         instance = {
             scale = { 1 1 }
         }
@@ -1298,18 +1298,18 @@ HELLENIC_LEAGUE_FLAG = {
 
 ARGEAD_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "argead_blue"
-    color2 = "sun_yellow"
+    color1 = argead_blue
+    color2 = sun_yellow
     colored_emblem = {
         texture = "ce_hellenic_2.dds"
-        color1 = "light_green"
+        color1 = light_green
         instance = {
             scale = { 1.2 1.2 }
         }
     }
     colored_emblem = {
         texture = "ce_argead_empire.dds"
-        color1 = "sun_yellow"
+        color1 = sun_yellow
         instance = {
             scale = { 0.6 0.6 }
         }
@@ -1318,18 +1318,18 @@ ARGEAD_FLAG = {
 
 ARGEAD_REVOLTER_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "roman_red"
-    color2 = "sun_yellow"
+    color1 = roman_red
+    color2 = sun_yellow
     colored_emblem = {
         texture = "ce_hellenic_2.dds"
-        color1 = "light_green"
+        color1 = light_green
         instance = {
             scale = { 1.2 1.2 }
         }
     }
     colored_emblem = {
         texture = "ce_argead_empire.dds"
-        color1 = "sun_yellow"
+        color1 = sun_yellow
         instance = {
             scale = { 0.6 0.6 }
         }
@@ -1338,12 +1338,12 @@ ARGEAD_REVOLTER_FLAG = {
 
 BABYLON_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "desaturated_green"
-    color2 = "babylon_color"
+    color1 = desaturated_green
+    color2 = babylon_color
     colored_emblem = {
         texture = "ce_border_simple_02.dds"
-        color1 = "babylon_color"
-        color2 = "desaturated_green"
+        color1 = babylon_color
+        color2 = desaturated_green
         instance = {
             rotation = 90
             scale = { 0.4 1 }
@@ -1357,8 +1357,8 @@ BABYLON_FLAG = {
     }
     colored_emblem = {
         texture = "ce_lamassu_01.dds"
-        color1 = "babylon_color"
-        color2 = "desaturated_green"
+        color1 = babylon_color
+        color2 = desaturated_green
         instance = {
             scale = { 1 1 }
         }
@@ -1367,12 +1367,12 @@ BABYLON_FLAG = {
 
 MPS_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "babylon_color"
-    color2 = "light_gold"
+    color1 = babylon_color
+    color2 = light_gold
     colored_emblem = {
         texture = "ce_border_simple_02.dds"
-        color1 = "light_gold"
-        color2 = "babylon_color"
+        color1 = light_gold
+        color2 = babylon_color
         instance = {
             rotation = 90
             scale = { 0.4 1 }
@@ -1386,8 +1386,8 @@ MPS_FLAG = {
     }
     colored_emblem = {
         texture = "ce_lamassu_01.dds"
-        color1 = "light_gold"
-        color2 = "babylon_color"
+        color1 = light_gold
+        color2 = babylon_color
         instance = {
             scale = { 1 1 }
         }
@@ -1396,12 +1396,12 @@ MPS_FLAG = {
 
 CILICIA_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "cilicia_color"
-    color2 = "offwhite"
+    color1 = cilicia_color
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_simple_02.dds"
-        color1 = "offwhite"
-        color2 = "cilicia_color"
+        color1 = offwhite
+        color2 = cilicia_color
         instance = {
             rotation = 0
             scale = { 1 0.5 }
@@ -1415,7 +1415,7 @@ CILICIA_FLAG = {
     }
     colored_emblem = {
         texture = "ce_lion.dds"
-        color1 = "offwhite"
+        color1 = offwhite
         instance = {
             scale = { 1 1 }
         }
@@ -1424,12 +1424,12 @@ CILICIA_FLAG = {
 
 DRAVIDA_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "green"
-    color2 = "offwhite"
+    color1 = green
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_zigzag_01.dds"
-        color1 = "green"
-        color2 = "offwhite"
+        color1 = green
+        color2 = offwhite
         instance = {
             rotation = 0
         }
@@ -1439,7 +1439,7 @@ DRAVIDA_FLAG = {
     }
     colored_emblem = {
         texture = "ce_tiger_01.dds"
-        color1 = "offwhite"
+        color1 = offwhite
         instance = {
             scale = { -1 1 }
         }
@@ -1448,12 +1448,12 @@ DRAVIDA_FLAG = {
 
 GALATIA_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "burned_red"
-    color2 = "galatia_light_blue_color"
+    color1 = burned_red
+    color2 = galatia_light_blue_color
     colored_emblem = {
         texture = "ce_border_stars_01.dds"
-        color1 = "galatia_light_blue_color"
-        color2 = "burned_red"
+        color1 = galatia_light_blue_color
+        color2 = burned_red
         instance = {
             rotation = 0
         }
@@ -1463,7 +1463,7 @@ GALATIA_FLAG = {
     }
     colored_emblem = {
         texture = "ce_head_02.dds"
-        color1 = "galatia_light_blue_color"
+        color1 = galatia_light_blue_color
         instance = {
             scale = { 1 1 }
         }
@@ -1472,12 +1472,12 @@ GALATIA_FLAG = {
 
 ILLYRIA_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "offwhite"
-    color2 = "ck2_red"
+    color1 = offwhite
+    color2 = ck2_red
     colored_emblem = {
         texture = "ce_border_leaves_01.dds"
-        color1 = "ck2_red"
-        color2 = "offwhite"
+        color1 = ck2_red
+        color2 = offwhite
         instance = {
             rotation = 0
             scale = { 0.5 0.5 }
@@ -1501,7 +1501,7 @@ ILLYRIA_FLAG = {
     }
     colored_emblem = {
         texture = "ce_illyrian_1.dds"
-        color1 = "ck2_red"
+        color1 = ck2_red
         instance = {
             scale = { 1 1 }
         }
@@ -1510,12 +1510,12 @@ ILLYRIA_FLAG = {
 
 ALBION_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "albion_color"
-    color2 = "ck2_blue"
+    color1 = albion_color
+    color2 = ck2_blue
     colored_emblem = {
         texture = "ce_bow_01.dds"
-        color1 = "ck2_blue"
-        color2 = "roman_red"
+        color1 = ck2_blue
+        color2 = roman_red
         instance = {
             scale = { 0.9 0.9 }
         }
@@ -1524,12 +1524,12 @@ ALBION_FLAG = {
 
 TARTESSOS_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "light_gold"
-    color2 = "burned_red"
+    color1 = light_gold
+    color2 = burned_red
     colored_emblem = {
         texture = "ce_border_rug_01.dds"
-        color1 = "light_gold"
-        color2 = "burned_red"
+        color1 = light_gold
+        color2 = burned_red
         instance = {
             rotation = 0
         }
@@ -1539,7 +1539,7 @@ TARTESSOS_FLAG = {
     }
     colored_emblem = {
         texture = "ce_30.dds"
-        color1 = "burned_red"
+        color1 = burned_red
         instance = {
             scale = { 1 1 }
         }
@@ -1548,12 +1548,12 @@ TARTESSOS_FLAG = {
 
 MAGNA_GRAECIA_FEUDATORY_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "noricum_color"
-    color2 = "frost_blue"
+    color1 = noricum_color
+    color2 = frost_blue
     colored_emblem = {
         texture = "ce_border_meander_01.dds"
-        color1 = "noricum_color"
-        color2 = "frost_blue"
+        color1 = noricum_color
+        color2 = frost_blue
         instance = {
             rotation = 90
         }
@@ -1563,7 +1563,7 @@ MAGNA_GRAECIA_FEUDATORY_FLAG = {
     }
     colored_emblem = {
         texture = "ce_hellenic_3.dds"
-        color1 = "frost_blue"
+        color1 = frost_blue
         instance = {
             scale = { 1 1 }
         }
@@ -1572,11 +1572,11 @@ MAGNA_GRAECIA_FEUDATORY_FLAG = {
 
 POMPEII_FEUDATORY_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "vettonia_color"
-    color2 = "frost_blue"
+    color1 = vettonia_color
+    color2 = frost_blue
     colored_emblem = {
         texture = "ce_border_stars_01.dds"
-        color1 = "frost_blue"
+        color1 = frost_blue
         instance = {
             rotation = 0
         }
@@ -1586,7 +1586,7 @@ POMPEII_FEUDATORY_FLAG = {
     }
     colored_emblem = {
         texture = "ce_chimera.dds"
-        color1 = "frost_blue"
+        color1 = frost_blue
         instance = {
             scale = { 1 1 }
         }
@@ -1595,22 +1595,22 @@ POMPEII_FEUDATORY_FLAG = {
 
 ROME_SUBJECT_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "ocean_blue"
-    color2 = "silver"
+    color1 = ocean_blue
+    color2 = silver
     colored_emblem = {
         texture = "ce_roman_eagle.dds"
-        color1 = "silver"
+        color1 = silver
     }
 }
 
 ARGOLIS_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "bone_white"
-    color2 = "ck2_blue"
+    color1 = bone_white
+    color2 = ck2_blue
     colored_emblem = {
         texture = "ce_border_meander_03.dds"
-        color1 = "ck2_blue"
-        color2 = "bone_white"
+        color1 = ck2_blue
+        color2 = bone_white
         instance = {
             rotation = 0
             scale = { 1 0.5 }
@@ -1624,7 +1624,7 @@ ARGOLIS_FLAG = {
     }
     colored_emblem = {
         texture = "ce_ship_01.dds"
-        color1 = "pink"
+        color1 = pink
         instance = {
             scale = { 0.8 0.8 }
         }
@@ -1633,12 +1633,12 @@ ARGOLIS_FLAG = {
 
 CANTABRIA_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "cantabria_color"
-    color2 = "bone_white"
+    color1 = cantabria_color
+    color2 = bone_white
     colored_emblem = {
         texture = "ce_border_leaves_01.dds"
-        color1 = "bone_white"
-        color2 = "cantabria_color"
+        color1 = bone_white
+        color2 = cantabria_color
         instance = {
             rotation = 0
         }
@@ -1648,14 +1648,14 @@ CANTABRIA_FLAG = {
     }
     colored_emblem = {
         texture = "ce_22.dds"
-        color1 = "bone_white"
+        color1 = bone_white
         instance = {
             scale = { 0.5 0.5 }
         }
     }
     colored_emblem = {
         texture = "ce_11.dds"
-        color1 = "bone_white"
+        color1 = bone_white
         instance = {
             rotation = 180
             scale = { 0.75 0.75 }
@@ -1664,7 +1664,7 @@ CANTABRIA_FLAG = {
     }
     colored_emblem = {
         texture = "ce_11.dds"
-        color1 = "bone_white"
+        color1 = bone_white
         instance = {
             scale = { 0.75 0.75 }
             position = { 0.15 0.5 }
@@ -1674,11 +1674,11 @@ CANTABRIA_FLAG = {
 
 ASTURIA_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "asturia_color"
-    color2 = "burned_red"
+    color1 = asturia_color
+    color2 = burned_red
     colored_emblem = {
         texture = "ce_26.dds"
-        color1 = "burned_red"
+        color1 = burned_red
         instance = {
             scale = { 0.8 0.8 }
             position = { 0.7 0.4 }
@@ -1686,7 +1686,7 @@ ASTURIA_FLAG = {
     }
     colored_emblem = {
         texture = "ce_26.dds"
-        color1 = "burned_red"
+        color1 = burned_red
         instance = {
             scale = { -0.8 0.8 }
             position = { 0.3 0.4 }
@@ -1694,7 +1694,7 @@ ASTURIA_FLAG = {
     }
     colored_emblem = {
         texture = "ce_21.dds"
-        color1 = "burned_red"
+        color1 = burned_red
         instance = {
             scale = { 0.65 0.65 }
             position = { 0.5 0.68 }
@@ -1704,12 +1704,12 @@ ASTURIA_FLAG = {
 
 GALLAECIA_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "gallaecia_color"
-    color2 = "offwhite"
+    color1 = gallaecia_color
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_stars_01.dds"
-        color1 = "offwhite"
-        color2 = "gallaecia_color"
+        color1 = offwhite
+        color2 = gallaecia_color
         instance = {
             rotation = 0
         }
@@ -1719,7 +1719,7 @@ GALLAECIA_FLAG = {
     }
     colored_emblem = {
         texture = "ce_16.dds"
-        color1 = "offwhite"
+        color1 = offwhite
         instance = {
             scale = { 0.9 0.9 }
             position = { 0.5 0.4 }
@@ -1727,7 +1727,7 @@ GALLAECIA_FLAG = {
     }
     colored_emblem = {
         texture = "ce_10.dds"
-        color1 = "offwhite"
+        color1 = offwhite
         instance = {
             rotation = 90
             scale = { 0.55 0.55 }
@@ -1736,7 +1736,7 @@ GALLAECIA_FLAG = {
     }
     colored_emblem = {
         texture = "ce_10.dds"
-        color1 = "offwhite"
+        color1 = offwhite
         instance = {
             rotation = 90
             scale = { 0.55 -0.55 }
@@ -1747,11 +1747,11 @@ GALLAECIA_FLAG = {
 
 CORINTH_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "ocean_blue"
-    color2 = "silver"
+    color1 = ocean_blue
+    color2 = silver
     colored_emblem = {
         texture = "ce_pegasus_01.dds"
-        color1 = "silver"
+        color1 = silver
         instance = {
             scale = { -1 1 }
         }
@@ -1760,12 +1760,12 @@ CORINTH_FLAG = {
 
 THE = {
     pattern = "pattern_solid.dds"
-    color1 = "theban_green"
-    color2 = "offwhite"
+    color1 = theban_green
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_meander_03.dds"
-        color1 = "offwhite"
-        color2 = "theban_green"
+        color1 = offwhite
+        color2 = theban_green
         instance = {
             rotation = 0
         }
@@ -1775,7 +1775,7 @@ THE = {
     }
     colored_emblem = {
         texture = "ce_13.dds"
-        color1 = "offwhite"
+        color1 = offwhite
         instance = {
             scale = { 1 0.8 }
         }
@@ -1784,12 +1784,12 @@ THE = {
 
 DECAPOLIS_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "lighter_dark_orange"
-    color2 = "offwhite"
+    color1 = lighter_dark_orange
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_zigzag_01.dds"
-        color1 = "lighter_dark_orange"
-        color2 = "offwhite"
+        color1 = lighter_dark_orange
+        color2 = offwhite
         instance = {
             rotation = 0
         }
@@ -1799,7 +1799,7 @@ DECAPOLIS_FLAG = {
     }
     colored_emblem = {
         texture = "ce_scorpion_01.dds"
-        color1 = "offwhite"
+        color1 = offwhite
         instance = {
             scale = { 0.7 0.7 }
         }
@@ -1808,35 +1808,35 @@ DECAPOLIS_FLAG = {
 
 CYR = {
     pattern = "pattern_solid.dds"
-    color1 = "ocean_blue"
-    color2 = "pitch_black"
-    color3 = "bone_white"
+    color1 = ocean_blue
+    color2 = pitch_black
+    color3 = bone_white
     colored_emblem = {
-        color1 = "bone_white"
-        color2 = "ck2_green"
+        color1 = bone_white
+        color2 = ck2_green
         texture = "ce_10.dds"
         mask = { 1 2 3 }
         instance = {
             position = { 0.5 0.5 }
-            scale = { -1.0 1.0 }
+            scale = { -1. 1. }
             depth = 0.01
             rotation = 270
         }
     }
     colored_emblem = {
-        color1 = "bone_white"
-        color2 = "bone_white"
+        color1 = bone_white
+        color2 = bone_white
         texture = "ce_border_triangles_01.dds"
         mask = { 1 2 3 }
         instance = {
             position = { 0.5 0.5 }
-            scale = { 1.0 1.0 }
+            scale = { 1. 1. }
             depth = 0.01
             rotation = 90
         }
         instance = {
             position = { 0.5 0.5 }
-            scale = { 1.0 1.0 }
+            scale = { 1. 1. }
             depth = 0.01
             rotation = 270
         }
@@ -1845,35 +1845,35 @@ CYR = {
 
 CYR_OPPOSITION = {
     pattern = "pattern_solid.dds"
-    color1 = "bone_white"
-    color2 = "pitch_black"
-    color3 = "bone_white"
+    color1 = bone_white
+    color2 = pitch_black
+    color3 = bone_white
     colored_emblem = {
-        color1 = "ocean_blue"
-        color2 = "ck2_green"
+        color1 = ocean_blue
+        color2 = ck2_green
         texture = "ce_10.dds"
         mask = { 1 2 3 }
         instance = {
             position = { 0.5 0.5 }
-            scale = { -1.0 1.0 }
+            scale = { -1. 1. }
             depth = 0.01
             rotation = 270
         }
     }
     colored_emblem = {
-        color1 = "ocean_blue"
-        color2 = "bone_white"
+        color1 = ocean_blue
+        color2 = bone_white
         texture = "ce_border_triangles_01.dds"
         mask = { 1 2 3 }
         instance = {
             position = { 0.5 0.5 }
-            scale = { 1.0 1.0 }
+            scale = { 1. 1. }
             depth = 0.01
             rotation = 90
         }
         instance = {
             position = { 0.5 0.5 }
-            scale = { 1.0 1.0 }
+            scale = { 1. 1. }
             depth = 0.01
             rotation = 270
         }
@@ -1882,12 +1882,12 @@ CYR_OPPOSITION = {
 
 SARDINIA_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "sardinia_color"
-    color2 = "offwhite"
+    color1 = sardinia_color
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_simple_02.dds"
-        color1 = "offwhite"
-        color2 = "pitch_black"
+        color1 = offwhite
+        color2 = pitch_black
         instance = {
             rotation = 0
         }
@@ -1897,7 +1897,7 @@ SARDINIA_FLAG = {
     }
     colored_emblem = {
         texture = "ce_horse_03.dds"
-        color1 = "offwhite"
+        color1 = offwhite
         instance = {
             scale = { 0.75 0.75 }
         }
@@ -1906,12 +1906,12 @@ SARDINIA_FLAG = {
 
 LUSITANIA_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "dark_purple"
-    color2 = "samnite_beige"
+    color1 = dark_purple
+    color2 = samnite_beige
     colored_emblem = {
         texture = "ce_border_simple_02.dds"
-        color1 = "offwhite"
-        color2 = "samnite_beige"
+        color1 = offwhite
+        color2 = samnite_beige
         instance = {
             rotation = 90
             scale = { 0.5 1 }
@@ -1925,7 +1925,7 @@ LUSITANIA_FLAG = {
     }
     colored_emblem = {
         texture = "ce_wheel_03.dds"
-        color1 = "offwhite"
+        color1 = offwhite
         instance = {
             scale = { 0.75 0.75 }
         }
@@ -1934,11 +1934,11 @@ LUSITANIA_FLAG = {
 
 CELTIBERIA_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "bharatavarsha_orange_color"
-    color2 = "ocean_blue"
+    color1 = bharatavarsha_orange_color
+    color2 = ocean_blue
     colored_emblem = {
         texture = "ce_border_stars_01.dds"
-        color1 = "ocean_blue"
+        color1 = ocean_blue
         instance = {
             rotation = 0
             scale = { 1 1.3 }
@@ -1952,8 +1952,8 @@ CELTIBERIA_FLAG = {
     }
     colored_emblem = {
         texture = "ce_flower_07.dds"
-        color1 = "ocean_blue"
-        color2 = "bharatavarsha_orange_color"
+        color1 = ocean_blue
+        color2 = bharatavarsha_orange_color
         instance = {
             scale = { -0.8 0.8 }
         }
@@ -1962,12 +1962,12 @@ CELTIBERIA_FLAG = {
 
 VETTONIA_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "vettonia_color"
-    color2 = "red_nougat"
+    color1 = vettonia_color
+    color2 = red_nougat
     colored_emblem = {
         texture = "ce_border_simple_02.dds"
-        color1 = "vettonia_color"
-        color2 = "red_nougat"
+        color1 = vettonia_color
+        color2 = red_nougat
         instance = {
             rotation = 0
         }
@@ -1977,7 +1977,7 @@ VETTONIA_FLAG = {
     }
     colored_emblem = {
         texture = "ce_whirl_01.dds"
-        color1 = "red_nougat"
+        color1 = red_nougat
         instance = {
             scale = { 0.9 0.9 }
         }
@@ -1986,12 +1986,12 @@ VETTONIA_FLAG = {
 
 CARPETANIA_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "carpetania_color"
-    color2 = "light_blue"
+    color1 = carpetania_color
+    color2 = light_blue
     colored_emblem = {
         texture = "ce_border_leaves_01.dds"
-        color1 = "light_blue"
-        color2 = "carpetania_color"
+        color1 = light_blue
+        color2 = carpetania_color
         instance = {
             rotation = 90
         }
@@ -2001,7 +2001,7 @@ CARPETANIA_FLAG = {
     }
     colored_emblem = {
         texture = "ce_diamond_01.dds"
-        color1 = "light_blue"
+        color1 = light_blue
         instance = {
             scale = { 0.9 0.9 }
         }
@@ -2010,11 +2010,11 @@ CARPETANIA_FLAG = {
 
 OLYMPIA_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "olympian_white"
-    color2 = "light_green"
+    color1 = olympian_white
+    color2 = light_green
     colored_emblem = {
         texture = "ce_hellenic_2.dds"
-        color1 = "light_green"
+        color1 = light_green
         instance = {
             scale = { -1 1 }
         }
@@ -2023,12 +2023,12 @@ OLYMPIA_FLAG = {
 
 PELOPONNESIAN_LEAGUE_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "garnet_red"
-    color2 = "frost_blue"
+    color1 = garnet_red
+    color2 = frost_blue
     colored_emblem = {
         texture = "ce_border_simple_02.dds"
-        color1 = "frost_blue"
-        color2 = "garnet_red"
+        color1 = frost_blue
+        color2 = garnet_red
         instance = {
             rotation = 0
         }
@@ -2038,8 +2038,8 @@ PELOPONNESIAN_LEAGUE_FLAG = {
     }
     colored_emblem = {
         texture = "ce_sparta.dds"
-        color1 = "offwhite"
-        color2 = "frost_blue"
+        color1 = offwhite
+        color2 = frost_blue
         instance = {
             scale = { 0.75 0.75 }
         }
@@ -2048,11 +2048,11 @@ PELOPONNESIAN_LEAGUE_FLAG = {
 
 ORE = {
     pattern = "pattern_solid.dds"
-    color1 = "mid_grey"
-    color2 = "offwhite"
+    color1 = mid_grey
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_shell_01.dds"
-        color1 = "offwhite"
+        color1 = offwhite
         instance = {
             scale = { 0.85 0.85 }
         }
@@ -2061,12 +2061,12 @@ ORE = {
 
 EUBOEA_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "euboean_blue"
-    color2 = "offwhite"
+    color1 = euboean_blue
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_meander_02.dds"
-        color1 = "offwhite"
-        color2 = "euboean_blue"
+        color1 = offwhite
+        color2 = euboean_blue
         instance = {
             rotation = 0
         }
@@ -2076,8 +2076,8 @@ EUBOEA_FLAG = {
     }
     colored_emblem = {
         texture = "ce_bull_03.dds"
-        color1 = "offwhite"
-        color2 = "euboean_blue"
+        color1 = offwhite
+        color2 = euboean_blue
         instance = {
             scale = { -0.9 0.9 }
         }
@@ -2086,12 +2086,12 @@ EUBOEA_FLAG = {
 
 DELOS_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "light_green"
-    color2 = "offwhite"
+    color1 = light_green
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_meander_02.dds"
-        color1 = "offwhite"
-        color2 = "light_green"
+        color1 = offwhite
+        color2 = light_green
         instance = {
             rotation = 0
         }
@@ -2101,8 +2101,8 @@ DELOS_FLAG = {
     }
     colored_emblem = {
         texture = "ce_10.dds"
-        color1 = "offwhite"
-        color2 = "light_green"
+        color1 = offwhite
+        color2 = light_green
         instance = {
             scale = { -0.9 0.9 }
         }
@@ -2111,12 +2111,12 @@ DELOS_FLAG = {
 
 DELIAN_LEAGUE_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "delian_league_blue"
-    color2 = "pure_white"
+    color1 = delian_league_blue
+    color2 = pure_white
     colored_emblem = {
         texture = "ce_border_meander_01.dds"
-        color1 = "delian_league_blue"
-        color2 = "pure_white"
+        color1 = delian_league_blue
+        color2 = pure_white
         instance = {
             rotation = 0
         }
@@ -2126,7 +2126,7 @@ DELIAN_LEAGUE_FLAG = {
     }
     colored_emblem = {
         texture = "ce_owl.dds"
-        color1 = "pure_white"
+        color1 = pure_white
         instance = {
             scale = { 0.85 0.85 }
         }
@@ -2135,12 +2135,12 @@ DELIAN_LEAGUE_FLAG = {
 
 ITA_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "italiotian_league_beige"
-    color2 = "pure_white"
+    color1 = italiotian_league_beige
+    color2 = pure_white
     colored_emblem = {
         texture = "ce_border_meander_02.dds"
-        color1 = "pure_white"
-        color2 = "blood_red"
+        color1 = pure_white
+        color2 = blood_red
         instance = {
             rotation = 0
         }
@@ -2150,8 +2150,8 @@ ITA_FLAG = {
     }
     colored_emblem = {
         texture = "ce_snake_01.dds"
-        color1 = "pure_white"
-        color2 = "pure_white"
+        color1 = pure_white
+        color2 = pure_white
         instance = {
             scale = { 0.85 0.85 }
         }
@@ -2160,12 +2160,12 @@ ITA_FLAG = {
 
 PHK_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "navy_blue"
-    color2 = "pure_white"
+    color1 = navy_blue
+    color2 = pure_white
     colored_emblem = {
         texture = "ce_border_meander_03.dds"
-        color1 = "silver"
-        color2 = "navy_blue"
+        color1 = silver
+        color2 = navy_blue
         instance = {
             rotation = 0
         }
@@ -2181,8 +2181,8 @@ PHK_FLAG = {
     }
     colored_emblem = {
         texture = "ce_gryphon_01.dds"
-        color1 = "pure_white"
-        color2 = "pure_white"
+        color1 = pure_white
+        color2 = pure_white
         instance = {
             scale = { 0.75 0.75 }
         }
@@ -2191,12 +2191,12 @@ PHK_FLAG = {
 
 AIGINA_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "offwhite"
-    color2 = "pure_white"
+    color1 = offwhite
+    color2 = pure_white
     colored_emblem = {
         texture = "ce_border_checker_01.dds"
-        color1 = "mid_grey"
-        color2 = "offwhite"
+        color1 = mid_grey
+        color2 = offwhite
         instance = {
             rotation = 90
         }
@@ -2206,8 +2206,8 @@ AIGINA_FLAG = {
     }
     colored_emblem = {
         texture = "ce_border_checker_01.dds"
-        color1 = "offwhite"
-        color2 = "mid_grey"
+        color1 = offwhite
+        color2 = mid_grey
         instance = {
             rotation = 0
         }
@@ -2217,8 +2217,8 @@ AIGINA_FLAG = {
     }
     colored_emblem = {
         texture = "ce_macedonian_sun.dds"
-        color1 = "mid_grey"
-        color2 = "pure_white"
+        color1 = mid_grey
+        color2 = pure_white
         instance = {
             scale = { 0.85 0.85 }
         }
@@ -2227,12 +2227,12 @@ AIGINA_FLAG = {
 
 CHALCIS_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "samnite_green"
-    color2 = "offwhite"
+    color1 = samnite_green
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_zigzag_02.dds"
-        color1 = "offwhite"
-        color2 = "dark_green"
+        color1 = offwhite
+        color2 = dark_green
         instance = {
             rotation = 0
         }
@@ -2242,8 +2242,8 @@ CHALCIS_FLAG = {
     }
     colored_emblem = {
         texture = "ce_bull_04.dds"
-        color1 = "offwhite"
-        color2 = "euboean_blue"
+        color1 = offwhite
+        color2 = euboean_blue
         instance = {
             scale = { -0.9 0.9 }
         }
@@ -2252,49 +2252,49 @@ CHALCIS_FLAG = {
 
 AMK = {
     pattern = "pattern_solid.dds"
-    color1 = "dark_green"
-    color2 = "offwhite"
+    color1 = dark_green
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_pegasus_01.dds"
-        color1 = "bone_white"
-        color2 = "offwhite"
+        color1 = bone_white
+        color2 = offwhite
         instance = {
             scale = { -0.9 0.9 }
         }
     }
     colored_emblem = {
         texture = "ce_border_simple_02.dds"
-        color1 = "bone_white"
-        color2 = "dark_green"
+        color1 = bone_white
+        color2 = dark_green
         instance = {
             rotation = 0
-            scale = { -1.0 1.0 }
+            scale = { -1. 1. }
         }
         instance = {
             rotation = 180
-            scale = { -1.0 1.0 }
+            scale = { -1. 1. }
         }
     }
 }
 
 EPI_MAC = {
     pattern = "pattern_solid.dds"
-    color1 = "pitch_black"
-    color2 = "roman_gold"
+    color1 = pitch_black
+    color2 = roman_gold
     colored_emblem = {
         texture = "ce_macedonian_sun.dds"
-        color1 = "roman_gold"
+        color1 = roman_gold
     }
 }
 
 THESSALY_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "lighter_dark_orange"
-    color2 = "offwhite"
+    color1 = lighter_dark_orange
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_stars_01.dds"
-        color1 = "bone_white"
-        color2 = "lighter_dark_orange"
+        color1 = bone_white
+        color2 = lighter_dark_orange
         instance = {
             rotation = 0
         }
@@ -2304,7 +2304,7 @@ THESSALY_FLAG = {
     }
     colored_emblem = {
         texture = "ce_horse_07.dds"
-        color1 = "bone_white"
+        color1 = bone_white
         instance = {
             scale = { 0.9 0.9 }
         }
@@ -2313,12 +2313,12 @@ THESSALY_FLAG = {
 
 MG_EPI_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "pitch_black"
-    color2 = "offwhite"
+    color1 = pitch_black
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_meander_02.dds"
-        color1 = "epirus_light_yellow"
-        color2 = "epirus_light_yellow"
+        color1 = epirus_light_yellow
+        color2 = epirus_light_yellow
         instance = {
             rotation = 90
         }
@@ -2328,8 +2328,8 @@ MG_EPI_FLAG = {
     }
     colored_emblem = {
         texture = "ce_magna_graecia.dds"
-        color1 = "epirus_light_yellow"
-        color2 = "epirus_light_yellow"
+        color1 = epirus_light_yellow
+        color2 = epirus_light_yellow
         instance = {
             scale = { 1 1 }
         }
@@ -2338,12 +2338,12 @@ MG_EPI_FLAG = {
 
 MG_SIC_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "pitch_black"
-    color2 = "offwhite"
+    color1 = pitch_black
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_meander_02.dds"
-        color1 = "epirus_light_yellow"
-        color2 = "epirus_light_yellow"
+        color1 = epirus_light_yellow
+        color2 = epirus_light_yellow
         instance = {
             rotation = 0
         }
@@ -2353,8 +2353,8 @@ MG_SIC_FLAG = {
     }
     colored_emblem = {
         texture = "ce_syracuse.dds"
-        color1 = "epirus_light_yellow"
-        color2 = "epirus_light_yellow"
+        color1 = epirus_light_yellow
+        color2 = epirus_light_yellow
         instance = {
             scale = { 0.9 0.9 }
         }
@@ -2363,21 +2363,21 @@ MG_SIC_FLAG = {
 
 CHRYSAORIC_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "chrysaoric_color"
+    color1 = chrysaoric_color
     colored_emblem = {
         texture = "ce_eagle_01.dds"
-        color1 = "pitch_black"
+        color1 = pitch_black
     }
 }
 
 PERGAMON_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "mid_grey"
-    color2 = "offwhite"
+    color1 = mid_grey
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_meander_01.dds"
-        color1 = "pitch_black"
-        color2 = "roman_gold"
+        color1 = pitch_black
+        color2 = roman_gold
         instance = {
             rotation = 0
         }
@@ -2387,8 +2387,8 @@ PERGAMON_FLAG = {
     }
     colored_emblem = {
         texture = "ce_snake_02.dds"
-        color1 = "roman_gold"
-        color2 = "bone_white"
+        color1 = roman_gold
+        color2 = bone_white
         instance = {
             scale = { 0.8 0.8 }
         }
@@ -2397,11 +2397,11 @@ PERGAMON_FLAG = {
 
 WESTERN_NESIOTIC_FLAG = {
     pattern = "pattern_horizontal_bar_01.dds"
-    color1 = "pitch_black"
-    color2 = "west_nesiotic_color"
+    color1 = pitch_black
+    color2 = west_nesiotic_color
     colored_emblem = {
         texture = "ce_star_8.dds"
-        color1 = "roman_gold"
+        color1 = roman_gold
         instance = {
             scale = { 0.33 0.33 }
             position = { 0.17 0.5 }
@@ -2419,12 +2419,12 @@ WESTERN_NESIOTIC_FLAG = {
 
 MIT_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "ck2_purple"
-    color2 = "offwhite"
+    color1 = ck2_purple
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_meander_01.dds"
-        color1 = "ck2_purple"
-        color2 = "roman_gold"
+        color1 = ck2_purple
+        color2 = roman_gold
         instance = {
             rotation = 0
         }
@@ -2434,8 +2434,8 @@ MIT_FLAG = {
     }
     colored_emblem = {
         texture = "ce_water_nymph_01.dds"
-        color1 = "roman_gold"
-        color2 = "roman_gold"
+        color1 = roman_gold
+        color2 = roman_gold
         instance = {
             scale = { 0.8 0.8 }
         }
@@ -2444,36 +2444,36 @@ MIT_FLAG = {
 
 TELMESSOS_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "telmessian_color"
+    color1 = telmessian_color
     colored_emblem = {
         texture = "ce_thrace.dds"
-        color1 = "roman_gold"
+        color1 = roman_gold
     }
 }
 
 MAC_PRY = {
     pattern = "pattern_solid.dds"
-    color1 = "phrygia_red"
-    color2 = "roman_gold"
+    color1 = phrygia_red
+    color2 = roman_gold
     colored_emblem = {
         texture = "ce_macedonian_sun.dds"
-        color1 = "roman_gold"
+        color1 = roman_gold
     }
 }
 
 PRY_MAC = {
     pattern = "pattern_solid.dds"
-    color1 = "macedonian_blue"
-    color2 = "roman_gold"
+    color1 = macedonian_blue
+    color2 = roman_gold
     colored_emblem = {
         texture = "ce_phrygia.dds"
-        color1 = "roman_gold"
-        color2 = "roman_gold"
+        color1 = roman_gold
+        color2 = roman_gold
     }
     colored_emblem = {
         texture = "ce_border_stars_01.dds"
-        color1 = "roman_gold"
-        color2 = "roman_gold"
+        color1 = roman_gold
+        color2 = roman_gold
         instance = {
             rotation = 0
         }
@@ -2491,17 +2491,17 @@ PRY_MAC = {
 
 SARDIS_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "pitch_black"
-    color2 = "roman_gold"
+    color1 = pitch_black
+    color2 = roman_gold
     colored_emblem = {
         texture = "ce_cat_01.dds"
-        color1 = "lighter_dark_orange"
-        color2 = "roman_gold"
+        color1 = lighter_dark_orange
+        color2 = roman_gold
     }
     colored_emblem = {
         texture = "ce_border_simple_02.dds"
-        color1 = "pitch_black"
-        color2 = "lighter_dark_orange"
+        color1 = pitch_black
+        color2 = lighter_dark_orange
         instance = {
             rotation = 90
         }
@@ -2513,20 +2513,20 @@ SARDIS_FLAG = {
 
 PHRYGIA_SATRAPY_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "dark_green"
-    color2 = "roman_gold"
+    color1 = dark_green
+    color2 = roman_gold
     colored_emblem = {
         texture = "ce_eagle_03.dds"
-        color1 = "roman_gold"
-        color2 = "roman_gold"
+        color1 = roman_gold
+        color2 = roman_gold
         instance = {
             scale = { 0.9 0.9 }
         }
     }
     colored_emblem = {
         texture = "ce_border_rug_01.dds"
-        color1 = "dark_green"
-        color2 = "roman_gold"
+        color1 = dark_green
+        color2 = roman_gold
         instance = {
             rotation = 0
         }
@@ -2538,17 +2538,17 @@ PHRYGIA_SATRAPY_FLAG = {
 
 CARIA_SATRAPY_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "navy_blue"
-    color2 = "roman_gold"
+    color1 = navy_blue
+    color2 = roman_gold
     colored_emblem = {
         texture = "ce_pegasus_01.dds"
-        color1 = "roman_gold"
-        color2 = "roman_gold"
+        color1 = roman_gold
+        color2 = roman_gold
     }
     colored_emblem = {
         texture = "ce_border_stars_01.dds"
-        color1 = "roman_gold"
-        color2 = "roman_gold"
+        color1 = roman_gold
+        color2 = roman_gold
         instance = {
             rotation = 0
         }
@@ -2566,20 +2566,20 @@ CARIA_SATRAPY_FLAG = {
 
 PHA = {
     pattern = "pattern_solid.dds"
-    color1 = "dark_green"
-    color2 = "roman_gold"
+    color1 = dark_green
+    color2 = roman_gold
     colored_emblem = {
         texture = "ce_hellenic_1.dds"
-        color1 = "roman_gold"
-        color2 = "roman_gold"
+        color1 = roman_gold
+        color2 = roman_gold
         instance = {
             scale = { 1.05 1.05 }
         }
     }
     colored_emblem = {
         texture = "ce_13.dds"
-        color1 = "roman_gold"
-        color2 = "roman_gold"
+        color1 = roman_gold
+        color2 = roman_gold
         instance = {
             scale = { 0.5 0.5 }
         }
@@ -2588,17 +2588,17 @@ PHA = {
 
 ASP = {
     pattern = "pattern_solid.dds"
-    color1 = "navy_blue"
-    color2 = "roman_gold"
+    color1 = navy_blue
+    color2 = roman_gold
     colored_emblem = {
         texture = "ce_fish_01.dds"
-        color1 = "light_yellow"
-        color2 = "roman_gold"
+        color1 = light_yellow
+        color2 = roman_gold
     }
     colored_emblem = {
         texture = "ce_border_meander_01.dds"
-        color1 = "light_yellow"
-        color2 = "navy_blue"
+        color1 = light_yellow
+        color2 = navy_blue
         instance = {
             rotation = 0
         }
@@ -2610,23 +2610,23 @@ ASP = {
 
 EPM = {
     pattern = "pattern_solid.dds"
-    color1 = "judea_blue"
-    color2 = "roman_gold"
+    color1 = judea_blue
+    color2 = roman_gold
     colored_emblem = {
         texture = "ce_hellenic_3.dds"
-        color1 = "pitch_black"
-        color2 = "roman_gold"
+        color1 = pitch_black
+        color2 = roman_gold
     }
 }
 
 IRC_FLAG = {
     pattern = "pattern_solid.dds"
-    color1 = "judea_blue"
-    color2 = "offwhite"
+    color1 = judea_blue
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_zigzag_01.dds"
-        color1 = "judea_blue"
-        color2 = "offwhite"
+        color1 = judea_blue
+        color2 = offwhite
         instance = {
             rotation = 0
         }
@@ -2636,7 +2636,7 @@ IRC_FLAG = {
     }
     colored_emblem = {
         texture = "ce_tiger_01.dds"
-        color1 = "offwhite"
+        color1 = offwhite
         instance = {
             scale = { -1 1 }
         }
@@ -2645,12 +2645,12 @@ IRC_FLAG = {
 
 APO = {
     pattern = "pattern_solid.dds"
-    color1 = "ck2_red"
-    color2 = "offwhite"
+    color1 = ck2_red
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_zigzag_01.dds"
-        color1 = "bone_white"
-        color2 = "ck2_red"
+        color1 = bone_white
+        color2 = ck2_red
         instance = {
             rotation = 0
         }
@@ -2660,7 +2660,7 @@ APO = {
     }
     colored_emblem = {
         texture = "ce_hellenic_2.dds"
-        color1 = "offwhite"
+        color1 = offwhite
         instance = {
             scale = { -1 1 }
         }
@@ -2669,11 +2669,11 @@ APO = {
 
 OBE = {
     pattern = "pattern_horizontal_bar_02.dds"
-    color1 = "bone_white"
-    color2 = "rust_brown"
+    color1 = bone_white
+    color2 = rust_brown
     colored_emblem = {
         texture = "ce_border_zigzag_02.dds"
-        color1 = "bone_white"
+        color1 = bone_white
         instance = {
             rotation = 0
         }
@@ -2683,7 +2683,7 @@ OBE = {
     }
     colored_emblem = {
         texture = "ce_epirus.dds"
-        color1 = "samnite_red"
+        color1 = samnite_red
         instance = {
             scale = { -1 1 }
             rotation = 50
@@ -2694,11 +2694,11 @@ OBE = {
 
 ION = {
     pattern = "pattern_solid.dds"
-    color1 = "ck2_green"
-    color2 = "offwhite"
+    color1 = ck2_green
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_3.dds"
-        color1 = "roman_gold"
+        color1 = roman_gold
         instance = {
             position = { 0.5 0.53 }
         }
@@ -2707,12 +2707,12 @@ ION = {
 
 IOA = {
     pattern = "pattern_solid.dds"
-    color1 = "theban_green"
-    color2 = "offwhite"
+    color1 = theban_green
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_meander_02.dds"
-        color1 = "bone_white"
-        color2 = "dark_green"
+        color1 = bone_white
+        color2 = dark_green
         instance = {
             rotation = 90
         }
@@ -2722,7 +2722,7 @@ IOA = {
     }
     colored_emblem = {
         texture = "ce_13.dds"
-        color1 = "bone_white"
+        color1 = bone_white
         instance = {
             position = { 0.5 0.53 }
         }
@@ -2731,12 +2731,12 @@ IOA = {
 
 LYC = {
     pattern = "pattern_solid.dds"
-    color1 = "ck2_red"
-    color2 = "offwhite"
+    color1 = ck2_red
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_triangles_02.dds"
-        color1 = "pitch_black"
-        color2 = "bone_white"
+        color1 = pitch_black
+        color2 = bone_white
         instance = {
             rotation = 0
         }
@@ -2752,7 +2752,7 @@ LYC = {
     }
     colored_emblem = {
         texture = "ce_aryan_03.dds"
-        color1 = "bone_white"
+        color1 = bone_white
         instance = {
             scale = { 1 1 }
             rotation = 250
@@ -2761,7 +2761,7 @@ LYC = {
     }
     colored_emblem = {
         texture = "ce_circle_01.dds"
-        color1 = "pitch_black"
+        color1 = pitch_black
         instance = {
             position = { 0.52 0.53 }
             scale = { -0.38 0.38 }
@@ -2769,7 +2769,7 @@ LYC = {
     }
     colored_emblem = {
         texture = "ce_circle_01.dds"
-        color1 = "offwhite"
+        color1 = offwhite
         instance = {
             position = { 0.52 0.53 }
             scale = { -0.28 0.28 }
@@ -2777,7 +2777,7 @@ LYC = {
     }
     colored_emblem = {
         texture = "ce_circle_01.dds"
-        color1 = "pitch_black"
+        color1 = pitch_black
         instance = {
             position = { 0.52 0.53 }
             scale = { -0.21 0.21 }
@@ -2785,7 +2785,7 @@ LYC = {
     }
     colored_emblem = {
         texture = "ce_circle_01.dds"
-        color1 = "ck2_red"
+        color1 = ck2_red
         instance = {
             position = { 0.52 0.53 }
             scale = { -0.15 0.15 }
@@ -2795,12 +2795,12 @@ LYC = {
 
 MYD = {
     pattern = "pattern_solid.dds"
-    color1 = "light_blue"
-    color2 = "offwhite"
+    color1 = light_blue
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_triangles_02.dds"
-        color1 = "bone_white"
-        color2 = "pitch_black"
+        color1 = bone_white
+        color2 = pitch_black
         instance = {
             rotation = 90
         }
@@ -2810,7 +2810,7 @@ MYD = {
     }
     colored_emblem = {
         texture = "ce_dacian_02.dds"
-        color1 = "bone_white"
+        color1 = bone_white
         instance = {
             scale = { -0.8 0.8 }
             position = { 0.5 0.52 }
@@ -2820,12 +2820,12 @@ MYD = {
 
 SLG = {
     pattern = "pattern_checkers_diagonal_01.dds"
-    color1 = "dark_purple"
-    color2 = "ck2_purple"
+    color1 = dark_purple
+    color2 = ck2_purple
     colored_emblem = {
         texture = "ce_border_triangles_01.dds"
-        color1 = "numidia_yellow"
-        color2 = "purple"
+        color1 = numidia_yellow
+        color2 = purple
         instance = {
             rotation = 90
         }
@@ -2835,7 +2835,7 @@ SLG = {
     }
     colored_emblem = {
         texture = "ce_head_02.dds"
-        color1 = "numidia_yellow"
+        color1 = numidia_yellow
         instance = {
             scale = { -0.7 0.7 }
         }
@@ -2844,12 +2844,12 @@ SLG = {
 
 TRM = {
     pattern = "pattern_solid.dds"
-    color1 = "ocean_blue"
-    color2 = "offwhite"
+    color1 = ocean_blue
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_rug_01.dds"
-        color1 = "pitch_black"
-        color2 = "bone_white"
+        color1 = pitch_black
+        color2 = bone_white
         instance = {
             rotation = 0
         }
@@ -2859,7 +2859,7 @@ TRM = {
     }
     colored_emblem = {
         texture = "ce_bull_01.dds"
-        color1 = "bone_white"
+        color1 = bone_white
         instance = {
             scale = { -0.7 0.7 }
             position = { 0.45 0.52 }
@@ -2867,7 +2867,7 @@ TRM = {
     }
     colored_emblem = {
         texture = "ce_crescent_02.dds"
-        color1 = "pitch_black"
+        color1 = pitch_black
         instance = {
             scale = { -0.2 0.2 }
             position = { 0.8 0.3 }
@@ -2878,12 +2878,12 @@ TRM = {
 
 ISI = {
     pattern = "pattern_horizontal_bar_01.dds"
-    color1 = "green"
-    color2 = "pitch_black"
+    color1 = green
+    color2 = pitch_black
     colored_emblem = {
         texture = "ce_border_zigzag_01.dds"
-        color1 = "pitch_black"
-        color2 = "roman_gold"
+        color1 = pitch_black
+        color2 = roman_gold
         instance = {
             rotation = 0
         }
@@ -2893,7 +2893,7 @@ ISI = {
     }
     colored_emblem = {
         texture = "ce_horse_02.dds"
-        color1 = "roman_gold"
+        color1 = roman_gold
         instance = {
             scale = { 0.9 0.9 }
             position = { 0.5 0.52 }
@@ -2903,12 +2903,12 @@ ISI = {
 
 KTN = {
     pattern = "pattern_solid.dds"
-    color1 = "purple"
-    color2 = "offwhite"
+    color1 = purple
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_rug_01.dds"
-        color1 = "roman_gold"
-        color2 = "purple"
+        color1 = roman_gold
+        color2 = purple
         instance = {
             rotation = 90
         }
@@ -2918,7 +2918,7 @@ KTN = {
     }
     colored_emblem = {
         texture = "ce_goddess_01.dds"
-        color1 = "roman_gold"
+        color1 = roman_gold
         instance = {
             scale = { -0.9 0.9 }
             rotation = 0
@@ -2929,12 +2929,12 @@ KTN = {
 
 SSG = {
     pattern = "pattern_solid.dds"
-    color1 = "boeotian_brown"
-    color2 = "offwhite"
+    color1 = boeotian_brown
+    color2 = offwhite
     colored_emblem = {
         texture = "ce_border_simple_02.dds"
-        color1 = "bone_white"
-        color2 = "boeotian_brown"
+        color1 = bone_white
+        color2 = boeotian_brown
         instance = {
             rotation = 0
         }
@@ -2944,7 +2944,7 @@ SSG = {
     }
     colored_emblem = {
         texture = "ce_crescent_02.dds"
-        color1 = "bone_white"
+        color1 = bone_white
         instance = {
             scale = { -0.6 0.6 }
             position = { 0.5 0.5 }
@@ -2955,18 +2955,18 @@ SSG = {
 
 OEO = {
     pattern = "pattern_solid.dds"
-    color1 = "CMB_yellow"
+    color1 = CMB_yellow
     colored_emblem = {
         texture = "ce_square_03.dds"
-        color1 = "pitch_black"
-        color2 = "roman_gold"
+        color1 = pitch_black
+        color2 = roman_gold
         instance = {
             scale = { 1.4 1.4 }
         }
     }
     colored_emblem = {
         texture = "ce_eagle_03.dds"
-        color1 = "roman_gold"
+        color1 = roman_gold
         instance = {
             scale = { -0.8 0.8 }
             position = { 0.534 0.5 }
@@ -2977,12 +2977,12 @@ OEO = {
 
 AKY = {
     pattern = "pattern_diagonal_line_fat_02.dds"
-    color1 = "dark_purple"
-    color2 = "purple"
+    color1 = dark_purple
+    color2 = purple
     colored_emblem = {
         texture = "ce_border_simple_02.dds"
-        color1 = "purple"
-        color2 = "pink"
+        color1 = purple
+        color2 = pink
         instance = {
             rotation = 90
         }
@@ -2992,7 +2992,7 @@ AKY = {
     }
     colored_emblem = {
         texture = "ce_horse_07.dds"
-        color1 = "pink"
+        color1 = pink
         instance = {
             scale = { -0.8 0.8 }
             position = { 0.5 0.5 }
@@ -3002,10 +3002,10 @@ AKY = {
 
 KIB = {
     pattern = "pattern_solid.dds"
-    color1 = "ocean_blue"
+    color1 = ocean_blue
     colored_emblem = {
         texture = "ce_border_simple_01.dds"
-        color1 = "pitch_black"
+        color1 = pitch_black
         instance = {
             rotation = 0
         }
@@ -3015,7 +3015,7 @@ KIB = {
     }
     colored_emblem = {
         texture = "ce_horse_03.dds"
-        color1 = "frost_blue"
+        color1 = frost_blue
         instance = {
             scale = { -0.8 0.8 }
             position = { 0.5 0.5 }
@@ -3026,12 +3026,12 @@ KIB = {
 
 ISU = {
     pattern = "pattern_diagonal_line_fat_04.dds"
-    color1 = "bone_white"
-    color2 = "etruscan_blue"
+    color1 = bone_white
+    color2 = etruscan_blue
     colored_emblem = {
         texture = "ce_border_zigzag_01.dds"
-        color1 = "offwhite"
-        color2 = "etruscan_blue"
+        color1 = offwhite
+        color2 = etruscan_blue
         instance = {
             rotation = 0
         }
@@ -3041,7 +3041,7 @@ ISU = {
     }
     colored_emblem = {
         texture = "ce_panther_01.dds"
-        color1 = "bone_white"
+        color1 = bone_white
         instance = {
             scale = { -1 1 }
             position = { 0.5 0.5 }
@@ -3051,12 +3051,12 @@ ISU = {
 
 LAR = {
     pattern = "pattern_checkers_diagonal_01.dds"
-    color1 = "dark_orange"
-    color2 = "lighter_dark_orange"
+    color1 = dark_orange
+    color2 = lighter_dark_orange
     colored_emblem = {
         texture = "ce_border_rug_01.dds"
-        color1 = "lighter_dark_orange"
-        color2 = "pitch_black"
+        color1 = lighter_dark_orange
+        color2 = pitch_black
         instance = {
             rotation = 0
         }
@@ -3066,7 +3066,7 @@ LAR = {
     }
     colored_emblem = {
         texture = "ce_hellenic_4.dds"
-        color1 = "pitch_black"
+        color1 = pitch_black
         instance = {
             scale = { 0.35 0.35 }
             position = { 0.2 0.3 }
@@ -3075,7 +3075,7 @@ LAR = {
     }
     colored_emblem = {
         texture = "ce_wolf_01.dds"
-        color1 = "pitch_black"
+        color1 = pitch_black
         instance = {
             scale = { -1 1 }
             position = { 0.5 0.5 }
@@ -3085,12 +3085,12 @@ LAR = {
 
 TYM = {
     pattern = "pattern_circle_01.dds"
-    color1 = "offwhite"
-    color2 = "dark_green"
+    color1 = offwhite
+    color2 = dark_green
     colored_emblem = {
         texture = "ce_border_rug_01.dds"
-        color1 = "bone_white"
-        color2 = "dark_green"
+        color1 = bone_white
+        color2 = dark_green
         instance = {
             rotation = 0
         }
@@ -3100,8 +3100,8 @@ TYM = {
     }
     colored_emblem = {
         texture = "ce_syracuse.dds"
-        color1 = "dark_green"
-        color2 = "dark_green"
+        color1 = dark_green
+        color2 = dark_green
         instance = {
             scale = { 0.9 0.9 }
             position = { 0.5 0.5 }
@@ -3112,11 +3112,11 @@ TYM = {
 
 PPH = {
     pattern = "pattern_solid.dds"
-    color1 = "ocean_blue"
+    color1 = ocean_blue
     colored_emblem = {
         texture = "ce_border_leaves_01.dds"
-        color1 = "ocean_blue"
-        color2 = "roman_gold"
+        color1 = ocean_blue
+        color2 = roman_gold
         instance = {
             rotation = 0
         }
@@ -3126,8 +3126,8 @@ PPH = {
     }
     colored_emblem = {
         texture = "ce_antlers_01.dds"
-        color1 = "roman_gold"
-        color2 = "ocean_blue"
+        color1 = roman_gold
+        color2 = ocean_blue
         instance = {
             scale = { -0.9 0.9 }
             position = { 0.5 0.57 }
@@ -3137,11 +3137,11 @@ PPH = {
 
 MLD = {
     pattern = "pattern_solid.dds"
-    color1 = "CMB_yellow"
+    color1 = CMB_yellow
     colored_emblem = {
         texture = "ce_border_zigzag_02.dds"
-        color1 = "pitch_black"
-        color2 = "CMB_yellow"
+        color1 = pitch_black
+        color2 = CMB_yellow
         instance = {
             rotation = 0
         }
@@ -3157,8 +3157,8 @@ MLD = {
     }
     colored_emblem = {
         texture = "ce_syracuse.dds"
-        color1 = "pitch_black"
-        color2 = "pitch_black"
+        color1 = pitch_black
+        color2 = pitch_black
         instance = {
             scale = { 0.3 0.3 }
             position = { 0.5 0.27 }
@@ -3167,7 +3167,7 @@ MLD = {
     }
     colored_emblem = {
         texture = "ce_horse_02.dds"
-        color1 = "pitch_black"
+        color1 = pitch_black
         instance = {
             scale = { 0.8 0.8 }
             position = { 0.5 0.63 }
@@ -3177,11 +3177,11 @@ MLD = {
 
 PIS = {
     pattern = "pattern_diagonal_line_fat_02.dds"
-    color1 = "purple"
-    color2 = "mid_grey"
+    color1 = purple
+    color2 = mid_grey
     colored_emblem = {
         texture = "ce_border_stars_01.dds"
-        color1 = "bone_white"
+        color1 = bone_white
         instance = {
             rotation = 90
         }
@@ -3191,7 +3191,7 @@ PIS = {
     }
     colored_emblem = {
         texture = "ce_crescent_02.dds"
-        color1 = "bone_white"
+        color1 = bone_white
         instance = {
             scale = { -0.7 0.7 }
             position = { 0.4 0.65 }
@@ -3200,7 +3200,7 @@ PIS = {
     }
     colored_emblem = {
         texture = "ce_bull_03.dds"
-        color1 = "bone_white"
+        color1 = bone_white
         instance = {
             scale = { 0.6 0.7 }
             position = { 0.7 0.35 }
@@ -3211,39 +3211,39 @@ PIS = {
 
 CAB = {
     pattern = "pattern_diagonal_line_fat_02.dds"
-    color1 = "ck2_blue"
-    color2 = "frost_blue"
+    color1 = ck2_blue
+    color2 = frost_blue
     colored_emblem = {
         texture = "ce_square_03.dds"
-        color1 = "pitch_black"
+        color1 = pitch_black
         instance = {
             scale = { -1.35 1.35 }
         }
     }
     colored_emblem = {
         texture = "ce_square_03.dds"
-        color1 = "roman_gold"
+        color1 = roman_gold
         instance = {
             scale = { -1.3 1.3 }
         }
     }
     colored_emblem = {
         texture = "ce_square_03.dds"
-        color1 = "pitch_black"
+        color1 = pitch_black
         instance = {
             scale = { -1.25 1.25 }
         }
     }
     colored_emblem = {
         texture = "ce_square_03.dds"
-        color1 = "ck2_blue"
+        color1 = ck2_blue
         instance = {
             scale = { -1.2 1.2 }
         }
     }
     colored_emblem = {
         texture = "ce_eagle_01.dds"
-        color1 = "roman_gold"
+        color1 = roman_gold
         instance = {
             scale = { -0.8 0.8 }
             position = { 0.5 0.5 }

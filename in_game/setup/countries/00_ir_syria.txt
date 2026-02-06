@@ -10,6 +10,13 @@ JUD = {
     religion_definition = ir_judaism
 }
 
+AMN = {
+    # AMN -> setup/countries/syria/ammon.txt
+    color = rgb { 143 49 52 }
+    culture_definition = ir_aramaic
+    religion_definition = ir_judaism
+}
+
 SMA = {
     # SMA -> setup/countries/syria/samaria.txt
     color = rgb { 123 76 12 }
@@ -19,7 +26,21 @@ SMA = {
 
 SID = {
     # SID -> setup/countries/syria/sidon.txt
-    color = rgb { 145 113 224 }
+    color = rgb { 82 80 152 }
+    culture_definition = ir_phoenician
+    religion_definition = ir_carthaginian_pantheon
+}
+
+TYE = {
+    # TYE -> setup/countries/syria/tyre.txt
+    color = rgb { 102 2 60 }
+    culture_definition = ir_phoenician
+    religion_definition = ir_carthaginian_pantheon
+}
+
+ATI = {
+    # ATI -> setup/countries/syria/tripoli.txt
+    color = rgb { 0 137 96 }
     culture_definition = ir_phoenician
     religion_definition = ir_carthaginian_pantheon
 }
@@ -42,7 +63,7 @@ COM = {
     # COM -> setup/countries/syria/commagene.txt
     color = rgb { 219 169 111 }
     culture_definition = ir_aramaic
-    religion_definition = ir_zoroaster
+    religion_definition = ir_mithra_religion
 }
 
 BMB = {

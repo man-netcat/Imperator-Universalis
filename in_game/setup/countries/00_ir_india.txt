@@ -3,6 +3,13 @@
 #  Any manual changes will be OVERWRITTEN upon regeneration!  #
 # =========================================================== #
 
+PRM = {
+    # PRM -> setup/countries/india/paropamisadae.txt
+    color = rgb { 163 171 143 }
+    culture_definition = ir_bactrian
+    religion_definition = ir_zoroaster
+}
+
 ZHZ = {
     # ZHZ -> setup/countries/india/zhangzhung.txt
     color = rgb { 188 15 11 }
@@ -27,7 +34,7 @@ HYA = {
 PLD = {
     # PLD -> setup/countries/india/palada.txt
     color = rgb { 248 17 76 }
-    culture_definition = ir_vidharban
+    culture_definition = ir_mulaka
     religion_definition = ir_hindu
 }
 
@@ -49,7 +56,7 @@ PRB = {
     # PRB -> setup/countries/india/parambu.txt
     color = rgb { 243 231 36 }
     culture_definition = ir_tamil
-    religion_definition = ir_hindu
+    religion_definition = ir_agama
 }
 
 KSR = {
@@ -63,7 +70,7 @@ ADG = {
     # ADG -> setup/countries/india/adagaiman.txt
     color = rgb { 234 14 19 }
     culture_definition = ir_tamil
-    religion_definition = ir_hindu
+    religion_definition = ir_agama
 }
 
 GHA = {
@@ -76,14 +83,14 @@ GHA = {
 PRA = {
     # PRA -> setup/countries/india/paurava.txt
     color = rgb { 172 29 219 }
-    culture_definition = ir_gandhari
+    culture_definition = ir_purus
     religion_definition = ir_hindu
 }
 
 YDD = {
     # YDD -> setup/countries/india/yadheuya.txt
     color = rgb { 255 240 75 }
-    culture_definition = ir_shauraseni
+    culture_definition = ir_kuru
     religion_definition = ir_hindu
 }
 
@@ -146,15 +153,15 @@ SMP = {
 ALU = {
     # ALU -> setup/countries/india/alupa.txt
     color = rgb { 10 20 199 }
-    culture_definition = ir_kannadan
-    religion_definition = ir_hindu
+    culture_definition = ir_alupan
+    religion_definition = ir_agama
 }
 
 KUN = {
     # KUN -> setup/countries/india/kuntala.txt
     color = rgb { 187 113 99 }
-    culture_definition = ir_kannadan
-    religion_definition = ir_hindu
+    culture_definition = ir_kuntalan
+    religion_definition = ir_agama
 }
 
 PIT = {
@@ -174,29 +181,29 @@ BOJ = {
 RTI = {
     # RTI -> setup/countries/india/rathikas.txt
     color = rgb { 7 189 30 }
-    culture_definition = ir_maharashtran
+    culture_definition = ir_rathikan
     religion_definition = ir_hindu
 }
 
 ASM = {
     # ASM -> setup/countries/india/ashmaka.txt
     color = rgb { 190 192 191 }
-    culture_definition = ir_telugu
-    religion_definition = ir_hindu
+    culture_definition = ir_assaka
+    religion_definition = ir_agama
 }
 
 ANH = {
     # ANH -> setup/countries/india/andhra.txt
     color = rgb { 70 35 165 }
-    culture_definition = ir_telugu
-    religion_definition = ir_hindu
+    culture_definition = ir_andhran
+    religion_definition = ir_agama
 }
 
 KAL = {
     # KAL -> setup/countries/india/kalinga.txt
     color = rgb { 190 35 34 }
     culture_definition = ir_kalingan
-    religion_definition = ir_hindu
+    religion_definition = ir_buddhism
 }
 
 KRP = {
@@ -217,21 +224,21 @@ MSH = {
     # MSH -> setup/countries/india/mahisha.txt
     color = rgb { 19 106 44 }
     culture_definition = ir_kannadan
-    religion_definition = ir_hindu
+    religion_definition = ir_agama
 }
 
 IDR = {
     # IDR -> setup/countries/india/indravana.txt
     color = rgb { 116 7 189 }
-    culture_definition = ir_telugu
+    culture_definition = ir_savara
     religion_definition = ir_hindu
 }
 
 PND = {
     # PND -> setup/countries/india/pandyas.txt
     color = rgb { 111 99 2 }
-    culture_definition = ir_tamil
-    religion_definition = ir_hindu
+    culture_definition = ir_pandyan
+    religion_definition = ir_agama
 }
 
 KRA = {
@@ -241,39 +248,137 @@ KRA = {
     religion_definition = ir_hindu
 }
 
+VDP = {
+    # VDP -> setup/countries/india/vidarbha.txt
+    color = rgb { 230 38 0 }
+    culture_definition = ir_mulaka
+    religion_definition = ir_ajivika
+}
+
 CHL = {
     # CHL -> setup/countries/india/cholas.txt
     color = rgb { 223 16 100 }
-    culture_definition = ir_tamil
-    religion_definition = ir_hindu
+    culture_definition = ir_cholan
+    religion_definition = ir_agama
 }
 
 AYY = {
     # AYY -> setup/countries/india/ay.txt
     color = rgb { 14 220 91 }
-    culture_definition = ir_tamil
-    religion_definition = ir_hindu
+    culture_definition = ir_cheran
+    religion_definition = ir_agama
 }
 
 CHR = {
     # CHR -> setup/countries/india/cheras.txt
     color = rgb { 13 188 41 }
-    culture_definition = ir_tamil
-    religion_definition = ir_hindu
+    culture_definition = ir_cheran
+    religion_definition = ir_agama
 }
 
 STY = {
     # STY -> setup/countries/india/satiyaputa.txt
     color = rgb { 13 78 189 }
     culture_definition = ir_tamil
-    religion_definition = ir_hindu
+    religion_definition = ir_agama
+}
+
+T10 = {
+    # T10 -> setup/countries/india/kaankezhunadu.txt
+    color = rgb { 204 170 20 }
+    culture_definition = ir_cholan
+    religion_definition = ir_agama
+}
+
+TM0 = {
+    # TM0 -> setup/countries/india/punanadu.txt
+    color = rgb { 173 46 0 }
+    culture_definition = ir_tamil
+    religion_definition = ir_agama
+}
+
+TA4 = {
+    # TA4 -> setup/countries/india/malinadu.txt
+    color = rgb { 173 162 38 }
+    culture_definition = ir_alupan
+    religion_definition = ir_agama
+}
+
+TA8 = {
+    # TA8 -> setup/countries/india/erumainadu.txt
+    color = rgb { 171 112 204 }
+    culture_definition = ir_alupan
+    religion_definition = ir_agama
+}
+
+TM1 = {
+    # TM1 -> setup/countries/india/kudanadu.txt
+    color = rgb { 0 115 168 }
+    culture_definition = ir_kannadan
+    religion_definition = ir_agama
+}
+
+TM2 = {
+    # TM2 -> setup/countries/india/karkanadu.txt
+    color = rgb { 168 141 134 }
+    culture_definition = ir_kannadan
+    religion_definition = ir_agama
+}
+
+TA1 = {
+    # TA1 -> setup/countries/india/athigannadu.txt
+    color = rgb { 166 173 95 }
+    culture_definition = ir_kannadan
+    religion_definition = ir_jainism
+}
+
+TA0 = {
+    # TA0 -> setup/countries/india/mullurnadu.txt
+    color = rgb { 173 50 99 }
+    culture_definition = ir_telugu
+    religion_definition = ir_agama
+}
+
+RAY = {
+    # RAY -> setup/countries/india/oaymaannadu.txt
+    color = rgb { 41 44 122 }
+    culture_definition = ir_telugu
+    religion_definition = ir_ajivika
+}
+
+TM5 = {
+    # TM5 -> setup/countries/india/vellimalai.txt
+    color = rgb { 37 140 0 }
+    culture_definition = ir_telugu
+    religion_definition = ir_agama
+}
+
+TM3 = {
+    # TM3 -> setup/countries/india/pullinadu.txt
+    color = rgb { 0 141 134 }
+    culture_definition = ir_telugu
+    religion_definition = ir_agama
+}
+
+TM7 = {
+    # TM7 -> setup/countries/india/mudhiramalai.txt
+    color = rgb { 70 133 150 }
+    culture_definition = ir_telugu
+    religion_definition = ir_agama
+}
+
+TDN = {
+    # TDN -> setup/countries/india/tondainadu.txt
+    color = rgb { 66 126 255 }
+    culture_definition = ir_tamil
+    religion_definition = ir_agama
 }
 
 PSH = {
     # PSH -> setup/countries/india/pishan.txt
     color = rgb { 48 108 91 }
-    culture_definition = ir_saka
-    religion_definition = ir_eastern_animism
+    culture_definition = ir_khotanese
+    religion_definition = ir_indo_iranian_religion
 }
 
 KSA = {
@@ -286,15 +391,8 @@ KSA = {
 KHT = {
     # KHT -> setup/countries/india/khotan.txt
     color = rgb { 180 130 40 }
-    culture_definition = ir_saka
-    religion_definition = ir_eastern_animism
-}
-
-LOL = {
-    # LOL -> setup/countries/india/loulan.txt
-    color = rgb { 13 136 117 }
-    culture_definition = ir_saka
-    religion_definition = ir_eastern_animism
+    culture_definition = ir_khotanese
+    religion_definition = ir_indo_iranian_religion
 }
 
 MRY = {
@@ -304,38 +402,52 @@ MRY = {
     religion_definition = ir_hindu
 }
 
+MDP = {
+    # MDP -> setup/countries/india/mahiladvipika.txt
+    color = rgb { 132 18 174 }
+    culture_definition = ir_dhivehi
+    religion_definition = ir_hindu
+}
+
 SHU = {
     # SHU -> setup/countries/india/shule.txt
     color = rgb { 13 140 41 }
-    culture_definition = ir_tocharian
-    religion_definition = ir_eastern_animism
+    culture_definition = ir_sakan
+    religion_definition = ir_indo_iranian_religion
 }
 
 PHY = {
     # PHY -> setup/countries/india/phryni.txt
     color = rgb { 88 4 18 }
-    culture_definition = ir_saka
-    religion_definition = ir_eastern_animism
+    culture_definition = ir_phryni
+    religion_definition = ir_vaksh_religion
 }
 
 TAY = {
     # TAY -> setup/countries/india/tayuan.txt
     color = rgb { 111 116 78 }
-    culture_definition = ir_tayuan
-    religion_definition = ir_eastern_animism
+    culture_definition = ir_ionian
+    religion_definition = ir_roman_pantheon
 }
 
 WUS = {
     # WUS -> setup/countries/india/wusun.txt
     color = rgb { 88 5 98 }
-    culture_definition = ir_tocharian
-    religion_definition = ir_eastern_animism
+    culture_definition = ir_sakan
+    religion_definition = ir_indo_iranian_religion
 }
 
 SOG = {
     # SOG -> setup/countries/india/sogdia.txt
     color = rgb { 8 216 178 }
     culture_definition = ir_sogdian
-    religion_definition = ir_eastern_animism
+    religion_definition = ir_vaksh_religion
+}
+
+MGT = {
+    # MGT -> setup/countries/india/massagetae.txt
+    color = rgb { 154 25 150 }
+    culture_definition = ir_massagetaean
+    religion_definition = ir_indo_iranian_religion
 }
 

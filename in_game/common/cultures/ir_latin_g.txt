@@ -73,3 +73,10 @@ ir_lucanian = {
     culture_groups = { ir_latin_g }
 }
 
+ir_histrian = {
+    language = latin_language
+    color = hsv { 0.00 0.91 0.55 }
+    tags = { north_italian_gfx south_italian_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
+    culture_groups = { ir_latin_g }
+}
+

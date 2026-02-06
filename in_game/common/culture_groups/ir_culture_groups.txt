@@ -3,93 +3,117 @@
 #  Any manual changes will be OVERWRITTEN upon regeneration!  #
 # =========================================================== #
 
-ir_celto_pannonian_group_g = {
-}
-
-ir_celt_iberia_g = {
-}
-
-ir_tibetan_g = {
-}
-
-ir_numidian_g = {
-}
-
 ir_aksumite_group_g = {
-}
-
-ir_scythia_g = {
-}
-
-ir_belgae_group_g = {
-}
-
-ir_iberia_g = {
-}
-
-ir_south_levantine_g = {
-}
-
-ir_hellenic_g = {
-}
-
-ir_indian_g = {
-}
-
-ir_aryan_g = {
-}
-
-ir_dacia_group_g = {
-}
-
-ir_north_african_g = {
-}
-
-ir_persia_g = {
-}
-
-ir_latin_g = {
-}
-
-ir_east_levantine_g = {
-}
-
-ir_illyrian_group_g = {
-}
-
-ir_proto_european_g = {
-}
-
-ir_baltic_g = {
-}
-
-ir_gaelic_g = {
-}
-
-ir_britannic_g = {
 }
 
 ir_anatolian_g = {
 }
 
-ir_pracyan_g = {
-}
-
-ir_caucasian_g = {
-}
-
-ir_germanic_g = {
+ir_aryan_g = {
 }
 
 ir_bactrian_g = {
 }
 
+ir_baltic_g = {
+}
+
+ir_belgae_group_g = {
+}
+
+ir_britannic_g = {
+}
+
+ir_caucasian_g = {
+}
+
+ir_celt_iberia_g = {
+}
+
+ir_celto_pannonian_group_g = {
+}
+
+ir_dacia_group_g = {
+}
+
+ir_east_levantine_g = {
+}
+
+ir_gaelic_g = {
+}
+
+ir_gallic_g = {
+}
+
+ir_germanic_g = {
+}
+
+ir_hellenic_g = {
+}
+
+ir_iberia_g = {
+}
+
+ir_illyrian_group_g = {
+}
+
+ir_indian_g = {
+}
+
+ir_latin_g = {
+}
+
 ir_meroitic_group_g = {
+}
+
+ir_north_african_g = {
+}
+
+ir_numidian_g = {
+}
+
+ir_persia_g = {
+}
+
+ir_pracyan_g = {
+}
+
+ir_proto_european_g = {
+}
+
+ir_scythia_g = {
+}
+
+ir_south_levantine_g = {
+}
+
+ir_tibetan_g = {
 }
 
 ir_west_levantine_g = {
 }
 
-ir_gallic_g = {
+ir_chinese_g = {
+}
+
+ir_fezzani_g = {
+}
+
+ir_finnic_group_g = {
+}
+
+ir_nilotic_group_g = {
+}
+
+ir_pu_g = {
+}
+
+ir_scythian_east_g = {
+}
+
+ir_south_arabian_g = {
+}
+
+ir_thrace_group_g = {
 }
 

@@ -31,3 +31,10 @@ ir_tsang = {
     culture_groups = { ir_tibetan_g }
 }
 
+ir_pyu = {
+    language = tibetan_language
+    color = hsv { 0.95 1.00 0.80 }
+    tags = { tibetan_gfx east_asian_gfx }
+    culture_groups = { ir_tibetan_g }
+}
+

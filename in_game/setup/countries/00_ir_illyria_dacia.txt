@@ -6,99 +6,85 @@
 DIT = {
     # DIT -> setup/countries/illyria_dacia/iapodes.txt
     color = rgb { 167 72 119 }
-    culture_definition = ir_histrian
-    religion_definition = ir_roman_pantheon
+    culture_definition = ir_iapodian
+    religion_definition = ir_illyrian_pantheon
 }
 
 LBN = {
     # LBN -> setup/countries/illyria_dacia/liberni.txt
     color = rgb { 67 72 9 }
     culture_definition = ir_liburnian_culture
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_illyrian_pantheon
 }
 
 DLM = {
     # DLM -> setup/countries/illyria_dacia/delmatae.txt
     color = rgb { 11 18 55 }
     culture_definition = ir_greco_illyrian
-    religion_definition = ir_roman_pantheon
-}
-
-PII = {
-    # PII -> setup/countries/illyria_dacia/pieri.txt
-    color = rgb { 227 18 2 }
-    culture_definition = ir_greco_illyrian
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_illyrian_pantheon
 }
 
 DRI = {
     # DRI -> setup/countries/illyria_dacia/daorsi.txt
     color = rgb { 81 18 12 }
     culture_definition = ir_greco_illyrian
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_illyrian_pantheon
 }
 
 CAA = {
     # CAA -> setup/countries/illyria_dacia/catari.txt
     color = rgb { 191 7 66 }
     culture_definition = ir_catari
-    religion_definition = ir_roman_pantheon
-}
-
-LTB = {
-    # LTB -> setup/countries/illyria_dacia/latobici.txt
-    color = rgb { 198 33 18 }
-    culture_definition = ir_letobician
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_illyrian_pantheon
 }
 
 ABI = {
     # ABI -> setup/countries/illyria_dacia/abrii.txt
     color = rgb { 213 88 41 }
     culture_definition = ir_taulantian
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_illyrian_pantheon
 }
 
 CVI = {
     # CVI -> setup/countries/illyria_dacia/cavii.txt
     color = rgb { 16 171 11 }
     culture_definition = ir_taulantian
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_illyrian_pantheon
 }
 
 DNT = {
     # DNT -> setup/countries/illyria_dacia/ditiones.txt
-    color = rgb { 24 34 89 }
+    color = rgb { 107 167 200 }
     culture_definition = ir_greco_illyrian
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_illyrian_pantheon
 }
 
 BCI = {
     # BCI -> setup/countries/illyria_dacia/breuci.txt
     color = rgb { 224 1 12 }
-    culture_definition = ir_deurian
-    religion_definition = ir_roman_pantheon
+    culture_definition = ir_pannonian
+    religion_definition = ir_illyrian_pantheon
 }
 
 DUI = {
     # DUI -> setup/countries/illyria_dacia/deuri.txt
     color = rgb { 64 81 11 }
     culture_definition = ir_deurian
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_illyrian_pantheon
 }
 
 AMI = {
     # AMI -> setup/countries/illyria_dacia/armistae.txt
     color = rgb { 200 200 209 }
     culture_definition = ir_deraemestian
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_illyrian_pantheon
 }
 
 OXU = {
     # OXU -> setup/countries/illyria_dacia/oxuaioi.txt
     color = rgb { 200 9 230 }
     culture_definition = ir_deraemestian
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_illyrian_pantheon
 }
 
 SCD = {
@@ -118,7 +104,7 @@ DND = {
 OTN = {
     # OTN -> setup/countries/illyria_dacia/cotini.txt
     color = rgb { 171 190 188 }
-    culture_definition = ir_celtic_pannonian
+    culture_definition = ir_cotinian
     religion_definition = ir_druidism
 }
 
@@ -140,7 +126,7 @@ TLN = {
     # TLN -> setup/countries/illyria_dacia/taulantii.txt
     color = rgb { 110 32 173 }
     culture_definition = ir_taulantian
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_illyrian_pantheon
 }
 
 TLT = {
@@ -154,14 +140,14 @@ DRD = {
     # DRD -> setup/countries/illyria_dacia/dardani.txt
     color = rgb { 111 129 213 }
     culture_definition = ir_dardanian
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_illyrian_pantheon
 }
 
 SDI = {
     # SDI -> setup/countries/illyria_dacia/serdi.txt
     color = rgb { 170 23 76 }
-    culture_definition = ir_celtic_pannonian
-    religion_definition = ir_druidism
+    culture_definition = ir_paeonian
+    religion_definition = ir_illyrian_pantheon
 }
 
 TBL = {
@@ -258,7 +244,7 @@ NRC = {
 TSC = {
     # TSC -> setup/countries/illyria_dacia/taurisci.txt
     color = rgb { 68 180 77 }
-    culture_definition = ir_noric
+    culture_definition = ir_carnian
     religion_definition = ir_druidism
 }
 

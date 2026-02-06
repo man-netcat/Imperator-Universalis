@@ -38,13 +38,6 @@ DCA = {
     religion_definition = ir_druidism
 }
 
-OXB = {
-    # OXB -> setup/countries/gaul/oxybii.txt
-    color = rgb { 11 111 211 }
-    culture_definition = ir_ligurian
-    religion_definition = ir_druidism
-}
-
 SLV = {
     # SLV -> setup/countries/gaul/salluvi.txt
     color = rgb { 199 93 77 }
@@ -73,24 +66,24 @@ HVI = {
     religion_definition = ir_druidism
 }
 
-ARC = {
-    # ARC -> setup/countries/gaul/arecomici.txt
-    color = rgb { 200 200 201 }
-    culture_definition = ir_salluvian
+ELY = {
+    # ELY -> setup/countries/gaul/elesycia.txt
+    color = rgb { 192 234 84 }
+    culture_definition = ir_elesycian
     religion_definition = ir_druidism
 }
 
 TCT = {
     # TCT -> setup/countries/gaul/tectosages.txt
     color = rgb { 144 67 200 }
-    culture_definition = ir_volcae
+    culture_definition = ir_elesycian
     religion_definition = ir_druidism
 }
 
 SRB = {
     # SRB -> setup/countries/gaul/sorbones.txt
     color = rgb { 33 233 90 }
-    culture_definition = ir_volcae
+    culture_definition = ir_elesycian
     religion_definition = ir_druidism
 }
 
@@ -98,7 +91,7 @@ CNS = {
     # CNS -> setup/countries/gaul/consoranni.txt
     color = rgb { 100 0 102 }
     culture_definition = ir_aquitani
-    religion_definition = ir_druidism
+    religion_definition = ir_pre_indo_european_religion
 }
 
 RUT = {
@@ -111,14 +104,14 @@ RUT = {
 ALL = {
     # ALL -> setup/countries/gaul/allobroges.txt
     color = rgb { 174 166 34 }
-    culture_definition = ir_helvetian
+    culture_definition = ir_allobrogian
     religion_definition = ir_druidism
 }
 
 SGL = {
     # SGL -> setup/countries/gaul/seguslavi.txt
     color = rgb { 24 90 14 }
-    culture_definition = ir_arverni
+    culture_definition = ir_allobrogian
     religion_definition = ir_druidism
 }
 
@@ -140,42 +133,42 @@ BIG = {
     # BIG -> setup/countries/gaul/bigerriones.txt
     color = rgb { 190 44 91 }
     culture_definition = ir_aquitani
-    religion_definition = ir_druidism
+    religion_definition = ir_pre_indo_european_religion
 }
 
 ASC = {
     # ASC -> setup/countries/gaul/auscii.txt
     color = rgb { 16 120 26 }
     culture_definition = ir_aquitani
-    religion_definition = ir_druidism
+    religion_definition = ir_pre_indo_european_religion
 }
 
 TRB = {
     # TRB -> setup/countries/gaul/tarbelli.txt
     color = rgb { 13 12 81 }
     culture_definition = ir_aquitani
-    religion_definition = ir_druidism
+    religion_definition = ir_pre_indo_european_religion
 }
 
 SBZ = {
     # SBZ -> setup/countries/gaul/sibuzates.txt
     color = rgb { 11 137 229 }
     culture_definition = ir_aquitani
-    religion_definition = ir_druidism
+    religion_definition = ir_pre_indo_european_religion
 }
 
 VCT = {
     # VCT -> setup/countries/gaul/vocates.txt
     color = rgb { 198 167 16 }
     culture_definition = ir_aquitani
-    religion_definition = ir_druidism
+    religion_definition = ir_pre_indo_european_religion
 }
 
 CCS = {
     # CCS -> setup/countries/gaul/cocosates.txt
     color = rgb { 16 220 65 }
     culture_definition = ir_aquitani
-    religion_definition = ir_druidism
+    religion_definition = ir_pre_indo_european_religion
 }
 
 BTU = {
@@ -189,7 +182,7 @@ TRS = {
     # TRS -> setup/countries/gaul/tarusates.txt
     color = rgb { 44 181 81 }
     culture_definition = ir_aquitani
-    religion_definition = ir_druidism
+    religion_definition = ir_pre_indo_european_religion
 }
 
 PTC = {
@@ -202,7 +195,7 @@ PTC = {
 LMV = {
     # LMV -> setup/countries/gaul/lemovices.txt
     color = rgb { 1 102 9 }
-    culture_definition = ir_lemovician
+    culture_definition = ir_arverni
     religion_definition = ir_druidism
 }
 
@@ -215,7 +208,7 @@ SNT = {
 
 TIG = {
     # TIG -> setup/countries/gaul/tigurini.txt
-    color = rgb { 89 198 56 }
+    color = rgb { 200 155 0 }
     culture_definition = ir_helvetian
     religion_definition = ir_druidism
 }
@@ -265,7 +258,7 @@ CTN = {
 TLG = {
     # TLG -> setup/countries/gaul/tulingi.txt
     color = rgb { 74 170 61 }
-    culture_definition = ir_vindelician
+    culture_definition = ir_helvetian
     religion_definition = ir_druidism
 }
 
@@ -279,7 +272,7 @@ RAU = {
 LTG = {
     # LTG -> setup/countries/gaul/latobrigi.txt
     color = rgb { 174 0 211 }
-    culture_definition = ir_vindelician
+    culture_definition = ir_helvetian
     religion_definition = ir_druidism
 }
 
@@ -307,7 +300,7 @@ TRO = {
 ADC = {
     # ADC -> setup/countries/gaul/andecamulenses.txt
     color = rgb { 88 16 80 }
-    culture_definition = ir_lemovician
+    culture_definition = ir_arverni
     religion_definition = ir_druidism
 }
 
@@ -321,7 +314,7 @@ PCS = {
 NMN = {
     # NMN -> setup/countries/gaul/namnetes.txt
     color = rgb { 209 16 188 }
-    culture_definition = ir_aulercian
+    culture_definition = ir_aremorican
     religion_definition = ir_druidism
 }
 
@@ -384,14 +377,14 @@ EBV = {
 ESV = {
     # ESV -> setup/countries/gaul/esuvi.txt
     color = rgb { 133 177 84 }
-    culture_definition = ir_aremorican
+    culture_definition = ir_aulercian
     religion_definition = ir_druidism
 }
 
 LXV = {
     # LXV -> setup/countries/gaul/lexovii.txt
     color = rgb { 221 221 203 }
-    culture_definition = ir_aremorican
+    culture_definition = ir_aulercian
     religion_definition = ir_druidism
 }
 
@@ -412,14 +405,14 @@ VNL = {
 AMB = {
     # AMB -> setup/countries/gaul/ambarri.txt
     color = rgb { 11 98 51 }
-    culture_definition = ir_helvetian
+    culture_definition = ir_allobrogian
     religion_definition = ir_druidism
 }
 
 SQI = {
     # SQI -> setup/countries/gaul/sequani.txt
     color = rgb { 15 90 53 }
-    culture_definition = ir_helvetian
+    culture_definition = ir_haedui
     religion_definition = ir_druidism
 }
 
@@ -461,7 +454,7 @@ TRC = {
 PRS = {
     # PRS -> setup/countries/gaul/parisii.txt
     color = rgb { 40 42 149 }
-    culture_definition = ir_biturigan
+    culture_definition = ir_sennonian
     religion_definition = ir_druidism
 }
 
@@ -475,7 +468,7 @@ CTL = {
 TBC = {
     # TBC -> setup/countries/gaul/tribocci.txt
     color = rgb { 139 108 88 }
-    culture_definition = ir_helvetian
+    culture_definition = ir_ubian
     religion_definition = ir_druidism
 }
 
@@ -496,7 +489,7 @@ MDM = {
 NMI = {
     # NMI -> setup/countries/gaul/nemeti.txt
     color = rgb { 181 77 8 }
-    culture_definition = ir_treverian
+    culture_definition = ir_ubian
     religion_definition = ir_druidism
 }
 

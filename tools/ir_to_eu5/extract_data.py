@@ -58,10 +58,16 @@ def write_json(data: Any, out_path: Path) -> Path:
 # ---------- Localisation ----------
 
 
-def read_localisation_file(path: Path) -> dict[str, str]:
-    """Read localisation from a directory or single file."""
+def read_localisation_file(path: Path | list[Path] | tuple[Path, ...]) -> dict[str, str]:
+    """Read localisation from one or more directories/files, later paths override."""
+    if isinstance(path, (list, tuple)):
+        merged: dict[str, str] = {}
+        for entry in path:
+            merged.update(read_localisation_file(entry))
+        return merged
+
     result: dict[str, str] = {}
-    pattern = re.compile(r'^([A-Za-z0-9_@:\-\.]+):\s*\d+\s+"(.*)"')
+    pattern = re.compile(r'^([A-Za-z0-9_@:\-\.]+):\s*(?:\d+\s*)?"(.*)"')
 
     files = []
     if path.is_file():
@@ -88,10 +94,10 @@ def read_localisation_file(path: Path) -> dict[str, str]:
 
 
 def extract_culture_data():
-    culture_loc = read_localisation_file(ir_localisation)
+    culture_loc = read_localisation_file(ir_localisation_paths)
     culture_blocks = []
 
-    for path in ir_cultures.iterdir():
+    for path in iter_ir_files("common/cultures"):
         if path.suffix != ".txt" or not path.is_file():
             continue
 
@@ -123,7 +129,7 @@ def extract_culture_data():
 
 def extract_religion_data():
     religion_tree = parse_tree(ir_religions)
-    religion_loc = read_localisation_file(ir_localisation)
+    religion_loc = read_localisation_file(ir_localisation_paths)
     religion_blocks = []
 
     for religion_tag, religion_data in religion_tree.items():
@@ -145,8 +151,14 @@ def extract_deity_data():
     if not ir_deities.exists():
         return deity_blocks
 
-    deity_loc = read_localisation_file(ir_localisation / "deities")
-    deity_loc.update(read_localisation_file(ir_localisation / "god_names_l_english.yml"))
+    deity_loc = read_localisation_file(
+        [path / "deities" for path in ir_localisation_paths]
+    )
+    deity_loc.update(
+        read_localisation_file(
+            [path / "god_names_l_english.yml" for path in ir_localisation_paths]
+        )
+    )
 
     def resolve_deity_name(loc_key: str) -> str | None:
         if not loc_key:
@@ -157,7 +169,7 @@ def extract_deity_data():
             return deity_loc.get(inner, value)
         return value
 
-    for path in sorted(ir_deities.iterdir()):
+    for path in iter_ir_files("common/deities"):
         if path.suffix != ".txt" or not path.is_file():
             continue
 
@@ -183,14 +195,23 @@ def extract_deity_data():
 def extract_country_data():
     default_tree = parse_tree(ir_default)
     country_tree = default_tree["country"]["countries"]
-    country_loc = read_localisation_file(ir_localisation)
+    country_loc = read_localisation_file(ir_localisation_paths)
     setup_tree = parse_tree(ir_countries_file)
 
     setup_dirs = dict(setup_tree.items())
     country_blocks = []
 
+    def _fallback_country_name(setup_file: Path, tag: str) -> str:
+        stem = setup_file.stem if setup_file and setup_file.stem else ""
+        if stem:
+            return stem.replace("_", " ").title()
+        return tag
+
     for country_tag, country_data in country_tree.items():
-        country_setup_file: Path = ir_game / setup_dirs.get(country_tag)
+        setup_rel = setup_dirs.get(country_tag)
+        if not setup_rel:
+            continue
+        country_setup_file = ir_path(setup_rel)
         country_setup_tree = parse_tree(country_setup_file)
 
         tag_loc_overrides = {
@@ -200,12 +221,12 @@ def extract_country_data():
             "PRY": "Antigonids",  # Antigonid Kingdom
         }
 
-        country_name = (
-            country_loc[country_tag]
-            if country_tag not in tag_loc_overrides
-            else tag_loc_overrides[country_tag]
+        fallback_name = _fallback_country_name(country_setup_file, country_tag)
+        country_name = tag_loc_overrides.get(
+            country_tag,
+            country_loc.get(country_tag, fallback_name),
         )
-        country_name_adj = country_loc[f"{country_tag}_ADJ"]
+        country_name_adj = country_loc.get(f"{country_tag}_ADJ", country_name)
 
         country_blocks.append(
             {
@@ -353,7 +374,7 @@ def extract_ir_country_capitals() -> dict[str, int]:
 
 
 def extract_character_data():
-    character_loc = read_localisation_file(ir_localisation)
+    character_loc = read_localisation_file(ir_localisation_paths)
 
     def is_ruler(char_data):
         for key, value in char_data.items():
@@ -364,7 +385,7 @@ def extract_character_data():
     characters = []
     tag_counts = {}
 
-    for path in ir_character_data.iterdir():
+    for path in iter_ir_files("setup/characters"):
         if path.suffix != ".txt" or not path.is_file():
             continue
 
@@ -403,6 +424,7 @@ def extract_character_data():
                     nickname_tag = None
                     nickname = None
 
+                dynasty = None
                 if "family" in char_data:
                     if char_data["family"].startswith("c:"):
                         dynasty = f"{char_data['family'].split(':')[2].lower()}"

@@ -3,65 +3,51 @@
 #  Any manual changes will be OVERWRITTEN upon regeneration!  #
 # =========================================================== #
 
-ir_hadhrami = {
-    language = aramaic_language
-    color = hsv { 0.30 0.70 0.60 }
-    tags = { arabian_gfx levantine_gfx middle_east_gfx }
-    culture_groups = { ir_south_levantine_g }
-}
-
-ir_qatabanian = {
-    language = aramaic_language
-    color = hsv { 0.30 0.70 0.60 }
-    tags = { arabian_gfx levantine_gfx middle_east_gfx }
-    culture_groups = { ir_south_levantine_g }
-}
-
-ir_sheban = {
-    language = aramaic_language
-    color = hsv { 0.30 0.70 0.60 }
-    tags = { arabian_gfx levantine_gfx middle_east_gfx }
-    culture_groups = { ir_south_levantine_g }
-}
-
-ir_minaean = {
-    language = aramaic_language
-    color = hsv { 0.30 0.70 0.60 }
-    tags = { arabian_gfx levantine_gfx middle_east_gfx }
-    culture_groups = { ir_south_levantine_g }
-}
-
-ir_himjar = {
-    language = aramaic_language
-    color = hsv { 0.30 0.70 0.60 }
-    tags = { arabian_gfx levantine_gfx middle_east_gfx }
-    culture_groups = { ir_south_levantine_g }
-}
-
 ir_makan = {
     language = aramaic_language
-    color = hsv { 0.30 0.70 0.60 }
+    color = rgb { 70 50 150 }
+    tags = { arabian_gfx levantine_gfx middle_east_gfx }
+    culture_groups = { ir_south_levantine_g }
+}
+
+ir_gerrhan = {
+    language = aramaic_language
+    color = rgb { 70 50 150 }
     tags = { arabian_gfx levantine_gfx middle_east_gfx }
     culture_groups = { ir_south_levantine_g }
 }
 
 ir_taif = {
     language = aramaic_language
-    color = hsv { 0.30 0.70 0.60 }
+    color = rgb { 70 50 150 }
     tags = { arabian_gfx levantine_gfx middle_east_gfx }
     culture_groups = { ir_south_levantine_g }
 }
 
 ir_thamudi = {
     language = aramaic_language
-    color = hsv { 0.30 0.70 0.60 }
+    color = rgb { 70 50 150 }
+    tags = { arabian_gfx levantine_gfx middle_east_gfx }
+    culture_groups = { ir_south_levantine_g }
+}
+
+ir_yamama = {
+    language = aramaic_language
+    color = rgb { 70 50 150 }
+    tags = { arabian_gfx levantine_gfx middle_east_gfx }
+    culture_groups = { ir_south_levantine_g }
+}
+
+ir_nabatean = {
+    language = aramaic_language
+    color = rgb { 70 50 150 }
     tags = { arabian_gfx levantine_gfx middle_east_gfx }
     culture_groups = { ir_south_levantine_g }
 }
 
 ir_qedarite = {
     language = aramaic_language
-    color = hsv { 0.30 0.70 0.60 }
+    color = rgb { 70 50 150 }
     tags = { arabian_gfx levantine_gfx middle_east_gfx }
     culture_groups = { ir_south_levantine_g }
 }

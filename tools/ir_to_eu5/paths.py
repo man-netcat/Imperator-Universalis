@@ -2,7 +2,7 @@
 import json
 import sys
 from pathlib import Path
-from typing import Any, Dict
+from typing import Any, Dict, Iterable, List
 
 # Load user settings from `settings.json` placed next to the base script.
 BASE = Path(__file__).resolve().parent
@@ -34,33 +34,95 @@ def _p(key: str) -> Path:
     if not val:
         raise RuntimeError(
             f"Missing required setting '{key}' in settings.json.\n"
-            "Remove hardcoded paths and provide all required paths in tools/ir_to_eu5/settings.json."
+            "Remove hardcoded paths and provide all required paths in tools/settings.json."
         )
     return Path(val)
 
 
-# Imperator Rome game paths
-ir_game = _p("ir_game")
+def _p_optional(key: str) -> Path | None:
+    val = _settings.get(key)
+    if not val:
+        return None
+    return Path(val)
 
-ir_countries_dir = ir_game / "setup" / "countries"
-ir_countries_file = ir_countries_dir / "countries.txt"
-ir_default = ir_game / "setup" / "main" / "00_default.txt"
-ir_cultures = (
-    ir_game / "common" / "cultures"
-)  # Dir containing files each representing a culture group
-ir_religions = ir_game / "common" / "religions" / "00_default.txt"
-ir_deities = ir_game / "common" / "deities"
-ir_localisation = ir_game / "localization" / "english"
-ir_prescripted_coa = (
-    ir_game
-    / "common"
-    / "coat_of_arms"
-    / "coat_of_arms"
-    / "00_pre_scripted_countries.txt"
+
+def _existing_paths(paths: Iterable[Path]) -> List[Path]:
+    return [path for path in paths if path and path.exists()]
+
+
+ir_game = _p("ir_game")
+ir_mod = _p_optional("ir_mod")
+
+
+def ir_path(relative: str) -> Path:
+    """Return a file/dir path, preferring the mod when it exists."""
+    if ir_mod:
+        mod_path = ir_mod / relative
+        if mod_path.exists():
+            return mod_path
+    return ir_game / relative
+
+
+def ir_paths(relative: str) -> list[Path]:
+    """Return base then mod paths for merging, if they exist."""
+    base_path = ir_game / relative
+    mod_path = ir_mod / relative if ir_mod else None
+    return _existing_paths([base_path, mod_path])
+
+
+def iter_ir_files(relative_dir: str, pattern: str = "*.txt", recursive: bool = False) -> list[Path]:
+    """Iterate mod then base files, skipping base files overridden by the mod."""
+    roots = []
+    if ir_mod:
+        roots.append(ir_mod / relative_dir)
+    roots.append(ir_game / relative_dir)
+
+    results: list[Path] = []
+    seen: set[Path] = set()
+
+    for root in roots:
+        if not root.exists() or not root.is_dir():
+            continue
+        iterator = root.rglob(pattern) if recursive else root.glob(pattern)
+        for path in sorted(iterator):
+            if not path.is_file():
+                continue
+            rel = path.relative_to(root)
+            if rel in seen:
+                continue
+            seen.add(rel)
+            results.append(path)
+
+    return results
+
+
+def ir_relative_display(path: Path) -> str:
+    """Return a readable path relative to the mod or base game when possible."""
+    if ir_mod:
+        try:
+            return str(path.relative_to(ir_mod))
+        except ValueError:
+            pass
+    try:
+        return str(path.relative_to(ir_game))
+    except ValueError:
+        return str(path)
+
+
+ir_countries_dir = ir_path("setup/countries")
+ir_countries_file = ir_path("setup/countries/countries.txt")
+ir_default = ir_path("setup/main/00_default.txt")
+ir_cultures = ir_path("common/cultures")
+ir_religions = ir_path("common/religions/00_default.txt")
+ir_deities = ir_path("common/deities")
+ir_localisation = ir_path("localization/english")
+ir_localisation_paths = ir_paths("localization/english")
+ir_prescripted_coa = ir_path(
+    "common/coat_of_arms/coat_of_arms/00_pre_scripted_countries.txt"
 )
-ir_coa_gfx = ir_game / "gfx" / "coat_of_arms"
-ir_map_data = ir_game / "map_data"
-ir_character_data = ir_game / "setup" / "characters"
+ir_coa_gfx = ir_path("gfx/coat_of_arms")
+ir_map_data = ir_path("map_data")
+ir_character_data = ir_path("setup/characters")
 
 # EU5 game paths
 eu5_game = _p("eu5_game")

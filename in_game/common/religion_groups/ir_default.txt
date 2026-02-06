@@ -4,7 +4,7 @@
 # =========================================================== #
 
 ir_anatolian_group = {
-    color = hsv { 0.30 0.40 0.20 }
+    color = rgb { 255 135 35 }
 }
 
 ir_arabian_group = {
@@ -12,7 +12,7 @@ ir_arabian_group = {
 }
 
 ir_armenian_group = {
-    color = hsv { 0.30 0.10 0.20 }
+    color = hsv { 0.40 0.90 0.30 }
 }
 
 ir_berber_group = {

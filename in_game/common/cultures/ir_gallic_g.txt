@@ -101,3 +101,87 @@ ir_arverni = {
     culture_groups = { ir_gallic_g }
 }
 
+ir_celtic_pannonian = {
+    language = brythonic_language
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { western_european_gfx european_gfx }
+    culture_groups = { ir_gallic_g }
+}
+
+ir_letobician = {
+    language = brythonic_language
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { western_european_gfx european_gfx }
+    culture_groups = { ir_gallic_g }
+}
+
+ir_carnian = {
+    language = brythonic_language
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { western_european_gfx european_gfx }
+    culture_groups = { ir_gallic_g }
+}
+
+ir_noric = {
+    language = brythonic_language
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { western_european_gfx european_gfx }
+    culture_groups = { ir_gallic_g }
+}
+
+ir_boian = {
+    language = brythonic_language
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { western_european_gfx european_gfx }
+    culture_groups = { ir_gallic_g }
+}
+
+ir_eravisci = {
+    language = brythonic_language
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { western_european_gfx european_gfx }
+    culture_groups = { ir_gallic_g }
+}
+
+ir_cotinian = {
+    language = brythonic_language
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { western_european_gfx european_gfx }
+    culture_groups = { ir_gallic_g }
+}
+
+ir_treverian = {
+    language = brythonic_language
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { western_european_gfx european_gfx }
+    culture_groups = { ir_gallic_g }
+}
+
+ir_sennonian = {
+    language = brythonic_language
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { western_european_gfx european_gfx }
+    culture_groups = { ir_gallic_g }
+}
+
+ir_ubian = {
+    language = brythonic_language
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { western_european_gfx european_gfx }
+    culture_groups = { ir_gallic_g }
+}
+
+ir_allobrogian = {
+    language = brythonic_language
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { western_european_gfx european_gfx }
+    culture_groups = { ir_gallic_g }
+}
+
+ir_teurian = {
+    language = brythonic_language
+    color = hsv { 0.30 0.70 0.40 }
+    tags = { western_european_gfx european_gfx }
+    culture_groups = { ir_gallic_g }
+}
+

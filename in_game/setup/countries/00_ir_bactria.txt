@@ -17,6 +17,13 @@ ARS = {
     religion_definition = ir_roman_pantheon
 }
 
+CAM = {
+    # CAM -> setup/countries/bactria/carmania.txt
+    color = rgb { 10 19 100 }
+    culture_definition = ir_macedonian
+    religion_definition = ir_roman_pantheon
+}
+
 PRN = {
     # PRN -> setup/countries/bactria/parni.txt
     color = rgb { 131 175 103 }
@@ -43,5 +50,47 @@ KRZ = {
     color = rgb { 101 190 119 }
     culture_definition = ir_kharesmian
     religion_definition = ir_indo_iranian_religion
+}
+
+XIW = {
+    # XIW -> setup/countries/bactria/xiaowan.txt
+    color = rgb { 138 31 33 }
+    culture_definition = ir_tocharian
+    religion_definition = ir_eastern_animism
+}
+
+WTO = {
+    # WTO -> setup/countries/bactria/weitou.txt
+    color = rgb { 203 61 27 }
+    culture_definition = ir_tocharian
+    religion_definition = ir_eastern_animism
+}
+
+GMO = {
+    # GMO -> setup/countries/bactria/gumo.txt
+    color = rgb { 0 60 129 }
+    culture_definition = ir_tocharian
+    religion_definition = ir_eastern_animism
+}
+
+YMI = {
+    # YMI -> setup/countries/bactria/yumi.txt
+    color = rgb { 194 0 109 }
+    culture_definition = ir_khotanese
+    religion_definition = ir_eastern_animism
+}
+
+JJE = {
+    # JJE -> setup/countries/bactria/jingjue.txt
+    color = rgb { 255 228 80 }
+    culture_definition = ir_tocharian
+    religion_definition = ir_eastern_animism
+}
+
+QIM = {
+    # QIM -> setup/countries/bactria/qiemo.txt
+    color = rgb { 46 40 110 }
+    culture_definition = ir_tocharian
+    religion_definition = ir_eastern_animism
 }
 

@@ -13,7 +13,7 @@ MAK = {
 GRH = {
     # GRH -> setup/countries/arabia/gerrha.txt
     color = rgb { 221 150 99 }
-    culture_definition = ir_makan
+    culture_definition = ir_gerrhan
     religion_definition = ir_arabian_pantheon
 }
 
@@ -59,16 +59,9 @@ QTB = {
     religion_definition = ir_arabian_pantheon
 }
 
-HMJ = {
-    # HMJ -> setup/countries/arabia/himjar.txt
-    color = rgb { 11 101 31 }
-    culture_definition = ir_himjar
-    religion_definition = ir_arabian_pantheon
-}
-
 NBT = {
     # NBT -> setup/countries/arabia/nabatea.txt
-    color = rgb { 14 20 31 }
+    color = rgb { 0 28 81 }
     culture_definition = ir_nabatean
     religion_definition = ir_arabian_pantheon
 }
@@ -76,14 +69,7 @@ NBT = {
 LHY = {
     # LHY -> setup/countries/arabia/lihyan.txt
     color = rgb { 80 48 189 }
-    culture_definition = ir_nabatean
-    religion_definition = ir_arabian_pantheon
-}
-
-TQF = {
-    # TQF -> setup/countries/arabia/thaqif.txt
-    color = rgb { 200 67 166 }
-    culture_definition = ir_taif
+    culture_definition = ir_qedarite
     religion_definition = ir_arabian_pantheon
 }
 
@@ -91,6 +77,48 @@ THD = {
     # THD -> setup/countries/arabia/thamud.txt
     color = rgb { 100 167 66 }
     culture_definition = ir_thamudi
+    religion_definition = ir_arabian_pantheon
+}
+
+AX0 = {
+    # AX0 -> setup/countries/arabia/tasm.txt
+    color = rgb { 8 138 25 }
+    culture_definition = ir_yamama
+    religion_definition = ir_arabian_pantheon
+}
+
+AX1 = {
+    # AX1 -> setup/countries/arabia/kindah.txt
+    color = rgb { 130 9 9 }
+    culture_definition = ir_kindite
+    religion_definition = ir_arabian_pantheon
+}
+
+AX3 = {
+    # AX3 -> setup/countries/arabia/jadis.txt
+    color = rgb { 92 6 166 }
+    culture_definition = ir_yamama
+    religion_definition = ir_arabian_pantheon
+}
+
+AX4 = {
+    # AX4 -> setup/countries/arabia/samad.txt
+    color = rgb { 1 49 233 }
+    culture_definition = ir_samad
+    religion_definition = ir_arabian_pantheon
+}
+
+AX5 = {
+    # AX5 -> setup/countries/arabia/jubbah.txt
+    color = rgb { 173 57 18 }
+    culture_definition = ir_qedarite
+    religion_definition = ir_arabian_pantheon
+}
+
+AX6 = {
+    # AX6 -> setup/countries/arabia/aad.txt
+    color = rgb { 223 222 40 }
+    culture_definition = ir_adite
     religion_definition = ir_arabian_pantheon
 }
 

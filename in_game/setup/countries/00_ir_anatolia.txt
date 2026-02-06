@@ -3,6 +3,34 @@
 #  Any manual changes will be OVERWRITTEN upon regeneration!  #
 # =========================================================== #
 
+SAS = {
+    # SAS -> setup/countries/anatolia/samos.txt
+    color = rgb { 170 41 32 }
+    culture_definition = ir_ionian
+    religion_definition = ir_roman_pantheon
+}
+
+CIA = {
+    # CIA -> setup/countries/anatolia/caria.txt
+    color = rgb { 89 105 127 }
+    culture_definition = ir_macedonian
+    religion_definition = ir_roman_pantheon
+}
+
+HKS = {
+    # HKS -> setup/countries/anatolia/halikarnassos.txt
+    color = rgb { 77 32 105 }
+    culture_definition = ir_carian
+    religion_definition = ir_roman_pantheon
+}
+
+SRD = {
+    # SRD -> setup/countries/anatolia/sardis.txt
+    color = rgb { 200 101 0 }
+    culture_definition = ir_macedonian
+    religion_definition = ir_roman_pantheon
+}
+
 RHO = {
     # RHO -> setup/countries/anatolia/rhodes.txt
     color = rgb { 215 59 28 }
@@ -12,7 +40,7 @@ RHO = {
 
 AST = {
     # AST -> setup/countries/anatolia/astakos.txt
-    color = rgb { 132 15 161 }
+    color = rgb { 159 15 70 }
     culture_definition = ir_thracian
     religion_definition = ir_roman_pantheon
 }
@@ -31,10 +59,17 @@ HCP = {
     religion_definition = ir_roman_pantheon
 }
 
-IOA = {
-    # IOA -> setup/countries/anatolia/aeolia.txt
-    color = rgb { 22 78 33 }
-    culture_definition = ir_troan
+TRD = {
+    # TRD -> setup/countries/anatolia/troas.txt
+    color = rgb { 129 33 51 }
+    culture_definition = ir_aeolian
+    religion_definition = ir_roman_pantheon
+}
+
+LSB = {
+    # LSB -> setup/countries/anatolia/lesbos.txt
+    color = rgb { 33 21 205 }
+    culture_definition = ir_aeolian
     religion_definition = ir_roman_pantheon
 }
 
@@ -66,11 +101,11 @@ KNI = {
     religion_definition = ir_roman_pantheon
 }
 
-KIO = {
-    # KIO -> setup/countries/anatolia/kios.txt
-    color = rgb { 44 32 125 }
-    culture_definition = ir_thracian
-    religion_definition = ir_zoroaster
+MIT = {
+    # MIT -> setup/countries/anatolia/mithridatid.txt
+    color = rgb { 11 54 50 }
+    culture_definition = ir_pasargadi
+    religion_definition = ir_mithra_religion
 }
 
 KZK = {
@@ -80,24 +115,10 @@ KZK = {
     religion_definition = ir_roman_pantheon
 }
 
-KYA = {
-    # KYA -> setup/countries/anatolia/kotyora.txt
-    color = rgb { 97 105 55 }
-    culture_definition = ir_greco_pontic
-    religion_definition = ir_roman_pantheon
-}
-
 KRS = {
     # KRS -> setup/countries/anatolia/kerasous.txt
     color = rgb { 30 45 99 }
     culture_definition = ir_greco_pontic
-    religion_definition = ir_roman_pantheon
-}
-
-HKS = {
-    # HKS -> setup/countries/anatolia/halikarnassos.txt
-    color = rgb { 150 25 205 }
-    culture_definition = ir_ionian
     religion_definition = ir_roman_pantheon
 }
 
@@ -122,6 +143,20 @@ CAP = {
     religion_definition = ir_roman_pantheon
 }
 
+KAP = {
+    # KAP -> setup/countries/anatolia/comana_cappadocia.txt
+    color = rgb { 130 169 255 }
+    culture_definition = ir_cataonian
+    religion_definition = ir_anatolian_religion
+}
+
+CAS = {
+    # CAS -> setup/countries/anatolia/castabala.txt
+    color = rgb { 126 142 55 }
+    culture_definition = ir_cilician
+    religion_definition = ir_hurrian_pantheon
+}
+
 PON = {
     # PON -> setup/countries/anatolia/pontus.txt
     color = rgb { 149 101 186 }
@@ -129,10 +164,31 @@ PON = {
     religion_definition = ir_zoroaster
 }
 
+KOM = {
+    # KOM -> setup/countries/anatolia/comana_pontica.txt
+    color = rgb { 31 36 51 }
+    culture_definition = ir_cappadocian
+    religion_definition = ir_anatolian_religion
+}
+
+ZEL = {
+    # ZEL -> setup/countries/anatolia/zela.txt
+    color = rgb { 31 58 51 }
+    culture_definition = ir_pasargadi
+    religion_definition = ir_zoroaster
+}
+
 PAP = {
     # PAP -> setup/countries/anatolia/paphlagonia.txt
     color = rgb { 32 10 166 }
     culture_definition = ir_paphlagonian
+    religion_definition = ir_anatolian_religion
+}
+
+MAN = {
+    # MAN -> setup/countries/anatolia/manes.txt
+    color = rgb { 197 229 229 }
+    culture_definition = ir_pisidian
     religion_definition = ir_anatolian_religion
 }
 
@@ -195,15 +251,8 @@ ISU = {
 LAR = {
     # LAR -> setup/countries/anatolia/larandia.txt
     color = rgb { 191 76 0 }
-    culture_definition = ir_isaurian
+    culture_definition = ir_lycaonian
     religion_definition = ir_anatolian_religion
-}
-
-MYD = {
-    # MYD -> setup/countries/anatolia/mariandynia.txt
-    color = rgb { 71 148 145 }
-    culture_definition = ir_mariandynian
-    religion_definition = ir_roman_pantheon
 }
 
 SMS = {
@@ -248,11 +297,11 @@ ISI = {
     religion_definition = ir_anatolian_religion
 }
 
-LAL = {
-    # LAL -> setup/countries/anatolia/lalasia.txt
+KLD = {
+    # KLD -> setup/countries/anatolia/kelenderis.txt
     color = rgb { 38 70 17 }
-    culture_definition = ir_lalasian
-    religion_definition = ir_anatolian_religion
+    culture_definition = ir_ciliciote
+    religion_definition = ir_roman_pantheon
 }
 
 OEO = {
@@ -288,6 +337,13 @@ KAK = {
     color = rgb { 127 61 0 }
     culture_definition = ir_mariandynian
     religion_definition = ir_roman_pantheon
+}
+
+KLT = {
+    # KLT -> setup/countries/anatolia/cetia.txt
+    color = rgb { 222 45 72 }
+    culture_definition = ir_lalasian
+    religion_definition = ir_anatolian_religion
 }
 
 OBE = {

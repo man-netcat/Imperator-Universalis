@@ -10,13 +10,6 @@ BYZ = {
     religion_definition = ir_roman_pantheon
 }
 
-ORG = {
-    # ORG -> setup/countries/greece/orgame.txt
-    color = rgb { 153 76 32 }
-    culture_definition = ir_bosporan
-    religion_definition = ir_roman_pantheon
-}
-
 ISO = {
     # ISO -> setup/countries/greece/istros.txt
     color = rgb { 0 102 204 }
@@ -24,23 +17,9 @@ ISO = {
     religion_definition = ir_roman_pantheon
 }
 
-TMS = {
-    # TMS -> setup/countries/greece/tomis.txt
-    color = rgb { 204 153 255 }
-    culture_definition = ir_bosporan
-    religion_definition = ir_roman_pantheon
-}
-
 KTS = {
     # KTS -> setup/countries/greece/kallatis.txt
     color = rgb { 180 22 32 }
-    culture_definition = ir_bosporan
-    religion_definition = ir_roman_pantheon
-}
-
-KOI = {
-    # KOI -> setup/countries/greece/krounoi.txt
-    color = rgb { 153 255 255 }
     culture_definition = ir_bosporan
     religion_definition = ir_roman_pantheon
 }
@@ -80,23 +59,30 @@ ODR = {
     religion_definition = ir_shamanism
 }
 
+KAB = {
+    # KAB -> setup/countries/greece/kabyle.txt
+    color = rgb { 51 37 49 }
+    culture_definition = ir_odrysi
+    religion_definition = ir_roman_pantheon
+}
+
 PAA = {
     # PAA -> setup/countries/greece/paeonia.txt
     color = rgb { 45 97 135 }
     culture_definition = ir_paeonian
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_illyrian_pantheon
 }
 
 MAD = {
     # MAD -> setup/countries/greece/maedia.txt
     color = rgb { 185 122 87 }
     culture_definition = ir_paeonian
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_illyrian_pantheon
 }
 
 MAC = {
     # MAC -> setup/countries/greece/macedonia.txt
-    color = rgb { 16 41 202 }
+    color = rgb { 0 25 186 }
     culture_definition = ir_macedonian
     religion_definition = ir_roman_pantheon
 }
@@ -118,13 +104,20 @@ THE = {
 KRK = {
     # KRK -> setup/countries/greece/korkyra.txt
     color = rgb { 49 105 152 }
-    culture_definition = ir_epirote
+    culture_definition = ir_italiotian
     religion_definition = ir_roman_pantheon
 }
 
 AET = {
     # AET -> setup/countries/greece/aetolia.txt
     color = rgb { 179 128 104 }
+    culture_definition = ir_aetolian
+    religion_definition = ir_roman_pantheon
+}
+
+KEF = {
+    # KEF -> setup/countries/greece/kephallenia.txt
+    color = rgb { 80 149 109 }
     culture_definition = ir_aetolian
     religion_definition = ir_roman_pantheon
 }
@@ -150,17 +143,24 @@ MSE = {
     religion_definition = ir_roman_pantheon
 }
 
-EUB = {
-    # EUB -> setup/countries/greece/euboea.txt
-    color = rgb { 45 17 220 }
-    culture_definition = ir_euboean
-    religion_definition = ir_roman_pantheon
-}
-
 ORE = {
     # ORE -> setup/countries/greece/oreos.txt
     color = rgb { 90 120 120 }
     culture_definition = ir_euboean
+    religion_definition = ir_roman_pantheon
+}
+
+AGN = {
+    # AGN -> setup/countries/greece/aigina.txt
+    color = rgb { 117 161 109 }
+    culture_definition = ir_argolian
+    religion_definition = ir_roman_pantheon
+}
+
+KOR = {
+    # KOR -> setup/countries/greece/corinth.txt
+    color = rgb { 35 104 173 }
+    culture_definition = ir_achaean
     religion_definition = ir_roman_pantheon
 }
 
@@ -171,23 +171,9 @@ BOE = {
     religion_definition = ir_roman_pantheon
 }
 
-PTA = {
-    # PTA -> setup/countries/greece/patrai.txt
-    color = rgb { 229 27 84 }
-    culture_definition = ir_achaean
-    religion_definition = ir_roman_pantheon
-}
-
-DYM = {
-    # DYM -> setup/countries/greece/dyme.txt
-    color = rgb { 90 30 180 }
-    culture_definition = ir_achaean
-    religion_definition = ir_roman_pantheon
-}
-
-AIG = {
-    # AIG -> setup/countries/greece/aigon.txt
-    color = rgb { 234 139 40 }
+ACL = {
+    # ACL -> setup/countries/greece/achaea.txt
+    color = rgb { 45 99 149 }
     culture_definition = ir_achaean
     religion_definition = ir_roman_pantheon
 }
@@ -195,6 +181,13 @@ AIG = {
 PLE = {
     # PLE -> setup/countries/greece/pellene.txt
     color = rgb { 90 20 150 }
+    culture_definition = ir_achaean
+    religion_definition = ir_roman_pantheon
+}
+
+SIC = {
+    # SIC -> setup/countries/greece/sicyon.txt
+    color = rgb { 143 112 172 }
     culture_definition = ir_achaean
     religion_definition = ir_roman_pantheon
 }
@@ -234,9 +227,9 @@ TEG = {
     religion_definition = ir_roman_pantheon
 }
 
-MTE = {
-    # MTE -> setup/countries/greece/mantinea.txt
-    color = rgb { 173 92 62 }
+ARK = {
+    # ARK -> setup/countries/greece/arkadia.txt
+    color = rgb { 133 14 25 }
     culture_definition = ir_arcadian
     religion_definition = ir_roman_pantheon
 }
@@ -245,13 +238,6 @@ ARG = {
     # ARG -> setup/countries/greece/argos.txt
     color = rgb { 136 164 26 }
     culture_definition = ir_argolian
-    religion_definition = ir_roman_pantheon
-}
-
-AZA = {
-    # AZA -> setup/countries/greece/azania.txt
-    color = rgb { 82 200 157 }
-    culture_definition = ir_arcadian
     religion_definition = ir_roman_pantheon
 }
 
@@ -276,31 +262,10 @@ HRM = {
     religion_definition = ir_roman_pantheon
 }
 
-STP = {
-    # STP -> setup/countries/greece/stymphalia.txt
-    color = rgb { 234 159 40 }
-    culture_definition = ir_arcadian
-    religion_definition = ir_roman_pantheon
-}
-
 EPD = {
     # EPD -> setup/countries/greece/epidauros.txt
     color = rgb { 35 151 89 }
     culture_definition = ir_argolian
-    religion_definition = ir_roman_pantheon
-}
-
-HRA = {
-    # HRA -> setup/countries/greece/heraia.txt
-    color = rgb { 20 86 234 }
-    culture_definition = ir_arcadian
-    religion_definition = ir_roman_pantheon
-}
-
-LPR = {
-    # LPR -> setup/countries/greece/lepreon.txt
-    color = rgb { 133 14 25 }
-    culture_definition = ir_achaean
     religion_definition = ir_roman_pantheon
 }
 
@@ -409,18 +374,11 @@ SCY = {
     religion_definition = ir_indo_iranian_religion
 }
 
-SRM = {
-    # SRM -> setup/countries/greece/sarmatians.txt
-    color = rgb { 222 124 28 }
-    culture_definition = ir_sarmatian
-    religion_definition = ir_indo_iranian_religion
-}
-
 MAE = {
     # MAE -> setup/countries/greece/maeotia.txt
     color = rgb { 181 180 180 }
     culture_definition = ir_maeotian
-    religion_definition = ir_indo_iranian_religion
+    religion_definition = ir_circassian_pantheon
 }
 
 OLB = {
@@ -472,16 +430,9 @@ DLP = {
     religion_definition = ir_roman_pantheon
 }
 
-TAN = {
-    # TAN -> setup/countries/greece/tanagra.txt
-    color = rgb { 120 20 145 }
-    culture_definition = ir_boeotian
-    religion_definition = ir_roman_pantheon
-}
-
 AMK = {
     # AMK -> setup/countries/greece/ambrakia.txt
-    color = rgb { 61 168 104 }
+    color = rgb { 194 213 255 }
     culture_definition = ir_epirote
     religion_definition = ir_roman_pantheon
 }

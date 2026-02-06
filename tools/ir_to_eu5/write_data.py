@@ -605,11 +605,12 @@ def write_ir_religious_aspects(deity_data: list, religion_data: list) -> None:
 
 def write_country_setup(country_data: list, override_data: list):
     setup_dir_dict = defaultdict(list)
+    ir_countries_rel = ir_relative_display(ir_countries_dir)
 
     # --- normal country setup ---
     for country in country_data:
         lines = [
-            f"# {country['tag']} -> {ir_countries_dir.relative_to(ir_game)}/{country['setup_dir']}/{country['setup_file']}",
+            f"# {country['tag']} -> {ir_countries_rel}/{country['setup_dir']}/{country['setup_file']}",
             f"color = {convert_color(country['color'])}",
             f"culture_definition = {country['culture']}",
             f"religion_definition = {country['religion']}",

@@ -9,16 +9,17 @@ import pyradox.datatype as _pydt
 
 from .extract_data import extract_ir_country_locations, parse_tree, read_localisation_file
 from .paths import (
-    ir_game,
-    ir_localisation,
-    ir_map_data,
-    ir_cultures,
+    eu5_game,
     ir_default,
+    ir_game,
+    ir_localisation_paths,
+    ir_map_data,
+    ir_path,
+    iter_ir_files,
     iu_localisation,
     iu_map_data,
     iu_setup_start,
     mod_root,
-    eu5_game,
 )
 from .write_data import write_blocks, print_written
 
@@ -510,6 +511,10 @@ def _resize_png_in_place(path: Path, target: tuple[int, int]) -> bool:
         return False
 
 
+def _iter_ir_province_files() -> list[Path]:
+    return [path for path in iter_ir_files("setup/provinces") if path.suffix == ".txt"]
+
+
 # ---------------- Parsing Functions ---------------- #
 
 
@@ -518,8 +523,8 @@ def parse_definitions() -> list[tuple[int, str, int, int, int, str]]:
     Parse definition.csv but generate keys from the localisation file.
     Returns: (prov_id, key, r, g, b, name)
     """
-    definition_file = ir_map_data / "definition.csv"
-    ir_loc = read_localisation_file(ir_localisation)  # read all localisation
+    definition_file = ir_path("map_data/definition.csv")
+    ir_loc = read_localisation_file(ir_localisation_paths)  # read all localisation
 
     rows = []
     counts = defaultdict(int)
@@ -566,7 +571,7 @@ def parse_definitions() -> list[tuple[int, str, int, int, int, str]]:
 
 def parse_adjacencies(id_to_key: dict[int, str], location_keys: set[str] | None = None) -> list[dict]:
     """Parse adjacencies.csv into dictionaries."""
-    file = ir_map_data / "adjacencies.csv"
+    file = ir_path("map_data/adjacencies.csv")
     type_map = {
         "river_large": "sea",
     }
@@ -609,7 +614,7 @@ def parse_adjacencies(id_to_key: dict[int, str], location_keys: set[str] | None 
 
 def parse_ports(id_to_key: dict[int, str]) -> list[dict]:
     """Parse ports.csv into dictionaries."""
-    file = ir_map_data / "ports.csv"
+    file = ir_path("map_data/ports.csv")
     ports = []
     for row in read_csv(file, skip_header=True):
         if len(row) < 4:
@@ -641,8 +646,8 @@ def build_regions(id_to_key: dict[int, str]):
             return list(x.values())
         return [x]
 
-    areas = parse_tree(ir_map_data / "areas.txt").to_python()
-    regions = parse_tree(ir_map_data / "regions.txt").to_python()
+    areas = parse_tree(ir_path("map_data/areas.txt")).to_python()
+    regions = parse_tree(ir_path("map_data/regions.txt")).to_python()
 
     # print(list(regions.keys()))
 
@@ -759,7 +764,7 @@ def build_default_map(id_to_key: dict[int, str]):
     Parses default.map and returns a dictionary:
     { category_name_lowercase: set of province keys }
     """
-    default_map = ir_map_data / "default.map"
+    default_map = ir_path("map_data/default.map")
     data = {}
     mode = None
     current_category = None
@@ -909,7 +914,7 @@ def _dedupe(items: list) -> list:
 
 def _build_ir_culture_to_group_map() -> dict[str, str]:
     mapping: dict[str, str] = {}
-    for path in ir_cultures.iterdir():
+    for path in iter_ir_files("common/cultures"):
         if path.suffix != ".txt" or not path.is_file():
             continue
         tree = parse_tree(path)
@@ -921,7 +926,7 @@ def _build_ir_culture_to_group_map() -> dict[str, str]:
 
 
 def _load_ir_building_keys() -> set[str]:
-    ir_buildings = ir_game / "common" / "buildings" / "00_default.txt"
+    ir_buildings = ir_path("common/buildings/00_default.txt")
     if not ir_buildings.exists():
         return set()
     tree = parse_tree(ir_buildings)
@@ -949,8 +954,8 @@ def build_ir_building_mapping() -> dict[str, str]:
 
 def build_ir_raw_materials(id_to_key: dict[int, str]) -> dict[str, str]:
     """Map I:R trade_goods to EU5 raw_material keys per location."""
-    province_dir = ir_game / "setup" / "provinces"
-    if not province_dir.exists():
+    province_files = _iter_ir_province_files()
+    if not province_files:
         return {}
 
     eu5_goods = _load_eu5_goods_keys()
@@ -998,7 +1003,7 @@ def build_ir_raw_materials(id_to_key: dict[int, str]) -> dict[str, str]:
     counts: dict[str, int] = defaultdict(int)
     mapped_counts: dict[str, int] = defaultdict(int)
     missing: dict[str, int] = defaultdict(int)
-    for path in sorted(province_dir.glob("*.txt")):
+    for path in province_files:
         tree = parse_tree(path)
         for raw_id, data in sorted(tree.items(), key=lambda item: int(item[0])):
             try:
@@ -1040,12 +1045,12 @@ def build_ir_raw_materials(id_to_key: dict[int, str]) -> dict[str, str]:
 
 def build_ir_terrain_maps(id_to_key: dict[int, str]) -> dict[str, tuple[str, str]]:
     """Return {location_key: (topography, vegetation)} from I:R province terrain."""
-    province_dir = ir_game / "setup" / "provinces"
-    if not province_dir.exists():
+    province_files = _iter_ir_province_files()
+    if not province_files:
         return {}
 
     result: dict[str, tuple[str, str]] = {}
-    for path in sorted(province_dir.glob("*.txt")):
+    for path in province_files:
         tree = parse_tree(path)
         for raw_id, data in tree.items():
             try:
@@ -1081,8 +1086,8 @@ def build_ir_location_building_setups(
         - location_to_setup: { location_key: setup_name }
         - setup_definitions: { setup_name: { building_key: level } }
     """
-    province_dir = ir_game / "setup" / "provinces"
-    if not province_dir.exists():
+    province_files = _iter_ir_province_files()
+    if not province_files:
         return {}, {}
 
     def normalize_level(value) -> int:
@@ -1098,7 +1103,7 @@ def build_ir_location_building_setups(
     location_to_setup: dict[str, str] = {}
     setup_definitions: dict[str, dict[str, int]] = {}
 
-    for path in sorted(province_dir.glob("*.txt")):
+    for path in province_files:
         tree = parse_tree(path)
         for raw_id, data in tree.items():
             try:
@@ -1233,8 +1238,8 @@ def build_ir_pops(id_to_key: dict[int, str]) -> dict[str, list[str]]:
 
     Returns: { location_key: [define_pop_line, ...] }
     """
-    province_dir = ir_game / "setup" / "provinces"
-    if not province_dir.exists():
+    province_files = _iter_ir_province_files()
+    if not province_files:
         return {}
 
     pop_type_map = {
@@ -1254,7 +1259,7 @@ def build_ir_pops(id_to_key: dict[int, str]) -> dict[str, list[str]]:
 
     locations: dict[str, list[str]] = {}
 
-    for path in sorted(province_dir.glob("*.txt")):
+    for path in province_files:
         tree = parse_tree(path)
         for raw_id, data in tree.items():
             try:
@@ -1309,8 +1314,8 @@ def build_ir_location_ranks(
     location_town_setups: dict[str, str] | None = None,
 ) -> dict[str, str]:
     """Build EU5 location rank data from Imperator province setup data."""
-    province_dir = ir_game / "setup" / "provinces"
-    if not province_dir.exists():
+    province_files = _iter_ir_province_files()
+    if not province_files:
         return {}
 
     culture_to_group = _build_ir_culture_to_group_map()
@@ -1329,7 +1334,7 @@ def build_ir_location_ranks(
             return None
         return None
 
-    for path in sorted(province_dir.glob("*.txt")):
+    for path in province_files:
         tree = parse_tree(path)
         for raw_id, data in tree.items():
             try:
@@ -1363,8 +1368,8 @@ def build_ir_rankable_locations(
     locations_with_pops: set[str],
 ) -> set[str]:
     """Return locations that should receive a rank entry in EU5."""
-    province_dir = ir_game / "setup" / "provinces"
-    if not province_dir.exists():
+    province_files = _iter_ir_province_files()
+    if not province_files:
         return set()
 
     def map_rank_to_eu5(raw_rank: str | None) -> bool:
@@ -1374,7 +1379,7 @@ def build_ir_rankable_locations(
         return rank in ("city", "metropolis")
 
     rankable: set[str] = set()
-    for path in sorted(province_dir.glob("*.txt")):
+    for path in province_files:
         tree = parse_tree(path)
         for raw_id, data in tree.items():
             try:
@@ -1594,7 +1599,7 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     loc_lines = ["l_english:"]
 
     # Prefer existing Imperator localisation if present
-    ir_loc = read_localisation_file(ir_localisation)
+    ir_loc = read_localisation_file(ir_localisation_paths)
     location_names_dir = iu_localisation / "location_names"
     existing_loc = (
         read_localisation_file(location_names_dir) if location_names_dir.exists() else {}
@@ -1931,7 +1936,7 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
         include_locations=rankable_locations,
     )
     # --- Also include any building assignments present in Imperator's main/default setup ---
-    main_setup = ir_game / "setup" / "main" / "00_default.txt"
+    main_setup = ir_path("setup/main/00_default.txt")
     if main_setup.exists():
         main_tree = parse_tree(main_setup)
         provinces = main_tree["provinces"] if "provinces" in main_tree else None
@@ -2115,8 +2120,8 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
 
     # Copy core map files so location IDs match definitions
     map_files = {
-        ir_map_data / "provinces.png": iu_map_data / "locations.png",
-        ir_map_data / "rivers.png": iu_map_data / "rivers.png",
+        ir_path("map_data/provinces.png"): iu_map_data / "locations.png",
+        ir_path("map_data/rivers.png"): iu_map_data / "rivers.png",
     }
     for src, dst in map_files.items():
         if not src.exists():

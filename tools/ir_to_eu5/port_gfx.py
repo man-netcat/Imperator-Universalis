@@ -2,7 +2,7 @@ from pathlib import Path
 
 from PIL import Image
 
-from .paths import ir_coa_gfx, iu_coa_gfx, mod_root
+from .paths import iter_ir_files, iu_coa_gfx, mod_root
 from .write_data import print_written
 
 
@@ -52,7 +52,7 @@ def remap_ir_colored_emblem_palette(
 
 
 def convert_images(
-    input_dir: Path,
+    input_paths: list[Path],
     output_dir: Path,
     size=(384, 256),
     stretch: bool = False,
@@ -62,7 +62,7 @@ def convert_images(
 ):
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    for path in input_dir.iterdir():
+    for path in input_paths:
         if path.suffix.lower() not in {".dds", ".tga"}:
             continue
 
@@ -92,9 +92,16 @@ def convert_images(
 
 
 def port_coa_gfx():
-    colored_emblems = ir_coa_gfx / "colored_emblems"
-    patterns = ir_coa_gfx / "patterns"
-    textured_emblems = ir_coa_gfx / "textured_emblems"
+    def _iter_gfx_files(relative_dir: str) -> list[Path]:
+        return [
+            path
+            for path in iter_ir_files(relative_dir, pattern="*.*")
+            if path.suffix.lower() in {".dds", ".tga"}
+        ]
+
+    colored_emblems = _iter_gfx_files("gfx/coat_of_arms/colored_emblems")
+    patterns = _iter_gfx_files("gfx/coat_of_arms/patterns")
+    textured_emblems = _iter_gfx_files("gfx/coat_of_arms/textured_emblems")
 
     out_colored_emblems = iu_coa_gfx / "colored_emblems"
     out_patterns = iu_coa_gfx / "patterns"

@@ -1,35 +1,43 @@
 ir_good	count	mapped	missing	mapped_to
-amber	23	23	0	amber
-base_metals	205	205	0	iron,copper,lead,tin
-camel	63	63	0	horses
-cattle	544	544	0	wool
-cloth	239	239	0	cloth,fiber_crops
-dates	59	59	0	wheat
-dye	51	51	0	dyes
-earthware	169	169	0	clay
-elephants	83	83	0	ivory
-fish	342	342	0	fish
-fur	323	323	0	fur
-gems	46	46	0	
+amber	27	27	0	amber
+base_metals	259	259	0	iron,copper,lead,tin
+camel	101	101	0	horses
+cattle	712	712	0	wool
+cedar	52	0	52	
+cinnabar	8	0	8	
+cloth	245	245	0	cloth,fiber_crops
+dates	94	94	0	wheat
+dye	60	60	0	dyes
+earthware	195	195	0	clay
+elephants	96	96	0	ivory
+fish	351	351	0	fish
+fruits	53	0	53	
+fur	354	354	0	fur
+gems	60	60	0	
 glass	61	61	0	glass
-grain	426	426	0	wheat,rice,maize
-hemp	197	197	0	fiber_crops
-honey	85	85	0	wheat
-horses	276	276	0	horses
-incense	56	56	0	incense
-iron	121	121	0	
-leather	339	339	0	fur,wool
-marble	63	63	0	stone
-olive	146	146	0	wine,wheat
-papyrus	23	23	0	paper,fiber_crops,cloth
-precious_metals	108	108	0	goods_gold,silver
-salt	176	176	0	salt
+grain	517	517	0	wheat,rice,maize
+hemp	225	225	0	fiber_crops
+honey	101	101	0	wheat
+horses	362	362	0	horses
+incense	57	57	0	incense
+iron	141	141	0	
+jade	6	0	6	
+lapis	3	0	3	
+leather	459	459	0	fur,wool
+marble	66	66	0	stone
+myrrh	15	0	15	
+olive	118	118	0	wine,wheat
+papyrus	24	24	0	paper,fiber_crops,cloth
+precious_metals	154	154	0	goods_gold,silver
+salt	188	188	0	salt
 silk	29	29	0	silk
-spices	58	58	0	incense,tea
-steppe_horses	90	90	0	horses
-stone	288	288	0	stone
-vegetables	415	415	0	wheat,rice,maize
-wild_game	187	187	0	wild_game
-wine	238	238	0	wine
-woad	139	139	0	dyes
-wood	551	551	0	lumber
+silphium	6	0	6	
+spices	66	66	0	incense,tea
+steppe_horses	153	153	0	horses
+stone	339	339	0	stone
+sugar	5	5	0	
+vegetables	448	448	0	wheat,rice,maize
+wild_game	320	320	0	wild_game
+wine	242	242	0	wine
+woad	177	177	0	dyes
+wood	548	548	0	lumber

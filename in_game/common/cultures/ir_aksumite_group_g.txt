@@ -5,14 +5,70 @@
 
 ir_puntic = {
     language = ethiopic_language
-    color = hsv { 0.00 0.00 0.00 }
+    color = hsv { 0.00 0.00 0.10 }
     tags = { east_african_gfx african_gfx }
     culture_groups = { ir_aksumite_group_g }
 }
 
 ir_aksumite = {
     language = ethiopic_language
-    color = hsv { 0.00 0.00 0.00 }
+    color = hsv { 0.00 0.00 0.10 }
+    tags = { east_african_gfx african_gfx }
+    culture_groups = { ir_aksumite_group_g }
+}
+
+ir_blemmyan = {
+    language = ethiopic_language
+    color = hsv { 0.00 0.00 0.10 }
+    tags = { east_african_gfx african_gfx }
+    culture_groups = { ir_aksumite_group_g }
+}
+
+ir_blemmye = {
+    language = ethiopic_language
+    color = hsv { 0.00 0.00 0.10 }
+    tags = { east_african_gfx african_gfx }
+    culture_groups = { ir_aksumite_group_g }
+}
+
+ir_daamoti = {
+    language = ethiopic_language
+    color = hsv { 0.00 0.00 0.10 }
+    tags = { east_african_gfx african_gfx }
+    culture_groups = { ir_aksumite_group_g }
+}
+
+ir_ona = {
+    language = ethiopic_language
+    color = hsv { 0.00 0.00 0.10 }
+    tags = { east_african_gfx african_gfx }
+    culture_groups = { ir_aksumite_group_g }
+}
+
+ir_athagaun = {
+    language = ethiopic_language
+    color = hsv { 0.00 0.00 0.10 }
+    tags = { east_african_gfx african_gfx }
+    culture_groups = { ir_aksumite_group_g }
+}
+
+ir_avalitian = {
+    language = ethiopic_language
+    color = hsv { 0.00 0.00 0.10 }
+    tags = { east_african_gfx african_gfx }
+    culture_groups = { ir_aksumite_group_g }
+}
+
+ir_berberian = {
+    language = ethiopic_language
+    color = hsv { 0.00 0.00 0.10 }
+    tags = { east_african_gfx african_gfx }
+    culture_groups = { ir_aksumite_group_g }
+}
+
+ir_erythraean = {
+    language = ethiopic_language
+    color = hsv { 0.00 0.00 0.10 }
     tags = { east_african_gfx african_gfx }
     culture_groups = { ir_aksumite_group_g }
 }

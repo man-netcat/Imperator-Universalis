@@ -24,10 +24,3 @@ ir_hebrew = {
     culture_groups = { ir_west_levantine_g }
 }
 
-ir_nabatean = {
-    language = aramaic_language
-    color = hsv { 0.75 0.90 0.73 }
-    tags = { levantine_gfx east_mediterranean_gfx maghrebi_gfx middle_east_gfx }
-    culture_groups = { ir_west_levantine_g }
-}
-

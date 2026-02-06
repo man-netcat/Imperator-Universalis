@@ -34,7 +34,7 @@ DNN = {
 ULT = {
     # ULT -> setup/countries/britannia/ulutia.txt
     color = rgb { 53 41 41 }
-    culture_definition = ir_hibernian
+    culture_definition = ir_voluntian
     religion_definition = ir_druidism
 }
 
@@ -55,7 +55,7 @@ DUR = {
 PAS = {
     # PAS -> setup/countries/britannia/parisi.txt
     color = rgb { 219 10 10 }
-    culture_definition = ir_brigantic
+    culture_definition = ir_parisian
     religion_definition = ir_druidism
 }
 
@@ -146,70 +146,70 @@ TRI = {
 DAR = {
     # DAR -> setup/countries/britannia/darinia.txt
     color = rgb { 83 21 21 }
-    culture_definition = ir_hibernian
+    culture_definition = ir_voluntian
     religion_definition = ir_druidism
 }
 
 ELA = {
     # ELA -> setup/countries/britannia/eblania.txt
     color = rgb { 27 85 94 }
-    culture_definition = ir_hibernian
+    culture_definition = ir_voluntian
     religion_definition = ir_druidism
 }
 
 MNA = {
     # MNA -> setup/countries/britannia/manapia.txt
     color = rgb { 223 29 40 }
-    culture_definition = ir_hibernian
+    culture_definition = ir_ivernian
     religion_definition = ir_druidism
 }
 
 CAU = {
     # CAU -> setup/countries/britannia/caucia.txt
     color = rgb { 30 200 9 }
-    culture_definition = ir_hibernian
+    culture_definition = ir_voluntian
     religion_definition = ir_druidism
 }
 
 COR = {
     # COR -> setup/countries/britannia/coriondia.txt
     color = rgb { 185 185 20 }
-    culture_definition = ir_hibernian
+    culture_definition = ir_ivernian
     religion_definition = ir_druidism
 }
 
 IVE = {
     # IVE -> setup/countries/britannia/ivernia.txt
     color = rgb { 103 2 98 }
-    culture_definition = ir_hibernian
+    culture_definition = ir_ivernian
     religion_definition = ir_druidism
 }
 
 USD = {
     # USD -> setup/countries/britannia/usdia.txt
     color = rgb { 20 20 225 }
-    culture_definition = ir_hibernian
+    culture_definition = ir_ivernian
     religion_definition = ir_druidism
 }
 
 ROB = {
     # ROB -> setup/countries/britannia/robogdia.txt
     color = rgb { 180 29 29 }
-    culture_definition = ir_hibernian
+    culture_definition = ir_voluntian
     religion_definition = ir_druidism
 }
 
 VEN = {
     # VEN -> setup/countries/britannia/venicnia.txt
     color = rgb { 71 90 2 }
-    culture_definition = ir_hibernian
+    culture_definition = ir_voluntian
     religion_definition = ir_druidism
 }
 
 BGA = {
     # BGA -> setup/countries/britannia/brigantia.txt
     color = rgb { 160 20 245 }
-    culture_definition = ir_hibernian
+    culture_definition = ir_ivernian
     religion_definition = ir_druidism
 }
 

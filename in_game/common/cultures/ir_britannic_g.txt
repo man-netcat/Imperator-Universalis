@@ -115,3 +115,31 @@ ir_taexalian = {
     culture_groups = { ir_britannic_g }
 }
 
+ir_parisian = {
+    language = brythonic_language
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { western_european_gfx european_gfx }
+    culture_groups = { ir_britannic_g }
+}
+
+ir_monapian = {
+    language = brythonic_language
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { western_european_gfx european_gfx }
+    culture_groups = { ir_britannic_g }
+}
+
+ir_ivernian = {
+    language = brythonic_language
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { western_european_gfx european_gfx }
+    culture_groups = { ir_britannic_g }
+}
+
+ir_voluntian = {
+    language = brythonic_language
+    color = hsv { 0.57 0.70 0.40 }
+    tags = { western_european_gfx european_gfx }
+    culture_groups = { ir_britannic_g }
+}
+

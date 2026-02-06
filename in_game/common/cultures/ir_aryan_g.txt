@@ -10,8 +10,22 @@ ir_vidharban = {
     culture_groups = { ir_aryan_g }
 }
 
+ir_mulaka = {
+    language = sanskrit_language
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { persianate_gfx indian_gfx }
+    culture_groups = { ir_aryan_g }
+}
+
 ir_saurashtran = {
     language = gujarati_language
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { persianate_gfx indian_gfx }
+    culture_groups = { ir_aryan_g }
+}
+
+ir_kaccha = {
+    language = sanskrit_language
     color = hsv { 0.05 1.00 0.90 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_aryan_g }
@@ -31,7 +45,21 @@ ir_maharashtran = {
     culture_groups = { ir_aryan_g }
 }
 
+ir_rathikan = {
+    language = sanskrit_language
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { persianate_gfx indian_gfx }
+    culture_groups = { ir_aryan_g }
+}
+
 ir_gandhari = {
+    language = sanskrit_language
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { persianate_gfx indian_gfx }
+    culture_groups = { ir_aryan_g }
+}
+
+ir_sivi = {
     language = sanskrit_language
     color = hsv { 0.05 1.00 0.90 }
     tags = { persianate_gfx indian_gfx }
@@ -45,8 +73,43 @@ ir_shauraseni = {
     culture_groups = { ir_aryan_g }
 }
 
+ir_kosala = {
+    language = sanskrit_language
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { persianate_gfx indian_gfx }
+    culture_groups = { ir_aryan_g }
+}
+
+ir_kuru = {
+    language = sanskrit_language
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { persianate_gfx indian_gfx }
+    culture_groups = { ir_aryan_g }
+}
+
 ir_avanti = {
     language = bihari_language
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { persianate_gfx indian_gfx }
+    culture_groups = { ir_aryan_g }
+}
+
+ir_matsya = {
+    language = sanskrit_language
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { persianate_gfx indian_gfx }
+    culture_groups = { ir_aryan_g }
+}
+
+ir_cedi = {
+    language = sanskrit_language
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { persianate_gfx indian_gfx }
+    culture_groups = { ir_aryan_g }
+}
+
+ir_dhivehi = {
+    language = sanskrit_language
     color = hsv { 0.05 1.00 0.90 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_aryan_g }
@@ -60,6 +123,20 @@ ir_sindhi = {
 }
 
 ir_dardic = {
+    language = sanskrit_language
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { persianate_gfx indian_gfx }
+    culture_groups = { ir_aryan_g }
+}
+
+ir_purus = {
+    language = sanskrit_language
+    color = hsv { 0.05 1.00 0.90 }
+    tags = { persianate_gfx indian_gfx }
+    culture_groups = { ir_aryan_g }
+}
+
+ir_mitanni = {
     language = sanskrit_language
     color = hsv { 0.05 1.00 0.90 }
     tags = { persianate_gfx indian_gfx }

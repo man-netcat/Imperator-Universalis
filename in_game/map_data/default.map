@@ -30,6 +30,11 @@ sea_zones = {
     gulf_of_kutch
     gulf_of_minnagara
     hellespontus
+    indian_ocean_0
+    indian_ocean_1
+    indian_ocean_2
+    indian_ocean_3
+    indian_ocean_4
     lacus_flevo
     mare_aegaeum_0
     mare_aegaeum_1
@@ -160,7 +165,14 @@ sea_zones = {
     mare_erythraeum_136
     mare_erythraeum_137
     mare_erythraeum_138
+    mare_erythraeum_139
     mare_erythraeum_14
+    mare_erythraeum_140
+    mare_erythraeum_141
+    mare_erythraeum_142
+    mare_erythraeum_143
+    mare_erythraeum_144
+    mare_erythraeum_145
     mare_erythraeum_15
     mare_erythraeum_16
     mare_erythraeum_17
@@ -498,6 +510,8 @@ sea_zones = {
     mare_verginium_7
     mare_verginium_8
     mare_verginium_9
+    oceanus_0
+    oceanus_1
     oceanus_atlanticus_0
     oceanus_atlanticus_1
     oceanus_atlanticus_10
@@ -566,6 +580,8 @@ sea_zones = {
     oceanus_atlanticus_68
     oceanus_atlanticus_69
     oceanus_atlanticus_7
+    oceanus_atlanticus_70
+    oceanus_atlanticus_71
     oceanus_atlanticus_8
     oceanus_atlanticus_9
     oceanus_sarmaticus_0
@@ -656,6 +672,20 @@ sea_zones = {
     propontis
     prov2607_0
     prov2607_1
+    prov5854_0
+    prov5854_1
+    prov5854_10
+    prov5854_11
+    prov5854_12
+    prov5854_13
+    prov5854_2
+    prov5854_3
+    prov5854_4
+    prov5854_5
+    prov5854_6
+    prov5854_7
+    prov5854_8
+    prov5854_9
     prov652_0
     prov652_1
     prov653_0
@@ -784,19 +814,17 @@ sea_zones = {
     syrtis_maior_4
     syrtis_minor
     unnamed_5020
+    unnamed_7557
+    unnamed_7563
+    unnamed_7564
+    unnamed_7565
+    unnamed_7566
     unnamed_7847
     unnamed_7848
     unnamed_7849
     unnamed_7850
     unnamed_7851
     unnamed_7852
-    unnamed_7853
-    unnamed_7854
-    unnamed_7855
-    unnamed_7856
-    unnamed_7857
-    unnamed_7858
-    unnamed_7859
     unnamed_7860
 }
 
@@ -806,31 +834,48 @@ impassable_mountains = {
     abnoba_mons
     aetna_volcano
     agraeia
+    allaqi_desert
     alpes_carnicae
     alpes_cottiae
     alpes_graiae
     alpes_iuliae
     alpes_lepontinae
-    alpes_maritimae
+    alpes_maritimae_0
+    alpes_maritimae_1
     alpes_noricae
     alpes_rhaeticae
     antilibanus_mons
+    arabia_deserta_ulterior
     arabia_felix
+    arabian_desert
     arachnaion_mons
     aragats_volcano
+    aral
     ararat_volcano
     argaeus_mons_volcano
     argaios_mons_volcano
+    aromata_desert
     arunachal
     arverni_highland
     aspromons
     atlas
+    atlas_mountains
     ausara_volcano
     bactrian_highland
     baglana
     bamni_volcano
     bargylus_mons
+    berberia_desert
     bohaemeian_forest
+    brebana
+    burma_mountains_0
+    burma_mountains_1
+    burma_mountains_2
+    burma_mountains_3
+    burma_mountains_4
+    burma_mountains_5
+    burma_mountains_6
+    burma_mountains_7
     cadusian_highland
     caledonian_highland
     carmanian_highland
@@ -845,33 +890,78 @@ impassable_mountains = {
     dalmatia
     dalmatian_mountains
     dandakaranya
+    desert_0
+    desert_1
+    desert_10
+    desert_11
+    desert_12
+    desert_13
+    desert_14
+    desert_15
+    desert_16
+    desert_17
+    desert_18
+    desert_19
+    desert_2
+    desert_20
+    desert_21
+    desert_22
+    desert_23
+    desert_3
+    desert_4
+    desert_5
+    desert_6
+    desert_7
+    desert_8
+    desert_9
     desert_of_aswan
     desert_of_kharga
     desert_of_klysma
     desert_of_luxor
     desert_of_philoteris
     dirphys_mons
+    eastern_black_mountains
     eastern_gaetulia
     eastern_ghats
-    eastern_musalamia
-    farfara
+    ethiopian_mountain
+    ethiopian_mountains
+    farafra_0
     ferghanan_mountains
     fors
+    garamantic_desert
     gedrosia
+    geraneia_ore
     germanic_upland
     gondwana
     hadramut_desert
+    hejaz
     hermon_mons
+    high_atlas
     himalayan_highland
     histria_mons
+    iberia_impassable_0
+    iberia_impassable_1
     iberia_mons_volcano
     ida_mons
     idaion_mons
+    inner_mauritania
+    jungle
     kadmons_mons
     kalingana
     karakoram
     karmanian_mountains
     kelishin
+    kerman_desert
+    koha
+    kordofan_desert_0
+    kordofan_desert_1
+    kordofan_desert_2
+    kordofan_desert_3
+    kordofan_desert_4
+    kordofan_desert_5
+    kordofan_desert_6
+    kordofan_desert_7
+    kordofan_desert_8
     kossioia
     leuka_mons
     libanus_mons
@@ -879,30 +969,46 @@ impassable_mountains = {
     mahria
     markaion_mons
     marudesa
+    masht
+    maurian_plateau
     meghalaya
+    meroe_desert
     mesogis_mons
     mesopotamian_desert
     methana_volcano
+    middle_atlas
     mons_orospeda
     mons_pullinus
+    mosylon_mountains
+    mount_popa
     multen
     nabatean_desert
     north_caledonian_mountains
     north_nilgiri
+    northern_bayuda_desert
     oasis_parva
     olympus_mons
     omani_desert
+    ona_mountains
     pactyan_desert
-    palaiogonoi
     parecania
     parecaniana
     parnassus_mons
     parnes_mons
     pendactylos_mons
+    psyllic_desert
     puntic_highlands
     qaleh
     qarqar_volcano
     qumis_highland
+    sahara
+    sahara_desert_0
+    sahara_desert_1
+    sahara_desert_2
+    sahara_desert_3
+    saharan_atlas
+    saharan_mountains
+    sand_sea
     serrae
     sharhistan_desert
     sila
@@ -912,18 +1018,29 @@ impassable_mountains = {
     siwi
     sogdian_mountains
     sogdian_steppe
+    somali_desert_0
+    somali_desert_1
+    somali_desert_2
+    somali_desert_3
+    somali_desert_4
     sophon_mons
     south_nilgiri
+    southern_bayuda_desert
     strongyle_volcano
-    sundarbans_0
-    sundarbans_1
+    sudan_impassable_0
+    sudan_impassable_1
     syrian_desert_0
     syrian_desert_1
+    syrian_desert_2
+    syrian_desert_3
+    syrian_desert_4
     talas_highland
+    talgar
     tarim
     tempsis_mons
     thule
     tmolus_mons
+    troglodytic_desert
     troglodytica
     trogodos_mons
     troikon_oros
@@ -944,7 +1061,6 @@ impassable_mountains = {
     unnamed_5018
     unnamed_5019
     unnamed_5021
-    unnamed_5022
     unnamed_5024
     unnamed_5025
     unnamed_5027
@@ -1117,9 +1233,6 @@ impassable_mountains = {
     unnamed_5222
     unnamed_5223
     unnamed_5225
-    unnamed_5227
-    unnamed_5228
-    unnamed_5229
     unnamed_5230
     unnamed_5231
     unnamed_5234
@@ -1233,6 +1346,16 @@ impassable_mountains = {
     unnamed_5447
     unnamed_5448
     unnamed_5935
+    unnamed_5936
+    unnamed_5937
+    unnamed_5938
+    unnamed_5939
+    unnamed_5940
+    unnamed_5941
+    unnamed_5945
+    unnamed_5947
+    unnamed_5949
+    unnamed_5950
     unnamed_5954
     unnamed_5955
     unnamed_5956
@@ -1241,6 +1364,7 @@ impassable_mountains = {
     unnamed_5960
     unnamed_5963
     unnamed_5968
+    unnamed_5971
     unnamed_5977
     unnamed_5978
     unnamed_5979
@@ -1248,6 +1372,9 @@ impassable_mountains = {
     unnamed_5996
     unnamed_5998
     unnamed_5999
+    unnamed_6044
+    unnamed_6300
+    unnamed_6482
     unnamed_6483
     unnamed_6488
     unnamed_6493
@@ -1274,6 +1401,7 @@ impassable_mountains = {
     unnamed_7295
     unnamed_7296
     unnamed_7297
+    unnamed_7554
     unnamed_7646
     unnamed_7647
     unnamed_7648
@@ -1283,8 +1411,13 @@ impassable_mountains = {
     unnamed_7759
     unnamed_7762
     unnamed_7764
-    unnamed_7800
-    unnamed_7801
+    unnamed_7853
+    unnamed_7854
+    unnamed_7855
+    unnamed_7856
+    unnamed_7857
+    unnamed_7858
+    unnamed_7859
     unnamed_7911
     unnamed_7912
     unnamed_7913
@@ -1358,8 +1491,51 @@ impassable_mountains = {
     unnamed_8060
     unnamed_8061
     unnamed_8062
-    upper_blue_nile
+    unnamed_8882
+    unnamed_8883
+    unnamed_8884
+    unnamed_8885
+    unnamed_8886
+    unnamed_8887
+    unnamed_8888
+    unnamed_8889
+    unnamed_8893
+    unnamed_8894
+    unnamed_9117
+    unnamed_9118
+    unnamed_9119
+    unnamed_9120
+    unnamed_9133
+    unnamed_9134
+    unnamed_9135
+    unnamed_9136
+    unnamed_9137
+    unnamed_9138
+    unnamed_9139
+    unnamed_9140
+    unnamed_9141
+    unnamed_9142
+    unnamed_9143
+    unnamed_9144
+    unnamed_9145
+    unnamed_9244
+    unnamed_9246
+    unnamed_9250
+    unnamed_9283
+    unnamed_9284
+    unnamed_9285
+    unnamed_9286
+    unnamed_9287
+    unnamed_9288
+    unnamed_9289
+    unnamed_9290
+    unnamed_9291
+    unnamed_9292
+    unnamed_9293
+    unnamed_9294
+    unnamed_9295
     upper_dardania
+    upper_egyptian_desert
     upper_epirus
     upper_macedonia
     upper_terrai
@@ -1367,140 +1543,104 @@ impassable_mountains = {
     utian_plain
     vesuvius_volcano
     vindhya
+    western_black_mountains
     western_gaetulia
     western_musalamia
+    western_psyllic_desert
     zagros
+    zamzam_desert
 }
 
 non_ownable = {
-    aguila
-    akkum
     alania
-    altinasar
     amanian_gates
+    anebdour
     arabia_deserta_0
     arabia_deserta_1
-    arabia_deserta_10
-    arabia_deserta_11
-    arabia_deserta_12
-    arabia_deserta_13
-    arabia_deserta_14
-    arabia_deserta_15
-    arabia_deserta_16
-    arabia_deserta_17
-    arabia_deserta_18
-    arabia_deserta_19
     arabia_deserta_2
-    arabia_deserta_20
-    arabia_deserta_21
-    arabia_deserta_22
-    arabia_deserta_23
-    arabia_deserta_24
     arabia_deserta_3
-    arabia_deserta_4
-    arabia_deserta_5
-    arabia_deserta_6
-    arabia_deserta_7
-    arabia_deserta_8
-    arabia_deserta_9
-    arabia_deserta_ulterior
-    arabia_relicta_0
-    arabia_relicta_1
-    arabia_relicta_2
-    arabia_relicta_3
-    arabia_relicta_4
-    arabian_desert
-    aral
-    baraq
-    besta
-    birim
+    atlas_pass_0
+    atlas_pass_1
+    atlas_pass_2
+    azaria
+    bililicweyn
     boloustana_pass
-    boot
     brili
     caspica
     chattisgarh_jungle
-    cidamus
-    cilician_gates
+    cilician_gates_1
     commagenian_gates
+    daydaban
+    dekrlet
+    djerad
     fennia
-    garama
-    gholaia
+    gafal
+    garowe
     gondogoro_pass_0
     gondogoro_pass_1
     gondogoro_pass_2
     great_kavir_0
     great_kavir_1
-    hejaz
-    high_atlas
+    hait
+    hannacha
+    harakat
+    harawa
     himalayan_highland
     iberian_gates
-    inner_mauritania
-    janaqala
-    jaxartia
-    jiddat_al_harasis
+    jalajil
+    jebil
     karakoram
     kavir_desert_0
     kavir_desert_1
-    khanus
+    keri_kera
     klukhor_pass
-    koga
     kongyul
     koryi
-    kupir
-    lek
+    laadham
+    laanle
+    labkhah
     lut_desert_0
     lut_desert_1
-    maidankoga
-    maidankuyryk
+    magoura
+    makhoukhia
     mangyul_takmo_dzong
     maru_desert_0
     maru_desert_1
-    masht
-    maurian_plateau
-    middle_atlas
     modra_pass
     mon_shampo
+    mountain_pass
+    nili
+    ninah
     pakpa
-    palisha
     petra_pass
-    pontic_steppe
     portae
-    punt_desert_0
-    punt_desert_1
-    punt_desert_2
-    punt_desert_3
-    punt_desert_4
-    punt_desert_5
-    punt_desert_6
-    punt_desert_7
-    qala
-    sarmatia
+    prov5854_6
+    prov5854_7
+    prov5854_8
+    prov5854_9
+    qabr
+    quraynat
+    sayyal
+    shaqiq
+    sool
     sophon_pass
-    sylvana
-    syria_deserta
+    syria_desert
     syrian_gates_1
+    tabari
     taklamakan_0
     taklamakan_1
-    taklamakan_2
-    taklamakan_3
-    taklamakan_4
+    tarfawi
     tempe_pass
-    thenteos
+    teniet
+    tibetan_pass
+    tibrak
+    trekfine
     unnamed_3222
     unnamed_5020
-    unnamed_5936
-    unnamed_5937
-    unnamed_5938
-    unnamed_5939
-    unnamed_5940
-    unnamed_5941
     unnamed_5942
     unnamed_5943
     unnamed_5944
-    unnamed_5945
     unnamed_5946
-    unnamed_5949
-    unnamed_5950
     unnamed_5951
     unnamed_5952
     unnamed_5953
@@ -1517,44 +1657,32 @@ non_ownable = {
     unnamed_5966
     unnamed_5967
     unnamed_5969
-    unnamed_5970
-    unnamed_5971
-    unnamed_5972
     unnamed_5973
-    unnamed_5974
-    unnamed_5975
     unnamed_5976
     unnamed_5981
-    unnamed_5988
     unnamed_5990
-    unnamed_6044
-    unnamed_6300
-    unnamed_6482
+    unnamed_7565
     unnamed_7847
     unnamed_7848
     unnamed_7849
     unnamed_7850
     unnamed_7851
     unnamed_7852
-    unnamed_7853
-    unnamed_7854
-    unnamed_7855
-    unnamed_7856
-    unnamed_7857
-    unnamed_7858
-    unnamed_7859
     unnamed_7860
     upper_terai
-    yangikent
-    zantak
-    ziram
+    wadi_ido
+    zulfi
 }
 
 lakes = {
+    abbe
+    akrotiri
     apolloniatis
-    arsissa
+    arsissa_1
+    asal
     ascania
     asphaltites
+    bazensis
     benacus
     bolbe
     brigantinus
@@ -1565,11 +1693,15 @@ lakes = {
     everdunensis
     fucinus
     gennesar_1
+    iriki
+    issyk_kul
+    khbid
     kopais
     koroneia
     labeatis
     lemannus
     lychnitis
+    mare_aralense
     mare_hyrcanum_0
     mare_hyrcanum_1
     mare_hyrcanum_10
@@ -1602,14 +1734,26 @@ lakes = {
     mare_hyrcanum_7
     mare_hyrcanum_8
     mare_hyrcanum_9
+    marib_reservoir
     matianus
     moeris
+    north_ptolemy
     pambotis
-    pelsodis
+    pelsodis_1
+    podouke
     sabatinus
+    salinae_tubunenses
+    sanaos_1
+    sarygamysh
+    sebkha_melah
+    south_ptolemy
+    tana
     tatta
     trasumennus
     trichonis
+    tritonis
+    trogitis
+    tsovk
     unnamed_6299
     unnamed_6303
     unnamed_6304
@@ -1639,7 +1783,6 @@ lakes = {
     unnamed_6330
     unnamed_6331
     unnamed_6332
-    unnamed_6333
     unnamed_6334
     unnamed_6335
     unnamed_6336
@@ -1660,8 +1803,6 @@ lakes = {
     unnamed_6351
     unnamed_6352
     unnamed_6353
-    unnamed_6354
-    unnamed_6355
     unnamed_6357
     unnamed_6358
     unnamed_6359
@@ -1685,12 +1826,9 @@ lakes = {
     unnamed_6392
     unnamed_6396
     unnamed_6398
-    unnamed_6400
     unnamed_6401
     unnamed_6402
-    unnamed_6403
     unnamed_6404
-    unnamed_6405
     unnamed_6408
     unnamed_6409
     unnamed_6410
@@ -1699,7 +1837,6 @@ lakes = {
     unnamed_6415
     unnamed_6416
     unnamed_6417
-    unnamed_6419
     unnamed_6421
     unnamed_6422
     unnamed_6423
@@ -1715,19 +1852,15 @@ lakes = {
     unnamed_6440
     unnamed_6441
     unnamed_6442
-    unnamed_6443
-    unnamed_6444
     unnamed_6445
     unnamed_6446
     unnamed_6447
-    unnamed_6448
     unnamed_6449
     unnamed_6450
     unnamed_6451
     unnamed_6452
     unnamed_6453
     unnamed_6454
-    unnamed_6455
     unnamed_6456
     unnamed_6457
     unnamed_6458
@@ -1749,7 +1882,7 @@ lakes = {
     unnamed_8041
     unnamed_8052
     unnamed_8053
-    unnamed_8054
+    unnamed_8814
     volsinii
 }
 
@@ -1760,10 +1893,13 @@ river_provinces = {
     albis_2
     albis_3
     albis_4
+    ammodeis_ochthes
     baetis_0
     baetis_1
     borysthenes_0
     borysthenes_1
+    borysthenes_10
+    borysthenes_11
     borysthenes_2
     borysthenes_3
     borysthenes_4
@@ -1778,7 +1914,14 @@ river_provinces = {
     canal_of_the_pharaohs_3
     canal_of_the_pharaohs_4
     canal_of_the_pharaohs_5
+    cauvery_0
+    cauvery_1
+    cauvery_2
+    cauvery_3
+    cauvery_4
+    chenab
     cydnus
+    dexi_cheri
     dyardanes_0
     dyardanes_1
     dyardanes_2
@@ -1810,6 +1953,9 @@ river_provinces = {
     ganges_9
     garumna_0
     garumna_1
+    godavari_0
+    godavari_1
+    hypanis
     iberus_0
     iberus_1
     iberus_2
@@ -1832,11 +1978,19 @@ river_provinces = {
     ister_7
     ister_8
     ister_9
+    krishna_0
+    krishna_1
     lacus_ligustinus
     liger_0
     liger_1
     liger_2
     liger_3
+    lim
+    narmada_0
+    narmada_1
+    narmada_2
+    narmada_3
+    narmada_4
     nile
     nile_the_bolbitine_0
     nile_the_bolbitine_1
@@ -1853,12 +2007,100 @@ river_provinces = {
     nile_the_phatnitic_2
     nile_the_phatnitic_3
     nile_the_phatnitic_4
+    ouistoula_0
+    ouistoula_1
+    ouistoula_2
+    ouistoula_3
+    ouistoula_4
+    ouistoula_5
     padus_0
     padus_1
     padus_2
     padus_3
     padus_4
-    prov7741
+    penner_0
+    penner_1
+    prov7687_0
+    prov7687_1
+    prov7687_10
+    prov7687_11
+    prov7687_12
+    prov7687_2
+    prov7687_3
+    prov7687_4
+    prov7687_5
+    prov7687_6
+    prov7687_7
+    prov7687_8
+    prov7687_9
+    prov7692_0
+    prov7692_1
+    prov7692_2
+    prov7701_0
+    prov7701_1
+    prov7701_2
+    prov7701_3
+    prov7701_4
+    prov7701_5
+    prov7701_6
+    prov7701_7
+    prov7701_8
+    prov7724
+    prov7741_0
+    prov7741_1
+    prov7767_0
+    prov7767_1
+    prov7771
+    prov7773_0
+    prov7773_1
+    prov7773_2
+    prov7773_3
+    prov7773_4
+    prov7773_5
+    prov7773_6
+    prov7783_0
+    prov7783_1
+    prov7846_0
+    prov7846_1
+    prov7846_2
+    prov7862_0
+    prov7862_1
+    prov7864_0
+    prov7864_1
+    prov7868_0
+    prov7868_1
+    prov7871_0
+    prov7871_1
+    prov7871_2
+    prov8035
+    prov8037
+    prov8042_0
+    prov8042_1
+    prov8042_2
+    prov8042_3
+    prov8042_4
+    prov8042_5
+    prov8047_0
+    prov8047_1
+    prov8047_2
+    prov8047_3
+    prov8047_4
+    prov8574_0
+    prov8574_1
+    prov8575_0
+    prov8575_1
+    prov8578_0
+    prov8578_1
+    prov8578_2
+    prov8586_0
+    prov8586_1
+    prov8586_2
+    prov8589_0
+    prov8589_1
+    prov9198_0
+    prov9198_1
+    prov9198_2
+    prov9198_3
     pyramus_0
     pyramus_1
     rha_0
@@ -1873,9 +2115,15 @@ river_provinces = {
     rhenus_6
     rhenus_7
     rhodanus
+    satluj_0
+    satluj_1
+    satluj_2
     sequana_0
     sequana_1
     sequana_2
+    sionna_0
+    sionna_1
+    sububus
     tagus_0
     tagus_1
     tagus_2
@@ -1886,6 +2134,7 @@ river_provinces = {
     tanais_3
     tanais_4
     tanais_5
+    tapi
     tigris_0
     tigris_1
     tigris_2
@@ -1897,5 +2146,13 @@ river_provinces = {
     tyras_1
     tyras_2
     tyras_3
+    vain
+    velho_0
+    velho_1
+    velho_2
+    velho_3
+    velho_4
+    viadrus_1
+    yamuna
 }
 

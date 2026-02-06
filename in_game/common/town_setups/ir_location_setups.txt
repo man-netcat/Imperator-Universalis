@@ -9,6 +9,12 @@ ir_loc_abach = {
 ir_loc_abad_sauvira = {
 }
 
+ir_loc_abadla = {
+}
+
+ir_loc_abal = {
+}
+
 ir_loc_abale = {
 }
 
@@ -26,6 +32,9 @@ ir_loc_abasenia = {
 }
 
 ir_loc_abasgria = {
+}
+
+ir_loc_abay = {
 }
 
 ir_loc_abbasion = {
@@ -52,6 +61,9 @@ ir_loc_abhiria = {
 }
 
 ir_loc_abhiria_secunda = {
+}
+
+ir_loc_abhras = {
 }
 
 ir_loc_abid = {
@@ -98,6 +110,9 @@ ir_loc_abonouteichos = {
     dock = 1
 }
 
+ir_loc_aborepi = {
+}
+
 ir_loc_aborisia = {
 }
 
@@ -108,6 +123,9 @@ ir_loc_aboula = {
 }
 
 ir_loc_abour = {
+}
+
+ir_loc_abraq = {
 }
 
 ir_loc_abricates = {
@@ -130,6 +148,7 @@ ir_loc_abuyya = {
 
 ir_loc_abydos = {
     castle = 1
+    dock = 1
 }
 
 ir_loc_acachia = {
@@ -360,7 +379,20 @@ ir_loc_ad_vicessimum = {
 ir_loc_adab = {
 }
 
+ir_loc_adabda = {
+}
+
 ir_loc_adada = {
+}
+
+ir_loc_adage = {
+}
+
+ir_loc_adam = {
+}
+
+ir_loc_adan = {
+    dock = 1
 }
 
 ir_loc_adana = {
@@ -374,10 +406,10 @@ ir_loc_adedou_kome = {
     dock = 1
 }
 
-ir_loc_adefa = {
+ir_loc_adi_gelamo = {
 }
 
-ir_loc_adigrat = {
+ir_loc_adi_ugri = {
 }
 
 ir_loc_adjalu = {
@@ -401,9 +433,7 @@ ir_loc_adraha = {
 }
 
 ir_loc_adramyttion = {
-}
-
-ir_loc_adranon = {
+    dock = 1
 }
 
 ir_loc_adrasos = {
@@ -412,10 +442,19 @@ ir_loc_adrasos = {
 ir_loc_adrestai = {
 }
 
+ir_loc_adri = {
+}
+
 ir_loc_adros = {
 }
 
 ir_loc_adrou = {
+}
+
+ir_loc_adrug = {
+}
+
+ir_loc_adwesa = {
 }
 
 ir_loc_aeclanum = {
@@ -426,6 +465,9 @@ ir_loc_aegha = {
 }
 
 ir_loc_aegidi = {
+}
+
+ir_loc_aelal = {
 }
 
 ir_loc_aelana = {
@@ -445,25 +487,52 @@ ir_loc_aeminium = {
     dock = 1
 }
 
+ir_loc_aerac = {
+}
+
+ir_loc_aerdyn = {
+}
+
 ir_loc_aeso = {
 }
 
 ir_loc_aetelrugia = {
 }
 
+ir_loc_afabet = {
+}
+
 ir_loc_afarun = {
+}
+
+ir_loc_afdugweyne = {
 }
 
 ir_loc_affa = {
 }
 
+ir_loc_aflaj = {
+}
+
+ir_loc_aflou = {
+}
+
+ir_loc_afweyn = {
+}
+
 ir_loc_agabis = {
+}
+
+ir_loc_agaie = {
 }
 
 ir_loc_aganagara = {
 }
 
 ir_loc_aganzana = {
+}
+
+ir_loc_agarum = {
 }
 
 ir_loc_agarusia = {
@@ -480,6 +549,9 @@ ir_loc_agathom = {
 }
 
 ir_loc_agawe = {
+}
+
+ir_loc_agdz = {
 }
 
 ir_loc_agedincum_0 = {
@@ -509,7 +581,16 @@ ir_loc_aghaiani = {
 ir_loc_agharite = {
 }
 
+ir_loc_aghbala = {
+}
+
+ir_loc_aghmat = {
+}
+
 ir_loc_aghonor = {
+}
+
+ir_loc_aghram_nadariff = {
 }
 
 ir_loc_agines = {
@@ -520,6 +601,15 @@ ir_loc_aginnum = {
 }
 
 ir_loc_agiria = {
+}
+
+ir_loc_aglou = {
+}
+
+ir_loc_agoult = {
+}
+
+ir_loc_agourai = {
 }
 
 ir_loc_agraeia = {
@@ -543,10 +633,10 @@ ir_loc_agrodakha = {
 ir_loc_agrum = {
 }
 
-ir_loc_aguila = {
+ir_loc_aguntum = {
 }
 
-ir_loc_aguntum = {
+ir_loc_aguz = {
 }
 
 ir_loc_aharawan = {
@@ -598,10 +688,25 @@ ir_loc_airakina = {
     construction_center = 2
 }
 
+ir_loc_airma = {
+}
+
 ir_loc_aizanoi = {
 }
 
+ir_loc_ajam = {
+}
+
 ir_loc_ajanta = {
+}
+
+ir_loc_ajdab = {
+}
+
+ir_loc_ajdir = {
+}
+
+ir_loc_ajodhya = {
 }
 
 ir_loc_ajri = {
@@ -623,10 +728,16 @@ ir_loc_akhnur = {
 ir_loc_akhsiket = {
 }
 
+ir_loc_akhtuba = {
+}
+
 ir_loc_akhur = {
 }
 
 ir_loc_akhynt = {
+}
+
+ir_loc_akirek = {
 }
 
 ir_loc_akkaz = {
@@ -638,11 +749,17 @@ ir_loc_akkei = {
 ir_loc_akkilur = {
 }
 
+ir_loc_akkum = {
+}
+
 ir_loc_akme = {
     dock = 1
 }
 
 ir_loc_akmoneia = {
+}
+
+ir_loc_akordat = {
 }
 
 ir_loc_akota = {
@@ -661,7 +778,13 @@ ir_loc_akra_rudh = {
 ir_loc_akraba = {
 }
 
+ir_loc_akrarei = {
+}
+
 ir_loc_akroterion = {
+}
+
+ir_loc_aksha = {
 }
 
 ir_loc_aksum = {
@@ -672,6 +795,9 @@ ir_loc_aksumia = {
 }
 
 ir_loc_aktene = {
+}
+
+ir_loc_aktogay = {
 }
 
 ir_loc_akunk = {
@@ -723,9 +849,6 @@ ir_loc_alauna = {
 }
 
 ir_loc_alaura = {
-}
-
-ir_loc_alavi = {
 }
 
 ir_loc_alavi_pancala = {
@@ -782,10 +905,6 @@ ir_loc_alexandreia_bactriane = {
     construction_center = 2
 }
 
-ir_loc_alexandreia_en_indos = {
-    dock = 1
-}
-
 ir_loc_alexandreia_eschate = {
     construction_center = 1
     library = 2
@@ -839,6 +958,12 @@ ir_loc_alexandrou_parembole = {
 ir_loc_algeti = {
 }
 
+ir_loc_ali = {
+}
+
+ir_loc_alia = {
+}
+
 ir_loc_aliareia = {
 }
 
@@ -867,6 +992,12 @@ ir_loc_alkon = {
 }
 
 ir_loc_alkonet = {
+}
+
+ir_loc_allaqi = {
+}
+
+ir_loc_allaqi_desert = {
 }
 
 ir_loc_allobrogia = {
@@ -920,6 +1051,9 @@ ir_loc_alpis_superior = {
 ir_loc_alsita = {
 }
 
+ir_loc_alsowm = {
+}
+
 ir_loc_alta_ripa = {
 }
 
@@ -935,10 +1069,19 @@ ir_loc_althiburos = {
 ir_loc_altina = {
 }
 
+ir_loc_altinasar = {
+}
+
+ir_loc_altintepe = {
+}
+
 ir_loc_altinum = {
 }
 
 ir_loc_altitona = {
+}
+
+ir_loc_alu = {
 }
 
 ir_loc_aluna = {
@@ -962,10 +1105,16 @@ ir_loc_amanium = {
 ir_loc_amar = {
 }
 
+ir_loc_amara = {
+}
+
 ir_loc_amaras = {
 }
 
 ir_loc_amaravati = {
+}
+
+ir_loc_amarda = {
 }
 
 ir_loc_amarea = {
@@ -989,6 +1138,9 @@ ir_loc_amathous = {
 }
 
 ir_loc_amatria = {
+}
+
+ir_loc_amazo = {
 }
 
 ir_loc_ambaloda = {
@@ -1029,6 +1181,10 @@ ir_loc_amer = {
 ir_loc_ameta = {
 }
 
+ir_loc_amindivi = {
+    dock = 1
+}
+
 ir_loc_amisia = {
 }
 
@@ -1052,9 +1208,7 @@ ir_loc_ammodios = {
 }
 
 ir_loc_ammon = {
-}
-
-ir_loc_amol = {
+    temple = 1
 }
 
 ir_loc_amorgos = {
@@ -1106,12 +1260,16 @@ ir_loc_amutria = {
 }
 
 ir_loc_anaboura = {
+    temple = 1
 }
 
 ir_loc_anacureta = {
 }
 
 ir_loc_anagrana = {
+}
+
+ir_loc_anaia = {
 }
 
 ir_loc_anak = {
@@ -1145,6 +1303,9 @@ ir_loc_anarus = {
 }
 
 ir_loc_anasartha = {
+}
+
+ir_loc_anatachara = {
 }
 
 ir_loc_anatho = {
@@ -1217,6 +1378,9 @@ ir_loc_andhapura = {
 ir_loc_andhau = {
 }
 
+ir_loc_andhur = {
+}
+
 ir_loc_andijan = {
     construction_center = 2
 }
@@ -1252,6 +1416,9 @@ ir_loc_anfa = {
 }
 
 ir_loc_ange = {
+}
+
+ir_loc_angeliai = {
 }
 
 ir_loc_angia = {
@@ -1315,6 +1482,9 @@ ir_loc_annike = {
 ir_loc_ano_kotradis = {
 }
 
+ir_loc_anoppi = {
+}
+
 ir_loc_ansibaria = {
 }
 
@@ -1350,12 +1520,6 @@ ir_loc_antigoneia_kyzikene = {
 ir_loc_antinum = {
 }
 
-ir_loc_antiocheia_tarmita = {
-}
-
-ir_loc_antiochia_arabis = {
-}
-
 ir_loc_antipatris = {
 }
 
@@ -1375,6 +1539,9 @@ ir_loc_antro = {
 ir_loc_anumapala = {
 }
 
+ir_loc_anupgarh = {
+}
+
 ir_loc_anupshahr = {
 }
 
@@ -1388,6 +1555,9 @@ ir_loc_anzitene = {
 }
 
 ir_loc_aornos = {
+}
+
+ir_loc_aoulouze = {
 }
 
 ir_loc_apakara = {
@@ -1424,7 +1594,14 @@ ir_loc_aphrodisias = {
 ir_loc_aphroditopolis = {
 }
 
+ir_loc_api = {
+}
+
 ir_loc_apis = {
+}
+
+ir_loc_apocopa = {
+    dock = 1
 }
 
 ir_loc_apollinopolis_megale = {
@@ -1485,6 +1662,7 @@ ir_loc_apritas = {
 }
 
 ir_loc_apsaros_0 = {
+    dock = 1
 }
 
 ir_loc_apsaros_1 = {
@@ -1500,6 +1678,9 @@ ir_loc_apulum = {
 }
 
 ir_loc_aqcha = {
+}
+
+ir_loc_aqiq = {
 }
 
 ir_loc_aqola = {
@@ -1574,6 +1755,9 @@ ir_loc_aquae_sulis = {
 ir_loc_aquae_sulphurae = {
 }
 
+ir_loc_aquae_tacapitanae = {
+}
+
 ir_loc_aquae_tarbellicae = {
 }
 
@@ -1593,7 +1777,16 @@ ir_loc_aquis_querquennis = {
 ir_loc_araba = {
 }
 
-ir_loc_arabia_deserta_17 = {
+ir_loc_arabia_deserta_0 = {
+}
+
+ir_loc_arabia_deserta_1 = {
+}
+
+ir_loc_arabia_deserta_2 = {
+}
+
+ir_loc_arabia_deserta_3 = {
 }
 
 ir_loc_arabia_deserta_ulterior = {
@@ -1644,10 +1837,20 @@ ir_loc_aragats_volcano = {
 ir_loc_aragvispiri = {
 }
 
+ir_loc_arak = {
+}
+
+ir_loc_arakan = {
+}
+
 ir_loc_aral = {
 }
 
 ir_loc_aramaua = {
+}
+
+ir_loc_arambys = {
+    dock = 1
 }
 
 ir_loc_aramum = {
@@ -1656,13 +1859,13 @@ ir_loc_aramum = {
 ir_loc_arandis = {
 }
 
-ir_loc_arane = {
-}
-
 ir_loc_arank = {
 }
 
 ir_loc_araq = {
+}
+
+ir_loc_arar = {
 }
 
 ir_loc_aras = {
@@ -1672,6 +1875,9 @@ ir_loc_arasaxa = {
 }
 
 ir_loc_arash = {
+}
+
+ir_loc_araskh = {
 }
 
 ir_loc_aratha = {
@@ -1687,6 +1893,9 @@ ir_loc_aravorum = {
 }
 
 ir_loc_arbalo = {
+}
+
+ir_loc_arbaouats = {
 }
 
 ir_loc_arbela = {
@@ -1754,16 +1963,25 @@ ir_loc_ardashir = {
 ir_loc_ardea = {
 }
 
+ir_loc_ardeank = {
+}
+
 ir_loc_ardeiscus = {
 }
 
 ir_loc_ardellum = {
 }
 
+ir_loc_ardembey = {
+}
+
 ir_loc_ardesh = {
 }
 
 ir_loc_ardistama = {
+}
+
+ir_loc_ardjoun = {
 }
 
 ir_loc_areg = {
@@ -1780,6 +1998,9 @@ ir_loc_aregenua = {
 
 ir_loc_arelatis = {
     dock = 1
+}
+
+ir_loc_arelliorum = {
 }
 
 ir_loc_areocelum = {
@@ -1825,6 +2046,9 @@ ir_loc_argentorate = {
 ir_loc_argentovaria = {
 }
 
+ir_loc_argi = {
+}
+
 ir_loc_argiyan = {
 }
 
@@ -1860,7 +2084,7 @@ ir_loc_ariassos = {
 ir_loc_arieldela = {
 }
 
-ir_loc_arigaion = {
+ir_loc_arim = {
 }
 
 ir_loc_ariminum = {
@@ -1872,7 +2096,16 @@ ir_loc_arinna = {
 ir_loc_ariolica = {
 }
 
+ir_loc_ariqim = {
+}
+
 ir_loc_aris = {
+}
+
+ir_loc_arispara = {
+}
+
+ir_loc_aristava = {
 }
 
 ir_loc_ariste = {
@@ -1887,13 +2120,13 @@ ir_loc_aritium = {
 ir_loc_aritium_praetorium = {
 }
 
+ir_loc_arjunava = {
+}
+
 ir_loc_arkades = {
 }
 
 ir_loc_arkatapura = {
-}
-
-ir_loc_arkathiokerta = {
 }
 
 ir_loc_arkhonnt = {
@@ -1921,12 +2154,20 @@ ir_loc_aroes = {
 }
 
 ir_loc_aromata = {
+    dock = 1
 }
 
 ir_loc_arosia = {
 }
 
 ir_loc_arothia = {
+}
+
+ir_loc_aroui = {
+}
+
+ir_loc_arpi = {
+    dock = 1
 }
 
 ir_loc_arraboa = {
@@ -1945,12 +2186,11 @@ ir_loc_arrapha = {
 }
 
 ir_loc_arretium = {
+    granary = 1
+    marketplace = 1
 }
 
 ir_loc_arronia = {
-}
-
-ir_loc_arsacia = {
 }
 
 ir_loc_arsameia = {
@@ -1966,6 +2206,9 @@ ir_loc_arsinia = {
 }
 
 ir_loc_arsinoe = {
+}
+
+ir_loc_arsissa_0 = {
 }
 
 ir_loc_arsonis = {
@@ -2029,6 +2272,9 @@ ir_loc_artiaca = {
 ir_loc_artigi = {
 }
 
+ir_loc_artilne = {
+}
+
 ir_loc_artoarta = {
 }
 
@@ -2048,12 +2294,17 @@ ir_loc_arunachal = {
 }
 
 ir_loc_arunda = {
+    castle = 1
+    marketplace = 1
 }
 
 ir_loc_arupium = {
 }
 
 ir_loc_arutela = {
+}
+
+ir_loc_arv = {
 }
 
 ir_loc_arvandj = {
@@ -2066,7 +2317,13 @@ ir_loc_arxata = {
     barracks = 1
 }
 
+ir_loc_arya = {
+}
+
 ir_loc_arykanda = {
+}
+
+ir_loc_arzatam = {
 }
 
 ir_loc_arzeila = {
@@ -2078,13 +2335,7 @@ ir_loc_arzhahk = {
 ir_loc_arzhale = {
 }
 
-ir_loc_arziyayad_tepe = {
-}
-
 ir_loc_arzuhin = {
-}
-
-ir_loc_asaak = {
 }
 
 ir_loc_asamus = {
@@ -2122,7 +2373,13 @@ ir_loc_asciburgium = {
 ir_loc_asculum = {
 }
 
+ir_loc_asele = {
+}
+
 ir_loc_ashawm = {
+}
+
+ir_loc_ashchiy = {
 }
 
 ir_loc_ashdod = {
@@ -2152,6 +2409,7 @@ ir_loc_ashur = {
 }
 
 ir_loc_asido = {
+    castle = 1
 }
 
 ir_loc_aska = {
@@ -2163,10 +2421,13 @@ ir_loc_askapala = {
 ir_loc_asklepios = {
 }
 
-ir_loc_askribion = {
+ir_loc_askrebion = {
 }
 
 ir_loc_asmakhala = {
+}
+
+ir_loc_asnyd = {
 }
 
 ir_loc_asochis = {
@@ -2198,6 +2459,9 @@ ir_loc_aspona = {
 ir_loc_aspur = {
 }
 
+ir_loc_asras = {
+}
+
 ir_loc_asse = {
 }
 
@@ -2214,6 +2478,7 @@ ir_loc_asso = {
 }
 
 ir_loc_assos = {
+    dock = 1
 }
 
 ir_loc_assula = {
@@ -2235,7 +2500,15 @@ ir_loc_astakos = {
 ir_loc_astasana = {
 }
 
+ir_loc_asthagora = {
+}
+
+ir_loc_astibos = {
+}
+
 ir_loc_astigi = {
+    castle = 1
+    marketplace = 1
 }
 
 ir_loc_astraia = {
@@ -2260,7 +2533,16 @@ ir_loc_astypalaia = {
 ir_loc_asuccuris = {
 }
 
+ir_loc_asvejos = {
+}
+
 ir_loc_aswad = {
+}
+
+ir_loc_asxi = {
+}
+
+ir_loc_asyah = {
 }
 
 ir_loc_ataka = {
@@ -2273,6 +2555,9 @@ ir_loc_atarbechis_aphroditopolis = {
 }
 
 ir_loc_atarbegian = {
+}
+
+ir_loc_atari = {
 }
 
 ir_loc_atarna = {
@@ -2299,6 +2584,7 @@ ir_loc_athani = {
 }
 
 ir_loc_athenai_pontikai = {
+    dock = 1
 }
 
 ir_loc_athenaion = {
@@ -2322,6 +2608,15 @@ ir_loc_athymbra = {
 }
 
 ir_loc_atiliana = {
+}
+
+ir_loc_atlas_pass_0 = {
+}
+
+ir_loc_atlas_pass_1 = {
+}
+
+ir_loc_atlas_pass_2 = {
 }
 
 ir_loc_atta = {
@@ -2368,6 +2663,13 @@ ir_loc_aufidena = {
 ir_loc_augandzia = {
 }
 
+ir_loc_augemmi = {
+}
+
+ir_loc_augila = {
+    construction_center = 1
+}
+
 ir_loc_augusta_emerita = {
 }
 
@@ -2405,6 +2707,9 @@ ir_loc_aulazon = {
 }
 
 ir_loc_aulercorum = {
+}
+
+ir_loc_aung_myay = {
 }
 
 ir_loc_aunnedonacum = {
@@ -2483,6 +2788,9 @@ ir_loc_autraca = {
 ir_loc_autricum = {
 }
 
+ir_loc_auxiqua = {
+}
+
 ir_loc_auxiu = {
 }
 
@@ -2498,6 +2806,9 @@ ir_loc_avalocum = {
 ir_loc_avanta = {
 }
 
+ir_loc_avarayr = {
+}
+
 ir_loc_avaricum = {
     castle = 1
 }
@@ -2509,6 +2820,9 @@ ir_loc_avennio = {
 }
 
 ir_loc_aventicum = {
+}
+
+ir_loc_aves = {
 }
 
 ir_loc_avila = {
@@ -2533,6 +2847,9 @@ ir_loc_avitacum = {
 ir_loc_avrar = {
 }
 
+ir_loc_awadun = {
+}
+
 ir_loc_awana = {
 }
 
@@ -2543,6 +2860,9 @@ ir_loc_axiana = {
 }
 
 ir_loc_axiopolis = {
+}
+
+ir_loc_axsini = {
 }
 
 ir_loc_ayanakagraha = {
@@ -2559,6 +2879,9 @@ ir_loc_ayodhya = {
     library = 2
 }
 
+ir_loc_azaika = {
+}
+
 ir_loc_azama = {
 }
 
@@ -2571,19 +2894,25 @@ ir_loc_azargarta = {
 ir_loc_azgar = {
 }
 
+ir_loc_azgyl = {
+}
+
 ir_loc_aziris = {
 }
 
-ir_loc_aziris_aksum = {
+ir_loc_azkoi = {
 }
 
-ir_loc_azkoi = {
+ir_loc_azraq = {
 }
 
 ir_loc_baaka = {
 }
 
 ir_loc_baal_saphon = {
+}
+
+ir_loc_babatay = {
 }
 
 ir_loc_babylon_0 = {
@@ -2636,10 +2965,16 @@ ir_loc_badeo = {
 ir_loc_badghis = {
 }
 
+ir_loc_badhan = {
+}
+
 ir_loc_badias = {
 }
 
 ir_loc_badis = {
+}
+
+ir_loc_badopal = {
 }
 
 ir_loc_badroud = {
@@ -2670,6 +3005,12 @@ ir_loc_baesucci = {
 ir_loc_baeterrae = {
 }
 
+ir_loc_baetocaece = {
+}
+
+ir_loc_bafalil = {
+}
+
 ir_loc_bagacum = {
 }
 
@@ -2678,6 +3019,12 @@ ir_loc_bagada = {
 }
 
 ir_loc_bagai = {
+}
+
+ir_loc_bagan = {
+}
+
+ir_loc_bagarah = {
 }
 
 ir_loc_bagariza = {
@@ -2704,7 +3051,13 @@ ir_loc_bageis = {
 ir_loc_bagerhat = {
 }
 
+ir_loc_baggura = {
+}
+
 ir_loc_bagh_anupa = {
+}
+
+ir_loc_baghira = {
 }
 
 ir_loc_bagiennia = {
@@ -2719,13 +3072,34 @@ ir_loc_bagistana = {
 ir_loc_baglana = {
 }
 
+ir_loc_baha = {
+}
+
+ir_loc_bahla = {
+}
+
+ir_loc_bahmo = {
+}
+
+ir_loc_baikonur = {
+}
+
 ir_loc_baitus = {
+}
+
+ir_loc_baivar = {
+}
+
+ir_loc_bajatei = {
 }
 
 ir_loc_baka = {
 }
 
 ir_loc_bakk = {
+}
+
+ir_loc_bakurakerta = {
 }
 
 ir_loc_bakusaya = {
@@ -2740,10 +3114,10 @@ ir_loc_balad = {
 ir_loc_balagrae = {
 }
 
-ir_loc_balajuk_tepe = {
+ir_loc_balajuk = {
 }
 
-ir_loc_balales_pass = {
+ir_loc_balaleisa = {
 }
 
 ir_loc_balanrot = {
@@ -2779,6 +3153,9 @@ ir_loc_balneos = {
 ir_loc_baloia = {
 }
 
+ir_loc_balta = {
+}
+
 ir_loc_balurghat = {
 }
 
@@ -2791,10 +3168,22 @@ ir_loc_bambacia = {
 ir_loc_bambyce = {
 }
 
+ir_loc_bana = {
+}
+
 ir_loc_banagara = {
 }
 
 ir_loc_banasa = {
+}
+
+ir_loc_banat = {
+}
+
+ir_loc_bandarawela = {
+}
+
+ir_loc_bandarbeyla = {
 }
 
 ir_loc_bandavala = {
@@ -2809,22 +3198,19 @@ ir_loc_bandiyan = {
 ir_loc_bandritum = {
 }
 
-ir_loc_baniensium = {
+ir_loc_bangazy = {
 }
 
-ir_loc_banihal_pass = {
+ir_loc_baniensium = {
 }
 
 ir_loc_bannaventa = {
 }
 
-ir_loc_banneia = {
+ir_loc_bannea = {
 }
 
 ir_loc_bannovallum = {
-}
-
-ir_loc_bansko = {
 }
 
 ir_loc_banswara = {
@@ -2836,10 +3222,28 @@ ir_loc_bantia = {
 ir_loc_bao = {
 }
 
+ir_loc_baqaa = {
+}
+
+ir_loc_baqbaqah = {
+}
+
 ir_loc_baraca = {
 }
 
+ir_loc_baragaon = {
+}
+
+ir_loc_barakar = {
+}
+
+ir_loc_barakit = {
+}
+
 ir_loc_barantea = {
+}
+
+ir_loc_baraq = {
 }
 
 ir_loc_bararus = {
@@ -2873,7 +3277,7 @@ ir_loc_barduli = {
 ir_loc_barek = {
 }
 
-ir_loc_bargala = {
+ir_loc_bargarh = {
 }
 
 ir_loc_bargasa = {
@@ -2905,7 +3309,17 @@ ir_loc_barium = {
     castle = 1
 }
 
+ir_loc_barkat = {
+}
+
 ir_loc_barke = {
+    barracks = 1
+}
+
+ir_loc_barkhadle = {
+}
+
+ir_loc_barkol = {
 }
 
 ir_loc_barli = {
@@ -2930,6 +3344,12 @@ ir_loc_barsalium = {
 }
 
 ir_loc_barskhan = {
+}
+
+ir_loc_bartatu = {
+}
+
+ir_loc_bartei = {
 }
 
 ir_loc_baruka = {
@@ -2969,6 +3389,9 @@ ir_loc_basilippo = {
 ir_loc_basillia = {
 }
 
+ir_loc_basivka = {
+}
+
 ir_loc_baskata = {
 }
 
@@ -2981,9 +3404,6 @@ ir_loc_bassena = {
 ir_loc_bassiana = {
 }
 
-ir_loc_bastam = {
-}
-
 ir_loc_basti = {
 }
 
@@ -2994,6 +3414,9 @@ ir_loc_bata_pandiya = {
 }
 
 ir_loc_batavis = {
+}
+
+ir_loc_batesa = {
 }
 
 ir_loc_batesar = {
@@ -3021,7 +3444,19 @@ ir_loc_battak = {
 ir_loc_batthinia = {
 }
 
+ir_loc_batya = {
+}
+
+ir_loc_bauska = {
+}
+
 ir_loc_bavian = {
+}
+
+ir_loc_bayadh = {
+}
+
+ir_loc_baykadam = {
 }
 
 ir_loc_bazaria = {
@@ -3033,10 +3468,16 @@ ir_loc_baziria = {
 ir_loc_bazistris = {
 }
 
+ir_loc_bazki = {
+}
+
 ir_loc_bazyab = {
 }
 
 ir_loc_becciacum = {
+}
+
+ir_loc_bechar = {
 }
 
 ir_loc_bechchouphrein = {
@@ -3051,10 +3492,22 @@ ir_loc_bedriacum = {
 ir_loc_begastrum = {
 }
 
+ir_loc_beikthano = {
+}
+
+ir_loc_beilul = {
+}
+
+ir_loc_beishan = {
+}
+
 ir_loc_bekum = {
 }
 
 ir_loc_bela = {
+}
+
+ir_loc_belaya = {
 }
 
 ir_loc_belca = {
@@ -3108,6 +3561,9 @@ ir_loc_beneventum = {
 ir_loc_bengmara = {
 }
 
+ir_loc_beni_abbes = {
+}
+
 ir_loc_bennafa = {
 }
 
@@ -3117,10 +3573,19 @@ ir_loc_beoue = {
 ir_loc_berberensis = {
 }
 
+ir_loc_berberia_desert = {
+}
+
+ir_loc_berbouchi = {
+}
+
 ir_loc_bercellum = {
 }
 
 ir_loc_berd = {
+}
+
+ir_loc_berdaly = {
 }
 
 ir_loc_berdatekh = {
@@ -3130,7 +3595,19 @@ ir_loc_berenike = {
     dock = 1
 }
 
+ir_loc_berenike_pancrysia = {
+}
+
+ir_loc_berezina = {
+}
+
+ir_loc_berezovaya = {
+}
+
 ir_loc_bergidum_flavium = {
+}
+
+ir_loc_bergin = {
 }
 
 ir_loc_bergio = {
@@ -3145,19 +3622,22 @@ ir_loc_bergomum = {
 ir_loc_bergoule = {
 }
 
+ir_loc_berhil = {
+}
+
 ir_loc_berku = {
 }
 
 ir_loc_beroe = {
 }
 
-ir_loc_beroe_skythike = {
-}
-
 ir_loc_beroia = {
 }
 
 ir_loc_berothe = {
+}
+
+ir_loc_berriane = {
 }
 
 ir_loc_bersovia = {
@@ -3175,6 +3655,9 @@ ir_loc_bessapara = {
 ir_loc_bessemium = {
 }
 
+ir_loc_besta = {
+}
+
 ir_loc_bethadipa = {
 }
 
@@ -3190,10 +3673,16 @@ ir_loc_betul = {
 ir_loc_beturri = {
 }
 
+ir_loc_beyneu = {
+}
+
 ir_loc_bezda = {
 }
 
 ir_loc_bezereos = {
+}
+
+ir_loc_bezin = {
 }
 
 ir_loc_bhabua = {
@@ -3230,7 +3719,7 @@ ir_loc_bhargava = {
 ir_loc_bharhut = {
 }
 
-ir_loc_bhatiah = {
+ir_loc_bhatiai = {
 }
 
 ir_loc_bhawaniganj = {
@@ -3270,6 +3759,9 @@ ir_loc_bhurhikara = {
 ir_loc_bhuvanesvara = {
 }
 
+ir_loc_bialystok = {
+}
+
 ir_loc_bibacum = {
 }
 
@@ -3293,6 +3785,15 @@ ir_loc_bida = {
 ir_loc_bidar = {
 }
 
+ir_loc_bidyadhari = {
+}
+
+ir_loc_biebrzankski = {
+}
+
+ir_loc_bielsk = {
+}
+
 ir_loc_bigis = {
 }
 
@@ -3306,6 +3807,9 @@ ir_loc_bijar = {
 }
 
 ir_loc_bikrampur = {
+}
+
+ir_loc_bila = {
 }
 
 ir_loc_bilagada = {
@@ -3329,10 +3833,16 @@ ir_loc_bina = {
 ir_loc_bingium = {
 }
 
+ir_loc_binnaka = {
+}
+
 ir_loc_binnayaga = {
 }
 
 ir_loc_birganj = {
+}
+
+ir_loc_biri = {
 }
 
 ir_loc_biriand = {
@@ -3341,8 +3851,14 @@ ir_loc_biriand = {
 ir_loc_biriciana = {
 }
 
+ir_loc_birim = {
+}
+
 ir_loc_birka = {
     dock = 1
+}
+
+ir_loc_birky = {
 }
 
 ir_loc_birtha_0 = {
@@ -3351,12 +3867,18 @@ ir_loc_birtha_0 = {
 ir_loc_birtha_1 = {
 }
 
+ir_loc_birzu = {
+}
+
 ir_loc_bisambritai = {
 }
 
 ir_loc_bisanthe = {
     dock = 1
     minting_office = 2
+}
+
+ir_loc_bishah = {
 }
 
 ir_loc_bishaya = {
@@ -3383,7 +3905,17 @@ ir_loc_biturigum = {
 ir_loc_bitylion = {
 }
 
+ir_loc_biyar = {
+}
+
 ir_loc_bizana = {
+}
+
+ir_loc_bizye = {
+}
+
+ir_loc_blagoveshchenskaya = {
+    dock = 1
 }
 
 ir_loc_blaine = {
@@ -3416,16 +3948,31 @@ ir_loc_bletsima = {
 ir_loc_bloukion = {
 }
 
+ir_loc_bobuv = {
+}
+
 ir_loc_bocouriqua = {
 }
 
 ir_loc_bodgalio = {
 }
 
+ir_loc_bodincomagos = {
+}
+
+ir_loc_boduthiladhunmathi = {
+}
+
 ir_loc_bogadia = {
 }
 
+ir_loc_bogucharka = {
+}
+
 ir_loc_bohaemeian_forest = {
+}
+
+ir_loc_bohol = {
 }
 
 ir_loc_boinasa = {
@@ -3434,10 +3981,16 @@ ir_loc_boinasa = {
 ir_loc_boioa = {
 }
 
+ir_loc_bokaro = {
+}
+
 ir_loc_bolbitine = {
 }
 
 ir_loc_boloustana_pass = {
+}
+
+ir_loc_bolshoi = {
 }
 
 ir_loc_bonab_qaleh = {
@@ -3462,6 +4015,9 @@ ir_loc_bononia_moesiaca = {
 ir_loc_boon = {
 }
 
+ir_loc_boot = {
+}
+
 ir_loc_borassa = {
 }
 
@@ -3480,6 +4036,12 @@ ir_loc_borjomi = {
 ir_loc_bornium = {
 }
 
+ir_loc_borodinskoye = {
+}
+
+ir_loc_boromlya = {
+}
+
 ir_loc_boron = {
 }
 
@@ -3490,9 +4052,13 @@ ir_loc_bortina = {
 }
 
 ir_loc_borysthenia = {
+    dock = 1
 }
 
 ir_loc_bossia = {
+}
+
+ir_loc_bosteri = {
 }
 
 ir_loc_bostor = {
@@ -3504,10 +4070,16 @@ ir_loc_bostra = {
 ir_loc_botrys = {
 }
 
+ir_loc_bou_azzer = {
+}
+
 ir_loc_boubakene = {
 }
 
 ir_loc_boubon = {
+}
+
+ir_loc_boudenib = {
 }
 
 ir_loc_boukephalia = {
@@ -3516,10 +4088,25 @@ ir_loc_boukephalia = {
 ir_loc_boukolonpolis = {
 }
 
+ir_loc_boumia = {
+}
+
+ir_loc_bounou = {
+}
+
 ir_loc_bourdepa = {
 }
 
+ir_loc_bourma = {
+}
+
 ir_loc_bournion = {
+}
+
+ir_loc_bourzeg = {
+}
+
+ir_loc_boussemghoun = {
 }
 
 ir_loc_boutae = {
@@ -3532,7 +4119,13 @@ ir_loc_bouthoe = {
 ir_loc_bouzerrara = {
 }
 
+ir_loc_boval = {
+}
+
 ir_loc_bovianum = {
+}
+
+ir_loc_bozoy = {
 }
 
 ir_loc_bracara_augusta = {
@@ -3544,6 +4137,9 @@ ir_loc_bragodurum = {
 ir_loc_brahampuri = {
 }
 
+ir_loc_brahin = {
+}
+
 ir_loc_brahmagiri = {
 }
 
@@ -3552,6 +4148,10 @@ ir_loc_brahmanaka = {
 }
 
 ir_loc_brahmarchi = {
+}
+
+ir_loc_brak = {
+    construction_center = 1
 }
 
 ir_loc_bramulovium = {
@@ -3567,6 +4167,9 @@ ir_loc_branodunum = {
     dock = 1
 }
 
+ir_loc_braslaw = {
+}
+
 ir_loc_bratananium = {
 }
 
@@ -3577,6 +4180,12 @@ ir_loc_bravonium = {
 }
 
 ir_loc_bravum = {
+}
+
+ir_loc_brebana = {
+}
+
+ir_loc_breigha = {
 }
 
 ir_loc_bremenium = {
@@ -3601,6 +4210,12 @@ ir_loc_breviodurum = {
 }
 
 ir_loc_brevis = {
+}
+
+ir_loc_brezina = {
+}
+
+ir_loc_brhel = {
 }
 
 ir_loc_bricca = {
@@ -3712,6 +4327,9 @@ ir_loc_brundulum = {
 ir_loc_brutobriga = {
 }
 
+ir_loc_bu_athla = {
+}
+
 ir_loc_bubastis = {
 }
 
@@ -3726,6 +4344,9 @@ ir_loc_bucinobantia = {
 }
 
 ir_loc_bucium = {
+}
+
+ir_loc_budia = {
 }
 
 ir_loc_budorgis = {
@@ -3743,13 +4364,28 @@ ir_loc_buguntia = {
 ir_loc_buguntiana = {
 }
 
+ir_loc_buhski = {
+}
+
 ir_loc_bulaq = {
+}
+
+ir_loc_bularkan = {
+}
+
+ir_loc_bulgar = {
 }
 
 ir_loc_bulla_regia = {
 }
 
+ir_loc_bulukhta = {
+}
+
 ir_loc_bulya = {
+}
+
+ir_loc_bum = {
 }
 
 ir_loc_bundi = {
@@ -3759,6 +4395,9 @@ ir_loc_bunitium = {
 }
 
 ir_loc_buravhala = {
+}
+
+ir_loc_buraydah = {
 }
 
 ir_loc_burdigala = {
@@ -3795,7 +4434,25 @@ ir_loc_buriana = {
 ir_loc_buridava = {
 }
 
+ir_loc_burli = {
+}
+
+ir_loc_burma_mountains_0 = {
+}
+
+ir_loc_burma_mountains_1 = {
+}
+
+ir_loc_burma_mountains_3 = {
+}
+
+ir_loc_burma_mountains_7 = {
+}
+
 ir_loc_burrium = {
+}
+
+ir_loc_burtudizon = {
 }
 
 ir_loc_bushahr = {
@@ -3812,6 +4469,9 @@ ir_loc_butonia = {
 ir_loc_byblos = {
     dock = 4
     marketplace = 1
+}
+
+ir_loc_byerazino = {
 }
 
 ir_loc_bylazora = {
@@ -3852,9 +4512,6 @@ ir_loc_caellonico = {
 }
 
 ir_loc_caereni = {
-}
-
-ir_loc_caesariana = {
 }
 
 ir_loc_caesarobriga = {
@@ -3937,6 +4594,7 @@ ir_loc_calliope = {
 }
 
 ir_loc_callipolis = {
+    dock = 1
 }
 
 ir_loc_caluconia = {
@@ -3967,9 +4625,6 @@ ir_loc_cambodunum = {
 }
 
 ir_loc_cambonum = {
-}
-
-ir_loc_camboritum = {
 }
 
 ir_loc_cambysene = {
@@ -4029,6 +4684,12 @@ ir_loc_candravati = {
 ir_loc_candulum = {
 }
 
+ir_loc_cannabis = {
+}
+
+ir_loc_cannae = {
+}
+
 ir_loc_canniaco = {
 }
 
@@ -4038,13 +4699,19 @@ ir_loc_canovium = {
 ir_loc_cantiabis = {
 }
 
-ir_loc_canusium = {
-}
-
 ir_loc_capera = {
 }
 
+ir_loc_capi = {
+}
+
+ir_loc_capidava = {
+}
+
 ir_loc_capitium = {
+}
+
+ir_loc_capsa = {
 }
 
 ir_loc_capsa_iustiniana = {
@@ -4082,9 +4749,6 @@ ir_loc_caracotinum = {
 ir_loc_carae = {
 }
 
-ir_loc_caralis = {
-}
-
 ir_loc_caranicum = {
 }
 
@@ -4095,6 +4759,9 @@ ir_loc_caranusca = {
 }
 
 ir_loc_carasa = {
+}
+
+ir_loc_carbia = {
 }
 
 ir_loc_carbonia = {
@@ -4136,7 +4803,12 @@ ir_loc_carissa = {
 ir_loc_caritra = {
 }
 
+ir_loc_carm = {
+}
+
 ir_loc_carmo = {
+    castle = 1
+    marketplace = 1
 }
 
 ir_loc_carnasa = {
@@ -4188,6 +4860,10 @@ ir_loc_carsidava = {
 }
 
 ir_loc_carsioli = {
+    farming_village = 1
+}
+
+ir_loc_carsium = {
 }
 
 ir_loc_carta = {
@@ -4210,7 +4886,6 @@ ir_loc_carthago = {
     dock = 3
     library = 2
     marketplace = 2
-    minting_office = 1
 }
 
 ir_loc_cartili = {
@@ -4268,6 +4943,9 @@ ir_loc_castra_cecilia = {
 }
 
 ir_loc_castra_germanorum = {
+}
+
+ir_loc_castra_martis = {
 }
 
 ir_loc_castra_neptitana = {
@@ -4338,6 +5016,9 @@ ir_loc_caturicis = {
 ir_loc_cauca = {
 }
 
+ir_loc_caucasus_mons_volcano = {
+}
+
 ir_loc_caucia = {
 }
 
@@ -4377,6 +5058,12 @@ ir_loc_cebrus = {
 ir_loc_cedonia = {
 }
 
+ir_loc_ceerigabo = {
+}
+
+ir_loc_ceketek = {
+}
+
 ir_loc_celamantia = {
 }
 
@@ -4398,9 +5085,6 @@ ir_loc_celsa = {
 ir_loc_celtianis = {
 }
 
-ir_loc_celtica_inferioris = {
-}
-
 ir_loc_celtica_superioris = {
 }
 
@@ -4408,6 +5092,9 @@ ir_loc_cenabum = {
 }
 
 ir_loc_cenavicum = {
+}
+
+ir_loc_centenarium = {
 }
 
 ir_loc_centum_cellas = {
@@ -4451,6 +5138,12 @@ ir_loc_chach = {
 ir_loc_chadormalu = {
 }
 
+ir_loc_chagan = {
+}
+
+ir_loc_chagri = {
+}
+
 ir_loc_chahar_taq = {
 }
 
@@ -4489,13 +5182,16 @@ ir_loc_chalcis_ad_belum = {
 ir_loc_chaleion = {
 }
 
+ir_loc_chalkis_libanou = {
+}
+
 ir_loc_chamavia = {
 }
 
-ir_loc_chamon = {
+ir_loc_chamoria = {
 }
 
-ir_loc_chamoria = {
+ir_loc_chandaniot = {
 }
 
 ir_loc_chanderi = {
@@ -4541,6 +5237,9 @@ ir_loc_charva = {
 ir_loc_chasuaria = {
 }
 
+ir_loc_chatra = {
+}
+
 ir_loc_chattisgarh = {
 }
 
@@ -4562,10 +5261,19 @@ ir_loc_chaurina = {
 ir_loc_chavadi = {
 }
 
+ir_loc_chavusy = {
+}
+
 ir_loc_chemmis = {
 }
 
 ir_loc_chengam = {
+}
+
+ir_loc_cherchen = {
+}
+
+ir_loc_chernyanka = {
 }
 
 ir_loc_chersis = {
@@ -4579,6 +5287,9 @@ ir_loc_chersonesos_vanavasi = {
     dock = 1
 }
 
+ir_loc_chervonoye = {
+}
+
 ir_loc_chettaia = {
 }
 
@@ -4589,6 +5300,12 @@ ir_loc_chhamb = {
 }
 
 ir_loc_chhindwara = {
+}
+
+ir_loc_chigu = {
+}
+
+ir_loc_chilpek = {
 }
 
 ir_loc_chimpyu = {
@@ -4604,11 +5321,20 @@ ir_loc_chios = {
     dock = 1
 }
 
+ir_loc_chioukh = {
+}
+
+ir_loc_chishtian = {
+}
+
 ir_loc_chitradurga = {
 }
 
 ir_loc_chittagong = {
     dock = 1
+}
+
+ir_loc_chlef = {
 }
 
 ir_loc_chlomaron = {
@@ -4640,6 +5366,9 @@ ir_loc_choba = {
 ir_loc_chodda = {
 }
 
+ir_loc_chokun = {
+}
+
 ir_loc_cholbisina = {
 }
 
@@ -4653,6 +5382,9 @@ ir_loc_chongye = {
 }
 
 ir_loc_choromia = {
+}
+
+ir_loc_chorotus = {
 }
 
 ir_loc_chorsabia = {
@@ -4703,13 +5435,16 @@ ir_loc_cibarcia = {
 ir_loc_cicucium = {
 }
 
-ir_loc_cidamus = {
+ir_loc_cigra = {
 }
 
 ir_loc_cikamburika = {
 }
 
-ir_loc_cilician_gates = {
+ir_loc_cilician_gates_0 = {
+}
+
+ir_loc_cilician_gates_1 = {
 }
 
 ir_loc_cillium = {
@@ -4734,6 +5469,9 @@ ir_loc_cimbrica_minor = {
 ir_loc_cimus = {
 }
 
+ir_loc_cina = {
+}
+
 ir_loc_cingulum = {
 }
 
@@ -4741,7 +5479,7 @@ ir_loc_cinnaba_mons = {
 }
 
 ir_loc_circeii = {
-    barracks = 1
+    farming_village = 1
 }
 
 ir_loc_circesium = {
@@ -4761,6 +5499,9 @@ ir_loc_cissia = {
 }
 
 ir_loc_cistula = {
+}
+
+ir_loc_citras = {
 }
 
 ir_loc_civitas_auderiensium = {
@@ -4806,6 +5547,7 @@ ir_loc_clunia_raetia = {
 }
 
 ir_loc_clusium = {
+    granary = 1
 }
 
 ir_loc_cobandia_maior = {
@@ -4821,9 +5563,6 @@ ir_loc_cocala = {
 }
 
 ir_loc_coccium = {
-}
-
-ir_loc_coclearia = {
 }
 
 ir_loc_codasi = {
@@ -4851,9 +5590,6 @@ ir_loc_colapia = {
 }
 
 ir_loc_colatio = {
-}
-
-ir_loc_colchion = {
 }
 
 ir_loc_colenda = {
@@ -4956,7 +5692,7 @@ ir_loc_confluentes = {
 ir_loc_confluentia = {
 }
 
-ir_loc_confluentia_ad_latobicos = {
+ir_loc_confluentia_latobicorum = {
 }
 
 ir_loc_confluentia_malvensis = {
@@ -5007,7 +5743,13 @@ ir_loc_contestania_maior = {
 ir_loc_contestania_minor = {
 }
 
+ir_loc_contra_pselchis = {
+}
+
 ir_loc_cophanta = {
+}
+
+ir_loc_coppi = {
 }
 
 ir_loc_cora_vicus = {
@@ -5051,17 +5793,12 @@ ir_loc_cornavii = {
 }
 
 ir_loc_corneliani = {
-    castle = 1
 }
 
 ir_loc_corniclanum = {
 }
 
 ir_loc_corniculani = {
-}
-
-ir_loc_cornus = {
-    dock = 1
 }
 
 ir_loc_corobillium = {
@@ -5075,6 +5812,8 @@ ir_loc_corterate = {
 
 ir_loc_cortona = {
     castle = 1
+    minting_office = 1
+    tools_workshop = 1
 }
 
 ir_loc_cortoriacum = {
@@ -5211,9 +5950,6 @@ ir_loc_curia = {
 ir_loc_curicum = {
 }
 
-ir_loc_curiga = {
-}
-
 ir_loc_curisiacum = {
 }
 
@@ -5232,6 +5968,10 @@ ir_loc_cutha = {
 ir_loc_cybistra = {
 }
 
+ir_loc_cydamus = {
+    construction_center = 2
+}
+
 ir_loc_cymiza = {
     castle = 1
 }
@@ -5239,10 +5979,16 @@ ir_loc_cymiza = {
 ir_loc_cyrenaica = {
 }
 
+ir_loc_cyrg = {
+}
+
 ir_loc_cyropolis_persica = {
 }
 
 ir_loc_cyrrhus = {
+}
+
+ir_loc_cyxt = {
 }
 
 ir_loc_dableis = {
@@ -5263,7 +6009,16 @@ ir_loc_dadybra = {
 ir_loc_dagana = {
 }
 
+ir_loc_dahoua = {
+}
+
+ir_loc_dahyuupati = {
+}
+
 ir_loc_daidala = {
+}
+
+ir_loc_dakharaib = {
 }
 
 ir_loc_dakhtar = {
@@ -5275,10 +6030,19 @@ ir_loc_dakshina_koshala = {
 ir_loc_dalanda = {
 }
 
+ir_loc_dalhi = {
+}
+
 ir_loc_dalmatia = {
 }
 
 ir_loc_dalmatian_mountains = {
+}
+
+ir_loc_dalmoxor = {
+}
+
+ir_loc_daltonganj = {
 }
 
 ir_loc_damak = {
@@ -5304,7 +6068,13 @@ ir_loc_damoh = {
 ir_loc_dan = {
 }
 
-ir_loc_danai = {
+ir_loc_danai_0 = {
+}
+
+ir_loc_danai_1 = {
+}
+
+ir_loc_danano = {
 }
 
 ir_loc_dandakaranya = {
@@ -5344,6 +6114,9 @@ ir_loc_darantasia = {
 }
 
 ir_loc_darentiaca = {
+}
+
+ir_loc_darga = {
 }
 
 ir_loc_daria = {
@@ -5409,7 +6182,13 @@ ir_loc_dasminium = {
 ir_loc_dasteira = {
 }
 
+ir_loc_datah = {
+}
+
 ir_loc_dauaba = {
+}
+
+ir_loc_daugava = {
 }
 
 ir_loc_dausa = {
@@ -5424,10 +6203,31 @@ ir_loc_davaka = {
 ir_loc_dawan = {
 }
 
+ir_loc_dawasir = {
+}
+
+ir_loc_dayawadi = {
+}
+
+ir_loc_daydaban = {
+}
+
+ir_loc_dayyub = {
+}
+
 ir_loc_dazimon = {
 }
 
 ir_loc_dbark = {
+}
+
+ir_loc_debarwa = {
+}
+
+ir_loc_debdeb = {
+}
+
+ir_loc_debelton = {
 }
 
 ir_loc_debiri = {
@@ -5442,13 +6242,22 @@ ir_loc_decem_pagi = {
 ir_loc_decetia = {
 }
 
+ir_loc_dechret_kamra = {
+}
+
 ir_loc_decidava = {
 }
 
 ir_loc_dedan = {
 }
 
+ir_loc_dedigama = {
+}
+
 ir_loc_dedoplis = {
+}
+
+ir_loc_dedris = {
 }
 
 ir_loc_deh_bozan = {
@@ -5457,6 +6266,9 @@ ir_loc_deh_bozan = {
 
 ir_loc_deire = {
     dock = 1
+}
+
+ir_loc_dekrlet = {
 }
 
 ir_loc_dela = {
@@ -5482,6 +6294,9 @@ ir_loc_demne = {
 ir_loc_demora = {
 }
 
+ir_loc_dena = {
+}
+
 ir_loc_denabaran = {
 }
 
@@ -5497,7 +6312,14 @@ ir_loc_denevia = {
 ir_loc_dentum = {
 }
 
-ir_loc_deogarh = {
+ir_loc_deogarh_0 = {
+    dock = 1
+}
+
+ir_loc_deogarh_1 = {
+}
+
+ir_loc_deogarh_2 = {
 }
 
 ir_loc_deoghar = {
@@ -5516,6 +6338,12 @@ ir_loc_derbent = {
 }
 
 ir_loc_derbentio = {
+}
+
+ir_loc_deresa = {
+}
+
+ir_loc_derg = {
 }
 
 ir_loc_derras = {
@@ -5538,6 +6366,12 @@ ir_loc_derventio = {
 ir_loc_derventum = {
 }
 
+ir_loc_derwa = {
+}
+
+ir_loc_desert_1 = {
+}
+
 ir_loc_desert_of_aswan = {
 }
 
@@ -5557,6 +6391,10 @@ ir_loc_deshikli = {
 }
 
 ir_loc_deshrae = {
+}
+
+ir_loc_desna = {
+    dock = 1
 }
 
 ir_loc_detta = {
@@ -5596,6 +6434,9 @@ ir_loc_devnimori = {
 ir_loc_devona = {
 }
 
+ir_loc_dhahab = {
+}
+
 ir_loc_dhahir = {
 }
 
@@ -5615,6 +6456,9 @@ ir_loc_dhamtari = {
 ir_loc_dhanduka = {
 }
 
+ir_loc_dhank = {
+}
+
 ir_loc_dhar = {
     construction_center = 2
     library = 2
@@ -5623,10 +6467,19 @@ ir_loc_dhar = {
 ir_loc_dharakh = {
 }
 
+ir_loc_dharghat = {
+}
+
 ir_loc_dhavagarta = {
 }
 
 ir_loc_dhawalpur = {
+}
+
+ir_loc_dhenka = {
+}
+
+ir_loc_dhokia = {
 }
 
 ir_loc_dhuburi = {
@@ -5641,13 +6494,13 @@ ir_loc_diakopa = {
 ir_loc_diana_veteranorum = {
 }
 
-ir_loc_diattica = {
-}
-
 ir_loc_dictium = {
 }
 
 ir_loc_didai = {
+}
+
+ir_loc_dider = {
 }
 
 ir_loc_didima = {
@@ -5671,6 +6524,12 @@ ir_loc_dighavapi = {
 ir_loc_dihistan = {
 }
 
+ir_loc_dikoye = {
+}
+
+ir_loc_dila = {
+}
+
 ir_loc_dilbat = {
 }
 
@@ -5681,6 +6540,9 @@ ir_loc_dilyar = {
 }
 
 ir_loc_dimalion = {
+}
+
+ir_loc_dinder = {
 }
 
 ir_loc_dinia = {
@@ -5701,10 +6563,15 @@ ir_loc_dionysias = {
     barracks = 1
 }
 
+ir_loc_dionysopolis = {
+}
+
 ir_loc_dioscoridus = {
+    dock = 1
 }
 
 ir_loc_dioscurias = {
+    dock = 1
 }
 
 ir_loc_diospolis_0 = {
@@ -5739,6 +6606,9 @@ ir_loc_dirma_omana = {
 ir_loc_dish = {
 }
 
+ir_loc_diti = {
+}
+
 ir_loc_divionense = {
 }
 
@@ -5748,16 +6618,31 @@ ir_loc_divodurum = {
 ir_loc_divona = {
 }
 
-ir_loc_divyakuta = {
+ir_loc_dizpul = {
 }
 
-ir_loc_dizpul = {
+ir_loc_djamaa = {
+}
+
+ir_loc_djanet = {
+}
+
+ir_loc_djelfa = {
 }
 
 ir_loc_dmut = {
 }
 
+ir_loc_dnar = {
+}
+
 ir_loc_dnem = {
+}
+
+ir_loc_dnipro = {
+}
+
+ir_loc_dob = {
 }
 
 ir_loc_doberos = {
@@ -5806,6 +6691,12 @@ ir_loc_donar = {
 ir_loc_donaria = {
 }
 
+ir_loc_donda = {
+}
+
+ir_loc_donetsk = {
+}
+
 ir_loc_donga = {
 }
 
@@ -5845,11 +6736,10 @@ ir_loc_doruneh = {
 ir_loc_dorylaion = {
 }
 
-ir_loc_doubios = {
-    minting_office = 3
+ir_loc_doudousa = {
 }
 
-ir_loc_doudousa = {
+ir_loc_doum = {
 }
 
 ir_loc_dounga = {
@@ -5893,13 +6783,16 @@ ir_loc_dryna = {
 ir_loc_dudahi = {
 }
 
+ir_loc_dujal = {
+}
+
+ir_loc_dulahazara = {
+}
+
 ir_loc_dulgia = {
 }
 
 ir_loc_dumbrava = {
-}
-
-ir_loc_dumbritai = {
 }
 
 ir_loc_dumna_australis = {
@@ -5923,6 +6816,10 @@ ir_loc_dunites = {
 ir_loc_dunqash = {
 }
 
+ir_loc_dur = {
+    dock = 1
+}
+
 ir_loc_dur_kurigalzu = {
 }
 
@@ -5933,6 +6830,9 @@ ir_loc_dura = {
 }
 
 ir_loc_durai = {
+}
+
+ir_loc_duraybikah = {
 }
 
 ir_loc_durbye = {
@@ -5953,6 +6853,9 @@ ir_loc_durgapur = {
 ir_loc_duri = {
 }
 
+ir_loc_durna = {
+}
+
 ir_loc_durnatha = {
 }
 
@@ -5964,6 +6867,9 @@ ir_loc_durobrivae = {
 }
 
 ir_loc_durocatalaunum = {
+}
+
+ir_loc_durocobrivae = {
 }
 
 ir_loc_durocoregum = {
@@ -5981,9 +6887,6 @@ ir_loc_duroliponte = {
 ir_loc_duronum = {
 }
 
-ir_loc_durostorum = {
-}
-
 ir_loc_durotincum = {
 }
 
@@ -5997,6 +6900,9 @@ ir_loc_durovigutum = {
 ir_loc_durum = {
 }
 
+ir_loc_duweb = {
+}
+
 ir_loc_duzea = {
 }
 
@@ -6005,6 +6911,12 @@ ir_loc_dvaraka = {
 }
 
 ir_loc_dwarbanga = {
+}
+
+ir_loc_dyagili = {
+}
+
+ir_loc_dymar = {
 }
 
 ir_loc_dyme_0 = {
@@ -6019,9 +6931,6 @@ ir_loc_dyram = {
 ir_loc_dyrghet = {
 }
 
-ir_loc_dyrte = {
-}
-
 ir_loc_dyruzh = {
 }
 
@@ -6031,19 +6940,29 @@ ir_loc_dysopon = {
 ir_loc_dyuni = {
 }
 
+ir_loc_dzek = {
+}
+
+ir_loc_dzhaindy = {
+}
+
 ir_loc_dzhrapi = {
 }
 
 ir_loc_dzhrarat = {
 }
 
+ir_loc_dzukjos = {
+}
+
+ir_loc_dzyarzhynsk = {
+}
+
 ir_loc_eastern_ghats = {
 }
 
-ir_loc_eastern_musalamia = {
-}
-
-ir_loc_eblania = {
+ir_loc_eblana = {
+    dock = 1
 }
 
 ir_loc_eblania_occidentalis = {
@@ -6084,6 +7003,12 @@ ir_loc_eburum = {
 }
 
 ir_loc_ebusus = {
+    castle = 1
+    dock = 1
+    marketplace = 1
+}
+
+ir_loc_ecavu = {
 }
 
 ir_loc_ecbatana = {
@@ -6121,6 +7046,9 @@ ir_loc_edetania_inferioris = {
 ir_loc_edetania_superioris = {
 }
 
+ir_loc_edug = {
+}
+
 ir_loc_efa = {
 }
 
@@ -6145,10 +7073,16 @@ ir_loc_egra = {
 ir_loc_ehkere = {
 }
 
-ir_loc_eidiseis = {
+ir_loc_eidos = {
+}
+
+ir_loc_eigat = {
 }
 
 ir_loc_eileithyiopolis = {
+}
+
+ir_loc_ein = {
 }
 
 ir_loc_ekdaoumaoua = {
@@ -6181,9 +7115,6 @@ ir_loc_elateia = {
 }
 
 ir_loc_elboconis = {
-}
-
-ir_loc_elegoana = {
 }
 
 ir_loc_elephanton_chora = {
@@ -6219,6 +7150,9 @@ ir_loc_elousa = {
 ir_loc_elouza = {
 }
 
+ir_loc_elpes = {
+}
+
 ir_loc_elusio = {
 }
 
@@ -6237,8 +7171,14 @@ ir_loc_elysia = {
 ir_loc_elysiana = {
 }
 
+ir_loc_ema = {
+}
+
 ir_loc_embadina = {
     construction_center = 1
+}
+
+ir_loc_embi = {
 }
 
 ir_loc_embolima = {
@@ -6261,10 +7201,16 @@ ir_loc_emporiae = {
     dock = 1
 }
 
-ir_loc_emporion_mosylon = {
+ir_loc_emporium_discoduraterae = {
 }
 
-ir_loc_emporium_discoduraterae = {
+ir_loc_enbekshi = {
+}
+
+ir_loc_enda_cherqos = {
+}
+
+ir_loc_endere = {
 }
 
 ir_loc_endzhara = {
@@ -6274,6 +7220,9 @@ ir_loc_enim = {
 }
 
 ir_loc_enke = {
+}
+
+ir_loc_entella = {
 }
 
 ir_loc_eowia = {
@@ -6317,6 +7266,8 @@ ir_loc_epis = {
 }
 
 ir_loc_epora = {
+    castle = 1
+    marketplace = 1
 }
 
 ir_loc_eporedia = {
@@ -6395,13 +7346,21 @@ ir_loc_ernodurum = {
 ir_loc_eroe = {
 }
 
+ir_loc_errachidia = {
+}
+
+ir_loc_errich = {
+}
+
 ir_loc_eruandashat = {
 }
 
 ir_loc_erythrai = {
+    dock = 1
 }
 
 ir_loc_eryx = {
+    dock = 1
 }
 
 ir_loc_esbous = {
@@ -6411,6 +7370,9 @@ ir_loc_esheta = {
 }
 
 ir_loc_eshgabad = {
+}
+
+ir_loc_essayal = {
 }
 
 ir_loc_esta = {
@@ -6445,10 +7407,6 @@ ir_loc_euagina = {
 }
 
 ir_loc_euchaita = {
-}
-
-ir_loc_eudaimon = {
-    dock = 1
 }
 
 ir_loc_eudosia_australis = {
@@ -6511,6 +7469,9 @@ ir_loc_eustriacum = {
 ir_loc_evandriana = {
 }
 
+ir_loc_exampeaus = {
+}
+
 ir_loc_excisum = {
 }
 
@@ -6547,13 +7508,16 @@ ir_loc_falacro = {
 ir_loc_fanindrapura = {
 }
 
-ir_loc_fanum_carisi = {
-}
-
 ir_loc_fanum_cocidi = {
 }
 
 ir_loc_fanum_martis = {
+}
+
+ir_loc_fao = {
+}
+
+ir_loc_faouar = {
 }
 
 ir_loc_fara = {
@@ -6562,16 +7526,28 @@ ir_loc_fara = {
 ir_loc_farab = {
 }
 
-ir_loc_farafra = {
+ir_loc_farafra_0 = {
 }
 
-ir_loc_farfara = {
+ir_loc_farafra_1 = {
+}
+
+ir_loc_farafra_2 = {
 }
 
 ir_loc_farrab = {
 }
 
 ir_loc_farsir = {
+}
+
+ir_loc_fas = {
+}
+
+ir_loc_faschia = {
+}
+
+ir_loc_fashfash = {
 }
 
 ir_loc_fathabad = {
@@ -6598,6 +7574,9 @@ ir_loc_felicita = {
 ir_loc_felita = {
 }
 
+ir_loc_fendi = {
+}
+
 ir_loc_fennia = {
 }
 
@@ -6605,21 +7584,16 @@ ir_loc_feradi_maius = {
     dock = 1
 }
 
-ir_loc_feraria = {
-    castle = 1
-    construction_center = 1
-}
-
 ir_loc_ferghanan_mountains = {
-}
-
-ir_loc_ferraria = {
 }
 
 ir_loc_ferruciacum = {
 }
 
 ir_loc_feruiria = {
+}
+
+ir_loc_fewet = {
 }
 
 ir_loc_fibularia = {
@@ -6629,6 +7603,9 @@ ir_loc_ficariensis_locus = {
 }
 
 ir_loc_figlinae = {
+}
+
+ir_loc_figuig = {
 }
 
 ir_loc_filin = {
@@ -6689,9 +7666,6 @@ ir_loc_florentiola = {
 ir_loc_floriana = {
 }
 
-ir_loc_fodinae = {
-}
-
 ir_loc_foetes = {
 }
 
@@ -6702,9 +7676,6 @@ ir_loc_follia = {
 }
 
 ir_loc_fons_siccus = {
-}
-
-ir_loc_fons_timavi = {
 }
 
 ir_loc_forat = {
@@ -6723,7 +7694,12 @@ ir_loc_fortis_vallum = {
 ir_loc_fortuna = {
 }
 
-ir_loc_forum_fulvii_valentinum = {
+ir_loc_forum_alieni = {
+    castle = 1
+    construction_center = 1
+}
+
+ir_loc_forum_fulvii = {
 }
 
 ir_loc_forum_gallorum = {
@@ -6744,9 +7720,6 @@ ir_loc_forum_novum = {
 ir_loc_forum_popilii = {
 }
 
-ir_loc_forum_traiani = {
-}
-
 ir_loc_forum_vibii = {
 }
 
@@ -6756,14 +7729,11 @@ ir_loc_fosa = {
 ir_loc_fosia = {
 }
 
-ir_loc_fotinovo = {
-}
-
 ir_loc_fourth_cataract = {
 }
 
 ir_loc_fregellae = {
-    barracks = 1
+    market_village = 1
 }
 
 ir_loc_frej = {
@@ -6782,6 +7752,13 @@ ir_loc_funda_thavagalensis = {
 }
 
 ir_loc_fundi = {
+    farming_village = 1
+}
+
+ir_loc_fuqaha = {
+}
+
+ir_loc_fura = {
 }
 
 ir_loc_furgisatis = {
@@ -6790,10 +7767,16 @@ ir_loc_furgisatis = {
 ir_loc_furnos_maius = {
 }
 
+ir_loc_gaabah = {
+}
+
 ir_loc_gabae = {
 }
 
 ir_loc_gabalum = {
+}
+
+ir_loc_gabgaba = {
 }
 
 ir_loc_gabiene = {
@@ -6808,7 +7791,16 @@ ir_loc_gabris = {
 ir_loc_gabrosentum = {
 }
 
+ir_loc_gabub = {
+}
+
 ir_loc_gabuleum = {
+}
+
+ir_loc_gadamarta = {
+}
+
+ir_loc_gadapalsuni = {
 }
 
 ir_loc_gadara = {
@@ -6818,23 +7810,45 @@ ir_loc_gadara = {
 ir_loc_gadara_judea = {
 }
 
+ir_loc_gadduwah = {
+}
+
 ir_loc_gadiaufala = {
 }
 
 ir_loc_gadilon = {
 }
 
-ir_loc_gadir = {
+ir_loc_gadir_0 = {
     dock = 1
 }
 
-ir_loc_gaiopolis = {
+ir_loc_gadir_1 = {
+    dock = 1
+}
+
+ir_loc_gafait = {
+}
+
+ir_loc_gahra = {
+}
+
+ir_loc_gaiapolis = {
+}
+
+ir_loc_gaita = {
 }
 
 ir_loc_gala = {
 }
 
+ir_loc_gala_abu_ahmed = {
+}
+
 ir_loc_galaegia = {
+}
+
+ir_loc_galage = {
 }
 
 ir_loc_galava = {
@@ -6859,6 +7873,9 @@ ir_loc_galindia_occidentalis = {
 ir_loc_galindia_orientalis = {
 }
 
+ir_loc_gallacoodday = {
+}
+
 ir_loc_gallicum = {
 }
 
@@ -6869,6 +7886,15 @@ ir_loc_gallika_phlaouia = {
 }
 
 ir_loc_gallita = {
+}
+
+ir_loc_gamal = {
+}
+
+ir_loc_gampola = {
+}
+
+ir_loc_gan = {
 }
 
 ir_loc_ganaba = {
@@ -6908,6 +7934,9 @@ ir_loc_ganka = {
 ir_loc_ganta = {
 }
 
+ir_loc_ganu = {
+}
+
 ir_loc_ganuenta = {
     dock = 1
 }
@@ -6915,10 +7944,23 @@ ir_loc_ganuenta = {
 ir_loc_gaphara = {
 }
 
+ir_loc_gar_adag = {
+}
+
+ir_loc_garacad = {
+}
+
+ir_loc_garais = {
+}
+
+ir_loc_garaiyat = {
+}
+
 ir_loc_garam = {
 }
 
 ir_loc_garama = {
+    construction_center = 3
 }
 
 ir_loc_gardman = {
@@ -6936,6 +7978,9 @@ ir_loc_gargara = {
 ir_loc_gari = {
 }
 
+ir_loc_garian = {
+}
+
 ir_loc_garrianonum = {
 }
 
@@ -6949,13 +7994,13 @@ ir_loc_garuli = {
 ir_loc_garzapur = {
 }
 
+ir_loc_gash = {
+}
+
 ir_loc_gathar = {
 }
 
 ir_loc_gaugamela = {
-}
-
-ir_loc_gauna = {
 }
 
 ir_loc_gauraina = {
@@ -6968,9 +8013,6 @@ ir_loc_gauzaka = {
 }
 
 ir_loc_gavimath = {
-}
-
-ir_loc_gavur_qaleh = {
 }
 
 ir_loc_gaya = {
@@ -7000,10 +8042,23 @@ ir_loc_gebala = {
 ir_loc_gebara = {
 }
 
+ir_loc_gebiilay = {
+}
+
 ir_loc_gedrosiana = {
 }
 
+ir_loc_gehar = {
+}
+
 ir_loc_gela = {
+    dock = 1
+}
+
+ir_loc_gelah = {
+}
+
+ir_loc_gelbous = {
 }
 
 ir_loc_gelil = {
@@ -7012,7 +8067,12 @@ ir_loc_gelil = {
 ir_loc_gella = {
 }
 
+ir_loc_gelon = {
+    marketplace = 1
+}
+
 ir_loc_gelts = {
+    dock = 1
 }
 
 ir_loc_gemellae = {
@@ -7039,6 +8099,9 @@ ir_loc_gennaes = {
 ir_loc_gennesar_0 = {
 }
 
+ir_loc_gensa = {
+}
+
 ir_loc_gensis = {
 }
 
@@ -7061,9 +8124,6 @@ ir_loc_gergovia = {
 ir_loc_germa = {
 }
 
-ir_loc_germania = {
-}
-
 ir_loc_germanic_upland = {
 }
 
@@ -7079,6 +8139,9 @@ ir_loc_gerra = {
 ir_loc_gerrha = {
     construction_center = 1
     dock = 1
+}
+
+ir_loc_gerrhos = {
 }
 
 ir_loc_gerum = {
@@ -7106,7 +8169,16 @@ ir_loc_ghahko = {
 ir_loc_ghalat = {
 }
 
+ir_loc_ghaloa = {
+}
+
 ir_loc_ghanilkatta = {
+}
+
+ir_loc_gharbya = {
+}
+
+ir_loc_ghardaia = {
 }
 
 ir_loc_ghart = {
@@ -7118,10 +8190,28 @@ ir_loc_ghasett = {
 ir_loc_ghenarcha = {
 }
 
+ir_loc_gher = {
+}
+
+ir_loc_gherma = {
+}
+
+ir_loc_ghidma = {
+}
+
+ir_loc_ghirban = {
+}
+
+ir_loc_ghirza = {
+}
+
 ir_loc_ghizil_agaj = {
 }
 
 ir_loc_gholaia = {
+}
+
+ir_loc_ghorani = {
 }
 
 ir_loc_ghore = {
@@ -7133,10 +8223,22 @@ ir_loc_ghosundi = {
 ir_loc_ghuzza = {
 }
 
+ir_loc_gialo = {
+}
+
 ir_loc_giaur = {
 }
 
 ir_loc_gibra = {
+}
+
+ir_loc_gicherra = {
+}
+
+ir_loc_gidheys = {
+}
+
+ir_loc_gidmib = {
 }
 
 ir_loc_gigia = {
@@ -7147,6 +8249,12 @@ ir_loc_gigthis = {
 }
 
 ir_loc_gigurria = {
+}
+
+ir_loc_gijet = {
+}
+
+ir_loc_gik = {
 }
 
 ir_loc_gilda = {
@@ -7161,6 +8269,12 @@ ir_loc_gindaros = {
 ir_loc_gindes = {
 }
 
+ir_loc_gintei = {
+}
+
+ir_loc_giosc = {
+}
+
 ir_loc_girikandi = {
 }
 
@@ -7173,12 +8287,18 @@ ir_loc_girsu = {
 ir_loc_girumu = {
 }
 
+ir_loc_gisi = {
+}
+
 ir_loc_gitana = {
     barracks = 1
 }
 
 ir_loc_glevum = {
     dock = 1
+}
+
+ir_loc_glitu = {
 }
 
 ir_loc_gnatia = {
@@ -7222,13 +8342,25 @@ ir_loc_gokanna = {
     dock = 1
 }
 
+ir_loc_gola = {
+}
+
 ir_loc_golan = {
 }
 
-ir_loc_goliamoto = {
+ir_loc_goltan = {
+}
+
+ir_loc_gomal = {
 }
 
 ir_loc_gomarga = {
+}
+
+ir_loc_gomel = {
+}
+
+ir_loc_gondar = {
 }
 
 ir_loc_gondia = {
@@ -7264,6 +8396,9 @@ ir_loc_gonoska = {
 ir_loc_gopadri = {
 }
 
+ir_loc_gopalprasad = {
+}
+
 ir_loc_gora = {
 }
 
@@ -7293,6 +8428,9 @@ ir_loc_gorion = {
 ir_loc_gorneae = {
 }
 
+ir_loc_gorodische = {
+}
+
 ir_loc_gorsium = {
 }
 
@@ -7303,10 +8441,16 @@ ir_loc_gortyna = {
 ir_loc_gortynia = {
 }
 
+ir_loc_gory = {
+}
+
 ir_loc_gorya = {
 }
 
 ir_loc_gorydale = {
+}
+
+ir_loc_gorzi = {
 }
 
 ir_loc_gosanimari = {
@@ -7324,13 +8468,22 @@ ir_loc_gothalia = {
 ir_loc_gothinia = {
 }
 
+ir_loc_gouera = {
+}
+
+ir_loc_goug = {
+}
+
 ir_loc_goulla = {
 }
 
-ir_loc_goundousa = {
+ir_loc_goulmima = {
 }
 
-ir_loc_gouroulis = {
+ir_loc_goumi = {
+}
+
+ir_loc_goundousa = {
 }
 
 ir_loc_govardhana = {
@@ -7338,6 +8491,12 @@ ir_loc_govardhana = {
 
 ir_loc_govishana = {
     market_village = 1
+}
+
+ir_loc_goyar = {
+}
+
+ir_loc_goyman = {
 }
 
 ir_loc_goziris = {
@@ -7383,6 +8542,9 @@ ir_loc_grannum = {
 ir_loc_gravionarium = {
 }
 
+ir_loc_grazutes = {
+}
+
 ir_loc_grinario = {
 }
 
@@ -7395,7 +8557,13 @@ ir_loc_grissia = {
 ir_loc_grodaka = {
 }
 
+ir_loc_grodno = {
+}
+
 ir_loc_grumentum = {
+}
+
+ir_loc_grunya = {
 }
 
 ir_loc_gubba = {
@@ -7404,13 +8572,32 @@ ir_loc_gubba = {
 ir_loc_gudimallam = {
 }
 
+ir_loc_guercif = {
+}
+
+ir_loc_guerir = {
+}
+
+ir_loc_guerrara = {
+}
+
 ir_loc_gugo = {
 }
 
+ir_loc_guigou = {
+}
+
+ir_loc_guir = {
+}
+
 ir_loc_guium = {
+    dock = 1
 }
 
 ir_loc_gujjar = {
+}
+
+ir_loc_gulbub = {
 }
 
 ir_loc_gulka = {
@@ -7443,13 +8630,14 @@ ir_loc_gurala = {
 ir_loc_gurala_venedia = {
 }
 
-ir_loc_gurbayigan = {
-}
-
 ir_loc_gurgan = {
 }
 
 ir_loc_gurganj = {
+    castle = 1
+}
+
+ir_loc_gurgua = {
 }
 
 ir_loc_guriana = {
@@ -7465,6 +8653,12 @@ ir_loc_gurnah = {
 }
 
 ir_loc_gurqaleh = {
+}
+
+ir_loc_gurulis = {
+}
+
+ir_loc_guta = {
 }
 
 ir_loc_guthisbo = {
@@ -7513,6 +8707,9 @@ ir_loc_gyranchi = {
 ir_loc_gyrones = {
 }
 
+ir_loc_gyrys = {
+}
+
 ir_loc_gytheion = {
     dock = 1
 }
@@ -7521,6 +8718,9 @@ ir_loc_gyulo = {
 }
 
 ir_loc_habitancum = {
+}
+
+ir_loc_hadaaftimo = {
 }
 
 ir_loc_hadad = {
@@ -7539,6 +8739,9 @@ ir_loc_hadrametum = {
 ir_loc_hadramut_desert = {
 }
 
+ir_loc_hadri = {
+}
+
 ir_loc_hadrianopolis = {
     dock = 1
 }
@@ -7549,13 +8752,25 @@ ir_loc_haedum = {
 ir_loc_haemiana = {
 }
 
-ir_loc_hajestan_qaleh = {
+ir_loc_hagiz = {
+}
+
+ir_loc_hairiri = {
+}
+
+ir_loc_hait = {
+}
+
+ir_loc_hajir = {
+}
+
+ir_loc_hajira = {
 }
 
 ir_loc_hajo = {
 }
 
-ir_loc_halaqu_qaleh = {
+ir_loc_halfa = {
 }
 
 ir_loc_halicanum = {
@@ -7569,6 +8784,9 @@ ir_loc_halikarnassos = {
     temple = 1
 }
 
+ir_loc_halin = {
+}
+
 ir_loc_halmyris = {
     dock = 1
 }
@@ -7576,7 +8794,22 @@ ir_loc_halmyris = {
 ir_loc_halouras = {
 }
 
+ir_loc_hamadab = {
+}
+
+ir_loc_hamatiyat = {
+}
+
+ir_loc_hambok = {
+}
+
+ir_loc_hamdab = {
+}
+
 ir_loc_hameka = {
+}
+
+ir_loc_hamel = {
 }
 
 ir_loc_hammeum = {
@@ -7585,10 +8818,31 @@ ir_loc_hammeum = {
 ir_loc_hammon = {
 }
 
+ir_loc_hamra = {
+}
+
 ir_loc_handia = {
 }
 
+ir_loc_handoga = {
+}
+
+ir_loc_hanha = {
+}
+
+ir_loc_haouch = {
+}
+
 ir_loc_haouzia = {
+}
+
+ir_loc_hapci = {
+}
+
+ir_loc_haqayo_malaas = {
+}
+
+ir_loc_haradh = {
 }
 
 ir_loc_haradu = {
@@ -7597,7 +8851,19 @@ ir_loc_haradu = {
 ir_loc_harai = {
 }
 
+ir_loc_harakat = {
+}
+
+ir_loc_harapa = {
+}
+
+ir_loc_harawa = {
+}
+
 ir_loc_haraz = {
+}
+
+ir_loc_harazah = {
 }
 
 ir_loc_harazia_vallis = {
@@ -7612,7 +8878,13 @@ ir_loc_harenae = {
 ir_loc_harenatium = {
 }
 
+ir_loc_hargeysa = {
+}
+
 ir_loc_hargita = {
+}
+
+ir_loc_haria = {
 }
 
 ir_loc_haridwar = {
@@ -7631,19 +8903,34 @@ ir_loc_haroba = {
 ir_loc_harpasa = {
 }
 
+ir_loc_harsta = {
+}
+
 ir_loc_harvan = {
 }
 
 ir_loc_hashem = {
 }
 
+ir_loc_hashim = {
+}
+
 ir_loc_hassu = {
 }
 
-ir_loc_hasta = {
+ir_loc_hasta_0 = {
+    castle = 1
+    dock = 1
+    marketplace = 2
+}
+
+ir_loc_hasta_1 = {
 }
 
 ir_loc_hastinapura = {
+}
+
+ir_loc_hatab = {
 }
 
 ir_loc_hatra = {
@@ -7657,7 +8944,16 @@ ir_loc_hatria = {
 ir_loc_haud = {
 }
 
+ir_loc_hawiyah = {
+}
+
+ir_loc_hawmah = {
+}
+
 ir_loc_hayk = {
+}
+
+ir_loc_haykota = {
 }
 
 ir_loc_hazar = {
@@ -7669,6 +8965,9 @@ ir_loc_hazma = {
 ir_loc_hazza = {
 }
 
+ir_loc_hdzyen = {
+}
+
 ir_loc_hebron = {
 }
 
@@ -7678,6 +8977,15 @@ ir_loc_hegetmatia = {
 ir_loc_hegra = {
 }
 
+ir_loc_hegrieah = {
+}
+
+ir_loc_heimur = {
+}
+
+ir_loc_hejeilat = {
+}
+
 ir_loc_helela = {
 }
 
@@ -7685,6 +8993,9 @@ ir_loc_helge = {
 }
 
 ir_loc_heliaramia = {
+}
+
+ir_loc_helice = {
 }
 
 ir_loc_heliopolis_0 = {
@@ -7765,13 +9076,11 @@ ir_loc_hercyniana = {
 ir_loc_heritia = {
 }
 
-ir_loc_hermaion_akron = {
-}
-
 ir_loc_herminium = {
 }
 
 ir_loc_hermione = {
+    dock = 1
 }
 
 ir_loc_hermonassa = {
@@ -7802,6 +9111,9 @@ ir_loc_heroopolis = {
 ir_loc_herpha = {
 }
 
+ir_loc_herros = {
+}
+
 ir_loc_herulia_australis = {
 }
 
@@ -7822,6 +9134,9 @@ ir_loc_hessulum = {
 ir_loc_hibis = {
 }
 
+ir_loc_hidiglib = {
+}
+
 ir_loc_hiera_germe = {
 }
 
@@ -7831,10 +9146,20 @@ ir_loc_hierapolis = {
 ir_loc_hierapolis_sophenias = {
 }
 
+ir_loc_hierapytna = {
+    dock = 1
+}
+
 ir_loc_hieratis = {
 }
 
 ir_loc_high_atlas = {
+}
+
+ir_loc_hiici = {
+}
+
+ir_loc_hiiri = {
 }
 
 ir_loc_himalayan_highland = {
@@ -7880,6 +9205,9 @@ ir_loc_hippou_kome = {
 ir_loc_hispalis = {
 }
 
+ir_loc_hissuna = {
+}
+
 ir_loc_histonium = {
 }
 
@@ -7899,10 +9227,26 @@ ir_loc_hkar = {
 ir_loc_hkraniyat = {
 }
 
+ir_loc_hlumcha = {
+}
+
+ir_loc_hlynsk = {
+}
+
+ir_loc_hnaw_kan = {
+}
+
+ir_loc_hoceima = {
+}
+
+ir_loc_hodmane = {
+}
+
 ir_loc_hokhmik = {
 }
 
 ir_loc_holmoi = {
+    dock = 1
 }
 
 ir_loc_homeira = {
@@ -7925,16 +9269,58 @@ ir_loc_horrai = {
 ir_loc_horreum_margi = {
 }
 
+ir_loc_horyane = {
+}
+
+ir_loc_hosh = {
+}
+
 ir_loc_hostilia = {
 }
 
 ir_loc_hostiliusanus = {
 }
 
+ir_loc_hotan = {
+}
+
+ir_loc_howar = {
+}
+
+ir_loc_hrabiv = {
+}
+
+ir_loc_hrezlya = {
+}
+
+ir_loc_hubuna = {
+}
+
+ir_loc_hudi = {
+}
+
+ir_loc_hufrah = {
+}
+
 ir_loc_huliyar = {
 }
 
+ir_loc_hulwah = {
+}
+
+ir_loc_humar = {
+}
+
+ir_loc_hun = {
+}
+
 ir_loc_hunza = {
+}
+
+ir_loc_hurasa = {
+}
+
+ir_loc_huraymila = {
 }
 
 ir_loc_huruir = {
@@ -7943,13 +9329,10 @@ ir_loc_huruir = {
 ir_loc_huskapura = {
 }
 
-ir_loc_hydata_lesitana = {
+ir_loc_huvadhoo = {
 }
 
-ir_loc_hydata_neapolitana = {
-}
-
-ir_loc_hydrakai = {
+ir_loc_hydata = {
 }
 
 ir_loc_hydriacus = {
@@ -7960,6 +9343,9 @@ ir_loc_hydruntum = {
 }
 
 ir_loc_hygreis = {
+}
+
+ir_loc_hylaia = {
 }
 
 ir_loc_hyllarima = {
@@ -7975,6 +9361,9 @@ ir_loc_hypanispa = {
 }
 
 ir_loc_hypate = {
+}
+
+ir_loc_hyperperakion = {
 }
 
 ir_loc_hypsele = {
@@ -8019,6 +9408,9 @@ ir_loc_iasos = {
 ir_loc_iaspis = {
 }
 
+ir_loc_iassorum = {
+}
+
 ir_loc_iathrippa = {
 }
 
@@ -8034,14 +9426,32 @@ ir_loc_iazygiana = {
 ir_loc_ibadura = {
 }
 
+ir_loc_ibel = {
+}
+
+ir_loc_iberia_impassable_0 = {
+}
+
+ir_loc_iberia_impassable_1 = {
+}
+
+ir_loc_iberia_mons_volcano = {
+}
+
 ir_loc_iberian_gates = {
 }
 
 ir_loc_ibora = {
 }
 
+ir_loc_ibri = {
+}
+
 ir_loc_ichnae = {
     castle = 1
+}
+
+ir_loc_ichthyaleia = {
 }
 
 ir_loc_iciodoro = {
@@ -8092,14 +9502,13 @@ ir_loc_idzhevan = {
 ir_loc_iepana = {
 }
 
-ir_loc_ierapetra = {
-    dock = 1
-}
-
 ir_loc_iezreel = {
 }
 
 ir_loc_ifran = {
+}
+
+ir_loc_ifri = {
 }
 
 ir_loc_igabrum = {
@@ -8115,22 +9524,55 @@ ir_loc_igilgili = {
     dock = 1
 }
 
+ir_loc_igli = {
+}
+
+ir_loc_iguernane = {
+}
+
 ir_loc_iguvium = {
+}
+
+ir_loc_iherir = {
 }
 
 ir_loc_ihnum = {
 }
 
+ir_loc_ijliya = {
+}
+
+ir_loc_ikhlef = {
+}
+
 ir_loc_ikroni = {
+}
+
+ir_loc_ileigha = {
 }
 
 ir_loc_ilerda = {
 }
 
+ir_loc_ilicha = {
+}
+
 ir_loc_ilici = {
 }
 
+ir_loc_iligh = {
+}
+
 ir_loc_ilion = {
+    dock = 1
+}
+
+ir_loc_ilipa = {
+}
+
+ir_loc_ilipla = {
+    castle = 1
+    marketplace = 1
 }
 
 ir_loc_ilistra = {
@@ -8142,13 +9584,16 @@ ir_loc_iliturgicola = {
 ir_loc_iliturgis = {
 }
 
+ir_loc_illizi = {
+}
+
 ir_loc_ilorci = {
 }
 
 ir_loc_ilounon = {
 }
 
-ir_loc_ilpulla = {
+ir_loc_ilovlya = {
 }
 
 ir_loc_iluberis = {
@@ -8164,18 +9609,34 @@ ir_loc_iluro = {
 }
 
 ir_loc_ilva = {
+    slave_market = 1
+}
+
+ir_loc_imankara = {
 }
 
 ir_loc_imarash = {
 }
 
+ir_loc_imberimi = {
+}
+
 ir_loc_imbros = {
+}
+
+ir_loc_imedak = {
+}
+
+ir_loc_imighzer = {
 }
 
 ir_loc_in_murio = {
 }
 
 ir_loc_inatius = {
+}
+
+ir_loc_inayati = {
 }
 
 ir_loc_incero = {
@@ -8190,6 +9651,9 @@ ir_loc_indabara = {
 ir_loc_inde = {
 }
 
+ir_loc_inder = {
+}
+
 ir_loc_indibilis = {
 }
 
@@ -8202,10 +9666,13 @@ ir_loc_indraprastha = {
 ir_loc_indur = {
 }
 
-ir_loc_industria = {
+ir_loc_ine = {
 }
 
 ir_loc_ingena = {
+}
+
+ir_loc_inhiminen = {
 }
 
 ir_loc_innaba = {
@@ -8236,6 +9703,9 @@ ir_loc_intercatia = {
 ir_loc_intercisa = {
 }
 
+ir_loc_inzu = {
+}
+
 ir_loc_iol = {
     dock = 1
 }
@@ -8261,13 +9731,28 @@ ir_loc_ioviacum = {
 ir_loc_iovisura = {
 }
 
+ir_loc_ipasyam = {
+}
+
 ir_loc_ipolcobulcola = {
 }
 
 ir_loc_iporca = {
 }
 
+ir_loc_ippa = {
+}
+
 ir_loc_ipsos = {
+}
+
+ir_loc_irakadene = {
+}
+
+ir_loc_iram = {
+}
+
+ir_loc_iravatyavar = {
 }
 
 ir_loc_irkant = {
@@ -8283,6 +9768,12 @@ ir_loc_irmana = {
 }
 
 ir_loc_irni = {
+}
+
+ir_loc_irsha = {
+}
+
+ir_loc_iryk = {
 }
 
 ir_loc_isala = {
@@ -8316,9 +9807,6 @@ ir_loc_iscronia = {
 ir_loc_isfijab = {
 }
 
-ir_loc_ish = {
-}
-
 ir_loc_ishkenk = {
 }
 
@@ -8340,10 +9828,19 @@ ir_loc_isinda = {
 ir_loc_isinisca = {
 }
 
+ir_loc_isis = {
+}
+
 ir_loc_isiturgis = {
 }
 
 ir_loc_iska = {
+}
+
+ir_loc_iskushuban = {
+}
+
+ir_loc_isli = {
 }
 
 ir_loc_issa = {
@@ -8354,6 +9851,9 @@ ir_loc_issatis = {
 }
 
 ir_loc_issus = {
+}
+
+ir_loc_issyk = {
 }
 
 ir_loc_istana = {
@@ -8371,10 +9871,10 @@ ir_loc_isteriana = {
 ir_loc_istrianon = {
 }
 
-ir_loc_isukara = {
+ir_loc_istudak = {
 }
 
-ir_loc_isumbo = {
+ir_loc_isukara = {
 }
 
 ir_loc_isurium = {
@@ -8384,15 +9884,14 @@ ir_loc_itahar = {
 }
 
 ir_loc_italica = {
+    castle = 1
+    marketplace = 1
 }
 
 ir_loc_itamos = {
 }
 
 ir_loc_itkhvissi = {
-}
-
-ir_loc_itua = {
 }
 
 ir_loc_ituci = {
@@ -8437,7 +9936,31 @@ ir_loc_ivernia_australis = {
 ir_loc_ivernia_borealis = {
 }
 
+ir_loc_iyiche = {
+}
+
 ir_loc_izala_mons = {
+}
+
+ir_loc_izam = {
+}
+
+ir_loc_izdeg = {
+}
+
+ir_loc_izha = {
+}
+
+ir_loc_izreraouene = {
+}
+
+ir_loc_jabbanah = {
+}
+
+ir_loc_jadamapura = {
+}
+
+ir_loc_jafr = {
 }
 
 ir_loc_jagadamba = {
@@ -8447,10 +9970,10 @@ ir_loc_jagdalpur = {
     construction_center = 1
 }
 
-ir_loc_jaipura = {
+ir_loc_jaghbub = {
 }
 
-ir_loc_jaisingpur = {
+ir_loc_jaisingpura = {
 }
 
 ir_loc_jajatipura = {
@@ -8460,22 +9983,43 @@ ir_loc_jalandhara = {
     barracks = 1
 }
 
+ir_loc_jalka = {
+}
+
 ir_loc_jamadaganipura = {
 }
 
 ir_loc_jambukola_pattana = {
 }
 
-ir_loc_jampur = {
+ir_loc_jamnah = {
+}
+
+ir_loc_janaqala = {
 }
 
 ir_loc_jangteng = {
 }
 
+ir_loc_janobi = {
+}
+
 ir_loc_japa = {
 }
 
+ir_loc_jarvi = {
+}
+
+ir_loc_jasen = {
+}
+
+ir_loc_jashalam = {
+}
+
 ir_loc_jaugada = {
+}
+
+ir_loc_jauhadak = {
 }
 
 ir_loc_javakheti = {
@@ -8484,10 +10028,28 @@ ir_loc_javakheti = {
 ir_loc_jaxartes = {
 }
 
-ir_loc_jayapura = {
+ir_loc_jaxartia = {
+}
+
+ir_loc_jayapura_0 = {
+}
+
+ir_loc_jayapura_1 = {
 }
 
 ir_loc_jayatnagar = {
+}
+
+ir_loc_jebel_moya = {
+}
+
+ir_loc_jebha = {
+}
+
+ir_loc_jebil = {
+}
+
+ir_loc_jekabpils = {
 }
 
 ir_loc_jellemeh = {
@@ -8520,7 +10082,13 @@ ir_loc_jhinvali = {
 ir_loc_jhodga = {
 }
 
-ir_loc_jiddat_al_harasis = {
+ir_loc_jidali = {
+}
+
+ir_loc_jidbaaley = {
+}
+
+ir_loc_jieshan = {
 }
 
 ir_loc_jirapur = {
@@ -8529,7 +10097,38 @@ ir_loc_jirapur = {
 ir_loc_jirbend = {
 }
 
+ir_loc_jobnathnagar = {
+}
+
+ir_loc_joniskis = {
+}
+
+ir_loc_jorf = {
+}
+
+ir_loc_juba = {
+    dock = 1
+}
+
+ir_loc_jubbah = {
+}
+
+ir_loc_jufrah = {
+}
+
+ir_loc_jula = {
+}
+
+ir_loc_jurash = {
+}
+
+ir_loc_juuri = {
+}
+
 ir_loc_jyr = {
+}
+
+ir_loc_jyv = {
 }
 
 ir_loc_kaahka_pamir = {
@@ -8559,6 +10158,9 @@ ir_loc_kabolite = {
 ir_loc_kaboura = {
 }
 
+ir_loc_kabrit = {
+}
+
 ir_loc_kabyk = {
 }
 
@@ -8568,10 +10170,14 @@ ir_loc_kabyle = {
 ir_loc_kaccha = {
 }
 
+ir_loc_kach_kouch = {
+}
+
 ir_loc_kadapa = {
 }
 
 ir_loc_kadasa = {
+    castle = 1
 }
 
 ir_loc_kadinava = {
@@ -8584,19 +10190,31 @@ ir_loc_kadoi = {
     armory = 1
 }
 
+ir_loc_kadus = {
+}
+
 ir_loc_kadyanda = {
 }
 
 ir_loc_kafir_kala = {
 }
 
+ir_loc_kafkasos = {
+}
+
 ir_loc_kaflur = {
+}
+
+ir_loc_kagmar = {
 }
 
 ir_loc_kagra = {
 }
 
 ir_loc_kagrai = {
+}
+
+ir_loc_kahl = {
 }
 
 ir_loc_kahnpuria = {
@@ -8622,6 +10240,9 @@ ir_loc_kajangala = {
     dock = 1
 }
 
+ir_loc_kakabi = {
+}
+
 ir_loc_kakanada = {
 }
 
@@ -8631,21 +10252,33 @@ ir_loc_kakaradika = {
 ir_loc_kala = {
 }
 
+ir_loc_kalabeyr = {
+}
+
 ir_loc_kaladasht = {
 }
 
 ir_loc_kalakaris = {
 }
 
+ir_loc_kalakoy = {
+}
+
 ir_loc_kalana = {
     market_village = 1
+}
+
+ir_loc_kalanshah = {
 }
 
 ir_loc_kalapriya = {
 }
 
-ir_loc_kalas = {
+ir_loc_kalas_0 = {
     dock = 1
+}
+
+ir_loc_kalas_1 = {
 }
 
 ir_loc_kalavad = {
@@ -8685,6 +10318,9 @@ ir_loc_kalliena = {
 ir_loc_kalligeris = {
 }
 
+ir_loc_kallipolis = {
+}
+
 ir_loc_kallipolis_iberias = {
     dock = 1
 }
@@ -8692,7 +10328,13 @@ ir_loc_kallipolis_iberias = {
 ir_loc_kallydion = {
 }
 
+ir_loc_kalm = {
+}
+
 ir_loc_kalmand = {
+}
+
+ir_loc_kalmykovskii = {
 }
 
 ir_loc_kalos_limen = {
@@ -8724,10 +10366,19 @@ ir_loc_kamachia = {
 ir_loc_kamai = {
 }
 
+ir_loc_kamakhyanagar = {
+}
+
+ir_loc_kamalanga = {
+}
+
 ir_loc_kambousis = {
 }
 
 ir_loc_kameiros = {
+}
+
+ir_loc_kamekol = {
 }
 
 ir_loc_kamisa = {
@@ -8752,7 +10403,13 @@ ir_loc_kanale = {
 ir_loc_kanat = {
 }
 
+ir_loc_kanci = {
+}
+
 ir_loc_kancipuram = {
+}
+
+ir_loc_kandar = {
 }
 
 ir_loc_kandara = {
@@ -8761,7 +10418,13 @@ ir_loc_kandara = {
 ir_loc_kandyba = {
 }
 
+ir_loc_kanelate = {
+}
+
 ir_loc_kanepsa = {
+}
+
+ir_loc_kanganwala = {
 }
 
 ir_loc_kangavar = {
@@ -8784,6 +10447,9 @@ ir_loc_kanopos = {
     dock = 1
 }
 
+ir_loc_kantadak = {
+}
+
 ir_loc_kantakossyla = {
 }
 
@@ -8803,7 +10469,13 @@ ir_loc_kapilavastu = {
 ir_loc_kapissa = {
 }
 
+ir_loc_kapyl = {
+}
+
 ir_loc_kar_tukulti_ninurta = {
+}
+
+ir_loc_karabulak = {
 }
 
 ir_loc_karaftu = {
@@ -8816,6 +10488,9 @@ ir_loc_karahataka = {
 }
 
 ir_loc_karakoram = {
+}
+
+ir_loc_karali = {
 }
 
 ir_loc_karambis = {
@@ -8834,13 +10509,16 @@ ir_loc_karanis = {
     barracks = 1
 }
 
-ir_loc_karanpura = {
+ir_loc_karaoba = {
 }
 
 ir_loc_karchakhpyur = {
 }
 
-ir_loc_kardzhali = {
+ir_loc_karenis = {
+}
+
+ir_loc_kares = {
 }
 
 ir_loc_kargah = {
@@ -8852,10 +10530,16 @@ ir_loc_karige = {
 ir_loc_kariglukh = {
 }
 
+ir_loc_karim = {
+}
+
 ir_loc_karivala = {
 }
 
 ir_loc_kariya = {
+}
+
+ir_loc_karkathiokerta = {
 }
 
 ir_loc_karkine = {
@@ -8898,6 +10582,9 @@ ir_loc_karnasuvarna = {
     construction_center = 2
 }
 
+ir_loc_karo = {
+}
+
 ir_loc_karoia = {
 }
 
@@ -8910,6 +10597,9 @@ ir_loc_karoura = {
 ir_loc_karpasia = {
 }
 
+ir_loc_karpovka = {
+}
+
 ir_loc_karukka = {
 }
 
@@ -8917,6 +10607,9 @@ ir_loc_karur = {
 }
 
 ir_loc_karystos = {
+}
+
+ir_loc_kas = {
 }
 
 ir_loc_kashgar = {
@@ -8935,13 +10628,19 @@ ir_loc_kasia = {
 ir_loc_kasipur = {
 }
 
-ir_loc_kaspapauras = {
+ir_loc_kasir = {
 }
 
 ir_loc_kaspin = {
 }
 
 ir_loc_kaspira = {
+}
+
+ir_loc_kassala = {
+}
+
+ir_loc_kassi = {
 }
 
 ir_loc_kassope = {
@@ -8959,6 +10658,9 @@ ir_loc_kathan = {
 }
 
 ir_loc_katheria = {
+}
+
+ir_loc_katketak = {
 }
 
 ir_loc_katnakhpyur = {
@@ -8983,6 +10685,9 @@ ir_loc_kaunos = {
 ir_loc_kaupirrish = {
 }
 
+ir_loc_kaushambi = {
+}
+
 ir_loc_kavera = {
 }
 
@@ -8992,10 +10697,28 @@ ir_loc_kavera_venedia = {
 ir_loc_kavtiskhevi = {
 }
 
+ir_loc_kawah = {
+}
+
+ir_loc_kawahilah = {
+}
+
+ir_loc_kaweit = {
+}
+
 ir_loc_kayit = {
 }
 
+ir_loc_kaynbulak = {
+}
+
+ir_loc_kayta = {
+}
+
 ir_loc_kaza = {
+}
+
+ir_loc_kazanka = {
 }
 
 ir_loc_kea = {
@@ -9010,23 +10733,36 @@ ir_loc_kebren = {
 ir_loc_kedurma = {
 }
 
+ir_loc_keerdak = {
+}
+
 ir_loc_kefalonia = {
 }
 
 ir_loc_kefar_shuni = {
 }
 
-ir_loc_keirpara = {
+ir_loc_keili = {
+}
+
+ir_loc_keirpara_0 = {
+}
+
+ir_loc_keirpara_1 = {
 }
 
 ir_loc_keissia = {
 }
 
-ir_loc_kekaya = {
+ir_loc_kekayai = {
+}
+
+ir_loc_kektikshe = {
 }
 
 ir_loc_kelenderis = {
     barracks = 1
+    dock = 1
 }
 
 ir_loc_keletron = {
@@ -9042,7 +10778,10 @@ ir_loc_kelonai = {
     construction_center = 2
 }
 
-ir_loc_kentourinon = {
+ir_loc_kenbay = {
+}
+
+ir_loc_kenkiyak = {
 }
 
 ir_loc_keramos = {
@@ -9055,6 +10794,9 @@ ir_loc_kerbala = {
 }
 
 ir_loc_keresos = {
+}
+
+ir_loc_keri_kera = {
 }
 
 ir_loc_kerinthos = {
@@ -9079,16 +10821,37 @@ ir_loc_kerkouane = {
 ir_loc_kermine = {
 }
 
+ir_loc_kerrouchen = {
+}
+
 ir_loc_keshmesh = {
 }
 
 ir_loc_ketsk = {
 }
 
+ir_loc_kettha = {
+}
+
+ir_loc_keuci = {
+}
+
+ir_loc_kez_kara = {
+}
+
 ir_loc_kezhen = {
 }
 
+ir_loc_khadramah = {
+}
+
 ir_loc_khadro = {
+}
+
+ir_loc_khafs_daghra = {
+}
+
+ir_loc_khafur = {
 }
 
 ir_loc_khajuraha = {
@@ -9097,10 +10860,16 @@ ir_loc_khajuraha = {
 ir_loc_khakyor = {
 }
 
+ir_loc_khaluf = {
+}
+
 ir_loc_kham = {
 }
 
 ir_loc_khambalida = {
+}
+
+ir_loc_khamir = {
 }
 
 ir_loc_khanash = {
@@ -9113,6 +10882,9 @@ ir_loc_khandav = {
 }
 
 ir_loc_khang = {
+}
+
+ir_loc_khanus = {
 }
 
 ir_loc_kharagpur = {
@@ -9148,17 +10920,22 @@ ir_loc_kherla = {
 ir_loc_kheta = {
 }
 
-ir_loc_khezerlu_qaleh = {
-    castle = 1
-}
-
 ir_loc_khijjngalalla = {
 }
 
 ir_loc_khiva = {
 }
 
+ir_loc_khnafes = {
+}
+
+ir_loc_khobna = {
+}
+
 ir_loc_khochy = {
+}
+
+ir_loc_khodosivka = {
 }
 
 ir_loc_khoh = {
@@ -9170,10 +10947,23 @@ ir_loc_kholan = {
 ir_loc_khonnt = {
 }
 
+ir_loc_khoor_shoora = {
+}
+
+ir_loc_khor = {
+    dock = 1
+}
+
 ir_loc_khorolats = {
 }
 
 ir_loc_khoting = {
+}
+
+ir_loc_khotove = {
+}
+
+ir_loc_khoubana = {
 }
 
 ir_loc_khrischatach = {
@@ -9197,6 +10987,9 @@ ir_loc_khurra = {
 ir_loc_khushab = {
 }
 
+ir_loc_khuvara = {
+}
+
 ir_loc_khyunglung = {
 }
 
@@ -9209,6 +11002,9 @@ ir_loc_kibyra = {
 ir_loc_kichpa = {
 }
 
+ir_loc_kickedak = {
+}
+
 ir_loc_kidrama = {
 }
 
@@ -9216,6 +11012,9 @@ ir_loc_kidyessos = {
 }
 
 ir_loc_kieros = {
+}
+
+ir_loc_kigeira = {
 }
 
 ir_loc_kihkyengra = {
@@ -9274,13 +11073,19 @@ ir_loc_kios = {
     dock = 1
 }
 
-ir_loc_kios_skythike = {
-}
-
 ir_loc_kire = {
 }
 
+ir_loc_kirga = {
+}
+
+ir_loc_kirmis = {
+}
+
 ir_loc_kirrhadia = {
+}
+
+ir_loc_kirsnas = {
 }
 
 ir_loc_kirthagiri = {
@@ -9307,6 +11112,9 @@ ir_loc_kissa_0 = {
 ir_loc_kissa_1 = {
 }
 
+ir_loc_kissar = {
+}
+
 ir_loc_kitagiri = {
 }
 
@@ -9323,6 +11131,9 @@ ir_loc_kition = {
 ir_loc_kizari = {
 }
 
+ir_loc_kjelj = {
+}
+
 ir_loc_klaneos = {
 }
 
@@ -9330,6 +11141,9 @@ ir_loc_kleitor = {
 }
 
 ir_loc_kleonai = {
+}
+
+ir_loc_kleven = {
 }
 
 ir_loc_klibanos = {
@@ -9359,6 +11173,9 @@ ir_loc_knossos = {
     dock = 1
 }
 
+ir_loc_kob_dehad = {
+}
+
 ir_loc_kodava = {
 }
 
@@ -9371,13 +11188,28 @@ ir_loc_kodrion = {
 ir_loc_kodumbalur = {
 }
 
+ir_loc_kodzuv = {
+}
+
+ir_loc_koga = {
+}
+
 ir_loc_koght = {
 }
 
 ir_loc_kogon = {
 }
 
+ir_loc_koha = {
+}
+
+ir_loc_koira = {
+}
+
 ir_loc_kokcha = {
+}
+
+ir_loc_kokkamys = {
 }
 
 ir_loc_kokondai = {
@@ -9389,7 +11221,16 @@ ir_loc_kokousos = {
 ir_loc_kola = {
 }
 
+ir_loc_kolchion = {
+}
+
 ir_loc_kolhapura = {
+}
+
+ir_loc_kolhua = {
+}
+
+ir_loc_kolhumadulu = {
 }
 
 ir_loc_kolinah = {
@@ -9400,9 +11241,6 @@ ir_loc_kolkoi = {
 }
 
 ir_loc_kollipake = {
-}
-
-ir_loc_koloe = {
 }
 
 ir_loc_kolonai = {
@@ -9429,6 +11267,11 @@ ir_loc_komana_hierapolis = {
 }
 
 ir_loc_komana_pontike = {
+    marketplace = 1
+    temple = 1
+}
+
+ir_loc_komar = {
 }
 
 ir_loc_komari = {
@@ -9442,6 +11285,9 @@ ir_loc_komiana = {
 }
 
 ir_loc_komish = {
+}
+
+ir_loc_komyshna = {
 }
 
 ir_loc_konae = {
@@ -9481,6 +11327,9 @@ ir_loc_kophen = {
     construction_center = 3
 }
 
+ir_loc_koptogay = {
+}
+
 ir_loc_koptos = {
 }
 
@@ -9497,6 +11346,15 @@ ir_loc_koralla = {
 }
 
 ir_loc_korama = {
+}
+
+ir_loc_kordofan_desert_0 = {
+}
+
+ir_loc_kordofan_desert_5 = {
+}
+
+ir_loc_kordofan_desert_7 = {
 }
 
 ir_loc_korelloura = {
@@ -9526,9 +11384,6 @@ ir_loc_korkyra = {
 
 ir_loc_korkyra_melaina = {
     dock = 1
-}
-
-ir_loc_korlon = {
 }
 
 ir_loc_kormasa = {
@@ -9565,16 +11420,21 @@ ir_loc_kos = {
 ir_loc_kosala = {
 }
 
-ir_loc_kosambi = {
+ir_loc_kosk = {
 }
 
 ir_loc_kossioia = {
+}
+
+ir_loc_kot_kamalia = {
 }
 
 ir_loc_kota = {
 }
 
 ir_loc_kotais = {
+    construction_center = 2
+    marketplace = 1
 }
 
 ir_loc_kotake = {
@@ -9599,7 +11459,10 @@ ir_loc_kotilingala = {
 ir_loc_kotivarsa = {
 }
 
-ir_loc_kotorodz = {
+ir_loc_kotorox = {
+}
+
+ir_loc_kotta = {
 }
 
 ir_loc_kottiara = {
@@ -9629,10 +11492,31 @@ ir_loc_koussai = {
 ir_loc_koval = {
 }
 
+ir_loc_kovny = {
+}
+
+ir_loc_kozynka = {
+}
+
+ir_loc_krakda = {
+}
+
 ir_loc_kranaos = {
 }
 
+ir_loc_krasnaya = {
+}
+
+ir_loc_krasne = {
+}
+
+ir_loc_krasnohrad = {
+}
+
 ir_loc_krateia = {
+}
+
+ir_loc_krauja = {
 }
 
 ir_loc_krayn = {
@@ -9650,6 +11534,12 @@ ir_loc_kremniskoi = {
 ir_loc_kremnoi = {
 }
 
+ir_loc_kremok = {
+}
+
+ir_loc_krepkaya = {
+}
+
 ir_loc_kreshcek = {
 }
 
@@ -9657,14 +11547,23 @@ ir_loc_krokodilopolis = {
     library = 1
 }
 
-ir_loc_krounoi = {
+ir_loc_krou = {
 }
 
 ir_loc_krueng = {
 }
 
+ir_loc_krugli = {
+}
+
 ir_loc_kryptos_limen = {
     dock = 1
+}
+
+ir_loc_ksabi_0 = {
+}
+
+ir_loc_ksabi_1 = {
 }
 
 ir_loc_kuara = {
@@ -9674,10 +11573,25 @@ ir_loc_kuche = {
     construction_center = 2
 }
 
+ir_loc_kucherquduq = {
+}
+
+ir_loc_kuchynivka = {
+}
+
+ir_loc_kuduk = {
+}
+
+ir_loc_kueibi = {
+}
+
+ir_loc_kufriyat_atash = {
+}
+
 ir_loc_kuh_i_bolagh = {
 }
 
-ir_loc_kuh_i_chorblach = {
+ir_loc_kukcha = {
 }
 
 ir_loc_kukurra = {
@@ -9692,6 +11606,9 @@ ir_loc_kulan = {
 ir_loc_kular = {
 }
 
+ir_loc_kulesze = {
+}
+
 ir_loc_kumdah = {
 }
 
@@ -9704,7 +11621,22 @@ ir_loc_kumo = {
 ir_loc_kumsar = {
 }
 
+ir_loc_kumsuat = {
+}
+
 ir_loc_kunegria = {
+}
+
+ir_loc_kuntadak = {
+}
+
+ir_loc_kupir = {
+}
+
+ir_loc_kupyansk = {
+}
+
+ir_loc_kura = {
 }
 
 ir_loc_kurah = {
@@ -9716,6 +11648,9 @@ ir_loc_kurchina = {
 ir_loc_kurema = {
 }
 
+ir_loc_kurennoe = {
+}
+
 ir_loc_kurgus = {
 }
 
@@ -9725,10 +11660,19 @@ ir_loc_kurh_u_kich = {
 ir_loc_kuria = {
 }
 
+ir_loc_kurmut = {
+}
+
 ir_loc_kurnsck = {
 }
 
 ir_loc_kuromolinava = {
+}
+
+ir_loc_kursa = {
+}
+
+ir_loc_kursk = {
 }
 
 ir_loc_kuru = {
@@ -9759,6 +11703,15 @@ ir_loc_kusinagara = {
 ir_loc_kusta = {
 }
 
+ir_loc_kutnah = {
+}
+
+ir_loc_kutny = {
+}
+
+ir_loc_kutodak = {
+}
+
 ir_loc_kutte_mar = {
 }
 
@@ -9766,6 +11719,12 @@ ir_loc_kuvada = {
 }
 
 ir_loc_kuvalalapura = {
+}
+
+ir_loc_kuweib = {
+}
+
+ir_loc_kuyandy = {
 }
 
 ir_loc_kuyruk = {
@@ -9795,6 +11754,10 @@ ir_loc_kylorica = {
 }
 
 ir_loc_kyme = {
+    dock = 1
+}
+
+ir_loc_kymos = {
 }
 
 ir_loc_kynopolis = {
@@ -9830,6 +11793,9 @@ ir_loc_kyrthanion = {
 ir_loc_kyrtik = {
 }
 
+ir_loc_kyshtau = {
+}
+
 ir_loc_kysis = {
 }
 
@@ -9853,6 +11819,13 @@ ir_loc_kyungho = {
 }
 
 ir_loc_kyzikos = {
+    dock = 1
+}
+
+ir_loc_laatamna = {
+}
+
+ir_loc_laattaouia = {
 }
 
 ir_loc_laba = {
@@ -9879,6 +11852,9 @@ ir_loc_labrys = {
 ir_loc_labrys_omana = {
 }
 
+ir_loc_laccadives = {
+}
+
 ir_loc_laciacum = {
 }
 
@@ -9889,12 +11865,16 @@ ir_loc_lacipea = {
 }
 
 ir_loc_lacippo = {
+    dock = 1
 }
 
 ir_loc_lacobardia = {
 }
 
 ir_loc_lacobriga = {
+}
+
+ir_loc_lacon = {
 }
 
 ir_loc_lactodorum = {
@@ -9912,6 +11892,12 @@ ir_loc_ladakh = {
 ir_loc_ladha = {
 }
 
+ir_loc_lafaha = {
+}
+
+ir_loc_laga = {
+}
+
 ir_loc_lagania = {
     barracks = 1
 }
@@ -9920,6 +11906,9 @@ ir_loc_lagbe = {
 }
 
 ir_loc_lagentium = {
+}
+
+ir_loc_laghouat = {
 }
 
 ir_loc_lagni = {
@@ -9932,6 +11921,12 @@ ir_loc_lahami = {
 }
 
 ir_loc_lahir = {
+}
+
+ir_loc_lahmar = {
+}
+
+ir_loc_lahunipara = {
 }
 
 ir_loc_lairtes = {
@@ -9983,7 +11978,14 @@ ir_loc_lamounia = {
 ir_loc_lampas = {
 }
 
+ir_loc_lampi = {
+}
+
 ir_loc_lampsakos = {
+    dock = 1
+}
+
+ir_loc_lamrija = {
 }
 
 ir_loc_lancia = {
@@ -10001,6 +12003,12 @@ ir_loc_langobardia = {
 ir_loc_langobriga = {
 }
 
+ir_loc_lanyar = {
+}
+
+ir_loc_lapas = {
+}
+
 ir_loc_lappa = {
 }
 
@@ -10011,6 +12019,9 @@ ir_loc_lapurdum = {
 }
 
 ir_loc_laranda = {
+}
+
+ir_loc_larbaa_magnoun = {
 }
 
 ir_loc_lares = {
@@ -10038,6 +12049,9 @@ ir_loc_larsa = {
 }
 
 ir_loc_lashang = {
+}
+
+ir_loc_lashio = {
 }
 
 ir_loc_lashom = {
@@ -10101,19 +12115,31 @@ ir_loc_lavinium = {
 ir_loc_lawami = {
 }
 
+ir_loc_layla = {
+}
+
 ir_loc_lebap = {
 }
 
 ir_loc_lebedia = {
 }
 
+ir_loc_lebr = {
+}
+
 ir_loc_lechta = {
+}
+
+ir_loc_lecksair = {
 }
 
 ir_loc_lecrotiana = {
 }
 
 ir_loc_lederata = {
+}
+
+ir_loc_leemi = {
 }
 
 ir_loc_leges_maiores = {
@@ -10128,7 +12154,14 @@ ir_loc_legna = {
 ir_loc_leh = {
 }
 
+ir_loc_lek = {
+}
+
 ir_loc_lemellia = {
+}
+
+ir_loc_lemeshevichi = {
+    dock = 1
 }
 
 ir_loc_lemnis = {
@@ -10160,6 +12193,9 @@ ir_loc_leonton_polis = {
 ir_loc_leontopolis = {
 }
 
+ir_loc_lepiel = {
+}
+
 ir_loc_lepreon = {
 }
 
@@ -10179,6 +12215,9 @@ ir_loc_lepton = {
 }
 
 ir_loc_leros = {
+}
+
+ir_loc_lesa = {
 }
 
 ir_loc_lesbia = {
@@ -10226,6 +12265,9 @@ ir_loc_leukothea = {
 ir_loc_leuktron = {
 }
 
+ir_loc_leulu = {
+}
+
 ir_loc_leuphana = {
 }
 
@@ -10233,6 +12275,9 @@ ir_loc_leusaba = {
 }
 
 ir_loc_leusinium = {
+}
+
+ir_loc_levedi = {
 }
 
 ir_loc_levobrinta = {
@@ -10255,6 +12300,9 @@ ir_loc_libarna = {
 }
 
 ir_loc_libida = {
+}
+
+ir_loc_libisonis = {
 }
 
 ir_loc_libisosa = {
@@ -10319,6 +12367,9 @@ ir_loc_liparae = {
 ir_loc_lishan = {
 }
 
+ir_loc_liska = {
+}
+
 ir_loc_lissos = {
     dock = 1
 }
@@ -10331,6 +12382,9 @@ ir_loc_litta = {
 }
 
 ir_loc_livias = {
+}
+
+ir_loc_liwa = {
 }
 
 ir_loc_lixisis = {
@@ -10359,6 +12413,15 @@ ir_loc_locri_0 = {
 ir_loc_locri_1 = {
 }
 
+ir_loc_logiya = {
+}
+
+ir_loc_loktyshi = {
+}
+
+ir_loc_lokyldak = {
+}
+
 ir_loc_lonavli = {
 }
 
@@ -10372,8 +12435,14 @@ ir_loc_longaticum = {
 ir_loc_longinopara = {
 }
 
+ir_loc_longones = {
+}
+
 ir_loc_longuntica = {
     dock = 1
+}
+
+ir_loc_loodak = {
 }
 
 ir_loc_lopodunum = {
@@ -10395,19 +12464,14 @@ ir_loc_lotin = {
 ir_loc_lougia = {
 }
 
-ir_loc_loulan = {
-}
-
 ir_loc_lounda = {
 }
 
 ir_loc_loutia = {
 }
 
-ir_loc_lubokla = {
-}
-
 ir_loc_luca = {
+    slave_market = 1
 }
 
 ir_loc_lucaniacum = {
@@ -10435,7 +12499,7 @@ ir_loc_lucus_asturum = {
 ir_loc_ludna = {
 }
 
-ir_loc_luenna = {
+ir_loc_luena = {
 }
 
 ir_loc_lugadurum = {
@@ -10460,8 +12524,17 @@ ir_loc_lugii = {
 ir_loc_lugio = {
 }
 
+ir_loc_luguido = {
+}
+
 ir_loc_luguvalium = {
     dock = 1
+}
+
+ir_loc_lukomlskoye = {
+}
+
+ir_loc_lukow = {
 }
 
 ir_loc_lum = {
@@ -10471,6 +12544,10 @@ ir_loc_lumbini = {
 }
 
 ir_loc_luna = {
+    slave_market = 1
+}
+
+ir_loc_lunichno = {
 }
 
 ir_loc_lunna = {
@@ -10488,6 +12565,12 @@ ir_loc_lupiae = {
 ir_loc_luppia = {
 }
 
+ir_loc_lupsadak = {
+}
+
+ir_loc_lupuznya = {
+}
+
 ir_loc_luserium = {
 }
 
@@ -10501,6 +12584,9 @@ ir_loc_luteva = {
 }
 
 ir_loc_lutudarum = {
+}
+
+ir_loc_luxia = {
 }
 
 ir_loc_lychidnos = {
@@ -10530,10 +12616,25 @@ ir_loc_lysimacheia = {
     minting_office = 2
 }
 
+ir_loc_lysobyki = {
+}
+
 ir_loc_lystra = {
 }
 
+ir_loc_lyubech = {
+}
+
+ir_loc_maatul = {
+}
+
 ir_loc_mabatorum = {
+}
+
+ir_loc_maca = {
+}
+
+ir_loc_macajilayn = {
 }
 
 ir_loc_maccua = {
@@ -10544,6 +12645,9 @@ ir_loc_machhindrapur = {
 }
 
 ir_loc_machiekkyt = {
+}
+
+ir_loc_maciejowice = {
 }
 
 ir_loc_macomades = {
@@ -10586,10 +12690,16 @@ ir_loc_madomastice = {
 ir_loc_madra = {
 }
 
+ir_loc_madrakah = {
+}
+
 ir_loc_madrakara = {
 }
 
 ir_loc_madurai = {
+}
+
+ir_loc_maganan = {
 }
 
 ir_loc_magaris = {
@@ -10599,6 +12709,9 @@ ir_loc_magaris_kalinga = {
 }
 
 ir_loc_magarsa = {
+}
+
+ir_loc_magat = {
 }
 
 ir_loc_magdalu = {
@@ -10613,13 +12726,13 @@ ir_loc_maggiaviensium = {
 ir_loc_maghara = {
 }
 
+ir_loc_maghessel = {
+}
+
 ir_loc_magiovinium = {
 }
 
 ir_loc_magnana = {
-}
-
-ir_loc_magnesia = {
 }
 
 ir_loc_magnesia_pros_maiandro = {
@@ -10632,17 +12745,32 @@ ir_loc_mago = {
     dock = 1
 }
 
+ir_loc_magoura = {
+}
+
 ir_loc_magrab = {
 }
 
 ir_loc_magrai = {
 }
 
+ir_loc_magrane = {
+}
+
+ir_loc_magrur = {
+}
+
 ir_loc_mahagrama = {
     dock = 1
 }
 
+ir_loc_mahalla = {
+}
+
 ir_loc_mahanala = {
+}
+
+ir_loc_mahaneit = {
 }
 
 ir_loc_maharatthalava = {
@@ -10652,7 +12780,13 @@ ir_loc_mahatittha = {
     dock = 1
 }
 
+ir_loc_mahd_al_thahab = {
+}
+
 ir_loc_mahdnada = {
+}
+
+ir_loc_mahdood = {
 }
 
 ir_loc_mahisha = {
@@ -10662,13 +12796,25 @@ ir_loc_mahisha = {
 ir_loc_mahismati = {
 }
 
+ir_loc_mahiyanganaya = {
+}
+
 ir_loc_mahoba = {
 }
 
 ir_loc_mahria = {
 }
 
+ir_loc_mahruqah = {
+}
+
 ir_loc_mahur = {
+}
+
+ir_loc_mahzul = {
+}
+
+ir_loc_mai_adrasha = {
 }
 
 ir_loc_maiboza = {
@@ -10677,10 +12823,25 @@ ir_loc_maiboza = {
 ir_loc_maidanchach = {
 }
 
+ir_loc_maidankoga = {
+}
+
+ir_loc_maidankuyryk = {
+}
+
 ir_loc_maionia = {
 }
 
 ir_loc_maipha = {
+}
+
+ir_loc_maito = {
+}
+
+ir_loc_majdubiyah = {
+}
+
+ir_loc_majdul = {
 }
 
 ir_loc_makarabah = {
@@ -10688,6 +12849,9 @@ ir_loc_makarabah = {
 
 ir_loc_makash = {
     barracks = 1
+}
+
+ir_loc_makat = {
 }
 
 ir_loc_maked = {
@@ -10699,6 +12863,9 @@ ir_loc_makeda = {
 ir_loc_makhram = {
 }
 
+ir_loc_makit = {
+}
+
 ir_loc_makkate = {
 }
 
@@ -10707,6 +12874,13 @@ ir_loc_makna = {
 }
 
 ir_loc_makopsis = {
+}
+
+ir_loc_makso = {
+}
+
+ir_loc_maku = {
+    castle = 1
 }
 
 ir_loc_malaca = {
@@ -10723,12 +12897,10 @@ ir_loc_malandara = {
 }
 
 ir_loc_malao = {
+    dock = 1
 }
 
 ir_loc_malateca = {
-}
-
-ir_loc_malava = {
 }
 
 ir_loc_malaver = {
@@ -10738,6 +12910,10 @@ ir_loc_malayana = {
 }
 
 ir_loc_malda = {
+}
+
+ir_loc_male = {
+    dock = 1
 }
 
 ir_loc_malejin = {
@@ -10755,10 +12931,16 @@ ir_loc_malini = {
 ir_loc_mallabhum = {
 }
 
+ir_loc_mallava = {
+}
+
 ir_loc_mallayapalam = {
 }
 
-ir_loc_mallia = {
+ir_loc_mallia_0 = {
+}
+
+ir_loc_mallia_1 = {
 }
 
 ir_loc_malliacus = {
@@ -10768,9 +12950,6 @@ ir_loc_mallites = {
 }
 
 ir_loc_mallo = {
-}
-
-ir_loc_mallonpolis = {
 }
 
 ir_loc_mallos = {
@@ -10801,6 +12980,9 @@ ir_loc_mammica = {
 ir_loc_mampsis = {
 }
 
+ir_loc_mamry = {
+}
+
 ir_loc_mamucium = {
 }
 
@@ -10813,8 +12995,7 @@ ir_loc_manapia_borealis = {
 ir_loc_manapia_occidentalis = {
 }
 
-ir_loc_manapia_orientalis = {
-    dock = 1
+ir_loc_manaqil = {
 }
 
 ir_loc_manar = {
@@ -10836,6 +13017,7 @@ ir_loc_manatum = {
 }
 
 ir_loc_manavia = {
+    dock = 1
 }
 
 ir_loc_manbhum = {
@@ -10858,6 +13040,9 @@ ir_loc_mandla = {
 }
 
 ir_loc_manduessedum = {
+}
+
+ir_loc_manfuchia = {
 }
 
 ir_loc_mangalavada = {
@@ -10884,7 +13069,7 @@ ir_loc_mankal = {
 ir_loc_manoia = {
 }
 
-ir_loc_mansa = {
+ir_loc_mansoura = {
 }
 
 ir_loc_mansur = {
@@ -10920,11 +13105,17 @@ ir_loc_maphoris = {
 ir_loc_marad = {
 }
 
+ir_loc_maradah = {
+}
+
 ir_loc_marah = {
 }
 
 ir_loc_marakanda = {
     construction_center = 2
+}
+
+ir_loc_marakhai = {
 }
 
 ir_loc_maran = {
@@ -10933,13 +13124,17 @@ ir_loc_maran = {
 ir_loc_marandis = {
 }
 
+ir_loc_marane = {
+}
+
 ir_loc_maranot = {
 }
 
-ir_loc_marcelliago = {
+ir_loc_maravan = {
+    market_village = 1
 }
 
-ir_loc_marcianopolis = {
+ir_loc_marcelliago = {
 }
 
 ir_loc_marcimeni = {
@@ -10965,6 +13160,12 @@ ir_loc_marde = {
     castle = 1
 }
 
+ir_loc_mareb = {
+}
+
+ir_loc_marehtidak = {
+}
+
 ir_loc_margineia = {
     construction_center = 2
 }
@@ -10972,10 +13173,10 @@ ir_loc_margineia = {
 ir_loc_margum = {
 }
 
-ir_loc_mariaba = {
+ir_loc_mari = {
 }
 
-ir_loc_mariana = {
+ir_loc_mariaba = {
 }
 
 ir_loc_mariana_baetica = {
@@ -11014,9 +13215,6 @@ ir_loc_marisia = {
 ir_loc_markash = {
 }
 
-ir_loc_markellai = {
-}
-
 ir_loc_marma = {
 }
 
@@ -11038,7 +13236,13 @@ ir_loc_maroneia = {
 ir_loc_maronis = {
 }
 
+ir_loc_marot = {
+}
+
 ir_loc_marouka = {
+}
+
+ir_loc_marrakech = {
 }
 
 ir_loc_marrica = {
@@ -11060,9 +13264,6 @@ ir_loc_marsignia = {
 }
 
 ir_loc_marsonia = {
-}
-
-ir_loc_martis = {
 }
 
 ir_loc_martyropolis = {
@@ -11129,6 +13330,15 @@ ir_loc_mastiacum = {
 ir_loc_masticat = {
 }
 
+ir_loc_mastutah = {
+}
+
+ir_loc_matale = {
+}
+
+ir_loc_matamir = {
+}
+
 ir_loc_matar = {
 }
 
@@ -11136,6 +13346,9 @@ ir_loc_matara = {
 }
 
 ir_loc_matavo = {
+}
+
+ir_loc_matay = {
 }
 
 ir_loc_mathura = {
@@ -11177,6 +13390,9 @@ ir_loc_matuaspa = {
 ir_loc_mau = {
 }
 
+ir_loc_mauka = {
+}
+
 ir_loc_mauranipur = {
 }
 
@@ -11193,6 +13409,18 @@ ir_loc_mavilankai = {
     dock = 1
 }
 
+ir_loc_mawahi = {
+}
+
+ir_loc_mawlaik = {
+}
+
+ir_loc_mawqaq = {
+}
+
+ir_loc_mayo = {
+}
+
 ir_loc_mayurasattapattinam = {
     dock = 1
 }
@@ -11202,7 +13430,13 @@ ir_loc_mazaka = {
     library = 1
 }
 
-ir_loc_mazir = {
+ir_loc_mazgi = {
+}
+
+ir_loc_mazyr = {
+}
+
+ir_loc_mcif = {
 }
 
 ir_loc_mdakra = {
@@ -11253,6 +13487,21 @@ ir_loc_mediomatricia = {
 ir_loc_medioslanium = {
 }
 
+ir_loc_medja = {
+}
+
+ir_loc_medma = {
+}
+
+ir_loc_medovyi = {
+}
+
+ir_loc_medu = {
+}
+
+ir_loc_meduin = {
+}
+
 ir_loc_megalopolis = {
     castle = 1
 }
@@ -11280,10 +13529,13 @@ ir_loc_mehdnapura = {
 ir_loc_mehsana = {
 }
 
+ir_loc_meidob = {
+}
+
 ir_loc_meiros = {
 }
 
-ir_loc_mekele = {
+ir_loc_mejjat = {
 }
 
 ir_loc_melange = {
@@ -11312,6 +13564,9 @@ ir_loc_mellaria = {
 ir_loc_mellodunum = {
 }
 
+ir_loc_melnya = {
+}
+
 ir_loc_melocabus = {
 }
 
@@ -11335,11 +13590,17 @@ ir_loc_memphis = {
     library = 5
 }
 
+ir_loc_mena = {
+}
+
 ir_loc_menae = {
 }
 
 ir_loc_menapila = {
     barracks = 1
+}
+
+ir_loc_mendak = {
 }
 
 ir_loc_mendes = {
@@ -11358,11 +13619,10 @@ ir_loc_menelaos = {
     dock = 1
 }
 
-ir_loc_menesthei_portus = {
-    dock = 1
+ir_loc_mennichak = {
 }
 
-ir_loc_mennichak = {
+ir_loc_meno = {
 }
 
 ir_loc_menova = {
@@ -11380,20 +13640,36 @@ ir_loc_meore = {
 ir_loc_mephas = {
 }
 
+ir_loc_meragh = {
+}
+
 ir_loc_merania = {
 }
 
+ir_loc_merefa = {
+}
+
 ir_loc_mergablum = {
+}
+
+ir_loc_merla = {
 }
 
 ir_loc_meroe = {
     construction_center = 2
 }
 
+ir_loc_meroe_desert = {
+}
+
 ir_loc_mersovium = {
 }
 
+ir_loc_merzouga = {
+}
+
 ir_loc_mesai = {
+    market_village = 1
 }
 
 ir_loc_mesala = {
@@ -11413,6 +13689,12 @@ ir_loc_meskine = {
 }
 
 ir_loc_mesopotamian_desert = {
+}
+
+ir_loc_mesphe = {
+}
+
+ir_loc_messaad = {
 }
 
 ir_loc_messana = {
@@ -11435,9 +13717,6 @@ ir_loc_mestrianis = {
 ir_loc_mesuium = {
 }
 
-ir_loc_metalla = {
-}
-
 ir_loc_metallum_vipescense = {
 }
 
@@ -11457,10 +13736,20 @@ ir_loc_metas = {
 ir_loc_metellinum = {
 }
 
+ir_loc_metemmeh = {
+}
+
 ir_loc_meteon = {
 }
 
 ir_loc_methone = {
+}
+
+ir_loc_methymna = {
+    dock = 1
+}
+
+ir_loc_metlili = {
 }
 
 ir_loc_metropolis = {
@@ -11470,6 +13759,15 @@ ir_loc_metropolis_phrygias = {
 }
 
 ir_loc_metulum = {
+}
+
+ir_loc_mezber = {
+}
+
+ir_loc_mghair = {
+}
+
+ir_loc_mglin = {
 }
 
 ir_loc_mhai = {
@@ -11493,6 +13791,9 @@ ir_loc_micia = {
 ir_loc_midaion = {
 }
 
+ir_loc_midar = {
+}
+
 ir_loc_middle_atlas = {
 }
 
@@ -11500,6 +13801,9 @@ ir_loc_midili = {
 }
 
 ir_loc_miena = {
+}
+
+ir_loc_migamuva = {
 }
 
 ir_loc_migayah = {
@@ -11521,16 +13825,32 @@ ir_loc_miletos = {
 ir_loc_milevum = {
 }
 
+ir_loc_mille = {
+}
+
 ir_loc_millianum = {
 }
 
 ir_loc_millonia = {
 }
 
+ir_loc_milohrad = {
+    dock = 1
+}
+
 ir_loc_milos = {
 }
 
 ir_loc_milzigeris = {
+}
+
+ir_loc_mimrito = {
+}
+
+ir_loc_mimvam = {
+}
+
+ir_loc_min = {
 }
 
 ir_loc_mina = {
@@ -11542,16 +13862,28 @@ ir_loc_minagana = {
 ir_loc_minariacum = {
 }
 
+ir_loc_mindigale = {
+}
+
 ir_loc_mingechaur = {
+}
+
+ir_loc_minicoy = {
+}
+
+ir_loc_minija = {
 }
 
 ir_loc_minnagara = {
 }
 
-ir_loc_minnagara_sauvira = {
+ir_loc_minqar = {
 }
 
-ir_loc_minqar = {
+ir_loc_minsk = {
+}
+
+ir_loc_mirikh = {
 }
 
 ir_loc_miriquidui = {
@@ -11581,6 +13913,12 @@ ir_loc_mishkinshahr = {
 ir_loc_misiche = {
 }
 
+ir_loc_misrar = {
+}
+
+ir_loc_missour = {
+}
+
 ir_loc_missua = {
     dock = 1
 }
@@ -11606,6 +13944,9 @@ ir_loc_miyana = {
 ir_loc_mizab = {
 }
 
+ir_loc_mizda = {
+}
+
 ir_loc_mizdaqahn = {
 }
 
@@ -11613,6 +13954,9 @@ ir_loc_mnata = {
 }
 
 ir_loc_mnezos = {
+}
+
+ir_loc_mnoud_nekkour = {
 }
 
 ir_loc_mochi = {
@@ -11651,6 +13995,9 @@ ir_loc_moesiana = {
 ir_loc_mogentiana = {
 }
 
+ir_loc_mogilev = {
+}
+
 ir_loc_mogontiacum = {
     dock = 1
 }
@@ -11659,6 +14006,9 @@ ir_loc_mohadavasaka = {
 }
 
 ir_loc_mohur = {
+}
+
+ir_loc_moktar = {
 }
 
 ir_loc_molchia = {
@@ -11682,7 +14032,19 @@ ir_loc_mon_bumtang = {
 ir_loc_mon_shampo = {
 }
 
+ir_loc_mona = {
+}
+
+ir_loc_moncen = {
+}
+
+ir_loc_mongmit = {
+}
+
 ir_loc_monkanei = {
+}
+
+ir_loc_monki = {
 }
 
 ir_loc_monoglosson = {
@@ -11729,6 +14091,9 @@ ir_loc_mopsouestia = {
 ir_loc_mopth = {
 }
 
+ir_loc_moqor_yar = {
+}
+
 ir_loc_mordiaion = {
 }
 
@@ -11761,9 +14126,6 @@ ir_loc_mosali = {
 ir_loc_mosarna = {
 }
 
-ir_loc_moscha = {
-}
-
 ir_loc_mosconnum = {
 }
 
@@ -11773,11 +14135,17 @@ ir_loc_mosellia = {
 ir_loc_mosellia_minor = {
 }
 
+ir_loc_moshchenoe = {
+}
+
 ir_loc_mosomagus = {
 }
 
 ir_loc_mosylon = {
     dock = 1
+}
+
+ir_loc_mosylon_mountains = {
 }
 
 ir_loc_motene = {
@@ -11794,14 +14162,14 @@ ir_loc_mothis = {
 ir_loc_mothone = {
 }
 
-ir_loc_motta_mosylionia = {
-}
-
-ir_loc_motta_omania = {
+ir_loc_moudjebara = {
 }
 
 ir_loc_moundou = {
     dock = 1
+}
+
+ir_loc_mountain_pass = {
 }
 
 ir_loc_mousa = {
@@ -11817,10 +14185,28 @@ ir_loc_mousopalle = {
 ir_loc_mouza_emporion = {
 }
 
+ir_loc_mrara = {
+}
+
+ir_loc_mrauk_u = {
+}
+
 ir_loc_mritti_kavati = {
 }
 
 ir_loc_mroshika = {
+}
+
+ir_loc_muchera = {
+}
+
+ir_loc_mud = {
+}
+
+ir_loc_mudun = {
+}
+
+ir_loc_mughattah = {
 }
 
 ir_loc_mugilonia = {
@@ -11832,16 +14218,34 @@ ir_loc_muika = {
 ir_loc_muiksita = {
 }
 
+ir_loc_mukhat = {
+}
+
+ir_loc_mukka = {
+}
+
 ir_loc_mukund = {
 }
 
+ir_loc_mukur = {
+}
+
 ir_loc_mulasthanapura = {
+}
+
+ir_loc_mulayjah = {
 }
 
 ir_loc_mulbek = {
 }
 
 ir_loc_mulon = {
+}
+
+ir_loc_mulug = {
+}
+
+ir_loc_mundigak = {
 }
 
 ir_loc_mune = {
@@ -11853,10 +14257,13 @@ ir_loc_municipium = {
 ir_loc_municipium_dardanorum = {
 }
 
-ir_loc_municipium_iassorum = {
+ir_loc_munigua = {
 }
 
-ir_loc_munigua = {
+ir_loc_muqaddam = {
+}
+
+ir_loc_muqarqar = {
 }
 
 ir_loc_mura = {
@@ -11874,7 +14281,13 @@ ir_loc_murgi = {
 ir_loc_murissa = {
 }
 
+ir_loc_murkhan = {
+}
+
 ir_loc_murna = {
+}
+
+ir_loc_murrat = {
 }
 
 ir_loc_mursa = {
@@ -11892,6 +14305,12 @@ ir_loc_murselliana = {
 ir_loc_murta = {
 }
 
+ir_loc_murtadak = {
+}
+
+ir_loc_murzuq = {
+}
+
 ir_loc_musai = {
 }
 
@@ -11899,6 +14318,9 @@ ir_loc_musarna = {
 }
 
 ir_loc_muslubium = {
+}
+
+ir_loc_mustajoki = {
 }
 
 ir_loc_mustiae_calmes = {
@@ -11911,6 +14333,9 @@ ir_loc_mutina = {
     castle = 1
 }
 
+ir_loc_muzahmiya = {
+}
+
 ir_loc_muziris = {
     construction_center = 2
     dock = 1
@@ -11920,6 +14345,12 @@ ir_loc_muzuc = {
 }
 
 ir_loc_myanik = {
+}
+
+ir_loc_myitkyina = {
+}
+
+ir_loc_myitnge = {
 }
 
 ir_loc_mykon = {
@@ -11938,8 +14369,14 @@ ir_loc_myos_hormos = {
     dock = 1
 }
 
+ir_loc_myous = {
+}
+
 ir_loc_myra = {
     dock = 1
+}
+
+ir_loc_myrhorod = {
 }
 
 ir_loc_myriandros = {
@@ -11965,6 +14402,9 @@ ir_loc_mzamza = {
 ir_loc_mzetamze = {
 }
 
+ir_loc_naamen = {
+}
+
 ir_loc_naarda = {
 }
 
@@ -11973,6 +14413,9 @@ ir_loc_nabada = {
 
 ir_loc_nabadwipa = {
     construction_center = 2
+}
+
+ir_loc_nabalat = {
 }
 
 ir_loc_nabartha = {
@@ -12005,6 +14448,15 @@ ir_loc_naein = {
 ir_loc_naeva = {
 }
 
+ir_loc_naffatiyah = {
+}
+
+ir_loc_nafun = {
+}
+
+ir_loc_nagaa = {
+}
+
 ir_loc_nagara = {
 }
 
@@ -12016,6 +14468,9 @@ ir_loc_nagarjunikonda = {
 }
 
 ir_loc_nagarpur = {
+}
+
+ir_loc_nagdiyah = {
 }
 
 ir_loc_nagia = {
@@ -12030,13 +14485,19 @@ ir_loc_nagnatia_occidentalis = {
 ir_loc_nagnatia_orientalis = {
 }
 
+ir_loc_nahapana = {
+}
+
 ir_loc_naharvalorum = {
 }
 
 ir_loc_nahrawan = {
 }
 
-ir_loc_naissus = {
+ir_loc_nakfa = {
+}
+
+ir_loc_nakhlah = {
 }
 
 ir_loc_nakoleia = {
@@ -12048,7 +14509,16 @@ ir_loc_nakorzan = {
 ir_loc_naksho = {
 }
 
+ir_loc_naktis = {
+}
+
 ir_loc_nalanda = {
+}
+
+ir_loc_naliboki = {
+}
+
+ir_loc_nalja = {
 }
 
 ir_loc_namakan = {
@@ -12088,16 +14558,25 @@ ir_loc_napoca = {
 ir_loc_napuca = {
 }
 
-ir_loc_naqa = {
+ir_loc_naqah = {
 }
 
 ir_loc_naqb_jedid = {
+}
+
+ir_loc_naqqazah = {
+}
+
+ir_loc_nar_gyz = {
 }
 
 ir_loc_nara = {
 }
 
 ir_loc_nara_maxyesia = {
+}
+
+ir_loc_narachanski = {
 }
 
 ir_loc_narayana = {
@@ -12152,6 +14631,9 @@ ir_loc_nastae = {
 ir_loc_natiolum = {
 }
 
+ir_loc_nato = {
+}
+
 ir_loc_nattabutum = {
 }
 
@@ -12171,6 +14653,9 @@ ir_loc_naura_0 = {
 ir_loc_naura_1 = {
 }
 
+ir_loc_nausha = {
+}
+
 ir_loc_nautaka = {
 }
 
@@ -12186,7 +14671,13 @@ ir_loc_navelis = {
 ir_loc_navicellis = {
 }
 
+ir_loc_navissos = {
+}
+
 ir_loc_navoa = {
+}
+
+ir_loc_nawas = {
 }
 
 ir_loc_naxos = {
@@ -12199,15 +14690,19 @@ ir_loc_naxouana = {
 ir_loc_nayband = {
 }
 
+ir_loc_nazarkhan = {
+}
+
 ir_loc_nea_halos = {
+}
+
+ir_loc_nea_paphos = {
+    dock = 1
 }
 
 ir_loc_neapolis = {
     armory = 2
     dock = 1
-}
-
-ir_loc_neapolis_sardoa = {
 }
 
 ir_loc_neapolis_taurike = {
@@ -12216,10 +14711,16 @@ ir_loc_neapolis_taurike = {
 ir_loc_neapolis_thrake = {
 }
 
+ir_loc_neba = {
+}
+
 ir_loc_nechek = {
 }
 
 ir_loc_nechesia = {
+}
+
+ir_loc_nedryhailiv = {
 }
 
 ir_loc_negiacum = {
@@ -12230,6 +14731,9 @@ ir_loc_nehrawati = {
 
 ir_loc_neiloupolis = {
     construction_center = 1
+}
+
+ir_loc_neiti = {
 }
 
 ir_loc_nelcynda = {
@@ -12268,10 +14772,10 @@ ir_loc_nepheris = {
 ir_loc_nepista = {
 }
 
-ir_loc_nerai = {
+ir_loc_nereai = {
 }
 
-ir_loc_nereai = {
+ir_loc_nerkka = {
 }
 
 ir_loc_nervia_prima = {
@@ -12307,6 +14811,9 @@ ir_loc_neviodunum = {
 ir_loc_nghulmo_khar = {
 }
 
+ir_loc_ngoussa = {
+}
+
 ir_loc_nguot = {
 }
 
@@ -12319,7 +14826,7 @@ ir_loc_nicivibus = {
 ir_loc_nidum = {
 }
 
-ir_loc_nihavand = {
+ir_loc_niini = {
 }
 
 ir_loc_nikaia_lokron = {
@@ -12331,9 +14838,6 @@ ir_loc_nikaia_nialia = {
 
 ir_loc_nikama = {
     dock = 1
-}
-
-ir_loc_nike = {
 }
 
 ir_loc_nikhshapaya = {
@@ -12349,10 +14853,16 @@ ir_loc_nikonia = {
 ir_loc_nikopolis = {
 }
 
+ir_loc_nili = {
+}
+
 ir_loc_nimisa = {
 }
 
 ir_loc_nina = {
+}
+
+ir_loc_ninah = {
 }
 
 ir_loc_nincildae = {
@@ -12367,6 +14877,9 @@ ir_loc_ninika = {
 }
 
 ir_loc_nippur = {
+}
+
+ir_loc_niqirah = {
 }
 
 ir_loc_nisacus = {
@@ -12388,10 +14901,19 @@ ir_loc_nisibis_1 = {
 ir_loc_nisyros = {
 }
 
+ir_loc_nithavanta = {
+}
+
+ir_loc_nitodak = {
+}
+
 ir_loc_nitra = {
 }
 
 ir_loc_nivaria = {
+}
+
+ir_loc_nizamabad = {
 }
 
 ir_loc_noa = {
@@ -12400,10 +14922,10 @@ ir_loc_noa = {
 ir_loc_nobiodounos = {
 }
 
-ir_loc_noetu = {
+ir_loc_nogeomagus = {
 }
 
-ir_loc_nogeomagus = {
+ir_loc_nokhar = {
 }
 
 ir_loc_nola = {
@@ -12415,16 +14937,15 @@ ir_loc_nomisterium = {
 ir_loc_nonniacus = {
 }
 
+ir_loc_nooli = {
+}
+
 ir_loc_noouion = {
     dock = 1
 }
 
-ir_loc_nora_0 = {
+ir_loc_nora = {
     castle = 1
-}
-
-ir_loc_nora_1 = {
-    barracks = 1
 }
 
 ir_loc_norba_0 = {
@@ -12444,6 +14965,9 @@ ir_loc_north_caledonian_mountains = {
 }
 
 ir_loc_north_nilgiri = {
+}
+
+ir_loc_northern_bayuda_desert = {
 }
 
 ir_loc_nossa = {
@@ -12513,10 +15037,16 @@ ir_loc_novus_portus = {
 ir_loc_nuarsak = {
 }
 
+ir_loc_nuba = {
+}
+
 ir_loc_nuceria = {
 }
 
 ir_loc_nuithonia = {
+}
+
+ir_loc_nuktani = {
 }
 
 ir_loc_nullica = {
@@ -12526,6 +15056,15 @@ ir_loc_numantia = {
 }
 
 ir_loc_numluli = {
+}
+
+ir_loc_nura = {
+    construction_center = 2
+    library = 2
+    minting_office = 1
+}
+
+ir_loc_nure = {
 }
 
 ir_loc_nuri = {
@@ -12538,6 +15077,9 @@ ir_loc_nuzi = {
 }
 
 ir_loc_nyang = {
+}
+
+ir_loc_nyaunggan = {
 }
 
 ir_loc_nyenchen = {
@@ -12553,9 +15095,6 @@ ir_loc_nymphaeum = {
 }
 
 ir_loc_nymphaios = {
-}
-
-ir_loc_nymphaios_limen = {
 }
 
 ir_loc_nynt = {
@@ -12646,13 +15185,19 @@ ir_loc_oea = {
 ir_loc_oescus = {
 }
 
+ir_loc_ogenage = {
+}
+
 ir_loc_oggrunet = {
 }
 
-ir_loc_oghlu_qaleh = {
+ir_loc_ogorodniki = {
 }
 
 ir_loc_ogron = {
+}
+
+ir_loc_ohut = {
 }
 
 ir_loc_oiasso = {
@@ -12665,6 +15210,9 @@ ir_loc_oichalia_aitolias = {
 ir_loc_oichalia_euboias = {
 }
 
+ir_loc_oikeda = {
+}
+
 ir_loc_oiniadai = {
 }
 
@@ -12675,6 +15223,12 @@ ir_loc_oinoanda = {
 }
 
 ir_loc_oinoe_ikarias = {
+}
+
+ir_loc_oirpata = {
+}
+
+ir_loc_oitosyros = {
 }
 
 ir_loc_oka = {
@@ -12706,12 +15260,7 @@ ir_loc_olbe = {
     temple = 1
 }
 
-ir_loc_olbia_0 = {
-    dock = 1
-    library = 1
-}
-
-ir_loc_olbia_1 = {
+ir_loc_olbia = {
     dock = 1
 }
 
@@ -12724,11 +15273,17 @@ ir_loc_olconum = {
 ir_loc_oleastrum = {
 }
 
+ir_loc_olene = {
+}
+
 ir_loc_olisipo = {
     dock = 1
 }
 
 ir_loc_olitis = {
+}
+
+ir_loc_olkhovaya = {
 }
 
 ir_loc_ollo = {
@@ -12807,6 +15362,9 @@ ir_loc_opis = {
 ir_loc_opitergium = {
 }
 
+ir_loc_opoin = {
+}
+
 ir_loc_opone = {
     dock = 1
 }
@@ -12829,10 +15387,16 @@ ir_loc_optatiana = {
 ir_loc_ora = {
 }
 
+ir_loc_oraca = {
+}
+
 ir_loc_orai = {
 }
 
 ir_loc_oraion = {
+}
+
+ir_loc_orazbay = {
 }
 
 ir_loc_orbana = {
@@ -12869,13 +15433,31 @@ ir_loc_orgia = {
 ir_loc_oridava = {
 }
 
+ir_loc_orija = {
+}
+
 ir_loc_orikos = {
+}
+
+ir_loc_orippo = {
 }
 
 ir_loc_oriza = {
 }
 
+ir_loc_orjane = {
+}
+
 ir_loc_orkistos = {
+}
+
+ir_loc_orko = {
+}
+
+ir_loc_orlik_0 = {
+}
+
+ir_loc_orlik_1 = {
 }
 
 ir_loc_ormi = {
@@ -12894,6 +15476,9 @@ ir_loc_orona = {
 }
 
 ir_loc_orontes = {
+}
+
+ir_loc_orontessos = {
 }
 
 ir_loc_oropos = {
@@ -12947,6 +15532,9 @@ ir_loc_osioi = {
 ir_loc_osismetum = {
 }
 
+ir_loc_oskil = {
+}
+
 ir_loc_oskobara = {
     construction_center = 1
     library = 2
@@ -12979,10 +15567,16 @@ ir_loc_ostia = {
     dock = 2
 }
 
+ir_loc_ostny = {
+}
+
 ir_loc_ostrakine = {
 }
 
 ir_loc_otadini = {
+}
+
+ir_loc_othoca = {
 }
 
 ir_loc_otobesa = {
@@ -12997,16 +15591,31 @@ ir_loc_otroia = {
 ir_loc_otthara = {
 }
 
-ir_loc_oualentia = {
+ir_loc_ouabelli = {
+}
+
+ir_loc_ouagon = {
 }
 
 ir_loc_ouardigha = {
 }
 
+ir_loc_ouargla = {
+}
+
 ir_loc_ouarsapa = {
 }
 
+ir_loc_ouarzazate = {
+}
+
 ir_loc_ouasada = {
+}
+
+ir_loc_ouassay = {
+}
+
+ir_loc_oued = {
 }
 
 ir_loc_ouenasa = {
@@ -13014,10 +15623,19 @@ ir_loc_ouenasa = {
     temple = 1
 }
 
+ir_loc_ouensa = {
+}
+
 ir_loc_ouerisa = {
 }
 
 ir_loc_ouetissos = {
+}
+
+ir_loc_oufriden = {
+}
+
+ir_loc_ouidane = {
 }
 
 ir_loc_ouirouedroum_akron = {
@@ -13035,10 +15653,13 @@ ir_loc_oulnia = {
 ir_loc_oumbrai = {
 }
 
-ir_loc_ourkinion = {
+ir_loc_ouxama_barka = {
 }
 
-ir_loc_ouxama_barka = {
+ir_loc_ouzerg = {
+}
+
+ir_loc_ouzina = {
 }
 
 ir_loc_ovilava = {
@@ -13077,6 +15698,9 @@ ir_loc_paesicia = {
 ir_loc_paestum = {
 }
 
+ir_loc_paezeriai = {
+}
+
 ir_loc_pagala = {
     dock = 1
 }
@@ -13088,10 +15712,19 @@ ir_loc_pagasai = {
 ir_loc_pago = {
 }
 
+ir_loc_pagramancio = {
+}
+
 ir_loc_pagros = {
 }
 
 ir_loc_pagus_malarensium = {
+}
+
+ir_loc_pahost = {
+}
+
+ir_loc_pai = {
 }
 
 ir_loc_paikuli = {
@@ -13125,6 +15758,9 @@ ir_loc_palantia = {
 ir_loc_pali = {
 }
 
+ir_loc_paliene = {
+}
+
 ir_loc_palimek = {
 }
 
@@ -13133,6 +15769,9 @@ ir_loc_palios = {
 
 ir_loc_paliouros = {
     dock = 1
+}
+
+ir_loc_palisha = {
 }
 
 ir_loc_palitas = {
@@ -13145,7 +15784,6 @@ ir_loc_pallontion = {
 }
 
 ir_loc_palma = {
-    dock = 1
 }
 
 ir_loc_palmatis = {
@@ -13185,13 +15823,10 @@ ir_loc_pandhurna = {
 ir_loc_pandokheion = {
 }
 
-ir_loc_panhormos = {
-}
-
 ir_loc_paniardis = {
 }
 
-ir_loc_panissus = {
+ir_loc_panisus = {
 }
 
 ir_loc_pannorum = {
@@ -13215,20 +15850,16 @@ ir_loc_pantikapaion = {
 ir_loc_pantyene = {
 }
 
-ir_loc_paphos = {
-    dock = 1
+ir_loc_paoi = {
 }
 
 ir_loc_pappa = {
 }
 
-ir_loc_parabeste = {
-}
-
 ir_loc_paracata = {
 }
 
-ir_loc_parachatroas = {
+ir_loc_parachoatras = {
 }
 
 ir_loc_paradana = {
@@ -13254,6 +15885,9 @@ ir_loc_parammon = {
 ir_loc_paravipura = {
 }
 
+ir_loc_pardabathra = {
+}
+
 ir_loc_pardiae = {
 }
 
@@ -13277,6 +15911,9 @@ ir_loc_parma = {
 }
 
 ir_loc_parmacampia = {
+}
+
+ir_loc_parna = {
 }
 
 ir_loc_parnassos = {
@@ -13312,7 +15949,13 @@ ir_loc_parsia = {
 ir_loc_parsicia = {
 }
 
+ir_loc_parsk = {
+}
+
 ir_loc_parsni = {
+}
+
+ir_loc_parsodih = {
 }
 
 ir_loc_partaw = {
@@ -13324,6 +15967,9 @@ ir_loc_parthenia = {
 ir_loc_parthenion = {
 }
 
+ir_loc_parthenopolis = {
+}
+
 ir_loc_parthinia = {
 }
 
@@ -13331,6 +15977,9 @@ ir_loc_parthos = {
 }
 
 ir_loc_partiskon = {
+}
+
+ir_loc_partu = {
 }
 
 ir_loc_parva = {
@@ -13348,7 +15997,7 @@ ir_loc_pasa = {
 ir_loc_pasacartia = {
 }
 
-ir_loc_pasargadae = {
+ir_loc_pasargadai = {
     castle = 1
     library = 1
 }
@@ -13366,6 +16015,9 @@ ir_loc_pataliputra = {
 }
 
 ir_loc_patan = {
+}
+
+ir_loc_patan_minara = {
 }
 
 ir_loc_patara = {
@@ -13387,13 +16039,13 @@ ir_loc_patigga = {
 ir_loc_patigrabana = {
 }
 
+ir_loc_patinasana = {
+}
+
 ir_loc_patrai = {
 }
 
 ir_loc_patridava = {
-}
-
-ir_loc_pattana = {
 }
 
 ir_loc_pattithana = {
@@ -13461,6 +16113,9 @@ ir_loc_pella_1 = {
 ir_loc_pellene = {
 }
 
+ir_loc_pelsodis_0 = {
+}
+
 ir_loc_peltai = {
 }
 
@@ -13510,9 +16165,6 @@ ir_loc_perinkari = {
 ir_loc_perinthos = {
 }
 
-ir_loc_perperakion = {
-}
-
 ir_loc_perrhe = {
 }
 
@@ -13536,6 +16188,7 @@ ir_loc_perusekh = {
 }
 
 ir_loc_perusia = {
+    counting_house = 1
 }
 
 ir_loc_pessinous = {
@@ -13587,6 +16240,9 @@ ir_loc_pettavonium = {
 ir_loc_petuaria = {
 }
 
+ir_loc_peus = {
+}
+
 ir_loc_phakoussai = {
 }
 
@@ -13628,6 +16284,9 @@ ir_loc_pharsalos = {
     minting_office = 2
 }
 
+ir_loc_pharsana = {
+}
+
 ir_loc_phaselis = {
     dock = 1
 }
@@ -13636,10 +16295,14 @@ ir_loc_phasis = {
     dock = 1
 }
 
+ir_loc_phausiane = {
+    dock = 1
+}
+
 ir_loc_phazemon = {
 }
 
-ir_loc_phegus = {
+ir_loc_phegas = {
 }
 
 ir_loc_pherai = {
@@ -13728,6 +16391,9 @@ ir_loc_physkos = {
 ir_loc_pialeia = {
 }
 
+ir_loc_piao = {
+}
+
 ir_loc_picentino = {
 }
 
@@ -13752,7 +16418,13 @@ ir_loc_piephigia = {
 ir_loc_piephigiana = {
 }
 
+ir_loc_pihti = {
+}
+
 ir_loc_piktonion_akron = {
+}
+
+ir_loc_pilge = {
 }
 
 ir_loc_pilibhit = {
@@ -13762,13 +16434,16 @@ ir_loc_pilibhit = {
 ir_loc_pilonicoria = {
 }
 
+ir_loc_pimna = {
+}
+
 ir_loc_pimolisa = {
 }
 
 ir_loc_pinaka = {
 }
 
-ir_loc_pindenisson = {
+ir_loc_pindenissa = {
 }
 
 ir_loc_pinion = {
@@ -13795,6 +16470,10 @@ ir_loc_pira = {
 ir_loc_piretis = {
 }
 
+ir_loc_pirhirci = {
+    dock = 1
+}
+
 ir_loc_piri = {
 }
 
@@ -13809,6 +16488,7 @@ ir_loc_pirum = {
 
 ir_loc_pisae = {
     dock = 1
+    marketplace = 1
 }
 
 ir_loc_pisauta = {
@@ -13843,7 +16523,7 @@ ir_loc_pityous = {
     dock = 1
 }
 
-ir_loc_pizus = {
+ir_loc_pizos = {
 }
 
 ir_loc_placentia = {
@@ -13863,6 +16543,9 @@ ir_loc_plestia = {
 }
 
 ir_loc_pleuramis = {
+}
+
+ir_loc_plissa = {
 }
 
 ir_loc_plumbia = {
@@ -13890,6 +16573,9 @@ ir_loc_poetovio = {
 }
 
 ir_loc_pogla = {
+}
+
+ir_loc_poharshchyna = {
 }
 
 ir_loc_pohe = {
@@ -13920,13 +16606,20 @@ ir_loc_pollentia_1 = {
 ir_loc_pollicum = {
 }
 
+ir_loc_polo = {
+}
+
 ir_loc_polondava = {
+}
+
+ir_loc_polonnaruwa = {
 }
 
 ir_loc_polybiane = {
 }
 
 ir_loc_polymedion = {
+    dock = 1
 }
 
 ir_loc_polyrrenia = {
@@ -13958,9 +16651,6 @@ ir_loc_pons_rugio = {
 ir_loc_pontes = {
 }
 
-ir_loc_pontic_steppe = {
-}
-
 ir_loc_pontiniacum = {
 }
 
@@ -13968,7 +16658,10 @@ ir_loc_populi = {
 }
 
 ir_loc_populonia = {
+    counting_house = 1
+    dock = 2
     library = 1
+    marketplace = 1
 }
 
 ir_loc_porach = {
@@ -13980,6 +16673,9 @@ ir_loc_porolissum = {
 ir_loc_porricum = {
 }
 
+ir_loc_pors = {
+}
+
 ir_loc_porsha = {
 }
 
@@ -13987,9 +16683,6 @@ ir_loc_porsula = {
 }
 
 ir_loc_portae = {
-}
-
-ir_loc_porticenses = {
 }
 
 ir_loc_portippa = {
@@ -14034,9 +16727,6 @@ ir_loc_portus_sucronis = {
     dock = 1
 }
 
-ir_loc_portus_tibulae = {
-}
-
 ir_loc_portus_veneris = {
     dock = 1
 }
@@ -14079,10 +16769,16 @@ ir_loc_prabhasa = {
 ir_loc_praemiacum = {
 }
 
-ir_loc_praesidium = {
+ir_loc_praesidium_0 = {
+    castle = 1
+    dock = 1
+    marketplace = 1
 }
 
-ir_loc_praesidium_illyrum = {
+ir_loc_praesidium_1 = {
+}
+
+ir_loc_praesidium_illyricum = {
 }
 
 ir_loc_praesos = {
@@ -14116,6 +16812,9 @@ ir_loc_priene = {
     dock = 1
 }
 
+ir_loc_pripyat = {
+}
+
 ir_loc_prista = {
 }
 
@@ -14126,6 +16825,9 @@ ir_loc_prummu = {
 }
 
 ir_loc_prymnessos = {
+}
+
+ir_loc_psel = {
 }
 
 ir_loc_pselkis = {
@@ -14158,6 +16860,9 @@ ir_loc_ptolemais_theron = {
     dock = 1
 }
 
+ir_loc_pu = {
+}
+
 ir_loc_pulong = {
 }
 
@@ -14177,6 +16882,12 @@ ir_loc_pura = {
 }
 
 ir_loc_puranadisthana = {
+}
+
+ir_loc_purdak = {
+}
+
+ir_loc_purgine = {
 }
 
 ir_loc_purnaya = {
@@ -14230,31 +16941,54 @@ ir_loc_pylai_sousianes = {
 }
 
 ir_loc_pyrgi = {
-    barracks = 1
+    dock = 2
+    marketplace = 1
 }
 
 ir_loc_pyrri = {
 }
 
+ir_loc_pyryatyn = {
+}
+
 ir_loc_pythopolis = {
+}
+
+ir_loc_qabr = {
+}
+
+ir_loc_qadarif = {
 }
 
 ir_loc_qadissiyya = {
 }
 
-ir_loc_qalat = {
+ir_loc_qala = {
 }
 
-ir_loc_qalatgah = {
+ir_loc_qalb_bair = {
+}
+
+ir_loc_qalbi = {
 }
 
 ir_loc_qaleh = {
 }
 
-ir_loc_qaleh_gureh = {
+ir_loc_qalmaqqyrgan = {
+}
+
+ir_loc_qamra = {
+}
+
+ir_loc_qamysty = {
 }
 
 ir_loc_qana = {
+}
+
+ir_loc_qandala = {
+    dock = 1
 }
 
 ir_loc_qandar = {
@@ -14266,13 +17000,22 @@ ir_loc_qanga = {
 ir_loc_qara_sheshen = {
 }
 
-ir_loc_qara_zia_eddin_tepe = {
+ir_loc_qarakol = {
 }
 
 ir_loc_qaram = {
 }
 
 ir_loc_qarassas = {
+}
+
+ir_loc_qarinah = {
+}
+
+ir_loc_qarxis = {
+}
+
+ir_loc_qasawa = {
 }
 
 ir_loc_qatabia = {
@@ -14284,10 +17027,22 @@ ir_loc_qatnu = {
 ir_loc_qatre = {
 }
 
+ir_loc_qatrun = {
+}
+
+ir_loc_qigi = {
+}
+
+ir_loc_qirah = {
+}
+
 ir_loc_qishan = {
 }
 
 ir_loc_qiz_chakhlu = {
+}
+
+ir_loc_qohaito = {
 }
 
 ir_loc_qoide = {
@@ -14296,6 +17051,18 @@ ir_loc_qoide = {
 ir_loc_qom = {
     construction_center = 1
     library = 1
+}
+
+ir_loc_qoqay = {
+}
+
+ir_loc_qoridheere = {
+}
+
+ir_loc_qosbulaq = {
+}
+
+ir_loc_qoyqirilgan = {
 }
 
 ir_loc_quadia = {
@@ -14313,14 +17080,26 @@ ir_loc_quei = {
 ir_loc_quiza_xenitana = {
 }
 
-ir_loc_qumis = {
+ir_loc_qumis_highland = {
 }
 
-ir_loc_qumis_highland = {
+ir_loc_quqyq = {
 }
 
 ir_loc_quseima = {
     castle = 1
+}
+
+ir_loc_quva = {
+}
+
+ir_loc_quwayrah = {
+}
+
+ir_loc_raas_xoor = {
+}
+
+ir_loc_rabak = {
 }
 
 ir_loc_rabbat_ammon = {
@@ -14338,6 +17117,9 @@ ir_loc_rabun = {
 ir_loc_rabzhi_senge_dzong = {
 }
 
+ir_loc_radcha = {
+}
+
 ir_loc_raebareli = {
 }
 
@@ -14350,10 +17132,16 @@ ir_loc_raetia_orientalis = {
 ir_loc_raetinium = {
 }
 
+ir_loc_ragas = {
+}
+
 ir_loc_ragau = {
 }
 
 ir_loc_ragnaricia = {
+}
+
+ir_loc_rahib = {
 }
 
 ir_loc_raichur = {
@@ -14366,13 +17154,19 @@ ir_loc_raida = {
 ir_loc_raipur = {
 }
 
-ir_loc_rajagagrha = {
+ir_loc_raiwant = {
+}
+
+ir_loc_rajagagriha = {
 }
 
 ir_loc_rajagrha = {
 }
 
 ir_loc_rajasayana = {
+}
+
+ir_loc_rajgangpur = {
 }
 
 ir_loc_rajsamand = {
@@ -14402,6 +17196,9 @@ ir_loc_ramgati = {
 ir_loc_ramidava = {
 }
 
+ir_loc_ramlia = {
+}
+
 ir_loc_rampurwa = {
 }
 
@@ -14415,6 +17212,9 @@ ir_loc_rane = {
 }
 
 ir_loc_rania = {
+}
+
+ir_loc_ranka = {
 }
 
 ir_loc_rapete = {
@@ -14435,7 +17235,7 @@ ir_loc_rapidum = {
 ir_loc_rapis = {
 }
 
-ir_loc_rapsa = {
+ir_loc_rappana = {
 }
 
 ir_loc_rapsakpur = {
@@ -14448,13 +17248,19 @@ ir_loc_raqeta = {
     dock = 1
 }
 
+ir_loc_ras_andada = {
+}
+
+ir_loc_rast = {
+}
+
 ir_loc_ratae = {
 }
 
 ir_loc_ratiaria = {
 }
 
-ir_loc_ratiarum = {
+ir_loc_ratiatum = {
 }
 
 ir_loc_ratikgot = {
@@ -14497,6 +17303,12 @@ ir_loc_rayyis = {
 ir_loc_reama = {
 }
 
+ir_loc_recheb = {
+}
+
+ir_loc_rechitsa = {
+}
+
 ir_loc_recrassia = {
 }
 
@@ -14527,6 +17339,9 @@ ir_loc_regnia_prima = {
 ir_loc_regnia_secunda = {
 }
 
+ir_loc_reguiba = {
+}
+
 ir_loc_rekarne = {
 }
 
@@ -14549,6 +17364,9 @@ ir_loc_resaina = {
 }
 
 ir_loc_resculum = {
+}
+
+ir_loc_ret = {
 }
 
 ir_loc_reudingia_maior = {
@@ -14594,6 +17412,9 @@ ir_loc_rhamnous = {
 ir_loc_rhandeia = {
 }
 
+ir_loc_rhapsa = {
+}
+
 ir_loc_rhapses = {
 }
 
@@ -14621,6 +17442,9 @@ ir_loc_rhoda = {
 }
 
 ir_loc_rhodanousia = {
+}
+
+ir_loc_rhodope = {
 }
 
 ir_loc_rhodopolis = {
@@ -14663,6 +17487,9 @@ ir_loc_rigomagus_0 = {
 ir_loc_rigomagus_1 = {
 }
 
+ir_loc_rimoniana = {
+}
+
 ir_loc_rinokoloura = {
 }
 
@@ -14691,6 +17518,15 @@ ir_loc_rivash = {
 }
 
 ir_loc_rivilganj = {
+}
+
+ir_loc_riza = {
+}
+
+ir_loc_rjim_maatoug = {
+}
+
+ir_loc_rmel = {
 }
 
 ir_loc_roba = {
@@ -14729,6 +17565,9 @@ ir_loc_rohtak = {
 ir_loc_rohtas = {
 }
 
+ir_loc_rojhanwali = {
+}
+
 ir_loc_roma = {
     armory = 2
     counting_house = 1
@@ -14745,11 +17584,17 @@ ir_loc_romula_saldensica = {
 ir_loc_romuliana = {
 }
 
+ir_loc_ronglu = {
+}
+
 ir_loc_ronglung = {
 }
 
 ir_loc_roruka = {
     dock = 1
+}
+
+ir_loc_ros = {
 }
 
 ir_loc_rostrum_nemaviae = {
@@ -14762,6 +17607,15 @@ ir_loc_rotomagus = {
 }
 
 ir_loc_rouphiniana = {
+}
+
+ir_loc_rourkela = {
+}
+
+ir_loc_rovenki = {
+}
+
+ir_loc_roza = {
 }
 
 ir_loc_rubiacum = {
@@ -14791,11 +17645,23 @@ ir_loc_rucya = {
 ir_loc_rudera = {
 }
 
+ir_loc_rufaya = {
+}
+
 ir_loc_rugia = {
     dock = 1
 }
 
 ir_loc_rukmammapeta = {
+}
+
+ir_loc_rumailah = {
+}
+
+ir_loc_rumaylah = {
+}
+
+ir_loc_rungo = {
 }
 
 ir_loc_rupar = {
@@ -14805,6 +17671,9 @@ ir_loc_rusaddir = {
     dock = 1
 }
 
+ir_loc_rusakhinili = {
+}
+
 ir_loc_rusazus = {
 }
 
@@ -14812,6 +17681,8 @@ ir_loc_ruscino = {
 }
 
 ir_loc_rusellae = {
+    granary = 1
+    marketplace = 1
 }
 
 ir_loc_rusguniae = {
@@ -14850,16 +17721,28 @@ ir_loc_rutubis = {
     dock = 1
 }
 
+ir_loc_ruwaybah = {
+}
+
+ir_loc_ryasna = {
+}
+
+ir_loc_rybnitsa = {
+}
+
 ir_loc_rynek = {
 }
 
 ir_loc_saavakineh = {
 }
 
-ir_loc_sabadan = {
+ir_loc_sabalgarh = {
 }
 
-ir_loc_sabalgarh = {
+ir_loc_sabandan = {
+}
+
+ir_loc_sabaria = {
 }
 
 ir_loc_sabaste = {
@@ -14877,7 +17760,13 @@ ir_loc_sabatika = {
 ir_loc_sabatinca = {
 }
 
+ir_loc_sabbalo = {
+}
+
 ir_loc_sabetanum = {
+}
+
+ir_loc_sabha = {
 }
 
 ir_loc_sabiranum = {
@@ -14923,14 +17812,31 @@ ir_loc_sagapeni = {
 ir_loc_sagarejo = {
 }
 
+ir_loc_sagiz = {
+}
+
 ir_loc_saguntum = {
+    castle = 1
     dock = 1
+    marketplace = 1
+}
+
+ir_loc_sahabi = {
+}
+
+ir_loc_sahane = {
 }
 
 ir_loc_saharsa = {
 }
 
 ir_loc_sahlala = {
+}
+
+ir_loc_saicen = {
+}
+
+ir_loc_saioi = {
 }
 
 ir_loc_sais = {
@@ -14940,10 +17846,10 @@ ir_loc_sais = {
 ir_loc_sajahati = {
 }
 
-ir_loc_sakala = {
+ir_loc_sakaka = {
 }
 
-ir_loc_sakchenia = {
+ir_loc_sakala = {
 }
 
 ir_loc_sakoena = {
@@ -14953,6 +17859,9 @@ ir_loc_sakolche = {
 }
 
 ir_loc_sakorsa = {
+}
+
+ir_loc_saksaul = {
 }
 
 ir_loc_sala = {
@@ -14965,6 +17874,9 @@ ir_loc_salacia = {
 ir_loc_salacia_aebocosia = {
 }
 
+ir_loc_salagishsha = {
+}
+
 ir_loc_salak = {
 }
 
@@ -14975,6 +17887,7 @@ ir_loc_salambriai = {
 }
 
 ir_loc_salamis = {
+    dock = 1
 }
 
 ir_loc_salamis_kyprias = {
@@ -15040,10 +17953,16 @@ ir_loc_saliah = {
 ir_loc_salica = {
 }
 
+ir_loc_salihorsk = {
+}
+
 ir_loc_salika = {
 }
 
 ir_loc_salikhaprava = {
+}
+
+ir_loc_salin = {
 }
 
 ir_loc_salinae = {
@@ -15092,7 +18011,7 @@ ir_loc_salona = {
 ir_loc_salos = {
 }
 
-ir_loc_salthoua = {
+ir_loc_salthua = {
 }
 
 ir_loc_saltigi = {
@@ -15119,7 +18038,13 @@ ir_loc_salviacum = {
 ir_loc_salvium = {
 }
 
+ir_loc_salweyn = {
+}
+
 ir_loc_salyan = {
+}
+
+ir_loc_samad = {
 }
 
 ir_loc_samangan = {
@@ -15145,16 +18070,23 @@ ir_loc_samarra = {
     barracks = 1
 }
 
+ir_loc_samas = {
+}
+
 ir_loc_samastipur = {
 }
 
 ir_loc_sambalhagrama = {
 }
 
-ir_loc_sambos = {
+ir_loc_samharam = {
+    dock = 1
 }
 
 ir_loc_samlaji = {
+}
+
+ir_loc_samnu = {
 }
 
 ir_loc_samos = {
@@ -15167,7 +18099,13 @@ ir_loc_samosata = {
 ir_loc_samothrake = {
 }
 
+ir_loc_samra = {
+}
+
 ir_loc_samshvilde = {
+}
+
+ir_loc_samtarru = {
 }
 
 ir_loc_samti = {
@@ -15191,7 +18129,12 @@ ir_loc_sana = {
 ir_loc_sanaa = {
 }
 
-ir_loc_sanaos = {
+ir_loc_sanaos_0 = {
+}
+
+ir_loc_sanaphar = {
+    dock = 1
+    library = 1
 }
 
 ir_loc_sandava = {
@@ -15203,10 +18146,10 @@ ir_loc_sangama = {
 ir_loc_sangar = {
 }
 
-ir_loc_sangar_qaleh = {
+ir_loc_sangast = {
 }
 
-ir_loc_sangast = {
+ir_loc_sangibut = {
 }
 
 ir_loc_sangya = {
@@ -15224,16 +18167,25 @@ ir_loc_sankole = {
 ir_loc_sannathi = {
 }
 
-ir_loc_sanora = {
+ir_loc_santah = {
 }
 
 ir_loc_sanus = {
 }
 
+ir_loc_saone = {
+}
+
+ir_loc_sapak = {
+}
+
+ir_loc_sapargali = {
+}
+
 ir_loc_sapham = {
 }
 
-ir_loc_sapphar = {
+ir_loc_sapibulak = {
 }
 
 ir_loc_saraka = {
@@ -15258,6 +18210,12 @@ ir_loc_sarapis = {
 ir_loc_saraswata = {
 }
 
+ir_loc_sarcapos = {
+}
+
+ir_loc_sardalas = {
+}
+
 ir_loc_sarden = {
 }
 
@@ -15275,7 +18233,7 @@ ir_loc_sardonia = {
 ir_loc_sarepta = {
 }
 
-ir_loc_sari = {
+ir_loc_saringiy = {
 }
 
 ir_loc_saripha = {
@@ -15299,9 +18257,6 @@ ir_loc_sarmalios = {
 ir_loc_sarmapolis = {
 }
 
-ir_loc_sarmatia = {
-}
-
 ir_loc_sarmizegetusa = {
 }
 
@@ -15314,10 +18269,22 @@ ir_loc_sarophages = {
 ir_loc_sarouon = {
 }
 
+ir_loc_sarro = {
+}
+
 ir_loc_sarrum = {
 }
 
 ir_loc_sarsina = {
+}
+
+ir_loc_sartu = {
+}
+
+ir_loc_saruq = {
+}
+
+ir_loc_sarvamanapura = {
 }
 
 ir_loc_sarvia = {
@@ -15326,16 +18293,28 @@ ir_loc_sarvia = {
 ir_loc_sarviana = {
 }
 
-ir_loc_sarwmanpur = {
+ir_loc_sary_su = {
 }
 
 ir_loc_sary_tepe = {
+}
+
+ir_loc_saryapan = {
+}
+
+ir_loc_sarymay = {
+}
+
+ir_loc_sasan = {
 }
 
 ir_loc_sasaram = {
 }
 
 ir_loc_sasima = {
+}
+
+ir_loc_sasyktau = {
 }
 
 ir_loc_satadru = {
@@ -15385,7 +18364,10 @@ ir_loc_sauriciacum = {
 ir_loc_sauronisena = {
 }
 
-ir_loc_savaria = {
+ir_loc_sausas = {
+}
+
+ir_loc_savan = {
 }
 
 ir_loc_savatthi = {
@@ -15407,6 +18389,12 @@ ir_loc_savo = {
     barracks = 1
 }
 
+ir_loc_savu = {
+}
+
+ir_loc_sawtayr = {
+}
+
 ir_loc_saxetanum = {
 }
 
@@ -15414,6 +18402,12 @@ ir_loc_saxonnia = {
 }
 
 ir_loc_saye = {
+}
+
+ir_loc_saykhin = {
+}
+
+ir_loc_sayyidab = {
 }
 
 ir_loc_sazila = {
@@ -15434,6 +18428,12 @@ ir_loc_scarbantia = {
 ir_loc_scarponna = {
 }
 
+ir_loc_scedeua = {
+}
+
+ir_loc_scemech = {
+}
+
 ir_loc_schech = {
 }
 
@@ -15441,6 +18441,9 @@ ir_loc_schelats = {
 }
 
 ir_loc_schelera = {
+}
+
+ir_loc_schiueref = {
 }
 
 ir_loc_scingomagus = {
@@ -15453,9 +18456,6 @@ ir_loc_sciria_rugia = {
 }
 
 ir_loc_scitis = {
-}
-
-ir_loc_scopuli = {
 }
 
 ir_loc_scretisca = {
@@ -15473,6 +18473,9 @@ ir_loc_scythopolis = {
 ir_loc_scytte = {
 }
 
+ir_loc_sdada = {
+}
+
 ir_loc_sebatum = {
 }
 
@@ -15484,6 +18487,9 @@ ir_loc_sebendounon = {
 
 ir_loc_sebennytos = {
     dock = 1
+}
+
+ir_loc_sebseb = {
 }
 
 ir_loc_sebuinus_vicus = {
@@ -15498,6 +18504,9 @@ ir_loc_sechoria = {
 ir_loc_sechtra = {
 }
 
+ir_loc_sedej = {
+}
+
 ir_loc_sedetania = {
 }
 
@@ -15510,7 +18519,16 @@ ir_loc_sedrasyra = {
 ir_loc_sedusia = {
 }
 
+ir_loc_seeni = {
+}
+
+ir_loc_seeto = {
+}
+
 ir_loc_sefiana = {
+}
+
+ir_loc_sefra = {
 }
 
 ir_loc_sefulae = {
@@ -15544,6 +18562,12 @@ ir_loc_segisama_iulia = {
 }
 
 ir_loc_segivomicus = {
+}
+
+ir_loc_segizsay = {
+}
+
+ir_loc_seglamen = {
 }
 
 ir_loc_segobodium = {
@@ -15585,10 +18609,25 @@ ir_loc_seguslavorum = {
 ir_loc_segustero = {
 }
 
+ir_loc_seiga = {
+}
+
 ir_loc_seiousa = {
 }
 
+ir_loc_seiyun = {
+}
+
+ir_loc_sejm = {
+}
+
+ir_loc_sel = {
+}
+
 ir_loc_selampoura = {
+}
+
+ir_loc_selanpura = {
 }
 
 ir_loc_selb = {
@@ -15609,7 +18648,6 @@ ir_loc_selgovae = {
 }
 
 ir_loc_selinous_kilikias = {
-    dock = 1
 }
 
 ir_loc_selinus = {
@@ -15622,6 +18660,12 @@ ir_loc_selour = {
 }
 
 ir_loc_selymbria = {
+}
+
+ir_loc_selymnos = {
+}
+
+ir_loc_sembel = {
 }
 
 ir_loc_sembrakenoi = {
@@ -15644,9 +18688,16 @@ ir_loc_sena_gallica = {
 }
 
 ir_loc_sena_iulia = {
+    market_village = 1
+}
+
+ir_loc_senada = {
 }
 
 ir_loc_senia = {
+}
+
+ir_loc_sennar = {
 }
 
 ir_loc_seno = {
@@ -15696,6 +18747,9 @@ ir_loc_serapeion = {
 ir_loc_serapieion = {
 }
 
+ir_loc_serdan = {
+}
+
 ir_loc_serdica = {
 }
 
@@ -15709,6 +18763,9 @@ ir_loc_seria = {
 }
 
 ir_loc_seriane = {
+}
+
+ir_loc_seringeti = {
 }
 
 ir_loc_serip_drukmo_dzong = {
@@ -15727,6 +18784,9 @@ ir_loc_sermonae = {
 }
 
 ir_loc_sermousa = {
+}
+
+ir_loc_seroczyn = {
 }
 
 ir_loc_serota = {
@@ -15749,9 +18809,6 @@ ir_loc_sesamos = {
 }
 
 ir_loc_seserem = {
-}
-
-ir_loc_sestis = {
 }
 
 ir_loc_sestos = {
@@ -15800,7 +18857,13 @@ ir_loc_sextantio = {
     dock = 1
 }
 
+ir_loc_sfissifa = {
+}
+
 ir_loc_shaapa = {
+}
+
+ir_loc_shabbabah = {
 }
 
 ir_loc_shabwa = {
@@ -15816,6 +18879,9 @@ ir_loc_shachkra = {
 }
 
 ir_loc_shadikanni = {
+}
+
+ir_loc_shagar = {
 }
 
 ir_loc_shahargah = {
@@ -15842,9 +18908,6 @@ ir_loc_shaki = {
 ir_loc_shakria = {
 }
 
-ir_loc_shakrikhan = {
-}
-
 ir_loc_shakthara = {
 }
 
@@ -15854,7 +18917,31 @@ ir_loc_shalak = {
 ir_loc_shalat = {
 }
 
+ir_loc_shalcaw = {
+}
+
+ir_loc_shalkar = {
+}
+
+ir_loc_shamiram = {
+}
+
 ir_loc_shapur = {
+}
+
+ir_loc_shaqiq = {
+}
+
+ir_loc_sharai = {
+}
+
+ir_loc_shari = {
+}
+
+ir_loc_sharqiyah = {
+}
+
+ir_loc_sharraba = {
 }
 
 ir_loc_shashcha = {
@@ -15866,13 +18953,23 @@ ir_loc_shavgar = {
 ir_loc_shawarshan = {
 }
 
+ir_loc_shawi = {
+}
+
+ir_loc_shayyit = {
+}
+
 ir_loc_shchor = {
 }
 
 ir_loc_shegaon = {
 }
 
+ir_loc_sheinat = {
+}
+
 ir_loc_shekhem = {
+    temple = 1
 }
 
 ir_loc_shelji = {
@@ -15887,7 +18984,7 @@ ir_loc_shenia = {
 ir_loc_sheopur = {
 }
 
-ir_loc_sherchan = {
+ir_loc_sherbia = {
 }
 
 ir_loc_shethigk = {
@@ -15902,6 +18999,9 @@ ir_loc_shiech = {
 ir_loc_shikh = {
 }
 
+ir_loc_shikharji = {
+}
+
 ir_loc_shilda = {
 }
 
@@ -15914,10 +19014,16 @@ ir_loc_shingnak = {
 ir_loc_shiragan = {
 }
 
+ir_loc_shirajish = {
+}
+
 ir_loc_shirakavan = {
 }
 
 ir_loc_shiram = {
+}
+
+ir_loc_shirayyet = {
 }
 
 ir_loc_shire = {
@@ -15926,7 +19032,7 @@ ir_loc_shire = {
 ir_loc_shirga = {
 }
 
-ir_loc_shirrazish = {
+ir_loc_shivai = {
 }
 
 ir_loc_shivpuri = {
@@ -15938,13 +19044,37 @@ ir_loc_shiyan = {
 ir_loc_shiz = {
 }
 
+ir_loc_shlou = {
+}
+
 ir_loc_shno = {
+}
+
+ir_loc_shoba = {
+}
+
+ir_loc_shokka = {
+}
+
+ir_loc_shomishtikol = {
 }
 
 ir_loc_shorbulaq = {
 }
 
+ir_loc_shortakli = {
+}
+
+ir_loc_shoshoba = {
+}
+
 ir_loc_shuchshek = {
+}
+
+ir_loc_shudrakai = {
+}
+
+ir_loc_shungay = {
 }
 
 ir_loc_shunne = {
@@ -15953,19 +19083,25 @@ ir_loc_shunne = {
 ir_loc_shura = {
 }
 
+ir_loc_shuraka = {
+}
+
 ir_loc_shurita = {
 }
 
 ir_loc_shushan = {
 }
 
+ir_loc_shuwaymiyyah = {
+}
+
+ir_loc_shweli = {
+}
+
 ir_loc_shyri = {
 }
 
 ir_loc_siacus = {
-}
-
-ir_loc_siah_qaleh = {
 }
 
 ir_loc_siaprava = {
@@ -16009,13 +19145,13 @@ ir_loc_side_pontike = {
     dock = 1
 }
 
-ir_loc_sidene = {
-}
-
 ir_loc_sidenia = {
 }
 
 ir_loc_sidh = {
+}
+
+ir_loc_sidi_driss = {
 }
 
 ir_loc_sidices = {
@@ -16061,6 +19197,9 @@ ir_loc_sigus = {
 ir_loc_sihora = {
 }
 
+ir_loc_sijilmasa = {
+}
+
 ir_loc_sikyon = {
     castle = 1
 }
@@ -16084,6 +19223,9 @@ ir_loc_siliguri = {
 }
 
 ir_loc_silingia = {
+}
+
+ir_loc_silistra = {
 }
 
 ir_loc_sillyon = {
@@ -16111,6 +19253,9 @@ ir_loc_simitthus = {
 ir_loc_simpsimidi = {
 }
 
+ir_loc_simsim = {
+}
+
 ir_loc_sina_meridionalis = {
 }
 
@@ -16124,33 +19269,45 @@ ir_loc_sinara = {
     castle = 1
 }
 
-ir_loc_sindhian_mountains = {
+ir_loc_sinawen = {
 }
 
-ir_loc_sindhimana = {
-    construction_center = 1
-    library = 1
+ir_loc_sindhian_mountains = {
 }
 
 ir_loc_sindhu = {
 }
 
-ir_loc_singa = {
+ir_loc_sindhumana = {
+    construction_center = 1
+    library = 1
 }
 
-ir_loc_singai = {
+ir_loc_singa_0 = {
+}
+
+ir_loc_singa_1 = {
 }
 
 ir_loc_singara = {
 }
 
+ir_loc_singda = {
+}
+
 ir_loc_singhapura = {
+}
+
+ir_loc_singhi = {
 }
 
 ir_loc_singidunum = {
 }
 
 ir_loc_sinispora = {
+}
+
+ir_loc_sinkat = {
 }
 
 ir_loc_sinomagus = {
@@ -16181,10 +19338,6 @@ ir_loc_sipia = {
 ir_loc_sipia_occidentalis = {
 }
 
-ir_loc_sipontum = {
-    dock = 1
-}
-
 ir_loc_sippar = {
 }
 
@@ -16195,6 +19348,9 @@ ir_loc_siraganon = {
 }
 
 ir_loc_sirake = {
+}
+
+ir_loc_sirdis = {
 }
 
 ir_loc_siris = {
@@ -16218,10 +19374,19 @@ ir_loc_sirynx = {
 ir_loc_sisakan_inferior = {
 }
 
+ir_loc_sisalikko = {
+}
+
 ir_loc_sisciacum = {
 }
 
+ir_loc_sisidona = {
+}
+
 ir_loc_siskary = {
+}
+
+ir_loc_sisupalgarh = {
 }
 
 ir_loc_sita = {
@@ -16251,12 +19416,6 @@ ir_loc_sitya = {
 ir_loc_siva = {
 }
 
-ir_loc_sivi = {
-}
-
-ir_loc_siwa = {
-}
-
 ir_loc_skandis = {
 }
 
@@ -16275,16 +19434,16 @@ ir_loc_skarin = {
 ir_loc_skatar = {
 }
 
-ir_loc_skenopsis = {
-}
-
 ir_loc_skepsis = {
 }
 
-ir_loc_skintara = {
+ir_loc_skodra = {
 }
 
-ir_loc_skodra = {
+ir_loc_skoura = {
+}
+
+ir_loc_skula = {
 }
 
 ir_loc_skurtisk = {
@@ -16297,11 +19456,35 @@ ir_loc_skyros = {
     dock = 1
 }
 
+ir_loc_slimane = {
+}
+
+ir_loc_slot = {
+}
+
+ir_loc_sluch = {
+}
+
+ir_loc_slutsk = {
+}
+
+ir_loc_smarhon = {
+}
+
 ir_loc_smyrna = {
     dock = 1
 }
 
 ir_loc_smyrnophoros_chora = {
+}
+
+ir_loc_snezhet = {
+}
+
+ir_loc_sniardwy = {
+}
+
+ir_loc_snov = {
 }
 
 ir_loc_soaka = {
@@ -16322,16 +19505,28 @@ ir_loc_soba = {
 ir_loc_sobata = {
 }
 
+ir_loc_socna = {
+}
+
 ir_loc_sodal = {
 }
 
+ir_loc_sodari = {
+}
+
 ir_loc_soe = {
+}
+
+ir_loc_sofyan = {
 }
 
 ir_loc_sogdian_mountains = {
 }
 
 ir_loc_sogdian_steppe = {
+}
+
+ir_loc_sokkul = {
 }
 
 ir_loc_soleb = {
@@ -16353,6 +19548,7 @@ ir_loc_soloi_0 = {
 }
 
 ir_loc_soloi_1 = {
+    dock = 1
 }
 
 ir_loc_soloke = {
@@ -16368,6 +19564,21 @@ ir_loc_soluntum = {
 ir_loc_solyots = {
 }
 
+ir_loc_soma = {
+}
+
+ir_loc_somali_desert_1 = {
+}
+
+ir_loc_somali_desert_2 = {
+}
+
+ir_loc_somali_desert_3 = {
+}
+
+ir_loc_somali_desert_4 = {
+}
+
 ir_loc_sonista = {
 }
 
@@ -16378,6 +19589,9 @@ ir_loc_sonnolagi = {
 }
 
 ir_loc_sonprastha = {
+}
+
+ir_loc_soodak = {
 }
 
 ir_loc_sopattinam = {
@@ -16395,13 +19609,7 @@ ir_loc_sophon_pass = {
 ir_loc_sopianae = {
 }
 
-ir_loc_sorabile = {
-}
-
 ir_loc_soreyya = {
-}
-
-ir_loc_sormanabad_tepe = {
 }
 
 ir_loc_sornus = {
@@ -16443,6 +19651,9 @@ ir_loc_south_nilgiri = {
 ir_loc_southeast_arran = {
 }
 
+ir_loc_southern_bayuda_desert = {
+}
+
 ir_loc_southwest_arran = {
 }
 
@@ -16459,6 +19670,9 @@ ir_loc_spaneta = {
 }
 
 ir_loc_sparata = {
+}
+
+ir_loc_sparga = {
 }
 
 ir_loc_sparta = {
@@ -16480,6 +19694,9 @@ ir_loc_splonum = {
 }
 
 ir_loc_sravasti = {
+}
+
+ir_loc_sri_ksetra = {
 }
 
 ir_loc_srihatta = {
@@ -16519,10 +19736,16 @@ ir_loc_srnguri = {
 ir_loc_stabaei = {
 }
 
+ir_loc_stana = {
+}
+
 ir_loc_stanacum = {
 }
 
 ir_loc_stanecli = {
+}
+
+ir_loc_starorzecze = {
 }
 
 ir_loc_stat = {
@@ -16548,6 +19771,9 @@ ir_loc_sthanishvara = {
 }
 
 ir_loc_sthura = {
+}
+
+ir_loc_still = {
 }
 
 ir_loc_stobi = {
@@ -16586,10 +19812,16 @@ ir_loc_strobilos = {
 ir_loc_stuberra = {
 }
 
+ir_loc_sturi = {
+}
+
 ir_loc_stylacium = {
 }
 
-ir_loc_stymphalia = {
+ir_loc_stymphalos = {
+}
+
+ir_loc_styr = {
 }
 
 ir_loc_styra = {
@@ -16598,10 +19830,16 @@ ir_loc_styra = {
 ir_loc_suardonia = {
 }
 
+ir_loc_subaykhah = {
+}
+
 ir_loc_sublavione = {
 }
 
 ir_loc_subur = {
+}
+
+ir_loc_subututtu = {
 }
 
 ir_loc_subzuaritanum = {
@@ -16611,6 +19849,12 @@ ir_loc_sucia = {
 }
 
 ir_loc_sucro = {
+}
+
+ir_loc_sudan_impassable_0 = {
+}
+
+ir_loc_sudan_impassable_1 = {
 }
 
 ir_loc_sudetia = {
@@ -16634,6 +19878,9 @@ ir_loc_sudionoia_australis = {
 ir_loc_sudionoia_orientalis = {
 }
 
+ir_loc_sudist = {
+}
+
 ir_loc_suel = {
 }
 
@@ -16641,6 +19888,9 @@ ir_loc_suevia_maior = {
 }
 
 ir_loc_suevia_minor = {
+}
+
+ir_loc_sufar = {
 }
 
 ir_loc_sufasar = {
@@ -16658,6 +19908,12 @@ ir_loc_sugauna = {
 ir_loc_suhma = {
 }
 
+ir_loc_sukah = {
+}
+
+ir_loc_sukhonosivka = {
+}
+
 ir_loc_sukkari = {
 }
 
@@ -16667,17 +19923,24 @@ ir_loc_suktimati = {
 ir_loc_suktivati = {
 }
 
-ir_loc_sulcis_0 = {
-    construction_center = 2
-    dock = 1
-    library = 3
-    minting_office = 1
+ir_loc_sula = {
 }
 
-ir_loc_sulcis_1 = {
+ir_loc_sulayyil = {
+}
+
+ir_loc_sulcis = {
+    dock = 1
+    library = 1
 }
 
 ir_loc_sulis = {
+}
+
+ir_loc_sulki_tyrsen = {
+}
+
+ir_loc_sulnis = {
 }
 
 ir_loc_sumaka = {
@@ -16707,9 +19970,6 @@ ir_loc_suna = {
 ir_loc_sunam = {
 }
 
-ir_loc_sundarbans_0 = {
-}
-
 ir_loc_supaul = {
 }
 
@@ -16735,6 +19995,21 @@ ir_loc_surat = {
 ir_loc_suravan = {
 }
 
+ir_loc_surayj = {
+}
+
+ir_loc_surayriyah = {
+}
+
+ir_loc_surenapati = {
+}
+
+ir_loc_surgi = {
+}
+
+ir_loc_suriba = {
+}
+
 ir_loc_surium = {
 }
 
@@ -16754,6 +20029,15 @@ ir_loc_susidata = {
 ir_loc_suthrander = {
 }
 
+ir_loc_suuqsade = {
+}
+
+ir_loc_suurima = {
+}
+
+ir_loc_suv = {
+}
+
 ir_loc_suvarnagiri = {
 }
 
@@ -16763,13 +20047,32 @@ ir_loc_suvarnapura = {
 ir_loc_suvarngiri = {
 }
 
+ir_loc_suwayq = {
+    dock = 1
+}
+
+ir_loc_suwaytiyah = {
+}
+
 ir_loc_suyab = {
+}
+
+ir_loc_suyindik = {
+}
+
+ir_loc_suyktobe = {
 }
 
 ir_loc_svabhra = {
 }
 
 ir_loc_svimraros = {
+}
+
+ir_loc_svirkos = {
+}
+
+ir_loc_swo = {
 }
 
 ir_loc_syalite = {
@@ -16785,6 +20088,7 @@ ir_loc_syderos = {
 }
 
 ir_loc_syene = {
+    dock = 1
 }
 
 ir_loc_sykaminia = {
@@ -16848,13 +20152,28 @@ ir_loc_ta_antiphilou = {
     dock = 1
 }
 
+ir_loc_tab = {
+}
+
 ir_loc_tabai = {
 }
 
 ir_loc_tabai_persikai = {
 }
 
+ir_loc_tabalati = {
+}
+
+ir_loc_tabankuduk = {
+}
+
+ir_loc_tabaqah = {
+}
+
 ir_loc_tabarte = {
+}
+
+ir_loc_tabelbala = {
 }
 
 ir_loc_tabenesse = {
@@ -16866,10 +20185,22 @@ ir_loc_tabernae = {
 ir_loc_tabira = {
 }
 
+ir_loc_tabiti = {
+}
+
 ir_loc_tablamum = {
 }
 
+ir_loc_tabot = {
+}
+
+ir_loc_tabria = {
+}
+
 ir_loc_tabudium = {
+}
+
+ir_loc_tabuinati = {
 }
 
 ir_loc_tacape = {
@@ -16880,6 +20211,9 @@ ir_loc_tachampso = {
 }
 
 ir_loc_tachok_dzong = {
+}
+
+ir_loc_taddart = {
 }
 
 ir_loc_tadu = {
@@ -16903,10 +20237,25 @@ ir_loc_tagadur = {
 ir_loc_tagara = {
 }
 
+ir_loc_tagaung = {
+}
+
+ir_loc_tageairike = {
+}
+
+ir_loc_tageru = {
+}
+
+ir_loc_taghit = {
+}
+
 ir_loc_tagili = {
 }
 
 ir_loc_tago = {
+}
+
+ir_loc_tagrifet = {
 }
 
 ir_loc_taharene = {
@@ -16924,10 +20273,19 @@ ir_loc_taidu = {
 ir_loc_taif = {
 }
 
+ir_loc_taille = {
+}
+
 ir_loc_tainaron = {
 }
 
 ir_loc_taixalon_akron = {
+}
+
+ir_loc_tajhiri = {
+}
+
+ir_loc_takalamit = {
 }
 
 ir_loc_takht_i_bahi = {
@@ -16937,6 +20295,12 @@ ir_loc_taki = {
 }
 
 ir_loc_takina = {
+}
+
+ir_loc_taklamakan_0 = {
+}
+
+ir_loc_taklamakan_1 = {
 }
 
 ir_loc_taksaty = {
@@ -16954,10 +20318,31 @@ ir_loc_talaura = {
 ir_loc_talavanapura = {
 }
 
+ir_loc_taldyk = {
+}
+
+ir_loc_taledan = {
+}
+
+ir_loc_talguharai = {
+}
+
+ir_loc_talhah = {
+}
+
 ir_loc_taliata = {
 }
 
+ir_loc_talib = {
+}
+
+ir_loc_taliouine = {
+}
+
 ir_loc_talish = {
+}
+
+ir_loc_tallatak = {
 }
 
 ir_loc_talliamunera = {
@@ -16969,7 +20354,16 @@ ir_loc_talmis = {
 ir_loc_tamaasan = {
 }
 
+ir_loc_tamal = {
+}
+
+ir_loc_tamanar = {
+}
+
 ir_loc_tamania = {
+}
+
+ir_loc_tamanrt = {
 }
 
 ir_loc_tamasidava = {
@@ -16978,7 +20372,13 @@ ir_loc_tamasidava = {
 ir_loc_tamassos = {
 }
 
+ir_loc_tamassouat = {
+}
+
 ir_loc_tamazan = {
+}
+
+ir_loc_tambat = {
 }
 
 ir_loc_tambyzeia = {
@@ -16987,7 +20387,22 @@ ir_loc_tambyzeia = {
 ir_loc_tambyziana = {
 }
 
+ir_loc_tamdjert = {
+}
+
+ir_loc_tamdoult = {
+}
+
+ir_loc_tamelrik = {
+}
+
+ir_loc_tamezmoute = {
+}
+
 ir_loc_tamiathis = {
+}
+
+ir_loc_tammi = {
 }
 
 ir_loc_tamna = {
@@ -16998,6 +20413,9 @@ ir_loc_tamralipti = {
 }
 
 ir_loc_tamraparni = {
+}
+
+ir_loc_tamshin = {
 }
 
 ir_loc_tamuda = {
@@ -17078,7 +20496,7 @@ ir_loc_taposiris = {
 ir_loc_tapuria = {
 }
 
-ir_loc_taraichiya = {
+ir_loc_taragaga = {
 }
 
 ir_loc_tarba = {
@@ -17090,6 +20508,9 @@ ir_loc_tareina = {
 ir_loc_tarentum = {
     castle = 1
     dock = 1
+}
+
+ir_loc_tarfawi = {
 }
 
 ir_loc_tarim = {
@@ -17113,10 +20534,16 @@ ir_loc_tarok = {
 ir_loc_tarouana = {
 }
 
+ir_loc_taroudant = {
+}
+
 ir_loc_tarpodizo = {
 }
 
 ir_loc_tarquini = {
+    armory = 1
+    dock = 1
+    granary = 1
 }
 
 ir_loc_tarraco = {
@@ -17139,7 +20566,6 @@ ir_loc_tartessia = {
 }
 
 ir_loc_tartessos = {
-    castle = 1
     dock = 1
 }
 
@@ -17173,13 +20599,31 @@ ir_loc_tashk = {
 ir_loc_tashqurgan = {
 }
 
+ir_loc_taskuduk = {
+}
+
+ir_loc_tassili = {
+}
+
 ir_loc_tasuk = {
+}
+
+ir_loc_tata = {
+}
+
+ir_loc_tatan = {
+}
+
+ir_loc_tathleeth = {
 }
 
 ir_loc_tatiliti = {
 }
 
 ir_loc_tattaios = {
+}
+
+ir_loc_tatyene = {
 }
 
 ir_loc_taua = {
@@ -17189,6 +20633,9 @@ ir_loc_taucheira = {
 }
 
 ir_loc_taunensium = {
+}
+
+ir_loc_taungthaman = {
 }
 
 ir_loc_taurasia = {
@@ -17204,6 +20651,9 @@ ir_loc_tauriana = {
 ir_loc_taurica = {
 }
 
+ir_loc_tauris = {
+}
+
 ir_loc_tauroention = {
     dock = 1
 }
@@ -17214,18 +20664,27 @@ ir_loc_tauromenium = {
 ir_loc_tautiomosis = {
 }
 
+ir_loc_tavah = {
+}
+
 ir_loc_tavia = {
 }
 
 ir_loc_tawar = {
 }
 
-ir_loc_tawres = {
+ir_loc_tawdihiyah = {
+}
+
+ir_loc_tawirda = {
 }
 
 ir_loc_taxila = {
     construction_center = 3
     library = 3
+}
+
+ir_loc_tazenakht = {
 }
 
 ir_loc_tazora = {
@@ -17240,6 +20699,9 @@ ir_loc_tchonemyris = {
 ir_loc_teanum_apulum = {
 }
 
+ir_loc_teboucha = {
+}
+
 ir_loc_techka = {
 }
 
@@ -17247,6 +20709,7 @@ ir_loc_teclas = {
 }
 
 ir_loc_tecybeleneos = {
+    dock = 1
 }
 
 ir_loc_tegea = {
@@ -17255,16 +20718,17 @@ ir_loc_tegea = {
 ir_loc_tegulata = {
 }
 
-ir_loc_tehran = {
-}
-
 ir_loc_tehri = {
 }
 
 ir_loc_teike = {
 }
 
+ir_loc_teima = {
+}
+
 ir_loc_telamon = {
+    market_village = 1
 }
 
 ir_loc_telavi = {
@@ -17292,14 +20756,23 @@ ir_loc_telonnum = {
 ir_loc_telos = {
 }
 
+ir_loc_tembien = {
+}
+
 ir_loc_temesa = {
     castle = 1
+}
+
+ir_loc_temnos = {
 }
 
 ir_loc_tempe_pass = {
 }
 
 ir_loc_temukan = {
+}
+
+ir_loc_tena = {
 }
 
 ir_loc_tenctheria = {
@@ -17329,11 +20802,17 @@ ir_loc_teracatriae = {
 ir_loc_terai = {
 }
 
+ir_loc_terbu = {
+}
+
 ir_loc_teredon = {
     dock = 1
 }
 
 ir_loc_terekata = {
+}
+
+ir_loc_tereshkivka = {
 }
 
 ir_loc_tergendum = {
@@ -17351,6 +20830,9 @@ ir_loc_terkythis = {
 ir_loc_termessos = {
 }
 
+ir_loc_termez = {
+}
+
 ir_loc_teroua = {
 }
 
@@ -17362,6 +20844,12 @@ ir_loc_tertakom = {
 
 ir_loc_terventum = {
     castle = 1
+}
+
+ir_loc_teste = {
+}
+
+ir_loc_teteriv = {
 }
 
 ir_loc_teucera = {
@@ -17403,6 +20891,9 @@ ir_loc_thaenae = {
 ir_loc_thaesactum = {
 }
 
+ir_loc_thaj = {
+}
+
 ir_loc_thakurgaon = {
 }
 
@@ -17413,6 +20904,9 @@ ir_loc_thala_musulamia = {
 }
 
 ir_loc_thalades = {
+}
+
+ir_loc_thalathun = {
 }
 
 ir_loc_thamusida = {
@@ -17427,7 +20921,13 @@ ir_loc_thana = {
 ir_loc_thanaramusa_castra = {
 }
 
+ir_loc_thanbauk = {
+}
+
 ir_loc_thanjavur = {
+}
+
+ir_loc_thanlyin = {
 }
 
 ir_loc_thannuris = {
@@ -17441,7 +20941,11 @@ ir_loc_thapsus = {
     dock = 1
 }
 
+ir_loc_thara = {
+}
+
 ir_loc_tharros = {
+    construction_center = 1
 }
 
 ir_loc_tharsa = {
@@ -17493,6 +20997,9 @@ ir_loc_themantica = {
 ir_loc_themiskyra = {
 }
 
+ir_loc_thenadassa = {
+}
+
 ir_loc_thenebrestia = {
 }
 
@@ -17526,6 +21033,7 @@ ir_loc_theranda = {
 }
 
 ir_loc_thermai = {
+    dock = 1
 }
 
 ir_loc_thermon = {
@@ -17567,10 +21075,19 @@ ir_loc_thimida_bure = {
 ir_loc_thinis = {
 }
 
+ir_loc_thinqayr = {
+}
+
+ir_loc_thio = {
+}
+
 ir_loc_thisika = {
 }
 
 ir_loc_thorikos = {
+}
+
+ir_loc_thorp = {
 }
 
 ir_loc_thospia = {
@@ -17607,6 +21124,9 @@ ir_loc_thumat = {
 ir_loc_thumna = {
 }
 
+ir_loc_thumrait = {
+}
+
 ir_loc_thuna = {
 }
 
@@ -17636,7 +21156,7 @@ ir_loc_thymbrion = {
 ir_loc_thynis = {
 }
 
-ir_loc_thyreai = {
+ir_loc_thyrea = {
 }
 
 ir_loc_thyrrheion = {
@@ -17651,6 +21171,13 @@ ir_loc_tiamat = {
 ir_loc_tiasum = {
 }
 
+ir_loc_tibetan_pass = {
+}
+
+ir_loc_tibion = {
+    minting_office = 3
+}
+
 ir_loc_tibirsia = {
 }
 
@@ -17658,6 +21185,12 @@ ir_loc_tibiscua = {
 }
 
 ir_loc_tibiscum = {
+}
+
+ir_loc_tibubuci = {
+}
+
+ir_loc_tibula = {
 }
 
 ir_loc_tibur = {
@@ -17680,6 +21213,9 @@ ir_loc_tiersi = {
 ir_loc_tiflet = {
 }
 
+ir_loc_tigdi = {
+}
+
 ir_loc_tigowa = {
 }
 
@@ -17687,6 +21223,18 @@ ir_loc_tigranakert = {
 }
 
 ir_loc_tigranocerta = {
+}
+
+ir_loc_tigri = {
+}
+
+ir_loc_tiiggane = {
+}
+
+ir_loc_tikhaya = {
+}
+
+ir_loc_tikhaya_sosna = {
 }
 
 ir_loc_til = {
@@ -17698,13 +21246,40 @@ ir_loc_tila = {
 ir_loc_tilena = {
 }
 
+ir_loc_tillibari = {
+}
+
 ir_loc_timacum = {
+}
+
+ir_loc_timavos = {
+}
+
+ir_loc_timlilt = {
+}
+
+ir_loc_timofeevo = {
 }
 
 ir_loc_timonion = {
 }
 
+ir_loc_timoudi = {
+}
+
+ir_loc_timoulay = {
+}
+
+ir_loc_tin_alkoum = {
+}
+
 ir_loc_tincontium = {
+}
+
+ir_loc_tindite = {
+}
+
+ir_loc_tinghir = {
 }
 
 ir_loc_tingis = {
@@ -17722,6 +21297,9 @@ ir_loc_tipasa_0 = {
 
 ir_loc_tipasa_1 = {
     dock = 1
+}
+
+ir_loc_tiraf = {
 }
 
 ir_loc_tiralia = {
@@ -17751,10 +21329,31 @@ ir_loc_tiruperur = {
 ir_loc_tiruvannamalai = {
 }
 
+ir_loc_tisavar = {
+}
+
+ir_loc_tishtriana = {
+}
+
 ir_loc_tisia = {
 }
 
+ir_loc_tisit = {
+}
+
 ir_loc_tisiyan = {
+}
+
+ir_loc_tissa = {
+}
+
+ir_loc_tisserdmine = {
+}
+
+ir_loc_tissint = {
+}
+
+ir_loc_titarevka = {
 }
 
 ir_loc_titulcia = {
@@ -17769,10 +21368,19 @@ ir_loc_tivedia = {
 ir_loc_tiyagoura = {
 }
 
+ir_loc_tiztoutine = {
+}
+
+ir_loc_tleta_tagmoute = {
+}
+
 ir_loc_tlos = {
 }
 
 ir_loc_tmakrat = {
+}
+
+ir_loc_tmessa = {
 }
 
 ir_loc_toarcius = {
@@ -17784,13 +21392,31 @@ ir_loc_tobata = {
 ir_loc_tobe = {
 }
 
+ir_loc_tobusken = {
+}
+
 ir_loc_tochara = {
 }
 
 ir_loc_tocolosida = {
 }
 
+ir_loc_toghayy = {
+}
+
+ir_loc_tohamiyam = {
+}
+
 ir_loc_tohana = {
+}
+
+ir_loc_tokabay = {
+}
+
+ir_loc_tokolay = {
+}
+
+ir_loc_tokore = {
 }
 
 ir_loc_toksa = {
@@ -17845,20 +21471,42 @@ ir_loc_toquzbolaq = {
 ir_loc_torikos = {
 }
 
+ir_loc_toriya = {
+}
+
 ir_loc_tornodurum = {
 }
 
 ir_loc_torone = {
 }
 
+ir_loc_tortkuduk = {
+}
+
 ir_loc_tosali = {
     dock = 1
+}
+
+ir_loc_touggourt = {
+}
+
+ir_loc_toulout = {
+}
+
+ir_loc_toundoute = {
+}
+
+ir_loc_tounfit = {
 }
 
 ir_loc_tourmogon = {
 }
 
 ir_loc_tqvarcheli = {
+    slave_market = 1
+}
+
+ir_loc_traghen = {
 }
 
 ir_loc_tragilos = {
@@ -17914,6 +21562,9 @@ ir_loc_tregoritum = {
     dock = 1
 }
 
+ir_loc_trekfine = {
+}
+
 ir_loc_tremulae = {
 }
 
@@ -17925,6 +21576,9 @@ ir_loc_treva = {
 }
 
 ir_loc_treveria = {
+}
+
+ir_loc_treyfia = {
 }
 
 ir_loc_tribactra = {
@@ -17988,10 +21642,19 @@ ir_loc_troesmis = {
 ir_loc_troesus = {
 }
 
+ir_loc_troglodytic_desert = {
+}
+
 ir_loc_troglodytica = {
 }
 
+ir_loc_trogodos_mons = {
+}
+
 ir_loc_troikon_oros = {
+}
+
+ir_loc_troismis = {
 }
 
 ir_loc_troizen = {
@@ -18003,13 +21666,16 @@ ir_loc_trokna = {
 ir_loc_trompagan = {
 }
 
-ir_loc_tropaeum_traiani = {
+ir_loc_tropaeum = {
 }
 
 ir_loc_tropea = {
 }
 
 ir_loc_tropiana = {
+}
+
+ir_loc_trostyanets = {
 }
 
 ir_loc_trullensium = {
@@ -18033,6 +21699,9 @@ ir_loc_tshongdu = {
 ir_loc_tsina = {
 }
 
+ir_loc_tsirhan = {
+}
+
 ir_loc_tskhinvali = {
 }
 
@@ -18043,6 +21712,9 @@ ir_loc_tsosong = {
 }
 
 ir_loc_tubantia = {
+}
+
+ir_loc_tubat = {
 }
 
 ir_loc_tubek = {
@@ -18066,10 +21738,29 @@ ir_loc_tuci = {
 ir_loc_tucris = {
 }
 
+ir_loc_tucul = {
+}
+
 ir_loc_tuder = {
+    market_village = 1
 }
 
 ir_loc_tufan = {
+}
+
+ir_loc_tugarakchan = {
+}
+
+ir_loc_tugyrakshan = {
+}
+
+ir_loc_tuhma = {
+}
+
+ir_loc_tulih = {
+}
+
+ir_loc_tulillah = {
 }
 
 ir_loc_tuliphurdum = {
@@ -18084,10 +21775,16 @@ ir_loc_tullium = {
 ir_loc_tullum = {
 }
 
+ir_loc_tulya = {
+}
+
 ir_loc_tumin = {
 }
 
 ir_loc_tummana = {
+}
+
+ir_loc_tumxuk = {
 }
 
 ir_loc_tundikera = {
@@ -18114,6 +21811,9 @@ ir_loc_turirecina = {
 ir_loc_turnacum = {
 }
 
+ir_loc_turochka = {
+}
+
 ir_loc_turonia = {
 }
 
@@ -18123,10 +21823,7 @@ ir_loc_turoniana = {
 ir_loc_turres = {
 }
 
-ir_loc_turris_libisonis = {
-}
-
-ir_loc_turris_tamalleni = {
+ir_loc_turris_tamaleni = {
 }
 
 ir_loc_turshan = {
@@ -18147,7 +21844,10 @@ ir_loc_turuntia_borealis = {
 ir_loc_turupa = {
 }
 
-ir_loc_turvasa = {
+ir_loc_turush = {
+}
+
+ir_loc_turvasha = {
 }
 
 ir_loc_tusa = {
@@ -18157,6 +21857,18 @@ ir_loc_tuticum = {
 }
 
 ir_loc_tutugi = {
+}
+
+ir_loc_tuvo = {
+}
+
+ir_loc_tuwesat = {
+}
+
+ir_loc_tuyur = {
+}
+
+ir_loc_tuzkol = {
 }
 
 ir_loc_tyana = {
@@ -18171,16 +21883,21 @@ ir_loc_tyita = {
 ir_loc_tylis = {
 }
 
+ir_loc_tylissos = {
+    dock = 1
+}
+
 ir_loc_tylos = {
     castle = 1
     dock = 1
-    marketplace = 1
+    marketplace = 2
 }
 
 ir_loc_tymbriada = {
 }
 
 ir_loc_tyndaris = {
+    dock = 1
 }
 
 ir_loc_tyndis = {
@@ -18198,19 +21915,38 @@ ir_loc_tyriaion = {
 ir_loc_tyros = {
 }
 
+ir_loc_tyrsenia = {
+}
+
 ir_loc_tyrus = {
     castle = 1
     dock = 3
     tools_workshop = 2
 }
 
+ir_loc_tytuvenu = {
+}
+
+ir_loc_tyutyunnytsya = {
+}
+
+ir_loc_tzantzakon = {
+}
+
 ir_loc_tzibile = {
+    slave_market = 1
 }
 
 ir_loc_tzur = {
 }
 
+ir_loc_uacne = {
+}
+
 ir_loc_uarinia = {
+}
+
+ir_loc_uase = {
 }
 
 ir_loc_ubaza_castellum = {
@@ -18231,6 +21967,12 @@ ir_loc_ucetia = {
 ir_loc_udambhara = {
 }
 
+ir_loc_udar = {
+}
+
+ir_loc_udoma = {
+}
+
 ir_loc_uggate = {
 }
 
@@ -18248,6 +21990,9 @@ ir_loc_ujjayini = {
     temple = 1
 }
 
+ir_loc_ukteksa = {
+}
+
 ir_loc_uldan = {
 }
 
@@ -18257,10 +22002,67 @@ ir_loc_ulizibbira = {
 ir_loc_ulpiana = {
 }
 
+ir_loc_uluki = {
+}
+
+ir_loc_ulya = {
+}
+
 ir_loc_umarkot = {
 }
 
+ir_loc_umm_abid = {
+}
+
+ir_loc_undulli = {
+}
+
+ir_loc_ungnis = {
+}
+
 ir_loc_unige = {
+}
+
+ir_loc_unnamed_5054 = {
+}
+
+ir_loc_unnamed_5129 = {
+}
+
+ir_loc_unnamed_5209 = {
+}
+
+ir_loc_unnamed_5322 = {
+}
+
+ir_loc_unnamed_5325 = {
+}
+
+ir_loc_unnamed_5326 = {
+}
+
+ir_loc_unnamed_5327 = {
+}
+
+ir_loc_unnamed_5947 = {
+}
+
+ir_loc_unnamed_5971 = {
+}
+
+ir_loc_unnamed_8884 = {
+}
+
+ir_loc_unnamed_8885 = {
+}
+
+ir_loc_unnamed_8887 = {
+}
+
+ir_loc_unnamed_8888 = {
+}
+
+ir_loc_unnamed_8889 = {
 }
 
 ir_loc_unnao = {
@@ -18278,10 +22080,10 @@ ir_loc_uplistsikhe = {
 ir_loc_uppakra = {
 }
 
-ir_loc_upper_blue_nile = {
+ir_loc_upper_dardania = {
 }
 
-ir_loc_upper_dardania = {
+ir_loc_upper_egyptian_desert = {
 }
 
 ir_loc_upper_epirus = {
@@ -18302,7 +22104,7 @@ ir_loc_upper_thrace = {
 ir_loc_urang = {
 }
 
-ir_loc_urasa = {
+ir_loc_urayarah = {
 }
 
 ir_loc_urayur = {
@@ -18355,9 +22157,6 @@ ir_loc_urghat = {
 }
 
 ir_loc_urghno = {
-}
-
-ir_loc_urgia = {
 }
 
 ir_loc_urium = {
@@ -18413,6 +22212,9 @@ ir_loc_usdia_orientalis = {
 ir_loc_userca = {
 }
 
+ir_loc_ush = {
+}
+
 ir_loc_ushkan = {
 }
 
@@ -18464,6 +22266,9 @@ ir_loc_utidava = {
 ir_loc_utidorsi = {
 }
 
+ir_loc_utinoye = {
+}
+
 ir_loc_utkalava = {
 }
 
@@ -18506,6 +22311,12 @@ ir_loc_uzappa = {
 ir_loc_uzboia = {
 }
 
+ir_loc_uzh = {
+}
+
+ir_loc_vaca = {
+}
+
 ir_loc_vaccaeia_deserta = {
 }
 
@@ -18517,6 +22328,12 @@ ir_loc_vacomagi = {
 
 ir_loc_vada_volaterrana = {
     dock = 1
+}
+
+ir_loc_vadar = {
+}
+
+ir_loc_vadasz = {
 }
 
 ir_loc_vaddua = {
@@ -18543,13 +22360,19 @@ ir_loc_vairagara = {
 ir_loc_vairata = {
 }
 
-ir_loc_vaisali = {
+ir_loc_vaishali = {
 }
 
 ir_loc_vajra = {
 }
 
+ir_loc_val = {
+}
+
 ir_loc_valabhi = {
+}
+
+ir_loc_valadak = {
 }
 
 ir_loc_valashgerd = {
@@ -18593,6 +22416,9 @@ ir_loc_valuraka = {
 
 ir_loc_valvata = {
     castle = 1
+}
+
+ir_loc_vamva = {
 }
 
 ir_loc_vanavasi = {
@@ -18702,7 +22528,16 @@ ir_loc_vashschka = {
 ir_loc_vasi = {
 }
 
+ir_loc_vasilievicy = {
+}
+
 ir_loc_vasio = {
+}
+
+ir_loc_vaski = {
+}
+
+ir_loc_vasnam = {
 }
 
 ir_loc_vatari = {
@@ -18712,6 +22547,9 @@ ir_loc_vatsagulma = {
 }
 
 ir_loc_vatum = {
+}
+
+ir_loc_vau = {
 }
 
 ir_loc_vayapata = {
@@ -18727,6 +22565,9 @@ ir_loc_vectia = {
 }
 
 ir_loc_vectis = {
+}
+
+ir_loc_vega = {
 }
 
 ir_loc_vegesela = {
@@ -18785,6 +22626,9 @@ ir_loc_veluniate = {
     dock = 1
 }
 
+ir_loc_velykyi = {
+}
+
 ir_loc_vemania = {
 }
 
@@ -18792,6 +22636,7 @@ ir_loc_vemulavada = {
 }
 
 ir_loc_venafrum = {
+    market_village = 1
 }
 
 ir_loc_venas = {
@@ -18860,10 +22705,6 @@ ir_loc_venusia = {
 ir_loc_vera = {
 }
 
-ir_loc_verahram_qaleh = {
-    market_village = 1
-}
-
 ir_loc_verbeia = {
 }
 
@@ -18877,6 +22718,9 @@ ir_loc_verecunda = {
 }
 
 ir_loc_vergilia = {
+}
+
+ir_loc_vergiz = {
 }
 
 ir_loc_verhyn = {
@@ -18949,6 +22793,8 @@ ir_loc_vettonia_superioris = {
 
 ir_loc_vetulonia = {
     castle = 1
+    dock = 1
+    marketplace = 1
 }
 
 ir_loc_vetus_hydreuma = {
@@ -18964,7 +22810,7 @@ ir_loc_vhingad = {
 ir_loc_viadria = {
 }
 
-ir_loc_viadrus = {
+ir_loc_viadrus_0 = {
     dock = 1
 }
 
@@ -19002,6 +22848,9 @@ ir_loc_vicus_augusti = {
 }
 
 ir_loc_vicus_aventia = {
+}
+
+ir_loc_vicus_battalius = {
 }
 
 ir_loc_vicus_bodatius = {
@@ -19068,6 +22917,9 @@ ir_loc_vijnot = {
 ir_loc_vikbo = {
 }
 
+ir_loc_viku = {
+}
+
 ir_loc_vilath = {
 }
 
@@ -19081,6 +22933,9 @@ ir_loc_viminacium_moesiacum = {
 }
 
 ir_loc_vinata = {
+}
+
+ir_loc_vinaza = {
 }
 
 ir_loc_vindeleia = {
@@ -19125,9 +22980,6 @@ ir_loc_vindua = {
 ir_loc_vineta = {
 }
 
-ir_loc_viniolae = {
-}
-
 ir_loc_vinitapura = {
 }
 
@@ -19137,7 +22989,7 @@ ir_loc_vinovia = {
 ir_loc_vinovilothia = {
 }
 
-ir_loc_vipasa = {
+ir_loc_vipasha = {
 }
 
 ir_loc_vipitenum = {
@@ -19174,6 +23026,11 @@ ir_loc_visakpura = {
 }
 
 ir_loc_visentium = {
+    counting_house = 1
+    granary = 1
+    library = 1
+    marketplace = 1
+    minting_office = 1
 }
 
 ir_loc_vishpauzatis = {
@@ -19195,6 +23052,9 @@ ir_loc_vistulia = {
 ir_loc_vistuliana = {
 }
 
+ir_loc_vistytis = {
+}
+
 ir_loc_visum_montis = {
 }
 
@@ -19203,6 +23063,9 @@ ir_loc_visurgis = {
 }
 
 ir_loc_vitala = {
+}
+
+ir_loc_vite = {
 }
 
 ir_loc_vitudurum = {
@@ -19233,10 +23096,15 @@ ir_loc_volat = {
 }
 
 ir_loc_volaterrae = {
+    granary = 1
+}
+
+ir_loc_volchya = {
 }
 
 ir_loc_volci = {
     dock = 1
+    marketplace = 1
 }
 
 ir_loc_volg = {
@@ -19264,6 +23132,9 @@ ir_loc_voludnia = {
 }
 
 ir_loc_volumis = {
+}
+
+ir_loc_voluntia_australis = {
 }
 
 ir_loc_voluntia_borealis = {
@@ -19294,6 +23165,9 @@ ir_loc_vorganium = {
 ir_loc_vorgium = {
 }
 
+ir_loc_vorskla = {
+}
+
 ir_loc_vorta = {
 }
 
@@ -19304,6 +23178,12 @@ ir_loc_vosagum = {
 }
 
 ir_loc_vosolvia = {
+}
+
+ir_loc_vovchansk = {
+}
+
+ir_loc_vovea = {
 }
 
 ir_loc_voynor = {
@@ -19327,6 +23207,9 @@ ir_loc_vurd = {
 ir_loc_vurdant = {
 }
 
+ir_loc_vurun = {
+}
+
 ir_loc_vyache = {
 }
 
@@ -19340,6 +23223,9 @@ ir_loc_vyelinat = {
 }
 
 ir_loc_vyenim = {
+}
+
+ir_loc_vygonoschanskoye = {
 }
 
 ir_loc_vygriya = {
@@ -19363,7 +23249,25 @@ ir_loc_vyrketin = {
 ir_loc_vyrni = {
 }
 
+ir_loc_wad_ban_naqa = {
+}
+
+ir_loc_waddan = {
+}
+
+ir_loc_wagan = {
+}
+
 ir_loc_wairagar = {
+}
+
+ir_loc_waithali = {
+}
+
+ir_loc_wanin = {
+}
+
+ir_loc_wantah = {
 }
 
 ir_loc_warinia = {
@@ -19372,13 +23276,37 @@ ir_loc_warinia = {
 ir_loc_warthan = {
 }
 
-ir_loc_western_gaetulia = {
+ir_loc_waru = {
 }
 
-ir_loc_western_musalamia = {
+ir_loc_watif = {
+}
+
+ir_loc_weama = {
+}
+
+ir_loc_weki = {
+}
+
+ir_loc_wetusas = {
+}
+
+ir_loc_weyto = {
+}
+
+ir_loc_wigierski = {
+}
+
+ir_loc_wilyan = {
 }
 
 ir_loc_wumi = {
+}
+
+ir_loc_wundwin = {
+}
+
+ir_loc_wusayilah = {
 }
 
 ir_loc_xanthos = {
@@ -19387,10 +23315,28 @@ ir_loc_xanthos = {
 ir_loc_xarxiare = {
 }
 
+ir_loc_xayar = {
+}
+
 ir_loc_xenippa = {
 }
 
+ir_loc_xiaowan = {
+}
+
 ir_loc_xois = {
+}
+
+ir_loc_xood = {
+}
+
+ir_loc_xsay = {
+}
+
+ir_loc_yabrin = {
+}
+
+ir_loc_yahanivka = {
 }
 
 ir_loc_yahye = {
@@ -19413,7 +23359,10 @@ ir_loc_yamchun = {
     castle = 1
 }
 
-ir_loc_yanik_tepe = {
+ir_loc_yancheng = {
+}
+
+ir_loc_yangikent = {
 }
 
 ir_loc_yanmal = {
@@ -19434,6 +23383,9 @@ ir_loc_yavana = {
 ir_loc_yazdigird = {
 }
 
+ir_loc_yazman = {
+}
+
 ir_loc_ydologh = {
 }
 
@@ -19444,6 +23396,9 @@ ir_loc_yeha = {
 }
 
 ir_loc_yehta = {
+}
+
+ir_loc_yelnya = {
 }
 
 ir_loc_yelsa = {
@@ -19473,6 +23428,12 @@ ir_loc_ygast = {
 ir_loc_ygrre = {
 }
 
+ir_loc_yilihe = {
+}
+
+ir_loc_yoboki = {
+}
+
 ir_loc_yokang = {
 }
 
@@ -19485,13 +23446,16 @@ ir_loc_yonnav = {
 ir_loc_yoro = {
 }
 
-ir_loc_yottor = {
+ir_loc_yousouffia = {
 }
 
 ir_loc_yovolat = {
 }
 
 ir_loc_yrbent = {
+}
+
+ir_loc_yrgyz = {
 }
 
 ir_loc_yukta = {
@@ -19509,7 +23473,13 @@ ir_loc_yutian = {
 ir_loc_yuty = {
 }
 
+ir_loc_ywa_htin_kon = {
+}
+
 ir_loc_zaakna = {
+}
+
+ir_loc_zabad = {
 }
 
 ir_loc_zabender = {
@@ -19519,6 +23489,15 @@ ir_loc_zabi = {
 }
 
 ir_loc_zadrakarta = {
+}
+
+ir_loc_zafar = {
+}
+
+ir_loc_zagares = {
+}
+
+ir_loc_zagora = {
 }
 
 ir_loc_zagros = {
@@ -19533,10 +23512,19 @@ ir_loc_zagurae = {
 ir_loc_zaibram = {
 }
 
+ir_loc_zaimah = {
+}
+
+ir_loc_zaio = {
+}
+
 ir_loc_zakatala = {
 }
 
 ir_loc_zakynthos = {
+}
+
+ir_loc_zala = {
 }
 
 ir_loc_zale = {
@@ -19554,6 +23542,9 @@ ir_loc_zama_regia = {
 ir_loc_zamakshahr = {
 }
 
+ir_loc_zamhlay = {
+}
+
 ir_loc_zamm = {
 }
 
@@ -19563,10 +23554,28 @@ ir_loc_zamnes = {
 ir_loc_zamouchana = {
 }
 
+ir_loc_zamri = {
+}
+
 ir_loc_zanazia = {
 }
 
+ir_loc_zankor = {
+}
+
+ir_loc_zantak = {
+}
+
 ir_loc_zantem = {
+}
+
+ir_loc_zaouatallaz = {
+}
+
+ir_loc_zaouia = {
+}
+
+ir_loc_zar = {
 }
 
 ir_loc_zara = {
@@ -19591,7 +23600,13 @@ ir_loc_zarem = {
 ir_loc_zargidava = {
 }
 
+ir_loc_zarhour = {
+}
+
 ir_loc_zariaspa = {
+}
+
+ir_loc_zariba = {
 }
 
 ir_loc_zatra = {
@@ -19604,6 +23619,15 @@ ir_loc_zau_taberna = {
 }
 
 ir_loc_zaviaspa = {
+}
+
+ir_loc_zavolochitsky = {
+}
+
+ir_loc_zayden = {
+}
+
+ir_loc_zazi = {
 }
 
 ir_loc_zeh = {
@@ -19619,9 +23643,19 @@ ir_loc_zekari_pass = {
 }
 
 ir_loc_zela = {
+    temple = 1
 }
 
 ir_loc_zeleia = {
+}
+
+ir_loc_zelfana = {
+}
+
+ir_loc_zelshargan = {
+}
+
+ir_loc_zeme = {
 }
 
 ir_loc_zemour = {
@@ -19630,7 +23664,13 @@ ir_loc_zemour = {
 ir_loc_zenopolis = {
 }
 
+ir_loc_zer = {
+}
+
 ir_loc_zerbai = {
+}
+
+ir_loc_zerhamra = {
 }
 
 ir_loc_zeshoi = {
@@ -19652,10 +23692,31 @@ ir_loc_zeugma = {
 ir_loc_zghuderi = {
 }
 
+ir_loc_zguilma = {
+}
+
+ir_loc_zhalauly = {
+}
+
+ir_loc_zhanaqala = {
+}
+
+ir_loc_zhanashu = {
+}
+
+ir_loc_zhanatalap = {
+}
+
 ir_loc_zhanit = {
 }
 
+ir_loc_zharagash = {
+}
+
 ir_loc_zhelk = {
+}
+
+ir_loc_zhenishkekum = {
 }
 
 ir_loc_zhenna = {
@@ -19664,13 +23725,22 @@ ir_loc_zhenna = {
 ir_loc_zhev = {
 }
 
+ir_loc_zhitkur = {
+}
+
 ir_loc_zhodyn = {
 }
 
 ir_loc_zhongzhong = {
 }
 
+ir_loc_zhuchok = {
+}
+
 ir_loc_zhuna = {
+}
+
+ir_loc_zhurivka = {
 }
 
 ir_loc_zhutikka = {
@@ -19679,13 +23749,13 @@ ir_loc_zhutikka = {
 ir_loc_ziaida = {
 }
 
+ir_loc_ziam = {
+}
+
 ir_loc_zibliyat = {
 }
 
 ir_loc_zidava = {
-}
-
-ir_loc_zigana = {
 }
 
 ir_loc_ziganne = {
@@ -19700,6 +23770,10 @@ ir_loc_zimara = {
 ir_loc_zimyra = {
 }
 
+ir_loc_zinchekra = {
+    construction_center = 2
+}
+
 ir_loc_zintik = {
 }
 
@@ -19709,6 +23783,9 @@ ir_loc_ziporeia = {
 ir_loc_ziqua = {
 }
 
+ir_loc_ziram = {
+}
+
 ir_loc_ziri = {
 }
 
@@ -19716,6 +23793,9 @@ ir_loc_ziridava = {
 }
 
 ir_loc_ziridava_iazygia = {
+}
+
+ir_loc_zirnajai = {
 }
 
 ir_loc_zirne = {
@@ -19732,6 +23812,9 @@ ir_loc_ziwiye = {
 }
 
 ir_loc_zizoatra = {
+}
+
+ir_loc_zloiar = {
 }
 
 ir_loc_zoaka = {
@@ -19752,10 +23835,19 @@ ir_loc_zoelarum = {
 ir_loc_zoelia = {
 }
 
+ir_loc_zolochiv = {
+}
+
+ir_loc_zombis = {
+}
+
 ir_loc_zoropassos = {
 }
 
 ir_loc_zouchis = {
+}
+
+ir_loc_zoza = {
 }
 
 ir_loc_zranka = {
@@ -19765,5 +23857,23 @@ ir_loc_zranka = {
 ir_loc_zucchabar = {
 }
 
+ir_loc_zurka = {
+}
+
 ir_loc_zurobara = {
+}
+
+ir_loc_zuwila = {
+}
+
+ir_loc_zvyzdal = {
+}
+
+ir_loc_zwaisda = {
+}
+
+ir_loc_zweris = {
+}
+
+ir_loc_zyrenka = {
 }

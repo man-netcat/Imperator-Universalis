@@ -7,7 +7,7 @@ BLD = {
     # BLD -> setup/countries/iberia/balearides.txt
     color = rgb { 224 229 66 }
     culture_definition = ir_talaiotic
-    religion_definition = ir_carthaginian_pantheon
+    religion_definition = ir_nuragic_pantheon
 }
 
 AMC = {
@@ -91,7 +91,7 @@ AUG = {
     # AUG -> setup/countries/iberia/autrigones.txt
     color = rgb { 112 7 58 }
     culture_definition = ir_autrigonian
-    religion_definition = ir_animism
+    religion_definition = ir_druidism
 }
 
 BAI = {
@@ -129,13 +129,6 @@ ORT = {
     religion_definition = ir_animism
 }
 
-AEB = {
-    # AEB -> setup/countries/iberia/aebocosi.txt
-    color = rgb { 61 166 190 }
-    culture_definition = ir_callaecian
-    religion_definition = ir_druidism
-}
-
 ABO = {
     # ABO -> setup/countries/iberia/albiones.txt
     color = rgb { 67 76 199 }
@@ -150,13 +143,6 @@ ARR = {
     religion_definition = ir_druidism
 }
 
-BED = {
-    # BED -> setup/countries/iberia/baedi.txt
-    color = rgb { 88 77 4 }
-    culture_definition = ir_callaecian
-    religion_definition = ir_druidism
-}
-
 BAN = {
     # BAN -> setup/countries/iberia/banienses.txt
     color = rgb { 111 12 200 }
@@ -167,13 +153,6 @@ BAN = {
 BRC = {
     # BRC -> setup/countries/iberia/bracari.txt
     color = rgb { 181 225 37 }
-    culture_definition = ir_callaecian
-    religion_definition = ir_druidism
-}
-
-CLD = {
-    # CLD -> setup/countries/iberia/caladuni.txt
-    color = rgb { 19 240 132 }
     culture_definition = ir_callaecian
     religion_definition = ir_druidism
 }
@@ -234,81 +213,60 @@ TMG = {
     religion_definition = ir_druidism
 }
 
-VRR = {
-    # VRR -> setup/countries/iberia/varrini.txt
-    color = rgb { 127 167 232 }
-    culture_definition = ir_callaecian
-    religion_definition = ir_druidism
-}
-
 ORM = {
     # ORM -> setup/countries/iberia/orgenomesci.txt
     color = rgb { 160 161 40 }
     culture_definition = ir_cantabrian
-    religion_definition = ir_animism
+    religion_definition = ir_druidism
 }
 
 AVG = {
     # AVG -> setup/countries/iberia/avarigini.txt
     color = rgb { 70 70 70 }
     culture_definition = ir_cantabrian
-    religion_definition = ir_animism
+    religion_definition = ir_druidism
 }
 
 COC = {
     # COC -> setup/countries/iberia/concani.txt
     color = rgb { 20 21 188 }
     culture_definition = ir_cantabrian
-    religion_definition = ir_animism
-}
-
-CNI = {
-    # CNI -> setup/countries/iberia/conisci.txt
-    color = rgb { 150 78 141 }
-    culture_definition = ir_cantabrian
-    religion_definition = ir_animism
+    religion_definition = ir_druidism
 }
 
 BLN = {
     # BLN -> setup/countries/iberia/blendii.txt
     color = rgb { 100 16 14 }
     culture_definition = ir_cantabrian
-    religion_definition = ir_animism
+    religion_definition = ir_druidism
 }
 
 MRC = {
     # MRC -> setup/countries/iberia/morecani.txt
     color = rgb { 220 210 188 }
     culture_definition = ir_cantabrian
-    religion_definition = ir_animism
-}
-
-TMC = {
-    # TMC -> setup/countries/iberia/tamarici.txt
-    color = rgb { 20 210 188 }
-    culture_definition = ir_cantabrian
-    religion_definition = ir_animism
+    religion_definition = ir_druidism
 }
 
 VDI = {
     # VDI -> setup/countries/iberia/vadini.txt
     color = rgb { 20 190 47 }
     culture_definition = ir_cantabrian
-    religion_definition = ir_animism
+    religion_definition = ir_druidism
 }
 
 CRI = {
     # CRI -> setup/countries/iberia/caristii.txt
     color = rgb { 84 74 124 }
     culture_definition = ir_autrigonian
-    religion_definition = ir_animism
+    religion_definition = ir_druidism
 }
 
 VAD = {
     # VAD -> setup/countries/iberia/varduli.txt
     color = rgb { 180 121 223 }
     culture_definition = ir_vasconian
-    religion_definition = ir_animism
+    religion_definition = ir_pre_indo_european_religion
 }
 
 CNT = {
@@ -346,18 +304,11 @@ CSS = {
     religion_definition = ir_animism
 }
 
-TUR = {
-    # TUR -> setup/countries/iberia/turdetani.txt
-    color = rgb { 74 5 79 }
-    culture_definition = ir_turdetanian
-    religion_definition = ir_animism
-}
-
 VSC = {
     # VSC -> setup/countries/iberia/vascones.txt
     color = rgb { 226 214 204 }
     culture_definition = ir_vasconian
-    religion_definition = ir_animism
+    religion_definition = ir_pre_indo_european_religion
 }
 
 EPO = {
@@ -367,25 +318,11 @@ EPO = {
     religion_definition = ir_roman_pantheon
 }
 
-TAT = {
-    # TAT -> setup/countries/iberia/tartessos.txt
-    color = rgb { 165 14 14 }
-    culture_definition = ir_turdetanian
-    religion_definition = ir_animism
-}
-
 GAD = {
     # GAD -> setup/countries/iberia/gadir.txt
     color = rgb { 114 13 135 }
     culture_definition = ir_carthaginian
     religion_definition = ir_carthaginian_pantheon
-}
-
-MST = {
-    # MST -> setup/countries/iberia/menesthei.txt
-    color = rgb { 100 170 224 }
-    culture_definition = ir_massalian
-    religion_definition = ir_roman_pantheon
 }
 
 MAT = {
@@ -412,7 +349,7 @@ PAE = {
 TDT = {
     # TDT -> setup/countries/iberia/oppidania.txt
     color = rgb { 21 201 74 }
-    culture_definition = ir_turdulian
+    culture_definition = ir_oppidanian
     religion_definition = ir_druidism
 }
 
@@ -565,7 +502,7 @@ BLL = {
 
 BOL = {
     # BOL -> setup/countries/iberia/boletia.txt
-    color = rgb { 114 60 219 }
+    color = rgb { 35 38 176 }
     culture_definition = ir_celtiberian
     religion_definition = ir_druidism
 }
@@ -659,5 +596,68 @@ IBA = {
     color = rgb { 194 39 199 }
     culture_definition = ir_carthaginian
     religion_definition = ir_carthaginian_pantheon
+}
+
+ASA = {
+    # ASA -> setup/countries/iberia/asta.txt
+    color = rgb { 0 77 205 }
+    culture_definition = ir_turdetanian
+    religion_definition = ir_animism
+}
+
+ASG = {
+    # ASG -> setup/countries/iberia/astigi.txt
+    color = rgb { 207 66 108 }
+    culture_definition = ir_turdetanian
+    religion_definition = ir_animism
+}
+
+CIP = {
+    # CIP -> setup/countries/iberia/acinipo.txt
+    color = rgb { 55 177 183 }
+    culture_definition = ir_turdetanian
+    religion_definition = ir_animism
+}
+
+CRM = {
+    # CRM -> setup/countries/iberia/carmo.txt
+    color = rgb { 160 214 0 }
+    culture_definition = ir_turdetanian
+    religion_definition = ir_animism
+}
+
+EPR = {
+    # EPR -> setup/countries/iberia/epora.txt
+    color = rgb { 86 56 233 }
+    culture_definition = ir_turdetanian
+    religion_definition = ir_animism
+}
+
+ILP = {
+    # ILP -> setup/countries/iberia/ilipla.txt
+    color = rgb { 181 112 3 }
+    culture_definition = ir_turdetanian
+    religion_definition = ir_animism
+}
+
+IPT = {
+    # IPT -> setup/countries/iberia/iptucci.txt
+    color = rgb { 187 5 16 }
+    culture_definition = ir_turdetanian
+    religion_definition = ir_animism
+}
+
+LSC = {
+    # LSC -> setup/countries/iberia/lascuta.txt
+    color = rgb { 159 97 84 }
+    culture_definition = ir_turdetanian
+    religion_definition = ir_animism
+}
+
+ONU = {
+    # ONU -> setup/countries/iberia/onuba.txt
+    color = rgb { 110 28 67 }
+    culture_definition = ir_turdetanian
+    religion_definition = ir_animism
 }
 

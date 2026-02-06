@@ -7,27 +7,27 @@ ROM = {
     # ROM -> setup/countries/italia/rome.txt
     color = rgb { 139 16 13 }
     culture_definition = ir_roman
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_italic_pantheon
 }
 
 SAM = {
     # SAM -> setup/countries/italia/samnium.txt
     color = rgb { 58 164 111 }
     culture_definition = ir_samnite
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_italic_pantheon
 }
 
 MRS = {
     # MRS -> setup/countries/italia/marsia.txt
     color = rgb { 38 73 205 }
     culture_definition = ir_roman
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_italic_pantheon
 }
 
-SIO = {
-    # SIO -> setup/countries/italia/sipontum.txt
+ARP = {
+    # ARP -> setup/countries/italia/daunia.txt
     color = rgb { 50 60 100 }
-    culture_definition = ir_italiotian
+    culture_definition = ir_messapian
     religion_definition = ir_roman_pantheon
 }
 
@@ -42,35 +42,28 @@ PIE = {
     # PIE -> setup/countries/italia/picentes.txt
     color = rgb { 90 150 200 }
     culture_definition = ir_samnite
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_italic_pantheon
 }
 
 ETR = {
     # ETR -> setup/countries/italia/etruscia.txt
     color = rgb { 48 30 180 }
     culture_definition = ir_etruscan
-    religion_definition = ir_roman_pantheon
-}
-
-FNT = {
-    # FNT -> setup/countries/italia/friniati.txt
-    color = rgb { 30 125 130 }
-    culture_definition = ir_ligurian
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_italic_pantheon
 }
 
 SAB = {
     # SAB -> setup/countries/italia/sabinia.txt
     color = rgb { 16 91 13 }
     culture_definition = ir_samnite
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_italic_pantheon
 }
 
 UMB = {
     # UMB -> setup/countries/italia/umbria.txt
     color = rgb { 100 40 0 }
     culture_definition = ir_umbrian
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_italic_pantheon
 }
 
 APU = {
@@ -91,14 +84,14 @@ LCA = {
     # LCA -> setup/countries/italia/lucania.txt
     color = rgb { 45 99 142 }
     culture_definition = ir_lucanian
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_italic_pantheon
 }
 
 BRT = {
     # BRT -> setup/countries/italia/bruttia.txt
     color = rgb { 11 40 180 }
     culture_definition = ir_bruttian
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_italic_pantheon
 }
 
 ANO = {
@@ -126,34 +119,34 @@ INM = {
     # INM -> setup/countries/italia/intimili.txt
     color = rgb { 16 102 65 }
     culture_definition = ir_ligurian
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_italic_pantheon
 }
 
 IGN = {
     # IGN -> setup/countries/italia/ingauni.txt
     color = rgb { 20 20 20 }
     culture_definition = ir_ligurian
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_italic_pantheon
 }
 
 GUN = {
     # GUN -> setup/countries/italia/genuates.txt
     color = rgb { 85 8 3 }
     culture_definition = ir_ligurian
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_italic_pantheon
 }
 
 EPA = {
     # EPA -> setup/countries/italia/epanterii.txt
     color = rgb { 217 101 5 }
     culture_definition = ir_ligurian
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_italic_pantheon
 }
 
 TAU = {
     # TAU -> setup/countries/italia/taurini.txt
     color = rgb { 176 188 65 }
-    culture_definition = ir_salluvian
+    culture_definition = ir_lepontic
     religion_definition = ir_druidism
 }
 
@@ -189,14 +182,14 @@ VNT = {
     # VNT -> setup/countries/italia/veneti.txt
     color = rgb { 20 20 203 }
     culture_definition = ir_venetic
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_italic_pantheon
 }
 
 HIS = {
     # HIS -> setup/countries/italia/histri.txt
     color = rgb { 220 219 221 }
     culture_definition = ir_histrian
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_illyrian_pantheon
 }
 
 KRN = {
@@ -210,7 +203,7 @@ RAE = {
     # RAE -> setup/countries/italia/raeti.txt
     color = rgb { 204 21 203 }
     culture_definition = ir_rhaetian
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_italic_pantheon
 }
 
 BRE = {
@@ -273,21 +266,21 @@ FRE = {
     # FRE -> setup/countries/italia/frentani.txt
     color = rgb { 190 200 60 }
     culture_definition = ir_samnite
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_italic_pantheon
 }
 
 PEL = {
     # PEL -> setup/countries/italia/peligni.txt
     color = rgb { 90 15 40 }
     culture_definition = ir_samnite
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_italic_pantheon
 }
 
 SCU = {
     # SCU -> setup/countries/italia/siculia.txt
     color = rgb { 181 103 88 }
     culture_definition = ir_siculian
-    religion_definition = ir_roman_pantheon
+    religion_definition = ir_italic_pantheon
 }
 
 ACR = {
@@ -307,7 +300,7 @@ SYR = {
 CUT = {
     # CUT -> setup/countries/italia/ceutrones.txt
     color = rgb { 192 67 219 }
-    culture_definition = ir_salluvian
+    culture_definition = ir_allobrogian
     religion_definition = ir_druidism
 }
 
@@ -353,9 +346,9 @@ TYN = {
     religion_definition = ir_roman_pantheon
 }
 
-CLA = {
-    # CLA -> setup/countries/italia/calactea.txt
-    color = rgb { 120 13 13 }
+THR = {
+    # THR -> setup/countries/italia/thermae.txt
+    color = rgb { 163 184 205 }
     culture_definition = ir_syracusan
     religion_definition = ir_roman_pantheon
 }

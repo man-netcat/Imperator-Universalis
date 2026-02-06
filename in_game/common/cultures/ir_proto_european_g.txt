@@ -3,20 +3,6 @@
 #  Any manual changes will be OVERWRITTEN upon regeneration!  #
 # =========================================================== #
 
-ir_vasconian = {
-    language = latin_language
-    color = hsv { 0.20 0.25 0.50 }
-    tags = { western_european_gfx european_gfx }
-    culture_groups = { ir_proto_european_g }
-}
-
-ir_aquitani = {
-    language = latin_language
-    color = hsv { 0.20 0.25 0.50 }
-    tags = { western_european_gfx european_gfx }
-    culture_groups = { ir_proto_european_g }
-}
-
 ir_nuragic = {
     language = latin_language
     color = hsv { 0.20 0.25 0.50 }
@@ -24,28 +10,7 @@ ir_nuragic = {
     culture_groups = { ir_proto_european_g }
 }
 
-ir_autrigonian = {
-    language = latin_language
-    color = hsv { 0.20 0.25 0.50 }
-    tags = { western_european_gfx european_gfx }
-    culture_groups = { ir_proto_european_g }
-}
-
-ir_ilergetian = {
-    language = latin_language
-    color = hsv { 0.20 0.25 0.50 }
-    tags = { western_european_gfx european_gfx }
-    culture_groups = { ir_proto_european_g }
-}
-
 ir_corsian = {
-    language = latin_language
-    color = hsv { 0.20 0.25 0.50 }
-    tags = { western_european_gfx european_gfx }
-    culture_groups = { ir_proto_european_g }
-}
-
-ir_cantabrian = {
     language = latin_language
     color = hsv { 0.20 0.25 0.50 }
     tags = { western_european_gfx european_gfx }

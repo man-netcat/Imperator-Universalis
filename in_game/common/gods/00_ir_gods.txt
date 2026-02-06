@@ -3,6 +3,51 @@
 #  Any manual changes will be OVERWRITTEN upon regeneration!  #
 # =========================================================== #
 
+deity_aaron = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_judaism
+}
+
+deity_aatxe = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_pre_indo_european_religion
+}
+
+deity_abdel = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_judaism
+}
+
+deity_abhinandananatha = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_jainism
+}
+
+deity_abishua = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_judaism
+}
+
 deity_abraham = {
     icon = god_folk_blue
     country_modifier = {
@@ -12,6 +57,24 @@ deity_abraham = {
     religion = ir_judaism
 }
 
+deity_achaviser = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_achelous = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_roman_pantheon
+}
+
 deity_achilles = {
     icon = god_folk_blue
     country_modifier = {
@@ -19,6 +82,33 @@ deity_achilles = {
         discipline = 0.01
     }
     religion = ir_roman_pantheon
+}
+
+deity_adad = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_adam = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_judaism
+}
+
+deity_adamma = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_mesopotamian_religion
 }
 
 deity_adgilis_deda = {
@@ -39,6 +129,42 @@ deity_adhitthana_parami = {
     religion = ir_buddhism
 }
 
+deity_aecorna = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_illyrian_pantheon
+}
+
+deity_aeetes = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_caucasian_religion
+}
+
+deity_aesernia = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_agathyrus = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_indo_iranian_religion
+}
+
 deity_agdistis = {
     icon = god_folk_blue
     country_modifier = {
@@ -48,6 +174,33 @@ deity_agdistis = {
     religion = ir_anatolian_religion
 }
 
+deity_agni = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_hindu
+}
+
+deity_agu = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_aguna = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_caucasian_religion
+}
+
 deity_ahimsa = {
     icon = god_folk_blue
     country_modifier = {
@@ -55,6 +208,24 @@ deity_ahimsa = {
         global_max_literacy = 2
     }
     religion = ir_jainism
+}
+
+deity_ahura_mazda = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_zoroaster
+}
+
+deity_aiko = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_pre_indo_european_religion
 }
 
 deity_ailiah = {
@@ -81,7 +252,34 @@ deity_aita = {
         global_raw_material_output = 0.05
         trade_efficiency = 0.05
     }
-    religion = ir_roman_pantheon
+    religion = ir_italic_pantheon
+}
+
+deity_ajitanatha = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_jainism
+}
+
+deity_ajjuna = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_ajivika
+}
+
+deity_akka = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_uralic_pantheon
 }
 
 deity_al_kutbay = {
@@ -111,6 +309,15 @@ deity_al_uzza = {
     religion = ir_arabian_pantheon
 }
 
+deity_alaunius = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_druidism
+}
+
 deity_alcis = {
     icon = god_folk_blue
     country_modifier = {
@@ -138,6 +345,60 @@ deity_alilat = {
     religion = ir_arabian_pantheon
 }
 
+deity_allani = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_hurrian_pantheon
+}
+
+deity_almaqah = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_arabian_pantheon
+}
+
+deity_alpan = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_altinos = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_amalur = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_pre_indo_european_religion
+}
+
+deity_amanor = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_anahitic_religion
+}
+
 deity_amaya = {
     icon = god_folk_blue
     country_modifier = {
@@ -145,6 +406,24 @@ deity_amaya = {
         global_monthly_food_modifier = 0.03
     }
     religion = ir_roman_pantheon
+}
+
+deity_amazons = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_indo_iranian_religion
+}
+
+deity_amel_ali = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_puntic_religion
 }
 
 deity_ameretat = {
@@ -156,6 +435,51 @@ deity_ameretat = {
     religion = ir_zoroaster
 }
 
+deity_amesemi = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_egyptian_pantheon
+}
+
+deity_aminch = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_amirani = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_caucasian_religion
+}
+
+deity_amm = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_arabian_pantheon
+}
+
+deity_ammon = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_berber_religion
+}
+
 deity_amun = {
     icon = god_folk_blue
     country_modifier = {
@@ -165,16 +489,52 @@ deity_amun = {
     religion = ir_egyptian_pantheon
 }
 
+deity_amurru = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_carthaginian_pantheon
+}
+
+deity_anaceta = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_anadatus = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_anahitic_religion
+}
+
 deity_anahit = {
     icon = god_folk_blue
     country_modifier = {
         global_population_growth = 0.
         global_monthly_food_modifier = 0.03
     }
-    religion = ir_armenian_religion
+    religion = ir_anahitic_religion
 }
 
 deity_anahita = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_zoroaster
+}
+
+deity_anaitis = {
     icon = god_folk_blue
     country_modifier = {
         global_population_growth = 0.
@@ -192,6 +552,15 @@ deity_anat = {
     religion = ir_carthaginian_pantheon
 }
 
+deity_anbay = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_arabian_pantheon
+}
+
 deity_ancamna = {
     icon = god_folk_blue
     country_modifier = {
@@ -199,6 +568,15 @@ deity_ancamna = {
         global_monthly_food_modifier = 0.03
     }
     religion = ir_druidism
+}
+
+deity_andinus = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_illyrian_pantheon
 }
 
 deity_andraste = {
@@ -210,6 +588,33 @@ deity_andraste = {
     religion = ir_druidism
 }
 
+deity_angitia = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_angra_mainyu = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_mithra_religion
+}
+
+deity_anguipedia = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_indo_iranian_religion
+}
+
 deity_anhur = {
     icon = god_folk_blue
     country_modifier = {
@@ -217,6 +622,60 @@ deity_anhur = {
         discipline = 0.01
     }
     religion = ir_egyptian_pantheon
+}
+
+deity_ani = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_ankalamma = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_agama
+}
+
+deity_antaeus = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_berber_religion
+}
+
+deity_anterstatai = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_anti = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_berber_religion
+}
+
+deity_anu = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_mesopotamian_religion
 }
 
 deity_anubis = {
@@ -228,6 +687,42 @@ deity_anubis = {
     religion = ir_egyptian_pantheon
 }
 
+deity_anuket = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_egyptian_pantheon
+}
+
+deity_anzar = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_berber_religion
+}
+
+deity_anzotica = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_illyrian_pantheon
+}
+
+deity_apa = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_italic_pantheon
+}
+
 deity_aparigraha = {
     icon = god_folk_blue
     country_modifier = {
@@ -237,7 +732,34 @@ deity_aparigraha = {
     religion = ir_jainism
 }
 
+deity_apedmak = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_egyptian_pantheon
+}
+
 deity_aphrodite = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_aphrodite_anaitis = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_zoroaster
+}
+
+deity_aphrodite_areia = {
     icon = god_folk_blue
     country_modifier = {
         global_population_growth = 0.
@@ -255,6 +777,15 @@ deity_aphrodite_euploia = {
     religion = ir_roman_pantheon
 }
 
+deity_aphrodite_hoplimense = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_roman_pantheon
+}
+
 deity_api = {
     icon = god_folk_blue
     country_modifier = {
@@ -262,6 +793,24 @@ deity_api = {
         trade_efficiency = 0.05
     }
     religion = ir_indo_iranian_religion
+}
+
+deity_apis = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_egyptian_pantheon
+}
+
+deity_apku = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_mesopotamian_religion
 }
 
 deity_apollo = {
@@ -282,11 +831,29 @@ deity_apollo_aktiakos = {
     religion = ir_roman_pantheon
 }
 
+deity_apollo_altinos = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_roman_pantheon
+}
+
 deity_apollo_didymaios = {
     icon = god_folk_blue
     country_modifier = {
         global_raw_material_output = 0.05
         trade_efficiency = 0.05
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_apollo_hegemon = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
     }
     religion = ir_roman_pantheon
 }
@@ -300,11 +867,38 @@ deity_apollo_karneios = {
     religion = ir_roman_pantheon
 }
 
+deity_apollo_mithras = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_mithra_religion
+}
+
 deity_apollo_nabu = {
     icon = god_folk_blue
     country_modifier = {
         global_raw_material_output = 0.05
         trade_efficiency = 0.05
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_apsati = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_caucasian_religion
+}
+
+deity_apsyrtus = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
     }
     religion = ir_roman_pantheon
 }
@@ -315,7 +909,16 @@ deity_apulu = {
         land_morale_modifier = 0.05
         discipline = 0.01
     }
-    religion = ir_roman_pantheon
+    religion = ir_italic_pantheon
+}
+
+deity_aqueloo = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_animism
 }
 
 deity_aramazd = {
@@ -324,7 +927,16 @@ deity_aramazd = {
         land_morale_modifier = 0.05
         discipline = 0.01
     }
-    religion = ir_armenian_religion
+    religion = ir_anahitic_religion
+}
+
+deity_arensuphis = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_egyptian_pantheon
 }
 
 deity_ares = {
@@ -336,6 +948,24 @@ deity_ares = {
     religion = ir_roman_pantheon
 }
 
+deity_ares_einaios = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_ares_lusitani = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_druidism
+}
+
 deity_arethousa = {
     icon = god_folk_blue
     country_modifier = {
@@ -343,6 +973,15 @@ deity_arethousa = {
         global_max_literacy = 2
     }
     religion = ir_roman_pantheon
+}
+
+deity_arganthonios = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_animism
 }
 
 deity_arghya = {
@@ -363,6 +1002,15 @@ deity_argimpasa = {
     religion = ir_indo_iranian_religion
 }
 
+deity_arhan = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_caucasian_religion
+}
+
 deity_ariadne = {
     icon = god_folk_blue
     country_modifier = {
@@ -372,6 +1020,60 @@ deity_ariadne = {
     religion = ir_roman_pantheon
 }
 
+deity_ariantes = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_indo_iranian_religion
+}
+
+deity_aril = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_aristeo = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_nuragic_pantheon
+}
+
+deity_arkhon_arkhozh = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_circassian_pantheon
+}
+
+deity_armaiti = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_zoroaster
+}
+
+deity_armatus = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_illyrian_pantheon
+}
+
 deity_armazi = {
     icon = god_folk_blue
     country_modifier = {
@@ -379,6 +1081,24 @@ deity_armazi = {
         global_max_literacy = 2
     }
     religion = ir_caucasian_religion
+}
+
+deity_arpoxais = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_indo_iranian_religion
+}
+
+deity_arraweelo = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_puntic_religion
 }
 
 deity_artemis = {
@@ -408,6 +1128,33 @@ deity_artemis_orthia = {
     religion = ir_roman_pantheon
 }
 
+deity_artemis_reitia = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_artemis_tauropolos = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_artimit = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_italic_pantheon
+}
+
 deity_artio = {
     icon = god_folk_blue
     country_modifier = {
@@ -423,7 +1170,7 @@ deity_artume = {
         global_population_growth = 0.
         global_monthly_food_modifier = 0.03
     }
-    religion = ir_roman_pantheon
+    religion = ir_italic_pantheon
 }
 
 deity_arubani = {
@@ -433,6 +1180,15 @@ deity_arubani = {
         global_max_literacy = 2
     }
     religion = ir_armenian_religion
+}
+
+deity_arvernus = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_druidism
 }
 
 deity_asclepius = {
@@ -453,6 +1209,24 @@ deity_asha = {
     religion = ir_zoroaster
 }
 
+deity_asherah = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_carthaginian_pantheon
+}
+
+deity_ashima = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_mesopotamian_religion
+}
+
 deity_ashshur = {
     icon = god_folk_blue
     country_modifier = {
@@ -462,6 +1236,42 @@ deity_ashshur = {
     religion = ir_mesopotamian_religion
 }
 
+deity_ashtabil = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_hurrian_pantheon
+}
+
+deity_ashtaroot = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_aspasyros = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_indo_iranian_religion
+}
+
+deity_assemini = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_nuragic_pantheon
+}
+
 deity_astarte = {
     icon = god_folk_blue
     country_modifier = {
@@ -469,6 +1279,33 @@ deity_astarte = {
         global_monthly_food_modifier = 0.03
     }
     religion = ir_carthaginian_pantheon
+}
+
+deity_astarte_turdetani = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_animism
+}
+
+deity_astlik = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_anahitic_religion
+}
+
+deity_asvins = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_hindu
 }
 
 deity_ataecina = {
@@ -496,6 +1333,24 @@ deity_atargatis = {
         global_monthly_food_modifier = 0.03
     }
     religion = ir_carthaginian_pantheon
+}
+
+deity_atarsamain = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_arabian_pantheon
+}
+
+deity_athana = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_roman_pantheon
 }
 
 deity_athena = {
@@ -552,6 +1407,42 @@ deity_athena_promachos = {
     religion = ir_roman_pantheon
 }
 
+deity_athena_tritogeneia = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_athrpa = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_athtar = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_arabian_pantheon
+}
+
+deity_ati = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_italic_pantheon
+}
+
 deity_ati_muwer = {
     icon = god_folk_blue
     country_modifier = {
@@ -577,6 +1468,69 @@ deity_attis = {
         global_monthly_food_modifier = 0.03
     }
     religion = ir_anatolian_religion
+}
+
+deity_atum = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_egyptian_pantheon
+}
+
+deity_atunis = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_avalokitesvara = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_buddhism
+}
+
+deity_awal = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_ayaanle = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_puntic_religion
+}
+
+deity_ayyur = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_berber_religion
+}
+
+deity_azhi_dahaka = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_mithra_religion
 }
 
 deity_baal = {
@@ -615,6 +1569,24 @@ deity_baalat = {
     religion = ir_carthaginian_pantheon
 }
 
+deity_babai = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_nuragic_pantheon
+}
+
+deity_bacax = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_berber_religion
+}
+
 deity_bacchus = {
     icon = god_folk_blue
     country_modifier = {
@@ -622,6 +1594,15 @@ deity_bacchus = {
         global_monthly_food_modifier = 0.03
     }
     religion = ir_roman_pantheon
+}
+
+deity_badagon = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_caucasian_religion
 }
 
 deity_baduhenna = {
@@ -651,6 +1632,78 @@ deity_bagvarti = {
     religion = ir_armenian_religion
 }
 
+deity_bakis = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_nuragic_pantheon
+}
+
+deity_baloraz = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_germanic_religion
+}
+
+deity_baltic_bear = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_matrist_religion
+}
+
+deity_baltic_bee = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_matrist_religion
+}
+
+deity_baltic_bird = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_matrist_religion
+}
+
+deity_baltic_horse = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_matrist_religion
+}
+
+deity_baltic_oak = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_matrist_religion
+}
+
+deity_baltic_sun = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_matrist_religion
+}
+
 deity_bamyan = {
     icon = god_folk_blue
     country_modifier = {
@@ -658,6 +1711,15 @@ deity_bamyan = {
         global_monthly_food_modifier = 0.03
     }
     religion = ir_buddhism
+}
+
+deity_ban = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_mesopotamian_religion
 }
 
 deity_banebdjedet = {
@@ -669,6 +1731,60 @@ deity_banebdjedet = {
     religion = ir_egyptian_pantheon
 }
 
+deity_bangaramma = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_agama
+}
+
+deity_barama = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_barbale = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_caucasian_religion
+}
+
+deity_bardos = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_caucasian_religion
+}
+
+deity_barshamin = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_anahitic_religion
+}
+
+deity_basajaun = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_pre_indo_european_religion
+}
+
 deity_bassareus = {
     icon = god_folk_blue
     country_modifier = {
@@ -676,6 +1792,60 @@ deity_bassareus = {
         global_monthly_food_modifier = 0.03
     }
     religion = ir_shamanism
+}
+
+deity_bastet = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_egyptian_pantheon
+}
+
+deity_batraz = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_circassian_pantheon
+}
+
+deity_bau = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_baurastana = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_indo_iranian_religion
+}
+
+deity_beher = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_arabian_pantheon
+}
+
+deity_belatu = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_mesopotamian_religion
 }
 
 deity_belatucadros = {
@@ -705,6 +1875,24 @@ deity_belisama = {
     religion = ir_druidism
 }
 
+deity_bellerophon = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_bellona = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_roman_pantheon
+}
+
 deity_bendis = {
     icon = god_folk_blue
     country_modifier = {
@@ -712,6 +1900,24 @@ deity_bendis = {
         trade_efficiency = 0.05
     }
     religion = ir_shamanism
+}
+
+deity_berecyntia = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_anatolian_religion
+}
+
+deity_beri = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_caucasian_religion
 }
 
 deity_berobreo = {
@@ -732,6 +1938,15 @@ deity_betatun = {
     religion = ir_animism
 }
 
+deity_bethel = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_carthaginian_pantheon
+}
+
 deity_bhadrabahu = {
     icon = god_folk_blue
     country_modifier = {
@@ -739,6 +1954,24 @@ deity_bhadrabahu = {
         global_max_literacy = 2
     }
     religion = ir_jainism
+}
+
+deity_bhadrakali = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_agama
+}
+
+deity_bharaddai = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_ajivika
 }
 
 deity_bhrigu = {
@@ -750,13 +1983,22 @@ deity_bhrigu = {
     religion = ir_hindu
 }
 
-deity_blessing_life = {
+deity_bindus = {
     icon = god_folk_blue
     country_modifier = {
-        global_population_growth = 0.
-        global_monthly_food_modifier = 0.03
+        land_morale_modifier = 0.05
+        discipline = 0.01
     }
-    religion = ir_eastern_animism
+    religion = ir_illyrian_pantheon
+}
+
+deity_biriir_ina_barqo = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_puntic_religion
 }
 
 deity_bodh = {
@@ -768,11 +2010,47 @@ deity_bodh = {
     religion = ir_buddhism
 }
 
+deity_boria = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_illyrian_pantheon
+}
+
+deity_borvo = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_animism
+}
+
+deity_boseli = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_caucasian_religion
+}
+
 deity_brahma = {
     icon = god_folk_blue
     country_modifier = {
         research_speed_modifier = 0.05
         global_max_literacy = 2
+    }
+    religion = ir_hindu
+}
+
+deity_brhaspati = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
     }
     religion = ir_hindu
 }
@@ -786,6 +2064,69 @@ deity_brigantia = {
     religion = ir_druidism
 }
 
+deity_brodenaz = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_germanic_religion
+}
+
+deity_broteas = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_anatolian_religion
+}
+
+deity_buddha_mazda = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_buddhism
+}
+
+deity_bugash = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_buk = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_nilotic_pantheon
+}
+
+deity_buriash = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_buuti = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_puntic_religion
+}
+
 deity_caleb_joshua = {
     icon = god_folk_blue
     country_modifier = {
@@ -793,6 +2134,15 @@ deity_caleb_joshua = {
         trade_efficiency = 0.05
     }
     religion = ir_judaism
+}
+
+deity_calu = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_italic_pantheon
 }
 
 deity_camulus = {
@@ -831,6 +2181,51 @@ deity_castores = {
     religion = ir_roman_pantheon
 }
 
+deity_castur = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_cataonian_apollo = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_catha = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_cathas_sech = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_cels = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_italic_pantheon
+}
+
 deity_ceres = {
     icon = god_folk_blue
     country_modifier = {
@@ -849,6 +2244,51 @@ deity_cernunnos = {
     religion = ir_druidism
 }
 
+deity_chakreshvari = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_jainism
+}
+
+deity_chandra = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_hindu
+}
+
+deity_chandraprabha = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_jainism
+}
+
+deity_charum = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_chemosh = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_carthaginian_pantheon
+}
+
 deity_children_of_god = {
     icon = god_folk_blue
     country_modifier = {
@@ -856,6 +2296,312 @@ deity_children_of_god = {
         discipline = 0.01
     }
     religion = ir_judaism
+}
+
+deity_chinese_baidi = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_bingzhu = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_daizong = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_dasiming = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_dizhu = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_fengshi = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_graangsreen = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_gyyngsreen = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_he = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_heidi = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_houtu = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_huai = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_huangdi = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_huashan = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_ji = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_jiang = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_jishen = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_qingdi = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_rizhu = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_shangdi = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_shaosiming = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_sheshen = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_sishizhu = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_songshan = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_tianzhu = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_xiangfuren = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_xiangjun = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_xihe = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_yandi = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_yangzhu = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_yinzhu = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_yuezhu = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chinese_yushi = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_chinese_religions
+}
+
+deity_chuu = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_burmese_religion
 }
 
 deity_cichol = {
@@ -867,11 +2613,56 @@ deity_cichol = {
     religion = ir_druidism
 }
 
+deity_cilen = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_italic_pantheon
+}
+
 deity_cissonius = {
     icon = god_folk_blue
     country_modifier = {
         global_raw_material_output = 0.05
         trade_efficiency = 0.05
+    }
+    religion = ir_druidism
+}
+
+deity_cocidius = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_druidism
+}
+
+deity_colaxais = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_indo_iranian_religion
+}
+
+deity_colwic_abany = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_nilotic_pantheon
+}
+
+deity_condatis = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
     }
     religion = ir_druidism
 }
@@ -885,6 +2676,33 @@ deity_coventina = {
     religion = ir_druidism
 }
 
+deity_culalp = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_culsans = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_cupra = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_italic_pantheon
+}
+
 deity_cybele = {
     icon = god_folk_blue
     country_modifier = {
@@ -892,6 +2710,24 @@ deity_cybele = {
         global_monthly_food_modifier = 0.03
     }
     religion = ir_anatolian_religion
+}
+
+deity_cyre = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_berber_religion
+}
+
+deity_cyrus = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_mithra_religion
 }
 
 deity_dactyl = {
@@ -903,6 +2739,24 @@ deity_dactyl = {
     religion = ir_anatolian_religion
 }
 
+deity_daedalos = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_nuragic_pantheon
+}
+
+deity_dagon = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_carthaginian_pantheon
+}
+
 deity_dali = {
     icon = god_folk_blue
     country_modifier = {
@@ -910,6 +2764,42 @@ deity_dali = {
         trade_efficiency = 0.05
     }
     religion = ir_caucasian_religion
+}
+
+deity_damater = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_damatira = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_illyrian_pantheon
+}
+
+deity_damia = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_damona = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_druidism
 }
 
 deity_dana_parami = {
@@ -921,6 +2811,15 @@ deity_dana_parami = {
     religion = ir_buddhism
 }
 
+deity_dandamis = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_jainism
+}
+
 deity_daniel = {
     icon = god_folk_blue
     country_modifier = {
@@ -928,6 +2827,33 @@ deity_daniel = {
         trade_efficiency = 0.05
     }
     religion = ir_judaism
+}
+
+deity_darab = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_mithra_religion
+}
+
+deity_dariba = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_darius = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_zoroaster
 }
 
 deity_david = {
@@ -948,13 +2874,13 @@ deity_deborah = {
     religion = ir_judaism
 }
 
-deity_deivas = {
+deity_deipatros = {
     icon = god_folk_blue
     country_modifier = {
         research_speed_modifier = 0.05
         global_max_literacy = 2
     }
-    religion = ir_matrist_religion
+    religion = ir_illyrian_pantheon
 }
 
 deity_demeter = {
@@ -975,6 +2901,33 @@ deity_demeter_potnia = {
     religion = ir_roman_pantheon
 }
 
+deity_demetrios = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_deng = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_nilotic_pantheon
+}
+
+deity_deraz = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_mithra_religion
+}
+
 deity_dercetius = {
     icon = god_folk_blue
     country_modifier = {
@@ -993,6 +2946,51 @@ deity_derzelas = {
     religion = ir_shamanism
 }
 
+deity_desert_hills_nat = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_burmese_religion
+}
+
+deity_desert_nat = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_burmese_religion
+}
+
+deity_devasena = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_agama
+}
+
+deity_dhammarakkhita = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_dhushara = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_arabian_pantheon
+}
+
 deity_diana = {
     icon = god_folk_blue
     country_modifier = {
@@ -1000,6 +2998,15 @@ deity_diana = {
         global_monthly_food_modifier = 0.03
     }
     religion = ir_roman_pantheon
+}
+
+deity_diana_nemorensis = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_italic_pantheon
 }
 
 deity_diktean_zeus = {
@@ -1020,6 +3027,15 @@ deity_diktynna = {
     religion = ir_roman_pantheon
 }
 
+deity_dili_polasi = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_agama
+}
+
 deity_dindymene = {
     icon = god_folk_blue
     country_modifier = {
@@ -1034,6 +3050,15 @@ deity_dione = {
     country_modifier = {
         global_population_growth = 0.
         global_monthly_food_modifier = 0.03
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_dionysos_indikos = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
     }
     religion = ir_roman_pantheon
 }
@@ -1065,13 +3090,22 @@ deity_dioscuri = {
     religion = ir_roman_pantheon
 }
 
-deity_divine_twins = {
+deity_dische_zhig = {
     icon = god_folk_blue
     country_modifier = {
-        global_raw_material_output = 0.05
-        trade_efficiency = 0.05
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
     }
-    religion = ir_matrist_religion
+    religion = ir_circassian_pantheon
+}
+
+deity_discordia = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_roman_pantheon
 }
 
 deity_diwali = {
@@ -1092,6 +3126,24 @@ deity_drablai_gyalmo = {
     religion = ir_bon_religion
 }
 
+deity_dracondracaena = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_illyrian_pantheon
+}
+
+deity_drakon_kholchikos = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_roman_pantheon
+}
+
 deity_dsvininaue = {
     icon = god_folk_blue
     country_modifier = {
@@ -1101,6 +3153,15 @@ deity_dsvininaue = {
     religion = ir_armenian_religion
 }
 
+deity_dualos = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_illyrian_pantheon
+}
+
 deity_duillae = {
     icon = god_folk_blue
     country_modifier = {
@@ -1108,6 +3169,60 @@ deity_duillae = {
         global_monthly_food_modifier = 0.03
     }
     religion = ir_animism
+}
+
+deity_dumuzid = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_duniash = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_dur = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_durdzuks = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_caucasian_religion
+}
+
+deity_durga = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_agama
+}
+
+deity_duzagash = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_mesopotamian_religion
 }
 
 deity_ea = {
@@ -1128,13 +3243,49 @@ deity_eacus = {
     religion = ir_animism
 }
 
+deity_eate = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_pre_indo_european_religion
+}
+
+deity_ebrimusha = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_hurrian_pantheon
+}
+
+deity_egeria = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_eia = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_illyrian_pantheon
+}
+
 deity_eki = {
     icon = god_folk_blue
     country_modifier = {
         research_speed_modifier = 0.05
         global_max_literacy = 2
     }
-    religion = ir_druidism
+    religion = ir_pre_indo_european_religion
 }
 
 deity_el = {
@@ -1155,6 +3306,15 @@ deity_eleuthya = {
     religion = ir_roman_pantheon
 }
 
+deity_elijah = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_judaism
+}
+
 deity_endouellicus = {
     icon = god_folk_blue
     country_modifier = {
@@ -1162,6 +3322,33 @@ deity_endouellicus = {
         global_monthly_food_modifier = 0.03
     }
     religion = ir_animism
+}
+
+deity_enejjaga = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_ajivika
+}
+
+deity_enie = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_enji = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_illyrian_pantheon
 }
 
 deity_enlil = {
@@ -1173,6 +3360,24 @@ deity_enlil = {
     religion = ir_mesopotamian_religion
 }
 
+deity_enoch = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_judaism
+}
+
+deity_enyo = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_roman_pantheon
+}
+
 deity_epaninaue = {
     icon = god_folk_blue
     country_modifier = {
@@ -1180,6 +3385,24 @@ deity_epaninaue = {
         trade_efficiency = 0.05
     }
     religion = ir_armenian_religion
+}
+
+deity_ereshkigal = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_eris = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_roman_pantheon
 }
 
 deity_eros = {
@@ -1200,7 +3423,61 @@ deity_eshmun = {
     religion = ir_carthaginian_pantheon
 }
 
+deity_eshmun_melqart = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_carthaginian_pantheon
+}
+
+deity_esi = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_uralic_pantheon
+}
+
+deity_estan = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_hatti_religion
+}
+
 deity_esther = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_judaism
+}
+
+deity_ethausva = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_evan = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_eve = {
     icon = god_folk_blue
     country_modifier = {
         global_population_growth = 0.
@@ -1227,6 +3504,15 @@ deity_ezra = {
     religion = ir_judaism
 }
 
+deity_farmland_nat = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_burmese_religion
+}
+
 deity_faunus = {
     icon = god_folk_blue
     country_modifier = {
@@ -1234,6 +3520,51 @@ deity_faunus = {
         global_monthly_food_modifier = 0.03
     }
     religion = ir_roman_pantheon
+}
+
+deity_feronia = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_fides = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_fladukia = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_flood_plain_nat = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_burmese_religion
+}
+
+deity_forest_nat = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_burmese_religion
 }
 
 deity_fortuna = {
@@ -1245,13 +3576,49 @@ deity_fortuna = {
     religion = ir_roman_pantheon
 }
 
+deity_frawjo = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_germanic_religion
+}
+
+deity_freyrudra = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_germanic_religion
+}
+
+deity_frijjo = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_germanic_religion
+}
+
+deity_frijjoshmi = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_germanic_religion
+}
+
 deity_fufluns = {
     icon = god_folk_blue
     country_modifier = {
         global_population_growth = 0.
         global_monthly_food_modifier = 0.03
     }
-    religion = ir_roman_pantheon
+    religion = ir_italic_pantheon
 }
 
 deity_ga = {
@@ -1275,10 +3642,55 @@ deity_gacim = {
 deity_gad = {
     icon = god_folk_blue
     country_modifier = {
-        research_speed_modifier = 0.05
-        global_max_literacy = 2
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
     }
     religion = ir_carthaginian_pantheon
+}
+
+deity_gal = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_caucasian_religion
+}
+
+deity_garang = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_nilotic_pantheon
+}
+
+deity_gautr = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_germanic_religion
+}
+
+deity_ge = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_caucasian_religion
+}
+
+deity_geb = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_egyptian_pantheon
 }
 
 deity_gekho = {
@@ -1290,6 +3702,24 @@ deity_gekho = {
     religion = ir_bon_religion
 }
 
+deity_gelonus = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_indo_iranian_religion
+}
+
+deity_gerger = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_burmese_religion
+}
+
 deity_ghmerti = {
     icon = god_folk_blue
     country_modifier = {
@@ -1299,6 +3729,15 @@ deity_ghmerti = {
     religion = ir_caucasian_religion
 }
 
+deity_gindar = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_mesopotamian_religion
+}
+
 deity_glanis = {
     icon = god_folk_blue
     country_modifier = {
@@ -1306,6 +3745,15 @@ deity_glanis = {
         global_max_literacy = 2
     }
     religion = ir_druidism
+}
+
+deity_glycon = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_roman_pantheon
 }
 
 deity_gobannus = {
@@ -1326,31 +3774,40 @@ deity_goitosyrus = {
     religion = ir_indo_iranian_religion
 }
 
-deity_governing_goddesses = {
+deity_gordias = {
     icon = god_folk_blue
     country_modifier = {
-        research_speed_modifier = 0.05
-        global_max_literacy = 2
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
     }
-    religion = ir_matrist_religion
+    religion = ir_anatolian_religion
 }
 
-deity_guidance_of_the_sun = {
-    icon = god_folk_blue
-    country_modifier = {
-        research_speed_modifier = 0.05
-        global_max_literacy = 2
-    }
-    religion = ir_eastern_animism
-}
-
-deity_guidance_of_the_wind = {
+deity_gordys = {
     icon = god_folk_blue
     country_modifier = {
         global_raw_material_output = 0.05
         trade_efficiency = 0.05
     }
-    religion = ir_eastern_animism
+    religion = ir_hurrian_pantheon
+}
+
+deity_gula = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_guladu = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_mesopotamian_religion
 }
 
 deity_gurzil = {
@@ -1360,6 +3817,24 @@ deity_gurzil = {
         discipline = 0.01
     }
     religion = ir_berber_religion
+}
+
+deity_habbad_ina_kamas = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_puntic_religion
+}
+
+deity_hadabal = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_mesopotamian_religion
 }
 
 deity_hadad = {
@@ -1380,6 +3855,78 @@ deity_hades = {
     religion = ir_roman_pantheon
 }
 
+deity_haimadallaz = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_germanic_religion
+}
+
+deity_hala = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_halja = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_germanic_religion
+}
+
+deity_hannahanna = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_hatti_religion
+}
+
+deity_haoma = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_indo_iranian_religion
+}
+
+deity_hapantali = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_hatti_religion
+}
+
+deity_hapi = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_egyptian_pantheon
+}
+
+deity_harbe = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_mesopotamian_religion
+}
+
 deity_harpocrates = {
     icon = god_folk_blue
     country_modifier = {
@@ -1389,11 +3936,101 @@ deity_harpocrates = {
     religion = ir_roman_pantheon
 }
 
+deity_hatepinu = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_hatti_religion
+}
+
 deity_hathor = {
     icon = god_folk_blue
     country_modifier = {
         global_raw_material_output = 0.05
         trade_efficiency = 0.05
+    }
+    religion = ir_egyptian_pantheon
+}
+
+deity_haukim = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_arabian_pantheon
+}
+
+deity_haurvatat = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_zoroaster
+}
+
+deity_hayk = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_anahitic_religion
+}
+
+deity_hayya = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_hurrian_pantheon
+}
+
+deity_hebat = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_hurrian_pantheon
+}
+
+deity_hecate_iphemide = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_hedrixe = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_circassian_pantheon
+}
+
+deity_hegesias = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_heka = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
     }
     religion = ir_egyptian_pantheon
 }
@@ -1434,7 +4071,25 @@ deity_hephaestus = {
     religion = ir_roman_pantheon
 }
 
+deity_heqet = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_egyptian_pantheon
+}
+
 deity_hera = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_hera_kandarene = {
     icon = god_folk_blue
     country_modifier = {
         research_speed_modifier = 0.05
@@ -1452,13 +4107,40 @@ deity_heracles = {
     religion = ir_roman_pantheon
 }
 
-deity_hercle = {
+deity_heraklean_targitaos = {
     icon = god_folk_blue
     country_modifier = {
         land_morale_modifier = 0.05
         discipline = 0.01
     }
     religion = ir_roman_pantheon
+}
+
+deity_herakles_artagnes = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_mithra_religion
+}
+
+deity_herakles_vajpranios = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_buddhism
+}
+
+deity_hercle = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_italic_pantheon
 }
 
 deity_hercules = {
@@ -1488,6 +4170,78 @@ deity_hermes = {
     religion = ir_roman_pantheon
 }
 
+deity_hermes_trumsiates = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_heros = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_caucasian_religion
+}
+
+deity_heryshaf = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_egyptian_pantheon
+}
+
+deity_hestia = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_hills_nat = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_burmese_religion
+}
+
+deity_hinthia = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_hishmitik = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_histria = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_illyrian_pantheon
+}
+
 deity_hludana = {
     icon = god_folk_blue
     country_modifier = {
@@ -1495,6 +4249,15 @@ deity_hludana = {
         global_monthly_food_modifier = 0.03
     }
     religion = ir_germanic_religion
+}
+
+deity_horon = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_carthaginian_pantheon
 }
 
 deity_horus = {
@@ -1515,6 +4278,69 @@ deity_huba = {
     religion = ir_armenian_religion
 }
 
+deity_hubal = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_arabian_pantheon
+}
+
+deity_hudak = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_carthaginian_pantheon
+}
+
+deity_humban = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_husravah = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_zoroaster
+}
+
+deity_hutena_hutelluri = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_hurrian_pantheon
+}
+
+deity_hutran = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_huur = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_puntic_religion
+}
+
 deity_hyacinthus = {
     icon = god_folk_blue
     country_modifier = {
@@ -1522,6 +4348,51 @@ deity_hyacinthus = {
         global_max_literacy = 2
     }
     religion = ir_roman_pantheon
+}
+
+deity_hydaspes = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_hylaian_drakaina = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_iakhsari = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_caucasian_religion
+}
+
+deity_iason = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_ica = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_illyrian_pantheon
 }
 
 deity_icovellauna = {
@@ -1533,6 +4404,78 @@ deity_icovellauna = {
     religion = ir_druidism
 }
 
+deity_idaea = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_anatolian_religion
+}
+
+deity_idanthyrsus = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_indo_iranian_religion
+}
+
+deity_ifri = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_berber_religion
+}
+
+deity_ilargi = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_pre_indo_european_religion
+}
+
+deity_illuyanka = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_hatti_religion
+}
+
+deity_illyrius = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_ilma = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_uralic_pantheon
+}
+
+deity_inaras = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_hatti_religion
+}
+
 deity_indra = {
     icon = god_folk_blue
     country_modifier = {
@@ -1542,13 +4485,22 @@ deity_indra = {
     religion = ir_hindu
 }
 
-deity_infusion_of_war = {
+deity_inguma = {
     icon = god_folk_blue
     country_modifier = {
-        land_morale_modifier = 0.05
-        discipline = 0.01
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
     }
-    religion = ir_eastern_animism
+    religion = ir_pre_indo_european_religion
+}
+
+deity_inshushinak = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_mesopotamian_religion
 }
 
 deity_intarabus = {
@@ -1560,11 +4512,128 @@ deity_intarabus = {
     religion = ir_druidism
 }
 
-deity_ishtar = {
+deity_inzak = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_iolaus = {
     icon = god_folk_blue
     country_modifier = {
         land_morale_modifier = 0.05
         discipline = 0.01
+    }
+    religion = ir_nuragic_pantheon
+}
+
+deity_iprer = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_eastern_animism
+}
+
+deity_iravan = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_agama
+}
+
+deity_iria = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_illyrian_pantheon
+}
+
+deity_irmin = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_germanic_religion
+}
+
+deity_irrawaddy = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_burmese_religion
+}
+
+deity_irshappa = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_hurrian_pantheon
+}
+
+deity_isaiah = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_judaism
+}
+
+deity_isakki = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_agama
+}
+
+deity_ishara = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_carthaginian_pantheon
+}
+
+deity_ishmekarab = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_ishnikarab = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_ishtar = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
     }
     religion = ir_mesopotamian_religion
 }
@@ -1578,6 +4647,69 @@ deity_isis = {
     religion = ir_egyptian_pantheon
 }
 
+deity_istaevo = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_germanic_religion
+}
+
+deity_istaran = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_jabru = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_jacob = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_judaism
+}
+
+deity_jada = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_uralic_pantheon
+}
+
+deity_jeremiah = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_judaism
+}
+
+deity_job = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_judaism
+}
+
 deity_joseph = {
     icon = god_folk_blue
     country_modifier = {
@@ -1585,6 +4717,33 @@ deity_joseph = {
         global_monthly_food_modifier = 0.03
     }
     religion = ir_judaism
+}
+
+deity_joshua = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_judaism
+}
+
+deity_jumla = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_uralic_pantheon
+}
+
+deity_jungle_nat = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_burmese_religion
 }
 
 deity_juno = {
@@ -1605,6 +4764,15 @@ deity_jupiter = {
     religion = ir_roman_pantheon
 }
 
+deity_juppiter_menzanas = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_italic_pantheon
+}
+
 deity_kakasbos = {
     icon = god_folk_blue
     country_modifier = {
@@ -1614,13 +4782,40 @@ deity_kakasbos = {
     religion = ir_anatolian_religion
 }
 
+deity_kalanos = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_jainism
+}
+
+deity_kamulla = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_kandaon = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_shamanism
+}
+
 deity_kanya_devi = {
     icon = god_folk_blue
     country_modifier = {
         global_population_growth = 0.
         global_monthly_food_modifier = 0.03
     }
-    religion = ir_hindu
+    religion = ir_agama
 }
 
 deity_karmanor = {
@@ -1630,6 +4825,60 @@ deity_karmanor = {
         global_monthly_food_modifier = 0.03
     }
     religion = ir_roman_pantheon
+}
+
+deity_kartikeya = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_hindu
+}
+
+deity_karuppu_sami = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_agama
+}
+
+deity_kasku = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_hatti_religion
+}
+
+deity_katahzipuri = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_hatti_religion
+}
+
+deity_kaum = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_eastern_animism
+}
+
+deity_kem = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_eastern_animism
 }
 
 deity_khaldi = {
@@ -1650,6 +4899,69 @@ deity_khanti_parami = {
     religion = ir_buddhism
 }
 
+deity_khonsu = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_egyptian_pantheon
+}
+
+deity_khshathrita = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_mithra_religion
+}
+
+deity_kingdom_nat = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_burmese_religion
+}
+
+deity_kiririsha = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_kirmashir = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_kisa_sankicca = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_ajivika
+}
+
+deity_kommagene = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_mithra_religion
+}
+
 deity_kopala = {
     icon = god_folk_blue
     country_modifier = {
@@ -1657,6 +4969,15 @@ deity_kopala = {
         discipline = 0.01
     }
     religion = ir_caucasian_religion
+}
+
+deity_korravai = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_agama
 }
 
 deity_kothar = {
@@ -1668,6 +4989,33 @@ deity_kothar = {
     religion = ir_carthaginian_pantheon
 }
 
+deity_kotyto = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_shamanism
+}
+
+deity_koudorso = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_uralic_pantheon
+}
+
+deity_kowth_nhial = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_nilotic_pantheon
+}
+
 deity_krishna = {
     icon = god_folk_blue
     country_modifier = {
@@ -1675,6 +5023,42 @@ deity_krishna = {
         global_monthly_food_modifier = 0.03
     }
     religion = ir_hindu
+}
+
+deity_kronos = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_kroon = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_burmese_religion
+}
+
+deity_kshatra_vairya = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_zoroaster
+}
+
+deity_kubaba = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_hurrian_pantheon
 }
 
 deity_kubera = {
@@ -1695,6 +5079,60 @@ deity_kuchi_mangke = {
     religion = ir_bon_religion
 }
 
+deity_kuje = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_uralic_pantheon
+}
+
+deity_kujii = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_burmese_religion
+}
+
+deity_kumarbi = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_hurrian_pantheon
+}
+
+deity_kuntuu = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_burmese_religion
+}
+
+deity_kura = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_kushuh = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_hurrian_pantheon
+}
+
 deity_kusinagara = {
     icon = god_folk_blue
     country_modifier = {
@@ -1702,6 +5140,42 @@ deity_kusinagara = {
         global_max_literacy = 2
     }
     religion = ir_buddhism
+}
+
+deity_kytioros = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_lady_of_flowing_waters = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_circassian_pantheon
+}
+
+deity_lagamal = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_lahona = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_roman_pantheon
 }
 
 deity_lakshmi = {
@@ -1713,13 +5187,112 @@ deity_lakshmi = {
     religion = ir_hindu
 }
 
+deity_lamia = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_berber_religion
+}
+
+deity_laminak = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_pre_indo_european_religion
+}
+
 deity_laran = {
     icon = god_folk_blue
     country_modifier = {
         land_morale_modifier = 0.05
         discipline = 0.01
     }
-    religion = ir_roman_pantheon
+    religion = ir_italic_pantheon
+}
+
+deity_lasa_achunanu = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_lasa_racuneta = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_lasa_sitmica = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_lasa_vecu = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_latra = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_illyrian_pantheon
+}
+
+deity_latun = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_leinth = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_leipoxais = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_indo_iranian_religion
+}
+
+deity_lekos = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_caucasian_religion
 }
 
 deity_lenus = {
@@ -1731,6 +5304,15 @@ deity_lenus = {
     religion = ir_druidism
 }
 
+deity_letha = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_italic_pantheon
+}
+
 deity_leto = {
     icon = god_folk_blue
     country_modifier = {
@@ -1738,6 +5320,42 @@ deity_leto = {
         global_max_literacy = 2
     }
     religion = ir_roman_pantheon
+}
+
+deity_leucetius = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_druidism
+}
+
+deity_leukothea = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_lha_mo = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_bon_religion
+}
+
+deity_lobegi = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_pre_indo_european_religion
 }
 
 deity_lugus = {
@@ -1749,6 +5367,33 @@ deity_lugus = {
     religion = ir_druidism
 }
 
+deity_luk = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_germanic_religion
+}
+
+deity_luna = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_lurraberri = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_pre_indo_european_religion
+}
+
 deity_ma = {
     icon = god_folk_blue
     country_modifier = {
@@ -1756,6 +5401,51 @@ deity_ma = {
         discipline = 0.01
     }
     religion = ir_anatolian_religion
+}
+
+deity_ma_aniketos = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_anatolian_religion
+}
+
+deity_maat = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_egyptian_pantheon
+}
+
+deity_macardit = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_nilotic_pantheon
+}
+
+deity_mae = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_mahagiri = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_burmese_religion
 }
 
 deity_mahavir_jayanti = {
@@ -1767,6 +5457,69 @@ deity_mahavir_jayanti = {
     religion = ir_jainism
 }
 
+deity_maher = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_arabian_pantheon
+}
+
+deity_mahesvara = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_buddhism
+}
+
+deity_maimone = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_nuragic_pantheon
+}
+
+deity_makkhali_gosala = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_ajivika
+}
+
+deity_malavisch = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_mallarama = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_ajivika
+}
+
+deity_manasseh = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_judaism
+}
+
 deity_manat = {
     icon = god_folk_blue
     country_modifier = {
@@ -1774,6 +5527,87 @@ deity_manat = {
         trade_efficiency = 0.05
     }
     religion = ir_arabian_pantheon
+}
+
+deity_mandiya = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_ajivika
+}
+
+deity_mandulis = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_egyptian_pantheon
+}
+
+deity_mania = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_manjushri = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_buddhism
+}
+
+deity_mannus = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_germanic_religion
+}
+
+deity_manorvae = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_nuragic_pantheon
+}
+
+deity_manth = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_manzat = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_maphitis = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_italic_pantheon
 }
 
 deity_maponos = {
@@ -1794,13 +5628,58 @@ deity_marduk = {
     religion = ir_mesopotamian_religion
 }
 
+deity_mareta = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_uralic_pantheon
+}
+
 deity_mari = {
     icon = god_folk_blue
     country_modifier = {
         global_population_growth = 0.
         global_monthly_food_modifier = 0.03
     }
-    religion = ir_druidism
+    religion = ir_pre_indo_european_religion
+}
+
+deity_mariamman = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_agama
+}
+
+deity_marica = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_marici = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_buddhism
+}
+
+deity_maris = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_italic_pantheon
 }
 
 deity_mars = {
@@ -1812,13 +5691,112 @@ deity_mars = {
     religion = ir_roman_pantheon
 }
 
-deity_medeine = {
+deity_marsh_nat = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_burmese_religion
+}
+
+deity_maruttash = {
     icon = god_folk_blue
     country_modifier = {
         land_morale_modifier = 0.05
         discipline = 0.01
     }
-    religion = ir_matrist_religion
+    religion = ir_mesopotamian_religion
+}
+
+deity_mashti = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_mastinam = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_berber_religion
+}
+
+deity_mater_matuta = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_mathamma = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_agama
+}
+
+deity_maungtintdei = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_burmese_religion
+}
+
+deity_meanpe = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_medaurus = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_shamanism
+}
+
+deity_meenakshi = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_agama
+}
+
+deity_meis = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_caucasian_religion
+}
+
+deity_melosocus = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_illyrian_pantheon
 }
 
 deity_melqart = {
@@ -1845,7 +5823,25 @@ deity_menrva = {
         research_speed_modifier = 0.05
         global_max_literacy = 2
     }
-    religion = ir_roman_pantheon
+    religion = ir_italic_pantheon
+}
+
+deity_menya = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_eastern_animism
+}
+
+deity_mer = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_carthaginian_pantheon
 }
 
 deity_mercury = {
@@ -1857,6 +5853,51 @@ deity_mercury = {
     religion = ir_roman_pantheon
 }
 
+deity_meretseger = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_egyptian_pantheon
+}
+
+deity_merise = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_circassian_pantheon
+}
+
+deity_merre = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_nuragic_pantheon
+}
+
+deity_meskilak = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_metsa = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_uralic_pantheon
+}
+
 deity_metta_parami = {
     icon = god_folk_blue
     country_modifier = {
@@ -1866,13 +5907,49 @@ deity_metta_parami = {
     religion = ir_buddhism
 }
 
+deity_midas = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_anatolian_religion
+}
+
 deity_mihr = {
     icon = god_folk_blue
     country_modifier = {
         research_speed_modifier = 0.05
         global_max_literacy = 2
     }
-    religion = ir_armenian_religion
+    religion = ir_anahitic_religion
+}
+
+deity_mihr_oir = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_vaksh_religion
+}
+
+deity_milkom = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_carthaginian_pantheon
+}
+
+deity_min = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_egyptian_pantheon
 }
 
 deity_minerva = {
@@ -1884,7 +5961,52 @@ deity_minerva = {
     religion = ir_roman_pantheon
 }
 
+deity_minshinmyaukphyu = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_burmese_religion
+}
+
+deity_miriam = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_judaism
+}
+
+deity_mirizir = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_missa_baka = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_indo_iranian_religion
+}
+
 deity_mithra = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_mithra_religion
+}
+
+deity_mithra_baga = {
     icon = god_folk_blue
     country_modifier = {
         research_speed_modifier = 0.05
@@ -1893,13 +6015,94 @@ deity_mithra = {
     religion = ir_zoroaster
 }
 
-deity_moon_guidance = {
+deity_mithra_mitreya = {
     icon = god_folk_blue
     country_modifier = {
         research_speed_modifier = 0.05
         global_max_literacy = 2
     }
-    religion = ir_eastern_animism
+    religion = ir_buddhism
+}
+
+deity_mithra_nergal = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_mithra_religion
+}
+
+deity_mithra_shamash = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_mithra_religion
+}
+
+deity_mithras = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_mitra = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_hindu
+}
+
+deity_mitreya = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_buddhism
+}
+
+deity_mitsa = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_caucasian_religion
+}
+
+deity_mlacuch = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_mogons = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_druidism
+}
+
+deity_moneiba = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_berber_religion
 }
 
 deity_moses = {
@@ -1911,13 +6114,94 @@ deity_moses = {
     religion = ir_judaism
 }
 
-deity_mother_goddess = {
+deity_mot = {
     icon = god_folk_blue
     country_modifier = {
         global_population_growth = 0.
         global_monthly_food_modifier = 0.03
     }
-    religion = ir_matrist_religion
+    religion = ir_carthaginian_pantheon
+}
+
+deity_mother_goddess_nuragic = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_nuragic_pantheon
+}
+
+deity_mountain_nat = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_burmese_religion
+}
+
+deity_movakanos = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_caucasian_religion
+}
+
+deity_munthuch = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_murgurio = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_nuragic_pantheon
+}
+
+deity_murugan = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_agama
+}
+
+deity_mut = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_egyptian_pantheon
+}
+
+deity_nabarbi = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_hurrian_pantheon
+}
+
+deity_nabia = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_animism
 }
 
 deity_nabu = {
@@ -1929,13 +6213,67 @@ deity_nabu = {
     religion = ir_mesopotamian_religion
 }
 
+deity_nahiti = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_naigamesha = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_jainism
+}
+
+deity_nana = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_anatolian_religion
+}
+
+deity_nana_anahita = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_vaksh_religion
+}
+
+deity_nanaya = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_nanda_vaccha = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_ajivika
+}
+
 deity_nane = {
     icon = god_folk_blue
     country_modifier = {
         land_morale_modifier = 0.05
         discipline = 0.01
     }
-    religion = ir_armenian_religion
+    religion = ir_anahitic_religion
 }
 
 deity_nanna_tala = {
@@ -1947,6 +6285,15 @@ deity_nanna_tala = {
     religion = ir_berber_religion
 }
 
+deity_nanshe = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_mesopotamian_religion
+}
+
 deity_nantosuelta = {
     icon = god_folk_blue
     country_modifier = {
@@ -1956,6 +6303,51 @@ deity_nantosuelta = {
     religion = ir_druidism
 }
 
+deity_napir = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_napirisha = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_narundi = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_nasatyanna = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_hindu
+}
+
+deity_nebres = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_illyrian_pantheon
+}
+
 deity_nehalennia = {
     icon = god_folk_blue
     country_modifier = {
@@ -1963,6 +6355,24 @@ deity_nehalennia = {
         trade_efficiency = 0.05
     }
     religion = ir_germanic_religion
+}
+
+deity_nehemiah = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_judaism
+}
+
+deity_neith = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_egyptian_pantheon
 }
 
 deity_nemetona = {
@@ -1983,6 +6393,15 @@ deity_neminatha = {
     religion = ir_jainism
 }
 
+deity_nephthys = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_egyptian_pantheon
+}
+
 deity_neptune = {
     icon = god_folk_blue
     country_modifier = {
@@ -1990,6 +6409,15 @@ deity_neptune = {
         discipline = 0.01
     }
     religion = ir_roman_pantheon
+}
+
+deity_nergal = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_mesopotamian_religion
 }
 
 deity_nerthus = {
@@ -2010,6 +6438,87 @@ deity_nethuns = {
     religion = ir_roman_pantheon
 }
 
+deity_nethus = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_neto = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_animism
+}
+
+deity_nicaea = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_anatolian_religion
+}
+
+deity_nidar = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_puntic_religion
+}
+
+deity_ninazu = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_ninkal = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_hurrian_pantheon
+}
+
+deity_ninlil = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_ninshubur = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_nintur = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_mesopotamian_religion
+}
+
 deity_ninurta = {
     icon = god_folk_blue
     country_modifier = {
@@ -2017,6 +6526,33 @@ deity_ninurta = {
         discipline = 0.01
     }
     religion = ir_mesopotamian_religion
+}
+
+deity_nisaba = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_niyati = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_ajivika
+}
+
+deity_noah = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_judaism
 }
 
 deity_nodens = {
@@ -2028,13 +6564,76 @@ deity_nodens = {
     religion = ir_druidism
 }
 
+deity_norax = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_nuragic_pantheon
+}
+
 deity_nortia = {
     icon = god_folk_blue
     country_modifier = {
         research_speed_modifier = 0.05
         global_max_literacy = 2
     }
-    religion = ir_roman_pantheon
+    religion = ir_italic_pantheon
+}
+
+deity_nubadig = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_hurrian_pantheon
+}
+
+deity_nusku = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_nut = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_egyptian_pantheon
+}
+
+deity_nyikang = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_nilotic_pantheon
+}
+
+deity_oasis_nat = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_burmese_religion
+}
+
+deity_ochopintre = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_caucasian_religion
 }
 
 deity_ogmios = {
@@ -2046,6 +6645,42 @@ deity_ogmios = {
     religion = ir_druidism
 }
 
+deity_omanos = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_anahitic_religion
+}
+
+deity_orcus = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_orgia = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_nuragic_pantheon
+}
+
+deity_orko = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_pre_indo_european_religion
+}
+
 deity_orotalt = {
     icon = god_folk_blue
     country_modifier = {
@@ -2055,6 +6690,15 @@ deity_orotalt = {
     religion = ir_arabian_pantheon
 }
 
+deity_orpheus = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_roman_pantheon
+}
+
 deity_osiris = {
     icon = god_folk_blue
     country_modifier = {
@@ -2062,6 +6706,42 @@ deity_osiris = {
         global_max_literacy = 2
     }
     religion = ir_egyptian_pantheon
+}
+
+deity_pacha = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_padmaprabha = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_jainism
+}
+
+deity_pajewa = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_uralic_pantheon
+}
+
+deity_pakudha = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_ajivika
 }
 
 deity_pan = {
@@ -2091,6 +6771,15 @@ deity_papaios = {
     religion = ir_indo_iranian_religion
 }
 
+deity_paramanu = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_ajivika
+}
+
 deity_parshvanatha = {
     icon = god_folk_blue
     country_modifier = {
@@ -2109,13 +6798,193 @@ deity_paryushana = {
     religion = ir_jainism
 }
 
-deity_perkunas = {
+deity_patampasa = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_indo_iranian_religion
+}
+
+deity_pattini = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_hindu
+}
+
+deity_pavadairayan = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_agama
+}
+
+deity_pbs_bear = {
     icon = god_folk_blue
     country_modifier = {
         land_morale_modifier = 0.05
         discipline = 0.01
     }
     religion = ir_matrist_religion
+}
+
+deity_pbs_bee = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_matrist_religion
+}
+
+deity_pbs_bird = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_matrist_religion
+}
+
+deity_pbs_deer = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_matrist_religion
+}
+
+deity_pbs_dragon = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_matrist_religion
+}
+
+deity_pbs_fish = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_matrist_religion
+}
+
+deity_pbs_hare = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_matrist_religion
+}
+
+deity_pbs_horse = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_matrist_religion
+}
+
+deity_pbs_lime = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_matrist_religion
+}
+
+deity_pbs_moon = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_matrist_religion
+}
+
+deity_pbs_oak = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_matrist_religion
+}
+
+deity_pbs_ox = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_matrist_religion
+}
+
+deity_pbs_sheep = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_matrist_religion
+}
+
+deity_pbs_snake = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_matrist_religion
+}
+
+deity_pbs_sun = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_matrist_religion
+}
+
+deity_pbs_wolf = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_matrist_religion
+}
+
+deity_pemphetru = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_periyachi = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_agama
 }
 
 deity_persephone = {
@@ -2127,6 +6996,60 @@ deity_persephone = {
     religion = ir_roman_pantheon
 }
 
+deity_perthan = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_pessinuntica = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_anatolian_religion
+}
+
+deity_phasia = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_caucasian_religion
+}
+
+deity_phersipnei = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_philozoia = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_jainism
+}
+
+deity_phrixus = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_roman_pantheon
+}
+
 deity_phuwer = {
     icon = god_folk_blue
     country_modifier = {
@@ -2134,6 +7057,60 @@ deity_phuwer = {
         trade_efficiency = 0.05
     }
     religion = ir_bon_religion
+}
+
+deity_pija = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_circassian_pantheon
+}
+
+deity_pinigir = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_pirinki = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_hurrian_pantheon
+}
+
+deity_pizighash = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_circassian_pantheon
+}
+
+deity_pkharmat = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_circassian_pantheon
+}
+
+deity_plains_nat = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_burmese_religion
 }
 
 deity_pleistoros = {
@@ -2154,6 +7131,15 @@ deity_pluto = {
     religion = ir_roman_pantheon
 }
 
+deity_poleramma = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_agama
+}
+
 deity_poseidon = {
     icon = god_folk_blue
     country_modifier = {
@@ -2172,6 +7158,33 @@ deity_prajapati = {
     religion = ir_hindu
 }
 
+deity_prometheus = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_proserpina = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_psetha = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_circassian_pantheon
+}
+
 deity_ptah = {
     icon = god_folk_blue
     country_modifier = {
@@ -2179,6 +7192,105 @@ deity_ptah = {
         global_max_literacy = 2
     }
     religion = ir_egyptian_pantheon
+}
+
+deity_pulchisf = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_pultuce = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_purana = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_ajivika
+}
+
+deity_pushpadanta = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_jainism
+}
+
+deity_puur = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_burmese_religion
+}
+
+deity_pylaemenes = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_anatolian_religion
+}
+
+deity_qamari = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_caucasian_religion
+}
+
+deity_qaus = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_carthaginian_pantheon
+}
+
+deity_qetesh = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_egyptian_pantheon
+}
+
+deity_qori_ismaris = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_puntic_religion
+}
+
+deity_qurinus = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_italic_pantheon
 }
 
 deity_ra = {
@@ -2190,6 +7302,15 @@ deity_ra = {
     religion = ir_egyptian_pantheon
 }
 
+deity_raja_porus = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_hindu
+}
+
 deity_rama = {
     icon = god_folk_blue
     country_modifier = {
@@ -2197,6 +7318,78 @@ deity_rama = {
         discipline = 0.01
     }
     religion = ir_hindu
+}
+
+deity_ramset = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_vaksh_religion
+}
+
+deity_rasap_melqart = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_carthaginian_pantheon
+}
+
+deity_rath = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_redon = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_illyrian_pantheon
+}
+
+deity_reitia = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_rekem = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_arabian_pantheon
+}
+
+deity_renuka = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_agama
+}
+
+deity_reschual = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_italic_pantheon
 }
 
 deity_resheph = {
@@ -2235,13 +7428,13 @@ deity_rishabhanatha_moksha = {
     religion = ir_jainism
 }
 
-deity_rites_adult = {
+deity_roha = {
     icon = god_folk_blue
     country_modifier = {
-        land_morale_modifier = 0.05
-        discipline = 0.01
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
     }
-    religion = ir_eastern_animism
+    religion = ir_ajivika
 }
 
 deity_rosmerta = {
@@ -2253,6 +7446,15 @@ deity_rosmerta = {
     religion = ir_druidism
 }
 
+deity_rostam = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_indo_iranian_religion
+}
+
 deity_roth_teej = {
     icon = god_folk_blue
     country_modifier = {
@@ -2260,6 +7462,60 @@ deity_roth_teej = {
         trade_efficiency = 0.05
     }
     religion = ir_jainism
+}
+
+deity_ruda = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_arabian_pantheon
+}
+
+deity_rudianos = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_druidism
+}
+
+deity_rudra = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_hindu
+}
+
+deity_ruhurater = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_ruta = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_hindu
+}
+
+deity_ruth = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_judaism
 }
 
 deity_sabazios = {
@@ -2271,6 +7527,78 @@ deity_sabazios = {
     religion = ir_shamanism
 }
 
+deity_sacni_nithi_eis = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_sacni_triumpi_ais = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_sacni_zamthi_ais = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_sacni_zichi_eis = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_sah = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_sakra = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_buddhism
+}
+
+deity_samantabhadra = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_buddhism
+}
+
+deity_samantabhadri = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_buddhism
+}
+
 deity_samba = {
     icon = god_folk_blue
     country_modifier = {
@@ -2278,6 +7606,33 @@ deity_samba = {
         trade_efficiency = 0.05
     }
     religion = ir_hindu
+}
+
+deity_sambhavanatha = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_jainism
+}
+
+deity_samdzimari = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_caucasian_religion
+}
+
+deity_samson = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_judaism
 }
 
 deity_samudra = {
@@ -2298,6 +7653,15 @@ deity_samuel = {
     religion = ir_judaism
 }
 
+deity_sancus = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_italic_pantheon
+}
+
 deity_sandon = {
     icon = god_folk_blue
     country_modifier = {
@@ -2305,6 +7669,24 @@ deity_sandon = {
         discipline = 0.01
     }
     religion = ir_anatolian_religion
+}
+
+deity_sangarios = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_anatolian_religion
+}
+
+deity_sangpo_bumtri = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_bon_religion
 }
 
 deity_saraswati = {
@@ -2316,6 +7698,60 @@ deity_saraswati = {
     religion = ir_hindu
 }
 
+deity_sardus_can = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_nuragic_pantheon
+}
+
+deity_satanaya = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_circassian_pantheon
+}
+
+deity_satis = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_egyptian_pantheon
+}
+
+deity_satre = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_satrig_ersang = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_bon_religion
+}
+
+deity_saturn = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_roman_pantheon
+}
+
 deity_satya = {
     icon = god_folk_blue
     country_modifier = {
@@ -2325,13 +7761,67 @@ deity_satya = {
     religion = ir_jainism
 }
 
-deity_saulia = {
+deity_sawaserqua = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_circassian_pantheon
+}
+
+deity_sayin = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_arabian_pantheon
+}
+
+deity_schyble = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_circassian_pantheon
+}
+
+deity_scythes = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_indo_iranian_religion
+}
+
+deity_sebdios = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_anatolian_religion
+}
+
+deity_sebiumeker = {
     icon = god_folk_blue
     country_modifier = {
         research_speed_modifier = 0.05
         global_max_literacy = 2
     }
-    religion = ir_matrist_religion
+    religion = ir_egyptian_pantheon
+}
+
+deity_segomo = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_druidism
 }
 
 deity_sekhmet = {
@@ -2352,6 +7842,15 @@ deity_selene = {
     religion = ir_roman_pantheon
 }
 
+deity_selvanus = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_italic_pantheon
+}
+
 deity_semele = {
     icon = god_folk_blue
     country_modifier = {
@@ -2370,6 +7869,15 @@ deity_semnocosus = {
     religion = ir_animism
 }
 
+deity_sentona = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_illyrian_pantheon
+}
+
 deity_serapis = {
     icon = god_folk_blue
     country_modifier = {
@@ -2379,13 +7887,67 @@ deity_serapis = {
     religion = ir_roman_pantheon
 }
 
+deity_seshat = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_egyptian_pantheon
+}
+
+deity_set = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_egyptian_pantheon
+}
+
 deity_sethlans = {
     icon = god_folk_blue
     country_modifier = {
         global_raw_material_output = 0.05
         trade_efficiency = 0.05
     }
-    religion = ir_roman_pantheon
+    religion = ir_italic_pantheon
+}
+
+deity_settut = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_berber_religion
+}
+
+deity_severed_head = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_druidism
+}
+
+deity_shadrapa = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_carthaginian_pantheon
+}
+
+deity_shahar = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_carthaginian_pantheon
 }
 
 deity_shaheded = {
@@ -2397,6 +7959,24 @@ deity_shaheded = {
     religion = ir_berber_religion
 }
 
+deity_shala = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_shalem = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_carthaginian_pantheon
+}
+
 deity_shamash = {
     icon = god_folk_blue
     country_modifier = {
@@ -2406,6 +7986,24 @@ deity_shamash = {
     religion = ir_mesopotamian_religion
 }
 
+deity_shams = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_arabian_pantheon
+}
+
+deity_shani = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_hindu
+}
+
 deity_shapash = {
     icon = god_folk_blue
     country_modifier = {
@@ -2413,6 +8011,105 @@ deity_shapash = {
         global_max_literacy = 2
     }
     religion = ir_carthaginian_pantheon
+}
+
+deity_sharruma = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_hurrian_pantheon
+}
+
+deity_shaushka = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_hurrian_pantheon
+}
+
+deity_shavkhani = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_caucasian_religion
+}
+
+deity_shenlha_okar = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_bon_religion
+}
+
+deity_sherab_chamma = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_bon_religion
+}
+
+deity_sherri_hurri = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_hurrian_pantheon
+}
+
+deity_shihhash = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_shikme = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_shimegi = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_hurrian_pantheon
+}
+
+deity_shipak = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_shitalanatha = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_jainism
 }
 
 deity_shiva = {
@@ -2433,6 +8130,123 @@ deity_shivini = {
     religion = ir_armenian_religion
 }
 
+deity_shoithrapati = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_mithra_religion
+}
+
+deity_shu = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_egyptian_pantheon
+}
+
+deity_shugab = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_shuhur = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_shulinkatte = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_hatti_religion
+}
+
+deity_shumaliya = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_shuqammuna = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_shuriash = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_shuwaliyatti = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_hurrian_pantheon
+}
+
+deity_shwemhtwehla = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_burmese_religion
+}
+
+deity_shwemyethna = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_burmese_religion
+}
+
+deity_shwenabay = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_burmese_religion
+}
+
+deity_sidpa_gyalmo = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_bon_religion
+}
+
 deity_sigiriya = {
     icon = god_folk_blue
     country_modifier = {
@@ -2451,6 +8265,24 @@ deity_sila_parami = {
     religion = ir_buddhism
 }
 
+deity_silir_qatru = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_simut = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_mesopotamian_religion
+}
+
 deity_sin = {
     icon = god_folk_blue
     country_modifier = {
@@ -2467,6 +8299,78 @@ deity_sinifere = {
         discipline = 0.01
     }
     religion = ir_berber_religion
+}
+
+deity_sionna = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_druidism
+}
+
+deity_sipylene = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_anatolian_religion
+}
+
+deity_sirona = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_druidism
+}
+
+deity_skopasis = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_indo_iranian_religion
+}
+
+deity_sloon = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_burmese_religion
+}
+
+deity_smertrios = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_druidism
+}
+
+deity_snenath = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_snowlet = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_druidism
 }
 
 deity_sobek = {
@@ -2505,13 +8409,49 @@ deity_soma = {
     religion = ir_hindu
 }
 
+deity_soranus = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_sorginak = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_pre_indo_european_religion
+}
+
+deity_sozrech = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_circassian_pantheon
+}
+
 deity_spandaremet = {
     icon = god_folk_blue
     country_modifier = {
         global_population_growth = 0.
         global_monthly_food_modifier = 0.03
     }
-    religion = ir_armenian_religion
+    religion = ir_anahitic_religion
+}
+
+deity_spenta_mainyu = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_zoroaster
 }
 
 deity_sraosha = {
@@ -2523,6 +8463,15 @@ deity_sraosha = {
     religion = ir_zoroaster
 }
 
+deity_steppes_nat = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_burmese_religion
+}
+
 deity_sucellus = {
     icon = god_folk_blue
     country_modifier = {
@@ -2530,6 +8479,15 @@ deity_sucellus = {
         global_max_literacy = 2
     }
     religion = ir_druidism
+}
+
+deity_sugaar = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_pre_indo_european_religion
 }
 
 deity_sulis = {
@@ -2541,6 +8499,114 @@ deity_sulis = {
     religion = ir_druidism
 }
 
+deity_sulis_minerva = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_sumatinatha = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_jainism
+}
+
+deity_sumhu = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_arabian_pantheon
+}
+
+deity_summanus = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_sumuqan = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_hurrian_pantheon
+}
+
+deity_suparshvanatha = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_jainism
+}
+
+deity_suris = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_svar = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_hindu
+}
+
+deity_svutaf = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_swanco = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_eastern_animism
+}
+
+deity_swese = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_eastern_animism
+}
+
+deity_taautus = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_carthaginian_pantheon
+}
+
 deity_tabiti = {
     icon = god_folk_blue
     country_modifier = {
@@ -2550,6 +8616,42 @@ deity_tabiti = {
     religion = ir_indo_iranian_religion
 }
 
+deity_tadenus = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_illyrian_pantheon
+}
+
+deity_tadmish = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_hurrian_pantheon
+}
+
+deity_tafukt = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_berber_religion
+}
+
+deity_tages = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_italic_pantheon
+}
+
 deity_talab = {
     icon = god_folk_blue
     country_modifier = {
@@ -2557,6 +8659,15 @@ deity_talab = {
         global_monthly_food_modifier = 0.03
     }
     religion = ir_arabian_pantheon
+}
+
+deity_talipinu = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_hatti_religion
 }
 
 deity_tamfana = {
@@ -2586,6 +8697,15 @@ deity_tannit = {
     religion = ir_berber_religion
 }
 
+deity_taotor = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_illyrian_pantheon
+}
+
 deity_taranis = {
     icon = god_folk_blue
     country_modifier = {
@@ -2604,6 +8724,51 @@ deity_targitaos = {
     religion = ir_indo_iranian_religion
 }
 
+deity_taru = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_hatti_religion
+}
+
+deity_tasmisu = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_hurrian_pantheon
+}
+
+deity_taxakis = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_indo_iranian_religion
+}
+
+deity_tece = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_tefnut = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_egyptian_pantheon
+}
+
 deity_telephos = {
     icon = god_folk_blue
     country_modifier = {
@@ -2613,13 +8778,58 @@ deity_telephos = {
     religion = ir_roman_pantheon
 }
 
-deity_televelis = {
+deity_tepti = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_terhu = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_eastern_animism
+}
+
+deity_teshub = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_hurrian_pantheon
+}
+
+deity_tetertup = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_circassian_pantheon
+}
+
+deity_teudore = {
     icon = god_folk_blue
     country_modifier = {
         global_raw_material_output = 0.05
         trade_efficiency = 0.05
     }
-    religion = ir_matrist_religion
+    religion = ir_caucasian_religion
+}
+
+deity_thageledj = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_circassian_pantheon
 }
 
 deity_thagimasadas = {
@@ -2629,6 +8839,42 @@ deity_thagimasadas = {
         discipline = 0.01
     }
     religion = ir_indo_iranian_religion
+}
+
+deity_thalna = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_thana = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_illyrian_pantheon
+}
+
+deity_thanr = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_thar = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_burmese_religion
 }
 
 deity_the_elements = {
@@ -2649,6 +8895,60 @@ deity_theispas = {
     religion = ir_armenian_religion
 }
 
+deity_theqwafeshu = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_circassian_pantheon
+}
+
+deity_thesan = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_theshkhue = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_circassian_pantheon
+}
+
+deity_theshu = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_circassian_pantheon
+}
+
+deity_thirty_seven = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_burmese_religion
+}
+
+deity_thoth = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_egyptian_pantheon
+}
+
 deity_thoth_hermes = {
     icon = god_folk_blue
     country_modifier = {
@@ -2656,6 +8956,51 @@ deity_thoth_hermes = {
         trade_efficiency = 0.05
     }
     religion = ir_egyptian_pantheon
+}
+
+deity_thraetona = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_mithra_religion
+}
+
+deity_thrax = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_shamanism
+}
+
+deity_thunraz = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_germanic_religion
+}
+
+deity_tii = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_burmese_religion
+}
+
+deity_tiliash = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_mesopotamian_religion
 }
 
 deity_tingnam_gyalmo = {
@@ -2673,7 +9018,7 @@ deity_tinia = {
         research_speed_modifier = 0.05
         global_max_literacy = 2
     }
-    religion = ir_roman_pantheon
+    religion = ir_italic_pantheon
 }
 
 deity_tir = {
@@ -2682,7 +9027,34 @@ deity_tir = {
         research_speed_modifier = 0.05
         global_max_literacy = 2
     }
-    religion = ir_armenian_religion
+    religion = ir_anahitic_religion
+}
+
+deity_tirutur = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_tis = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_shamanism
+}
+
+deity_tishtar = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_vaksh_religion
 }
 
 deity_tishtrya = {
@@ -2692,6 +9064,60 @@ deity_tishtrya = {
         global_monthly_food_modifier = 0.03
     }
     religion = ir_zoroaster
+}
+
+deity_tiv = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_tiwaz = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_germanic_religion
+}
+
+deity_tlepsh = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_circassian_pantheon
+}
+
+deity_tlusc = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_tonpa_shenrab = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_bon_religion
+}
+
+deity_tork_angegh = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_anahitic_religion
 }
 
 deity_toutatis = {
@@ -2721,13 +9147,67 @@ deity_trapusa_and_bahalika = {
     religion = ir_buddhism
 }
 
+deity_trebaruna = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_druidism
+}
+
+deity_triple = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_hatti_religion
+}
+
+deity_trita = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_illyrian_pantheon
+}
+
+deity_tritonis = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_berber_religion
+}
+
+deity_trumsiate = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_italic_pantheon
+}
+
 deity_tsovinar = {
     icon = god_folk_blue
     country_modifier = {
         global_raw_material_output = 0.05
         trade_efficiency = 0.05
     }
-    religion = ir_armenian_religion
+    religion = ir_anahitic_religion
+}
+
+deity_tuangmagyishinnyo = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_burmese_religion
 }
 
 deity_tuisto = {
@@ -2739,13 +9219,31 @@ deity_tuisto = {
     religion = ir_germanic_religion
 }
 
+deity_tur = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_indo_iranian_religion
+}
+
 deity_turan = {
     icon = god_folk_blue
     country_modifier = {
         global_population_growth = 0.
         global_monthly_food_modifier = 0.03
     }
-    religion = ir_roman_pantheon
+    religion = ir_italic_pantheon
+}
+
+deity_turgu = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_mesopotamian_religion
 }
 
 deity_turms = {
@@ -2754,7 +9252,34 @@ deity_turms = {
         global_raw_material_output = 0.05
         trade_efficiency = 0.05
     }
-    religion = ir_roman_pantheon
+    religion = ir_italic_pantheon
+}
+
+deity_turnu = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_turpal = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_circassian_pantheon
+}
+
+deity_tutgar = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_nilotic_pantheon
 }
 
 deity_tyche = {
@@ -2766,13 +9291,31 @@ deity_tyche = {
     religion = ir_roman_pantheon
 }
 
+deity_udai = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_ajivika
+}
+
 deity_uni = {
     icon = god_folk_blue
     country_modifier = {
         research_speed_modifier = 0.05
         global_max_literacy = 2
     }
-    religion = ir_roman_pantheon
+    religion = ir_italic_pantheon
+}
+
+deity_uni_astarte = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_italic_pantheon
 }
 
 deity_upekkha_parami = {
@@ -2784,13 +9327,58 @@ deity_upekkha_parami = {
     religion = ir_buddhism
 }
 
+deity_upurkupak = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_mesopotamian_religion
+}
+
+deity_urgus = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_nuragic_pantheon
+}
+
+deity_urtzi = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_pre_indo_european_religion
+}
+
 deity_usil = {
     icon = god_folk_blue
     country_modifier = {
         research_speed_modifier = 0.05
         global_max_literacy = 2
     }
-    religion = ir_roman_pantheon
+    religion = ir_italic_pantheon
+}
+
+deity_uzzi = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_judaism
+}
+
+deity_vaelicus = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_druidism
 }
 
 deity_vagdavercustis = {
@@ -2808,7 +9396,106 @@ deity_vahagn = {
         land_morale_modifier = 0.05
         discipline = 0.01
     }
-    religion = ir_armenian_religion
+    religion = ir_anahitic_religion
+}
+
+deity_vahista = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_zoroaster
+}
+
+deity_vajrapani = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_buddhism
+}
+
+deity_vakhsh = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_vaksh_religion
+}
+
+deity_vanatur = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_anahitic_religion
+}
+
+deity_vanth = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_varuna = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_hindu
+}
+
+deity_vata = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_mithra_religion
+}
+
+deity_vayu = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_hindu
+}
+
+deity_vea = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_vediovis = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_veiove = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_italic_pantheon
 }
 
 deity_velchanos = {
@@ -2818,6 +9505,15 @@ deity_velchanos = {
         trade_efficiency = 0.05
     }
     religion = ir_roman_pantheon
+}
+
+deity_venas = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_italic_pantheon
 }
 
 deity_venus = {
@@ -2838,6 +9534,42 @@ deity_verethragna = {
     religion = ir_zoroaster
 }
 
+deity_vesa = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_uralic_pantheon
+}
+
+deity_vesta = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_vesuna = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_vidasus = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_illyrian_pantheon
+}
+
 deity_viriya_parami = {
     icon = god_folk_blue
     country_modifier = {
@@ -2845,6 +9577,15 @@ deity_viriya_parami = {
         discipline = 0.01
     }
     religion = ir_buddhism
+}
+
+deity_vish = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_vaksh_religion
 }
 
 deity_vishnu = {
@@ -2856,6 +9597,15 @@ deity_vishnu = {
     religion = ir_hindu
 }
 
+deity_vishtaspa = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_zoroaster
+}
+
 deity_vishwanath = {
     icon = god_folk_blue
     country_modifier = {
@@ -2863,6 +9613,33 @@ deity_vishwanath = {
         global_max_literacy = 2
     }
     religion = ir_hindu
+}
+
+deity_visucius = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_druidism
+}
+
+deity_vohu = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_zoroaster
+}
+
+deity_voltumna = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_italic_pantheon
 }
 
 deity_vulcan = {
@@ -2874,20 +9651,128 @@ deity_vulcan = {
     religion = ir_roman_pantheon
 }
 
-deity_war_ceremony = {
+deity_waaq = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_puntic_religion
+}
+
+deity_waaq_brahma = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_hindu
+}
+
+deity_wadd = {
     icon = god_folk_blue
     country_modifier = {
         global_population_growth = 0.
         global_monthly_food_modifier = 0.03
     }
-    religion = ir_eastern_animism
+    religion = ir_arabian_pantheon
 }
 
-deity_wealth_earth = {
+deity_wadjet = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_egyptian_pantheon
+}
+
+deity_wagar = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_puntic_religion
+}
+
+deity_wajni = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_uralic_pantheon
+}
+
+deity_wardo = {
     icon = god_folk_blue
     country_modifier = {
         global_raw_material_output = 0.05
         trade_efficiency = 0.05
+    }
+    religion = ir_buddhism
+}
+
+deity_wepwawet = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_egyptian_pantheon
+}
+
+deity_wiilwaal = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_puntic_religion
+}
+
+deity_wishnuaz = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_germanic_religion
+}
+
+deity_wodenaz = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_germanic_religion
+}
+
+deity_wulthuz = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_germanic_religion
+}
+
+deity_yahweh = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_carthaginian_pantheon
+}
+
+deity_yakwe = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
     }
     religion = ir_eastern_animism
 }
@@ -2899,6 +9784,60 @@ deity_yam = {
         discipline = 0.01
     }
     religion = ir_carthaginian_pantheon
+}
+
+deity_yama = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_hindu
+}
+
+deity_yamsh = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_vaksh_religion
+}
+
+deity_yeshe_walmo = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_bon_religion
+}
+
+deity_yima = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_mithra_religion
+}
+
+deity_yngvi = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_raw_material_output = 0.05
+        trade_efficiency = 0.05
+    }
+    religion = ir_germanic_religion
+}
+
+deity_zababa = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_mesopotamian_religion
 }
 
 deity_zadeni = {
@@ -2919,13 +9858,31 @@ deity_zalmoxis = {
     religion = ir_shamanism
 }
 
+deity_zaparwa = {
+    icon = god_folk_blue
+    country_modifier = {
+        global_population_growth = 0.
+        global_monthly_food_modifier = 0.03
+    }
+    religion = ir_hatti_religion
+}
+
+deity_zchithe = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_circassian_pantheon
+}
+
 deity_zerene = {
     icon = god_folk_blue
     country_modifier = {
         global_population_growth = 0.
         global_monthly_food_modifier = 0.03
     }
-    religion = ir_roman_pantheon
+    religion = ir_italic_pantheon
 }
 
 deity_zeus = {
@@ -2955,6 +9912,24 @@ deity_zeus_belos = {
     religion = ir_roman_pantheon
 }
 
+deity_zeus_chrysaoreus = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_roman_pantheon
+}
+
+deity_zeus_dacieus = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_roman_pantheon
+}
+
 deity_zeus_naios = {
     icon = god_folk_blue
     country_modifier = {
@@ -2973,6 +9948,24 @@ deity_zeus_olympios = {
     religion = ir_roman_pantheon
 }
 
+deity_zeus_oromasdes = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_mithra_religion
+}
+
+deity_zeus_oromasdes_par = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_roman_pantheon
+}
+
 deity_zeus_stratios = {
     icon = god_folk_blue
     country_modifier = {
@@ -2980,6 +9973,24 @@ deity_zeus_stratios = {
         discipline = 0.01
     }
     religion = ir_roman_pantheon
+}
+
+deity_zhaqa = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_circassian_pantheon
+}
+
+deity_zhun = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_vaksh_religion
 }
 
 deity_zibelthiurdos = {
@@ -2991,6 +10002,33 @@ deity_zibelthiurdos = {
     religion = ir_shamanism
 }
 
+deity_zichos = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_shamanism
+}
+
+deity_zipna = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_italic_pantheon
+}
+
+deity_zis = {
+    icon = god_folk_blue
+    country_modifier = {
+        research_speed_modifier = 0.05
+        global_max_literacy = 2
+    }
+    religion = ir_roman_pantheon
+}
+
 deity_zoroaster = {
     icon = god_folk_blue
     country_modifier = {
@@ -2998,5 +10036,14 @@ deity_zoroaster = {
         global_max_literacy = 2
     }
     religion = ir_zoroaster
+}
+
+deity_zurvan = {
+    icon = god_folk_blue
+    country_modifier = {
+        land_morale_modifier = 0.05
+        discipline = 0.01
+    }
+    religion = ir_mithra_religion
 }
 

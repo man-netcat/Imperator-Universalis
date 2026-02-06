@@ -10,6 +10,12 @@ locations = {
     abdera = {
         rank = town town_setup = ir_loc_abdera
     }
+    abliata = {
+        rank = town town_setup = ir_loc_abliata
+    }
+    aborepi = {
+        rank = town town_setup = ir_loc_aborepi
+    }
     abuyya = {
         rank = town town_setup = ir_loc_abuyya
     }
@@ -21,6 +27,9 @@ locations = {
     }
     acragas = {
         rank = town town_setup = ir_loc_acragas
+    }
+    adan = {
+        rank = town town_setup = ir_loc_adan
     }
     adana = {
         rank = town town_setup = ir_loc_adana
@@ -45,6 +54,9 @@ locations = {
     }
     ahicchatra = {
         rank = town town_setup = ir_loc_ahicchatra
+    }
+    aigina = {
+        rank = town town_setup = ir_loc_aigina
     }
     airakina = {
         rank = town town_setup = ir_loc_airakina
@@ -72,9 +84,6 @@ locations = {
     }
     alexandreia_bactriane = {
         rank = town town_setup = ir_loc_alexandreia_bactriane
-    }
-    alexandreia_en_indos = {
-        rank = town town_setup = ir_loc_alexandreia_en_indos
     }
     alexandreia_eschate = {
         rank = town town_setup = ir_loc_alexandreia_eschate
@@ -145,8 +154,8 @@ locations = {
     amul = {
         rank = town town_setup = ir_loc_amul
     }
-    anazarbos = {
-        rank = town town_setup = ir_loc_anazarbos
+    anatachara = {
+        rank = town town_setup = ir_loc_anatachara
     }
     ancona = {
         rank = town town_setup = ir_loc_ancona
@@ -169,9 +178,6 @@ locations = {
     antigoneia = {
         rank = town town_setup = ir_loc_antigoneia
     }
-    antiochia_arabis = {
-        rank = town town_setup = ir_loc_antiochia_arabis
-    }
     antipolis = {
         rank = town town_setup = ir_loc_antipolis
     }
@@ -189,6 +195,9 @@ locations = {
     }
     aphroditopolis = {
         rank = town town_setup = ir_loc_aphroditopolis
+    }
+    apocopa = {
+        rank = town town_setup = ir_loc_apocopa
     }
     apollonia = {
         rank = town town_setup = ir_loc_apollonia
@@ -208,8 +217,14 @@ locations = {
     araba = {
         rank = town town_setup = ir_loc_araba
     }
+    arachotus = {
+        rank = town town_setup = ir_loc_arachotus
+    }
     arados = {
         rank = town town_setup = ir_loc_arados
+    }
+    arambys = {
+        rank = town town_setup = ir_loc_arambys
     }
     arbela = {
         rank = town town_setup = ir_loc_arbela
@@ -226,14 +241,29 @@ locations = {
     armaouira = {
         rank = town town_setup = ir_loc_armaouira
     }
+    aromata = {
+        rank = town town_setup = ir_loc_aromata
+    }
+    arpi = {
+        rank = town town_setup = ir_loc_arpi
+    }
+    arretium = {
+        rank = town town_setup = ir_loc_arretium
+    }
     artaxata = {
         rank = town town_setup = ir_loc_artaxata
     }
     artobriga = {
         rank = town town_setup = ir_loc_artobriga
     }
+    arunda = {
+        rank = town town_setup = ir_loc_arunda
+    }
     arykanda = {
         rank = town town_setup = ir_loc_arykanda
+    }
+    arzeila = {
+        rank = town town_setup = ir_loc_arzeila
     }
     ascalon = {
         rank = town town_setup = ir_loc_ascalon
@@ -256,17 +286,29 @@ locations = {
     astakos = {
         rank = town town_setup = ir_loc_astakos
     }
+    astigi = {
+        rank = town town_setup = ir_loc_astigi
+    }
     atavi = {
         rank = town town_setup = ir_loc_atavi
     }
     aternum = {
         rank = town town_setup = ir_loc_aternum
     }
+    ateste = {
+        rank = town town_setup = ir_loc_ateste
+    }
     athani = {
         rank = town town_setup = ir_loc_athani
     }
     athens = {
         rank = town town_setup = ir_loc_athens
+    }
+    aualites = {
+        rank = town town_setup = ir_loc_aualites
+    }
+    augila = {
+        rank = town town_setup = ir_loc_augila
     }
     avaricum = {
         rank = town town_setup = ir_loc_avaricum
@@ -279,6 +321,9 @@ locations = {
     }
     ayodhya = {
         rank = town town_setup = ir_loc_ayodhya
+    }
+    baal_saphon = {
+        rank = town town_setup = ir_loc_baal_saphon
     }
     babylon_0 = {
         rank = town town_setup = ir_loc_babylon_0
@@ -316,6 +361,9 @@ locations = {
     barium = {
         rank = town town_setup = ir_loc_barium
     }
+    barke = {
+        rank = town town_setup = ir_loc_barke
+    }
     barma = {
         rank = town town_setup = ir_loc_barma
     }
@@ -328,8 +376,8 @@ locations = {
     barygaza = {
         rank = town town_setup = ir_loc_barygaza
     }
-    bathys_limen = {
-        rank = town town_setup = ir_loc_bathys_limen
+    basti = {
+        rank = town town_setup = ir_loc_basti
     }
     batnai = {
         rank = town town_setup = ir_loc_batnai
@@ -373,6 +421,9 @@ locations = {
     borsippa = {
         rank = town town_setup = ir_loc_borsippa
     }
+    borysthenia = {
+        rank = town town_setup = ir_loc_borysthenia
+    }
     boukephalia = {
         rank = town town_setup = ir_loc_boukephalia
     }
@@ -381,6 +432,9 @@ locations = {
     }
     brahmanaka = {
         rank = town town_setup = ir_loc_brahmanaka
+    }
+    brak = {
+        rank = town town_setup = ir_loc_brak
     }
     buca = {
         rank = town town_setup = ir_loc_buca
@@ -397,6 +451,9 @@ locations = {
     byzantion = {
         rank = town town_setup = ir_loc_byzantion
     }
+    cadota = {
+        rank = town town_setup = ir_loc_cadota
+    }
     callatis = {
         rank = town town_setup = ir_loc_callatis
     }
@@ -406,17 +463,17 @@ locations = {
     camulodunum = {
         rank = town town_setup = ir_loc_camulodunum
     }
-    canusium = {
-        rank = town town_setup = ir_loc_canusium
+    cannae = {
+        rank = town town_setup = ir_loc_cannae
     }
     capua = {
         rank = town town_setup = ir_loc_capua
     }
-    caralis = {
-        rank = town town_setup = ir_loc_caralis
-    }
     caritra = {
         rank = town town_setup = ir_loc_caritra
+    }
+    carmo = {
+        rank = town town_setup = ir_loc_carmo
     }
     carteia = {
         rank = town town_setup = ir_loc_carteia
@@ -426,6 +483,12 @@ locations = {
     }
     carthago = {
         rank = town town_setup = ir_loc_carthago
+    }
+    castra_neptitana = {
+        rank = town town_setup = ir_loc_castra_neptitana
+    }
+    castulo = {
+        rank = town town_setup = ir_loc_castulo
     }
     catabathmus_maior = {
         rank = town town_setup = ir_loc_catabathmus_maior
@@ -445,14 +508,20 @@ locations = {
     chalcis = {
         rank = town town_setup = ir_loc_chalcis
     }
-    chamon = {
-        rank = town town_setup = ir_loc_chamon
+    chalkis_libanou = {
+        rank = town town_setup = ir_loc_chalkis_libanou
     }
     charax = {
         rank = town town_setup = ir_loc_charax
     }
     charinda = {
         rank = town town_setup = ir_loc_charinda
+    }
+    charmodara = {
+        rank = town town_setup = ir_loc_charmodara
+    }
+    cherchen = {
+        rank = town town_setup = ir_loc_cherchen
     }
     chersonesos = {
         rank = town town_setup = ir_loc_chersonesos
@@ -462,9 +531,6 @@ locations = {
     }
     chios = {
         rank = town town_setup = ir_loc_chios
-    }
-    chlomaron = {
-        rank = town town_setup = ir_loc_chlomaron
     }
     chust = {
         rank = town town_setup = ir_loc_chust
@@ -490,6 +556,12 @@ locations = {
     curubis = {
         rank = town town_setup = ir_loc_curubis
     }
+    cutha = {
+        rank = town town_setup = ir_loc_cutha
+    }
+    cydamus = {
+        rank = town town_setup = ir_loc_cydamus
+    }
     damascus = {
         rank = town town_setup = ir_loc_damascus
     }
@@ -505,6 +577,9 @@ locations = {
     daskyleion = {
         rank = town town_setup = ir_loc_daskyleion
     }
+    dasmenda = {
+        rank = town town_setup = ir_loc_dasmenda
+    }
     dausa = {
         rank = town town_setup = ir_loc_dausa
     }
@@ -514,8 +589,11 @@ locations = {
     delphi = {
         rank = town town_setup = ir_loc_delphi
     }
-    deogarh = {
-        rank = town town_setup = ir_loc_deogarh
+    deogarh_0 = {
+        rank = town town_setup = ir_loc_deogarh_0
+    }
+    deogarh_1 = {
+        rank = town town_setup = ir_loc_deogarh_1
     }
     deoghar = {
         rank = town town_setup = ir_loc_deoghar
@@ -547,6 +625,15 @@ locations = {
     dion = {
         rank = town town_setup = ir_loc_dion
     }
+    dionysopolis = {
+        rank = town town_setup = ir_loc_dionysopolis
+    }
+    dioscoridus = {
+        rank = town town_setup = ir_loc_dioscoridus
+    }
+    dioscurias = {
+        rank = town town_setup = ir_loc_dioscurias
+    }
     diospolis_1 = {
         rank = town town_setup = ir_loc_diospolis_1
     }
@@ -568,11 +655,14 @@ locations = {
     dorylaion = {
         rank = town town_setup = ir_loc_dorylaion
     }
-    doubios = {
-        rank = town town_setup = ir_loc_doubios
-    }
     drapsake = {
         rank = town town_setup = ir_loc_drapsake
+    }
+    dur = {
+        rank = town town_setup = ir_loc_dur
+    }
+    durnatha = {
+        rank = town town_setup = ir_loc_durnatha
     }
     durovernum = {
         rank = town town_setup = ir_loc_durovernum
@@ -580,8 +670,14 @@ locations = {
     dvaraka = {
         rank = town town_setup = ir_loc_dvaraka
     }
+    ebusus = {
+        rank = town town_setup = ir_loc_ebusus
+    }
     ecbatana = {
         rank = town town_setup = ir_loc_ecbatana
+    }
+    egesta = {
+        rank = town town_setup = ir_loc_egesta
     }
     elaea = {
         rank = town town_setup = ir_loc_elaea
@@ -604,6 +700,9 @@ locations = {
     emporiae = {
         rank = town town_setup = ir_loc_emporiae
     }
+    entella = {
+        rank = town town_setup = ir_loc_entella
+    }
     ephesos = {
         rank = town town_setup = ir_loc_ephesos
     }
@@ -616,11 +715,20 @@ locations = {
     epidauros_illyrikos = {
         rank = town town_setup = ir_loc_epidauros_illyrikos
     }
+    epora = {
+        rank = town town_setup = ir_loc_epora
+    }
     erakaccha = {
         rank = town town_setup = ir_loc_erakaccha
     }
     eretria = {
         rank = town town_setup = ir_loc_eretria
+    }
+    erythrai = {
+        rank = town town_setup = ir_loc_erythrai
+    }
+    euesperides = {
+        rank = town town_setup = ir_loc_euesperides
     }
     fathabad = {
         rank = town town_setup = ir_loc_fathabad
@@ -628,14 +736,20 @@ locations = {
     gadara = {
         rank = town town_setup = ir_loc_gadara
     }
-    gadir = {
-        rank = town town_setup = ir_loc_gadir
+    gadir_0 = {
+        rank = town town_setup = ir_loc_gadir_0
+    }
+    gadir_1 = {
+        rank = town town_setup = ir_loc_gadir_1
     }
     ganga = {
         rank = town town_setup = ir_loc_ganga
     }
     gangra = {
         rank = town town_setup = ir_loc_gangra
+    }
+    garama = {
+        rank = town town_setup = ir_loc_garama
     }
     garsaura = {
         rank = town town_setup = ir_loc_garsaura
@@ -655,6 +769,15 @@ locations = {
     gazaka = {
         rank = town town_setup = ir_loc_gazaka
     }
+    gela = {
+        rank = town town_setup = ir_loc_gela
+    }
+    gelon = {
+        rank = town town_setup = ir_loc_gelon
+    }
+    genua = {
+        rank = town town_setup = ir_loc_genua
+    }
     gergis = {
         rank = town town_setup = ir_loc_gergis
     }
@@ -666,6 +789,9 @@ locations = {
     }
     ghosundi = {
         rank = town town_setup = ir_loc_ghosundi
+    }
+    gidheys = {
+        rank = town town_setup = ir_loc_gidheys
     }
     girinagara = {
         rank = town town_setup = ir_loc_girinagara
@@ -682,17 +808,23 @@ locations = {
     gramera = {
         rank = town town_setup = ir_loc_gramera
     }
+    gurganj = {
+        rank = town town_setup = ir_loc_gurganj
+    }
     hadad = {
         rank = town town_setup = ir_loc_hadad
     }
     hadrametum = {
         rank = town town_setup = ir_loc_hadrametum
     }
-    hadrianopolis = {
-        rank = town town_setup = ir_loc_hadrianopolis
-    }
     halikarnassos = {
         rank = town town_setup = ir_loc_halikarnassos
+    }
+    halin = {
+        rank = town town_setup = ir_loc_halin
+    }
+    hasta_0 = {
+        rank = town town_setup = ir_loc_hasta_0
     }
     hastinapura = {
         rank = town town_setup = ir_loc_hastinapura
@@ -715,6 +847,9 @@ locations = {
     hemesa = {
         rank = town town_setup = ir_loc_hemesa
     }
+    henna = {
+        rank = town town_setup = ir_loc_henna
+    }
     heraclea = {
         rank = town town_setup = ir_loc_heraclea
     }
@@ -724,8 +859,14 @@ locations = {
     herakleia_pontike = {
         rank = town town_setup = ir_loc_herakleia_pontike
     }
+    hermione = {
+        rank = town town_setup = ir_loc_hermione
+    }
     hermopolis_mikra = {
         rank = town town_setup = ir_loc_hermopolis_mikra
+    }
+    hierapytna = {
+        rank = town town_setup = ir_loc_hierapytna
     }
     hippo_regius = {
         rank = town town_setup = ir_loc_hippo_regius
@@ -748,9 +889,6 @@ locations = {
     idassa = {
         rank = town town_setup = ir_loc_idassa
     }
-    ierapetra = {
-        rank = town town_setup = ir_loc_ierapetra
-    }
     igilgili = {
         rank = town town_setup = ir_loc_igilgili
     }
@@ -759,6 +897,9 @@ locations = {
     }
     ilion = {
         rank = town town_setup = ir_loc_ilion
+    }
+    ilipla = {
+        rank = town town_setup = ir_loc_ilipla
     }
     indraprastha = {
         rank = town town_setup = ir_loc_indraprastha
@@ -772,6 +913,12 @@ locations = {
     ioppe = {
         rank = town town_setup = ir_loc_ioppe
     }
+    iporca = {
+        rank = town town_setup = ir_loc_iporca
+    }
+    iram = {
+        rank = town town_setup = ir_loc_iram
+    }
     isaura = {
         rank = town town_setup = ir_loc_isaura
     }
@@ -780,6 +927,9 @@ locations = {
     }
     issa = {
         rank = town town_setup = ir_loc_issa
+    }
+    italica = {
+        rank = town town_setup = ir_loc_italica
     }
     jagdalpur = {
         rank = town town_setup = ir_loc_jagdalpur
@@ -790,14 +940,17 @@ locations = {
     jaugada = {
         rank = town town_setup = ir_loc_jaugada
     }
-    jayapura = {
-        rank = town town_setup = ir_loc_jayapura
+    jayapura_1 = {
+        rank = town town_setup = ir_loc_jayapura_1
     }
     jericho = {
         rank = town town_setup = ir_loc_jericho
     }
     jerusalem = {
         rank = town town_setup = ir_loc_jerusalem
+    }
+    jubbah = {
+        rank = town town_setup = ir_loc_jubbah
     }
     kabeira = {
         rank = town town_setup = ir_loc_kabeira
@@ -807,6 +960,9 @@ locations = {
     }
     kadoi = {
         rank = town town_setup = ir_loc_kadoi
+    }
+    kahl = {
+        rank = town town_setup = ir_loc_kahl
     }
     kainepolis_syracene = {
         rank = town town_setup = ir_loc_kainepolis_syracene
@@ -829,14 +985,23 @@ locations = {
     kanyakubja = {
         rank = town town_setup = ir_loc_kanyakubja
     }
+    karali = {
+        rank = town town_setup = ir_loc_karali
+    }
     karige = {
         rank = town town_setup = ir_loc_karige
+    }
+    karkathiokerta = {
+        rank = town town_setup = ir_loc_karkathiokerta
     }
     karmana = {
         rank = town town_setup = ir_loc_karmana
     }
     karmanta = {
         rank = town town_setup = ir_loc_karmanta
+    }
+    karna = {
+        rank = town town_setup = ir_loc_karna
     }
     karnasuvarna = {
         rank = town town_setup = ir_loc_karnasuvarna
@@ -856,6 +1021,12 @@ locations = {
     kaunos = {
         rank = town town_setup = ir_loc_kaunos
     }
+    kaushambi = {
+        rank = town town_setup = ir_loc_kaushambi
+    }
+    kelenderis = {
+        rank = town town_setup = ir_loc_kelenderis
+    }
     kelonai = {
         rank = town town_setup = ir_loc_kelonai
     }
@@ -874,8 +1045,14 @@ locations = {
     kheta = {
         rank = town town_setup = ir_loc_kheta
     }
+    khyunglung = {
+        rank = town town_setup = ir_loc_khyunglung
+    }
     kios = {
         rank = town town_setup = ir_loc_kios
+    }
+    kition = {
+        rank = town town_setup = ir_loc_kition
     }
     klysma = {
         rank = town town_setup = ir_loc_klysma
@@ -898,6 +1075,9 @@ locations = {
     komana_pontike = {
         rank = town town_setup = ir_loc_komana_pontike
     }
+    komish = {
+        rank = town town_setup = ir_loc_komish
+    }
     kophen = {
         rank = town town_setup = ir_loc_kophen
     }
@@ -910,8 +1090,8 @@ locations = {
     korkyra = {
         rank = town town_setup = ir_loc_korkyra
     }
-    kosambi = {
-        rank = town town_setup = ir_loc_kosambi
+    kot_kamalia = {
+        rank = town town_setup = ir_loc_kot_kamalia
     }
     kotais = {
         rank = town town_setup = ir_loc_kotais
@@ -925,8 +1105,8 @@ locations = {
     krokodilopolis = {
         rank = town town_setup = ir_loc_krokodilopolis
     }
-    krounoi = {
-        rank = town town_setup = ir_loc_krounoi
+    kuara = {
+        rank = town town_setup = ir_loc_kuara
     }
     kuche = {
         rank = town town_setup = ir_loc_kuche
@@ -961,6 +1141,9 @@ locations = {
     larissa_0 = {
         rank = town town_setup = ir_loc_larissa_0
     }
+    larsa = {
+        rank = town town_setup = ir_loc_larsa
+    }
     latopolis = {
         rank = town town_setup = ir_loc_latopolis
     }
@@ -979,6 +1162,9 @@ locations = {
     leptis_minor = {
         rank = town town_setup = ir_loc_leptis_minor
     }
+    leukas = {
+        rank = town town_setup = ir_loc_leukas
+    }
     leuke_akte = {
         rank = town town_setup = ir_loc_leuke_akte
     }
@@ -988,11 +1174,11 @@ locations = {
     limyra = {
         rank = town town_setup = ir_loc_limyra
     }
+    lixus = {
+        rank = town town_setup = ir_loc_lixus
+    }
     locri_0 = {
         rank = town town_setup = ir_loc_locri_0
-    }
-    loulan = {
-        rank = town town_setup = ir_loc_loulan
     }
     lutetia = {
         rank = town town_setup = ir_loc_lutetia
@@ -1015,14 +1201,23 @@ locations = {
     mahismati = {
         rank = town town_setup = ir_loc_mahismati
     }
+    mai_adrasha = {
+        rank = town town_setup = ir_loc_mai_adrasha
+    }
     malaca = {
         rank = town town_setup = ir_loc_malaca
+    }
+    malao = {
+        rank = town town_setup = ir_loc_malao
     }
     malayana = {
         rank = town town_setup = ir_loc_malayana
     }
     malini = {
         rank = town town_setup = ir_loc_malini
+    }
+    mallia_1 = {
+        rank = town town_setup = ir_loc_mallia_1
     }
     mallos = {
         rank = town town_setup = ir_loc_mallos
@@ -1035,6 +1230,9 @@ locations = {
     }
     margineia = {
         rank = town town_setup = ir_loc_margineia
+    }
+    mariaba = {
+        rank = town town_setup = ir_loc_mariaba
     }
     marisa = {
         rank = town town_setup = ir_loc_marisa
@@ -1069,6 +1267,9 @@ locations = {
     mehsana = {
         rank = town town_setup = ir_loc_mehsana
     }
+    meidob = {
+        rank = town town_setup = ir_loc_meidob
+    }
     melange = {
         rank = town town_setup = ir_loc_melange
     }
@@ -1080,9 +1281,6 @@ locations = {
     }
     mendes = {
         rank = town town_setup = ir_loc_mendes
-    }
-    menesthei_portus = {
-        rank = town town_setup = ir_loc_menesthei_portus
     }
     menturia = {
         rank = town town_setup = ir_loc_menturia
@@ -1105,8 +1303,14 @@ locations = {
     metapontum = {
         rank = town town_setup = ir_loc_metapontum
     }
+    methymna = {
+        rank = town town_setup = ir_loc_methymna
+    }
     metropolis_phrygias = {
         rank = town town_setup = ir_loc_metropolis_phrygias
+    }
+    mezber = {
+        rank = town town_setup = ir_loc_mezber
     }
     mihintale = {
         rank = town town_setup = ir_loc_mihintale
@@ -1147,6 +1351,12 @@ locations = {
     mousopalle = {
         rank = town town_setup = ir_loc_mousopalle
     }
+    mulasthanapura = {
+        rank = town town_setup = ir_loc_mulasthanapura
+    }
+    mundigak = {
+        rank = town town_setup = ir_loc_mundigak
+    }
     muziris = {
         rank = town town_setup = ir_loc_muziris
     }
@@ -1164,6 +1374,9 @@ locations = {
     }
     nadikagama = {
         rank = town town_setup = ir_loc_nadikagama
+    }
+    nagaa = {
+        rank = town town_setup = ir_loc_nagaa
     }
     nagarjunikonda = {
         rank = town town_setup = ir_loc_nagarjunikonda
@@ -1189,6 +1402,9 @@ locations = {
     naxos = {
         rank = town town_setup = ir_loc_naxos
     }
+    nea_paphos = {
+        rank = town town_setup = ir_loc_nea_paphos
+    }
     neapolis = {
         rank = town town_setup = ir_loc_neapolis
     }
@@ -1200,9 +1416,6 @@ locations = {
     }
     nicaea = {
         rank = town town_setup = ir_loc_nicaea
-    }
-    nikonia = {
-        rank = town town_setup = ir_loc_nikonia
     }
     nimisa = {
         rank = town town_setup = ir_loc_nimisa
@@ -1216,11 +1429,14 @@ locations = {
     nisibis_0 = {
         rank = town town_setup = ir_loc_nisibis_0
     }
+    nokhar = {
+        rank = town town_setup = ir_loc_nokhar
+    }
     nuceria = {
         rank = town town_setup = ir_loc_nuceria
     }
-    ocuri = {
-        rank = town town_setup = ir_loc_ocuri
+    nura = {
+        rank = town town_setup = ir_loc_nura
     }
     odessus = {
         rank = town town_setup = ir_loc_odessus
@@ -1234,11 +1450,8 @@ locations = {
     olbe = {
         rank = town town_setup = ir_loc_olbe
     }
-    olbia_0 = {
-        rank = town town_setup = ir_loc_olbia_0
-    }
-    olbia_1 = {
-        rank = town town_setup = ir_loc_olbia_1
+    olbia = {
+        rank = town town_setup = ir_loc_olbia
     }
     omana = {
         rank = town town_setup = ir_loc_omana
@@ -1251,6 +1464,9 @@ locations = {
     }
     oreus = {
         rank = town town_setup = ir_loc_oreus
+    }
+    orontessos = {
+        rank = town town_setup = ir_loc_orontessos
     }
     oskobara = {
         rank = town town_setup = ir_loc_oskobara
@@ -1270,6 +1486,9 @@ locations = {
     paestum = {
         rank = town town_setup = ir_loc_paestum
     }
+    palaiogonoi = {
+        rank = town town_setup = ir_loc_palaiogonoi
+    }
     palaipatmai = {
         rank = town town_setup = ir_loc_palaipatmai
     }
@@ -1278,9 +1497,6 @@ locations = {
     }
     paliouros = {
         rank = town town_setup = ir_loc_paliouros
-    }
-    palma = {
-        rank = town town_setup = ir_loc_palma
     }
     palmyra = {
         rank = town town_setup = ir_loc_palmyra
@@ -1291,17 +1507,14 @@ locations = {
     pantikapaion = {
         rank = town town_setup = ir_loc_pantikapaion
     }
-    paphos = {
-        rank = town town_setup = ir_loc_paphos
-    }
     paraetonium = {
         rank = town town_setup = ir_loc_paraetonium
     }
     parium = {
         rank = town town_setup = ir_loc_parium
     }
-    pasargadae = {
-        rank = town town_setup = ir_loc_pasargadae
+    pasargadai = {
+        rank = town town_setup = ir_loc_pasargadai
     }
     passaron = {
         rank = town town_setup = ir_loc_passaron
@@ -1312,14 +1525,14 @@ locations = {
     patara = {
         rank = town town_setup = ir_loc_patara
     }
+    patavium = {
+        rank = town town_setup = ir_loc_patavium
+    }
     patigga = {
         rank = town town_setup = ir_loc_patigga
     }
     patigrabana = {
         rank = town town_setup = ir_loc_patigrabana
-    }
-    pattana = {
-        rank = town town_setup = ir_loc_pattana
     }
     pattithana = {
         rank = town town_setup = ir_loc_pattithana
@@ -1345,6 +1558,9 @@ locations = {
     persepolis = {
         rank = town town_setup = ir_loc_persepolis
     }
+    perusia = {
+        rank = town town_setup = ir_loc_perusia
+    }
     petra = {
         rank = town town_setup = ir_loc_petra
     }
@@ -1356,6 +1572,9 @@ locations = {
     }
     pharsalos = {
         rank = town town_setup = ir_loc_pharsalos
+    }
+    pharsana = {
+        rank = town town_setup = ir_loc_pharsana
     }
     phaselis = {
         rank = town town_setup = ir_loc_phaselis
@@ -1371,6 +1590,9 @@ locations = {
     }
     picenum = {
         rank = town town_setup = ir_loc_picenum
+    }
+    pinaka = {
+        rank = town town_setup = ir_loc_pinaka
     }
     pisae = {
         rank = town town_setup = ir_loc_pisae
@@ -1399,6 +1621,9 @@ locations = {
     prabhasa = {
         rank = town town_setup = ir_loc_prabhasa
     }
+    praesidium_0 = {
+        rank = town town_setup = ir_loc_praesidium_0
+    }
     pravarapura = {
         rank = town town_setup = ir_loc_pravarapura
     }
@@ -1414,11 +1639,11 @@ locations = {
     pteria = {
         rank = town town_setup = ir_loc_pteria
     }
-    ptolemais = {
-        rank = town town_setup = ir_loc_ptolemais
-    }
     pundra = {
         rank = town town_setup = ir_loc_pundra
+    }
+    pura = {
+        rank = town town_setup = ir_loc_pura
     }
     purushapura = {
         rank = town town_setup = ir_loc_purushapura
@@ -1429,11 +1654,20 @@ locations = {
     pydna = {
         rank = town town_setup = ir_loc_pydna
     }
+    pyrgi = {
+        rank = town town_setup = ir_loc_pyrgi
+    }
+    qandala = {
+        rank = town town_setup = ir_loc_qandala
+    }
+    qohaito = {
+        rank = town town_setup = ir_loc_qohaito
+    }
     qom = {
         rank = town town_setup = ir_loc_qom
     }
-    qumis = {
-        rank = town town_setup = ir_loc_qumis
+    qoyqirilgan = {
+        rank = town town_setup = ir_loc_qoyqirilgan
     }
     rabbat_ammon = {
         rank = town town_setup = ir_loc_rabbat_ammon
@@ -1441,8 +1675,8 @@ locations = {
     raichur = {
         rank = town town_setup = ir_loc_raichur
     }
-    rajagagrha = {
-        rank = town town_setup = ir_loc_rajagagrha
+    rajagagriha = {
+        rank = town town_setup = ir_loc_rajagagriha
     }
     ramagiri = {
         rank = town town_setup = ir_loc_ramagiri
@@ -1459,17 +1693,14 @@ locations = {
     rhagai = {
         rank = town town_setup = ir_loc_rhagai
     }
-    rhandeia = {
-        rank = town town_setup = ir_loc_rhandeia
-    }
     rhegium = {
         rank = town town_setup = ir_loc_rhegium
     }
-    rhizaion = {
-        rank = town town_setup = ir_loc_rhizaion
-    }
     rhoda = {
         rank = town town_setup = ir_loc_rhoda
+    }
+    rhodopolis = {
+        rank = town town_setup = ir_loc_rhodopolis
     }
     rhodos = {
         rank = town town_setup = ir_loc_rhodos
@@ -1486,14 +1717,23 @@ locations = {
     roruka = {
         rank = town town_setup = ir_loc_roruka
     }
+    rumailah = {
+        rank = town town_setup = ir_loc_rumailah
+    }
     rusaddir = {
         rank = town town_setup = ir_loc_rusaddir
+    }
+    rusellae = {
+        rank = town town_setup = ir_loc_rusellae
     }
     rusicade = {
         rank = town town_setup = ir_loc_rusicade
     }
     rusuccuru = {
         rank = town town_setup = ir_loc_rusuccuru
+    }
+    sabata = {
+        rank = town town_setup = ir_loc_sabata
     }
     sagalassos = {
         rank = town town_setup = ir_loc_sagalassos
@@ -1507,6 +1747,9 @@ locations = {
     sais = {
         rank = town town_setup = ir_loc_sais
     }
+    sakala = {
+        rank = town town_setup = ir_loc_sakala
+    }
     salamis_kyprias = {
         rank = town town_setup = ir_loc_salamis_kyprias
     }
@@ -1516,17 +1759,20 @@ locations = {
     samos = {
         rank = town town_setup = ir_loc_samos
     }
+    samosata = {
+        rank = town town_setup = ir_loc_samosata
+    }
     samti = {
         rank = town town_setup = ir_loc_samti
     }
-    sarapanis = {
-        rank = town town_setup = ir_loc_sarapanis
+    sanaphar = {
+        rank = town town_setup = ir_loc_sanaphar
     }
     sardis = {
         rank = town town_setup = ir_loc_sardis
     }
-    sari = {
-        rank = town town_setup = ir_loc_sari
+    saringiy = {
+        rank = town town_setup = ir_loc_saringiy
     }
     scythopolis = {
         rank = town town_setup = ir_loc_scythopolis
@@ -1534,17 +1780,26 @@ locations = {
     sebennytos = {
         rank = town town_setup = ir_loc_sebennytos
     }
+    segeda = {
+        rank = town town_setup = ir_loc_segeda
+    }
+    seglamen = {
+        rank = town town_setup = ir_loc_seglamen
+    }
+    selanpura = {
+        rank = town town_setup = ir_loc_selanpura
+    }
     seleucia_magna = {
         rank = town town_setup = ir_loc_seleucia_magna
     }
     selge = {
         rank = town town_setup = ir_loc_selge
     }
-    selinous_kilikias = {
-        rank = town town_setup = ir_loc_selinous_kilikias
-    }
     selinus = {
         rank = town town_setup = ir_loc_selinus
+    }
+    sembel = {
+        rank = town town_setup = ir_loc_sembel
     }
     serapeion = {
         rank = town town_setup = ir_loc_serapeion
@@ -1554,6 +1809,9 @@ locations = {
     }
     seuthopolis = {
         rank = town town_setup = ir_loc_seuthopolis
+    }
+    shabwa = {
+        rank = town town_setup = ir_loc_shabwa
     }
     shekhem = {
         rank = town town_setup = ir_loc_shekhem
@@ -1573,11 +1831,14 @@ locations = {
     siga = {
         rank = town town_setup = ir_loc_siga
     }
+    sikyon = {
+        rank = town town_setup = ir_loc_sikyon
+    }
     sillyon = {
         rank = town town_setup = ir_loc_sillyon
     }
-    sindhimana = {
-        rank = town town_setup = ir_loc_sindhimana
+    sindhumana = {
+        rank = town town_setup = ir_loc_sindhumana
     }
     sinope = {
         rank = town town_setup = ir_loc_sinope
@@ -1585,14 +1846,23 @@ locations = {
     sinoria = {
         rank = town town_setup = ir_loc_sinoria
     }
-    sipontum = {
-        rank = town town_setup = ir_loc_sipontum
+    sippar = {
+        rank = town town_setup = ir_loc_sippar
+    }
+    sirwa = {
+        rank = town town_setup = ir_loc_sirwa
+    }
+    sisupalgarh = {
+        rank = town town_setup = ir_loc_sisupalgarh
     }
     sitapur = {
         rank = town town_setup = ir_loc_sitapur
     }
     smyrna = {
         rank = town town_setup = ir_loc_smyrna
+    }
+    soloi_1 = {
+        rank = town town_setup = ir_loc_soloi_1
     }
     soluntum = {
         rank = town town_setup = ir_loc_soluntum
@@ -1621,8 +1891,8 @@ locations = {
     stratos = {
         rank = town town_setup = ir_loc_stratos
     }
-    sulcis_0 = {
-        rank = town town_setup = ir_loc_sulcis_0
+    sulcis = {
+        rank = town town_setup = ir_loc_sulcis
     }
     sumsumaragiri = {
         rank = town town_setup = ir_loc_sumsumaragiri
@@ -1641,6 +1911,9 @@ locations = {
     }
     tacape = {
         rank = town town_setup = ir_loc_tacape
+    }
+    tamna = {
+        rank = town town_setup = ir_loc_tamna
     }
     tamralipti = {
         rank = town town_setup = ir_loc_tamralipti
@@ -1669,9 +1942,6 @@ locations = {
     tarsus = {
         rank = town town_setup = ir_loc_tarsus
     }
-    tartessos = {
-        rank = town town_setup = ir_loc_tartessos
-    }
     taryana = {
         rank = town town_setup = ir_loc_taryana
     }
@@ -1684,6 +1954,12 @@ locations = {
     taxila = {
         rank = town town_setup = ir_loc_taxila
     }
+    tecybeleneos = {
+        rank = town town_setup = ir_loc_tecybeleneos
+    }
+    telephis = {
+        rank = town town_setup = ir_loc_telephis
+    }
     telmessos = {
         rank = town town_setup = ir_loc_telmessos
     }
@@ -1693,14 +1969,26 @@ locations = {
     termessos = {
         rank = town town_setup = ir_loc_termessos
     }
+    thaj = {
+        rank = town town_setup = ir_loc_thaj
+    }
+    thamusida = {
+        rank = town town_setup = ir_loc_thamusida
+    }
     thapsus = {
         rank = town town_setup = ir_loc_thapsus
+    }
+    tharros = {
+        rank = town town_setup = ir_loc_tharros
     }
     thebes = {
         rank = town town_setup = ir_loc_thebes
     }
     theodosia = {
         rank = town town_setup = ir_loc_theodosia
+    }
+    thermai = {
+        rank = town town_setup = ir_loc_thermai
     }
     thermon = {
         rank = town town_setup = ir_loc_thermon
@@ -1711,14 +1999,23 @@ locations = {
     thessalonica = {
         rank = town town_setup = ir_loc_thessalonica
     }
+    thiges = {
+        rank = town town_setup = ir_loc_thiges
+    }
     thurii = {
         rank = town town_setup = ir_loc_thurii
     }
     thyateira = {
         rank = town town_setup = ir_loc_thyateira
     }
+    tibion = {
+        rank = town town_setup = ir_loc_tibion
+    }
     tibur = {
         rank = town town_setup = ir_loc_tibur
+    }
+    tigranocerta = {
+        rank = town town_setup = ir_loc_tigranocerta
     }
     tingis = {
         rank = town town_setup = ir_loc_tingis
@@ -1756,6 +2053,9 @@ locations = {
     tripolis = {
         rank = town town_setup = ir_loc_tripolis
     }
+    turris_tamaleni = {
+        rank = town town_setup = ir_loc_turris_tamaleni
+    }
     tyana = {
         rank = town town_setup = ir_loc_tyana
     }
@@ -1774,6 +2074,9 @@ locations = {
     tyrus = {
         rank = town town_setup = ir_loc_tyrus
     }
+    uikra = {
+        rank = town town_setup = ir_loc_uikra
+    }
     ujjayini = {
         rank = town town_setup = ir_loc_ujjayini
     }
@@ -1783,14 +2086,17 @@ locations = {
     urci = {
         rank = town town_setup = ir_loc_urci
     }
+    uruk = {
+        rank = town town_setup = ir_loc_uruk
+    }
     utica = {
         rank = town town_setup = ir_loc_utica
     }
     vairata = {
         rank = town town_setup = ir_loc_vairata
     }
-    vaisali = {
-        rank = town town_setup = ir_loc_vaisali
+    vaishali = {
+        rank = town town_setup = ir_loc_vaishali
     }
     valuraka = {
         rank = town town_setup = ir_loc_valuraka
@@ -1831,8 +2137,14 @@ locations = {
     vinitapura = {
         rank = town town_setup = ir_loc_vinitapura
     }
+    visentium = {
+        rank = town town_setup = ir_loc_visentium
+    }
     vishpauzatis = {
         rank = town town_setup = ir_loc_vishpauzatis
+    }
+    volaterrae = {
+        rank = town town_setup = ir_loc_volaterrae
     }
     volci = {
         rank = town town_setup = ir_loc_volci
@@ -1843,11 +2155,17 @@ locations = {
     vologesias = {
         rank = town town_setup = ir_loc_vologesias
     }
+    voluca = {
+        rank = town town_setup = ir_loc_voluca
+    }
     xanthos = {
         rank = town town_setup = ir_loc_xanthos
     }
     yakaris = {
         rank = town town_setup = ir_loc_yakaris
+    }
+    yathill = {
+        rank = town town_setup = ir_loc_yathill
     }
     yeha = {
         rank = town town_setup = ir_loc_yeha
@@ -1855,17 +2173,26 @@ locations = {
     yerraguddi = {
         rank = town town_setup = ir_loc_yerraguddi
     }
-    yul = {
-        rank = town town_setup = ir_loc_yul
+    yutian = {
+        rank = town town_setup = ir_loc_yutian
     }
     zadrakarta = {
         rank = town town_setup = ir_loc_zadrakarta
     }
+    zafar = {
+        rank = town town_setup = ir_loc_zafar
+    }
     zela = {
         rank = town town_setup = ir_loc_zela
     }
+    zeleia = {
+        rank = town town_setup = ir_loc_zeleia
+    }
     zeugma = {
         rank = town town_setup = ir_loc_zeugma
+    }
+    zinchekra = {
+        rank = town town_setup = ir_loc_zinchekra
     }
 }
 

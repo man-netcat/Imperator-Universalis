@@ -143,3 +143,17 @@ ir_frisian = {
     culture_groups = { ir_germanic_g }
 }
 
+ir_scandian = {
+    language = german_language
+    color = hsv { 0.05 0.70 0.30 }
+    tags = { german_gfx north_german_gfx western_european_gfx european_gfx }
+    culture_groups = { ir_germanic_g }
+}
+
+ir_indo_germanic = {
+    language = german_language
+    color = hsv { 0.05 0.70 0.30 }
+    tags = { german_gfx north_german_gfx western_european_gfx european_gfx }
+    culture_groups = { ir_germanic_g }
+}
+

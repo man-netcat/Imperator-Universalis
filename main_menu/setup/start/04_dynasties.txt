@@ -1,12 +1,21 @@
 dynasty_manager = {
+    aaditid_dynasty = {
+        name = { name = aaditid_dynasty }
+    }
     abisarid_dynasty = {
         name = { name = abisarid_dynasty }
     }
     achaimenid_dynasty = {
         name = { name = achaimenid_dynasty }
     }
+    acichorid_dynasty = {
+        name = { name = acichorid_dynasty }
+    }
     adagaimani_dynasty = {
         name = { name = adagaimani_dynasty }
+    }
+    aeetid_dynasty = {
+        name = { name = aeetid_dynasty }
     }
     agarid_dynasty = {
         name = { name = agarid_dynasty }
@@ -23,6 +32,9 @@ dynasty_manager = {
     ailymasid_dynasty = {
         name = { name = ailymasid_dynasty }
     }
+    al-yamama_dynasty = {
+        name = { name = al-yamama_dynasty }
+    }
     alanid_dynasty = {
         name = { name = alanid_dynasty }
     }
@@ -32,8 +44,16 @@ dynasty_manager = {
     alkimachid_dynasty = {
         name = { name = alkimachid_dynasty }
     }
+    alkmaeonidid_dynasty = {
+        name = { name = alkmaeonidid_dynasty }
+    }
+    ammoni_dynasty = {
+        name = { name = ammoni_dynasty }
+    }
     amyntid_dynasty = {
-        name = { name = amyntid_dynasty }
+        name = {
+            name = amyntid_dynasty
+        }
     }
     antigonid_dynasty = {
         name = { name = antigonid_dynasty }
@@ -50,6 +70,9 @@ dynasty_manager = {
     aristodemid_dynasty = {
         name = { name = aristodemid_dynasty }
     }
+    artaxerxid_dynasty = {
+        name = { name = artaxerxid_dynasty }
+    }
     atargatid_dynasty = {
         name = { name = atargatid_dynasty }
     }
@@ -57,16 +80,38 @@ dynasty_manager = {
         name = { name = atropatids_dynasty }
     }
     aynelid_dynasty = {
-        name = { name = aynelid_dynasty }
+        name = {
+            name = aynelid_dynasty
+        }
+    }
+    azemilki_dynasty = {
+        name = { name = azemilki_dynasty }
     }
     azonid_dynasty = {
         name = { name = azonid_dynasty }
     }
+    baalshillemi_dynasty = {
+        name = { name = baalshillemi_dynasty }
+    }
+    balbid_dynasty = {
+        name = { name = balbid_dynasty }
+    }
     barcid_dynasty = {
-        name = { name = barcid_dynasty }
+        name = {
+            name = barcid_dynasty
+        }
+    }
+    barqid_dynasty = {
+        name = { name = barqid_dynasty }
+    }
+    belgiosus_dynasty = {
+        name = { name = belgiosus_dynasty }
     }
     bodonid_dynasty = {
         name = { name = bodonid_dynasty }
+    }
+    boiorius_dynasty = {
+        name = { name = boiorius_dynasty }
     }
     caecinii_dynasty = {
         name = { name = caecinii_dynasty }
@@ -74,8 +119,20 @@ dynasty_manager = {
     calavii_dynasty = {
         name = { name = calavii_dynasty }
     }
+    cerdubelid_dynasty = {
+        name = { name = cerdubelid_dynasty }
+    }
+    chalid_dynasty = {
+        name = { name = chalid_dynasty }
+    }
+    chariklid_dynasty = {
+        name = { name = chariklid_dynasty }
+    }
     charinid_dynasty = {
         name = { name = charinid_dynasty }
+    }
+    chera_dynasty = {
+        name = { name = chera_dynasty }
     }
     chola_dynasty = {
         name = { name = chola_dynasty }
@@ -101,20 +158,38 @@ dynasty_manager = {
     demostenid_dynasty = {
         name = { name = demostenid_dynasty }
     }
+    edescid_dynasty = {
+        name = { name = edescid_dynasty }
+    }
+    el_azarid_dynasty = {
+        name = { name = el_azarid_dynasty }
+    }
     elimiotid_dynasty = {
         name = { name = elimiotid_dynasty }
     }
     elonimid_dynasty = {
-        name = { name = elonimid_dynasty }
+        name = {
+            name = elonimid_dynasty
+        }
+    }
+    eumenid_dynasty = {
+        name = { name = eumenid_dynasty }
     }
     euryclid_dynasty = {
-        name = { name = euryclid_dynasty }
+        name = {
+            name = euryclid_dynasty
+        }
+    }
+    eurypontid_dynasty = {
+        name = { name = eurypontid_dynasty }
     }
     fabii_dynasty = {
         name = { name = fabii_dynasty }
     }
     frataraka_dynasty = {
-        name = { name = frataraka_dynasty }
+        name = {
+            name = frataraka_dynasty
+        }
     }
     gelid_dynasty = {
         name = { name = gelid_dynasty }
@@ -122,20 +197,53 @@ dynasty_manager = {
     gellii_dynasty = {
         name = { name = gellii_dynasty }
     }
+    ger_ashtartid_dynasty = {
+        name = { name = ger_ashtartid_dynasty }
+    }
     gerasthartid_dynasty = {
-        name = { name = gerasthartid_dynasty }
+        name = {
+            name = gerasthartid_dynasty
+        }
     }
     gisgoid_dynasty = {
-        name = { name = gisgoid_dynasty }
+        name = {
+            name = gisgoid_dynasty
+        }
+    }
+    giskonid_dynasty = {
+        name = { name = giskonid_dynasty }
     }
     haihaya_dynasty = {
         name = { name = haihaya_dynasty }
     }
     hannid_dynasty = {
-        name = { name = hannid_dynasty }
+        name = {
+            name = hannid_dynasty
+        }
+    }
+    hannonid_dynasty = {
+        name = { name = hannonid_dynasty }
+    }
+    hegesippid_dynasty = {
+        name = { name = hegesippid_dynasty }
+    }
+    hekatomnid_dynasty = {
+        name = { name = hekatomnid_dynasty }
+    }
+    helladis_dynasty = {
+        name = { name = helladis_dynasty }
     }
     hipparchid_dynasty = {
         name = { name = hipparchid_dynasty }
+    }
+    indibilid_dynasty = {
+        name = { name = indibilid_dynasty }
+    }
+    jadisid_dynasty = {
+        name = { name = jadisid_dynasty }
+    }
+    janamejaya_dynasty = {
+        name = { name = janamejaya_dynasty }
     }
     kalinga_dynasty = {
         name = { name = kalinga_dynasty }
@@ -149,8 +257,14 @@ dynasty_manager = {
     lagid_dynasty = {
         name = { name = lagid_dynasty }
     }
+    luxinid_dynasty = {
+        name = { name = luxinid_dynasty }
+    }
     magid_dynasty = {
         name = { name = magid_dynasty }
+    }
+    mandonidian_dynasty = {
+        name = { name = mandonidian_dynasty }
     }
     maurya_dynasty = {
         name = { name = maurya_dynasty }
@@ -164,14 +278,32 @@ dynasty_manager = {
     mithridatid_dynasty = {
         name = { name = mithridatid_dynasty }
     }
+    mucrid_dynasty = {
+        name = { name = mucrid_dynasty }
+    }
     mushika_dynasty = {
         name = { name = mushika_dynasty }
+    }
+    nriga_dynasty = {
+        name = { name = nriga_dynasty }
     }
     odrysid_dynasty = {
         name = { name = odrysid_dynasty }
     }
+    orisid_dynasty = {
+        name = { name = orisid_dynasty }
+    }
     orontids_dynasty = {
         name = { name = orontids_dynasty }
+    }
+    osicanid_dynasty = {
+        name = { name = osicanid_dynasty }
+    }
+    oxyartid_dynasty = {
+        name = { name = oxyartid_dynasty }
+    }
+    ozbaalid_dynasty = {
+        name = { name = ozbaalid_dynasty }
     }
     pandya_dynasty = {
         name = { name = pandya_dynasty }
@@ -182,11 +314,25 @@ dynasty_manager = {
     pauravid_dynasty = {
         name = { name = pauravid_dynasty }
     }
+    pharnacid_dynasty = {
+        name = { name = pharnacid_dynasty }
+    }
     philaid_dynasty = {
         name = { name = philaid_dynasty }
     }
+    prativindhya_dynasty = {
+        name = { name = prativindhya_dynasty }
+    }
+    pylaemenid_dynasty = {
+        name = { name = pylaemenid_dynasty }
+    }
+    ruhunu_dynasty = {
+        name = { name = ruhunu_dynasty }
+    }
     samarian_dynasty = {
-        name = { name = samarian_dynasty }
+        name = {
+            name = samarian_dynasty
+        }
     }
     seleukid_dynasty = {
         name = { name = seleukid_dynasty }
@@ -218,8 +364,29 @@ dynasty_manager = {
     tarquinii_dynasty = {
         name = { name = tarquinii_dynasty }
     }
+    tasmid_dynasty = {
+        name = { name = tasmid_dynasty }
+    }
     taulantid_dynasty = {
         name = { name = taulantid_dynasty }
+    }
+    tectosages_dynasty = {
+        name = { name = tectosages_dynasty }
+    }
+    teukrid_dynasty = {
+        name = { name = teukrid_dynasty }
+    }
+    tobiad_dynasty = {
+        name = { name = tobiad_dynasty }
+    }
+    trocmid_dynasty = {
+        name = { name = trocmid_dynasty }
+    }
+    tylises_dynasty = {
+        name = { name = tylises_dynasty }
+    }
+    tzadoqi_dynasty = {
+        name = { name = tzadoqi_dynasty }
     }
     vaisali_dynasty = {
         name = { name = vaisali_dynasty }
@@ -229,6 +396,9 @@ dynasty_manager = {
     }
     vijaya_dynasty = {
         name = { name = vijaya_dynasty }
+    }
+    volcaesus_dynasty = {
+        name = { name = volcaesus_dynasty }
     }
     vulturreno_dynasty = {
         name = { name = vulturreno_dynasty }
@@ -240,7 +410,9 @@ dynasty_manager = {
         name = { name = xanthippid_dynasty }
     }
     zadokite_dynasty = {
-        name = { name = zadokite_dynasty }
+        name = {
+            name = zadokite_dynasty
+        }
     }
     zipoeteid_dynasty = {
         name = { name = zipoeteid_dynasty }

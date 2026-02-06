@@ -29,45 +29,47 @@ discovered_areas = {
 	asia_region
 	assyria_region
 	atlantic_region
+	atlas_region
 	avanti_region
 	bactriana_region
 	baetica_region
+	baltic_river_region
 	belgica_region
 	bithynia_region
 	black_sea_river_region
 	bohemia_area
+	borysthenia_region
 	britain_region
-	british_river_region
+	burma_region
 	caledonia_region
 	cappadocia_pontica_region
 	cappadocia_region
+	central_asian_steppes_region
 	central_gaul_region
 	central_italy_region
 	cilicia_region
-	cilician_river_region
 	cisalpine_gaul_region
 	colchis_region
 	contestania_region
 	cyrenaica_region
 	dacia_region
-	don_river_region
 	dravida_region
+	eastern_mediterranean_river_region
+	fezzan_region
 	galatia_region
 	gallaecia_region
-	gallic_river_region
 	gandhara_region
-	gedrosia_region
 	germania_region
 	germania_superior_region
 	greece_region
 	himalayan_region
-	iberian_river_region
+	hyperborea_region
 	illyria_region
 	indian_ocean_region
-	indo_gangetic_region
 	karnata_region
 	lakes_region
 	lower_egypt_region
+	lower_nubia_region
 	lusitania_region
 	macedonia_region
 	madhyadesa_region
@@ -78,7 +80,10 @@ discovered_areas = {
 	mediterranean_region
 	mesopotamia_region
 	moesia_region
+	moesia_s_region
 	non_ownable_region
+	north_sea_river_region
+	northern_atlantic_river_region
 	nubia_region
 	numidia_region
 	palestine_region
@@ -90,12 +95,14 @@ discovered_areas = {
 	punt_region
 	rhaetia_region
 	river_provinces_region
+	sakia_region
 	sarmatia_asiatica_region
-	sarmatia_europea_region
 	scandinavia_region
 	scythia_region
 	sea_zones_region
 	sogdiana_region
+	southern_atlantic_river_region
+	southern_india_river_region
 	syria_region
 	tarraconensis_region
 	taurica_region
@@ -106,6 +113,8 @@ discovered_areas = {
 	venedia_region
 	vindhyaprstha_region
 	vistulia_region
+	western_india_river_region
+	western_mediterranean_river_region
 }
 
 discovered_provinces = {
@@ -121,11 +130,15 @@ discovered_provinces = {
 	africa_meridionalis_area
 	africa_septentrionalis_area
 	ahicchatra_area
+	ahoggar_area
 	aksum_area
+	aktobe_area
 	alana_area
 	alania_area
 	alania_orientalis_area
 	alania_proper_area
+	albis_river_area
+	allaqi_area
 	allobrogia_area
 	alpes_graiae_area
 	alpes_maritimae_area
@@ -138,6 +151,7 @@ discovered_provinces = {
 	ammon_area
 	anartta_area
 	andhra_area
+	androphagia_superior_area
 	anga_area
 	anupa_area
 	apamene_area
@@ -154,30 +168,38 @@ discovered_provinces = {
 	arabia_petrea_area
 	arabia_relicta_area
 	arachosia_area
+	arakan_area
 	arcadia_area
 	ardashir_area
 	aria_area
 	ariminum_area
+	aristavos_area
 	armenia_maior_area
 	armenia_minor_area
 	armorica_centralis_area
 	armorica_maioris_area
 	armorica_minoris_area
+	aromata_area
 	arran_area
 	artshak_area
 	asculum_area
 	asika_area
+	asir_area
 	asmaka_area
 	asoristan_area
 	aspadana_area
+	aspisi_area
 	asturia_meridionalis_area
 	asturia_septentrionalis_area
 	aswan_area
 	atara_area
 	atbaras_area
 	aternum_area
+	atyrau_area
 	autrigonia_area
 	avanti_area
+	awash_area
+	awateib_area
 	ayrarat_area
 	babylonia_area
 	bactria_area
@@ -188,13 +210,17 @@ discovered_provinces = {
 	bamyan_area
 	bassetia_area
 	bastetania_area
+	bayuda_area
+	beishan_area
 	bellovacia_area
 	beth_daraye_area
+	biebrzankski_area
 	biggeronia_area
 	bithynia_inferior_area
 	bithynia_superior_area
 	bituriga_occidentalis_area
 	bituriga_orientalis_area
+	bityug_area
 	boeotia_area
 	boioa_meridionalis_area
 	boioa_septentrionalis_area
@@ -202,11 +228,14 @@ discovered_provinces = {
 	borysthenia_area
 	borysthenia_maioris_area
 	borysthenia_minor_area
+	borysthenia_ultima_area
 	bosproranum_area
+	brahmani_area
 	brigantia_area
 	britannia_secunda_meridionalis_area
 	britannia_secunda_septentrionalis_area
 	bructeria_area
+	budinia_area
 	buria_area
 	cadurcia_area
 	caledonia_meridionalis_area
@@ -232,6 +261,8 @@ discovered_provinces = {
 	carthage_area
 	caucasian_albania_area
 	caucasian_iberia_area
+	cauvery_river_area
+	celamantia_area
 	celtiberia_centralis_area
 	celtiberia_meridionalis_area
 	celtiberia_septentrionalis_area
@@ -244,6 +275,7 @@ discovered_provinces = {
 	central_delta_area
 	central_greece_area
 	central_massif_area
+	central_omana_area
 	cessetania_area
 	chalkidiki_area
 	chamavia_area
@@ -253,6 +285,7 @@ discovered_provinces = {
 	chaucia_area
 	chomolangma_area
 	chrononis_area
+	chu_area
 	cilicia_pedias_area
 	cilicia_trachea_area
 	cimbrica_inferioris_area
@@ -286,30 +319,41 @@ discovered_provinces = {
 	dalmatia_centralis_area
 	dalmatia_occidentalis_area
 	dalmatia_orientalis_area
+	damodar_area
 	danaia_area
 	danaia_superioris_area
 	dardania_inferioris_area
 	dardania_superioris_area
 	darn_area
 	dasarna_area
+	daugava_area
+	daugava_river_area
 	decapolis_area
 	dedan_area
 	derbicca_area
+	desna_area
+	dnieper_area
 	dobunnia_area
 	don_river_area
+	donbas_area
 	drangiana_area
+	dufar_area
 	dumnonia_area
 	durotrigia_area
-	dyardanes_river_area
+	durse_area
+	dyakovo_area
 	east_cedi_area
 	east_gothia_area
 	east_insubria_area
 	east_omana_area
 	east_sicily_area
+	eastern_aral_area
 	eastern_delta_area
+	eastern_desert_area
 	ebro_river_area
 	ecbatana_area
 	edetania_area
+	elephas_area
 	elysia_area
 	epirus_area
 	euboea_area
@@ -319,8 +363,10 @@ discovered_provinces = {
 	farfara_area
 	ferghana_area
 	ferraria_area
+	figuig_area
 	flumen_anas_river_area
 	frisia_area
+	gabgaba_area
 	gaditanus_area
 	gaetulia_centralis_area
 	gaetulia_occidentalis_area
@@ -330,20 +376,33 @@ discovered_provinces = {
 	galatia_trocmi_area
 	galilee_area
 	galindia_area
+	gallikos_river_area
 	gandhara_area
-	ganges_river_area
+	ganuenta_area
 	garamig_area
 	garumna_river_area
+	gash_area
 	gedrosia_area
+	gelonia_area
+	germanicum_area
 	gerrha_area
 	getia_occidentalis_area
 	getia_orientalis_area
+	gezira_area
+	ghardaia_area
+	ghat_area
 	gilgit_area
+	gir_area
+	girgiri_area
+	godavari_river_area
+	gorodets_area
 	gugark_area
 	hadramut_occidentalis_area
 	hadramut_orientalis_area
 	haemimontus_area
 	harmozeia_area
+	hawad_area
+	hayaa_area
 	helespontine_area
 	helveconia_area
 	helvetia_inferioris_area
@@ -358,18 +417,23 @@ discovered_provinces = {
 	hibernia_occidentalis_area
 	hibernia_orientalis_area
 	hibernia_septentrionalis_area
+	himka_area
 	histria_area
 	hull_river_area
 	hypania_area
 	hypania_minoris_area
+	hypanis_river_area
 	hyrcania_area
 	hyrcania_superior_area
 	iazygia_majoris_area
 	iazygia_minoris_area
 	icenia_area
+	ichthyophagia_area
 	ilercavonia_area
 	ilergetia_area
 	illyria_graeca_area
+	ilmandu_inferior_area
+	ilmandu_superior_area
 	indiketia_area
 	indus_river_area
 	inland_caria_area
@@ -377,8 +441,11 @@ discovered_provinces = {
 	ionia_area
 	isauria_area
 	ister_river_area
+	iurcia_area
 	jangtang_area
 	jaxartia_area
+	jedi_area
+	joki_area
 	judea_area
 	kaccha_area
 	kadousioi_area
@@ -386,6 +453,8 @@ discovered_provinces = {
 	kalinga_area
 	kamarupa_area
 	kamata_area
+	kapchagay_area
+	kartub_area
 	kasi_area
 	kasmira_area
 	keralaputa_area
@@ -396,18 +465,25 @@ discovered_provinces = {
 	koda_area
 	kosala_area
 	kossioi_area
+	krishna_river_area
+	kumuzia_area
 	kuntala_area
 	kuru_area
 	lakes_area
 	langobardia_area
 	latobrigia_area
+	lauriacum_area
 	lemovicia_area
 	leucia_area
 	lhasa_area
 	liger_river_area
 	liguria_area
+	limfjord_river_area
 	lingonia_area
+	lixus_area
 	lobetania_area
+	lotophagia_area
+	lower_moulouya_area
 	lugia_area
 	lusitania_meridionalis_area
 	lusitania_septentrionalis_area
@@ -426,7 +502,9 @@ discovered_provinces = {
 	mahendragiri_area
 	malacita_area
 	malayas_area
+	maldives_area
 	malla_area
+	mallia_area
 	malvensis_area
 	marcomannia_maiores_area
 	marcomannia_minores_area
@@ -454,7 +532,9 @@ discovered_provinces = {
 	margu_area
 	marmarica_occidentalis_area
 	marmarica_orientalis_area
+	marrakesh_area
 	marsignia_area
+	marsonia_area
 	maru_area
 	mastiania_area
 	matsya_area
@@ -470,11 +550,15 @@ discovered_provinces = {
 	media_choromithrene
 	media_felix_area
 	mediomatricia_area
+	meidob_area
+	melik_area
 	memphis_area
 	menapia_orientalis
 	meroe_area
 	meshan_area
+	milograd_area
 	milyas_area
+	minsk_area
 	moesia_occidentalis_area
 	moesia_orientalis_area
 	moesia_prima_occidentalis_area
@@ -482,6 +566,9 @@ discovered_provinces = {
 	morinia_area
 	mosylon_area
 	mulaka_area
+	muqaddam_area
+	muradava_area
+	murzuq_area
 	myos_hormos_area
 	mysia_abrettene_area
 	mysia_area
@@ -490,11 +577,16 @@ discovered_provinces = {
 	narbonensis_centralis_area
 	narbonensis_occidentalis_area
 	narbonensis_orientalis_area
+	narmada_river_area
+	nasamonia_area
 	neapolis_area
+	neman_area
 	nervia_area
+	nile_river_area
 	niniveh_area
 	non_ownable_area
 	noricum_mediterranum_area
+	north_aral_area
 	north_etruria_area
 	north_mahishamandala_area
 	north_nubia_area
@@ -511,14 +603,19 @@ discovered_provinces = {
 	numidia_minoris_area
 	numidia_occidentalis_area
 	oceanus_atlanticus_area
+	oder_river_area
 	olbia_area
 	omana_area
+	ona_area
 	oppidania_area
 	oretania_area
 	osroene_area
 	ossioia_area
+	ouargla_area
 	outer_saurashtra_area
 	oxiana_area
+	oxiana_ultima_area
+	ozeros_area
 	pactya_area
 	palmyra_area
 	palus_maeotis_area
@@ -545,9 +642,11 @@ discovered_provinces = {
 	parva_area
 	patalene_area
 	paytankert_area
+	penner_river_area
 	peraea_area
 	persepolis_area
 	pharodenia_area
+	phazania_area
 	philistia_area
 	phrygia_area
 	phrygia_epiktetos
@@ -556,38 +655,56 @@ discovered_provinces = {
 	pictonia_septentrionalis_area
 	pisae_area
 	pisidia_area
+	polatsk_area
 	pontus_area
 	pontus_colopene_area
 	pontus_euxinus_area
 	porolissensis_area
 	porolissensis_inferioris_area
+	psyllia_area
 	ptolemais_area
+	pubu_area
 	pundra_area
 	punt_area
 	pyramus_river_area
+	pyu_area
+	qadarif_area
+	qaraah_area
 	qataba_area
+	qedar_area
 	radha_area
+	raha_ulterior_area
+	raurica_area
 	remia_area
 	rhagai_area
+	rhine_river_area
 	rhodanus_river_area
 	rhodope_area
+	rif_area
 	river_provinces_area
+	rodewala_area
 	roma_area
 	rugia_area
 	rutubis_area
 	sagartia_area
+	saharan_atlas_area
 	samaria_area
 	samatata_area
 	sardinia_meridionalis
 	sardinia_septentrionalis
 	sarmatia_area
+	sarmatia_eschate_area
+	sarmatia_hyperborealis_area
 	sarmatia_hyrcania_area
+	sarmatia_oarus_area
 	sarmatia_superioris_area
+	sarysu_area
 	sattagydia_area
 	sattara_area
 	sauvira_area
 	savia_occidentalis_area
 	savia_orientalis_area
+	saxony_area
 	scandia_insula_area
 	scythia_ad_pontem_area
 	scythia_area
@@ -600,16 +717,25 @@ discovered_provinces = {
 	sentonia_maioris_area
 	sequana_river_area
 	sequania_area
+	seym_area
+	shammar_area
+	shan_area
+	shannon_river_area
+	shatti_area
 	sheba_area
 	sicambria_area
+	sijilmasa_area
 	sinai_area
+	sinkat_area
 	sinus_adenensis_area
 	sinus_gallicus_area
 	sirdarya_area
 	sivi_area
 	soducene_area
+	soffegin_area
 	sogdiana_area
 	sophene_area
+	souss_area
 	south_etruria_area
 	south_mahishamandala_area
 	south_nubia_area
@@ -627,15 +753,19 @@ discovered_provinces = {
 	suaeuconia_area
 	suaneti_area
 	subcarpathia_area
+	sububus_river_area
 	sumpa_area
+	suradonia_area
 	surasena_area
 	susiana_area
 	suvarna_gotra_area
+	syr_area
 	syracene_area
 	syracuse_area
 	syria_area
 	syria_coele_area
 	syria_cyrrestice_area
+	syrtis_area
 	syunik_area
 	tadla_area
 	tagus_river_area
@@ -644,7 +774,9 @@ discovered_provinces = {
 	tana_area
 	tanaissa_area
 	tanassa_area
+	tapi_river_area
 	tarawn_area
+	taraz_area
 	tarentum_area
 	tarim_area
 	taurica_area
@@ -653,8 +785,12 @@ discovered_provinces = {
 	thames_river_area
 	thessaly_area
 	thracia_area
+	thyssagetia_occidentalis_area
+	thyssagetia_orientalis_area
+	thyssagetia_ulterior_area
 	tigris_area
 	tigurinia_area
+	touggourt_area
 	transborysthenia_area
 	transcarpathia_centralis_area
 	transcarpathia_occidentalis_area
@@ -669,18 +805,26 @@ discovered_provinces = {
 	tripolitania_centralis_area
 	tripolitania_occidentalis_area
 	tripolitania_orientalis_area
+	tritonia_area
 	troglodytica_area
 	tsang_area
 	tulingia_area
 	turdetania_occidentalis_area
 	turdulia_occidentalis_area
 	turdulia_orientalis_area
+	turonia_area
 	turuntia_area
 	tyras_river_area
+	ukrush_area
 	ultima_thule_area
 	upper_armenia_area
+	upper_draa_area
+	upper_jaxartia_area
 	upper_macedonia_area
 	upper_mesopotamia_area
+	upper_moulouya_area
+	upper_punt_area
+	upper_uralia_area
 	utia_area
 	vaccaeia_meridionalis_area
 	vaccaeia_septentrionalis_area
@@ -691,25 +835,38 @@ discovered_provinces = {
 	vasconia_area
 	vaspurakan_area
 	veh_kavad_area
+	velho_area
 	veliocassia_area
 	venedia_area
 	venetia_area
 	veshapur_area
 	vettonia_meridionalis_area
 	vettonia_septentrionalis_area
+	viadria_area
 	vidarbha_area
 	vindya_area
 	vishpauzatis_area
+	vistual_river_area
 	vistulia_area
 	vistulia_inferioris_area
-	volga_river_area
+	volkhov_river_area
+	volyn_area
 	vrji_area
+	west_aral_area
 	west_cedi_area
 	west_gothia_area
 	west_insubria_area
 	west_sicily_area
 	western_delta_area
+	yamama_area
 	yarlung_area
+	yellow_nile_area
+	yukhnovo_area
+	zamzam_area
+	zankor_area
 	zargidava_area
+	zarubinets_area
+	zhanaqala_area
 	zhangzhung_area
+	zingis_area
 }

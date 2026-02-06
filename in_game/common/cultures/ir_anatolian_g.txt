@@ -10,13 +10,6 @@ ir_cappadocian = {
     culture_groups = { ir_anatolian_g }
 }
 
-ir_carian = {
-    language = greek_language
-    color = hsv { 0.32 0.45 0.90 }
-    tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
-    culture_groups = { ir_anatolian_g }
-}
-
 ir_phrygian = {
     language = greek_language
     color = hsv { 0.32 0.45 0.90 }
@@ -46,13 +39,6 @@ ir_paphlagonian = {
 }
 
 ir_lycian = {
-    language = greek_language
-    color = hsv { 0.32 0.45 0.90 }
-    tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
-    culture_groups = { ir_anatolian_g }
-}
-
-ir_pamphylian = {
     language = greek_language
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }

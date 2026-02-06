@@ -10,7 +10,14 @@ ir_meroitic = {
     culture_groups = { ir_meroitic_group_g }
 }
 
-ir_blemmyan = {
+ir_lower_nubian = {
+    language = nubian_language
+    color = hsv { 0.15 0.40 0.60 }
+    tags = { egyptian_gfx east_african_gfx african_gfx }
+    culture_groups = { ir_meroitic_group_g }
+}
+
+ir_napatan = {
     language = nubian_language
     color = hsv { 0.15 0.40 0.60 }
     tags = { egyptian_gfx east_african_gfx african_gfx }

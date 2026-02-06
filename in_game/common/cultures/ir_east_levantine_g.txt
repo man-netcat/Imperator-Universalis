@@ -24,3 +24,10 @@ ir_babylonian = {
     culture_groups = { ir_east_levantine_g }
 }
 
+ir_cardukoi = {
+    language = aramaic_language
+    color = hsv { 0.05 1.00 0.50 }
+    tags = { levantine_gfx middle_east_gfx }
+    culture_groups = { ir_east_levantine_g }
+}
+

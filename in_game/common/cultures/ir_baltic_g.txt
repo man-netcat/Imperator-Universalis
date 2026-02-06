@@ -10,3 +10,38 @@ ir_aestian = {
     culture_groups = { ir_baltic_g }
 }
 
+ir_sporic = {
+    language = baltic_language
+    color = hsv { 0.50 0.40 0.70 }
+    tags = { baltic_gfx eastern_european_gfx european_gfx }
+    culture_groups = { ir_baltic_g }
+}
+
+ir_neuric = {
+    language = baltic_language
+    color = hsv { 0.50 0.40 0.70 }
+    tags = { baltic_gfx eastern_european_gfx european_gfx }
+    culture_groups = { ir_baltic_g }
+}
+
+ir_budinian = {
+    language = baltic_language
+    color = hsv { 0.50 0.40 0.70 }
+    tags = { baltic_gfx eastern_european_gfx european_gfx }
+    culture_groups = { ir_baltic_g }
+}
+
+ir_chernolian = {
+    language = baltic_language
+    color = hsv { 0.50 0.40 0.70 }
+    tags = { baltic_gfx eastern_european_gfx european_gfx }
+    culture_groups = { ir_baltic_g }
+}
+
+ir_melanchlaenian = {
+    language = baltic_language
+    color = hsv { 0.50 0.40 0.70 }
+    tags = { baltic_gfx eastern_european_gfx european_gfx }
+    culture_groups = { ir_baltic_g }
+}
+
