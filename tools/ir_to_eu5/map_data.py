@@ -7,7 +7,7 @@ from pathlib import Path
 
 import pyradox.datatype as _pydt
 
-from .extract_data import parse_tree, read_localisation_file
+from .extract_data import extract_ir_country_locations, parse_tree, read_localisation_file
 from .paths import (
     ir_game,
     ir_localisation,
@@ -284,6 +284,124 @@ IR_GROUP_TOWN_SETUPS = {
         "town_port": "east_african_coastal_town",
     },
     "ir_proto_european_g": {"city": "french_city", "town": "french_town"},
+}
+
+# Map I:R building keys to EU5 building types.
+# Defaults to identity, with optional overrides for renamed EU5 types.
+IR_BUILDING_MAP_OVERRIDES = {
+    # Example override (kept for clarity; adjust if EU5 names differ).
+    # "port_building": "wharf",
+}
+
+# Map I:R trade_goods to EU5 goods keys used in location_templates raw_material.
+IR_GOODS_TO_EU5_GOODS = {
+    "grain": ("wheat", "rice", "maize"),
+    "vegetables": ("wheat", "rice", "maize"),
+    "wood": ("lumber",),
+    "base_metals": ("iron", "copper", "lead", "tin"),
+    "precious_metals": ("goods_gold", "silver"),
+    "marble": ("stone",),
+    "olive": ("wine", "wheat"),
+    "papyrus": ("paper", "fiber_crops", "cloth"),
+    "elephants": ("ivory",),
+    "gemstones": ("gems",),
+    "spices": ("incense", "tea"),
+    "silk": ("silk",),
+    "incense": ("incense",),
+    "fish": ("fish",),
+    "salt": ("salt",),
+    "horses": ("horses",),
+    "steppe_horses": ("horses",),
+    "wine": ("wine",),
+    "amber": ("amber",),
+    "stone": ("stone",),
+    "glass": ("glass",),
+    "cloth": ("cloth", "fiber_crops"),
+    "dye": ("dyes",),
+    "fur": ("fur",),
+    "wild_game": ("wild_game",),
+    "cattle": ("wool",),
+    "leather": ("fur", "wool"),
+    "hemp": ("fiber_crops",),
+    "woad": ("dyes",),
+    "honey": ("wheat",),
+    "dates": ("wheat",),
+    "earthware": ("clay",),
+    "camel": ("horses",),
+}
+
+# Per-I:R-good candidate weight overrides (higher = more likely).
+IR_GOODS_WEIGHT_OVERRIDES = {
+    "grain": {
+        "wheat": 1.0,
+        "rice": 0.6,
+        "maize": 0.15,
+    },
+    "vegetables": {
+        "wheat": 1.0,
+        "rice": 0.6,
+        "maize": 0.15,
+    },
+    "base_metals": {
+        "iron": 1.0,
+        "copper": 0.7,
+        "lead": 0.4,
+        "tin": 0.2,
+    },
+    "precious_metals": {
+        "goods_gold": 0.25,
+        "silver": 1.0,
+    },
+    "olive": {
+        "wine": 0.8,
+        "wheat": 0.3,
+    },
+    "papyrus": {
+        "paper": 0.3,
+        "fiber_crops": 1.0,
+        "cloth": 0.6,
+    },
+    "spices": {
+        "incense": 1.0,
+        "tea": 0.2,
+    },
+    "cloth": {
+        "cloth": 1.0,
+        "fiber_crops": 0.5,
+    },
+    "leather": {
+        "fur": 0.4,
+        "wool": 1.0,
+    },
+}
+
+# Map I:R terrain keys to EU5 topography and vegetation.
+IR_TERRAIN_TO_TOPOGRAPHY = {
+    "plains": "flatland",
+    "farmland": "flatland",
+    "forest": "flatland",
+    "jungle": "flatland",
+    "desert": "flatland",
+    "hills": "hills",
+    "mountain": "mountains",
+    "marsh": "wetlands",
+    "coastal_terrain": "flatland",
+    "riverine_terrain": "flatland",
+    "impassable_terrain": "mountains",
+}
+
+IR_TERRAIN_TO_VEGETATION = {
+    "plains": "grasslands",
+    "farmland": "farmland",
+    "forest": "forest",
+    "jungle": "jungle",
+    "desert": "desert",
+    "hills": "woods",
+    "mountain": "sparse",
+    "marsh": "woods",
+    "coastal_terrain": "grasslands",
+    "riverine_terrain": "grasslands",
+    "impassable_terrain": "sparse",
 }
 
 
@@ -732,6 +850,23 @@ def _ir_capital_ids() -> list[int]:
     return [int(data["capital"]) for data in countries.values() if data["capital"] is not None]
 
 
+def _ir_country_capitals() -> dict[str, int]:
+    countries = parse_tree(ir_default)["country"]["countries"]
+    capitals: dict[str, int] = {}
+    for tag, data in countries.items():
+        try:
+            cap = data["capital"]
+        except Exception:
+            cap = None
+        if cap is None:
+            continue
+        try:
+            capitals[str(tag)] = int(cap)
+        except Exception:
+            continue
+    return capitals
+
+
 def _non_land_keys(default_map: dict) -> set[str]:
     excluded = set()
     for key in (
@@ -764,6 +899,233 @@ def _build_ir_culture_to_group_map() -> dict[str, str]:
     return mapping
 
 
+def _load_ir_building_keys() -> set[str]:
+    ir_buildings = ir_game / "common" / "buildings" / "00_default.txt"
+    if not ir_buildings.exists():
+        return set()
+    tree = parse_tree(ir_buildings)
+    return {str(key) for key in tree.keys()}
+
+
+def _load_eu5_goods_keys() -> set[str]:
+    goods_dir = eu5_game / "in_game" / "common" / "goods"
+    if not goods_dir.exists():
+        return set()
+    keys: set[str] = set()
+    for path in goods_dir.glob("*.txt"):
+        tree = parse_tree(path)
+        for key in tree.keys():
+            keys.add(str(key))
+    return keys
+
+
+def build_ir_building_mapping() -> dict[str, str]:
+    keys = _load_ir_building_keys()
+    mapping = {key: key for key in keys}
+    mapping.update(IR_BUILDING_MAP_OVERRIDES)
+    return mapping
+
+
+def build_ir_raw_materials(id_to_key: dict[int, str]) -> dict[str, str]:
+    """Map I:R trade_goods to EU5 raw_material keys per location."""
+    province_dir = ir_game / "setup" / "provinces"
+    if not province_dir.exists():
+        return {}
+
+    eu5_goods = _load_eu5_goods_keys()
+
+    def map_good(
+        ir_good: str | None,
+        usage_counts: dict[str, int],
+        seed_key: str,
+    ) -> str | None:
+        if not ir_good:
+            return None
+        key = str(ir_good).strip()
+        candidates: list[str] = []
+        if key in eu5_goods:
+            candidates = [key]
+        else:
+            mapped = IR_GOODS_TO_EU5_GOODS.get(key)
+            if mapped:
+                candidates = [c for c in mapped if c in eu5_goods]
+        if candidates:
+            # Deterministic weighted pick: rarer candidates (lower usage) get higher weight.
+            bias = IR_GOODS_WEIGHT_OVERRIDES.get(key, {})
+            weights = [
+                (1.0 / (1 + usage_counts.get(candidate, 0))) * bias.get(candidate, 1.0)
+                for candidate in candidates
+            ]
+            total = sum(weights)
+            if total <= 0:
+                return candidates[0]
+            import hashlib
+
+            digest = hashlib.sha256(seed_key.encode("utf-8")).digest()
+            r = int.from_bytes(digest, "big") / (1 << (8 * len(digest)))
+            threshold = r * total
+            cumulative = 0.0
+            for candidate, weight in zip(candidates, weights):
+                cumulative += weight
+                if cumulative >= threshold:
+                    return candidate
+            return candidates[-1]
+        return None
+
+    result: dict[str, str] = {}
+    eu5_usage_counts: dict[str, int] = defaultdict(int)
+    counts: dict[str, int] = defaultdict(int)
+    mapped_counts: dict[str, int] = defaultdict(int)
+    missing: dict[str, int] = defaultdict(int)
+    for path in sorted(province_dir.glob("*.txt")):
+        tree = parse_tree(path)
+        for raw_id, data in sorted(tree.items(), key=lambda item: int(item[0])):
+            try:
+                prov_id = int(raw_id)
+            except Exception:
+                continue
+            if prov_id not in id_to_key:
+                continue
+            if not isinstance(data, (_pydt.Tree, dict)):
+                continue
+            ir_good = data.get("trade_goods") if isinstance(data, dict) else data["trade_goods"]
+            if ir_good:
+                counts[str(ir_good)] += 1
+            loc_key = id_to_key[prov_id]
+            mapped = map_good(ir_good, eu5_usage_counts, f"{loc_key}|{ir_good}")
+            if not mapped:
+                if ir_good:
+                    missing[str(ir_good)] += 1
+                continue
+            result[loc_key] = mapped
+            eu5_usage_counts[mapped] += 1
+            if ir_good:
+                mapped_counts[str(ir_good)] += 1
+
+    report_path = Path(__file__).parent / "ir_goods_mapping_report.tsv"
+    lines = ["ir_good\tcount\tmapped\tmissing\tmapped_to"]
+    for ir_good in sorted(counts.keys()):
+        mapped_to = IR_GOODS_TO_EU5_GOODS.get(ir_good, "")
+        if isinstance(mapped_to, (list, tuple)):
+            mapped_to = ",".join(mapped_to)
+        lines.append(
+            f"{ir_good}\t{counts[ir_good]}\t{mapped_counts[ir_good]}\t{missing[ir_good]}\t{mapped_to}"
+        )
+    report_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    print_written("file", report_path)
+
+    return result
+
+
+def build_ir_terrain_maps(id_to_key: dict[int, str]) -> dict[str, tuple[str, str]]:
+    """Return {location_key: (topography, vegetation)} from I:R province terrain."""
+    province_dir = ir_game / "setup" / "provinces"
+    if not province_dir.exists():
+        return {}
+
+    result: dict[str, tuple[str, str]] = {}
+    for path in sorted(province_dir.glob("*.txt")):
+        tree = parse_tree(path)
+        for raw_id, data in tree.items():
+            try:
+                prov_id = int(raw_id)
+            except Exception:
+                continue
+            if prov_id not in id_to_key:
+                continue
+            if not isinstance(data, (_pydt.Tree, dict)):
+                continue
+            terrain = data.get("terrain") if isinstance(data, dict) else data["terrain"]
+            if not terrain:
+                continue
+            terrain_key = str(terrain).strip()
+            topography = IR_TERRAIN_TO_TOPOGRAPHY.get(terrain_key)
+            vegetation = IR_TERRAIN_TO_VEGETATION.get(terrain_key)
+            if not topography or not vegetation:
+                continue
+            result[id_to_key[prov_id]] = (topography, vegetation)
+
+    return result
+
+
+def build_ir_location_building_setups(
+    id_to_key: dict[int, str],
+    locations_with_pops: set[str],
+    building_map: dict[str, str],
+    include_locations: set[str] | None = None,
+) -> tuple[dict[str, str], dict[str, dict[str, int]]]:
+    """Build per-location town_setups based on I:R buildings.
+
+    Returns:
+        - location_to_setup: { location_key: setup_name }
+        - setup_definitions: { setup_name: { building_key: level } }
+    """
+    province_dir = ir_game / "setup" / "provinces"
+    if not province_dir.exists():
+        return {}, {}
+
+    def normalize_level(value) -> int:
+        if value is None:
+            return 0
+        if isinstance(value, (int, float)):
+            return int(value)
+        try:
+            return int(str(value).strip())
+        except Exception:
+            return 0
+
+    location_to_setup: dict[str, str] = {}
+    setup_definitions: dict[str, dict[str, int]] = {}
+
+    for path in sorted(province_dir.glob("*.txt")):
+        tree = parse_tree(path)
+        for raw_id, data in tree.items():
+            try:
+                prov_id = int(raw_id)
+            except Exception:
+                continue
+            loc_key = id_to_key.get(prov_id)
+            if not loc_key or loc_key not in locations_with_pops:
+                continue
+            if not isinstance(data, (_pydt.Tree, dict)):
+                continue
+
+            buildings: dict[str, int] = {}
+
+            for key, value in data.items():
+                key_str = str(key)
+                if key_str == "buildings" and isinstance(value, (_pydt.Tree, dict)):
+                    for b_key, b_value in value.items():
+                        b_key_str = str(b_key)
+                        if b_key_str not in building_map:
+                            continue
+                        level = normalize_level(b_value)
+                        if level > 0:
+                            mapped = building_map[b_key_str]
+                            buildings[mapped] = max(buildings.get(mapped, 0), level)
+                    continue
+
+                if key_str not in building_map:
+                    continue
+                level = normalize_level(value)
+                if level <= 0:
+                    continue
+                mapped = building_map[key_str]
+                buildings[mapped] = max(buildings.get(mapped, 0), level)
+
+            setup_name = f"ir_loc_{loc_key}"
+            location_to_setup[loc_key] = setup_name
+            setup_definitions[setup_name] = buildings
+
+    if include_locations:
+        for loc_key in sorted(include_locations):
+            setup_name = f"ir_loc_{loc_key}"
+            location_to_setup.setdefault(loc_key, setup_name)
+            setup_definitions.setdefault(setup_name, {})
+
+    return location_to_setup, setup_definitions
+
+
 def _select_town_setup(
     group_tag: str,
     rank: str,
@@ -789,7 +1151,11 @@ def _build_market_keys(
     id_to_key: dict[int, str],
     location_keys: set[str],
     default_map: dict,
-    max_markets: int = 20,
+    location_to_region: dict[str, str],
+    country_locations: dict[str, list[int]],
+    country_capitals: dict[str, int],
+    top_capitals: int = 35,
+    max_markets: int = 35,
 ) -> list[str]:
     excluded = _non_land_keys(default_map)
     road_pairs = _parse_ir_road_pairs()
@@ -802,21 +1168,28 @@ def _build_market_keys(
         key = id_to_key[pid]
         return key in location_keys and key not in excluded
 
-    capitals = [pid for pid in _ir_capital_ids() if valid_id(pid)]
-    capitals = sorted(_dedupe(capitals), key=lambda pid: degree.get(pid, 0), reverse=True)
-
-    candidates = sorted(degree.keys(), key=lambda pid: degree.get(pid, 0), reverse=True)
+    top_country_tags = sorted(
+        country_locations.keys(),
+        key=lambda tag: len(country_locations.get(tag, [])),
+        reverse=True,
+    )
+    preferred_capitals: list[int] = []
+    for tag in top_country_tags[:top_capitals]:
+        cap_id = country_capitals.get(tag)
+        if cap_id is None:
+            continue
+        if valid_id(cap_id):
+            preferred_capitals.append(cap_id)
+    preferred_capitals = _dedupe(preferred_capitals)
 
     markets: list[str] = []
-    for pid in capitals + candidates:
+    for pid in preferred_capitals:
+        key = id_to_key[pid]
+        if key not in markets:
+            markets.append(key)
         if len(markets) >= max_markets:
             break
-        if not valid_id(pid):
-            continue
-        key = id_to_key[pid]
-        if key in markets:
-            continue
-        markets.append(key)
+
     return markets
 
 
@@ -912,6 +1285,7 @@ def build_ir_location_ranks(
     id_to_key: dict[int, str],
     locations_with_pops: set[str],
     town_setup: str,
+    location_town_setups: dict[str, str] | None = None,
 ) -> dict[str, str]:
     """Build EU5 location rank data from Imperator province setup data."""
     province_dir = ir_game / "setup" / "provinces"
@@ -921,6 +1295,18 @@ def build_ir_location_ranks(
     culture_to_group = _build_ir_culture_to_group_map()
 
     ranks: dict[str, str] = {}
+
+    def map_rank_to_eu5(raw_rank: str | None) -> str | None:
+        if not raw_rank:
+            return None
+        rank = str(raw_rank).strip().lower()
+        if rank == "city":
+            return "town"
+        if rank == "metropolis":
+            return "town"
+        if rank == "settlement":
+            return None
+        return None
 
     for path in sorted(province_dir.glob("*.txt")):
         tree = parse_tree(path)
@@ -936,15 +1322,52 @@ def build_ir_location_ranks(
                 continue
 
             rank = data["province_rank"]
-            if not rank:
+            eu5_rank = map_rank_to_eu5(rank)
+            if not eu5_rank:
                 continue
             culture = data["culture"]
             group_tag = culture_to_group[str(culture)]
             is_port = "port_building" in data and data["port_building"]
-            setup = _select_town_setup(group_tag, rank, bool(is_port), town_setup)
-            ranks[loc_key] = f"rank = town town_setup = {setup}"
+            if location_town_setups is not None:
+                setup = location_town_setups.get(loc_key, f"ir_loc_{loc_key}")
+            else:
+                setup = _select_town_setup(group_tag, rank, bool(is_port), town_setup)
+            ranks[loc_key] = f"rank = {eu5_rank} town_setup = {setup}"
 
     return ranks
+
+
+def build_ir_rankable_locations(
+    id_to_key: dict[int, str],
+    locations_with_pops: set[str],
+) -> set[str]:
+    """Return locations that should receive a rank entry in EU5."""
+    province_dir = ir_game / "setup" / "provinces"
+    if not province_dir.exists():
+        return set()
+
+    def map_rank_to_eu5(raw_rank: str | None) -> bool:
+        if not raw_rank:
+            return False
+        rank = str(raw_rank).strip().lower()
+        return rank in ("city", "metropolis")
+
+    rankable: set[str] = set()
+    for path in sorted(province_dir.glob("*.txt")):
+        tree = parse_tree(path)
+        for raw_id, data in tree.items():
+            try:
+                prov_id = int(raw_id)
+            except Exception:
+                continue
+            loc_key = id_to_key.get(prov_id)
+            if not loc_key or loc_key not in locations_with_pops:
+                continue
+            if not isinstance(data, (_pydt.Tree, dict)):
+                continue
+            if map_rank_to_eu5(data["province_rank"]):
+                rankable.add(loc_key)
+    return rankable
 
 
 def write_default_map(ir_default_map_data: dict):
@@ -1049,6 +1472,13 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
 
     # Area validation
     regions = build_regions(id_to_key)
+    location_to_region: dict[str, str] = {}
+    for region_tag, area_map in regions.items():
+        for provinces in area_map.values():
+            if not isinstance(provinces, list):
+                continue
+            for key in provinces:
+                location_to_region.setdefault(key, region_tag)
     assigned_provinces = {
         province
         for area_map in regions.values()
@@ -1209,20 +1639,27 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     location_templates = iu_map_data / "location_templates.txt"
     location_templates.parent.mkdir(parents=True, exist_ok=True)
     sea_zones = default_map.get("sea_zones", set()) if isinstance(default_map, dict) else set()
+    excluded_locations = _non_land_keys(default_map) if isinstance(default_map, dict) else set()
+    raw_materials = build_ir_raw_materials(id_to_key)
+    terrain_map = build_ir_terrain_maps(id_to_key)
     with location_templates.open("w", encoding="utf-8") as f:
         for key in sorted(location_keys):
             if key in sea_zones:
                 continue
+            terrain = terrain_map.get(key)
+            topography = terrain[0] if terrain else "flatland"
+            vegetation = terrain[1] if terrain else "grasslands"
             parts = [
-                "topography = flatland",
-                "vegetation = grasslands",
+                f"topography = {topography}",
+                f"vegetation = {vegetation}",
                 "climate = continental",
             ]
             if default_religion:
                 parts.append(f"religion = {default_religion}")
             if default_culture:
                 parts.append(f"culture = {default_culture}")
-            parts.append("raw_material = wool")
+            if key not in excluded_locations:
+                parts.append(f"raw_material = {raw_materials.get(key, 'wool')}")
             f.write(f"{key} = {{ {' '.join(parts)} }}\n")
     print_written("file", location_templates)
 
@@ -1463,11 +1900,37 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
         pops_blocks.append((loc_key, pops_by_location[loc_key]))
     write_blocks(iu_setup_start / "06_pops.txt", [("locations", pops_blocks)], encoding="utf-8")
 
+    # --- Port Imperator building setups (per location) ---
+    building_map = build_ir_building_mapping()
+    rankable_locations = build_ir_rankable_locations(id_to_key, set(pops_by_location.keys()))
+    location_building_setups, setup_definitions = build_ir_location_building_setups(
+        id_to_key,
+        set(pops_by_location.keys()),
+        building_map,
+        include_locations=rankable_locations,
+    )
+    town_setups_dir = mod_root / "in_game" / "common" / "town_setups"
+    town_setups_dir.mkdir(parents=True, exist_ok=True)
+    town_setups_path = town_setups_dir / "ir_location_setups.txt"
+    lines = [
+        "# Auto-generated from Imperator buildings. Do not edit manually.",
+        "",
+    ]
+    for setup_name in sorted(setup_definitions.keys()):
+        lines.append(f"{setup_name} = {{")
+        for building_key, level in sorted(setup_definitions[setup_name].items()):
+            lines.append(f"    {building_key} = {level}")
+        lines.append("}")
+        lines.append("")
+    town_setups_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+    print_written("file", town_setups_path)
+
     # --- Port Imperator location ranks (towns/cities) ---
     rank_lines = build_ir_location_ranks(
         id_to_key,
         set(pops_by_location.keys()),
         town_setup="italian_city",
+        location_town_setups=location_building_setups,
     )
     rank_blocks = [(loc_key, [rank_lines[loc_key]]) for loc_key in sorted(rank_lines.keys())]
     write_blocks(
@@ -1478,7 +1941,18 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
 
     # --- Build markets from IR roads + capitals ---
     markets_dst = mod_root / "main_menu" / "setup" / "start" / "03_markets.txt"
-    markets = _build_market_keys(id_to_key, location_keys, default_map, max_markets=20)
+    country_locations = extract_ir_country_locations()
+    country_capitals = _ir_country_capitals()
+    markets = _build_market_keys(
+        id_to_key,
+        location_keys,
+        default_map,
+        location_to_region,
+        country_locations,
+        country_capitals,
+        top_capitals=35,
+        max_markets=35,
+    )
     markets_dst.parent.mkdir(parents=True, exist_ok=True)
     markets_dst.write_text(
         "market_manager = {\n"
