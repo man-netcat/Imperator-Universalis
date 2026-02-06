@@ -4,30 +4,30 @@
 # =========================================================== #
 
 constantinople_holy_city_gnostic = {
-    location = "aba"
-    type = "city"
+    location = aba
+    type = city
     importance = 4
-    religions = { "bogomilism" "paulicianism" }
+    religions = { bogomilism paulicianism }
 }
 
 antioch_holy_city_gnostic = {
-    location = "aba"
-    type = "city"
+    location = aba
+    type = city
     importance = 4
-    religions = { "bogomilism" "paulicianism" }
+    religions = { bogomilism paulicianism }
 }
 
 alexandria_holy_city_gnostic = {
-    location = "alexandria"
-    type = "city"
+    location = alexandria
+    type = city
     importance = 4
-    religions = { "bogomilism" "paulicianism" }
+    religions = { bogomilism paulicianism }
 }
 
 rome_holy_city_gnostic = {
-    location = "aba"
-    type = "city"
+    location = aba
+    type = city
     importance = 4
-    religions = { "bogomilism" "paulicianism" }
+    religions = { bogomilism paulicianism }
 }
 

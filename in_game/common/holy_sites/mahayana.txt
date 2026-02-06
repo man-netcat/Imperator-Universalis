@@ -4,51 +4,51 @@
 # =========================================================== #
 
 mount_lu = {
-    location = "aba"
-    type = "mountain"
+    location = aba
+    type = mountain
     importance = 4
-    religions = { "mahayana" "sanjiao" }
+    religions = { mahayana sanjiao }
 }
 
 mount_wutai = {
-    location = "aba"
-    type = "mountain"
+    location = aba
+    type = mountain
     importance = 4
-    religions = { "mahayana" "sanjiao" }
+    religions = { mahayana sanjiao }
 }
 
 mount_emei = {
-    location = "aba"
-    type = "mountain"
+    location = aba
+    type = mountain
     importance = 4
-    religions = { "mahayana" "sanjiao" }
+    religions = { mahayana sanjiao }
 }
 
 mount_jiuhua = {
-    location = "aba"
-    type = "mountain"
+    location = aba
+    type = mountain
     importance = 4
-    religions = { "mahayana" "sanjiao" }
+    religions = { mahayana sanjiao }
 }
 
 mount_putuo = {
-    location = "aba"
-    type = "mountain"
+    location = aba
+    type = mountain
     importance = 4
-    religions = { "mahayana" "sanjiao" }
+    religions = { mahayana sanjiao }
 }
 
 mount_fanjing = {
-    location = "aba"
-    type = "mountain"
+    location = aba
+    type = mountain
     importance = 3
-    religions = { "mahayana" "sanjiao" }
+    religions = { mahayana sanjiao }
 }
 
 borobudur_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = "mahayana"
+    religions = mahayana
 }
 

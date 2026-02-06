@@ -4,51 +4,51 @@
 # =========================================================== #
 
 constantinople_episcopal_see = {
-    location = "aba"
-    type = "episcopal_see"
+    location = aba
+    type = episcopal_see
     importance = 5
-    religions = { "orthodox" "miaphysite" }
+    religions = { orthodox miaphysite }
 }
 
 antioch_episcopal_see = {
-    location = "aba"
-    type = "episcopal_see"
+    location = aba
+    type = episcopal_see
     importance = 3
-    religions = { "orthodox" "miaphysite" }
+    religions = { orthodox miaphysite }
 }
 
 jerusalem_episcopal_see_orthodox = {
-    location = "jerusalem"
-    type = "episcopal_see"
+    location = jerusalem
+    type = episcopal_see
     importance = 5
-    religions = { "orthodox" "miaphysite" }
+    religions = { orthodox miaphysite }
 }
 
 alexandria_episcopal_see = {
-    location = "alexandria"
-    type = "episcopal_see"
+    location = alexandria
+    type = episcopal_see
     importance = 3
-    religions = { "orthodox" "miaphysite" }
+    religions = { orthodox miaphysite }
 }
 
 rome_episcopal_see = {
-    location = "aba"
-    type = "episcopal_see"
+    location = aba
+    type = episcopal_see
     importance = 3
-    religions = { "orthodox" "miaphysite" }
+    religions = { orthodox miaphysite }
 }
 
 mount_athos = {
-    location = "aba"
-    type = "orthodox_church_holy_site"
+    location = aba
+    type = orthodox_church_holy_site
     importance = 2
-    religions = "orthodox"
+    religions = orthodox
 }
 
 saint_katrine_monastery = {
-    location = "aba"
-    type = "orthodox_church_holy_site"
+    location = aba
+    type = orthodox_church_holy_site
     importance = 2
-    religions = "orthodox"
+    religions = orthodox
 }
 

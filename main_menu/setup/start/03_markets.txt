@@ -1,80 +1,22 @@
 market_manager = {
-	#europe
-
-	add_market = tbilisi
-
-	
-	#Africa
-	add_market = alexandria
-	add_market = kano
-
-	
-	#East Africa
-	
-	#Central Africa
-
-	
-	# Middle East
-	add_market = damascus
-	
-	# East Asia
-	# add_market = kamakura
-	# add_market = hakata
-	#add_market = souya
-	#add_market = dinghai
-	add_market = kashgar
-	add_market = lhasa
-	add_market = leh
-	#add_market = nurgan
-	#add_market = qiqihar
-	#add_market = ningguta
-
-
-	#South Asia 
-	
-	#India
-	add_market = chittagong
-	add_market = varanasi
-	
-	# Mesoamerica
-
-	# Aridoamerica
-	#add_market = batuco
-	#add_market = halona_idiwana
-	
-	# Central america
-
-	#Colombia
-
-	#Andes
-		
-	#Oceania
-
-	# Indochina
-
-
-	#Missisippian North america
-	#add_market = natchez
-	#add_market = coosa
-
-	#Tribal North america
-	#add_market = manhattan
-	#add_market = powhatan
-	#add_market = shawmut
-	#add_market = etiwan
-	#add_market = waawiiyaataanong
-	
-	#Important Markets not owned by Standard Tags
-	#Carib
-	#add_market = carucairi
-	#Canada
-	#add_market = hochelaga
-	#add_market = stadacona
-	#add_market = chignecto
-	#add_market = cape_spear
-	#add_market = baawitigong
-	#add_market = niagara
-	#add_market = waskaganish
-	
-	#Siberia
+	add_market = astakos
+	add_market = antigoneia
+	add_market = mazaka
+	add_market = ankyra
+	add_market = bambyce
+	add_market = roma
+	add_market = ilion
+	add_market = kios
+	add_market = kyzikos
+	add_market = samosata
+	add_market = seleucia_magna
+	add_market = zadrakarta
+	add_market = pushkalavati
+	add_market = sakala
+	add_market = pataliputra
+	add_market = miletos
+	add_market = priene
+	add_market = chalcedon
+	add_market = halikarnassos
+	add_market = arbela
 }

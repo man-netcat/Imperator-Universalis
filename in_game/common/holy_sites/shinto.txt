@@ -4,142 +4,142 @@
 # =========================================================== #
 
 ise_grand_shrine = {
-    location = "aba"
-    type = "shrine"
+    location = aba
+    type = shrine
     importance = 5
-    religions = "shinto"
+    religions = shinto
 }
 
 izumo_taisha = {
-    location = "aba"
-    type = "shrine"
+    location = aba
+    type = shrine
     importance = 5
-    religions = "shinto"
+    religions = shinto
 }
 
 mount_fuji = {
-    location = "aba"
-    type = "mountain"
+    location = aba
+    type = mountain
     importance = 5
-    religions = "shinto"
+    religions = shinto
 }
 
 mount_hiei = {
-    location = "aba"
-    type = "mountain"
+    location = aba
+    type = mountain
     importance = 5
-    religions = "shinto"
+    religions = shinto
 }
 
 mount_kouya = {
-    location = "aba"
-    type = "mountain"
+    location = aba
+    type = mountain
     importance = 4
-    religions = "shinto"
+    religions = shinto
 }
 
 kumano_sanzan = {
-    location = "aba"
-    type = "mountain"
+    location = aba
+    type = mountain
     importance = 4
-    religions = "shinto"
+    religions = shinto
 }
 
 nanto_shichi_daiji = {
-    location = "nara"
-    type = "temple"
+    location = nara
+    type = temple
     importance = 4
-    religions = "shinto"
+    religions = shinto
 }
 
 fushimi_inari_taisha = {
-    location = "aba"
-    type = "shrine"
+    location = aba
+    type = shrine
     importance = 3
-    religions = "shinto"
+    religions = shinto
 }
 
 kashima_shrine = {
-    location = "aba"
-    type = "shrine"
+    location = aba
+    type = shrine
     importance = 3
-    religions = "shinto"
+    religions = shinto
 }
 
 katori_shrine = {
-    location = "aba"
-    type = "shrine"
+    location = aba
+    type = shrine
     importance = 3
-    religions = "shinto"
+    religions = shinto
 }
 
 dewa_sanzan = {
-    location = "aba"
-    type = "mountain"
+    location = aba
+    type = mountain
     importance = 3
-    religions = "shinto"
+    religions = shinto
 }
 
 mount_misen = {
-    location = "aba"
-    type = "mountain"
+    location = aba
+    type = mountain
     importance = 2
-    religions = "shinto"
+    religions = shinto
 }
 
 mount_nantai = {
-    location = "aba"
-    type = "mountain"
+    location = aba
+    type = mountain
     importance = 2
-    religions = "shinto"
+    religions = shinto
 }
 
 mount_haku = {
-    location = "aba"
-    type = "mountain"
+    location = aba
+    type = mountain
     importance = 2
-    religions = "shinto"
+    religions = shinto
 }
 
 mount_tate = {
-    location = "aba"
-    type = "mountain"
+    location = aba
+    type = mountain
     importance = 2
-    religions = "shinto"
+    religions = shinto
 }
 
 mount_yoshino = {
-    location = "aba"
-    type = "mountain"
+    location = aba
+    type = mountain
     importance = 1
-    religions = "shinto"
+    religions = shinto
 }
 
 sumiyoshi_taisha = {
-    location = "aba"
-    type = "shrine"
+    location = aba
+    type = shrine
     importance = 1
-    religions = "shinto"
+    religions = shinto
 }
 
 usa_hachiman_jinguuji = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 1
-    religions = "shinto"
+    religions = shinto
 }
 
 shikoku_henro = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 1
-    religions = "shinto"
+    religions = shinto
 }
 
 enryaku_ji = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 1
-    religions = "shinto"
+    religions = shinto
 }
 

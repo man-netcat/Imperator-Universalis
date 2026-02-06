@@ -4,9 +4,9 @@
 # =========================================================== #
 
 mile_church = {
-    location = "aba"
-    type = "christian_holy_site"
+    location = aba
+    type = christian_holy_site
     importance = 3
-    religions = "bosnian_church"
+    religions = bosnian_church
 }
 

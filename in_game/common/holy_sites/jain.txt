@@ -4,93 +4,93 @@
 # =========================================================== #
 
 palitana_temples = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 5
-    religions = "jain"
+    religions = jain
 }
 
 shikharji = {
-    location = "aba"
-    type = "mountain"
+    location = aba
+    type = mountain
     importance = 5
-    religions = "jain"
+    religions = jain
 }
 
 mount_girnar = {
-    location = "aba"
-    type = "mountain"
+    location = aba
+    type = mountain
     importance = 4
-    religions = "jain"
+    religions = jain
 }
 
 sonagiri_temples = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 4
-    religions = "jain"
+    religions = jain
 }
 
 jal_mandir = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = "jain"
+    religions = jain
 }
 
 vidisha_temples = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = "jain"
+    religions = jain
 }
 
 humcha_temples = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "jain"
+    religions = jain
 }
 
 dilwara_temples = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "jain"
+    religions = jain
 }
 
 kesariyaji_tirth = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "jain"
+    religions = jain
 }
 
 shravanabelagola_holy_site = {
-    location = "aba"
-    type = "city"
+    location = aba
+    type = city
     importance = 1
-    religions = "jain"
+    religions = jain
 }
 
 kulpakji_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 1
-    religions = "jain"
+    religions = jain
 }
 
 shankhapur_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 1
-    religions = "jain"
+    religions = jain
 }
 
 muktagiri_temples = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 1
-    religions = "jain"
+    religions = jain
 }
 

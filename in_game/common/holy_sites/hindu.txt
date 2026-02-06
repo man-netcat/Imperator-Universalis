@@ -4,978 +4,978 @@
 # =========================================================== #
 
 varanasi_holy_city = {
-    location = "varanasi"
-    type = "city"
+    location = varanasi
+    type = city
     importance = 5
-    religions = "hindu"
+    religions = hindu
 }
 
 prayag_kumbh_mela = {
-    location = "aba"
-    type = "city"
+    location = aba
+    type = city
     importance = 4
-    religions = "hindu"
+    religions = hindu
 }
 
 haridwar_kumbh_mela = {
-    location = "aba"
-    type = "city"
+    location = aba
+    type = city
     importance = 4
-    religions = "hindu"
+    religions = hindu
 }
 
 nashik_trimbakeshwar_simhastha = {
-    location = "aba"
-    type = "city"
+    location = aba
+    type = city
     importance = 4
-    religions = "hindu"
+    religions = hindu
 }
 
 kanchipuram_holy_city = {
-    location = "aba"
-    type = "city"
+    location = aba
+    type = city
     importance = 4
-    religions = "hindu"
+    religions = hindu
 }
 
 ranganathaswamy_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 5
-    religions = "hindu"
-    god = "vishnu_god"
+    religions = hindu
+    god = vishnu_god
 }
 
 badrinath_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 5
-    religions = "hindu"
-    god = "vishnu_god"
+    religions = hindu
+    god = vishnu_god
 }
 
 matsya_narayana = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "matsya_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = matsya_avatar
 }
 
 shankhodara_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "matsya_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = matsya_avatar
 }
 
 kurmanathaswamy_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "kurma_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = kurma_avatar
 }
 
 kurma_varadaraja_swamy_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "kurma_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = kurma_avatar
 }
 
 amamangalam_maha_vishnu_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "kurma_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = kurma_avatar
 }
 
 varahaswamy_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 4
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "varaha_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = varaha_avatar
 }
 
 bhu_varaha_swamy_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 4
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "varaha_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = varaha_avatar
 }
 
 nithyakalyana_perumal_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "varaha_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = varaha_avatar
 }
 
 varaha_lakshmi_narasimha_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "varaha_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = varaha_avatar
 }
 
 varaha_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "varaha_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = varaha_avatar
 }
 
 panniyur_sri_varahamurthy = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "varaha_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = varaha_avatar
 }
 
 sreevaraham_lakshmi_varaha_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "varaha_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = varaha_avatar
 }
 
 ahobilam_holy_city = {
-    location = "aba"
-    type = "city"
+    location = aba
+    type = city
     importance = 4
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "narasimha_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = narasimha_avatar
 }
 
 lakshmi_narasimha_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 4
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "narasimha_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = narasimha_avatar
 }
 
 vedadri_narasimha_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "narasimha_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = narasimha_avatar
 }
 
 thirukkadigai = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "narasimha_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = narasimha_avatar
 }
 
 lakshminarasimha_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "narasimha_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = narasimha_avatar
 }
 
 narasimhaswamy_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "narasimha_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = narasimha_avatar
 }
 
 narasingam_yoga_narasimha_perumal_temple = {
-    location = "madurai"
-    type = "temple"
+    location = madurai
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "narasimha_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = narasimha_avatar
 }
 
 kattu_narasimhaperumal_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "narasimha_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = narasimha_avatar
 }
 
 thrikkakara_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "vamana_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = vamana_avatar
 }
 
 ulagalantha_perumal_temple = {
-    location = "tiruvannamalai"
-    type = "temple"
+    location = tiruvannamalai
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "vamana_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = vamana_avatar
 }
 
 vamana_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "vamana_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = vamana_avatar
 }
 
 anantheshwara_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "parashurama_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = parashurama_avatar
 }
 
 thiruvallam_sree_parasurama_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "parashurama_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = parashurama_avatar
 }
 
 parshuram_kund = {
-    location = "sadiya"
-    type = "shrine"
+    location = sadiya
+    type = shrine
     importance = 1
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "parashurama_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = parashurama_avatar
 }
 
 ram_janmabhoomi = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 4
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "rama_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = rama_avatar
 }
 
 kola_valvill_ramar_temple = {
-    location = "thanjavur"
-    type = "temple"
+    location = thanjavur
+    type = temple
     importance = 3
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "rama_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = rama_avatar
 }
 
 kothandaramaswamy_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "rama_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = rama_avatar
 }
 
 kalaram_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "rama_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = rama_avatar
 }
 
 kodandarama_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "rama_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = rama_avatar
 }
 
 ramchaura_mandir = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "rama_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = rama_avatar
 }
 
 vilwadrinatha_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 1
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "rama_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = rama_avatar
 }
 
 ramapuram_sree_rama_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 1
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "rama_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = rama_avatar
 }
 
 jagannath_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 5
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "krishna_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = krishna_avatar
 }
 
 dwarkadhish_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 5
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "krishna_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = krishna_avatar
 }
 
 krishna_janmasthan = {
-    location = "mathura"
-    type = "temple"
+    location = mathura
+    type = temple
     importance = 5
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "krishna_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = krishna_avatar
 }
 
 parthasarathy_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 4
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "krishna_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = krishna_avatar
 }
 
 guruvayur_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "krishna_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = krishna_avatar
 }
 
 radha_damodar_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "krishna_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = krishna_avatar
 }
 
 rajagopalaswamy_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "krishna_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = krishna_avatar
 }
 
 jyotisar = {
-    location = "aba"
-    type = "shrine"
+    location = aba
+    type = shrine
     importance = 3
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "krishna_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = krishna_avatar
 }
 
 trichambaram_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "krishna_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = krishna_avatar
 }
 
 udupi_sri_krishna_matha = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "krishna_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = krishna_avatar
 }
 
 aranmula_parthasarathy_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "krishna_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = krishna_avatar
 }
 
 pandava_thoothar_perumal_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "krishna_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = krishna_avatar
 }
 
 vithoba_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 1
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "krishna_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = krishna_avatar
 }
 
 thirukkavalampadi = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 1
-    religions = "hindu"
-    god = "vishnu_god"
-    avatar = "krishna_avatar"
+    religions = hindu
+    god = vishnu_god
+    avatar = krishna_avatar
 }
 
 bodh_gaya = {
-    location = "gaya"
-    type = "temple"
+    location = gaya
+    type = temple
     importance = 5
-    religions = { "hindu" "mahayana" "theravada" "tibetan_buddhism" }
-    god = "vishnu_god"
-    avatar = "buddha_avatar"
+    religions = { hindu mahayana theravada tibetan_buddhism }
+    god = vishnu_god
+    avatar = buddha_avatar
 }
 
 muktinath = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = { "hindu" "mahayana" "theravada" "tibetan_buddhism" }
-    god = "vishnu_god"
-    avatar = "buddha_avatar"
+    religions = { hindu mahayana theravada tibetan_buddhism }
+    god = vishnu_god
+    avatar = buddha_avatar
 }
 
 swayambhu = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = { "hindu" "mahayana" "theravada" "tibetan_buddhism" }
-    god = "vishnu_god"
-    avatar = "buddha_avatar"
+    religions = { hindu mahayana theravada tibetan_buddhism }
+    god = vishnu_god
+    avatar = buddha_avatar
 }
 
 ramanathaswamy_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 5
-    religions = "hindu"
-    god = "shiva_god"
+    religions = hindu
+    god = shiva_god
 }
 
 mahakaleshwar_jyotirlinga = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 5
-    religions = "hindu"
-    god = "shiva_god"
+    religions = hindu
+    god = shiva_god
 }
 
 deo_patan = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 5
-    religions = "hindu"
-    god = "shiva_god"
+    religions = hindu
+    god = shiva_god
 }
 
 mallikarjuna_temple = {
-    location = "srisailam"
-    type = "temple"
+    location = srisailam
+    type = temple
     importance = 4
-    religions = "hindu"
-    god = "shiva_god"
+    religions = hindu
+    god = shiva_god
 }
 
 nageshvara_jyotirlinga = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = "hindu"
-    god = "shiva_god"
+    religions = hindu
+    god = shiva_god
 }
 
 katas_raj_temples = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = "hindu"
-    god = "shiva_god"
+    religions = hindu
+    god = shiva_god
 }
 
 brihadisvara_temple = {
-    location = "thanjavur"
-    type = "temple"
+    location = thanjavur
+    type = temple
     importance = 3
-    religions = "hindu"
-    god = "shiva_god"
+    religions = hindu
+    god = shiva_god
 }
 
 mahadev_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "shiva_god"
+    religions = hindu
+    god = shiva_god
 }
 
 koneswaram_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "shiva_god"
+    religions = hindu
+    god = shiva_god
 }
 
 thommanon = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "shiva_god"
+    religions = hindu
+    god = shiva_god
 }
 
 kamakhya_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 5
-    religions = "hindu"
-    god = "shakti_god"
+    religions = hindu
+    god = shakti_god
 }
 
 vimala_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 5
-    religions = "hindu"
-    god = "shakti_god"
+    religions = hindu
+    god = shakti_god
 }
 
 shankari_devi_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 4
-    religions = "hindu"
-    god = "shakti_god"
+    religions = hindu
+    god = shakti_god
 }
 
 jogulamba_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 4
-    religions = "hindu"
-    god = "shakti_god"
+    religions = hindu
+    god = shakti_god
 }
 
 kukkuteswara_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = "hindu"
-    god = "shakti_god"
+    religions = hindu
+    god = shakti_god
 }
 
 biraja_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 4
-    religions = "hindu"
-    god = "shakti_god"
-    avatar = "durga_avatar"
+    religions = hindu
+    god = shakti_god
+    avatar = durga_avatar
 }
 
 bajreshwari_mata_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = "hindu"
-    god = "shakti_god"
-    avatar = "durga_avatar"
+    religions = hindu
+    god = shakti_god
+    avatar = durga_avatar
 }
 
 maa_dewri_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "shakti_god"
-    avatar = "durga_avatar"
+    religions = hindu
+    god = shakti_god
+    avatar = durga_avatar
 }
 
 mundeshwari_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "shakti_god"
-    avatar = "durga_avatar"
+    religions = hindu
+    god = shakti_god
+    avatar = durga_avatar
 }
 
 kalighat_kali_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 4
-    religions = "hindu"
-    god = "shakti_god"
-    avatar = "kali_avatar"
+    religions = hindu
+    god = shakti_god
+    avatar = kali_avatar
 }
 
 kalika_mata_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = "hindu"
-    god = "shakti_god"
-    avatar = "kali_avatar"
+    religions = hindu
+    god = shakti_god
+    avatar = kali_avatar
 }
 
 pathirakali_amman_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = "hindu"
-    god = "shakti_god"
-    avatar = "kali_avatar"
+    religions = hindu
+    god = shakti_god
+    avatar = kali_avatar
 }
 
 chausath_yogini_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "shakti_god"
-    avatar = "kali_avatar"
+    religions = hindu
+    god = shakti_god
+    avatar = kali_avatar
 }
 
 vishalakshi_temple = {
-    location = "varanasi"
-    type = "temple"
+    location = varanasi
+    type = temple
     importance = 5
-    religions = "hindu"
-    god = "shakti_god"
-    avatar = "parvati_avatar"
+    religions = hindu
+    god = shakti_god
+    avatar = parvati_avatar
 }
 
 meenakshi_temple = {
-    location = "madurai"
-    type = "temple"
+    location = madurai
+    type = temple
     importance = 4
-    religions = "hindu"
-    god = "shakti_god"
-    avatar = "parvati_avatar"
+    religions = hindu
+    god = shakti_god
+    avatar = parvati_avatar
 }
 
 arulmigu_koniamman_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = "hindu"
-    god = "shakti_god"
-    avatar = "parvati_avatar"
+    religions = hindu
+    god = shakti_god
+    avatar = parvati_avatar
 }
 
 mahalakshmi_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 5
-    religions = "hindu"
-    god = "shakti_god"
-    avatar = "lakshmi_avatar"
+    religions = hindu
+    god = shakti_god
+    avatar = lakshmi_avatar
 }
 
 lakshmi_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = "hindu"
-    god = "shakti_god"
-    avatar = "lakshmi_avatar"
+    religions = hindu
+    god = shakti_god
+    avatar = lakshmi_avatar
 }
 
 nachiyar_koil = {
-    location = "thanjavur"
-    type = "temple"
+    location = thanjavur
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "shakti_god"
-    avatar = "lakshmi_avatar"
+    religions = hindu
+    god = shakti_god
+    avatar = lakshmi_avatar
 }
 
 sharada_peeth = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 5
-    religions = "hindu"
-    god = "shakti_god"
-    avatar = "saraswati_avatar"
+    religions = hindu
+    god = shakti_god
+    avatar = saraswati_avatar
 }
 
 gnana_saraswati_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 4
-    religions = "hindu"
-    god = "shakti_god"
-    avatar = "saraswati_avatar"
+    religions = hindu
+    god = shakti_god
+    avatar = saraswati_avatar
 }
 
 sringeri_sharadamba_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "shakti_god"
-    avatar = "saraswati_avatar"
+    religions = hindu
+    god = shakti_god
+    avatar = saraswati_avatar
 }
 
 changu_narayan_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 1
-    religions = "hindu"
-    god = "shakti_god"
-    avatar = "chhinnamasta_avatar"
+    religions = hindu
+    god = shakti_god
+    avatar = chhinnamasta_avatar
 }
 
 chhinnamasta_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 1
-    religions = "hindu"
-    god = "shakti_god"
-    avatar = "chhinnamasta_avatar"
+    religions = hindu
+    god = shakti_god
+    avatar = chhinnamasta_avatar
 }
 
 chamundeshwari_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 5
-    religions = "hindu"
-    god = "shakti_god"
-    avatar = "chandi_avatar"
+    religions = hindu
+    god = shakti_god
+    avatar = chandi_avatar
 }
 
 kichakeshwari_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "shakti_god"
-    avatar = "chandi_avatar"
+    religions = hindu
+    god = shakti_god
+    avatar = chandi_avatar
 }
 
 kamakshi_amman_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 5
-    religions = "hindu"
-    god = "shakti_god"
-    avatar = "tripura_sundari_avatar"
+    religions = hindu
+    god = shakti_god
+    avatar = tripura_sundari_avatar
 }
 
 polali_rajarajeshwari_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 1
-    religions = "hindu"
-    god = "shakti_god"
-    avatar = "tripura_sundari_avatar"
+    religions = hindu
+    god = shakti_god
+    avatar = tripura_sundari_avatar
 }
 
 nainativu_nagapooshani_amman_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "shakti_god"
-    avatar = "bhuvaneshvari_avatar"
+    religions = hindu
+    god = shakti_god
+    avatar = bhuvaneshvari_avatar
 }
 
 tara_tarini_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 5
-    religions = "hindu"
-    god = "shakti_god"
-    avatar = "tara_avatar"
+    religions = hindu
+    god = shakti_god
+    avatar = tara_avatar
 }
 
 tarapith = {
-    location = "aba"
-    type = "shrine"
+    location = aba
+    type = shrine
     importance = 1
-    religions = "hindu"
-    god = "shakti_god"
-    avatar = "tara_avatar"
+    religions = hindu
+    god = shakti_god
+    avatar = tara_avatar
 }
 
 shri_mayureshwar_mandir = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 5
-    religions = "hindu"
-    god = "ganesha_god"
+    religions = hindu
+    god = ganesha_god
 }
 
 karpaka_vinayakar_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = "hindu"
-    god = "ganesha_god"
+    religions = hindu
+    god = ganesha_god
 }
 
 chintaman_ganesh_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = "hindu"
-    god = "ganesha_god"
+    religions = hindu
+    god = ganesha_god
 }
 
 shri_idagunji_maha_ganapati_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "ganesha_god"
+    religions = hindu
+    god = ganesha_god
 }
 
 mahavinayak_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "ganesha_god"
+    religions = hindu
+    god = ganesha_god
 }
 
 vinayaka_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "ganesha_god"
+    religions = hindu
+    god = ganesha_god
 }
 
 suryavinayak_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 1
-    religions = "hindu"
-    god = "ganesha_god"
+    religions = hindu
+    god = ganesha_god
 }
 
 arasavalli_sun_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 5
-    religions = "hindu"
-    god = "surya_god"
+    religions = hindu
+    god = surya_god
 }
 
 deo_surya_mandir = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 4
-    religions = "hindu"
-    god = "surya_god"
+    religions = hindu
+    god = surya_god
 }
 
 konark_sun_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = "hindu"
-    god = "surya_god"
+    religions = hindu
+    god = surya_god
 }
 
 suryanar_kovil = {
-    location = "thanjavur"
-    type = "temple"
+    location = thanjavur
+    type = temple
     importance = 3
-    religions = "hindu"
-    god = "surya_god"
+    religions = hindu
+    god = surya_god
 }
 
 martand_sun_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "hindu"
-    god = "surya_god"
+    religions = hindu
+    god = surya_god
 }
 
 katarmal = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 1
-    religions = "hindu"
-    god = "surya_god"
+    religions = hindu
+    god = surya_god
 }
 
 navlakha_temple = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 1
-    religions = "hindu"
-    god = "surya_god"
+    religions = hindu
+    god = surya_god
 }
 

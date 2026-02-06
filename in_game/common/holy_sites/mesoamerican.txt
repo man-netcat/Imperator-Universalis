@@ -4,23 +4,23 @@
 # =========================================================== #
 
 cholula_holy_city = {
-    location = "aba"
-    type = "city"
+    location = aba
+    type = city
     importance = 5
-    religions = { "mesoamerican" "nahuatl" }
+    religions = { mesoamerican nahuatl }
 }
 
 teotihuacan_holy_city = {
-    location = "aba"
-    type = "city"
+    location = aba
+    type = city
     importance = 3
-    religions = { "mesoamerican" "nahuatl" }
+    religions = { mesoamerican nahuatl }
 }
 
 tollan_holy_city = {
-    location = "aba"
-    type = "city"
+    location = aba
+    type = city
     importance = 3
-    religions = { "mesoamerican" "nahuatl" }
+    religions = { mesoamerican nahuatl }
 }
 

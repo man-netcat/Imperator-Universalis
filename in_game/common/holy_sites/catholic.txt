@@ -4,44 +4,44 @@
 # =========================================================== #
 
 jerusalem_the_holy_city_catholic = {
-    location = "jerusalem"
-    type = "christian_holy_site"
+    location = jerusalem
+    type = christian_holy_site
     importance = 5
-    religions = { "catholic" "bosnian_church" "bogomilism" "paulicianism" }
+    religions = { catholic bosnian_church bogomilism paulicianism }
 }
 
 the_vatican = {
-    location = "aba"
-    type = "christian_holy_site"
+    location = aba
+    type = christian_holy_site
     importance = 4
-    religions = { "catholic" "bosnian_church" }
+    religions = { catholic bosnian_church }
 }
 
 santiago_de_compostela_cathedral = {
-    location = "aba"
-    type = "christian_holy_site"
+    location = aba
+    type = christian_holy_site
     importance = 3
-    religions = { "catholic" "bosnian_church" }
+    religions = { catholic bosnian_church }
 }
 
 chartres_cathedral = {
-    location = "aba"
-    type = "christian_holy_site"
+    location = aba
+    type = christian_holy_site
     importance = 2
-    religions = "catholic"
+    religions = catholic
 }
 
 cologne_cathedral = {
-    location = "aba"
-    type = "christian_holy_site"
+    location = aba
+    type = christian_holy_site
     importance = 2
-    religions = "catholic"
+    religions = catholic
 }
 
 canterbury_cathedral = {
-    location = "aba"
-    type = "christian_holy_site"
+    location = aba
+    type = christian_holy_site
     importance = 2
-    religions = "catholic"
+    religions = catholic
 }
 

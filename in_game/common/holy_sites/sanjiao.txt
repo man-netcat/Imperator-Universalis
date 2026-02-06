@@ -4,9 +4,9 @@
 # =========================================================== #
 
 temple_of_confucius = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = "sanjiao"
+    religions = sanjiao
 }
 

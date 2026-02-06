@@ -4,30 +4,30 @@
 # =========================================================== #
 
 anuradhapura_maha_viharaya = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 4
-    religions = "theravada"
+    religions = theravada
 }
 
 angkor_wat = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 3
-    religions = "theravada"
+    religions = theravada
 }
 
 pagan_holy_city = {
-    location = "aba"
-    type = "city"
+    location = aba
+    type = city
     importance = 3
-    religions = "theravada"
+    religions = theravada
 }
 
 shwedagon_pagoda = {
-    location = "aba"
-    type = "temple"
+    location = aba
+    type = temple
     importance = 2
-    religions = "theravada"
+    religions = theravada
 }
 

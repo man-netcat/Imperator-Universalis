@@ -12,6 +12,7 @@ from .paths import (
     ir_game,
     ir_localisation,
     ir_map_data,
+    ir_default,
     iu_localisation,
     iu_map_data,
     iu_setup_start,
@@ -569,6 +570,84 @@ def build_default_map(id_to_key: dict[int, str]):
                     buffer.extend([t for t in tokens if t not in ("{", "}")])
 
     return data
+
+
+def _parse_ir_road_pairs() -> list[tuple[int, int]]:
+    in_block = False
+    pairs: list[tuple[int, int]] = []
+    for line in ir_default.read_text(encoding="utf-8-sig").splitlines():
+        stripped = line.strip()
+        if not in_block:
+            if stripped.startswith("road_network") and "{" in stripped:
+                in_block = True
+            continue
+        if stripped.startswith("}"):
+            break
+        line_no_comment = stripped.split("#", 1)[0].strip()
+        if not line_no_comment or "=" not in line_no_comment:
+            continue
+        left, right = [s.strip() for s in line_no_comment.split("=", 1)]
+        pairs.append((int(left), int(right.split()[0])))
+    return pairs
+
+
+def _ir_capital_ids() -> list[int]:
+    countries = parse_tree(ir_default)["country"]["countries"]
+    return [int(data["capital"]) for data in countries.values() if data["capital"] is not None]
+
+
+def _non_land_keys(default_map: dict) -> set[str]:
+    excluded = set()
+    for key in (
+        "sea_zones",
+        "lakes",
+        "river_provinces",
+        "impassable_terrain",
+        "uninhabitable",
+        "wasteland",
+        "non_ownable",
+    ):
+        excluded.update(default_map.get(key, set()))
+    return excluded
+
+
+def _dedupe(items: list) -> list:
+    return list(dict.fromkeys(items))
+
+
+def _build_market_keys(
+    id_to_key: dict[int, str],
+    location_keys: set[str],
+    default_map: dict,
+    max_markets: int = 20,
+) -> list[str]:
+    excluded = _non_land_keys(default_map)
+    road_pairs = _parse_ir_road_pairs()
+    degree: dict[int, int] = defaultdict(int)
+    for a_id, b_id in road_pairs:
+        degree[a_id] += 1
+        degree[b_id] += 1
+
+    def valid_id(pid: int) -> bool:
+        key = id_to_key[pid]
+        return key in location_keys and key not in excluded
+
+    capitals = [pid for pid in _ir_capital_ids() if valid_id(pid)]
+    capitals = sorted(_dedupe(capitals), key=lambda pid: degree.get(pid, 0), reverse=True)
+
+    candidates = sorted(degree.keys(), key=lambda pid: degree.get(pid, 0), reverse=True)
+
+    markets: list[str] = []
+    for pid in capitals + candidates:
+        if len(markets) >= max_markets:
+            break
+        if not valid_id(pid):
+            continue
+        key = id_to_key[pid]
+        if key in markets:
+            continue
+        markets.append(key)
+    return markets
 
 
 def _get_tree_value(data, key: str):
@@ -1220,45 +1299,37 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
         encoding="utf-8",
     )
 
-    # --- Filter markets (locations) ---
-    markets_src = eu5_game / "main_menu" / "setup" / "start" / "03_markets.txt"
+    # --- Build markets from IR roads + capitals ---
     markets_dst = mod_root / "main_menu" / "setup" / "start" / "03_markets.txt"
-    if markets_src.exists():
-        lines = []
-        for line in markets_src.read_text(encoding="utf-8-sig").splitlines():
-            stripped = line.strip()
-            if stripped.startswith("add_market") and "=" in stripped:
-                _, value = stripped.split("=", 1)
-                key = value.strip().split()[0]
-                if key not in location_keys:
-                    continue
-            lines.append(line)
-        markets_dst.parent.mkdir(parents=True, exist_ok=True)
-        markets_dst.write_text("\n".join(lines) + "\n", encoding="utf-8")
-        print_written("file", markets_dst)
+    markets = _build_market_keys(id_to_key, location_keys, default_map, max_markets=20)
+    markets_dst.parent.mkdir(parents=True, exist_ok=True)
+    markets_dst.write_text(
+        "market_manager = {\n"
+        + "\n".join(f"\tadd_market = {key}" for key in markets)
+        + "\n}\n",
+        encoding="utf-8",
+    )
+    print_written("file", markets_dst)
 
-    # --- Filter roads (location pairs) ---
-    roads_src = eu5_game / "main_menu" / "setup" / "start" / "09_roads.txt"
+    # --- Build roads from IR road network ---
     roads_dst = mod_root / "main_menu" / "setup" / "start" / "09_roads.txt"
-    if roads_src.exists():
-        road_lines = []
-        for line in roads_src.read_text(encoding="utf-8-sig").splitlines():
-            stripped = line.strip()
-            if not stripped or stripped.startswith("#"):
-                continue
-            if "=" not in stripped:
-                continue
-            left, right = [s.strip() for s in stripped.split("=", 1)]
-            right_key = right.split()[0] if right else ""
-            if left and right_key and left in location_keys and right_key in location_keys:
-                road_lines.append(f"\t{left} = {right_key}")
+    excluded = _non_land_keys(default_map)
+    road_lines = []
+    for a_id, b_id in _parse_ir_road_pairs():
+        a_key = id_to_key[a_id]
+        b_key = id_to_key[b_id]
+        if a_key not in location_keys or b_key not in location_keys:
+            continue
+        if a_key in excluded or b_key in excluded:
+            continue
+        road_lines.append(f"\t{a_key} = {b_key}")
 
-        roads_dst.parent.mkdir(parents=True, exist_ok=True)
-        roads_dst.write_text(
-            "road_network = {\n" + "\n".join(road_lines) + "\n}\n",
-            encoding="utf-8",
-        )
-        print_written("file", roads_dst)
+    roads_dst.parent.mkdir(parents=True, exist_ok=True)
+    roads_dst.write_text(
+        "road_network = {\n" + "\n".join(road_lines) + "\n}\n",
+        encoding="utf-8",
+    )
+    print_written("file", roads_dst)
 
     # --- Filter exploration preferences (areas/regions) ---
     explor_src = eu5_game / "main_menu" / "setup" / "start" / "17_exploration_preferences.txt"
