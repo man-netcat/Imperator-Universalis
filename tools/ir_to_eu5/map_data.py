@@ -22,7 +22,6 @@ from .paths import (
 )
 from .write_data import write_blocks, print_written
 
-### THIS FILE IS EXPERIMENTAL AND CURRENTLY NOT USED ###
 # ---------------- Static Mappings ---------------- #
 
 continent_map = {"continent": ["europe", "asia", "africa"]}
@@ -981,13 +980,12 @@ def write_default_map(ir_default_map_data: dict):
     init_lines = [
         'provinces = "locations.png"',
         'rivers = "rivers.png"',
-        'topology = "heightmap.heightmap"',
         'adjacencies = "adjacencies.csv"',
         'setup = "definitions.txt"',
         'ports = "ports.csv"',
         'location_templates = "location_templates.txt"',
         "equator_y = 3340",
-        "wrap_x = yes",
+        "wrap_x = no",
     ]
 
     with default_map.open("w", encoding="utf-8") as f:
@@ -1566,7 +1564,6 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     map_files = {
         ir_map_data / "provinces.png": iu_map_data / "locations.png",
         ir_map_data / "rivers.png": iu_map_data / "rivers.png",
-        ir_map_data / "heightmap.heightmap": iu_map_data / "heightmap.heightmap",
     }
     for src, dst in map_files.items():
         if not src.exists():

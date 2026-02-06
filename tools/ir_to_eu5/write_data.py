@@ -221,6 +221,53 @@ def _map_religion(raw_religion: str | None, religion_tags: set[str]) -> str | No
     return mapped
 
 
+def _build_country_rank_map(
+    ir_country_locations: dict[str, list[int]],
+    country_data: list[dict] | None = None,
+) -> dict[str, str]:
+    sizes = {tag: len(locs) for tag, locs in ir_country_locations.items()}
+    if not sizes:
+        return {}
+
+    county_max = 3
+    duchy_max = 14
+    kingdom_max = 299
+
+    government_by_tag: dict[str, str] = {}
+    if country_data:
+        for country in country_data:
+            tag = country.get("tag")
+            if tag:
+                government_by_tag[tag] = country.get("government")
+
+    monarchies = {
+        "aristocratic_monarchy",
+        "despotic_monarchy",
+        "stratocratic_monarchy",
+        "theocratic_monarchy",
+    }
+    tribal_monarchies = {"tribal_kingdom"}
+
+    rank_map: dict[str, str] = {}
+    for tag, size in sizes.items():
+        if size <= county_max:
+            rank = "rank_county"
+        elif size <= duchy_max:
+            rank = "rank_duchy"
+        elif size <= kingdom_max:
+            rank = "rank_kingdom"
+        else:
+            rank = "rank_empire"
+        ir_gov = government_by_tag.get(tag)
+        if ir_gov in monarchies or ir_gov in tribal_monarchies:
+            if rank in ("rank_county", "rank_duchy"):
+                rank = "rank_kingdom"
+
+        rank_map[tag] = rank
+
+    return rank_map
+
+
 def write_culture_group_data(culture_data: list):
     blocks = [(culture_group["tag"], []) for culture_group in culture_data]
     out_path = iu_culture_groups / f"ir_culture_groups.txt"
@@ -890,6 +937,12 @@ def write_10_countries(
     blocks = []
     comment_tags = set()
 
+    rank_map = (
+        _build_country_rank_map(ir_country_locations, country_data)
+        if ir_country_locations is not None
+        else {}
+    )
+
     culture_to_group = {}
     if culture_data:
         for group in culture_data:
@@ -1037,6 +1090,8 @@ def write_10_countries(
 
         # --- simple defaults ---
         merged.setdefault("country_rank", "rank_county")
+        if rank_map:
+            merged["country_rank"] = rank_map.get(tag, merged["country_rank"])
         merged.setdefault("capital", "REPLACE_ME")
 
         # --- apply IR capital if available ---

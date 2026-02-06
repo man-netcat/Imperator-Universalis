@@ -1,12 +1,11 @@
 provinces = "locations.png"
 rivers = "rivers.png"
-topology = "heightmap.heightmap"
 adjacencies = "adjacencies.csv"
 setup = "definitions.txt"
 ports = "ports.csv"
 location_templates = "location_templates.txt"
 equator_y = 3340
-wrap_x = yes
+wrap_x = no
 
 sea_zones = {
     bosporus_cimmerius

@@ -40,7 +40,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_aristocratic_republic"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = roma
         }
         SAM = {
@@ -63,7 +63,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_aristocratic_republic"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = bovianum
         }
         MRS = {
@@ -82,7 +82,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = aufidena
         }
         SIO = {
@@ -141,7 +141,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = aternum
         }
         ETR = {
@@ -168,7 +168,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = vetulonia
         }
         FNT = {
@@ -189,7 +189,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = luca
         }
         SAB = {
@@ -210,7 +210,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = interamnia
         }
         UMB = {
@@ -233,7 +233,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_aristocratic_republic"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = plestia
         }
         APU = {
@@ -254,7 +254,7 @@ countries = {
             court_language = albanian_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = barium
         }
         MSP = {
@@ -273,7 +273,7 @@ countries = {
             court_language = albanian_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = menturia
         }
         LCA = {
@@ -294,7 +294,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = grumentum
         }
         BRT = {
@@ -313,7 +313,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = consentia
         }
         ANO = {
@@ -351,7 +351,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = sena_gallica
         }
         HPO = {
@@ -389,7 +389,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = album_intimilium
         }
         IGN = {
@@ -408,7 +408,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = savo
         }
         GUN = {
@@ -429,7 +429,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = portus_veneris
         }
         EPA = {
@@ -450,7 +450,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = libarna
         }
         TAU = {
@@ -473,7 +473,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = taurasia
         }
         INS = {
@@ -496,7 +496,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = mediolanum_1
         }
         CNM = {
@@ -515,7 +515,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = verona
         }
         BOI = {
@@ -536,7 +536,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = bononia
         }
         LGN = {
@@ -559,7 +559,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = ravenna
         }
         VNT = {
@@ -580,7 +580,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = altinum
         }
         HIS = {
@@ -599,7 +599,7 @@ countries = {
             court_language = albanian_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = parentium
         }
         KRN = {
@@ -622,7 +622,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = carnium
         }
         RAE = {
@@ -645,7 +645,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = sublavione
         }
         BRE = {
@@ -664,7 +664,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = aguntum
         }
         MET = {
@@ -816,7 +816,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = buca
         }
         PEL = {
@@ -835,7 +835,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = corfinium
         }
         SCU = {
@@ -854,7 +854,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = henna
         }
         UTC = {
@@ -970,7 +970,7 @@ countries = {
             court_language = aramaic_language
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = tacape
         }
         TRP = {
@@ -991,7 +991,7 @@ countries = {
             court_language = aramaic_language
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = leptis_magna
         }
         IOL = {
@@ -1092,7 +1092,7 @@ countries = {
             court_language = aramaic_language
             include = "expl_imperator_rome"
             include = "ir_aristocratic_republic"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = carthago
         }
         MAU = {
@@ -1117,7 +1117,7 @@ countries = {
             court_language = tamazight_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = volubilis
         }
         MSS = {
@@ -1144,7 +1144,7 @@ countries = {
             court_language = tamazight_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = siga
         }
         MSY = {
@@ -1175,7 +1175,7 @@ countries = {
             court_language = tamazight_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = cirta
         }
         MSL = {
@@ -1202,7 +1202,7 @@ countries = {
             court_language = tamazight_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = thala_musulamia
         }
         ACR = {
@@ -1242,7 +1242,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = syracusae
         }
         DOD = {
@@ -1263,7 +1263,7 @@ countries = {
             court_language = coptic_language
             include = "expl_imperator_rome"
             include = "ir_theocratic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = syene
         }
         EGY = {
@@ -1320,7 +1320,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = alexandria
         }
         CYR = {
@@ -1345,7 +1345,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = kyrene
         }
         MAS = {
@@ -1366,7 +1366,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = massalia
         }
         HMK = {
@@ -1406,7 +1406,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = taexali
         }
         CAL = {
@@ -1427,7 +1427,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = caledonii
         }
         VTD = {
@@ -1448,7 +1448,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = otadini
         }
         DNN = {
@@ -1469,7 +1469,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = damnonii
         }
         ULT = {
@@ -1488,7 +1488,7 @@ countries = {
             court_language = gaelic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = voluntia_orientalis
         }
         CAT = {
@@ -1507,7 +1507,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = durovernum
         }
         DUR = {
@@ -1528,7 +1528,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = vindocladia
         }
         PAS = {
@@ -1549,7 +1549,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = eboracum
         }
         DUM = {
@@ -1568,7 +1568,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = isca_dumnoniorum
         }
         ICE = {
@@ -1587,7 +1587,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = venta_icenorum
         }
         SIR = {
@@ -1606,7 +1606,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = burrium
         }
         DEM = {
@@ -1625,7 +1625,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = dolaucothi
         }
         COI = {
@@ -1648,7 +1648,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = ratae
         }
         DOB = {
@@ -1675,7 +1675,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = corinium
         }
         COV = {
@@ -1698,7 +1698,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = viroconium
         }
         ORD = {
@@ -1719,7 +1719,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = levobrinta
         }
         DEC = {
@@ -1738,7 +1738,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = canovium
         }
         BRI = {
@@ -1761,7 +1761,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = isurium
         }
         CAV = {
@@ -1780,7 +1780,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = gabrosentum
         }
         TRI = {
@@ -1801,7 +1801,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = camulodunum
         }
         BLD = {
@@ -1820,7 +1820,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_federation"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = palma
         }
         AMC = {
@@ -1839,7 +1839,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = argentiolum
         }
         BDU = {
@@ -1858,7 +1858,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = asturicia
         }
         GGR = {
@@ -1879,7 +1879,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = nemetobriga
         }
         LCN = {
@@ -1902,7 +1902,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = lancia
         }
         LGO = {
@@ -1921,7 +1921,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = flavionavia
         }
         PSC = {
@@ -1940,7 +1940,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = paesicia
         }
         SLI = {
@@ -1959,7 +1959,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = lucus_asturum
         }
         SPT = {
@@ -1978,7 +1978,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = bergidum_flavium
         }
         TBU = {
@@ -1997,7 +1997,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = uttaris
         }
         ZLA = {
@@ -2016,7 +2016,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = zoelarum
         }
         AUI = {
@@ -2039,7 +2039,7 @@ countries = {
             court_language = basque_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = auso
         }
         AUG = {
@@ -2058,7 +2058,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = vindeleia
         }
         BAI = {
@@ -2077,7 +2077,7 @@ countries = {
             court_language = basque_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = basti
         }
         EBI = {
@@ -2100,7 +2100,7 @@ countries = {
             court_language = basque_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = ebura
         }
         MTS = {
@@ -2119,7 +2119,7 @@ countries = {
             court_language = basque_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = mentesa
         }
         GRM = {
@@ -2142,7 +2142,7 @@ countries = {
             court_language = basque_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = oretum
         }
         ORT = {
@@ -2165,7 +2165,7 @@ countries = {
             court_language = basque_language
             include = "expl_imperator_rome"
             include = "ir_tribal_federation"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = castulo
         }
         AEB = {
@@ -2186,7 +2186,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = aquae_flaviae
         }
         ABO = {
@@ -2205,7 +2205,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = varina_marinia
         }
         ARR = {
@@ -2224,7 +2224,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = arronia
         }
         BED = {
@@ -2245,7 +2245,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = baedia
         }
         BAN = {
@@ -2264,7 +2264,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = vicus_vagornicensis
         }
         BRC = {
@@ -2283,7 +2283,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = bracara_augusta
         }
         CLD = {
@@ -2302,7 +2302,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = aquae_originae
         }
         COP = {
@@ -2321,7 +2321,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = caranicum
         }
         GRV = {
@@ -2340,7 +2340,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = ad_duos_pontes
         }
         INT = {
@@ -2359,7 +2359,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = castellum_meidunium
         }
         LUN = {
@@ -2378,7 +2378,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = limia
         }
         NRI = {
@@ -2397,7 +2397,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = artabron_limen
         }
         SUR = {
@@ -2418,7 +2418,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = lucus
         }
         SLN = {
@@ -2437,7 +2437,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = assegonia
         }
         TMG = {
@@ -2456,7 +2456,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = forum_limicorum
         }
         VRR = {
@@ -2475,7 +2475,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = varrinia
         }
         ORM = {
@@ -2494,7 +2494,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = pallontion
         }
         AVG = {
@@ -2513,7 +2513,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = caiellum
         }
         COC = {
@@ -2532,7 +2532,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = brigensium
         }
         CNI = {
@@ -2551,7 +2551,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = ouxama_barka
         }
         BLN = {
@@ -2572,7 +2572,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = aracillum
         }
         MRC = {
@@ -2591,7 +2591,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = bravum
         }
         TMC = {
@@ -2610,7 +2610,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = segisama_iulia
         }
         VDI = {
@@ -2629,7 +2629,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = camarica
         }
         CRI = {
@@ -2648,7 +2648,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = veleia
         }
         VAD = {
@@ -2667,7 +2667,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = aracaeli
         }
         CNT = {
@@ -2688,7 +2688,7 @@ countries = {
             court_language = basque_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = ad_aras
         }
         ICV = {
@@ -2709,7 +2709,7 @@ countries = {
             court_language = basque_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = dertosa
         }
         ILG = {
@@ -2728,7 +2728,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = ilerda
         }
         IDK = {
@@ -2749,7 +2749,7 @@ countries = {
             court_language = basque_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = iuncaria
         }
         CSS = {
@@ -2768,7 +2768,7 @@ countries = {
             court_language = basque_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = tarraco
         }
         TUR = {
@@ -2793,7 +2793,7 @@ countries = {
             court_language = basque_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = ocuri
         }
         VSC = {
@@ -2812,7 +2812,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = calagurris_iulia
         }
         EPO = {
@@ -2854,7 +2854,7 @@ countries = {
             court_language = basque_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = tartessos
         }
         GAD = {
@@ -2913,7 +2913,7 @@ countries = {
             court_language = basque_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = mastia
         }
         SGS = {
@@ -2932,7 +2932,7 @@ countries = {
             court_language = basque_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = saguntum
         }
         BOA = {
@@ -2955,7 +2955,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = boioa
         }
         ABC = {
@@ -2974,7 +2974,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = griselica
         }
         DCA = {
@@ -2993,7 +2993,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = matavo
         }
         OXB = {
@@ -3012,7 +3012,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = agathom
         }
         SLV = {
@@ -3033,7 +3033,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = verunia
         }
         CTR = {
@@ -3054,7 +3054,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = eburodunum
         }
         VOC = {
@@ -3075,7 +3075,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = vasio
         }
         HVI = {
@@ -3096,7 +3096,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = alba_helviorum
         }
         ARC = {
@@ -3117,7 +3117,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = nemausus
         }
         TCT = {
@@ -3138,7 +3138,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = tolosa
         }
         SRB = {
@@ -3159,7 +3159,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = baeterrae
         }
         CNS = {
@@ -3180,7 +3180,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = consoranni
         }
         RUT = {
@@ -3201,7 +3201,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = cebennia
         }
         ALL = {
@@ -3222,7 +3222,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = vienna
         }
         SGL = {
@@ -3243,7 +3243,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = seguslavorum
         }
         AVN = {
@@ -3266,7 +3266,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_federation"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = ricomagus
         }
         NTB = {
@@ -3289,7 +3289,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = aginnum
         }
         BIG = {
@@ -3308,7 +3308,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = lugdunum_convenarum
         }
         ASC = {
@@ -3327,7 +3327,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = elimberrum
         }
         TRB = {
@@ -3348,7 +3348,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = aquae_tarbellicae
         }
         SBZ = {
@@ -3367,7 +3367,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = novum_oppidum
         }
         VCT = {
@@ -3388,7 +3388,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = cossium
         }
         CCS = {
@@ -3407,7 +3407,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = telonnum
         }
         BTU = {
@@ -3426,7 +3426,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = akroterion
         }
         TRS = {
@@ -3447,7 +3447,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = atura
         }
         PTC = {
@@ -3472,7 +3472,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = vesunna
         }
         LMV = {
@@ -3497,7 +3497,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = durotincum
         }
         SNT = {
@@ -3518,7 +3518,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = novioregum_santonum
         }
         CUT = {
@@ -3539,7 +3539,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = cularo
         }
         SLS = {
@@ -3560,7 +3560,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = salassia
         }
         LPO = {
@@ -3581,7 +3581,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = clavenna
         }
         TIG = {
@@ -3600,7 +3600,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = vitudurum
         }
         TOU = {
@@ -3619,7 +3619,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = vindonissa
         }
         VRB = {
@@ -3638,7 +3638,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = lausonna
         }
         BRG = {
@@ -3659,7 +3659,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = brigantium
         }
         ESO = {
@@ -3680,7 +3680,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = cambodunum
         }
         VNN = {
@@ -3699,7 +3699,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = damasia
         }
         CTN = {
@@ -3720,7 +3720,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = ambrae
         }
         TLG = {
@@ -3739,7 +3739,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = bragodurum
         }
         RAU = {
@@ -3758,7 +3758,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = rauracia
         }
         LTG = {
@@ -3781,7 +3781,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = viana
         }
         SVC = {
@@ -3800,7 +3800,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = petrensibus
         }
         BGT = {
@@ -3825,7 +3825,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = avaricum
         }
         TRO = {
@@ -3846,7 +3846,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = caesarodunum
         }
         ADC = {
@@ -3867,7 +3867,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = andecamulum
         }
         PCS = {
@@ -3888,7 +3888,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = limonum
         }
         NMN = {
@@ -3909,7 +3909,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = conbaristum
         }
         CRN = {
@@ -3930,7 +3930,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = autricum
         }
         CMI = {
@@ -3953,7 +3953,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = vindinum
         }
         VTN = {
@@ -3974,7 +3974,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = sulis
         }
         CIO = {
@@ -3993,7 +3993,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = coriosolitum
         }
         OSM = {
@@ -4012,7 +4012,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = vorgium
         }
         RDO = {
@@ -4035,7 +4035,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = condate_redonum
         }
         DBL = {
@@ -4054,7 +4054,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = diablintum
         }
         EBV = {
@@ -4075,7 +4075,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = aulercorum
         }
         ESV = {
@@ -4096,7 +4096,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = augustodurum
         }
         LXV = {
@@ -4115,7 +4115,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = lexoviorum
         }
         VCL = {
@@ -4136,7 +4136,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = rotomagus
         }
         VNL = {
@@ -4155,7 +4155,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = crouciaconnum
         }
         AMB = {
@@ -4174,7 +4174,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = isarnodurum
         }
         SQI = {
@@ -4195,7 +4195,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = vesontio
         }
         AED = {
@@ -4220,7 +4220,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = augustodunum
         }
         LNG = {
@@ -4243,7 +4243,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = andematunnum
         }
         MDB = {
@@ -4264,7 +4264,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = alesia
         }
         SNN = {
@@ -4289,7 +4289,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = agedincum_0
         }
         TRC = {
@@ -4312,7 +4312,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = augustobona
         }
         PRS = {
@@ -4331,7 +4331,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = lutetia
         }
         CTL = {
@@ -4352,7 +4352,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = durocatalaunum
         }
         TBC = {
@@ -4371,7 +4371,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = brocomagus
         }
         LCI = {
@@ -4392,7 +4392,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = tullum
         }
         MDM = {
@@ -4413,7 +4413,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = divodurum
         }
         NMI = {
@@ -4436,7 +4436,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = rouphiniana
         }
         TVI = {
@@ -4459,7 +4459,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = treveria
         }
         ADT = {
@@ -4480,7 +4480,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = momalle
         }
         CGN = {
@@ -4499,7 +4499,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = asciburgium
         }
         EBS = {
@@ -4520,7 +4520,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = teudurum
         }
         MNP = {
@@ -4545,7 +4545,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = castellum
         }
         CLT = {
@@ -4564,7 +4564,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = galetia_occidentalis
         }
         ABM = {
@@ -4583,7 +4583,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = samarobriva
         }
         MRN = {
@@ -4604,7 +4604,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = tarvenna
         }
         SSS = {
@@ -4627,7 +4627,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = seussonia
         }
         BLV = {
@@ -4646,7 +4646,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = caesaromagus
         }
         VMD = {
@@ -4667,7 +4667,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = viromanduorum
         }
         NRV = {
@@ -4692,7 +4692,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = bagacum
         }
         RMI = {
@@ -4715,7 +4715,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = durocortorum
         }
         PAE = {
@@ -4736,7 +4736,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = aravorum
         }
         TDT = {
@@ -4755,7 +4755,7 @@ countries = {
             court_language = basque_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = conimbriga
         }
         EBL = {
@@ -4774,7 +4774,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = castra_cecilia
         }
         TPL = {
@@ -4793,7 +4793,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = tongorigum
         }
         IGD = {
@@ -4814,7 +4814,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = capera
         }
         LCC = {
@@ -4833,7 +4833,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = sentice
         }
         AVA = {
@@ -4852,7 +4852,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = ocelum
         }
         TLS = {
@@ -4873,7 +4873,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = sellium
         }
         SFI = {
@@ -4894,7 +4894,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = caetobriga
         }
         CMS = {
@@ -4913,7 +4913,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = metallum_vipescense
         }
         CLC = {
@@ -4936,7 +4936,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = ebora
         }
         CNU = {
@@ -4955,7 +4955,7 @@ countries = {
             court_language = basque_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = couneia
         }
         TDL = {
@@ -4980,7 +4980,7 @@ countries = {
             court_language = basque_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = iporca
         }
         BDL = {
@@ -4999,7 +4999,7 @@ countries = {
             court_language = basque_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = varna
         }
         TDI = {
@@ -5020,7 +5020,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = nova_augusta
         }
         VCI = {
@@ -5041,7 +5041,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = intercatia
         }
         AVC = {
@@ -5062,7 +5062,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = voluca
         }
         BLT = {
@@ -5083,7 +5083,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = bletsima
         }
         CLU = {
@@ -5104,7 +5104,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = avila
         }
         CRE = {
@@ -5123,7 +5123,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = vettonia_inferioris
         }
         CLO = {
@@ -5142,7 +5142,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = bocouriqua
         }
         LSN = {
@@ -5161,7 +5161,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = salduba
         }
         BLL = {
@@ -5180,7 +5180,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = segeda
         }
         BOL = {
@@ -5201,7 +5201,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = lobeton
         }
         OLC = {
@@ -5220,7 +5220,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = ocules
         }
         TTH = {
@@ -5239,7 +5239,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = segontia
         }
         LBT = {
@@ -5258,7 +5258,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = pons_rugio
         }
         DNQ = {
@@ -5277,7 +5277,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = segovia
         }
         MOC = {
@@ -5296,7 +5296,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = miaccum
         }
         AEL = {
@@ -5315,7 +5315,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = mantua_carpetania
         }
         TRQ = {
@@ -5334,7 +5334,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = titulcia
         }
         DOA = {
@@ -5355,7 +5355,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = toletum
         }
         SLC = {
@@ -5376,7 +5376,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = solicia_carpetania
         }
         SDT = {
@@ -5395,7 +5395,7 @@ countries = {
             court_language = basque_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = sedetania
         }
         EDT = {
@@ -5414,7 +5414,7 @@ countries = {
             court_language = basque_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = edeta
         }
         DEI = {
@@ -5437,7 +5437,7 @@ countries = {
             court_language = basque_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = elotana
         }
         DIT = {
@@ -5460,7 +5460,7 @@ countries = {
             court_language = albanian_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = senia
         }
         LBN = {
@@ -5479,7 +5479,7 @@ countries = {
             court_language = albanian_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = ainona
         }
         DLM = {
@@ -5502,7 +5502,7 @@ countries = {
             court_language = albanian_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = delminion
         }
         PII = {
@@ -5521,7 +5521,7 @@ countries = {
             court_language = albanian_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = dilenton
         }
         DRI = {
@@ -5540,7 +5540,7 @@ countries = {
             court_language = albanian_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = salthoua
         }
         CAA = {
@@ -5559,7 +5559,7 @@ countries = {
             court_language = albanian_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = andautonia
         }
         LTB = {
@@ -5582,7 +5582,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = latobicorum
         }
         ABI = {
@@ -5603,7 +5603,7 @@ countries = {
             court_language = albanian_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = askribion
         }
         CVI = {
@@ -5624,7 +5624,7 @@ countries = {
             court_language = albanian_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = ad_picarias
         }
         DNT = {
@@ -5647,7 +5647,7 @@ countries = {
             court_language = albanian_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = splonum
         }
         BCI = {
@@ -5668,7 +5668,7 @@ countries = {
             court_language = albanian_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = salinae
         }
         DUI = {
@@ -5689,7 +5689,7 @@ countries = {
             court_language = albanian_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = servitium
         }
         AMI = {
@@ -5708,7 +5708,7 @@ countries = {
             court_language = albanian_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = risetia
         }
         OXU = {
@@ -5729,7 +5729,7 @@ countries = {
             court_language = albanian_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = pecina
         }
         SCD = {
@@ -5752,7 +5752,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = singidunum
         }
         DND = {
@@ -5773,7 +5773,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = banneia
         }
         OTN = {
@@ -5800,7 +5800,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = limusa
         }
         HCN = {
@@ -5821,7 +5821,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = alisca
         }
         EVS = {
@@ -5844,7 +5844,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = aquincum
         }
         TLN = {
@@ -5865,7 +5865,7 @@ countries = {
             court_language = albanian_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = epidamnos
         }
         TLT = {
@@ -5888,7 +5888,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = timacum
         }
         DRD = {
@@ -5911,7 +5911,7 @@ countries = {
             court_language = albanian_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = scupi
         }
         SDI = {
@@ -5932,7 +5932,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = serdica
         }
         TBL = {
@@ -5957,7 +5957,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = oescus
         }
         MOE = {
@@ -5978,7 +5978,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = appiara
         }
         GTE = {
@@ -6003,7 +6003,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = polondava
         }
         POT = {
@@ -6026,7 +6026,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = castra_bistrita
         }
         SLD = {
@@ -6051,7 +6051,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = taliata
         }
         ABN = {
@@ -6074,7 +6074,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = castra_arcidava
         }
         BUD = {
@@ -6095,7 +6095,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = buridava
         }
         APP = {
@@ -6118,7 +6118,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = apulum
         }
         RAT = {
@@ -6141,7 +6141,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = media
         }
         TYR = {
@@ -6160,7 +6160,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = angustia
         }
         CAC = {
@@ -6179,7 +6179,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = potaissa
         }
         ANS = {
@@ -6198,7 +6198,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = samum
         }
         NRC = {
@@ -6219,7 +6219,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = artobriga
         }
         TSC = {
@@ -6246,7 +6246,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = ovilava
         }
         BYZ = {
@@ -6442,7 +6442,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = lysimacheia
         }
         ODR = {
@@ -6465,7 +6465,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = seuthopolis
         }
         PAA = {
@@ -6486,7 +6486,7 @@ countries = {
             court_language = albanian_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = stobi
         }
         MAD = {
@@ -6505,7 +6505,7 @@ countries = {
             court_language = albanian_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = scaptopara
         }
         MAC = {
@@ -6540,7 +6540,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = pella_0
         }
         ATH = {
@@ -6561,7 +6561,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = athens
         }
         THE = {
@@ -6580,7 +6580,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = thebes
         }
         KRK = {
@@ -6599,7 +6599,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = korkyra
         }
         AET = {
@@ -6620,7 +6620,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = thermon
         }
         AKR = {
@@ -6658,7 +6658,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = passaron
         }
         MSE = {
@@ -6696,7 +6696,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = eretria
         }
         ORE = {
@@ -6831,7 +6831,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = delos
         }
         ADR = {
@@ -6890,7 +6890,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = megalopolis
         }
         TEG = {
@@ -7139,7 +7139,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_stratocratic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = sparta
         }
         KNO = {
@@ -7158,7 +7158,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = knossos
         }
         ELT = {
@@ -7177,7 +7177,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = rhithymna
         }
         PYR = {
@@ -7272,7 +7272,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = ierapetra
         }
         TRA = {
@@ -7352,7 +7352,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = rhodos
         }
         AST = {
@@ -7392,7 +7392,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = tarsos_bithynias
         }
         HCP = {
@@ -7411,7 +7411,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = herakleia_pontike
         }
         IOA = {
@@ -7432,7 +7432,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = ilion
         }
         ION = {
@@ -7453,7 +7453,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = priene
         }
         SNP = {
@@ -7472,7 +7472,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = sinope
         }
         CDD = {
@@ -7531,7 +7531,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = kios
         }
         KZK = {
@@ -7711,7 +7711,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = antigoneia
         }
         CAP = {
@@ -7738,7 +7738,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = mazaka
         }
         PON = {
@@ -7765,7 +7765,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = amaseia
         }
         PAP = {
@@ -7790,7 +7790,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = ankyra
         }
         MAK = {
@@ -7811,7 +7811,7 @@ countries = {
             court_language = aramaic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = omana
         }
         GRH = {
@@ -7830,7 +7830,7 @@ countries = {
             court_language = aramaic_language
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = gerrha
         }
         TYO = {
@@ -7870,7 +7870,7 @@ countries = {
             court_language = aramaic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = sanaa
         }
         QDA = {
@@ -7889,7 +7889,7 @@ countries = {
             court_language = aramaic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = durnatha
         }
         MIN = {
@@ -7914,7 +7914,7 @@ countries = {
             court_language = aramaic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = yathill
         }
         HDM = {
@@ -7937,7 +7937,7 @@ countries = {
             court_language = aramaic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = shabwa
         }
         QTB = {
@@ -7962,7 +7962,7 @@ countries = {
             court_language = aramaic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = tamna
         }
         HMJ = {
@@ -7983,7 +7983,7 @@ countries = {
             court_language = aramaic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = sapphar
         }
         NBT = {
@@ -8008,7 +8008,7 @@ countries = {
             court_language = aramaic_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = petra
         }
         LHY = {
@@ -8033,7 +8033,7 @@ countries = {
             court_language = aramaic_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = dedan
         }
         JUD = {
@@ -8056,7 +8056,7 @@ countries = {
             court_language = hebrew_language
             include = "expl_imperator_rome"
             include = "ir_theocratic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = jerusalem
         }
         SMA = {
@@ -8077,7 +8077,7 @@ countries = {
             court_language = hebrew_language
             include = "expl_imperator_rome"
             include = "ir_theocratic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = shekhem
         }
         SID = {
@@ -8096,7 +8096,7 @@ countries = {
             court_language = aramaic_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = sidon
         }
         ARA = {
@@ -8115,7 +8115,7 @@ countries = {
             court_language = aramaic_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = arados
         }
         BYB = {
@@ -8134,7 +8134,7 @@ countries = {
             court_language = aramaic_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = byblos
         }
         COM = {
@@ -8153,7 +8153,7 @@ countries = {
             court_language = aramaic_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = samosata
         }
         BMB = {
@@ -8172,7 +8172,7 @@ countries = {
             court_language = aramaic_language
             include = "expl_imperator_rome"
             include = "ir_theocratic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = bambyce
         }
         SEL = {
@@ -8265,7 +8265,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_empire
             capital = seleucia_magna
         }
         BAC = {
@@ -8304,7 +8304,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = bactra
         }
         ARS = {
@@ -8331,7 +8331,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = alexandropolis
         }
         PAR = {
@@ -8358,7 +8358,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = zadrakarta
         }
         ADI = {
@@ -8379,7 +8379,7 @@ countries = {
             court_language = aramaic_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = arbela
         }
         ARM = {
@@ -8424,7 +8424,7 @@ countries = {
             court_language = armenian_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = armaouira
         }
         MAP = {
@@ -8453,7 +8453,7 @@ countries = {
             court_language = persian_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = gazaka
         }
         IBR = {
@@ -8482,7 +8482,7 @@ countries = {
             court_language = georgian_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = meschistha_harmozike
         }
         COL = {
@@ -8509,7 +8509,7 @@ countries = {
             court_language = georgian_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = kotais
         }
         ALB = {
@@ -8534,7 +8534,7 @@ countries = {
             court_language = georgian_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = chabala
         }
         LGA = {
@@ -8557,7 +8557,7 @@ countries = {
             court_language = alanic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = zabender
         }
         SCA = {
@@ -8582,7 +8582,7 @@ countries = {
             court_language = alanic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = gran
         }
         TRZ = {
@@ -8626,7 +8626,7 @@ countries = {
             court_language = tibetan_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = khyunglung
         }
         ATV = {
@@ -8651,7 +8651,7 @@ countries = {
             court_language = munda_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = damoh
         }
         HYA = {
@@ -8672,7 +8672,7 @@ countries = {
             court_language = bihari_language
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = mahismati
         }
         PLD = {
@@ -8697,7 +8697,7 @@ countries = {
             court_language = marathi_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = bhojakata
         }
         RHN = {
@@ -8716,7 +8716,7 @@ countries = {
             court_language = sinhala_language
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = dighavapi
         }
         MLY = {
@@ -8735,7 +8735,7 @@ countries = {
             court_language = sinhala_language
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = kalyani
         }
         PRB = {
@@ -8754,7 +8754,7 @@ countries = {
             court_language = sanskrit_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = mohur
         }
         KSR = {
@@ -8777,7 +8777,7 @@ countries = {
             court_language = sanskrit_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = karur
         }
         ADG = {
@@ -8800,7 +8800,7 @@ countries = {
             court_language = sanskrit_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = tagadur
         }
         GHA = {
@@ -8821,7 +8821,7 @@ countries = {
             court_language = sanskrit_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = pushkalavati
         }
         PRA = {
@@ -8842,7 +8842,7 @@ countries = {
             court_language = sanskrit_language
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = sakala
         }
         YDD = {
@@ -8867,7 +8867,7 @@ countries = {
             court_language = bihari_language
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = rohtak
         }
         KHB = {
@@ -8890,7 +8890,7 @@ countries = {
             court_language = sanskrit_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = ora
         }
         KLS = {
@@ -8911,7 +8911,7 @@ countries = {
             court_language = sanskrit_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = puranadisthana
         }
         NBA = {
@@ -8934,7 +8934,7 @@ countries = {
             court_language = sanskrit_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = devaprayaga
         }
         NBP = {
@@ -8963,7 +8963,7 @@ countries = {
             court_language = west_himalayic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = pattana
         }
         SMT = {
@@ -8984,7 +8984,7 @@ countries = {
             court_language = bengali_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = karmanta
         }
         TSA = {
@@ -9005,7 +9005,7 @@ countries = {
             court_language = tibetan_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = zhongzhong
         }
         YRL = {
@@ -9026,7 +9026,7 @@ countries = {
             court_language = tibetan_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = chongye
         }
         SMP = {
@@ -9047,7 +9047,7 @@ countries = {
             court_language = tibetan_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = lhasa
         }
         ALU = {
@@ -9068,7 +9068,7 @@ countries = {
             court_language = kannada_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = vanavasi
         }
         KUN = {
@@ -9093,7 +9093,7 @@ countries = {
             court_language = kannada_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = athani
         }
         PIT = {
@@ -9116,7 +9116,7 @@ countries = {
             court_language = marathi_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = valuraka
         }
         BOJ = {
@@ -9137,7 +9137,7 @@ countries = {
             court_language = marathi_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = devagiri
         }
         RTI = {
@@ -9162,7 +9162,7 @@ countries = {
             court_language = marathi_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = nasikya
         }
         ASM = {
@@ -9189,7 +9189,7 @@ countries = {
             court_language = telugu_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = kondapuram
         }
         ANH = {
@@ -9214,7 +9214,7 @@ countries = {
             court_language = telugu_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = andhapura
         }
         KAL = {
@@ -9237,7 +9237,7 @@ countries = {
             court_language = oriya_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = kalinganagara
         }
         KRP = {
@@ -9260,7 +9260,7 @@ countries = {
             court_language = brahmaputran_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = gramera
         }
         ANU = {
@@ -9281,7 +9281,7 @@ countries = {
             court_language = sinhala_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = anuradhapura
         }
         MSH = {
@@ -9304,7 +9304,7 @@ countries = {
             court_language = kannada_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = mahisha
         }
         IDR = {
@@ -9323,7 +9323,7 @@ countries = {
             court_language = telugu_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = chakrakot
         }
         PND = {
@@ -9346,7 +9346,7 @@ countries = {
             court_language = sanskrit_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = madurai
         }
         KRA = {
@@ -9367,7 +9367,7 @@ countries = {
             court_language = munda_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = pali
         }
         CHL = {
@@ -9392,7 +9392,7 @@ countries = {
             court_language = sanskrit_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = urayur
         }
         AYY = {
@@ -9411,7 +9411,7 @@ countries = {
             court_language = sanskrit_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = aykudi
         }
         CHR = {
@@ -9432,7 +9432,7 @@ countries = {
             court_language = sanskrit_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = vanci
         }
         STY = {
@@ -9451,7 +9451,7 @@ countries = {
             court_language = sanskrit_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = mousopalle
         }
         PSH = {
@@ -9470,7 +9470,7 @@ countries = {
             court_language = persian_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = pishan
         }
         KSA = {
@@ -9489,7 +9489,7 @@ countries = {
             court_language = persian_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = kuche
         }
         KHT = {
@@ -9508,7 +9508,7 @@ countries = {
             court_language = persian_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = yutian
         }
         LOL = {
@@ -9527,7 +9527,7 @@ countries = {
             court_language = persian_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = loulan
         }
         MRY = {
@@ -9614,7 +9614,7 @@ countries = {
             court_language = bihari_language
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_empire
             capital = pataliputra
         }
         SHU = {
@@ -9633,7 +9633,7 @@ countries = {
             court_language = persian_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = kashgar
         }
         PHY = {
@@ -9652,7 +9652,7 @@ countries = {
             court_language = persian_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = kezhen
         }
         TAY = {
@@ -9673,7 +9673,7 @@ countries = {
             court_language = persian_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = andijan
         }
         WUS = {
@@ -9692,7 +9692,7 @@ countries = {
             court_language = persian_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = yul
         }
         SOG = {
@@ -9713,7 +9713,7 @@ countries = {
             court_language = persian_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = barskhan
         }
         SND = {
@@ -9732,7 +9732,7 @@ countries = {
             court_language = alanic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = sabiranum
         }
         SCE = {
@@ -9751,7 +9751,7 @@ countries = {
             court_language = alanic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = abasgria
         }
         BPK = {
@@ -9772,7 +9772,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = pantikapaion
         }
         CHS = {
@@ -9793,7 +9793,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = chersonesos
         }
         SCY = {
@@ -9818,7 +9818,7 @@ countries = {
             court_language = alanic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = tanais_0
         }
         ZGY = {
@@ -9837,7 +9837,7 @@ countries = {
             court_language = alanic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = torikos
         }
         HNY = {
@@ -9856,7 +9856,7 @@ countries = {
             court_language = georgian_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = anakopia
         }
         PHI = {
@@ -9902,7 +9902,7 @@ countries = {
             court_language = alanic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = katys
         }
         MAE = {
@@ -9923,7 +9923,7 @@ countries = {
             court_language = alanic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = khulor
         }
         OLB = {
@@ -9944,7 +9944,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = olbia_1
         }
         TYS = {
@@ -9984,7 +9984,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = dinogetia
         }
         KSH = {
@@ -10011,7 +10011,7 @@ countries = {
             court_language = nubian_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = meroe
         }
         AXM = {
@@ -10034,7 +10034,7 @@ countries = {
             court_language = ethiopic_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = aksum
         }
         TQF = {
@@ -10053,7 +10053,7 @@ countries = {
             court_language = aramaic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = taif
         }
         THD = {
@@ -10078,7 +10078,7 @@ countries = {
             court_language = aramaic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_federation"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = makarabah
         }
         BMY = {
@@ -10097,7 +10097,7 @@ countries = {
             court_language = nubian_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = setronon
         }
         BOR = {
@@ -10118,7 +10118,7 @@ countries = {
             court_language = nubian_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = abliata
         }
         AUT = {
@@ -10139,7 +10139,7 @@ countries = {
             court_language = nubian_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = alwa
         }
         DAL = {
@@ -10158,7 +10158,7 @@ countries = {
             court_language = ethiopic_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = alalaiou
         }
         ADO = {
@@ -10177,7 +10177,7 @@ countries = {
             court_language = ethiopic_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = adouli
         }
         YEH = {
@@ -10198,7 +10198,7 @@ countries = {
             court_language = ethiopic_language
             include = "expl_imperator_rome"
             include = "ir_theocratic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = yeha
         }
         GWN = {
@@ -10217,7 +10217,7 @@ countries = {
             court_language = ethiopic_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = gwara
         }
         MND = {
@@ -10293,7 +10293,7 @@ countries = {
             court_language = ethiopic_language
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = abasenia
         }
         BST = {
@@ -10314,7 +10314,7 @@ countries = {
             court_language = german_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = elysia
         }
         CHC = {
@@ -10333,7 +10333,7 @@ countries = {
             court_language = german_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = saxonnia
         }
         GIT = {
@@ -10356,7 +10356,7 @@ countries = {
             court_language = german_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = thwetum
         }
         SWE = {
@@ -10375,7 +10375,7 @@ countries = {
             court_language = german_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = broborg
         }
         RAM = {
@@ -10396,7 +10396,7 @@ countries = {
             court_language = german_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = tanum
         }
         HRE = {
@@ -10415,7 +10415,7 @@ countries = {
             court_language = german_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = herulia_centralis
         }
         TIT = {
@@ -10436,7 +10436,7 @@ countries = {
             court_language = german_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = teutonia_centralis
         }
         CMB = {
@@ -10455,7 +10455,7 @@ countries = {
             court_language = german_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = cimbria_australis
         }
         LVA = {
@@ -10495,7 +10495,7 @@ countries = {
             court_language = german_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = bunitium
         }
         LGI = {
@@ -10516,7 +10516,7 @@ countries = {
             court_language = german_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = seurgium
         }
         SMN = {
@@ -10537,7 +10537,7 @@ countries = {
             court_language = german_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = uarinia
         }
         LGB = {
@@ -10556,7 +10556,7 @@ countries = {
             court_language = german_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = langobardia
         }
         MCM = {
@@ -10581,7 +10581,7 @@ countries = {
             court_language = german_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = alaria
         }
         ANG = {
@@ -10600,7 +10600,7 @@ countries = {
             court_language = german_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = anglia_centralis
         }
         SXS = {
@@ -10621,7 +10621,7 @@ countries = {
             court_language = german_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = unsingia
         }
         AES = {
@@ -10644,7 +10644,7 @@ countries = {
             court_language = baltic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = venedicana
         }
         PRN = {
@@ -10669,7 +10669,7 @@ countries = {
             court_language = alanic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = ahur
         }
         PSS = {
@@ -10690,7 +10690,7 @@ countries = {
             court_language = alanic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = gathar
         }
         ZNT = {
@@ -10717,7 +10717,7 @@ countries = {
             court_language = alanic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = yatsha
         }
         KRZ = {
@@ -10738,7 +10738,7 @@ countries = {
             court_language = alanic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = gurganj
         }
         GTH = {
@@ -10759,7 +10759,7 @@ countries = {
             court_language = german_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = sciria_rugia
         }
         RGG = {
@@ -10780,7 +10780,7 @@ countries = {
             court_language = german_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = rhugium
         }
         SCI = {
@@ -10803,7 +10803,7 @@ countries = {
             court_language = german_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = helveconia
         }
         FOS = {
@@ -10824,7 +10824,7 @@ countries = {
             court_language = german_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = fosa
         }
         REU = {
@@ -10843,7 +10843,7 @@ countries = {
             court_language = german_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = suardonia
         }
         AVO = {
@@ -10883,7 +10883,7 @@ countries = {
             court_language = german_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = luppia
         }
         EUD = {
@@ -10904,7 +10904,7 @@ countries = {
             court_language = german_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = cobandia_minor
         }
         AGR = {
@@ -10980,7 +10980,7 @@ countries = {
             court_language = german_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = gautigothia
         }
         DAN = {
@@ -10999,7 +10999,7 @@ countries = {
             court_language = german_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = borgamo
         }
         BUR = {
@@ -11018,7 +11018,7 @@ countries = {
             court_language = german_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = uppakra
         }
         BLR = {
@@ -11037,7 +11037,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_federation"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = hydata_lesitana
         }
         IOI = {
@@ -11056,7 +11056,7 @@ countries = {
             court_language = latin_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = oualentia
         }
         DAR = {
@@ -11075,7 +11075,7 @@ countries = {
             court_language = gaelic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = darinia_borealis
         }
         ELA = {
@@ -11094,7 +11094,7 @@ countries = {
             court_language = gaelic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = eblania
         }
         MNA = {
@@ -11113,7 +11113,7 @@ countries = {
             court_language = gaelic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = coriondia_borealis
         }
         CAU = {
@@ -11132,7 +11132,7 @@ countries = {
             court_language = gaelic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = caucia
         }
         COR = {
@@ -11151,7 +11151,7 @@ countries = {
             court_language = gaelic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = coriondia
         }
         IVE = {
@@ -11170,7 +11170,7 @@ countries = {
             court_language = gaelic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = ivernia
         }
         USD = {
@@ -11189,7 +11189,7 @@ countries = {
             court_language = gaelic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = usdia_orientalis
         }
         ROB = {
@@ -11208,7 +11208,7 @@ countries = {
             court_language = gaelic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = robogdia_orientalis
         }
         VEN = {
@@ -11227,7 +11227,7 @@ countries = {
             court_language = gaelic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = venicnia_orientalis
         }
         BGA = {
@@ -11246,7 +11246,7 @@ countries = {
             court_language = gaelic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = brigantia
         }
         CAN = {
@@ -11265,7 +11265,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = carnonacae
         }
         CON = {
@@ -11284,7 +11284,7 @@ countries = {
             court_language = brythonic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = cornavii
         }
         VND = {
@@ -11305,7 +11305,7 @@ countries = {
             court_language = baltic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = venedia
         }
         SUD = {
@@ -11324,7 +11324,7 @@ countries = {
             court_language = baltic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = sudinoia
         }
         SLO = {
@@ -11345,7 +11345,7 @@ countries = {
             court_language = baltic_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = saloia
         }
         ELE = {
@@ -11516,7 +11516,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = elateia
         }
         DLP = {
@@ -11822,7 +11822,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = tlos
         }
         ISU = {
@@ -11881,7 +11881,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = salon
         }
         SMS = {
@@ -12020,7 +12020,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_tribal_federation"
-            country_rank = rank_county
+            country_rank = rank_duchy
             capital = klibanos
         }
         OEO = {
@@ -12140,7 +12140,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_theocratic_monarchy"
-            country_rank = rank_county
+            country_rank = rank_kingdom
             capital = olbe
         }
         IBA = {
