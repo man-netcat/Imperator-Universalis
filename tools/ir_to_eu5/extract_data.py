@@ -157,25 +157,6 @@ def extract_deity_data():
             return deity_loc.get(inner, value)
         return value
 
-    def _get_tree_value(tree: Any, key: str):
-        if tree is None:
-            return None
-        if isinstance(tree, dict):
-            return tree.get(key)
-        if isinstance(tree, _pydt.Tree):
-            if hasattr(tree, "get"):
-                return tree.get(key)
-            try:
-                return tree[key] if key in tree else None
-            except Exception:
-                return None
-        if hasattr(tree, "get"):
-            try:
-                return tree.get(key)
-            except Exception:
-                return None
-        return None
-
     for path in sorted(ir_deities.iterdir()):
         if path.suffix != ".txt" or not path.is_file():
             continue
@@ -184,8 +165,8 @@ def extract_deity_data():
         for deity_tag, deity_data in tree.items():
             if not isinstance(deity_tag, str) or not deity_tag.startswith("deity_"):
                 continue
-            religion = _get_tree_value(deity_data, "religion")
-            category = _get_tree_value(deity_data, "deity_category")
+            religion = deity_data["religion"]
+            category = deity_data["deity_category"]
 
             deity_blocks.append(
                 {
@@ -321,33 +302,19 @@ def extract_start_data(file_name, root_key, sub_key=None):
 def extract_ir_country_locations():
     """Return mapping of country tag -> list of province IDs from IR own_control_core."""
     def _collect_ids(value: Any, out: list[int]) -> None:
-        if value is None:
-            return
-        if isinstance(value, (int,)):
+        if isinstance(value, int):
+            out.append(value)
+        elif isinstance(value, str):
             out.append(int(value))
-            return
-        if isinstance(value, _pydt.Color):
-            for channel in value.channels:
-                try:
-                    out.append(int(channel))
-                except Exception:
-                    continue
-            return
-        if isinstance(value, str):
-            try:
-                out.append(int(value))
-            except Exception:
-                return
-            return
-        if isinstance(value, (list, tuple)):
+        elif isinstance(value, _pydt.Color):
+            out.extend(int(channel) for channel in value.channels)
+        elif isinstance(value, (list, tuple)):
             for v in value:
                 _collect_ids(v, out)
-            return
-        if isinstance(value, (_pydt.Tree, dict)):
+        elif isinstance(value, (_pydt.Tree, dict)):
             for k, v in value.items():
                 _collect_ids(k, out)
                 _collect_ids(v, out)
-            return
 
     tree = parse_tree(ir_default)
     countries = tree["country"]["countries"]
@@ -355,12 +322,7 @@ def extract_ir_country_locations():
 
     for tag, data in countries.items():
         prov_ids: list[int] = []
-        try:
-            values = list(data.find_all("own_control_core"))
-        except Exception:
-            values = []
-
-        for value in values:
+        for value in data.find_all("own_control_core"):
             _collect_ids(value, prov_ids)
 
         if prov_ids:
@@ -377,46 +339,15 @@ def extract_ir_country_locations():
 
 def extract_ir_country_capitals() -> dict[str, int]:
     """Return mapping of country tag -> capital province ID from IR 00_default."""
-
-    def _extract_int(value: Any) -> int | None:
-        if value is None:
-            return None
-        if isinstance(value, int):
-            return value
-        if isinstance(value, str):
-            try:
-                return int(value)
-            except Exception:
-                return None
-        if isinstance(value, _pydt.Color):
-            if value.channels:
-                try:
-                    return int(value.channels[0])
-                except Exception:
-                    return None
-            return None
-        return None
-
     tree = parse_tree(ir_default)
     countries = tree["country"]["countries"]
     result: dict[str, int] = {}
 
     for tag, data in countries.items():
-        capital_value = None
-        try:
-            capital_value = data.get("capital") if hasattr(data, "get") else None
-        except Exception:
-            capital_value = None
-
-        if capital_value is None and isinstance(data, (_pydt.Tree, dict)):
-            try:
-                capital_value = data["capital"] if "capital" in data else None
-            except Exception:
-                capital_value = None
-
-        capital_id = _extract_int(capital_value)
-        if capital_id is not None:
-            result[tag] = capital_id
+        capital = data["capital"]
+        if capital is None:
+            continue
+        result[tag] = int(capital)
 
     return result
 
@@ -558,9 +489,7 @@ def extract_character_data():
 
 def extract_dynasty_data():
     """Extract dynasties from IR default family database."""
-    default_tree = parse_tree(ir_default)
-    family_tree = default_tree["family"] if "family" in default_tree else {}
-    families_tree = family_tree["families"] if "families" in family_tree else {}
+    families_tree = parse_tree(ir_default)["family"]["families"]
 
     dynasties = []
     seen = set()

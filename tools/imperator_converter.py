@@ -117,12 +117,15 @@ if __name__ == "__main__":
     write_04_dynasties(four_dynasties_data, dynasty_data)
     write_05_characters(five_characters_data, character_data)
     # Defaults for location templates and capital fallbacks
-    default_culture = None
-    for group in culture_data:
-        cultures = group.get("cultures", [])
-        if cultures:
-            default_culture = cultures[0].get("tag")
-            break
+    default_culture = next(
+        (
+            culture.get("tag")
+            for group in culture_data
+            for culture in group.get("cultures", [])
+            if culture.get("tag")
+        ),
+        None,
+    )
     default_religion = religion_data[0].get("tag") if religion_data else None
 
     write_10_countries(

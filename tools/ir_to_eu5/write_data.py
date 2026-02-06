@@ -1,5 +1,4 @@
 import os
-import re
 from collections import defaultdict
 from pathlib import Path
 from typing import List, Tuple, Union
@@ -7,7 +6,6 @@ from typing import List, Tuple, Union
 import pyradox
 import pyradox.datatype as _pydt
 import pyradox.token as _pytoken
-from pyradox.filetype import txt as ptxt
 
 from .data import (
     government_map,
@@ -33,11 +31,15 @@ def ensure_list(value):
     return value if isinstance(value, list) else [value]
 
 
-def _clean_key(value: str) -> str:
-    cleaned = value.strip().lower()
-    cleaned = re.sub(r"[\s\-]+", "_", cleaned)
-    cleaned = re.sub(r"[^a-z0-9_]", "", cleaned)
-    return cleaned
+def _dedupe(items: list) -> list:
+    seen = set()
+    out = []
+    for item in items:
+        if item in seen:
+            continue
+        seen.add(item)
+        out.append(item)
+    return out
 
 
 def print_written(kind: str, out_path: Path) -> None:
@@ -180,29 +182,8 @@ def write_blocks(
     return out_path
 
 
-def _read_existing_tree(path: Path) -> _pydt.Tree | None:
-    if not path.exists():
-        return None
-    try:
-        text = path.read_text(encoding="utf-8-sig")
-    except UnicodeDecodeError:
-        text = path.read_text(encoding="utf-8")
-    try:
-        return ptxt.parse(text, filename=str(path))
-    except Exception as exc:
-        print(f"Warning: failed to parse existing file for merge: {path} ({exc})")
-        return None
-
-
 def _existing_block_map(path: Path) -> dict[str, _pydt.Tree]:
-    tree = _read_existing_tree(path)
-    if tree is None:
-        return {}
-    existing: dict[str, _pydt.Tree] = {}
-    for key, value in tree.items():
-        if isinstance(value, _pydt.Tree):
-            existing[str(key)] = _pydt.Tree(value)
-    return existing
+    return {}
 
 
 def _merge_tree_with_overrides(
@@ -218,6 +199,26 @@ def _merge_tree_with_overrides(
             if key not in merged:
                 merged.append(key, value)
     return merged
+
+
+def _append_existing_blocks(
+    blocks: list,
+    existing_blocks: dict[str, _pydt.Tree],
+    generated_tags: set[str],
+) -> None:
+    for tag, tree in existing_blocks.items():
+        if tag not in generated_tags:
+            lines = convert_tree_to_blocks(tree)
+            blocks.append((tag, lines))
+
+
+def _map_religion(raw_religion: str | None, religion_tags: set[str]) -> str | None:
+    mapped = PANTHEON_MAP.get(raw_religion)
+    if not mapped and raw_religion:
+        candidate = f"ir_{raw_religion}"
+        if candidate in religion_tags:
+            mapped = candidate
+    return mapped
 
 
 def write_culture_group_data(culture_data: list):
@@ -237,14 +238,7 @@ def write_culture_data(culture_data: list):
                 if isinstance(tag, str) and tag.startswith("ir_") and tag.endswith("_gfx"):
                     continue
                 resolved.append(tag)
-
-            seen = set()
-            deduped = []
-            for tag in resolved:
-                if tag not in seen:
-                    seen.add(tag)
-                    deduped.append(tag)
-            return deduped
+            return _dedupe(resolved)
 
         group_tag = culture_group.get("tag")
         group_gfx = None
@@ -454,10 +448,7 @@ def write_religion_data(religion_data: list):
         lines = convert_tree_to_blocks(merged_tree)
         blocks.append((tag, lines))
 
-    for tag, tree in existing_blocks.items():
-        if tag not in generated_tags:
-            lines = convert_tree_to_blocks(tree)
-            blocks.append((tag, lines))
+    _append_existing_blocks(blocks, existing_blocks, generated_tags)
 
     write_blocks(out_path, blocks)
 
@@ -476,11 +467,7 @@ def write_god_data(deity_data: list, religion_data: list):
             continue
         generated_tags.add(deity_tag)
         raw_religion = deity.get("religion")
-        mapped_religion = PANTHEON_MAP.get(raw_religion)
-        if not mapped_religion and raw_religion:
-            candidate = f"ir_{raw_religion}"
-            if candidate in religion_tags:
-                mapped_religion = candidate
+        mapped_religion = _map_religion(raw_religion, religion_tags)
 
         category = deity.get("category")
         modifiers = GOD_CATEGORY_MODIFIERS.get(category, GOD_CATEGORY_MODIFIERS["culture"])
@@ -507,10 +494,7 @@ def write_god_data(deity_data: list, religion_data: list):
         lines = convert_tree_to_blocks(merged_tree)
         blocks.append((deity_tag, lines))
 
-    for tag, tree in existing_blocks.items():
-        if tag not in generated_tags:
-            lines = convert_tree_to_blocks(tree)
-            blocks.append((tag, lines))
+    _append_existing_blocks(blocks, existing_blocks, generated_tags)
 
     write_blocks(out_path, blocks)
 
@@ -532,11 +516,7 @@ def write_ir_religious_aspects(deity_data: list, religion_data: list) -> None:
         generated_tags.add(aspect_name)
 
         raw_religion = deity.get("religion")
-        mapped_religion = PANTHEON_MAP.get(raw_religion)
-        if not mapped_religion and raw_religion:
-            candidate = f"ir_{raw_religion}"
-            if candidate in religion_tags:
-                mapped_religion = candidate
+        mapped_religion = _map_religion(raw_religion, religion_tags)
 
         if not mapped_religion:
             print(f"Warning: missing religion mapping for deity {deity_tag}")
@@ -571,10 +551,7 @@ def write_ir_religious_aspects(deity_data: list, religion_data: list) -> None:
         lines = convert_tree_to_blocks(merged_tree)
         blocks.append((aspect_name, lines))
 
-    for tag, tree in existing_blocks.items():
-        if tag not in generated_tags:
-            lines = convert_tree_to_blocks(tree)
-            blocks.append((tag, lines))
+    _append_existing_blocks(blocks, existing_blocks, generated_tags)
 
     write_blocks(out_path, blocks)
 
@@ -614,9 +591,6 @@ def write_country_setup(country_data: list, override_data: list):
 
         out_path = mod_root / path
         write_blocks(out_path, override_blocks)
-
-
-from collections import OrderedDict
 
 
 def write_localisation_files(
@@ -1014,16 +988,8 @@ def write_10_countries(
             reform_id = f"ir_{ir_gov_key}"
             raw = merged_government.get("reforms", [])
             normalized = [str(item) for item in ensure_list(raw) if item not in (None, "")]
-
             normalized.append(reform_id)
-            seen = set()
-            deduped = []
-            for r in normalized:
-                if r not in seen:
-                    seen.add(r)
-                    deduped.append(r)
-
-            merged_government["reforms"] = deduped
+            merged_government["reforms"] = _dedupe(normalized)
 
         merged["government"] = merged_government
 
