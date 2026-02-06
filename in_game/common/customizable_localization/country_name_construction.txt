@@ -46,6 +46,7 @@
 						tag = SEL
 						tag = BPK
 						tag = PRY
+						tag = EGY
 					}
 				}
 				AND = {

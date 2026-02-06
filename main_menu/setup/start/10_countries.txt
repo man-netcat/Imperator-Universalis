@@ -1262,7 +1262,7 @@ countries = {
             capital = syene
         }
         EGY = {
-            # Ptolemaic Kingdom
+            # Ptolemies
             own_control_core = {
                 # aegean_islands_area
                 thera
@@ -8499,7 +8499,7 @@ countries = {
             court_language = greek_language
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
-            country_rank = rank_kingdom
+            country_rank = rank_empire
             capital = seleucia_magna
         }
         CRD = {

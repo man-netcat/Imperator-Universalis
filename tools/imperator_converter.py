@@ -98,6 +98,27 @@ if __name__ == "__main__":
     )
 
     eu5_map_data = extract_eu5_map_data()
+
+    # Write a human-readable TSV of country -> location count for debugging/analysis
+    try:
+        counts_out = script_dir / "ir_to_eu5" / "country_location_counts.tsv"
+        name_map = {c["tag"]: c["name"] for c in country_data}
+        rows = []
+        for tag, provs in ir_country_locations.items():
+            rows.append((len(provs), tag, name_map.get(tag, tag)))
+        # include tags with zero provinces
+        for c in country_data:
+            if c["tag"] not in ir_country_locations:
+                rows.append((0, c["tag"], c["name"]))
+        rows.sort(key=lambda r: (-r[0], r[1]))
+        counts_out.parent.mkdir(parents=True, exist_ok=True)
+        with counts_out.open("w", encoding="utf-8") as f:
+            for count, tag, name in rows:
+                f.write(f"{count}\t{tag}\t{name}\n")
+        print(f"Wrote {counts_out}")
+    except Exception:
+        # Non-fatal: don't stop the converter if writing the TSV fails
+        pass
     if not args.no_images:
         coa_data = extract_coa_data()
 

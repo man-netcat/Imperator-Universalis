@@ -219,6 +219,7 @@ def extract_country_data():
             "SEL": "Seleucids",  # Seleucid Empire
             "BPK": "Bospora",  # Bosporan Kingdom
             "PRY": "Antigonids",  # Antigonid Kingdom
+            "EGY": "Ptolemies",  # Ptolemaic Kingdom
         }
 
         fallback_name = _fallback_country_name(country_setup_file, country_tag)

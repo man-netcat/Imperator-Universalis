@@ -231,7 +231,7 @@ def _build_country_rank_map(
 
     county_max = 3
     duchy_max = 14
-    kingdom_max = 299
+    kingdom_max = 249
 
     government_by_tag: dict[str, str] = {}
     if country_data:
@@ -244,9 +244,10 @@ def _build_country_rank_map(
         "aristocratic_monarchy",
         "despotic_monarchy",
         "stratocratic_monarchy",
-        "theocratic_monarchy",
+        "plutocratic_monarchy",
+        "spartan_monarchy",
+        "tribal_kingdom"
     }
-    tribal_monarchies = {"tribal_kingdom"}
 
     rank_map: dict[str, str] = {}
     for tag, size in sizes.items():
@@ -259,7 +260,7 @@ def _build_country_rank_map(
         else:
             rank = "rank_empire"
         ir_gov = government_by_tag.get(tag)
-        if ir_gov in monarchies or ir_gov in tribal_monarchies:
+        if ir_gov in monarchies:
             if rank in ("rank_county", "rank_duchy"):
                 rank = "rank_kingdom"
 
