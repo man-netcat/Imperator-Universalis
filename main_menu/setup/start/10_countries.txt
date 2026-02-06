@@ -64,7 +64,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_aristocratic_republic"
             country_rank = rank_county
-            capital = corneliani
+            capital = bovianum
         }
         MRS = {
             # Marsia
@@ -169,7 +169,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
-            capital = pyrgi
+            capital = vetulonia
         }
         FNT = {
             # Friniatia
@@ -211,7 +211,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = narnia
+            capital = interamnia
         }
         UMB = {
             # Umbria
@@ -295,7 +295,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = bantia
+            capital = grumentum
         }
         BRT = {
             # Bruttia
@@ -314,7 +314,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = laus
+            capital = consentia
         }
         ANO = {
             # Ancona
@@ -409,7 +409,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = albom_ingaunom
+            capital = savo
         }
         GUN = {
             # Genuatia
@@ -430,7 +430,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = genua
+            capital = portus_veneris
         }
         EPA = {
             # Ilvatia
@@ -516,7 +516,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = bretina
+            capital = verona
         }
         BOI = {
             # Boi
@@ -560,7 +560,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = hostilia
+            capital = ravenna
         }
         VNT = {
             # Veneto
@@ -646,7 +646,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = salurnis
+            capital = sublavione
         }
         BRE = {
             # Ambisontia
@@ -817,7 +817,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = terventum
+            capital = buca
         }
         PEL = {
             # Pelignia
@@ -971,7 +971,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
-            capital = macomades_minores
+            capital = tacape
         }
         TRP = {
             # Tripolitania
@@ -992,7 +992,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
-            capital = pisida
+            capital = leptis_magna
         }
         IOL = {
             # Iol
@@ -1093,7 +1093,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_aristocratic_republic"
             country_rank = rank_county
-            capital = hippana
+            capital = carthago
         }
         MAU = {
             # Mauretania
@@ -1145,7 +1145,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = lemnis
+            capital = siga
         }
         MSY = {
             # Massylia
@@ -1176,7 +1176,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = satafis
+            capital = cirta
         }
         MSL = {
             # Musulamia
@@ -1203,7 +1203,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = ammaedara
+            capital = thala_musulamia
         }
         ACR = {
             # Acragas
@@ -1243,7 +1243,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
             country_rank = rank_county
-            capital = catana
+            capital = syracusae
         }
         DOD = {
             # Dodekaschoinos
@@ -1321,7 +1321,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
             country_rank = rank_county
-            capital = memphis
+            capital = alexandria
         }
         CYR = {
             # Cyrenaica
@@ -1508,7 +1508,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = anderitum
+            capital = durovernum
         }
         DUR = {
             # Durotriga
@@ -1529,7 +1529,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = durnovaria
+            capital = vindocladia
         }
         PAS = {
             # Parisia
@@ -1569,7 +1569,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = deventiasteno
+            capital = isca_dumnoniorum
         }
         ICE = {
             # Icenia
@@ -1588,7 +1588,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = branodunum
+            capital = venta_icenorum
         }
         SIR = {
             # Siluria
@@ -1607,7 +1607,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = glevum
+            capital = burrium
         }
         DEM = {
             # Demetia
@@ -1626,7 +1626,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = nidum
+            capital = dolaucothi
         }
         COI = {
             # Coritania
@@ -1649,7 +1649,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = hessulum
+            capital = ratae
         }
         DOB = {
             # Dobunnia
@@ -1676,7 +1676,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = aquae_sulis
+            capital = corinium
         }
         COV = {
             # Cornovia
@@ -1699,7 +1699,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = mediolanum_0
+            capital = viroconium
         }
         ORD = {
             # Ordovicia
@@ -1720,7 +1720,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = magnis
+            capital = levobrinta
         }
         DEC = {
             # Deceanglia
@@ -1762,7 +1762,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = calcaria
+            capital = isurium
         }
         CAV = {
             # Carvetia
@@ -1781,7 +1781,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = luguvalium
+            capital = gabrosentum
         }
         TRI = {
             # Trinovantia
@@ -1840,7 +1840,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = relicta_asturia
+            capital = argentiolum
         }
         BDU = {
             # Beduniensia
@@ -1960,7 +1960,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = gigia
+            capital = lucus_asturum
         }
         SPT = {
             # Superatia
@@ -2040,7 +2040,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = setelsis
+            capital = auso
         }
         AUG = {
             # Autrigonia
@@ -2059,7 +2059,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = tritium
+            capital = vindeleia
         }
         BAI = {
             # Bastetania
@@ -2078,7 +2078,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = longuntica
+            capital = basti
         }
         EBI = {
             # Eburania
@@ -2143,7 +2143,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = ad_murum
+            capital = oretum
         }
         ORT = {
             # Oretania
@@ -2322,7 +2322,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = brevis
+            capital = caranicum
         }
         GRV = {
             # Gravia
@@ -2379,7 +2379,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = vicus_spacorum
+            capital = limia
         }
         NRI = {
             # Neria
@@ -2438,7 +2438,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = noouion
+            capital = assegonia
         }
         TMG = {
             # Tamagania
@@ -2514,7 +2514,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = veseiasueca
+            capital = caiellum
         }
         COC = {
             # Concania
@@ -2573,7 +2573,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = segontia_paramika
+            capital = aracillum
         }
         MRC = {
             # Morecania
@@ -2611,7 +2611,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = camala
+            capital = segisama_iulia
         }
         VDI = {
             # Vadinia
@@ -2649,7 +2649,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = tritium_magallum
+            capital = veleia
         }
         VAD = {
             # Vardulia
@@ -2668,7 +2668,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = oiasso
+            capital = aracaeli
         }
         CNT = {
             # Contestani
@@ -2689,7 +2689,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = akra_leuke
+            capital = ad_aras
         }
         ICV = {
             # Ilercavonia
@@ -2710,7 +2710,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = oleastrum
+            capital = dertosa
         }
         ILG = {
             # Ilergetia
@@ -2794,7 +2794,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = lacippo
+            capital = ocuri
         }
         VSC = {
             # Vasconia
@@ -2813,7 +2813,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = forum_gallorum
+            capital = calagurris_iulia
         }
         EPO = {
             # Emporion
@@ -3034,7 +3034,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = tegulata
+            capital = verunia
         }
         CTR = {
             # Caturigia
@@ -3055,7 +3055,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = rigomagus_0
+            capital = eburodunum
         }
         VOC = {
             # Vocontia
@@ -3076,7 +3076,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = mons_seleucus
+            capital = vasio
         }
         HVI = {
             # Helvia
@@ -3097,7 +3097,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = batiana
+            capital = alba_helviorum
         }
         ARC = {
             # Arecomicia
@@ -3118,7 +3118,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = sextantio
+            capital = nemausus
         }
         TCT = {
             # Tectosagia
@@ -3139,7 +3139,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = luteva
+            capital = tolosa
         }
         SRB = {
             # Sorbonia
@@ -3160,7 +3160,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = narbo
+            capital = baeterrae
         }
         CNS = {
             # Consorannia
@@ -3244,7 +3244,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = lugdunum
+            capital = seguslavorum
         }
         AVN = {
             # Arvernia
@@ -3267,7 +3267,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_federation"
             country_rank = rank_county
-            capital = gergovia
+            capital = ricomagus
         }
         NTB = {
             # Nitiobrogia
@@ -3389,7 +3389,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = praemiacum
+            capital = cossium
         }
         CCS = {
             # Cocosatia
@@ -3408,7 +3408,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = losa
+            capital = telonnum
         }
         BTU = {
             # Viviscia
@@ -3427,7 +3427,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = burdigala
+            capital = akroterion
         }
         TRS = {
             # Tarusatia
@@ -3448,7 +3448,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = saviniago
+            capital = atura
         }
         PTC = {
             # Petrocoria
@@ -3561,7 +3561,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = eporedia
+            capital = salassia
         }
         LPO = {
             # Lepontia
@@ -3582,7 +3582,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = summus_lacus
+            capital = clavenna
         }
         TIG = {
             # Tigurinia
@@ -3910,7 +3910,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = namnetum
+            capital = conbaristum
         }
         CRN = {
             # Carnutia
@@ -3954,7 +3954,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = brucironno
+            capital = vindinum
         }
         VTN = {
             # Venetia
@@ -3975,7 +3975,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = dariorigum
+            capital = sulis
         }
         CIO = {
             # Curiosolita
@@ -4500,7 +4500,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = castra_vetera
+            capital = asciburgium
         }
         EBS = {
             # Eburonia
@@ -4565,7 +4565,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = caracotinum
+            capital = galetia_occidentalis
         }
         ABM = {
             # Ambiania
@@ -4756,7 +4756,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = aeminium
+            capital = conimbriga
         }
         EBL = {
             # Elbocoria
@@ -5021,7 +5021,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = autraca
+            capital = nova_augusta
         }
         VCI = {
             # Vaccaeia
@@ -5480,7 +5480,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = idassa
+            capital = ainona
         }
         DLM = {
             # Delmatia
@@ -5604,7 +5604,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = bouthoe
+            capital = askribion
         }
         CVI = {
             # Cavia
@@ -5669,7 +5669,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = sarvia
+            capital = salinae
         }
         DUI = {
             # Deuria
@@ -5690,7 +5690,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = marsonia
+            capital = servitium
         }
         AMI = {
             # Armistia
@@ -5979,7 +5979,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = nikopolis
+            capital = appiara
         }
         GTE = {
             # Getia
@@ -6004,7 +6004,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = pinion
+            capital = polondava
         }
         POT = {
             # Potulatensia
@@ -6075,7 +6075,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = viminacium_moesiacum
+            capital = castra_arcidava
         }
         BUD = {
             # Buridavensia
@@ -6096,7 +6096,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = caput_stenarum_0
+            capital = buridava
         }
         APP = {
             # Appulia
@@ -6266,7 +6266,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_county
-            capital = philia
+            capital = byzantion
         }
         ORG = {
             # Orgame
@@ -6304,7 +6304,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_county
-            capital = axiopolis
+            capital = histria
         }
         TMS = {
             # Tomis
@@ -6443,7 +6443,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
             country_rank = rank_county
-            capital = salmydessos
+            capital = lysimacheia
         }
         ODR = {
             # Odrysia
@@ -6466,7 +6466,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = pizus
+            capital = seuthopolis
         }
         PAA = {
             # Paeonia
@@ -6541,7 +6541,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
             country_rank = rank_county
-            capital = euporia
+            capital = pella_0
         }
         ATH = {
             # Athens
@@ -6562,7 +6562,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
             country_rank = rank_county
-            capital = oropos
+            capital = athens
         }
         THE = {
             # Thebes
@@ -6640,7 +6640,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
-            capital = leukas
+            capital = stratos
         }
         EPI = {
             # Epirus
@@ -6659,7 +6659,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
             country_rank = rank_county
-            capital = gitana
+            capital = passaron
         }
         MSE = {
             # Messenia
@@ -6697,7 +6697,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
-            capital = karystos
+            capital = eretria
         }
         ORE = {
             # Oreos
@@ -6735,7 +6735,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
-            capital = orchomenos
+            capital = thespiai
         }
         PTA = {
             # Patrai
@@ -6988,7 +6988,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
-            capital = olympia
+            capital = elis
         }
         TRN = {
             # Troizen
@@ -7393,7 +7393,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
             country_rank = rank_county
-            capital = kalpe
+            capital = tarsos_bithynias
         }
         HCP = {
             # Heraclea Pontica
@@ -7433,7 +7433,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
             country_rank = rank_county
-            capital = parium
+            capital = ilion
         }
         ION = {
             # Ionia
@@ -7454,7 +7454,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
             country_rank = rank_county
-            capital = chios
+            capital = priene
         }
         SNP = {
             # Sinope
@@ -7473,7 +7473,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
             country_rank = rank_county
-            capital = zaliches
+            capital = sinope
         }
         CDD = {
             # Calchedon
@@ -7712,7 +7712,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
             country_rank = rank_county
-            capital = nicaea
+            capital = antigoneia
         }
         CAP = {
             # Cappadocia
@@ -7739,7 +7739,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
             country_rank = rank_county
-            capital = ouarsapa
+            capital = mazaka
         }
         PON = {
             # Pontus
@@ -7766,7 +7766,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = syderos
+            capital = amaseia
         }
         PAP = {
             # Paphlagonia
@@ -7791,7 +7791,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
             country_rank = rank_county
-            capital = gangra
+            capital = ankyra
         }
         MAK = {
             # Maka
@@ -7890,7 +7890,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = gaiopolis
+            capital = durnatha
         }
         MIN = {
             # Ma'in
@@ -7915,7 +7915,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = caminacum
+            capital = yathill
         }
         HDM = {
             # Hadhramut
@@ -8057,7 +8057,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_theocratic_monarchy"
             country_rank = rank_county
-            capital = ephraim
+            capital = jerusalem
         }
         SMA = {
             # Samaria
@@ -8078,7 +8078,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_theocratic_monarchy"
             country_rank = rank_county
-            capital = kefar_shuni
+            capital = shekhem
         }
         SID = {
             # Sidon
@@ -8266,7 +8266,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
             country_rank = rank_county
-            capital = etymandria
+            capital = seleucia_magna
         }
         BAC = {
             # Bactria
@@ -8305,7 +8305,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
             country_rank = rank_county
-            capital = zamm
+            capital = bactra
         }
         ARS = {
             # Arachosia
@@ -8332,7 +8332,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
             country_rank = rank_county
-            capital = canasida
+            capital = alexandropolis
         }
         PAR = {
             # Parthia
@@ -8380,7 +8380,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
             country_rank = rank_county
-            capital = gaugamela
+            capital = arbela
         }
         ARM = {
             # Armenia
@@ -8425,7 +8425,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
             country_rank = rank_county
-            capital = cymiza
+            capital = armaouira
         }
         MAP = {
             # Atropatene
@@ -8454,7 +8454,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
             country_rank = rank_county
-            capital = fakhrikah
+            capital = gazaka
         }
         IBR = {
             # Iberia
@@ -8510,7 +8510,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
             country_rank = rank_county
-            capital = rhodopolis
+            capital = kotais
         }
         ALB = {
             # Albania
@@ -8535,7 +8535,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
-            capital = absheron
+            capital = chabala
         }
         LGA = {
             # Legia
@@ -8558,7 +8558,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
-            capital = gorat
+            capital = zabender
         }
         SCA = {
             # Sakia
@@ -8583,7 +8583,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
-            capital = ustret
+            capital = gran
         }
         TRZ = {
             # Trapezous
@@ -8602,7 +8602,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
-            capital = hyssos
+            capital = trapezous
         }
         ZHZ = {
             # Zhangzhung
@@ -8627,7 +8627,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = kargah
+            capital = khyunglung
         }
         ATV = {
             # Atavia
@@ -8652,7 +8652,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = sumsumaragiri
+            capital = damoh
         }
         HYA = {
             # Mahisamandala
@@ -8698,7 +8698,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = indur
+            capital = bhojakata
         }
         RHN = {
             # Ruhunu
@@ -8717,7 +8717,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
             country_rank = rank_county
-            capital = dagana
+            capital = dighavapi
         }
         MLY = {
             # Malaya
@@ -8736,7 +8736,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
             country_rank = rank_county
-            capital = odoka
+            capital = kalyani
         }
         PRB = {
             # Parambu
@@ -8755,7 +8755,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
             country_rank = rank_county
-            capital = selour
+            capital = mohur
         }
         KSR = {
             # Kosar
@@ -8778,7 +8778,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
             country_rank = rank_county
-            capital = podoperoura
+            capital = karur
         }
         ADG = {
             # Adagaiman
@@ -8868,7 +8868,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
-            capital = agrodakha
+            capital = rohtak
         }
         KHB = {
             # Khamboja
@@ -8891,7 +8891,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = embadina
+            capital = ora
         }
         KLS = {
             # Khasa
@@ -8935,7 +8935,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = rupar
+            capital = devaprayaga
         }
         NBP = {
             # Nabhapakti
@@ -8964,7 +8964,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = kapilavastu
+            capital = pattana
         }
         SMT = {
             # Samatata
@@ -8985,7 +8985,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = suhma
+            capital = karmanta
         }
         TSA = {
             # Tsang
@@ -9006,7 +9006,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = lhayul
+            capital = zhongzhong
         }
         YRL = {
             # Yarlung
@@ -9027,7 +9027,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = khoting
+            capital = chongye
         }
         SMP = {
             # Sumpa
@@ -9048,7 +9048,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = yokang
+            capital = lhasa
         }
         ALU = {
             # Alupa
@@ -9238,7 +9238,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
             country_rank = rank_county
-            capital = dantapura
+            capital = kalinganagara
         }
         KRP = {
             # Kamarupa
@@ -9261,7 +9261,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = pragjyotishpura
+            capital = gramera
         }
         ANU = {
             # Anuradhapura
@@ -9282,7 +9282,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
             country_rank = rank_county
-            capital = simhalava
+            capital = anuradhapura
         }
         MSH = {
             # Mahisha
@@ -9324,7 +9324,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = jagdalpur
+            capital = chakrakot
         }
         PND = {
             # Pandya
@@ -9347,7 +9347,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
             country_rank = rank_county
-            capital = curana
+            capital = madurai
         }
         KRA = {
             # Karusa
@@ -9368,7 +9368,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = vinitapura
+            capital = pali
         }
         CHL = {
             # Chola
@@ -9393,7 +9393,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
             country_rank = rank_county
-            capital = thanjavur
+            capital = urayur
         }
         AYY = {
             # Ay
@@ -9452,7 +9452,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = kodava
+            capital = mousopalle
         }
         PSH = {
             # Pishan
@@ -9615,7 +9615,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
             country_rank = rank_county
-            capital = brahmanaka
+            capital = pataliputra
         }
         SHU = {
             # Shule
@@ -9653,7 +9653,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
             country_rank = rank_county
-            capital = tashqurgan
+            capital = kezhen
         }
         TAY = {
             # Tayuan
@@ -9819,7 +9819,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = masella
+            capital = tanais_0
         }
         ZGY = {
             # Zygia
@@ -9903,7 +9903,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
-            capital = kichpa
+            capital = katys
         }
         MAE = {
             # Maeotia
@@ -10012,7 +10012,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
             country_rank = rank_county
-            capital = pachora
+            capital = meroe
         }
         AXM = {
             # Aksum
@@ -10294,7 +10294,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
             country_rank = rank_county
-            capital = smyrnophoros_chora
+            capital = abasenia
         }
         BST = {
             # Bastarnia
@@ -10357,7 +10357,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
-            capital = vitala
+            capital = thwetum
         }
         SWE = {
             # Suionia
@@ -10376,7 +10376,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
-            capital = birka
+            capital = broborg
         }
         RAM = {
             # Raumaricia
@@ -10416,7 +10416,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
-            capital = herulia_orientalis
+            capital = herulia_centralis
         }
         TIT = {
             # Teutonia
@@ -10475,7 +10475,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
-            capital = eughum
+            capital = lemoviana
         }
         VRI = {
             # Varinia
@@ -10538,7 +10538,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
-            capital = albiana
+            capital = uarinia
         }
         LGB = {
             # Langobardia
@@ -10645,7 +10645,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
-            capital = venedica
+            capital = venedicana
         }
         PRN = {
             # Parnia
@@ -10691,7 +10691,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
-            capital = pylai_parthias
+            capital = gathar
         }
         ZNT = {
             # Zanthia
@@ -10718,7 +10718,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
-            capital = kalana
+            capital = yatsha
         }
         KRZ = {
             # Kharesmia
@@ -10760,7 +10760,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
-            capital = rugia
+            capital = sciria_rugia
         }
         RGG = {
             # Rugia
@@ -10863,7 +10863,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
-            capital = avionia_maior
+            capital = avionia_minor
         }
         CRS = {
             # Cheruscia
@@ -10943,7 +10943,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
-            capital = aetelrugia
+            capital = eunixia
         }
         RUG = {
             # Grania
@@ -10962,7 +10962,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
-            capital = lingum
+            capital = grannia
         }
         LEU = {
             # Leuonia
@@ -10981,7 +10981,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
-            capital = feruiria
+            capital = gautigothia
         }
         DAN = {
             # Dania
@@ -11000,7 +11000,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
-            capital = vang
+            capital = borgamo
         }
         BUR = {
             # Burgundia
@@ -11114,7 +11114,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = manapia_orientalis
+            capital = coriondia_borealis
         }
         CAU = {
             # Caucia
@@ -11152,7 +11152,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
-            capital = coriondia_australis
+            capital = coriondia
         }
         IVE = {
             # Ivernia
@@ -11650,7 +11650,7 @@ countries = {
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
-            capital = pharos
+            capital = issa
         }
         EPM = {
             # Epidaurum

@@ -375,6 +375,52 @@ def extract_ir_country_locations():
     return result
 
 
+def extract_ir_country_capitals() -> dict[str, int]:
+    """Return mapping of country tag -> capital province ID from IR 00_default."""
+
+    def _extract_int(value: Any) -> int | None:
+        if value is None:
+            return None
+        if isinstance(value, int):
+            return value
+        if isinstance(value, str):
+            try:
+                return int(value)
+            except Exception:
+                return None
+        if isinstance(value, _pydt.Color):
+            if value.channels:
+                try:
+                    return int(value.channels[0])
+                except Exception:
+                    return None
+            return None
+        return None
+
+    tree = parse_tree(ir_default)
+    countries = tree["country"]["countries"]
+    result: dict[str, int] = {}
+
+    for tag, data in countries.items():
+        capital_value = None
+        try:
+            capital_value = data.get("capital") if hasattr(data, "get") else None
+        except Exception:
+            capital_value = None
+
+        if capital_value is None and isinstance(data, (_pydt.Tree, dict)):
+            try:
+                capital_value = data["capital"] if "capital" in data else None
+            except Exception:
+                capital_value = None
+
+        capital_id = _extract_int(capital_value)
+        if capital_id is not None:
+            result[tag] = capital_id
+
+    return result
+
+
 def extract_character_data():
     character_loc = read_localisation_file(ir_localisation)
 

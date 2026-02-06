@@ -28,6 +28,7 @@ from ir_to_eu5.extract_data import (
     extract_diplomacy_data,
     extract_dynasty_data,
     extract_eu5_map_data,
+    extract_ir_country_capitals,
     extract_ir_country_locations,
     extract_religion_data,
     extract_start_data,
@@ -86,6 +87,7 @@ if __name__ == "__main__":
     diplomatic_relationships, international_organisations = extract_diplomacy_data()
     named_locations = {t[0]: t[1] for t in parse_definitions()}
     ir_country_locations = extract_ir_country_locations()
+    ir_country_capitals = extract_ir_country_capitals()
     # Do not seed from EU5 base 10_countries; generate from IR data only.
     ten_countries_data = {}
     five_characters_data = extract_start_data("05_characters.txt", "character_db")
@@ -130,6 +132,7 @@ if __name__ == "__main__":
         country_rulers,
         culture_data,
         ir_country_locations=ir_country_locations,
+        ir_country_capitals=ir_country_capitals,
         id_to_key=named_locations,
         location_keys=set(named_locations.values()),
     )

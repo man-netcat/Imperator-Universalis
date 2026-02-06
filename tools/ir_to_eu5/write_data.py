@@ -908,6 +908,7 @@ def write_10_countries(
     country_rulers,
     culture_data=None,
     ir_country_locations=None,
+    ir_country_capitals=None,
     id_to_key=None,
     location_keys=None,
 ):
@@ -1071,6 +1072,14 @@ def write_10_countries(
         # --- simple defaults ---
         merged.setdefault("country_rank", "rank_county")
         merged.setdefault("capital", "REPLACE_ME")
+
+        # --- apply IR capital if available ---
+        if ir_country_capitals is not None and id_to_key is not None:
+            cap_id = ir_country_capitals.get(tag)
+            if cap_id is not None:
+                cap_key = id_to_key.get(cap_id)
+                if cap_key and (location_keys is None or cap_key in location_keys):
+                    merged["capital"] = cap_key
 
         # --- ensure capital is a valid location ---
         if locations:
