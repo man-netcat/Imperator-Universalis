@@ -6,3 +6,6 @@
 - Implement diplomatic subject types: feudatory, satrapy, client_state, vassal_tribe (currently copy pasted from vassals)
 + Implement different governent types
 - Flesh out government types
+- Fix location ranks
+- Fix Heightmap
+- Fix religious aspects

@@ -12,6 +12,7 @@ from .paths import (
     ir_game,
     ir_localisation,
     ir_map_data,
+    ir_cultures,
     ir_default,
     iu_localisation,
     iu_map_data,
@@ -148,6 +149,142 @@ superregion_map = {
             "indian_ocean_region",
         ],
     },
+}
+
+
+IR_GROUP_TOWN_SETUPS = {
+    "ir_hellenic_g": {
+        "city": "greek_city_port",
+        "city_port": "greek_city_port",
+        "town": "greek_town",
+        "town_port": "greek_town_port",
+    },
+    "ir_latin_g": {
+        "city": "italian_city",
+        "city_port": "italian_coastal_city",
+        "town": "italian_town",
+        "town_port": "italian_coastal_town",
+    },
+    "ir_iberia_g": {
+        "city": "iberian_city",
+        "city_port": "iberian_city_port",
+        "town": "iberian_town",
+        "town_port": "iberian_town_port",
+    },
+    "ir_celt_iberia_g": {
+        "city": "iberian_city",
+        "city_port": "iberian_city_port",
+        "town": "iberian_town",
+        "town_port": "iberian_town_port",
+    },
+    "ir_germanic_g": {
+        "city": "german_city",
+        "city_port": "german_coastal_city",
+        "town": "german_town",
+        "town_port": "german_coastal_town",
+    },
+    "ir_britannic_g": {
+        "city": "british_town",
+        "city_port": "british_town_port",
+        "town": "british_town",
+        "town_port": "british_town_port",
+    },
+    "ir_gaelic_g": {
+        "city": "british_town",
+        "city_port": "british_town_port",
+        "town": "british_town",
+        "town_port": "british_town_port",
+    },
+    "ir_gallic_g": {"city": "french_city", "town": "french_town"},
+    "ir_belgae_group_g": {
+        "city": "lowlands_city",
+        "city_port": "lowlands_coastal_city",
+        "town": "lowlands_town",
+        "town_port": "lowlands_costal_town",
+    },
+    "ir_celto_pannonian_group_g": {
+        "city": "carpathian_town",
+        "town": "carpathian_town",
+    },
+    "ir_dacia_group_g": {"city": "carpathian_town", "town": "carpathian_town"},
+    "ir_illyrian_group_g": {"city": "balkan_town", "town": "balkan_town"},
+    "ir_baltic_g": {"city": "baltic_town", "town": "baltic_town"},
+    "ir_scythia_g": {
+        "city": "central_asian_city",
+        "town": "central_asian_town",
+    },
+    "ir_persia_g": {
+        "city": "central_asian_city",
+        "town": "central_asian_town",
+    },
+    "ir_bactrian_g": {
+        "city": "central_asian_city",
+        "town": "central_asian_town",
+    },
+    "ir_aryan_g": {
+        "city": "indian_city",
+        "city_port": "indian_coastal_city",
+        "town": "indian_town",
+    },
+    "ir_pracyan_g": {
+        "city": "indian_city",
+        "city_port": "indian_coastal_city",
+        "town": "indian_town",
+    },
+    "ir_indian_g": {
+        "city": "indian_city",
+        "city_port": "indian_coastal_city",
+        "town": "indian_town",
+    },
+    "ir_tibetan_g": {
+        "city": "central_asian_city",
+        "town": "central_asian_town",
+    },
+    "ir_anatolian_g": {
+        "city": "anatolian_city",
+        "town": "anatolian_town",
+    },
+    "ir_caucasian_g": {
+        "city": "central_asian_city",
+        "town": "central_asian_town",
+    },
+    "ir_east_levantine_g": {
+        "city": "levant_city",
+        "town": "levant_town",
+    },
+    "ir_west_levantine_g": {
+        "city": "levant_city",
+        "town": "levant_town",
+    },
+    "ir_south_levantine_g": {
+        "city": "levant_city",
+        "town": "levant_town",
+    },
+    "ir_north_african_g": {
+        "city": "egyptian_city",
+        "city_port": "maghreb_coastal_city",
+        "town": "maghreb_town",
+        "town_port": "maghreb_coastal_town",
+    },
+    "ir_numidian_g": {
+        "city": "maghreb_city",
+        "city_port": "maghreb_coastal_city",
+        "town": "maghreb_town",
+        "town_port": "maghreb_coastal_town",
+    },
+    "ir_meroitic_group_g": {
+        "city": "east_african_town",
+        "city_port": "east_african_coastal_town",
+        "town": "east_african_town",
+        "town_port": "east_african_coastal_town",
+    },
+    "ir_aksumite_group_g": {
+        "city": "east_african_town",
+        "city_port": "east_african_coastal_town",
+        "town": "east_african_town",
+        "town_port": "east_african_coastal_town",
+    },
+    "ir_proto_european_g": {"city": "french_city", "town": "french_town"},
 }
 
 
@@ -615,6 +752,40 @@ def _dedupe(items: list) -> list:
     return list(dict.fromkeys(items))
 
 
+def _build_ir_culture_to_group_map() -> dict[str, str]:
+    mapping: dict[str, str] = {}
+    for path in ir_cultures.iterdir():
+        if path.suffix != ".txt" or not path.is_file():
+            continue
+        tree = parse_tree(path)
+        for group_tag, group_data in tree.items():
+            group_key = f"ir_{group_tag}_g"
+            for culture_tag in group_data["culture"]:
+                mapping[str(culture_tag)] = group_key
+    return mapping
+
+
+def _select_town_setup(
+    group_tag: str,
+    rank: str,
+    is_port: bool,
+    default_city_setup: str,
+) -> str:
+    default_town_setup = (
+        default_city_setup.replace("_city", "_town")
+        if default_city_setup.endswith("_city")
+        else default_city_setup
+    )
+    setup = IR_GROUP_TOWN_SETUPS.get(group_tag, {})
+    if rank in ("city", "metropolis"):
+        if is_port and "city_port" in setup:
+            return setup["city_port"]
+        return setup.get("city", default_city_setup)
+    if is_port and "town_port" in setup:
+        return setup["town_port"]
+    return setup.get("town", default_town_setup)
+
+
 def _build_market_keys(
     id_to_key: dict[int, str],
     location_keys: set[str],
@@ -748,6 +919,8 @@ def build_ir_location_ranks(
     if not province_dir.exists():
         return {}
 
+    culture_to_group = _build_ir_culture_to_group_map()
+
     ranks: dict[str, str] = {}
 
     for path in sorted(province_dir.glob("*.txt")):
@@ -763,8 +936,14 @@ def build_ir_location_ranks(
             if not isinstance(data, (_pydt.Tree, dict)):
                 continue
 
-            # Map all IR ranks to EU5 town per user preference.
-            ranks[loc_key] = f"rank = town town_setup = {town_setup}"
+            rank = data["province_rank"]
+            if not rank:
+                continue
+            culture = data["culture"]
+            group_tag = culture_to_group[str(culture)]
+            is_port = "port_building" in data and data["port_building"]
+            setup = _select_town_setup(group_tag, rank, bool(is_port), town_setup)
+            ranks[loc_key] = f"rank = town town_setup = {setup}"
 
     return ranks
 
