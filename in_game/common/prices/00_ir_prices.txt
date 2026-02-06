@@ -1,0 +1,413 @@
+############################
+# Imperator: Rome price ports
+############################
+
+stability  = {
+	government_power = 50
+}
+
+enact_law = {
+	government_power = 35
+	stability = 15
+}
+
+enact_holy_site = {
+	government_power = 50
+	gold = 300
+}
+
+remove_treasure = {
+	karma = 1
+}
+
+buy_invention = {
+	government_power = 10
+}
+
+buy_idea = {
+	government_power = 20
+}
+
+call_omen = {
+	#government_power = 65
+}
+
+change_pantheon = {
+	stability = 15
+}
+
+deify_ruler = {
+	government_power = 200
+}
+
+fabricate_claim = {
+	government_power = 20
+}
+
+support_rebels = {
+	karma = 2
+}
+
+endorse_party = {
+	stability = 5
+	righteousness = 2
+}
+
+send_gift = {
+	scaled_gold = 2.4
+}
+
+improve_relation = {
+	gold = 25
+}
+
+insult = {
+	karma = 1
+}
+
+inspire_devotio = {
+	righteousness = 2
+}
+
+recruit_mercenary = {
+	gold = 100
+}
+
+start_migration = {
+	stability = 8
+}
+
+buy_military_tradition = {
+	army_tradition = 80
+}
+
+change_governor_policy = {
+	government_power = 10
+}
+
+increase_legitimacy = {
+	government_power = 10
+}
+
+change_diplomatic_stance = {
+	government_power = 30
+}
+
+force_through_senate = {
+	righteousness = 5
+}
+
+change_pop_type_right = {
+	government_power = 5
+}
+
+monarchy_new_ruler = {
+	stability = 10
+}
+
+tribe_new_ruler = {
+	stability = 10
+}
+
+same_party_re_elected = {
+	righteousness = 2
+}
+
+new_ruling_party = {
+	stability = 2.5
+}
+
+war_breaking_truce = {
+	stability = 50
+	karma = 25
+	war_exhaustion = 1
+}
+
+war_breaking_truce_with_guarantor = {
+	stability = 10
+	karma = 5
+}
+
+war_great_relations = {
+	stability = 20
+}
+
+war_good_relations = {
+	stability = 10
+}
+
+war_when_military_acces = {
+	stability = 40
+}
+
+war_no_cb = {
+	stability = 25
+	karma = 5
+	war_exhaustion = 2
+}
+
+war_on_subject = {
+	stability = 40
+	karma = 5
+}
+
+raise_legion = {
+	gold = 25
+}
+
+appoint_dictator = {
+	righteousness = 10
+}
+
+hold_triumph = {
+	political_influence = 30
+}
+
+hold_games_price = {
+	scaled_gold = 4.2
+}
+
+smear_character = {
+	righteousness = 2
+}
+
+assassinate_attempt = {
+	karma = 7
+	righteousness = 7
+}
+
+assassinate_attempt_foreign = {
+	karma = 15
+}
+
+inspire_disloyalty = {
+	karma = 5
+}
+
+build_roads_engineers = {
+	gold = 10
+}
+
+build_roads = {
+	gold = 25
+}
+
+build_expensive_roads = {
+	gold = 50
+}
+
+raid = {
+	karma = 2
+}
+
+citizen_move = {
+	gold = 10
+}
+
+freemen_move = {
+	gold = 10
+}
+
+tribesmen_move = {
+	gold = 5
+}
+
+slaves_move = {
+	gold = 5
+}
+
+desecrate = {
+	karma = 2
+}
+
+build_border_fort = {
+	manpower = 3
+}
+
+create_military_colony = {
+	manpower = 3
+}
+
+raise_levies = {
+	righteousness = 1
+}
+
+recruit_character = {
+	karma = 2
+}
+
+recruit_general = {
+	karma = 10
+}
+
+secude_governor = {
+	karma = 20
+}
+
+price_imprison = {
+	righteousness = 3
+}
+
+price_execute = {
+	righteousness = 3
+}
+
+price_sacrifice = {
+	stability = 5
+}
+
+subject_pays_tributary = {
+	scaled_gold = 0.15
+}
+
+subject_pays_feudatory = {
+	scaled_manpower = 0.15
+}
+
+subject_pays_vassal = {
+	scaled_manpower = 0.15
+}
+
+subject_pays_satrapy = {
+	scaled_gold = 0.25
+}
+
+subject_client_state_pays = {
+	scaled_gold = 0.25
+}
+
+subject_colony_pays = {
+	scaled_gold = 0.15
+}
+
+subject_merc_city_state = {
+	scaled_gold = 0.1
+}
+
+price_convert_religion = {
+	righteousness = 5
+}
+
+price_propose_marriage = {
+
+}
+
+price_support_primary_heir = {
+	righteousness = 1
+}
+
+price_grant_laurels = {
+	scaled_gold = 12
+}
+
+price_tutor_heir = {
+	#
+}
+
+price_stipends = {
+	scaled_gold = 6
+}
+
+price_arena_match = {
+	righteousness = 4
+}
+
+price_reward_veterans = {
+	scaled_gold = 6
+}
+
+price_optimates_party_action = {
+	government_power = 25
+	righteousness = 5
+}
+
+price_populares_party_action = {
+	government_power = 25
+	manpower = 5
+}
+
+price_boni_party_action = {
+	government_power = 25
+	gold = 100
+}
+
+price_oligarchic_party_action = {
+	government_power = 25
+	righteousness = 5
+}
+
+price_democratic_party_action = {
+	government_power = 25
+	manpower = 5
+}
+
+price_traditionalist_party_action = {
+	government_power = 25
+	gold = 100
+}
+
+price_state_investment_military = {
+	government_power = 80
+}
+
+price_state_investment_civic = {
+	government_power = 80
+}
+
+price_state_investment_oratory = {
+	government_power = 80
+}
+
+price_state_investment_religious = {
+	government_power = 80
+}
+
+price_oaths_of_allegiance_button = {
+	government_power = 100
+}
+
+price_patron_of_arts_button = {
+	government_power = 100
+}
+
+price_assemble_raiding_party_button = {
+	government_power = 100
+}
+
+price_bring_to_trial = {
+	righteousness = 5
+}
+
+price_root_out_pirates = {
+	# no price.
+}
+
+price_anabasis = {
+	government_power = 15
+}
+
+price_local_civ_button = {
+	government_power = 25
+}
+
+price_scheme_abort = {
+	government_power = 10
+}
+
+price_found_city = {
+	government_power = 50
+	gold = 200
+}
+
+price_found_metropolis = {
+	government_power = 100
+	gold = 400
+}
+
+price_revoke_city_status = {
+	righteousness = 5
+}
+
+price_revoke_metropolis_status = {
+	righteousness = 10
+}

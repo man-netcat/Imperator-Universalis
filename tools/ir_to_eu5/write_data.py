@@ -6,6 +6,8 @@ from typing import List, Tuple, Union
 
 import pyradox
 import pyradox.datatype as _pydt
+import pyradox.token as _pytoken
+from pyradox.filetype import txt as ptxt
 
 from .data import (
     government_map,
@@ -77,9 +79,7 @@ def convert_tree_to_blocks(
     for key, values in grouped.items():
         # All scalar values → aggregate into one line
         if all(not isinstance(v, (_pydt.Tree, list)) for v in values):
-            formatted_values = [
-                f'"{v}"' if isinstance(v, str) else str(v) for v in values
-            ]
+            formatted_values = [_pytoken.make_token_string(v) for v in values]
             if len(formatted_values) == 1:
                 blocks.append(f"{key} = {formatted_values[0]}")
             else:
@@ -101,9 +101,7 @@ def convert_tree_to_blocks(
                             blocks.append((key, subblocks))
                         else:
                             # Scalar inside a list
-                            formatted = (
-                                f'"{item}"' if isinstance(item, str) else str(item)
-                            )
+                            formatted = _pytoken.make_token_string(item)
                             blocks.append(f"{key} = {formatted}")
 
     return blocks
@@ -182,6 +180,46 @@ def write_blocks(
     return out_path
 
 
+def _read_existing_tree(path: Path) -> _pydt.Tree | None:
+    if not path.exists():
+        return None
+    try:
+        text = path.read_text(encoding="utf-8-sig")
+    except UnicodeDecodeError:
+        text = path.read_text(encoding="utf-8")
+    try:
+        return ptxt.parse(text, filename=str(path))
+    except Exception as exc:
+        print(f"Warning: failed to parse existing file for merge: {path} ({exc})")
+        return None
+
+
+def _existing_block_map(path: Path) -> dict[str, _pydt.Tree]:
+    tree = _read_existing_tree(path)
+    if tree is None:
+        return {}
+    existing: dict[str, _pydt.Tree] = {}
+    for key, value in tree.items():
+        if isinstance(value, _pydt.Tree):
+            existing[str(key)] = _pydt.Tree(value)
+    return existing
+
+
+def _merge_tree_with_overrides(
+    existing: _pydt.Tree | None,
+    overrides: dict[str, object],
+    add_if_missing: dict[str, object] | None = None,
+) -> _pydt.Tree:
+    merged = _pydt.Tree(existing) if existing is not None else _pydt.Tree()
+    for key, value in overrides.items():
+        merged[key] = value
+    if add_if_missing:
+        for key, value in add_if_missing.items():
+            if key not in merged:
+                merged.append(key, value)
+    return merged
+
+
 def write_culture_group_data(culture_data: list):
     blocks = [(culture_group["tag"], []) for culture_group in culture_data]
     out_path = iu_culture_groups / f"ir_culture_groups.txt"
@@ -250,35 +288,293 @@ def write_culture_data(culture_data: list):
         write_blocks(out_path, blocks)
 
 
+RELIGION_GROUP_MAP = {
+    "ir_roman_pantheon": "ir_hellenic_group",
+    "ir_egyptian_pantheon": "ir_egyptian_group",
+    "ir_carthaginian_pantheon": "ir_canaanite_group",
+    "ir_mesopotamian_religion": "ir_mesopotamian_group",
+    "ir_caucasian_religion": "ir_caucasian_group",
+    "ir_armenian_religion": "ir_armenian_group",
+    "ir_anatolian_religion": "ir_anatolian_group",
+    "ir_druidism": "ir_celtic_group",
+    "ir_animism": "ir_iberic_group",
+    "ir_berber_religion": "ir_berber_group",
+    "ir_germanic_religion": "ir_germanic_group",
+    "ir_shamanism": "ir_shamanic_group",
+    "ir_indo_iranian_religion": "ir_indo_iranian_group",
+    "ir_arabian_pantheon": "ir_arabian_group",
+    "ir_zoroaster": "ir_zoroastrian_group",
+    "ir_judaism": "ir_israelite_group",
+    "ir_buddhism": "ir_buddhist_group",
+    "ir_hindu": "ir_dharmic_group",
+    "ir_jainism": "ir_dharmic_group",
+    "ir_eastern_animism": "ir_eastern_animist_group",
+    "ir_bon_religion": "ir_eastern_animist_group",
+    "ir_matrist_religion": "ir_eastern_animist_group",
+}
+
+RELIGION_GROUP_NAMES = {
+    "ir_hellenic_group": "Hellenic",
+    "ir_egyptian_group": "Egyptian",
+    "ir_canaanite_group": "Canaanite",
+    "ir_mesopotamian_group": "Mesopotamian",
+    "ir_caucasian_group": "Caucasian",
+    "ir_armenian_group": "Armenian",
+    "ir_anatolian_group": "Anatolian",
+    "ir_celtic_group": "Celtic",
+    "ir_iberic_group": "Iberic",
+    "ir_berber_group": "Berber",
+    "ir_germanic_group": "Germanic",
+    "ir_shamanic_group": "Shamanic",
+    "ir_indo_iranian_group": "Indo-Iranian",
+    "ir_arabian_group": "Arabian",
+    "ir_zoroastrian_group": "Zoroastrian",
+    "ir_israelite_group": "Israelite",
+    "ir_buddhist_group": "Buddhist",
+    "ir_dharmic_group": "Dharmic",
+    "ir_eastern_animist_group": "Eastern Animist",
+}
+
+PANTHEON_MAP = {
+    "roman_pantheon": "ir_roman_pantheon",
+    "egyptian_pantheon": "ir_egyptian_pantheon",
+    "carthaginian_pantheon": "ir_carthaginian_pantheon",
+    "shamanism": "ir_shamanism",
+    "caucasian_religion": "ir_caucasian_religion",
+    "mesopotamian_religion": "ir_mesopotamian_religion",
+    "armenian_religion": "ir_armenian_religion",
+    "anatolian_religion": "ir_anatolian_religion",
+    "druidism": "ir_druidism",
+    "animism": "ir_animism",
+    "judaism": "ir_judaism",
+    "zoroaster": "ir_zoroaster",
+    "berber_religion": "ir_berber_religion",
+    "germanic_religion": "ir_germanic_religion",
+    "indo_iranian_religion": "ir_indo_iranian_religion",
+    "arabian_pantheon": "ir_arabian_pantheon",
+    "buddhism": "ir_buddhism",
+    "hindu": "ir_hindu",
+    "eastern_animism": "ir_eastern_animism",
+    "bon_religion": "ir_bon_religion",
+    "matrist_religion": "ir_matrist_religion",
+    "jainism": "ir_jainism",
+}
+
+GOD_CATEGORY_MODIFIERS = {
+    "war": {
+        "land_morale_modifier": 0.05,
+        "discipline": 0.01,
+    },
+    "economy": {
+        "global_raw_material_output": 0.05,
+        "trade_efficiency": 0.05,
+    },
+    "culture": {
+        "research_speed_modifier": 0.05,
+        "global_max_literacy": 2,
+    },
+    "fertility": {
+        "global_population_growth": 0.0002,
+        "global_monthly_food_modifier": 0.03,
+    },
+}
+
+GOD_CATEGORY_ASPECT_ICONS = {
+    "war": "religious_aspect_folk_red",
+    "economy": "religious_aspect_folk_brown",
+    "culture": "religious_aspect_folk_blue",
+    "fertility": "religious_aspect_folk_pink",
+}
+
+
 def write_religion_group_data(religion_data: list):
-    blocks = [
+    religion_color_map = {
+        r.get("tag"): r.get("color") for r in religion_data if r.get("tag")
+    }
+
+    group_color_map: dict[str, _pydt.Color] = {}
+    for religion_tag, group_tag in RELIGION_GROUP_MAP.items():
+        if group_tag in group_color_map:
+            continue
+        color = religion_color_map.get(religion_tag)
+        if color is not None:
+            group_color_map[group_tag] = color
+
+    blocks = []
+    for group_tag in sorted(RELIGION_GROUP_NAMES.keys()):
+        color = group_color_map.get(group_tag)
+        if color is None:
+            color = _pydt.Color("rgb", [255, 255, 255])
+        blocks.append(
+            (
+                group_tag,
+                [
+                    f"color = {convert_color(color)}",
+                ],
+            )
+        )
+
+    blocks.append(
         (
-            "ir_religion_group",
+            "ir_unknown_group",
             [
-                "# Will probably need to change this manually later",
-                f"color = rgb {{ 255 255 255 }}",
+                "# Fallback group for unmapped religions",
+                "color = rgb { 255 255 255 }",
             ],
         )
-    ]
+    )
 
-    out_path = iu_religion_groups / f"ir_default.txt"
+    out_path = iu_religion_groups / "ir_default.txt"
 
     write_blocks(out_path, blocks)
 
 
 def write_religion_data(religion_data: list):
-    blocks = [
-        (
-            religion["tag"],
-            [
-                f"color = {convert_color(religion['color'])}",
-                f"group = ir_religion_group",
-            ],
-        )
-        for religion in religion_data
-    ]
+    out_path = iu_religions / "ir_religions.txt"
+    existing_blocks = _existing_block_map(out_path)
 
-    out_path = iu_religions / f"ir_religions.txt"
+    blocks = []
+    generated_tags: set[str] = set()
+
+    for religion in religion_data:
+        tag = religion["tag"]
+        generated_tags.add(tag)
+
+        overrides = {
+            "color": religion["color"],
+            "group": RELIGION_GROUP_MAP.get(tag, "ir_unknown_group"),
+        }
+        add_if_missing = {
+            # Enable a single selectable aspect (Romuva-style pantheon mechanic).
+            "religious_aspects": 1,
+        }
+
+        existing = existing_blocks.get(tag)
+        merged_tree = _merge_tree_with_overrides(existing, overrides, add_if_missing)
+        lines = convert_tree_to_blocks(merged_tree)
+        blocks.append((tag, lines))
+
+    for tag, tree in existing_blocks.items():
+        if tag not in generated_tags:
+            lines = convert_tree_to_blocks(tree)
+            blocks.append((tag, lines))
+
+    write_blocks(out_path, blocks)
+
+
+def write_god_data(deity_data: list, religion_data: list):
+    religion_tags = {r.get("tag") for r in religion_data if r.get("tag")}
+
+    out_path = iu_gods / "00_ir_gods.txt"
+    existing_blocks = _existing_block_map(out_path)
+
+    blocks = []
+    generated_tags: set[str] = set()
+    for deity in sorted(deity_data, key=lambda d: d.get("tag", "")):
+        deity_tag = deity.get("tag")
+        if not deity_tag:
+            continue
+        generated_tags.add(deity_tag)
+        raw_religion = deity.get("religion")
+        mapped_religion = PANTHEON_MAP.get(raw_religion)
+        if not mapped_religion and raw_religion:
+            candidate = f"ir_{raw_religion}"
+            if candidate in religion_tags:
+                mapped_religion = candidate
+
+        category = deity.get("category")
+        modifiers = GOD_CATEGORY_MODIFIERS.get(category, GOD_CATEGORY_MODIFIERS["culture"])
+        modifier_tree = _pydt.Tree({k: v for k, v in modifiers.items()})
+
+        overrides: dict[str, object] = {
+            "icon": "god_folk_blue",
+            "country_modifier": modifier_tree,
+        }
+        if mapped_religion:
+            overrides["religion"] = mapped_religion
+            existing = existing_blocks.get(deity_tag)
+            merged_tree = _merge_tree_with_overrides(existing, overrides)
+        else:
+            overrides["group"] = _pydt.Tree(
+                {
+                    "group": "ir_unknown_group",
+                    "name_key": deity_tag,
+                }
+            )
+            existing = existing_blocks.get(deity_tag)
+            merged_tree = _merge_tree_with_overrides(existing, overrides)
+
+        lines = convert_tree_to_blocks(merged_tree)
+        blocks.append((deity_tag, lines))
+
+    for tag, tree in existing_blocks.items():
+        if tag not in generated_tags:
+            lines = convert_tree_to_blocks(tree)
+            blocks.append((tag, lines))
+
+    write_blocks(out_path, blocks)
+
+
+def write_ir_religious_aspects(deity_data: list, religion_data: list) -> None:
+    out_path = iu_religious_aspects / "ir_folk_default.txt"
+    existing_blocks = _existing_block_map(out_path)
+    religion_tags = {r.get("tag") for r in religion_data if r.get("tag")}
+
+    blocks = []
+    generated_tags: set[str] = set()
+
+    for deity in sorted(deity_data, key=lambda d: d.get("tag", "")):
+        deity_tag = deity.get("tag")
+        if not deity_tag:
+            continue
+
+        aspect_name = f"worship_{deity_tag}"
+        generated_tags.add(aspect_name)
+
+        raw_religion = deity.get("religion")
+        mapped_religion = PANTHEON_MAP.get(raw_religion)
+        if not mapped_religion and raw_religion:
+            candidate = f"ir_{raw_religion}"
+            if candidate in religion_tags:
+                mapped_religion = candidate
+
+        if not mapped_religion:
+            print(f"Warning: missing religion mapping for deity {deity_tag}")
+            continue
+
+        category = deity.get("category")
+        modifiers = GOD_CATEGORY_MODIFIERS.get(category, GOD_CATEGORY_MODIFIERS["culture"])
+        icon = GOD_CATEGORY_ASPECT_ICONS.get(category, "religious_aspect_folk_blue")
+
+        existing = existing_blocks.get(aspect_name)
+        existing_religions: list[str] = []
+        if existing is not None:
+            existing_religions = [str(v) for v in existing.find_all("religion")]
+
+        merged_religions = [mapped_religion] + [
+            tag for tag in existing_religions if tag != mapped_religion
+        ]
+
+        merged_tree = _pydt.Tree()
+        merged_tree.append("icon", icon)
+        merged_tree.append("modifier", _pydt.Tree(modifiers))
+
+        if existing is not None:
+            for key, value in existing.items():
+                if str(key) in {"icon", "modifier", "religion"}:
+                    continue
+                merged_tree.append(key, value)
+
+        for tag in merged_religions:
+            merged_tree.append("religion", tag)
+
+        lines = convert_tree_to_blocks(merged_tree)
+        blocks.append((aspect_name, lines))
+
+    for tag, tree in existing_blocks.items():
+        if tag not in generated_tags:
+            lines = convert_tree_to_blocks(tree)
+            blocks.append((tag, lines))
 
     write_blocks(out_path, blocks)
 
@@ -329,6 +625,7 @@ def write_localisation_files(
     country_data: list,
     character_data: list,
     dynasties: list,
+    deity_data: list,
 ):
     def sort_lines(lines: list[str]) -> list[str]:
         """Keep the first line (header) and sort the rest alphabetically."""
@@ -357,17 +654,23 @@ def write_localisation_files(
 
     # -------- Religions --------
     religion_lines = ["l_english:"]
+    for religion in religion_data:
+        religion_tag = religion["tag"]
+        religion_name = religion["name"]
+        religion_lines.append(f'  {religion_tag}: "{religion_name}"')
+        religion_lines.append(f'  {religion_tag}_ADJ: "{religion_name}"')
+        religion_lines.append(f'  {religion_tag}_desc: "{religion["name_desc"]}"')
+    for group_tag, group_name in RELIGION_GROUP_NAMES.items():
+        religion_lines.append(f'  {group_tag}: "{group_name} Group"')
+        religion_lines.append(f'  {group_tag}_ADJ: "{group_name} Group"')
+        religion_lines.append(f'  {group_tag}_desc: "{group_name} Group"')
     religion_lines.extend(
         [
-            '  ir_religion_group: "Religions"',
-            '  ir_religion_group_ADJ: "Religious"',
-            '  ir_religion_group_desc: "Imperator Universalis Religions"',
+            '  ir_unknown_group: "Unknown Group"',
+            '  ir_unknown_group_ADJ: "Unknown Group"',
+            '  ir_unknown_group_desc: "Fallback group for unmapped religions"',
         ]
     )
-    for religion in religion_data:
-        religion_lines.append(f'  {religion["tag"]}: "{religion["name"]}"')
-        religion_lines.append(f'  {religion["tag"]}_ADJ: "{religion["name"]}"')
-        religion_lines.append(f'  {religion["tag"]}_desc: "{religion["name_desc"]}"')
     religion_lines = remove_duplicate_keys(sort_lines(religion_lines))
 
     # -------- Countries --------
@@ -393,12 +696,24 @@ def write_localisation_files(
         dynasty_lines.append(f'  {d["tag"]}: "{d["name"]}"')
     dynasty_lines = remove_duplicate_keys(sort_lines(dynasty_lines))
 
+    # -------- Gods --------
+    god_lines = ["l_english:"]
+    for deity in deity_data:
+        deity_tag = deity.get("tag")
+        if not deity_tag:
+            continue
+        name = deity.get("name") or deity_tag
+        god_lines.append(f'  {deity_tag}: "{name}"')
+        god_lines.append(f'  worship_{deity_tag}: "{name}"')
+    god_lines = remove_duplicate_keys(sort_lines(god_lines))
+
     # -------- Write Files --------
     write_blocks(iu_localisation / "ir_cultures_l_english.yml", culture_lines)
     write_blocks(iu_localisation / "ir_religions_l_english.yml", religion_lines)
     write_blocks(iu_localisation / "ir_countries_l_english.yml", country_lines)
     write_blocks(iu_localisation / "ir_characters_l_english.yml", character_lines)
     write_blocks(iu_localisation / "ir_dynasties_l_english.yml", dynasty_lines)
+    write_blocks(iu_localisation / "ir_gods_l_english.yml", god_lines)
 
 
 def write_coa_file(coa_data: _pydt.Tree):

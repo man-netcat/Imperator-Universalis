@@ -3,8 +3,84 @@
 #  Any manual changes will be OVERWRITTEN upon regeneration!  #
 # =========================================================== #
 
-ir_religion_group = {
-    # Will probably need to change this manually later
+ir_anatolian_group = {
+    color = hsv { 0.30 0.40 0.20 }
+}
+
+ir_arabian_group = {
+    color = hsv { 0.30 0.70 0.60 }
+}
+
+ir_armenian_group = {
+    color = hsv { 0.30 0.10 0.20 }
+}
+
+ir_berber_group = {
+    color = hsv { 0.05 0.50 0.40 }
+}
+
+ir_buddhist_group = {
+    color = hsv { 0.15 0.70 1.00 }
+}
+
+ir_canaanite_group = {
+    color = hsv { 0.75 0.90 0.73 }
+}
+
+ir_caucasian_group = {
+    color = hsv { 0.30 0.10 0.40 }
+}
+
+ir_celtic_group = {
+    color = hsv { 0.30 0.70 0.40 }
+}
+
+ir_dharmic_group = {
+    color = hsv { 0.05 1.00 0.90 }
+}
+
+ir_eastern_animist_group = {
+    color = hsv { 0.03 0.70 0.70 }
+}
+
+ir_egyptian_group = {
+    color = hsv { 0.15 1.00 0.70 }
+}
+
+ir_germanic_group = {
+    color = hsv { 0.05 0.70 0.30 }
+}
+
+ir_hellenic_group = {
+    color = hsv { 0.65 0.70 0.80 }
+}
+
+ir_iberic_group = {
+    color = hsv { 0.07 1.00 1.00 }
+}
+
+ir_indo_iranian_group = {
+    color = hsv { 0.20 0.50 0.80 }
+}
+
+ir_israelite_group = {
+    color = hsv { 0.65 1.00 1.00 }
+}
+
+ir_mesopotamian_group = {
+    color = hsv { 0.05 1.00 0.50 }
+}
+
+ir_shamanic_group = {
+    color = hsv { 0.00 0.50 1.00 }
+}
+
+ir_zoroastrian_group = {
+    color = hsv { 0.52 0.77 0.72 }
+}
+
+ir_unknown_group = {
+    # Fallback group for unmapped religions
     color = rgb { 255 255 255 }
 }
 

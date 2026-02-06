@@ -17,12 +17,14 @@ if not tools_pyradox_src.is_dir():
     sys.exit(1)
 
 sys.path.insert(0, str(tools_pyradox_src))
+sys.path.insert(0, str(script_dir))
 
 from ir_to_eu5.extract_data import (
     extract_character_data,
     extract_coa_data,
     extract_country_data,
     extract_culture_data,
+    extract_deity_data,
     extract_diplomacy_data,
     extract_dynasty_data,
     extract_eu5_map_data,
@@ -44,6 +46,8 @@ from ir_to_eu5.write_data import (
     write_country_setup,
     write_culture_data,
     write_culture_group_data,
+    write_god_data,
+    write_ir_religious_aspects,
     write_localisation_files,
     write_religion_data,
     write_religion_group_data,
@@ -74,6 +78,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     culture_data = extract_culture_data()
     religion_data = extract_religion_data()
+    deity_data = extract_deity_data()
     character_data = extract_character_data()
     dynasty_data = extract_dynasty_data()
     country_rulers = {c["country"]: c["tag"] for c in character_data if c["is_ruler"]}
@@ -104,6 +109,8 @@ if __name__ == "__main__":
     write_culture_data(culture_data)
     write_religion_group_data(religion_data)
     write_religion_data(religion_data)
+    write_god_data(deity_data, religion_data)
+    write_ir_religious_aspects(deity_data, religion_data)
     write_country_setup(country_data, country_overrides)
     write_04_dynasties(four_dynasties_data, dynasty_data)
     write_05_characters(five_characters_data, character_data)
@@ -136,7 +143,12 @@ if __name__ == "__main__":
 
     if not args.no_localisation:
         write_localisation_files(
-            culture_data, religion_data, country_data, character_data, dynasty_data
+            culture_data,
+            religion_data,
+            country_data,
+            character_data,
+            dynasty_data,
+            deity_data,
         )
 
     if not args.no_images:

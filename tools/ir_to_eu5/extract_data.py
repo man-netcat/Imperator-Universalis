@@ -140,6 +140,65 @@ def extract_religion_data():
     return religion_blocks
 
 
+def extract_deity_data():
+    deity_blocks = []
+    if not ir_deities.exists():
+        return deity_blocks
+
+    deity_loc = read_localisation_file(ir_localisation / "deities")
+    deity_loc.update(read_localisation_file(ir_localisation / "god_names_l_english.yml"))
+
+    def resolve_deity_name(loc_key: str) -> str | None:
+        if not loc_key:
+            return None
+        value = deity_loc.get(loc_key)
+        if value and value.startswith("$") and value.endswith("$"):
+            inner = value.strip("$")
+            return deity_loc.get(inner, value)
+        return value
+
+    def _get_tree_value(tree: Any, key: str):
+        if tree is None:
+            return None
+        if isinstance(tree, dict):
+            return tree.get(key)
+        if isinstance(tree, _pydt.Tree):
+            if hasattr(tree, "get"):
+                return tree.get(key)
+            try:
+                return tree[key] if key in tree else None
+            except Exception:
+                return None
+        if hasattr(tree, "get"):
+            try:
+                return tree.get(key)
+            except Exception:
+                return None
+        return None
+
+    for path in sorted(ir_deities.iterdir()):
+        if path.suffix != ".txt" or not path.is_file():
+            continue
+
+        tree = parse_tree(path)
+        for deity_tag, deity_data in tree.items():
+            if not isinstance(deity_tag, str) or not deity_tag.startswith("deity_"):
+                continue
+            religion = _get_tree_value(deity_data, "religion")
+            category = _get_tree_value(deity_data, "deity_category")
+
+            deity_blocks.append(
+                {
+                    "tag": deity_tag,
+                    "religion": str(religion) if religion is not None else None,
+                    "category": str(category) if category is not None else None,
+                    "name": resolve_deity_name(deity_tag),
+                }
+            )
+
+    return deity_blocks
+
+
 def extract_country_data():
     default_tree = parse_tree(ir_default)
     country_tree = default_tree["country"]["countries"]

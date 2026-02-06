@@ -1,0 +1,451 @@
+############################
+# Imperator: Rome building ports
+############################
+
+fortress_building = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = soldiers
+	category = defense_category
+
+	rural_settlement = yes
+	town = yes
+	city = yes
+
+	build_time = medium_fort_building
+	construction_demand = fort_construction
+
+	modifier = {
+		local_defensive = 0.05
+		local_manpower_modifier = -0.05
+		local_garrison_size = 0.1
+		local_unrest = -0.01
+	}
+
+	raw_modifier = {
+		fort_level = 1
+		propagating_zone_of_control = yes
+	}
+}
+
+fortress_ramparts_building = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = soldiers
+	category = defense_category
+
+	city = yes
+
+	build_time = large_fort_building
+	construction_demand = fort_construction
+
+	modifier = {
+		local_defensive = 0.25
+		local_garrison_size = 0.5
+		local_unrest = -0.02
+	}
+
+	raw_modifier = {
+		fort_level = 1
+		propagating_zone_of_control = yes
+	}
+}
+
+port_building = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = soldiers
+	category = naval_category
+
+	town = yes
+	city = yes
+
+	location_potential = {
+		is_port = yes
+	}
+
+	build_time = medium_port_building_time
+	construction_demand = port_building_construction
+
+	modifier = {
+		local_sailors = 0.01
+		local_migration_attraction = 0.05
+		can_build_ships_in_this_location = yes
+		max_ships_built_at_same_time = 1
+		harbor_suitability = 0.05
+	}
+}
+
+barracks_building = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = soldiers
+	category = military_category
+
+	rural_settlement = yes
+
+	build_time = soldier_building
+	construction_demand = soldier_building_construction
+
+	modifier = {
+		local_manpower_modifier = 0.1
+		local_soldiers_desired_pop = 0.05
+		local_migration_attraction = -0.05
+	}
+}
+
+foundry_building = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = laborers
+	category = basic_industry_category
+
+	town = yes
+	city = yes
+
+	build_time = guild_build_time
+	construction_demand = guild_construction
+
+	modifier = {
+		local_production_efficiency = 0.1
+		local_laborers_desired_pop = 0.05
+		local_market_access = 0.005
+	}
+}
+
+##############################
+# Economic / Management
+##############################
+
+aqueduct_building = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = laborers
+	category = infrastructure_category
+
+	town = yes
+	city = yes
+
+	build_time = infrastructure_build_time
+	construction_demand = town_building_construction
+
+	modifier = {
+		local_food_capacity = 150
+		local_monthly_food_modifier = 0.05
+		local_migration_attraction = 0.05
+	}
+}
+
+temple_building = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = clergy
+	category = religious_category
+
+	town = yes
+	city = yes
+
+	build_time = religious_building_time
+	construction_demand = town_building_construction
+
+	modifier = {
+		local_pop_conversion_speed_modifier = 0.1
+		local_unrest = -0.02
+		local_max_control = 0.05
+		local_clergy_max_literacy = 5
+	}
+}
+
+population_building = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = laborers
+	category = infrastructure_category
+
+	town = yes
+	city = yes
+
+	build_time = government_build_time
+	construction_demand = granary_construction
+
+	modifier = {
+		local_food_capacity = 200
+		local_monthly_food_modifier = 0.02
+	}
+}
+
+#################################
+# Population / Culture
+################################
+
+theathre_building = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = burghers
+	category = cultural_category
+
+	town = yes
+	city = yes
+
+	build_time = cultural_building_time
+	construction_demand = theater_construction
+
+	modifier = {
+		local_pop_assimilation_speed_modifier = 0.1
+		local_unrest = -0.02
+		local_cultural_tradition = 0.1
+	}
+}
+
+library_building = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = burghers
+	category = cultural_category
+
+	town = yes
+	city = yes
+
+	build_time = cultural_building_time
+	construction_demand = library_construction
+
+	modifier = {
+		local_monthly_literacy = 0.05
+		local_pop_promotion_speed = 0.01
+		local_institution_growth_modifier = 0.1
+	}
+}
+
+academy_building = {
+	is_foreign = no
+	max_levels = 3
+	pop_type = nobles
+	category = cultural_category
+
+	town = yes
+	city = yes
+
+	build_time = cultural_building_time
+	construction_demand = academy_construction
+
+	modifier = {
+		local_pop_promotion_speed = 0.01
+		local_nobles_desired_pop = 0.01
+		local_nobles_max_literacy = 5
+		local_institution_growth_modifier = 0.2
+	}
+}
+
+commerce_building = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = burghers
+	category = trade_category
+
+	town = yes
+	city = yes
+
+	build_time = merchant_build_time
+	construction_demand = town_building_construction
+
+	modifier = {
+		local_pop_assimilation_speed_modifier = 0.02
+		local_market_access = 0.005
+		local_merchant_power = 1.0
+		local_trades_per_burgher = 0.2
+		merchant_capacity_from_building = 0.5
+	}
+}
+
+court_building = {
+	is_foreign = no
+	max_levels = 3
+	pop_type = nobles
+	category = government_category
+
+	town = yes
+	city = yes
+
+	build_time = government_build_time
+	construction_demand = town_building_construction
+
+	modifier = {
+		local_max_control = 0.05
+		local_nobles_estate_power = 0.2
+		local_unrest = -0.01
+	}
+}
+
+military_building = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = soldiers
+	category = military_category
+
+	town = yes
+	city = yes
+
+	build_time = soldier_building
+	construction_demand = soldier_building_construction
+
+	modifier = {
+		local_manpower_modifier = 0.05
+		local_manpower = 0.005
+	}
+}
+
+forum_building = {
+	is_foreign = no
+	max_levels = 3
+	pop_type = burghers
+	category = government_category
+
+	town = yes
+	city = yes
+
+	build_time = government_build_time
+	construction_demand = town_building_construction
+
+	modifier = {
+		local_market_access = 0.005
+		local_max_control = 0.02
+		local_unrest = -0.02
+	}
+}
+
+town_hall_building = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = burghers
+	category = government_category
+
+	town = yes
+	city = yes
+
+	build_time = government_build_time
+	construction_demand = town_building_construction
+
+	modifier = {
+		local_market_access = 0.01
+		local_crown_estate_power = 0.1
+		local_max_control = 0.02
+	}
+}
+
+### Settlement Buildings
+
+latifundia_building = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = peasants
+	category = village_category
+
+	rural_settlement = yes
+
+	build_time = rural_build_time
+	construction_demand = village_construction
+
+	modifier = {
+		local_monthly_food_modifier = 0.1
+		local_food_capacity = 50
+		local_production_efficiency = 0.05
+		local_migration_attraction = -0.05
+	}
+}
+
+slave_mine_building = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = laborers
+	category = rgo_building_category
+
+	rural_settlement = yes
+
+	build_time = rural_build_time
+	construction_demand = guild_construction
+
+	modifier = {
+		local_production_efficiency = 0.1
+		local_max_rgo_size_modifier = 0.1
+		local_migration_attraction = -0.02
+		local_unrest = 0.01
+	}
+}
+
+basic_settlement_infratructure_building = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = peasants
+	category = village_category
+
+	rural_settlement = yes
+
+	build_time = rural_build_time
+	construction_demand = village_construction
+
+	modifier = {
+		local_monthly_food_modifier = 0.1
+		local_food_capacity = 100
+		local_peasants_estate_power = 0.25
+	}
+}
+
+hill_fort = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = tribesmen
+	category = defense_category
+
+	rural_settlement = yes
+
+	build_time = small_fort_building
+	construction_demand = fort_construction
+
+	modifier = {
+		local_tribal_promotion = 0.2
+		local_defensive = 0.1
+		local_unrest = -0.01
+	}
+
+	raw_modifier = {
+		fort_level = 1
+		propagating_zone_of_control = no
+	}
+}
+
+local_forum_building = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = burghers
+	category = government_category
+
+	rural_settlement = yes
+
+	build_time = government_build_time
+	construction_demand = town_building_construction
+
+	modifier = {
+		local_migration_attraction = 0.1
+		local_pop_assimilation_speed_modifier = 0.05
+		local_max_control = 0.02
+	}
+}
+
+workshop_building = {
+	is_foreign = no
+	max_levels = 3
+	pop_type = laborers
+	category = basic_industry_category
+
+	town = yes
+	city = yes
+
+	build_time = guild_build_time
+	construction_demand = guild_construction
+
+	modifier = {
+		local_production_efficiency = 0.05
+		local_laborers_desired_pop = 0.05
+		local_market_access = 0.005
+	}
+}
