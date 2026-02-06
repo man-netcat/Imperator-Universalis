@@ -289,8 +289,29 @@ IR_GROUP_TOWN_SETUPS = {
 # Map I:R building keys to EU5 building types.
 # Defaults to identity, with optional overrides for renamed EU5 types.
 IR_BUILDING_MAP_OVERRIDES = {
-    # Example override (kept for clarity; adjust if EU5 names differ).
-    # "port_building": "wharf",
+    # Map I:R buildings to EU5 base buildings to preserve base functionality.
+    "fortress_building": "castle",
+    "fortress_ramparts_building": "bastion",
+    "hill_fort": "stockade",
+    "port_building": "dock",
+    "barracks_building": "barracks",
+    "military_building": "armory",
+    "foundry_building": "mason",
+    "workshop_building": "tools_workshop",
+    "commerce_building": "marketplace",
+    "forum_building": "merchants_quarters",
+    "court_building": "counting_house",
+    "town_hall_building": "minting_office",
+    "temple_building": "temple",
+    "library_building": "library",
+    "academy_building": "university",
+    "theathre_building": "theater",
+    "aqueduct_building": "construction_center",
+    "population_building": "granary",
+    "latifundia_building": "farming_village",
+    "basic_settlement_infratructure_building": "market_village",
+    "slave_mine_building": "slave_market",
+    "local_forum_building": "bailiff",
 }
 
 # Map I:R trade_goods to EU5 goods keys used in location_templates raw_material.
@@ -1909,6 +1930,64 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
         building_map,
         include_locations=rankable_locations,
     )
+    # --- Also include any building assignments present in Imperator's main/default setup ---
+    main_setup = ir_game / "setup" / "main" / "00_default.txt"
+    if main_setup.exists():
+        main_tree = parse_tree(main_setup)
+        provinces = main_tree["provinces"] if "provinces" in main_tree else None
+        merged_count = 0
+        if isinstance(provinces, (_pydt.Tree, dict)):
+            for raw_id, data in provinces.items():
+                try:
+                    prov_id = int(raw_id)
+                except Exception:
+                    continue
+                loc_key = id_to_key.get(prov_id)
+                if not loc_key:
+                    continue
+                if not isinstance(data, (_pydt.Tree, dict)):
+                    continue
+                setup_name = f"ir_loc_{loc_key}"
+                dst_buildings = setup_definitions.setdefault(setup_name, {})
+                # If there's an inner 'buildings' block, handle it first
+                inner = (
+                    data.get("buildings")
+                    if isinstance(data, dict)
+                    else data["buildings"] if "buildings" in data else None
+                )
+                if isinstance(inner, (_pydt.Tree, dict)):
+                    for b_key, b_val in inner.items():
+                        b_key_str = str(b_key)
+                        if b_key_str not in building_map:
+                            continue
+                        try:
+                            level = int(str(b_val).strip())
+                        except Exception:
+                            level = 0
+                        if level > 0:
+                            mapped = building_map[b_key_str]
+                            dst_buildings[mapped] = max(dst_buildings.get(mapped, 0), level)
+                            merged_count += 1
+                # Also check top-level keys for direct building assignments
+                for key, val in data.items():
+                    key_str = str(key)
+                    if key_str not in building_map:
+                        continue
+                    try:
+                        level = int(str(val).strip())
+                    except Exception:
+                        level = 0
+                    if level <= 0:
+                        continue
+                    mapped = building_map[key_str]
+                    dst_buildings[mapped] = max(dst_buildings.get(mapped, 0), level)
+                    merged_count += 1
+        if merged_count > 0:
+            print(
+                "Merged "
+                + str(merged_count)
+                + " building assignments from Imperator main setup into town_setups"
+            )
     town_setups_dir = mod_root / "in_game" / "common" / "town_setups"
     town_setups_dir.mkdir(parents=True, exist_ok=True)
     town_setups_path = town_setups_dir / "ir_location_setups.txt"

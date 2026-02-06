@@ -22,6 +22,7 @@ ir_loc_abarbina = {
 }
 
 ir_loc_abasenia = {
+    construction_center = 1
 }
 
 ir_loc_abasgria = {
@@ -31,11 +32,11 @@ ir_loc_abbasion = {
 }
 
 ir_loc_abdarat = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_abdera = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_abellinum = {
@@ -45,6 +46,12 @@ ir_loc_aberta = {
 }
 
 ir_loc_abha = {
+}
+
+ir_loc_abhiria = {
+}
+
+ir_loc_abhiria_secunda = {
 }
 
 ir_loc_abid = {
@@ -66,7 +73,7 @@ ir_loc_abis = {
 }
 
 ir_loc_abisama = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_abivard = {
@@ -78,6 +85,9 @@ ir_loc_ablastha = {
 ir_loc_abliata = {
 }
 
+ir_loc_abnoba_mons = {
+}
+
 ir_loc_abodiacum = {
 }
 
@@ -85,7 +95,7 @@ ir_loc_abona = {
 }
 
 ir_loc_abonouteichos = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_aborisia = {
@@ -119,6 +129,7 @@ ir_loc_abuyya = {
 }
 
 ir_loc_abydos = {
+    castle = 1
 }
 
 ir_loc_acachia = {
@@ -146,7 +157,7 @@ ir_loc_achkhacsh = {
 }
 
 ir_loc_acholla = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_achroua = {
@@ -168,7 +179,8 @@ ir_loc_acrae = {
 }
 
 ir_loc_acragas = {
-    port_building = 1
+    castle = 1
+    dock = 1
 }
 
 ir_loc_acranoe = {
@@ -352,13 +364,14 @@ ir_loc_adada = {
 }
 
 ir_loc_adana = {
+    library = 1
 }
 
 ir_loc_adatha = {
 }
 
 ir_loc_adedou_kome = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_adefa = {
@@ -371,13 +384,14 @@ ir_loc_adjalu = {
 }
 
 ir_loc_adma = {
+    castle = 1
 }
 
 ir_loc_adora = {
 }
 
 ir_loc_adouli = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_adrabae = {
@@ -405,6 +419,7 @@ ir_loc_adrou = {
 }
 
 ir_loc_aeclanum = {
+    castle = 1
 }
 
 ir_loc_aegha = {
@@ -414,7 +429,7 @@ ir_loc_aegidi = {
 }
 
 ir_loc_aelana = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_aelia = {
@@ -427,7 +442,7 @@ ir_loc_aemate = {
 }
 
 ir_loc_aeminium = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_aeso = {
@@ -455,6 +470,7 @@ ir_loc_agarusia = {
 }
 
 ir_loc_agatha = {
+    castle = 1
 }
 
 ir_loc_agathapura = {
@@ -497,13 +513,16 @@ ir_loc_aghonor = {
 }
 
 ir_loc_agines = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_aginnum = {
 }
 
 ir_loc_agiria = {
+}
+
+ir_loc_agraeia = {
 }
 
 ir_loc_agrana = {
@@ -524,6 +543,9 @@ ir_loc_agrodakha = {
 ir_loc_agrum = {
 }
 
+ir_loc_aguila = {
+}
+
 ir_loc_aguntum = {
 }
 
@@ -534,6 +556,7 @@ ir_loc_ahgranika = {
 }
 
 ir_loc_ahicchatra = {
+    library = 1
 }
 
 ir_loc_ahur = {
@@ -546,7 +569,8 @@ ir_loc_aigaiai = {
 }
 
 ir_loc_aigina = {
-    port_building = 1
+    barracks = 1
+    dock = 1
 }
 
 ir_loc_aigion = {
@@ -571,6 +595,7 @@ ir_loc_aipolion = {
 }
 
 ir_loc_airakina = {
+    construction_center = 2
 }
 
 ir_loc_aizanoi = {
@@ -586,7 +611,7 @@ ir_loc_akanthos = {
 }
 
 ir_loc_ake_ptolemais = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_akhaltsikhe = {
@@ -614,7 +639,7 @@ ir_loc_akkilur = {
 }
 
 ir_loc_akme = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_akmoneia = {
@@ -627,7 +652,7 @@ ir_loc_akour = {
 }
 
 ir_loc_akra_leuke = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_akra_rudh = {
@@ -640,6 +665,7 @@ ir_loc_akroterion = {
 }
 
 ir_loc_aksum = {
+    castle = 1
 }
 
 ir_loc_aksumia = {
@@ -679,6 +705,9 @@ ir_loc_alan = {
 }
 
 ir_loc_alana = {
+}
+
+ir_loc_alania = {
 }
 
 ir_loc_alanis = {
@@ -721,7 +750,7 @@ ir_loc_albocensia = {
 }
 
 ir_loc_albom_ingaunom = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_albulae = {
@@ -734,26 +763,32 @@ ir_loc_alces = {
 }
 
 ir_loc_aleria = {
-    port_building = 1
+    dock = 1
+    library = 3
 }
 
 ir_loc_alesia = {
+    castle = 1
 }
 
 ir_loc_alesia_germanica = {
 }
 
 ir_loc_alexandreia_areia = {
+    castle = 1
 }
 
 ir_loc_alexandreia_bactriane = {
+    construction_center = 2
 }
 
 ir_loc_alexandreia_en_indos = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_alexandreia_eschate = {
+    construction_center = 1
+    library = 2
 }
 
 ir_loc_alexandreia_nikaia = {
@@ -766,30 +801,36 @@ ir_loc_alexandreia_sakastenes = {
 }
 
 ir_loc_alexandria = {
-    commerce_building = 2
-    court_building = 1
-    library_building = 3
-    port_building = 3
+    counting_house = 1
+    dock = 3
+    library = 3
+    marketplace = 2
 }
 
 ir_loc_alexandria_ad_caucasum = {
+    construction_center = 2
 }
 
 ir_loc_alexandria_margiana = {
 }
 
 ir_loc_alexandria_oxiana = {
+    construction_center = 3
 }
 
 ir_loc_alexandria_susiana = {
-    port_building = 3
+    dock = 3
+    library = 2
+    marketplace = 1
+    minting_office = 1
 }
 
 ir_loc_alexandropolis = {
+    construction_center = 1
 }
 
 ir_loc_alexandrou_limen = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_alexandrou_parembole = {
@@ -847,20 +888,27 @@ ir_loc_alonis = {
 }
 
 ir_loc_alosgyni = {
-    port_building = 1
+    construction_center = 2
+    dock = 1
 }
 
 ir_loc_alouaka = {
 }
 
 ir_loc_alouka = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_aloure = {
 }
 
 ir_loc_aloustou_phrourion = {
+}
+
+ir_loc_alpes_cottiae = {
+}
+
+ir_loc_alpes_rhaeticae = {
 }
 
 ir_loc_alpis_inferior = {
@@ -905,6 +953,9 @@ ir_loc_amaitaia = {
 ir_loc_amallobriga = {
 }
 
+ir_loc_amanian_gates = {
+}
+
 ir_loc_amanium = {
 }
 
@@ -921,10 +972,11 @@ ir_loc_amarea = {
 }
 
 ir_loc_amaseia = {
+    construction_center = 2
 }
 
 ir_loc_amastica = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_amastor = {
@@ -961,7 +1013,8 @@ ir_loc_ambrae = {
 }
 
 ir_loc_ambrakia = {
-    port_building = 1
+    dock = 1
+    library = 1
 }
 
 ir_loc_ambrodax = {
@@ -980,7 +1033,7 @@ ir_loc_amisia = {
 }
 
 ir_loc_amisos = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_amiternum = {
@@ -1014,7 +1067,9 @@ ir_loc_ampelum = {
 }
 
 ir_loc_amphipolis = {
-    port_building = 1
+    castle = 1
+    dock = 1
+    minting_office = 2
 }
 
 ir_loc_amphipolis_syrias = {
@@ -1108,14 +1163,14 @@ ir_loc_anazarbos = {
 }
 
 ir_loc_anchialos = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_anchitaia = {
 }
 
 ir_loc_ancona = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_ancus = {
@@ -1155,13 +1210,15 @@ ir_loc_andethanna = {
 }
 
 ir_loc_andhapura = {
-    port_building = 1
+    construction_center = 1
+    dock = 1
 }
 
 ir_loc_andhau = {
 }
 
 ir_loc_andijan = {
+    construction_center = 2
 }
 
 ir_loc_andion = {
@@ -1219,6 +1276,7 @@ ir_loc_ani_0 = {
 }
 
 ir_loc_ani_1 = {
+    castle = 1
 }
 
 ir_loc_anisa = {
@@ -1273,7 +1331,7 @@ ir_loc_antentia = {
 }
 
 ir_loc_anthedon = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_antia = {
@@ -1283,6 +1341,7 @@ ir_loc_anticaria = {
 }
 
 ir_loc_antigoneia = {
+    library = 5
 }
 
 ir_loc_antigoneia_kyzikene = {
@@ -1301,7 +1360,7 @@ ir_loc_antipatris = {
 }
 
 ir_loc_antipolis = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_antipyrgos = {
@@ -1335,12 +1394,16 @@ ir_loc_apakara = {
 }
 
 ir_loc_apamea_ad_tigridem = {
+    castle = 1
+    library = 1
 }
 
 ir_loc_apamea_cibotus = {
+    castle = 1
 }
 
 ir_loc_apameia = {
+    library = 1
 }
 
 ir_loc_apameia_raphane = {
@@ -1371,19 +1434,22 @@ ir_loc_apollinopolis_mikra = {
 }
 
 ir_loc_apollonia = {
+    castle = 1
 }
 
 ir_loc_apollonia_kyrenaike = {
 }
 
 ir_loc_apollonia_maiandrou = {
+    library = 1
 }
 
 ir_loc_apollonia_mysias = {
+    market_village = 1
 }
 
 ir_loc_apollonia_palaistinias = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_apollonia_pontike = {
@@ -1393,10 +1459,11 @@ ir_loc_apollonia_rhyndakos = {
 }
 
 ir_loc_apologos = {
+    barracks = 1
 }
 
 ir_loc_apostana = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_appadana = {
@@ -1511,7 +1578,7 @@ ir_loc_aquae_tarbellicae = {
 }
 
 ir_loc_aquileia = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_aquileia_germanica = {
@@ -1526,6 +1593,18 @@ ir_loc_aquis_querquennis = {
 ir_loc_araba = {
 }
 
+ir_loc_arabia_deserta_17 = {
+}
+
+ir_loc_arabia_deserta_ulterior = {
+}
+
+ir_loc_arabia_felix = {
+}
+
+ir_loc_arabian_desert = {
+}
+
 ir_loc_arabissos = {
 }
 
@@ -1533,6 +1612,7 @@ ir_loc_arabriga = {
 }
 
 ir_loc_arac = {
+    barracks = 1
 }
 
 ir_loc_aracaeli = {
@@ -1548,7 +1628,8 @@ ir_loc_aracillum = {
 }
 
 ir_loc_arados = {
-    port_building = 3
+    dock = 3
+    marketplace = 1
 }
 
 ir_loc_arae_flaviae = {
@@ -1557,7 +1638,13 @@ ir_loc_arae_flaviae = {
 ir_loc_arae_philaenorum = {
 }
 
+ir_loc_aragats_volcano = {
+}
+
 ir_loc_aragvispiri = {
+}
+
+ir_loc_aral = {
 }
 
 ir_loc_aramaua = {
@@ -1603,6 +1690,7 @@ ir_loc_arbalo = {
 }
 
 ir_loc_arbela = {
+    construction_center = 2
 }
 
 ir_loc_arbia = {
@@ -1639,6 +1727,7 @@ ir_loc_arces_covelicae = {
 }
 
 ir_loc_archaiopolis = {
+    library = 1
 }
 
 ir_loc_arcobara = {
@@ -1690,7 +1779,7 @@ ir_loc_aregenua = {
 }
 
 ir_loc_arelatis = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_areocelum = {
@@ -1706,7 +1795,7 @@ ir_loc_arforom = {
 }
 
 ir_loc_arga = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_argamum = {
@@ -1743,7 +1832,8 @@ ir_loc_argiza = {
 }
 
 ir_loc_argos = {
-    port_building = 1
+    castle = 1
+    dock = 1
 }
 
 ir_loc_argyruntum = {
@@ -1813,6 +1903,9 @@ ir_loc_armalausia = {
 }
 
 ir_loc_armaouira = {
+    construction_center = 2
+    marketplace = 2
+    minting_office = 2
 }
 
 ir_loc_arminia = {
@@ -1909,12 +2002,16 @@ ir_loc_artanuji = {
 }
 
 ir_loc_artaxata = {
+    construction_center = 2
+    marketplace = 1
+    minting_office = 2
 }
 
 ir_loc_artemidos = {
 }
 
 ir_loc_artemita = {
+    barracks = 1
 }
 
 ir_loc_artemita_vaspurakan = {
@@ -1947,6 +2044,9 @@ ir_loc_arucci = {
 ir_loc_arukai = {
 }
 
+ir_loc_arunachal = {
+}
+
 ir_loc_arunda = {
 }
 
@@ -1959,7 +2059,11 @@ ir_loc_arutela = {
 ir_loc_arvandj = {
 }
 
+ir_loc_arverni_highland = {
+}
+
 ir_loc_arxata = {
+    barracks = 1
 }
 
 ir_loc_arykanda = {
@@ -2002,6 +2106,8 @@ ir_loc_ascalingium = {
 }
 
 ir_loc_ascalon = {
+    castle = 1
+    marketplace = 1
 }
 
 ir_loc_ascaucalis = {
@@ -2029,6 +2135,7 @@ ir_loc_ashina = {
 }
 
 ir_loc_ashnak = {
+    market_village = 1
 }
 
 ir_loc_ashpara = {
@@ -2041,6 +2148,7 @@ ir_loc_ashtishat = {
 }
 
 ir_loc_ashur = {
+    library = 1
 }
 
 ir_loc_asido = {
@@ -2068,6 +2176,8 @@ ir_loc_asophon = {
 }
 
 ir_loc_aspadana = {
+    construction_center = 1
+    library = 1
 }
 
 ir_loc_aspakora = {
@@ -2119,7 +2229,7 @@ ir_loc_astakapra = {
 }
 
 ir_loc_astakos = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_astasana = {
@@ -2144,7 +2254,7 @@ ir_loc_asturicia = {
 }
 
 ir_loc_astypalaia = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_asuccuris = {
@@ -2172,13 +2282,14 @@ ir_loc_atathana = {
 }
 
 ir_loc_atavi = {
+    construction_center = 1
 }
 
 ir_loc_atavria = {
 }
 
 ir_loc_aternum = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_ateste = {
@@ -2194,7 +2305,11 @@ ir_loc_athenaion = {
 }
 
 ir_loc_athens = {
-    port_building = 2
+    castle = 1
+    dock = 2
+    library = 1
+    minting_office = 1
+    university = 2
 }
 
 ir_loc_athribis = {
@@ -2219,7 +2334,7 @@ ir_loc_attea = {
 }
 
 ir_loc_attiaca = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_attidava = {
@@ -2232,7 +2347,7 @@ ir_loc_atura = {
 }
 
 ir_loc_aualites = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_auara = {
@@ -2326,7 +2441,7 @@ ir_loc_ausara = {
 }
 
 ir_loc_ausara_hadhramut = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_ausculum = {
@@ -2384,6 +2499,7 @@ ir_loc_avanta = {
 }
 
 ir_loc_avaricum = {
+    castle = 1
 }
 
 ir_loc_avarpi = {
@@ -2402,7 +2518,7 @@ ir_loc_aviliobris = {
 }
 
 ir_loc_avionia_maior = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_avionia_minor = {
@@ -2430,6 +2546,7 @@ ir_loc_axiopolis = {
 }
 
 ir_loc_ayanakagraha = {
+    construction_center = 4
 }
 
 ir_loc_aybara = {
@@ -2439,6 +2556,7 @@ ir_loc_aykudi = {
 }
 
 ir_loc_ayodhya = {
+    library = 2
 }
 
 ir_loc_azama = {
@@ -2469,11 +2587,14 @@ ir_loc_baal_saphon = {
 }
 
 ir_loc_babylon_0 = {
-    port_building = 1
+    castle = 1
+    dock = 1
 }
 
 ir_loc_babylon_1 = {
-    port_building = 1
+    construction_center = 1
+    dock = 1
+    library = 5
 }
 
 ir_loc_bacare = {
@@ -2489,6 +2610,12 @@ ir_loc_baclanaza = {
 }
 
 ir_loc_bactra = {
+    construction_center = 3
+    library = 3
+    marketplace = 1
+}
+
+ir_loc_bactrian_highland = {
 }
 
 ir_loc_badais = {
@@ -2531,7 +2658,7 @@ ir_loc_baedro = {
 }
 
 ir_loc_baelo = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_baemia = {
@@ -2547,6 +2674,7 @@ ir_loc_bagacum = {
 }
 
 ir_loc_bagada = {
+    barracks = 1
 }
 
 ir_loc_bagai = {
@@ -2586,6 +2714,9 @@ ir_loc_bagisara = {
 }
 
 ir_loc_bagistana = {
+}
+
+ir_loc_baglana = {
 }
 
 ir_loc_baitus = {
@@ -2730,7 +2861,7 @@ ir_loc_barbarikon = {
 }
 
 ir_loc_barbarion = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_barda = {
@@ -2755,7 +2886,7 @@ ir_loc_bargysi = {
 }
 
 ir_loc_baria = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_bariduum = {
@@ -2771,6 +2902,7 @@ ir_loc_barisal = {
 }
 
 ir_loc_barium = {
+    castle = 1
 }
 
 ir_loc_barke = {
@@ -2810,7 +2942,7 @@ ir_loc_barwani = {
 }
 
 ir_loc_barygaza = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_barzala = {
@@ -2868,7 +3000,7 @@ ir_loc_batesar = {
 }
 
 ir_loc_bathys_limen = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_batiana = {
@@ -2995,7 +3127,7 @@ ir_loc_berdatekh = {
 }
 
 ir_loc_berenike = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_bergidum_flavium = {
@@ -3068,6 +3200,7 @@ ir_loc_bhabua = {
 }
 
 ir_loc_bhaddavati = {
+    construction_center = 2
 }
 
 ir_loc_bhadohi = {
@@ -3101,6 +3234,7 @@ ir_loc_bhatiah = {
 }
 
 ir_loc_bhawaniganj = {
+    barracks = 1
 }
 
 ir_loc_bhawanipatna = {
@@ -3140,10 +3274,11 @@ ir_loc_bibacum = {
 }
 
 ir_loc_bibakta = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_bibracte = {
+    castle = 1
 }
 
 ir_loc_bicurdium = {
@@ -3207,7 +3342,7 @@ ir_loc_biriciana = {
 }
 
 ir_loc_birka = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_birtha_0 = {
@@ -3220,7 +3355,8 @@ ir_loc_bisambritai = {
 }
 
 ir_loc_bisanthe = {
-    port_building = 1
+    dock = 1
+    minting_office = 2
 }
 
 ir_loc_bishaya = {
@@ -3289,6 +3425,9 @@ ir_loc_bodgalio = {
 ir_loc_bogadia = {
 }
 
+ir_loc_bohaemeian_forest = {
+}
+
 ir_loc_boinasa = {
 }
 
@@ -3296,6 +3435,9 @@ ir_loc_boioa = {
 }
 
 ir_loc_bolbitine = {
+}
+
+ir_loc_boloustana_pass = {
 }
 
 ir_loc_bonab_qaleh = {
@@ -3311,6 +3453,7 @@ ir_loc_bonna = {
 }
 
 ir_loc_bononia = {
+    construction_center = 1
 }
 
 ir_loc_bononia_moesiaca = {
@@ -3383,7 +3526,7 @@ ir_loc_boutae = {
 }
 
 ir_loc_bouthoe = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_bouzerrara = {
@@ -3405,6 +3548,7 @@ ir_loc_brahmagiri = {
 }
 
 ir_loc_brahmanaka = {
+    library = 1
 }
 
 ir_loc_brahmarchi = {
@@ -3420,7 +3564,7 @@ ir_loc_brancona = {
 }
 
 ir_loc_branodunum = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_bratananium = {
@@ -3466,7 +3610,7 @@ ir_loc_bridava = {
 }
 
 ir_loc_briga = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_brigaecium = {
@@ -3476,7 +3620,7 @@ ir_loc_brigantia = {
 }
 
 ir_loc_brigantia_australis = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_brigantia_borealis = {
@@ -3504,6 +3648,9 @@ ir_loc_brigiosum = {
 }
 
 ir_loc_brigobannis = {
+}
+
+ir_loc_brili = {
 }
 
 ir_loc_brioratis = {
@@ -3555,11 +3702,11 @@ ir_loc_brucironno = {
 }
 
 ir_loc_brundisium = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_brundulum = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_brutobriga = {
@@ -3569,7 +3716,7 @@ ir_loc_bubastis = {
 }
 
 ir_loc_buca = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_buchu = {
@@ -3615,7 +3762,7 @@ ir_loc_buravhala = {
 }
 
 ir_loc_burdigala = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_burgia = {
@@ -3652,7 +3799,8 @@ ir_loc_burrium = {
 }
 
 ir_loc_bushahr = {
-    port_building = 1
+    barracks = 1
+    dock = 1
 }
 
 ir_loc_buto = {
@@ -3662,7 +3810,8 @@ ir_loc_butonia = {
 }
 
 ir_loc_byblos = {
-    port_building = 4
+    dock = 4
+    marketplace = 1
 }
 
 ir_loc_bylazora = {
@@ -3675,7 +3824,7 @@ ir_loc_byrshchre = {
 }
 
 ir_loc_byzantion = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_cabadene = {
@@ -3691,6 +3840,9 @@ ir_loc_cabulia = {
 }
 
 ir_loc_cadota = {
+}
+
+ir_loc_cadusian_highland = {
 }
 
 ir_loc_caelius_mons = {
@@ -3762,6 +3914,9 @@ ir_loc_calcaria = {
 ir_loc_calecula = {
 }
 
+ir_loc_caledonian_highland = {
+}
+
 ir_loc_caledonii = {
 }
 
@@ -3772,7 +3927,7 @@ ir_loc_calisia = {
 }
 
 ir_loc_callatis = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_calleva = {
@@ -3896,6 +4051,7 @@ ir_loc_capsa_iustiniana = {
 }
 
 ir_loc_capua = {
+    armory = 2
 }
 
 ir_loc_caput = {
@@ -3920,7 +4076,7 @@ ir_loc_caracca = {
 }
 
 ir_loc_caracotinum = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_carae = {
@@ -4007,6 +4163,12 @@ ir_loc_carnutia_orientalis = {
 ir_loc_carona = {
 }
 
+ir_loc_carpathia_0 = {
+}
+
+ir_loc_carpathia_2 = {
+}
+
 ir_loc_carpentorate = {
 }
 
@@ -4035,19 +4197,20 @@ ir_loc_cartana = {
 }
 
 ir_loc_carteia = {
-    port_building = 1
+    castle = 1
+    dock = 1
 }
 
 ir_loc_cartennae = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_carthago = {
-    aqueduct_building = 2
-    commerce_building = 2
-    library_building = 2
-    port_building = 3
-    town_hall_building = 1
+    construction_center = 2
+    dock = 3
+    library = 2
+    marketplace = 2
+    minting_office = 1
 }
 
 ir_loc_cartili = {
@@ -4075,6 +4238,9 @@ ir_loc_casinomagus = {
 }
 
 ir_loc_caspiana = {
+}
+
+ir_loc_caspica = {
 }
 
 ir_loc_cassiliacum = {
@@ -4117,7 +4283,7 @@ ir_loc_castra_regina = {
 }
 
 ir_loc_castra_vetera = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_castrana = {
@@ -4145,7 +4311,7 @@ ir_loc_catalacus = {
 }
 
 ir_loc_catana = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_cataphri = {
@@ -4179,6 +4345,9 @@ ir_loc_caucia_occidentalis = {
 }
 
 ir_loc_caucia_orientalis = {
+}
+
+ir_loc_caucoenia = {
 }
 
 ir_loc_caudium_castra = {
@@ -4272,7 +4441,8 @@ ir_loc_chabala = {
 }
 
 ir_loc_chaberis = {
-    port_building = 1
+    barracks = 1
+    dock = 1
 }
 
 ir_loc_chach = {
@@ -4288,6 +4458,7 @@ ir_loc_chaharla = {
 }
 
 ir_loc_chahuk = {
+    castle = 1
 }
 
 ir_loc_chairekla = {
@@ -4303,11 +4474,13 @@ ir_loc_chaladidi = {
 }
 
 ir_loc_chalcedon = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_chalcis = {
-    port_building = 1
+    castle = 2
+    dock = 1
+    library = 1
 }
 
 ir_loc_chalcis_ad_belum = {
@@ -4338,6 +4511,7 @@ ir_loc_chaonia = {
 }
 
 ir_loc_characmoba = {
+    castle = 1
 }
 
 ir_loc_charamithas = {
@@ -4365,6 +4539,9 @@ ir_loc_charva = {
 }
 
 ir_loc_chasuaria = {
+}
+
+ir_loc_chattisgarh = {
 }
 
 ir_loc_chattuaria = {
@@ -4395,11 +4572,11 @@ ir_loc_chersis = {
 }
 
 ir_loc_chersonesos = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_chersonesos_vanavasi = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_chettaia = {
@@ -4424,17 +4601,18 @@ ir_loc_chintamani = {
 }
 
 ir_loc_chios = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_chitradurga = {
 }
 
 ir_loc_chittagong = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_chlomaron = {
+    castle = 1
 }
 
 ir_loc_choana = {
@@ -4456,7 +4634,7 @@ ir_loc_choatras = {
 }
 
 ir_loc_choba = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_chodda = {
@@ -4525,7 +4703,13 @@ ir_loc_cibarcia = {
 ir_loc_cicucium = {
 }
 
+ir_loc_cidamus = {
+}
+
 ir_loc_cikamburika = {
+}
+
+ir_loc_cilician_gates = {
 }
 
 ir_loc_cillium = {
@@ -4535,7 +4719,7 @@ ir_loc_cimbria_australis = {
 }
 
 ir_loc_cimbria_borealis = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_cimbria_centralis = {
@@ -4557,12 +4741,14 @@ ir_loc_cinnaba_mons = {
 }
 
 ir_loc_circeii = {
+    barracks = 1
 }
 
 ir_loc_circesium = {
 }
 
 ir_loc_cirta = {
+    construction_center = 1
 }
 
 ir_loc_cisimbrium = {
@@ -4698,6 +4884,7 @@ ir_loc_coloricum = {
 }
 
 ir_loc_colossae = {
+    library = 1
 }
 
 ir_loc_columbarium = {
@@ -4716,6 +4903,9 @@ ir_loc_comeniaca = {
 }
 
 ir_loc_comidava = {
+}
+
+ir_loc_commagenian_gates = {
 }
 
 ir_loc_comodoliacus = {
@@ -4836,7 +5026,7 @@ ir_loc_corfinium = {
 }
 
 ir_loc_coriallum = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_coridorgis = {
@@ -4861,6 +5051,7 @@ ir_loc_cornavii = {
 }
 
 ir_loc_corneliani = {
+    castle = 1
 }
 
 ir_loc_corniclanum = {
@@ -4870,7 +5061,7 @@ ir_loc_corniculani = {
 }
 
 ir_loc_cornus = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_corobillium = {
@@ -4883,6 +5074,7 @@ ir_loc_corterate = {
 }
 
 ir_loc_cortona = {
+    castle = 1
 }
 
 ir_loc_cortoriacum = {
@@ -4901,7 +5093,7 @@ ir_loc_cossium = {
 }
 
 ir_loc_cossyra = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_cotesia = {
@@ -4917,7 +5109,7 @@ ir_loc_cottabura = {
 }
 
 ir_loc_coula = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_couneia = {
@@ -4930,11 +5122,11 @@ ir_loc_creasch = {
 }
 
 ir_loc_cremona = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_creones_boreales = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_crisia = {
@@ -4953,7 +5145,8 @@ ir_loc_croatis = {
 }
 
 ir_loc_croton = {
-    port_building = 1
+    castle = 1
+    dock = 1
 }
 
 ir_loc_crouciaconnum = {
@@ -4975,7 +5168,8 @@ ir_loc_crumerum = {
 }
 
 ir_loc_ctesiphon = {
-    port_building = 1
+    dock = 1
+    library = 1
 }
 
 ir_loc_cuicul = {
@@ -5027,16 +5221,22 @@ ir_loc_curmiliaca = {
 }
 
 ir_loc_curubis = {
-    port_building = 1
+    castle = 1
+    dock = 1
 }
 
 ir_loc_cutha = {
+    barracks = 1
 }
 
 ir_loc_cybistra = {
 }
 
 ir_loc_cymiza = {
+    castle = 1
+}
+
+ir_loc_cyrenaica = {
 }
 
 ir_loc_cyropolis_persica = {
@@ -5069,7 +5269,16 @@ ir_loc_daidala = {
 ir_loc_dakhtar = {
 }
 
+ir_loc_dakshina_koshala = {
+}
+
 ir_loc_dalanda = {
+}
+
+ir_loc_dalmatia = {
+}
+
+ir_loc_dalmatian_mountains = {
 }
 
 ir_loc_damak = {
@@ -5079,6 +5288,8 @@ ir_loc_damar = {
 }
 
 ir_loc_damascus = {
+    library = 2
+    marketplace = 1
 }
 
 ir_loc_damasia = {
@@ -5094,6 +5305,9 @@ ir_loc_dan = {
 }
 
 ir_loc_danai = {
+}
+
+ir_loc_dandakaranya = {
 }
 
 ir_loc_dandutia = {
@@ -5142,7 +5356,7 @@ ir_loc_darinia_borealis = {
 }
 
 ir_loc_dariorigum = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_darium = {
@@ -5167,6 +5381,7 @@ ir_loc_darur = {
 }
 
 ir_loc_dasapura = {
+    barracks = 1
 }
 
 ir_loc_dashband = {
@@ -5182,6 +5397,7 @@ ir_loc_daskousa = {
 }
 
 ir_loc_daskyleion = {
+    castle = 1
 }
 
 ir_loc_dasmenda = {
@@ -5236,10 +5452,11 @@ ir_loc_dedoplis = {
 }
 
 ir_loc_deh_bozan = {
+    barracks = 1
 }
 
 ir_loc_deire = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_dela = {
@@ -5249,10 +5466,11 @@ ir_loc_delminion = {
 }
 
 ir_loc_delos = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_delphi = {
+    temple = 1
 }
 
 ir_loc_demetrias_arachosias = {
@@ -5307,17 +5525,32 @@ ir_loc_dertona = {
 }
 
 ir_loc_dertosa = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_deru = {
 }
 
 ir_loc_derventio = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_derventum = {
+}
+
+ir_loc_desert_of_aswan = {
+}
+
+ir_loc_desert_of_kharga = {
+}
+
+ir_loc_desert_of_klysma = {
+}
+
+ir_loc_desert_of_luxor = {
+}
+
+ir_loc_desert_of_philoteris = {
 }
 
 ir_loc_deshikli = {
@@ -5327,10 +5560,11 @@ ir_loc_deshrae = {
 }
 
 ir_loc_detta = {
+    construction_center = 3
 }
 
 ir_loc_deva = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_deva_apulensis = {
@@ -5340,12 +5574,14 @@ ir_loc_devada = {
 }
 
 ir_loc_devagiri = {
+    construction_center = 1
 }
 
 ir_loc_devaprastha = {
 }
 
 ir_loc_devaprayaga = {
+    construction_center = 2
 }
 
 ir_loc_devasabha = {
@@ -5364,6 +5600,7 @@ ir_loc_dhahir = {
 }
 
 ir_loc_dhammanahadika = {
+    barracks = 1
 }
 
 ir_loc_dhamna = {
@@ -5379,6 +5616,8 @@ ir_loc_dhanduka = {
 }
 
 ir_loc_dhar = {
+    construction_center = 2
+    library = 2
 }
 
 ir_loc_dharakh = {
@@ -5454,9 +5693,12 @@ ir_loc_diodurum = {
 }
 
 ir_loc_dion = {
+    armory = 1
+    temple = 1
 }
 
 ir_loc_dionysias = {
+    barracks = 1
 }
 
 ir_loc_dioscoridus = {
@@ -5472,13 +5714,14 @@ ir_loc_diospolis_1 = {
 }
 
 ir_loc_diospolis_kato = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_diospolis_lykou = {
 }
 
 ir_loc_diospolis_magna = {
+    library = 1
 }
 
 ir_loc_dipo = {
@@ -5521,6 +5764,7 @@ ir_loc_doberos = {
 }
 
 ir_loc_dodona = {
+    barracks = 1
 }
 
 ir_loc_dodong = {
@@ -5602,6 +5846,7 @@ ir_loc_dorylaion = {
 }
 
 ir_loc_doubios = {
+    minting_office = 3
 }
 
 ir_loc_doudousa = {
@@ -5611,9 +5856,11 @@ ir_loc_dounga = {
 }
 
 ir_loc_doura = {
+    castle = 1
 }
 
 ir_loc_drapsake = {
+    castle = 1
 }
 
 ir_loc_dravia = {
@@ -5710,7 +5957,7 @@ ir_loc_durnatha = {
 }
 
 ir_loc_durnovaria = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_durobrivae = {
@@ -5741,7 +5988,7 @@ ir_loc_durotincum = {
 }
 
 ir_loc_durovernum = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_durovigutum = {
@@ -5754,7 +6001,7 @@ ir_loc_duzea = {
 }
 
 ir_loc_dvaraka = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_dwarbanga = {
@@ -5790,6 +6037,12 @@ ir_loc_dzhrapi = {
 ir_loc_dzhrarat = {
 }
 
+ir_loc_eastern_ghats = {
+}
+
+ir_loc_eastern_musalamia = {
+}
+
 ir_loc_eblania = {
 }
 
@@ -5803,7 +6056,7 @@ ir_loc_ebora = {
 }
 
 ir_loc_eboracum = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_ebousmou_anassa = {
@@ -5834,6 +6087,8 @@ ir_loc_ebusus = {
 }
 
 ir_loc_ecbatana = {
+    castle = 1
+    construction_center = 2
 }
 
 ir_loc_ecbatana_magorum = {
@@ -5909,11 +6164,11 @@ ir_loc_ekur = {
 }
 
 ir_loc_elaea = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_elaioussa = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_elankon = {
@@ -5983,6 +6238,7 @@ ir_loc_elysiana = {
 }
 
 ir_loc_embadina = {
+    construction_center = 1
 }
 
 ir_loc_embolima = {
@@ -6001,7 +6257,8 @@ ir_loc_empelathra = {
 }
 
 ir_loc_emporiae = {
-    port_building = 1
+    castle = 1
+    dock = 1
 }
 
 ir_loc_emporion_mosylon = {
@@ -6020,33 +6277,34 @@ ir_loc_enke = {
 }
 
 ir_loc_eowia = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_epamanduodurum = {
 }
 
 ir_loc_ephesos = {
-    port_building = 1
+    dock = 1
+    temple = 1
 }
 
 ir_loc_ephraim = {
 }
 
 ir_loc_epidamnos = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_epidauros = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_epidauros_illyrikos = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_epidauros_limera = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_epidii = {
@@ -6107,7 +6365,7 @@ ir_loc_eresos = {
 }
 
 ir_loc_eretria = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_ergeta = {
@@ -6171,7 +6429,7 @@ ir_loc_etalava = {
 }
 
 ir_loc_etobesa = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_etonia = {
@@ -6190,7 +6448,7 @@ ir_loc_euchaita = {
 }
 
 ir_loc_eudaimon = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_eudosia_australis = {
@@ -6203,7 +6461,7 @@ ir_loc_eudosia_centralis = {
 }
 
 ir_loc_eudosia_cimbrica = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_eudracinum = {
@@ -6222,6 +6480,7 @@ ir_loc_eukarpia = {
 }
 
 ir_loc_eulepa = {
+    barracks = 1
 }
 
 ir_loc_eunixia = {
@@ -6237,6 +6496,7 @@ ir_loc_euporia = {
 }
 
 ir_loc_europos_0 = {
+    barracks = 1
 }
 
 ir_loc_europos_1 = {
@@ -6305,6 +6565,9 @@ ir_loc_farab = {
 ir_loc_farafra = {
 }
 
+ir_loc_farfara = {
+}
+
 ir_loc_farrab = {
 }
 
@@ -6335,11 +6598,19 @@ ir_loc_felicita = {
 ir_loc_felita = {
 }
 
+ir_loc_fennia = {
+}
+
 ir_loc_feradi_maius = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_feraria = {
+    castle = 1
+    construction_center = 1
+}
+
+ir_loc_ferghanan_mountains = {
 }
 
 ir_loc_ferraria = {
@@ -6388,7 +6659,7 @@ ir_loc_flavia_solva = {
 }
 
 ir_loc_flaviobriga = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_flavionavia = {
@@ -6437,6 +6708,7 @@ ir_loc_fons_timavi = {
 }
 
 ir_loc_forat = {
+    barracks = 1
 }
 
 ir_loc_foricum = {
@@ -6491,6 +6763,7 @@ ir_loc_fourth_cataract = {
 }
 
 ir_loc_fregellae = {
+    barracks = 1
 }
 
 ir_loc_frej = {
@@ -6539,6 +6812,7 @@ ir_loc_gabuleum = {
 }
 
 ir_loc_gadara = {
+    castle = 1
 }
 
 ir_loc_gadara_judea = {
@@ -6551,7 +6825,7 @@ ir_loc_gadilon = {
 }
 
 ir_loc_gadir = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_gaiopolis = {
@@ -6579,7 +6853,7 @@ ir_loc_galindia = {
 }
 
 ir_loc_galindia_occidentalis = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_galindia_orientalis = {
@@ -6625,6 +6899,7 @@ ir_loc_ganganon_akron = {
 }
 
 ir_loc_gangra = {
+    library = 1
 }
 
 ir_loc_ganka = {
@@ -6634,13 +6909,16 @@ ir_loc_ganta = {
 }
 
 ir_loc_ganuenta = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_gaphara = {
 }
 
 ir_loc_garam = {
+}
+
+ir_loc_garama = {
 }
 
 ir_loc_gardman = {
@@ -6662,6 +6940,7 @@ ir_loc_garrianonum = {
 }
 
 ir_loc_garsaura = {
+    library = 1
 }
 
 ir_loc_garuli = {
@@ -6698,7 +6977,9 @@ ir_loc_gaya = {
 }
 
 ir_loc_gaza = {
-    port_building = 1
+    castle = 1
+    dock = 1
+    marketplace = 1
 }
 
 ir_loc_gazaba = {
@@ -6762,22 +7043,28 @@ ir_loc_gensis = {
 }
 
 ir_loc_genua = {
-    port_building = 1
+    castle = 1
+    dock = 1
 }
 
 ir_loc_gerasa = {
 }
 
 ir_loc_gergis = {
+    castle = 1
 }
 
 ir_loc_gergovia = {
+    castle = 1
 }
 
 ir_loc_germa = {
 }
 
 ir_loc_germania = {
+}
+
+ir_loc_germanic_upland = {
 }
 
 ir_loc_germanicum = {
@@ -6790,7 +7077,8 @@ ir_loc_gerra = {
 }
 
 ir_loc_gerrha = {
-    port_building = 1
+    construction_center = 1
+    dock = 1
 }
 
 ir_loc_gerum = {
@@ -6803,7 +7091,7 @@ ir_loc_gerunda = {
 }
 
 ir_loc_gesoriacum = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_gesoscribate = {
@@ -6833,6 +7121,9 @@ ir_loc_ghenarcha = {
 ir_loc_ghizil_agaj = {
 }
 
+ir_loc_gholaia = {
+}
+
 ir_loc_ghore = {
 }
 
@@ -6849,7 +7140,7 @@ ir_loc_gibra = {
 }
 
 ir_loc_gigia = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_gigthis = {
@@ -6883,14 +7174,15 @@ ir_loc_girumu = {
 }
 
 ir_loc_gitana = {
+    barracks = 1
 }
 
 ir_loc_glevum = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_gnatia = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_goalpara = {
@@ -6927,7 +7219,7 @@ ir_loc_gogaraioi = {
 }
 
 ir_loc_gokanna = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_golan = {
@@ -6940,6 +7232,18 @@ ir_loc_gomarga = {
 }
 
 ir_loc_gondia = {
+}
+
+ir_loc_gondogoro_pass_0 = {
+}
+
+ir_loc_gondogoro_pass_1 = {
+}
+
+ir_loc_gondogoro_pass_2 = {
+}
+
+ir_loc_gondwana = {
 }
 
 ir_loc_gong = {
@@ -6970,13 +7274,14 @@ ir_loc_gorbeous = {
 }
 
 ir_loc_gordion = {
+    castle = 1
 }
 
 ir_loc_gordioukome = {
 }
 
 ir_loc_gorgippia = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_gorideva = {
@@ -6992,7 +7297,7 @@ ir_loc_gorsium = {
 }
 
 ir_loc_gortyna = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_gortynia = {
@@ -7032,6 +7337,7 @@ ir_loc_govardhana = {
 }
 
 ir_loc_govishana = {
+    market_village = 1
 }
 
 ir_loc_goziris = {
@@ -7068,7 +7374,7 @@ ir_loc_grannia = {
 }
 
 ir_loc_grannona = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_grannum = {
@@ -7177,7 +7483,7 @@ ir_loc_gyechk = {
 }
 
 ir_loc_gyenos = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_gyesch = {
@@ -7208,7 +7514,7 @@ ir_loc_gyrones = {
 }
 
 ir_loc_gytheion = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_gyulo = {
@@ -7227,11 +7533,14 @@ ir_loc_hadrama = {
 }
 
 ir_loc_hadrametum = {
-    port_building = 1
+    dock = 1
+}
+
+ir_loc_hadramut_desert = {
 }
 
 ir_loc_hadrianopolis = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_haedum = {
@@ -7256,11 +7565,12 @@ ir_loc_halieuma_theou = {
 }
 
 ir_loc_halikarnassos = {
-    port_building = 1
+    dock = 1
+    temple = 1
 }
 
 ir_loc_halmyris = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_halouras = {
@@ -7306,6 +7616,7 @@ ir_loc_hargita = {
 }
 
 ir_loc_haridwar = {
+    barracks = 1
 }
 
 ir_loc_hariza = {
@@ -7336,10 +7647,11 @@ ir_loc_hastinapura = {
 }
 
 ir_loc_hatra = {
+    castle = 1
 }
 
 ir_loc_hatria = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_haud = {
@@ -7376,6 +7688,7 @@ ir_loc_heliaramia = {
 }
 
 ir_loc_heliopolis_0 = {
+    library = 2
 }
 
 ir_loc_heliopolis_1 = {
@@ -7400,7 +7713,8 @@ ir_loc_helvetum = {
 }
 
 ir_loc_hemeroskopeion = {
-    port_building = 1
+    castle = 1
+    dock = 1
 }
 
 ir_loc_hemesa = {
@@ -7413,7 +7727,8 @@ ir_loc_henna = {
 }
 
 ir_loc_heraclea = {
-    port_building = 1
+    castle = 1
+    dock = 1
 }
 
 ir_loc_heraclea_minoa = {
@@ -7426,7 +7741,7 @@ ir_loc_herakleia_lynkestis = {
 }
 
 ir_loc_herakleia_pontike = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_herakleia_sintike = {
@@ -7475,7 +7790,7 @@ ir_loc_hermopolis_magna = {
 }
 
 ir_loc_hermopolis_mikra = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_hermunduria = {
@@ -7497,11 +7812,11 @@ ir_loc_herulia_centralis = {
 }
 
 ir_loc_herulia_orientalis = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_hessulum = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_hibis = {
@@ -7519,6 +7834,12 @@ ir_loc_hierapolis_sophenias = {
 ir_loc_hieratis = {
 }
 
+ir_loc_high_atlas = {
+}
+
+ir_loc_himalayan_highland = {
+}
+
 ir_loc_himiara = {
 }
 
@@ -7532,11 +7853,11 @@ ir_loc_hippana = {
 }
 
 ir_loc_hippo_diarrhytus = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_hippo_regius = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_hippokoura = {
@@ -7546,7 +7867,8 @@ ir_loc_hippolaou_akra = {
 }
 
 ir_loc_hipponium = {
-    port_building = 1
+    castle = 1
+    dock = 1
 }
 
 ir_loc_hippos = {
@@ -7562,7 +7884,10 @@ ir_loc_histonium = {
 }
 
 ir_loc_histria = {
-    port_building = 1
+    dock = 1
+}
+
+ir_loc_histria_mons = {
 }
 
 ir_loc_histrine = {
@@ -7590,7 +7915,8 @@ ir_loc_horeb_mons = {
 }
 
 ir_loc_hormirzad = {
-    port_building = 1
+    construction_center = 2
+    dock = 1
 }
 
 ir_loc_horrai = {
@@ -7630,7 +7956,7 @@ ir_loc_hydriacus = {
 }
 
 ir_loc_hydruntum = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_hygreis = {
@@ -7708,10 +8034,14 @@ ir_loc_iazygiana = {
 ir_loc_ibadura = {
 }
 
+ir_loc_iberian_gates = {
+}
+
 ir_loc_ibora = {
 }
 
 ir_loc_ichnae = {
+    castle = 1
 }
 
 ir_loc_iciodoro = {
@@ -7721,13 +8051,14 @@ ir_loc_iconeia = {
 }
 
 ir_loc_iconium = {
+    library = 2
 }
 
 ir_loc_icorigium = {
 }
 
 ir_loc_icosium = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_iculisma = {
@@ -7737,7 +8068,7 @@ ir_loc_idalion = {
 }
 
 ir_loc_idassa = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_idimum = {
@@ -7762,7 +8093,7 @@ ir_loc_iepana = {
 }
 
 ir_loc_ierapetra = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_iezreel = {
@@ -7781,7 +8112,7 @@ ir_loc_ighkoy = {
 }
 
 ir_loc_igilgili = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_iguvium = {
@@ -7880,8 +8211,11 @@ ir_loc_ingena = {
 ir_loc_innaba = {
 }
 
+ir_loc_inner_mauritania = {
+}
+
 ir_loc_insula_anglorum = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_intaranum = {
@@ -7903,7 +8237,7 @@ ir_loc_intercisa = {
 }
 
 ir_loc_iol = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_ioppe = {
@@ -7967,7 +8301,7 @@ ir_loc_isaura = {
 }
 
 ir_loc_isca_dumnoniorum = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_iscalis = {
@@ -8013,7 +8347,7 @@ ir_loc_iska = {
 }
 
 ir_loc_issa = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_issatis = {
@@ -8110,6 +8444,7 @@ ir_loc_jagadamba = {
 }
 
 ir_loc_jagdalpur = {
+    construction_center = 1
 }
 
 ir_loc_jaipura = {
@@ -8122,6 +8457,7 @@ ir_loc_jajatipura = {
 }
 
 ir_loc_jalandhara = {
+    barracks = 1
 }
 
 ir_loc_jamadaganipura = {
@@ -8184,6 +8520,9 @@ ir_loc_jhinvali = {
 ir_loc_jhodga = {
 }
 
+ir_loc_jiddat_al_harasis = {
+}
+
 ir_loc_jirapur = {
 }
 
@@ -8242,6 +8581,7 @@ ir_loc_kadiri = {
 }
 
 ir_loc_kadoi = {
+    armory = 1
 }
 
 ir_loc_kadyanda = {
@@ -8272,13 +8612,14 @@ ir_loc_kaine = {
 }
 
 ir_loc_kainepolis_syracene = {
+    minting_office = 2
 }
 
 ir_loc_kainon = {
 }
 
 ir_loc_kajangala = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_kakanada = {
@@ -8297,13 +8638,14 @@ ir_loc_kalakaris = {
 }
 
 ir_loc_kalana = {
+    market_village = 1
 }
 
 ir_loc_kalapriya = {
 }
 
 ir_loc_kalas = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_kalavad = {
@@ -8324,8 +8666,11 @@ ir_loc_kalhu = {
 ir_loc_kalindoia = {
 }
 
+ir_loc_kalingana = {
+}
+
 ir_loc_kalinganagara = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_kalkry = {
@@ -8341,7 +8686,7 @@ ir_loc_kalligeris = {
 }
 
 ir_loc_kallipolis_iberias = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_kallydion = {
@@ -8354,7 +8699,7 @@ ir_loc_kalos_limen = {
 }
 
 ir_loc_kalpe = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_kalumukha = {
@@ -8364,7 +8709,7 @@ ir_loc_kalyana = {
 }
 
 ir_loc_kalyani = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_kalyani_asika = {
@@ -8386,6 +8731,7 @@ ir_loc_kameiros = {
 }
 
 ir_loc_kamisa = {
+    construction_center = 1
 }
 
 ir_loc_kammonai = {
@@ -8419,6 +8765,7 @@ ir_loc_kanepsa = {
 }
 
 ir_loc_kangavar = {
+    barracks = 1
 }
 
 ir_loc_kanit = {
@@ -8434,7 +8781,7 @@ ir_loc_kano = {
 }
 
 ir_loc_kanopos = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_kantakossyla = {
@@ -8444,6 +8791,7 @@ ir_loc_kanthi = {
 }
 
 ir_loc_kanyakubja = {
+    library = 2
 }
 
 ir_loc_kapan = {
@@ -8467,6 +8815,9 @@ ir_loc_karafur = {
 ir_loc_karahataka = {
 }
 
+ir_loc_karakoram = {
+}
+
 ir_loc_karambis = {
 }
 
@@ -8480,6 +8831,7 @@ ir_loc_karana_1 = {
 }
 
 ir_loc_karanis = {
+    barracks = 1
 }
 
 ir_loc_karanpura = {
@@ -8510,10 +8862,15 @@ ir_loc_karkine = {
 }
 
 ir_loc_karmana = {
+    castle = 1
+    construction_center = 2
+}
+
+ir_loc_karmanian_mountains = {
 }
 
 ir_loc_karmanta = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_karmara = {
@@ -8538,6 +8895,7 @@ ir_loc_karnalis = {
 }
 
 ir_loc_karnasuvarna = {
+    construction_center = 2
 }
 
 ir_loc_karoia = {
@@ -8562,6 +8920,7 @@ ir_loc_karystos = {
 }
 
 ir_loc_kashgar = {
+    construction_center = 3
 }
 
 ir_loc_kashkar = {
@@ -8586,7 +8945,8 @@ ir_loc_kaspira = {
 }
 
 ir_loc_kassope = {
-    port_building = 1
+    barracks = 1
+    dock = 1
 }
 
 ir_loc_kastabala = {
@@ -8617,7 +8977,7 @@ ir_loc_kaulas = {
 }
 
 ir_loc_kaunos = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_kaupirrish = {
@@ -8666,15 +9026,20 @@ ir_loc_kekaya = {
 }
 
 ir_loc_kelenderis = {
+    barracks = 1
 }
 
 ir_loc_keletron = {
+}
+
+ir_loc_kelishin = {
 }
 
 ir_loc_kellis = {
 }
 
 ir_loc_kelonai = {
+    construction_center = 2
 }
 
 ir_loc_kentourinon = {
@@ -8705,7 +9070,7 @@ ir_loc_kerkichi = {
 }
 
 ir_loc_kerkinitis = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_kerkouane = {
@@ -8784,6 +9149,7 @@ ir_loc_kheta = {
 }
 
 ir_loc_khezerlu_qaleh = {
+    castle = 1
 }
 
 ir_loc_khijjngalalla = {
@@ -8874,6 +9240,7 @@ ir_loc_kilkhaneg = {
 }
 
 ir_loc_kimiata = {
+    castle = 1
 }
 
 ir_loc_kimista = {
@@ -8904,7 +9271,7 @@ ir_loc_kinyps = {
 }
 
 ir_loc_kios = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_kios_skythike = {
@@ -8950,7 +9317,7 @@ ir_loc_kitharizon = {
 }
 
 ir_loc_kition = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_kizari = {
@@ -8974,19 +9341,22 @@ ir_loc_klimax = {
 ir_loc_klossama = {
 }
 
+ir_loc_klukhor_pass = {
+}
+
 ir_loc_klysma = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_kmekhich = {
 }
 
 ir_loc_knidos = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_knossos = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_kodava = {
@@ -9026,7 +9396,7 @@ ir_loc_kolinah = {
 }
 
 ir_loc_kolkoi = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_kollipake = {
@@ -9054,13 +9424,15 @@ ir_loc_komana = {
 }
 
 ir_loc_komana_hierapolis = {
+    library = 1
+    temple = 1
 }
 
 ir_loc_komana_pontike = {
 }
 
 ir_loc_komari = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_komeia = {
@@ -9096,6 +9468,9 @@ ir_loc_kongpo = {
 ir_loc_kongu = {
 }
 
+ir_loc_kongyul = {
+}
+
 ir_loc_konkobar = {
 }
 
@@ -9103,6 +9478,7 @@ ir_loc_kopan = {
 }
 
 ir_loc_kophen = {
+    construction_center = 3
 }
 
 ir_loc_koptos = {
@@ -9136,18 +9512,20 @@ ir_loc_korine = {
 }
 
 ir_loc_korinthos = {
-    port_building = 1
+    castle = 2
+    dock = 1
+    minting_office = 1
 }
 
 ir_loc_korion = {
 }
 
 ir_loc_korkyra = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_korkyra_melaina = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_korlon = {
@@ -9169,12 +9547,16 @@ ir_loc_korotan = {
 }
 
 ir_loc_koroula = {
+    barracks = 1
 }
 
 ir_loc_kortia = {
 }
 
 ir_loc_korulin = {
+}
+
+ir_loc_koryi = {
 }
 
 ir_loc_kos = {
@@ -9184,6 +9566,9 @@ ir_loc_kosala = {
 }
 
 ir_loc_kosambi = {
+}
+
+ir_loc_kossioia = {
 }
 
 ir_loc_kota = {
@@ -9202,7 +9587,7 @@ ir_loc_kothapala = {
 }
 
 ir_loc_koti = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_kotiaeion = {
@@ -9269,6 +9654,7 @@ ir_loc_kreshcek = {
 }
 
 ir_loc_krokodilopolis = {
+    library = 1
 }
 
 ir_loc_krounoi = {
@@ -9278,13 +9664,14 @@ ir_loc_krueng = {
 }
 
 ir_loc_kryptos_limen = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_kuara = {
 }
 
 ir_loc_kuche = {
+    construction_center = 2
 }
 
 ir_loc_kuh_i_bolagh = {
@@ -9354,6 +9741,7 @@ ir_loc_kusapura = {
 }
 
 ir_loc_kusavati = {
+    barracks = 1
 }
 
 ir_loc_kush = {
@@ -9396,10 +9784,11 @@ ir_loc_kybellion = {
 }
 
 ir_loc_kydonia = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_kyinda = {
+    castle = 1
 }
 
 ir_loc_kylorica = {
@@ -9415,20 +9804,24 @@ ir_loc_kyphanta = {
 }
 
 ir_loc_kypsela = {
+    farming_village = 1
 }
 
 ir_loc_kyrene = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_kyrenia = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_kyropolis = {
+    construction_center = 2
+    library = 2
 }
 
 ir_loc_kyropolis_baktriane = {
+    castle = 1
 }
 
 ir_loc_kyrthanion = {
@@ -9450,6 +9843,7 @@ ir_loc_kythnos = {
 }
 
 ir_loc_kytoros = {
+    barracks = 1
 }
 
 ir_loc_kyungchen_dzong = {
@@ -9519,6 +9913,7 @@ ir_loc_ladha = {
 }
 
 ir_loc_lagania = {
+    barracks = 1
 }
 
 ir_loc_lagbe = {
@@ -9549,6 +9944,7 @@ ir_loc_lakhanpur = {
 }
 
 ir_loc_lakhimpur = {
+    market_village = 1
 }
 
 ir_loc_lama = {
@@ -9570,7 +9966,9 @@ ir_loc_lamecum = {
 }
 
 ir_loc_lamia = {
-    port_building = 1
+    castle = 1
+    dock = 1
+    library = 1
 }
 
 ir_loc_laminium = {
@@ -9628,6 +10026,9 @@ ir_loc_larisa_ionias = {
 }
 
 ir_loc_larissa_0 = {
+    armory = 1
+    construction_center = 1
+    minting_office = 1
 }
 
 ir_loc_larissa_1 = {
@@ -9694,6 +10095,7 @@ ir_loc_lavatrae = {
 }
 
 ir_loc_lavinium = {
+    armory = 2
 }
 
 ir_loc_lawami = {
@@ -9733,7 +10135,7 @@ ir_loc_lemnis = {
 }
 
 ir_loc_lemnos = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_lemovia = {
@@ -9752,7 +10154,7 @@ ir_loc_leontini = {
 }
 
 ir_loc_leonton_polis = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_leontopolis = {
@@ -9804,11 +10206,12 @@ ir_loc_leucomagus = {
 }
 
 ir_loc_leukas = {
-    port_building = 1
+    barracks = 1
+    dock = 1
 }
 
 ir_loc_leuke_akte = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_leuke_akte_kyrenaike = {
@@ -9839,6 +10242,7 @@ ir_loc_lexoviorum = {
 }
 
 ir_loc_lhasa = {
+    construction_center = 2
 }
 
 ir_loc_lhayul = {
@@ -9860,7 +10264,9 @@ ir_loc_libyssa = {
 }
 
 ir_loc_lilybaeum = {
-    port_building = 1
+    castle = 1
+    dock = 1
+    library = 1
 }
 
 ir_loc_liman = {
@@ -9885,7 +10291,7 @@ ir_loc_limyra = {
 }
 
 ir_loc_lindinis = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_lindon = {
@@ -9901,7 +10307,7 @@ ir_loc_lingarajupalem = {
 }
 
 ir_loc_lingum = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_lintomagus = {
@@ -9914,11 +10320,11 @@ ir_loc_lishan = {
 }
 
 ir_loc_lissos = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_litha = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_litta = {
@@ -9946,7 +10352,8 @@ ir_loc_locoritum = {
 }
 
 ir_loc_locri_0 = {
-    port_building = 1
+    castle = 1
+    dock = 1
 }
 
 ir_loc_locri_1 = {
@@ -9956,7 +10363,7 @@ ir_loc_lonavli = {
 }
 
 ir_loc_londinium = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_longaticum = {
@@ -9966,7 +10373,7 @@ ir_loc_longinopara = {
 }
 
 ir_loc_longuntica = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_lopodunum = {
@@ -9976,7 +10383,7 @@ ir_loc_loricata = {
 }
 
 ir_loc_losa = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_losodica = {
@@ -10007,6 +10414,7 @@ ir_loc_lucaniacum = {
 }
 
 ir_loc_luceria = {
+    castle = 1
 }
 
 ir_loc_lucia = {
@@ -10031,7 +10439,7 @@ ir_loc_luenna = {
 }
 
 ir_loc_lugadurum = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_lugdunum = {
@@ -10053,7 +10461,7 @@ ir_loc_lugio = {
 }
 
 ir_loc_luguvalium = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_lum = {
@@ -10083,6 +10491,9 @@ ir_loc_luppia = {
 ir_loc_luserium = {
 }
 
+ir_loc_lut = {
+}
+
 ir_loc_lutetia = {
 }
 
@@ -10093,6 +10504,7 @@ ir_loc_lutudarum = {
 }
 
 ir_loc_lychidnos = {
+    castle = 1
 }
 
 ir_loc_lyctus = {
@@ -10111,7 +10523,11 @@ ir_loc_lykopolis = {
 }
 
 ir_loc_lysimacheia = {
-    port_building = 1
+    armory = 1
+    castle = 1
+    construction_center = 1
+    dock = 1
+    minting_office = 2
 }
 
 ir_loc_lystra = {
@@ -10124,6 +10540,7 @@ ir_loc_maccua = {
 }
 
 ir_loc_machhindrapur = {
+    barracks = 1
 }
 
 ir_loc_machiekkyt = {
@@ -10154,6 +10571,7 @@ ir_loc_madauros = {
 }
 
 ir_loc_madhyamika = {
+    construction_center = 2
 }
 
 ir_loc_madiama = {
@@ -10211,7 +10629,7 @@ ir_loc_magnis = {
 }
 
 ir_loc_mago = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_magrab = {
@@ -10221,7 +10639,7 @@ ir_loc_magrai = {
 }
 
 ir_loc_mahagrama = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_mahanala = {
@@ -10231,19 +10649,23 @@ ir_loc_maharatthalava = {
 }
 
 ir_loc_mahatittha = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_mahdnada = {
 }
 
 ir_loc_mahisha = {
+    construction_center = 1
 }
 
 ir_loc_mahismati = {
 }
 
 ir_loc_mahoba = {
+}
+
+ir_loc_mahria = {
 }
 
 ir_loc_mahur = {
@@ -10265,6 +10687,7 @@ ir_loc_makarabah = {
 }
 
 ir_loc_makash = {
+    barracks = 1
 }
 
 ir_loc_maked = {
@@ -10280,14 +10703,14 @@ ir_loc_makkate = {
 }
 
 ir_loc_makna = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_makopsis = {
 }
 
 ir_loc_malaca = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_malaios = {
@@ -10351,14 +10774,16 @@ ir_loc_mallonpolis = {
 }
 
 ir_loc_mallos = {
-    port_building = 1
+    dock = 1
+    library = 1
 }
 
 ir_loc_malos = {
 }
 
 ir_loc_maltecoria = {
-    port_building = 1
+    construction_center = 1
+    dock = 1
 }
 
 ir_loc_malvesia = {
@@ -10389,7 +10814,7 @@ ir_loc_manapia_occidentalis = {
 }
 
 ir_loc_manapia_orientalis = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_manar = {
@@ -10417,7 +10842,7 @@ ir_loc_manbhum = {
 }
 
 ir_loc_mandagara = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_mandali = {
@@ -10439,6 +10864,9 @@ ir_loc_mangalavada = {
 }
 
 ir_loc_mangyl = {
+}
+
+ir_loc_mangyul_takmo_dzong = {
 }
 
 ir_loc_manikyala = {
@@ -10496,6 +10924,7 @@ ir_loc_marah = {
 }
 
 ir_loc_marakanda = {
+    construction_center = 2
 }
 
 ir_loc_maran = {
@@ -10526,15 +10955,18 @@ ir_loc_marcomannia = {
 }
 
 ir_loc_mardan = {
+    market_village = 1
 }
 
 ir_loc_mardastan = {
 }
 
 ir_loc_marde = {
+    castle = 1
 }
 
 ir_loc_margineia = {
+    construction_center = 2
 }
 
 ir_loc_margum = {
@@ -10562,15 +10994,15 @@ ir_loc_marinavas = {
 }
 
 ir_loc_marion = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_mariones = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_marionis = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_marisa = {
@@ -10636,6 +11068,9 @@ ir_loc_martis = {
 ir_loc_martyropolis = {
 }
 
+ir_loc_marudesa = {
+}
+
 ir_loc_maryanus = {
 }
 
@@ -10679,11 +11114,13 @@ ir_loc_massaka = {
 }
 
 ir_loc_massalia = {
-    port_building = 1
+    castle = 1
+    dock = 1
 }
 
 ir_loc_mastia = {
-    port_building = 1
+    dock = 1
+    minting_office = 2
 }
 
 ir_loc_mastiacum = {
@@ -10743,6 +11180,9 @@ ir_loc_mau = {
 ir_loc_mauranipur = {
 }
 
+ir_loc_maurian_plateau = {
+}
+
 ir_loc_maurienna = {
 }
 
@@ -10750,14 +11190,16 @@ ir_loc_mavar = {
 }
 
 ir_loc_mavilankai = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_mayurasattapattinam = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_mazaka = {
+    construction_center = 1
+    library = 1
 }
 
 ir_loc_mazir = {
@@ -10812,16 +11254,21 @@ ir_loc_medioslanium = {
 }
 
 ir_loc_megalopolis = {
+    castle = 1
 }
 
 ir_loc_megara_0 = {
-    port_building = 1
+    dock = 1
+    university = 1
 }
 
 ir_loc_megara_1 = {
 }
 
 ir_loc_megaroi = {
+}
+
+ir_loc_meghalaya = {
 }
 
 ir_loc_mehdawal = {
@@ -10852,9 +11299,11 @@ ir_loc_meliodunum = {
 }
 
 ir_loc_melita = {
+    castle = 1
 }
 
 ir_loc_melitia = {
+    castle = 1
 }
 
 ir_loc_mellaria = {
@@ -10882,12 +11331,15 @@ ir_loc_memoriana = {
 }
 
 ir_loc_memphis = {
+    construction_center = 1
+    library = 5
 }
 
 ir_loc_menae = {
 }
 
 ir_loc_menapila = {
+    barracks = 1
 }
 
 ir_loc_mendes = {
@@ -10903,11 +11355,11 @@ ir_loc_menegesum = {
 }
 
 ir_loc_menelaos = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_menesthei_portus = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_mennichak = {
@@ -10935,6 +11387,7 @@ ir_loc_mergablum = {
 }
 
 ir_loc_meroe = {
+    construction_center = 2
 }
 
 ir_loc_mersovium = {
@@ -10953,17 +11406,24 @@ ir_loc_meschistha_harmozike = {
 }
 
 ir_loc_mesembria = {
+    minting_office = 2
 }
 
 ir_loc_meskine = {
 }
 
+ir_loc_mesopotamian_desert = {
+}
+
 ir_loc_messana = {
-    port_building = 1
+    castle = 1
+    dock = 1
 }
 
 ir_loc_messene = {
-    port_building = 1
+    armory = 1
+    castle = 1
+    dock = 1
 }
 
 ir_loc_messicia = {
@@ -10988,6 +11448,7 @@ ir_loc_metanastiana = {
 }
 
 ir_loc_metapontum = {
+    castle = 1
 }
 
 ir_loc_metas = {
@@ -11032,6 +11493,9 @@ ir_loc_micia = {
 ir_loc_midaion = {
 }
 
+ir_loc_middle_atlas = {
+}
+
 ir_loc_midili = {
 }
 
@@ -11051,7 +11515,7 @@ ir_loc_miletopolis = {
 }
 
 ir_loc_miletos = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_milevum = {
@@ -11118,7 +11582,7 @@ ir_loc_misiche = {
 }
 
 ir_loc_missua = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_misteia = {
@@ -11172,6 +11636,9 @@ ir_loc_modoutou = {
 ir_loc_modra = {
 }
 
+ir_loc_modra_pass = {
+}
+
 ir_loc_modulus = {
 }
 
@@ -11185,7 +11652,7 @@ ir_loc_mogentiana = {
 }
 
 ir_loc_mogontiacum = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_mohadavasaka = {
@@ -11212,6 +11679,9 @@ ir_loc_momalle = {
 ir_loc_mon_bumtang = {
 }
 
+ir_loc_mon_shampo = {
+}
+
 ir_loc_monkanei = {
 }
 
@@ -11225,6 +11695,9 @@ ir_loc_mons_alpinus = {
 }
 
 ir_loc_mons_ambulatis = {
+}
+
+ir_loc_mons_orospeda = {
 }
 
 ir_loc_mons_rubeum = {
@@ -11249,7 +11722,8 @@ ir_loc_montibus = {
 }
 
 ir_loc_mopsouestia = {
-    port_building = 1
+    armory = 1
+    dock = 1
 }
 
 ir_loc_mopth = {
@@ -11262,7 +11736,7 @@ ir_loc_morginnum = {
 }
 
 ir_loc_moridunum = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_mornal = {
@@ -11281,6 +11755,7 @@ ir_loc_mosa = {
 }
 
 ir_loc_mosali = {
+    construction_center = 2
 }
 
 ir_loc_mosarna = {
@@ -11302,10 +11777,12 @@ ir_loc_mosomagus = {
 }
 
 ir_loc_mosylon = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_motene = {
+    marketplace = 1
+    minting_office = 1
 }
 
 ir_loc_mothana = {
@@ -11324,7 +11801,7 @@ ir_loc_motta_omania = {
 }
 
 ir_loc_moundou = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_mousa = {
@@ -11334,7 +11811,7 @@ ir_loc_mousikanoi = {
 }
 
 ir_loc_mousopalle = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_mouza_emporion = {
@@ -11431,10 +11908,12 @@ ir_loc_muteno = {
 }
 
 ir_loc_mutina = {
+    castle = 1
 }
 
 ir_loc_muziris = {
-    port_building = 1
+    construction_center = 2
+    dock = 1
 }
 
 ir_loc_muzuc = {
@@ -11456,15 +11935,15 @@ ir_loc_myloukome = {
 }
 
 ir_loc_myos_hormos = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_myra = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_myriandros = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_myrleia = {
@@ -11474,7 +11953,7 @@ ir_loc_myrtilis = {
 }
 
 ir_loc_mytilene = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_myttistraton = {
@@ -11493,9 +11972,13 @@ ir_loc_nabada = {
 }
 
 ir_loc_nabadwipa = {
+    construction_center = 2
 }
 
 ir_loc_nabartha = {
+}
+
+ir_loc_nabatean_desert = {
 }
 
 ir_loc_nabrissa = {
@@ -11529,6 +12012,7 @@ ir_loc_nagarahara = {
 }
 
 ir_loc_nagarjunikonda = {
+    construction_center = 1
 }
 
 ir_loc_nagarpur = {
@@ -11577,7 +12061,7 @@ ir_loc_nambo = {
 }
 
 ir_loc_namnetum = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_nanagaina = {
@@ -11623,7 +12107,7 @@ ir_loc_narbata = {
 }
 
 ir_loc_narbo = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_narecha = {
@@ -11678,7 +12162,7 @@ ir_loc_naulibis = {
 }
 
 ir_loc_naupaktos = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_naura_0 = {
@@ -11706,7 +12190,7 @@ ir_loc_navoa = {
 }
 
 ir_loc_naxos = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_naxouana = {
@@ -11719,7 +12203,8 @@ ir_loc_nea_halos = {
 }
 
 ir_loc_neapolis = {
-    port_building = 1
+    armory = 2
+    dock = 1
 }
 
 ir_loc_neapolis_sardoa = {
@@ -11744,6 +12229,7 @@ ir_loc_nehrawati = {
 }
 
 ir_loc_neiloupolis = {
+    construction_center = 1
 }
 
 ir_loc_nelcynda = {
@@ -11840,10 +12326,11 @@ ir_loc_nikaia_lokron = {
 }
 
 ir_loc_nikaia_nialia = {
+    barracks = 1
 }
 
 ir_loc_nikama = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_nike = {
@@ -11856,7 +12343,7 @@ ir_loc_nikiou = {
 }
 
 ir_loc_nikonia = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_nikopolis = {
@@ -11872,6 +12359,8 @@ ir_loc_nincildae = {
 }
 
 ir_loc_nineveh = {
+    construction_center = 1
+    library = 1
 }
 
 ir_loc_ninika = {
@@ -11890,6 +12379,7 @@ ir_loc_niserne = {
 }
 
 ir_loc_nisibis_0 = {
+    library = 1
 }
 
 ir_loc_nisibis_1 = {
@@ -11926,16 +12416,19 @@ ir_loc_nonniacus = {
 }
 
 ir_loc_noouion = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_nora_0 = {
+    castle = 1
 }
 
 ir_loc_nora_1 = {
+    barracks = 1
 }
 
 ir_loc_norba_0 = {
+    market_village = 1
 }
 
 ir_loc_norba_1 = {
@@ -11945,6 +12438,12 @@ ir_loc_noreia = {
 }
 
 ir_loc_norom = {
+}
+
+ir_loc_north_caledonian_mountains = {
+}
+
+ir_loc_north_nilgiri = {
 }
 
 ir_loc_nossa = {
@@ -11957,10 +12456,11 @@ ir_loc_notghi = {
 }
 
 ir_loc_nouira = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_nousaripa = {
+    barracks = 1
 }
 
 ir_loc_nova_augusta = {
@@ -11973,7 +12473,7 @@ ir_loc_novaesium = {
 }
 
 ir_loc_novantae = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_novaria = {
@@ -11995,7 +12495,7 @@ ir_loc_noviomagus_aquitanum = {
 }
 
 ir_loc_noviomagus_durotrigiorum = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_novioregum_santonum = {
@@ -12071,7 +12571,10 @@ ir_loc_nyudi = {
 }
 
 ir_loc_oarakta = {
-    port_building = 1
+    dock = 1
+}
+
+ir_loc_oasis_parva = {
 }
 
 ir_loc_obatis = {
@@ -12123,7 +12626,7 @@ ir_loc_ocuri = {
 }
 
 ir_loc_odessus = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_odogra = {
@@ -12136,7 +12639,8 @@ ir_loc_odomagus = {
 }
 
 ir_loc_oea = {
-    port_building = 1
+    castle = 1
+    dock = 1
 }
 
 ir_loc_oescus = {
@@ -12152,7 +12656,7 @@ ir_loc_ogron = {
 }
 
 ir_loc_oiasso = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_oichalia_aitolias = {
@@ -12180,7 +12684,7 @@ ir_loc_okara = {
 }
 
 ir_loc_okelis = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_okenoi = {
@@ -12199,14 +12703,16 @@ ir_loc_olbasa = {
 }
 
 ir_loc_olbe = {
+    temple = 1
 }
 
 ir_loc_olbia_0 = {
-    port_building = 1
+    dock = 1
+    library = 1
 }
 
 ir_loc_olbia_1 = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_olbia_pamphylias = {
@@ -12219,7 +12725,7 @@ ir_loc_oleastrum = {
 }
 
 ir_loc_olisipo = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_olitis = {
@@ -12253,7 +12759,10 @@ ir_loc_olympos = {
 }
 
 ir_loc_omana = {
-    port_building = 1
+    dock = 1
+}
+
+ir_loc_omani_desert = {
 }
 
 ir_loc_omania = {
@@ -12299,7 +12808,7 @@ ir_loc_opitergium = {
 }
 
 ir_loc_opone = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_opous = {
@@ -12351,7 +12860,7 @@ ir_loc_oretum = {
 }
 
 ir_loc_oreus = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_orgia = {
@@ -12439,6 +12948,9 @@ ir_loc_osismetum = {
 }
 
 ir_loc_oskobara = {
+    construction_center = 1
+    library = 2
+    marketplace = 1
 }
 
 ir_loc_osset = {
@@ -12454,7 +12966,7 @@ ir_loc_ossioia_orientalis = {
 }
 
 ir_loc_ossonoba = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_ostama = {
@@ -12464,7 +12976,7 @@ ir_loc_ostana = {
 }
 
 ir_loc_ostia = {
-    port_building = 2
+    dock = 2
 }
 
 ir_loc_ostrakine = {
@@ -12498,6 +13010,8 @@ ir_loc_ouasada = {
 }
 
 ir_loc_ouenasa = {
+    library = 1
+    temple = 1
 }
 
 ir_loc_ouerisa = {
@@ -12545,6 +13059,9 @@ ir_loc_oykets = {
 ir_loc_pachora = {
 }
 
+ir_loc_pactyan_desert = {
+}
+
 ir_loc_padmavati = {
 }
 
@@ -12561,11 +13078,11 @@ ir_loc_paestum = {
 }
 
 ir_loc_pagala = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_pagasai = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_pago = {
@@ -12583,11 +13100,17 @@ ir_loc_paikuli = {
 ir_loc_pakhnemounis = {
 }
 
+ir_loc_pakpa = {
+}
+
 ir_loc_palaeopolis = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_palaia_achaia = {
+}
+
+ir_loc_palaiogonoi = {
 }
 
 ir_loc_palaipatmai = {
@@ -12609,7 +13132,7 @@ ir_loc_palios = {
 }
 
 ir_loc_paliouros = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_palitas = {
@@ -12622,13 +13145,14 @@ ir_loc_pallontion = {
 }
 
 ir_loc_palma = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_palmatis = {
 }
 
 ir_loc_palmyra = {
+    construction_center = 2
 }
 
 ir_loc_paloura = {
@@ -12680,18 +13204,19 @@ ir_loc_panopolis = {
 }
 
 ir_loc_panorumus = {
-    port_building = 1
+    castle = 1
+    dock = 1
 }
 
 ir_loc_pantikapaion = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_pantyene = {
 }
 
 ir_loc_paphos = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_pappa = {
@@ -12710,10 +13235,11 @@ ir_loc_paradana = {
 }
 
 ir_loc_paraetecene = {
+    barracks = 1
 }
 
 ir_loc_paraetonium = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_parakan = {
@@ -12744,7 +13270,7 @@ ir_loc_parira = {
 }
 
 ir_loc_parium = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_parma = {
@@ -12823,24 +13349,27 @@ ir_loc_pasacartia = {
 }
 
 ir_loc_pasargadae = {
+    castle = 1
+    library = 1
 }
 
 ir_loc_passaron = {
+    armory = 2
 }
 
 ir_loc_patala = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_pataliputra = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_patan = {
 }
 
 ir_loc_patara = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_pataroue = {
@@ -12868,16 +13397,18 @@ ir_loc_pattana = {
 }
 
 ir_loc_pattithana = {
+    construction_center = 3
 }
 
 ir_loc_patulus_portus = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_pauka = {
 }
 
 ir_loc_paunar = {
+    barracks = 1
 }
 
 ir_loc_pautalia = {
@@ -12905,6 +13436,7 @@ ir_loc_pedonia = {
 }
 
 ir_loc_peion = {
+    barracks = 1
 }
 
 ir_loc_pelagonia = {
@@ -12917,7 +13449,10 @@ ir_loc_pelinna = {
 }
 
 ir_loc_pella_0 = {
-    port_building = 2
+    armory = 1
+    counting_house = 2
+    dock = 2
+    minting_office = 3
 }
 
 ir_loc_pella_1 = {
@@ -12933,7 +13468,8 @@ ir_loc_peltuinum = {
 }
 
 ir_loc_pelusium = {
-    port_building = 1
+    castle = 1
+    dock = 1
 }
 
 ir_loc_pelva = {
@@ -12955,6 +13491,8 @@ ir_loc_perceiana = {
 }
 
 ir_loc_pergamon = {
+    castle = 1
+    construction_center = 2
 }
 
 ir_loc_pergantion = {
@@ -12982,6 +13520,7 @@ ir_loc_perseos_skope = {
 }
 
 ir_loc_persepolis = {
+    library = 4
 }
 
 ir_loc_persides = {
@@ -13020,7 +13559,11 @@ ir_loc_petra_arimazou = {
 ir_loc_petra_chorienou = {
 }
 
+ir_loc_petra_pass = {
+}
+
 ir_loc_petra_sisimithrou = {
+    castle = 1
 }
 
 ir_loc_petras_mikros = {
@@ -13048,7 +13591,7 @@ ir_loc_phakoussai = {
 }
 
 ir_loc_phanagoria = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_pharan = {
@@ -13070,25 +13613,27 @@ ir_loc_pharnake = {
 }
 
 ir_loc_pharodenia = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_pharos = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_pharsaga = {
 }
 
 ir_loc_pharsalos = {
+    counting_house = 1
+    minting_office = 2
 }
 
 ir_loc_phaselis = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_phasis = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_phazemon = {
@@ -13098,6 +13643,7 @@ ir_loc_phegus = {
 }
 
 ir_loc_pherai = {
+    minting_office = 2
 }
 
 ir_loc_pheugarum = {
@@ -13107,14 +13653,17 @@ ir_loc_phiara = {
 }
 
 ir_loc_phikaria = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_philia = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_philippoi = {
+    armory = 1
+    castle = 1
+    mason = 1
 }
 
 ir_loc_philippopolis = {
@@ -13127,7 +13676,7 @@ ir_loc_philoteris = {
 }
 
 ir_loc_phlaouia_lambris = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_phoda = {
@@ -13161,6 +13710,7 @@ ir_loc_phraaspa = {
 }
 
 ir_loc_phrada = {
+    castle = 1
 }
 
 ir_loc_phratroua = {
@@ -13206,6 +13756,7 @@ ir_loc_piktonion_akron = {
 }
 
 ir_loc_pilibhit = {
+    market_village = 1
 }
 
 ir_loc_pilonicoria = {
@@ -13257,11 +13808,11 @@ ir_loc_pirum = {
 }
 
 ir_loc_pisae = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_pisauta = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_pisavi = {
@@ -13289,7 +13840,7 @@ ir_loc_pitoura = {
 }
 
 ir_loc_pityous = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_pizus = {
@@ -13308,6 +13859,7 @@ ir_loc_platanus = {
 }
 
 ir_loc_plestia = {
+    construction_center = 2
 }
 
 ir_loc_pleuramis = {
@@ -13350,7 +13902,7 @@ ir_loc_pokis = {
 }
 
 ir_loc_pola = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_polibedenses = {
@@ -13378,7 +13930,7 @@ ir_loc_polymedion = {
 }
 
 ir_loc_polyrrenia = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_pomaria = {
@@ -13388,7 +13940,7 @@ ir_loc_pompegiaco = {
 }
 
 ir_loc_pompeii = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_pompelo = {
@@ -13406,6 +13958,9 @@ ir_loc_pons_rugio = {
 ir_loc_pontes = {
 }
 
+ir_loc_pontic_steppe = {
+}
+
 ir_loc_pontiniacum = {
 }
 
@@ -13413,6 +13968,7 @@ ir_loc_populi = {
 }
 
 ir_loc_populonia = {
+    library = 1
 }
 
 ir_loc_porach = {
@@ -13428,6 +13984,9 @@ ir_loc_porsha = {
 }
 
 ir_loc_porsula = {
+}
+
+ir_loc_portae = {
 }
 
 ir_loc_porticenses = {
@@ -13449,44 +14008,44 @@ ir_loc_portus_cibilis = {
 }
 
 ir_loc_portus_divinus = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_portus_itius = {
 }
 
 ir_loc_portus_liquentiae = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_portus_magnus = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_portus_magulus = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_portus_setantiorum = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_portus_sucronis = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_portus_tibulae = {
 }
 
 ir_loc_portus_veneris = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_posdala = {
 }
 
 ir_loc_poseidion = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_poshkar = {
@@ -13514,7 +14073,7 @@ ir_loc_potulatensiana = {
 }
 
 ir_loc_prabhasa = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_praemiacum = {
@@ -13554,7 +14113,7 @@ ir_loc_presuina = {
 }
 
 ir_loc_priene = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_prista = {
@@ -13570,6 +14129,7 @@ ir_loc_prymnessos = {
 }
 
 ir_loc_pselkis = {
+    castle = 1
 }
 
 ir_loc_psenemphaia = {
@@ -13588,14 +14148,14 @@ ir_loc_pteria_pontias = {
 }
 
 ir_loc_ptolemais = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_ptolemais_hermeiou = {
 }
 
 ir_loc_ptolemais_theron = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_pulong = {
@@ -13605,6 +14165,9 @@ ir_loc_pumaring = {
 }
 
 ir_loc_pundra = {
+}
+
+ir_loc_puntic_highlands = {
 }
 
 ir_loc_pupput = {
@@ -13626,9 +14189,11 @@ ir_loc_purulia = {
 }
 
 ir_loc_purushapura = {
+    construction_center = 2
 }
 
 ir_loc_pushkalavati = {
+    construction_center = 3
 }
 
 ir_loc_pushkara = {
@@ -13650,7 +14215,9 @@ ir_loc_pyctis = {
 }
 
 ir_loc_pydna = {
-    port_building = 1
+    castle = 1
+    dock = 1
+    marketplace = 1
 }
 
 ir_loc_pylai_kelishinias = {
@@ -13663,6 +14230,7 @@ ir_loc_pylai_sousianes = {
 }
 
 ir_loc_pyrgi = {
+    barracks = 1
 }
 
 ir_loc_pyrri = {
@@ -13678,6 +14246,9 @@ ir_loc_qalat = {
 }
 
 ir_loc_qalatgah = {
+}
+
+ir_loc_qaleh = {
 }
 
 ir_loc_qaleh_gureh = {
@@ -13723,6 +14294,8 @@ ir_loc_qoide = {
 }
 
 ir_loc_qom = {
+    construction_center = 1
+    library = 1
 }
 
 ir_loc_quadia = {
@@ -13743,7 +14316,11 @@ ir_loc_quiza_xenitana = {
 ir_loc_qumis = {
 }
 
+ir_loc_qumis_highland = {
+}
+
 ir_loc_quseima = {
+    castle = 1
 }
 
 ir_loc_rabbat_ammon = {
@@ -13780,6 +14357,7 @@ ir_loc_ragnaricia = {
 }
 
 ir_loc_raichur = {
+    construction_center = 1
 }
 
 ir_loc_raida = {
@@ -13867,7 +14445,7 @@ ir_loc_rapur = {
 }
 
 ir_loc_raqeta = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_ratae = {
@@ -13889,7 +14467,7 @@ ir_loc_raumariki = {
 }
 
 ir_loc_raunathou_kome = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_rauracia = {
@@ -13902,13 +14480,15 @@ ir_loc_ravar = {
 }
 
 ir_loc_ravenna = {
-    port_building = 1
+    castle = 1
+    dock = 1
 }
 
 ir_loc_rayachoti = {
 }
 
 ir_loc_rayagada = {
+    construction_center = 3
 }
 
 ir_loc_rayyis = {
@@ -13990,6 +14570,9 @@ ir_loc_rhacatia = {
 }
 
 ir_loc_rhagai = {
+    castle = 1
+    construction_center = 2
+    library = 1
 }
 
 ir_loc_rhaithou = {
@@ -14005,6 +14588,7 @@ ir_loc_rhamna = {
 }
 
 ir_loc_rhamnous = {
+    slave_market = 1
 }
 
 ir_loc_rhandeia = {
@@ -14014,25 +14598,26 @@ ir_loc_rhapses = {
 }
 
 ir_loc_rhebas = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_rhegium = {
-    port_building = 1
+    castle = 1
+    dock = 1
 }
 
 ir_loc_rhithymna = {
 }
 
 ir_loc_rhizaion = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_rhizon = {
 }
 
 ir_loc_rhoda = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_rhodanousia = {
@@ -14042,7 +14627,10 @@ ir_loc_rhodopolis = {
 }
 
 ir_loc_rhodos = {
-    port_building = 1
+    castle = 1
+    dock = 1
+    library = 1
+    marketplace = 1
 }
 
 ir_loc_rhopikon = {
@@ -14142,6 +14730,10 @@ ir_loc_rohtas = {
 }
 
 ir_loc_roma = {
+    armory = 2
+    counting_house = 1
+    marketplace = 1
+    minting_office = 1
 }
 
 ir_loc_romula = {
@@ -14157,7 +14749,7 @@ ir_loc_ronglung = {
 }
 
 ir_loc_roruka = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_rostrum_nemaviae = {
@@ -14200,7 +14792,7 @@ ir_loc_rudera = {
 }
 
 ir_loc_rugia = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_rukmammapeta = {
@@ -14210,7 +14802,7 @@ ir_loc_rupar = {
 }
 
 ir_loc_rusaddir = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_rusazus = {
@@ -14229,7 +14821,7 @@ ir_loc_rusia = {
 }
 
 ir_loc_rusicade = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_rusidava = {
@@ -14239,7 +14831,7 @@ ir_loc_rusippisir = {
 }
 
 ir_loc_rusuccuru = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_ruta = {
@@ -14255,7 +14847,7 @@ ir_loc_rutok = {
 }
 
 ir_loc_rutubis = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_rynek = {
@@ -14319,7 +14911,7 @@ ir_loc_sadiya = {
 }
 
 ir_loc_safim = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_sagalassos = {
@@ -14332,7 +14924,7 @@ ir_loc_sagarejo = {
 }
 
 ir_loc_saguntum = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_saharsa = {
@@ -14342,7 +14934,7 @@ ir_loc_sahlala = {
 }
 
 ir_loc_sais = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_sajahati = {
@@ -14364,7 +14956,7 @@ ir_loc_sakorsa = {
 }
 
 ir_loc_sala = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_salacia = {
@@ -14386,7 +14978,8 @@ ir_loc_salamis = {
 }
 
 ir_loc_salamis_kyprias = {
-    port_building = 1
+    castle = 1
+    dock = 1
 }
 
 ir_loc_salaria = {
@@ -14411,7 +15004,7 @@ ir_loc_salcia = {
 }
 
 ir_loc_saldae = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_saldia = {
@@ -14490,6 +15083,7 @@ ir_loc_saloia = {
 }
 
 ir_loc_salon = {
+    library = 1
 }
 
 ir_loc_salona = {
@@ -14532,6 +15126,7 @@ ir_loc_samangan = {
 }
 
 ir_loc_samapa = {
+    construction_center = 2
 }
 
 ir_loc_samarabriai = {
@@ -14547,6 +15142,7 @@ ir_loc_samarobriva = {
 }
 
 ir_loc_samarra = {
+    barracks = 1
 }
 
 ir_loc_samastipur = {
@@ -14562,7 +15158,7 @@ ir_loc_samlaji = {
 }
 
 ir_loc_samos = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_samosata = {
@@ -14656,7 +15252,7 @@ ir_loc_sarapanis = {
 }
 
 ir_loc_sarapis = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_saraswata = {
@@ -14669,6 +15265,8 @@ ir_loc_sardeoua = {
 }
 
 ir_loc_sardis = {
+    castle = 1
+    library = 4
 }
 
 ir_loc_sardonia = {
@@ -14699,6 +15297,9 @@ ir_loc_sarmalios = {
 }
 
 ir_loc_sarmapolis = {
+}
+
+ir_loc_sarmatia = {
 }
 
 ir_loc_sarmizegetusa = {
@@ -14756,10 +15357,11 @@ ir_loc_sathis = {
 }
 
 ir_loc_saticula = {
+    castle = 1
 }
 
 ir_loc_satrunavha = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_sattalicia = {
@@ -14802,6 +15404,7 @@ ir_loc_saviniago = {
 }
 
 ir_loc_savo = {
+    barracks = 1
 }
 
 ir_loc_saxetanum = {
@@ -14880,7 +15483,7 @@ ir_loc_sebendounon = {
 }
 
 ir_loc_sebennytos = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_sebuinus_vicus = {
@@ -14995,6 +15598,8 @@ ir_loc_selenis = {
 }
 
 ir_loc_seleucia_magna = {
+    construction_center = 2
+    library = 7
 }
 
 ir_loc_selge = {
@@ -15004,7 +15609,7 @@ ir_loc_selgovae = {
 }
 
 ir_loc_selinous_kilikias = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_selinus = {
@@ -15023,6 +15628,7 @@ ir_loc_sembrakenoi = {
 }
 
 ir_loc_semina = {
+    barracks = 1
 }
 
 ir_loc_semna = {
@@ -15074,6 +15680,7 @@ ir_loc_septimanca = {
 }
 
 ir_loc_septimia = {
+    castle = 1
 }
 
 ir_loc_seqindel = {
@@ -15083,7 +15690,7 @@ ir_loc_serakhis = {
 }
 
 ir_loc_serapeion = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_serapieion = {
@@ -15138,7 +15745,7 @@ ir_loc_servitium = {
 }
 
 ir_loc_sesamos = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_seserem = {
@@ -15190,7 +15797,7 @@ ir_loc_severiacus = {
 }
 
 ir_loc_sextantio = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_shaapa = {
@@ -15395,11 +16002,11 @@ ir_loc_siddhatek = {
 }
 
 ir_loc_side = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_side_pontike = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_sidene = {
@@ -15418,11 +16025,12 @@ ir_loc_sidoloucum = {
 }
 
 ir_loc_sidon = {
-    port_building = 4
+    dock = 4
+    marketplace = 1
 }
 
 ir_loc_siga = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_sigan = {
@@ -15444,7 +16052,7 @@ ir_loc_sigulonia_australis = {
 }
 
 ir_loc_sigulonia_borealis = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_sigus = {
@@ -15454,6 +16062,7 @@ ir_loc_sihora = {
 }
 
 ir_loc_sikyon = {
+    castle = 1
 }
 
 ir_loc_silandos = {
@@ -15478,6 +16087,7 @@ ir_loc_silingia = {
 }
 
 ir_loc_sillyon = {
+    castle = 1
 }
 
 ir_loc_siluvia = {
@@ -15507,10 +16117,19 @@ ir_loc_sina_meridionalis = {
 ir_loc_sinad = {
 }
 
+ir_loc_sinai = {
+}
+
 ir_loc_sinara = {
+    castle = 1
+}
+
+ir_loc_sindhian_mountains = {
 }
 
 ir_loc_sindhimana = {
+    construction_center = 1
+    library = 1
 }
 
 ir_loc_sindhu = {
@@ -15538,7 +16157,7 @@ ir_loc_sinomagus = {
 }
 
 ir_loc_sinope = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_sinoria = {
@@ -15563,7 +16182,7 @@ ir_loc_sipia_occidentalis = {
 }
 
 ir_loc_sipontum = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_sippar = {
@@ -15675,11 +16294,11 @@ ir_loc_skyamina = {
 }
 
 ir_loc_skyros = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_smyrna = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_smyrnophoros_chora = {
@@ -15709,6 +16328,12 @@ ir_loc_sodal = {
 ir_loc_soe = {
 }
 
+ir_loc_sogdian_mountains = {
+}
+
+ir_loc_sogdian_steppe = {
+}
+
 ir_loc_soleb = {
 }
 
@@ -15731,6 +16356,7 @@ ir_loc_soloi_1 = {
 }
 
 ir_loc_soloke = {
+    barracks = 1
 }
 
 ir_loc_solorbes = {
@@ -15761,6 +16387,9 @@ ir_loc_sopha = {
 }
 
 ir_loc_sophine = {
+}
+
+ir_loc_sophon_pass = {
 }
 
 ir_loc_sopianae = {
@@ -15808,6 +16437,9 @@ ir_loc_souannagoura = {
 ir_loc_soura = {
 }
 
+ir_loc_south_nilgiri = {
+}
+
 ir_loc_southeast_arran = {
 }
 
@@ -15830,13 +16462,15 @@ ir_loc_sparata = {
 }
 
 ir_loc_sparta = {
+    armory = 2
+    castle = 1
 }
 
 ir_loc_sper = {
 }
 
 ir_loc_spina = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_spinopara = {
@@ -15861,6 +16495,7 @@ ir_loc_sriparvata = {
 }
 
 ir_loc_sripatha = {
+    construction_center = 2
 }
 
 ir_loc_sripratava = {
@@ -15909,6 +16544,7 @@ ir_loc_stetta = {
 }
 
 ir_loc_sthanishvara = {
+    library = 1
 }
 
 ir_loc_sthura = {
@@ -16032,7 +16668,10 @@ ir_loc_suktivati = {
 }
 
 ir_loc_sulcis_0 = {
-    port_building = 1
+    construction_center = 2
+    dock = 1
+    library = 3
+    minting_office = 1
 }
 
 ir_loc_sulcis_1 = {
@@ -16068,6 +16707,9 @@ ir_loc_suna = {
 ir_loc_sunam = {
 }
 
+ir_loc_sundarbans_0 = {
+}
+
 ir_loc_supaul = {
 }
 
@@ -16087,7 +16729,7 @@ ir_loc_surada = {
 }
 
 ir_loc_surat = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_suravan = {
@@ -16100,7 +16742,7 @@ ir_loc_surkhab = {
 }
 
 ir_loc_surparaka = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_susidaea = {
@@ -16148,6 +16790,9 @@ ir_loc_syene = {
 ir_loc_sykaminia = {
 }
 
+ir_loc_sylvana = {
+}
+
 ir_loc_sylvaria_prima = {
 }
 
@@ -16158,16 +16803,24 @@ ir_loc_synaos = {
 }
 
 ir_loc_synnada = {
+    castle = 1
 }
 
 ir_loc_synodion = {
 }
 
 ir_loc_syracusae = {
-    port_building = 3
+    castle = 1
+    dock = 3
+}
+
+ir_loc_syrian_desert_0 = {
 }
 
 ir_loc_syrian_gates_0 = {
+}
+
+ir_loc_syrian_gates_1 = {
 }
 
 ir_loc_syrorum = {
@@ -16192,7 +16845,7 @@ ir_loc_syutnich = {
 }
 
 ir_loc_ta_antiphilou = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_tabai = {
@@ -16220,7 +16873,7 @@ ir_loc_tabudium = {
 }
 
 ir_loc_tacape = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_tachampso = {
@@ -16292,6 +16945,9 @@ ir_loc_taksaty = {
 ir_loc_takyris = {
 }
 
+ir_loc_talas_highland = {
+}
+
 ir_loc_talaura = {
 }
 
@@ -16338,7 +16994,7 @@ ir_loc_tamna = {
 }
 
 ir_loc_tamralipti = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_tamraparni = {
@@ -16357,10 +17013,11 @@ ir_loc_tanadaris = {
 }
 
 ir_loc_tanagra = {
+    castle = 1
 }
 
 ir_loc_tanais_0 = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_tanarke = {
@@ -16406,7 +17063,7 @@ ir_loc_taparura = {
 }
 
 ir_loc_taphros = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_tapia = {
@@ -16431,7 +17088,11 @@ ir_loc_tareina = {
 }
 
 ir_loc_tarentum = {
-    port_building = 1
+    castle = 1
+    dock = 1
+}
+
+ir_loc_tarim = {
 }
 
 ir_loc_tarkhan = {
@@ -16471,14 +17132,15 @@ ir_loc_tarsos_bithynias = {
 }
 
 ir_loc_tarsus = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_tartessia = {
 }
 
 ir_loc_tartessos = {
-    port_building = 1
+    castle = 1
+    dock = 1
 }
 
 ir_loc_tarucano = {
@@ -16530,6 +17192,7 @@ ir_loc_taunensium = {
 }
 
 ir_loc_taurasia = {
+    construction_center = 1
 }
 
 ir_loc_tauresium = {
@@ -16542,7 +17205,7 @@ ir_loc_taurica = {
 }
 
 ir_loc_tauroention = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_tauromenium = {
@@ -16561,6 +17224,8 @@ ir_loc_tawres = {
 }
 
 ir_loc_taxila = {
+    construction_center = 3
+    library = 3
 }
 
 ir_loc_tazora = {
@@ -16618,7 +17283,7 @@ ir_loc_telmenissos = {
 }
 
 ir_loc_telmessos = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_telonnum = {
@@ -16628,6 +17293,10 @@ ir_loc_telos = {
 }
 
 ir_loc_temesa = {
+    castle = 1
+}
+
+ir_loc_tempe_pass = {
 }
 
 ir_loc_temukan = {
@@ -16661,7 +17330,7 @@ ir_loc_terai = {
 }
 
 ir_loc_teredon = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_terekata = {
@@ -16692,6 +17361,7 @@ ir_loc_tertakom = {
 }
 
 ir_loc_terventum = {
+    castle = 1
 }
 
 ir_loc_teucera = {
@@ -16713,7 +17383,7 @@ ir_loc_teutonia_centralis = {
 }
 
 ir_loc_teutonia_maior = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_teutonia_minor = {
@@ -16723,11 +17393,11 @@ ir_loc_teyen = {
 }
 
 ir_loc_thabraca = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_thaenae = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_thaesactum = {
@@ -16761,13 +17431,14 @@ ir_loc_thanjavur = {
 }
 
 ir_loc_thannuris = {
+    castle = 1
 }
 
 ir_loc_thapaua = {
 }
 
 ir_loc_thapsus = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_tharros = {
@@ -16786,7 +17457,7 @@ ir_loc_thaumakoi = {
 }
 
 ir_loc_thebai_arabikai = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_thebarga = {
@@ -16834,15 +17505,18 @@ ir_loc_thenete = {
 ir_loc_thense = {
 }
 
+ir_loc_thenteos = {
+}
+
 ir_loc_theodosia = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_theppra = {
 }
 
 ir_loc_thera = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_thera_karias = {
@@ -16861,7 +17535,9 @@ ir_loc_thespiai = {
 }
 
 ir_loc_thessalonica = {
-    port_building = 2
+    counting_house = 1
+    dock = 2
+    minting_office = 2
 }
 
 ir_loc_theustia = {
@@ -16907,7 +17583,7 @@ ir_loc_throasca = {
 }
 
 ir_loc_thubactis = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_thubrasine = {
@@ -16920,6 +17596,9 @@ ir_loc_thugga = {
 }
 
 ir_loc_thugga_terebenthina = {
+}
+
+ir_loc_thule = {
 }
 
 ir_loc_thumat = {
@@ -16935,7 +17614,8 @@ ir_loc_thure = {
 }
 
 ir_loc_thurii = {
-    port_building = 1
+    castle = 1
+    dock = 1
 }
 
 ir_loc_thuringiana = {
@@ -16981,9 +17661,11 @@ ir_loc_tibiscum = {
 }
 
 ir_loc_tibur = {
+    armory = 2
 }
 
 ir_loc_ticinum = {
+    castle = 1
 }
 
 ir_loc_tieion = {
@@ -17026,7 +17708,7 @@ ir_loc_tincontium = {
 }
 
 ir_loc_tingis = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_tingitanum = {
@@ -17039,7 +17721,7 @@ ir_loc_tipasa_0 = {
 }
 
 ir_loc_tipasa_1 = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_tiralia = {
@@ -17142,7 +17824,7 @@ ir_loc_tondana = {
 }
 
 ir_loc_tongobriga = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_tongorigum = {
@@ -17170,7 +17852,7 @@ ir_loc_torone = {
 }
 
 ir_loc_tosali = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_tourmogon = {
@@ -17183,10 +17865,12 @@ ir_loc_tragilos = {
 }
 
 ir_loc_tragonica = {
+    construction_center = 3
+    library = 2
 }
 
 ir_loc_tragourion = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_traiectum = {
@@ -17214,7 +17898,7 @@ ir_loc_trapezon = {
 }
 
 ir_loc_trapezous = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_travectus = {
@@ -17227,14 +17911,14 @@ ir_loc_trebula = {
 }
 
 ir_loc_tregoritum = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_tremulae = {
 }
 
 ir_loc_tretos = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_treva = {
@@ -17283,7 +17967,7 @@ ir_loc_tripheion = {
 }
 
 ir_loc_tripolis = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_tripura = {
@@ -17302,6 +17986,12 @@ ir_loc_troesmis = {
 }
 
 ir_loc_troesus = {
+}
+
+ir_loc_troglodytica = {
+}
+
+ir_loc_troikon_oros = {
 }
 
 ir_loc_troizen = {
@@ -17482,7 +18172,9 @@ ir_loc_tylis = {
 }
 
 ir_loc_tylos = {
-    port_building = 1
+    castle = 1
+    dock = 1
+    marketplace = 1
 }
 
 ir_loc_tymbriada = {
@@ -17507,7 +18199,9 @@ ir_loc_tyros = {
 }
 
 ir_loc_tyrus = {
-    port_building = 3
+    castle = 1
+    dock = 3
+    tools_workshop = 2
 }
 
 ir_loc_tzibile = {
@@ -17550,6 +18244,8 @@ ir_loc_ujjayanta = {
 }
 
 ir_loc_ujjayini = {
+    library = 2
+    temple = 1
 }
 
 ir_loc_uldan = {
@@ -17582,6 +18278,27 @@ ir_loc_uplistsikhe = {
 ir_loc_uppakra = {
 }
 
+ir_loc_upper_blue_nile = {
+}
+
+ir_loc_upper_dardania = {
+}
+
+ir_loc_upper_epirus = {
+}
+
+ir_loc_upper_macedonia = {
+}
+
+ir_loc_upper_terai = {
+}
+
+ir_loc_upper_terrai = {
+}
+
+ir_loc_upper_thrace = {
+}
+
 ir_loc_urang = {
 }
 
@@ -17607,7 +18324,7 @@ ir_loc_urbnisi = {
 }
 
 ir_loc_urci = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_ureu = {
@@ -17662,6 +18379,7 @@ ir_loc_urtseki = {
 }
 
 ir_loc_uruk = {
+    barracks = 1
 }
 
 ir_loc_urvel = {
@@ -17686,7 +18404,7 @@ ir_loc_usch = {
 }
 
 ir_loc_usdia_occidentalis = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_usdia_orientalis = {
@@ -17732,6 +18450,9 @@ ir_loc_utea = {
 }
 
 ir_loc_uthina = {
+}
+
+ir_loc_utian_plain = {
 }
 
 ir_loc_utica = {
@@ -17795,7 +18516,7 @@ ir_loc_vacomagi = {
 }
 
 ir_loc_vada_volaterrana = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_vaddua = {
@@ -17871,9 +18592,11 @@ ir_loc_valuraka = {
 }
 
 ir_loc_valvata = {
+    castle = 1
 }
 
 ir_loc_vanavasi = {
+    construction_center = 2
 }
 
 ir_loc_vanci = {
@@ -17886,7 +18609,7 @@ ir_loc_vandulia = {
 }
 
 ir_loc_vang = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_vangionia = {
@@ -17914,6 +18637,8 @@ ir_loc_varana_gandhara = {
 }
 
 ir_loc_varanasi = {
+    library = 2
+    temple = 1
 }
 
 ir_loc_varcia = {
@@ -17938,7 +18663,7 @@ ir_loc_vareia = {
 }
 
 ir_loc_varendra = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_varianis = {
@@ -18011,6 +18736,8 @@ ir_loc_vegium = {
 }
 
 ir_loc_veii = {
+    armory = 1
+    castle = 1
 }
 
 ir_loc_vel = {
@@ -18035,7 +18762,8 @@ ir_loc_veleia = {
 }
 
 ir_loc_velia = {
-    port_building = 1
+    castle = 1
+    dock = 1
 }
 
 ir_loc_vellalore = {
@@ -18054,7 +18782,7 @@ ir_loc_veltaea_borealis = {
 }
 
 ir_loc_veluniate = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_vemania = {
@@ -18133,6 +18861,7 @@ ir_loc_vera = {
 }
 
 ir_loc_verahram_qaleh = {
+    market_village = 1
 }
 
 ir_loc_verbeia = {
@@ -18169,6 +18898,7 @@ ir_loc_vernemetum = {
 }
 
 ir_loc_verona = {
+    castle = 1
 }
 
 ir_loc_vertavia = {
@@ -18196,7 +18926,7 @@ ir_loc_vesaspe = {
 }
 
 ir_loc_veseiasueca = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_vesontio = {
@@ -18218,9 +18948,11 @@ ir_loc_vettonia_superioris = {
 }
 
 ir_loc_vetulonia = {
+    castle = 1
 }
 
 ir_loc_vetus_hydreuma = {
+    castle = 1
 }
 
 ir_loc_vezir = {
@@ -18233,7 +18965,7 @@ ir_loc_viadria = {
 }
 
 ir_loc_viadrus = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_viaduna = {
@@ -18294,7 +19026,7 @@ ir_loc_vicus_siamus = {
 }
 
 ir_loc_vicus_spacorum = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_vicus_vagornicensis = {
@@ -18358,6 +19090,9 @@ ir_loc_vindelicia = {
 }
 
 ir_loc_vindenis = {
+}
+
+ir_loc_vindhya = {
 }
 
 ir_loc_vindinum = {
@@ -18442,6 +19177,7 @@ ir_loc_visentium = {
 }
 
 ir_loc_vishpauzatis = {
+    construction_center = 1
 }
 
 ir_loc_visseria = {
@@ -18463,7 +19199,7 @@ ir_loc_visum_montis = {
 }
 
 ir_loc_visurgis = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_vitala = {
@@ -18500,7 +19236,7 @@ ir_loc_volaterrae = {
 }
 
 ir_loc_volci = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_volg = {
@@ -18552,7 +19288,7 @@ ir_loc_voreynica = {
 }
 
 ir_loc_vorganium = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_vorgium = {
@@ -18636,6 +19372,12 @@ ir_loc_warinia = {
 ir_loc_warthan = {
 }
 
+ir_loc_western_gaetulia = {
+}
+
+ir_loc_western_musalamia = {
+}
+
 ir_loc_wumi = {
 }
 
@@ -18658,6 +19400,7 @@ ir_loc_yajatinagara = {
 }
 
 ir_loc_yakaris = {
+    construction_center = 1
 }
 
 ir_loc_yakkant = {
@@ -18667,6 +19410,7 @@ ir_loc_yamaprastha = {
 }
 
 ir_loc_yamchun = {
+    castle = 1
 }
 
 ir_loc_yanik_tepe = {
@@ -18777,6 +19521,9 @@ ir_loc_zabi = {
 ir_loc_zadrakarta = {
 }
 
+ir_loc_zagros = {
+}
+
 ir_loc_zagrou_pylai = {
 }
 
@@ -18835,6 +19582,7 @@ ir_loc_zaranis = {
 }
 
 ir_loc_zarawand = {
+    castle = 1
 }
 
 ir_loc_zarem = {
@@ -18898,6 +19646,7 @@ ir_loc_zetis = {
 }
 
 ir_loc_zeugma = {
+    castle = 1
 }
 
 ir_loc_zghuderi = {
@@ -18973,7 +19722,7 @@ ir_loc_zirne = {
 }
 
 ir_loc_zitha = {
-    port_building = 1
+    dock = 1
 }
 
 ir_loc_zithaa = {
@@ -19010,6 +19759,7 @@ ir_loc_zouchis = {
 }
 
 ir_loc_zranka = {
+    barracks = 1
 }
 
 ir_loc_zucchabar = {
