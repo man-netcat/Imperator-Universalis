@@ -4,28 +4,28 @@
 # =========================================================== #
 
 ir_aramaic = {
-    language = aramaic_language
+    language = ir_aramaic_lang
     color = hsv { 0.05 1.00 0.50 }
     tags = { levantine_gfx middle_east_gfx }
     culture_groups = { ir_east_levantine_g }
 }
 
 ir_assyrian = {
-    language = aramaic_language
+    language = ir_assyrian_lang
     color = hsv { 0.05 1.00 0.50 }
     tags = { levantine_gfx middle_east_gfx }
     culture_groups = { ir_east_levantine_g }
 }
 
 ir_babylonian = {
-    language = aramaic_language
+    language = ir_babylonian_lang
     color = hsv { 0.05 1.00 0.50 }
     tags = { levantine_gfx middle_east_gfx }
     culture_groups = { ir_east_levantine_g }
 }
 
 ir_cardukoi = {
-    language = aramaic_language
+    language = ir_assyrian_lang
     color = hsv { 0.05 1.00 0.50 }
     tags = { levantine_gfx middle_east_gfx }
     culture_groups = { ir_east_levantine_g }

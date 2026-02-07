@@ -4,140 +4,140 @@
 # =========================================================== #
 
 ir_vidharban = {
-    language = marathi_language
+    language = ir_prakrit_lang
     color = hsv { 0.05 1.00 0.90 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_aryan_g }
 }
 
 ir_mulaka = {
-    language = sanskrit_language
+    language = ir_prakrit_lang
     color = hsv { 0.05 1.00 0.90 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_aryan_g }
 }
 
 ir_saurashtran = {
-    language = gujarati_language
+    language = ir_sindhi_lang
     color = hsv { 0.05 1.00 0.90 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_aryan_g }
 }
 
 ir_kaccha = {
-    language = sanskrit_language
+    language = ir_sindhi_lang
     color = hsv { 0.05 1.00 0.90 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_aryan_g }
 }
 
 ir_lankan = {
-    language = sinhala_language
+    language = ir_prakrit_lang
     color = hsv { 0.05 1.00 0.90 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_aryan_g }
 }
 
 ir_maharashtran = {
-    language = marathi_language
+    language = ir_prakrit_lang
     color = hsv { 0.05 1.00 0.90 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_aryan_g }
 }
 
 ir_rathikan = {
-    language = sanskrit_language
+    language = ir_sindhi_lang
     color = hsv { 0.05 1.00 0.90 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_aryan_g }
 }
 
 ir_gandhari = {
-    language = sanskrit_language
+    language = ir_gandhari_lang
     color = hsv { 0.05 1.00 0.90 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_aryan_g }
 }
 
 ir_sivi = {
-    language = sanskrit_language
+    language = ir_sanskrit_lang
     color = hsv { 0.05 1.00 0.90 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_aryan_g }
 }
 
 ir_shauraseni = {
-    language = bihari_language
+    language = ir_prakrit_lang
     color = hsv { 0.05 1.00 0.90 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_aryan_g }
 }
 
 ir_kosala = {
-    language = sanskrit_language
+    language = ir_sanskrit_lang
     color = hsv { 0.05 1.00 0.90 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_aryan_g }
 }
 
 ir_kuru = {
-    language = sanskrit_language
+    language = ir_sanskrit_lang
     color = hsv { 0.05 1.00 0.90 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_aryan_g }
 }
 
 ir_avanti = {
-    language = bihari_language
+    language = ir_sanskrit_lang
     color = hsv { 0.05 1.00 0.90 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_aryan_g }
 }
 
 ir_matsya = {
-    language = sanskrit_language
+    language = ir_sanskrit_lang
     color = hsv { 0.05 1.00 0.90 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_aryan_g }
 }
 
 ir_cedi = {
-    language = sanskrit_language
+    language = ir_sanskrit_lang
     color = hsv { 0.05 1.00 0.90 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_aryan_g }
 }
 
 ir_dhivehi = {
-    language = sanskrit_language
+    language = ir_sindhi_lang
     color = hsv { 0.05 1.00 0.90 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_aryan_g }
 }
 
 ir_sindhi = {
-    language = sindhi_language
+    language = ir_sindhi_lang
     color = hsv { 0.05 1.00 0.90 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_aryan_g }
 }
 
 ir_dardic = {
-    language = sanskrit_language
+    language = ir_gandhari_lang
     color = hsv { 0.05 1.00 0.90 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_aryan_g }
 }
 
 ir_purus = {
-    language = sanskrit_language
+    language = ir_sanskrit_lang
     color = hsv { 0.05 1.00 0.90 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_aryan_g }
 }
 
 ir_mitanni = {
-    language = sanskrit_language
+    language = ir_sanskrit_lang
     color = hsv { 0.05 1.00 0.90 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_aryan_g }

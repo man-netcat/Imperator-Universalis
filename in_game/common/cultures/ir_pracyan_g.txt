@@ -4,84 +4,84 @@
 # =========================================================== #
 
 ir_kalingan = {
-    language = oriya_language
+    language = ir_oriya_lang
     color = hsv { 0.25 1.00 0.10 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_pracyan_g }
 }
 
 ir_savara = {
-    language = bihari_language
+    language = ir_oriya_lang
     color = hsv { 0.25 1.00 0.10 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_pracyan_g }
 }
 
 ir_kamarupi = {
-    language = brahmaputran_language
+    language = ir_kamarupi_lang
     color = hsv { 0.25 1.00 0.10 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_pracyan_g }
 }
 
 ir_bangli = {
-    language = bengali_language
+    language = ir_bengali_lang
     color = hsv { 0.25 1.00 0.10 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_pracyan_g }
 }
 
 ir_pandra = {
-    language = bihari_language
+    language = ir_bengali_lang
     color = hsv { 0.25 1.00 0.10 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_pracyan_g }
 }
 
 ir_vanga = {
-    language = bihari_language
+    language = ir_bengali_lang
     color = hsv { 0.25 1.00 0.10 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_pracyan_g }
 }
 
 ir_atavi = {
-    language = munda_language
+    language = ir_oriya_lang
     color = hsv { 0.25 1.00 0.10 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_pracyan_g }
 }
 
 ir_magadhi = {
-    language = bihari_language
+    language = ir_magadhan_prakrit_lang
     color = hsv { 0.25 1.00 0.10 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_pracyan_g }
 }
 
 ir_kasi = {
-    language = bihari_language
+    language = ir_magadhan_prakrit_lang
     color = hsv { 0.25 1.00 0.10 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_pracyan_g }
 }
 
 ir_vrji = {
-    language = bihari_language
+    language = ir_magadhan_prakrit_lang
     color = hsv { 0.25 1.00 0.10 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_pracyan_g }
 }
 
 ir_malla = {
-    language = bihari_language
+    language = ir_magadhan_prakrit_lang
     color = hsv { 0.25 1.00 0.10 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_pracyan_g }
 }
 
 ir_himalayan = {
-    language = west_himalayic_language
+    language = ir_himalayan_lang
     color = hsv { 0.25 1.00 0.10 }
     tags = { persianate_gfx indian_gfx }
     culture_groups = { ir_pracyan_g }

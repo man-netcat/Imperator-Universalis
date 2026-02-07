@@ -10,6 +10,8 @@ import pyradox.token as _pytoken
 from .data import (
     government_map,
     ir_culture_group_language_map,
+    ir_culture_group_base_language_map,
+    ir_language_base_color_map,
     ir_culture_language_overrides,
     ir_culture_group_graphical_map,
     ir_culture_graphical_overrides,
@@ -42,6 +44,169 @@ def _dedupe(items: list) -> list:
     return out
 
 
+def _base_name_from_group_tag(tag: str) -> str:
+    name = tag
+    if name.startswith("ir_"):
+        name = name[3:]
+    if name.endswith("_g"):
+        name = name[:-2]
+    if name.endswith("_group"):
+        name = name[:-6]
+    return name
+
+
+def _language_id_from_group_tag(tag: str) -> str:
+    return f"ir_{_base_name_from_group_tag(tag)}_lang"
+
+
+def _language_family_id_from_group_tag(tag: str) -> str:
+    return f"ir_{_base_name_from_group_tag(tag)}_family"
+
+
+# NOTE: Regex-based block parsing has been removed. Use pyradox instead.
+
+
+def _language_family_map_from_file(path: Path) -> dict[str, str]:
+    if not path.exists():
+        return {}
+    from .extract_data import parse_tree
+
+    tree = parse_tree(path)
+    family_map: dict[str, str] = {}
+    for lang_id, value in tree.items():
+        block = value
+        if isinstance(value, list) and value:
+            block = value[0]
+        if not isinstance(block, _pydt.Tree):
+            continue
+        fam = block.find("family")
+        if isinstance(fam, list):
+            fam = fam[0] if fam else ""
+        family_map[lang_id] = str(fam) if fam else ""
+    return family_map
+
+
+def write_language_data_full(culture_data: list) -> None:
+    """Ensure ir_languages.txt contains blocks for every IU language used."""
+    out_path = iu_languages / "ir_languages.txt"
+    from .extract_data import parse_tree
+    import copy
+
+    existing_tree = parse_tree(out_path) if out_path.exists() else _pydt.Tree()
+
+    # Determine all language IDs that should exist.
+    language_ids = set(ir_culture_group_language_map.values())
+    language_ids.update(ir_culture_language_overrides.values())
+    language_ids.update(ir_language_base_color_map.keys())
+
+    # Map language -> culture group (from culture data + group-language map)
+    lang_groups: dict[str, set[str]] = defaultdict(set)
+    for group in culture_data:
+        group_tag = group.get("tag")
+        for culture in group.get("cultures", []):
+            culture_tag = culture.get("tag")
+            culture_language = None
+            if culture_tag:
+                culture_language = ir_culture_language_overrides.get(culture_tag)
+            if not culture_language and group_tag:
+                culture_language = ir_culture_group_language_map.get(group_tag)
+            if culture_language and group_tag:
+                lang_groups[culture_language].add(group_tag)
+    # Ensure every group-mapped language retains a group association,
+    # even if all cultures are overridden to sub-languages.
+    for group_tag, lang_id in ir_culture_group_language_map.items():
+        if group_tag and lang_id:
+            lang_groups[lang_id].add(group_tag)
+
+    # Build cache of base-game language blocks for reuse using pyradox.
+    base_language_blocks: dict[str, _pydt.Tree] = {}
+    base_languages_dir = eu5_game / "in_game" / "common" / "languages"
+    if base_languages_dir.exists():
+        for path in sorted(base_languages_dir.glob("*.txt")):
+            tree = parse_tree(path)
+            for base_key in set(ir_language_base_color_map.values()) | set(
+                ir_culture_group_base_language_map.values()
+            ):
+                if base_key in base_language_blocks:
+                    continue
+                if base_key in tree:
+                    block = tree[base_key]
+                    if isinstance(block, list) and block:
+                        block = block[0]
+                    if isinstance(block, _pydt.Tree):
+                        base_language_blocks[base_key] = block
+
+    def infer_family(lang_id: str) -> str:
+        groups = lang_groups.get(lang_id)
+        if groups:
+            group_tag = sorted(groups)[0]
+            return _language_family_id_from_group_tag(group_tag)
+        return ""
+
+    def infer_base_key(lang_id: str) -> str | None:
+        base_key = ir_language_base_color_map.get(lang_id)
+        if base_key:
+            return base_key
+        groups = lang_groups.get(lang_id)
+        if not groups:
+            return None
+        group_tag = sorted(groups)[0]
+        return ir_culture_group_base_language_map.get(group_tag)
+
+    out_tree = _pydt.Tree()
+    for lang_id in sorted(language_ids):
+        block = existing_tree[lang_id] if lang_id in existing_tree else None
+        if isinstance(block, list) and block:
+            block = block[0]
+        base_key = infer_base_key(lang_id)
+        base_block = (
+            copy.deepcopy(base_language_blocks[base_key])
+            if base_key and base_key in base_language_blocks
+            else None
+        )
+
+        def is_placeholder(tree: _pydt.Tree) -> bool:
+            keys = {k for k, _ in tree.items()}
+            return keys.issubset({"color", "family"})
+
+        if isinstance(block, _pydt.Tree) and not is_placeholder(block):
+            out_block = copy.deepcopy(block)
+        elif base_block is not None:
+            out_block = base_block
+        elif isinstance(block, _pydt.Tree):
+            out_block = copy.deepcopy(block)
+        else:
+            out_block = _pydt.Tree()
+            out_block["color"] = _pydt.Color("rgb", [128, 128, 128])
+
+        family_id = infer_family(lang_id)
+        if family_id:
+            # Always override to ensure IU family IDs are used.
+            out_block["family"] = family_id
+
+        out_tree[lang_id] = out_block
+
+    # Write with a manual header; do NOT auto-generate elsewhere.
+    header = (
+        "# =========================================================== #\n"
+        "#         THIS FILE IS MANUALLY CURATED. DO NOT              #\n"
+        "#           AUTO-GENERATE OR OVERWRITE.                      #\n"
+        "# =========================================================== #\n\n"
+    )
+    blocks = convert_tree_to_blocks(out_tree)
+    content = [header]
+    for block in blocks:
+        if isinstance(block, tuple) and len(block) == 2:
+            tag, lines = block
+            content.append(make_block(tag, lines, indent_level=0, indent_str="    "))
+            content.append("\n")
+        else:
+            content.append(str(block))
+            if not str(block).endswith("\n"):
+                content.append("\n")
+            content.append("\n")
+    out_path.write_text("".join(content), encoding="utf-8-sig")
+    print_written("file", out_path)
 def print_written(kind: str, out_path: Path) -> None:
     """Print a concise relative write message for `out_path`.
 
@@ -87,24 +252,41 @@ def convert_tree_to_blocks(
             else:
                 items = " ".join(formatted_values)
                 blocks.append(f"{key} = {{ {items} }}")
+            continue
 
-        else:
-            # Complex values: trees or lists
+        # Lists of scalars → emit a single brace block
+        if all(isinstance(v, list) for v in values):
+            flat: list[object] = []
+            has_complex = False
             for v in values:
-                if isinstance(v, _pydt.Tree):
-                    # Use the parent key as the tag, not the "tag" inside the tree
-                    subblocks = convert_tree_to_blocks(v)
-                    blocks.append((key, subblocks))
-                elif isinstance(v, list):
-                    for item in v:
-                        if isinstance(item, _pydt.Tree):
-                            # Again, parent key is used to avoid double nesting
-                            subblocks = convert_tree_to_blocks(item)
-                            blocks.append((key, subblocks))
-                        else:
-                            # Scalar inside a list
-                            formatted = _pytoken.make_token_string(item)
-                            blocks.append(f"{key} = {formatted}")
+                for item in v:
+                    if isinstance(item, (_pydt.Tree, list)):
+                        has_complex = True
+                        break
+                    flat.append(item)
+                if has_complex:
+                    break
+            if not has_complex:
+                formatted = " ".join(_pytoken.make_token_string(item) for item in flat)
+                blocks.append(f"{key} = {{ {formatted} }}")
+                continue
+
+        # Complex values: trees or lists
+        for v in values:
+            if isinstance(v, _pydt.Tree):
+                # Use the parent key as the tag, not the "tag" inside the tree
+                subblocks = convert_tree_to_blocks(v)
+                blocks.append((key, subblocks))
+            elif isinstance(v, list):
+                for item in v:
+                    if isinstance(item, _pydt.Tree):
+                        # Again, parent key is used to avoid double nesting
+                        subblocks = convert_tree_to_blocks(item)
+                        blocks.append((key, subblocks))
+                    else:
+                        # Scalar inside a list
+                        formatted = _pytoken.make_token_string(item)
+                        blocks.append(f"{key} = {formatted}")
 
     return blocks
 
@@ -316,18 +498,67 @@ def write_culture_data(culture_data: list):
             if not culture_language and group_tag:
                 culture_language = ir_culture_group_language_map.get(group_tag)
 
-            lines = [
-                f"language = {culture_language}",
-                f"color = {culture_group['color']}",
-                f"tags = {{ {gfx_tags_str} }}",
-                f"culture_groups = {{ {culture_group['tag']} }}",
-            ]
+            lines = []
+            if culture_language:
+                lines.append(f"language = {culture_language}")
+            lines.extend(
+                [
+                    f"color = {culture_group['color']}",
+                    f"tags = {{ {gfx_tags_str} }}",
+                    f"culture_groups = {{ {culture_group['tag']} }}",
+                ]
+            )
 
             blocks.append((culture["tag"], lines))
 
         out_path = iu_cultures / f"{culture_group['tag']}.txt"
 
         write_blocks(out_path, blocks)
+
+
+def write_language_family_data(culture_data: list) -> None:
+    blocks = []
+    for culture_group in culture_data:
+        group_tag = culture_group.get("tag")
+        if not group_tag:
+            continue
+        family_id = _language_family_id_from_group_tag(group_tag)
+        blocks.append((family_id, [f"color = {culture_group['color']}"]))
+
+    out_path = iu_language_families / "ir_language_families.txt"
+    write_blocks(out_path, blocks)
+
+
+def write_language_data(culture_data: list) -> None:
+    # Regex parsing is disallowed; delegate to pyradox-based writer.
+    write_language_data_full(culture_data)
+
+
+def write_culture_language_report(culture_data: list) -> None:
+    """Write a TSV report of culture groups, cultures, languages, and families."""
+    report_path = Path(__file__).parent / "ir_culture_language_report.tsv"
+    family_map = _language_family_map_from_file(iu_languages / "ir_languages.txt")
+    lines = ["culture_group_tag\tculture_group\tculture_tag\tculture\tlanguage\tlanguage_family"]
+    for culture_group in culture_data:
+        group_tag = culture_group.get("tag", "")
+        group_name = culture_group.get("name", "")
+        for culture in culture_group.get("cultures", []):
+            culture_tag = culture.get("tag", "")
+            culture_name = culture.get("name", "")
+            culture_language = None
+            if culture_tag:
+                culture_language = ir_culture_language_overrides.get(culture_tag)
+            if not culture_language and group_tag:
+                culture_language = ir_culture_group_language_map.get(group_tag)
+            family_id = family_map.get(culture_language or "", "")
+            if not family_id and group_tag:
+                family_id = _language_family_id_from_group_tag(group_tag)
+            lines.append(
+                f"{group_tag}\t{group_name}\t{culture_tag}\t{culture_name}\t"
+                f"{culture_language or ''}\t{family_id}"
+            )
+    report_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    print_written("file", report_path)
 
 
 RELIGION_GROUP_MAP = {
@@ -353,6 +584,24 @@ RELIGION_GROUP_MAP = {
     "ir_eastern_animism": "ir_eastern_animist_group",
     "ir_bon_religion": "ir_eastern_animist_group",
     "ir_matrist_religion": "ir_eastern_animist_group",
+    # Previously unmapped religions
+    "ir_nuragic_pantheon": "ir_iberic_group",
+    "ir_pre_indo_european_religion": "ir_iberic_group",
+    "ir_italic_pantheon": "ir_hellenic_group",
+    "ir_illyrian_pantheon": "ir_hellenic_group",
+    "ir_hurrian_pantheon": "ir_mesopotamian_group",
+    "ir_hatti_religion": "ir_anatolian_group",
+    "ir_agama": "ir_dharmic_group",
+    "ir_ajivika": "ir_dharmic_group",
+    "ir_anahitic_religion": "ir_zoroastrian_group",
+    "ir_mithra_religion": "ir_zoroastrian_group",
+    "ir_vaksh_religion": "ir_zoroastrian_group",
+    "ir_puntic_religion": "ir_egyptian_group",
+    "ir_nilotic_pantheon": "ir_egyptian_group",
+    "ir_uralic_pantheon": "ir_shamanic_group",
+    "ir_burmese_religion": "ir_eastern_animist_group",
+    "ir_circassian_pantheon": "ir_caucasian_group",
+    "ir_chinese_religions": "ir_eastern_animist_group",
 }
 
 RELIGION_GROUP_NAMES = {
@@ -666,6 +915,43 @@ def write_localisation_files(
                 unique_lines.append(line)
         return [header] + unique_lines
 
+    def _collect_block_ids(path: Path) -> list[str]:
+        if not path.exists():
+            return []
+        from .extract_data import parse_tree
+
+        tree = parse_tree(path)
+        return [key for key in tree.keys() if isinstance(key, str)]
+
+    def _humanize_ir_id(tag: str) -> str:
+        base = tag
+        if base.startswith("ir_"):
+            base = base[3:]
+        if base.endswith("_lang"):
+            base = base[: -len("_lang")]
+        if base.endswith("_family"):
+            base = base[: -len("_family")]
+
+        specials = {
+            "indo_aryan": "Indo-Aryan",
+            "indo_iranian": "Indo-Iranian",
+            "proto_baltic": "Proto-Baltic",
+            "proto_germanic": "Proto-Germanic",
+            "proto_finnic": "Proto-Finnic",
+            "proto_european": "Proto-European",
+            "old_chinese": "Old Chinese",
+            "old_south_arabian": "Old South Arabian",
+            "magadhan_prakrit": "Magadhan Prakrit",
+            "pannonian_celtic": "Pannonian Celtic",
+            "celtiberian": "Celtiberian",
+            "goidelic": "Goidelic",
+            "brittonic": "Brittonic",
+            "geez": "Geez",
+        }
+        if base in specials:
+            return specials[base]
+        return " ".join(word.capitalize() for word in base.split("_"))
+
     # -------- Cultures --------
     culture_lines = ["l_english:"]
     for group in culture_data:
@@ -695,6 +981,16 @@ def write_localisation_files(
         ]
     )
     religion_lines = remove_duplicate_keys(sort_lines(religion_lines))
+
+    # -------- Languages & Families --------
+    language_lines = ["l_english:"]
+    for lang_id in sorted(_collect_block_ids(iu_languages / "ir_languages.txt")):
+        language_lines.append(f'  {lang_id}: "{_humanize_ir_id(lang_id)}"')
+    for family_id in sorted(
+        _collect_block_ids(iu_language_families / "ir_language_families.txt")
+    ):
+        language_lines.append(f'  {family_id}: "{_humanize_ir_id(family_id)}"')
+    language_lines = remove_duplicate_keys(sort_lines(language_lines))
 
     # -------- Countries --------
     country_lines = ["l_english:"]
@@ -733,6 +1029,9 @@ def write_localisation_files(
     # -------- Write Files --------
     write_blocks(iu_localisation / "ir_cultures_l_english.yml", culture_lines)
     write_blocks(iu_localisation / "ir_religions_l_english.yml", religion_lines)
+    write_blocks(
+        iu_localisation / "cultural_and_languages_l_english.yml", language_lines
+    )
     write_blocks(iu_localisation / "ir_countries_l_english.yml", country_lines)
     write_blocks(iu_localisation / "ir_characters_l_english.yml", character_lines)
     write_blocks(iu_localisation / "ir_dynasties_l_english.yml", dynasty_lines)

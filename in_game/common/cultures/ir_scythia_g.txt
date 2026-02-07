@@ -4,49 +4,49 @@
 # =========================================================== #
 
 ir_kharesmian = {
-    language = alanic_language
+    language = ir_sogdian_lang
     color = hsv { 0.20 0.50 0.80 }
     tags = { central_asian_gfx turkic_gfx mongol_gfx east_asian_gfx }
     culture_groups = { ir_scythia_g }
 }
 
 ir_sakan = {
-    language = alanic_language
+    language = ir_saka_lang
     color = hsv { 0.20 0.50 0.80 }
     tags = { central_asian_gfx turkic_gfx mongol_gfx east_asian_gfx }
     culture_groups = { ir_scythia_g }
 }
 
 ir_khotanese = {
-    language = alanic_language
+    language = ir_khotanese_lang
     color = hsv { 0.20 0.50 0.80 }
     tags = { central_asian_gfx turkic_gfx mongol_gfx east_asian_gfx }
     culture_groups = { ir_scythia_g }
 }
 
 ir_derbiccan = {
-    language = alanic_language
+    language = ir_massagetaean_lang
     color = hsv { 0.20 0.50 0.80 }
     tags = { central_asian_gfx turkic_gfx mongol_gfx east_asian_gfx }
     culture_groups = { ir_scythia_g }
 }
 
 ir_alani = {
-    language = alanic_language
+    language = ir_alanic_lang
     color = hsv { 0.20 0.50 0.80 }
     tags = { central_asian_gfx turkic_gfx mongol_gfx east_asian_gfx }
     culture_groups = { ir_scythia_g }
 }
 
 ir_jurcan = {
-    language = alanic_language
+    language = ir_scythian_lang
     color = hsv { 0.20 0.50 0.80 }
     tags = { central_asian_gfx turkic_gfx mongol_gfx east_asian_gfx }
     culture_groups = { ir_scythia_g }
 }
 
 ir_massagetaean = {
-    language = alanic_language
+    language = ir_massagetaean_lang
     color = hsv { 0.20 0.50 0.80 }
     tags = { central_asian_gfx turkic_gfx mongol_gfx east_asian_gfx }
     culture_groups = { ir_scythia_g }

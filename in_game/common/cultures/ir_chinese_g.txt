@@ -4,7 +4,7 @@
 # =========================================================== #
 
 ir_qin = {
-    language = None
+    language = ir_old_chinese_lang
     color = hsv { 0.10 0.90 1.00 }
     tags = {  }
     culture_groups = { ir_chinese_g }

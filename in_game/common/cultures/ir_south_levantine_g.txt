@@ -4,49 +4,49 @@
 # =========================================================== #
 
 ir_makan = {
-    language = aramaic_language
+    language = ir_old_north_arabian_lang
     color = rgb { 70 50 150 }
     tags = { arabian_gfx levantine_gfx middle_east_gfx }
     culture_groups = { ir_south_levantine_g }
 }
 
 ir_gerrhan = {
-    language = aramaic_language
+    language = ir_old_north_arabian_lang
     color = rgb { 70 50 150 }
     tags = { arabian_gfx levantine_gfx middle_east_gfx }
     culture_groups = { ir_south_levantine_g }
 }
 
 ir_taif = {
-    language = aramaic_language
+    language = ir_old_north_arabian_lang
     color = rgb { 70 50 150 }
     tags = { arabian_gfx levantine_gfx middle_east_gfx }
     culture_groups = { ir_south_levantine_g }
 }
 
 ir_thamudi = {
-    language = aramaic_language
+    language = ir_old_north_arabian_lang
     color = rgb { 70 50 150 }
     tags = { arabian_gfx levantine_gfx middle_east_gfx }
     culture_groups = { ir_south_levantine_g }
 }
 
 ir_yamama = {
-    language = aramaic_language
+    language = ir_old_north_arabian_lang
     color = rgb { 70 50 150 }
     tags = { arabian_gfx levantine_gfx middle_east_gfx }
     culture_groups = { ir_south_levantine_g }
 }
 
 ir_nabatean = {
-    language = aramaic_language
+    language = ir_nabatean_lang
     color = rgb { 70 50 150 }
     tags = { arabian_gfx levantine_gfx middle_east_gfx }
     culture_groups = { ir_south_levantine_g }
 }
 
 ir_qedarite = {
-    language = aramaic_language
+    language = ir_old_north_arabian_lang
     color = rgb { 70 50 150 }
     tags = { arabian_gfx levantine_gfx middle_east_gfx }
     culture_groups = { ir_south_levantine_g }

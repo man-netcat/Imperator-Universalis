@@ -4,21 +4,21 @@
 # =========================================================== #
 
 ir_carthaginian = {
-    language = aramaic_language
+    language = ir_punic_lang
     color = hsv { 0.75 0.90 0.73 }
     tags = { levantine_gfx east_mediterranean_gfx maghrebi_gfx middle_east_gfx }
     culture_groups = { ir_west_levantine_g }
 }
 
 ir_phoenician = {
-    language = aramaic_language
+    language = ir_phoenician_lang
     color = hsv { 0.75 0.90 0.73 }
     tags = { levantine_gfx east_mediterranean_gfx maghrebi_gfx middle_east_gfx }
     culture_groups = { ir_west_levantine_g }
 }
 
 ir_hebrew = {
-    language = hebrew_language
+    language = ir_hebrew_lang
     color = hsv { 0.75 0.90 0.73 }
     tags = { israelite_gfx levantine_gfx middle_east_gfx }
     culture_groups = { ir_west_levantine_g }

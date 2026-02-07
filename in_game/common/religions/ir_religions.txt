@@ -83,37 +83,37 @@ ir_berber_religion = {
 
 ir_nuragic_pantheon = {
     color = hsv { 0.20 0.25 0.50 }
-    group = ir_unknown_group
+    group = ir_iberic_group
     religious_aspects = 1
 }
 
 ir_pre_indo_european_religion = {
     color = hsv { 0.50 0.25 0.70 }
-    group = ir_unknown_group
+    group = ir_iberic_group
     religious_aspects = 1
 }
 
 ir_italic_pantheon = {
     color = hsv { 0.00 0.91 0.55 }
-    group = ir_unknown_group
+    group = ir_hellenic_group
     religious_aspects = 1
 }
 
 ir_illyrian_pantheon = {
     color = hsv { 0.55 0.90 0.50 }
-    group = ir_unknown_group
+    group = ir_hellenic_group
     religious_aspects = 1
 }
 
 ir_hurrian_pantheon = {
     color = rgb { 36 36 36 }
-    group = ir_unknown_group
+    group = ir_mesopotamian_group
     religious_aspects = 1
 }
 
 ir_hatti_religion = {
     color = rgb { 200 200 200 }
-    group = ir_unknown_group
+    group = ir_anatolian_group
     religious_aspects = 1
 }
 
@@ -125,7 +125,7 @@ ir_hindu = {
 
 ir_agama = {
     color = hsv { 0.80 0.60 0.60 }
-    group = ir_unknown_group
+    group = ir_dharmic_group
     religious_aspects = 1
 }
 
@@ -143,7 +143,7 @@ ir_jainism = {
 
 ir_ajivika = {
     color = rgb { 26 153 0 }
-    group = ir_unknown_group
+    group = ir_dharmic_group
     religious_aspects = 1
 }
 
@@ -155,19 +155,19 @@ ir_zoroaster = {
 
 ir_anahitic_religion = {
     color = rgb { 172 58 52 }
-    group = ir_unknown_group
+    group = ir_zoroastrian_group
     religious_aspects = 1
 }
 
 ir_mithra_religion = {
     color = rgb { 200 50 200 }
-    group = ir_unknown_group
+    group = ir_zoroastrian_group
     religious_aspects = 1
 }
 
 ir_vaksh_religion = {
     color = rgb { 188 135 2 }
-    group = ir_unknown_group
+    group = ir_zoroastrian_group
     religious_aspects = 1
 }
 
@@ -197,31 +197,31 @@ ir_matrist_religion = {
 
 ir_puntic_religion = {
     color = hsv { 0.95 1.00 0.85 }
-    group = ir_unknown_group
+    group = ir_egyptian_group
     religious_aspects = 1
 }
 
 ir_nilotic_pantheon = {
     color = hsv { 0.20 0.70 0.25 }
-    group = ir_unknown_group
+    group = ir_egyptian_group
     religious_aspects = 1
 }
 
 ir_uralic_pantheon = {
     color = hsv { 0.10 0.30 0.90 }
-    group = ir_unknown_group
+    group = ir_shamanic_group
     religious_aspects = 1
 }
 
 ir_burmese_religion = {
     color = hsv { 0.96 0.66 0.30 }
-    group = ir_unknown_group
+    group = ir_eastern_animist_group
     religious_aspects = 1
 }
 
 ir_circassian_pantheon = {
     color = rgb { 12 133 73 }
-    group = ir_unknown_group
+    group = ir_caucasian_group
     religious_aspects = 1
 }
 
@@ -233,7 +233,7 @@ ir_judaism = {
 
 ir_chinese_religions = {
     color = hsv { 0.10 0.90 1.00 }
-    group = ir_unknown_group
+    group = ir_eastern_animist_group
     religious_aspects = 1
 }
 

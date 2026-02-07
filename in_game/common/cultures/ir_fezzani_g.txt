@@ -4,77 +4,77 @@
 # =========================================================== #
 
 ir_nasamonian = {
-    language = None
+    language = ir_garamantian_lang
     color = hsv { 0.25 0.40 0.70 }
     tags = {  }
     culture_groups = { ir_fezzani_g }
 }
 
 ir_macaean = {
-    language = None
+    language = ir_garamantian_lang
     color = hsv { 0.25 0.40 0.70 }
     tags = {  }
     culture_groups = { ir_fezzani_g }
 }
 
 ir_psyllic = {
-    language = None
+    language = ir_garamantian_lang
     color = hsv { 0.25 0.40 0.70 }
     tags = {  }
     culture_groups = { ir_fezzani_g }
 }
 
 ir_garamantic = {
-    language = None
+    language = ir_garamantian_lang
     color = hsv { 0.25 0.40 0.70 }
     tags = {  }
     culture_groups = { ir_fezzani_g }
 }
 
 ir_libyan = {
-    language = None
+    language = ir_garamantian_lang
     color = hsv { 0.25 0.40 0.70 }
     tags = {  }
     culture_groups = { ir_fezzani_g }
 }
 
 ir_berber = {
-    language = None
+    language = ir_garamantian_lang
     color = hsv { 0.25 0.40 0.70 }
     tags = {  }
     culture_groups = { ir_fezzani_g }
 }
 
 ir_phazani = {
-    language = None
+    language = ir_garamantian_lang
     color = hsv { 0.25 0.40 0.70 }
     tags = {  }
     culture_groups = { ir_fezzani_g }
 }
 
 ir_lotophagoi = {
-    language = None
+    language = ir_garamantian_lang
     color = hsv { 0.25 0.40 0.70 }
     tags = {  }
     culture_groups = { ir_fezzani_g }
 }
 
 ir_gyzantian = {
-    language = None
+    language = ir_garamantian_lang
     color = hsv { 0.25 0.40 0.70 }
     tags = {  }
     culture_groups = { ir_fezzani_g }
 }
 
 ir_atarantian = {
-    language = None
+    language = ir_garamantian_lang
     color = hsv { 0.25 0.40 0.70 }
     tags = {  }
     culture_groups = { ir_fezzani_g }
 }
 
 ir_atlantean = {
-    language = None
+    language = ir_garamantian_lang
     color = hsv { 0.25 0.40 0.70 }
     tags = {  }
     culture_groups = { ir_fezzani_g }

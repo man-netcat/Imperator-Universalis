@@ -47,6 +47,7 @@ from ir_to_eu5.write_data import (
     write_country_setup,
     write_culture_data,
     write_culture_group_data,
+    write_culture_language_report,
     write_god_data,
     write_ir_religious_aspects,
     write_localisation_files,
@@ -130,6 +131,7 @@ if __name__ == "__main__":
         write_json(character_data, mod_root / "characters.json")
     write_culture_group_data(culture_data)
     write_culture_data(culture_data)
+    write_culture_language_report(culture_data)
     write_religion_group_data(religion_data)
     write_religion_data(religion_data)
     write_god_data(deity_data, religion_data)

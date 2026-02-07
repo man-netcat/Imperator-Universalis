@@ -4,21 +4,21 @@
 # =========================================================== #
 
 ir_meroitic = {
-    language = nubian_language
+    language = ir_meroitic_lang
     color = hsv { 0.15 0.40 0.60 }
     tags = { egyptian_gfx east_african_gfx african_gfx }
     culture_groups = { ir_meroitic_group_g }
 }
 
 ir_lower_nubian = {
-    language = nubian_language
+    language = ir_nubian_lang
     color = hsv { 0.15 0.40 0.60 }
     tags = { egyptian_gfx east_african_gfx african_gfx }
     culture_groups = { ir_meroitic_group_g }
 }
 
 ir_napatan = {
-    language = nubian_language
+    language = ir_meroitic_lang
     color = hsv { 0.15 0.40 0.60 }
     tags = { egyptian_gfx east_african_gfx african_gfx }
     culture_groups = { ir_meroitic_group_g }

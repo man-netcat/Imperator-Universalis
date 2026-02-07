@@ -4,84 +4,84 @@
 # =========================================================== #
 
 ir_albanian = {
-    language = georgian_language
+    language = ir_albanian_caucasian_lang
     color = hsv { 0.12 0.45 0.68 }
     tags = { caucasian_gfx middle_east_gfx }
     culture_groups = { ir_caucasian_g }
 }
 
 ir_caspian = {
-    language = georgian_language
+    language = ir_albanian_caucasian_lang
     color = hsv { 0.12 0.45 0.68 }
     tags = { caucasian_gfx middle_east_gfx }
     culture_groups = { ir_caucasian_g }
 }
 
 ir_ibero = {
-    language = georgian_language
+    language = ir_kartvelian_lang
     color = hsv { 0.12 0.45 0.68 }
     tags = { caucasian_gfx middle_east_gfx }
     culture_groups = { ir_caucasian_g }
 }
 
 ir_sindi = {
-    language = georgian_language
+    language = ir_north_caucasian_lang
     color = hsv { 0.12 0.45 0.68 }
     tags = { caucasian_gfx middle_east_gfx }
     culture_groups = { ir_caucasian_g }
 }
 
 ir_maeotian = {
-    language = georgian_language
+    language = ir_north_caucasian_lang
     color = hsv { 0.12 0.45 0.68 }
     tags = { caucasian_gfx middle_east_gfx }
     culture_groups = { ir_caucasian_g }
 }
 
 ir_colchian = {
-    language = georgian_language
+    language = ir_kartvelian_lang
     color = hsv { 0.12 0.45 0.68 }
     tags = { caucasian_gfx middle_east_gfx }
     culture_groups = { ir_caucasian_g }
 }
 
 ir_abasgoi = {
-    language = georgian_language
+    language = ir_north_caucasian_lang
     color = hsv { 0.12 0.45 0.68 }
     tags = { caucasian_gfx middle_east_gfx }
     culture_groups = { ir_caucasian_g }
 }
 
 ir_suani = {
-    language = georgian_language
+    language = ir_kartvelian_lang
     color = hsv { 0.12 0.45 0.68 }
     tags = { caucasian_gfx middle_east_gfx }
     culture_groups = { ir_caucasian_g }
 }
 
 ir_lazi = {
-    language = georgian_language
+    language = ir_kartvelian_lang
     color = hsv { 0.12 0.45 0.68 }
     tags = { caucasian_gfx middle_east_gfx }
     culture_groups = { ir_caucasian_g }
 }
 
 ir_sasperian = {
-    language = georgian_language
+    language = ir_north_caucasian_lang
     color = hsv { 0.12 0.45 0.68 }
     tags = { caucasian_gfx middle_east_gfx }
     culture_groups = { ir_caucasian_g }
 }
 
 ir_legian = {
-    language = georgian_language
+    language = ir_albanian_caucasian_lang
     color = hsv { 0.12 0.45 0.68 }
     tags = { caucasian_gfx middle_east_gfx }
     culture_groups = { ir_caucasian_g }
 }
 
 ir_gelaean = {
-    language = georgian_language
+    language = ir_north_caucasian_lang
     color = hsv { 0.12 0.45 0.68 }
     tags = { caucasian_gfx middle_east_gfx }
     culture_groups = { ir_caucasian_g }

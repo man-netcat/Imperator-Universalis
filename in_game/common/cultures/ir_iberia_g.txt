@@ -4,91 +4,91 @@
 # =========================================================== #
 
 ir_oretanian = {
-    language = basque_language
+    language = ir_tartessian_lang
     color = hsv { 0.07 1.00 1.00 }
     tags = { castilian_gfx portuguese_gfx basque_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_iberia_g }
 }
 
 ir_contestanian = {
-    language = basque_language
+    language = ir_edetanian_lang
     color = hsv { 0.07 1.00 1.00 }
     tags = { castilian_gfx portuguese_gfx basque_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_iberia_g }
 }
 
 ir_bastetanian = {
-    language = basque_language
+    language = ir_tartessian_lang
     color = hsv { 0.07 1.00 1.00 }
     tags = { castilian_gfx portuguese_gfx basque_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_iberia_g }
 }
 
 ir_ilercavonian = {
-    language = basque_language
+    language = ir_edetanian_lang
     color = hsv { 0.07 1.00 1.00 }
     tags = { castilian_gfx portuguese_gfx basque_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_iberia_g }
 }
 
 ir_edetanian = {
-    language = basque_language
+    language = ir_edetanian_lang
     color = hsv { 0.07 1.00 1.00 }
     tags = { castilian_gfx portuguese_gfx basque_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_iberia_g }
 }
 
 ir_lacetanian = {
-    language = basque_language
+    language = ir_lacetanian_lang
     color = hsv { 0.07 1.00 1.00 }
     tags = { castilian_gfx portuguese_gfx basque_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_iberia_g }
 }
 
 ir_indiketian = {
-    language = basque_language
+    language = ir_lacetanian_lang
     color = hsv { 0.07 1.00 1.00 }
     tags = { castilian_gfx portuguese_gfx basque_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_iberia_g }
 }
 
 ir_ausetanian = {
-    language = basque_language
+    language = ir_lacetanian_lang
     color = hsv { 0.07 1.00 1.00 }
     tags = { castilian_gfx portuguese_gfx basque_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_iberia_g }
 }
 
 ir_turdetanian = {
-    language = basque_language
+    language = ir_turdetanian_lang
     color = hsv { 0.07 1.00 1.00 }
     tags = { castilian_gfx portuguese_gfx basque_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_iberia_g }
 }
 
 ir_turdulian = {
-    language = basque_language
+    language = ir_turdetanian_lang
     color = hsv { 0.07 1.00 1.00 }
     tags = { castilian_gfx portuguese_gfx basque_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_iberia_g }
 }
 
 ir_ilergetian = {
-    language = basque_language
+    language = ir_lacetanian_lang
     color = hsv { 0.07 1.00 1.00 }
     tags = { castilian_gfx portuguese_gfx basque_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_iberia_g }
 }
 
 ir_vasconian = {
-    language = basque_language
+    language = ir_aquitanian_lang
     color = hsv { 0.07 1.00 1.00 }
     tags = { castilian_gfx portuguese_gfx basque_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_iberia_g }
 }
 
 ir_aquitani = {
-    language = basque_language
+    language = ir_aquitanian_lang
     color = hsv { 0.07 1.00 1.00 }
     tags = { castilian_gfx portuguese_gfx basque_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_iberia_g }

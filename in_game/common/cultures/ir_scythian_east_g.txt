@@ -4,49 +4,49 @@
 # =========================================================== #
 
 ir_scythian = {
-    language = None
+    language = ir_scythian_lang
     color = hsv { 0.90 0.90 0.30 }
     tags = {  }
     culture_groups = { ir_scythian_east_g }
 }
 
 ir_sarmatian = {
-    language = None
+    language = ir_sarmatian_lang
     color = hsv { 0.90 0.90 0.30 }
     tags = {  }
     culture_groups = { ir_scythian_east_g }
 }
 
 ir_siraci = {
-    language = None
+    language = ir_sarmatian_lang
     color = hsv { 0.90 0.90 0.30 }
     tags = {  }
     culture_groups = { ir_scythian_east_g }
 }
 
 ir_thyssagetaen = {
-    language = None
+    language = ir_massagetaean_lang
     color = hsv { 0.90 0.90 0.30 }
     tags = {  }
     culture_groups = { ir_scythian_east_g }
 }
 
 ir_agathyrsian = {
-    language = None
+    language = ir_scythian_lang
     color = hsv { 0.90 0.90 0.30 }
     tags = {  }
     culture_groups = { ir_scythian_east_g }
 }
 
 ir_gelonian = {
-    language = None
+    language = ir_scythian_lang
     color = hsv { 0.90 0.90 0.30 }
     tags = {  }
     culture_groups = { ir_scythian_east_g }
 }
 
 ir_cimmerian = {
-    language = None
+    language = ir_scythian_lang
     color = hsv { 0.90 0.90 0.30 }
     tags = {  }
     culture_groups = { ir_scythian_east_g }

@@ -4,77 +4,77 @@
 # =========================================================== #
 
 ir_roman = {
-    language = latin_language
+    language = ir_latin_lang
     color = hsv { 0.00 0.91 0.55 }
     tags = { north_italian_gfx south_italian_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_latin_g }
 }
 
 ir_venetic = {
-    language = latin_language
+    language = ir_venetic_lang
     color = hsv { 0.00 0.91 0.55 }
     tags = { north_italian_gfx south_italian_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_latin_g }
 }
 
 ir_ligurian = {
-    language = latin_language
+    language = ir_ligurian_lang
     color = hsv { 0.00 0.91 0.55 }
     tags = { north_italian_gfx south_italian_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_latin_g }
 }
 
 ir_etruscan = {
-    language = latin_language
+    language = ir_etruscan_lang
     color = hsv { 0.00 0.91 0.55 }
     tags = { north_italian_gfx south_italian_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_latin_g }
 }
 
 ir_rhaetian = {
-    language = latin_language
+    language = ir_rhaetian_lang
     color = hsv { 0.00 0.91 0.55 }
     tags = { north_italian_gfx south_italian_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_latin_g }
 }
 
 ir_umbrian = {
-    language = latin_language
+    language = ir_umbrian_lang
     color = hsv { 0.00 0.91 0.55 }
     tags = { north_italian_gfx south_italian_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_latin_g }
 }
 
 ir_samnite = {
-    language = latin_language
+    language = ir_oscan_lang
     color = hsv { 0.00 0.91 0.55 }
     tags = { north_italian_gfx south_italian_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_latin_g }
 }
 
 ir_siculian = {
-    language = latin_language
+    language = ir_siculian_lang
     color = hsv { 0.00 0.91 0.55 }
     tags = { north_italian_gfx south_italian_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_latin_g }
 }
 
 ir_bruttian = {
-    language = latin_language
+    language = ir_oscan_lang
     color = hsv { 0.00 0.91 0.55 }
     tags = { north_italian_gfx south_italian_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_latin_g }
 }
 
 ir_lucanian = {
-    language = latin_language
+    language = ir_oscan_lang
     color = hsv { 0.00 0.91 0.55 }
     tags = { north_italian_gfx south_italian_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_latin_g }
 }
 
 ir_histrian = {
-    language = latin_language
+    language = ir_venetic_lang
     color = hsv { 0.00 0.91 0.55 }
     tags = { north_italian_gfx south_italian_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_latin_g }

@@ -4,56 +4,56 @@
 # =========================================================== #
 
 ir_hadhrami = {
-    language = None
+    language = ir_old_south_arabian_lang
     color = hsv { 0.30 0.70 0.60 }
     tags = {  }
     culture_groups = { ir_south_arabian_g }
 }
 
 ir_qatabanian = {
-    language = None
+    language = ir_old_south_arabian_lang
     color = hsv { 0.30 0.70 0.60 }
     tags = {  }
     culture_groups = { ir_south_arabian_g }
 }
 
 ir_sheban = {
-    language = None
+    language = ir_old_south_arabian_lang
     color = hsv { 0.30 0.70 0.60 }
     tags = {  }
     culture_groups = { ir_south_arabian_g }
 }
 
 ir_minaean = {
-    language = None
+    language = ir_old_south_arabian_lang
     color = hsv { 0.30 0.70 0.60 }
     tags = {  }
     culture_groups = { ir_south_arabian_g }
 }
 
 ir_himjar = {
-    language = None
+    language = ir_himjaritic_lang
     color = hsv { 0.30 0.70 0.60 }
     tags = {  }
     culture_groups = { ir_south_arabian_g }
 }
 
 ir_samad = {
-    language = None
+    language = ir_old_south_arabian_lang
     color = hsv { 0.30 0.70 0.60 }
     tags = {  }
     culture_groups = { ir_south_arabian_g }
 }
 
 ir_adite = {
-    language = None
+    language = ir_old_south_arabian_lang
     color = hsv { 0.30 0.70 0.60 }
     tags = {  }
     culture_groups = { ir_south_arabian_g }
 }
 
 ir_kindite = {
-    language = None
+    language = ir_old_south_arabian_lang
     color = hsv { 0.30 0.70 0.60 }
     tags = {  }
     culture_groups = { ir_south_arabian_g }

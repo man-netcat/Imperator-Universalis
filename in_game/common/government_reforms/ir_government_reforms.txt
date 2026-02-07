@@ -31,6 +31,28 @@ ir_stratocratic_monarchy = {
 	years = 2
 }
 
+ir_spartan_monarchy = {
+	government = monarchy
+
+	country_modifier = {
+		levy_combat_efficiency_modifier = 0.05
+		monthly_towards_offensive = societal_value_monthly_move
+		monthly_towards_belligerent = societal_value_monthly_move
+	}
+	years = 2
+}
+
+ir_plutocratic_monarchy = {
+	government = monarchy
+
+	country_modifier = {
+		global_burghers_estate_power = 0.1
+		tax_income_efficiency = medium_tax_income_efficiency_bonus
+		monthly_towards_plutocracy = societal_value_monthly_move
+	}
+	years = 2
+}
+
 ir_aristocratic_republic = {
 	government = republic
 	major = yes
@@ -45,6 +67,17 @@ ir_aristocratic_republic = {
 }
 
 ir_plutocratic_republic = {
+	government = republic
+
+	country_modifier = {
+		global_burghers_estate_power = 0.1
+		tax_income_efficiency = medium_tax_income_efficiency_bonus
+		monthly_towards_plutocracy = societal_value_monthly_move
+	}
+	years = 2
+}
+
+ir_punic_republic = {
 	government = republic
 
 	country_modifier = {
@@ -73,6 +106,18 @@ ir_democratic_republic = {
 		global_estate_target_satisfaction = small_permanent_target_satisfaction
 		monthly_towards_free_subjects = societal_value_monthly_move
 		monthly_towards_individualism = societal_value_monthly_move
+	}
+	years = 2
+}
+
+ir_theocratic_republic = {
+	government = republic
+
+	country_modifier = {
+		global_pop_conversion_speed_modifier = 0.25
+		clergy_estate_target_satisfaction = small_permanent_target_satisfaction
+		monthly_towards_traditionalist = societal_value_monthly_move
+		monthly_towards_spiritualist = societal_value_monthly_move
 	}
 	years = 2
 }

@@ -4,126 +4,126 @@
 # =========================================================== #
 
 ir_cappadocian = {
-    language = greek_language
+    language = ir_cappadocian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
     culture_groups = { ir_anatolian_g }
 }
 
 ir_phrygian = {
-    language = greek_language
+    language = ir_phrygian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
     culture_groups = { ir_anatolian_g }
 }
 
 ir_lycaonian = {
-    language = greek_language
+    language = ir_cappadocian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
     culture_groups = { ir_anatolian_g }
 }
 
 ir_isaurian = {
-    language = greek_language
+    language = ir_isaurian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
     culture_groups = { ir_anatolian_g }
 }
 
 ir_paphlagonian = {
-    language = greek_language
+    language = ir_paphlagonian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
     culture_groups = { ir_anatolian_g }
 }
 
 ir_lycian = {
-    language = greek_language
+    language = ir_lycian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
     culture_groups = { ir_anatolian_g }
 }
 
 ir_mysian = {
-    language = greek_language
+    language = ir_mysian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
     culture_groups = { ir_anatolian_g }
 }
 
 ir_cilician = {
-    language = greek_language
+    language = ir_cilician_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
     culture_groups = { ir_anatolian_g }
 }
 
 ir_lydian = {
-    language = greek_language
+    language = ir_lydian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
     culture_groups = { ir_anatolian_g }
 }
 
 ir_armenian = {
-    language = armenian_language
+    language = ir_armenian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { caucasian_gfx middle_east_gfx european_gfx }
     culture_groups = { ir_anatolian_g }
 }
 
 ir_pisidian = {
-    language = greek_language
+    language = ir_pisidian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
     culture_groups = { ir_anatolian_g }
 }
 
 ir_milyadian = {
-    language = greek_language
+    language = ir_cabalian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
     culture_groups = { ir_anatolian_g }
 }
 
 ir_cataonian = {
-    language = greek_language
+    language = ir_cappadocian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
     culture_groups = { ir_anatolian_g }
 }
 
 ir_lalasian = {
-    language = greek_language
+    language = ir_cabalian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
     culture_groups = { ir_anatolian_g }
 }
 
 ir_cabalian = {
-    language = greek_language
+    language = ir_cabalian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
     culture_groups = { ir_anatolian_g }
 }
 
 ir_oroandian = {
-    language = greek_language
+    language = ir_cabalian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
     culture_groups = { ir_anatolian_g }
 }
 
 ir_morimenian = {
-    language = greek_language
+    language = ir_cabalian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
     culture_groups = { ir_anatolian_g }
 }
 
 ir_kennataian = {
-    language = greek_language
+    language = ir_cabalian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
     culture_groups = { ir_anatolian_g }

@@ -4,21 +4,21 @@
 # =========================================================== #
 
 ir_nuragic = {
-    language = latin_language
+    language = ir_proto_european_lang
     color = hsv { 0.20 0.25 0.50 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_proto_european_g }
 }
 
 ir_corsian = {
-    language = latin_language
+    language = ir_proto_european_lang
     color = hsv { 0.20 0.25 0.50 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_proto_european_g }
 }
 
 ir_talaiotic = {
-    language = latin_language
+    language = ir_proto_european_lang
     color = hsv { 0.20 0.25 0.50 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_proto_european_g }
