@@ -15,6 +15,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = REPLACE_ME
+            starting_technology_level = 1
         }
         ROM = {
             # Rome
@@ -42,6 +43,7 @@ countries = {
             include = "ir_aristocratic_republic"
             country_rank = rank_kingdom
             capital = roma
+            starting_technology_level = 2
         }
         SAM = {
             # Samnium
@@ -65,6 +67,7 @@ countries = {
             include = "ir_aristocratic_republic"
             country_rank = rank_duchy
             capital = bovianum
+            starting_technology_level = 2
         }
         MRS = {
             # Marsia
@@ -84,6 +87,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = aufidena
+            starting_technology_level = 1
         }
         ARP = {
             # Daunia
@@ -103,6 +107,7 @@ countries = {
             include = "ir_aristocratic_republic"
             country_rank = rank_duchy
             capital = arpi
+            starting_technology_level = 2
         }
         NUC = {
             # Nuceria
@@ -122,6 +127,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = nuceria
+            starting_technology_level = 2
         }
         PIE = {
             # Picentia
@@ -141,6 +147,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = picenum
+            starting_technology_level = 1
         }
         ETR = {
             # Etruria
@@ -168,6 +175,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_kingdom
             capital = visentium
+            starting_technology_level = 2
         }
         SAB = {
             # Sabinia
@@ -189,6 +197,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = interamnia
+            starting_technology_level = 1
         }
         UMB = {
             # Umbria
@@ -212,6 +221,7 @@ countries = {
             include = "ir_aristocratic_republic"
             country_rank = rank_duchy
             capital = plestia
+            starting_technology_level = 2
         }
         APU = {
             # Peucetia
@@ -233,6 +243,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_duchy
             capital = barium
+            starting_technology_level = 2
         }
         MSP = {
             # Messapia
@@ -252,6 +263,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = menturia
+            starting_technology_level = 1
         }
         LCA = {
             # Lucania
@@ -271,6 +283,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = grumentum
+            starting_technology_level = 1
         }
         BRT = {
             # Bruttia
@@ -290,6 +303,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = consentia
+            starting_technology_level = 1
         }
         ANO = {
             # Ancona
@@ -309,6 +323,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = ancona
+            starting_technology_level = 2
         }
         SNI = {
             # Senones
@@ -328,6 +343,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = sena_gallica
+            starting_technology_level = 1
         }
         HPO = {
             # Hipponion
@@ -347,6 +363,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = hipponium
+            starting_technology_level = 2
         }
         INM = {
             # Intimilia
@@ -366,6 +383,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = album_intimilium
+            starting_technology_level = 1
         }
         IGN = {
             # Ingaunia
@@ -385,6 +403,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = albom_ingaunom
+            starting_technology_level = 1
         }
         GUN = {
             # Genuatia
@@ -406,6 +425,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = genua
+            starting_technology_level = 1
         }
         EPA = {
             # Ilvatia
@@ -427,6 +447,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = libarna
+            starting_technology_level = 1
         }
         TAU = {
             # Taurinia
@@ -450,6 +471,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = taurasia
+            starting_technology_level = 1
         }
         INS = {
             # Insubria
@@ -473,6 +495,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = mediolanum_1
+            starting_technology_level = 1
         }
         CNM = {
             # Cenomannia
@@ -492,6 +515,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = verona
+            starting_technology_level = 1
         }
         BOI = {
             # Boi
@@ -513,6 +537,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = bononia
+            starting_technology_level = 1
         }
         LGN = {
             # Lingonia
@@ -536,6 +561,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = ravenna
+            starting_technology_level = 1
         }
         VNT = {
             # Veneto
@@ -557,6 +583,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = altinum
+            starting_technology_level = 1
         }
         HIS = {
             # Istria
@@ -576,6 +603,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = parentium
+            starting_technology_level = 1
         }
         KRN = {
             # Carnia
@@ -595,6 +623,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = carnium
+            starting_technology_level = 1
         }
         RAE = {
             # Raetia
@@ -618,6 +647,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = sublavione
+            starting_technology_level = 1
         }
         BRE = {
             # Ambisontia
@@ -637,6 +667,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = anisus
+            starting_technology_level = 1
         }
         MET = {
             # Metapontum
@@ -656,6 +687,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = metapontum
+            starting_technology_level = 2
         }
         TAR = {
             # Tarentum
@@ -675,6 +707,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = tarentum
+            starting_technology_level = 2
         }
         THU = {
             # Thuria
@@ -694,6 +727,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = thurii
+            starting_technology_level = 2
         }
         HCL = {
             # Herakleia
@@ -713,6 +747,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = heraclea
+            starting_technology_level = 2
         }
         CRO = {
             # Croton
@@ -732,6 +767,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = croton
+            starting_technology_level = 2
         }
         LOC = {
             # Locri
@@ -751,6 +787,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = locri_0
+            starting_technology_level = 2
         }
         RHG = {
             # Rhegium
@@ -770,6 +807,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = rhegium
+            starting_technology_level = 2
         }
         FRE = {
             # Frentania
@@ -789,6 +827,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = buca
+            starting_technology_level = 1
         }
         PEL = {
             # Pelignia
@@ -808,6 +847,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = corfinium
+            starting_technology_level = 1
         }
         SCU = {
             # Siculia
@@ -827,6 +867,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = tissa
+            starting_technology_level = 1
         }
         UTC = {
             # Utica
@@ -846,6 +887,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = utica
+            starting_technology_level = 2
         }
         TPS = {
             # Thapsus
@@ -865,6 +907,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = thapsus
+            starting_technology_level = 2
         }
         LPT = {
             # Leptis Minor
@@ -884,6 +927,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = leptis_minor
+            starting_technology_level = 2
         }
         HDR = {
             # Hadrametum
@@ -903,6 +947,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = hadrametum
+            starting_technology_level = 2
         }
         ACO = {
             # Achola
@@ -922,6 +967,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = acholla
+            starting_technology_level = 2
         }
         EMP = {
             # Emporia
@@ -943,6 +989,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_duchy
             capital = tacape
+            starting_technology_level = 2
         }
         TRP = {
             # Tripolitania
@@ -964,6 +1011,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_duchy
             capital = leptis_magna
+            starting_technology_level = 2
         }
         IOL = {
             # Iol
@@ -983,6 +1031,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = iol
+            starting_technology_level = 2
         }
         KUA = {
             # Kerkouane
@@ -1004,6 +1053,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = kerkouane
+            starting_technology_level = 2
         }
         CAR = {
             # Carthage
@@ -1062,6 +1112,7 @@ countries = {
             include = "expl_imperator_rome"
             country_rank = rank_kingdom
             capital = carthago
+            starting_technology_level = 2
         }
         MAU = {
             # Mauretania
@@ -1091,6 +1142,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = volubilis
+            starting_technology_level = 1
         }
         SOC = {
             # Socosia
@@ -1110,6 +1162,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_duchy
             capital = kach_kouch
+            starting_technology_level = 1
         }
         MSS = {
             # Massaesylia
@@ -1137,6 +1190,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = siga
+            starting_technology_level = 1
         }
         MSY = {
             # Massylia
@@ -1168,6 +1222,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = cirta
+            starting_technology_level = 1
         }
         MSL = {
             # Musulamia
@@ -1195,6 +1250,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = thala_musulamia
+            starting_technology_level = 1
         }
         ACR = {
             # Acragas
@@ -1214,6 +1270,7 @@ countries = {
             include = "ir_democratic_republic"
             country_rank = rank_county
             capital = acragas
+            starting_technology_level = 2
         }
         SYR = {
             # Syracusae
@@ -1235,6 +1292,7 @@ countries = {
             include = "ir_aristocratic_monarchy"
             country_rank = rank_kingdom
             capital = syracusae
+            starting_technology_level = 2
         }
         DOD = {
             # Dodekaschoinos
@@ -1260,6 +1318,7 @@ countries = {
             include = "ir_theocratic_monarchy"
             country_rank = rank_duchy
             capital = syene
+            starting_technology_level = 2
         }
         EGY = {
             # Ptolemies
@@ -1319,6 +1378,7 @@ countries = {
             include = "ir_aristocratic_monarchy"
             country_rank = rank_kingdom
             capital = alexandria
+            starting_technology_level = 2
         }
         CYR = {
             # Cyrenaica
@@ -1344,6 +1404,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = kyrene
+            starting_technology_level = 2
         }
         NAS = {
             # Nasamonia
@@ -1365,6 +1426,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_duchy
             capital = augila
+            starting_technology_level = 1
         }
         PSY = {
             # Psyllia
@@ -1386,6 +1448,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = dysopon
+            starting_technology_level = 1
         }
         MKA = {
             # Makae
@@ -1411,6 +1474,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_kingdom
             capital = mesphe
+            starting_technology_level = 1
         }
         PHZ = {
             # Phazania
@@ -1430,6 +1494,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_duchy
             capital = cydamus
+            starting_technology_level = 1
         }
         GIN = {
             # Gindania
@@ -1449,6 +1514,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_duchy
             capital = augemmi
+            starting_technology_level = 1
         }
         GYZ = {
             # Gyzantia
@@ -1470,6 +1536,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = thiges
+            starting_technology_level = 1
         }
         MHY = {
             # Machylia
@@ -1489,6 +1556,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = waddan
+            starting_technology_level = 1
         }
         GAR = {
             # Garamantia
@@ -1514,6 +1582,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = garama
+            starting_technology_level = 1
         }
         ATO = {
             # Autolalia
@@ -1535,6 +1604,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_kingdom
             capital = marrakech
+            starting_technology_level = 1
         }
         NEC = {
             # Nectiberia
@@ -1554,6 +1624,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = zemour
+            starting_technology_level = 1
         }
         CET = {
             # Cetiania
@@ -1573,6 +1644,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = boumia
+            starting_technology_level = 1
         }
         ABA = {
             # Abannaea
@@ -1592,6 +1664,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = khoubana
+            starting_technology_level = 1
         }
         CPA = {
             # Capariensia
@@ -1611,6 +1684,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = messaad
+            starting_technology_level = 1
         }
         PRO = {
             # Perorsia
@@ -1630,6 +1704,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = agdz
+            starting_technology_level = 1
         }
         LXT = {
             # Lixitae
@@ -1649,6 +1724,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = iligh
+            starting_technology_level = 1
         }
         CII = {
             # Canaria
@@ -1668,6 +1744,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = sijilmasa
+            starting_technology_level = 1
         }
         DPH = {
             # Daphnitaea
@@ -1687,6 +1764,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = figuig
+            starting_technology_level = 1
         }
         GAE = {
             # Gaetulia
@@ -1708,6 +1786,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_kingdom
             capital = gemellae
+            starting_technology_level = 1
         }
         MAS = {
             # Massilia
@@ -1731,6 +1810,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_duchy
             capital = massalia
+            starting_technology_level = 2
         }
         HMK = {
             # Hemeroskopeion
@@ -1752,6 +1832,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = hemeroskopeion
+            starting_technology_level = 2
         }
         TXL = {
             # Taexalia
@@ -1771,6 +1852,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = taexali
+            starting_technology_level = 1
         }
         CAL = {
             # Caledonia
@@ -1792,6 +1874,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = caledonii
+            starting_technology_level = 1
         }
         VTD = {
             # Votadinia
@@ -1813,6 +1896,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = otadini
+            starting_technology_level = 1
         }
         DNN = {
             # Damnonia
@@ -1834,6 +1918,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = damnonii
+            starting_technology_level = 1
         }
         ULT = {
             # Voluntia
@@ -1853,6 +1938,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = isamnion
+            starting_technology_level = 1
         }
         CAT = {
             # Cantiacia
@@ -1872,6 +1958,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = durovernum
+            starting_technology_level = 1
         }
         DUR = {
             # Durotriga
@@ -1893,6 +1980,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = vindocladia
+            starting_technology_level = 1
         }
         PAS = {
             # Parisia
@@ -1914,6 +2002,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = eboracum
+            starting_technology_level = 1
         }
         DUM = {
             # Dumnonia
@@ -1933,6 +2022,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = isca_dumnoniorum
+            starting_technology_level = 1
         }
         ICE = {
             # Icenia
@@ -1952,6 +2042,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = venta_icenorum
+            starting_technology_level = 1
         }
         SIR = {
             # Siluria
@@ -1971,6 +2062,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = burrium
+            starting_technology_level = 1
         }
         DEM = {
             # Demetia
@@ -1990,6 +2082,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = dolaucothi
+            starting_technology_level = 1
         }
         COI = {
             # Coritania
@@ -2013,6 +2106,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = ratae
+            starting_technology_level = 1
         }
         DOB = {
             # Dobunnia
@@ -2040,6 +2134,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = corinium
+            starting_technology_level = 1
         }
         COV = {
             # Cornovia
@@ -2063,6 +2158,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = viroconium
+            starting_technology_level = 1
         }
         ORD = {
             # Ordovicia
@@ -2084,6 +2180,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = levobrinta
+            starting_technology_level = 1
         }
         DEC = {
             # Deceanglia
@@ -2103,6 +2200,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = canovium
+            starting_technology_level = 1
         }
         BRI = {
             # Brigantia
@@ -2126,6 +2224,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = isurium
+            starting_technology_level = 1
         }
         CAV = {
             # Carvetia
@@ -2145,6 +2244,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = gabrosentum
+            starting_technology_level = 1
         }
         TRI = {
             # Trinovantia
@@ -2166,6 +2266,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = camulodunum
+            starting_technology_level = 1
         }
         BLD = {
             # Gymnaesia
@@ -2185,6 +2286,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_duchy
             capital = palma
+            starting_technology_level = 1
         }
         AMC = {
             # Amacia
@@ -2204,6 +2306,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = argentiolum
+            starting_technology_level = 1
         }
         BDU = {
             # Beduniensia
@@ -2223,6 +2326,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = asturicia
+            starting_technology_level = 1
         }
         GGR = {
             # Gigurria
@@ -2244,6 +2348,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = nemetobriga
+            starting_technology_level = 1
         }
         LCN = {
             # Lanciensia
@@ -2267,6 +2372,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = lancia
+            starting_technology_level = 1
         }
         LGO = {
             # Lugonia
@@ -2286,6 +2392,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = flavionavia
+            starting_technology_level = 1
         }
         PSC = {
             # Paesicia
@@ -2305,6 +2412,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = paesicia
+            starting_technology_level = 1
         }
         SLI = {
             # Selinia
@@ -2324,6 +2432,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = lucus_asturum
+            starting_technology_level = 1
         }
         SPT = {
             # Superatia
@@ -2343,6 +2452,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = bergidum_flavium
+            starting_technology_level = 1
         }
         TBU = {
             # Tiburia
@@ -2362,6 +2472,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = uttaris
+            starting_technology_level = 1
         }
         ZLA = {
             # Zoelia
@@ -2381,6 +2492,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = zoelarum
+            starting_technology_level = 1
         }
         AUI = {
             # Ausetania
@@ -2404,6 +2516,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = auso
+            starting_technology_level = 1
         }
         AUG = {
             # Autrigonia
@@ -2423,6 +2536,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = vindeleia
+            starting_technology_level = 1
         }
         BAI = {
             # Basti
@@ -2442,6 +2556,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = basti
+            starting_technology_level = 1
         }
         EBI = {
             # Eburania
@@ -2465,6 +2580,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = ebura
+            starting_technology_level = 1
         }
         MTS = {
             # Mantasania
@@ -2484,6 +2600,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = mentesa
+            starting_technology_level = 1
         }
         GRM = {
             # Garmania
@@ -2507,6 +2624,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = oretum
+            starting_technology_level = 1
         }
         ORT = {
             # Oretania
@@ -2530,6 +2648,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_duchy
             capital = castulo
+            starting_technology_level = 1
         }
         ABO = {
             # Albionia
@@ -2549,6 +2668,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = varina_marinia
+            starting_technology_level = 1
         }
         ARR = {
             # Arronia
@@ -2568,6 +2688,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = arronia
+            starting_technology_level = 1
         }
         BAN = {
             # Baniensia
@@ -2587,6 +2708,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = vicus_vagornicensis
+            starting_technology_level = 1
         }
         BRC = {
             # Bracaria
@@ -2606,6 +2728,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = bracara_augusta
+            starting_technology_level = 1
         }
         COP = {
             # Coporia
@@ -2627,6 +2750,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = caranicum
+            starting_technology_level = 1
         }
         GRV = {
             # Gravia
@@ -2646,6 +2770,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = ad_duos_pontes
+            starting_technology_level = 1
         }
         INT = {
             # Interamicia
@@ -2665,6 +2790,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = castellum_meidunium
+            starting_technology_level = 1
         }
         LUN = {
             # Leunia
@@ -2684,6 +2810,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = limia
+            starting_technology_level = 1
         }
         NRI = {
             # Neria
@@ -2703,6 +2830,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = artabron_limen
+            starting_technology_level = 1
         }
         SUR = {
             # Seurria
@@ -2724,6 +2852,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = lucus
+            starting_technology_level = 1
         }
         SLN = {
             # Silenia
@@ -2743,6 +2872,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = assegonia
+            starting_technology_level = 1
         }
         TMG = {
             # Tamagania
@@ -2762,6 +2892,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = forum_limicorum
+            starting_technology_level = 1
         }
         ORM = {
             # Orgenomescia
@@ -2781,6 +2912,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = pallontion
+            starting_technology_level = 1
         }
         AVG = {
             # Avariginia
@@ -2800,6 +2932,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = caiellum
+            starting_technology_level = 1
         }
         COC = {
             # Concania
@@ -2819,6 +2952,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = brigensium
+            starting_technology_level = 1
         }
         BLN = {
             # Blendia
@@ -2840,6 +2974,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = aracillum
+            starting_technology_level = 1
         }
         MRC = {
             # Morecania
@@ -2861,6 +2996,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = bravum
+            starting_technology_level = 1
         }
         VDI = {
             # Vadinia
@@ -2880,6 +3016,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = camarica
+            starting_technology_level = 1
         }
         CRI = {
             # Caristia
@@ -2899,6 +3036,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = veleia
+            starting_technology_level = 1
         }
         VAD = {
             # Vardulia
@@ -2918,6 +3056,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = aracaeli
+            starting_technology_level = 1
         }
         CNT = {
             # Contestani
@@ -2939,6 +3078,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = ad_aras
+            starting_technology_level = 1
         }
         ICV = {
             # Ilercavonia
@@ -2960,6 +3100,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = dertosa
+            starting_technology_level = 1
         }
         ILG = {
             # Ilergetia
@@ -2979,6 +3120,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = ilerda
+            starting_technology_level = 1
         }
         IDK = {
             # Indiketia
@@ -2998,6 +3140,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = iuncaria
+            starting_technology_level = 1
         }
         CSS = {
             # Cessetania
@@ -3017,6 +3160,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = tarraco
+            starting_technology_level = 1
         }
         VSC = {
             # Vasconia
@@ -3036,6 +3180,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = calagurris_iulia
+            starting_technology_level = 1
         }
         EPO = {
             # Emporion
@@ -3057,6 +3202,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = emporiae
+            starting_technology_level = 2
         }
         GAD = {
             # Gadir
@@ -3075,6 +3221,7 @@ countries = {
             include = "expl_imperator_rome"
             country_rank = rank_county
             capital = gadir_0
+            starting_technology_level = 2
         }
         MAT = {
             # Mastia
@@ -3096,6 +3243,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = mastia
+            starting_technology_level = 1
         }
         SGS = {
             # Arseka
@@ -3115,6 +3263,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = saguntum
+            starting_technology_level = 1
         }
         BOA = {
             # Boihaemia
@@ -3138,6 +3287,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_kingdom
             capital = baemia
+            starting_technology_level = 1
         }
         ABC = {
             # Albicia
@@ -3157,6 +3307,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = griselica
+            starting_technology_level = 1
         }
         DCA = {
             # Deciatia
@@ -3176,6 +3327,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = matavo
+            starting_technology_level = 1
         }
         SLV = {
             # Salluvia
@@ -3197,6 +3349,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = verunia
+            starting_technology_level = 1
         }
         CTR = {
             # Caturigia
@@ -3216,6 +3369,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = eburodunum
+            starting_technology_level = 1
         }
         VOC = {
             # Vocontia
@@ -3237,6 +3391,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = vasio
+            starting_technology_level = 1
         }
         HVI = {
             # Helvia
@@ -3258,6 +3413,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = alba_helviorum
+            starting_technology_level = 1
         }
         ELY = {
             # Elesycia
@@ -3279,6 +3435,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = narbo
+            starting_technology_level = 1
         }
         TCT = {
             # Tolosatia
@@ -3298,6 +3455,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = tolosa
+            starting_technology_level = 1
         }
         SRB = {
             # Sordonia
@@ -3319,6 +3477,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = ruscino
+            starting_technology_level = 1
         }
         CNS = {
             # Consorannia
@@ -3340,6 +3499,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = consoranni
+            starting_technology_level = 1
         }
         RUT = {
             # Rutenia
@@ -3359,6 +3519,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = condate_arvernorum
+            starting_technology_level = 1
         }
         ALL = {
             # Allobrogia
@@ -3380,6 +3541,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = vienna
+            starting_technology_level = 1
         }
         SGL = {
             # Segusiavia
@@ -3401,6 +3563,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = seguslavorum
+            starting_technology_level = 1
         }
         AVN = {
             # Arvernia
@@ -3424,6 +3587,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_duchy
             capital = ricomagus
+            starting_technology_level = 1
         }
         NTB = {
             # Nitiobrogia
@@ -3447,6 +3611,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = aginnum
+            starting_technology_level = 1
         }
         BIG = {
             # Bigerrionia
@@ -3466,6 +3631,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = lugdunum_convenarum
+            starting_technology_level = 1
         }
         ASC = {
             # Auscia
@@ -3485,6 +3651,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = elimberrum
+            starting_technology_level = 1
         }
         TRB = {
             # Tarbellia
@@ -3506,6 +3673,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = aquae_tarbellicae
+            starting_technology_level = 1
         }
         SBZ = {
             # Sibuzatia
@@ -3525,6 +3693,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = novum_oppidum
+            starting_technology_level = 1
         }
         VCT = {
             # Vocatia
@@ -3546,6 +3715,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = cossium
+            starting_technology_level = 1
         }
         CCS = {
             # Cocosatia
@@ -3565,6 +3735,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = telonnum
+            starting_technology_level = 1
         }
         BTU = {
             # Viviscia
@@ -3584,6 +3755,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = akroterion
+            starting_technology_level = 1
         }
         TRS = {
             # Tarusatia
@@ -3605,6 +3777,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = atura
+            starting_technology_level = 1
         }
         PTC = {
             # Petrocoria
@@ -3630,6 +3803,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = vesunna
+            starting_technology_level = 1
         }
         LMV = {
             # Lemovicia
@@ -3655,6 +3829,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = durotincum
+            starting_technology_level = 1
         }
         SNT = {
             # Santonia
@@ -3676,6 +3851,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = novioregum_santonum
+            starting_technology_level = 1
         }
         CUT = {
             # Ceutronia
@@ -3697,6 +3873,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = cularo
+            starting_technology_level = 1
         }
         SLS = {
             # Salassia
@@ -3718,6 +3895,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = salassia
+            starting_technology_level = 1
         }
         LPO = {
             # Lepontia
@@ -3739,6 +3917,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = clavenna
+            starting_technology_level = 1
         }
         TIG = {
             # Tigurinia
@@ -3762,6 +3941,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = caelius_mons
+            starting_technology_level = 1
         }
         TOU = {
             # Tougenia
@@ -3781,6 +3961,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = vindonissa
+            starting_technology_level = 1
         }
         VRB = {
             # Verbigenia
@@ -3800,6 +3981,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = lausonna
+            starting_technology_level = 1
         }
         BRG = {
             # Bregantia
@@ -3821,6 +4003,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = brigantium
+            starting_technology_level = 1
         }
         ESO = {
             # Estionia
@@ -3842,6 +4025,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = cambodunum
+            starting_technology_level = 1
         }
         VNN = {
             # Licatia
@@ -3861,6 +4045,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = damasia
+            starting_technology_level = 1
         }
         CTN = {
             # Catenatia
@@ -3882,6 +4067,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = ambrae
+            starting_technology_level = 1
         }
         TLG = {
             # Tulingia
@@ -3903,6 +4089,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = vitudurum
+            starting_technology_level = 1
         }
         RAU = {
             # Rauracia
@@ -3924,6 +4111,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = rauracia
+            starting_technology_level = 1
         }
         LTG = {
             # Latobrigia
@@ -3949,6 +4137,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = ad_fines_germaniae
+            starting_technology_level = 1
         }
         SVC = {
             # Sevacia
@@ -3968,6 +4157,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = sebatum
+            starting_technology_level = 1
         }
         BGT = {
             # Biturigia
@@ -3991,6 +4181,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = avaricum
+            starting_technology_level = 1
         }
         TRO = {
             # Turonia
@@ -4012,6 +4203,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = caesarodunum
+            starting_technology_level = 1
         }
         ADC = {
             # Andecamulensia
@@ -4033,6 +4225,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = andecamulum
+            starting_technology_level = 1
         }
         PCS = {
             # Pictonia
@@ -4052,6 +4245,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = limonum
+            starting_technology_level = 1
         }
         NMN = {
             # Namnetia
@@ -4073,6 +4267,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = conbaristum
+            starting_technology_level = 1
         }
         CRN = {
             # Carnutia
@@ -4094,6 +4289,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = autricum
+            starting_technology_level = 1
         }
         CMI = {
             # Aulercia
@@ -4117,6 +4313,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = vindinum
+            starting_technology_level = 1
         }
         VTN = {
             # Venetia
@@ -4138,6 +4335,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = sulis
+            starting_technology_level = 1
         }
         CIO = {
             # Curiosolita
@@ -4157,6 +4355,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = coriosolitum
+            starting_technology_level = 1
         }
         OSM = {
             # Osismia
@@ -4176,6 +4375,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = vorgium
+            starting_technology_level = 1
         }
         RDO = {
             # Redonia
@@ -4199,6 +4399,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = condate_redonum
+            starting_technology_level = 1
         }
         DBL = {
             # Diablintia
@@ -4218,6 +4419,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = diablintum
+            starting_technology_level = 1
         }
         EBV = {
             # Eburovicia
@@ -4239,6 +4441,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = aulercorum
+            starting_technology_level = 1
         }
         ESV = {
             # Esuvia
@@ -4260,6 +4463,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = augustodurum
+            starting_technology_level = 1
         }
         LXV = {
             # Lexovia
@@ -4279,6 +4483,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = lexoviorum
+            starting_technology_level = 1
         }
         VCL = {
             # Veliocassia
@@ -4300,6 +4505,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = rotomagus
+            starting_technology_level = 1
         }
         VNL = {
             # Venellia
@@ -4319,6 +4525,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = crouciaconnum
+            starting_technology_level = 1
         }
         AMB = {
             # Ambarria
@@ -4338,6 +4545,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = isarnodurum
+            starting_technology_level = 1
         }
         SQI = {
             # Sequania
@@ -4359,6 +4567,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = vesontio
+            starting_technology_level = 1
         }
         AED = {
             # Aeduia
@@ -4384,6 +4593,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = augustodunum
+            starting_technology_level = 1
         }
         LNG = {
             # Lingonia
@@ -4407,6 +4617,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = andematunnum
+            starting_technology_level = 1
         }
         MDB = {
             # Mandubia
@@ -4428,6 +4639,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = alesia
+            starting_technology_level = 1
         }
         SNN = {
             # Senonia
@@ -4455,6 +4667,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = agedincum_0
+            starting_technology_level = 1
         }
         TRC = {
             # Tricassia
@@ -4478,6 +4691,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = augustobona
+            starting_technology_level = 1
         }
         PRS = {
             # Parisia
@@ -4497,6 +4711,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = lutetia
+            starting_technology_level = 1
         }
         CTL = {
             # Catalaunia
@@ -4518,6 +4733,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = durocatalaunum
+            starting_technology_level = 1
         }
         TBC = {
             # Triboccia
@@ -4543,6 +4759,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = taunensium
+            starting_technology_level = 1
         }
         LCI = {
             # Leucia
@@ -4564,6 +4781,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = tullum
+            starting_technology_level = 1
         }
         MDM = {
             # Mediomatricia
@@ -4589,6 +4807,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = divodurum
+            starting_technology_level = 1
         }
         NMI = {
             # Nemetia
@@ -4612,6 +4831,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = devona
+            starting_technology_level = 1
         }
         TVI = {
             # Treveria
@@ -4635,6 +4855,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = caranusca
+            starting_technology_level = 1
         }
         ADT = {
             # Aduatucia
@@ -4651,6 +4872,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = REPLACE_ME
+            starting_technology_level = 1
         }
         CGN = {
             # Cugernia
@@ -4667,6 +4889,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_county
             capital = REPLACE_ME
+            starting_technology_level = 1
         }
         EBS = {
             # Eburonia
@@ -4690,6 +4913,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = harenatium
+            starting_technology_level = 1
         }
         MNP = {
             # Menapia
@@ -4713,6 +4937,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = castellum
+            starting_technology_level = 1
         }
         CLT = {
             # Caletia
@@ -4732,6 +4957,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = galetia_occidentalis
+            starting_technology_level = 1
         }
         ABM = {
             # Ambiania
@@ -4751,6 +4977,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = samarobriva
+            starting_technology_level = 1
         }
         MRN = {
             # Morinia
@@ -4772,6 +4999,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = tarvenna
+            starting_technology_level = 1
         }
         SSS = {
             # Suessionia
@@ -4793,6 +5021,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = seussonia
+            starting_technology_level = 1
         }
         BLV = {
             # Bellovacia
@@ -4812,6 +5041,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = caesaromagus
+            starting_technology_level = 1
         }
         VMD = {
             # Viromanduia
@@ -4833,6 +5063,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = viromanduorum
+            starting_technology_level = 1
         }
         NRV = {
             # Nervia
@@ -4858,6 +5089,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = bagacum
+            starting_technology_level = 1
         }
         RMI = {
             # Remia
@@ -4879,6 +5111,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = durocortorum
+            starting_technology_level = 1
         }
         PAE = {
             # Paesuria
@@ -4900,6 +5133,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = aravorum
+            starting_technology_level = 1
         }
         TDT = {
             # Oppidania
@@ -4919,6 +5153,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = conimbriga
+            starting_technology_level = 1
         }
         EBL = {
             # Elbocoria
@@ -4938,6 +5173,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = castra_cecilia
+            starting_technology_level = 1
         }
         TPL = {
             # Tapolia
@@ -4957,6 +5193,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = tongorigum
+            starting_technology_level = 1
         }
         IGD = {
             # Igaedetania
@@ -4978,6 +5215,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = capera
+            starting_technology_level = 1
         }
         LCC = {
             # Lancientia
@@ -4997,6 +5235,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = sentice
+            starting_technology_level = 1
         }
         AVA = {
             # Aravia
@@ -5016,6 +5255,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = ocelum
+            starting_technology_level = 1
         }
         TLS = {
             # Taluria
@@ -5037,6 +5277,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = sellium
+            starting_technology_level = 1
         }
         SFI = {
             # Sefia
@@ -5058,6 +5299,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = caetobriga
+            starting_technology_level = 1
         }
         CMS = {
             # Cempsia
@@ -5077,6 +5319,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = metallum_vipescense
+            starting_technology_level = 1
         }
         CLC = {
             # Celticia
@@ -5100,6 +5343,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = ebora
+            starting_technology_level = 1
         }
         CNU = {
             # Cynetia
@@ -5119,6 +5363,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = couneia
+            starting_technology_level = 1
         }
         TDL = {
             # Turdulia
@@ -5144,6 +5389,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = iporca
+            starting_technology_level = 1
         }
         BDL = {
             # Bardulia
@@ -5163,6 +5409,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = varna
+            starting_technology_level = 1
         }
         TDI = {
             # Turmodigia
@@ -5184,6 +5431,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = nova_augusta
+            starting_technology_level = 1
         }
         VCI = {
             # Vaccaeia
@@ -5205,6 +5453,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = intercatia
+            starting_technology_level = 1
         }
         AVC = {
             # Arevacia
@@ -5226,6 +5475,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = voluca
+            starting_technology_level = 1
         }
         BLT = {
             # Bletonisia
@@ -5247,6 +5497,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = bletsima
+            starting_technology_level = 1
         }
         CLU = {
             # Caluria
@@ -5268,6 +5519,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = avila
+            starting_technology_level = 1
         }
         CRE = {
             # Coerensia
@@ -5287,6 +5539,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = vettonia_inferioris
+            starting_technology_level = 1
         }
         CLO = {
             # Calontiensia
@@ -5306,6 +5559,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = bocouriqua
+            starting_technology_level = 1
         }
         LSN = {
             # Lusonia
@@ -5325,6 +5579,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = salduba
+            starting_technology_level = 1
         }
         BLL = {
             # Bellia
@@ -5344,6 +5599,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = segeda
+            starting_technology_level = 1
         }
         BOL = {
             # Boletia
@@ -5365,6 +5621,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = lobeton
+            starting_technology_level = 1
         }
         OLC = {
             # Olcadia
@@ -5384,6 +5641,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = ocules
+            starting_technology_level = 1
         }
         TTH = {
             # Tithia
@@ -5403,6 +5661,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = segontia
+            starting_technology_level = 1
         }
         LBT = {
             # Lobetania
@@ -5422,6 +5681,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = pons_rugio
+            starting_technology_level = 1
         }
         DNQ = {
             # Duniquia
@@ -5441,6 +5701,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = segovia
+            starting_technology_level = 1
         }
         MOC = {
             # Moeniccia
@@ -5460,6 +5721,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = miaccum
+            starting_technology_level = 1
         }
         AEL = {
             # Aelariquia
@@ -5479,6 +5741,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = mantua_carpetania
+            starting_technology_level = 1
         }
         TRQ = {
             # Tirtaliquia
@@ -5498,6 +5761,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = titulcia
+            starting_technology_level = 1
         }
         DOA = {
             # Duitiquia
@@ -5519,6 +5783,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = toletum
+            starting_technology_level = 1
         }
         SLC = {
             # Solicia
@@ -5540,6 +5805,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = solicia_carpetania
+            starting_technology_level = 1
         }
         SDT = {
             # Sedetania
@@ -5559,6 +5825,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = sedetania
+            starting_technology_level = 1
         }
         EDT = {
             # Edetania
@@ -5578,6 +5845,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = edeta
+            starting_technology_level = 1
         }
         DEI = {
             # Deitania
@@ -5601,6 +5869,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = elotana
+            starting_technology_level = 1
         }
         DIT = {
             # Iapodia
@@ -5624,6 +5893,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = senia
+            starting_technology_level = 1
         }
         LBN = {
             # Libernia
@@ -5643,6 +5913,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = ainona
+            starting_technology_level = 1
         }
         DLM = {
             # Delmatia
@@ -5666,6 +5937,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = delminion
+            starting_technology_level = 1
         }
         DRI = {
             # Daorsia
@@ -5687,6 +5959,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = salthua
+            starting_technology_level = 1
         }
         CAA = {
             # Cataria
@@ -5706,6 +5979,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = varianis
+            starting_technology_level = 1
         }
         ABI = {
             # Abria
@@ -5727,6 +6001,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = askrebion
+            starting_technology_level = 1
         }
         CVI = {
             # Cavia
@@ -5748,6 +6023,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = ad_picarias
+            starting_technology_level = 1
         }
         DNT = {
             # Ditionia
@@ -5767,6 +6043,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = splonum
+            starting_technology_level = 1
         }
         BCI = {
             # Breucia
@@ -5788,6 +6065,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = marsonia
+            starting_technology_level = 1
         }
         DUI = {
             # Deuria
@@ -5809,6 +6087,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = bistua_nova
+            starting_technology_level = 1
         }
         AMI = {
             # Armistia
@@ -5828,6 +6107,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = risetia
+            starting_technology_level = 1
         }
         OXU = {
             # Oxuaioia
@@ -5847,6 +6127,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = pecina
+            starting_technology_level = 1
         }
         SCD = {
             # Scordiscia
@@ -5874,6 +6155,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = singidunum
+            starting_technology_level = 1
         }
         DND = {
             # Dindaria
@@ -5897,6 +6179,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = ad_drinum
+            starting_technology_level = 1
         }
         OTN = {
             # Cotinia
@@ -5918,6 +6201,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = maronis
+            starting_technology_level = 1
         }
         HCN = {
             # Ercuniatia
@@ -5939,6 +6223,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = alisca
+            starting_technology_level = 1
         }
         EVS = {
             # Eraviscia
@@ -5964,6 +6249,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = aquincum
+            starting_technology_level = 1
         }
         TLN = {
             # Taulantia
@@ -5985,6 +6271,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = epidamnos
+            starting_technology_level = 2
         }
         TLT = {
             # Tilataeia
@@ -6012,6 +6299,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = timacum
+            starting_technology_level = 1
         }
         DRD = {
             # Dardania
@@ -6035,6 +6323,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = scupi
+            starting_technology_level = 2
         }
         SDI = {
             # Agriania
@@ -6056,6 +6345,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = serdica
+            starting_technology_level = 1
         }
         TBL = {
             # Triballia
@@ -6079,6 +6369,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = oescus
+            starting_technology_level = 1
         }
         MOE = {
             # Crobyzia
@@ -6100,6 +6391,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = appiara
+            starting_technology_level = 1
         }
         GTE = {
             # Getia
@@ -6125,6 +6417,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = napuca
+            starting_technology_level = 1
         }
         POT = {
             # Potulatensia
@@ -6146,6 +6439,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = castra_bistrita
+            starting_technology_level = 1
         }
         SLD = {
             # Saldensia
@@ -6167,6 +6461,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = dierna
+            starting_technology_level = 1
         }
         ABN = {
             # Albocensia
@@ -6188,6 +6483,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = castra_arcidava
+            starting_technology_level = 1
         }
         BUD = {
             # Buridavensia
@@ -6209,6 +6505,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = buridava
+            starting_technology_level = 1
         }
         APP = {
             # Appulia
@@ -6230,6 +6527,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = apulum
+            starting_technology_level = 1
         }
         RAT = {
             # Ratacensia
@@ -6251,6 +6549,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = media
+            starting_technology_level = 1
         }
         TYR = {
             # Bastia
@@ -6270,6 +6569,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = angustia
+            starting_technology_level = 1
         }
         CAC = {
             # Caucoensia
@@ -6289,6 +6589,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = potaissa
+            starting_technology_level = 1
         }
         ANS = {
             # Ansamensia
@@ -6308,6 +6609,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = samum
+            starting_technology_level = 1
         }
         NRC = {
             # Noricia
@@ -6331,6 +6633,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = virunum
+            starting_technology_level = 1
         }
         TSC = {
             # Tauriscia
@@ -6352,6 +6655,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = celeia
+            starting_technology_level = 1
         }
         BYZ = {
             # Byzantion
@@ -6373,6 +6677,7 @@ countries = {
             include = "ir_democratic_republic"
             country_rank = rank_duchy
             capital = byzantion
+            starting_technology_level = 2
         }
         ISO = {
             # Istros
@@ -6394,6 +6699,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_duchy
             capital = histria
+            starting_technology_level = 2
         }
         KTS = {
             # Kallatis
@@ -6413,6 +6719,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = callatis
+            starting_technology_level = 2
         }
         ODS = {
             # Odessos
@@ -6432,6 +6739,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = odessus
+            starting_technology_level = 2
         }
         MES = {
             # Mesembria
@@ -6451,6 +6759,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = mesembria
+            starting_technology_level = 2
         }
         APL = {
             # Apollonia Pontica
@@ -6470,6 +6779,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = apollonia_pontike
+            starting_technology_level = 2
         }
         TRE = {
             # Thrace
@@ -6495,6 +6805,7 @@ countries = {
             include = "ir_aristocratic_monarchy"
             country_rank = rank_kingdom
             capital = lysimacheia
+            starting_technology_level = 2
         }
         ODR = {
             # Odrysia
@@ -6514,6 +6825,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = seuthopolis
+            starting_technology_level = 1
         }
         KAB = {
             # Kabyle
@@ -6535,6 +6847,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = kabyle
+            starting_technology_level = 1
         }
         PAA = {
             # Paeonia
@@ -6556,6 +6869,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = stobi
+            starting_technology_level = 1
         }
         MAD = {
             # Maedia
@@ -6575,6 +6889,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = scaptopara
+            starting_technology_level = 1
         }
         MAC = {
             # Macedon
@@ -6606,6 +6921,7 @@ countries = {
             include = "ir_aristocratic_monarchy"
             country_rank = rank_kingdom
             capital = pella_0
+            starting_technology_level = 2
         }
         ATH = {
             # Athens
@@ -6629,6 +6945,7 @@ countries = {
             include = "ir_democratic_republic"
             country_rank = rank_duchy
             capital = athens
+            starting_technology_level = 2
         }
         THE = {
             # Thebes
@@ -6648,6 +6965,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = thebes
+            starting_technology_level = 2
         }
         KRK = {
             # Korkyra
@@ -6669,6 +6987,7 @@ countries = {
             include = "ir_democratic_republic"
             country_rank = rank_county
             capital = korkyra
+            starting_technology_level = 2
         }
         AET = {
             # Aetolia
@@ -6688,6 +7007,7 @@ countries = {
             include = "ir_democratic_republic"
             country_rank = rank_county
             capital = thermon
+            starting_technology_level = 2
         }
         KEF = {
             # Kephallenia
@@ -6709,6 +7029,7 @@ countries = {
             include = "ir_democratic_republic"
             country_rank = rank_county
             capital = kefalonia
+            starting_technology_level = 2
         }
         AKR = {
             # Akarnania
@@ -6728,6 +7049,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = stratos
+            starting_technology_level = 2
         }
         EPI = {
             # Epirus
@@ -6747,6 +7069,7 @@ countries = {
             include = "ir_aristocratic_monarchy"
             country_rank = rank_kingdom
             capital = passaron
+            starting_technology_level = 2
         }
         MSE = {
             # Messenia
@@ -6766,6 +7089,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = messene
+            starting_technology_level = 2
         }
         ORE = {
             # Oreos
@@ -6785,6 +7109,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = oreus
+            starting_technology_level = 2
         }
         AGN = {
             # Aigina
@@ -6804,6 +7129,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = aigina
+            starting_technology_level = 2
         }
         KOR = {
             # Corinth
@@ -6823,6 +7149,7 @@ countries = {
             include = "ir_democratic_republic"
             country_rank = rank_county
             capital = korinthos
+            starting_technology_level = 2
         }
         BOE = {
             # Boeotia
@@ -6846,6 +7173,7 @@ countries = {
             include = "ir_aristocratic_republic"
             country_rank = rank_duchy
             capital = thespiai
+            starting_technology_level = 2
         }
         ACL = {
             # Achaean League
@@ -6865,6 +7193,7 @@ countries = {
             include = "ir_aristocratic_republic"
             country_rank = rank_county
             capital = aigion
+            starting_technology_level = 2
         }
         PLE = {
             # Pellene
@@ -6884,6 +7213,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = pellene
+            starting_technology_level = 2
         }
         SIC = {
             # Sikyon
@@ -6903,6 +7233,7 @@ countries = {
             include = "ir_aristocratic_republic"
             country_rank = rank_county
             capital = sikyon
+            starting_technology_level = 2
         }
         DEL = {
             # Nesio
@@ -6924,6 +7255,7 @@ countries = {
             include = "ir_democratic_republic"
             country_rank = rank_duchy
             capital = delos
+            starting_technology_level = 2
         }
         ADR = {
             # Andros
@@ -6945,6 +7277,7 @@ countries = {
             include = "ir_democratic_republic"
             country_rank = rank_county
             capital = andros
+            starting_technology_level = 2
         }
         KOS = {
             # Kos
@@ -6964,6 +7297,7 @@ countries = {
             include = "ir_democratic_republic"
             country_rank = rank_county
             capital = kos
+            starting_technology_level = 2
         }
         MGL = {
             # Megalopolis
@@ -6983,6 +7317,7 @@ countries = {
             include = "ir_democratic_republic"
             country_rank = rank_county
             capital = megalopolis
+            starting_technology_level = 2
         }
         TEG = {
             # Tegea
@@ -7002,6 +7337,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = tegea
+            starting_technology_level = 2
         }
         ARK = {
             # Arcadia
@@ -7025,6 +7361,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_duchy
             capital = mantinea
+            starting_technology_level = 2
         }
         ARG = {
             # Argos
@@ -7050,6 +7387,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_duchy
             capital = argos
+            starting_technology_level = 2
         }
         ELI = {
             # Elis
@@ -7069,6 +7407,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = elis
+            starting_technology_level = 2
         }
         TRN = {
             # Troizen
@@ -7088,6 +7427,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = troizen
+            starting_technology_level = 2
         }
         HRM = {
             # Hermione
@@ -7107,6 +7447,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = hermione
+            starting_technology_level = 2
         }
         EPD = {
             # Epidauros
@@ -7126,6 +7467,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = epidauros
+            starting_technology_level = 2
         }
         MGA = {
             # Megara
@@ -7145,6 +7487,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = megara_0
+            starting_technology_level = 2
         }
         SPA = {
             # Sparta
@@ -7163,6 +7506,7 @@ countries = {
             include = "expl_imperator_rome"
             country_rank = rank_kingdom
             capital = sparta
+            starting_technology_level = 2
         }
         KNO = {
             # Knossos
@@ -7182,6 +7526,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = knossos
+            starting_technology_level = 2
         }
         ELT = {
             # Eleutherna
@@ -7201,6 +7546,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = rhithymna
+            starting_technology_level = 2
         }
         PYR = {
             # Polyrrhenia
@@ -7220,6 +7566,7 @@ countries = {
             include = "ir_aristocratic_republic"
             country_rank = rank_county
             capital = polyrrenia
+            starting_technology_level = 2
         }
         LYT = {
             # Lyctus
@@ -7239,6 +7586,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = lyctus
+            starting_technology_level = 2
         }
         KYD = {
             # Kydonia
@@ -7258,6 +7606,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = kydonia
+            starting_technology_level = 2
         }
         GRT = {
             # Gortyna
@@ -7277,6 +7626,7 @@ countries = {
             include = "ir_democratic_republic"
             country_rank = rank_county
             capital = gortyna
+            starting_technology_level = 2
         }
         IEP = {
             # Ierapetra
@@ -7296,6 +7646,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = hierapytna
+            starting_technology_level = 2
         }
         TRA = {
             # Tarrha
@@ -7315,6 +7666,7 @@ countries = {
             include = "ir_democratic_republic"
             country_rank = rank_county
             capital = tarrha
+            starting_technology_level = 2
         }
         PRE = {
             # Praesos
@@ -7334,6 +7686,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = praesos
+            starting_technology_level = 2
         }
         MLO = {
             # Miletos
@@ -7355,6 +7708,7 @@ countries = {
             include = "ir_democratic_republic"
             country_rank = rank_county
             capital = miletos
+            starting_technology_level = 2
         }
         SAS = {
             # Samos
@@ -7376,6 +7730,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_duchy
             capital = samos
+            starting_technology_level = 2
         }
         CIA = {
             # Caria
@@ -7399,6 +7754,7 @@ countries = {
             include = "ir_stratocratic_monarchy"
             country_rank = rank_kingdom
             capital = mylasa
+            starting_technology_level = 2
         }
         HKS = {
             # Halikarnassos
@@ -7418,6 +7774,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = halikarnassos
+            starting_technology_level = 2
         }
         SRD = {
             # Sardis
@@ -7437,6 +7794,7 @@ countries = {
             include = "ir_stratocratic_monarchy"
             country_rank = rank_kingdom
             capital = sardis
+            starting_technology_level = 2
         }
         RHO = {
             # Rhodes
@@ -7458,6 +7816,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_duchy
             capital = rhodos
+            starting_technology_level = 2
         }
         AST = {
             # Astakos
@@ -7477,6 +7836,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = astakos
+            starting_technology_level = 2
         }
         BIT = {
             # Bithynia
@@ -7498,6 +7858,7 @@ countries = {
             include = "ir_aristocratic_monarchy"
             country_rank = rank_kingdom
             capital = artanes
+            starting_technology_level = 2
         }
         HCP = {
             # Heraclea Pontica
@@ -7517,6 +7878,7 @@ countries = {
             include = "ir_aristocratic_monarchy"
             country_rank = rank_kingdom
             capital = herakleia_pontike
+            starting_technology_level = 2
         }
         TRD = {
             # Troas
@@ -7538,6 +7900,7 @@ countries = {
             include = "ir_democratic_republic"
             country_rank = rank_duchy
             capital = ilion
+            starting_technology_level = 2
         }
         LSB = {
             # Lesbos
@@ -7557,6 +7920,7 @@ countries = {
             include = "ir_democratic_republic"
             country_rank = rank_duchy
             capital = mytilene
+            starting_technology_level = 2
         }
         ION = {
             # Ionia
@@ -7582,6 +7946,7 @@ countries = {
             include = "ir_democratic_republic"
             country_rank = rank_duchy
             capital = priene
+            starting_technology_level = 2
         }
         SNP = {
             # Sinope
@@ -7601,6 +7966,7 @@ countries = {
             include = "ir_democratic_republic"
             country_rank = rank_duchy
             capital = sinope
+            starting_technology_level = 2
         }
         CDD = {
             # Calchedon
@@ -7620,6 +7986,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = chalcedon
+            starting_technology_level = 2
         }
         KNI = {
             # Knidos
@@ -7641,6 +8008,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = knidos
+            starting_technology_level = 2
         }
         MIT = {
             # Mithridatic Domain
@@ -7668,6 +8036,7 @@ countries = {
             include = "ir_aristocratic_monarchy"
             country_rank = rank_kingdom
             capital = pergamon
+            starting_technology_level = 2
         }
         KZK = {
             # Kyzikos
@@ -7687,6 +8056,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_duchy
             capital = kyzikos
+            starting_technology_level = 2
         }
         KRS = {
             # Kerausous
@@ -7706,6 +8076,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = kerasous
+            starting_technology_level = 2
         }
         AMS = {
             # Amisos
@@ -7727,6 +8098,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_duchy
             capital = amisos
+            starting_technology_level = 2
         }
         PRY = {
             # Antigonids
@@ -7800,6 +8172,7 @@ countries = {
             include = "ir_aristocratic_monarchy"
             country_rank = rank_kingdom
             capital = antigoneia
+            starting_technology_level = 2
         }
         CAP = {
             # Cappadocia
@@ -7829,6 +8202,7 @@ countries = {
             include = "ir_stratocratic_monarchy"
             country_rank = rank_kingdom
             capital = mazaka
+            starting_technology_level = 2
         }
         KAP = {
             # Cataonia
@@ -7852,6 +8226,7 @@ countries = {
             include = "ir_theocratic_monarchy"
             country_rank = rank_kingdom
             capital = komana_hierapolis
+            starting_technology_level = 2
         }
         CAS = {
             # Castabalis
@@ -7871,6 +8246,7 @@ countries = {
             include = "ir_theocratic_monarchy"
             country_rank = rank_county
             capital = kastabala
+            starting_technology_level = 2
         }
         PON = {
             # Pontus
@@ -7896,6 +8272,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = amaseia
+            starting_technology_level = 1
         }
         KOM = {
             # Comana Pontica
@@ -7915,6 +8292,7 @@ countries = {
             include = "ir_theocratic_monarchy"
             country_rank = rank_county
             capital = komana_pontike
+            starting_technology_level = 2
         }
         ZEL = {
             # Zela
@@ -7934,6 +8312,7 @@ countries = {
             include = "ir_theocratic_monarchy"
             country_rank = rank_county
             capital = zela
+            starting_technology_level = 2
         }
         PAP = {
             # Paphlagonia
@@ -7955,6 +8334,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = gangra
+            starting_technology_level = 2
         }
         MAK = {
             # Maka
@@ -7976,6 +8356,7 @@ countries = {
             include = "ir_democratic_republic"
             country_rank = rank_kingdom
             capital = omana
+            starting_technology_level = 2
         }
         GRH = {
             # Gerrha
@@ -7999,6 +8380,7 @@ countries = {
             include = "ir_democratic_republic"
             country_rank = rank_duchy
             capital = gerrha
+            starting_technology_level = 2
         }
         TYO = {
             # Tylos
@@ -8022,6 +8404,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_duchy
             capital = tylos
+            starting_technology_level = 2
         }
         SHB = {
             # Saba
@@ -8045,6 +8428,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = mariaba
+            starting_technology_level = 2
         }
         QDA = {
             # Qedar
@@ -8064,6 +8448,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = thapaua
+            starting_technology_level = 1
         }
         MIN = {
             # Ma'in
@@ -8091,6 +8476,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_kingdom
             capital = karna
+            starting_technology_level = 2
         }
         HDM = {
             # Hadhramut
@@ -8114,6 +8500,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = sabata
+            starting_technology_level = 2
         }
         QTB = {
             # Qataba
@@ -8137,6 +8524,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = tamna
+            starting_technology_level = 2
         }
         NBT = {
             # Nabatea
@@ -8166,6 +8554,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = petra
+            starting_technology_level = 2
         }
         LHY = {
             # Lihyan
@@ -8191,6 +8580,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = dedan
+            starting_technology_level = 2
         }
         JUD = {
             # Judea
@@ -8210,6 +8600,7 @@ countries = {
             include = "ir_theocratic_monarchy"
             country_rank = rank_duchy
             capital = jerusalem
+            starting_technology_level = 2
         }
         AMN = {
             # Ammonitis
@@ -8235,6 +8626,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = tyros
+            starting_technology_level = 2
         }
         SMA = {
             # Samaria
@@ -8258,6 +8650,7 @@ countries = {
             include = "ir_theocratic_monarchy"
             country_rank = rank_duchy
             capital = shekhem
+            starting_technology_level = 2
         }
         SID = {
             # Sidon
@@ -8277,6 +8670,7 @@ countries = {
             include = "ir_theocratic_monarchy"
             country_rank = rank_county
             capital = sidon
+            starting_technology_level = 2
         }
         TYE = {
             # Tyre
@@ -8298,6 +8692,7 @@ countries = {
             include = "ir_aristocratic_monarchy"
             country_rank = rank_kingdom
             capital = tyrus
+            starting_technology_level = 2
         }
         ATI = {
             # Tripoli
@@ -8316,6 +8711,7 @@ countries = {
             include = "expl_imperator_rome"
             country_rank = rank_county
             capital = tripolis
+            starting_technology_level = 2
         }
         ARA = {
             # Arados
@@ -8336,6 +8732,7 @@ countries = {
             include = "expl_imperator_rome"
             country_rank = rank_kingdom
             capital = arados
+            starting_technology_level = 2
         }
         BYB = {
             # Byblos
@@ -8357,6 +8754,7 @@ countries = {
             include = "ir_theocratic_monarchy"
             country_rank = rank_county
             capital = byblos
+            starting_technology_level = 2
         }
         COM = {
             # Commagene
@@ -8378,6 +8776,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = samosata
+            starting_technology_level = 2
         }
         MAN = {
             # Anabura
@@ -8397,6 +8796,7 @@ countries = {
             include = "ir_theocratic_monarchy"
             country_rank = rank_duchy
             capital = anaboura
+            starting_technology_level = 2
         }
         BMB = {
             # Bambyce
@@ -8416,6 +8816,7 @@ countries = {
             include = "ir_theocratic_monarchy"
             country_rank = rank_duchy
             capital = bambyce
+            starting_technology_level = 2
         }
         PES = {
             # Persis
@@ -8441,6 +8842,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = persepolis
+            starting_technology_level = 2
         }
         SEL = {
             # Seleucids
@@ -8520,6 +8922,7 @@ countries = {
             include = "ir_aristocratic_monarchy"
             country_rank = rank_empire
             capital = seleucia_magna
+            starting_technology_level = 2
         }
         CRD = {
             # Gordyene
@@ -8543,6 +8946,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = pinaka
+            starting_technology_level = 1
         }
         SPH = {
             # Sophene
@@ -8564,6 +8968,7 @@ countries = {
             include = "ir_aristocratic_monarchy"
             country_rank = rank_kingdom
             capital = tomisa
+            starting_technology_level = 2
         }
         BAC = {
             # Bactria
@@ -8601,6 +9006,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = bactra
+            starting_technology_level = 2
         }
         ARS = {
             # Arachosia
@@ -8628,6 +9034,7 @@ countries = {
             include = "ir_stratocratic_monarchy"
             country_rank = rank_kingdom
             capital = alexandropolis
+            starting_technology_level = 2
         }
         PRM = {
             # Paropamisadae
@@ -8651,6 +9058,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = alexandria_ad_caucasum
+            starting_technology_level = 2
         }
         CAM = {
             # Carmania
@@ -8674,6 +9082,7 @@ countries = {
             include = "ir_stratocratic_monarchy"
             country_rank = rank_kingdom
             capital = karmana
+            starting_technology_level = 2
         }
         PAR = {
             # Parthia
@@ -8701,6 +9110,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = zadrakarta
+            starting_technology_level = 2
         }
         ADI = {
             # Adiabene
@@ -8722,6 +9132,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = arbela
+            starting_technology_level = 2
         }
         ARM = {
             # Armenia
@@ -8759,6 +9170,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = armaouira
+            starting_technology_level = 2
         }
         AR2 = {
             # Lesser Armenia
@@ -8784,6 +9196,7 @@ countries = {
             include = "ir_aristocratic_monarchy"
             country_rank = rank_kingdom
             capital = ani_1
+            starting_technology_level = 2
         }
         MAP = {
             # Atropatene
@@ -8813,6 +9226,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = gazaka
+            starting_technology_level = 2
         }
         IBR = {
             # Iberia
@@ -8842,6 +9256,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = meschistha_harmozike
+            starting_technology_level = 2
         }
         COL = {
             # Colchis
@@ -8869,6 +9284,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = kotais
+            starting_technology_level = 2
         }
         ALB = {
             # Albania
@@ -8894,6 +9310,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_kingdom
             capital = chabala
+            starting_technology_level = 1
         }
         LGA = {
             # Legia
@@ -8921,6 +9338,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_kingdom
             capital = zabender
+            starting_technology_level = 1
         }
         SCA = {
             # Derbicia
@@ -8946,6 +9364,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_kingdom
             capital = gran
+            starting_technology_level = 1
         }
         TRZ = {
             # Trapezous
@@ -8965,6 +9384,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = trapezous
+            starting_technology_level = 2
         }
         ZHZ = {
             # Zhangzhung
@@ -8990,6 +9410,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = khyunglung
+            starting_technology_level = 1
         }
         ATV = {
             # Atavia
@@ -9015,6 +9436,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = damoh
+            starting_technology_level = 1
         }
         HYA = {
             # Mahisamandala
@@ -9038,6 +9460,7 @@ countries = {
             include = "ir_aristocratic_monarchy"
             country_rank = rank_kingdom
             capital = mahismati
+            starting_technology_level = 2
         }
         PLD = {
             # Palada
@@ -9063,6 +9486,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = bhojakata
+            starting_technology_level = 1
         }
         RHN = {
             # Ruhunu
@@ -9082,6 +9506,7 @@ countries = {
             include = "ir_aristocratic_monarchy"
             country_rank = rank_kingdom
             capital = dighavapi
+            starting_technology_level = 2
         }
         MLY = {
             # Malaya
@@ -9101,6 +9526,7 @@ countries = {
             include = "ir_aristocratic_monarchy"
             country_rank = rank_kingdom
             capital = kalyani
+            starting_technology_level = 2
         }
         PRB = {
             # Parambu
@@ -9120,6 +9546,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = mohur
+            starting_technology_level = 2
         }
         KSR = {
             # Kosar
@@ -9143,6 +9570,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = karur
+            starting_technology_level = 2
         }
         ADG = {
             # Adagaiman
@@ -9164,6 +9592,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = tagadur
+            starting_technology_level = 2
         }
         GHA = {
             # Gandhara
@@ -9189,6 +9618,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = pushkalavati
+            starting_technology_level = 1
         }
         PRA = {
             # Paurava
@@ -9214,6 +9644,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = sakala
+            starting_technology_level = 2
         }
         YDD = {
             # Yaudheya
@@ -9241,6 +9672,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_kingdom
             capital = rohtak
+            starting_technology_level = 2
         }
         KHB = {
             # Khamboja
@@ -9264,6 +9696,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = ora
+            starting_technology_level = 1
         }
         KLS = {
             # Khasa
@@ -9285,6 +9718,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = puranadisthana
+            starting_technology_level = 1
         }
         NBA = {
             # Nabhaka
@@ -9308,6 +9742,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = devaprayaga
+            starting_technology_level = 1
         }
         NBP = {
             # Nabhapakti
@@ -9331,6 +9766,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = selanpura
+            starting_technology_level = 1
         }
         SMT = {
             # Samatata
@@ -9352,6 +9788,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = karmanta
+            starting_technology_level = 1
         }
         TSA = {
             # Tsang
@@ -9373,6 +9810,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = zhongzhong
+            starting_technology_level = 1
         }
         YRL = {
             # Yarlung
@@ -9394,6 +9832,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = chongye
+            starting_technology_level = 1
         }
         SMP = {
             # Sumpa
@@ -9415,6 +9854,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = lhasa
+            starting_technology_level = 1
         }
         ALU = {
             # Vanavasi
@@ -9436,6 +9876,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = vanavasi
+            starting_technology_level = 1
         }
         KUN = {
             # Kuntala
@@ -9461,6 +9902,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = athani
+            starting_technology_level = 1
         }
         PIT = {
             # Pitinika
@@ -9484,6 +9926,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = valuraka
+            starting_technology_level = 1
         }
         BOJ = {
             # Bhoja
@@ -9505,6 +9948,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = devagiri
+            starting_technology_level = 1
         }
         RTI = {
             # Rathika
@@ -9530,6 +9974,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = nasikya
+            starting_technology_level = 2
         }
         ASM = {
             # Ashmaka
@@ -9557,6 +10002,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = kondapuram
+            starting_technology_level = 1
         }
         ANH = {
             # Andhra
@@ -9578,6 +10024,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = andhapura
+            starting_technology_level = 1
         }
         KAL = {
             # Kalinga
@@ -9603,6 +10050,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = kalinganagara
+            starting_technology_level = 2
         }
         KRP = {
             # Kamarupa
@@ -9628,6 +10076,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = gramera
+            starting_technology_level = 1
         }
         ANU = {
             # Anuradhapura
@@ -9647,6 +10096,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = anuradhapura
+            starting_technology_level = 2
         }
         MSH = {
             # Mahisha
@@ -9666,6 +10116,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = andalapura
+            starting_technology_level = 1
         }
         IDR = {
             # Indravana
@@ -9685,6 +10136,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = chakrakot
+            starting_technology_level = 1
         }
         PND = {
             # Pandya
@@ -9708,6 +10160,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = madurai
+            starting_technology_level = 2
         }
         KRA = {
             # Karusa
@@ -9729,6 +10182,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = pali
+            starting_technology_level = 1
         }
         VDP = {
             # Vidarbha
@@ -9747,6 +10201,7 @@ countries = {
             include = "expl_imperator_rome"
             country_rank = rank_kingdom
             capital = minagana
+            starting_technology_level = 2
         }
         CHL = {
             # Chola
@@ -9768,6 +10223,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = urayur
+            starting_technology_level = 2
         }
         AYY = {
             # Ay
@@ -9787,6 +10243,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = aykudi
+            starting_technology_level = 2
         }
         CHR = {
             # Chera
@@ -9808,6 +10265,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = vanci
+            starting_technology_level = 2
         }
         STY = {
             # Satiyaputa
@@ -9827,6 +10285,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = mousopalle
+            starting_technology_level = 1
         }
         T10 = {
             # Kaankezhunadu
@@ -9846,6 +10305,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = colapattinam
+            starting_technology_level = 2
         }
         TM0 = {
             # Punanadu
@@ -9865,6 +10325,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = arkatapura
+            starting_technology_level = 2
         }
         TA4 = {
             # Malinadu
@@ -9884,6 +10345,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = chersonesos_vanavasi
+            starting_technology_level = 2
         }
         TA8 = {
             # Erumainadu
@@ -9903,6 +10365,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = kalligeris
+            starting_technology_level = 2
         }
         TM1 = {
             # Kudanadu
@@ -9924,6 +10387,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = ganga
+            starting_technology_level = 2
         }
         TM2 = {
             # Karkanadu
@@ -9943,6 +10407,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = mahisha
+            starting_technology_level = 2
         }
         TA1 = {
             # Athigannadu
@@ -9962,6 +10427,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = belgola
+            starting_technology_level = 2
         }
         TA0 = {
             # Mullurnadu
@@ -9983,6 +10449,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = penugonda
+            starting_technology_level = 2
         }
         RAY = {
             # Oaymaannadu
@@ -10002,6 +10469,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = rayachoti
+            starting_technology_level = 2
         }
         TM5 = {
             # Vellimalai
@@ -10023,6 +10491,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = kadinava
+            starting_technology_level = 2
         }
         TM3 = {
             # Pullinadu
@@ -10042,6 +10511,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = kottis
+            starting_technology_level = 2
         }
         TM7 = {
             # Mudhirmalai
@@ -10061,6 +10531,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = melange
+            starting_technology_level = 2
         }
         TDN = {
             # Tondainadu
@@ -10082,6 +10553,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = mayurasattapattinam
+            starting_technology_level = 2
         }
         PSH = {
             # Pishan
@@ -10101,6 +10573,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = pishan
+            starting_technology_level = 2
         }
         KSA = {
             # Kucha
@@ -10120,6 +10593,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = kuche
+            starting_technology_level = 2
         }
         KHT = {
             # Khotan
@@ -10139,6 +10613,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = yutian
+            starting_technology_level = 2
         }
         MRY = {
             # Maurya
@@ -10230,6 +10705,7 @@ countries = {
             include = "ir_aristocratic_monarchy"
             country_rank = rank_empire
             capital = pataliputra
+            starting_technology_level = 2
         }
         MDP = {
             # Mahiladvipika
@@ -10249,6 +10725,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = male
+            starting_technology_level = 2
         }
         SHU = {
             # Shule
@@ -10270,6 +10747,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = kashgar
+            starting_technology_level = 2
         }
         PHY = {
             # Phrynia
@@ -10289,6 +10767,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = kezhen
+            starting_technology_level = 2
         }
         TAY = {
             # Tayuan
@@ -10312,6 +10791,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = alexandreia_eschate
+            starting_technology_level = 2
         }
         WUS = {
             # Amyrgia
@@ -10339,6 +10819,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_kingdom
             capital = issyk
+            starting_technology_level = 1
         }
         SOG = {
             # Sogdia
@@ -10362,6 +10843,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = barskhan
+            starting_technology_level = 2
         }
         MGT = {
             # Apasiacae
@@ -10387,6 +10869,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_kingdom
             capital = shavgar
+            starting_technology_level = 1
         }
         SND = {
             # Sindica
@@ -10406,6 +10889,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = sabiranum
+            starting_technology_level = 1
         }
         SCE = {
             # Siracia
@@ -10431,6 +10915,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_kingdom
             capital = abasgria
+            starting_technology_level = 1
         }
         BPK = {
             # Bospora
@@ -10454,6 +10939,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = pantikapaion
+            starting_technology_level = 2
         }
         CHS = {
             # Chersonesus
@@ -10475,6 +10961,7 @@ countries = {
             include = "ir_democratic_republic"
             country_rank = rank_duchy
             capital = chersonesos
+            starting_technology_level = 2
         }
         SCY = {
             # Scythia
@@ -10512,6 +10999,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = borysthenia
+            starting_technology_level = 1
         }
         ZGY = {
             # Zygia
@@ -10531,6 +11019,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = torikos
+            starting_technology_level = 1
         }
         HNY = {
             # Heniochia
@@ -10550,6 +11039,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = anakopia
+            starting_technology_level = 1
         }
         PHI = {
             # Phasis
@@ -10571,6 +11061,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = phasis
+            starting_technology_level = 2
         }
         MAE = {
             # Maeotia
@@ -10592,6 +11083,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = khulor
+            starting_technology_level = 1
         }
         OLB = {
             # Olbia
@@ -10611,6 +11103,7 @@ countries = {
             include = "ir_democratic_republic"
             country_rank = rank_county
             capital = olbia
+            starting_technology_level = 2
         }
         TYS = {
             # Tyras
@@ -10630,6 +11123,7 @@ countries = {
             include = "ir_democratic_republic"
             country_rank = rank_county
             capital = tyras_0
+            starting_technology_level = 2
         }
         TYG = {
             # Tyragetae
@@ -10651,6 +11145,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = clepidava
+            starting_technology_level = 1
         }
         KSH = {
             # Kush
@@ -10692,6 +11187,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = meroe
+            starting_technology_level = 2
         }
         AXM = {
             # Aksum
@@ -10711,6 +11207,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = aksum
+            starting_technology_level = 2
         }
         MDR = {
             # Mai Adrasha
@@ -10730,6 +11227,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = mai_adrasha
+            starting_technology_level = 2
         }
         ONA = {
             # Sembritia
@@ -10749,6 +11247,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = sembel
+            starting_technology_level = 2
         }
         QOH = {
             # Qohaito
@@ -10768,6 +11267,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = qohaito
+            starting_technology_level = 2
         }
         ATG = {
             # Athagausia
@@ -10787,6 +11287,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = akordat
+            starting_technology_level = 2
         }
         THD = {
             # Thamud
@@ -10812,6 +11313,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_kingdom
             capital = makarabah
+            starting_technology_level = 1
         }
         BMY = {
             # Blemmia
@@ -10837,6 +11339,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_kingdom
             capital = berenike_pancrysia
+            starting_technology_level = 1
         }
         BOR = {
             # Megabaria
@@ -10862,6 +11365,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = abliata
+            starting_technology_level = 1
         }
         AUT = {
             # Alut
@@ -10883,6 +11387,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = alwa
+            starting_technology_level = 2
         }
         MOY = {
             # Syrbotia
@@ -10902,6 +11407,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_duchy
             capital = jebel_moya
+            starting_technology_level = 1
         }
         MEM = {
             # Memnonia
@@ -10921,6 +11427,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = keili
+            starting_technology_level = 1
         }
         DAB = {
             # Dabelia
@@ -10942,6 +11449,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = fao
+            starting_technology_level = 1
         }
         CRT = {
             # Critensia
@@ -10961,6 +11469,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = qadarif
+            starting_technology_level = 1
         }
         RHZ = {
             # Rhizophagia
@@ -10980,6 +11489,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = gamal
+            starting_technology_level = 1
         }
         DOC = {
             # Dochia
@@ -11001,6 +11511,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = baqbaqah
+            starting_technology_level = 1
         }
         GYM = {
             # Gymnetia
@@ -11020,6 +11531,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = maganan
+            starting_technology_level = 1
         }
         ADA = {
             # Adabulia
@@ -11039,6 +11551,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = sinkat
+            starting_technology_level = 1
         }
         DAL = {
             # Elaia
@@ -11058,6 +11571,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = alalaiou
+            starting_technology_level = 2
         }
         ADO = {
             # Adoulia
@@ -11077,6 +11591,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = adouli
+            starting_technology_level = 2
         }
         YEH = {
             # Daamot
@@ -11098,6 +11613,7 @@ countries = {
             include = "ir_theocratic_monarchy"
             country_rank = rank_duchy
             capital = yeha
+            starting_technology_level = 2
         }
         GWN = {
             # Gwanara
@@ -11119,6 +11635,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = gwara
+            starting_technology_level = 2
         }
         MND = {
             # Mundia
@@ -11138,6 +11655,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = moundou
+            starting_technology_level = 2
         }
         MYL = {
             # Mosylon
@@ -11156,6 +11674,7 @@ countries = {
             include = "expl_imperator_rome"
             country_rank = rank_kingdom
             capital = mosylon
+            starting_technology_level = 2
         }
         APC = {
             # Apocopa
@@ -11174,6 +11693,7 @@ countries = {
             include = "expl_imperator_rome"
             country_rank = rank_kingdom
             capital = apocopa
+            starting_technology_level = 2
         }
         QAN = {
             # Qandala
@@ -11193,6 +11713,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = qandala
+            starting_technology_level = 2
         }
         SHW = {
             # Shalcaw
@@ -11212,6 +11733,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = shalcaw
+            starting_technology_level = 2
         }
         MAL = {
             # Malao
@@ -11231,6 +11753,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = malao
+            starting_technology_level = 2
         }
         DRY = {
             # Darayley
@@ -11250,6 +11773,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_county
             capital = bagan
+            starting_technology_level = 1
         }
         BER = {
             # Berberia
@@ -11269,6 +11793,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_duchy
             capital = gidheys
+            starting_technology_level = 1
         }
         AMO = {
             # Aromatia
@@ -11288,6 +11813,7 @@ countries = {
             include = "ir_stratocratic_monarchy"
             country_rank = rank_kingdom
             capital = aromata
+            starting_technology_level = 2
         }
         OPO = {
             # Oponia
@@ -11307,6 +11833,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = opone
+            starting_technology_level = 2
         }
         DIO = {
             # Soqotra
@@ -11325,6 +11852,7 @@ countries = {
             include = "expl_imperator_rome"
             country_rank = rank_kingdom
             capital = dioscoridus
+            starting_technology_level = 2
         }
         AVL = {
             # Avalitia
@@ -11344,6 +11872,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = abasenia
+            starting_technology_level = 2
         }
         BST = {
             # Bastarnia
@@ -11367,6 +11896,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = urgana
+            starting_technology_level = 1
         }
         CHC = {
             # Chaucia
@@ -11388,6 +11918,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = unsingia
+            starting_technology_level = 1
         }
         GIT = {
             # Goutia
@@ -11409,6 +11940,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = eowia
+            starting_technology_level = 1
         }
         SWE = {
             # Suionia
@@ -11428,6 +11960,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = birka
+            starting_technology_level = 1
         }
         HRE = {
             # Ambronia
@@ -11447,6 +11980,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = insula_anglorum
+            starting_technology_level = 1
         }
         TIT = {
             # Teutonia
@@ -11468,6 +12002,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = teutonia_centralis
+            starting_technology_level = 1
         }
         CMB = {
             # Cimbria
@@ -11487,6 +12022,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = cimbria_australis
+            starting_technology_level = 1
         }
         LVA = {
             # Lemovia
@@ -11506,6 +12042,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = sciria_rugia
+            starting_technology_level = 1
         }
         SMN = {
             # Semnonia
@@ -11527,6 +12064,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = uarinia
+            starting_technology_level = 1
         }
         LGB = {
             # Langobardia
@@ -11548,6 +12086,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = langobardia
+            starting_technology_level = 1
         }
         MCM = {
             # Marcomannia
@@ -11567,6 +12106,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = caluconia
+            starting_technology_level = 1
         }
         ANG = {
             # Anglia
@@ -11588,6 +12128,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = anglia_centralis
+            starting_technology_level = 1
         }
         SXS = {
             # Frisia
@@ -11609,6 +12150,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = flevum
+            starting_technology_level = 1
         }
         AES = {
             # Galindia
@@ -11628,6 +12170,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = chrononia
+            starting_technology_level = 1
         }
         PRN = {
             # Parnia
@@ -11653,6 +12196,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_kingdom
             capital = ahur
+            starting_technology_level = 1
         }
         PSS = {
             # Pissuria
@@ -11674,6 +12218,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = gathar
+            starting_technology_level = 1
         }
         ZNT = {
             # Zanthia
@@ -11701,6 +12246,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_kingdom
             capital = yatsha
+            starting_technology_level = 1
         }
         KRZ = {
             # Kharesmia
@@ -11724,6 +12270,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = qoyqirilgan
+            starting_technology_level = 1
         }
         GTH = {
             # Guthonia
@@ -11745,6 +12292,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = helveconiana
+            starting_technology_level = 1
         }
         RGG = {
             # Rugia
@@ -11766,6 +12314,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = rhugium
+            starting_technology_level = 1
         }
         SCI = {
             # Sciria
@@ -11789,6 +12338,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = korotan
+            starting_technology_level = 1
         }
         FOS = {
             # Fosia
@@ -11812,6 +12362,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = meliboia
+            starting_technology_level = 1
         }
         REU = {
             # Reudignia
@@ -11833,6 +12384,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = mariones
+            starting_technology_level = 1
         }
         AVO = {
             # Avionia
@@ -11854,6 +12406,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = avionia_maior
+            starting_technology_level = 1
         }
         CRS = {
             # Cheruscia
@@ -11873,6 +12426,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = tropea
+            starting_technology_level = 1
         }
         EUD = {
             # Eudosia
@@ -11892,6 +12446,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = herulia_centralis
+            starting_technology_level = 1
         }
         AGR = {
             # Angrivaria
@@ -11913,6 +12468,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = ansibaria
+            starting_technology_level = 1
         }
         VDL = {
             # Sithonia
@@ -11934,6 +12490,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = arbugae
+            starting_technology_level = 1
         }
         RUG = {
             # Chaidinia
@@ -11953,6 +12510,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = lingum
+            starting_technology_level = 1
         }
         LEU = {
             # Levonia
@@ -11972,6 +12530,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = konghelle
+            starting_technology_level = 1
         }
         DAN = {
             # Dancionia
@@ -11991,6 +12550,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = uppakra
+            starting_technology_level = 1
         }
         BUR = {
             # Burgundia
@@ -12012,6 +12572,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = ascaucalis
+            starting_technology_level = 1
         }
         BLR = {
             # Balaria
@@ -12028,6 +12589,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_county
             capital = REPLACE_ME
+            starting_technology_level = 1
         }
         DAR = {
             # Darinia
@@ -12047,6 +12609,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = voluntia_orientalis
+            starting_technology_level = 1
         }
         ELA = {
             # Eblania
@@ -12068,6 +12631,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = caucia
+            starting_technology_level = 1
         }
         MNA = {
             # Manapia
@@ -12087,6 +12651,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = coriondia_borealis
+            starting_technology_level = 1
         }
         CAU = {
             # Caucia
@@ -12108,6 +12673,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = eblana
+            starting_technology_level = 1
         }
         COR = {
             # Coriondia
@@ -12127,6 +12693,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = coriondia_australis
+            starting_technology_level = 1
         }
         IVE = {
             # Ivernia
@@ -12146,6 +12713,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = ivernia
+            starting_technology_level = 1
         }
         USD = {
             # Usdia
@@ -12165,6 +12733,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = usdia_occidentalis
+            starting_technology_level = 1
         }
         ROB = {
             # Robogdia
@@ -12184,6 +12753,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = robogdia_orientalis
+            starting_technology_level = 1
         }
         VEN = {
             # Venicnia
@@ -12203,6 +12773,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = venicnia_borealis
+            starting_technology_level = 1
         }
         BGA = {
             # Brigantes
@@ -12222,6 +12793,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = brigantia_australis
+            starting_technology_level = 1
         }
         CAN = {
             # Carnonacia
@@ -12241,6 +12813,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = carnonacae
+            starting_technology_level = 1
         }
         CON = {
             # Cornavia
@@ -12260,6 +12833,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = cornavii
+            starting_technology_level = 1
         }
         VND = {
             # Venedia
@@ -12281,6 +12855,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = galindia_occidentalis
+            starting_technology_level = 1
         }
         SUD = {
             # Sudinoia
@@ -12300,6 +12875,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = sudinoia
+            starting_technology_level = 1
         }
         SLO = {
             # Saloia
@@ -12316,6 +12892,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = REPLACE_ME
+            starting_technology_level = 1
         }
         ELE = {
             # Elea
@@ -12335,6 +12912,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = velia
+            starting_technology_level = 2
         }
         GEL = {
             # Gelas
@@ -12354,6 +12932,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = gela
+            starting_technology_level = 2
         }
         HEM = {
             # Herakleia Minoa
@@ -12373,6 +12952,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = heraclea_minoa
+            starting_technology_level = 2
         }
         TYN = {
             # Tyndaris
@@ -12392,6 +12972,7 @@ countries = {
             include = "ir_democratic_republic"
             country_rank = rank_county
             capital = tyndaris
+            starting_technology_level = 2
         }
         THR = {
             # Thermae
@@ -12413,6 +12994,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = thermai
+            starting_technology_level = 2
         }
         SIN = {
             # Selinous
@@ -12432,6 +13014,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = selinus
+            starting_technology_level = 2
         }
         AMP = {
             # Amphissa
@@ -12451,6 +13034,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = chaleion
+            starting_technology_level = 2
         }
         OPU = {
             # Locris
@@ -12470,6 +13054,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = opous
+            starting_technology_level = 2
         }
         PHO = {
             # Phocis
@@ -12489,6 +13074,7 @@ countries = {
             include = "ir_aristocratic_republic"
             country_rank = rank_county
             capital = elateia
+            starting_technology_level = 2
         }
         DLP = {
             # Delphi
@@ -12507,6 +13093,7 @@ countries = {
             include = "expl_imperator_rome"
             country_rank = rank_county
             capital = delphi
+            starting_technology_level = 2
         }
         AMK = {
             # Ambracia
@@ -12526,6 +13113,7 @@ countries = {
             include = "ir_democratic_republic"
             country_rank = rank_county
             capital = ambrakia
+            starting_technology_level = 2
         }
         ARD = {
             # Arkades
@@ -12545,6 +13133,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = arkades
+            starting_technology_level = 2
         }
         LAP = {
             # Lappa
@@ -12564,6 +13153,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = lappa
+            starting_technology_level = 2
         }
         ASP = {
             # Chersos
@@ -12583,6 +13173,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = apsaros_1
+            starting_technology_level = 2
         }
         PHA = {
             # Issa
@@ -12602,6 +13193,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_duchy
             capital = issa
+            starting_technology_level = 2
         }
         EPM = {
             # Epidaurum
@@ -12621,6 +13213,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = epidauros_illyrikos
+            starting_technology_level = 2
         }
         APO = {
             # Apollonia
@@ -12640,6 +13233,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = apollonia
+            starting_technology_level = 2
         }
         SLG = {
             # Selgia
@@ -12659,6 +13253,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_county
             capital = selge
+            starting_technology_level = 1
         }
         TRM = {
             # Solymia
@@ -12680,6 +13275,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_county
             capital = termessos
+            starting_technology_level = 1
         }
         SSG = {
             # Sagalassia
@@ -12699,6 +13295,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_county
             capital = sagalassos
+            starting_technology_level = 1
         }
         KTN = {
             # Kotennia
@@ -12718,6 +13315,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_county
             capital = kotenna
+            starting_technology_level = 1
         }
         PDL = {
             # Pednelissia
@@ -12737,6 +13335,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_county
             capital = pednelissos
+            starting_technology_level = 1
         }
         HMD = {
             # Homonadia
@@ -12758,6 +13357,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_county
             capital = homonadeis
+            starting_technology_level = 1
         }
         LYC = {
             # Lycia
@@ -12779,6 +13379,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_duchy
             capital = tlos
+            starting_technology_level = 2
         }
         ISU = {
             # Isauria
@@ -12798,6 +13399,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_county
             capital = isaura
+            starting_technology_level = 1
         }
         LAR = {
             # Larandia
@@ -12817,6 +13419,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_county
             capital = laranda
+            starting_technology_level = 1
         }
         SMS = {
             # Sesamos
@@ -12836,6 +13439,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = sesamos
+            starting_technology_level = 2
         }
         TIE = {
             # Tieion
@@ -12855,6 +13459,7 @@ countries = {
             include = "ir_oligarchic_republic"
             country_rank = rank_county
             capital = tieion
+            starting_technology_level = 2
         }
         AKY = {
             # Arykandia
@@ -12874,6 +13479,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_county
             capital = arykanda
+            starting_technology_level = 1
         }
         ORO = {
             # Oroandia
@@ -12895,6 +13501,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_county
             capital = ouasada
+            starting_technology_level = 1
         }
         ABL = {
             # Ambladia
@@ -12916,6 +13523,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_county
             capital = amblada
+            starting_technology_level = 1
         }
         ISI = {
             # Isindia
@@ -12935,6 +13543,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_county
             capital = isinda
+            starting_technology_level = 1
         }
         KLD = {
             # Kelenderis
@@ -12954,6 +13563,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = kelenderis
+            starting_technology_level = 2
         }
         OEO = {
             # Oinoandia
@@ -12973,6 +13583,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_county
             capital = oinoanda
+            starting_technology_level = 1
         }
         KIB = {
             # Kibyratia
@@ -12994,6 +13605,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_duchy
             capital = kibyra
+            starting_technology_level = 1
         }
         OML = {
             # Ormelia
@@ -13013,6 +13625,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_county
             capital = olbasa
+            starting_technology_level = 1
         }
         TYM = {
             # Tymandia
@@ -13032,6 +13645,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_county
             capital = prostanna
+            starting_technology_level = 1
         }
         KAK = {
             # Kaukonia
@@ -13053,6 +13667,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = dadybra
+            starting_technology_level = 1
         }
         KLT = {
             # Cetis
@@ -13076,6 +13691,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_duchy
             capital = ninika
+            starting_technology_level = 1
         }
         OBE = {
             # Olbe
@@ -13095,6 +13711,7 @@ countries = {
             include = "ir_theocratic_monarchy"
             country_rank = rank_county
             capital = olbe
+            starting_technology_level = 2
         }
         IBA = {
             # Ibasim
@@ -13114,6 +13731,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = ebusus
+            starting_technology_level = 2
         }
         ASA = {
             # Hastaia
@@ -13135,6 +13753,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_duchy
             capital = hasta_0
+            starting_technology_level = 1
         }
         ASG = {
             # Astigia
@@ -13156,6 +13775,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_duchy
             capital = astigi
+            starting_technology_level = 1
         }
         CIP = {
             # Acinippaia
@@ -13177,6 +13797,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_duchy
             capital = arunda
+            starting_technology_level = 1
         }
         CRM = {
             # Karmoia
@@ -13198,6 +13819,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_duchy
             capital = carmo
+            starting_technology_level = 1
         }
         EPR = {
             # Eporaia
@@ -13217,6 +13839,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_duchy
             capital = epora
+            starting_technology_level = 1
         }
         ILP = {
             # Iliplaia
@@ -13238,6 +13861,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_duchy
             capital = ilipla
+            starting_technology_level = 1
         }
         IPT = {
             # Iptuccia
@@ -13257,6 +13881,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_duchy
             capital = italica
+            starting_technology_level = 1
         }
         LSC = {
             # Lascutaia
@@ -13276,6 +13901,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = asido
+            starting_technology_level = 1
         }
         ONU = {
             # Onubaia
@@ -13297,6 +13923,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_duchy
             capital = praesidium_0
+            starting_technology_level = 1
         }
         LIX = {
             # Lixus
@@ -13316,6 +13943,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = lixus
+            starting_technology_level = 2
         }
         KUS = {
             # Kuass
@@ -13335,6 +13963,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = arzeila
+            starting_technology_level = 2
         }
         RSS = {
             # Rusaddir
@@ -13354,6 +13983,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = rusaddir
+            starting_technology_level = 2
         }
         THA = {
             # Thamusida
@@ -13373,6 +14003,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = thamusida
+            starting_technology_level = 2
         }
         MGD = {
             # Arambys
@@ -13392,6 +14023,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = arambys
+            starting_technology_level = 2
         }
         AGG = {
             # Aggadir
@@ -13411,6 +14043,7 @@ countries = {
             include = "ir_plutocratic_republic"
             country_rank = rank_county
             capital = gadir_1
+            starting_technology_level = 2
         }
         AUA = {
             # Aestia
@@ -13432,6 +14065,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = vistuliana
+            starting_technology_level = 1
         }
         NYA = {
             # Nyaunggan
@@ -13451,6 +14085,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = nyaunggan
+            starting_technology_level = 1
         }
         YHK = {
             # Ywa Htin Kon
@@ -13470,6 +14105,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = ywa_htin_kon
+            starting_technology_level = 1
         }
         BKT = {
             # Beikthano
@@ -13489,6 +14125,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = beikthano
+            starting_technology_level = 1
         }
         BNN = {
             # Beinnaka
@@ -13510,6 +14147,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = binnaka
+            starting_technology_level = 1
         }
         TTM = {
             # Taungthaman
@@ -13529,6 +14167,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = taungthaman
+            starting_technology_level = 1
         }
         HWK = {
             # Hnaw Kan
@@ -13548,6 +14187,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = hnaw_kan
+            starting_technology_level = 1
         }
         HAL = {
             # Halin
@@ -13569,6 +14209,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = halin
+            starting_technology_level = 1
         }
         AKN = {
             # Arakan
@@ -13588,6 +14229,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = arakan
+            starting_technology_level = 1
         }
         TGU = {
             # Tagaung
@@ -13607,6 +14249,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = tagaung
+            starting_technology_level = 1
         }
         FGD = {
             # Fugandulu
@@ -13626,6 +14269,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = sri_ksetra
+            starting_technology_level = 1
         }
         SHN = {
             # Shan
@@ -13645,6 +14289,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = thanlyin
+            starting_technology_level = 1
         }
         CHA = {
             # Chattia
@@ -13664,6 +14309,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = dulgia
+            starting_technology_level = 1
         }
         SUA = {
             # Suardonia
@@ -13687,6 +14333,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = marionis
+            starting_technology_level = 1
         }
         NUI = {
             # Nuithonia
@@ -13706,6 +14353,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = virunum_germanicum
+            starting_technology_level = 1
         }
         CHD = {
             # Charudia
@@ -13727,6 +14375,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = eudosia_australis
+            starting_technology_level = 1
         }
         FIR = {
             # Firaesia
@@ -13746,6 +14395,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = theustia
+            starting_technology_level = 1
         }
         FAV = {
             # Favonia
@@ -13769,6 +14419,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = finnaithae
+            starting_technology_level = 1
         }
         TEC = {
             # Tectosagia
@@ -13794,6 +14445,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = anartia
+            starting_technology_level = 1
         }
         TOL = {
             # Tolistobogia
@@ -13815,6 +14467,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = iazygiana
+            starting_technology_level = 1
         }
         TOI = {
             # Trocmia
@@ -13838,6 +14491,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = acumincum
+            starting_technology_level = 1
         }
         BIE = {
             # Biephia
@@ -13857,6 +14511,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = lixisis
+            starting_technology_level = 1
         }
         ANA = {
             # Anartia
@@ -13876,6 +14531,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = ad_statuam
+            starting_technology_level = 1
         }
         CEL = {
             # Celegeria
@@ -13897,6 +14553,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = taliata
+            starting_technology_level = 1
         }
         TIM = {
             # Timachia
@@ -13918,6 +14575,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = bao
+            starting_technology_level = 1
         }
         AIA = {
             # Arabiatia
@@ -13939,6 +14597,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = ad_vicessimum
+            starting_technology_level = 1
         }
         ADZ = {
             # Andizetia
@@ -13960,6 +14619,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = limusa
+            starting_technology_level = 1
         }
         AMA = {
             # Amantinia
@@ -13981,6 +14641,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = spaneta
+            starting_technology_level = 1
         }
         COS = {
             # Cosuanetia
@@ -14000,6 +14661,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = batavis
+            starting_technology_level = 1
         }
         RUC = {
             # Rucinatia
@@ -14021,6 +14683,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = castra_regina
+            starting_technology_level = 1
         }
         ALN = {
             # Alaunia
@@ -14040,6 +14703,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = isinisca
+            starting_technology_level = 1
         }
         LAI = {
             # Laiancia
@@ -14059,6 +14723,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = aguntum
+            starting_technology_level = 1
         }
         AID = {
             # Ambidravia
@@ -14078,6 +14743,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = teurnia
+            starting_technology_level = 1
         }
         SEG = {
             # Segestania
@@ -14097,6 +14763,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = segestica
+            starting_technology_level = 1
         }
         BAT = {
             # Batavia
@@ -14116,6 +14783,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = alesia_germanica
+            starting_technology_level = 1
         }
         CHV = {
             # Chamavia
@@ -14137,6 +14805,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = tubantia
+            starting_technology_level = 1
         }
         AMV = {
             # Ampsivaria
@@ -14156,6 +14825,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = salia_chasuaria
+            starting_technology_level = 1
         }
         MNI = {
             # Manimia
@@ -14181,6 +14851,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = laudicum
+            starting_technology_level = 1
         }
         HAR = {
             # Haria
@@ -14202,6 +14873,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = mantora
+            starting_technology_level = 1
         }
         HEL = {
             # Helisia
@@ -14223,6 +14895,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = elysia
+            starting_technology_level = 1
         }
         NAH = {
             # Naharvalia
@@ -14244,6 +14917,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = didunia
+            starting_technology_level = 1
         }
         HRD = {
             # Hermunduria
@@ -14263,6 +14937,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = aregelliana
+            starting_technology_level = 1
         }
         QUA = {
             # Quadia
@@ -14282,6 +14957,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = candulum
+            starting_technology_level = 1
         }
         VAN = {
             # Vangionia
@@ -14303,6 +14979,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = melocavus
+            starting_technology_level = 1
         }
         UBI = {
             # Ubia
@@ -14322,6 +14999,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = chattuaria
+            starting_technology_level = 1
         }
         USI = {
             # Usipetia
@@ -14343,6 +15021,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = mattium
+            starting_technology_level = 1
         }
         SUG = {
             # Sugambria
@@ -14362,6 +15041,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = alisutum
+            starting_technology_level = 1
         }
         BRU = {
             # Bructeria
@@ -14383,6 +15063,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = carvium
+            starting_technology_level = 1
         }
         HEV = {
             # Helveconia
@@ -14404,6 +15085,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = seurgium
+            starting_technology_level = 1
         }
         CAE = {
             # Caerosia
@@ -14425,6 +15107,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = bonna
+            starting_technology_level = 1
         }
         CND = {
             # Condrusia
@@ -14446,6 +15129,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = momalle
+            starting_technology_level = 1
         }
         PAM = {
             # Paemania
@@ -14467,6 +15151,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = nasagus
+            starting_technology_level = 1
         }
         LON = {
             # Longonensia
@@ -14486,6 +15171,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = tibula
+            starting_technology_level = 1
         }
         CRC = {
             # Coracensia
@@ -14505,6 +15191,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = libisonis
+            starting_technology_level = 1
         }
         LUG = {
             # Luguidonensia
@@ -14524,6 +15211,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = thorp
+            starting_technology_level = 1
         }
         KEL = {
             # Kelsitania
@@ -14545,6 +15233,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = lacon
+            starting_technology_level = 1
         }
         RUB = {
             # Rubrensia
@@ -14566,6 +15255,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = sulki_tyrsen
+            starting_technology_level = 1
         }
         IAZ = {
             # Iazygia
@@ -14595,6 +15285,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_kingdom
             capital = hygreis
+            starting_technology_level = 1
         }
         ROX = {
             # Roxolania
@@ -14622,6 +15313,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_kingdom
             capital = katys
+            starting_technology_level = 1
         }
         AOR = {
             # Aorsia
@@ -14649,6 +15341,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_kingdom
             capital = monok
+            starting_technology_level = 1
         }
         GLO = {
             # Gelonia
@@ -14672,6 +15365,7 @@ countries = {
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
             capital = gelon
+            starting_technology_level = 2
         }
         BDI = {
             # Budinia
@@ -14699,6 +15393,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_kingdom
             capital = basivka
+            starting_technology_level = 1
         }
         MLN = {
             # Melanchlaenia
@@ -14722,6 +15417,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_kingdom
             capital = blagoveshchenskaya
+            starting_technology_level = 1
         }
         ALZ = {
             # Alizonia
@@ -14743,6 +15439,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = volyatss
+            starting_technology_level = 1
         }
         ARO = {
             # Aroteria
@@ -14766,6 +15463,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_kingdom
             capital = pirhirci
+            starting_technology_level = 1
         }
         BRY = {
             # Borysthenia
@@ -14791,6 +15489,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_kingdom
             capital = pirhirci
+            starting_technology_level = 1
         }
         NEU = {
             # Neuria
@@ -14818,6 +15517,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_kingdom
             capital = lemeshevichi
+            starting_technology_level = 1
         }
         ANP = {
             # Androphagia
@@ -14839,6 +15539,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = orko
+            starting_technology_level = 1
         }
         AGA = {
             # Agathyrsia
@@ -14864,6 +15565,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_kingdom
             capital = uccrynyika
+            starting_technology_level = 1
         }
         HRP = {
             # Carpia
@@ -14883,6 +15585,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = dinogetia
+            starting_technology_level = 1
         }
         NAG = {
             # Nagnatia
@@ -14902,6 +15605,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = autenia
+            starting_technology_level = 1
         }
         ATN = {
             # Auteinia
@@ -14921,6 +15625,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = autenia_australis
+            starting_technology_level = 1
         }
         GAN = {
             # Gangania
@@ -14942,6 +15647,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = gangania_australis
+            starting_technology_level = 1
         }
         MON = {
             # Monapia
@@ -14961,6 +15667,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = manavia
+            starting_technology_level = 1
         }
         VEL = {
             # Veltia
@@ -14980,6 +15687,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = veltaea
+            starting_technology_level = 1
         }
         XIW = {
             # Xiaowan
@@ -14999,6 +15707,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = xiaowan
+            starting_technology_level = 1
         }
         WTO = {
             # Weitou
@@ -15018,6 +15727,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = toksa
+            starting_technology_level = 1
         }
         GMO = {
             # Gumo
@@ -15037,6 +15747,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = kumo
+            starting_technology_level = 1
         }
         YMI = {
             # Yumi
@@ -15056,6 +15767,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = wumi
+            starting_technology_level = 1
         }
         JJE = {
             # Jingjue
@@ -15075,6 +15787,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = cadota
+            starting_technology_level = 1
         }
         QIM = {
             # Qiemo
@@ -15094,6 +15807,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = cherchen
+            starting_technology_level = 1
         }
         AX0 = {
             # Tasm
@@ -15113,6 +15827,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = hajir
+            starting_technology_level = 1
         }
         AX1 = {
             # Kindah
@@ -15132,6 +15847,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_duchy
             capital = kahl
+            starting_technology_level = 1
         }
         AX3 = {
             # Jadis
@@ -15151,6 +15867,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = layla
+            starting_technology_level = 1
         }
         AX4 = {
             # Samad
@@ -15172,6 +15889,7 @@ countries = {
             include = "ir_tribal_federation"
             country_rank = rank_duchy
             capital = samad
+            starting_technology_level = 1
         }
         AX5 = {
             # Jubbah
@@ -15191,6 +15909,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = jubbah
+            starting_technology_level = 1
         }
         AX6 = {
             # 'Aad
@@ -15212,6 +15931,7 @@ countries = {
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
             capital = iram
+            starting_technology_level = 1
         }
         SA0 = {
             # Yancai
@@ -15241,6 +15961,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_kingdom
             capital = kaynbulak
+            starting_technology_level = 1
         }
         SA1 = {
             # Aspisia
@@ -15262,6 +15983,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_kingdom
             capital = yrgyz
+            starting_technology_level = 1
         }
         SA2 = {
             # Jurcae
@@ -15285,6 +16007,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_kingdom
             capital = sparga
+            starting_technology_level = 1
         }
         SA3 = {
             # Thyssagetia
@@ -15312,6 +16035,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_kingdom
             capital = saioi
+            starting_technology_level = 1
         }
         SA4 = {
             # Attasia
@@ -15331,6 +16055,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = dyruzh
+            starting_technology_level = 1
         }
         MGU = {
             # Melanogaetuli
@@ -15354,6 +16079,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_kingdom
             capital = ghardaia
+            starting_technology_level = 1
         }
         ATA = {
             # Atarantia
@@ -15373,6 +16099,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = capsa
+            starting_technology_level = 1
         }
         ATL = {
             # Atlantia
@@ -15392,6 +16119,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = djanet
+            starting_technology_level = 1
         }
         SOI = {
             # Sodari
@@ -15411,6 +16139,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = sodari
+            starting_technology_level = 1
         }
         MOB = {
             # Midob
@@ -15430,6 +16159,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = meidob
+            starting_technology_level = 1
         }
         ZKO = {
             # Zankor
@@ -15449,6 +16179,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = zankor
+            starting_technology_level = 1
         }
         SFY = {
             # Sofyan
@@ -15468,6 +16199,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = sofyan
+            starting_technology_level = 1
         }
         EIN = {
             # Ein
@@ -15487,6 +16219,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_county
             capital = ein
+            starting_technology_level = 1
         }
         NGT = {
             # Nigirtia
@@ -15506,6 +16239,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = timoudi
+            starting_technology_level = 1
         }
         PHU = {
             # Pharusia
@@ -15525,6 +16259,7 @@ countries = {
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
             capital = tamdoult
+            starting_technology_level = 1
         }
     }
 }

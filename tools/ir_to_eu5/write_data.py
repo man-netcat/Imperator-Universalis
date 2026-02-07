@@ -1482,6 +1482,13 @@ def write_10_countries(
             merged["country_rank"] = rank_map.get(tag, merged["country_rank"])
         merged.setdefault("capital", "REPLACE_ME")
 
+        # --- starting technology level ---
+        if "starting_technology_level" not in merged:
+            start_level = 2
+            if ir_gov_key and ir_gov_key.startswith("tribal_"):
+                start_level = 1
+            merged["starting_technology_level"] = start_level
+
         # --- apply IR capital if available ---
         if ir_country_capitals is not None and id_to_key is not None:
             cap_id = ir_country_capitals.get(tag)
