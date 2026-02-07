@@ -4,7 +4,7 @@
 # =========================================================== #
 
 ir_aremorican = {
-    language = ir_armorican_lang
+    language = ir_armorican_dialect
     color = hsv { 0.30 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_gallic_g }
@@ -18,168 +18,168 @@ ir_lepontic = {
 }
 
 ir_vindelician = {
-    language = ir_helvetian_lang
+    language = ir_helvetian_dialect
     color = hsv { 0.30 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_helvetian = {
-    language = ir_helvetian_lang
+    language = ir_helvetian_dialect
     color = hsv { 0.30 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_biturigan = {
-    language = ir_central_gaulish_lang
+    language = ir_central_gaulish_dialect
     color = hsv { 0.30 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_volcae = {
-    language = ir_narbonese_lang
+    language = ir_narbonese_dialect
     color = hsv { 0.30 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_salluvian = {
-    language = ir_narbonese_lang
+    language = ir_narbonese_dialect
     color = hsv { 0.30 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_haedui = {
-    language = ir_central_gaulish_lang
+    language = ir_central_gaulish_dialect
     color = hsv { 0.30 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_carnuti = {
-    language = ir_central_gaulish_lang
+    language = ir_central_gaulish_dialect
     color = hsv { 0.30 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_santonian = {
-    language = ir_central_gaulish_lang
+    language = ir_central_gaulish_dialect
     color = hsv { 0.30 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_lemovician = {
-    language = ir_central_gaulish_lang
+    language = ir_central_gaulish_dialect
     color = hsv { 0.30 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_pictonian = {
-    language = ir_armorican_lang
+    language = ir_armorican_dialect
     color = hsv { 0.30 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_aulercian = {
-    language = ir_central_gaulish_lang
+    language = ir_central_gaulish_dialect
     color = hsv { 0.30 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_arverni = {
-    language = ir_central_gaulish_lang
+    language = ir_central_gaulish_dialect
     color = hsv { 0.30 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_celtic_pannonian = {
-    language = ir_eastern_gaulish_lang
+    language = ir_eastern_gaulish_dialect
     color = hsv { 0.30 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_letobician = {
-    language = ir_eastern_gaulish_lang
+    language = ir_eastern_gaulish_dialect
     color = hsv { 0.30 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_carnian = {
-    language = ir_eastern_gaulish_lang
+    language = ir_eastern_gaulish_dialect
     color = hsv { 0.30 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_noric = {
-    language = ir_helvetian_lang
+    language = ir_helvetian_dialect
     color = hsv { 0.30 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_boian = {
-    language = ir_helvetian_lang
+    language = ir_helvetian_dialect
     color = hsv { 0.30 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_eravisci = {
-    language = ir_eastern_gaulish_lang
+    language = ir_eastern_gaulish_dialect
     color = hsv { 0.30 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_cotinian = {
-    language = ir_eastern_gaulish_lang
+    language = ir_eastern_gaulish_dialect
     color = hsv { 0.30 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_treverian = {
-    language = ir_eastern_gaulish_lang
+    language = ir_eastern_gaulish_dialect
     color = hsv { 0.30 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_sennonian = {
-    language = ir_central_gaulish_lang
+    language = ir_central_gaulish_dialect
     color = hsv { 0.30 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_ubian = {
-    language = ir_eastern_gaulish_lang
+    language = ir_eastern_gaulish_dialect
     color = hsv { 0.30 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_allobrogian = {
-    language = ir_eastern_gaulish_lang
+    language = ir_eastern_gaulish_dialect
     color = hsv { 0.30 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_gallic_g }
 }
 
 ir_teurian = {
-    language = ir_eastern_gaulish_lang
+    language = ir_eastern_gaulish_dialect
     color = hsv { 0.30 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_gallic_g }

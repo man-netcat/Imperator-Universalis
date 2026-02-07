@@ -58,6 +58,37 @@ ir_culture_group_language_map = {
     "ir_thrace_group_g": "ir_thracian_lang",
 }
 
+# Languages that should be treated as dialects of a parent language.
+# When assigned to cultures, they will be mapped to the parent language.
+ir_language_dialect_parent_map = {
+    # Greek dialects
+    "ir_attic_lang": "ir_greek_lang",
+    "ir_ionic_lang": "ir_greek_lang",
+    "ir_doric_lang": "ir_greek_lang",
+    "ir_aeolic_lang": "ir_greek_lang",
+    "ir_arcado_cypriot_lang": "ir_greek_lang",
+    "ir_macedonian_lang": "ir_greek_lang",
+    "ir_pamphylian_lang": "ir_greek_lang",
+    "ir_koine_lang": "ir_greek_lang",
+    # Brittonic dialects
+    "ir_south_brittonic_lang": "ir_brittonic_lang",
+    "ir_cumbric_lang": "ir_brittonic_lang",
+    "ir_pictish_lang": "ir_brittonic_lang",
+    "ir_armorican_lang": "ir_brittonic_lang",
+    # Belgic dialects
+    "ir_belgic_north_lang": "ir_belgic_lang",
+    "ir_belgic_coastal_lang": "ir_belgic_lang",
+    # Gaulish regional dialects
+    "ir_central_gaulish_lang": "ir_gaulish_lang",
+    "ir_eastern_gaulish_lang": "ir_gaulish_lang",
+    "ir_narbonese_lang": "ir_gaulish_lang",
+    "ir_helvetian_lang": "ir_gaulish_lang",
+    # Italic regional dialects
+    "ir_venetic_lang": "ir_latin_lang",
+    "ir_ligurian_lang": "ir_latin_lang",
+    "ir_rhaetian_lang": "ir_latin_lang",
+}
+
 # Base language for each IU language (used for deriving distinct colors)
 ir_language_base_color_map = {
     "ir_greek_lang": "greek_language",

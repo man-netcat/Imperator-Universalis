@@ -73,9 +73,9 @@ if __name__ == "__main__":
         help="Write raw extracted JSON data files",
     )
     parser.add_argument(
-        "--port-map",
+        "--no-map",
         action="store_true",
-        help="Port EU5 map data from Imperator",
+        help="Skip writing map-specific data (images and map data only)",
     )
     args = parser.parse_args()
     culture_data = extract_culture_data()
@@ -183,5 +183,5 @@ if __name__ == "__main__":
     if not args.no_images:
         port_coa_gfx()
 
-    if args.port_map:
+    if not args.no_map:
         port_map_data(default_culture=default_culture, default_religion=default_religion)

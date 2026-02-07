@@ -4,14 +4,14 @@
 # =========================================================== #
 
 ir_macedonian = {
-    language = ir_macedonian_lang
+    language = ir_macedonian_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_hellenic_g }
 }
 
 ir_italiotian = {
-    language = ir_doric_lang
+    language = ir_doric_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_hellenic_g }
@@ -25,175 +25,175 @@ ir_thracian = {
 }
 
 ir_cretan = {
-    language = ir_doric_lang
+    language = ir_doric_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_hellenic_g }
 }
 
 ir_achaean = {
-    language = ir_doric_lang
+    language = ir_doric_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_hellenic_g }
 }
 
 ir_argolian = {
-    language = ir_doric_lang
+    language = ir_doric_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_hellenic_g }
 }
 
 ir_arcadian = {
-    language = ir_arcado_cypriot_lang
+    language = ir_arcado_cypriot_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_hellenic_g }
 }
 
 ir_epirote = {
-    language = ir_doric_lang
+    language = ir_doric_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_hellenic_g }
 }
 
 ir_boeotian = {
-    language = ir_aeolic_lang
+    language = ir_aeolic_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_hellenic_g }
 }
 
 ir_peloponnesian = {
-    language = ir_doric_lang
+    language = ir_doric_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_hellenic_g }
 }
 
 ir_athenian = {
-    language = ir_attic_lang
+    language = ir_attic_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_hellenic_g }
 }
 
 ir_euboean = {
-    language = ir_ionic_lang
+    language = ir_ionic_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_hellenic_g }
 }
 
 ir_aetolian = {
-    language = ir_doric_lang
+    language = ir_doric_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_hellenic_g }
 }
 
 ir_aegean = {
-    language = ir_ionic_lang
+    language = ir_ionic_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_hellenic_g }
 }
 
 ir_greco_pontic = {
-    language = ir_koine_lang
+    language = ir_koine_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_hellenic_g }
 }
 
 ir_greco_indian = {
-    language = ir_koine_lang
+    language = ir_koine_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_hellenic_g }
 }
 
 ir_aeolian = {
-    language = ir_aeolic_lang
+    language = ir_aeolic_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_hellenic_g }
 }
 
 ir_troan = {
-    language = ir_aeolic_lang
+    language = ir_aeolic_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_hellenic_g }
 }
 
 ir_ionian = {
-    language = ir_ionic_lang
+    language = ir_ionic_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_hellenic_g }
 }
 
 ir_cypriot = {
-    language = ir_arcado_cypriot_lang
+    language = ir_arcado_cypriot_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_hellenic_g }
 }
 
 ir_thessalian = {
-    language = ir_aeolic_lang
+    language = ir_aeolic_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_hellenic_g }
 }
 
 ir_bosporan = {
-    language = ir_koine_lang
+    language = ir_koine_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_hellenic_g }
 }
 
 ir_syracusan = {
-    language = ir_doric_lang
+    language = ir_doric_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_hellenic_g }
 }
 
 ir_cyrenaican = {
-    language = ir_doric_lang
+    language = ir_doric_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_hellenic_g }
 }
 
 ir_massalian = {
-    language = ir_ionic_lang
+    language = ir_ionic_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_hellenic_g }
 }
 
 ir_pamphylian = {
-    language = ir_pamphylian_lang
+    language = ir_pamphylian_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_hellenic_g }
 }
 
 ir_syriote = {
-    language = ir_koine_lang
+    language = ir_koine_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_hellenic_g }
 }
 
 ir_ciliciote = {
-    language = ir_koine_lang
+    language = ir_koine_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_hellenic_g }
@@ -214,7 +214,7 @@ ir_enetoian = {
 }
 
 ir_hellenistic = {
-    language = ir_koine_lang
+    language = ir_koine_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_hellenic_g }

@@ -4,126 +4,126 @@
 # =========================================================== #
 
 ir_britannic = {
-    language = ir_south_brittonic_lang
+    language = ir_south_brittonic_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_britannic_g }
 }
 
 ir_caledonian = {
-    language = ir_pictish_lang
+    language = ir_pictish_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_britannic_g }
 }
 
 ir_iceni = {
-    language = ir_south_brittonic_lang
+    language = ir_south_brittonic_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_britannic_g }
 }
 
 ir_trinovantian = {
-    language = ir_south_brittonic_lang
+    language = ir_south_brittonic_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_britannic_g }
 }
 
 ir_cantian = {
-    language = ir_south_brittonic_lang
+    language = ir_south_brittonic_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_britannic_g }
 }
 
 ir_durotrigan = {
-    language = ir_south_brittonic_lang
+    language = ir_south_brittonic_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_britannic_g }
 }
 
 ir_dumnonian = {
-    language = ir_south_brittonic_lang
+    language = ir_south_brittonic_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_britannic_g }
 }
 
 ir_dobunnian = {
-    language = ir_south_brittonic_lang
+    language = ir_south_brittonic_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_britannic_g }
 }
 
 ir_demetian = {
-    language = ir_south_brittonic_lang
+    language = ir_south_brittonic_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_britannic_g }
 }
 
 ir_ordovitian = {
-    language = ir_south_brittonic_lang
+    language = ir_south_brittonic_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_britannic_g }
 }
 
 ir_coritani = {
-    language = ir_south_brittonic_lang
+    language = ir_south_brittonic_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_britannic_g }
 }
 
 ir_cornovian = {
-    language = ir_south_brittonic_lang
+    language = ir_south_brittonic_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_britannic_g }
 }
 
 ir_brigantic = {
-    language = ir_cumbric_lang
+    language = ir_cumbric_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_britannic_g }
 }
 
 ir_votadinian = {
-    language = ir_cumbric_lang
+    language = ir_cumbric_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_britannic_g }
 }
 
 ir_damnonian = {
-    language = ir_south_brittonic_lang
+    language = ir_south_brittonic_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_britannic_g }
 }
 
 ir_taexalian = {
-    language = ir_pictish_lang
+    language = ir_pictish_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_britannic_g }
 }
 
 ir_parisian = {
-    language = ir_cumbric_lang
+    language = ir_cumbric_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_britannic_g }
 }
 
 ir_monapian = {
-    language = ir_pictish_lang
+    language = ir_pictish_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
     culture_groups = { ir_britannic_g }

@@ -13,6 +13,7 @@ from .data import (
     ir_culture_group_base_language_map,
     ir_language_base_color_map,
     ir_culture_language_overrides,
+    ir_language_dialect_parent_map,
     ir_culture_group_graphical_map,
     ir_culture_graphical_overrides,
 )
@@ -66,6 +67,29 @@ def _language_family_id_from_group_tag(tag: str) -> str:
 # NOTE: Regex-based block parsing has been removed. Use pyradox instead.
 
 
+def _language_to_dialect_id(lang_id: str | None) -> str | None:
+    if not lang_id:
+        return None
+    if lang_id in ir_language_dialect_parent_map:
+        return (
+            lang_id.replace("_lang", "_dialect")
+            if lang_id.endswith("_lang")
+            else f"{lang_id}_dialect"
+        )
+    return lang_id
+
+
+def _dialect_parent_language(lang_or_dialect: str | None) -> str | None:
+    if not lang_or_dialect:
+        return None
+    if lang_or_dialect in ir_language_dialect_parent_map:
+        return ir_language_dialect_parent_map[lang_or_dialect]
+    if lang_or_dialect.endswith("_dialect"):
+        candidate = lang_or_dialect.replace("_dialect", "_lang")
+        return ir_language_dialect_parent_map.get(candidate, candidate)
+    return lang_or_dialect
+
+
 def _language_family_map_from_file(path: Path) -> dict[str, str]:
     if not path.exists():
         return {}
@@ -95,9 +119,15 @@ def write_language_data_full(culture_data: list) -> None:
     existing_tree = parse_tree(out_path) if out_path.exists() else _pydt.Tree()
 
     # Determine all language IDs that should exist.
-    language_ids = set(ir_culture_group_language_map.values())
-    language_ids.update(ir_culture_language_overrides.values())
-    language_ids.update(ir_language_base_color_map.keys())
+    language_ids_raw = set(ir_culture_group_language_map.values())
+    language_ids_raw.update(ir_culture_language_overrides.values())
+    language_ids_raw.update(ir_language_base_color_map.keys())
+    # Map dialect languages to their parent language.
+    language_ids = {
+        _dialect_parent_language(lang_id)
+        for lang_id in language_ids_raw
+        if lang_id
+    }
 
     # Map language -> culture group (from culture data + group-language map)
     lang_groups: dict[str, set[str]] = defaultdict(set)
@@ -110,12 +140,15 @@ def write_language_data_full(culture_data: list) -> None:
                 culture_language = ir_culture_language_overrides.get(culture_tag)
             if not culture_language and group_tag:
                 culture_language = ir_culture_group_language_map.get(group_tag)
+            # For group mapping, store the parent language (dialect parent).
+            culture_language = _dialect_parent_language(culture_language)
             if culture_language and group_tag:
                 lang_groups[culture_language].add(group_tag)
     # Ensure every group-mapped language retains a group association,
     # even if all cultures are overridden to sub-languages.
     for group_tag, lang_id in ir_culture_group_language_map.items():
         if group_tag and lang_id:
+            lang_id = _dialect_parent_language(lang_id)
             lang_groups[lang_id].add(group_tag)
 
     # Build cache of base-game language blocks for reuse using pyradox.
@@ -153,6 +186,12 @@ def write_language_data_full(culture_data: list) -> None:
         group_tag = sorted(groups)[0]
         return ir_culture_group_base_language_map.get(group_tag)
 
+    # Parent language -> list of dialect source language IDs.
+    parent_to_dialects: dict[str, list[str]] = defaultdict(list)
+    for child_lang, parent_lang in ir_language_dialect_parent_map.items():
+        if parent_lang:
+            parent_to_dialects[parent_lang].append(child_lang)
+
     out_tree = _pydt.Tree()
     for lang_id in sorted(language_ids):
         block = existing_tree[lang_id] if lang_id in existing_tree else None
@@ -178,6 +217,23 @@ def write_language_data_full(culture_data: list) -> None:
         else:
             out_block = _pydt.Tree()
             out_block["color"] = _pydt.Color("rgb", [128, 128, 128])
+
+        # Remove copied dialects to avoid duplicate dialect IDs across languages.
+        if "dialects" in out_block:
+            del out_block["dialects"]
+
+        # Add IU dialects when configured.
+        dialect_children = parent_to_dialects.get(lang_id, [])
+        if dialect_children:
+            dialects_tree = _pydt.Tree()
+            for child_lang in sorted(dialect_children):
+                dialect_id = (
+                    child_lang.replace("_lang", "_dialect")
+                    if child_lang.endswith("_lang")
+                    else f"{child_lang}_dialect"
+                )
+                dialects_tree.append(dialect_id, _pydt.Tree())
+            out_block["dialects"] = dialects_tree
 
         family_id = infer_family(lang_id)
         if family_id:
@@ -497,6 +553,8 @@ def write_culture_data(culture_data: list):
                 culture_language = ir_culture_language_overrides.get(culture_tag)
             if not culture_language and group_tag:
                 culture_language = ir_culture_group_language_map.get(group_tag)
+            if culture_language:
+                culture_language = _language_to_dialect_id(culture_language)
 
             lines = []
             if culture_language:
@@ -550,7 +608,8 @@ def write_culture_language_report(culture_data: list) -> None:
                 culture_language = ir_culture_language_overrides.get(culture_tag)
             if not culture_language and group_tag:
                 culture_language = ir_culture_group_language_map.get(group_tag)
-            family_id = family_map.get(culture_language or "", "")
+            culture_language = _language_to_dialect_id(culture_language)
+            family_id = family_map.get(_dialect_parent_language(culture_language) or "", "")
             if not family_id and group_tag:
                 family_id = _language_family_id_from_group_tag(group_tag)
             lines.append(
@@ -923,6 +982,27 @@ def write_localisation_files(
         tree = parse_tree(path)
         return [key for key in tree.keys() if isinstance(key, str)]
 
+    def _collect_dialect_ids(path: Path) -> list[str]:
+        if not path.exists():
+            return []
+        from .extract_data import parse_tree
+
+        tree = parse_tree(path)
+        dialects: list[str] = []
+        for _lang_id, value in tree.items():
+            block = value
+            if isinstance(block, list) and block:
+                block = block[0]
+            if not isinstance(block, _pydt.Tree):
+                continue
+            dialects_block = block.find("dialects")
+            if not isinstance(dialects_block, _pydt.Tree):
+                continue
+            for dialect_id in dialects_block.keys():
+                if isinstance(dialect_id, str):
+                    dialects.append(dialect_id)
+        return dialects
+
     def _humanize_ir_id(tag: str) -> str:
         base = tag
         if base.startswith("ir_"):
@@ -931,6 +1011,8 @@ def write_localisation_files(
             base = base[: -len("_lang")]
         if base.endswith("_family"):
             base = base[: -len("_family")]
+        if base.endswith("_dialect"):
+            base = base[: -len("_dialect")]
 
         specials = {
             "indo_aryan": "Indo-Aryan",
@@ -984,8 +1066,12 @@ def write_localisation_files(
 
     # -------- Languages & Families --------
     language_lines = ["l_english:"]
-    for lang_id in sorted(_collect_block_ids(iu_languages / "ir_languages.txt")):
+    language_ids = sorted(_collect_block_ids(iu_languages / "ir_languages.txt"))
+    dialect_ids = sorted(_collect_dialect_ids(iu_languages / "ir_languages.txt"))
+    for lang_id in language_ids:
         language_lines.append(f'  {lang_id}: "{_humanize_ir_id(lang_id)}"')
+    for dialect_id in dialect_ids:
+        language_lines.append(f'  {dialect_id}: "{_humanize_ir_id(dialect_id)}"')
     for family_id in sorted(
         _collect_block_ids(iu_language_families / "ir_language_families.txt")
     ):
@@ -1356,6 +1442,7 @@ def write_10_countries(
                 if group_tag:
                     court_language = ir_culture_group_language_map.get(group_tag)
             if court_language:
+                court_language = _language_to_dialect_id(court_language)
                 merged["court_language"] = court_language
 
         # --- include societal values template based on IR government type ---

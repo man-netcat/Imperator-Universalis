@@ -11,14 +11,14 @@ ir_roman = {
 }
 
 ir_venetic = {
-    language = ir_venetic_lang
+    language = ir_venetic_dialect
     color = hsv { 0.00 0.91 0.55 }
     tags = { north_italian_gfx south_italian_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_latin_g }
 }
 
 ir_ligurian = {
-    language = ir_ligurian_lang
+    language = ir_ligurian_dialect
     color = hsv { 0.00 0.91 0.55 }
     tags = { north_italian_gfx south_italian_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_latin_g }
@@ -32,7 +32,7 @@ ir_etruscan = {
 }
 
 ir_rhaetian = {
-    language = ir_rhaetian_lang
+    language = ir_rhaetian_dialect
     color = hsv { 0.00 0.91 0.55 }
     tags = { north_italian_gfx south_italian_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_latin_g }
@@ -74,7 +74,7 @@ ir_lucanian = {
 }
 
 ir_histrian = {
-    language = ir_venetic_lang
+    language = ir_venetic_dialect
     color = hsv { 0.00 0.91 0.55 }
     tags = { north_italian_gfx south_italian_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
     culture_groups = { ir_latin_g }

@@ -304,7 +304,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_county
@@ -323,7 +323,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_central_gaulish_lang
+            court_language = ir_central_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -342,7 +342,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_county
@@ -361,7 +361,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_ligurian_lang
+            court_language = ir_ligurian_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -380,7 +380,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_ligurian_lang
+            court_language = ir_ligurian_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -401,7 +401,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_ligurian_lang
+            court_language = ir_ligurian_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -422,7 +422,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_ligurian_lang
+            court_language = ir_ligurian_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -552,7 +552,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_venetic_lang
+            court_language = ir_venetic_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -571,7 +571,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_venetic_lang
+            court_language = ir_venetic_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -590,7 +590,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_eastern_gaulish_lang
+            court_language = ir_eastern_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -613,7 +613,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_rhaetian_lang
+            court_language = ir_rhaetian_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -632,7 +632,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_helvetian_lang
+            court_language = ir_helvetian_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -651,7 +651,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_county
@@ -670,7 +670,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_county
@@ -689,7 +689,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_county
@@ -708,7 +708,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_county
@@ -727,7 +727,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_county
@@ -746,7 +746,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_county
@@ -765,7 +765,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_county
@@ -1209,7 +1209,7 @@ countries = {
                     ir_democratic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
             country_rank = rank_county
@@ -1230,7 +1230,7 @@ countries = {
                     ir_aristocratic_monarchy
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
             country_rank = rank_kingdom
@@ -1314,7 +1314,7 @@ countries = {
                     ir_aristocratic_monarchy
                 }
             }
-            court_language = ir_macedonian_lang
+            court_language = ir_macedonian_dialect
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
             country_rank = rank_kingdom
@@ -1339,7 +1339,7 @@ countries = {
                     ir_despotic_monarchy
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
@@ -1726,7 +1726,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_ionic_lang
+            court_language = ir_ionic_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_duchy
@@ -1747,7 +1747,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_ionic_lang
+            court_language = ir_ionic_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_county
@@ -1766,7 +1766,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_pictish_lang
+            court_language = ir_pictish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -1787,7 +1787,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_pictish_lang
+            court_language = ir_pictish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -1808,7 +1808,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_cumbric_lang
+            court_language = ir_cumbric_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -1829,7 +1829,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_south_brittonic_lang
+            court_language = ir_south_brittonic_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -1867,7 +1867,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_south_brittonic_lang
+            court_language = ir_south_brittonic_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -1888,7 +1888,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_south_brittonic_lang
+            court_language = ir_south_brittonic_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -1909,7 +1909,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_cumbric_lang
+            court_language = ir_cumbric_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -1928,7 +1928,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_south_brittonic_lang
+            court_language = ir_south_brittonic_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -1947,7 +1947,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_south_brittonic_lang
+            court_language = ir_south_brittonic_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -1966,7 +1966,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_south_brittonic_lang
+            court_language = ir_south_brittonic_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -1985,7 +1985,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_south_brittonic_lang
+            court_language = ir_south_brittonic_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -2008,7 +2008,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_south_brittonic_lang
+            court_language = ir_south_brittonic_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -2035,7 +2035,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_south_brittonic_lang
+            court_language = ir_south_brittonic_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -2058,7 +2058,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_south_brittonic_lang
+            court_language = ir_south_brittonic_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -2079,7 +2079,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_south_brittonic_lang
+            court_language = ir_south_brittonic_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -2098,7 +2098,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_south_brittonic_lang
+            court_language = ir_south_brittonic_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -2121,7 +2121,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_cumbric_lang
+            court_language = ir_cumbric_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -2140,7 +2140,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_cumbric_lang
+            court_language = ir_cumbric_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -2161,7 +2161,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_south_brittonic_lang
+            court_language = ir_south_brittonic_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -3052,7 +3052,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_ionic_lang
+            court_language = ir_ionic_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_county
@@ -3133,7 +3133,7 @@ countries = {
                     ir_tribal_chiefdom
                 }
             }
-            court_language = ir_helvetian_lang
+            court_language = ir_helvetian_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
             country_rank = rank_kingdom
@@ -3152,7 +3152,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_narbonese_lang
+            court_language = ir_narbonese_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -3171,7 +3171,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_narbonese_lang
+            court_language = ir_narbonese_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -3192,7 +3192,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_narbonese_lang
+            court_language = ir_narbonese_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -3211,7 +3211,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_narbonese_lang
+            court_language = ir_narbonese_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -3232,7 +3232,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_narbonese_lang
+            court_language = ir_narbonese_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -3253,7 +3253,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_narbonese_lang
+            court_language = ir_narbonese_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -3354,7 +3354,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_narbonese_lang
+            court_language = ir_narbonese_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -3375,7 +3375,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_eastern_gaulish_lang
+            court_language = ir_eastern_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -3396,7 +3396,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_eastern_gaulish_lang
+            court_language = ir_eastern_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -3419,7 +3419,7 @@ countries = {
                     ir_tribal_federation
                 }
             }
-            court_language = ir_central_gaulish_lang
+            court_language = ir_central_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_federation"
             country_rank = rank_duchy
@@ -3442,7 +3442,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_central_gaulish_lang
+            court_language = ir_central_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -3579,7 +3579,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_central_gaulish_lang
+            court_language = ir_central_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -3625,7 +3625,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_central_gaulish_lang
+            court_language = ir_central_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -3650,7 +3650,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_central_gaulish_lang
+            court_language = ir_central_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -3671,7 +3671,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_central_gaulish_lang
+            court_language = ir_central_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -3692,7 +3692,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_eastern_gaulish_lang
+            court_language = ir_eastern_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -3757,7 +3757,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_helvetian_lang
+            court_language = ir_helvetian_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -3776,7 +3776,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_helvetian_lang
+            court_language = ir_helvetian_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -3795,7 +3795,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_helvetian_lang
+            court_language = ir_helvetian_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -3816,7 +3816,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_helvetian_lang
+            court_language = ir_helvetian_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -3837,7 +3837,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_helvetian_lang
+            court_language = ir_helvetian_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -3856,7 +3856,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_helvetian_lang
+            court_language = ir_helvetian_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -3877,7 +3877,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_helvetian_lang
+            court_language = ir_helvetian_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -3898,7 +3898,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_helvetian_lang
+            court_language = ir_helvetian_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -3919,7 +3919,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_helvetian_lang
+            court_language = ir_helvetian_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -3944,7 +3944,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_helvetian_lang
+            court_language = ir_helvetian_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -3963,7 +3963,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_helvetian_lang
+            court_language = ir_helvetian_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -3986,7 +3986,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_central_gaulish_lang
+            court_language = ir_central_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4007,7 +4007,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_armorican_lang
+            court_language = ir_armorican_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4028,7 +4028,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_central_gaulish_lang
+            court_language = ir_central_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4047,7 +4047,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_armorican_lang
+            court_language = ir_armorican_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4068,7 +4068,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_armorican_lang
+            court_language = ir_armorican_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4089,7 +4089,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_central_gaulish_lang
+            court_language = ir_central_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4112,7 +4112,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_central_gaulish_lang
+            court_language = ir_central_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4133,7 +4133,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_armorican_lang
+            court_language = ir_armorican_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4152,7 +4152,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_armorican_lang
+            court_language = ir_armorican_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4171,7 +4171,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_armorican_lang
+            court_language = ir_armorican_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4194,7 +4194,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_armorican_lang
+            court_language = ir_armorican_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4213,7 +4213,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_central_gaulish_lang
+            court_language = ir_central_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4234,7 +4234,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_central_gaulish_lang
+            court_language = ir_central_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4255,7 +4255,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_central_gaulish_lang
+            court_language = ir_central_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4274,7 +4274,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_central_gaulish_lang
+            court_language = ir_central_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4295,7 +4295,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_belgic_coastal_lang
+            court_language = ir_belgic_coastal_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4314,7 +4314,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_armorican_lang
+            court_language = ir_armorican_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4333,7 +4333,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_eastern_gaulish_lang
+            court_language = ir_eastern_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4354,7 +4354,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_central_gaulish_lang
+            court_language = ir_central_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4379,7 +4379,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_central_gaulish_lang
+            court_language = ir_central_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4402,7 +4402,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_central_gaulish_lang
+            court_language = ir_central_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4423,7 +4423,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_central_gaulish_lang
+            court_language = ir_central_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4450,7 +4450,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_central_gaulish_lang
+            court_language = ir_central_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4473,7 +4473,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_central_gaulish_lang
+            court_language = ir_central_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4492,7 +4492,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_central_gaulish_lang
+            court_language = ir_central_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4513,7 +4513,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_central_gaulish_lang
+            court_language = ir_central_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4538,7 +4538,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_eastern_gaulish_lang
+            court_language = ir_eastern_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4559,7 +4559,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_central_gaulish_lang
+            court_language = ir_central_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4584,7 +4584,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_eastern_gaulish_lang
+            court_language = ir_eastern_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4607,7 +4607,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_eastern_gaulish_lang
+            court_language = ir_eastern_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4630,7 +4630,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_eastern_gaulish_lang
+            court_language = ir_eastern_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4646,7 +4646,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_belgic_north_lang
+            court_language = ir_belgic_north_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
@@ -4662,7 +4662,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_belgic_north_lang
+            court_language = ir_belgic_north_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_county
@@ -4685,7 +4685,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_belgic_north_lang
+            court_language = ir_belgic_north_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4708,7 +4708,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_belgic_north_lang
+            court_language = ir_belgic_north_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4727,7 +4727,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_belgic_coastal_lang
+            court_language = ir_belgic_coastal_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4746,7 +4746,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_belgic_coastal_lang
+            court_language = ir_belgic_coastal_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4767,7 +4767,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_belgic_coastal_lang
+            court_language = ir_belgic_coastal_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4788,7 +4788,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_belgic_coastal_lang
+            court_language = ir_belgic_coastal_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4807,7 +4807,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_belgic_coastal_lang
+            court_language = ir_belgic_coastal_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4828,7 +4828,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_belgic_coastal_lang
+            court_language = ir_belgic_coastal_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4853,7 +4853,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_belgic_north_lang
+            court_language = ir_belgic_north_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -4874,7 +4874,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_belgic_north_lang
+            court_language = ir_belgic_north_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -5869,7 +5869,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_eastern_gaulish_lang
+            court_language = ir_eastern_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -5892,7 +5892,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_eastern_gaulish_lang
+            court_language = ir_eastern_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -5913,7 +5913,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_eastern_gaulish_lang
+            court_language = ir_eastern_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -5934,7 +5934,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_eastern_gaulish_lang
+            court_language = ir_eastern_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -5959,7 +5959,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_eastern_gaulish_lang
+            court_language = ir_eastern_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -6326,7 +6326,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_helvetian_lang
+            court_language = ir_helvetian_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -6347,7 +6347,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_eastern_gaulish_lang
+            court_language = ir_eastern_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -6389,7 +6389,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_koine_lang
+            court_language = ir_koine_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_duchy
@@ -6408,7 +6408,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_koine_lang
+            court_language = ir_koine_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_county
@@ -6427,7 +6427,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_koine_lang
+            court_language = ir_koine_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_county
@@ -6446,7 +6446,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_koine_lang
+            court_language = ir_koine_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_county
@@ -6465,7 +6465,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_koine_lang
+            court_language = ir_koine_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_county
@@ -6490,7 +6490,7 @@ countries = {
                     ir_aristocratic_monarchy
                 }
             }
-            court_language = ir_macedonian_lang
+            court_language = ir_macedonian_dialect
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
             country_rank = rank_kingdom
@@ -6601,7 +6601,7 @@ countries = {
                     ir_aristocratic_monarchy
                 }
             }
-            court_language = ir_macedonian_lang
+            court_language = ir_macedonian_dialect
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
             country_rank = rank_kingdom
@@ -6624,7 +6624,7 @@ countries = {
                     ir_democratic_republic
                 }
             }
-            court_language = ir_attic_lang
+            court_language = ir_attic_dialect
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
             country_rank = rank_duchy
@@ -6643,7 +6643,7 @@ countries = {
                     ir_oligarchic_republic
                 }
             }
-            court_language = ir_aeolic_lang
+            court_language = ir_aeolic_dialect
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
@@ -6664,7 +6664,7 @@ countries = {
                     ir_democratic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
             country_rank = rank_county
@@ -6683,7 +6683,7 @@ countries = {
                     ir_democratic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
             country_rank = rank_county
@@ -6704,7 +6704,7 @@ countries = {
                     ir_democratic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
             country_rank = rank_county
@@ -6723,7 +6723,7 @@ countries = {
                     ir_oligarchic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
@@ -6742,7 +6742,7 @@ countries = {
                     ir_aristocratic_monarchy
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
             country_rank = rank_kingdom
@@ -6761,7 +6761,7 @@ countries = {
                     ir_oligarchic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
@@ -6780,7 +6780,7 @@ countries = {
                     ir_oligarchic_republic
                 }
             }
-            court_language = ir_ionic_lang
+            court_language = ir_ionic_dialect
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
@@ -6799,7 +6799,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_county
@@ -6818,7 +6818,7 @@ countries = {
                     ir_democratic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
             country_rank = rank_county
@@ -6841,7 +6841,7 @@ countries = {
                     ir_aristocratic_republic
                 }
             }
-            court_language = ir_aeolic_lang
+            court_language = ir_aeolic_dialect
             include = "expl_imperator_rome"
             include = "ir_aristocratic_republic"
             country_rank = rank_duchy
@@ -6860,7 +6860,7 @@ countries = {
                     ir_aristocratic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_aristocratic_republic"
             country_rank = rank_county
@@ -6879,7 +6879,7 @@ countries = {
                     ir_despotic_monarchy
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
@@ -6898,7 +6898,7 @@ countries = {
                     ir_aristocratic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_aristocratic_republic"
             country_rank = rank_county
@@ -6919,7 +6919,7 @@ countries = {
                     ir_democratic_republic
                 }
             }
-            court_language = ir_ionic_lang
+            court_language = ir_ionic_dialect
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
             country_rank = rank_duchy
@@ -6940,7 +6940,7 @@ countries = {
                     ir_democratic_republic
                 }
             }
-            court_language = ir_ionic_lang
+            court_language = ir_ionic_dialect
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
             country_rank = rank_county
@@ -6959,7 +6959,7 @@ countries = {
                     ir_democratic_republic
                 }
             }
-            court_language = ir_ionic_lang
+            court_language = ir_ionic_dialect
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
             country_rank = rank_county
@@ -6978,7 +6978,7 @@ countries = {
                     ir_democratic_republic
                 }
             }
-            court_language = ir_arcado_cypriot_lang
+            court_language = ir_arcado_cypriot_dialect
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
             country_rank = rank_county
@@ -6997,7 +6997,7 @@ countries = {
                     ir_oligarchic_republic
                 }
             }
-            court_language = ir_arcado_cypriot_lang
+            court_language = ir_arcado_cypriot_dialect
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
@@ -7020,7 +7020,7 @@ countries = {
                     ir_oligarchic_republic
                 }
             }
-            court_language = ir_arcado_cypriot_lang
+            court_language = ir_arcado_cypriot_dialect
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_duchy
@@ -7045,7 +7045,7 @@ countries = {
                     ir_oligarchic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_duchy
@@ -7064,7 +7064,7 @@ countries = {
                     ir_oligarchic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
@@ -7083,7 +7083,7 @@ countries = {
                     ir_oligarchic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
@@ -7102,7 +7102,7 @@ countries = {
                     ir_oligarchic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
@@ -7121,7 +7121,7 @@ countries = {
                     ir_oligarchic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
@@ -7140,7 +7140,7 @@ countries = {
                     ir_oligarchic_republic
                 }
             }
-            court_language = ir_attic_lang
+            court_language = ir_attic_dialect
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
@@ -7159,7 +7159,7 @@ countries = {
                     ir_spartan_monarchy
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             country_rank = rank_kingdom
             capital = sparta
@@ -7177,7 +7177,7 @@ countries = {
                     ir_despotic_monarchy
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
@@ -7196,7 +7196,7 @@ countries = {
                     ir_despotic_monarchy
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
@@ -7215,7 +7215,7 @@ countries = {
                     ir_aristocratic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_aristocratic_republic"
             country_rank = rank_county
@@ -7234,7 +7234,7 @@ countries = {
                     ir_oligarchic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
@@ -7253,7 +7253,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_county
@@ -7272,7 +7272,7 @@ countries = {
                     ir_democratic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
             country_rank = rank_county
@@ -7291,7 +7291,7 @@ countries = {
                     ir_despotic_monarchy
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
@@ -7310,7 +7310,7 @@ countries = {
                     ir_democratic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
             country_rank = rank_county
@@ -7329,7 +7329,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_county
@@ -7350,7 +7350,7 @@ countries = {
                     ir_democratic_republic
                 }
             }
-            court_language = ir_ionic_lang
+            court_language = ir_ionic_dialect
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
             country_rank = rank_county
@@ -7371,7 +7371,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_ionic_lang
+            court_language = ir_ionic_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_duchy
@@ -7394,7 +7394,7 @@ countries = {
                     ir_stratocratic_monarchy
                 }
             }
-            court_language = ir_macedonian_lang
+            court_language = ir_macedonian_dialect
             include = "expl_imperator_rome"
             include = "ir_stratocratic_monarchy"
             country_rank = rank_kingdom
@@ -7432,7 +7432,7 @@ countries = {
                     ir_stratocratic_monarchy
                 }
             }
-            court_language = ir_macedonian_lang
+            court_language = ir_macedonian_dialect
             include = "expl_imperator_rome"
             include = "ir_stratocratic_monarchy"
             country_rank = rank_kingdom
@@ -7453,7 +7453,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_ionic_lang
+            court_language = ir_ionic_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_duchy
@@ -7512,7 +7512,7 @@ countries = {
                     ir_aristocratic_monarchy
                 }
             }
-            court_language = ir_koine_lang
+            court_language = ir_koine_dialect
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
             country_rank = rank_kingdom
@@ -7533,7 +7533,7 @@ countries = {
                     ir_democratic_republic
                 }
             }
-            court_language = ir_aeolic_lang
+            court_language = ir_aeolic_dialect
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
             country_rank = rank_duchy
@@ -7552,7 +7552,7 @@ countries = {
                     ir_democratic_republic
                 }
             }
-            court_language = ir_aeolic_lang
+            court_language = ir_aeolic_dialect
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
             country_rank = rank_duchy
@@ -7577,7 +7577,7 @@ countries = {
                     ir_democratic_republic
                 }
             }
-            court_language = ir_ionic_lang
+            court_language = ir_ionic_dialect
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
             country_rank = rank_duchy
@@ -7596,7 +7596,7 @@ countries = {
                     ir_democratic_republic
                 }
             }
-            court_language = ir_koine_lang
+            court_language = ir_koine_dialect
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
             country_rank = rank_duchy
@@ -7636,7 +7636,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_ionic_lang
+            court_language = ir_ionic_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_county
@@ -7701,7 +7701,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_koine_lang
+            court_language = ir_koine_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_county
@@ -7722,7 +7722,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_koine_lang
+            court_language = ir_koine_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_duchy
@@ -7795,7 +7795,7 @@ countries = {
                     ir_aristocratic_monarchy
                 }
             }
-            court_language = ir_macedonian_lang
+            court_language = ir_macedonian_dialect
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
             country_rank = rank_kingdom
@@ -7824,7 +7824,7 @@ countries = {
                     ir_stratocratic_monarchy
                 }
             }
-            court_language = ir_macedonian_lang
+            court_language = ir_macedonian_dialect
             include = "expl_imperator_rome"
             include = "ir_stratocratic_monarchy"
             country_rank = rank_kingdom
@@ -8515,7 +8515,7 @@ countries = {
                     ir_aristocratic_monarchy
                 }
             }
-            court_language = ir_macedonian_lang
+            court_language = ir_macedonian_dialect
             include = "expl_imperator_rome"
             include = "ir_aristocratic_monarchy"
             country_rank = rank_empire
@@ -8596,7 +8596,7 @@ countries = {
                     ir_despotic_monarchy
                 }
             }
-            court_language = ir_macedonian_lang
+            court_language = ir_macedonian_dialect
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
@@ -8623,7 +8623,7 @@ countries = {
                     ir_stratocratic_monarchy
                 }
             }
-            court_language = ir_macedonian_lang
+            court_language = ir_macedonian_dialect
             include = "expl_imperator_rome"
             include = "ir_stratocratic_monarchy"
             country_rank = rank_kingdom
@@ -8669,7 +8669,7 @@ countries = {
                     ir_stratocratic_monarchy
                 }
             }
-            court_language = ir_macedonian_lang
+            court_language = ir_macedonian_dialect
             include = "expl_imperator_rome"
             include = "ir_stratocratic_monarchy"
             country_rank = rank_kingdom
@@ -8696,7 +8696,7 @@ countries = {
                     ir_despotic_monarchy
                 }
             }
-            court_language = ir_macedonian_lang
+            court_language = ir_macedonian_dialect
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
@@ -8960,7 +8960,7 @@ countries = {
                     ir_oligarchic_republic
                 }
             }
-            court_language = ir_koine_lang
+            court_language = ir_koine_dialect
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
@@ -10307,7 +10307,7 @@ countries = {
                     ir_despotic_monarchy
                 }
             }
-            court_language = ir_ionic_lang
+            court_language = ir_ionic_dialect
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
@@ -10449,7 +10449,7 @@ countries = {
                     ir_despotic_monarchy
                 }
             }
-            court_language = ir_koine_lang
+            court_language = ir_koine_dialect
             include = "expl_imperator_rome"
             include = "ir_despotic_monarchy"
             country_rank = rank_kingdom
@@ -10470,7 +10470,7 @@ countries = {
                     ir_democratic_republic
                 }
             }
-            court_language = ir_koine_lang
+            court_language = ir_koine_dialect
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
             country_rank = rank_duchy
@@ -10566,7 +10566,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_koine_lang
+            court_language = ir_koine_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_county
@@ -10606,7 +10606,7 @@ countries = {
                     ir_democratic_republic
                 }
             }
-            court_language = ir_koine_lang
+            court_language = ir_koine_dialect
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
             country_rank = rank_county
@@ -10625,7 +10625,7 @@ countries = {
                     ir_democratic_republic
                 }
             }
-            court_language = ir_koine_lang
+            court_language = ir_koine_dialect
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
             country_rank = rank_county
@@ -12236,7 +12236,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_pictish_lang
+            court_language = ir_pictish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -12255,7 +12255,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_pictish_lang
+            court_language = ir_pictish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -12330,7 +12330,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_county
@@ -12349,7 +12349,7 @@ countries = {
                     ir_oligarchic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
@@ -12368,7 +12368,7 @@ countries = {
                     ir_oligarchic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
@@ -12387,7 +12387,7 @@ countries = {
                     ir_democratic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
             country_rank = rank_county
@@ -12408,7 +12408,7 @@ countries = {
                     ir_oligarchic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
@@ -12427,7 +12427,7 @@ countries = {
                     ir_oligarchic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
@@ -12446,7 +12446,7 @@ countries = {
                     ir_oligarchic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
@@ -12465,7 +12465,7 @@ countries = {
                     ir_oligarchic_republic
                 }
             }
-            court_language = ir_aeolic_lang
+            court_language = ir_aeolic_dialect
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
@@ -12484,7 +12484,7 @@ countries = {
                     ir_aristocratic_republic
                 }
             }
-            court_language = ir_aeolic_lang
+            court_language = ir_aeolic_dialect
             include = "expl_imperator_rome"
             include = "ir_aristocratic_republic"
             country_rank = rank_county
@@ -12503,7 +12503,7 @@ countries = {
                     ir_theocratic_republic
                 }
             }
-            court_language = ir_aeolic_lang
+            court_language = ir_aeolic_dialect
             include = "expl_imperator_rome"
             country_rank = rank_county
             capital = delphi
@@ -12521,7 +12521,7 @@ countries = {
                     ir_democratic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_democratic_republic"
             country_rank = rank_county
@@ -12540,7 +12540,7 @@ countries = {
                     ir_oligarchic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
@@ -12559,7 +12559,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_county
@@ -12578,7 +12578,7 @@ countries = {
                     ir_oligarchic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
@@ -12597,7 +12597,7 @@ countries = {
                     ir_oligarchic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_duchy
@@ -12616,7 +12616,7 @@ countries = {
                     ir_oligarchic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
@@ -12635,7 +12635,7 @@ countries = {
                     ir_oligarchic_republic
                 }
             }
-            court_language = ir_doric_lang
+            court_language = ir_doric_dialect
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
@@ -12831,7 +12831,7 @@ countries = {
                     ir_oligarchic_republic
                 }
             }
-            court_language = ir_koine_lang
+            court_language = ir_koine_dialect
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
@@ -12850,7 +12850,7 @@ countries = {
                     ir_oligarchic_republic
                 }
             }
-            court_language = ir_koine_lang
+            court_language = ir_koine_dialect
             include = "expl_imperator_rome"
             include = "ir_oligarchic_republic"
             country_rank = rank_county
@@ -12949,7 +12949,7 @@ countries = {
                     ir_plutocratic_republic
                 }
             }
-            court_language = ir_koine_lang
+            court_language = ir_koine_dialect
             include = "expl_imperator_rome"
             include = "ir_plutocratic_republic"
             country_rank = rank_county
@@ -13789,7 +13789,7 @@ countries = {
                     ir_tribal_chiefdom
                 }
             }
-            court_language = ir_narbonese_lang
+            court_language = ir_narbonese_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
@@ -13810,7 +13810,7 @@ countries = {
                     ir_tribal_chiefdom
                 }
             }
-            court_language = ir_eastern_gaulish_lang
+            court_language = ir_eastern_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
@@ -13833,7 +13833,7 @@ countries = {
                     ir_tribal_chiefdom
                 }
             }
-            court_language = ir_eastern_gaulish_lang
+            court_language = ir_eastern_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_chiefdom"
             country_rank = rank_duchy
@@ -13871,7 +13871,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_eastern_gaulish_lang
+            court_language = ir_eastern_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -13892,7 +13892,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_eastern_gaulish_lang
+            court_language = ir_eastern_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -13913,7 +13913,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_eastern_gaulish_lang
+            court_language = ir_eastern_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -13934,7 +13934,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_eastern_gaulish_lang
+            court_language = ir_eastern_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -13995,7 +13995,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_helvetian_lang
+            court_language = ir_helvetian_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -14016,7 +14016,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_helvetian_lang
+            court_language = ir_helvetian_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -14035,7 +14035,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_helvetian_lang
+            court_language = ir_helvetian_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -14054,7 +14054,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_helvetian_lang
+            court_language = ir_helvetian_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -14073,7 +14073,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_helvetian_lang
+            court_language = ir_helvetian_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -14298,7 +14298,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_eastern_gaulish_lang
+            court_language = ir_eastern_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -14317,7 +14317,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_eastern_gaulish_lang
+            court_language = ir_eastern_gaulish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -14420,7 +14420,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_belgic_north_lang
+            court_language = ir_belgic_north_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -14441,7 +14441,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_belgic_north_lang
+            court_language = ir_belgic_north_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -14462,7 +14462,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_belgic_north_lang
+            court_language = ir_belgic_north_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
@@ -14956,7 +14956,7 @@ countries = {
                     ir_tribal_kingdom
                 }
             }
-            court_language = ir_pictish_lang
+            court_language = ir_pictish_dialect
             include = "expl_imperator_rome"
             include = "ir_tribal_kingdom"
             country_rank = rank_kingdom
