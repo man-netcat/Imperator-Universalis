@@ -160,7 +160,7 @@ appoint_dictator = {
 }
 
 hold_triumph = {
-	political_influence = 30
+	government_power = 30
 }
 
 hold_games_price = {

@@ -3,3 +3,32 @@
 #  Any manual changes will be OVERWRITTEN upon regeneration!  #
 # =========================================================== #
 
+development = {
+    base = -2
+    coastal = 5
+    river = 0.5
+    road = 2
+    city = 5
+    town = 2
+    grasslands = 1
+    farmland = 3
+    sparse = -1
+    forest = -2
+    woods = -1
+    desert = -3
+    jungle = -4
+    tropical = -3
+    subtropical = 2
+    oceanic = 1
+    arid = -4
+    cold_arid = -3
+    mediterranean = 2
+    continental = 1
+    arctic = -5
+    flatland = 1
+    mountains = -3
+    hills = -2
+    plateau = -1
+    wetlands = -4
+}
+

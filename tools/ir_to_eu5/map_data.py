@@ -1903,8 +1903,6 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     dst_setup_start_dir = mod_root / "main_menu" / "setup" / "start"
     location_keyed_files = {
         "07_cities_and_buildings.txt",
-        "08_institutions.txt",
-        "14_development.txt",
     }
     if setup_start_dir.exists():
         dst_setup_start_dir.mkdir(parents=True, exist_ok=True)
@@ -1925,6 +1923,30 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     for loc_key in sorted(pops_by_location.keys()):
         pops_blocks.append((loc_key, pops_by_location[loc_key]))
     write_blocks(iu_setup_start / "06_pops.txt", [("locations", pops_blocks)], encoding="utf-8")
+
+    # --- Ownable locations (exclude seas/lakes/rivers/non-ownable) ---
+    excluded_locations = _non_land_keys(default_map) if isinstance(default_map, dict) else set()
+    ownable_locations = sorted(set(pops_by_location.keys()) - excluded_locations)
+
+    # --- Generate institutions spread (08_institutions) for ownable locations only ---
+    institutions_dst = mod_root / "main_menu" / "setup" / "start" / "08_institutions.txt"
+    institution_blocks = []
+    for loc_key in ownable_locations:
+        institution_blocks.append(
+            (
+                loc_key,
+                [
+                    "feudalism = yes",
+                    "legalism = yes",
+                    "meritocracy = yes",
+                ],
+            )
+        )
+    write_blocks(
+        institutions_dst,
+        [("locations", institution_blocks)],
+        encoding="utf-8",
+    )
 
     # --- Port Imperator building setups (per location) ---
     building_map = build_ir_building_mapping()
