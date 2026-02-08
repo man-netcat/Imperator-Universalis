@@ -19,10 +19,12 @@ exploration_manager = {
 		country = POR
 		modifier = 0.75
 		continent = africa
+		sub_continent = south_asia
 	}
 	add_exploration_preference = {
 		country = POR
 		modifier = 0.95
+		sub_continent = middle_east
 	}
 	add_exploration_preference = {
 		country = POR
