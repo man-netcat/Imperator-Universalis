@@ -2299,6 +2299,7 @@ def write_default_map(ir_default_map_data: dict):
     category_mapping = {
         "sea_zones": "sea_zones",
         "lakes": "lakes",
+        "volcanoes": "volcanoes",
         "impassable_terrain": "impassable_mountains",
         "wasteland": "impassable_mountains",
         "uninhabitable": "non_ownable",
@@ -2393,6 +2394,9 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     }
     # Default map categories (for sea zones, rivers, etc.)
     default_map = build_default_map(id_to_key)
+    volcanoes = {key for key in location_keys if isinstance(key, str) and key.endswith("_volcano")}
+    if volcanoes:
+        default_map.setdefault("volcanoes", set()).update(volcanoes)
     harbor_suitability_map = build_ir_harbor_suitability(
         named_locations,
         location_keys,

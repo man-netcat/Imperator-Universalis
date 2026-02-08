@@ -2147,3 +2147,19 @@ sea_zones = {
     unnamed_7860
 }
 
+volcanoes = {
+    aetna_volcano
+    aragats_volcano
+    ararat_volcano
+    argaeus_mons_volcano
+    argaios_mons_volcano
+    ausara_volcano
+    bamni_volcano
+    caucasus_mons_volcano
+    iberia_mons_volcano
+    methana_volcano
+    qarqar_volcano
+    strongyle_volcano
+    vesuvius_volcano
+}
+
