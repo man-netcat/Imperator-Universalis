@@ -1,19 +1,29 @@
 discovered_regions = {
 	anatolia
+	arabia
 	balkans
 	britain
+	carpathia
+	caucasus
 	central_asia
-	eastern_europe
+	deccan
+	eastern_india
 	egypt
 	france
 	germany
 	iberia
-	india
+	indo_gangetic
 	italy
-	middle_east
-	north_africa
+	levant
+	libya
+	maghreb
 	north_sea
+	northern_forests
+	nubia
+	persia
+	pontic_steppe
 	red_sea_region_group
+	tibet
 }
 
 discovered_areas = {
@@ -508,7 +518,22 @@ discovered_provinces = {
 	kumuzia_area
 	kuntala_area
 	kuru_area
-	lakes_area
+	lakes_area_001
+	lakes_area_002
+	lakes_area_003
+	lakes_area_004
+	lakes_area_005
+	lakes_area_006
+	lakes_area_007
+	lakes_area_008
+	lakes_area_009
+	lakes_area_010
+	lakes_area_011
+	lakes_area_012
+	lakes_area_013
+	lakes_area_014
+	lakes_area_015
+	lakes_area_misc
 	langobardia_area
 	latobrigia_area
 	lauriacum_area
@@ -623,7 +648,9 @@ discovered_provinces = {
 	nervia_area
 	nile_river_area
 	niniveh_area
-	non_ownable_area
+	non_ownable_area_001
+	non_ownable_area_002
+	non_ownable_area_misc
 	noricum_mediterranum_area
 	north_aral_area
 	north_etruria_area
@@ -720,7 +747,14 @@ discovered_provinces = {
 	rhodanus_river_area
 	rhodope_area
 	rif_area
-	river_provinces_area
+	river_provinces_area_001
+	river_provinces_area_002
+	river_provinces_area_003
+	river_provinces_area_004
+	river_provinces_area_005
+	river_provinces_area_006
+	river_provinces_area_007
+	river_provinces_area_008
 	rodewala_area
 	roma_area
 	rugia_area
@@ -750,7 +784,14 @@ discovered_provinces = {
 	scythia_prima_area
 	scythia_trans_montem_area
 	scythia_ultima_area
-	sea_zones_area
+	sea_zones_area_001
+	sea_zones_area_002
+	sea_zones_area_003
+	sea_zones_area_004
+	sea_zones_area_005
+	sea_zones_area_006
+	sea_zones_area_007
+	sea_zones_area_misc
 	semnonia_area
 	senonia_area
 	sentonia_maioris_area

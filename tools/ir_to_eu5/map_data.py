@@ -26,10 +26,24 @@ from .write_data import write_blocks, print_written
 
 # ---------------- Static Mappings ---------------- #
 
-continent_map = {"continent": ["europe", "asia", "africa"]}
+continent_map = {
+    "europe": [
+        "western_europe",
+        "eastern_europe",
+    ],
+    "asia": [
+        "western_asia",
+        "india",
+        "inner_asia",
+    ],
+    "africa": [
+        "north_africa",
+        "nile_and_horn",
+    ],
+}
 
 superregion_map = {
-    "europe": {
+    "western_europe": {
         "italy": [
             "central_italy_region",
             "magna_graecia_region",
@@ -54,6 +68,8 @@ superregion_map = {
             "tarraconensis_region",
             "baetica_region",
             "contestania_region",
+            "gallaecia_region",
+            "western_mediterranean_river_region",
         ],
         "britain": [
             "britain_region",
@@ -63,24 +79,40 @@ superregion_map = {
             "scandinavia_region",
             "baltic_sea_region",
             "atlantic_region",
+            "baltic_river_region",
+            "north_sea_river_region",
+            "northern_atlantic_river_region",
+            "southern_atlantic_river_region",
         ],
+    },
+    "eastern_europe": {
         "balkans": [
             "greece_region",
             "macedonia_region",
             "illyria_region",
-            "albania_region",
             "thrace_region",
             "moesia_region",
+            "moesia_s_region",
         ],
-        "eastern_europe": [
+        "carpathia": [
             "dacia_region",
-            "sarmatia_europea_region",
-            "vistulia_region",
-            "venedia_region",
             "pannonia_region",
         ],
+        "northern_forests": [
+            "vistulia_region",
+            "venedia_region",
+            "hyperborea_region",
+        ],
+        "pontic_steppe": [
+            "sarmatia_europea_region",
+            "borysthenia_region",
+            "black_sea_river_region",
+            "taurica_region",
+            "scythia_region",
+            "don_river_region",
+        ],
     },
-    "asia": {
+    "western_asia": {
         "anatolia": [
             "asia_region",
             "bithynia_region",
@@ -89,65 +121,94 @@ superregion_map = {
             "cappadocia_pontica_region",
             "cilicia_region",
             "pontus_region",
+            "cilician_river_region",
         ],
-        "middle_east": [
-            "taurica_region",
-            "sarmatia_asiatica_region",
-            "assyria_region",
-            "mesopotamia_region",
+        "caucasus": [
+            "armenia_region",
+            "colchis_region",
+            "albania_region",
+        ],
+        "persia": [
             "gedrosia_region",
             "persis_region",
             "media_region",
             "bactriana_region",
             "ariana_region",
-            "parthia_region",
-            "syria_region",
-            "palestine_region",
+        ],
+        "arabia": [
             "arabia_region",
             "arabia_felix_region",
             "persian_gulf_region",
             "red_sea_region",
-            "cilician_river_region",
-            "mesopotamia_river_region",
         ],
-        "india": [
+        "levant": [
+            "assyria_region",
+            "mesopotamia_region",
+            "mesopotamia_river_region",
+            "syria_region",
+            "palestine_region",
+            "eastern_mediterranean_river_region",
+        ],
+    },
+    "india": {
+        "indo_gangetic": [
             "gandhara_region",
             "maru_region",
             "avanti_region",
             "madhyadesa_region",
-            "pracya_region",
+            "indo_gangetic_region",
+        ],
+        "deccan": [
             "vindhyaprstha_region",
             "dravida_region",
             "aparanta_region",
             "karnata_region",
-            "indo_gangetic_region",
-            "indian_ocean_region",
+            "southern_india_river_region",
+            "western_india_river_region",
         ],
-        "central_asia": [
-            "tibet_region",
-            "himalayan_region",
-            "sogdiana_region",
-            "scythia_region",
-            "don_river_region",
+        "eastern_india": [
+            "pracya_region",
+            "indian_ocean_region",
+            "burma_region",
         ],
     },
-    "africa": {
-        "north_africa": [
-            "cyrenaica_region",
+    "inner_asia": {
+        "tibet": [
+            "tibet_region",
+        ],
+        "central_asia": [
+            "himalayan_region",
+            "sogdiana_region",
+            "central_asian_steppes_region",
+            "sarmatia_asiatica_region",
+            "sakia_region",
+            "parthia_region",
+        ],
+    },
+    "north_africa": {
+        "maghreb": [
             "numidia_region",
             "mauretainia_region",
             "africa_region",
+            "atlas_region",
         ],
+        "libya": [
+            "cyrenaica_region",
+            "fezzan_region",
+        ],
+    },
+    "nile_and_horn": {
         "egypt": [
             "upper_egypt_region",
             "lower_egypt_region",
-            "nubia_region",
             "nile_region",
+        ],
+        "nubia": [
+            "nubia_region",
+            "lower_nubia_region",
         ],
         "red_sea_region_group": [
             "punt_region",
-            "red_sea_region",
-            "indian_ocean_region",
         ],
     },
 }
@@ -1810,51 +1871,83 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
             regions.setdefault(region_tag, {})[area_tag] = sorted(unassigned)
             assigned_provinces = assigned_provinces | set(unassigned)
 
+    range_groups = build_default_map_range_groups(
+        id_to_key,
+        {
+            "impassable_terrain",
+            "wasteland",
+            "sea_zones",
+            "lakes",
+            "river_provinces",
+            "uninhabitable",
+            "non_ownable",
+        },
+    )
+
+    def add_generated_region_from_ranges(
+        region_tag: str,
+        area_prefix: str,
+        keys,
+        source_categories: tuple[str, ...],
+    ) -> None:
+        nonlocal assigned_provinces
+        area_index = 1
+        target_keys = set(keys)
+        for source in source_categories:
+            for group in range_groups.get(source, []):
+                group_keys = [
+                    key
+                    for key in group
+                    if key in target_keys and key not in assigned_provinces
+                ]
+                if not group_keys:
+                    continue
+                area_tag = f"{area_prefix}_{area_index:03d}"
+                regions.setdefault(region_tag, {})[area_tag] = group_keys
+                assigned_provinces = assigned_provinces | set(group_keys)
+                area_index += 1
+        leftovers = set(target_keys) - assigned_provinces
+        if leftovers:
+            add_generated_region(region_tag, f"{area_prefix}_misc", leftovers)
+
     river_provinces = default_map.get("river_provinces", set()) if isinstance(default_map, dict) else set()
-    river_unassigned = set(river_provinces) - assigned_provinces
-    if river_unassigned:
-        add_generated_region("river_provinces_region", "river_provinces_area", river_unassigned)
+    if river_provinces:
+        add_generated_region_from_ranges(
+            "river_provinces_region",
+            "river_provinces_area",
+            river_provinces,
+            ("river_provinces",),
+        )
 
     sea_zones = default_map.get("sea_zones", set()) if isinstance(default_map, dict) else set()
-    sea_unassigned = set(sea_zones) - assigned_provinces
-    if sea_unassigned:
-        add_generated_region("sea_zones_region", "sea_zones_area", sea_unassigned)
+    if sea_zones:
+        add_generated_region_from_ranges(
+            "sea_zones_region",
+            "sea_zones_area",
+            sea_zones,
+            ("sea_zones",),
+        )
 
     lakes = default_map.get("lakes", set()) if isinstance(default_map, dict) else set()
-    lakes_unassigned = set(lakes) - assigned_provinces
-    if lakes_unassigned:
-        add_generated_region("lakes_region", "lakes_area", lakes_unassigned)
+    if lakes:
+        add_generated_region_from_ranges(
+            "lakes_region",
+            "lakes_area",
+            lakes,
+            ("lakes",),
+        )
 
     impassable = set()
     for key in ("impassable_terrain", "wasteland", "impassable_mountains"):
         impassable.update(default_map.get(key, set()) if isinstance(default_map, dict) else set())
     # Keep non-land special buckets separate from impassable terrain.
     impassable = set(impassable) - set(sea_zones) - set(lakes) - set(river_provinces)
-    impassable_range_groups = build_default_map_range_groups(
-        id_to_key,
-        {"impassable_terrain", "wasteland"},
-    )
-    impassable_area_index = 1
-    for source in ("impassable_terrain", "wasteland"):
-        for group in impassable_range_groups.get(source, []):
-            group_keys = [
-                key
-                for key in group
-                if key in impassable and key not in assigned_provinces
-            ]
-            if not group_keys:
-                continue
-            area_tag = f"impassable_terrain_area_{impassable_area_index:03d}"
-            regions.setdefault("impassable_terrain_region", {})[area_tag] = group_keys
-            assigned_provinces = assigned_provinces | set(group_keys)
-            impassable_area_index += 1
-
-    impassable_unassigned = set(impassable) - assigned_provinces
-    if impassable_unassigned:
-        add_generated_region(
+    if impassable:
+        add_generated_region_from_ranges(
             "impassable_terrain_region",
-            "impassable_terrain_area_misc",
-            impassable_unassigned,
+            "impassable_terrain_area",
+            impassable,
+            ("impassable_terrain", "wasteland"),
         )
 
     non_ownable = set()
@@ -1862,9 +1955,13 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
         non_ownable.update(default_map.get(key, set()) if isinstance(default_map, dict) else set())
     # Avoid overlaps between non-ownable and other special buckets.
     non_ownable = set(non_ownable) - set(sea_zones) - set(lakes) - set(river_provinces) - set(impassable)
-    non_ownable_unassigned = set(non_ownable) - assigned_provinces
-    if non_ownable_unassigned:
-        add_generated_region("non_ownable_region", "non_ownable_area", non_ownable_unassigned)
+    if non_ownable:
+        add_generated_region_from_ranges(
+            "non_ownable_region",
+            "non_ownable_area",
+            non_ownable,
+            ("uninhabitable", "non_ownable"),
+        )
 
     all_unassigned = set(location_keys) - assigned_provinces
     if all_unassigned:
@@ -1880,11 +1977,7 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     }
     continent_keys = set()
     if isinstance(continent_map, dict):
-        for key, value in continent_map.items():
-            if isinstance(value, list):
-                continent_keys.update(value)
-            else:
-                continent_keys.add(key)
+        continent_keys.update(continent_map.keys())
     subcontinent_keys = set(superregion_map.keys()) if isinstance(superregion_map, dict) else set()
     nested = build_full_hierarchy(regions, superregion_map, continent_map)
 
@@ -1956,12 +2049,27 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     def _title_key(key: str) -> str:
         return key.replace("_", " ").strip().title() if key else key
 
+    superregion_name_overrides = {
+        "persia": "Persia",
+        "arabia": "Arabia",
+        "caucasus": "Caucasus",
+        "levant": "Levant",
+        "carpathia": "Carpathia",
+        "northern_forests": "Northern Forests",
+        "pontic_steppe": "Pontic Steppe",
+        "maghreb": "Maghreb",
+        "ifriqiya": "Ifriqiya",
+        "libya": "Libya",
+        "sahara": "Sahara",
+    }
+
     superregion_keys = sorted(
         {superregion for sub in superregion_map.values() for superregion in sub.keys()}
     )
     for key in superregion_keys:
         if key not in existing_loc:
-            loc_lines.append(f'  {key}: "{ir_loc.get(key, _title_key(key))}"')
+            label = superregion_name_overrides.get(key, ir_loc.get(key, _title_key(key)))
+            loc_lines.append(f'  {key}: "{label}"')
 
     for key in sorted(subcontinent_keys):
         if key not in existing_loc:
@@ -2223,14 +2331,22 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
             dst_path.write_text("\n".join(lines) + "\n", encoding="utf-8-sig")
             print_written("file", dst_path)
 
-    script_roots = [
-        eu5_game / "in_game" / "common" / "situations",
-        eu5_game / "in_game" / "common" / "scripted_triggers",
-    ]
-    for root in script_roots:
-        if not root.exists():
-            continue
-        for src in root.rglob("*.txt"):
+    # Situations in I:U should remain blank (basegame logic/data dependencies).
+    src_situations = eu5_game / "in_game" / "common" / "situations"
+    dst_situations = mod_root / "in_game" / "common" / "situations"
+    if src_situations.exists():
+        dst_situations.mkdir(parents=True, exist_ok=True)
+        for src in src_situations.rglob("*.txt"):
+            rel = src.relative_to(src_situations)
+            dst = dst_situations / rel
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            dst.write_text("", encoding="utf-8-sig")
+            print_written("file", dst)
+
+    # Scripted triggers still need location-aware patching.
+    scripted_triggers_root = eu5_game / "in_game" / "common" / "scripted_triggers"
+    if scripted_triggers_root.exists():
+        for src in scripted_triggers_root.rglob("*.txt"):
             rel = src.relative_to(eu5_game / "in_game")
             dst = mod_root / "in_game" / rel
             fix_script_file(src, dst)
