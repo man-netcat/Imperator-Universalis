@@ -1126,7 +1126,7 @@ lordship_of_ireland_can_declare_wars_trigger = {
 					is_neighbor_of = scope:attacker
 					NOT = { is_member_of_international_organization = international_organization:lordship_of_ireland }
 					any_owned_location = {
-						region = africa_region
+						region = africa_area
 					}
 				}
 			}

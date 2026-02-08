@@ -99,8 +99,8 @@ unit_genoese_galley_location_trigger = {
 
 hobelars_location_trigger = {
 	OR = {
-		region = africa_region
-		region = africa_region
+		region = africa_area
+		region = africa_area
 	}
 }
 
@@ -132,7 +132,7 @@ unit_is_tribal_pop_trigger = {
 
 
 unit_moa_hunter_location_trigger = {
-	region = africa_region
+	region = africa_area
 	raw_material = goods:wild_game
 }
 

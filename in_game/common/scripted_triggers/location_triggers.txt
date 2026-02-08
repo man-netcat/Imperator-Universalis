@@ -34,42 +34,42 @@ is_endemic_typhus_location = {
 	#Endemic locations
 	OR = {
 		#Epidemic Typhus
-		region = africa_region
-		region = africa_region
-		region = africa_region
-		region = africa_region
-		region = africa_region
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
 		#Murine Typhus
-		region = africa_region
-		region = africa_region
-		region = nubia_region
-		region = africa_region
-		region = africa_region
-		region = arabia_region
-		region = africa_region
-		region = africa_region
-		region = africa_region
-		region = africa_region
-		region = africa_region
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
 		area = area:provence_area
-		region = africa_region
-		region = africa_region
-		region = africa_region
-		region = africa_region
-		region = africa_region
-		region = africa_region
-		region = africa_region
-		region = africa_region
-		region = africa_region
-		region = africa_region
-		region = africa_region
-		region = africa_region
-		region = africa_region
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
 		#Scrub typhus
-		region = africa_region
-		region = africa_region
-		region = tibet_region
-		region = africa_region
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
 
 	}
 }
@@ -84,23 +84,23 @@ is_endemic_bubonic_plague_location = {
 	}
 	#Endemic locations
 	OR = {
-		region = africa_region
-		region = africa_region
-		region = africa_region
-		region = africa_region
-		region = africa_region
-		region = africa_region
-		region = africa_region
-		region = africa_region
-		region = africa_region
-		region = africa_region
-		region = africa_region
-		region = africa_region
-		region = africa_region
-		region = tibet_region
-		region = africa_region
-		region = africa_region
-		region = africa_region
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
+		region = africa_area
 	}
 }
 
@@ -191,11 +191,11 @@ is_part_of_chinese_grand_canal = {
 is_capital_in_south_america = {
 	capital ?= {
 		OR = {
-			region = africa_region
-			region = africa_region
-			region = africa_region
-			region = africa_region
-			region = africa_region
+			region = africa_area
+			region = africa_area
+			region = africa_area
+			region = africa_area
+			region = africa_area
 		}
 	}
 }
@@ -203,12 +203,12 @@ is_capital_in_south_america = {
 is_capital_in_south_america_or_carribean = {
 	capital ?= {
 		OR = {
-			region = africa_region
-			region = africa_region
-			region = africa_region
-			region = africa_region
-			region = africa_region
-			region = africa_region
+			region = africa_area
+			region = africa_area
+			region = africa_area
+			region = africa_area
+			region = africa_area
+			region = africa_area
 		}
 	}
 }
@@ -216,10 +216,10 @@ is_capital_in_south_america_or_carribean = {
 is_capital_mesoamerica = {
 	capital ?= {
 		OR = {
-			region = africa_region
+			region = africa_area
 			area = area:xalisco_area
 			area = area:zacatecas_area
-			region = africa_region
+			region = africa_area
 		}
 	}
 }

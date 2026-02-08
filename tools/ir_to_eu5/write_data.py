@@ -1,4 +1,5 @@
 import os
+import re
 import shutil
 from collections import defaultdict
 from pathlib import Path
@@ -17,6 +18,7 @@ from .data import (
     ir_language_dialect_parent_map,
     ir_culture_group_graphical_map,
     ir_culture_graphical_overrides,
+    formable_requirement_overrides,
 )
 from .paths import *
 
@@ -974,6 +976,640 @@ def write_country_setup(country_data: list, _override_data: list):
             print(f"Removed legacy file: {legacy_path.relative_to(mod_root)}")
 
 
+def write_formable_countries(
+    formable_data: dict[str, dict[str, object]],
+    country_data: list,
+    ir_country_locations: dict[str, list[int]],
+    ir_country_capitals: dict[str, int],
+    id_to_key: dict[int, str],
+    eu5_map_data: dict | None,
+) -> None:
+    out_path = mod_root / "in_game" / "common" / "formable_countries" / "00_formable_countries.txt"
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+
+    known_tags = {country.get("tag") for country in country_data if country.get("tag")}
+    tag_to_primary_culture: dict[str, str] = {}
+    for country in country_data:
+        tag = country.get("tag")
+        culture = country.get("culture")
+        if isinstance(tag, str) and isinstance(culture, str) and culture:
+            tag_to_primary_culture[tag] = culture
+    missing_tags = sorted(tag for tag in formable_data if tag not in known_tags)
+    if missing_tags:
+        sample = ", ".join(missing_tags[:15])
+        suffix = "..." if len(missing_tags) > 15 else ""
+        print(
+            f"Warning: {len(missing_tags)} formable tags missing from extracted countries: {sample}{suffix}"
+        )
+
+    def _build_location_hierarchy_maps(
+        node: object,
+        current_region: str | None = None,
+        current_area: str | None = None,
+    ) -> tuple[dict[str, str], dict[str, str]]:
+        location_to_area: dict[str, str] = {}
+        area_to_region: dict[str, str] = {}
+
+        if isinstance(node, dict):
+            for key, value in node.items():
+                next_region = current_region
+                next_area = current_area
+                if isinstance(key, str):
+                    if key.endswith("_region"):
+                        next_region = key
+                    if key.endswith("_area"):
+                        next_area = key
+                        if next_region:
+                            area_to_region[next_area] = next_region
+                    if (
+                        next_area
+                        and isinstance(value, (str, int, float))
+                        and isinstance(key, str)
+                        and not key.endswith("_area")
+                        and not key.endswith("_region")
+                    ):
+                        location_to_area[key] = next_area
+                        if next_region:
+                            area_to_region[next_area] = next_region
+
+                child_loc_to_area, child_area_to_region = _build_location_hierarchy_maps(
+                    value,
+                    current_region=next_region,
+                    current_area=next_area,
+                )
+                location_to_area.update(child_loc_to_area)
+                area_to_region.update(child_area_to_region)
+        elif isinstance(node, list):
+            for item in node:
+                if isinstance(item, str):
+                    if current_area:
+                        location_to_area[item] = current_area
+                        if current_region:
+                            area_to_region[current_area] = current_region
+                else:
+                    child_loc_to_area, child_area_to_region = _build_location_hierarchy_maps(
+                        item,
+                        current_region=current_region,
+                        current_area=current_area,
+                    )
+                    location_to_area.update(child_loc_to_area)
+                    area_to_region.update(child_area_to_region)
+
+        return location_to_area, area_to_region
+
+    location_to_area, area_to_region = _build_location_hierarchy_maps(eu5_map_data or {})
+    location_to_province = _build_location_to_province_map(eu5_map_data or {})
+    province_to_area: dict[str, str] = {}
+    for loc_key, province_key in location_to_province.items():
+        area_key = location_to_area.get(loc_key)
+        if isinstance(province_key, str) and isinstance(area_key, str):
+            province_to_area[province_key] = area_key
+    area_to_locations: dict[str, list[str]] = {}
+    region_to_locations: dict[str, list[str]] = {}
+    province_to_locations: dict[str, list[str]] = {}
+    for loc_key, area_key in sorted(location_to_area.items()):
+        area_to_locations.setdefault(area_key, []).append(loc_key)
+        region_key = area_to_region.get(area_key)
+        if isinstance(region_key, str):
+            region_to_locations.setdefault(region_key, []).append(loc_key)
+    for loc_key, province_key in sorted(location_to_province.items()):
+        if isinstance(province_key, str):
+            province_to_locations.setdefault(province_key, []).append(loc_key)
+    all_provinces = sorted(set(location_to_province.values()))
+    all_areas = sorted(set(area_to_region.keys()) | set(location_to_area.values()))
+    all_regions = sorted(set(area_to_region.values()))
+    province_set = set(all_provinces)
+    area_set = set(all_areas)
+    region_set = set(all_regions)
+
+    def _resolve_province_name(raw: object) -> str | None:
+        if not isinstance(raw, str):
+            return None
+        text = raw.strip()
+        if text.startswith("province:"):
+            text = text[9:]
+        candidates = [text]
+        if text.endswith("_province"):
+            candidates.append(text[: -len("_province")])
+            candidates.append(f"{text[: -len('_province')]}_area")
+        elif text.endswith("_area"):
+            candidates.append(text[: -len("_area")])
+            candidates.append(f"{text[: -len('_area')]}_province")
+        else:
+            candidates.append(f"{text}_province")
+            candidates.append(f"{text}_area")
+        for candidate in candidates:
+            if candidate in province_set:
+                return candidate
+        return None
+
+    def _resolve_area_name(raw: object) -> str | None:
+        if not isinstance(raw, str):
+            return None
+        text = raw.strip()
+        if text.startswith("area:"):
+            text = text[5:]
+        candidates = [text]
+        if text.endswith("_area"):
+            candidates.append(text[: -len("_area")])
+            candidates.append(f"{text[: -len('_area')]}_region")
+        elif text.endswith("_region"):
+            candidates.append(text[: -len("_region")])
+            candidates.append(f"{text[: -len('_region')]}_area")
+        else:
+            candidates.append(f"{text}_area")
+            candidates.append(f"{text}_region")
+        for candidate in candidates:
+            if candidate in area_set:
+                return candidate
+        return None
+
+    def _resolve_region_name(raw: object) -> str | None:
+        if not isinstance(raw, str):
+            return None
+        text = raw.strip()
+        if text.startswith("region:"):
+            text = text[7:]
+        candidates = [text]
+        if text.endswith("_region"):
+            candidates.append(text[: -len("_region")])
+        else:
+            candidates.append(f"{text}_region")
+        for candidate in candidates:
+            if candidate in region_set:
+                return candidate
+        return None
+
+    def _coerce_area_override(raw: object) -> str | None:
+        return _resolve_area_name(raw)
+
+    def _coerce_region_override(raw: object) -> str | None:
+        return _resolve_region_name(raw)
+
+    def _scope_from_locations(location_ids: list[int]) -> tuple[str | None, list[str], list[str]]:
+        location_keys = [id_to_key.get(pid) for pid in location_ids]
+        location_keys = [key for key in location_keys if isinstance(key, str)]
+        if not location_keys:
+            return None, [], []
+
+        inferred_regions: set[str] = set()
+        for key in location_keys:
+            area = location_to_area.get(key)
+            if not area:
+                continue
+            region = area_to_region.get(area)
+            if region:
+                inferred_regions.add(region)
+
+        if inferred_regions:
+            return "regions", sorted(inferred_regions), sorted(set(location_keys))
+        return "locations", sorted(set(location_keys)), sorted(set(location_keys))
+
+    def _areas_from_locations(location_ids: list[int]) -> list[str]:
+        location_keys = [id_to_key.get(pid) for pid in location_ids]
+        location_keys = [key for key in location_keys if isinstance(key, str)]
+        inferred_areas = {
+            area
+            for key in location_keys
+            for area in [location_to_area.get(key)]
+            if isinstance(area, str)
+        }
+        return sorted(inferred_areas)
+
+    def _provinces_from_locations(location_ids: list[int]) -> list[str]:
+        location_keys = [id_to_key.get(pid) for pid in location_ids]
+        location_keys = [key for key in location_keys if isinstance(key, str)]
+        inferred_provinces = {
+            province
+            for key in location_keys
+            for province in [location_to_province.get(key)]
+            if isinstance(province, str)
+        }
+        return sorted(inferred_provinces)
+
+    def _map_ir_culture(raw: object) -> str | None:
+        if not isinstance(raw, str):
+            return None
+        text = raw.strip()
+        if not text:
+            return None
+        return text if text.startswith("ir_") else f"ir_{text}"
+
+    def _map_ir_culture_group(raw: object) -> str | None:
+        if not isinstance(raw, str):
+            return None
+        text = raw.strip()
+        if not text:
+            return None
+        if text.startswith("ir_"):
+            return text
+        if text.endswith("_group"):
+            return f"ir_{text}_g"
+        return f"ir_{text}_g"
+
+    def _map_ir_religion(raw: object) -> str | None:
+        if not isinstance(raw, str):
+            return None
+        text = raw.strip()
+        if not text:
+            return None
+        return text if text.startswith("ir_") else f"ir_{text}"
+
+    blocks = []
+    for tag in sorted(formable_data.keys()):
+        meta = formable_data.get(tag, {})
+        manual_override = formable_requirement_overrides.get(tag, {})
+        if isinstance(meta.get("scope"), dict) and isinstance(meta.get("potential_lines"), list):
+            display_name = str(meta.get("name") or tag)
+            blocks.append(f"# {tag}: {display_name}")
+
+            level = int(meta.get("level", 2))
+            if level < 1:
+                level = 1
+            if level > 4:
+                level = 4
+
+            explicit_fraction = meta.get("required_locations_fraction")
+            if isinstance(explicit_fraction, (int, float)) and 0 < float(explicit_fraction) <= 1.0:
+                required_fraction = f"{float(explicit_fraction):.2f}".rstrip("0").rstrip(".")
+            else:
+                required_fraction = "0.75" if level <= 2 else "0.6"
+
+            rule = str(meta.get("rule") or "historical")
+            potential_lines = [str(v) for v in meta.get("potential_lines", []) if isinstance(v, str)]
+            # Keep curated formables intentionally simple (EU5-style basic blocks).
+            allow_lines: list[str] = []
+            scope = meta.get("scope") if isinstance(meta.get("scope"), dict) else {}
+
+            lines = [
+                f"level = {level}",
+                f"required_locations_fraction = {required_fraction}",
+                f"rule = {rule}",
+                "potential = {",
+                *[f"    {line}" for line in potential_lines],
+                "}",
+                "allow = {",
+                *[f"    {line}" for line in allow_lines],
+                "}",
+                f"name = {tag}",
+                f"flag = {tag}",
+                f"adjective = {tag}_ADJ",
+                f"tag = {tag}",
+            ]
+            if tag in known_tags:
+                lines.append(f"color = map_{tag}")
+
+            for scope_type in ("locations", "provinces", "areas", "regions"):
+                values = scope.get(scope_type)
+                if not isinstance(values, list):
+                    continue
+                scope_values = sorted({str(v) for v in values if isinstance(v, str) and v})
+                if not scope_values:
+                    continue
+                lines.append(f"{scope_type} = {{")
+                for value in scope_values:
+                    lines.append(f"    {value}")
+                lines.append("}")
+
+            lines.extend(["form_effect = {", "}"])
+            blocks.append((f"{tag}_f", lines))
+            blocks.append("")
+            continue
+
+        ir_level = int(meta.get("level", 1))
+        # Shift IR tiers (1/2/3) to EU5-facing tiers (2/3/4).
+        level = min(4, ir_level + 1)
+        override_level = manual_override.get("level")
+        if isinstance(override_level, int) and 1 <= override_level <= 4:
+            level = override_level
+        display_name = str(meta.get("name") or tag)
+        required_fraction = "0.75" if level <= 2 else "0.6"
+        override_fraction = manual_override.get("required_locations_fraction")
+        if isinstance(override_fraction, (int, float)) and 0 < float(override_fraction) <= 1.0:
+            required_fraction = f"{float(override_fraction):.2f}".rstrip("0").rstrip(".")
+        required_provinces = sorted(
+            {
+                province
+                for province in (_resolve_province_name(v) for v in meta.get("required_areas", []))
+                if province
+            }
+        )
+        required_areas = sorted(
+            {
+                area
+                for area in (_resolve_area_name(v) for v in meta.get("required_regions", []))
+                if area
+            }
+        )
+        required_regions = sorted(
+            {
+                region
+                for region in (_resolve_region_name(v) for v in meta.get("required_regions", []))
+                if region
+            }
+        )
+        required_location_ids = sorted(
+            {int(pid) for pid in meta.get("required_location_ids", []) if isinstance(pid, int)}
+        )
+        region_percent = meta.get("required_region_percent", [])
+        required_primary_cultures = sorted(
+            {
+                culture
+                for culture in (
+                    _map_ir_culture(v) for v in meta.get("required_primary_cultures", [])
+                )
+                if culture
+            }
+        )
+        required_culture_groups = sorted(
+            {
+                group
+                for group in (
+                    _map_ir_culture_group(v) for v in meta.get("required_culture_groups", [])
+                )
+                if group
+            }
+        )
+        required_religions = sorted(
+            {
+                religion
+                for religion in (
+                    _map_ir_religion(v) for v in meta.get("required_religions", [])
+                )
+                if religion
+            }
+        )
+        required_primary_cultures = sorted(
+            set(required_primary_cultures)
+            | {
+                culture
+                for culture in (
+                    _map_ir_culture(v)
+                    for v in manual_override.get("required_primary_cultures", [])
+                )
+                if culture
+            }
+        )
+        required_culture_groups = sorted(
+            set(required_culture_groups)
+            | {
+                group
+                for group in (
+                    _map_ir_culture_group(v)
+                    for v in manual_override.get("required_culture_groups", [])
+                )
+                if group
+            }
+        )
+        required_religions = sorted(
+            set(required_religions)
+            | {
+                religion
+                for religion in (
+                    _map_ir_religion(v) for v in manual_override.get("required_religions", [])
+                )
+                if religion
+            }
+        )
+        if region_percent:
+            try:
+                min_pct = min(float(pct) for _pid, pct in region_percent if pct is not None)
+                if 0 < min_pct <= 1.0:
+                    required_fraction = f"{min_pct:.2f}".rstrip("0").rstrip(".")
+            except Exception:
+                pass
+            for pid, _pct in region_percent:
+                if isinstance(pid, int):
+                    loc_key = id_to_key.get(pid)
+                    if not loc_key:
+                        continue
+                    area = location_to_area.get(loc_key)
+                    region = area_to_region.get(area) if area else None
+                    if area and area in all_areas and area not in required_areas:
+                        required_areas.append(area)
+                    if region and region in all_regions and region not in required_regions:
+                        required_regions.append(region)
+
+        blocks.append(f"# {tag}: {display_name}")
+        potential_lines: list[str] = []
+        culture_conditions = (
+            [f"culture = culture:{culture}" for culture in required_primary_cultures]
+            + [
+                "any_primary_or_accepted_or_tolerated_culture = "
+                + f"{{ has_culture_group = culture_group:{group} }}"
+                for group in required_culture_groups
+            ]
+        )
+        if len(culture_conditions) == 1:
+            potential_lines.append(culture_conditions[0])
+        elif len(culture_conditions) > 1:
+            potential_lines.append("OR = {")
+            for cond in culture_conditions:
+                potential_lines.append(f"    {cond}")
+            potential_lines.append("}")
+
+        if len(required_religions) == 1:
+            potential_lines.append(f"religion = religion:{required_religions[0]}")
+        elif len(required_religions) > 1:
+            potential_lines.append("OR = {")
+            for religion in required_religions:
+                potential_lines.append(f"    religion = religion:{religion}")
+            potential_lines.append("}")
+
+        if not potential_lines:
+            fallback_culture = tag_to_primary_culture.get(tag)
+            if isinstance(fallback_culture, str) and fallback_culture:
+                potential_lines.append(f"culture = culture:{fallback_culture}")
+
+        scope_type = None
+        scope_values: list[str] = []
+        override_locations = [
+            v for v in manual_override.get("locations", []) if isinstance(v, str)
+        ]
+        override_provinces = sorted(
+            {
+                province
+                for province in (
+                    _resolve_province_name(v) for v in manual_override.get("provinces", [])
+                )
+                if province
+            }
+            | {
+                province
+                for province in (
+                    _resolve_province_name(v) for v in manual_override.get("areas", [])
+                )
+                if province
+            }
+        )
+        override_areas = sorted(
+            {
+                area
+                for area in (_coerce_area_override(v) for v in manual_override.get("areas", []))
+                if area
+            }
+            | {
+                area
+                for area in (_coerce_area_override(v) for v in manual_override.get("regions", []))
+                if area
+            }
+        )
+        override_regions = sorted(
+            {
+                region
+                for region in (
+                    _coerce_region_override(v) for v in manual_override.get("regions", [])
+                )
+                if region
+            }
+        )
+        inferred_areas_from_locations = _areas_from_locations(required_location_ids)
+        inferred_provinces_from_locations = _provinces_from_locations(required_location_ids)
+        if override_locations:
+            scope_type, scope_values = "locations", sorted(set(override_locations))
+        elif override_provinces:
+            scope_type, scope_values = "provinces", sorted(set(override_provinces))
+        elif override_areas:
+            scope_type, scope_values = "areas", sorted(set(override_areas))
+        elif override_regions:
+            scope_type, scope_values = "regions", sorted(set(override_regions))
+        elif required_provinces:
+            scope_type, scope_values = "provinces", sorted(set(required_provinces))
+        elif required_areas:
+            scope_type, scope_values = "areas", sorted(set(required_areas))
+        elif required_location_ids and len(required_location_ids) <= 2:
+            # Keep capital/city-centric formables as explicit location targets.
+            scope_type, scope_values = "locations", sorted(
+                {
+                    key
+                    for key in (id_to_key.get(pid) for pid in required_location_ids)
+                    if isinstance(key, str)
+                }
+            )
+        elif required_location_ids and ir_level <= 2 and inferred_provinces_from_locations:
+            # Tier 1/2 I:R formables are usually scoped to compact local goals.
+            scope_type, scope_values = "provinces", inferred_provinces_from_locations
+        elif required_location_ids and ir_level <= 2 and inferred_areas_from_locations:
+            scope_type, scope_values = "areas", inferred_areas_from_locations
+        elif required_regions:
+            scope_type, scope_values = "regions", sorted(set(required_regions))
+        elif required_location_ids:
+            scope_type, scope_values, _ = _scope_from_locations(required_location_ids)
+        else:
+            # Keep every formable valid even when no explicit decision requirement was found.
+            capital_id = ir_country_capitals.get(tag)
+            if capital_id is not None:
+                loc_key = id_to_key.get(capital_id)
+                if loc_key:
+                    scope_type, scope_values = "locations", [loc_key]
+
+        # Build allow gating from extracted decision requirements.
+        # Keep this lightweight: a single anchor `owns` check to mirror common EU5 formable style
+        # without over-constraining broad region/area formables.
+        allow_lines: list[str] = []
+
+        def _location_in_scope(loc_key: str) -> bool:
+            if not scope_type or not scope_values:
+                return False
+            if scope_type == "locations":
+                return loc_key in scope_values
+            province = location_to_province.get(loc_key)
+            if scope_type == "provinces":
+                return isinstance(province, str) and province in scope_values
+            area = location_to_area.get(loc_key)
+            if scope_type == "areas":
+                return isinstance(area, str) and area in scope_values
+            if scope_type == "regions":
+                region = area_to_region.get(area) if isinstance(area, str) else None
+                return isinstance(region, str) and region in scope_values
+            return False
+
+        anchor_loc: str | None = None
+        extracted_location_keys = [
+            key
+            for key in (id_to_key.get(pid) for pid in required_location_ids)
+            if isinstance(key, str)
+        ]
+
+        if scope_type == "locations" and scope_values:
+            if len(scope_values) <= 2:
+                for loc in scope_values:
+                    allow_lines.append(f"owns = location:{loc}")
+            else:
+                anchor_loc = scope_values[0]
+        else:
+            # Prefer historical capital of the formable tag when it falls inside selected scope.
+            capital_id = ir_country_capitals.get(tag)
+            if isinstance(capital_id, int):
+                cap_key = id_to_key.get(capital_id)
+                if isinstance(cap_key, str) and _location_in_scope(cap_key):
+                    anchor_loc = cap_key
+            # Fall back to first extracted required location inside selected scope.
+        if anchor_loc is None:
+            for loc in extracted_location_keys:
+                if _location_in_scope(loc):
+                    anchor_loc = loc
+                    break
+        # Final fallback: infer a deterministic anchor from selected scope itself.
+        if anchor_loc is None and scope_values:
+            if scope_type == "provinces":
+                for province in sorted(scope_values):
+                    candidates = province_to_locations.get(province) or []
+                    if candidates:
+                        anchor_loc = sorted(candidates)[0]
+                        break
+            elif scope_type == "areas":
+                for area in sorted(scope_values):
+                    candidates = area_to_locations.get(area) or []
+                    if candidates:
+                        anchor_loc = sorted(candidates)[0]
+                        break
+            elif scope_type == "regions":
+                for region in sorted(scope_values):
+                    candidates = region_to_locations.get(region) or []
+                    if candidates:
+                        anchor_loc = sorted(candidates)[0]
+                        break
+
+        if anchor_loc:
+            allow_lines.append(f"owns = location:{anchor_loc}")
+
+        lines = [
+            f"level = {level}",
+            f"required_locations_fraction = {required_fraction}",
+            "rule = historical",
+            "potential = {",
+            *[f"    {line}" for line in potential_lines],
+            "}",
+            "allow = {",
+            *[f"    {line}" for line in allow_lines],
+            "}",
+            f"name = {tag}",
+            f"flag = {tag}",
+            f"adjective = {tag}_ADJ",
+            f"tag = {tag}",
+        ]
+        if tag in known_tags:
+            lines.append(f"color = map_{tag}")
+
+        if scope_type and scope_values:
+            lines.append(f"{scope_type} = {{")
+            for value in scope_values:
+                lines.append(f"    {value}")
+            lines.append("}")
+
+        lines.extend(
+            [
+                "form_effect = {",
+                "}",
+            ]
+        )
+        blocks.append((f"{tag}_f", lines))
+        blocks.append("")
+
+    write_blocks(out_path, blocks)
+
+
 def write_localisation_files(
     culture_data: list,
     religion_data: list,
@@ -981,7 +1617,11 @@ def write_localisation_files(
     character_data: list,
     dynasties: list,
     deity_data: list,
+    formable_data: dict[str, dict[str, object]] | None = None,
 ):
+    def _esc_loc(value: object) -> str:
+        return str(value).replace("\\", "\\\\").replace('"', '\\"').replace("\n", "\\n")
+
     def sort_lines(lines: list[str]) -> list[str]:
         """Keep the first line (header) and sort the rest alphabetically."""
         return [lines[0]] + sorted(lines[1:])
@@ -1109,6 +1749,27 @@ def write_localisation_files(
         country_lines.append(f'  {country["tag"]}_ADJ: "{country["name_adj"]}"')
     country_lines = remove_duplicate_keys(sort_lines(country_lines))
 
+    # -------- Formables --------
+    formable_lines = ["l_english:"]
+    formable_desc_lines = ["l_english:"]
+    if formable_data:
+        country_name_map = {country["tag"]: country["name"] for country in country_data}
+        country_adj_map = {country["tag"]: country["name_adj"] for country in country_data}
+        for tag in sorted(formable_data.keys()):
+            meta = formable_data.get(tag, {})
+            name = str(meta.get("name") or country_name_map.get(tag) or tag)
+            adj = str(meta.get("adj") or country_adj_map.get(tag) or name)
+            formable_lines.append(f'  {tag}: "{_esc_loc(name)}"')
+            formable_lines.append(f'  {tag}_ADJ: "{_esc_loc(adj)}"')
+            # EU5-style aliases for formable IDs referenced as TAG_f in UI/scripts.
+            formable_lines.append(f'  {tag}_f: "{_esc_loc(name)}"')
+            formable_lines.append(f'  {tag}_f_ADJ: "{_esc_loc(adj)}"')
+            desc = meta.get("desc")
+            if isinstance(desc, str) and desc.strip():
+                formable_desc_lines.append(f'  {tag}_f_desc: "{_esc_loc(desc)}"')
+    formable_lines = remove_duplicate_keys(sort_lines(formable_lines))
+    formable_desc_lines = remove_duplicate_keys(sort_lines(formable_desc_lines))
+
     # -------- Characters --------
     character_lines = ["l_english:"]
     character_lines.extend(f'  {c["name_tag"]}: "{c["name"]}"' for c in character_data)
@@ -1143,6 +1804,12 @@ def write_localisation_files(
         iu_localisation / "cultural_and_languages_l_english.yml", language_lines
     )
     write_blocks(iu_localisation / "ir_countries_l_english.yml", country_lines)
+    write_blocks(iu_localisation / "ir_formables_l_english.yml", formable_lines)
+    if len(formable_desc_lines) > 1:
+        write_blocks(
+            iu_localisation / "ir_formable_countries_l_english.yml",
+            formable_desc_lines,
+        )
     write_blocks(iu_localisation / "ir_characters_l_english.yml", character_lines)
     write_blocks(iu_localisation / "ir_dynasties_l_english.yml", dynasty_lines)
     write_blocks(iu_localisation / "ir_gods_l_english.yml", god_lines)

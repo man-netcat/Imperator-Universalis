@@ -761,3 +761,142 @@ ir_culture_graphical_overrides = {
     "ir_armenian": ["caucasian_gfx", "middle_east_gfx", "european_gfx"],
     "ir_hebrew": ["israelite_gfx", "levantine_gfx", "middle_east_gfx"],
 }
+
+# Manual overrides for generated EU5 formable requirements.
+# Use this when a generated scope is technically valid but design-wise not desired.
+# Supported keys per tag:
+# - "areas": list[str]
+# - "regions": list[str]
+# - "locations": list[str]  # location keys (not province IDs)
+# - "required_locations_fraction": float
+#
+# Scope precedence in writer:
+#   locations > areas > regions
+formable_requirement_overrides: dict[str, dict[str, object]] = {
+    # Endgame / large unions
+    "APF": {
+        "regions": ["cisalpine_gaul_region", "transalpine_gaul_region", "rhaetia_region"],
+        "required_locations_fraction": 0.6,
+        "required_culture_groups": ["latin", "gallic", "celto_pannonian_group"],
+    },
+    "IGK": {
+        # IR uses an OR across major Indian regions; approximate with low fraction.
+        "regions": [
+            "pracya_region",
+            "madhyadesa_region",
+            "vindhyaprstha_region",
+            "dravida_region",
+            "aparanta_region",
+            "karnata_region",
+            "avanti_region",
+            "maru_region",
+            "gandhara_region",
+        ],
+        "required_locations_fraction": 0.12,
+        "required_culture_groups": ["germanic"],
+    },
+    "PLL": {
+        "regions": ["greece_region", "macedonia_region"],
+        "required_locations_fraction": 0.6,
+        "required_culture_groups": ["hellenic"],
+    },
+    "VC1": {
+        "regions": ["italy_region", "illyria_region", "greece_region"],
+        "required_locations_fraction": 0.6,
+        "required_culture_groups": ["latin"],
+    },
+    "VC2": {
+        "regions": ["cisalpine_gaul_region", "illyria_region"],
+        "required_locations_fraction": 0.6,
+        "required_culture_groups": ["latin"],
+    },
+
+    # Mid-tier formables
+    "ARI": {
+        "regions": ["armenia_region", "cappadocia_region"],
+        "required_locations_fraction": 0.75,
+        "required_culture_groups": ["anatolian"],
+    },
+    "BPL": {
+        "regions": ["taurica_region", "pontus_region"],
+        "required_locations_fraction": 0.7,
+        "required_culture_groups": ["hellenic", "scythia"],
+    },
+    "DRA": {
+        "areas": ["drangiana_area"],
+        "required_locations_fraction": 0.75,
+        "required_culture_groups": ["persia"],
+    },
+    "ENG": {
+        "regions": ["great_britain_region"],
+        "required_locations_fraction": 0.7,
+        "required_culture_groups": ["germanic", "britannic"],
+    },
+    "FEZ": {
+        "regions": ["fezzan_region"],
+        "required_locations_fraction": 0.75,
+        "required_primary_cultures": ["macaean", "psyllic", "nasamonian", "garamantic", "phazani"],
+    },
+    "FRA": {
+        "regions": ["france_region"],
+        "required_locations_fraction": 0.7,
+        "required_culture_groups": ["germanic", "gallic"],
+    },
+    "ISL": {
+        "areas": ["histria_area", "venetia_area", "dalmatia_centralis_area"],
+        "required_locations_fraction": 0.75,
+        "required_culture_groups": ["illyrian_group", "latin"],
+    },
+    "PTL": {
+        "regions": ["cappadocia_pontica_region", "pontus_region"],
+        "required_locations_fraction": 0.75,
+        "required_culture_groups": ["hellenic", "anatolian"],
+    },
+    "SAR": {
+        "areas": ["sardinia_meridionalis", "sardinia_septentrionalis"],
+        "required_locations_fraction": 0.8,
+    },
+    "TAT": {
+        "areas": [
+            "baetica_cordubensis_area",
+            "baetica_hispalensis_area",
+            "turdetania_occidentalis_area",
+            "bastetania_area",
+        ],
+        "required_locations_fraction": 0.75,
+        "required_culture_groups": ["iberia", "celt_iberia"],
+    },
+    "YZI": {
+        # IR uses OR over a small set of locations; approximate with low area fraction.
+        "areas": ["ferghana_area", "tarim_area", "talas_area", "cyropolis_area"],
+        "required_locations_fraction": 0.3,
+    },
+
+    # Tier-1 fallback
+    "KMR": {
+        "areas": ["gandhara_area"],
+        "required_locations_fraction": 0.75,
+        "required_culture_groups": ["aryan", "persia"],
+    },
+    "AVK": {
+        "required_culture_groups": ["gallic", "latin"],
+    },
+    "CCI": {
+        "required_culture_groups": ["anatolian", "hellenic"],
+    },
+    "KRE": {
+        "required_culture_groups": ["hellenic"],
+    },
+    "LO2": {
+        "required_culture_groups": ["hellenic"],
+    },
+    "PEN": {
+        "required_culture_groups": ["indian", "persia"],
+    },
+    "PH2": {
+        "required_culture_groups": ["hellenic"],
+    },
+    "PRU": {
+        "required_culture_groups": ["indian"],
+    },
+}

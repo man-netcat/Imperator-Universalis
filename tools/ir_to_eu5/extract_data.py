@@ -374,6 +374,447 @@ def extract_ir_country_capitals() -> dict[str, int]:
     return result
 
 
+def extract_formable_data() -> dict[str, dict[str, object]]:
+    """Return formable metadata from I:R + Invictus trigger lists via pyradox trees."""
+    block_to_level = {
+        "is_tier_1_formable_trigger": 1,
+        "is_tier_2_formable_trigger": 2,
+        "is_endgame_tag_trigger": 3,
+    }
+    data: dict[str, dict[str, object]] = {}
+    country_loc = read_localisation_file(ir_localisation_paths)
+
+    def _resolve_loc_value(key: str) -> str:
+        value = country_loc.get(key, key)
+        # Resolve simple indirection like "$ARABIA_NAME$".
+        if isinstance(value, str) and value.startswith("$") and value.endswith("$"):
+            inner = value.strip("$")
+            return country_loc.get(inner, inner)
+        return value
+
+    def _resolve_loc_optional(key: str) -> str | None:
+        if key not in country_loc:
+            return None
+        resolved = _resolve_loc_value(key)
+        if not isinstance(resolved, str):
+            return None
+        text = resolved.strip()
+        return text or None
+
+    def _pretty_name_from_decision_key(decision_key: str) -> str | None:
+        if not isinstance(decision_key, str):
+            return None
+        raw_name = _resolve_loc_value(decision_key)
+        if not isinstance(raw_name, str) or not raw_name.strip():
+            return None
+        name = raw_name.strip()
+        lower = name.lower()
+        if lower.startswith("form "):
+            name = name[5:].strip()
+        return name or None
+
+    def _collect_tags(node) -> list[str]:
+        tags: list[str] = []
+        if isinstance(node, _pydt.Tree):
+            for key, value in node.items():
+                if str(key) == "tag" and isinstance(value, str):
+                    tags.append(value)
+                else:
+                    tags.extend(_collect_tags(value))
+        elif isinstance(node, list):
+            for item in node:
+                tags.extend(_collect_tags(item))
+        return tags
+
+    for path in iter_ir_files("common/scripted_triggers"):
+        if path.suffix != ".txt" or "decision" not in path.name.lower():
+            continue
+        tree = parse_tree(path)
+        for block_name, level in block_to_level.items():
+            if block_name not in tree:
+                continue
+            block = tree[block_name]
+            if isinstance(block, list) and block:
+                block = block[0]
+            if not isinstance(block, _pydt.Tree):
+                continue
+            for tag in _collect_tags(block):
+                # First source wins: keep earliest tag metadata encountered
+                # (Invictus first, then base files that are not overridden).
+                if tag in data:
+                    continue
+                current = {"level": level, "name": _resolve_loc_value(tag)}
+                tag_adj = _resolve_loc_optional(f"{tag}_ADJ")
+                if tag_adj:
+                    current["adj"] = tag_adj
+                data[tag] = current
+
+    def _to_province_id(value) -> int | None:
+        if isinstance(value, int):
+            return value
+        if isinstance(value, str):
+            text = value.strip()
+            if text.startswith("p:"):
+                text = text[2:]
+            if text.isdigit():
+                return int(text)
+        return None
+
+    def _tree_get(node, key):
+        if not isinstance(node, _pydt.Tree):
+            return None
+        if key not in node:
+            return None
+        return node[key]
+
+    def _collect_change_country_tag(node) -> str | None:
+        if isinstance(node, _pydt.Tree):
+            for key, value in node.items():
+                if str(key) == "change_country_tag" and isinstance(value, str):
+                    return value
+                nested = _collect_change_country_tag(value)
+                if nested:
+                    return nested
+        elif isinstance(node, list):
+            for item in node:
+                nested = _collect_change_country_tag(item)
+                if nested:
+                    return nested
+        return None
+
+    def _infer_level_from_decision_path(path: Path) -> int:
+        lower_parts = [part.lower() for part in path.parts]
+        if "endgame_tags" in lower_parts:
+            return 3
+        if "tier_2_formables" in lower_parts:
+            return 2
+        if "tier_1_formables" in lower_parts:
+            return 1
+        return 0
+
+    def _normalize_area(value) -> str | None:
+        if not isinstance(value, str):
+            return None
+        text = value.strip()
+        if text.startswith("area:"):
+            text = text[5:]
+        # Ignore dynamic/script scopes and variables (not literal keys).
+        if (
+            not text
+            or text.startswith("scope:")
+            or text.startswith("root.")
+            or text.startswith("prev.")
+            or text.startswith("from.")
+            or text.startswith("p:")
+            or "$" in text
+        ):
+            return None
+        # Some IR content uses cross-tier names (e.g. *_region passed to area checks).
+        if text.endswith("_area") or text.endswith("_region"):
+            return text
+        return f"{text}_area"
+
+    def _normalize_region(value) -> str | None:
+        if not isinstance(value, str):
+            return None
+        text = value.strip()
+        if text.startswith("region:"):
+            text = text[7:]
+        # Ignore dynamic/script scopes and variables (not literal keys).
+        if (
+            not text
+            or text.startswith("scope:")
+            or text.startswith("root.")
+            or text.startswith("prev.")
+            or text.startswith("from.")
+            or text.startswith("p:")
+            or "$" in text
+        ):
+            return None
+        # Some IR content uses cross-tier names (e.g. bohemia_area in region checks).
+        if text.endswith("_region") or text.endswith("_area"):
+            return text
+        return f"{text}_region"
+
+    def _extract_scope_requirements(
+        node,
+        locations: set[int],
+        regions: set[str],
+        areas: set[str],
+        region_percent: list[tuple[int, float]],
+        parse_or: bool = False,
+    ) -> None:
+        if not isinstance(node, _pydt.Tree):
+            return
+        for key, value in node.items():
+            k = str(key)
+            if k in {"OR", "NOR"}:
+                if parse_or:
+                    branches = value if isinstance(value, list) else [value]
+                    for branch in branches:
+                        if isinstance(branch, _pydt.Tree):
+                            _extract_scope_requirements(
+                                branch, locations, regions, areas, region_percent, parse_or=False
+                            )
+                continue
+            if k in {"NOT"}:
+                continue
+
+            if k in {"owns_or_subject_owns", "owns"}:
+                if isinstance(value, list):
+                    for item in value:
+                        pid = _to_province_id(item)
+                        if pid is not None:
+                            locations.add(pid)
+                else:
+                    pid = _to_province_id(value)
+                    if pid is not None:
+                        locations.add(pid)
+                continue
+
+            if k in {"owns_or_subject_owns_region", "owns_region"}:
+                if isinstance(value, list):
+                    for item in value:
+                        region = _normalize_region(item)
+                        if region:
+                            regions.add(region)
+                else:
+                    region = _normalize_region(value)
+                    if region:
+                        regions.add(region)
+                continue
+
+            if k in {"owns_or_subject_owns_area", "owns_area"}:
+                if isinstance(value, list):
+                    for item in value:
+                        area = _normalize_area(item)
+                        if area:
+                            areas.add(area)
+                else:
+                    area = _normalize_area(value)
+                    if area:
+                        areas.add(area)
+                continue
+
+            if k == "owns_percent_of_region":
+                blocks = value if isinstance(value, list) else [value]
+                for block in blocks:
+                    if not isinstance(block, _pydt.Tree):
+                        continue
+                    pid = _to_province_id(_tree_get(block, "PROVINCE"))
+                    pct = _tree_get(block, "PERCENT")
+                    try:
+                        pct_val = float(str(pct).strip('"')) if pct is not None else 1.0
+                    except ValueError:
+                        pct_val = 1.0
+                    if pid is not None:
+                        region_percent.append((pid, pct_val))
+                continue
+
+            if k == "is_in_region":
+                region = _normalize_region(value)
+                if region:
+                    regions.add(region)
+                continue
+            if k == "is_in_area":
+                area = _normalize_area(value)
+                if area:
+                    areas.add(area)
+                continue
+            if k == "province_id":
+                if isinstance(value, list):
+                    for item in value:
+                        pid = _to_province_id(item)
+                        if pid is not None:
+                            locations.add(pid)
+                else:
+                    pid = _to_province_id(value)
+                    if pid is not None:
+                        locations.add(pid)
+                continue
+
+            # Recurse into compound/nested blocks (AND, scope blocks, custom_tooltip wrappers, etc.).
+            if isinstance(value, _pydt.Tree):
+                _extract_scope_requirements(
+                    value, locations, regions, areas, region_percent, parse_or=parse_or
+                )
+                continue
+            if isinstance(value, list):
+                for item in value:
+                    if isinstance(item, _pydt.Tree):
+                        _extract_scope_requirements(
+                            item, locations, regions, areas, region_percent, parse_or=parse_or
+                        )
+
+    def _extract_identity_requirements(
+        node,
+        primary_cultures: set[str],
+        culture_groups: set[str],
+        religions: set[str],
+    ) -> None:
+        if not isinstance(node, _pydt.Tree):
+            return
+        for key, value in node.items():
+            k = str(key)
+
+            if k in {"NOT", "NOR"}:
+                continue
+
+            if k == "primary_culture":
+                if isinstance(value, list):
+                    for item in value:
+                        if isinstance(item, str):
+                            primary_cultures.add(item)
+                elif isinstance(value, str):
+                    primary_cultures.add(value)
+                continue
+
+            if k == "country_culture_group":
+                if isinstance(value, list):
+                    for item in value:
+                        if isinstance(item, str):
+                            culture_groups.add(item)
+                elif isinstance(value, str):
+                    culture_groups.add(value)
+                continue
+
+            if k == "religion":
+                if isinstance(value, list):
+                    for item in value:
+                        if isinstance(item, str):
+                            religions.add(item)
+                elif isinstance(value, str):
+                    religions.add(value)
+                continue
+
+            if isinstance(value, _pydt.Tree):
+                _extract_identity_requirements(value, primary_cultures, culture_groups, religions)
+                continue
+
+            if isinstance(value, list):
+                for item in value:
+                    if isinstance(item, _pydt.Tree):
+                        _extract_identity_requirements(
+                            item, primary_cultures, culture_groups, religions
+                        )
+
+    for path in iter_ir_files("decisions", pattern="*.txt", recursive=True):
+        tree = parse_tree(path)
+        inferred_level = _infer_level_from_decision_path(path)
+        if "country_decisions" not in tree:
+            continue
+        decisions = tree["country_decisions"]
+        if isinstance(decisions, list) and decisions:
+            decisions = decisions[0]
+        if not isinstance(decisions, _pydt.Tree):
+            continue
+
+        for _decision_name, decision_value in decisions.items():
+            block = decision_value[0] if isinstance(decision_value, list) and decision_value else decision_value
+            if not isinstance(block, _pydt.Tree):
+                continue
+            effect = _tree_get(block, "effect")
+            effect = effect[0] if isinstance(effect, list) and effect else effect
+            form_tag = _collect_change_country_tag(effect)
+            if not form_tag:
+                continue
+
+            # First source wins for decision requirements per formable tag.
+            existing = data.get(form_tag)
+            if isinstance(existing, dict) and existing.get("has_decision_requirements"):
+                continue
+            current = existing if isinstance(existing, dict) else {
+                "level": 0,
+                "name": _resolve_loc_value(form_tag),
+            }
+            if inferred_level > 0:
+                current["level"] = max(inferred_level, int(current.get("level", 0)))
+            if current.get("name") in {form_tag, None, ""}:
+                decision_name = _pretty_name_from_decision_key(str(_decision_name))
+                if decision_name:
+                    current["name"] = decision_name
+            if not current.get("adj"):
+                tag_adj = _resolve_loc_optional(f"{form_tag}_ADJ")
+                if tag_adj:
+                    current["adj"] = tag_adj
+            if not current.get("desc"):
+                decision_desc = _resolve_loc_optional(f"{_decision_name}_desc")
+                if decision_desc:
+                    current["desc"] = decision_desc
+            current["has_decision_requirements"] = True
+            locations: set[int] = set()
+            regions: set[str] = set()
+            areas: set[str] = set()
+            region_percent: list[tuple[int, float]] = []
+
+            allow = _tree_get(block, "allow")
+            allow = allow[0] if isinstance(allow, list) and allow else allow
+            if isinstance(allow, _pydt.Tree):
+                _extract_scope_requirements(
+                    allow, locations, regions, areas, region_percent, parse_or=False
+                )
+
+            # Secondary source for explicit target scope when allow has no direct location list.
+            if not locations and not regions and not areas:
+                highlight = _tree_get(block, "highlight")
+                highlight = highlight[0] if isinstance(highlight, list) and highlight else highlight
+                if isinstance(highlight, _pydt.Tree):
+                    _extract_scope_requirements(
+                        highlight, locations, regions, areas, region_percent, parse_or=True
+                    )
+
+            primary_cultures: set[str] = set()
+            culture_groups: set[str] = set()
+            religions: set[str] = set()
+
+            potential = _tree_get(block, "potential")
+            potential = potential[0] if isinstance(potential, list) and potential else potential
+            if isinstance(potential, _pydt.Tree):
+                _extract_identity_requirements(
+                    potential, primary_cultures, culture_groups, religions
+                )
+            if isinstance(allow, _pydt.Tree):
+                _extract_identity_requirements(
+                    allow, primary_cultures, culture_groups, religions
+                )
+
+            if locations:
+                existing = set(current.get("required_location_ids", []))
+                current["required_location_ids"] = sorted(existing | locations)
+            if regions:
+                existing = set(current.get("required_regions", []))
+                current["required_regions"] = sorted(existing | regions)
+            if areas:
+                existing = set(current.get("required_areas", []))
+                current["required_areas"] = sorted(existing | areas)
+            if region_percent:
+                existing = list(current.get("required_region_percent", []))
+                current["required_region_percent"] = existing + region_percent
+            if primary_cultures:
+                existing = set(current.get("required_primary_cultures", []))
+                current["required_primary_cultures"] = sorted(existing | primary_cultures)
+            if culture_groups:
+                existing = set(current.get("required_culture_groups", []))
+                current["required_culture_groups"] = sorted(existing | culture_groups)
+            if religions:
+                existing = set(current.get("required_religions", []))
+                current["required_religions"] = sorted(existing | religions)
+
+            data[form_tag] = current
+
+    # Backstop: any decision-derived formable without explicit tier still behaves as tier 1.
+    for tag, meta in data.items():
+        if meta.get("has_decision_requirements") and int(meta.get("level", 0)) <= 0:
+            meta["level"] = 1
+
+    return data
+
+
+def extract_formable_tags() -> dict[str, int]:
+    """Return formable tag -> EU5 level, collected from I:R + Invictus triggers."""
+    return {tag: int(meta["level"]) for tag, meta in extract_formable_data().items()}
+
+
 def extract_character_data():
     character_loc = read_localisation_file(ir_localisation_paths)
 

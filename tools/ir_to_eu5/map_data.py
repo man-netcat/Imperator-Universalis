@@ -220,6 +220,51 @@ superregion_map = {
 }
 
 
+def to_province_key(key: str) -> str:
+    if not isinstance(key, str):
+        return key
+    text = key.strip()
+    if text.endswith("_province"):
+        return text
+    if text.endswith("_area"):
+        return f"{text[:-5]}_province"
+    return f"{text}_province"
+
+
+def to_area_key(key: str) -> str:
+    if not isinstance(key, str):
+        return key
+    text = key.strip()
+    if text.endswith("_area"):
+        return text
+    if text.endswith("_region"):
+        return f"{text[:-7]}_area"
+    return f"{text}_area"
+
+
+def to_region_key(key: str) -> str:
+    if not isinstance(key, str):
+        return key
+    text = key.strip()
+    if text.endswith("_region"):
+        return text
+    if text.endswith("_area"):
+        return f"{text[:-5]}_region"
+    return f"{text}_region"
+
+
+def normalize_superregion_map(raw: dict) -> dict:
+    normalized: dict = {}
+    for subcontinent, superregions in raw.items():
+        norm_superregions: dict = {}
+        for superregion, regions in superregions.items():
+            norm_superregion = to_region_key(superregion)
+            norm_regions = [to_area_key(region) for region in regions]
+            norm_superregions[norm_superregion] = norm_regions
+        normalized[subcontinent] = norm_superregions
+    return normalized
+
+
 IR_GROUP_TOWN_SETUPS = {
     "ir_hellenic_g": {
         "city": "greek_city_port",
@@ -511,8 +556,8 @@ IR_CLIMATE_TO_EU5_CLIMATE = {
     "arid": "arid",
 }
 
-# Coastal provinces in these I:R regions are good candidates for EU5 mediterranean climate.
-MEDITERRANEAN_COASTAL_REGIONS = {
+# Coastal provinces in these I:R areas are good candidates for EU5 mediterranean climate.
+MEDITERRANEAN_COASTAL_AREAS_RAW = {
     "central_italy_region",
     "magna_graecia_region",
     "cisalpine_gaul_region",
@@ -554,6 +599,7 @@ MEDITERRANEAN_COASTAL_REGIONS = {
     "upper_egypt_region",
     "lower_egypt_region",
 }
+MEDITERRANEAN_COASTAL_AREAS = {to_area_key(k) for k in MEDITERRANEAN_COASTAL_AREAS_RAW}
 
 
 # ---------------- Utility Functions ---------------- #
@@ -806,6 +852,7 @@ def build_regions(id_to_key: dict[int, str]):
 
     region_map = {}
     for region, region_data in regions.items():
+        region_key = to_area_key(region)
         area_map = {}
         for area in region_data["areas"]:
             if area not in areas:
@@ -816,9 +863,18 @@ def build_regions(id_to_key: dict[int, str]):
             provinces = [id_to_key[pid] for pid in province_ids if pid in id_to_key]
             if not provinces:
                 continue
-            area_map[area] = provinces
+            province_key = to_province_key(area)
+            bucket = area_map.setdefault(province_key, [])
+            for province in provinces:
+                if province not in bucket:
+                    bucket.append(province)
         if area_map:
-            region_map[region] = area_map
+            target = region_map.setdefault(region_key, {})
+            for province_key, provinces in area_map.items():
+                existing = target.setdefault(province_key, [])
+                for province in provinces:
+                    if province not in existing:
+                        existing.append(province)
 
     return region_map
 
@@ -1011,7 +1067,7 @@ def assign_unmapped_water_to_regions(
         if not water_list:
             continue
         area_map = regions.setdefault(region_tag, {})
-        base_area = f"{region_tag}_water_area_generated"
+        base_area = f"{region_tag}_water_province_generated"
         area_tag = base_area
         suffix = 1
         while area_tag in area_map:
@@ -1165,7 +1221,7 @@ def assign_unmapped_non_ownable_to_regions(
     for loc_key, region_tag in sorted(assignments.items()):
         area_map = regions.setdefault(region_tag, {})
         if not area_map:
-            base_area = f"{region_tag}_area_generated"
+            base_area = f"{region_tag}_province_generated"
             area_map[base_area] = [loc_key]
             location_to_region.setdefault(loc_key, region_tag)
             continue
@@ -1333,7 +1389,7 @@ def assign_unmapped_rivers_to_regions(
     for loc_key, region_tag in sorted(assignments.items()):
         area_map = regions.setdefault(region_tag, {})
         if not area_map:
-            base_area = f"{region_tag}_area_generated"
+            base_area = f"{region_tag}_province_generated"
             area_map[base_area] = [loc_key]
             location_to_region.setdefault(loc_key, region_tag)
             continue
@@ -1417,7 +1473,7 @@ def build_full_hierarchy(region_map, superregion_map, continent_map):
     if missing_regions:
         fallback_continent = "europe"
         fallback_subcontinent = "western_europe"
-        fallback_superregion = "generated_regions"
+        fallback_superregion = "generated_regions_region"
         nested.setdefault(fallback_continent, {})
         nested[fallback_continent].setdefault(fallback_subcontinent, {})
         nested[fallback_continent][fallback_subcontinent].setdefault(
@@ -2665,8 +2721,8 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     sea_zones = default_map.get("sea_zones", set()) if isinstance(default_map, dict) else set()
     if sea_zones:
         add_generated_region_from_ranges(
-            "sea_zones_region",
             "sea_zones_area",
+            "sea_zones_province",
             sea_zones,
             ("sea_zones",),
         )
@@ -2674,15 +2730,15 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     lakes = default_map.get("lakes", set()) if isinstance(default_map, dict) else set()
     if lakes:
         add_generated_region_from_ranges(
-            "lakes_region",
             "lakes_area",
+            "lakes_province",
             lakes,
             ("lakes",),
         )
 
     all_unassigned = set(location_keys) - assigned_provinces
     if all_unassigned:
-        add_generated_region("unassigned_locations_region", "unassigned_locations_area", all_unassigned)
+        add_generated_region("unassigned_locations_area", "unassigned_locations_province", all_unassigned)
     region_keys = set(regions.keys())
     area_keys = {area for region in regions.values() for area in region.keys()}
     known_provinces = {
@@ -2695,8 +2751,9 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     continent_keys = set()
     if isinstance(continent_map, dict):
         continent_keys.update(continent_map.keys())
-    subcontinent_keys = set(superregion_map.keys()) if isinstance(superregion_map, dict) else set()
-    nested = build_full_hierarchy(regions, superregion_map, continent_map)
+    normalized_superregion_map = normalize_superregion_map(superregion_map)
+    subcontinent_keys = set(normalized_superregion_map.keys()) if isinstance(normalized_superregion_map, dict) else set()
+    nested = build_full_hierarchy(regions, normalized_superregion_map, continent_map)
 
     blocks = hierarchy_to_blocks(nested)
 
@@ -2710,7 +2767,7 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     template_path.parent.mkdir(parents=True, exist_ok=True)
 
     superregion_keys = sorted(
-        {superregion for sub in superregion_map.values() for superregion in sub.keys()}
+        {superregion for sub in normalized_superregion_map.values() for superregion in sub.keys()}
     )
     discovered_regions = sorted(superregion_keys)
     discovered_areas = sorted(region_keys)
@@ -2744,28 +2801,56 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
         read_localisation_file(location_names_dir) if location_names_dir.exists() else {}
     )
 
+    def _title_key(key: str) -> str:
+        return key.replace("_", " ").strip().title() if key else key
+
+    def _prettify_tier_key(key: str) -> str:
+        base = key
+        for suffix in ("_province", "_area", "_region"):
+            if base.endswith(suffix):
+                base = base[: -len(suffix)]
+                break
+        return _title_key(base)
+
+    def _lookup_map_loc_name(key: str) -> str:
+        candidates: list[str] = [key]
+        if key.endswith("_province"):
+            stem = key[: -len("_province")]
+            candidates.extend([stem, f"{stem}_area", f"{stem}_region"])
+        elif key.endswith("_area"):
+            stem = key[: -len("_area")]
+            candidates.extend([stem, f"{stem}_region", f"{stem}_province"])
+        elif key.endswith("_region"):
+            stem = key[: -len("_region")]
+            candidates.extend([stem, f"{stem}_area", f"{stem}_province"])
+
+        for candidate in candidates:
+            value = ir_loc.get(candidate)
+            if isinstance(value, str) and value.strip() and value.strip() != candidate:
+                return value.strip()
+        return _prettify_tier_key(key)
+
     # --- Provinces ---
     for prov_id, key, *_ in named_locations:
         if key in existing_loc:
             continue
-        name = ir_loc.get(f"PROV{prov_id}", key)
+        name = ir_loc.get(f"PROV{prov_id}")
+        if not isinstance(name, str) or not name.strip():
+            name = _lookup_map_loc_name(key)
         loc_lines.append(f'  {key}: "{name}"')
 
     # --- Regions ---
     for region_tag in regions:
-        name = ir_loc.get(region_tag, region_tag)
+        name = _lookup_map_loc_name(region_tag)
         loc_lines.append(f'  {region_tag}: "{name}"')
 
     # --- Areas ---
     for area_list in regions.values():
         for area_tag in area_list:
-            name = ir_loc.get(area_tag, area_tag)
+            name = _lookup_map_loc_name(area_tag)
             loc_lines.append(f'  {area_tag}: "{name}"')
 
     # --- Superregions, subcontinents, and continents ---
-    def _title_key(key: str) -> str:
-        return key.replace("_", " ").strip().title() if key else key
-
     def _superregion_label(key: str) -> str:
         if not key:
             return key
@@ -2787,7 +2872,7 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     }
 
     superregion_keys = sorted(
-        {superregion for sub in superregion_map.values() for superregion in sub.keys()}
+        {superregion for sub in normalized_superregion_map.values() for superregion in sub.keys()}
     )
     for key in superregion_keys:
         if key not in existing_loc:
@@ -2806,16 +2891,16 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     for key in (
         "impassable_terrain_region",
         "impassable_terrain_area",
-        "lakes_region",
         "lakes_area",
-        "non_ownable_region",
+        "lakes_province",
         "non_ownable_area",
-        "river_provinces_region",
+        "non_ownable_province",
         "river_provinces_area",
-        "sea_zones_region",
+        "river_provinces_province",
         "sea_zones_area",
-        "unassigned_locations_region",
+        "sea_zones_province",
         "unassigned_locations_area",
+        "unassigned_locations_province",
     ):
         if key not in existing_loc:
             loc_lines.append(f'  {key}: "{_title_key(key)}"')
@@ -2842,7 +2927,7 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
             if (
                 climate in ("oceanic", "continental")
                 and key in coastal_land_locations
-                and location_to_region.get(key) in MEDITERRANEAN_COASTAL_REGIONS
+                and location_to_region.get(key) in MEDITERRANEAN_COASTAL_AREAS
             ):
                 climate = "mediterranean"
             parts = [f"climate = {climate}"]

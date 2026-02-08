@@ -28,6 +28,7 @@ from ir_to_eu5.extract_data import (
     extract_diplomacy_data,
     extract_dynasty_data,
     extract_eu5_map_data,
+    extract_formable_data,
     extract_ir_country_capitals,
     extract_ir_country_locations,
     extract_religion_data,
@@ -48,6 +49,7 @@ from ir_to_eu5.write_data import (
     write_culture_data,
     write_culture_group_data,
     write_culture_language_report,
+    write_formable_countries,
     write_god_data,
     write_ir_religious_aspects,
     write_localisation_files,
@@ -85,6 +87,7 @@ if __name__ == "__main__":
     dynasty_data = extract_dynasty_data()
     country_rulers = {c["country"]: c["tag"] for c in character_data if c["is_ruler"]}
     country_data, country_overrides = extract_country_data()
+    formable_data = extract_formable_data()
     diplomatic_relationships, international_organisations = extract_diplomacy_data()
     named_locations = {t[0]: t[1] for t in parse_definitions()}
     ir_country_locations = extract_ir_country_locations()
@@ -137,6 +140,14 @@ if __name__ == "__main__":
     write_god_data(deity_data, religion_data)
     write_ir_religious_aspects(deity_data, religion_data)
     write_country_setup(country_data, country_overrides)
+    write_formable_countries(
+        formable_data=formable_data,
+        country_data=country_data,
+        ir_country_locations=ir_country_locations,
+        ir_country_capitals=ir_country_capitals,
+        id_to_key=named_locations,
+        eu5_map_data=eu5_map_data,
+    )
     write_04_dynasties(four_dynasties_data, dynasty_data)
     write_05_characters(five_characters_data, character_data)
     # Defaults for location templates and capital fallbacks
@@ -178,6 +189,7 @@ if __name__ == "__main__":
             character_data,
             dynasty_data,
             deity_data,
+            formable_data=formable_data,
         )
 
     if not args.no_images:
