@@ -503,6 +503,58 @@ IR_TERRAIN_TO_VEGETATION = {
     "impassable_terrain": "sparse",
 }
 
+# Map I:R climate buckets from map_data/climate.txt to EU5 location climate keys.
+IR_CLIMATE_TO_EU5_CLIMATE = {
+    "mild_winter": "oceanic",
+    "normal_winter": "continental",
+    "severe_winter": "arctic",
+    "arid": "arid",
+}
+
+# Coastal provinces in these I:R regions are good candidates for EU5 mediterranean climate.
+MEDITERRANEAN_COASTAL_REGIONS = {
+    "central_italy_region",
+    "magna_graecia_region",
+    "cisalpine_gaul_region",
+    "transalpine_gaul_region",
+    "central_gaul_region",
+    "armorica_region",
+    "aquitaine_region",
+    "lusitania_region",
+    "tarraconensis_region",
+    "baetica_region",
+    "contestania_region",
+    "gallaecia_region",
+    "greece_region",
+    "macedonia_region",
+    "illyria_region",
+    "thrace_region",
+    "moesia_region",
+    "moesia_s_region",
+    "taurica_region",
+    "asia_region",
+    "bithynia_region",
+    "galatia_region",
+    "cappadocia_pontica_region",
+    "cilicia_region",
+    "pontus_region",
+    "armenia_region",
+    "colchis_region",
+    "albania_region",
+    "arabia_region",
+    "arabia_felix_region",
+    "assyria_region",
+    "mesopotamia_region",
+    "syria_region",
+    "palestine_region",
+    "numidia_region",
+    "mauretainia_region",
+    "africa_region",
+    "cyrenaica_region",
+    "upper_egypt_region",
+    "lower_egypt_region",
+}
+
 
 # ---------------- Utility Functions ---------------- #
 
@@ -1803,6 +1855,104 @@ def build_ir_terrain_maps(id_to_key: dict[int, str]) -> dict[str, tuple[str, str
     return result
 
 
+def build_ir_climate_map(id_to_key: dict[int, str]) -> dict[str, str]:
+    """Return {location_key: eu5_climate} from I:R map_data/climate.txt."""
+    climate_file = ir_path("map_data/climate.txt")
+    if not climate_file.exists():
+        return {}
+
+    result: dict[str, str] = {}
+    mode = None
+    current_category = None
+    buffer: list[str] = []
+
+    def map_category(raw_category: str | None) -> str | None:
+        if not raw_category:
+            return None
+        return IR_CLIMATE_TO_EU5_CLIMATE.get(str(raw_category).lower().strip())
+
+    def add_list(raw_category: str, values: list[str]) -> None:
+        climate = map_category(raw_category)
+        if not climate:
+            return
+        for token in values:
+            if not token.isdigit():
+                continue
+            prov_id = int(token)
+            key = id_to_key.get(prov_id)
+            if key:
+                result[key] = climate
+
+    def add_range(raw_category: str, values: list[str]) -> None:
+        climate = map_category(raw_category)
+        if not climate or len(values) < 2:
+            return
+        try:
+            start = int(values[0])
+            end = int(values[1])
+        except Exception:
+            return
+        if start > end:
+            start, end = end, start
+        for prov_id in range(start, end + 1):
+            key = id_to_key.get(prov_id)
+            if key:
+                result[key] = climate
+
+    for raw_line in climate_file.read_text(encoding="utf-8-sig").splitlines():
+        line = raw_line.split("#", 1)[0].strip()
+        if not line:
+            continue
+        tokens = line.replace("{", " { ").replace("}", " } ").split()
+        if not tokens:
+            continue
+
+        if mode is None:
+            if "=" not in tokens:
+                continue
+            eq_idx = tokens.index("=")
+            if eq_idx == 0 or eq_idx + 1 >= len(tokens):
+                continue
+            category = tokens[0].lower()
+            type_token = tokens[eq_idx + 1].upper()
+            if type_token not in ("LIST", "RANGE"):
+                continue
+            if "{" in tokens:
+                brace_idx = tokens.index("{")
+                tail = tokens[brace_idx + 1 :]
+                if "}" in tail:
+                    end_idx = tail.index("}")
+                    values = tail[:end_idx]
+                    if type_token == "LIST":
+                        add_list(category, values)
+                    else:
+                        add_range(category, values)
+                    continue
+                buffer = tail
+                mode = type_token
+                current_category = category
+            else:
+                buffer = []
+                mode = type_token
+                current_category = category
+        else:
+            if "}" in tokens:
+                end_idx = tokens.index("}")
+                buffer.extend([t for t in tokens[:end_idx] if t not in ("{", "}")])
+                if current_category:
+                    if mode == "LIST":
+                        add_list(current_category, buffer)
+                    else:
+                        add_range(current_category, buffer)
+                buffer = []
+                mode = None
+                current_category = None
+            else:
+                buffer.extend([t for t in tokens if t not in ("{", "}")])
+
+    return result
+
+
 def build_ir_harbor_suitability(
     named_locations: list[tuple[int, str, int, int, int, str]],
     location_keys: set[str],
@@ -2682,12 +2832,20 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     excluded_locations = _non_land_keys(default_map) if isinstance(default_map, dict) else set()
     raw_materials = build_ir_raw_materials(id_to_key)
     terrain_map = build_ir_terrain_maps(id_to_key)
+    climate_map = build_ir_climate_map(id_to_key)
     with location_templates.open("w", encoding="utf-8") as f:
         for key in sorted(location_keys):
             if key in sea_zones:
                 continue
             is_ownable = key not in excluded_locations
-            parts = ["climate = continental"]
+            climate = climate_map.get(key, "continental")
+            if (
+                climate in ("oceanic", "continental")
+                and key in coastal_land_locations
+                and location_to_region.get(key) in MEDITERRANEAN_COASTAL_REGIONS
+            ):
+                climate = "mediterranean"
+            parts = [f"climate = {climate}"]
             if is_ownable:
                 terrain = terrain_map.get(key)
                 topography = terrain[0] if terrain else "flatland"
