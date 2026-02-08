@@ -1,4 +1,5 @@
 import os
+import shutil
 from collections import defaultdict
 from pathlib import Path
 from typing import List, Tuple, Union
@@ -912,7 +913,7 @@ def write_ir_religious_aspects(deity_data: list, religion_data: list) -> None:
     write_blocks(out_path, blocks)
 
 
-def write_country_setup(country_data: list, override_data: list):
+def write_country_setup(country_data: list, _override_data: list):
     setup_dir_dict = defaultdict(list)
     ir_countries_rel = ir_relative_display(ir_countries_dir)
 
@@ -926,22 +927,51 @@ def write_country_setup(country_data: list, override_data: list):
         ]
         setup_dir_dict[country["setup_dir"]].append((country["tag"], lines))
 
-    for setup_dir, country_blocks in setup_dir_dict.items():
-        out_path = iu_countries / f"ir_{setup_dir}.txt"
-        write_blocks(out_path, country_blocks)
+    # Do not generate split ir_*.txt country files when using replace_paths.
+    # Keep setup/countries driven by _countries.txt plus _default.txt only.
+    for legacy in iu_countries.glob("ir_*.txt"):
+        legacy.unlink()
+        print(f"Removed legacy file: {legacy.relative_to(mod_root)}")
 
-    # --- overrides: COLLECT, THEN WRITE ONCE ---
+    # Register all country tags for replace_paths-driven country loading.
+    # Provide full entries (not empty blocks) so tags are recognized as valid countries.
+    by_tag = {country["tag"]: country for country in country_data if country.get("tag")}
+    index_blocks = []
+    for tag in sorted(by_tag.keys()):
+        country = by_tag[tag]
+        lines = [
+            f"color = {convert_color(country['color'])}",
+            f"culture_definition = {country['culture']}",
+            f"religion_definition = {country['religion']}",
+        ]
+        index_blocks.append((tag, lines))
 
-    for path, _countries in override_data.items():
+    # Keep base fallback country tags available as valid definitions.
+    index_blocks.extend(
+        [
+            ("DUMMY", ["color = rgb { 40 40 40 }", "color2 = rgb { 110 27 27 }"]),
+            ("PIR", ["color = rgb { 116 143 139 }", "color2 = rgb { 110 27 27 }"]),
+            ("MER", ["color = rgb { 72 85 83 }", "color2 = rgb { 110 27 27 }"]),
+        ]
+    )
+    write_blocks(iu_countries / "_countries.txt", index_blocks)
+
+    # Keep EU5 fallback tags available in the replaced countries folder.
+    base_default = eu5_game / "in_game" / "setup" / "countries" / "_default.txt"
+    if base_default.exists():
+        dst_default = iu_countries / "_default.txt"
+        shutil.copy2(base_default, dst_default)
+        print_written("file", dst_default)
+
+    # Base-game country files are handled through metadata replace_paths.
+    # Remove legacy per-file override placeholders from earlier converter runs.
+    for path in _override_data.keys():
         if path.name.endswith("_default.txt"):
             continue
-        out_path = mod_root / path
-        out_path.parent.mkdir(parents=True, exist_ok=True)
-        out_path.write_text(
-            "# Auto-generated intentional override file.\n",
-            encoding="utf-8-sig",
-        )
-        print_written("file", out_path)
+        legacy_path = mod_root / path
+        if legacy_path.exists():
+            legacy_path.unlink()
+            print(f"Removed legacy file: {legacy_path.relative_to(mod_root)}")
 
 
 def write_localisation_files(

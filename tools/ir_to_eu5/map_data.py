@@ -630,22 +630,28 @@ def parse_ports(id_to_key: dict[int, str]) -> list[dict]:
     """Parse ports.csv into dictionaries."""
     file = ir_path("map_data/ports.csv")
     ports = []
-    for row in read_csv(file, skip_header=True):
-        if len(row) < 4:
-            continue
-        try:
-            land_id, sea_id = int(row[0]), int(row[1])
-            x, y = float(row[2]), float(row[3])
-        except ValueError:
-            continue
-        ports.append(
-            {
-                "LandProvince": id_to_key.get(land_id, f"UNKNOWN_{land_id}"),
-                "SeaZone": id_to_key.get(sea_id, f"UNKNOWN_{sea_id}"),
-                "x": x,
-                "y": y,
-            }
-        )
+    with file.open(encoding="utf-8-sig", newline="") as f:
+        sample = f.read(1024)
+        f.seek(0)
+        delimiter = "," if "," in sample and ";" not in sample else ";"
+        reader = csv.reader(f, delimiter=delimiter)
+        next(reader, None)  # header
+        for row in reader:
+            if len(row) < 4:
+                continue
+            try:
+                land_id, sea_id = int(row[0]), int(row[1])
+                x, y = float(row[2]), float(row[3])
+            except ValueError:
+                continue
+            ports.append(
+                {
+                    "LandProvince": id_to_key.get(land_id, f"UNKNOWN_{land_id}"),
+                    "SeaZone": id_to_key.get(sea_id, f"UNKNOWN_{sea_id}"),
+                    "x": x,
+                    "y": y,
+                }
+            )
     return ports
 
 
@@ -1900,7 +1906,6 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
             print_written("file", dst_path)
 
     script_roots = [
-        eu5_game / "in_game" / "events",
         eu5_game / "in_game" / "common" / "situations",
         eu5_game / "in_game" / "common" / "scripted_triggers",
     ]
