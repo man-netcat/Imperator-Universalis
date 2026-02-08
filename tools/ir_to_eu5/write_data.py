@@ -927,27 +927,21 @@ def write_country_setup(country_data: list, override_data: list):
         setup_dir_dict[country["setup_dir"]].append((country["tag"], lines))
 
     for setup_dir, country_blocks in setup_dir_dict.items():
-        out_path = iu_countries / f"00_ir_{setup_dir}.txt"
+        out_path = iu_countries / f"ir_{setup_dir}.txt"
         write_blocks(out_path, country_blocks)
 
     # --- overrides: COLLECT, THEN WRITE ONCE ---
 
-    for path, countries in override_data.items():
+    for path, _countries in override_data.items():
         if path.name.endswith("_default.txt"):
             continue
-        override_blocks = []
-        for country in countries:
-            lines = [
-                f"# Override for {country['tag']}",
-                f"color = {convert_color(country['color']) if isinstance(country['color'], _pydt.Tree) else country['color']}",
-                f"culture_definition = {country['culture']}",
-                f"religion_definition = {country['religion']}",
-                f"is_historic = yes",
-            ]
-            override_blocks.append((country["tag"], lines))
-
         out_path = mod_root / path
-        write_blocks(out_path, override_blocks)
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_text(
+            "# Auto-generated intentional override file.\n",
+            encoding="utf-8-sig",
+        )
+        print_written("file", out_path)
 
 
 def write_localisation_files(

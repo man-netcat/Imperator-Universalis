@@ -2179,11 +2179,6 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     eu5_locations_png = eu5_game / "in_game" / "map_data" / "locations.png"
     target_size = _png_size(eu5_locations_png) if eu5_locations_png.exists() else None
     if target_size and locations_size and locations_size != target_size:
-        print(
-            f"Info: keeping Imperator locations.png size {locations_size}; "
-            f"EU5 base size is {target_size}"
-        )
-
         # Keep Imperator rivers.png even when dimensions differ.
         # Do not replace with EU5 base rivers; mod must use I:R river layout.
         rivers_img = iu_map_data / "rivers.png"
