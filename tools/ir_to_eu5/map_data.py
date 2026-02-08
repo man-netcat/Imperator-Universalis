@@ -886,6 +886,87 @@ def build_default_map(id_to_key: dict[int, str]):
     return data
 
 
+def build_default_map_range_groups(
+    id_to_key: dict[int, str],
+    categories: set[str] | None = None,
+) -> dict[str, list[list[str]]]:
+    """
+    Parse default.map and preserve individual RANGE groups per category.
+    Returns:
+      { category_name_lowercase: [ [province_key, ...], ... ] }
+    """
+    target_categories = {c.lower() for c in categories} if categories else None
+    default_map = ir_path("map_data/default.map")
+    groups: dict[str, list[list[str]]] = {}
+    mode = None
+    current_category = None
+    buffer: list[str] = []
+
+    def _add_range_group(category: str, values: list[str]) -> None:
+        if len(values) < 2:
+            return
+        try:
+            start = int(values[0])
+            end = int(values[1])
+        except Exception:
+            return
+        keys = [id_to_key[n] for n in range(start, end + 1) if n in id_to_key]
+        if keys:
+            groups.setdefault(category, []).append(keys)
+
+    with open(default_map, encoding="utf-8") as f:
+        for raw_line in f:
+            line = raw_line.split("#", 1)[0].strip()
+            if not line:
+                continue
+
+            tokens = line.replace("{", " { ").replace("}", " } ").split()
+            if not tokens:
+                continue
+
+            if mode is None:
+                if "=" not in tokens:
+                    continue
+                eq_idx = tokens.index("=")
+                if eq_idx == 0 or eq_idx + 1 >= len(tokens):
+                    continue
+                category = tokens[0].lower()
+                type_token = tokens[eq_idx + 1].upper()
+                if type_token != "RANGE":
+                    continue
+                if target_categories is not None and category not in target_categories:
+                    continue
+                if "{" in tokens:
+                    brace_idx = tokens.index("{")
+                    tail = tokens[brace_idx + 1 :]
+                    if "}" in tail:
+                        end_idx = tail.index("}")
+                        values = tail[:end_idx]
+                        _add_range_group(category, values)
+                        continue
+                    else:
+                        buffer = tail
+                        mode = type_token
+                        current_category = category
+                else:
+                    buffer = []
+                    mode = type_token
+                    current_category = category
+            else:
+                if "}" in tokens:
+                    end_idx = tokens.index("}")
+                    buffer.extend([t for t in tokens[:end_idx] if t not in ("{", "}")])
+                    if current_category:
+                        _add_range_group(current_category, buffer)
+                    buffer = []
+                    mode = None
+                    current_category = None
+                else:
+                    buffer.extend([t for t in tokens if t not in ("{", "}")])
+
+    return groups
+
+
 def _parse_ir_road_pairs() -> list[tuple[int, int]]:
     in_block = False
     pairs: list[tuple[int, int]] = []
@@ -1598,22 +1679,18 @@ def write_default_map(ir_default_map_data: dict):
     """
     default_map = iu_map_data / "default.map"
 
-    # Category mapping
+    # Category mapping:
+    # - I:R impassable_terrain and wasteland should both become EU5 impassable_mountains.
+    # - I:R uninhabitable is used for corridor-like non-ownable connectors.
     category_mapping = {
         "sea_zones": "sea_zones",
         "lakes": "lakes",
         "impassable_terrain": "impassable_mountains",
+        "wasteland": "impassable_mountains",
         "uninhabitable": "non_ownable",
-        "wasteland": "non_ownable",
+        "non_ownable": "non_ownable",
         "river_provinces": "river_provinces",
     }
-
-    # Aggregate wasteland into non_ownable if present
-    if "wasteland" in ir_default_map_data:
-        ir_default_map_data.setdefault("uninhabitable", set()).update(
-            ir_default_map_data["wasteland"]
-        )
-        ir_default_map_data.pop("wasteland")
 
     # Ensure river provinces are not treated as sea zones
     if "sea_zones" in ir_default_map_data and "river_provinces" in ir_default_map_data:
@@ -1645,10 +1722,15 @@ def write_default_map(ir_default_map_data: dict):
                 f.write(f"    {key}\n")
             f.write("}\n\n")
 
-        # Write each category in the aggregated data using mapping
+        # Merge categories that map to the same EU5 category (e.g. wasteland + impassable_terrain).
+        mapped_data: dict[str, set] = {}
         for category, keys in ir_default_map_data.items():
             mapped_category = category_mapping.get(category, category)
-            write_category(mapped_category, keys)
+            mapped_data.setdefault(mapped_category, set()).update(keys)
+
+        # Write each mapped category once.
+        for mapped_category in sorted(mapped_data.keys()):
+            write_category(mapped_category, mapped_data[mapped_category])
     print_written("file", default_map)
 
 
@@ -1721,33 +1803,72 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
         for province in provinces
     }
 
+    def add_generated_region(region_tag: str, area_tag: str, keys) -> None:
+        nonlocal assigned_provinces
+        unassigned = set(keys) - assigned_provinces
+        if unassigned:
+            regions.setdefault(region_tag, {})[area_tag] = sorted(unassigned)
+            assigned_provinces = assigned_provinces | set(unassigned)
+
     river_provinces = default_map.get("river_provinces", set()) if isinstance(default_map, dict) else set()
     river_unassigned = set(river_provinces) - assigned_provinces
     if river_unassigned:
-        regions.setdefault("river_provinces_region", {})["river_provinces_area"] = sorted(
-            river_unassigned
-        )
+        add_generated_region("river_provinces_region", "river_provinces_area", river_unassigned)
 
     sea_zones = default_map.get("sea_zones", set()) if isinstance(default_map, dict) else set()
     sea_unassigned = set(sea_zones) - assigned_provinces
     if sea_unassigned:
-        regions.setdefault("sea_zones_region", {})["sea_zones_area"] = sorted(sea_unassigned)
+        add_generated_region("sea_zones_region", "sea_zones_area", sea_unassigned)
 
     lakes = default_map.get("lakes", set()) if isinstance(default_map, dict) else set()
     lakes_unassigned = set(lakes) - assigned_provinces
     if lakes_unassigned:
-        regions.setdefault("lakes_region", {})["lakes_area"] = sorted(lakes_unassigned)
+        add_generated_region("lakes_region", "lakes_area", lakes_unassigned)
+
+    impassable = set()
+    for key in ("impassable_terrain", "wasteland", "impassable_mountains"):
+        impassable.update(default_map.get(key, set()) if isinstance(default_map, dict) else set())
+    # Keep non-land special buckets separate from impassable terrain.
+    impassable = set(impassable) - set(sea_zones) - set(lakes) - set(river_provinces)
+    impassable_range_groups = build_default_map_range_groups(
+        id_to_key,
+        {"impassable_terrain", "wasteland"},
+    )
+    impassable_area_index = 1
+    for source in ("impassable_terrain", "wasteland"):
+        for group in impassable_range_groups.get(source, []):
+            group_keys = [
+                key
+                for key in group
+                if key in impassable and key not in assigned_provinces
+            ]
+            if not group_keys:
+                continue
+            area_tag = f"impassable_terrain_area_{impassable_area_index:03d}"
+            regions.setdefault("impassable_terrain_region", {})[area_tag] = group_keys
+            assigned_provinces = assigned_provinces | set(group_keys)
+            impassable_area_index += 1
+
+    impassable_unassigned = set(impassable) - assigned_provinces
+    if impassable_unassigned:
+        add_generated_region(
+            "impassable_terrain_region",
+            "impassable_terrain_area_misc",
+            impassable_unassigned,
+        )
 
     non_ownable = set()
-    for key in ("impassable_terrain", "uninhabitable", "wasteland"):
+    for key in ("uninhabitable", "non_ownable"):
         non_ownable.update(default_map.get(key, set()) if isinstance(default_map, dict) else set())
     # Avoid overlaps between non-ownable and other special buckets.
-    non_ownable = set(non_ownable) - set(sea_zones) - set(lakes) - set(river_provinces)
+    non_ownable = set(non_ownable) - set(sea_zones) - set(lakes) - set(river_provinces) - set(impassable)
     non_ownable_unassigned = set(non_ownable) - assigned_provinces
     if non_ownable_unassigned:
-        regions.setdefault("non_ownable_region", {})["non_ownable_area"] = sorted(
-            non_ownable_unassigned
-        )
+        add_generated_region("non_ownable_region", "non_ownable_area", non_ownable_unassigned)
+
+    all_unassigned = set(location_keys) - assigned_provinces
+    if all_unassigned:
+        add_generated_region("unassigned_locations_region", "unassigned_locations_area", all_unassigned)
     region_keys = set(regions.keys())
     area_keys = {area for region in regions.values() for area in region.keys()}
     known_provinces = {
@@ -1852,6 +1973,8 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
 
     # --- Generated map helper regions/areas ---
     for key in (
+        "impassable_terrain_region",
+        "impassable_terrain_area",
         "lakes_region",
         "lakes_area",
         "non_ownable_region",
@@ -1860,6 +1983,8 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
         "river_provinces_area",
         "sea_zones_region",
         "sea_zones_area",
+        "unassigned_locations_region",
+        "unassigned_locations_area",
     ):
         if key not in existing_loc:
             loc_lines.append(f'  {key}: "{_title_key(key)}"')
@@ -1880,21 +2005,21 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
         for key in sorted(location_keys):
             if key in sea_zones:
                 continue
-            terrain = terrain_map.get(key)
-            topography = terrain[0] if terrain else "flatland"
-            vegetation = terrain[1] if terrain else "grasslands"
-            parts = [
-                f"topography = {topography}",
-                f"vegetation = {vegetation}",
-                "climate = continental",
-            ]
+            is_ownable = key not in excluded_locations
+            parts = ["climate = continental"]
+            if is_ownable:
+                terrain = terrain_map.get(key)
+                topography = terrain[0] if terrain else "flatland"
+                vegetation = terrain[1] if terrain else "grasslands"
+                parts.insert(0, f"vegetation = {vegetation}")
+                parts.insert(0, f"topography = {topography}")
             if default_religion:
                 parts.append(f"religion = {default_religion}")
             if default_culture:
                 parts.append(f"culture = {default_culture}")
-            if key not in excluded_locations:
+            if is_ownable:
                 parts.append(f"raw_material = {raw_materials.get(key, 'wool')}")
-            if key in coastal_land_locations:
+            if is_ownable and key in coastal_land_locations:
                 harbor_suitability = harbor_suitability_map.get(
                     key, DEFAULT_COASTAL_NATURAL_HARBOR_SUITABILITY
                 )

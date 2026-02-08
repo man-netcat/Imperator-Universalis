@@ -65,6 +65,7 @@ discovered_areas = {
 	himalayan_region
 	hyperborea_region
 	illyria_region
+	impassable_terrain_region
 	indian_ocean_region
 	karnata_region
 	lakes_region
@@ -434,6 +435,44 @@ discovered_provinces = {
 	illyria_graeca_area
 	ilmandu_inferior_area
 	ilmandu_superior_area
+	impassable_terrain_area_001
+	impassable_terrain_area_002
+	impassable_terrain_area_003
+	impassable_terrain_area_004
+	impassable_terrain_area_005
+	impassable_terrain_area_006
+	impassable_terrain_area_007
+	impassable_terrain_area_008
+	impassable_terrain_area_009
+	impassable_terrain_area_010
+	impassable_terrain_area_011
+	impassable_terrain_area_012
+	impassable_terrain_area_013
+	impassable_terrain_area_014
+	impassable_terrain_area_015
+	impassable_terrain_area_016
+	impassable_terrain_area_017
+	impassable_terrain_area_018
+	impassable_terrain_area_019
+	impassable_terrain_area_020
+	impassable_terrain_area_021
+	impassable_terrain_area_022
+	impassable_terrain_area_023
+	impassable_terrain_area_024
+	impassable_terrain_area_025
+	impassable_terrain_area_026
+	impassable_terrain_area_027
+	impassable_terrain_area_028
+	impassable_terrain_area_029
+	impassable_terrain_area_030
+	impassable_terrain_area_031
+	impassable_terrain_area_032
+	impassable_terrain_area_033
+	impassable_terrain_area_034
+	impassable_terrain_area_035
+	impassable_terrain_area_036
+	impassable_terrain_area_037
+	impassable_terrain_area_misc
 	indiketia_area
 	indus_river_area
 	inland_caria_area
