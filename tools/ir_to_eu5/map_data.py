@@ -1,10 +1,12 @@
 import csv
+import math
 import re
 import shutil
 from collections import defaultdict
 from pathlib import Path
 
 import pyradox.datatype as _pydt
+from PIL import Image
 
 from .extract_data import extract_ir_country_locations, parse_tree, read_localisation_file
 from .paths import (
@@ -396,6 +398,15 @@ IR_GOODS_WEIGHT_OVERRIDES = {
     },
 }
 
+# Targeted overrides from known EU5/I:R data mismatches.
+# - `calacte` port works in-game against `mare_tyrrenum` with current I:U map geometry.
+PORT_SEAZONE_OVERRIDES = {
+    "calacte": "mare_tyrrenum",
+}
+
+# Default value for coastal locations if no I:R factors are found.
+DEFAULT_COASTAL_NATURAL_HARBOR_SUITABILITY = "0.00"
+
 # Map I:R terrain keys to EU5 topography and vegetation.
 IR_TERRAIN_TO_TOPOGRAPHY = {
     "plains": "flatland",
@@ -644,10 +655,13 @@ def parse_ports(id_to_key: dict[int, str]) -> list[dict]:
                 x, y = float(row[2]), float(row[3])
             except ValueError:
                 continue
+            land_key = id_to_key.get(land_id, f"UNKNOWN_{land_id}")
+            sea_key = id_to_key.get(sea_id, f"UNKNOWN_{sea_id}")
+            sea_key = PORT_SEAZONE_OVERRIDES.get(land_key, sea_key)
             ports.append(
                 {
-                    "LandProvince": id_to_key.get(land_id, f"UNKNOWN_{land_id}"),
-                    "SeaZone": id_to_key.get(sea_id, f"UNKNOWN_{sea_id}"),
+                    "LandProvince": land_key,
+                    "SeaZone": sea_key,
                     "x": x,
                     "y": y,
                 }
@@ -1094,6 +1108,167 @@ def build_ir_terrain_maps(id_to_key: dict[int, str]) -> dict[str, tuple[str, str
     return result
 
 
+def build_ir_harbor_suitability(
+    named_locations: list[tuple[int, str, int, int, int, str]],
+    location_keys: set[str],
+    default_map: dict,
+    coastal_locations: set[str],
+) -> dict[str, str]:
+    """Build natural_harbor_suitability from Imperator map geometry only.
+
+    Factors:
+    - Local shoreline enclosure around each port coordinate
+    - Sea-zone coastline density (coastline length relative to area)
+    - Sea-zone size (smaller zones are generally more sheltered)
+    """
+    if not coastal_locations:
+        return {}
+
+    sea_zones = set(default_map.get("sea_zones", set())) if isinstance(default_map, dict) else set()
+    if not sea_zones:
+        return {loc: DEFAULT_COASTAL_NATURAL_HARBOR_SUITABILITY for loc in coastal_locations}
+
+    locations_png = ir_path("map_data/provinces.png")
+    if not locations_png.exists():
+        return {loc: DEFAULT_COASTAL_NATURAL_HARBOR_SUITABILITY for loc in coastal_locations}
+
+    key_to_idx: dict[str, int] = {}
+    idx_to_key: list[str] = []
+
+    def idx_for_key(key: str) -> int:
+        if key in key_to_idx:
+            return key_to_idx[key]
+        idx = len(idx_to_key)
+        key_to_idx[key] = idx
+        idx_to_key.append(key)
+        return idx
+
+    for key in sorted(location_keys):
+        idx_for_key(key)
+
+    unknown_idx = idx_for_key("__unknown__")
+
+    color_to_idx: dict[int, int] = {}
+    for _, key, r, g, b, _ in named_locations:
+        color_to_idx[(r << 16) | (g << 8) | b] = key_to_idx.get(key, unknown_idx)
+
+    sea_idx_set = {key_to_idx[key] for key in sea_zones if key in key_to_idx}
+
+    with Image.open(locations_png) as img:
+        rgb = img.convert("RGB")
+        width, height = rgb.size
+        raw = rgb.tobytes()
+
+    total = width * height
+    idx_grid = [unknown_idx] * total
+    for i in range(total):
+        j = i * 3
+        color = (raw[j] << 16) | (raw[j + 1] << 8) | raw[j + 2]
+        idx_grid[i] = color_to_idx.get(color, unknown_idx)
+
+    sea_area: dict[int, int] = defaultdict(int)
+    sea_coast_edges: dict[int, int] = defaultdict(int)
+
+    for y in range(height):
+        row_off = y * width
+        for x in range(width):
+            i = row_off + x
+            idx = idx_grid[i]
+            if idx not in sea_idx_set:
+                continue
+            sea_area[idx] += 1
+            if x + 1 < width:
+                right = idx_grid[i + 1]
+                if right not in sea_idx_set:
+                    sea_coast_edges[idx] += 1
+            if y + 1 < height:
+                down = idx_grid[i + width]
+                if down not in sea_idx_set:
+                    sea_coast_edges[idx] += 1
+
+    size_factor: dict[int, float] = {}
+    density_factor: dict[int, float] = {}
+
+    if sea_area:
+        logs = {idx: math.log(max(area, 1)) for idx, area in sea_area.items()}
+        min_log = min(logs.values())
+        max_log = max(logs.values())
+        log_span = max(1e-9, max_log - min_log)
+        for idx, lval in logs.items():
+            size_factor[idx] = 1.0 - ((lval - min_log) / log_span)
+
+        raw_density = {
+            idx: sea_coast_edges.get(idx, 0) / max(1.0, math.sqrt(float(area)))
+            for idx, area in sea_area.items()
+        }
+        min_den = min(raw_density.values())
+        max_den = max(raw_density.values())
+        den_span = max(1e-9, max_den - min_den)
+        for idx, dval in raw_density.items():
+            density_factor[idx] = (dval - min_den) / den_span
+
+    port_rows = parse_ports({prov_id: key for prov_id, key, *_ in named_locations})
+
+    result: dict[str, str] = {}
+    for row in port_rows:
+        land_key = row.get("LandProvince")
+        sea_key = row.get("SeaZone")
+        if not isinstance(land_key, str) or land_key not in coastal_locations:
+            continue
+        if not isinstance(sea_key, str):
+            continue
+        sea_idx = key_to_idx.get(sea_key)
+        if sea_idx is None or sea_idx not in sea_idx_set:
+            result[land_key] = DEFAULT_COASTAL_NATURAL_HARBOR_SUITABILITY
+            continue
+
+        x = int(round(float(row.get("x", 0.0))))
+        y = int(round(float(row.get("y", 0.0))))
+
+        sample_dirs = []
+        for deg in range(0, 360, 15):
+            rad = math.radians(deg)
+            sample_dirs.append((math.cos(rad), math.sin(rad)))
+
+        ring_radii = (6, 12, 18)
+        valid = 0
+        water_count = 0
+        same_sea_count = 0
+        for radius in ring_radii:
+            for dx, dy in sample_dirs:
+                sx = int(round(x + dx * radius))
+                sy = int(round(y + dy * radius))
+                if sx < 0 or sy < 0 or sx >= width or sy >= height:
+                    continue
+                valid += 1
+                sidx = idx_grid[sy * width + sx]
+                if sidx in sea_idx_set:
+                    water_count += 1
+                    if sidx == sea_idx:
+                        same_sea_count += 1
+
+        if valid <= 0:
+            local_enclosure = 0.0
+        else:
+            land_fraction = (valid - water_count) / float(valid)
+            same_sea_fraction = same_sea_count / float(valid)
+            local_enclosure = 0.6 * land_fraction + 0.4 * (1.0 - same_sea_fraction)
+
+        score = (
+            0.50 * local_enclosure
+            + 0.30 * density_factor.get(sea_idx, 0.0)
+            + 0.20 * size_factor.get(sea_idx, 0.0)
+        )
+        score = max(0.0, min(1.0, score))
+        score = round(score * 20) / 20
+        result[land_key] = f"{score:.2f}"
+
+    for loc_key in coastal_locations:
+        result.setdefault(loc_key, DEFAULT_COASTAL_NATURAL_HARBOR_SUITABILITY)
+
+    return result
+
+
 def build_ir_location_building_setups(
     id_to_key: dict[int, str],
     locations_with_pops: set[str],
@@ -1507,14 +1682,27 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     )
 
     # Ports CSV
+    ports = parse_ports(id_to_key)
     write_csv(
         iu_map_data / "ports.csv",
-        parse_ports(id_to_key),
+        ports,
         ["LandProvince", "SeaZone", "x", "y"],
     )
-
+    coastal_land_locations = {
+        row["LandProvince"]
+        for row in ports
+        if isinstance(row.get("LandProvince"), str)
+        and row["LandProvince"]
+        and not row["LandProvince"].startswith("UNKNOWN_")
+    }
     # Default map categories (for sea zones, rivers, etc.)
     default_map = build_default_map(id_to_key)
+    harbor_suitability_map = build_ir_harbor_suitability(
+        named_locations,
+        location_keys,
+        default_map,
+        coastal_land_locations,
+    )
 
     # Area validation
     regions = build_regions(id_to_key)
@@ -1706,6 +1894,11 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
                 parts.append(f"culture = {default_culture}")
             if key not in excluded_locations:
                 parts.append(f"raw_material = {raw_materials.get(key, 'wool')}")
+            if key in coastal_land_locations:
+                harbor_suitability = harbor_suitability_map.get(
+                    key, DEFAULT_COASTAL_NATURAL_HARBOR_SUITABILITY
+                )
+                parts.append(f"natural_harbor_suitability = {harbor_suitability}")
             f.write(f"{key} = {{ {' '.join(parts)} }}\n")
     print_written("file", location_templates)
 
