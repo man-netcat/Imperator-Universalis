@@ -1,7 +1,6 @@
 import csv
 import re
 import shutil
-import subprocess
 from collections import defaultdict
 from pathlib import Path
 
@@ -479,36 +478,51 @@ def _png_size(path: Path) -> tuple[int, int] | None:
         return None
 
 
-def _resize_png_in_place(path: Path, target: tuple[int, int]) -> bool:
-    width, height = target
-    try:
-        result = subprocess.run(
-            [
-                "convert",
-                "-limit",
-                "memory",
-                "1GiB",
-                "-limit",
-                "map",
-                "2GiB",
-                str(path),
-                "-filter",
-                "point",
-                "-resize",
-                f"{width}x{height}!",
-                "-define",
-                "png:color-type=2",
-                "-depth",
-                "8",
-                str(path),
-            ],
-            check=True,
-            capture_output=True,
-            text=True,
+def _sync_world_extents(defines_path: Path, size: tuple[int, int]) -> None:
+    world_x, world_z = size
+    x_line = f"\tWORLD_EXTENTS_X = {world_x}"
+    z_line = f"\tWORLD_EXTENTS_Z = {world_z}"
+
+    text = ""
+    if defines_path.exists():
+        text = defines_path.read_text(encoding="utf-8-sig")
+
+    if "NJominiMap" not in text:
+        if text and not text.endswith("\n"):
+            text += "\n"
+        text += (
+            "\nNJominiMap = {\n"
+            f"{x_line}\n"
+            f"{z_line}\n"
+            "}\n"
         )
-        return result.returncode == 0
-    except Exception:
-        return False
+    else:
+        x_re = r"(?m)^([ \t]*)WORLD_EXTENTS_X\s*=\s*.+$"
+        z_re = r"(?m)^([ \t]*)WORLD_EXTENTS_Z\s*=\s*.+$"
+
+        if re.search(x_re, text):
+            text = re.sub(x_re, x_line, text, count=1)
+        else:
+            text = re.sub(
+                r"(NJominiMap\s*=\s*\{\n)",
+                r"\1" + x_line + "\n",
+                text,
+                count=1,
+            )
+
+        if re.search(z_re, text):
+            text = re.sub(z_re, z_line, text, count=1)
+        else:
+            text = re.sub(
+                r"(NJominiMap\s*=\s*\{\n(?:.*\n)*?)",
+                r"\1" + z_line + "\n",
+                text,
+                count=1,
+            )
+
+    defines_path.parent.mkdir(parents=True, exist_ok=True)
+    defines_path.write_text(text, encoding="utf-8-sig")
+    print_written("file", defines_path)
 
 
 def _iter_ir_province_files() -> list[Path]:
@@ -2152,22 +2166,30 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
         shutil.copy2(src, dst)
         print_written("file", dst)
 
-    # --- Match EU5 map image dimensions to avoid scaled overlays ---
+    # --- Keep Imperator dimensions and sync world extents defines ---
+    locations_img = iu_map_data / "locations.png"
+    locations_size = _png_size(locations_img)
+    if locations_size:
+        defines_override = (
+            mod_root / "loading_screen" / "common" / "defines" / "ir_defines.txt"
+        )
+        _sync_world_extents(defines_override, locations_size)
+
+    # Compare against EU5 base dimensions for visibility only.
     eu5_locations_png = eu5_game / "in_game" / "map_data" / "locations.png"
     target_size = _png_size(eu5_locations_png) if eu5_locations_png.exists() else None
-    if target_size:
-        # locations.png must match EU5 size; resize with nearest-neighbor to avoid new colors
-        locations_img = iu_map_data / "locations.png"
-        size = _png_size(locations_img)
-        if size and size != target_size:
-            if _resize_png_in_place(locations_img, target_size):
-                print_written("image", locations_img)
+    if target_size and locations_size and locations_size != target_size:
+        print(
+            f"Info: keeping Imperator locations.png size {locations_size}; "
+            f"EU5 base size is {target_size}"
+        )
 
-        # rivers.png: prefer EU5 base if sizes mismatch (avoid expensive resize failures)
+        # Keep Imperator rivers.png even when dimensions differ.
+        # Do not replace with EU5 base rivers; mod must use I:R river layout.
         rivers_img = iu_map_data / "rivers.png"
         rivers_size = _png_size(rivers_img)
-        if rivers_size and rivers_size != target_size:
-            eu5_rivers = eu5_game / "in_game" / "map_data" / "rivers.png"
-            if eu5_rivers.exists():
-                shutil.copy2(eu5_rivers, rivers_img)
-                print_written("file", rivers_img)
+        if rivers_size and rivers_size != locations_size:
+            print(
+                f"Warning: rivers.png size {rivers_size} differs from locations.png "
+                f"{locations_size}; keeping Imperator rivers.png"
+            )
