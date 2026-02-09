@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from PIL import Image
+from PIL import Image, UnidentifiedImageError
 
 from .paths import iter_ir_files, iu_coa_gfx, mod_root
 from .write_data import print_written
@@ -63,32 +63,38 @@ def convert_images(
     output_dir.mkdir(parents=True, exist_ok=True)
 
     for path in input_paths:
-        if path.suffix.lower() not in {".dds", ".tga"}:
+        if path.suffix.lower() not in {".dds", ".tga", ".png"}:
             continue
 
-        with Image.open(path) as img:
-            img = img.convert("RGBA")
+        out_path = output_dir / (path.stem + ".dds")
+        try:
+            with Image.open(path) as img:
+                img = img.convert("RGBA")
 
-            if colour_shift:
-                img = remap_ir_colored_emblem_palette(img, tolerance)
+                if colour_shift:
+                    img = remap_ir_colored_emblem_palette(img, tolerance)
 
-            should_stretch = stretch
-            if stretch_predicate is not None:
-                should_stretch = bool(stretch_predicate(path))
+                should_stretch = stretch
+                if stretch_predicate is not None:
+                    should_stretch = bool(stretch_predicate(path))
 
-            if should_stretch:
-                resized = img.resize(size, Image.LANCZOS)
-            else:
-                resized = Image.new("RGBA", size, (0, 0, 0, 0))
-                img.thumbnail(size, Image.LANCZOS)
+                if should_stretch:
+                    resized = img.resize(size, Image.LANCZOS)
+                else:
+                    resized = Image.new("RGBA", size, (0, 0, 0, 0))
+                    img.thumbnail(size, Image.LANCZOS)
 
-                x = (size[0] - img.width) // 2
-                y = (size[1] - img.height) // 2
-                resized.paste(img, (x, y))
+                    x = (size[0] - img.width) // 2
+                    y = (size[1] - img.height) // 2
+                    resized.paste(img, (x, y))
+        except (UnidentifiedImageError, OSError) as err:
+            # Some workshop texture files are malformed; emit a transparent DDS
+            # placeholder so downstream script references are still valid.
+            print(f"WARNING: failed to decode texture '{path}': {err}")
+            resized = Image.new("RGBA", size, (0, 0, 0, 0))
 
-            out_path = output_dir / (path.stem + ".dds")
-            resized.save(out_path, format="DDS")
-            print_written("image", out_path)
+        resized.save(out_path, format="DDS")
+        print_written("image", out_path)
 
 
 def port_coa_gfx():
@@ -96,7 +102,7 @@ def port_coa_gfx():
         return [
             path
             for path in iter_ir_files(relative_dir, pattern="*.*")
-            if path.suffix.lower() in {".dds", ".tga"}
+            if path.suffix.lower() in {".dds", ".tga", ".png"}
         ]
 
     colored_emblems = _iter_gfx_files("gfx/coat_of_arms/colored_emblems")
@@ -108,8 +114,8 @@ def port_coa_gfx():
     out_textured_emblems = iu_coa_gfx / "textured_emblems"
 
     def is_border_emblem(path: Path) -> bool:
-        # Border emblems are designed to reach the edges; stretch to fit EU5's 3:2 aspect.
-        return path.stem.startswith("ce_border_")
+        # Border and region-coa emblems are designed to reach the edges.
+        return path.stem.startswith("ce_border_") or path.stem.startswith("cr_")
 
     convert_images(
         colored_emblems,

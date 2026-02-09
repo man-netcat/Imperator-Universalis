@@ -22,6 +22,7 @@ sys.path.insert(0, str(script_dir))
 from ir_to_eu5.extract_data import (
     extract_character_data,
     extract_coa_data,
+    extract_coa_template_behaviour,
     extract_country_data,
     extract_culture_data,
     extract_deity_data,
@@ -31,6 +32,7 @@ from ir_to_eu5.extract_data import (
     extract_formable_data,
     extract_ir_country_capitals,
     extract_ir_country_locations,
+    extract_named_color_data,
     extract_religion_data,
     extract_start_data,
     write_json,
@@ -45,6 +47,7 @@ from ir_to_eu5.write_data import (
     write_12_diplomacy,
     write_15_international_organizations,
     write_coa_file,
+    write_coa_template_behaviour,
     write_country_setup,
     write_culture_data,
     write_culture_group_data,
@@ -55,6 +58,7 @@ from ir_to_eu5.write_data import (
     write_localisation_files,
     write_religion_data,
     write_religion_group_data,
+    write_named_colors_file,
 )
 
 if __name__ == "__main__":
@@ -125,6 +129,10 @@ if __name__ == "__main__":
         pass
     if not args.no_images:
         coa_data = extract_coa_data()
+        coa_template_blocks, coa_template_list_files = extract_coa_template_behaviour(
+            culture_data, religion_data
+        )
+        named_color_data = extract_named_color_data()
 
     if args.json:
         write_json(culture_data, mod_root / "cultures.json")
@@ -180,6 +188,10 @@ if __name__ == "__main__":
 
     if not args.no_images:
         write_coa_file(coa_data)
+        write_coa_template_behaviour(
+            coa_template_blocks, coa_template_list_files
+        )
+        write_named_colors_file(named_color_data)
 
     if not args.no_localisation:
         write_localisation_files(

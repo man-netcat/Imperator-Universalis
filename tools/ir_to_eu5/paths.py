@@ -143,6 +143,7 @@ iu_religious_aspects = mod_root / "in_game" / "common" / "religious_aspects"
 iu_language_families = mod_root / "in_game" / "common" / "language_families"
 iu_languages = mod_root / "in_game" / "common" / "languages"
 iu_localisation = mod_root / "main_menu" / "localization" / "english"
+iu_named_colors = mod_root / "main_menu" / "common" / "named_colors"
 iu_coa_gfx = mod_root / "main_menu" / "gfx" / "coat_of_arms"
 iu_prescripted_coa = (
     mod_root

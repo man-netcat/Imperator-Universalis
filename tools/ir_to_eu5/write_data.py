@@ -1798,7 +1798,40 @@ def write_localisation_files(
 
 
 def write_coa_file(coa_data: _pydt.Tree):
-    write_blocks(iu_prescripted_coa, coa_data)
+    write_blocks(iu_prescripted_coa, coa_data, encoding="utf-8")
+
+
+def write_coa_template_behaviour(
+    template_blocks: list[str], template_list_files: dict[str, str]
+):
+    coa_dir = iu_prescripted_coa.parent
+    template_lists_dir = coa_dir.parent / "template_lists"
+    template_behaviour_out = coa_dir / "zz_ir_template_behaviour.txt"
+
+    if template_blocks:
+        write_blocks(template_behaviour_out, template_blocks, encoding="utf-8")
+    elif template_behaviour_out.exists():
+        template_behaviour_out.unlink()
+        print_written("file", template_behaviour_out)
+
+    template_lists_dir.mkdir(parents=True, exist_ok=True)
+    for name, content in template_list_files.items():
+        out_path = template_lists_dir / name
+        with out_path.open("w", encoding="utf-8") as f:
+            f.write(AUTO_GENERATED_HEADER)
+            f.write(content.rstrip() + "\n")
+        print_written("file", out_path)
+
+    # Remove stale generated files when no content is produced for them.
+    for stale_name in ("country_color_lists.txt",):
+        stale_path = template_lists_dir / stale_name
+        if stale_name not in template_list_files and stale_path.exists():
+            stale_path.unlink()
+            print_written("file", stale_path)
+
+
+def write_named_colors_file(named_color_data: _pydt.Tree):
+    write_blocks(iu_named_colors / "ir_colors.txt", named_color_data, encoding="utf-8")
 
 
 def _build_location_to_province_map(tree) -> dict:
