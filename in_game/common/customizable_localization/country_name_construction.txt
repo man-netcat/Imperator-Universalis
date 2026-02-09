@@ -19,7 +19,6 @@
 				tag = LES
 				tag = LO2
 				tag = LSM
-				tag = MGG
 				tag = PH2
 				tag = UCI
 			}
@@ -85,7 +84,7 @@
 					government_type = government_type:republic
 					OR = {
 						tag = DEL
-						tag = ACL
+						tag = ACH
 						tag = DLA
 						tag = HLA
 					}

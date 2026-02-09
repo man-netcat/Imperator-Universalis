@@ -20,6 +20,8 @@ from .data import (
     ir_culture_graphical_overrides,
     formable_requirement_overrides,
     formable_localization_overrides,
+    formable_alias_target_overrides,
+    disabled_formable_tags,
 )
 from .paths import *
 
@@ -989,6 +991,28 @@ def write_formable_countries(
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
     known_tags = {country.get("tag") for country in country_data if country.get("tag")}
+    country_name_to_tag: dict[str, str] = {}
+
+    def _normalize_name_key(value: object) -> str:
+        if not isinstance(value, str):
+            return ""
+        lowered = value.strip().lower()
+        if not lowered:
+            return ""
+        # Collapse non-alnum to single spaces for robust name matching.
+        lowered = re.sub(r"[^a-z0-9]+", " ", lowered)
+        return re.sub(r"\s+", " ", lowered).strip()
+
+    for country in country_data:
+        ctag = country.get("tag")
+        cname = country.get("name")
+        if not isinstance(ctag, str) or not isinstance(cname, str):
+            continue
+        key = _normalize_name_key(cname)
+        if not key:
+            continue
+        # First source wins for ambiguous names.
+        country_name_to_tag.setdefault(key, ctag)
     tag_to_primary_culture: dict[str, str] = {}
     for country in country_data:
         tag = country.get("tag")
@@ -1208,8 +1232,11 @@ def write_formable_countries(
         return text if text.startswith("ir_") else f"ir_{text}"
 
     blocks = []
+    emitted_formable_keys: set[str] = set()
     skipped_unlocalized_tags = 0
     for tag in sorted(formable_data.keys()):
+        if tag in disabled_formable_tags:
+            continue
         meta = formable_data.get(tag, {})
         manual_override = formable_requirement_overrides.get(tag, {})
         loc_override = formable_localization_overrides.get(tag, {})
@@ -1217,9 +1244,19 @@ def write_formable_countries(
         if not resolved_name or resolved_name == tag:
             skipped_unlocalized_tags += 1
             continue
+        output_tag = str(formable_alias_target_overrides.get(tag, tag))
+        # If a non-base formable duplicates an existing country name, emit it
+        # using the original tag_f key as requested.
+        if tag not in known_tags and output_tag == tag:
+            canonical = country_name_to_tag.get(_normalize_name_key(resolved_name))
+            if isinstance(canonical, str) and canonical:
+                output_tag = canonical
+        formable_key = f"{output_tag}_f"
+        if formable_key in emitted_formable_keys:
+            continue
         if isinstance(meta.get("scope"), dict) and isinstance(meta.get("potential_lines"), list):
             display_name = str(meta.get("name") or tag)
-            blocks.append(f"# {tag}: {display_name}")
+            blocks.append(f"# {tag} -> {output_tag}: {display_name}")
 
             level = int(meta.get("level", 2))
             if level < 1:
@@ -1249,13 +1286,13 @@ def write_formable_countries(
                 "allow = {",
                 *[f"    {line}" for line in allow_lines],
                 "}",
-                f"name = {tag}",
-                f"flag = {tag}",
-                f"adjective = {tag}_ADJ",
-                f"tag = {tag}",
+                f"name = {output_tag}",
+                f"flag = {output_tag}",
+                f"adjective = {output_tag}_ADJ",
+                f"tag = {output_tag}",
             ]
-            if tag in known_tags:
-                lines.append(f"color = map_{tag}")
+            if output_tag in known_tags:
+                lines.append(f"color = map_{output_tag}")
 
             for scope_type in ("locations", "provinces", "areas", "regions"):
                 values = scope.get(scope_type)
@@ -1270,7 +1307,8 @@ def write_formable_countries(
                 lines.append("}")
 
             lines.extend(["form_effect = {", "}"])
-            blocks.append((f"{tag}_f", lines))
+            blocks.append((formable_key, lines))
+            emitted_formable_keys.add(formable_key)
             blocks.append("")
             continue
 
@@ -1388,7 +1426,7 @@ def write_formable_countries(
                     if region and region in all_regions and region not in required_regions:
                         required_regions.append(region)
 
-        blocks.append(f"# {tag}: {display_name}")
+        blocks.append(f"# {tag} -> {output_tag}: {display_name}")
         potential_lines: list[str] = []
         culture_conditions = (
             [f"culture = culture:{culture}" for culture in required_primary_cultures]
@@ -1414,7 +1452,9 @@ def write_formable_countries(
             potential_lines.append("}")
 
         if not potential_lines:
-            fallback_culture = tag_to_primary_culture.get(tag)
+            fallback_culture = tag_to_primary_culture.get(tag) or tag_to_primary_culture.get(
+                output_tag
+            )
             if isinstance(fallback_culture, str) and fallback_culture:
                 potential_lines.append(f"culture = culture:{fallback_culture}")
 
@@ -1486,6 +1526,8 @@ def write_formable_countries(
         else:
             # Keep every formable valid even when no explicit decision requirement was found.
             capital_id = ir_country_capitals.get(tag)
+            if capital_id is None:
+                capital_id = ir_country_capitals.get(output_tag)
             if capital_id is not None:
                 loc_key = id_to_key.get(capital_id)
                 if loc_key:
@@ -1504,13 +1546,13 @@ def write_formable_countries(
             "allow = {",
             *[f"    {line}" for line in allow_lines],
             "}",
-            f"name = {tag}",
-            f"flag = {tag}",
-            f"adjective = {tag}_ADJ",
-            f"tag = {tag}",
+            f"name = {output_tag}",
+            f"flag = {output_tag}",
+            f"adjective = {output_tag}_ADJ",
+            f"tag = {output_tag}",
         ]
-        if tag in known_tags:
-            lines.append(f"color = map_{tag}")
+        if output_tag in known_tags:
+            lines.append(f"color = map_{output_tag}")
 
         if scope_type and scope_values:
             lines.append(f"{scope_type} = {{")
@@ -1524,7 +1566,8 @@ def write_formable_countries(
                 "}",
             ]
         )
-        blocks.append((f"{tag}_f", lines))
+        blocks.append((formable_key, lines))
+        emitted_formable_keys.add(formable_key)
         blocks.append("")
 
     write_blocks(out_path, blocks)
@@ -1679,26 +1722,33 @@ def write_localisation_files(
     if formable_data:
         country_name_map = {country["tag"]: country["name"] for country in country_data}
         country_adj_map = {country["tag"]: country["name_adj"] for country in country_data}
+        emitted_loc_tags: set[str] = set()
         for tag in sorted(formable_data.keys()):
+            if tag in disabled_formable_tags:
+                continue
             meta = formable_data.get(tag, {})
             loc_override = formable_localization_overrides.get(tag, {})
+            output_tag = str(formable_alias_target_overrides.get(tag, tag))
             raw_name = str(meta.get("name") or country_name_map.get(tag) or tag)
             name = str(loc_override.get("name") or raw_name).strip()
             if name == tag:
+                continue
+            if output_tag in emitted_loc_tags:
                 continue
             raw_adj = loc_override.get("adj") or meta.get("adj")
             if isinstance(raw_adj, str) and raw_adj.strip():
                 adj = raw_adj.strip()
             else:
-                adj = str(country_adj_map.get(tag) or name)
-            formable_lines.append(f'  {tag}: "{_esc_loc(name)}"')
-            formable_lines.append(f'  {tag}_ADJ: "{_esc_loc(adj)}"')
+                adj = str(country_adj_map.get(output_tag) or country_adj_map.get(tag) or name)
+            formable_lines.append(f'  {output_tag}: "{_esc_loc(name)}"')
+            formable_lines.append(f'  {output_tag}_ADJ: "{_esc_loc(adj)}"')
             # EU5-style aliases for formable IDs referenced as TAG_f in UI/scripts.
-            formable_lines.append(f'  {tag}_f: "{_esc_loc(name)}"')
-            formable_lines.append(f'  {tag}_f_ADJ: "{_esc_loc(adj)}"')
+            formable_lines.append(f'  {output_tag}_f: "{_esc_loc(name)}"')
+            formable_lines.append(f'  {output_tag}_f_ADJ: "{_esc_loc(adj)}"')
             desc = meta.get("desc")
             if isinstance(desc, str) and desc.strip():
-                formable_desc_lines.append(f'  {tag}_f_desc: "{_esc_loc(desc)}"')
+                formable_desc_lines.append(f'  {output_tag}_f_desc: "{_esc_loc(desc)}"')
+            emitted_loc_tags.add(output_tag)
     formable_lines = remove_duplicate_keys(sort_lines(formable_lines))
     formable_desc_lines = remove_duplicate_keys(sort_lines(formable_desc_lines))
 

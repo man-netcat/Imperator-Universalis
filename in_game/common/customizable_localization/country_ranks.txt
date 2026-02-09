@@ -14,7 +14,7 @@
 			OR = {
 				# I:R / Invictus formables whose source names explicitly contain "League".
 				tag = DEL
-				tag = ACL
+				tag = ACH
 				tag = DLA
 				tag = HLA
 				tag = IOU
@@ -70,7 +70,6 @@
 				tag = GMA
 				tag = HBR
 				tag = LO2
-				tag = PH2
 			}
 		}
 	}
@@ -93,10 +92,12 @@
 		}
 	}
 	text = {
-		localization_key = rank_magna
+		localization_key = rank_delphic
 		trigger = {
+			government_type = government_type:theocracy
+			religion.group = religion_group:ir_hellenic_group
 			OR = {
-				tag = MGG
+				tag = PH2
 			}
 		}
 	}

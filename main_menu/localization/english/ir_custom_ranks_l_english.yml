@@ -1,9 +1,9 @@
-l_english:
+﻿l_english:
   rank_greater: "Greater"
   rank_lesser: "Lesser"
   rank_united: "United"
   rank_greater_prefix: "Greater"
   rank_lesser_prefix: "Lesser"
   rank_united_prefix: "United"
-  rank_magna: "Magna"
-  rank_magna_prefix: "Magna"
+  rank_delphic: "Delphic"
+  rank_delphic_prefix: "Delphic"

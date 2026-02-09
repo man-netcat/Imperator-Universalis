@@ -3,7 +3,7 @@
 #  Any manual changes will be OVERWRITTEN upon regeneration!  #
 # =========================================================== #
 
-# ABG: Abasgia
+# ABG -> ABG: Abasgia
 
 ABG_f = {
     level = 2
@@ -27,7 +27,7 @@ ABG_f = {
 
 
 
-# ACH: Achaea
+# ACH -> ACH: Achaea
 
 ACH_f = {
     level = 2
@@ -51,61 +51,7 @@ ACH_f = {
 
 
 
-# ACL: Achaean League
-
-ACL_f = {
-    level = 3
-    required_locations_fraction = 0.6
-    rule = historical
-    potential = {
-        OR = {
-            culture = culture:ir_achaean
-            culture = culture:ir_arcadian
-            culture = { has_culture_group = culture_group:ir_hellenic_g }
-        }
-    }
-    allow = {
-    }
-    name = ACL
-    flag = ACL
-    adjective = ACL_ADJ
-    tag = ACL
-    color = map_ACL
-    provinces = {
-        achaea_province
-    }
-    form_effect = {
-    }
-}
-
-
-
-# AGO: Argolis
-
-AGO_f = {
-    level = 2
-    required_locations_fraction = 0.75
-    rule = historical
-    potential = {
-        culture = { has_culture_group = culture_group:ir_hellenic_g }
-    }
-    allow = {
-    }
-    name = AGO
-    flag = AGO
-    adjective = AGO_ADJ
-    tag = AGO
-    provinces = {
-        achaea_province
-        arcadia_province
-    }
-    form_effect = {
-    }
-}
-
-
-
-# AIO: Albion
+# AIO -> AIO: Albion
 
 AIO_f = {
     level = 4
@@ -130,7 +76,7 @@ AIO_f = {
 
 
 
-# ALA: Alania
+# ALA -> ALA: Alania
 
 ALA_f = {
     level = 2
@@ -160,7 +106,7 @@ ALA_f = {
 
 
 
-# ALX: Argead Empire
+# ALX -> ALX: Argead Empire
 
 ALX_f = {
     level = 4
@@ -200,7 +146,7 @@ ALX_f = {
 
 
 
-# APF: Alpine Confederation
+# APF -> APF: Alpine Confederation
 
 APF_f = {
     level = 4
@@ -230,7 +176,7 @@ APF_f = {
 
 
 
-# AQ2: Greater Aquitania
+# AQ2 -> AQ2: Greater Aquitania
 
 AQ2_f = {
     level = 3
@@ -261,7 +207,7 @@ AQ2_f = {
 
 
 
-# AQI: Aquitania
+# AQI -> AQI: Aquitania
 
 AQI_f = {
     level = 2
@@ -292,7 +238,7 @@ AQI_f = {
 
 
 
-# ARB: Arabia
+# ARB -> ARB: Arabia
 
 ARB_f = {
     level = 4
@@ -320,7 +266,7 @@ ARB_f = {
 
 
 
-# ARI: Ariarathid Kingdom
+# ARI -> ARI: Ariarathid Kingdom
 
 ARI_f = {
     level = 3
@@ -345,7 +291,7 @@ ARI_f = {
 
 
 
-# ARK: Arcadia
+# ARK -> ARK: Arcadia
 
 ARK_f = {
     level = 2
@@ -371,7 +317,7 @@ ARK_f = {
 
 
 
-# ARM: Armenia
+# ARM -> ARM: Armenia
 
 ARM_f = {
     level = 3
@@ -404,7 +350,7 @@ ARM_f = {
 
 
 
-# ARY: Aryavarta
+# ARY -> ARY: Aryavarta
 
 ARY_f = {
     level = 3
@@ -435,7 +381,7 @@ ARY_f = {
 
 
 
-# ASR: Assyria
+# ASR -> ASR: Assyria
 
 ASR_f = {
     level = 3
@@ -462,7 +408,7 @@ ASR_f = {
 
 
 
-# ASX: Armorica
+# ASX -> ASX: Armorica
 
 ASX_f = {
     level = 2
@@ -488,7 +434,7 @@ ASX_f = {
 
 
 
-# ATE: Aethiopia
+# ATE -> ATE: Aethiopia
 
 ATE_f = {
     level = 3
@@ -519,7 +465,7 @@ ATE_f = {
 
 
 
-# ATR: Atrebatia
+# ATR -> ATR: Atrebatia
 
 ATR_f = {
     level = 2
@@ -543,7 +489,7 @@ ATR_f = {
 
 
 
-# ATT: Attica
+# ATT -> ATT: Attica
 
 ATT_f = {
     level = 2
@@ -567,7 +513,7 @@ ATT_f = {
 
 
 
-# ATU: Asturia
+# ATU -> ATU: Asturia
 
 ATU_f = {
     level = 2
@@ -592,7 +538,7 @@ ATU_f = {
 
 
 
-# AUA: Aestia
+# AUA -> AUA: Aestia
 
 AUA_f = {
     level = 2
@@ -617,9 +563,9 @@ AUA_f = {
 
 
 
-# AVK: the Arvernian Kingdom
+# AVK -> AVN: the Arvernian Kingdom
 
-AVK_f = {
+AVN_f = {
     level = 3
     required_locations_fraction = 0.6
     rule = historical
@@ -631,10 +577,11 @@ AVK_f = {
     }
     allow = {
     }
-    name = AVK
-    flag = AVK
-    adjective = AVK_ADJ
-    tag = AVK
+    name = AVN
+    flag = AVN
+    adjective = AVN_ADJ
+    tag = AVN
+    color = map_AVN
     provinces = {
         allobrogia_province
         alpes_maritimae_province
@@ -653,32 +600,7 @@ AVK_f = {
 
 
 
-# AX2: Aksum
-
-AX2_f = {
-    level = 4
-    required_locations_fraction = 0.6
-    rule = historical
-    potential = {
-        culture = culture:ir_aksumite
-    }
-    allow = {
-    }
-    name = AX2
-    flag = AX2
-    adjective = AX2_ADJ
-    tag = AX2
-    provinces = {
-        aksum_province
-        tana_province
-    }
-    form_effect = {
-    }
-}
-
-
-
-# AXM: Aksum
+# AX2 -> AXM: Aksum
 
 AXM_f = {
     level = 4
@@ -694,8 +616,9 @@ AXM_f = {
     adjective = AXM_ADJ
     tag = AXM
     color = map_AXM
-    locations = {
-        aksum
+    provinces = {
+        aksum_province
+        tana_province
     }
     form_effect = {
     }
@@ -703,7 +626,7 @@ AXM_f = {
 
 
 
-# BBY: Babylon
+# BBY -> BBY: Babylon
 
 BBY_f = {
     level = 3
@@ -735,7 +658,7 @@ BBY_f = {
 
 
 
-# BGG: Belgia
+# BGG -> BGG: Belgia
 
 BGG_f = {
     level = 3
@@ -764,7 +687,7 @@ BGG_f = {
 
 
 
-# BHA: Bharatvarsha
+# BHA -> BHA: Bharatvarsha
 
 BHA_f = {
     level = 4
@@ -800,7 +723,7 @@ BHA_f = {
 
 
 
-# BOE: Boeotia
+# BOE -> BOE: Boeotia
 
 BOE_f = {
     level = 2
@@ -825,31 +748,7 @@ BOE_f = {
 
 
 
-# BOT: Boeotia
-
-BOT_f = {
-    level = 2
-    required_locations_fraction = 0.75
-    rule = historical
-    potential = {
-        culture = culture:ir_boeotian
-    }
-    allow = {
-    }
-    name = BOT
-    flag = BOT
-    adjective = BOT_ADJ
-    tag = BOT
-    provinces = {
-        boeotia_province
-    }
-    form_effect = {
-    }
-}
-
-
-
-# BPL: Bosporan League
+# BPL -> BPL: Bosporan League
 
 BPL_f = {
     level = 3
@@ -877,7 +776,7 @@ BPL_f = {
 
 
 
-# BRA: Pritania
+# BRA -> BRA: Pritania
 
 BRA_f = {
     level = 3
@@ -901,7 +800,7 @@ BRA_f = {
 
 
 
-# BTT: Unite Bastetania
+# BTT -> BTT: Unite Bastetania
 
 BTT_f = {
     level = 2
@@ -926,7 +825,7 @@ BTT_f = {
 
 
 
-# CAB: Cabalis
+# CAB -> CAB: Cabalis
 
 CAB_f = {
     level = 2
@@ -950,7 +849,7 @@ CAB_f = {
 
 
 
-# CBR: Celtiberia
+# CBR -> CBR: Celtiberia
 
 CBR_f = {
     level = 2
@@ -976,9 +875,9 @@ CBR_f = {
 
 
 
-# CCC: Caledonian Confederacy
+# CCC -> CAL: Caledonian Confederacy
 
-CCC_f = {
+CAL_f = {
     level = 3
     required_locations_fraction = 0.6
     rule = historical
@@ -992,10 +891,11 @@ CCC_f = {
     }
     allow = {
     }
-    name = CCC
-    flag = CCC
-    adjective = CCC_ADJ
-    tag = CCC
+    name = CAL
+    flag = CAL
+    adjective = CAL_ADJ
+    tag = CAL
+    color = map_CAL
     provinces = {
         caledonia_meridionalis_province
         caledonia_occidentalis_province
@@ -1007,7 +907,7 @@ CCC_f = {
 
 
 
-# CCI: Cilicia
+# CCI -> CCI: Cilicia
 
 CCI_f = {
     level = 3
@@ -1035,32 +935,7 @@ CCI_f = {
 
 
 
-# CHY: Chrysaoreus
-
-CHY_f = {
-    level = 3
-    required_locations_fraction = 0.6
-    rule = historical
-    potential = {
-        culture = culture:ir_carian
-    }
-    allow = {
-    }
-    name = CHY
-    flag = CHY
-    adjective = CHY_ADJ
-    tag = CHY
-    provinces = {
-        coastal_caria_province
-        inland_caria_province
-    }
-    form_effect = {
-    }
-}
-
-
-
-# CIA: Caria
+# CIA -> CIA: Caria
 
 CIA_f = {
     level = 3
@@ -1089,7 +964,7 @@ CIA_f = {
 
 
 
-# CNN: Cantabria
+# CNN -> CNN: Cantabria
 
 CNN_f = {
     level = 2
@@ -1114,7 +989,7 @@ CNN_f = {
 
 
 
-# CPT: Carpetania
+# CPT -> CPT: Carpetania
 
 CPT_f = {
     level = 2
@@ -1138,7 +1013,7 @@ CPT_f = {
 
 
 
-# CSC: Corsica
+# CSC -> CSC: Corsica
 
 CSC_f = {
     level = 2
@@ -1162,7 +1037,7 @@ CSC_f = {
 
 
 
-# CYP: Cyprus
+# CYP -> CYP: Cyprus
 
 CYP_f = {
     level = 2
@@ -1186,7 +1061,7 @@ CYP_f = {
 
 
 
-# DAC: Dacia
+# DAC -> DAC: Dacia
 
 DAC_f = {
     level = 4
@@ -1215,7 +1090,7 @@ DAC_f = {
 
 
 
-# DHE: Dahae
+# DHE -> DHE: Dahae
 
 DHE_f = {
     level = 4
@@ -1244,7 +1119,7 @@ DHE_f = {
 
 
 
-# DIO: Soqotra
+# DIO -> DIO: Soqotra
 
 DIO_f = {
     level = 2
@@ -1269,33 +1144,7 @@ DIO_f = {
 
 
 
-# DL2: Delphic Amphictyony
-
-DL2_f = {
-    level = 3
-    required_locations_fraction = 0.6
-    rule = historical
-    potential = {
-        culture = { has_culture_group = culture_group:ir_hellenic_g }
-    }
-    allow = {
-    }
-    name = DL2
-    flag = DL2
-    adjective = DL2_ADJ
-    tag = DL2
-    provinces = {
-        aetolia_province
-        boeotia_province
-        thessaly_province
-    }
-    form_effect = {
-    }
-}
-
-
-
-# DLA: Delian League
+# DLA -> DLA: Delian League
 
 DLA_f = {
     level = 4
@@ -1333,7 +1182,7 @@ DLA_f = {
 
 
 
-# DRA: Drangiana
+# DRA -> DRA: Drangiana
 
 DRA_f = {
     level = 3
@@ -1357,7 +1206,7 @@ DRA_f = {
 
 
 
-# DRV: Dravida
+# DRV -> DRV: Dravida
 
 DRV_f = {
     level = 3
@@ -1387,7 +1236,7 @@ DRV_f = {
 
 
 
-# DUN: Duna
+# DUN -> DUN: Duna
 
 DUN_f = {
     level = 2
@@ -1415,7 +1264,7 @@ DUN_f = {
 
 
 
-# EBO: Euboea
+# EBO -> EBO: Euboea
 
 EBO_f = {
     level = 2
@@ -1439,7 +1288,7 @@ EBO_f = {
 
 
 
-# EGT: Egypt
+# EGT -> EGT: Egypt
 
 EGT_f = {
     level = 3
@@ -1473,7 +1322,7 @@ EGT_f = {
 
 
 
-# EGY: Ptolemaic Kingdom
+# EGY -> EGY: Ptolemaic Kingdom
 
 EGY_f = {
     level = 3
@@ -1498,7 +1347,7 @@ EGY_f = {
 
 
 
-# EPI: Epirus
+# EPI -> EPI: Epirus
 
 EPI_f = {
     level = 2
@@ -1523,7 +1372,7 @@ EPI_f = {
 
 
 
-# EPR: Eporaia
+# EPR -> EPR: Eporaia
 
 EPR_f = {
     level = 2
@@ -1551,7 +1400,7 @@ EPR_f = {
 
 
 
-# FEZ: Fezzan
+# FEZ -> FEZ: Fezzan
 
 FEZ_f = {
     level = 3
@@ -1581,7 +1430,7 @@ FEZ_f = {
 
 
 
-# FRA: Francia
+# FRA -> FRA: Francia
 
 FRA_f = {
     level = 3
@@ -1608,7 +1457,7 @@ FRA_f = {
 
 
 
-# GAC: Greater Arachosia
+# GAC -> GAC: Greater Arachosia
 
 GAC_f = {
     level = 3
@@ -1649,7 +1498,7 @@ GAC_f = {
 
 
 
-# GAU: Gaul
+# GAU -> GAU: Gaul
 
 GAU_f = {
     level = 4
@@ -1694,7 +1543,7 @@ GAU_f = {
 
 
 
-# GEE: Germania
+# GEE -> GEE: Germania
 
 GEE_f = {
     level = 4
@@ -1738,7 +1587,7 @@ GEE_f = {
 
 
 
-# GLL: Gallaecia
+# GLL -> GLL: Gallaecia
 
 GLL_f = {
     level = 2
@@ -1763,7 +1612,7 @@ GLL_f = {
 
 
 
-# GLT: Galatia
+# GLT -> GLT: Galatia
 
 GLT_f = {
     level = 3
@@ -1793,7 +1642,7 @@ GLT_f = {
 
 
 
-# GMA: Greater Maeotia
+# GMA -> GMA: Greater Maeotia
 
 GMA_f = {
     level = 3
@@ -1820,7 +1669,7 @@ GMA_f = {
 
 
 
-# HBR: Greater Iberia
+# HBR -> HBR: Greater Iberia
 
 HBR_f = {
     level = 4
@@ -1851,7 +1700,7 @@ HBR_f = {
 
 
 
-# HIB: Hibernia
+# HIB -> HIB: Hibernia
 
 HIB_f = {
     level = 3
@@ -1881,7 +1730,7 @@ HIB_f = {
 
 
 
-# HLA: Hellenic League
+# HLA -> HLA: Hellenic League
 
 HLA_f = {
     level = 4
@@ -1914,7 +1763,7 @@ HLA_f = {
 
 
 
-# HND: Hindustan
+# HND -> HND: Hindustan
 
 HND_f = {
     level = 2
@@ -1940,7 +1789,7 @@ HND_f = {
 
 
 
-# HPP: Hellespontine Phrygia
+# HPP -> HPP: Hellespontine Phrygia
 
 HPP_f = {
     level = 3
@@ -1970,7 +1819,7 @@ HPP_f = {
 
 
 
-# HSD: Hellespontine District
+# HSD -> HSD: Hellespontine District
 
 HSD_f = {
     level = 2
@@ -1997,7 +1846,7 @@ HSD_f = {
 
 
 
-# HVL: Helvetia
+# HVL -> HVL: Helvetia
 
 HVL_f = {
     level = 3
@@ -2021,7 +1870,7 @@ HVL_f = {
 
 
 
-# IDC: India
+# IDC -> IDC: India
 
 IDC_f = {
     level = 4
@@ -2049,39 +1898,7 @@ IDC_f = {
 
 
 
-# IGK: Indo-Germanic Kingdom
-
-IGK_f = {
-    level = 4
-    required_locations_fraction = 0.12
-    rule = historical
-    potential = {
-        culture = { has_culture_group = culture_group:ir_germanic_g }
-    }
-    allow = {
-    }
-    name = IGK
-    flag = IGK
-    adjective = IGK_ADJ
-    tag = IGK
-    areas = {
-        aparanta_area
-        avanti_area
-        dravida_area
-        gandhara_area
-        karnata_area
-        madhyadesa_area
-        maru_area
-        pracya_area
-        vindhyaprstha_area
-    }
-    form_effect = {
-    }
-}
-
-
-
-# ILL: Illyria
+# ILL -> ILL: Illyria
 
 ILL_f = {
     level = 3
@@ -2110,7 +1927,7 @@ ILL_f = {
 
 
 
-# INP: Indo-Parthia
+# INP -> INP: Indo-Parthia
 
 INP_f = {
     level = 4
@@ -2141,7 +1958,7 @@ INP_f = {
 
 
 
-# IOA: Aeolia
+# IOA -> IOA: Aeolia
 
 IOA_f = {
     level = 2
@@ -2169,7 +1986,7 @@ IOA_f = {
 
 
 
-# ION: Ionia
+# ION -> ION: Ionia
 
 ION_f = {
     level = 2
@@ -2200,39 +2017,7 @@ ION_f = {
 
 
 
-# IOU: Pan-Ionian League
-
-IOU_f = {
-    level = 3
-    required_locations_fraction = 0.6
-    rule = historical
-    potential = {
-        OR = {
-            culture = culture:ir_aegean
-            culture = culture:ir_aeolian
-            culture = culture:ir_ionian
-            culture = culture:ir_troan
-        }
-    }
-    allow = {
-    }
-    name = IOU
-    flag = IOU
-    adjective = IOU_ADJ
-    tag = IOU
-    provinces = {
-        aeolia_province
-        coastal_caria_province
-        ionia_province
-        sporades_province
-    }
-    form_effect = {
-    }
-}
-
-
-
-# ISK: Indo-Scythian Kingdom
+# ISK -> ISK: Indo-Scythian Kingdom
 
 ISK_f = {
     level = 3
@@ -2257,9 +2042,9 @@ ISK_f = {
 
 
 
-# ISL: Istrian League
+# ISL -> HIS: Istrian League
 
-ISL_f = {
+HIS_f = {
     level = 3
     required_locations_fraction = 0.75
     rule = historical
@@ -2271,10 +2056,11 @@ ISL_f = {
     }
     allow = {
     }
-    name = ISL
-    flag = ISL
-    adjective = ISL_ADJ
-    tag = ISL
+    name = HIS
+    flag = HIS
+    adjective = HIS_ADJ
+    tag = HIS
+    color = map_HIS
     provinces = {
         dalmatia_centralis_province
         histria_province
@@ -2286,7 +2072,7 @@ ISL_f = {
 
 
 
-# ISR: Israel
+# ISR -> ISR: Israel
 
 ISR_f = {
     level = 3
@@ -2316,7 +2102,7 @@ ISR_f = {
 
 
 
-# ISU: Isauria
+# ISU -> ISU: Isauria
 
 ISU_f = {
     level = 2
@@ -2341,7 +2127,7 @@ ISU_f = {
 
 
 
-# ITL: Italia
+# ITL -> ITL: Italia
 
 ITL_f = {
     level = 4
@@ -2366,34 +2152,7 @@ ITL_f = {
 
 
 
-# KHN: Kushan
-
-KHN_f = {
-    level = 4
-    required_locations_fraction = 0.6
-    rule = historical
-    potential = {
-        culture = culture:ir_yuezhi
-    }
-    allow = {
-    }
-    name = KHN
-    flag = KHN
-    adjective = KHN_ADJ
-    tag = KHN
-    provinces = {
-        cyropolis_province
-        ferghana_province
-        talas_province
-        tarim_province
-    }
-    form_effect = {
-    }
-}
-
-
-
-# KRE: Crete
+# KRE -> KRE: Crete
 
 KRE_f = {
     level = 3
@@ -2417,7 +2176,7 @@ KRE_f = {
 
 
 
-# LAZ: Lazica
+# LAZ -> LAZ: Lazica
 
 LAZ_f = {
     level = 2
@@ -2441,7 +2200,7 @@ LAZ_f = {
 
 
 
-# LES: Lesser Scythia
+# LES -> LES: Lesser Scythia
 
 LES_f = {
     level = 2
@@ -2469,7 +2228,7 @@ LES_f = {
 
 
 
-# LIG: Liguria
+# LIG -> LIG: Liguria
 
 LIG_f = {
     level = 2
@@ -2493,7 +2252,7 @@ LIG_f = {
 
 
 
-# LO2: Greater Locris
+# LO2 -> LO2: Greater Locris
 
 LO2_f = {
     level = 3
@@ -2518,7 +2277,7 @@ LO2_f = {
 
 
 
-# LSB: Lesbos
+# LSB -> LSB: Lesbos
 
 LSB_f = {
     level = 2
@@ -2543,7 +2302,7 @@ LSB_f = {
 
 
 
-# LSM: Lesser Media
+# LSM -> LSM: Lesser Media
 
 LSM_f = {
     level = 2
@@ -2569,7 +2328,7 @@ LSM_f = {
 
 
 
-# LST: Lusitania
+# LST -> LST: Lusitania
 
 LST_f = {
     level = 2
@@ -2594,7 +2353,7 @@ LST_f = {
 
 
 
-# LYC: Lycia
+# LYC -> LYC: Lycia
 
 LYC_f = {
     level = 2
@@ -2619,7 +2378,7 @@ LYC_f = {
 
 
 
-# LYD: Lydia
+# LYD -> LYD: Lydia
 
 LYD_f = {
     level = 2
@@ -2643,7 +2402,7 @@ LYD_f = {
 
 
 
-# MAC: Macedon
+# MAC -> MAC: Macedon
 
 MAC_f = {
     level = 3
@@ -2668,34 +2427,7 @@ MAC_f = {
 
 
 
-# MCD: Macedon
-
-MCD_f = {
-    level = 3
-    required_locations_fraction = 0.6
-    rule = historical
-    potential = {
-        culture = culture:ir_macedonian
-    }
-    allow = {
-    }
-    name = MCD
-    flag = MCD
-    adjective = MCD_ADJ
-    tag = MCD
-    provinces = {
-        chalkidiki_province
-        macedonia_province
-        thessaly_province
-        upper_macedonia_province
-    }
-    form_effect = {
-    }
-}
-
-
-
-# MEE: Media
+# MEE -> MEE: Media
 
 MEE_f = {
     level = 3
@@ -2724,7 +2456,7 @@ MEE_f = {
 
 
 
-# MGG: Magna Graecia
+# MGG -> MGG: Magna Graecia
 
 MGG_f = {
     level = 4
@@ -2753,7 +2485,7 @@ MGG_f = {
 
 
 
-# MLD: Milyas
+# MLD -> MLD: Milyas
 
 MLD_f = {
     level = 2
@@ -2779,7 +2511,7 @@ MLD_f = {
 
 
 
-# NMT: Neo-Mitanni Kingdom
+# NMT -> NMT: Neo-Mitanni Kingdom
 
 NMT_f = {
     level = 3
@@ -2807,7 +2539,7 @@ NMT_f = {
 
 
 
-# NRM: Noricum
+# NRM -> NRM: Noricum
 
 NRM_f = {
     level = 3
@@ -2835,7 +2567,7 @@ NRM_f = {
 
 
 
-# NUM: Numidia
+# NUM -> NUM: Numidia
 
 NUM_f = {
     level = 3
@@ -2861,9 +2593,9 @@ NUM_f = {
 
 
 
-# OYK: Odrysian Kingdom
+# OYK -> ODR: Odrysian Kingdom
 
-OYK_f = {
+ODR_f = {
     level = 2
     required_locations_fraction = 0.75
     rule = historical
@@ -2876,10 +2608,11 @@ OYK_f = {
     }
     allow = {
     }
-    name = OYK
-    flag = OYK
-    adjective = OYK_ADJ
-    tag = OYK
+    name = ODR
+    flag = ODR
+    adjective = ODR_ADJ
+    tag = ODR
+    color = map_ODR
     provinces = {
         dacia_inferioris_province
         europa_province
@@ -2894,7 +2627,7 @@ OYK_f = {
 
 
 
-# PAN: Pannonia
+# PAN -> PAN: Pannonia
 
 PAN_f = {
     level = 4
@@ -2938,7 +2671,7 @@ PAN_f = {
 
 
 
-# PAR: Parthia
+# PAR -> PAR: Parthia
 
 PAR_f = {
     level = 4
@@ -2963,7 +2696,7 @@ PAR_f = {
 
 
 
-# PEN: Pentapotamia
+# PEN -> PEN: Pentapotamia
 
 PEN_f = {
     level = 2
@@ -2993,7 +2726,7 @@ PEN_f = {
 
 
 
-# PER: Persia
+# PER -> PER: Persia
 
 PER_f = {
     level = 4
@@ -3031,9 +2764,9 @@ PER_f = {
 
 
 
-# PH2: Greater Phocis
+# PH2 -> PHO: Greater Phocis
 
-PH2_f = {
+PHO_f = {
     level = 2
     required_locations_fraction = 0.75
     rule = historical
@@ -3042,10 +2775,11 @@ PH2_f = {
     }
     allow = {
     }
-    name = PH2
-    flag = PH2
-    adjective = PH2_ADJ
-    tag = PH2
+    name = PHO
+    flag = PHO
+    adjective = PHO_ADJ
+    tag = PHO
+    color = map_PHO
     provinces = {
         aetolia_province
         boeotia_province
@@ -3057,7 +2791,7 @@ PH2_f = {
 
 
 
-# PIS: Pisidia
+# PIS -> PIS: Pisidia
 
 PIS_f = {
     level = 2
@@ -3083,7 +2817,7 @@ PIS_f = {
 
 
 
-# PIY: Piaoyue
+# PIY -> PIY: Piaoyue
 
 PIY_f = {
     level = 2
@@ -3107,7 +2841,7 @@ PIY_f = {
 
 
 
-# PLL: Peloponnesian League
+# PLL -> PLL: Peloponnesian League
 
 PLL_f = {
     level = 4
@@ -3132,7 +2866,7 @@ PLL_f = {
 
 
 
-# PLS: Philistia
+# PLS -> PLS: Philistia
 
 PLS_f = {
     level = 2
@@ -3156,33 +2890,7 @@ PLS_f = {
 
 
 
-# POG: Pong
-
-POG_f = {
-    level = 2
-    required_locations_fraction = 0.75
-    rule = historical
-    potential = {
-        culture = culture:ir_shan
-    }
-    allow = {
-    }
-    name = POG
-    flag = POG
-    adjective = POG_ADJ
-    tag = POG
-    provinces = {
-        pubu_province
-        pyu_province
-        shan_province
-    }
-    form_effect = {
-    }
-}
-
-
-
-# PON: Pontus
+# PON -> PON: Pontus
 
 PON_f = {
     level = 3
@@ -3207,7 +2915,7 @@ PON_f = {
 
 
 
-# PPH: Pamphylia
+# PPH -> PPH: Pamphylia
 
 PPH_f = {
     level = 2
@@ -3231,7 +2939,7 @@ PPH_f = {
 
 
 
-# PPN: Phoenicia
+# PPN -> PPN: Phoenicia
 
 PPN_f = {
     level = 4
@@ -3256,7 +2964,7 @@ PPN_f = {
 
 
 
-# PRG: Phrygia
+# PRG -> PRG: Phrygia
 
 PRG_f = {
     level = 3
@@ -3284,7 +2992,7 @@ PRG_f = {
 
 
 
-# PRU: Pugramadvara
+# PRU -> PRU: Pugramadvara
 
 PRU_f = {
     level = 2
@@ -3310,7 +3018,7 @@ PRU_f = {
 
 
 
-# PRY: Antigonid Kingdom
+# PRY -> PRY: Antigonid Kingdom
 
 PRY_f = {
     level = 3
@@ -3335,85 +3043,7 @@ PRY_f = {
 
 
 
-# PTH: Parthia
-
-PTH_f = {
-    level = 4
-    required_locations_fraction = 0.6
-    rule = historical
-    potential = {
-        culture = { has_culture_group = culture_group:ir_scythia_g }
-    }
-    allow = {
-    }
-    name = PTH
-    flag = PTH
-    adjective = PTH_ADJ
-    tag = PTH
-    provinces = {
-        derbicca_province
-    }
-    form_effect = {
-    }
-}
-
-
-
-# PTL: Pontic League
-
-PTL_f = {
-    level = 3
-    required_locations_fraction = 0.75
-    rule = historical
-    potential = {
-        OR = {
-            culture = { has_culture_group = culture_group:ir_anatolian_g }
-            culture = { has_culture_group = culture_group:ir_hellenic_g }
-        }
-    }
-    allow = {
-    }
-    name = PTL
-    flag = PTL
-    adjective = PTL_ADJ
-    tag = PTL
-    areas = {
-        cappadocia_pontica_area
-        pontus_area
-    }
-    form_effect = {
-    }
-}
-
-
-
-# PTU: Pontus
-
-PTU_f = {
-    level = 3
-    required_locations_fraction = 0.6
-    rule = historical
-    potential = {
-        culture = culture:ir_cappadocian
-    }
-    allow = {
-    }
-    name = PTU
-    flag = PTU
-    adjective = PTU_ADJ
-    tag = PTU
-    provinces = {
-        paphlagonia_inferior_province
-        pontus_colopene_province
-        pontus_province
-    }
-    form_effect = {
-    }
-}
-
-
-
-# PUN: Punt
+# PUN -> PUN: Punt
 
 PUN_f = {
     level = 3
@@ -3445,7 +3075,7 @@ PUN_f = {
 
 
 
-# RI5: Punjab
+# RI5 -> RI5: Punjab
 
 RI5_f = {
     level = 2
@@ -3474,7 +3104,7 @@ RI5_f = {
 
 
 
-# ROM: Rome
+# ROM -> ROM: Rome
 
 ROM_f = {
     level = 4
@@ -3499,7 +3129,7 @@ ROM_f = {
 
 
 
-# SAR: Sardinia
+# SAR -> SAR: Sardinia
 
 SAR_f = {
     level = 3
@@ -3527,7 +3157,7 @@ SAR_f = {
 
 
 
-# SBN: Suebia
+# SBN -> SBN: Suebia
 
 SBN_f = {
     level = 2
@@ -3558,7 +3188,7 @@ SBN_f = {
 
 
 
-# SCN: Scandia
+# SCN -> SCN: Scandia
 
 SCN_f = {
     level = 3
@@ -3585,7 +3215,7 @@ SCN_f = {
 
 
 
-# SCY: Scythia
+# SCY -> SCY: Scythia
 
 SCY_f = {
     level = 4
@@ -3613,7 +3243,7 @@ SCY_f = {
 
 
 
-# SEL: Seleukid Empire
+# SEL -> SEL: Seleukid Empire
 
 SEL_f = {
     level = 3
@@ -3638,7 +3268,7 @@ SEL_f = {
 
 
 
-# SII: Sicily
+# SII -> SII: Sicily
 
 SII_f = {
     level = 3
@@ -3667,9 +3297,9 @@ SII_f = {
 
 
 
-# SL1: the Salluvian Confederacy
+# SL1 -> SLV: the Salluvian Confederacy
 
-SL1_f = {
+SLV_f = {
     level = 2
     required_locations_fraction = 0.75
     rule = historical
@@ -3678,10 +3308,11 @@ SL1_f = {
     }
     allow = {
     }
-    name = SL1
-    flag = SL1
-    adjective = SL1_ADJ
-    tag = SL1
+    name = SLV
+    flag = SLV
+    adjective = SLV_ADJ
+    tag = SLV
+    color = map_SLV
     provinces = {
         alpes_maritimae_province
         alpes_maritimae_two_province
@@ -3693,7 +3324,7 @@ SL1_f = {
 
 
 
-# SLA: Slavia
+# SLA -> SLA: Slavia
 
 SLA_f = {
     level = 4
@@ -3728,7 +3359,7 @@ SLA_f = {
 
 
 
-# SRM: Sarmatia
+# SRM -> SRM: Sarmatia
 
 SRM_f = {
     level = 3
@@ -3758,7 +3389,7 @@ SRM_f = {
 
 
 
-# SVA: Suania
+# SVA -> SVA: Suania
 
 SVA_f = {
     level = 2
@@ -3782,7 +3413,7 @@ SVA_f = {
 
 
 
-# SYA: Syria
+# SYA -> SYA: Syria
 
 SYA_f = {
     level = 3
@@ -3809,7 +3440,7 @@ SYA_f = {
 
 
 
-# TAT: Tartessia
+# TAT -> TAT: Tartessia
 
 TAT_f = {
     level = 3
@@ -3839,7 +3470,7 @@ TAT_f = {
 
 
 
-# THL: Thessaly
+# THL -> THL: Thessaly
 
 THL_f = {
     level = 2
@@ -3868,7 +3499,7 @@ THL_f = {
 
 
 
-# TIB: Tibet
+# TIB -> TIB: Tibet
 
 TIB_f = {
     level = 4
@@ -3896,7 +3527,7 @@ TIB_f = {
 
 
 
-# TLM: Tilmun
+# TLM -> TLM: Tilmun
 
 TLM_f = {
     level = 2
@@ -3920,7 +3551,7 @@ TLM_f = {
 
 
 
-# TOC: Tocharia
+# TOC -> TOC: Tocharia
 
 TOC_f = {
     level = 2
@@ -3945,7 +3576,7 @@ TOC_f = {
 
 
 
-# TRD: Troas
+# TRD -> TRD: Troas
 
 TRD_f = {
     level = 2
@@ -3976,7 +3607,7 @@ TRD_f = {
 
 
 
-# TRE: Thrace
+# TRE -> TRE: Thrace
 
 TRE_f = {
     level = 3
@@ -4001,7 +3632,7 @@ TRE_f = {
 
 
 
-# TUR: Turan
+# TUR -> TUR: Turan
 
 TUR_f = {
     level = 3
@@ -4031,7 +3662,7 @@ TUR_f = {
 
 
 
-# TYL: Tylis
+# TYL -> TYL: Tylis
 
 TYL_f = {
     level = 2
@@ -4057,7 +3688,7 @@ TYL_f = {
 
 
 
-# UCI: Unite Upper Cilicia
+# UCI -> UCI: Unite Upper Cilicia
 
 UCI_f = {
     level = 2
@@ -4081,7 +3712,7 @@ UCI_f = {
 
 
 
-# VC1: Venetian Empire
+# VC1 -> VC1: Venetian Empire
 
 VC1_f = {
     level = 4
@@ -4106,7 +3737,7 @@ VC1_f = {
 
 
 
-# VC2: Venetic League
+# VC2 -> VC2: Venetic League
 
 VC2_f = {
     level = 4
@@ -4131,7 +3762,7 @@ VC2_f = {
 
 
 
-# VIN: Vindelicia
+# VIN -> VIN: Vindelicia
 
 VIN_f = {
     level = 2
@@ -4157,7 +3788,7 @@ VIN_f = {
 
 
 
-# VL2: Volcaea
+# VL2 -> VL2: Volcaea
 
 VL2_f = {
     level = 2
@@ -4182,7 +3813,7 @@ VL2_f = {
 
 
 
-# VNT: Veneto
+# VNT -> VNT: Veneto
 
 VNT_f = {
     level = 2
@@ -4207,7 +3838,7 @@ VNT_f = {
 
 
 
-# VTT: Vettonia
+# VTT -> VTT: Vettonia
 
 VTT_f = {
     level = 2
@@ -4232,7 +3863,7 @@ VTT_f = {
 
 
 
-# XXS: Saxonia
+# XXS -> XXS: Saxonia
 
 XXS_f = {
     level = 3
@@ -4262,7 +3893,7 @@ XXS_f = {
 
 
 
-# YMN: Yamnat
+# YMN -> YMN: Yamnat
 
 YMN_f = {
     level = 3
@@ -4298,7 +3929,7 @@ YMN_f = {
 
 
 
-# YZI: Yuezhi
+# YZI -> YZI: Yuezhi
 
 YZI_f = {
     level = 3

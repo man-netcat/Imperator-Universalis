@@ -772,28 +772,32 @@ ir_culture_graphical_overrides = {
 #
 # Scope precedence in writer:
 #   locations > areas > regions
+#
+# Tags listed here are intentionally excluded from generated EU5 formables.
+# Use this for ahistorical/joke artifacts from upstream decision pools.
+disabled_formable_tags: set[str] = {
+    "IGK",  # Indo-Germanic Kingdom (nonsense alt-formable)
+    # Exact-scope duplicates: keep one canonical representative.
+    "AGO",  # Duplicate scope with ARK.
+    "CHY",  # Duplicate scope with CIA.
+    "DL2",  # Duplicate scope with PH2 (Delphic flavor preserved on PH2).
+    "KHN",  # Duplicate scope with YZI.
+    "POG",  # Duplicate scope with PRU.
+}
+
+# Duplicate/synonym formables should resolve to a single canonical output tag.
+# This keeps one formable entry while allowing flavor wording through
+# country_ranks/country_name_construction.
+formable_alias_target_overrides: dict[str, str] = {
+    "ACL": "ACH",  # Achaean League -> Achaea (League flavor via rank/construction)
+}
+
 formable_requirement_overrides: dict[str, dict[str, object]] = {
     # Endgame / large unions
     "APF": {
         "regions": ["cisalpine_gaul_region", "transalpine_gaul_region", "rhaetia_region"],
         "required_locations_fraction": 0.6,
         "required_culture_groups": ["latin", "gallic", "celto_pannonian_group"],
-    },
-    "IGK": {
-        # IR uses an OR across major Indian regions; approximate with low fraction.
-        "regions": [
-            "pracya_region",
-            "madhyadesa_region",
-            "vindhyaprstha_region",
-            "dravida_region",
-            "aparanta_region",
-            "karnata_region",
-            "avanti_region",
-            "maru_region",
-            "gandhara_region",
-        ],
-        "required_locations_fraction": 0.12,
-        "required_culture_groups": ["germanic"],
     },
     "PLL": {
         "regions": ["greece_region", "macedonia_region"],
@@ -915,7 +919,6 @@ formable_localization_overrides: dict[str, dict[str, str]] = {
     "DLA": {"name": "Delos", "adj": "Delian"},
     "EGY": {"name": "Ptolemies", "adj": "Ptolemaic"},
     "HLA": {"name": "Hellas", "adj": "Hellenic"},
-    "IGK": {"name": "Indo-Germania", "adj": "Indo-Germanic"},
     "IOU": {"name": "Ionia", "adj": "Ionian"},
     "ISK": {"name": "Indo-Scythia", "adj": "Indo-Scythian"},
     "ISL": {"name": "Istria", "adj": "Istrian"},
@@ -924,6 +927,7 @@ formable_localization_overrides: dict[str, dict[str, str]] = {
     "PLL": {"name": "Peloponnese", "adj": "Peloponnesian"},
     "PRY": {"name": "Antigonids", "adj": "Antigonid"},
     "PTL": {"name": "Pontus", "adj": "Pontic"},
+    "PH2": {"name": "Phocis", "adj": "Phocian"},
     "SEL": {"name": "Seleukids", "adj": "Seleukid"},
     "SL1": {"name": "Salluvia", "adj": "Salluvian"},
     "VC1": {"name": "Venice", "adj": "Venetian"},
