@@ -1,9 +1,9 @@
-from pathlib import Path
+﻿from pathlib import Path
 
 from PIL import Image, ImageFile, UnidentifiedImageError
 
 from .paths import iter_ir_files, iu_coa_gfx, mod_root
-from .write_data import print_written
+from .output_text import print_written
 
 
 def remap_ir_colored_emblem_palette(

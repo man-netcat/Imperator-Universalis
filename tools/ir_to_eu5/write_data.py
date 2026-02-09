@@ -1,5 +1,4 @@
-import os
-import re
+﻿import re
 import shutil
 from collections import defaultdict
 from pathlib import Path
@@ -7,7 +6,6 @@ from typing import List, Tuple, Union
 
 import pyradox
 import pyradox.datatype as _pydt
-import pyradox.token as _pytoken
 
 from .data import (
     government_map,
@@ -23,6 +21,14 @@ from .data import (
     formable_alias_target_overrides,
     disabled_formable_tags,
 )
+from .output_text import (
+    convert_color,
+    convert_tree_to_blocks,
+    make_block,
+    print_written,
+    write_blocks,
+)
+from .paradox_yaml import write_paradox_localisation
 from .paths import *
 
 pyradox.Color = _pydt.Color
@@ -269,162 +275,6 @@ def write_language_data_full(culture_data: list) -> None:
             content.append("\n")
     out_path.write_text("".join(content), encoding="utf-8-sig")
     print_written("file", out_path)
-def print_written(kind: str, out_path: Path) -> None:
-    """Print a concise relative write message for `out_path`.
-
-    `kind` should be a short label like 'file', 'JSON', 'CSV', or 'image'.
-    """
-    try:
-        rel = os.path.relpath(str(out_path), start=str(mod_root))
-    except Exception:
-        rel = str(out_path)
-    print(f"Writing {kind}: {rel}")
-
-
-def convert_color(color: _pydt.Color) -> str:
-    if color.colorspace == "rgb":
-        r, g, b = color.channels
-        return f"rgb {{ {r} {g} {b} }}"
-    elif color.colorspace == "hsv":
-        h, s, v = color.channels
-        return f"hsv {{ {h:.2f} {s:.2f} {v:.2f} }}"
-    else:
-        raise ValueError(f"Unsupported color space: {color.colorspace}")
-
-
-def convert_tree_to_blocks(
-    tree: _pydt.Tree,
-) -> List[Union[str, Tuple[str, List[object]]]]:
-    blocks: List[Union[str, Tuple[str, List[object]]]] = []
-
-    grouped: dict[str, list] = {}
-
-    # Group repeated keys
-    for key, value in tree.items():
-        if key not in grouped:
-            grouped[key] = []
-        grouped[key].append(value)
-
-    for key, values in grouped.items():
-        # All scalar values → aggregate into one line
-        if all(not isinstance(v, (_pydt.Tree, list)) for v in values):
-            formatted_values = [_pytoken.make_token_string(v) for v in values]
-            if len(formatted_values) == 1:
-                blocks.append(f"{key} = {formatted_values[0]}")
-            else:
-                items = " ".join(formatted_values)
-                blocks.append(f"{key} = {{ {items} }}")
-            continue
-
-        # Lists of scalars → emit a single brace block
-        if all(isinstance(v, list) for v in values):
-            flat: list[object] = []
-            has_complex = False
-            for v in values:
-                for item in v:
-                    if isinstance(item, (_pydt.Tree, list)):
-                        has_complex = True
-                        break
-                    flat.append(item)
-                if has_complex:
-                    break
-            if not has_complex:
-                formatted = " ".join(_pytoken.make_token_string(item) for item in flat)
-                blocks.append(f"{key} = {{ {formatted} }}")
-                continue
-
-        # Complex values: trees or lists
-        for v in values:
-            if isinstance(v, _pydt.Tree):
-                # Use the parent key as the tag, not the "tag" inside the tree
-                subblocks = convert_tree_to_blocks(v)
-                blocks.append((key, subblocks))
-            elif isinstance(v, list):
-                for item in v:
-                    if isinstance(item, _pydt.Tree):
-                        # Again, parent key is used to avoid double nesting
-                        subblocks = convert_tree_to_blocks(item)
-                        blocks.append((key, subblocks))
-                    else:
-                        # Scalar inside a list
-                        formatted = _pytoken.make_token_string(item)
-                        blocks.append(f"{key} = {formatted}")
-
-    return blocks
-
-
-def make_block(
-    tag: str,
-    lines: List[Union[str, Tuple[str, List[object]]]] | None = None,
-    indent_level: int = 0,
-    indent_str: str = "    ",
-) -> str:
-    if lines is None:
-        lines = []
-
-    prefix = indent_str * indent_level
-    inner_prefix = prefix + indent_str
-
-    parts: List[str] = [f"{prefix}{tag} = {{\n"]
-
-    for line in lines:
-        if isinstance(line, tuple) and len(line) == 2:
-            subtag, sublines = line
-            parts.append(make_block(subtag, sublines, indent_level + 1, indent_str))
-        else:
-            parts.append(f"{inner_prefix}{line}\n")
-
-    parts.append(f"{prefix}}}\n")
-    return "".join(parts)
-
-
-def write_blocks(
-    out_path: Path,
-    blocks: Union[
-        str,
-        Tuple[str, List[object]],
-        List[Union[str, Tuple[str, List[object]]]],
-    ],
-    mode: str = "w",
-    encoding: str = "utf-8-sig",
-    indent_str: str = "    ",
-) -> Path:
-    # normalize to a list of blocks
-    if isinstance(blocks, (tuple, str)):
-        blocks_list = [blocks]
-    elif isinstance(blocks, list):
-        blocks_list = blocks
-    elif isinstance(blocks, _pydt.Tree):
-        blocks_list = convert_tree_to_blocks(blocks)
-    else:
-        raise TypeError("blocks must be a str, a (tag, lines) tuple, or a list")
-
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-
-    with out_path.open(mode, encoding=encoding) as f:
-        # --- header ---
-        f.write(AUTO_GENERATED_HEADER)
-
-        for block in blocks_list:
-            if isinstance(block, tuple) and len(block) == 2:
-                tag, lines = block
-                content = make_block(tag, lines, indent_level=0, indent_str=indent_str)
-                # Collapse accidental double-empty-brace sequences (e.g. "{ {} }")
-                content = content.replace("{ {} }", "{}")
-                f.write(content)
-                f.write("\n")
-            else:
-                s = str(block)
-                s = s.replace("{ {} }", "{}")
-                f.write(s)
-                if not s.endswith("\n"):
-                    f.write("\n")
-                if out_path.suffix not in (".yml", ".yaml"):
-                    f.write("\n")
-
-    print_written("file", out_path)
-    return out_path
-
 
 def _existing_block_map(path: Path) -> dict[str, _pydt.Tree]:
     return {}
@@ -1586,24 +1436,11 @@ def write_localisation_files(
     deity_data: list,
     formable_data: dict[str, dict[str, object]] | None = None,
 ):
-    def _esc_loc(value: object) -> str:
-        return str(value).replace("\\", "\\\\").replace('"', '\\"').replace("\n", "\\n")
-
-    def sort_lines(lines: list[str]) -> list[str]:
-        """Keep the first line (header) and sort the rest alphabetically."""
-        return [lines[0]] + sorted(lines[1:])
-
-    def remove_duplicate_keys(lines: list[str]) -> list[str]:
-        """Remove duplicate keys, keeping only the first occurrence."""
-        header, *body = lines
-        seen_keys = set()
-        unique_lines = []
-        for line in body:
-            key = line.split(":", 1)[0].strip()
-            if key not in seen_keys:
-                seen_keys.add(key)
-                unique_lines.append(line)
-        return [header] + unique_lines
+    def _set_once(entries: dict[str, str], key: object, value: object) -> None:
+        if not isinstance(key, str) or not key:
+            return
+        if key not in entries:
+            entries[key] = str(value)
 
     def _collect_block_ids(path: Path) -> list[str]:
         if not path.exists():
@@ -1665,64 +1502,61 @@ def write_localisation_files(
             return specials[base]
         return " ".join(word.capitalize() for word in base.split("_"))
 
-    # -------- Cultures --------
-    culture_lines = ["l_english:"]
-    for group in culture_data:
-        culture_lines.append(f'  {group["tag"]}: "{group["name"]}"')
-        culture_lines.append(f'  {group["tag"]}_desc: "{group["name_desc"]}"')
-        for culture in group["cultures"]:
-            culture_lines.append(f'  {culture["tag"]}: "{culture["name"]}"')
-    culture_lines = remove_duplicate_keys(sort_lines(culture_lines))
+    def _write_loc(path: Path, entries: dict[str, str]) -> None:
+        write_paradox_localisation(
+            path,
+            entries,
+            language_key="l_english",
+            header=AUTO_GENERATED_HEADER,
+            sort_keys=True,
+        )
+        print_written("file", path)
 
-    # -------- Religions --------
-    religion_lines = ["l_english:"]
+    culture_entries: dict[str, str] = {}
+    for group in culture_data:
+        _set_once(culture_entries, group["tag"], group["name"])
+        _set_once(culture_entries, f'{group["tag"]}_desc', group["name_desc"])
+        for culture in group["cultures"]:
+            _set_once(culture_entries, culture["tag"], culture["name"])
+
+    religion_entries: dict[str, str] = {}
     for religion in religion_data:
         religion_tag = religion["tag"]
         religion_name = religion["name"]
-        religion_lines.append(f'  {religion_tag}: "{religion_name}"')
-        religion_lines.append(f'  {religion_tag}_ADJ: "{religion_name}"')
-        religion_lines.append(f'  {religion_tag}_desc: "{religion["name_desc"]}"')
+        _set_once(religion_entries, religion_tag, religion_name)
+        _set_once(religion_entries, f"{religion_tag}_ADJ", religion_name)
+        _set_once(religion_entries, f"{religion_tag}_desc", religion["name_desc"])
     for group_tag, group_name in RELIGION_GROUP_NAMES.items():
-        religion_lines.append(f'  {group_tag}: "{group_name} Group"')
-        religion_lines.append(f'  {group_tag}_ADJ: "{group_name} Group"')
-        religion_lines.append(f'  {group_tag}_desc: "{group_name} Group"')
-    religion_lines.extend(
-        [
-            '  ir_unknown_group: "Unknown Group"',
-            '  ir_unknown_group_ADJ: "Unknown Group"',
-            '  ir_unknown_group_desc: "Fallback group for unmapped religions"',
-        ]
-    )
-    religion_lines = remove_duplicate_keys(sort_lines(religion_lines))
+        label = f"{group_name} Group"
+        _set_once(religion_entries, group_tag, label)
+        _set_once(religion_entries, f"{group_tag}_ADJ", label)
+        _set_once(religion_entries, f"{group_tag}_desc", label)
+    _set_once(religion_entries, "ir_unknown_group", "Unknown Group")
+    _set_once(religion_entries, "ir_unknown_group_ADJ", "Unknown Group")
+    _set_once(religion_entries, "ir_unknown_group_desc", "Fallback group for unmapped religions")
 
-    # -------- Languages & Families --------
-    language_lines = ["l_english:"]
+    language_entries: dict[str, str] = {}
     language_ids = sorted(_collect_block_ids(iu_languages / "ir_languages.txt"))
     dialect_ids = sorted(_collect_dialect_ids(iu_languages / "ir_languages.txt"))
     for lang_id in language_ids:
-        language_lines.append(f'  {lang_id}: "{_humanize_ir_id(lang_id)}"')
+        _set_once(language_entries, lang_id, _humanize_ir_id(lang_id))
     for dialect_id in dialect_ids:
-        language_lines.append(f'  {dialect_id}: "{_humanize_ir_id(dialect_id)}"')
-    for family_id in sorted(
-        _collect_block_ids(iu_language_families / "ir_language_families.txt")
-    ):
-        language_lines.append(f'  {family_id}: "{_humanize_ir_id(family_id)}"')
-    language_lines = remove_duplicate_keys(sort_lines(language_lines))
+        _set_once(language_entries, dialect_id, _humanize_ir_id(dialect_id))
+    for family_id in sorted(_collect_block_ids(iu_language_families / "ir_language_families.txt")):
+        _set_once(language_entries, family_id, _humanize_ir_id(family_id))
 
-    # -------- Countries --------
-    country_lines = ["l_english:"]
+    country_entries: dict[str, str] = {}
     for country in country_data:
-        country_lines.append(f'  {country["tag"]}: "{country["name"]}"')
-        country_lines.append(f'  {country["tag"]}_ADJ: "{country["name_adj"]}"')
-    country_lines = remove_duplicate_keys(sort_lines(country_lines))
+        _set_once(country_entries, country["tag"], country["name"])
+        _set_once(country_entries, f'{country["tag"]}_ADJ', country["name_adj"])
 
-    # -------- Formables --------
-    formable_lines = ["l_english:"]
-    formable_desc_lines = ["l_english:"]
+    formable_entries: dict[str, str] = {}
+    formable_desc_entries: dict[str, str] = {}
     if formable_data:
         country_name_map = {country["tag"]: country["name"] for country in country_data}
         country_adj_map = {country["tag"]: country["name_adj"] for country in country_data}
         emitted_loc_tags: set[str] = set()
+
         for tag in sorted(formable_data.keys()):
             if tag in disabled_formable_tags:
                 continue
@@ -1735,67 +1569,53 @@ def write_localisation_files(
                 continue
             if output_tag in emitted_loc_tags:
                 continue
+
             raw_adj = loc_override.get("adj") or meta.get("adj")
             if isinstance(raw_adj, str) and raw_adj.strip():
                 adj = raw_adj.strip()
             else:
                 adj = str(country_adj_map.get(output_tag) or country_adj_map.get(tag) or name)
-            formable_lines.append(f'  {output_tag}: "{_esc_loc(name)}"')
-            formable_lines.append(f'  {output_tag}_ADJ: "{_esc_loc(adj)}"')
-            # EU5-style aliases for formable IDs referenced as TAG_f in UI/scripts.
-            formable_lines.append(f'  {output_tag}_f: "{_esc_loc(name)}"')
-            formable_lines.append(f'  {output_tag}_f_ADJ: "{_esc_loc(adj)}"')
+
+            _set_once(formable_entries, output_tag, name)
+            _set_once(formable_entries, f"{output_tag}_ADJ", adj)
+            _set_once(formable_entries, f"{output_tag}_f", name)
+            _set_once(formable_entries, f"{output_tag}_f_ADJ", adj)
+
             desc = meta.get("desc")
             if isinstance(desc, str) and desc.strip():
-                formable_desc_lines.append(f'  {output_tag}_f_desc: "{_esc_loc(desc)}"')
+                _set_once(formable_desc_entries, f"{output_tag}_f_desc", desc)
+
             emitted_loc_tags.add(output_tag)
-    formable_lines = remove_duplicate_keys(sort_lines(formable_lines))
-    formable_desc_lines = remove_duplicate_keys(sort_lines(formable_desc_lines))
 
-    # -------- Characters --------
-    character_lines = ["l_english:"]
-    character_lines.extend(f'  {c["name_tag"]}: "{c["name"]}"' for c in character_data)
-    character_lines.extend(
-        f'  {c["nickname_tag"]}: "{c["nickname"]}"'
-        for c in character_data
-        if c.get("nickname")
-    )
-    character_lines = remove_duplicate_keys(sort_lines(character_lines))
+    character_entries: dict[str, str] = {}
+    for character in character_data:
+        _set_once(character_entries, character["name_tag"], character["name"])
+        if character.get("nickname"):
+            _set_once(character_entries, character["nickname_tag"], character["nickname"])
 
-    # -------- Dynasties --------
-    dynasty_lines = ["l_english:"]
-    for d in dynasties:
-        dynasty_lines.append(f'  {d["tag"]}: "{d["name"]}"')
-    dynasty_lines = remove_duplicate_keys(sort_lines(dynasty_lines))
+    dynasty_entries: dict[str, str] = {}
+    for dynasty in dynasties:
+        _set_once(dynasty_entries, dynasty["tag"], dynasty["name"])
 
-    # -------- Gods --------
-    god_lines = ["l_english:"]
+    god_entries: dict[str, str] = {}
     for deity in deity_data:
         deity_tag = deity.get("tag")
         if not deity_tag:
             continue
         name = deity.get("name") or deity_tag
-        god_lines.append(f'  {deity_tag}: "{name}"')
-        god_lines.append(f'  worship_{deity_tag}: "{name}"')
-    god_lines = remove_duplicate_keys(sort_lines(god_lines))
+        _set_once(god_entries, deity_tag, name)
+        _set_once(god_entries, f"worship_{deity_tag}", name)
 
-    # -------- Write Files --------
-    write_blocks(iu_localisation / "ir_cultures_l_english.yml", culture_lines)
-    write_blocks(iu_localisation / "ir_religions_l_english.yml", religion_lines)
-    write_blocks(
-        iu_localisation / "cultural_and_languages_l_english.yml", language_lines
-    )
-    write_blocks(iu_localisation / "ir_countries_l_english.yml", country_lines)
-    write_blocks(iu_localisation / "ir_formables_l_english.yml", formable_lines)
-    if len(formable_desc_lines) > 1:
-        write_blocks(
-            iu_localisation / "ir_formable_countries_l_english.yml",
-            formable_desc_lines,
-        )
-    write_blocks(iu_localisation / "ir_characters_l_english.yml", character_lines)
-    write_blocks(iu_localisation / "ir_dynasties_l_english.yml", dynasty_lines)
-    write_blocks(iu_localisation / "ir_gods_l_english.yml", god_lines)
-
+    _write_loc(iu_localisation / "ir_cultures_l_english.yml", culture_entries)
+    _write_loc(iu_localisation / "ir_religions_l_english.yml", religion_entries)
+    _write_loc(iu_localisation / "cultural_and_languages_l_english.yml", language_entries)
+    _write_loc(iu_localisation / "ir_countries_l_english.yml", country_entries)
+    _write_loc(iu_localisation / "ir_formables_l_english.yml", formable_entries)
+    if formable_desc_entries:
+        _write_loc(iu_localisation / "ir_formable_countries_l_english.yml", formable_desc_entries)
+    _write_loc(iu_localisation / "ir_characters_l_english.yml", character_entries)
+    _write_loc(iu_localisation / "ir_dynasties_l_english.yml", dynasty_entries)
+    _write_loc(iu_localisation / "ir_gods_l_english.yml", god_entries)
 
 def write_coa_file(coa_data: _pydt.Tree):
     write_blocks(iu_prescripted_coa, coa_data, encoding="utf-8")

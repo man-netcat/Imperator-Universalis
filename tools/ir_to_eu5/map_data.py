@@ -1,4 +1,4 @@
-import csv
+﻿import csv
 import math
 import re
 import shutil
@@ -26,7 +26,7 @@ from .paths import (
     iu_setup_start,
     mod_root,
 )
-from .write_data import write_blocks, print_written
+from .output_text import print_written, write_blocks
 
 # ---------------- Static Mappings ---------------- #
 

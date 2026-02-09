@@ -1,4 +1,4 @@
-﻿provinces = "locations.png"
+provinces = "locations.png"
 rivers = "rivers.png"
 adjacencies = "adjacencies.csv"
 setup = "definitions.txt"
@@ -1614,6 +1614,38 @@ sea_zones = {
     mare_hibernicum_7
     mare_hibernicum_8
     mare_hibernicum_9
+    mare_hyrcanum_0
+    mare_hyrcanum_1
+    mare_hyrcanum_10
+    mare_hyrcanum_11
+    mare_hyrcanum_12
+    mare_hyrcanum_13
+    mare_hyrcanum_14
+    mare_hyrcanum_15
+    mare_hyrcanum_16
+    mare_hyrcanum_17
+    mare_hyrcanum_18
+    mare_hyrcanum_19
+    mare_hyrcanum_2
+    mare_hyrcanum_20
+    mare_hyrcanum_21
+    mare_hyrcanum_22
+    mare_hyrcanum_23
+    mare_hyrcanum_24
+    mare_hyrcanum_25
+    mare_hyrcanum_26
+    mare_hyrcanum_27
+    mare_hyrcanum_28
+    mare_hyrcanum_29
+    mare_hyrcanum_3
+    mare_hyrcanum_30
+    mare_hyrcanum_31
+    mare_hyrcanum_4
+    mare_hyrcanum_5
+    mare_hyrcanum_6
+    mare_hyrcanum_7
+    mare_hyrcanum_8
+    mare_hyrcanum_9
     mare_icarium_0
     mare_icarium_1
     mare_icarium_2
@@ -2113,38 +2145,6 @@ sea_zones = {
     unnamed_7851
     unnamed_7852
     unnamed_7860
-    mare_hyrcanum_0
-    mare_hyrcanum_1
-    mare_hyrcanum_2
-    mare_hyrcanum_3
-    mare_hyrcanum_4
-    mare_hyrcanum_5
-    mare_hyrcanum_6
-    mare_hyrcanum_7
-    mare_hyrcanum_8
-    mare_hyrcanum_9
-    mare_hyrcanum_10
-    mare_hyrcanum_11
-    mare_hyrcanum_12
-    mare_hyrcanum_13
-    mare_hyrcanum_14
-    mare_hyrcanum_15
-    mare_hyrcanum_16
-    mare_hyrcanum_17
-    mare_hyrcanum_18
-    mare_hyrcanum_19
-    mare_hyrcanum_20
-    mare_hyrcanum_21
-    mare_hyrcanum_22
-    mare_hyrcanum_23
-    mare_hyrcanum_24
-    mare_hyrcanum_25
-    mare_hyrcanum_26
-    mare_hyrcanum_27
-    mare_hyrcanum_28
-    mare_hyrcanum_29
-    mare_hyrcanum_30
-    mare_hyrcanum_31
 }
 
 volcanoes = {
