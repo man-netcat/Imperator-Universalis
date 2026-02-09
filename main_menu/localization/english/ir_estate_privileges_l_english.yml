@@ -1,0 +1,28 @@
+﻿l_english:
+  ir_nobles_companion_cavalry: "Companion Cavalry Rights"
+  ir_nobles_companion_cavalry_desc: "The great houses are guaranteed command over elite cavalry contingents in exchange for service."
+  ir_nobles_land_grants: "Aristocratic Land Grants"
+  ir_nobles_land_grants_desc: "Nobles receive broad landed privileges and local jurisdiction in return for loyalty and revenue."
+  ir_nobility_council_rights: "Nobility Council Rights"
+  ir_nobility_council_rights_desc: "Elite councils gain formal influence over appointments and major policy."
+
+  ir_burghers_port_contracts: "Port Merchant Contracts"
+  ir_burghers_port_contracts_desc: "Merchant houses are granted privileged maritime contracts to sustain naval commerce."
+  ir_burghers_tax_farming: "Tax Farming Concessions"
+  ir_burghers_tax_farming_desc: "Fiscal collection rights are leased to wealthy financiers who advance state income."
+  ir_burghers_guild_charters: "Guild Charters"
+  ir_burghers_guild_charters_desc: "Urban guilds receive legal charters and economic privileges in exchange for investment."
+
+  ir_clergy_state_cult: "State Cult Patronage"
+  ir_clergy_state_cult_desc: "Temple institutions receive royal support to unify rites and strengthen religious authority."
+  ir_clergy_temple_lands: "Temple Land Exemptions"
+  ir_clergy_temple_lands_desc: "Sacred estates and priestly revenues are protected from ordinary fiscal burdens."
+  ir_clergy_oracular_colleges: "Oracular Colleges"
+  ir_clergy_oracular_colleges_desc: "Organized priestly colleges advise the state through codified sacred interpretation."
+
+  ir_tribes_warband_rights: "Warband Command Rights"
+  ir_tribes_warband_rights_desc: "Tribal elites gain guaranteed command over warbands and frontier raids."
+  ir_tribes_pastoral_corridors: "Pastoral Corridor Rights"
+  ir_tribes_pastoral_corridors_desc: "Tribal groups secure recognized migration and grazing corridors across frontier lands."
+  ir_tribes_council_autonomy: "Council Autonomy"
+  ir_tribes_council_autonomy_desc: "Clan councils gain formal autonomy in confederate decision-making and diplomacy."

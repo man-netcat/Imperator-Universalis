@@ -1,30 +1,36 @@
 ﻿ir_aristocratic_monarchy = {
+	age = age_1_traditions
 	government = monarchy
 
 	country_modifier = {
-		global_nobles_estate_power = 0.1
+		global_nobles_estate_power = 0.15
+		country_cabinet_efficiency = 0.05
 		monthly_towards_aristocracy = societal_value_monthly_move
-		monthly_towards_absolutism = societal_value_monthly_move
+		monthly_towards_traditionalist = societal_value_minor_monthly_move
 	}
 	years = 2
 }
 
 ir_despotic_monarchy = {
+	age = age_1_traditions
 	government = monarchy
 
 	country_modifier = {
-		global_crown_estate_power = 0.1
+		global_crown_estate_power = 0.15
+		tax_income_efficiency = 0.10
 		monthly_towards_centralization = societal_value_monthly_move
-		monthly_towards_absolutism = societal_value_monthly_move
+		monthly_towards_absolutism = societal_value_minor_monthly_move
 	}
 	years = 2
 }
 
 ir_stratocratic_monarchy = {
+	age = age_1_traditions
 	government = monarchy
 
 	country_modifier = {
-		levy_combat_efficiency_modifier = 0.05
+		levy_combat_efficiency_modifier = 0.10
+		global_army_levy_size_modifier = 0.05
 		monthly_towards_offensive = societal_value_monthly_move
 		monthly_towards_belligerent = societal_value_monthly_move
 	}
@@ -32,89 +38,169 @@ ir_stratocratic_monarchy = {
 }
 
 ir_spartan_monarchy = {
+	age = age_1_traditions
 	government = monarchy
 
 	country_modifier = {
-		levy_combat_efficiency_modifier = 0.05
-		monthly_towards_offensive = societal_value_monthly_move
+		levy_combat_efficiency_modifier = 0.15
+		army_maintenance_cost = -0.05
+		monthly_towards_quality = societal_value_monthly_move
 		monthly_towards_belligerent = societal_value_monthly_move
 	}
 	years = 2
 }
 
 ir_plutocratic_monarchy = {
+	age = age_1_traditions
 	government = monarchy
 
 	country_modifier = {
-		global_burghers_estate_power = 0.1
-		tax_income_efficiency = medium_tax_income_efficiency_bonus
+		global_burghers_estate_power = 0.15
+		trade_efficiency = 0.10
 		monthly_towards_plutocracy = societal_value_monthly_move
+		monthly_towards_capital_economy = societal_value_minor_monthly_move
+	}
+	years = 2
+}
+
+ir_satrapal_administration = {
+	age = age_1_traditions
+	government = monarchy
+	major = yes
+
+	country_modifier = {
+		subject_loyalty = 10
+		country_cabinet_efficiency = 0.05
+		monthly_towards_decentralization = societal_value_minor_monthly_move
+		monthly_towards_conciliatory = societal_value_monthly_move
+	}
+	years = 2
+}
+
+ir_royal_companion_corps = {
+	age = age_1_traditions
+	government = monarchy
+
+	country_modifier = {
+		levy_combat_efficiency_modifier = 0.10
+		discipline = 0.025
+		monthly_towards_offensive = societal_value_monthly_move
+		monthly_towards_aristocracy = societal_value_minor_monthly_move
 	}
 	years = 2
 }
 
 ir_aristocratic_republic = {
+	age = age_1_traditions
 	government = republic
 	major = yes
 
 	country_modifier = {
-		global_nobles_estate_power = 0.1
-		levy_combat_efficiency_modifier = 0.05
+		global_nobles_estate_power = 0.10
 		country_cabinet_efficiency = 0.10
 		monthly_towards_aristocracy = societal_value_monthly_move
+		monthly_towards_traditionalist = societal_value_minor_monthly_move
 	}
 	years = 2
 }
 
 ir_plutocratic_republic = {
+	age = age_1_traditions
 	government = republic
 
 	country_modifier = {
-		global_burghers_estate_power = 0.1
-		tax_income_efficiency = medium_tax_income_efficiency_bonus
+		global_burghers_estate_power = 0.15
+		trade_efficiency = 0.10
 		monthly_towards_plutocracy = societal_value_monthly_move
+		monthly_towards_free_trade = societal_value_minor_monthly_move
 	}
 	years = 2
 }
 
 ir_punic_republic = {
+	age = age_1_traditions
 	government = republic
 
+	potential = {
+		num_of_ports > 0
+	}
+
 	country_modifier = {
-		global_burghers_estate_power = 0.1
-		tax_income_efficiency = medium_tax_income_efficiency_bonus
-		monthly_towards_plutocracy = societal_value_monthly_move
+		global_burghers_estate_power = 0.10
+		global_maritime_presence_modifier = 0.10
+		trade_efficiency = 0.10
+		monthly_towards_naval = societal_value_monthly_move
+		monthly_towards_capital_economy = societal_value_minor_monthly_move
 	}
 	years = 2
 }
 
 ir_oligarchic_republic = {
+	age = age_1_traditions
 	government = republic
 
 	country_modifier = {
 		country_cabinet_efficiency = 0.10
+		global_estate_satisfaction_decay = 0.01
 		monthly_towards_plutocracy = societal_value_monthly_move
-		monthly_towards_absolutism = societal_value_monthly_move
+		monthly_towards_absolutism = societal_value_minor_monthly_move
 	}
 	years = 2
 }
 
 ir_democratic_republic = {
+	age = age_1_traditions
 	government = republic
 
 	country_modifier = {
 		global_estate_target_satisfaction = small_permanent_target_satisfaction
+		monthly_republican_tradition = 0.05
 		monthly_towards_free_subjects = societal_value_monthly_move
 		monthly_towards_individualism = societal_value_monthly_move
 	}
 	years = 2
 }
 
+ir_city_state_republic = {
+	age = age_1_traditions
+	government = republic
+
+	potential = {
+		country_rank_level <= 2
+	}
+
+	country_modifier = {
+		global_monthly_prosperity = 0.001
+		country_cabinet_efficiency = 0.05
+		monthly_towards_conciliatory = societal_value_monthly_move
+		monthly_towards_innovative = societal_value_minor_monthly_move
+	}
+	years = 2
+}
+
+ir_maritime_league_republic = {
+	age = age_1_traditions
+	government = republic
+
+	potential = {
+		num_of_ports > 0
+	}
+
+	country_modifier = {
+		global_maritime_presence_modifier = 0.10
+		merchant_maintenance_cost = -0.10
+		monthly_towards_naval = societal_value_monthly_move
+		monthly_towards_outward = societal_value_minor_monthly_move
+	}
+	years = 2
+}
+
 ir_theocratic_republic = {
+	age = age_1_traditions
 	government = republic
 
 	country_modifier = {
-		global_pop_conversion_speed_modifier = 0.25
+		global_pop_conversion_speed_modifier = 0.15
 		clergy_estate_target_satisfaction = small_permanent_target_satisfaction
 		monthly_towards_traditionalist = societal_value_monthly_move
 		monthly_towards_spiritualist = societal_value_monthly_move
@@ -123,10 +209,12 @@ ir_theocratic_republic = {
 }
 
 ir_theocratic_monarchy = {
+	age = age_1_traditions
 	government = theocracy
 
 	country_modifier = {
-		global_pop_conversion_speed_modifier = 0.25
+		global_pop_conversion_speed_modifier = 0.15
+		tolerance_own = 0.20
 		clergy_estate_target_satisfaction = small_permanent_target_satisfaction
 		monthly_towards_traditionalist = societal_value_monthly_move
 		monthly_towards_spiritualist = societal_value_monthly_move
@@ -134,11 +222,26 @@ ir_theocratic_monarchy = {
 	years = 2
 }
 
+ir_sacred_college_theocracy = {
+	age = age_1_traditions
+	government = theocracy
+
+	country_modifier = {
+		stability_investment = tiny_stability_investment
+		country_cabinet_efficiency = 0.05
+		monthly_towards_spiritualist = societal_value_monthly_move
+		monthly_towards_innovative = societal_value_minor_monthly_move
+	}
+	years = 2
+}
+
 ir_tribal_kingdom = {
+	age = age_1_traditions
 	government = tribe
 
 	country_modifier = {
-		global_monthly_food_modifier = 0.20
+		global_monthly_food_modifier = 0.15
+		levy_combat_efficiency_modifier = 0.05
 		monthly_towards_traditionalist = societal_value_monthly_move
 		monthly_towards_communalism = societal_value_monthly_move
 	}
@@ -146,10 +249,12 @@ ir_tribal_kingdom = {
 }
 
 ir_tribal_federation = {
+	age = age_1_traditions
 	government = tribe
 
 	country_modifier = {
 		subject_loyalty = 15
+		diplomatic_capacity = 1
 		monthly_towards_conciliatory = societal_value_monthly_move
 		monthly_towards_outward = societal_value_monthly_move
 	}
@@ -157,12 +262,27 @@ ir_tribal_federation = {
 }
 
 ir_tribal_chiefdom = {
+	age = age_1_traditions
 	government = tribe
 
 	country_modifier = {
-		global_monthly_food_modifier = 0.20
+		global_monthly_food_modifier = 0.15
+		global_estate_satisfaction_decay = 0.015
 		monthly_towards_decentralization = societal_value_monthly_move
-		monthly_towards_serfdom = societal_value_monthly_move
+		monthly_towards_serfdom = societal_value_minor_monthly_move
+	}
+	years = 2
+}
+
+ir_confederated_tribal_council = {
+	age = age_1_traditions
+	government = tribe
+
+	country_modifier = {
+		diplomatic_reputation = 2
+		subject_loyalty = 10
+		monthly_towards_conciliatory = societal_value_monthly_move
+		monthly_towards_decentralization = societal_value_minor_monthly_move
 	}
 	years = 2
 }
