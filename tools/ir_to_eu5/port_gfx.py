@@ -57,6 +57,7 @@ def convert_images(
     size=(384, 256),
     stretch: bool = False,
     stretch_predicate=None,
+    fill_predicate=None,
     colour_shift: bool = False,
     tolerance: int = 96,
 ):
@@ -92,7 +93,21 @@ def convert_images(
             if should_stretch:
                 resized = img.resize(size, Image.LANCZOS)
             else:
-                resized = Image.new("RGBA", size, (0, 0, 0, 0))
+                fill = (0, 0, 0, 0)
+                if fill_predicate is not None and bool(fill_predicate(path)):
+                    # Fill bars with the emblem's dominant opaque color to avoid
+                    # visual seams without stretching the source emblem.
+                    colour_counts: dict[tuple[int, int, int], int] = {}
+                    for r, g, b, a in img.getdata():
+                        if a <= 0:
+                            continue
+                        key = (r, g, b)
+                        colour_counts[key] = colour_counts.get(key, 0) + 1
+                    if colour_counts:
+                        dominant = max(colour_counts.items(), key=lambda item: item[1])[0]
+                        fill = (dominant[0], dominant[1], dominant[2], 255)
+
+                resized = Image.new("RGBA", size, fill)
                 img.thumbnail(size, Image.LANCZOS)
 
                 x = (size[0] - img.width) // 2
@@ -144,5 +159,5 @@ def port_coa_gfx():
         textured_emblems,
         out_textured_emblems,
         stretch=False,
-        stretch_predicate=is_region_textured_emblem,
+        fill_predicate=is_region_textured_emblem,
     )
