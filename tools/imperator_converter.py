@@ -21,9 +21,9 @@ def _ensure_bundled_pyradox(script_dir: Path) -> None:
 def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="IR -> EU5 data converter")
     parser.add_argument(
-        "--no-images",
+        "--regen-gfx",
         action="store_true",
-        help="Skip writing image-related data (COA files and gfx)",
+        help="Regenerate image-related data (COA files and gfx)",
     )
     parser.add_argument(
         "--no-localisation",
@@ -164,7 +164,7 @@ def main() -> int:
     coa_template_blocks = None
     coa_template_list_files = None
     named_color_data = None
-    if not args.no_images:
+    if args.regen_gfx:
         coa_data = extract_coa_data()
         coa_template_blocks, coa_template_list_files = extract_coa_template_behaviour(
             culture_data, religion_data
@@ -220,7 +220,7 @@ def main() -> int:
         international_organisations,
     )
 
-    if not args.no_images:
+    if args.regen_gfx:
         write_coa_file(coa_data)
         write_coa_template_behaviour(coa_template_blocks, coa_template_list_files)
         write_named_colors_file(named_color_data)

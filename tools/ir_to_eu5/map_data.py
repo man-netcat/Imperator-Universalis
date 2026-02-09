@@ -546,35 +546,115 @@ def parse_adjacencies(id_to_key: dict[int, str], location_keys: set[str] | None 
     return adjacencies
 
 
-def parse_ports(id_to_key: dict[int, str]) -> list[dict]:
-    """Parse ports.csv into dictionaries."""
+def parse_ports(
+    id_to_key: dict[int, str],
+    sea_zones: set[str] | None = None,
+) -> list[dict]:
+    """Parse ports.csv and infer missing coastal ports from coastline adjacency.
+
+    When sea_zones is provided, only sea-zone ports are kept and additional
+    coastal ports are inferred from location neighbor geometry.
+    """
     file = ir_path("map_data/ports.csv")
-    ports = []
-    with file.open(encoding="utf-8-sig", newline="") as f:
-        sample = f.read(1024)
-        f.seek(0)
-        delimiter = "," if "," in sample and ";" not in sample else ";"
-        reader = csv.reader(f, delimiter=delimiter)
-        next(reader, None)  # header
-        for row in reader:
-            if len(row) < 4:
+    ports: list[dict] = []
+    seen_lands: set[str] = set()
+
+    sea_zone_set = set(sea_zones or set())
+    neighbor_payload = load_location_neighbors() if sea_zone_set else {}
+    neighbors = neighbor_payload.get("neighbors", {}) if isinstance(neighbor_payload, dict) else {}
+    centroids = neighbor_payload.get("centroids", {}) if isinstance(neighbor_payload, dict) else {}
+
+    def _best_adjacent_sea(land_key: str) -> str | None:
+        edge_map = neighbors.get(land_key, {}) if isinstance(neighbors, dict) else {}
+        if not isinstance(edge_map, dict):
+            return None
+        candidates: list[tuple[int, str]] = []
+        for neighbor_key, edge_weight in edge_map.items():
+            if not isinstance(neighbor_key, str) or neighbor_key not in sea_zone_set:
                 continue
             try:
-                land_id, sea_id = int(row[0]), int(row[1])
-                x, y = float(row[2]), float(row[3])
-            except ValueError:
+                weight = int(edge_weight)
+            except Exception:
+                weight = 1
+            candidates.append((max(1, weight), neighbor_key))
+        if not candidates:
+            return None
+        candidates.sort(key=lambda item: (-item[0], item[1]))
+        return candidates[0][1]
+
+    if file.exists():
+        with file.open(encoding="utf-8-sig", newline="") as f:
+            sample = f.read(1024)
+            f.seek(0)
+            delimiter = "," if "," in sample and ";" not in sample else ";"
+            reader = csv.reader(f, delimiter=delimiter)
+            next(reader, None)  # header
+            for row in reader:
+                if len(row) < 4:
+                    continue
+                try:
+                    land_id, sea_id = int(row[0]), int(row[1])
+                    x, y = float(row[2]), float(row[3])
+                except ValueError:
+                    continue
+                land_key = id_to_key.get(land_id, f"UNKNOWN_{land_id}")
+                sea_key = id_to_key.get(sea_id, f"UNKNOWN_{sea_id}")
+                sea_key = PORT_SEAZONE_OVERRIDES.get(land_key, sea_key)
+
+                if sea_zone_set:
+                    if not isinstance(land_key, str) or land_key.startswith("UNKNOWN_"):
+                        continue
+                    best_sea = _best_adjacent_sea(land_key)
+                    if not best_sea:
+                        continue
+                    if sea_key not in sea_zone_set:
+                        sea_key = best_sea
+                    if sea_key != best_sea:
+                        sea_key = best_sea
+
+                ports.append(
+                    {
+                        "LandProvince": land_key,
+                        "SeaZone": sea_key,
+                        "x": x,
+                        "y": y,
+                    }
+                )
+                if isinstance(land_key, str):
+                    seen_lands.add(land_key)
+
+    if sea_zone_set:
+        location_keys = {
+            key
+            for key in id_to_key.values()
+            if isinstance(key, str)
+            and not key.startswith("UNKNOWN_")
+            and key not in sea_zone_set
+        }
+        for land_key in sorted(location_keys):
+            if land_key in seen_lands:
                 continue
-            land_key = id_to_key.get(land_id, f"UNKNOWN_{land_id}")
-            sea_key = id_to_key.get(sea_id, f"UNKNOWN_{sea_id}")
-            sea_key = PORT_SEAZONE_OVERRIDES.get(land_key, sea_key)
+            sea_key = _best_adjacent_sea(land_key)
+            if not sea_key:
+                continue
+            point = centroids.get(land_key)
+            if (
+                not isinstance(point, list)
+                or len(point) != 2
+                or not isinstance(point[0], (int, float))
+                or not isinstance(point[1], (int, float))
+            ):
+                continue
             ports.append(
                 {
                     "LandProvince": land_key,
                     "SeaZone": sea_key,
-                    "x": x,
-                    "y": y,
+                    "x": float(point[0]),
+                    "y": float(point[1]),
                 }
             )
+            seen_lands.add(land_key)
+
     return ports
 
 
@@ -668,7 +748,7 @@ def assign_unmapped_water_to_regions(
     scores: dict[str, Counter[str]] = {key: Counter() for key in unassigned_water}
 
     # Ports are a strong hint for sea ownership in coastal regions.
-    for row in parse_ports(id_to_key):
+    for row in parse_ports(id_to_key, sea_zones=sea_zones):
         sea_key = row.get("SeaZone")
         land_key = row.get("LandProvince")
         if not isinstance(sea_key, str) or sea_key not in unassigned_set:
@@ -1519,6 +1599,22 @@ def _infer_non_ownable_topography_vegetation(key: str, climate: str) -> tuple[st
     return "flatland", "forest"
 
 
+def _default_vegetation_for_topography(topography: str, climate: str) -> str:
+    t = (topography or "").strip().lower()
+    c = (climate or "").strip().lower()
+    if t in {"ocean", "inland_sea", "lakes", "mountain_wasteland", "mountains"}:
+        return "sparse"
+    if t in {"wetlands", "hills"}:
+        return "woods"
+    if t == "jungle":
+        return "jungle"
+    if t == "desert" or c == "arid":
+        return "desert"
+    if c in {"arctic", "cold_arid"}:
+        return "sparse"
+    return "grasslands"
+
+
 def _dedupe(items: list) -> list:
     return list(dict.fromkeys(items))
 
@@ -1882,7 +1978,10 @@ def build_ir_harbor_suitability(
         for idx, dval in raw_density.items():
             density_factor[idx] = (dval - min_den) / den_span
 
-    port_rows = parse_ports({prov_id: key for prov_id, key, *_ in named_locations})
+    port_rows = parse_ports(
+        {prov_id: key for prov_id, key, *_ in named_locations},
+        sea_zones=sea_zones,
+    )
 
     result: dict[str, str] = {}
     for row in port_rows:
@@ -2468,7 +2567,7 @@ def _write_location_templates(
     id_to_key: dict[int, str],
     default_culture: str | None,
     default_religion: str | None,
-    harbor_suitability_map: dict[str, int],
+    harbor_suitability_map: dict[str, str],
 ) -> None:
     # --- Location templates (only for existing land locations) ---
     location_templates = iu_map_data / "location_templates.txt"
@@ -2489,6 +2588,14 @@ def _write_location_templates(
     with location_templates.open("w", encoding="utf-8") as f:
         for key in sorted(location_keys):
             is_ownable = key not in excluded_locations
+            is_water_location = (
+                key in sea_zones
+                or key in lakes
+                or key in river_provinces
+                or key.startswith("mare_hyrcanum_")
+            )
+            if is_water_location:
+                is_ownable = False
             climate = climate_map.get(key, "continental")
             if (
                 climate in ("oceanic", "continental")
@@ -2503,29 +2610,41 @@ def _write_location_templates(
                 vegetation = terrain[1] if terrain else "grasslands"
                 parts.insert(0, f"vegetation = {vegetation}")
                 parts.insert(0, f"topography = {topography}")
-            elif key in non_ownable:
-                if terrain:
-                    topography, vegetation = terrain
-                else:
-                    topography, vegetation = _infer_non_ownable_topography_vegetation(key, climate)
-                parts.insert(0, f"vegetation = {vegetation}")
-                parts.insert(0, f"topography = {topography}")
             else:
-                if terrain:
-                    topography = terrain[0]
-                elif key in lakes:
-                    topography = "lakes"
-                elif key in sea_zones:
+                write_vegetation = True
+                if key in sea_zones or key.startswith("mare_hyrcanum_"):
                     if key.startswith("mare_hyrcanum_"):
                         topography = "inland_sea"
                     else:
                         topography = "ocean"
+                    vegetation = "sparse"
+                    # EU5 logs an error if sea locations have any vegetation field.
+                    write_vegetation = False
+                elif key in lakes:
+                    topography = "lakes"
+                    vegetation = "sparse"
+                    write_vegetation = False
                 elif key in river_provinces:
                     topography = "flatland"
+                    vegetation = "grasslands"
+                    write_vegetation = False
+                elif key in non_ownable:
+                    if terrain:
+                        topography, vegetation = terrain
+                    else:
+                        topography, vegetation = _infer_non_ownable_topography_vegetation(key, climate)
+                elif terrain:
+                    topography = terrain[0]
+                    vegetation = terrain[1]
                 elif key in impassable_mountains:
                     topography = "mountain_wasteland"
+                    vegetation = "sparse"
                 else:
                     topography = "flatland"
+                    vegetation = _default_vegetation_for_topography(topography, climate)
+
+                if write_vegetation:
+                    parts.insert(0, f"vegetation = {vegetation}")
                 parts.insert(0, f"topography = {topography}")
             if is_ownable and default_religion:
                 parts.append(f"religion = {default_religion}")
@@ -2861,6 +2980,7 @@ def _write_reference_outputs(
     named_locations: list[tuple[int, str, int, int, int, str]],
     id_to_key: dict[int, str],
     location_keys: set[str],
+    sea_zones: set[str],
 ) -> set[str]:
     ref_file = Path(__file__).parent / "province_id_to_key.csv"
     write_csv(
@@ -2875,7 +2995,7 @@ def _write_reference_outputs(
         ["From", "To", "Type", "Through", "x1", "y1", "x2", "y2", "Comment"],
     )
 
-    ports = parse_ports(id_to_key)
+    ports = parse_ports(id_to_key, sea_zones=sea_zones)
     write_csv(iu_map_data / "ports.csv", ports, ["LandProvince", "SeaZone", "x", "y"])
     return {
         row["LandProvince"]
@@ -3168,12 +3288,19 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     location_keys = {key for _, key, *_ in named_locations}
 
     _write_named_locations_file(named_locations)
-    coastal_land_locations = _write_reference_outputs(named_locations, id_to_key, location_keys)
 
     default_map = build_default_map(id_to_key)
     volcanoes = {key for key in location_keys if isinstance(key, str) and key.endswith("_volcano")}
     if volcanoes:
         default_map.setdefault("volcanoes", set()).update(volcanoes)
+
+    sea_zones = set(default_map.get("sea_zones", set())) if isinstance(default_map, dict) else set()
+    coastal_land_locations = _write_reference_outputs(
+        named_locations,
+        id_to_key,
+        location_keys,
+        sea_zones,
+    )
 
     harbor_suitability_map = build_ir_harbor_suitability(
         named_locations,

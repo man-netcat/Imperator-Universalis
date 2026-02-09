@@ -625,7 +625,7 @@ asia = {
                 taifa_province = { abha migayah marna_vallis taif attaba nemerah barek bishah gaabah }
                 ukrush_province = { efa largis utea ghirban tawdihiyah haradh hawiyah yabrin arabia_deserta_ulterior unnamed_8884 }
                 yamama_province = { huraymila hajir rufaya dila khadramah khafs_daghra hulwah wusayilah layla aflaj janobi muzahmiya tibrak labkhah unnamed_8883 unnamed_8885 }
-                arabia_area_water_province_generated = { prov653_1 sinus_arabicus_0 sinus_arabicus_10 sinus_arabicus_12 sinus_arabicus_3 sinus_arabicus_6 sinus_arabicus_8 sinus_persicus_1 sinus_persicus_2 sinus_persicus_3 sinus_persicus_4 sinus_persicus_5 sinus_persicus_6 unnamed_6380 unnamed_6381 }
+                arabia_area_water_province_generated = { sinus_arabicus_0 sinus_arabicus_10 sinus_arabicus_12 sinus_arabicus_3 sinus_arabicus_6 sinus_arabicus_8 sinus_persicus_1 sinus_persicus_2 sinus_persicus_3 sinus_persicus_4 sinus_persicus_5 sinus_persicus_6 unnamed_6380 unnamed_6381 }
             }
             arabia_felix_area = {
                 arabia_felix_centralis_province = { tamna caripeta nossa nagia mariaba athroula caminacum sirwa sabatia hazma arabia_felix }
@@ -1013,7 +1013,7 @@ africa = {
                 parva_province = { thynis parva kom_namrud berku varam colira shunne murta magrab gerum pseneros kerkethoris desert_of_philoteris oasis_parva }
                 sinai_province = { klysma cleopatris marah phoinikon pharan rhaithou ain_hudera nuweiba horeb_mons tell_el_mashraba naqb_jedid sina_meridionalis sinai unnamed_5155 unnamed_5287 unnamed_5288 }
                 western_delta_province = { dyme_0 taposiris naukratis alexandria hermopolis_mikra buto atarbechis_aphroditopolis kanopos bolbitine psenemphaia chaireon perseos_skope unnamed_5339 }
-                lower_egypt_area_water_province_generated = { moeris prov652_0 prov652_1 prov653_0 }
+                lower_egypt_area_water_province_generated = { moeris prov652_0 prov652_1 prov653_0 prov653_1 }
             }
         }
     }
