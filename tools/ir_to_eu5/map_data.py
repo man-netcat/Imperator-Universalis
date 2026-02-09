@@ -2575,6 +2575,12 @@ def write_default_map(ir_default_map_data: dict):
             mapped_category = category_mapping.get(category, category)
             mapped_data.setdefault(mapped_category, set()).update(keys)
 
+        # Keep Caspian (`mare_hyrcanum_*`) selectable by classifying it as sea_zones.
+        hyrcanum = {k for k in mapped_data.get("lakes", set()) if str(k).startswith("mare_hyrcanum_")}
+        if hyrcanum:
+            mapped_data.setdefault("sea_zones", set()).update(hyrcanum)
+            mapped_data["lakes"] = set(mapped_data.get("lakes", set())) - hyrcanum
+
         # Write each mapped category once.
         for mapped_category in sorted(mapped_data.keys()):
             write_category(mapped_category, mapped_data[mapped_category])
@@ -2982,7 +2988,10 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
                 elif key in lakes:
                     topography = "lakes"
                 elif key in sea_zones:
-                    topography = "ocean"
+                    if key.startswith("mare_hyrcanum_"):
+                        topography = "inland_sea"
+                    else:
+                        topography = "ocean"
                 elif key in river_provinces:
                     topography = "flatland"
                 elif key in impassable_mountains:

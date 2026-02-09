@@ -4433,39 +4433,39 @@ marcomannia = { topography = flatland vegetation = forest climate = continental 
 mardan = { topography = flatland vegetation = forest climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = wheat }
 mardastan = { topography = hills vegetation = woods climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = rice }
 marde = { topography = hills vegetation = woods climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = clay }
-mare_aralense = { topography = lakes climate = continental }
-mare_hyrcanum_0 = { topography = lakes climate = continental }
-mare_hyrcanum_1 = { topography = lakes climate = continental }
-mare_hyrcanum_10 = { topography = lakes climate = continental }
-mare_hyrcanum_11 = { topography = lakes climate = continental }
-mare_hyrcanum_12 = { topography = lakes climate = continental }
-mare_hyrcanum_13 = { topography = lakes climate = continental }
-mare_hyrcanum_14 = { topography = lakes climate = continental }
-mare_hyrcanum_15 = { topography = lakes climate = continental }
-mare_hyrcanum_16 = { topography = lakes climate = continental }
-mare_hyrcanum_17 = { topography = lakes climate = continental }
-mare_hyrcanum_18 = { topography = lakes climate = continental }
-mare_hyrcanum_19 = { topography = lakes climate = continental }
-mare_hyrcanum_2 = { topography = lakes climate = continental }
-mare_hyrcanum_20 = { topography = lakes climate = continental }
-mare_hyrcanum_21 = { topography = lakes climate = continental }
-mare_hyrcanum_22 = { topography = lakes climate = continental }
-mare_hyrcanum_23 = { topography = lakes climate = continental }
-mare_hyrcanum_24 = { topography = lakes climate = continental }
-mare_hyrcanum_25 = { topography = lakes climate = continental }
-mare_hyrcanum_26 = { topography = lakes climate = continental }
-mare_hyrcanum_27 = { topography = lakes climate = continental }
-mare_hyrcanum_28 = { topography = lakes climate = continental }
-mare_hyrcanum_29 = { topography = lakes climate = continental }
-mare_hyrcanum_3 = { topography = lakes climate = continental }
-mare_hyrcanum_30 = { topography = lakes climate = continental }
-mare_hyrcanum_31 = { topography = lakes climate = continental }
-mare_hyrcanum_4 = { topography = lakes climate = continental }
-mare_hyrcanum_5 = { topography = lakes climate = continental }
-mare_hyrcanum_6 = { topography = lakes climate = continental }
-mare_hyrcanum_7 = { topography = lakes climate = continental }
-mare_hyrcanum_8 = { topography = lakes climate = continental }
-mare_hyrcanum_9 = { topography = lakes climate = continental }
+mare_aralense = { topography = lakes climate = cold_arid }
+mare_hyrcanum_0 = { topography = inland_sea climate = continental }
+mare_hyrcanum_1 = { topography = inland_sea climate = continental }
+mare_hyrcanum_10 = { topography = inland_sea climate = continental }
+mare_hyrcanum_11 = { topography = inland_sea climate = continental }
+mare_hyrcanum_12 = { topography = inland_sea climate = continental }
+mare_hyrcanum_13 = { topography = inland_sea climate = continental }
+mare_hyrcanum_14 = { topography = inland_sea climate = continental }
+mare_hyrcanum_15 = { topography = inland_sea climate = continental }
+mare_hyrcanum_16 = { topography = inland_sea climate = continental }
+mare_hyrcanum_17 = { topography = inland_sea climate = continental }
+mare_hyrcanum_18 = { topography = inland_sea climate = continental }
+mare_hyrcanum_19 = { topography = inland_sea climate = continental }
+mare_hyrcanum_2 = { topography = inland_sea climate = continental }
+mare_hyrcanum_20 = { topography = inland_sea climate = continental }
+mare_hyrcanum_21 = { topography = inland_sea climate = continental }
+mare_hyrcanum_22 = { topography = inland_sea climate = continental }
+mare_hyrcanum_23 = { topography = inland_sea climate = continental }
+mare_hyrcanum_24 = { topography = inland_sea climate = continental }
+mare_hyrcanum_25 = { topography = inland_sea climate = continental }
+mare_hyrcanum_26 = { topography = inland_sea climate = continental }
+mare_hyrcanum_27 = { topography = inland_sea climate = continental }
+mare_hyrcanum_28 = { topography = inland_sea climate = continental }
+mare_hyrcanum_29 = { topography = inland_sea climate = continental }
+mare_hyrcanum_3 = { topography = inland_sea climate = continental }
+mare_hyrcanum_30 = { topography = inland_sea climate = continental }
+mare_hyrcanum_31 = { topography = inland_sea climate = continental }
+mare_hyrcanum_4 = { topography = inland_sea climate = continental }
+mare_hyrcanum_5 = { topography = inland_sea climate = continental }
+mare_hyrcanum_6 = { topography = inland_sea climate = continental }
+mare_hyrcanum_7 = { topography = inland_sea climate = continental }
+mare_hyrcanum_8 = { topography = inland_sea climate = continental }
+mare_hyrcanum_9 = { topography = inland_sea climate = continental }
 mareb = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = wild_game }
 marehtidak = { topography = flatland vegetation = forest climate = arctic religion = ir_roman_pantheon culture = ir_puntic raw_material = wool }
 margineia = { topography = hills vegetation = woods climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = fur }
