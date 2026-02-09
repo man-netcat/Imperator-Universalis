@@ -1736,6 +1736,7 @@ def _non_land_keys(default_map: dict) -> set[str]:
         "sea_zones",
         "lakes",
         "river_provinces",
+        "impassable_mountains",
         "impassable_terrain",
         "uninhabitable",
         "wasteland",
@@ -1743,6 +1744,31 @@ def _non_land_keys(default_map: dict) -> set[str]:
     ):
         excluded.update(default_map.get(key, set()))
     return excluded
+
+
+def _infer_non_ownable_topography_vegetation(key: str, climate: str) -> tuple[str, str]:
+    """Fallback terrain mapping for non_ownable corridors lacking I:R terrain data."""
+    key_l = key.lower()
+    is_pass = ("pass" in key_l) or ("gates" in key_l) or key_l in {"portae"}
+    is_desert = (
+        ("desert" in key_l)
+        or ("kavir" in key_l)
+        or ("taklamakan" in key_l)
+        or key_l.startswith("lut_")
+        or key_l.startswith("maru_")
+    )
+
+    if "jungle" in key_l:
+        return "flatland", "jungle"
+    if is_pass:
+        if climate in {"arid", "arctic", "cold_arid"}:
+            return "mountains", "sparse"
+        return "mountains", "forest"
+    if is_desert or climate == "arid":
+        return "flatland", "desert"
+    if climate in {"arctic", "cold_arid"}:
+        return "flatland", "sparse"
+    return "flatland", "forest"
 
 
 def _dedupe(items: list) -> list:
@@ -2914,14 +2940,20 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     location_templates = iu_map_data / "location_templates.txt"
     location_templates.parent.mkdir(parents=True, exist_ok=True)
     sea_zones = default_map.get("sea_zones", set()) if isinstance(default_map, dict) else set()
+    lakes = default_map.get("lakes", set()) if isinstance(default_map, dict) else set()
+    river_provinces = (
+        default_map.get("river_provinces", set()) if isinstance(default_map, dict) else set()
+    )
+    impassable_mountains = (
+        default_map.get("impassable_mountains", set()) if isinstance(default_map, dict) else set()
+    )
+    non_ownable = default_map.get("non_ownable", set()) if isinstance(default_map, dict) else set()
     excluded_locations = _non_land_keys(default_map) if isinstance(default_map, dict) else set()
     raw_materials = build_ir_raw_materials(id_to_key)
     terrain_map = build_ir_terrain_maps(id_to_key)
     climate_map = build_ir_climate_map(id_to_key)
     with location_templates.open("w", encoding="utf-8") as f:
         for key in sorted(location_keys):
-            if key in sea_zones:
-                continue
             is_ownable = key not in excluded_locations
             climate = climate_map.get(key, "continental")
             if (
@@ -2931,15 +2963,36 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
             ):
                 climate = "mediterranean"
             parts = [f"climate = {climate}"]
+            terrain = terrain_map.get(key)
             if is_ownable:
-                terrain = terrain_map.get(key)
                 topography = terrain[0] if terrain else "flatland"
                 vegetation = terrain[1] if terrain else "grasslands"
                 parts.insert(0, f"vegetation = {vegetation}")
                 parts.insert(0, f"topography = {topography}")
-            if default_religion:
+            elif key in non_ownable:
+                if terrain:
+                    topography, vegetation = terrain
+                else:
+                    topography, vegetation = _infer_non_ownable_topography_vegetation(key, climate)
+                parts.insert(0, f"vegetation = {vegetation}")
+                parts.insert(0, f"topography = {topography}")
+            else:
+                if terrain:
+                    topography = terrain[0]
+                elif key in lakes:
+                    topography = "lakes"
+                elif key in sea_zones:
+                    topography = "ocean"
+                elif key in river_provinces:
+                    topography = "flatland"
+                elif key in impassable_mountains:
+                    topography = "mountain_wasteland"
+                else:
+                    topography = "flatland"
+                parts.insert(0, f"topography = {topography}")
+            if is_ownable and default_religion:
                 parts.append(f"religion = {default_religion}")
-            if default_culture:
+            if is_ownable and default_culture:
                 parts.append(f"culture = {default_culture}")
             if is_ownable:
                 parts.append(f"raw_material = {raw_materials.get(key, 'wool')}")
