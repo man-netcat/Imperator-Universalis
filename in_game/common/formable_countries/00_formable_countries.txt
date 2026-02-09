@@ -146,6 +146,34 @@ ALX_f = {
 
 
 
+# ANA -> ANA: Anatolia
+
+ANA_f = {
+    level = 3
+    required_locations_fraction = 0.6
+    rule = historical
+    potential = {
+        OR = {
+            culture = { has_culture_group = culture_group:ir_anatolian_g }
+            culture = { has_culture_group = culture_group:ir_hellenic_g }
+        }
+    }
+    allow = {
+    }
+    name = ANA
+    flag = ANA
+    adjective = ANA_ADJ
+    tag = ANA
+    color = map_ANA
+    regions = {
+        anatolia_region
+    }
+    form_effect = {
+    }
+}
+
+
+
 # APF -> APF: Alpine Confederation
 
 APF_f = {
@@ -842,6 +870,34 @@ CAB_f = {
     tag = CAB
     provinces = {
         milyas_province
+    }
+    form_effect = {
+    }
+}
+
+
+
+# CAU -> CAU: Caucasia
+
+CAU_f = {
+    level = 3
+    required_locations_fraction = 0.6
+    rule = historical
+    potential = {
+        OR = {
+            culture = { has_culture_group = culture_group:ir_caucasian_g }
+            culture = culture:ir_armenian
+        }
+    }
+    allow = {
+    }
+    name = CAU
+    flag = CAU
+    adjective = CAU_ADJ
+    tag = CAU
+    color = map_CAU
+    regions = {
+        caucasus_region
     }
     form_effect = {
     }
@@ -1669,6 +1725,63 @@ GMA_f = {
 
 
 
+# GTE -> GTE: Balkans
+
+GTE_f = {
+    level = 3
+    required_locations_fraction = 0.6
+    rule = historical
+    potential = {
+        OR = {
+            culture = { has_culture_group = culture_group:ir_illyrian_group_g }
+            culture = { has_culture_group = culture_group:ir_thrace_group_g }
+            culture = { has_culture_group = culture_group:ir_hellenic_g }
+        }
+    }
+    allow = {
+    }
+    name = GTE
+    flag = GTE
+    adjective = GTE_ADJ
+    tag = GTE
+    color = map_GTE
+    regions = {
+        balkan_region
+    }
+    form_effect = {
+    }
+}
+
+
+
+# GTH -> GTH: Baltica
+
+GTH_f = {
+    level = 3
+    required_locations_fraction = 0.6
+    rule = historical
+    potential = {
+        OR = {
+            culture = { has_culture_group = culture_group:ir_baltic_g }
+            culture = { has_culture_group = culture_group:ir_finnic_group_g }
+        }
+    }
+    allow = {
+    }
+    name = GTH
+    flag = GTH
+    adjective = GTH_ADJ
+    tag = GTH
+    color = map_GTH
+    regions = {
+        baltic_region
+    }
+    form_effect = {
+    }
+}
+
+
+
 # HBR -> HBR: Greater Iberia
 
 HBR_f = {
@@ -1812,6 +1925,34 @@ HPP_f = {
         bithynia_superior_province
         mysia_abrettene_province
         mysia_province
+    }
+    form_effect = {
+    }
+}
+
+
+
+# HRP -> HRP: Carpathia
+
+HRP_f = {
+    level = 3
+    required_locations_fraction = 0.6
+    rule = historical
+    potential = {
+        OR = {
+            culture = { has_culture_group = culture_group:ir_dacia_group_g }
+            culture = { has_culture_group = culture_group:ir_thrace_group_g }
+        }
+    }
+    allow = {
+    }
+    name = HRP
+    flag = HRP
+    adjective = HRP_ADJ
+    tag = HRP
+    color = map_HRP
+    regions = {
+        carpathia_region
     }
     form_effect = {
     }
@@ -2152,6 +2293,34 @@ ITL_f = {
 
 
 
+# KAB -> KAB: Maghreb
+
+KAB_f = {
+    level = 3
+    required_locations_fraction = 0.6
+    rule = historical
+    potential = {
+        OR = {
+            culture = { has_culture_group = culture_group:ir_numidian_g }
+            culture = { has_culture_group = culture_group:ir_north_african_g }
+        }
+    }
+    allow = {
+    }
+    name = KAB
+    flag = KAB
+    adjective = KAB_ADJ
+    tag = KAB
+    color = map_KAB
+    regions = {
+        maghreb_region
+    }
+    form_effect = {
+    }
+}
+
+
+
 # KRE -> KRE: Crete
 
 KRE_f = {
@@ -2169,6 +2338,64 @@ KRE_f = {
     tag = KRE
     provinces = {
         crete_province
+    }
+    form_effect = {
+    }
+}
+
+
+
+# KRZ -> KRZ: Khorasan
+
+KRZ_f = {
+    level = 3
+    required_locations_fraction = 0.6
+    rule = historical
+    potential = {
+        OR = {
+            culture = { has_culture_group = culture_group:ir_persia_g }
+            culture = { has_culture_group = culture_group:ir_scythia_g }
+        }
+    }
+    allow = {
+    }
+    name = KRZ
+    flag = KRZ
+    adjective = KRZ_ADJ
+    tag = KRZ
+    color = map_KRZ
+    regions = {
+        khorasan_region
+    }
+    form_effect = {
+    }
+}
+
+
+
+# KSH -> KSH: Nile Realm
+
+KSH_f = {
+    level = 3
+    required_locations_fraction = 0.6
+    rule = historical
+    potential = {
+        OR = {
+            culture = { has_culture_group = culture_group:ir_meroitic_group_g }
+            culture = { has_culture_group = culture_group:ir_north_african_g }
+            culture = { has_culture_group = culture_group:ir_nilotic_group_g }
+        }
+    }
+    allow = {
+    }
+    name = KSH
+    flag = KSH
+    adjective = KSH_ADJ
+    tag = KSH
+    color = map_KSH
+    regions = {
+        egypt_region
+        nubia_region
     }
     form_effect = {
     }

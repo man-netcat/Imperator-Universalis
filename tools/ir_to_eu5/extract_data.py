@@ -1,4 +1,4 @@
-import json
+﻿import json
 import re
 import warnings
 from collections import defaultdict
@@ -10,7 +10,7 @@ import pyradox.datatype as _pydt
 from pyradox.filetype.txt import ParseWarning
 from pyradox.filetype.txt import parse as parse_txt
 
-from .data import government_map
+from .data import government_map, custom_formable_data
 from .paths import *
 from .write_data import print_written
 
@@ -806,6 +806,12 @@ def extract_formable_data() -> dict[str, dict[str, object]]:
     for tag, meta in data.items():
         if meta.get("has_decision_requirements") and int(meta.get("level", 0)) <= 0:
             meta["level"] = 1
+
+    # Inject curated custom formables that are outside vanilla I:R/Invictus pools.
+    for tag, meta in custom_formable_data.items():
+        if tag in data:
+            continue
+        data[tag] = dict(meta)
 
     return data
 

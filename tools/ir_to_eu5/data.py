@@ -1,4 +1,4 @@
-government_map = {
+﻿government_map = {
     "aristocratic_monarchy": "monarchy",
     "despotic_monarchy": "monarchy",
     "stratocratic_monarchy": "monarchy",
@@ -790,6 +790,118 @@ disabled_formable_tags: set[str] = {
 # country_ranks/country_name_construction.
 formable_alias_target_overrides: dict[str, str] = {
     "ACL": "ACH",  # Achaean League -> Achaea (League flavor via rank/construction)
+}
+
+
+# Curated custom regional formables (outside vanilla I:R / Invictus pools).
+# These are injected in extract_data and emitted like regular generated formables.
+custom_formable_data: dict[str, dict[str, object]] = {
+    "ANA": {
+        "level": 3,
+        "name": "Anatolia",
+        "adj": "Anatolian",
+        "required_locations_fraction": 0.6,
+        "scope": {"regions": ["anatolia_region"]},
+        "potential_lines": [
+            "OR = {",
+            "    culture = { has_culture_group = culture_group:ir_anatolian_g }",
+            "    culture = { has_culture_group = culture_group:ir_hellenic_g }",
+            "}",
+        ],
+    },
+    "CAU": {
+        "level": 3,
+        "name": "Caucasia",
+        "adj": "Caucasian",
+        "required_locations_fraction": 0.6,
+        "scope": {"regions": ["caucasus_region"]},
+        "potential_lines": [
+            "OR = {",
+            "    culture = { has_culture_group = culture_group:ir_caucasian_g }",
+            "    culture = culture:ir_armenian",
+            "}",
+        ],
+    },
+    "KAB": {
+        "level": 3,
+        "name": "Maghreb",
+        "adj": "Maghrebi",
+        "required_locations_fraction": 0.6,
+        "scope": {"regions": ["maghreb_region"]},
+        "potential_lines": [
+            "OR = {",
+            "    culture = { has_culture_group = culture_group:ir_numidian_g }",
+            "    culture = { has_culture_group = culture_group:ir_north_african_g }",
+            "}",
+        ],
+    },
+    "HRP": {
+        "level": 3,
+        "name": "Carpathia",
+        "adj": "Carpathian",
+        "required_locations_fraction": 0.6,
+        "scope": {"regions": ["carpathia_region"]},
+        "potential_lines": [
+            "OR = {",
+            "    culture = { has_culture_group = culture_group:ir_dacia_group_g }",
+            "    culture = { has_culture_group = culture_group:ir_thrace_group_g }",
+            "}",
+        ],
+    },
+    "GTE": {
+        "level": 3,
+        "name": "Balkans",
+        "adj": "Balkan",
+        "required_locations_fraction": 0.6,
+        "scope": {"regions": ["balkan_region"]},
+        "potential_lines": [
+            "OR = {",
+            "    culture = { has_culture_group = culture_group:ir_illyrian_group_g }",
+            "    culture = { has_culture_group = culture_group:ir_thrace_group_g }",
+            "    culture = { has_culture_group = culture_group:ir_hellenic_g }",
+            "}",
+        ],
+    },
+    "GTH": {
+        "level": 3,
+        "name": "Baltica",
+        "adj": "Baltic",
+        "required_locations_fraction": 0.6,
+        "scope": {"regions": ["baltic_region"]},
+        "potential_lines": [
+            "OR = {",
+            "    culture = { has_culture_group = culture_group:ir_baltic_g }",
+            "    culture = { has_culture_group = culture_group:ir_finnic_group_g }",
+            "}",
+        ],
+    },
+    "KRZ": {
+        "level": 3,
+        "name": "Khorasan",
+        "adj": "Khorasani",
+        "required_locations_fraction": 0.6,
+        "scope": {"regions": ["khorasan_region"]},
+        "potential_lines": [
+            "OR = {",
+            "    culture = { has_culture_group = culture_group:ir_persia_g }",
+            "    culture = { has_culture_group = culture_group:ir_scythia_g }",
+            "}",
+        ],
+    },
+    "KSH": {
+        "level": 3,
+        "name": "Nile Realm",
+        "adj": "Nile",
+        "required_locations_fraction": 0.6,
+        "scope": {"regions": ["egypt_region", "nubia_region"]},
+        "potential_lines": [
+            "OR = {",
+            "    culture = { has_culture_group = culture_group:ir_meroitic_group_g }",
+            "    culture = { has_culture_group = culture_group:ir_north_african_g }",
+            "    culture = { has_culture_group = culture_group:ir_nilotic_group_g }",
+            "}",
+        ],
+    },
 }
 
 formable_requirement_overrides: dict[str, dict[str, object]] = {
