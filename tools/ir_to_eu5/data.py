@@ -900,3 +900,32 @@ formable_requirement_overrides: dict[str, dict[str, object]] = {
         "required_culture_groups": ["indian"],
     },
 }
+
+# Explicit localisation overrides for generated formables.
+# Use these to keep short EU5-style display names while rank/government wording
+# is handled by country name construction rules.
+formable_localization_overrides: dict[str, dict[str, str]] = {
+    "ACL": {"name": "Achaea", "adj": "Achaean"},
+    "ALX": {"name": "Argeads", "adj": "Argead"},
+    "APF": {"name": "Alps", "adj": "Alpine"},
+    "ARI": {"name": "Ariarathids", "adj": "Ariarathid"},
+    "AVK": {"name": "Arvernia", "adj": "Arvernian"},
+    "BPL": {"name": "Bosporus", "adj": "Bosporan"},
+    "CCC": {"name": "Caledonia", "adj": "Caledonian"},
+    "DLA": {"name": "Delos", "adj": "Delian"},
+    "EGY": {"name": "Ptolemies", "adj": "Ptolemaic"},
+    "HLA": {"name": "Hellas", "adj": "Hellenic"},
+    "IGK": {"name": "Indo-Germania", "adj": "Indo-Germanic"},
+    "IOU": {"name": "Ionia", "adj": "Ionian"},
+    "ISK": {"name": "Indo-Scythia", "adj": "Indo-Scythian"},
+    "ISL": {"name": "Istria", "adj": "Istrian"},
+    "NMT": {"name": "Mitanni", "adj": "Mitanni"},
+    "OYK": {"name": "Odrysia", "adj": "Odrysian"},
+    "PLL": {"name": "Peloponnese", "adj": "Peloponnesian"},
+    "PRY": {"name": "Antigonids", "adj": "Antigonid"},
+    "PTL": {"name": "Pontus", "adj": "Pontic"},
+    "SEL": {"name": "Seleukids", "adj": "Seleukid"},
+    "SL1": {"name": "Salluvia", "adj": "Salluvian"},
+    "VC1": {"name": "Venice", "adj": "Venetian"},
+    "VC2": {"name": "Veneti", "adj": "Venetic"},
+}

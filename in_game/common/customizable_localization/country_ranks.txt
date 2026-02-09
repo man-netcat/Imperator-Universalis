@@ -10,8 +10,20 @@
 	text = {
 		localization_key = country_rank_league
 		trigger = {
-			tag = DEL
 			government_type = government_type:republic
+			OR = {
+				# I:R / Invictus formables whose source names explicitly contain "League".
+				tag = DEL
+				tag = ACL
+				tag = DLA
+				tag = HLA
+				tag = IOU
+				tag = ISL
+				tag = PLL
+				tag = PTL
+				tag = VC2
+				tag = BPL
+			}
 		}
 	}
 	# Colonies
@@ -40,9 +52,55 @@
 	text = {
 		localization_key = rank_confederation
 		trigger = {
-			always = no
+			OR = {
+				# I:R / Invictus formables whose source names explicitly contain
+				# "Confederacy" or "Confederation".
+				tag = APF
+				tag = CCC
+				tag = SL1
+			}
 		}
 	}
+	text = {
+		localization_key = rank_greater
+		trigger = {
+			OR = {
+				tag = AQ2
+				tag = GAC
+				tag = GMA
+				tag = HBR
+				tag = LO2
+				tag = PH2
+			}
+		}
+	}
+	text = {
+		localization_key = rank_lesser
+		trigger = {
+			OR = {
+				tag = LES
+				tag = LSM
+			}
+		}
+	}
+	text = {
+		localization_key = rank_united
+		trigger = {
+			OR = {
+				tag = BTT
+				tag = UCI
+			}
+		}
+	}
+	text = {
+		localization_key = rank_magna
+		trigger = {
+			OR = {
+				tag = MGG
+			}
+		}
+	}
+
 	text = {
 		localization_key = country_rank_cossacks_reform
 		trigger = {

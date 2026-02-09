@@ -13,7 +13,6 @@ ABG_f = {
         culture = culture:ir_abasgoi
     }
     allow = {
-        owns = location:anakopia
     }
     name = ABG
     flag = ABG
@@ -35,10 +34,9 @@ ACH_f = {
     required_locations_fraction = 0.75
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_hellenic_g }
+        culture = { has_culture_group = culture_group:ir_hellenic_g }
     }
     allow = {
-        owns = location:patrai
     }
     name = ACH
     flag = ACH
@@ -63,11 +61,10 @@ ACL_f = {
         OR = {
             culture = culture:ir_achaean
             culture = culture:ir_arcadian
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_hellenic_g }
+            culture = { has_culture_group = culture_group:ir_hellenic_g }
         }
     }
     allow = {
-        owns = location:aigion
     }
     name = ACL
     flag = ACL
@@ -90,10 +87,9 @@ AGO_f = {
     required_locations_fraction = 0.75
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_hellenic_g }
+        culture = { has_culture_group = culture_group:ir_hellenic_g }
     }
     allow = {
-        owns = location:argos
     }
     name = AGO
     flag = AGO
@@ -116,10 +112,9 @@ AIO_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_britannic_g }
+        culture = { has_culture_group = culture_group:ir_britannic_g }
     }
     allow = {
-        owns = location:abona
     }
     name = AIO
     flag = AIO
@@ -145,7 +140,6 @@ ALA_f = {
         culture = culture:ir_alani
     }
     allow = {
-        owns = location:babatay
     }
     name = ALA
     flag = ALA
@@ -173,22 +167,32 @@ ALX_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_hellenic_g }
+        culture = { has_culture_group = culture_group:ir_hellenic_g }
     }
     allow = {
-        owns = location:sardis
     }
     name = ALX
     flag = ALX
     adjective = ALX_ADJ
     tag = ALX
-    regions = {
-        anatolia_region
-        balkan_region
-        crescent_region
-        egypt_region
-        hindustan_region
-        persia_region
+    provinces = {
+        achaea_province
+        ammon_province
+        asoristan_province
+        babylonia_province
+        central_greece_province
+        ecbatana_province
+        europa_province
+        lydia_province
+        macedonia_province
+        memphis_province
+        patalene_province
+        persepolis_province
+        philistia_province
+        south_phoenicia_province
+        syria_province
+        taxila_province
+        western_delta_province
     }
     form_effect = {
     }
@@ -204,13 +208,12 @@ APF_f = {
     rule = historical
     potential = {
         OR = {
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_celto_pannonian_group_g }
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_gallic_g }
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_latin_g }
+            culture = { has_culture_group = culture_group:ir_celto_pannonian_group_g }
+            culture = { has_culture_group = culture_group:ir_gallic_g }
+            culture = { has_culture_group = culture_group:ir_latin_g }
         }
     }
     allow = {
-        owns = location:acelum
     }
     name = APF
     flag = APF
@@ -240,7 +243,6 @@ AQ2_f = {
         }
     }
     allow = {
-        owns = location:auca
     }
     name = AQ2
     flag = AQ2
@@ -272,7 +274,6 @@ AQI_f = {
         }
     }
     allow = {
-        owns = location:akroterion
     }
     name = AQI
     flag = AQI
@@ -299,12 +300,11 @@ ARB_f = {
     rule = historical
     potential = {
         OR = {
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_south_arabian_g }
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_south_levantine_g }
+            culture = { has_culture_group = culture_group:ir_south_arabian_g }
+            culture = { has_culture_group = culture_group:ir_south_levantine_g }
         }
     }
     allow = {
-        owns = location:abha
     }
     name = ARB
     flag = ARB
@@ -327,10 +327,9 @@ ARI_f = {
     required_locations_fraction = 0.75
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_anatolian_g }
+        culture = { has_culture_group = culture_group:ir_anatolian_g }
     }
     allow = {
-        owns = location:acachia
     }
     name = ARI
     flag = ARI
@@ -353,10 +352,9 @@ ARK_f = {
     required_locations_fraction = 0.75
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_hellenic_g }
+        culture = { has_culture_group = culture_group:ir_hellenic_g }
     }
     allow = {
-        owns = location:mantinea
     }
     name = ARK
     flag = ARK
@@ -382,11 +380,10 @@ ARM_f = {
     potential = {
         OR = {
             culture = culture:ir_armenian
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_anatolian_g }
+            culture = { has_culture_group = culture_group:ir_anatolian_g }
         }
     }
     allow = {
-        owns = location:armaouira
     }
     name = ARM
     flag = ARM
@@ -414,10 +411,9 @@ ARY_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_aryan_g }
+        culture = { has_culture_group = culture_group:ir_aryan_g }
     }
     allow = {
-        owns = location:sakala
     }
     name = ARY
     flag = ARY
@@ -446,10 +442,9 @@ ASR_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_east_levantine_g }
+        culture = { has_culture_group = culture_group:ir_east_levantine_g }
     }
     allow = {
-        owns = location:nisibis_0
     }
     name = ASR
     flag = ASR
@@ -477,7 +472,6 @@ ASX_f = {
         culture = culture:ir_aremorican
     }
     allow = {
-        owns = location:condate_redonum
     }
     name = ASX
     flag = ASX
@@ -501,10 +495,9 @@ ATE_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_nilotic_group_g }
+        culture = { has_culture_group = culture_group:ir_nilotic_group_g }
     }
     allow = {
-        owns = location:darou
     }
     name = ATE
     flag = ATE
@@ -533,10 +526,9 @@ ATR_f = {
     required_locations_fraction = 0.75
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_belgae_group_g }
+        culture = { has_culture_group = culture_group:ir_belgae_group_g }
     }
     allow = {
-        owns = location:anderitum
     }
     name = ATR
     flag = ATR
@@ -561,7 +553,6 @@ ATT_f = {
         culture = culture:ir_athenian
     }
     allow = {
-        owns = location:athens
     }
     name = ATT
     flag = ATT
@@ -586,7 +577,6 @@ ATU_f = {
         culture = culture:ir_asturian
     }
     allow = {
-        owns = location:argentiolum
     }
     name = ATU
     flag = ATU
@@ -612,7 +602,6 @@ AUA_f = {
         culture = culture:ir_aestian
     }
     allow = {
-        owns = location:vistuliana
     }
     name = AUA
     flag = AUA
@@ -636,12 +625,11 @@ AVK_f = {
     rule = historical
     potential = {
         OR = {
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_gallic_g }
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_latin_g }
+            culture = { has_culture_group = culture_group:ir_gallic_g }
+            culture = { has_culture_group = culture_group:ir_latin_g }
         }
     }
     allow = {
-        owns = location:allobrogia
     }
     name = AVK
     flag = AVK
@@ -675,14 +663,14 @@ AX2_f = {
         culture = culture:ir_aksumite
     }
     allow = {
-        owns = location:yeha
     }
     name = AX2
     flag = AX2
     adjective = AX2_ADJ
     tag = AX2
-    regions = {
-        ethiopia_region
+    provinces = {
+        aksum_province
+        tana_province
     }
     form_effect = {
     }
@@ -700,7 +688,6 @@ AXM_f = {
         culture = culture:ir_aksumite
     }
     allow = {
-        owns = location:aksum
     }
     name = AXM
     flag = AXM
@@ -727,7 +714,6 @@ BBY_f = {
         religion = religion:ir_mesopotamian_religion
     }
     allow = {
-        owns = location:samarra
     }
     name = BBY
     flag = BBY
@@ -756,10 +742,9 @@ BGG_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_belgae_group_g }
+        culture = { has_culture_group = culture_group:ir_belgae_group_g }
     }
     allow = {
-        owns = location:augustomagus
     }
     name = BGG
     flag = BGG
@@ -787,13 +772,12 @@ BHA_f = {
     rule = historical
     potential = {
         OR = {
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_aryan_g }
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_indian_g }
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_pracyan_g }
+            culture = { has_culture_group = culture_group:ir_aryan_g }
+            culture = { has_culture_group = culture_group:ir_indian_g }
+            culture = { has_culture_group = culture_group:ir_pracyan_g }
         }
     }
     allow = {
-        owns = location:ajanta
     }
     name = BHA
     flag = BHA
@@ -826,7 +810,6 @@ BOE_f = {
         culture = culture:ir_boeotian
     }
     allow = {
-        owns = location:thespiai
     }
     name = BOE
     flag = BOE
@@ -852,7 +835,6 @@ BOT_f = {
         culture = culture:ir_boeotian
     }
     allow = {
-        owns = location:anthedon
     }
     name = BOT
     flag = BOT
@@ -875,12 +857,11 @@ BPL_f = {
     rule = historical
     potential = {
         OR = {
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_hellenic_g }
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_scythia_g }
+            culture = { has_culture_group = culture_group:ir_hellenic_g }
+            culture = { has_culture_group = culture_group:ir_scythia_g }
         }
     }
     allow = {
-        owns = location:bosporus_cimmerius
     }
     name = BPL
     flag = BPL
@@ -903,10 +884,9 @@ BRA_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_britannic_g }
+        culture = { has_culture_group = culture_group:ir_britannic_g }
     }
     allow = {
-        owns = location:abona
     }
     name = BRA
     flag = BRA
@@ -931,7 +911,6 @@ BTT_f = {
         culture = culture:ir_bastetanian
     }
     allow = {
-        owns = location:abdarat
     }
     name = BTT
     flag = BTT
@@ -957,7 +936,6 @@ CAB_f = {
         culture = culture:ir_cabalian
     }
     allow = {
-        owns = location:kibyra
     }
     name = CAB
     flag = CAB
@@ -982,7 +960,6 @@ CBR_f = {
         culture = culture:ir_celtiberian
     }
     allow = {
-        owns = location:aquae_bilbitonorum
     }
     name = CBR
     flag = CBR
@@ -1014,7 +991,6 @@ CCC_f = {
         }
     }
     allow = {
-        owns = location:blatobulgium
     }
     name = CCC
     flag = CCC
@@ -1039,12 +1015,11 @@ CCI_f = {
     rule = historical
     potential = {
         OR = {
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_anatolian_g }
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_hellenic_g }
+            culture = { has_culture_group = culture_group:ir_anatolian_g }
+            culture = { has_culture_group = culture_group:ir_hellenic_g }
         }
     }
     allow = {
-        owns = location:kastabala
     }
     name = CCI
     flag = CCI
@@ -1070,7 +1045,6 @@ CHY_f = {
         culture = culture:ir_carian
     }
     allow = {
-        owns = location:alabanda
     }
     name = CHY
     flag = CHY
@@ -1095,11 +1069,10 @@ CIA_f = {
     potential = {
         OR = {
             culture = culture:ir_carian
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_hellenic_g }
+            culture = { has_culture_group = culture_group:ir_hellenic_g }
         }
     }
     allow = {
-        owns = location:mylasa
     }
     name = CIA
     flag = CIA
@@ -1126,7 +1099,6 @@ CNN_f = {
         culture = culture:ir_cantabrian
     }
     allow = {
-        owns = location:auca
     }
     name = CNN
     flag = CNN
@@ -1152,7 +1124,6 @@ CPT_f = {
         culture = culture:ir_carpetanian
     }
     allow = {
-        owns = location:alaba
     }
     name = CPT
     flag = CPT
@@ -1177,7 +1148,6 @@ CSC_f = {
         culture = culture:ir_corsian
     }
     allow = {
-        owns = location:aleria
     }
     name = CSC
     flag = CSC
@@ -1202,7 +1172,6 @@ CYP_f = {
         culture = culture:ir_cypriot
     }
     allow = {
-        owns = location:amathous
     }
     name = CYP
     flag = CYP
@@ -1224,17 +1193,21 @@ DAC_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_dacia_group_g }
+        culture = { has_culture_group = culture_group:ir_dacia_group_g }
     }
     allow = {
-        owns = location:castra_arcidava
     }
     name = DAC
     flag = DAC
     adjective = DAC_ADJ
     tag = DAC
-    regions = {
-        carpathia_region
+    provinces = {
+        apulensis_province
+        iazygia_majoris_province
+        iazygia_minoris_province
+        porolissensis_inferioris_province
+        porolissensis_province
+        transcarpathia_centralis_province
     }
     form_effect = {
     }
@@ -1249,10 +1222,9 @@ DHE_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_scythia_g }
+        culture = { has_culture_group = culture_group:ir_scythia_g }
     }
     allow = {
-        owns = location:azkoi
     }
     name = DHE
     flag = DHE
@@ -1282,16 +1254,14 @@ DIO_f = {
         culture = culture:ir_puntic
     }
     allow = {
-        owns = location:dioscoridus
-        owns = location:dioscoridus
     }
     name = DIO
     flag = DIO
     adjective = DIO_ADJ
     tag = DIO
     color = map_DIO
-    locations = {
-        dioscoridus
+    provinces = {
+        aromata_province
     }
     form_effect = {
     }
@@ -1306,10 +1276,9 @@ DL2_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_hellenic_g }
+        culture = { has_culture_group = culture_group:ir_hellenic_g }
     }
     allow = {
-        owns = location:hypate
     }
     name = DL2
     flag = DL2
@@ -1333,18 +1302,30 @@ DLA_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_hellenic_g }
+        culture = { has_culture_group = culture_group:ir_hellenic_g }
     }
     allow = {
-        owns = location:chalcedon
     }
     name = DLA
     flag = DLA
     adjective = DLA_ADJ
     tag = DLA
-    regions = {
-        anatolia_region
-        balkan_region
+    provinces = {
+        achaea_province
+        aegean_islands_province
+        aeolia_province
+        aetolia_province
+        bithynia_inferior_province
+        central_greece_province
+        chalkidiki_province
+        coastal_caria_province
+        epirus_province
+        euboea_province
+        europa_province
+        ionia_province
+        mysia_province
+        rhodope_province
+        sporades_province
     }
     form_effect = {
     }
@@ -1359,10 +1340,9 @@ DRA_f = {
     required_locations_fraction = 0.75
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_persia_g }
+        culture = { has_culture_group = culture_group:ir_persia_g }
     }
     allow = {
-        owns = location:arcrotis
     }
     name = DRA
     flag = DRA
@@ -1384,10 +1364,9 @@ DRV_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_indian_g }
+        culture = { has_culture_group = culture_group:ir_indian_g }
     }
     allow = {
-        owns = location:komari
     }
     name = DRV
     flag = DRV
@@ -1417,21 +1396,18 @@ DUN_f = {
     potential = {
         OR = {
             culture = culture:ir_fennic
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_finnic_group_g }
+            culture = { has_culture_group = culture_group:ir_finnic_group_g }
         }
     }
     allow = {
-        owns = location:cina
-        owns = location:daugava
-        owns = location:daugava
     }
     name = DUN
     flag = DUN
     adjective = DUN_ADJ
     tag = DUN
-    locations = {
-        cina
-        daugava
+    provinces = {
+        daugava_province
+        ilmandu_inferior_province
     }
     form_effect = {
     }
@@ -1446,10 +1422,9 @@ EBO_f = {
     required_locations_fraction = 0.75
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_hellenic_g }
+        culture = { has_culture_group = culture_group:ir_hellenic_g }
     }
     allow = {
-        owns = location:oreus
     }
     name = EBO
     flag = EBO
@@ -1472,12 +1447,11 @@ EGT_f = {
     rule = historical
     potential = {
         OR = {
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_meroitic_group_g }
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_north_african_g }
+            culture = { has_culture_group = culture_group:ir_meroitic_group_g }
+            culture = { has_culture_group = culture_group:ir_north_african_g }
         }
     }
     allow = {
-        owns = location:memphis
     }
     name = EGT
     flag = EGT
@@ -1509,7 +1483,6 @@ EGY_f = {
         culture = culture:ir_macedonian
     }
     allow = {
-        owns = location:alexandria
     }
     name = EGY
     flag = EGY
@@ -1518,34 +1491,6 @@ EGY_f = {
     color = map_EGY
     locations = {
         alexandria
-    }
-    form_effect = {
-    }
-}
-
-
-
-# ENG: ENG
-
-ENG_f = {
-    level = 3
-    required_locations_fraction = 0.7
-    rule = historical
-    potential = {
-        OR = {
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_britannic_g }
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_germanic_g }
-        }
-    }
-    allow = {
-        owns = location:abona
-    }
-    name = ENG
-    flag = ENG
-    adjective = ENG_ADJ
-    tag = ENG
-    regions = {
-        great_britain_region
     }
     form_effect = {
     }
@@ -1563,7 +1508,6 @@ EPI_f = {
         culture = culture:ir_epirote
     }
     allow = {
-        owns = location:passaron
     }
     name = EPI
     flag = EPI
@@ -1588,11 +1532,10 @@ EPR_f = {
     potential = {
         OR = {
             culture = culture:ir_epirote
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_hellenic_g }
+            culture = { has_culture_group = culture_group:ir_hellenic_g }
         }
     }
     allow = {
-        owns = location:phoinike
     }
     name = EPR
     flag = EPR
@@ -1624,7 +1567,6 @@ FEZ_f = {
         }
     }
     allow = {
-        owns = location:adri
     }
     name = FEZ
     flag = FEZ
@@ -1647,12 +1589,11 @@ FRA_f = {
     rule = historical
     potential = {
         OR = {
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_gallic_g }
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_germanic_g }
+            culture = { has_culture_group = culture_group:ir_gallic_g }
+            culture = { has_culture_group = culture_group:ir_germanic_g }
         }
     }
     allow = {
-        owns = location:aballo
     }
     name = FRA
     flag = FRA
@@ -1683,7 +1624,6 @@ GAC_f = {
         }
     }
     allow = {
-        owns = location:apakara
     }
     name = GAC
     flag = GAC
@@ -1717,21 +1657,36 @@ GAU_f = {
     rule = historical
     potential = {
         OR = {
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_belgae_group_g }
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_gallic_g }
+            culture = { has_culture_group = culture_group:ir_belgae_group_g }
+            culture = { has_culture_group = culture_group:ir_gallic_g }
         }
     }
     allow = {
-        owns = location:coriallum
     }
     name = GAU
     flag = GAU
     adjective = GAU_ADJ
     tag = GAU
-    regions = {
-        france_region
-        north_german_region
-        south_german_region
+    provinces = {
+        alpes_maritimae_province
+        alpes_maritimae_two_province
+        aquitania_occidentalis_province
+        armorica_centralis_province
+        armorica_maioris_province
+        bellovacia_province
+        bituriga_orientalis_province
+        cadurcia_province
+        carnutia_province
+        helvetia_inferioris_province
+        leucia_province
+        lingonia_province
+        morinia_province
+        parisia_province
+        pictonia_meridionalis_province
+        senonia_province
+        tigurinia_province
+        treveria_province
+        vangionia_province
     }
     form_effect = {
     }
@@ -1746,10 +1701,9 @@ GEE_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_germanic_g }
+        culture = { has_culture_group = culture_group:ir_germanic_g }
     }
     allow = {
-        owns = location:armalausia
     }
     name = GEE
     flag = GEE
@@ -1794,7 +1748,6 @@ GLL_f = {
         culture = culture:ir_callaecian
     }
     allow = {
-        owns = location:ad_duos_pontes
     }
     name = GLL
     flag = GLL
@@ -1818,12 +1771,11 @@ GLT_f = {
     rule = historical
     potential = {
         OR = {
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_celto_pannonian_group_g }
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_gallic_g }
+            culture = { has_culture_group = culture_group:ir_celto_pannonian_group_g }
+            culture = { has_culture_group = culture_group:ir_gallic_g }
         }
     }
     allow = {
-        owns = location:pessinous
     }
     name = GLT
     flag = GLT
@@ -1851,7 +1803,6 @@ GMA_f = {
         culture = culture:ir_maeotian
     }
     allow = {
-        owns = location:taphros
     }
     name = GMA
     flag = GMA
@@ -1877,12 +1828,11 @@ HBR_f = {
     rule = historical
     potential = {
         OR = {
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_celt_iberia_g }
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_iberia_g }
+            culture = { has_culture_group = culture_group:ir_celt_iberia_g }
+            culture = { has_culture_group = culture_group:ir_iberia_g }
         }
     }
     allow = {
-        owns = location:flavionavia
     }
     name = HBR
     flag = HBR
@@ -1914,7 +1864,6 @@ HIB_f = {
         }
     }
     allow = {
-        owns = location:gangania_australis
     }
     name = HIB
     flag = HIB
@@ -1939,17 +1888,25 @@ HLA_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_hellenic_g }
+        culture = { has_culture_group = culture_group:ir_hellenic_g }
     }
     allow = {
-        owns = location:praesos
     }
     name = HLA
     flag = HLA
     adjective = HLA_ADJ
     tag = HLA
-    regions = {
-        balkan_region
+    provinces = {
+        achaea_province
+        aegean_islands_province
+        aetolia_province
+        arcadia_province
+        boeotia_province
+        central_greece_province
+        crete_province
+        euboea_province
+        south_peleponnesos_province
+        thessaly_province
     }
     form_effect = {
     }
@@ -1964,10 +1921,9 @@ HND_f = {
     required_locations_fraction = 0.75
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_persia_g }
+        culture = { has_culture_group = culture_group:ir_persia_g }
     }
     allow = {
-        owns = location:roruka
     }
     name = HND
     flag = HND
@@ -1992,12 +1948,11 @@ HPP_f = {
     rule = historical
     potential = {
         OR = {
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_anatolian_g }
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_hellenic_g }
+            culture = { has_culture_group = culture_group:ir_anatolian_g }
+            culture = { has_culture_group = culture_group:ir_hellenic_g }
         }
     }
     allow = {
-        owns = location:adramyttion
     }
     name = HPP
     flag = HPP
@@ -2025,7 +1980,6 @@ HSD_f = {
         culture = culture:ir_thracian
     }
     allow = {
-        owns = location:chalcedon
     }
     name = HSD
     flag = HSD
@@ -2053,7 +2007,6 @@ HVL_f = {
         culture = culture:ir_helvetian
     }
     allow = {
-        owns = location:antro
     }
     name = HVL
     flag = HVL
@@ -2075,17 +2028,20 @@ IDC_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_hellenic_g }
+        culture = { has_culture_group = culture_group:ir_hellenic_g }
     }
     allow = {
-        owns = location:pushkalavati
     }
     name = IDC
     flag = IDC
     adjective = IDC_ADJ
     tag = IDC
-    regions = {
-        hindustan_region
+    provinces = {
+        gandhara_province
+        madra_province
+        mallia_province
+        taxila_province
+        trigarta_province
     }
     form_effect = {
     }
@@ -2100,10 +2056,9 @@ IGK_f = {
     required_locations_fraction = 0.12
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_germanic_g }
+        culture = { has_culture_group = culture_group:ir_germanic_g }
     }
     allow = {
-        owns = location:ajanta
     }
     name = IGK
     flag = IGK
@@ -2133,10 +2088,9 @@ ILL_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_illyrian_group_g }
+        culture = { has_culture_group = culture_group:ir_illyrian_group_g }
     }
     allow = {
-        owns = location:lissos
     }
     name = ILL
     flag = ILL
@@ -2166,14 +2120,20 @@ INP_f = {
         culture = culture:ir_parthian
     }
     allow = {
-        owns = location:pushkalavati
     }
     name = INP
     flag = INP
     adjective = INP_ADJ
     tag = INP
-    regions = {
-        hindustan_region
+    provinces = {
+        gandhara_province
+        madra_province
+        mallia_province
+        north_sindhu_province
+        sauvira_province
+        south_sindhu_province
+        taxila_province
+        trigarta_province
     }
     form_effect = {
     }
@@ -2190,11 +2150,10 @@ IOA_f = {
     potential = {
         OR = {
             culture = culture:ir_aeolian
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_hellenic_g }
+            culture = { has_culture_group = culture_group:ir_hellenic_g }
         }
     }
     allow = {
-        owns = location:elaea
     }
     name = IOA
     flag = IOA
@@ -2219,11 +2178,10 @@ ION_f = {
     potential = {
         OR = {
             culture = culture:ir_ionian
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_hellenic_g }
+            culture = { has_culture_group = culture_group:ir_hellenic_g }
         }
     }
     allow = {
-        owns = location:priene
     }
     name = ION
     flag = ION
@@ -2257,7 +2215,6 @@ IOU_f = {
         }
     }
     allow = {
-        owns = location:iasos
     }
     name = IOU
     flag = IOU
@@ -2285,7 +2242,6 @@ ISK_f = {
         culture = culture:ir_sakan
     }
     allow = {
-        owns = location:arbia
     }
     name = ISK
     flag = ISK
@@ -2309,12 +2265,11 @@ ISL_f = {
     rule = historical
     potential = {
         OR = {
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_illyrian_group_g }
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_latin_g }
+            culture = { has_culture_group = culture_group:ir_illyrian_group_g }
+            culture = { has_culture_group = culture_group:ir_latin_g }
         }
     }
     allow = {
-        owns = location:anderba
     }
     name = ISL
     flag = ISL
@@ -2342,7 +2297,6 @@ ISR_f = {
         religion = religion:ir_judaism
     }
     allow = {
-        owns = location:ascalon
     }
     name = ISR
     flag = ISR
@@ -2372,7 +2326,6 @@ ISU_f = {
         culture = culture:ir_isaurian
     }
     allow = {
-        owns = location:isaura
     }
     name = ISU
     flag = ISU
@@ -2395,10 +2348,9 @@ ITL_f = {
     required_locations_fraction = 0.65
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_latin_g }
+        culture = { has_culture_group = culture_group:ir_latin_g }
     }
     allow = {
-        owns = location:roma
     }
     name = ITL
     flag = ITL
@@ -2424,7 +2376,6 @@ KHN_f = {
         culture = culture:ir_yuezhi
     }
     allow = {
-        owns = location:drepsiana
     }
     name = KHN
     flag = KHN
@@ -2442,34 +2393,6 @@ KHN_f = {
 
 
 
-# KMR: KMR
-
-KMR_f = {
-    level = 2
-    required_locations_fraction = 0.75
-    rule = historical
-    potential = {
-        OR = {
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_aryan_g }
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_persia_g }
-        }
-    }
-    allow = {
-        owns = location:arjunava
-    }
-    name = KMR
-    flag = KMR
-    adjective = KMR_ADJ
-    tag = KMR
-    provinces = {
-        gandhara_province
-    }
-    form_effect = {
-    }
-}
-
-
-
 # KRE: Crete
 
 KRE_f = {
@@ -2477,10 +2400,9 @@ KRE_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_hellenic_g }
+        culture = { has_culture_group = culture_group:ir_hellenic_g }
     }
     allow = {
-        owns = location:hierapytna
     }
     name = KRE
     flag = KRE
@@ -2505,7 +2427,6 @@ LAZ_f = {
         culture = culture:ir_lazi
     }
     allow = {
-        owns = location:apasidam
     }
     name = LAZ
     flag = LAZ
@@ -2533,7 +2454,6 @@ LES_f = {
         }
     }
     allow = {
-        owns = location:silistra
     }
     name = LES
     flag = LES
@@ -2559,7 +2479,6 @@ LIG_f = {
         culture = culture:ir_ligurian
     }
     allow = {
-        owns = location:albom_ingaunom
     }
     name = LIG
     flag = LIG
@@ -2581,10 +2500,9 @@ LO2_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_hellenic_g }
+        culture = { has_culture_group = culture_group:ir_hellenic_g }
     }
     allow = {
-        owns = location:opous
     }
     name = LO2
     flag = LO2
@@ -2610,7 +2528,6 @@ LSB_f = {
         culture = culture:ir_aeolian
     }
     allow = {
-        owns = location:mytilene
     }
     name = LSB
     flag = LSB
@@ -2636,7 +2553,6 @@ LSM_f = {
         culture = culture:ir_median
     }
     allow = {
-        owns = location:ecbatana
     }
     name = LSM
     flag = LSM
@@ -2663,7 +2579,6 @@ LST_f = {
         culture = culture:ir_lusitanian
     }
     allow = {
-        owns = location:ad_fines_hiberiae
     }
     name = LST
     flag = LST
@@ -2689,7 +2604,6 @@ LYC_f = {
         culture = culture:ir_lycian
     }
     allow = {
-        owns = location:tlos
     }
     name = LYC
     flag = LYC
@@ -2715,7 +2629,6 @@ LYD_f = {
         culture = culture:ir_lydian
     }
     allow = {
-        owns = location:thyateira
     }
     name = LYD
     flag = LYD
@@ -2740,7 +2653,6 @@ MAC_f = {
         culture = culture:ir_macedonian
     }
     allow = {
-        owns = location:pella_0
     }
     name = MAC
     flag = MAC
@@ -2766,7 +2678,6 @@ MCD_f = {
         culture = culture:ir_macedonian
     }
     allow = {
-        owns = location:amphipolis
     }
     name = MCD
     flag = MCD
@@ -2791,10 +2702,9 @@ MEE_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_persia_g }
+        culture = { has_culture_group = culture_group:ir_persia_g }
     }
     allow = {
-        owns = location:gazaka
     }
     name = MEE
     flag = MEE
@@ -2821,17 +2731,21 @@ MGG_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_hellenic_g }
+        culture = { has_culture_group = culture_group:ir_hellenic_g }
     }
     allow = {
-        owns = location:velia
     }
     name = MGG
     flag = MGG
     adjective = MGG_ADJ
     tag = MGG
-    regions = {
-        italy_region
+    provinces = {
+        croton_province
+        east_sicily_province
+        heraclea_province
+        syracuse_province
+        tarentum_province
+        west_sicily_province
     }
     form_effect = {
     }
@@ -2849,7 +2763,6 @@ MLD_f = {
         culture = culture:ir_milyadian
     }
     allow = {
-        owns = location:arykanda
     }
     name = MLD
     flag = MLD
@@ -2873,10 +2786,9 @@ NMT_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_aryan_g }
+        culture = { has_culture_group = culture_group:ir_aryan_g }
     }
     allow = {
-        owns = location:adatha
     }
     name = NMT
     flag = NMT
@@ -2908,7 +2820,6 @@ NRM_f = {
         }
     }
     allow = {
-        owns = location:aguntum
     }
     name = NRM
     flag = NRM
@@ -2931,10 +2842,9 @@ NUM_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_numidian_g }
+        culture = { has_culture_group = culture_group:ir_numidian_g }
     }
     allow = {
-        owns = location:mina
     }
     name = NUM
     flag = NUM
@@ -2965,7 +2875,6 @@ OYK_f = {
         }
     }
     allow = {
-        owns = location:lysimacheia
     }
     name = OYK
     flag = OYK
@@ -3001,13 +2910,12 @@ PAN_f = {
             culture = culture:ir_letobician
             culture = culture:ir_noric
             culture = culture:ir_pannonian
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_germanic_g }
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_scythia_g }
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_scythian_east_g }
+            culture = { has_culture_group = culture_group:ir_germanic_g }
+            culture = { has_culture_group = culture_group:ir_scythia_g }
+            culture = { has_culture_group = culture_group:ir_scythian_east_g }
         }
     }
     allow = {
-        owns = location:regnia_prima
     }
     name = PAN
     flag = PAN
@@ -3040,7 +2948,6 @@ PAR_f = {
         culture = culture:ir_macedonian
     }
     allow = {
-        owns = location:zadrakarta
     }
     name = PAR
     flag = PAR
@@ -3064,12 +2971,11 @@ PEN_f = {
     rule = historical
     potential = {
         OR = {
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_indian_g }
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_persia_g }
+            culture = { has_culture_group = culture_group:ir_indian_g }
+            culture = { has_culture_group = culture_group:ir_persia_g }
         }
     }
     allow = {
-        owns = location:brahmanaka
     }
     name = PEN
     flag = PEN
@@ -3095,22 +3001,29 @@ PER_f = {
     rule = historical
     potential = {
         OR = {
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_anatolian_g }
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_caucasian_g }
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_persia_g }
+            culture = { has_culture_group = culture_group:ir_anatolian_g }
+            culture = { has_culture_group = culture_group:ir_caucasian_g }
+            culture = { has_culture_group = culture_group:ir_persia_g }
         }
     }
     allow = {
-        owns = location:arbela
     }
     name = PER
     flag = PER
     adjective = PER_ADJ
     tag = PER
-    regions = {
-        crescent_region
-        khorasan_region
-        persia_region
+    provinces = {
+        adiabene_province
+        aria_province
+        asoristan_province
+        babylonia_province
+        ecbatana_province
+        harmozeia_province
+        hyrcania_province
+        media_atropatene_province
+        pactya_province
+        persepolis_province
+        susiana_province
     }
     form_effect = {
     }
@@ -3125,10 +3038,9 @@ PH2_f = {
     required_locations_fraction = 0.75
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_hellenic_g }
+        culture = { has_culture_group = culture_group:ir_hellenic_g }
     }
     allow = {
-        owns = location:nea_halos
     }
     name = PH2
     flag = PH2
@@ -3155,7 +3067,6 @@ PIS_f = {
         culture = culture:ir_pisidian
     }
     allow = {
-        owns = location:pednelissos
     }
     name = PIS
     flag = PIS
@@ -3182,7 +3093,6 @@ PIY_f = {
         culture = culture:ir_pyu
     }
     allow = {
-        owns = location:beikthano
     }
     name = PIY
     flag = PIY
@@ -3204,10 +3114,9 @@ PLL_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_hellenic_g }
+        culture = { has_culture_group = culture_group:ir_hellenic_g }
     }
     allow = {
-        owns = location:aigina
     }
     name = PLL
     flag = PLL
@@ -3233,7 +3142,6 @@ PLS_f = {
         culture = culture:ir_phoenician
     }
     allow = {
-        owns = location:gaza
     }
     name = PLS
     flag = PLS
@@ -3258,7 +3166,6 @@ POG_f = {
         culture = culture:ir_shan
     }
     allow = {
-        owns = location:nyaunggan
     }
     name = POG
     flag = POG
@@ -3285,7 +3192,6 @@ PON_f = {
         culture = culture:ir_cappadocian
     }
     allow = {
-        owns = location:amaseia
     }
     name = PON
     flag = PON
@@ -3311,7 +3217,6 @@ PPH_f = {
         culture = culture:ir_pamphylian
     }
     allow = {
-        owns = location:phaselis
     }
     name = PPH
     flag = PPH
@@ -3336,14 +3241,14 @@ PPN_f = {
         culture = culture:ir_phoenician
     }
     allow = {
-        owns = location:tyrus
     }
     name = PPN
     flag = PPN
     adjective = PPN_ADJ
     tag = PPN
-    regions = {
-        crescent_region
+    provinces = {
+        north_phoenicia_province
+        south_phoenicia_province
     }
     form_effect = {
     }
@@ -3361,7 +3266,6 @@ PRG_f = {
         culture = culture:ir_phrygian
     }
     allow = {
-        owns = location:pessinous
     }
     name = PRG
     flag = PRG
@@ -3387,10 +3291,9 @@ PRU_f = {
     required_locations_fraction = 0.75
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_indian_g }
+        culture = { has_culture_group = culture_group:ir_indian_g }
     }
     allow = {
-        owns = location:aung_myay
     }
     name = PRU
     flag = PRU
@@ -3417,7 +3320,6 @@ PRY_f = {
         culture = culture:ir_macedonian
     }
     allow = {
-        owns = location:antigoneia
     }
     name = PRY
     flag = PRY
@@ -3440,18 +3342,16 @@ PTH_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_scythia_g }
+        culture = { has_culture_group = culture_group:ir_scythia_g }
     }
     allow = {
-        owns = location:nisaia
-        owns = location:nisaia
     }
     name = PTH
     flag = PTH
     adjective = PTH_ADJ
     tag = PTH
-    locations = {
-        nisaia
+    provinces = {
+        derbicca_province
     }
     form_effect = {
     }
@@ -3467,12 +3367,11 @@ PTL_f = {
     rule = historical
     potential = {
         OR = {
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_anatolian_g }
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_hellenic_g }
+            culture = { has_culture_group = culture_group:ir_anatolian_g }
+            culture = { has_culture_group = culture_group:ir_hellenic_g }
         }
     }
     allow = {
-        owns = location:altintepe
     }
     name = PTL
     flag = PTL
@@ -3498,7 +3397,6 @@ PTU_f = {
         culture = culture:ir_cappadocian
     }
     allow = {
-        owns = location:amisos
     }
     name = PTU
     flag = PTU
@@ -3522,10 +3420,9 @@ PUN_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_aksumite_group_g }
+        culture = { has_culture_group = culture_group:ir_aksumite_group_g }
     }
     allow = {
-        owns = location:adi_ugri
     }
     name = PUN
     flag = PUN
@@ -3555,10 +3452,9 @@ RI5_f = {
     required_locations_fraction = 0.75
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_persia_g }
+        culture = { has_culture_group = culture_group:ir_persia_g }
     }
     allow = {
-        owns = location:pushkalavati
     }
     name = RI5
     flag = RI5
@@ -3588,7 +3484,6 @@ ROM_f = {
         culture = culture:ir_roman
     }
     allow = {
-        owns = location:roma
     }
     name = ROM
     flag = ROM
@@ -3617,7 +3512,6 @@ SAR_f = {
         }
     }
     allow = {
-        owns = location:gurgua
     }
     name = SAR
     flag = SAR
@@ -3646,7 +3540,6 @@ SBN_f = {
         }
     }
     allow = {
-        owns = location:aregellia
     }
     name = SBN
     flag = SBN
@@ -3675,7 +3568,6 @@ SCN_f = {
         culture = culture:ir_scandian
     }
     allow = {
-        owns = location:arbugae
     }
     name = SCN
     flag = SCN
@@ -3700,18 +3592,20 @@ SCY_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_scythian_east_g }
+        culture = { has_culture_group = culture_group:ir_scythian_east_g }
     }
     allow = {
-        owns = location:borysthenia
     }
     name = SCY
     flag = SCY
     adjective = SCY_ADJ
     tag = SCY
     color = map_SCY
-    regions = {
-        steppes_region
+    provinces = {
+        borysthenia_minor_province
+        borysthenia_province
+        sarmatia_superioris_province
+        taurica_province
     }
     form_effect = {
     }
@@ -3729,7 +3623,6 @@ SEL_f = {
         culture = culture:ir_macedonian
     }
     allow = {
-        owns = location:seleucia_magna
     }
     name = SEL
     flag = SEL
@@ -3758,7 +3651,6 @@ SII_f = {
         }
     }
     allow = {
-        owns = location:messana
     }
     name = SII
     flag = SII
@@ -3785,7 +3677,6 @@ SL1_f = {
         culture = culture:ir_salluvian
     }
     allow = {
-        owns = location:agathom
     }
     name = SL1
     flag = SL1
@@ -3809,10 +3700,9 @@ SLA_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_baltic_g }
+        culture = { has_culture_group = culture_group:ir_baltic_g }
     }
     allow = {
-        owns = location:assula
     }
     name = SLA
     flag = SLA
@@ -3848,7 +3738,6 @@ SRM_f = {
         culture = culture:ir_sarmatian
     }
     allow = {
-        owns = location:abasgria
     }
     name = SRM
     flag = SRM
@@ -3879,7 +3768,6 @@ SVA_f = {
         culture = culture:ir_suani
     }
     allow = {
-        owns = location:bori
     }
     name = SVA
     flag = SVA
@@ -3904,7 +3792,6 @@ SYA_f = {
         culture = culture:ir_aramaic
     }
     allow = {
-        owns = location:damascus
     }
     name = SYA
     flag = SYA
@@ -3930,12 +3817,11 @@ TAT_f = {
     rule = historical
     potential = {
         OR = {
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_celt_iberia_g }
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_iberia_g }
+            culture = { has_culture_group = culture_group:ir_celt_iberia_g }
+            culture = { has_culture_group = culture_group:ir_iberia_g }
         }
     }
     allow = {
-        owns = location:ad_decimum
     }
     name = TAT
     flag = TAT
@@ -3964,11 +3850,10 @@ THL_f = {
             culture = culture:ir_aetolian
             culture = culture:ir_euboean
             culture = culture:ir_thessalian
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_hellenic_g }
+            culture = { has_culture_group = culture_group:ir_hellenic_g }
         }
     }
     allow = {
-        owns = location:larissa_0
     }
     name = THL
     flag = THL
@@ -3990,10 +3875,9 @@ TIB_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_tibetan_g }
+        culture = { has_culture_group = culture_group:ir_tibetan_g }
     }
     allow = {
-        owns = location:achuk
     }
     name = TIB
     flag = TIB
@@ -4022,7 +3906,6 @@ TLM_f = {
         culture = culture:ir_babylonian
     }
     allow = {
-        owns = location:agarum
     }
     name = TLM
     flag = TLM
@@ -4047,7 +3930,6 @@ TOC_f = {
         culture = culture:ir_tocharian
     }
     allow = {
-        owns = location:hotan
     }
     name = TOC
     flag = TOC
@@ -4073,11 +3955,10 @@ TRD_f = {
         OR = {
             culture = culture:ir_aeolian
             culture = culture:ir_thracian
-            any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_hellenic_g }
+            culture = { has_culture_group = culture_group:ir_hellenic_g }
         }
     }
     allow = {
-        owns = location:ilion
     }
     name = TRD
     flag = TRD
@@ -4105,7 +3986,6 @@ TRE_f = {
         culture = culture:ir_macedonian
     }
     allow = {
-        owns = location:lysimacheia
     }
     name = TRE
     flag = TRE
@@ -4128,10 +4008,9 @@ TUR_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_scythia_g }
+        culture = { has_culture_group = culture_group:ir_scythia_g }
     }
     allow = {
-        owns = location:ahur
     }
     name = TUR
     flag = TUR
@@ -4159,10 +4038,9 @@ TYL_f = {
     required_locations_fraction = 0.75
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_gallic_g }
+        culture = { has_culture_group = culture_group:ir_gallic_g }
     }
     allow = {
-        owns = location:kabyle
     }
     name = TYL
     flag = TYL
@@ -4189,7 +4067,6 @@ UCI_f = {
         culture = culture:ir_cataonian
     }
     allow = {
-        owns = location:adana
     }
     name = UCI
     flag = UCI
@@ -4211,10 +4088,9 @@ VC1_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_latin_g }
+        culture = { has_culture_group = culture_group:ir_latin_g }
     }
     allow = {
-        owns = location:aigina
     }
     name = VC1
     flag = VC1
@@ -4237,10 +4113,9 @@ VC2_f = {
     required_locations_fraction = 0.6
     rule = historical
     potential = {
-        any_primary_or_accepted_or_tolerated_culture = { has_culture_group = culture_group:ir_latin_g }
+        culture = { has_culture_group = culture_group:ir_latin_g }
     }
     allow = {
-        owns = location:acelum
     }
     name = VC2
     flag = VC2
@@ -4266,7 +4141,6 @@ VIN_f = {
         culture = culture:ir_vindelician
     }
     allow = {
-        owns = location:ad_fines_germaniae
     }
     name = VIN
     flag = VIN
@@ -4293,7 +4167,6 @@ VL2_f = {
         culture = culture:ir_volcae
     }
     allow = {
-        owns = location:segodunum
     }
     name = VL2
     flag = VL2
@@ -4319,7 +4192,6 @@ VNT_f = {
         culture = culture:ir_venetic
     }
     allow = {
-        owns = location:altinum
     }
     name = VNT
     flag = VNT
@@ -4345,7 +4217,6 @@ VTT_f = {
         culture = culture:ir_vettonian
     }
     allow = {
-        owns = location:augustobriga_vettonia
     }
     name = VTT
     flag = VTT
@@ -4374,7 +4245,6 @@ XXS_f = {
         }
     }
     allow = {
-        owns = location:amsivaria
     }
     name = XXS
     flag = XXS
@@ -4408,7 +4278,6 @@ YMN_f = {
         }
     }
     allow = {
-        owns = location:akme
     }
     name = YMN
     flag = YMN
@@ -4439,7 +4308,6 @@ YZI_f = {
         culture = culture:ir_yuezhi
     }
     allow = {
-        owns = location:drepsiana
     }
     name = YZI
     flag = YZI

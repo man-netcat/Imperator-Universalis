@@ -19,6 +19,7 @@ from .data import (
     ir_culture_group_graphical_map,
     ir_culture_graphical_overrides,
     formable_requirement_overrides,
+    formable_localization_overrides,
 )
 from .paths import *
 
@@ -1059,22 +1060,13 @@ def write_formable_countries(
 
     location_to_area, area_to_region = _build_location_hierarchy_maps(eu5_map_data or {})
     location_to_province = _build_location_to_province_map(eu5_map_data or {})
-    province_to_area: dict[str, str] = {}
-    for loc_key, province_key in location_to_province.items():
-        area_key = location_to_area.get(loc_key)
-        if isinstance(province_key, str) and isinstance(area_key, str):
-            province_to_area[province_key] = area_key
     area_to_locations: dict[str, list[str]] = {}
     region_to_locations: dict[str, list[str]] = {}
-    province_to_locations: dict[str, list[str]] = {}
     for loc_key, area_key in sorted(location_to_area.items()):
         area_to_locations.setdefault(area_key, []).append(loc_key)
         region_key = area_to_region.get(area_key)
         if isinstance(region_key, str):
             region_to_locations.setdefault(region_key, []).append(loc_key)
-    for loc_key, province_key in sorted(location_to_province.items()):
-        if isinstance(province_key, str):
-            province_to_locations.setdefault(province_key, []).append(loc_key)
     all_provinces = sorted(set(location_to_province.values()))
     all_areas = sorted(set(area_to_region.keys()) | set(location_to_area.values()))
     all_regions = sorted(set(area_to_region.values()))
@@ -1216,9 +1208,15 @@ def write_formable_countries(
         return text if text.startswith("ir_") else f"ir_{text}"
 
     blocks = []
+    skipped_unlocalized_tags = 0
     for tag in sorted(formable_data.keys()):
         meta = formable_data.get(tag, {})
         manual_override = formable_requirement_overrides.get(tag, {})
+        loc_override = formable_localization_overrides.get(tag, {})
+        resolved_name = str(loc_override.get("name") or meta.get("name") or "").strip()
+        if not resolved_name or resolved_name == tag:
+            skipped_unlocalized_tags += 1
+            continue
         if isinstance(meta.get("scope"), dict) and isinstance(meta.get("potential_lines"), list):
             display_name = str(meta.get("name") or tag)
             blocks.append(f"# {tag}: {display_name}")
@@ -1395,8 +1393,7 @@ def write_formable_countries(
         culture_conditions = (
             [f"culture = culture:{culture}" for culture in required_primary_cultures]
             + [
-                "any_primary_or_accepted_or_tolerated_culture = "
-                + f"{{ has_culture_group = culture_group:{group} }}"
+                f"culture = {{ has_culture_group = culture_group:{group} }}"
                 for group in required_culture_groups
             ]
         )
@@ -1477,19 +1474,10 @@ def write_formable_countries(
             scope_type, scope_values = "provinces", sorted(set(required_provinces))
         elif required_areas:
             scope_type, scope_values = "areas", sorted(set(required_areas))
-        elif required_location_ids and len(required_location_ids) <= 2:
-            # Keep capital/city-centric formables as explicit location targets.
-            scope_type, scope_values = "locations", sorted(
-                {
-                    key
-                    for key in (id_to_key.get(pid) for pid in required_location_ids)
-                    if isinstance(key, str)
-                }
-            )
-        elif required_location_ids and ir_level <= 2 and inferred_provinces_from_locations:
-            # Tier 1/2 I:R formables are usually scoped to compact local goals.
+        elif required_location_ids and inferred_provinces_from_locations:
+            # I:R decision ownership conditions are province-level.
             scope_type, scope_values = "provinces", inferred_provinces_from_locations
-        elif required_location_ids and ir_level <= 2 and inferred_areas_from_locations:
+        elif required_location_ids and inferred_areas_from_locations:
             scope_type, scope_values = "areas", inferred_areas_from_locations
         elif required_regions:
             scope_type, scope_values = "regions", sorted(set(required_regions))
@@ -1503,76 +1491,8 @@ def write_formable_countries(
                 if loc_key:
                     scope_type, scope_values = "locations", [loc_key]
 
-        # Build allow gating from extracted decision requirements.
-        # Keep this lightweight: a single anchor `owns` check to mirror common EU5 formable style
-        # without over-constraining broad region/area formables.
+        # Keep allow lightweight and rely on EU5 scope+fraction mechanics for ownership gating.
         allow_lines: list[str] = []
-
-        def _location_in_scope(loc_key: str) -> bool:
-            if not scope_type or not scope_values:
-                return False
-            if scope_type == "locations":
-                return loc_key in scope_values
-            province = location_to_province.get(loc_key)
-            if scope_type == "provinces":
-                return isinstance(province, str) and province in scope_values
-            area = location_to_area.get(loc_key)
-            if scope_type == "areas":
-                return isinstance(area, str) and area in scope_values
-            if scope_type == "regions":
-                region = area_to_region.get(area) if isinstance(area, str) else None
-                return isinstance(region, str) and region in scope_values
-            return False
-
-        anchor_loc: str | None = None
-        extracted_location_keys = [
-            key
-            for key in (id_to_key.get(pid) for pid in required_location_ids)
-            if isinstance(key, str)
-        ]
-
-        if scope_type == "locations" and scope_values:
-            if len(scope_values) <= 2:
-                for loc in scope_values:
-                    allow_lines.append(f"owns = location:{loc}")
-            else:
-                anchor_loc = scope_values[0]
-        else:
-            # Prefer historical capital of the formable tag when it falls inside selected scope.
-            capital_id = ir_country_capitals.get(tag)
-            if isinstance(capital_id, int):
-                cap_key = id_to_key.get(capital_id)
-                if isinstance(cap_key, str) and _location_in_scope(cap_key):
-                    anchor_loc = cap_key
-            # Fall back to first extracted required location inside selected scope.
-        if anchor_loc is None:
-            for loc in extracted_location_keys:
-                if _location_in_scope(loc):
-                    anchor_loc = loc
-                    break
-        # Final fallback: infer a deterministic anchor from selected scope itself.
-        if anchor_loc is None and scope_values:
-            if scope_type == "provinces":
-                for province in sorted(scope_values):
-                    candidates = province_to_locations.get(province) or []
-                    if candidates:
-                        anchor_loc = sorted(candidates)[0]
-                        break
-            elif scope_type == "areas":
-                for area in sorted(scope_values):
-                    candidates = area_to_locations.get(area) or []
-                    if candidates:
-                        anchor_loc = sorted(candidates)[0]
-                        break
-            elif scope_type == "regions":
-                for region in sorted(scope_values):
-                    candidates = region_to_locations.get(region) or []
-                    if candidates:
-                        anchor_loc = sorted(candidates)[0]
-                        break
-
-        if anchor_loc:
-            allow_lines.append(f"owns = location:{anchor_loc}")
 
         lines = [
             f"level = {level}",
@@ -1608,6 +1528,10 @@ def write_formable_countries(
         blocks.append("")
 
     write_blocks(out_path, blocks)
+    if skipped_unlocalized_tags:
+        print(
+            f"Skipped {skipped_unlocalized_tags} formables with unresolved localisation name (name == tag)."
+        )
 
 
 def write_localisation_files(
@@ -1757,8 +1681,16 @@ def write_localisation_files(
         country_adj_map = {country["tag"]: country["name_adj"] for country in country_data}
         for tag in sorted(formable_data.keys()):
             meta = formable_data.get(tag, {})
-            name = str(meta.get("name") or country_name_map.get(tag) or tag)
-            adj = str(meta.get("adj") or country_adj_map.get(tag) or name)
+            loc_override = formable_localization_overrides.get(tag, {})
+            raw_name = str(meta.get("name") or country_name_map.get(tag) or tag)
+            name = str(loc_override.get("name") or raw_name).strip()
+            if name == tag:
+                continue
+            raw_adj = loc_override.get("adj") or meta.get("adj")
+            if isinstance(raw_adj, str) and raw_adj.strip():
+                adj = raw_adj.strip()
+            else:
+                adj = str(country_adj_map.get(tag) or name)
             formable_lines.append(f'  {tag}: "{_esc_loc(name)}"')
             formable_lines.append(f'  {tag}_ADJ: "{_esc_loc(adj)}"')
             # EU5-style aliases for formable IDs referenced as TAG_f in UI/scripts.

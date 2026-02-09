@@ -7,6 +7,36 @@
 		}
 	}
 	text = {
+		# Prefix-driven formables: use rank prefix + base name (e.g. Greater Aquitania).
+		localization_key = country_name_construction_prefix_name
+		trigger = {
+			OR = {
+				tag = AQ2
+				tag = BTT
+				tag = GAC
+				tag = GMA
+				tag = HBR
+				tag = LES
+				tag = LO2
+				tag = LSM
+				tag = MGG
+				tag = PH2
+				tag = UCI
+			}
+		}
+	}
+	text = {
+		# Non-prefix complex names stay literal.
+		localization_key = country_name_construction_name
+		trigger = {
+			OR = {
+				tag = DL2
+				tag = HPP
+				tag = HSD
+			}
+		}
+	}
+	text = {
 		localization_key = country_name_construction_prefix_rank_of_name_but_map_is_just_prefix_rank
 		trigger = {
 			always = no
@@ -42,17 +72,22 @@
 				AND = {
 					government_type = government_type:monarchy
 					OR = {
+						# Base-derived and I:R formables with explicit monarchy requirements.
 						tag = ODR
 						tag = SEL
 						tag = BPK
 						tag = PRY
 						tag = EGY
+						tag = ALX
 					}
 				}
 				AND = {
 					government_type = government_type:republic
 					OR = {
 						tag = DEL
+						tag = ACL
+						tag = DLA
+						tag = HLA
 					}
 				}
 				AND = {
