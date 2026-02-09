@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from PIL import Image, UnidentifiedImageError
+from PIL import Image, ImageFile, UnidentifiedImageError
 
 from .paths import iter_ir_files, iu_coa_gfx, mod_root
 from .write_data import print_written
@@ -68,25 +68,36 @@ def convert_images(
 
         out_path = output_dir / (path.stem + ".dds")
         try:
-            with Image.open(path) as img:
-                img = img.convert("RGBA")
+            try:
+                with Image.open(path) as img:
+                    img = img.convert("RGBA")
+            except (UnidentifiedImageError, OSError):
+                # Some workshop PNG files are malformed/truncated but still
+                # decodable when truncated-image support is enabled.
+                previous_setting = ImageFile.LOAD_TRUNCATED_IMAGES
+                ImageFile.LOAD_TRUNCATED_IMAGES = True
+                try:
+                    with Image.open(path) as img:
+                        img = img.convert("RGBA")
+                finally:
+                    ImageFile.LOAD_TRUNCATED_IMAGES = previous_setting
 
-                if colour_shift:
-                    img = remap_ir_colored_emblem_palette(img, tolerance)
+            if colour_shift:
+                img = remap_ir_colored_emblem_palette(img, tolerance)
 
-                should_stretch = stretch
-                if stretch_predicate is not None:
-                    should_stretch = bool(stretch_predicate(path))
+            should_stretch = stretch
+            if stretch_predicate is not None:
+                should_stretch = bool(stretch_predicate(path))
 
-                if should_stretch:
-                    resized = img.resize(size, Image.LANCZOS)
-                else:
-                    resized = Image.new("RGBA", size, (0, 0, 0, 0))
-                    img.thumbnail(size, Image.LANCZOS)
+            if should_stretch:
+                resized = img.resize(size, Image.LANCZOS)
+            else:
+                resized = Image.new("RGBA", size, (0, 0, 0, 0))
+                img.thumbnail(size, Image.LANCZOS)
 
-                    x = (size[0] - img.width) // 2
-                    y = (size[1] - img.height) // 2
-                    resized.paste(img, (x, y))
+                x = (size[0] - img.width) // 2
+                y = (size[1] - img.height) // 2
+                resized.paste(img, (x, y))
         except (UnidentifiedImageError, OSError) as err:
             # Some workshop texture files are malformed; emit a transparent DDS
             # placeholder so downstream script references are still valid.
@@ -117,6 +128,10 @@ def port_coa_gfx():
         # Border and region-coa emblems are designed to reach the edges.
         return path.stem.startswith("ce_border_") or path.stem.startswith("cr_")
 
+    def is_region_textured_emblem(path: Path) -> bool:
+        # I:R "cr_" textured emblems are authored as full-frame region assets.
+        return path.stem.startswith("cr_")
+
     convert_images(
         colored_emblems,
         out_colored_emblems,
@@ -125,4 +140,9 @@ def port_coa_gfx():
         colour_shift=True,
     )
     convert_images(patterns, out_patterns, stretch=True)
-    convert_images(textured_emblems, out_textured_emblems, stretch=False)
+    convert_images(
+        textured_emblems,
+        out_textured_emblems,
+        stretch=False,
+        stretch_predicate=is_region_textured_emblem,
+    )
