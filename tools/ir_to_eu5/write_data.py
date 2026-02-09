@@ -24,7 +24,6 @@ from .data import (
 from .output_text import (
     convert_color,
     convert_tree_to_blocks,
-    make_block,
     print_written,
     write_blocks,
 )
@@ -261,20 +260,7 @@ def write_language_data_full(culture_data: list) -> None:
         "#           AUTO-GENERATE OR OVERWRITE.                      #\n"
         "# =========================================================== #\n\n"
     )
-    blocks = convert_tree_to_blocks(out_tree)
-    content = [header]
-    for block in blocks:
-        if isinstance(block, tuple) and len(block) == 2:
-            tag, lines = block
-            content.append(make_block(tag, lines, indent_level=0, indent_str="    "))
-            content.append("\n")
-        else:
-            content.append(str(block))
-            if not str(block).endswith("\n"):
-                content.append("\n")
-            content.append("\n")
-    out_path.write_text("".join(content), encoding="utf-8-sig")
-    print_written("file", out_path)
+    write_blocks(out_path, out_tree, encoding="utf-8-sig", header=header)
 
 def _existing_block_map(path: Path) -> dict[str, _pydt.Tree]:
     return {}
@@ -1512,6 +1498,21 @@ def write_localisation_files(
         )
         print_written("file", path)
 
+    def _set_tag_fields(
+        entries: dict[str, str],
+        tag: object,
+        *,
+        name: object | None = None,
+        adj: object | None = None,
+        desc: object | None = None,
+    ) -> None:
+        if name is not None:
+            _set_once(entries, tag, name)
+        if adj is not None:
+            _set_once(entries, f"{tag}_ADJ", adj)
+        if desc is not None:
+            _set_once(entries, f"{tag}_desc", desc)
+
     culture_entries: dict[str, str] = {}
     for group in culture_data:
         _set_once(culture_entries, group["tag"], group["name"])
@@ -1523,17 +1524,23 @@ def write_localisation_files(
     for religion in religion_data:
         religion_tag = religion["tag"]
         religion_name = religion["name"]
-        _set_once(religion_entries, religion_tag, religion_name)
-        _set_once(religion_entries, f"{religion_tag}_ADJ", religion_name)
-        _set_once(religion_entries, f"{religion_tag}_desc", religion["name_desc"])
+        _set_tag_fields(
+            religion_entries,
+            religion_tag,
+            name=religion_name,
+            adj=religion_name,
+            desc=religion["name_desc"],
+        )
     for group_tag, group_name in RELIGION_GROUP_NAMES.items():
         label = f"{group_name} Group"
-        _set_once(religion_entries, group_tag, label)
-        _set_once(religion_entries, f"{group_tag}_ADJ", label)
-        _set_once(religion_entries, f"{group_tag}_desc", label)
-    _set_once(religion_entries, "ir_unknown_group", "Unknown Group")
-    _set_once(religion_entries, "ir_unknown_group_ADJ", "Unknown Group")
-    _set_once(religion_entries, "ir_unknown_group_desc", "Fallback group for unmapped religions")
+        _set_tag_fields(religion_entries, group_tag, name=label, adj=label, desc=label)
+    _set_tag_fields(
+        religion_entries,
+        "ir_unknown_group",
+        name="Unknown Group",
+        adj="Unknown Group",
+        desc="Fallback group for unmapped religions",
+    )
 
     language_entries: dict[str, str] = {}
     language_ids = sorted(_collect_block_ids(iu_languages / "ir_languages.txt"))
@@ -1547,8 +1554,9 @@ def write_localisation_files(
 
     country_entries: dict[str, str] = {}
     for country in country_data:
-        _set_once(country_entries, country["tag"], country["name"])
-        _set_once(country_entries, f'{country["tag"]}_ADJ', country["name_adj"])
+        _set_tag_fields(
+            country_entries, country["tag"], name=country["name"], adj=country["name_adj"]
+        )
 
     formable_entries: dict[str, str] = {}
     formable_desc_entries: dict[str, str] = {}
@@ -1576,8 +1584,7 @@ def write_localisation_files(
             else:
                 adj = str(country_adj_map.get(output_tag) or country_adj_map.get(tag) or name)
 
-            _set_once(formable_entries, output_tag, name)
-            _set_once(formable_entries, f"{output_tag}_ADJ", adj)
+            _set_tag_fields(formable_entries, output_tag, name=name, adj=adj)
             _set_once(formable_entries, f"{output_tag}_f", name)
             _set_once(formable_entries, f"{output_tag}_f_ADJ", adj)
 
@@ -1603,19 +1610,26 @@ def write_localisation_files(
         if not deity_tag:
             continue
         name = deity.get("name") or deity_tag
-        _set_once(god_entries, deity_tag, name)
+        _set_tag_fields(god_entries, deity_tag, name=name)
         _set_once(god_entries, f"worship_{deity_tag}", name)
 
-    _write_loc(iu_localisation / "ir_cultures_l_english.yml", culture_entries)
-    _write_loc(iu_localisation / "ir_religions_l_english.yml", religion_entries)
-    _write_loc(iu_localisation / "cultural_and_languages_l_english.yml", language_entries)
-    _write_loc(iu_localisation / "ir_countries_l_english.yml", country_entries)
-    _write_loc(iu_localisation / "ir_formables_l_english.yml", formable_entries)
+    localisation_outputs: list[tuple[Path, dict[str, str]]] = [
+        (iu_localisation / "ir_cultures_l_english.yml", culture_entries),
+        (iu_localisation / "ir_religions_l_english.yml", religion_entries),
+        (iu_localisation / "cultural_and_languages_l_english.yml", language_entries),
+        (iu_localisation / "ir_countries_l_english.yml", country_entries),
+        (iu_localisation / "ir_formables_l_english.yml", formable_entries),
+    ]
+    for out_path, entries in localisation_outputs:
+        _write_loc(out_path, entries)
     if formable_desc_entries:
         _write_loc(iu_localisation / "ir_formable_countries_l_english.yml", formable_desc_entries)
-    _write_loc(iu_localisation / "ir_characters_l_english.yml", character_entries)
-    _write_loc(iu_localisation / "ir_dynasties_l_english.yml", dynasty_entries)
-    _write_loc(iu_localisation / "ir_gods_l_english.yml", god_entries)
+    for out_path, entries in (
+        (iu_localisation / "ir_characters_l_english.yml", character_entries),
+        (iu_localisation / "ir_dynasties_l_english.yml", dynasty_entries),
+        (iu_localisation / "ir_gods_l_english.yml", god_entries),
+    ):
+        _write_loc(out_path, entries)
 
 def write_coa_file(coa_data: _pydt.Tree):
     write_blocks(iu_prescripted_coa, coa_data, encoding="utf-8")
@@ -1637,10 +1651,7 @@ def write_coa_template_behaviour(
     template_lists_dir.mkdir(parents=True, exist_ok=True)
     for name, content in template_list_files.items():
         out_path = template_lists_dir / name
-        with out_path.open("w", encoding="utf-8") as f:
-            f.write(AUTO_GENERATED_HEADER)
-            f.write(content.rstrip() + "\n")
-        print_written("file", out_path)
+        write_blocks(out_path, content.rstrip(), encoding="utf-8")
 
     # Remove stale generated files when no content is produced for them.
     for stale_name in ("country_color_lists.txt",):

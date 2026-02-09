@@ -326,6 +326,10 @@ def extract_start_data(file_name, root_key, sub_key=None):
     return data.to_python()
 
 
+def _ir_countries_tree() -> _pydt.Tree:
+    return parse_tree(ir_default)["country"]["countries"]
+
+
 def extract_ir_country_locations():
     """Return mapping of country tag -> list of province IDs from IR own_control_core."""
     def _collect_ids(value: Any, out: list[int]) -> None:
@@ -343,8 +347,7 @@ def extract_ir_country_locations():
                 _collect_ids(k, out)
                 _collect_ids(v, out)
 
-    tree = parse_tree(ir_default)
-    countries = tree["country"]["countries"]
+    countries = _ir_countries_tree()
     result: dict[str, list[int]] = {}
 
     for tag, data in countries.items():
@@ -366,8 +369,7 @@ def extract_ir_country_locations():
 
 def extract_ir_country_capitals() -> dict[str, int]:
     """Return mapping of country tag -> capital province ID from IR 00_default."""
-    tree = parse_tree(ir_default)
-    countries = tree["country"]["countries"]
+    countries = _ir_countries_tree()
     result: dict[str, int] = {}
 
     for tag, data in countries.items():

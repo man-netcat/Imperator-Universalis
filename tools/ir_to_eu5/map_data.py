@@ -26,198 +26,21 @@ from .paths import (
     iu_setup_start,
     mod_root,
 )
+from .data import (
+    IR_BUILDING_MAP_OVERRIDES,
+    IR_CLIMATE_TO_EU5_CLIMATE,
+    IR_GOODS_TO_EU5_GOODS,
+    IR_GOODS_WEIGHT_OVERRIDES,
+    IR_GROUP_TOWN_SETUPS,
+    IR_TERRAIN_TO_TOPOGRAPHY,
+    IR_TERRAIN_TO_VEGETATION,
+    MEDITERRANEAN_COASTAL_AREAS,
+    PORT_SEAZONE_OVERRIDES,
+    continent_map,
+    superregion_map,
+)
 from .output_text import print_written, write_blocks
 
-# ---------------- Static Mappings ---------------- #
-
-continent_map = {
-    "europe": [
-        "western_europe",
-        "eastern_europe",
-    ],
-    "asia": [
-        "middle_east",
-        "south_asia",
-        "central_asia",
-    ],
-    "africa": [
-        "north_africa",
-        "east_africa",
-    ],
-}
-
-# Keep I:R areas/regions intact; only hardcode EU5-style higher-tier keys above them.
-superregion_map = {
-    "western_europe": {
-        "italy_region": [
-            "central_italy_region",
-            "magna_graecia_region",
-            "cisalpine_gaul_region",
-            "mediterranean_region",
-        ],
-        "north_german_region": [
-            "belgica_region",
-            "germania_region",
-        ],
-        "south_german_region": [
-            "germania_superior_region",
-            "rhaetia_region",
-            "bohemia_area",
-        ],
-        "france_region": [
-            "transalpine_gaul_region",
-            "central_gaul_region",
-            "armorica_region",
-            "aquitaine_region",
-        ],
-        "iberia_region": [
-            "lusitania_region",
-            "tarraconensis_region",
-            "baetica_region",
-            "contestania_region",
-            "gallaecia_region",
-            "western_mediterranean_river_region",
-        ],
-        "great_britain_region": [
-            "britain_region",
-            "caledonia_region",
-        ],
-        "scandinavian_region": [
-            "scandinavia_region",
-            "baltic_sea_region",
-            "north_sea_river_region",
-        ],
-        "north_atlantic_islands_region": [
-            "atlantic_region",
-            "northern_atlantic_river_region",
-            "southern_atlantic_river_region",
-        ],
-    },
-    "eastern_europe": {
-        "balkan_region": [
-            "greece_region",
-            "macedonia_region",
-            "illyria_region",
-            "thrace_region",
-            "moesia_region",
-            "moesia_s_region",
-        ],
-        "carpathia_region": [
-            "dacia_region",
-            "pannonia_region",
-        ],
-        "baltic_region": [
-            "vistulia_region",
-            "venedia_region",
-            "hyperborea_region",
-        ],
-        "steppes_region": [
-            "sarmatia_europea_region",
-            "borysthenia_region",
-            "black_sea_river_region",
-            "taurica_region",
-            "scythia_region",
-            "don_river_region",
-        ],
-        "caucasus_region": [
-            "armenia_region",
-            "colchis_region",
-            "albania_region",
-        ],
-    },
-    "middle_east": {
-        "anatolia_region": [
-            "asia_region",
-            "bithynia_region",
-            "galatia_region",
-            "cappadocia_region",
-            "cappadocia_pontica_region",
-            "cilicia_region",
-            "pontus_region",
-            "cilician_river_region",
-        ],
-        "persia_region": [
-            "gedrosia_region",
-            "persis_region",
-            "media_region",
-            "bactriana_region",
-            "ariana_region",
-        ],
-        "arabia_region": [
-            "arabia_region",
-            "arabia_felix_region",
-            "persian_gulf_region",
-            "red_sea_region",
-        ],
-        "crescent_region": [
-            "assyria_region",
-            "mesopotamia_region",
-            "mesopotamia_river_region",
-            "syria_region",
-            "palestine_region",
-            "eastern_mediterranean_river_region",
-        ],
-    },
-    "south_asia": {
-        "hindustan_region": [
-            "gandhara_region",
-            "maru_region",
-            "avanti_region",
-            "madhyadesa_region",
-            "indo_gangetic_region",
-        ],
-        "deccan_region": [
-            "vindhyaprstha_region",
-            "dravida_region",
-            "aparanta_region",
-            "karnata_region",
-            "southern_india_river_region",
-            "western_india_river_region",
-        ],
-        "bengal_region": [
-            "pracya_region",
-            "indian_ocean_region",
-            "burma_region",
-        ],
-    },
-    "central_asia": {
-        "tibet_region": [
-            "tibet_region",
-        ],
-        "khorasan_region": [
-            "himalayan_region",
-            "sogdiana_region",
-            "central_asian_steppes_region",
-            "sarmatia_asiatica_region",
-            "sakia_region",
-            "parthia_region",
-        ],
-    },
-    "north_africa": {
-        "maghreb_region": [
-            "numidia_region",
-            "mauretainia_region",
-            "africa_region",
-            "atlas_region",
-        ],
-        "egypt_region": [
-            "cyrenaica_region",
-            "fezzan_region",
-            "upper_egypt_region",
-            "lower_egypt_region",
-            "nile_region",
-        ],
-    },
-    "east_africa": {
-        "nubia_region": [
-            "nubia_region",
-            "lower_nubia_region",
-        ],
-        "ethiopia_region": [
-            "punt_region",
-        ],
-    },
-}
 
 
 def to_province_key(key: str) -> str:
@@ -265,342 +88,8 @@ def normalize_superregion_map(raw: dict) -> dict:
     return normalized
 
 
-IR_GROUP_TOWN_SETUPS = {
-    "ir_hellenic_g": {
-        "city": "greek_city_port",
-        "city_port": "greek_city_port",
-        "town": "greek_town",
-        "town_port": "greek_town_port",
-    },
-    "ir_latin_g": {
-        "city": "italian_city",
-        "city_port": "italian_coastal_city",
-        "town": "italian_town",
-        "town_port": "italian_coastal_town",
-    },
-    "ir_iberia_g": {
-        "city": "iberian_city",
-        "city_port": "iberian_city_port",
-        "town": "iberian_town",
-        "town_port": "iberian_town_port",
-    },
-    "ir_celt_iberia_g": {
-        "city": "iberian_city",
-        "city_port": "iberian_city_port",
-        "town": "iberian_town",
-        "town_port": "iberian_town_port",
-    },
-    "ir_germanic_g": {
-        "city": "german_city",
-        "city_port": "german_coastal_city",
-        "town": "german_town",
-        "town_port": "german_coastal_town",
-    },
-    "ir_britannic_g": {
-        "city": "british_town",
-        "city_port": "british_town_port",
-        "town": "british_town",
-        "town_port": "british_town_port",
-    },
-    "ir_gaelic_g": {
-        "city": "british_town",
-        "city_port": "british_town_port",
-        "town": "british_town",
-        "town_port": "british_town_port",
-    },
-    "ir_gallic_g": {"city": "french_city", "town": "french_town"},
-    "ir_belgae_group_g": {
-        "city": "lowlands_city",
-        "city_port": "lowlands_coastal_city",
-        "town": "lowlands_town",
-        "town_port": "lowlands_costal_town",
-    },
-    "ir_celto_pannonian_group_g": {
-        "city": "carpathian_town",
-        "town": "carpathian_town",
-    },
-    "ir_dacia_group_g": {"city": "carpathian_town", "town": "carpathian_town"},
-    "ir_illyrian_group_g": {"city": "balkan_town", "town": "balkan_town"},
-    "ir_baltic_g": {"city": "baltic_town", "town": "baltic_town"},
-    "ir_scythia_g": {
-        "city": "central_asian_city",
-        "town": "central_asian_town",
-    },
-    "ir_persia_g": {
-        "city": "central_asian_city",
-        "town": "central_asian_town",
-    },
-    "ir_bactrian_g": {
-        "city": "central_asian_city",
-        "town": "central_asian_town",
-    },
-    "ir_aryan_g": {
-        "city": "indian_city",
-        "city_port": "indian_coastal_city",
-        "town": "indian_town",
-    },
-    "ir_pracyan_g": {
-        "city": "indian_city",
-        "city_port": "indian_coastal_city",
-        "town": "indian_town",
-    },
-    "ir_indian_g": {
-        "city": "indian_city",
-        "city_port": "indian_coastal_city",
-        "town": "indian_town",
-    },
-    "ir_tibetan_g": {
-        "city": "central_asian_city",
-        "town": "central_asian_town",
-    },
-    "ir_anatolian_g": {
-        "city": "anatolian_city",
-        "town": "anatolian_town",
-    },
-    "ir_caucasian_g": {
-        "city": "central_asian_city",
-        "town": "central_asian_town",
-    },
-    "ir_east_levantine_g": {
-        "city": "levant_city",
-        "town": "levant_town",
-    },
-    "ir_west_levantine_g": {
-        "city": "levant_city",
-        "town": "levant_town",
-    },
-    "ir_south_levantine_g": {
-        "city": "levant_city",
-        "town": "levant_town",
-    },
-    "ir_north_african_g": {
-        "city": "egyptian_city",
-        "city_port": "maghreb_coastal_city",
-        "town": "maghreb_town",
-        "town_port": "maghreb_coastal_town",
-    },
-    "ir_numidian_g": {
-        "city": "maghreb_city",
-        "city_port": "maghreb_coastal_city",
-        "town": "maghreb_town",
-        "town_port": "maghreb_coastal_town",
-    },
-    "ir_meroitic_group_g": {
-        "city": "east_african_town",
-        "city_port": "east_african_coastal_town",
-        "town": "east_african_town",
-        "town_port": "east_african_coastal_town",
-    },
-    "ir_aksumite_group_g": {
-        "city": "east_african_town",
-        "city_port": "east_african_coastal_town",
-        "town": "east_african_town",
-        "town_port": "east_african_coastal_town",
-    },
-    "ir_proto_european_g": {"city": "french_city", "town": "french_town"},
-}
-
-# Map I:R building keys to EU5 building types.
-# Defaults to identity, with optional overrides for renamed EU5 types.
-IR_BUILDING_MAP_OVERRIDES = {
-    # Map I:R buildings to EU5 base buildings to preserve base functionality.
-    "fortress_building": "castle",
-    "fortress_ramparts_building": "bastion",
-    "hill_fort": "stockade",
-    "port_building": "dock",
-    "barracks_building": "barracks",
-    "military_building": "armory",
-    "foundry_building": "mason",
-    "workshop_building": "tools_workshop",
-    "commerce_building": "marketplace",
-    "forum_building": "merchants_quarters",
-    "court_building": "counting_house",
-    "town_hall_building": "minting_office",
-    "temple_building": "temple",
-    "library_building": "library",
-    "academy_building": "university",
-    "theathre_building": "theater",
-    "aqueduct_building": "construction_center",
-    "population_building": "granary",
-    "latifundia_building": "farming_village",
-    "basic_settlement_infratructure_building": "market_village",
-    "slave_mine_building": "slave_market",
-    "local_forum_building": "bailiff",
-}
-
-# Map I:R trade_goods to EU5 goods keys used in location_templates raw_material.
-IR_GOODS_TO_EU5_GOODS = {
-    "grain": ("wheat", "rice", "maize"),
-    "vegetables": ("wheat", "rice", "maize"),
-    "wood": ("lumber",),
-    "base_metals": ("iron", "copper", "lead", "tin"),
-    "precious_metals": ("goods_gold", "silver"),
-    "marble": ("stone",),
-    "olive": ("wine", "wheat"),
-    "papyrus": ("paper", "fiber_crops", "cloth"),
-    "elephants": ("ivory",),
-    "gemstones": ("gems",),
-    "spices": ("incense", "tea"),
-    "silk": ("silk",),
-    "incense": ("incense",),
-    "fish": ("fish",),
-    "salt": ("salt",),
-    "horses": ("horses",),
-    "steppe_horses": ("horses",),
-    "wine": ("wine",),
-    "amber": ("amber",),
-    "stone": ("stone",),
-    "glass": ("glass",),
-    "cloth": ("cloth", "fiber_crops"),
-    "dye": ("dyes",),
-    "fur": ("fur",),
-    "wild_game": ("wild_game",),
-    "cattle": ("wool",),
-    "leather": ("fur", "wool"),
-    "hemp": ("fiber_crops",),
-    "woad": ("dyes",),
-    "honey": ("wheat",),
-    "dates": ("wheat",),
-    "earthware": ("clay",),
-    "camel": ("horses",),
-}
-
-# Per-I:R-good candidate weight overrides (higher = more likely).
-IR_GOODS_WEIGHT_OVERRIDES = {
-    "grain": {
-        "wheat": 1.0,
-        "rice": 0.6,
-        "maize": 0.15,
-    },
-    "vegetables": {
-        "wheat": 1.0,
-        "rice": 0.6,
-        "maize": 0.15,
-    },
-    "base_metals": {
-        "iron": 1.0,
-        "copper": 0.7,
-        "lead": 0.4,
-        "tin": 0.2,
-    },
-    "precious_metals": {
-        "goods_gold": 0.25,
-        "silver": 1.0,
-    },
-    "olive": {
-        "wine": 0.8,
-        "wheat": 0.3,
-    },
-    "papyrus": {
-        "paper": 0.3,
-        "fiber_crops": 1.0,
-        "cloth": 0.6,
-    },
-    "spices": {
-        "incense": 1.0,
-        "tea": 0.2,
-    },
-    "cloth": {
-        "cloth": 1.0,
-        "fiber_crops": 0.5,
-    },
-    "leather": {
-        "fur": 0.4,
-        "wool": 1.0,
-    },
-}
-
-# Targeted overrides from known EU5/I:R data mismatches.
-# - `calacte` port works in-game against `mare_tyrrenum` with current I:U map geometry.
-PORT_SEAZONE_OVERRIDES = {
-    "calacte": "mare_tyrrenum",
-}
-
 # Default value for coastal locations if no I:R factors are found.
 DEFAULT_COASTAL_NATURAL_HARBOR_SUITABILITY = "0.00"
-
-# Map I:R terrain keys to EU5 topography and vegetation.
-IR_TERRAIN_TO_TOPOGRAPHY = {
-    "plains": "flatland",
-    "farmland": "flatland",
-    "forest": "flatland",
-    "jungle": "flatland",
-    "desert": "flatland",
-    "hills": "hills",
-    "mountain": "mountains",
-    "marsh": "wetlands",
-    "coastal_terrain": "flatland",
-    "riverine_terrain": "flatland",
-    "impassable_terrain": "mountains",
-}
-
-IR_TERRAIN_TO_VEGETATION = {
-    "plains": "grasslands",
-    "farmland": "farmland",
-    "forest": "forest",
-    "jungle": "jungle",
-    "desert": "desert",
-    "hills": "woods",
-    "mountain": "sparse",
-    "marsh": "woods",
-    "coastal_terrain": "grasslands",
-    "riverine_terrain": "grasslands",
-    "impassable_terrain": "sparse",
-}
-
-# Map I:R climate buckets from map_data/climate.txt to EU5 location climate keys.
-IR_CLIMATE_TO_EU5_CLIMATE = {
-    "mild_winter": "oceanic",
-    "normal_winter": "continental",
-    "severe_winter": "arctic",
-    "arid": "arid",
-}
-
-# Coastal provinces in these I:R areas are good candidates for EU5 mediterranean climate.
-MEDITERRANEAN_COASTAL_AREAS_RAW = {
-    "central_italy_region",
-    "magna_graecia_region",
-    "cisalpine_gaul_region",
-    "transalpine_gaul_region",
-    "central_gaul_region",
-    "armorica_region",
-    "aquitaine_region",
-    "lusitania_region",
-    "tarraconensis_region",
-    "baetica_region",
-    "contestania_region",
-    "gallaecia_region",
-    "greece_region",
-    "macedonia_region",
-    "illyria_region",
-    "thrace_region",
-    "moesia_region",
-    "moesia_s_region",
-    "taurica_region",
-    "asia_region",
-    "bithynia_region",
-    "galatia_region",
-    "cappadocia_pontica_region",
-    "cilicia_region",
-    "pontus_region",
-    "armenia_region",
-    "colchis_region",
-    "albania_region",
-    "arabia_region",
-    "arabia_felix_region",
-    "assyria_region",
-    "mesopotamia_region",
-    "syria_region",
-    "palestine_region",
-    "numidia_region",
-    "mauretainia_region",
-    "africa_region",
-    "cyrenaica_region",
-    "upper_egypt_region",
-    "lower_egypt_region",
-}
-MEDITERRANEAN_COASTAL_AREAS = {to_area_key(k) for k in MEDITERRANEAN_COASTAL_AREAS_RAW}
-
 
 # ---------------- Utility Functions ---------------- #
 
@@ -699,6 +188,261 @@ def _sync_world_extents(defines_path: Path, size: tuple[int, int]) -> None:
     defines_path.parent.mkdir(parents=True, exist_ok=True)
     defines_path.write_text(text, encoding="utf-8-sig")
     print_written("file", defines_path)
+
+
+def _write_text_file(path: Path, text: str, encoding: str = "utf-8-sig") -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(text, encoding=encoding)
+    print_written("file", path)
+
+
+def _write_assignment_block(
+    path: Path, block_name: str, lines: list[str], encoding: str = "utf-8"
+) -> None:
+    _write_text_file(path, f"{block_name} = {{\n" + "\n".join(lines) + "\n}\n", encoding=encoding)
+
+
+def _copy_file_if_exists(src: Path, dst: Path) -> None:
+    if not src.exists():
+        return
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(src, dst)
+    print_written("file", dst)
+
+
+def _render_map_object_locator(name: str, layer: str) -> str:
+    return (
+        "game_object_locator={\n"
+        f"\tname=\"{name}\"\n"
+        "\tclamp_to_water_level=no\n"
+        "\trender_under_water=no\n"
+        "\tgenerated_content=no\n"
+        f"\tlayer=\"{layer}\"\n"
+        "\tinstances={}\n"
+        "}\n"
+    )
+
+
+def _write_locations_block(
+    out_path: Path,
+    location_blocks: list[tuple[str, list[str]]],
+    *,
+    encoding: str = "utf-8",
+) -> None:
+    write_blocks(out_path, [("locations", location_blocks)], encoding=encoding)
+
+
+def _filter_tree_entries_by_tags(
+    tree: _pydt.Tree,
+    allowed_tags: set[str],
+    *,
+    root_key: str | None = None,
+) -> _pydt.Tree:
+    if root_key is None:
+        source = tree
+        container_key = None
+    else:
+        source = tree[root_key] if root_key in tree else _pydt.Tree()
+        container_key = root_key
+
+    filtered_source = _pydt.Tree()
+    for tag, data in source.items():
+        if tag in allowed_tags:
+            filtered_source[tag] = data
+
+    if container_key is None:
+        return filtered_source
+
+    out = _pydt.Tree()
+    out[container_key] = filtered_source
+    return out
+
+
+def _write_town_setups_file(out_path: Path, setup_definitions: dict[str, dict[str, int]]) -> None:
+    lines = [
+        "# Auto-generated from Imperator buildings. Do not edit manually.",
+        "",
+    ]
+    for setup_name in sorted(setup_definitions.keys()):
+        lines.append(f"{setup_name} = {{")
+        for building_key, level in sorted(setup_definitions[setup_name].items()):
+            lines.append(f"    {building_key} = {level}")
+        lines.append("}")
+        lines.append("")
+    _write_text_file(out_path, "\n".join(lines).rstrip() + "\n", encoding="utf-8")
+
+
+def _write_map_object_override_files() -> None:
+    locators_dir = mod_root / "in_game" / "gfx" / "map" / "map_objects"
+    locators_dir.mkdir(parents=True, exist_ok=True)
+    locator_defs = {
+        "generated_map_object_locators_city.txt": ("city", "cities_layer"),
+        "generated_map_object_locators_combat.txt": ("combat", "unit_layer"),
+        "generated_map_object_locators_unit_stack.txt": ("unit_stack", "unit_layer"),
+        "generated_map_object_locators_vfx.txt": ("vfx", "vfx_layer"),
+    }
+    for filename, (name, layer) in locator_defs.items():
+        _write_text_file(
+            locators_dir / filename,
+            _render_map_object_locator(name, layer),
+            encoding="utf-8",
+        )
+
+    locators_override_path = (
+        mod_root / "in_game" / "gfx" / "map" / "locators_override" / "locators_override.txt"
+    )
+    _write_text_file(
+        locators_override_path,
+        "# Auto-generated empty override to avoid invalid province references.\n",
+        encoding="utf-8",
+    )
+
+    map_objects_dir = mod_root / "in_game" / "gfx" / "map" / "map_objects"
+    map_objects_dir.mkdir(parents=True, exist_ok=True)
+    dynamic_objects_path = map_objects_dir / "dynamic_game_objects.txt"
+    _write_text_file(
+        dynamic_objects_path,
+        "dynamic_game_object = {\n"
+        "\tname = \"desert_sandstorm\"\n"
+        "\tschematic_name = { \"sand_storm_01_small_schematic\" \"sand_storm_01_medium_schematic\" \"sand_storm_01_large_schematic\" }\n"
+        "\tentity_province_size_thresholds = { 1100.0 2100.0 }\n"
+        "\ttemporary = yes\n"
+        "}\n\n"
+        "dynamic_game_object = {\n"
+        "\tname = \"snowstorm\"\n"
+        "\tschematic_name = { \"snow_storm_01_small_schematic\" \"snow_storm_01_medium_schematic\" \"snow_storm_01_large_schematic\" }\n"
+        "\tentity_province_size_thresholds = { 2000.0 4000.0 }\n"
+        "\ttemporary = yes\n"
+        "}\n\n"
+        "dynamic_game_object = {\n"
+        "\tname = \"seastorm\"\n"
+        "\tschematic_name = { \"sea_storm_01_small_schematic\" \"sea_storm_01_medium_schematic\" \"sea_storm_01_large_schematic\" }\n"
+        "\tentity_province_size_thresholds = { 7000.0 13500.0 }\n"
+        "\ttemporary = yes\n"
+        "}\n\n"
+        "dynamic_game_object = {\n"
+        "\tname = \"volcano_eruption\"\n"
+        "\tschematic_name = \"volcano_eruption_schematic\"\n"
+        "\ttemporary = yes\n"
+        "}\n\n"
+        "dynamic_game_object = {\n"
+        "\tname = \"volcano_eruption_test\"\n"
+        "\tschematic_name = \"volcano_eruption_schematic\"\n"
+        "\ttemporary = yes\n"
+        "}\n",
+        encoding="utf-8",
+    )
+
+    volcano_locator = map_objects_dir / "generated_map_object_locators_volcano_eruption.txt"
+    _write_text_file(
+        volcano_locator,
+        _render_map_object_locator("volcano_eruption", "vfx_layer"),
+        encoding="utf-8",
+    )
+
+
+def _filter_exploration_preferences_text(
+    lines: list[str],
+    *,
+    area_keys: set[str],
+    region_keys: set[str],
+    continent_keys: set[str],
+    subcontinent_keys: set[str],
+) -> list[str]:
+    allowed_by_field = {
+        "area": area_keys,
+        "region": region_keys,
+        "continent": continent_keys,
+        "sub_continent": subcontinent_keys,
+    }
+    out: list[str] = []
+    for line in lines:
+        stripped = line.strip()
+        keep = True
+        for field, allowed in allowed_by_field.items():
+            if stripped.startswith(field) and "=" in stripped:
+                _, value = stripped.split("=", 1)
+                key = value.strip().split()[0]
+                if key not in allowed:
+                    keep = False
+                break
+        if keep:
+            out.append(line)
+    return out
+
+
+def _patch_script_file_references(
+    src_path: Path,
+    dst_path: Path,
+    *,
+    location_keys: set[str],
+    region_keys: set[str],
+    continent_keys: set[str],
+    subcontinent_keys: set[str],
+    fallback_location: str | None,
+    fallback_region: str | None,
+    fallback_continent: str | None,
+    fallback_subcontinent: str | None,
+) -> None:
+    location_re = re.compile(r"(\blocation_key\s*=\s*)([A-Za-z0-9_:]+)")
+    region_re = re.compile(r"(\bregion\s*=\s*)([A-Za-z0-9_:]+)")
+    region_key_re = re.compile(r"(\bregion_key\s*=\s*)([A-Za-z0-9_:]+)")
+    subcontinent_re = re.compile(r"(\bsub_continent\s*=\s*)([A-Za-z0-9_:]+)")
+    continent_re = re.compile(r"(\bcontinent\s*=\s*)([A-Za-z0-9_:]+)")
+
+    def _resolve_known_or_fallback(
+        key: str, known: set[str], fallback: str | None
+    ) -> str:
+        if key in known:
+            return key
+        if ":" in key:
+            tail = key.split(":")[-1]
+            if tail in known:
+                return tail
+        return fallback or key
+
+    changed = False
+    lines: list[str] = []
+    for line in src_path.read_text(encoding="utf-8-sig").splitlines():
+        original = line
+        if fallback_location:
+
+            def repl_loc(m):
+                key = m.group(2)
+                return m.group(1) + (key if key in location_keys else fallback_location)
+
+            line = location_re.sub(repl_loc, line)
+        if fallback_region:
+
+            def repl_region(m):
+                return m.group(1) + _resolve_known_or_fallback(
+                    m.group(2), region_keys, fallback_region
+                )
+
+            line = region_re.sub(repl_region, line)
+            line = region_key_re.sub(repl_region, line)
+        if fallback_subcontinent:
+
+            def repl_subcontinent(m):
+                return m.group(1) + _resolve_known_or_fallback(
+                    m.group(2), subcontinent_keys, fallback_subcontinent
+                )
+
+            line = subcontinent_re.sub(repl_subcontinent, line)
+        if fallback_continent:
+
+            def repl_continent(m):
+                return m.group(1) + _resolve_known_or_fallback(
+                    m.group(2), continent_keys, fallback_continent
+                )
+
+            line = continent_re.sub(repl_continent, line)
+        if line != original:
+            changed = True
+        lines.append(line)
+
+    if changed:
+        _write_text_file(dst_path, "\n".join(lines) + "\n", encoding="utf-8-sig")
 
 
 def _iter_ir_province_files() -> list[Path]:
@@ -1708,13 +1452,17 @@ def _parse_ir_road_pairs() -> list[tuple[int, int]]:
     return pairs
 
 
+def _ir_countries_tree() -> _pydt.Tree:
+    return parse_tree(ir_default)["country"]["countries"]
+
+
 def _ir_capital_ids() -> list[int]:
-    countries = parse_tree(ir_default)["country"]["countries"]
+    countries = _ir_countries_tree()
     return [int(data["capital"]) for data in countries.values() if data["capital"] is not None]
 
 
 def _ir_country_capitals() -> dict[str, int]:
-    countries = parse_tree(ir_default)["country"]["countries"]
+    countries = _ir_countries_tree()
     capitals: dict[str, int] = {}
     for tag, data in countries.items():
         try:
@@ -2587,242 +2335,13 @@ def write_default_map(ir_default_map_data: dict):
     print_written("file", default_map)
 
 
-def port_map_data(default_culture: str | None = None, default_religion: str | None = None):
-    """Parse definitions, write named locations, adjacencies, ports, and check areas."""
-    named_locations = parse_definitions()
-    id_to_key = {prov_id: key for prov_id, key, *_ in named_locations}
-    location_keys = {key for _, key, *_ in named_locations}
-
-    # Named locations file
-    named_path = iu_map_data / "named_locations"
-    named_path.mkdir(parents=True, exist_ok=True)
-    with open(named_path / "00_default.txt", "w", encoding="utf-8-sig") as f:
-        for _, key, r, g, b, _ in named_locations:
-            f.write(f"{key} = {r:02x}{g:02x}{b:02x}\n")
-    print_written("file", named_path / "00_default.txt")
-
-    # ---------------- Reference ID-to-Key File ---------------- #
-    ref_file = Path(__file__).parent / "province_id_to_key.csv"
-    write_csv(
-        ref_file,
-        [{"ID": prov_id, "Key": key} for prov_id, key, *_ in named_locations],
-        fieldnames=["ID", "Key"],
-    )
-
-    # Adjacencies CSV
-    write_csv(
-        iu_map_data / "adjacencies.csv",
-        parse_adjacencies(id_to_key, location_keys)[:-1],
-        ["From", "To", "Type", "Through", "x1", "y1", "x2", "y2", "Comment"],
-    )
-
-    # Ports CSV
-    ports = parse_ports(id_to_key)
-    write_csv(
-        iu_map_data / "ports.csv",
-        ports,
-        ["LandProvince", "SeaZone", "x", "y"],
-    )
-    coastal_land_locations = {
-        row["LandProvince"]
-        for row in ports
-        if isinstance(row.get("LandProvince"), str)
-        and row["LandProvince"]
-        and not row["LandProvince"].startswith("UNKNOWN_")
-    }
-    # Default map categories (for sea zones, rivers, etc.)
-    default_map = build_default_map(id_to_key)
-    volcanoes = {key for key in location_keys if isinstance(key, str) and key.endswith("_volcano")}
-    if volcanoes:
-        default_map.setdefault("volcanoes", set()).update(volcanoes)
-    harbor_suitability_map = build_ir_harbor_suitability(
-        named_locations,
-        location_keys,
-        default_map,
-        coastal_land_locations,
-    )
-
-    # Area validation
-    regions = build_regions(id_to_key)
-    dissolved_river_keys = dissolve_river_regions(regions)
-    location_to_region: dict[str, str] = {}
-    for region_tag, area_map in regions.items():
-        for provinces in area_map.values():
-            if not isinstance(provinces, list):
-                continue
-            for key in provinces:
-                location_to_region.setdefault(key, region_tag)
-    assigned_provinces = {
-        province
-        for area_map in regions.values()
-        for provinces in area_map.values()
-        if isinstance(provinces, list)
-        for province in provinces
-    }
-    inferred_water_regions = assign_unmapped_water_to_regions(
-        regions,
-        location_to_region,
-        assigned_provinces,
-        default_map,
-        named_locations,
-        location_keys,
-        id_to_key,
-    )
-    if inferred_water_regions:
-        assigned_provinces = assigned_provinces | set(inferred_water_regions.keys())
-        print(
-            f"Inferred region membership for {len(inferred_water_regions)} "
-            "unassigned sea/lake locations."
-        )
-    inferred_non_ownable_regions = assign_unmapped_non_ownable_to_regions(
-        regions,
-        location_to_region,
-        assigned_provinces,
-        default_map,
-        named_locations,
-        location_keys,
-    )
-    if inferred_non_ownable_regions:
-        assigned_provinces = assigned_provinces | set(inferred_non_ownable_regions.keys())
-        print(
-            f"Inferred region membership for {len(inferred_non_ownable_regions)} "
-            "non-ownable locations."
-        )
-    inferred_river_regions = assign_unmapped_rivers_to_regions(
-        regions,
-        location_to_region,
-        assigned_provinces,
-        default_map,
-        named_locations,
-        location_keys,
-        dissolved_river_keys,
-    )
-    if inferred_river_regions:
-        assigned_provinces = assigned_provinces | set(inferred_river_regions.keys())
-        print(
-            f"Inferred region membership for {len(inferred_river_regions)} "
-            "river locations."
-        )
-
-    def add_generated_region(region_tag: str, area_tag: str, keys) -> None:
-        nonlocal assigned_provinces
-        unassigned = set(keys) - assigned_provinces
-        if unassigned:
-            regions.setdefault(region_tag, {})[area_tag] = sorted(unassigned)
-            assigned_provinces = assigned_provinces | set(unassigned)
-
-    range_groups = build_default_map_range_groups(
-        id_to_key,
-        {
-            "impassable_terrain",
-            "wasteland",
-            "sea_zones",
-            "lakes",
-            "river_provinces",
-            "uninhabitable",
-            "non_ownable",
-        },
-    )
-
-    def add_generated_region_from_ranges(
-        region_tag: str,
-        area_prefix: str,
-        keys,
-        source_categories: tuple[str, ...],
-    ) -> None:
-        nonlocal assigned_provinces
-        area_index = 1
-        target_keys = set(keys)
-        for source in source_categories:
-            for group in range_groups.get(source, []):
-                group_keys = [
-                    key
-                    for key in group
-                    if key in target_keys and key not in assigned_provinces
-                ]
-                if not group_keys:
-                    continue
-                area_tag = f"{area_prefix}_{area_index:03d}"
-                regions.setdefault(region_tag, {})[area_tag] = group_keys
-                assigned_provinces = assigned_provinces | set(group_keys)
-                area_index += 1
-        leftovers = set(target_keys) - assigned_provinces
-        if leftovers:
-            add_generated_region(region_tag, f"{area_prefix}_misc", leftovers)
-
-    sea_zones = default_map.get("sea_zones", set()) if isinstance(default_map, dict) else set()
-    if sea_zones:
-        add_generated_region_from_ranges(
-            "sea_zones_area",
-            "sea_zones_province",
-            sea_zones,
-            ("sea_zones",),
-        )
-
-    lakes = default_map.get("lakes", set()) if isinstance(default_map, dict) else set()
-    if lakes:
-        add_generated_region_from_ranges(
-            "lakes_area",
-            "lakes_province",
-            lakes,
-            ("lakes",),
-        )
-
-    all_unassigned = set(location_keys) - assigned_provinces
-    if all_unassigned:
-        add_generated_region("unassigned_locations_area", "unassigned_locations_province", all_unassigned)
-    region_keys = set(regions.keys())
-    area_keys = {area for region in regions.values() for area in region.keys()}
-    known_provinces = {
-        province
-        for region in regions.values()
-        for provinces in region.values()
-        if isinstance(provinces, list)
-        for province in provinces
-    }
-    continent_keys = set()
-    if isinstance(continent_map, dict):
-        continent_keys.update(continent_map.keys())
-    normalized_superregion_map = normalize_superregion_map(superregion_map)
-    subcontinent_keys = set(normalized_superregion_map.keys()) if isinstance(normalized_superregion_map, dict) else set()
-    nested = build_full_hierarchy(regions, normalized_superregion_map, continent_map)
-
-    blocks = hierarchy_to_blocks(nested)
-
-    write_blocks(
-        iu_map_data / "definitions.txt",
-        blocks,
-    )
-
-    # --- Exploration template (IR regions/areas/provinces mapping) ---
-    template_path = mod_root / "main_menu" / "setup" / "templates" / "expl_imperator_rome.txt"
-    template_path.parent.mkdir(parents=True, exist_ok=True)
-
-    superregion_keys = sorted(
-        {superregion for sub in normalized_superregion_map.values() for superregion in sub.keys()}
-    )
-    discovered_regions = sorted(superregion_keys)
-    discovered_areas = sorted(region_keys)
-    discovered_provinces = sorted(area_keys)
-
-    with template_path.open("w", encoding="utf-8") as f:
-        f.write("discovered_regions = {\n")
-        for key in discovered_regions:
-            f.write(f"\t{key}\n")
-        f.write("}\n\n")
-
-        f.write("discovered_areas = {\n")
-        for key in discovered_areas:
-            f.write(f"\t{key}\n")
-        f.write("}\n\n")
-
-        f.write("discovered_provinces = {\n")
-        for key in discovered_provinces:
-            f.write(f"\t{key}\n")
-        f.write("}\n")
-
-    print_written("file", template_path)
-
+def _write_map_localisation(
+    named_locations: list[tuple[int, str, int, int, int, str]],
+    regions: dict[str, dict[str, list[str]]],
+    normalized_superregion_map: dict,
+    subcontinent_keys: set[str],
+    continent_keys: set[str],
+) -> None:
     # Localisation: provinces, areas, regions
     loc_lines = ["l_english:"]
 
@@ -2940,8 +2459,17 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     # Write localisation file
     write_blocks(iu_localisation / "ir_map_l_english.yml", loc_lines)
 
-    write_default_map(default_map)
 
+def _write_location_templates(
+    location_keys: set[str],
+    default_map: dict,
+    coastal_land_locations: set[str],
+    location_to_region: dict[str, str],
+    id_to_key: dict[int, str],
+    default_culture: str | None,
+    default_religion: str | None,
+    harbor_suitability_map: dict[str, int],
+) -> None:
     # --- Location templates (only for existing land locations) ---
     location_templates = iu_map_data / "location_templates.txt"
     location_templates.parent.mkdir(parents=True, exist_ok=True)
@@ -3013,6 +2541,13 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
             f.write(f"{key} = {{ {' '.join(parts)} }}\n")
     print_written("file", location_templates)
 
+
+def _apply_map_content_overrides(
+    location_keys: set[str],
+    region_keys: set[str],
+    continent_keys: set[str],
+    subcontinent_keys: set[str],
+) -> None:
     # --- Filter building triggers that reference missing locations ---
     src_building_triggers = (
         eu5_game / "in_game" / "common" / "scripted_triggers" / "building_triggers.txt"
@@ -3055,91 +2590,8 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
                 filtered[tag] = data
             write_blocks(dst_holy_sites / hs_file.name, filtered)
 
-    # --- Empty map object locators to avoid unknown location references ---
-    locators_dir = mod_root / "in_game" / "gfx" / "map" / "map_objects"
-    locators_dir.mkdir(parents=True, exist_ok=True)
-    locator_defs = {
-        "generated_map_object_locators_city.txt": ("city", "cities_layer"),
-        "generated_map_object_locators_combat.txt": ("combat", "unit_layer"),
-        "generated_map_object_locators_unit_stack.txt": ("unit_stack", "unit_layer"),
-        "generated_map_object_locators_vfx.txt": ("vfx", "vfx_layer"),
-    }
-    for filename, (name, layer) in locator_defs.items():
-        out_path = locators_dir / filename
-        with out_path.open("w", encoding="utf-8") as f:
-            f.write(
-                "game_object_locator={\n"
-                f"\tname=\"{name}\"\n"
-                "\tclamp_to_water_level=no\n"
-                "\trender_under_water=no\n"
-                "\tgenerated_content=no\n"
-                f"\tlayer=\"{layer}\"\n"
-                "\tinstances={}\n"
-                "}\n"
-            )
-        print_written("file", out_path)
-
-    # --- Override locators_override to avoid invalid province names ---
-    locators_override_dir = mod_root / "in_game" / "gfx" / "map" / "locators_override"
-    locators_override_dir.mkdir(parents=True, exist_ok=True)
-    locators_override_path = locators_override_dir / "locators_override.txt"
-    locators_override_path.write_text(
-        "# Auto-generated empty override to avoid invalid province references.\n",
-        encoding="utf-8",
-    )
-    print_written("file", locators_override_path)
-
-    # --- Override dynamic_game_objects to remove unknown location references ---
-    map_objects_dir = mod_root / "in_game" / "gfx" / "map" / "map_objects"
-    map_objects_dir.mkdir(parents=True, exist_ok=True)
-    dynamic_objects_path = map_objects_dir / "dynamic_game_objects.txt"
-    dynamic_objects_path.write_text(
-        "dynamic_game_object = {\n"
-        "\tname = \"desert_sandstorm\"\n"
-        "\tschematic_name = { \"sand_storm_01_small_schematic\" \"sand_storm_01_medium_schematic\" \"sand_storm_01_large_schematic\" }\n"
-        "\tentity_province_size_thresholds = { 1100.0 2100.0 }\n"
-        "\ttemporary = yes\n"
-        "}\n\n"
-        "dynamic_game_object = {\n"
-        "\tname = \"snowstorm\"\n"
-        "\tschematic_name = { \"snow_storm_01_small_schematic\" \"snow_storm_01_medium_schematic\" \"snow_storm_01_large_schematic\" }\n"
-        "\tentity_province_size_thresholds = { 2000.0 4000.0 }\n"
-        "\ttemporary = yes\n"
-        "}\n\n"
-        "dynamic_game_object = {\n"
-        "\tname = \"seastorm\"\n"
-        "\tschematic_name = { \"sea_storm_01_small_schematic\" \"sea_storm_01_medium_schematic\" \"sea_storm_01_large_schematic\" }\n"
-        "\tentity_province_size_thresholds = { 7000.0 13500.0 }\n"
-        "\ttemporary = yes\n"
-        "}\n\n"
-        "dynamic_game_object = {\n"
-        "\tname = \"volcano_eruption\"\n"
-        "\tschematic_name = \"volcano_eruption_schematic\"\n"
-        "\ttemporary = yes\n"
-        "}\n\n"
-        "dynamic_game_object = {\n"
-        "\tname = \"volcano_eruption_test\"\n"
-        "\tschematic_name = \"volcano_eruption_schematic\"\n"
-        "\ttemporary = yes\n"
-        "}\n",
-        encoding="utf-8",
-    )
-    print_written("file", dynamic_objects_path)
-
-    # --- Empty volcano locator file to prevent unknown location refs ---
-    volcano_locator = map_objects_dir / "generated_map_object_locators_volcano_eruption.txt"
-    volcano_locator.write_text(
-        "game_object_locator={\n"
-        "\tname=\"volcano_eruption\"\n"
-        "\tclamp_to_water_level=no\n"
-        "\trender_under_water=no\n"
-        "\tgenerated_content=no\n"
-        "\tlayer=\"vfx_layer\"\n"
-        "\tinstances={}\n"
-        "}\n",
-        encoding="utf-8",
-    )
-    print_written("file", volcano_locator)
+    # --- Empty map object locators/overrides to avoid unknown location references ---
+    _write_map_object_override_files()
 
     # --- Patch scripts referencing missing locations/regions ---
     if location_keys:
@@ -3150,233 +2602,154 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     fallback_continent = next(iter(sorted(continent_keys))) if continent_keys else None
     fallback_subcontinent = next(iter(sorted(subcontinent_keys))) if subcontinent_keys else None
 
-    def fix_script_file(src_path: Path, dst_path: Path):
-        location_re = re.compile(r"(\blocation_key\s*=\s*)([A-Za-z0-9_:]+)")
-        region_re = re.compile(r"(\bregion\s*=\s*)([A-Za-z0-9_:]+)")
-        region_key_re = re.compile(r"(\bregion_key\s*=\s*)([A-Za-z0-9_:]+)")
-        subcontinent_re = re.compile(r"(\bsub_continent\s*=\s*)([A-Za-z0-9_:]+)")
-        continent_re = re.compile(r"(\bcontinent\s*=\s*)([A-Za-z0-9_:]+)")
-
-        changed = False
-        lines = []
-        for line in src_path.read_text(encoding="utf-8-sig").splitlines():
-            original = line
-            if fallback_location:
-                def repl_loc(m):
-                    key = m.group(2)
-                    return m.group(1) + (key if key in location_keys else fallback_location)
-                line = location_re.sub(repl_loc, line)
-            if fallback_region:
-                def repl_region(m):
-                    key = m.group(2)
-                    if key in region_keys:
-                        return m.group(1) + key
-                    if ":" in key:
-                        tail = key.split(":")[-1]
-                        if tail in region_keys:
-                            return m.group(1) + tail
-                    return m.group(1) + fallback_region
-                line = region_re.sub(repl_region, line)
-                line = region_key_re.sub(repl_region, line)
-            if fallback_subcontinent:
-                def repl_subcontinent(m):
-                    key = m.group(2)
-                    if key in subcontinent_keys:
-                        return m.group(1) + key
-                    if ":" in key:
-                        tail = key.split(":")[-1]
-                        if tail in subcontinent_keys:
-                            return m.group(1) + tail
-                    return m.group(1) + fallback_subcontinent
-                line = subcontinent_re.sub(repl_subcontinent, line)
-            if fallback_continent:
-                def repl_continent(m):
-                    key = m.group(2)
-                    if key in continent_keys:
-                        return m.group(1) + key
-                    if ":" in key:
-                        tail = key.split(":")[-1]
-                        if tail in continent_keys:
-                            return m.group(1) + tail
-                    return m.group(1) + fallback_continent
-                line = continent_re.sub(repl_continent, line)
-            if line != original:
-                changed = True
-            lines.append(line)
-
-        if changed:
-            dst_path.parent.mkdir(parents=True, exist_ok=True)
-            dst_path.write_text("\n".join(lines) + "\n", encoding="utf-8-sig")
-            print_written("file", dst_path)
-
-    # Situations in I:U should remain blank (basegame logic/data dependencies).
-    src_situations = eu5_game / "in_game" / "common" / "situations"
-    dst_situations = mod_root / "in_game" / "common" / "situations"
-    if src_situations.exists():
-        dst_situations.mkdir(parents=True, exist_ok=True)
-        for src in src_situations.rglob("*.txt"):
-            rel = src.relative_to(src_situations)
-            dst = dst_situations / rel
-            dst.parent.mkdir(parents=True, exist_ok=True)
-            dst.write_text("", encoding="utf-8-sig")
-            print_written("file", dst)
-
     # Scripted triggers still need location-aware patching.
     scripted_triggers_root = eu5_game / "in_game" / "common" / "scripted_triggers"
     if scripted_triggers_root.exists():
         for src in scripted_triggers_root.rglob("*.txt"):
             rel = src.relative_to(eu5_game / "in_game")
             dst = mod_root / "in_game" / rel
-            fix_script_file(src, dst)
+            _patch_script_file_references(
+                src,
+                dst,
+                location_keys=location_keys,
+                region_keys=region_keys,
+                continent_keys=continent_keys,
+                subcontinent_keys=subcontinent_keys,
+                fallback_location=fallback_location,
+                fallback_region=fallback_region,
+                fallback_continent=fallback_continent,
+                fallback_subcontinent=fallback_subcontinent,
+            )
 
-    # --- Filter start setup files keyed by location ---
+
+def _copy_filtered_location_start_files(location_keys: set[str]) -> None:
     setup_start_dir = eu5_game / "main_menu" / "setup" / "start"
     dst_setup_start_dir = mod_root / "main_menu" / "setup" / "start"
-    location_keyed_files = {
-        "07_cities_and_buildings.txt",
-    }
-    if setup_start_dir.exists():
-        dst_setup_start_dir.mkdir(parents=True, exist_ok=True)
-        for filename in location_keyed_files:
-            src_file = setup_start_dir / filename
-            if not src_file.exists():
-                continue
-            tree = parse_tree(src_file)
-            filtered = _pydt.Tree()
-            for tag, data in tree.items():
-                if tag in location_keys:
-                    filtered[tag] = data
-            write_blocks(dst_setup_start_dir / filename, filtered, encoding="utf-8")
+    location_keyed_files = {"07_cities_and_buildings.txt"}
+    if not setup_start_dir.exists():
+        return
 
-    # --- Port Imperator population data (locations) ---
+    dst_setup_start_dir.mkdir(parents=True, exist_ok=True)
+    for filename in location_keyed_files:
+        src_file = setup_start_dir / filename
+        if not src_file.exists():
+            continue
+        tree = parse_tree(src_file)
+        filtered = _filter_tree_entries_by_tags(tree, location_keys)
+        write_blocks(dst_setup_start_dir / filename, filtered, encoding="utf-8")
+
+
+def _write_pops_file(id_to_key: dict[int, str]) -> dict[str, list[str]]:
     pops_by_location = build_ir_pops(id_to_key)
-    pops_blocks = []
-    for loc_key in sorted(pops_by_location.keys()):
-        pops_blocks.append((loc_key, pops_by_location[loc_key]))
-    write_blocks(iu_setup_start / "06_pops.txt", [("locations", pops_blocks)], encoding="utf-8")
+    pops_blocks = [
+        (loc_key, pops_by_location[loc_key]) for loc_key in sorted(pops_by_location.keys())
+    ]
+    _write_locations_block(iu_setup_start / "06_pops.txt", pops_blocks, encoding="utf-8")
+    return pops_by_location
 
-    # --- Ownable locations (exclude seas/lakes/rivers/non-ownable) ---
+
+def _write_institutions_file(pops_by_location: dict[str, list[str]], default_map: dict) -> None:
     excluded_locations = _non_land_keys(default_map) if isinstance(default_map, dict) else set()
     ownable_locations = sorted(set(pops_by_location.keys()) - excluded_locations)
-
-    # --- Generate institutions spread (08_institutions) for ownable locations only ---
     institutions_dst = mod_root / "main_menu" / "setup" / "start" / "08_institutions.txt"
-    institution_blocks = []
-    for loc_key in ownable_locations:
-        institution_blocks.append(
-            (
-                loc_key,
-                [
-                    "feudalism = yes",
-                    "legalism = yes",
-                    "meritocracy = yes",
-                ],
-            )
-        )
-    write_blocks(
-        institutions_dst,
-        [("locations", institution_blocks)],
-        encoding="utf-8",
-    )
+    institution_blocks = [
+        (loc_key, ["feudalism = yes", "legalism = yes", "meritocracy = yes"])
+        for loc_key in ownable_locations
+    ]
+    _write_locations_block(institutions_dst, institution_blocks, encoding="utf-8")
 
-    # --- Port Imperator building setups (per location) ---
+
+def _merge_main_setup_buildings(
+    setup_definitions: dict[str, dict[str, int]],
+    building_map: dict[str, str],
+    id_to_key: dict[int, str],
+) -> None:
+    main_setup = ir_path("setup/main/00_default.txt")
+    if not main_setup.exists():
+        return
+
+    main_tree = parse_tree(main_setup)
+    provinces = main_tree["provinces"] if "provinces" in main_tree else None
+    if not isinstance(provinces, (_pydt.Tree, dict)):
+        return
+
+    merged_count = 0
+    for raw_id, data in provinces.items():
+        try:
+            prov_id = int(raw_id)
+        except Exception:
+            continue
+        loc_key = id_to_key.get(prov_id)
+        if not loc_key or not isinstance(data, (_pydt.Tree, dict)):
+            continue
+
+        setup_name = f"ir_loc_{loc_key}"
+        dst_buildings = setup_definitions.setdefault(setup_name, {})
+        inner = data.get("buildings") if isinstance(data, dict) else data["buildings"] if "buildings" in data else None
+
+        for block in (inner, data):
+            if not isinstance(block, (_pydt.Tree, dict)):
+                continue
+            for b_key, b_val in block.items():
+                b_key_str = str(b_key)
+                if b_key_str not in building_map:
+                    continue
+                try:
+                    level = int(str(b_val).strip())
+                except Exception:
+                    level = 0
+                if level <= 0:
+                    continue
+                mapped = building_map[b_key_str]
+                dst_buildings[mapped] = max(dst_buildings.get(mapped, 0), level)
+                merged_count += 1
+
+    if merged_count > 0:
+        print(
+            "Merged "
+            + str(merged_count)
+            + " building assignments from Imperator main setup into town_setups"
+        )
+
+
+def _write_town_setups_and_ranks(
+    id_to_key: dict[int, str],
+    location_keys: set[str],
+    default_map: dict,
+) -> None:
     building_map = build_ir_building_mapping()
-    rankable_locations = build_ir_rankable_locations(id_to_key, set(pops_by_location.keys()))
+    rankable_locations = build_ir_rankable_locations(id_to_key, location_keys)
     location_building_setups, setup_definitions = build_ir_location_building_setups(
         id_to_key,
-        set(pops_by_location.keys()),
+        location_keys,
         building_map,
         include_locations=rankable_locations,
     )
-    # --- Also include any building assignments present in Imperator's main/default setup ---
-    main_setup = ir_path("setup/main/00_default.txt")
-    if main_setup.exists():
-        main_tree = parse_tree(main_setup)
-        provinces = main_tree["provinces"] if "provinces" in main_tree else None
-        merged_count = 0
-        if isinstance(provinces, (_pydt.Tree, dict)):
-            for raw_id, data in provinces.items():
-                try:
-                    prov_id = int(raw_id)
-                except Exception:
-                    continue
-                loc_key = id_to_key.get(prov_id)
-                if not loc_key:
-                    continue
-                if not isinstance(data, (_pydt.Tree, dict)):
-                    continue
-                setup_name = f"ir_loc_{loc_key}"
-                dst_buildings = setup_definitions.setdefault(setup_name, {})
-                # If there's an inner 'buildings' block, handle it first
-                inner = (
-                    data.get("buildings")
-                    if isinstance(data, dict)
-                    else data["buildings"] if "buildings" in data else None
-                )
-                if isinstance(inner, (_pydt.Tree, dict)):
-                    for b_key, b_val in inner.items():
-                        b_key_str = str(b_key)
-                        if b_key_str not in building_map:
-                            continue
-                        try:
-                            level = int(str(b_val).strip())
-                        except Exception:
-                            level = 0
-                        if level > 0:
-                            mapped = building_map[b_key_str]
-                            dst_buildings[mapped] = max(dst_buildings.get(mapped, 0), level)
-                            merged_count += 1
-                # Also check top-level keys for direct building assignments
-                for key, val in data.items():
-                    key_str = str(key)
-                    if key_str not in building_map:
-                        continue
-                    try:
-                        level = int(str(val).strip())
-                    except Exception:
-                        level = 0
-                    if level <= 0:
-                        continue
-                    mapped = building_map[key_str]
-                    dst_buildings[mapped] = max(dst_buildings.get(mapped, 0), level)
-                    merged_count += 1
-        if merged_count > 0:
-            print(
-                "Merged "
-                + str(merged_count)
-                + " building assignments from Imperator main setup into town_setups"
-            )
+    _merge_main_setup_buildings(setup_definitions, building_map, id_to_key)
+
     town_setups_dir = mod_root / "in_game" / "common" / "town_setups"
     town_setups_dir.mkdir(parents=True, exist_ok=True)
     town_setups_path = town_setups_dir / "ir_location_setups.txt"
-    lines = [
-        "# Auto-generated from Imperator buildings. Do not edit manually.",
-        "",
-    ]
-    for setup_name in sorted(setup_definitions.keys()):
-        lines.append(f"{setup_name} = {{")
-        for building_key, level in sorted(setup_definitions[setup_name].items()):
-            lines.append(f"    {building_key} = {level}")
-        lines.append("}")
-        lines.append("")
-    town_setups_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
-    print_written("file", town_setups_path)
+    _write_town_setups_file(town_setups_path, setup_definitions)
 
-    # --- Port Imperator location ranks (towns/cities) ---
     rank_lines = build_ir_location_ranks(
         id_to_key,
-        set(pops_by_location.keys()),
+        location_keys,
         town_setup="italian_city",
         location_town_setups=location_building_setups,
     )
     rank_blocks = [(loc_key, [rank_lines[loc_key]]) for loc_key in sorted(rank_lines.keys())]
-    write_blocks(
-        iu_setup_start / "07_cities_and_buildings.txt",
-        [("locations", rank_blocks)],
-        encoding="utf-8",
+    _write_locations_block(
+        iu_setup_start / "07_cities_and_buildings.txt", rank_blocks, encoding="utf-8"
     )
 
-    # --- Build markets from IR roads + capitals ---
+
+def _write_markets_file(
+    id_to_key: dict[int, str],
+    location_keys: set[str],
+    default_map: dict,
+    location_to_region: dict[str, str],
+) -> None:
     markets_dst = mod_root / "main_menu" / "setup" / "start" / "03_markets.txt"
     country_locations = extract_ir_country_locations()
     country_capitals = _ir_country_capitals()
@@ -3390,16 +2763,19 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
         top_capitals=35,
         max_markets=35,
     )
-    markets_dst.parent.mkdir(parents=True, exist_ok=True)
-    markets_dst.write_text(
-        "market_manager = {\n"
-        + "\n".join(f"\tadd_market = {key}" for key in markets)
-        + "\n}\n",
+    _write_assignment_block(
+        markets_dst,
+        "market_manager",
+        [f"	add_market = {key}" for key in markets],
         encoding="utf-8",
     )
-    print_written("file", markets_dst)
 
-    # --- Build roads from IR road network ---
+
+def _write_roads_file(
+    id_to_key: dict[int, str],
+    location_keys: set[str],
+    default_map: dict,
+) -> None:
     roads_dst = mod_root / "main_menu" / "setup" / "start" / "09_roads.txt"
     excluded = _non_land_keys(default_map)
     road_lines = []
@@ -3410,94 +2786,372 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
             continue
         if a_key in excluded or b_key in excluded:
             continue
-        road_lines.append(f"\t{a_key} = {b_key}")
+        road_lines.append(f"	{a_key} = {b_key}")
 
-    roads_dst.parent.mkdir(parents=True, exist_ok=True)
-    roads_dst.write_text(
-        "road_network = {\n" + "\n".join(road_lines) + "\n}\n",
-        encoding="utf-8",
-    )
-    print_written("file", roads_dst)
+    _write_assignment_block(roads_dst, "road_network", road_lines, encoding="utf-8")
 
-    # --- Filter exploration preferences (areas/regions) ---
+
+def _filter_start_setup_content(
+    location_keys: set[str],
+    area_keys: set[str],
+    region_keys: set[str],
+    continent_keys: set[str],
+    subcontinent_keys: set[str],
+) -> None:
     explor_src = eu5_game / "main_menu" / "setup" / "start" / "17_exploration_preferences.txt"
     explor_dst = mod_root / "main_menu" / "setup" / "start" / "17_exploration_preferences.txt"
     if explor_src.exists():
-        lines = []
-        for line in explor_src.read_text(encoding="utf-8-sig").splitlines():
-            stripped = line.strip()
-            if stripped.startswith("area") and "=" in stripped:
-                _, value = stripped.split("=", 1)
-                key = value.strip().split()[0]
-                if key not in area_keys:
-                    continue
-            if stripped.startswith("region") and "=" in stripped:
-                _, value = stripped.split("=", 1)
-                key = value.strip().split()[0]
-                if key not in region_keys:
-                    continue
-            if stripped.startswith("continent") and "=" in stripped:
-                _, value = stripped.split("=", 1)
-                key = value.strip().split()[0]
-                if key not in continent_keys:
-                    continue
-            if stripped.startswith("sub_continent") and "=" in stripped:
-                _, value = stripped.split("=", 1)
-                key = value.strip().split()[0]
-                if key not in subcontinent_keys:
-                    continue
-            lines.append(line)
-        explor_dst.parent.mkdir(parents=True, exist_ok=True)
-        explor_dst.write_text("\n".join(lines) + "\n", encoding="utf-8")
-        print_written("file", explor_dst)
+        lines = _filter_exploration_preferences_text(
+            explor_src.read_text(encoding="utf-8-sig").splitlines(),
+            area_keys=area_keys,
+            region_keys=region_keys,
+            continent_keys=continent_keys,
+            subcontinent_keys=subcontinent_keys,
+        )
+        _write_text_file(explor_dst, "\n".join(lines) + "\n", encoding="utf-8")
 
-    # --- Filter location modifiers (21_locations) ---
     loc_src = eu5_game / "main_menu" / "setup" / "start" / "21_locations.txt"
     loc_dst = mod_root / "main_menu" / "setup" / "start" / "21_locations.txt"
     if loc_src.exists():
         tree = parse_tree(loc_src)
-        filtered = _pydt.Tree()
-        locations_block = tree["locations"] if "locations" in tree else _pydt.Tree()
-        new_locations = _pydt.Tree()
-        for tag, data in locations_block.items():
-            if tag in location_keys:
-                new_locations[tag] = data
-        filtered["locations"] = new_locations
+        filtered = _filter_tree_entries_by_tags(tree, location_keys, root_key="locations")
         write_blocks(loc_dst, filtered)
 
-    # --- Filter colonies (province definitions not present) ---
     colonies_dst = mod_root / "main_menu" / "setup" / "start" / "23_colonies.txt"
     colonies_tree = _pydt.Tree()
     colonies_tree["colony_manager"] = _pydt.Tree()
     write_blocks(colonies_dst, colonies_tree)
 
-    # Copy core map files so location IDs match definitions
+
+def _write_start_setup_content(
+    id_to_key: dict[int, str],
+    location_keys: set[str],
+    default_map: dict,
+    location_to_region: dict[str, str],
+    area_keys: set[str],
+    region_keys: set[str],
+    continent_keys: set[str],
+    subcontinent_keys: set[str],
+) -> None:
+    _copy_filtered_location_start_files(location_keys)
+
+    pops_by_location = _write_pops_file(id_to_key)
+    _write_institutions_file(pops_by_location, default_map)
+    _write_town_setups_and_ranks(id_to_key, set(pops_by_location.keys()), default_map)
+
+    _write_markets_file(id_to_key, location_keys, default_map, location_to_region)
+    _write_roads_file(id_to_key, location_keys, default_map)
+    _filter_start_setup_content(
+        location_keys,
+        area_keys,
+        region_keys,
+        continent_keys,
+        subcontinent_keys,
+    )
+
+
+def _write_named_locations_file(named_locations: list[tuple[int, str, int, int, int, str]]) -> None:
+    named_path = iu_map_data / "named_locations"
+    named_path.mkdir(parents=True, exist_ok=True)
+    lines = [f"{key} = {r:02x}{g:02x}{b:02x}" for _, key, r, g, b, _ in named_locations]
+    _write_text_file(named_path / "00_default.txt", "\n".join(lines) + "\n")
+
+
+def _write_reference_outputs(
+    named_locations: list[tuple[int, str, int, int, int, str]],
+    id_to_key: dict[int, str],
+    location_keys: set[str],
+) -> set[str]:
+    ref_file = Path(__file__).parent / "province_id_to_key.csv"
+    write_csv(
+        ref_file,
+        [{"ID": prov_id, "Key": key} for prov_id, key, *_ in named_locations],
+        fieldnames=["ID", "Key"],
+    )
+
+    write_csv(
+        iu_map_data / "adjacencies.csv",
+        parse_adjacencies(id_to_key, location_keys)[:-1],
+        ["From", "To", "Type", "Through", "x1", "y1", "x2", "y2", "Comment"],
+    )
+
+    ports = parse_ports(id_to_key)
+    write_csv(iu_map_data / "ports.csv", ports, ["LandProvince", "SeaZone", "x", "y"])
+    return {
+        row["LandProvince"]
+        for row in ports
+        if isinstance(row.get("LandProvince"), str)
+        and row["LandProvince"]
+        and not row["LandProvince"].startswith("UNKNOWN_")
+    }
+
+
+def _build_location_to_region_map(regions: dict[str, dict[str, list[str]]]) -> dict[str, str]:
+    location_to_region: dict[str, str] = {}
+    for region_tag, area_map in regions.items():
+        for provinces in area_map.values():
+            if not isinstance(provinces, list):
+                continue
+            for key in provinces:
+                location_to_region.setdefault(key, region_tag)
+    return location_to_region
+
+
+def _collect_assigned_provinces(regions: dict[str, dict[str, list[str]]]) -> set[str]:
+    return {
+        province
+        for area_map in regions.values()
+        for provinces in area_map.values()
+        if isinstance(provinces, list)
+        for province in provinces
+    }
+
+
+def _merge_inferred_membership(
+    assigned_provinces: set[str],
+    inferred_regions: dict[str, str],
+    label: str,
+) -> set[str]:
+    if not inferred_regions:
+        return assigned_provinces
+    updated = assigned_provinces | set(inferred_regions.keys())
+    print(f"Inferred region membership for {len(inferred_regions)} {label}.")
+    return updated
+
+
+def _add_generated_region(
+    regions: dict[str, dict[str, list[str]]],
+    assigned_provinces: set[str],
+    region_tag: str,
+    area_tag: str,
+    keys: set[str],
+) -> set[str]:
+    unassigned = set(keys) - assigned_provinces
+    if not unassigned:
+        return assigned_provinces
+    regions.setdefault(region_tag, {})[area_tag] = sorted(unassigned)
+    return assigned_provinces | unassigned
+
+
+def _add_generated_region_from_ranges(
+    regions: dict[str, dict[str, list[str]]],
+    assigned_provinces: set[str],
+    range_groups: dict[str, list[list[str]]],
+    region_tag: str,
+    area_prefix: str,
+    keys: set[str],
+    source_categories: tuple[str, ...],
+) -> set[str]:
+    area_index = 1
+    target_keys = set(keys)
+    for source in source_categories:
+        for group in range_groups.get(source, []):
+            group_keys = [key for key in group if key in target_keys and key not in assigned_provinces]
+            if not group_keys:
+                continue
+            area_tag = f"{area_prefix}_{area_index:03d}"
+            regions.setdefault(region_tag, {})[area_tag] = group_keys
+            assigned_provinces = assigned_provinces | set(group_keys)
+            area_index += 1
+
+    leftovers = target_keys - assigned_provinces
+    if leftovers:
+        assigned_provinces = _add_generated_region(
+            regions,
+            assigned_provinces,
+            region_tag,
+            f"{area_prefix}_misc",
+            leftovers,
+        )
+    return assigned_provinces
+
+
+def _augment_regions_with_generated_buckets(
+    regions: dict[str, dict[str, list[str]]],
+    assigned_provinces: set[str],
+    id_to_key: dict[int, str],
+    default_map: dict,
+    location_keys: set[str],
+) -> set[str]:
+    range_groups = build_default_map_range_groups(
+        id_to_key,
+        {
+            "impassable_terrain",
+            "wasteland",
+            "sea_zones",
+            "lakes",
+            "river_provinces",
+            "uninhabitable",
+            "non_ownable",
+        },
+    )
+
+    region_specs = (
+        ("sea_zones_area", "sea_zones_province", "sea_zones", ("sea_zones",)),
+        ("lakes_area", "lakes_province", "lakes", ("lakes",)),
+    )
+    for region_tag, area_prefix, default_map_key, sources in region_specs:
+        keys = default_map.get(default_map_key, set()) if isinstance(default_map, dict) else set()
+        if not keys:
+            continue
+        assigned_provinces = _add_generated_region_from_ranges(
+            regions,
+            assigned_provinces,
+            range_groups,
+            region_tag,
+            area_prefix,
+            set(keys),
+            sources,
+        )
+
+    all_unassigned = set(location_keys) - assigned_provinces
+    if all_unassigned:
+        assigned_provinces = _add_generated_region(
+            regions,
+            assigned_provinces,
+            "unassigned_locations_area",
+            "unassigned_locations_province",
+            all_unassigned,
+        )
+    return assigned_provinces
+
+
+def _build_region_hierarchy(
+    named_locations: list[tuple[int, str, int, int, int, str]],
+    location_keys: set[str],
+    id_to_key: dict[int, str],
+    default_map: dict,
+) -> tuple[
+    dict[str, dict[str, list[str]]],
+    dict[str, str],
+    set[str],
+    set[str],
+    set[str],
+    dict,
+    set[str],
+]:
+    regions = build_regions(id_to_key)
+    dissolved_river_keys = dissolve_river_regions(regions)
+    location_to_region = _build_location_to_region_map(regions)
+    assigned_provinces = _collect_assigned_provinces(regions)
+
+    inferred_water_regions = assign_unmapped_water_to_regions(
+        regions,
+        location_to_region,
+        assigned_provinces,
+        default_map,
+        named_locations,
+        location_keys,
+        id_to_key,
+    )
+    assigned_provinces = _merge_inferred_membership(
+        assigned_provinces,
+        inferred_water_regions,
+        "unassigned sea/lake locations",
+    )
+
+    inferred_non_ownable_regions = assign_unmapped_non_ownable_to_regions(
+        regions,
+        location_to_region,
+        assigned_provinces,
+        default_map,
+        named_locations,
+        location_keys,
+    )
+    assigned_provinces = _merge_inferred_membership(
+        assigned_provinces,
+        inferred_non_ownable_regions,
+        "non-ownable locations",
+    )
+
+    inferred_river_regions = assign_unmapped_rivers_to_regions(
+        regions,
+        location_to_region,
+        assigned_provinces,
+        default_map,
+        named_locations,
+        location_keys,
+        dissolved_river_keys,
+    )
+    assigned_provinces = _merge_inferred_membership(
+        assigned_provinces,
+        inferred_river_regions,
+        "river locations",
+    )
+
+    _augment_regions_with_generated_buckets(
+        regions,
+        assigned_provinces,
+        id_to_key,
+        default_map,
+        location_keys,
+    )
+
+    region_keys = set(regions.keys())
+    area_keys = {area for region in regions.values() for area in region.keys()}
+    continent_keys = set(continent_map.keys()) if isinstance(continent_map, dict) else set()
+    normalized_superregion_map = normalize_superregion_map(superregion_map)
+    subcontinent_keys = (
+        set(normalized_superregion_map.keys()) if isinstance(normalized_superregion_map, dict) else set()
+    )
+    hierarchy = build_full_hierarchy(regions, normalized_superregion_map, continent_map)
+    write_blocks(iu_map_data / "definitions.txt", hierarchy_to_blocks(hierarchy))
+
+    return (
+        regions,
+        location_to_region,
+        area_keys,
+        region_keys,
+        continent_keys,
+        normalized_superregion_map,
+        subcontinent_keys,
+    )
+
+
+def _write_exploration_template(
+    normalized_superregion_map: dict,
+    region_keys: set[str],
+    area_keys: set[str],
+) -> None:
+    template_path = mod_root / "main_menu" / "setup" / "templates" / "expl_imperator_rome.txt"
+    template_path.parent.mkdir(parents=True, exist_ok=True)
+
+    superregion_keys = sorted(
+        {superregion for sub in normalized_superregion_map.values() for superregion in sub.keys()}
+    )
+    sections = {
+        "discovered_regions": superregion_keys,
+        "discovered_areas": sorted(region_keys),
+        "discovered_provinces": sorted(area_keys),
+    }
+
+    lines: list[str] = []
+    for section, keys in sections.items():
+        lines.append(f"{section} = {{")
+        lines.extend(f"	{key}" for key in keys)
+        lines.append("}")
+        lines.append("")
+
+    _write_text_file(template_path, "\n".join(lines[:-1]) + "\n", encoding="utf-8")
+
+
+def _copy_and_validate_map_images() -> None:
     map_files = {
         ir_path("map_data/provinces.png"): iu_map_data / "locations.png",
         ir_path("map_data/rivers.png"): iu_map_data / "rivers.png",
     }
     for src, dst in map_files.items():
-        if not src.exists():
-            continue
-        dst.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(src, dst)
-        print_written("file", dst)
+        _copy_file_if_exists(src, dst)
 
-    # --- Keep Imperator dimensions and sync world extents defines ---
     locations_img = iu_map_data / "locations.png"
     locations_size = _png_size(locations_img)
     if locations_size:
-        defines_override = (
-            mod_root / "loading_screen" / "common" / "defines" / "ir_defines.txt"
-        )
+        defines_override = mod_root / "loading_screen" / "common" / "defines" / "ir_defines.txt"
         _sync_world_extents(defines_override, locations_size)
 
-    # Compare against EU5 base dimensions for visibility only.
     eu5_locations_png = eu5_game / "in_game" / "map_data" / "locations.png"
     target_size = _png_size(eu5_locations_png) if eu5_locations_png.exists() else None
     if target_size and locations_size and locations_size != target_size:
-        # Keep Imperator rivers.png even when dimensions differ.
-        # Do not replace with EU5 base rivers; mod must use I:R river layout.
         rivers_img = iu_map_data / "rivers.png"
         rivers_size = _png_size(rivers_img)
         if rivers_size and rivers_size != locations_size:
@@ -3505,3 +3159,71 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
                 f"Warning: rivers.png size {rivers_size} differs from locations.png "
                 f"{locations_size}; keeping Imperator rivers.png"
             )
+
+
+def port_map_data(default_culture: str | None = None, default_religion: str | None = None):
+    """Parse Imperator map data and write converted EU5 map/setup assets."""
+    named_locations = parse_definitions()
+    id_to_key = {prov_id: key for prov_id, key, *_ in named_locations}
+    location_keys = {key for _, key, *_ in named_locations}
+
+    _write_named_locations_file(named_locations)
+    coastal_land_locations = _write_reference_outputs(named_locations, id_to_key, location_keys)
+
+    default_map = build_default_map(id_to_key)
+    volcanoes = {key for key in location_keys if isinstance(key, str) and key.endswith("_volcano")}
+    if volcanoes:
+        default_map.setdefault("volcanoes", set()).update(volcanoes)
+
+    harbor_suitability_map = build_ir_harbor_suitability(
+        named_locations,
+        location_keys,
+        default_map,
+        coastal_land_locations,
+    )
+
+    (
+        regions,
+        location_to_region,
+        area_keys,
+        region_keys,
+        continent_keys,
+        normalized_superregion_map,
+        subcontinent_keys,
+    ) = _build_region_hierarchy(named_locations, location_keys, id_to_key, default_map)
+
+    _write_exploration_template(normalized_superregion_map, region_keys, area_keys)
+
+    _write_map_localisation(
+        named_locations,
+        regions,
+        normalized_superregion_map,
+        subcontinent_keys,
+        continent_keys,
+    )
+    write_default_map(default_map)
+
+    _write_location_templates(
+        location_keys,
+        default_map,
+        coastal_land_locations,
+        location_to_region,
+        id_to_key,
+        default_culture,
+        default_religion,
+        harbor_suitability_map,
+    )
+
+    _apply_map_content_overrides(location_keys, region_keys, continent_keys, subcontinent_keys)
+    _write_start_setup_content(
+        id_to_key,
+        location_keys,
+        default_map,
+        location_to_region,
+        area_keys,
+        region_keys,
+        continent_keys,
+        subcontinent_keys,
+    )
+
+    _copy_and_validate_map_images()

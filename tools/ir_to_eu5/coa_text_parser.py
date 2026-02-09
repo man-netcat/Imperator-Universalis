@@ -203,6 +203,20 @@ def _normalize_color_list_aliases(text: str) -> str:
     return re.sub(r'(\blist\s+")metals(")', r'\1metal_colors_list\2', text)
 
 
+def _normalize_coa_text(
+    text: str,
+    culture_map: dict[str, str],
+    culture_group_map: dict[str, str],
+    religion_map: dict[str, str],
+    group_to_cultures: dict[str, list[str]],
+) -> str:
+    out = _replace_tga_with_dds_text(text)
+    out = _remap_coa_script_keys(out, culture_map, culture_group_map, religion_map)
+    out = _normalize_template_trigger_syntax(out, group_to_cultures)
+    out = _normalize_color_list_aliases(out)
+    return out
+
+
 def _merge_container_block_text(top_key: str, existing: str, incoming: str) -> str:
     existing_inner = extract_assignment_blocks(extract_block_body(existing))
     incoming_inner = extract_assignment_blocks(extract_block_body(incoming))
@@ -355,23 +369,25 @@ def extract_coa_template_behaviour_from_files(
     for coa_file in coa_files:
         text = coa_file.read_text(encoding="utf-8-sig")
         for key, block_text in extract_assignment_blocks(text):
-            normalized = _replace_tga_with_dds_text(block_text)
-            normalized = _remap_coa_script_keys(normalized, culture_map, culture_group_map, religion_map)
-            normalized = _normalize_template_trigger_syntax(normalized, group_to_cultures)
-            normalized = _normalize_color_list_aliases(normalized)
+            normalized = _normalize_coa_text(
+                block_text,
+                culture_map,
+                culture_group_map,
+                religion_map,
+                group_to_cultures,
+            )
 
             if key == "template":
                 for inner_key, inner_block in extract_assignment_blocks(extract_block_body(block_text)):
                     if inner_key in template_entries or inner_key in existing_template_names:
                         continue
-                    transformed_inner = _replace_tga_with_dds_text(inner_block)
-                    transformed_inner = _remap_coa_script_keys(
-                        transformed_inner, culture_map, culture_group_map, religion_map
+                    transformed_inner = _normalize_coa_text(
+                        inner_block,
+                        culture_map,
+                        culture_group_map,
+                        religion_map,
+                        group_to_cultures,
                     )
-                    transformed_inner = _normalize_template_trigger_syntax(
-                        transformed_inner, group_to_cultures
-                    )
-                    transformed_inner = _normalize_color_list_aliases(transformed_inner)
                     template_entries[inner_key] = transformed_inner
             elif key.endswith("_template_lists") and key not in template_list_blocks:
                 template_list_blocks[key] = normalized
@@ -416,10 +432,13 @@ def extract_coa_template_behaviour_from_files(
                 existing_map[top_key] = _merge_container_block_text(top_key, existing_map[top_key], top_block)
 
         merged_text = "\n\n".join(existing_map[key] for key in ordered_keys if key in existing_map)
-        merged_text = _replace_tga_with_dds_text(merged_text)
-        merged_text = _remap_coa_script_keys(merged_text, culture_map, culture_group_map, religion_map)
-        merged_text = _normalize_template_trigger_syntax(merged_text, group_to_cultures)
-        merged_text = _normalize_color_list_aliases(merged_text)
+        merged_text = _normalize_coa_text(
+            merged_text,
+            culture_map,
+            culture_group_map,
+            religion_map,
+            group_to_cultures,
+        )
 
         if file_path.name == "coa_templates.txt":
             merged_text = _rewrite_ir_coa_templates_to_eu5_style(merged_text)
