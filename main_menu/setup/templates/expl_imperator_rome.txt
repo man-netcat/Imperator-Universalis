@@ -134,7 +134,6 @@ discovered_provinces = {
 	aemilla_province
 	aeolia_province
 	aetolia_province
-	africa_area_water_province_generated
 	africa_meridionalis_province
 	africa_septentrionalis_province
 	ahicchatra_province
@@ -145,7 +144,6 @@ discovered_provinces = {
 	alania_orientalis_province
 	alania_proper_province
 	alania_province
-	albania_area_water_province_generated
 	albis_river_province
 	allaqi_province
 	allobrogia_province
@@ -166,13 +164,10 @@ discovered_provinces = {
 	apamene_province
 	aparanta_province
 	apulensis_province
-	aquitaine_area_water_province_generated
 	aquitania_occidentalis_province
 	aquitania_orientalis_province
 	arabia_ad_sinus_province
-	arabia_area_water_province_generated
 	arabia_deserta_province
-	arabia_felix_area_water_province_generated
 	arabia_felix_centralis_province
 	arabia_felix_occidentalis_province
 	arabia_felix_orientalis_province
@@ -184,13 +179,10 @@ discovered_provinces = {
 	arcadia_province
 	ardashir_province
 	aria_province
-	ariana_area_water_province_generated
 	ariminum_province
 	aristavos_province
-	armenia_area_water_province_generated
 	armenia_maior_province
 	armenia_minor_province
-	armorica_area_water_province_generated
 	armorica_centralis_province
 	armorica_maioris_province
 	armorica_minoris_province
@@ -198,22 +190,18 @@ discovered_provinces = {
 	arran_province
 	artshak_province
 	asculum_province
-	asia_area_water_province_generated
 	asika_province
 	asir_province
 	asmaka_province
 	asoristan_province
 	aspadana_province
 	aspisi_province
-	assyria_area_water_province_generated
 	asturia_meridionalis_province
 	asturia_septentrionalis_province
 	aswan_province
 	atara_province
 	atbaras_province
 	aternum_province
-	atlantic_area_water_province_generated
-	atlas_area_water_province_generated
 	atyrau_province
 	autrigonia_province
 	avanti_province
@@ -235,7 +223,6 @@ discovered_provinces = {
 	beth_daraye_province
 	biebrzankski_province
 	biggeronia_province
-	bithynia_area_water_province_generated
 	bithynia_inferior_province
 	bithynia_superior_province
 	bituriga_occidentalis_province
@@ -245,7 +232,6 @@ discovered_provinces = {
 	boioa_meridionalis_province
 	boioa_septentrionalis_province
 	borysthenes_river_province
-	borysthenia_area_water_province_generated
 	borysthenia_maioris_province
 	borysthenia_minor_province
 	borysthenia_province
@@ -258,9 +244,7 @@ discovered_provinces = {
 	bructeria_province
 	budinia_province
 	buria_province
-	burma_area_water_province_generated
 	cadurcia_province
-	caledonia_area_water_province_generated
 	caledonia_meridionalis_province
 	caledonia_occidentalis_province
 	caledonia_septentrionalis_province
@@ -272,11 +256,9 @@ discovered_provinces = {
 	cannae_province
 	cantabria_province
 	cantiacia_province
-	cappadocia_area_water_province_generated
 	cappadocia_cataonia_province
 	cappadocia_garsauritis_province
 	cappadocia_melitene_province
-	cappadocia_pontica_area_water_province_generated
 	cappadocia_province
 	cappadocia_saravene_province
 	carmania_province
@@ -297,10 +279,8 @@ discovered_provinces = {
 	celticia_maoioris_province
 	celticia_minoris_province
 	cenomannia_province
-	central_asian_steppes_area_water_province_generated
 	central_delta_province
 	central_greece_province
-	central_italy_area_water_province_generated
 	central_massif_province
 	central_omana_province
 	cessetania_province
@@ -313,12 +293,10 @@ discovered_provinces = {
 	chomolangma_province
 	chrononis_province
 	chu_province
-	cilicia_area_water_province_generated
 	cilicia_pedias_province
 	cilicia_trachea_province
 	cimbrica_inferioris_province
 	cimbrica_superioris_province
-	cisalpine_gaul_area_water_province_generated
 	ciscarpathia_province
 	clepia_province
 	coastal_caria_province
@@ -366,7 +344,6 @@ discovered_provinces = {
 	don_river_province
 	donbas_province
 	drangiana_province
-	dravida_area_water_province_generated
 	dufar_province
 	dumnonia_province
 	durotrigia_province
@@ -402,7 +379,6 @@ discovered_provinces = {
 	gaetulia_occidentalis_province
 	gaetulia_orientalis_province
 	gaetulia_septentrionalis_province
-	galatia_area_water_province_generated
 	galatia_province
 	galatia_trocmi_province
 	galilee_province
@@ -415,7 +391,6 @@ discovered_provinces = {
 	gash_province
 	gedrosia_province
 	gelonia_province
-	germania_area_water_province_generated
 	germanicum_province
 	gerrha_province
 	getia_occidentalis_province
@@ -428,7 +403,6 @@ discovered_provinces = {
 	girgiri_province
 	godavari_river_province
 	gorodets_province
-	greece_area_water_province_generated
 	gugark_province
 	hadramut_occidentalis_province
 	hadramut_orientalis_province
@@ -450,14 +424,12 @@ discovered_provinces = {
 	hibernia_occidentalis_province
 	hibernia_orientalis_province
 	hibernia_septentrionalis_province
-	himalayan_area_water_province_generated
 	himka_province
 	histria_province
 	hull_river_province
 	hypania_minoris_province
 	hypania_province
 	hypanis_river_province
-	hyperborea_area_water_province_generated
 	hyrcania_province
 	hyrcania_superior_province
 	iazygia_majoris_province
@@ -466,11 +438,9 @@ discovered_provinces = {
 	ichthyophagia_province
 	ilercavonia_province
 	ilergetia_province
-	illyria_area_water_province_generated
 	illyria_graeca_province
 	ilmandu_inferior_province
 	ilmandu_superior_province
-	indian_ocean_area_water_province_generated
 	indiketia_province
 	indus_river_province
 	inland_caria_province
@@ -491,7 +461,6 @@ discovered_provinces = {
 	kamarupa_province
 	kamata_province
 	kapchagay_province
-	karnata_area_water_province_generated
 	kartub_province
 	kasi_province
 	kasmira_province
@@ -520,9 +489,7 @@ discovered_provinces = {
 	lixus_province
 	lobetania_province
 	lotophagia_province
-	lower_egypt_area_water_province_generated
 	lower_moulouya_province
-	lower_nubia_area_water_province_generated
 	lugia_province
 	lusitania_meridionalis_province
 	lusitania_septentrionalis_province
@@ -530,7 +497,6 @@ discovered_provinces = {
 	lycaonia_province
 	lycia_province
 	lydia_province
-	macedonia_area_water_province_generated
 	macedonia_province
 	macedonia_salutaris_province
 	machelonia_province
@@ -578,7 +544,6 @@ discovered_provinces = {
 	maru_province
 	mastiania_province
 	matsya_province
-	mauretainia_area_water_province_generated
 	mauretania_caesariensis_centralis_province
 	mauretania_caesariensis_maioris_province
 	mauretania_caesariensis_minoris_province
@@ -586,7 +551,6 @@ discovered_provinces = {
 	mauretania_caesariensis_orientalis_province
 	mauretania_tingitana_meridionalis_province
 	mauretania_tingitana_septentrionalis_province
-	media_area_water_province_generated
 	media_atropatene_province
 	media_choromithrene_province
 	media_felix_province
@@ -598,7 +562,6 @@ discovered_provinces = {
 	menapia_orientalis_province
 	meroe_province
 	meshan_province
-	mesopotamia_area_water_province_generated
 	milograd_province
 	milyas_province
 	minsk_province
@@ -640,8 +603,6 @@ discovered_provinces = {
 	north_tambapamni_province
 	north_tarim_province
 	north_tondainadu_province
-	nubia_area_water_province_generated
-	numidia_area_water_province_generated
 	numidia_centralis_province
 	numidia_maioris_province
 	numidia_minoris_province
@@ -661,7 +622,6 @@ discovered_provinces = {
 	oxiana_ultima_province
 	ozeros_province
 	pactya_province
-	palestine_area_water_province_generated
 	palmyra_province
 	palus_maeotis_province
 	pamir_province
@@ -669,7 +629,6 @@ discovered_provinces = {
 	pancala_province
 	panchanada_province
 	pandiya_province
-	pannonia_area_water_province_generated
 	pannonia_prima_occidentalis_province
 	pannonia_prima_orientalis_province
 	pannonia_secunda_province
@@ -683,7 +642,6 @@ discovered_provinces = {
 	pars_province
 	parsatunik_province
 	parskahayk_province
-	parthia_area_water_province_generated
 	parthia_komishene_province
 	parthia_province
 	parva_province
@@ -692,7 +650,6 @@ discovered_provinces = {
 	penner_river_province
 	peraea_province
 	persepolis_province
-	persis_area_water_province_generated
 	pharodenia_province
 	phazania_province
 	philistia_province
@@ -709,12 +666,10 @@ discovered_provinces = {
 	pontus_province
 	porolissensis_inferioris_province
 	porolissensis_province
-	pracya_area_water_province_generated
 	psyllia_province
 	ptolemais_province
 	pubu_province
 	pundra_province
-	punt_area_water_province_generated
 	punt_province
 	pyramus_river_province
 	pyu_province
@@ -726,7 +681,6 @@ discovered_provinces = {
 	raha_ulterior_province
 	raurica_province
 	remia_province
-	rhaetia_area_water_province_generated
 	rhagai_province
 	rhine_river_province
 	rhodanus_river_province
@@ -738,7 +692,6 @@ discovered_provinces = {
 	rutubis_province
 	sagartia_province
 	saharan_atlas_province
-	sakia_area_water_province_generated
 	samaria_province
 	samatata_province
 	sardinia_meridionalis_province
@@ -757,7 +710,6 @@ discovered_provinces = {
 	savia_orientalis_province
 	saxony_province
 	scandia_insula_province
-	scandinavia_area_water_province_generated
 	scythia_ad_pontem_province
 	scythia_prima_province
 	scythia_province
@@ -784,7 +736,6 @@ discovered_provinces = {
 	sivi_province
 	soducene_province
 	soffegin_province
-	sogdiana_area_water_province_generated
 	sogdiana_province
 	sophene_province
 	souss_province
@@ -831,7 +782,6 @@ discovered_provinces = {
 	taraz_province
 	tarentum_province
 	tarim_province
-	taurica_area_water_province_generated
 	taurica_province
 	taxila_province
 	tayk_province
@@ -841,7 +791,6 @@ discovered_provinces = {
 	thyssagetia_occidentalis_province
 	thyssagetia_orientalis_province
 	thyssagetia_ulterior_province
-	tibet_area_water_province_generated
 	tigris_province
 	tigurinia_province
 	touggourt_province
@@ -873,7 +822,6 @@ discovered_provinces = {
 	ultima_thule_province
 	upper_armenia_province
 	upper_draa_province
-	upper_egypt_area_water_province_generated
 	upper_jaxartia_province
 	upper_macedonia_province
 	upper_mesopotamia_province
@@ -892,7 +840,6 @@ discovered_provinces = {
 	veh_kavad_province
 	velho_province
 	veliocassia_province
-	venedia_area_water_province_generated
 	venedia_province
 	venetia_province
 	veshapur_province
@@ -900,7 +847,6 @@ discovered_provinces = {
 	vettonia_septentrionalis_province
 	viadria_province
 	vidarbha_province
-	vindhyaprstha_area_water_province_generated
 	vindya_province
 	vishpauzatis_province
 	vistual_river_province

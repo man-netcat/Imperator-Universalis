@@ -609,8 +609,6 @@ def parse_ports(
                         continue
                     if sea_key not in sea_zone_set:
                         sea_key = best_sea
-                    if sea_key != best_sea:
-                        sea_key = best_sea
 
                 ports.append(
                     {
@@ -654,6 +652,58 @@ def parse_ports(
                 }
             )
             seen_lands.add(land_key)
+
+        # Guarantee at least one attached port for each coastal sea zone.
+        sea_port_counts: dict[str, int] = defaultdict(int)
+        for row in ports:
+            sea_key = row.get("SeaZone")
+            if isinstance(sea_key, str) and sea_key in sea_zone_set:
+                sea_port_counts[sea_key] += 1
+
+        for sea_key in sorted(sea_zone_set):
+            if sea_port_counts.get(sea_key, 0) > 0:
+                continue
+            edge_map = neighbors.get(sea_key, {}) if isinstance(neighbors, dict) else {}
+            if not isinstance(edge_map, dict) or not edge_map:
+                continue
+
+            candidates: list[tuple[int, bool, str]] = []
+            for land_key, edge_weight in edge_map.items():
+                if not isinstance(land_key, str):
+                    continue
+                if land_key in sea_zone_set or land_key.startswith("UNKNOWN_"):
+                    continue
+                point = centroids.get(land_key)
+                if (
+                    not isinstance(point, list)
+                    or len(point) != 2
+                    or not isinstance(point[0], (int, float))
+                    or not isinstance(point[1], (int, float))
+                ):
+                    continue
+                try:
+                    weight = int(edge_weight)
+                except Exception:
+                    weight = 1
+                # Prefer a land location that does not already have a port row.
+                candidates.append((max(1, weight), land_key in seen_lands, land_key))
+
+            if not candidates:
+                continue
+
+            candidates.sort(key=lambda item: (-item[0], item[1], item[2]))
+            chosen_land = candidates[0][2]
+            point = centroids[chosen_land]
+            ports.append(
+                {
+                    "LandProvince": chosen_land,
+                    "SeaZone": sea_key,
+                    "x": float(point[0]),
+                    "y": float(point[1]),
+                }
+            )
+            sea_port_counts[sea_key] += 1
+            seen_lands.add(chosen_land)
 
     return ports
 
@@ -726,15 +776,15 @@ def assign_unmapped_water_to_regions(
     location_keys: set[str],
     id_to_key: dict[int, str],
 ) -> dict[str, str]:
-    """Assign unassigned sea/lake locations using a precomputed location-neighbor map."""
+    """Assign sea/lake locations by proximity to existing land provinces."""
     if not isinstance(default_map, dict):
         return {}
 
     sea_zones = set(default_map.get("sea_zones", set()))
     lakes = set(default_map.get("lakes", set()))
     water_keys = (sea_zones | lakes) & set(location_keys)
-    unassigned_water = sorted(water_keys - assigned_provinces)
-    if not unassigned_water:
+    candidate_water = sorted(water_keys)
+    if not candidate_water:
         return {}
 
     neighbor_payload = load_location_neighbors()
@@ -743,166 +793,170 @@ def assign_unmapped_water_to_regions(
             "Warning: location neighbor cache missing; "
             f"run tools/build_location_neighbors.py to create {DEFAULT_LOCATION_NEIGHBORS_PATH.name}."
         )
+        return {}
 
-    unassigned_set = set(unassigned_water)
-    scores: dict[str, Counter[str]] = {key: Counter() for key in unassigned_water}
+    neighbors = neighbor_payload.get("neighbors", {}) if isinstance(neighbor_payload, dict) else {}
+    centroids = neighbor_payload.get("centroids", {}) if isinstance(neighbor_payload, dict) else {}
+    non_land = _non_land_keys(default_map)
 
-    # Ports are a strong hint for sea ownership in coastal regions.
+    land_to_area: dict[str, str] = {}
+    land_to_region: dict[str, str] = {}
+    existing_loc_to_area: dict[str, str] = {}
+    area_to_region: dict[str, str] = {}
+    for region_tag, area_map in regions.items():
+        if not isinstance(area_map, dict):
+            continue
+        for area_tag, provinces in area_map.items():
+            if not isinstance(provinces, list):
+                continue
+            area_to_region[area_tag] = region_tag
+            for key in provinces:
+                if not isinstance(key, str):
+                    continue
+                existing_loc_to_area.setdefault(key, area_tag)
+                if key not in non_land:
+                    land_to_area.setdefault(key, area_tag)
+                    land_to_region.setdefault(key, region_tag)
+
+    def _to_int_weight(value) -> int:
+        try:
+            return int(value)
+        except Exception:
+            return 1
+
+    province_scores: dict[str, Counter[str]] = {key: Counter() for key in candidate_water}
+
+    # Ports give strong location-specific hints.
     for row in parse_ports(id_to_key, sea_zones=sea_zones):
-        sea_key = row.get("SeaZone")
+        water_key = row.get("SeaZone")
         land_key = row.get("LandProvince")
-        if not isinstance(sea_key, str) or sea_key not in unassigned_set:
+        if not isinstance(water_key, str) or water_key not in water_keys:
             continue
-        if not isinstance(land_key, str):
+        if not isinstance(land_key, str) or land_key not in land_to_area:
             continue
-        region_tag = location_to_region.get(land_key)
-        if region_tag:
-            scores[sea_key][region_tag] += 8
+        province_scores[water_key][land_key] += 8
 
-    # Cached border-length adjacency from provinces.png (envelopment signal).
-    neighbor_weights = (
-        neighbor_payload.get("neighbors", {})
-        if isinstance(neighbor_payload, dict)
-        else {}
-    )
-    for water_key in unassigned_water:
-        region_scores = scores.get(water_key)
-        if region_scores is None:
-            continue
-        edge_map = neighbor_weights.get(water_key, {})
+    # Border-length neighbors from provinces map.
+    for water_key in candidate_water:
+        edge_map = neighbors.get(water_key, {}) if isinstance(neighbors, dict) else {}
         if not isinstance(edge_map, dict):
             continue
+        scores = province_scores[water_key]
         for neighbor_key, edge_weight in edge_map.items():
-            if not isinstance(neighbor_key, str):
+            if not isinstance(neighbor_key, str) or neighbor_key not in land_to_area:
                 continue
-            region_tag = location_to_region.get(neighbor_key)
-            if not region_tag:
-                continue
-            try:
-                weight = int(edge_weight)
-            except Exception:
-                weight = 1
-            region_scores[region_tag] += max(1, weight)
+            scores[neighbor_key] += max(1, _to_int_weight(edge_weight))
 
-    # Explicit adjacency links supplement port data for water placement.
+    # Explicit adjacency supplements province-level evidence.
     for row in parse_adjacencies(id_to_key, location_keys):
         a_key = row.get("From")
         b_key = row.get("To")
-        if isinstance(a_key, str) and a_key in unassigned_set:
-            region_tag = location_to_region.get(b_key)
-            if region_tag:
-                scores[a_key][region_tag] += 3
-        if isinstance(b_key, str) and b_key in unassigned_set:
-            region_tag = location_to_region.get(a_key)
-            if region_tag:
-                scores[b_key][region_tag] += 3
+        if isinstance(a_key, str) and a_key in water_keys and isinstance(b_key, str) and b_key in land_to_area:
+            province_scores[a_key][b_key] += 3
+        if isinstance(b_key, str) and b_key in water_keys and isinstance(a_key, str) and a_key in land_to_area:
+            province_scores[b_key][a_key] += 3
 
-    assignments: dict[str, str] = {}
-    for water_key in unassigned_water:
-        region_scores = scores.get(water_key)
-        if not region_scores:
-            continue
-        if len(region_scores) == 0:
-            continue
-        region_tag = sorted(region_scores.items(), key=lambda item: (-item[1], item[0]))[0][0]
-        assignments[water_key] = region_tag
+    assignments_land: dict[str, str] = {}
+    for water_key in candidate_water:
+        scores = province_scores.get(water_key)
+        if scores:
+            assignments_land[water_key] = sorted(scores.items(), key=lambda item: (-item[1], item[0]))[0][0]
 
-    # Proximity fallback for inland/open water tiles with no direct border hints.
-    missing = [key for key in unassigned_water if key not in assignments]
-    if missing:
-        centroids = (
-            neighbor_payload.get("centroids", {})
-            if isinstance(neighbor_payload, dict)
-            else {}
-        )
-        if isinstance(centroids, dict):
-            non_land = _non_land_keys(default_map)
-            region_centroids: dict[str, tuple[float, float]] = {}
-            region_accum: dict[str, list[float]] = {}
-            for key, region_tag in location_to_region.items():
-                if key in non_land:
-                    continue
-                point = centroids.get(key)
-                if (
-                    not isinstance(point, list)
-                    or len(point) != 2
-                    or not isinstance(point[0], (int, float))
-                    or not isinstance(point[1], (int, float))
-                ):
-                    continue
-                cx = float(point[0])
-                cy = float(point[1])
-                if region_tag not in region_accum:
-                    region_accum[region_tag] = [0.0, 0.0, 0.0]
-                region_accum[region_tag][0] += cx
-                region_accum[region_tag][1] += cy
-                region_accum[region_tag][2] += 1.0
-            for region_tag, (sx, sy, n) in region_accum.items():
-                if n > 0:
-                    region_centroids[region_tag] = (sx / n, sy / n)
+    # Centroid fallback to nearest land province centroid.
+    missing = [key for key in candidate_water if key not in assignments_land]
+    if missing and isinstance(centroids, dict):
+        land_points: list[tuple[str, float, float]] = []
+        for land_key in land_to_area.keys():
+            point = centroids.get(land_key)
+            if (
+                not isinstance(point, list)
+                or len(point) != 2
+                or not isinstance(point[0], (int, float))
+                or not isinstance(point[1], (int, float))
+            ):
+                continue
+            land_points.append((land_key, float(point[0]), float(point[1])))
 
-            for water_key in missing:
-                point = centroids.get(water_key)
-                if (
-                    not isinstance(point, list)
-                    or len(point) != 2
-                    or not isinstance(point[0], (int, float))
-                    or not isinstance(point[1], (int, float))
-                ):
-                    continue
-                wx = float(point[0])
-                wy = float(point[1])
-                best_region = None
-                best_dist = None
-                for region_tag, (rx, ry) in region_centroids.items():
-                    dist = (wx - rx) * (wx - rx) + (wy - ry) * (wy - ry)
-                    if best_dist is None or dist < best_dist:
-                        best_dist = dist
-                        best_region = region_tag
-                if best_region:
-                    assignments[water_key] = best_region
+        for water_key in missing:
+            point = centroids.get(water_key)
+            if (
+                not isinstance(point, list)
+                or len(point) != 2
+                or not isinstance(point[0], (int, float))
+                or not isinstance(point[1], (int, float))
+                or not land_points
+            ):
+                continue
+            wx = float(point[0])
+            wy = float(point[1])
+            best_land = None
+            best_dist = None
+            for land_key, lx, ly in land_points:
+                dist = (wx - lx) * (wx - lx) + (wy - ly) * (wy - ly)
+                if best_dist is None or dist < best_dist:
+                    best_dist = dist
+                    best_land = land_key
+            if best_land:
+                assignments_land[water_key] = best_land
 
-    # Last-resort proximity: infer from closest province ID among already assigned water.
-    missing = [key for key in unassigned_water if key not in assignments]
+    # Last-resort by nearest land province ID, or preserve prior area/region.
+    missing = [key for key in candidate_water if key not in assignments_land]
     if missing:
         key_to_prov_id = {key: prov_id for prov_id, key, *_ in named_locations}
-        assigned_water_by_id: list[tuple[int, str]] = []
-        for key in water_keys:
-            region_tag = assignments.get(key) or location_to_region.get(key)
-            prov_id = key_to_prov_id.get(key)
-            if region_tag and prov_id is not None:
-                assigned_water_by_id.append((prov_id, region_tag))
-        for water_key in missing:
-            prov_id = key_to_prov_id.get(water_key)
-            if prov_id is None or not assigned_water_by_id:
+        land_candidates: list[tuple[int, str]] = []
+        for land_key in land_to_area.keys():
+            prov_id = key_to_prov_id.get(land_key)
+            if prov_id is None:
                 continue
-            nearest_region = sorted(
-                assigned_water_by_id,
+            land_candidates.append((prov_id, land_key))
+
+        for water_key in missing:
+            prev_area = existing_loc_to_area.get(water_key)
+            if prev_area and prev_area in area_to_region:
+                # Keep deterministic ownership from existing area when present.
+                prev_region = area_to_region[prev_area]
+                for land_key, area_tag in land_to_area.items():
+                    if area_tag == prev_area and land_to_region.get(land_key) == prev_region:
+                        assignments_land[water_key] = land_key
+                        break
+                if water_key in assignments_land:
+                    continue
+
+            prov_id = key_to_prov_id.get(water_key)
+            if prov_id is None or not land_candidates:
+                continue
+            nearest_land = sorted(
+                land_candidates,
                 key=lambda item: (abs(item[0] - prov_id), item[1]),
             )[0][1]
-            assignments[water_key] = nearest_region
+            assignments_land[water_key] = nearest_land
 
-    # Write inferred water tiles into generated area blocks under their target regions.
-    by_region: dict[str, list[str]] = defaultdict(list)
-    for water_key, region_tag in assignments.items():
-        by_region[region_tag].append(water_key)
+    # Remove all water tiles from existing areas, then reinsert via chosen land province owner.
+    for area_map in regions.values():
+        for area_tag, provinces in area_map.items():
+            if isinstance(provinces, list):
+                area_map[area_tag] = [p for p in provinces if p not in water_keys]
 
-    for region_tag, water_list in sorted(by_region.items()):
-        if not water_list:
+    for water_key in candidate_water:
+        land_key = assignments_land.get(water_key)
+        if not land_key:
+            continue
+        area_tag = land_to_area.get(land_key)
+        region_tag = land_to_region.get(land_key)
+        if not area_tag or not region_tag:
             continue
         area_map = regions.setdefault(region_tag, {})
-        base_area = f"{region_tag}_water_province_generated"
-        area_tag = base_area
-        suffix = 1
-        while area_tag in area_map:
-            area_tag = f"{base_area}_{suffix:02d}"
-            suffix += 1
-        deduped = sorted(dict.fromkeys(water_list))
-        area_map[area_tag] = deduped
-        for key in deduped:
-            location_to_region.setdefault(key, region_tag)
+        target = area_map.setdefault(area_tag, [])
+        if water_key not in target:
+            target.append(water_key)
+        location_to_region[water_key] = region_tag
 
-    return assignments
+    return {
+        key: location_to_region[key]
+        for key in candidate_water
+        if key in location_to_region
+    }
+
 
 
 def assign_unmapped_non_ownable_to_regions(
@@ -1089,7 +1143,7 @@ def assign_unmapped_rivers_to_regions(
     location_keys: set[str],
     extra_river_keys: set[str] | None = None,
 ) -> dict[str, str]:
-    """Assign river provinces into regular existing areas by strongest shared borders."""
+    """Assign river provinces by proximity to existing land provinces."""
     if not isinstance(default_map, dict):
         return {}
 
@@ -1099,8 +1153,8 @@ def assign_unmapped_rivers_to_regions(
     if extra_river_keys:
         river_keys.update(set(extra_river_keys) & set(location_keys))
     river_keys = river_keys - sea_zones - lakes
-    unassigned = sorted(river_keys - assigned_provinces)
-    if not unassigned:
+    candidate_rivers = sorted(river_keys)
+    if not candidate_rivers:
         return {}
 
     neighbor_payload = load_location_neighbors()
@@ -1112,139 +1166,147 @@ def assign_unmapped_rivers_to_regions(
         return {}
 
     neighbors = neighbor_payload.get("neighbors", {}) if isinstance(neighbor_payload, dict) else {}
-    assignments: dict[str, str] = {}
+    centroids = neighbor_payload.get("centroids", {}) if isinstance(neighbor_payload, dict) else {}
+    non_land = _non_land_keys(default_map)
 
-    # Region selection by bordering assigned provinces.
-    for key in unassigned:
-        edge_map = neighbors.get(key, {}) if isinstance(neighbors, dict) else {}
-        if not isinstance(edge_map, dict):
+    land_to_area: dict[str, str] = {}
+    land_to_region: dict[str, str] = {}
+    existing_loc_to_area: dict[str, str] = {}
+    area_to_region: dict[str, str] = {}
+    for region_tag, area_map in regions.items():
+        if not isinstance(area_map, dict):
             continue
-        scores: Counter[str] = Counter()
-        for neighbor_key, edge_weight in edge_map.items():
-            if not isinstance(neighbor_key, str):
+        for area_tag, provinces in area_map.items():
+            if not isinstance(provinces, list):
                 continue
-            region_tag = location_to_region.get(neighbor_key)
-            if not region_tag:
-                continue
-            try:
-                weight = int(edge_weight)
-            except Exception:
-                weight = 1
-            scores[region_tag] += max(1, weight)
-        if scores:
-            assignments[key] = sorted(scores.items(), key=lambda item: (-item[1], item[0]))[0][0]
-
-    # Centroid fallback.
-    missing = [key for key in unassigned if key not in assignments]
-    if missing:
-        centroids = neighbor_payload.get("centroids", {}) if isinstance(neighbor_payload, dict) else {}
-        if isinstance(centroids, dict):
-            non_land = _non_land_keys(default_map)
-            region_centroids: dict[str, tuple[float, float]] = {}
-            region_accum: dict[str, list[float]] = {}
-            for loc_key, region_tag in location_to_region.items():
-                if loc_key in non_land:
+            area_to_region[area_tag] = region_tag
+            for key in provinces:
+                if not isinstance(key, str):
                     continue
-                point = centroids.get(loc_key)
-                if (
-                    not isinstance(point, list)
-                    or len(point) != 2
-                    or not isinstance(point[0], (int, float))
-                    or not isinstance(point[1], (int, float))
-                ):
-                    continue
-                if region_tag not in region_accum:
-                    region_accum[region_tag] = [0.0, 0.0, 0.0]
-                region_accum[region_tag][0] += float(point[0])
-                region_accum[region_tag][1] += float(point[1])
-                region_accum[region_tag][2] += 1.0
-            for region_tag, (sx, sy, n) in region_accum.items():
-                if n > 0:
-                    region_centroids[region_tag] = (sx / n, sy / n)
+                existing_loc_to_area.setdefault(key, area_tag)
+                if key not in non_land:
+                    land_to_area.setdefault(key, area_tag)
+                    land_to_region.setdefault(key, region_tag)
 
-            for key in missing:
-                point = centroids.get(key)
-                if (
-                    not isinstance(point, list)
-                    or len(point) != 2
-                    or not isinstance(point[0], (int, float))
-                    or not isinstance(point[1], (int, float))
-                ):
-                    continue
-                x = float(point[0])
-                y = float(point[1])
-                best_region = None
-                best_dist = None
-                for region_tag, (rx, ry) in region_centroids.items():
-                    dist = (x - rx) * (x - rx) + (y - ry) * (y - ry)
-                    if best_dist is None or dist < best_dist:
-                        best_dist = dist
-                        best_region = region_tag
-                if best_region:
-                    assignments[key] = best_region
-
-    # Last-resort by nearest province id.
-    missing = [key for key in unassigned if key not in assignments]
-    if missing:
-        key_to_prov_id = {key: prov_id for prov_id, key, *_ in named_locations}
-        candidates: list[tuple[int, str]] = []
-        for loc_key, region_tag in location_to_region.items():
-            prov_id = key_to_prov_id.get(loc_key)
-            if prov_id is None:
-                continue
-            candidates.append((prov_id, region_tag))
-        for key in missing:
-            prov_id = key_to_prov_id.get(key)
-            if prov_id is None or not candidates:
-                continue
-            nearest_region = sorted(
-                candidates,
-                key=lambda item: (abs(item[0] - prov_id), item[1]),
-            )[0][1]
-            assignments[key] = nearest_region
-
-    def to_int_weight(value) -> int:
+    def _to_int_weight(value) -> int:
         try:
             return int(value)
         except Exception:
             return 1
 
-    # Area selection by strongest shared border inside chosen region.
-    for loc_key, region_tag in sorted(assignments.items()):
-        area_map = regions.setdefault(region_tag, {})
-        if not area_map:
-            base_area = f"{region_tag}_province_generated"
-            area_map[base_area] = [loc_key]
-            location_to_region.setdefault(loc_key, region_tag)
+    province_scores: dict[str, Counter[str]] = {key: Counter() for key in candidate_rivers}
+
+    # Border-strength to neighboring land provinces.
+    for river_key in candidate_rivers:
+        edge_map = neighbors.get(river_key, {}) if isinstance(neighbors, dict) else {}
+        if not isinstance(edge_map, dict):
             continue
-
-        edge_map = neighbors.get(loc_key, {}) if isinstance(neighbors, dict) else {}
-        best_area = None
-        best_score = -1
-        best_len = -1
-        for area_tag, provinces in area_map.items():
-            if not isinstance(provinces, list):
+        scores = province_scores[river_key]
+        for neighbor_key, edge_weight in edge_map.items():
+            if not isinstance(neighbor_key, str) or neighbor_key not in land_to_area:
                 continue
-            score = 0
-            if isinstance(edge_map, dict):
-                province_set = set(provinces)
-                for neighbor_key, edge_weight in edge_map.items():
-                    if neighbor_key in province_set:
-                        score += max(1, to_int_weight(edge_weight))
-            plen = len(provinces)
-            if score > best_score or (score == best_score and plen > best_len):
-                best_area = area_tag
-                best_score = score
-                best_len = plen
+            scores[neighbor_key] += max(1, _to_int_weight(edge_weight))
 
-        if not best_area:
-            best_area = sorted(area_map.keys())[0]
-        target = area_map.get(best_area)
-        if isinstance(target, list) and loc_key not in target:
-            target.append(loc_key)
-        location_to_region.setdefault(loc_key, region_tag)
+    assignments_land: dict[str, str] = {}
+    for river_key in candidate_rivers:
+        scores = province_scores.get(river_key)
+        if scores:
+            assignments_land[river_key] = sorted(scores.items(), key=lambda item: (-item[1], item[0]))[0][0]
 
-    return assignments
+    # Centroid fallback to nearest land province centroid.
+    missing = [key for key in candidate_rivers if key not in assignments_land]
+    if missing and isinstance(centroids, dict):
+        land_points: list[tuple[str, float, float]] = []
+        for land_key in land_to_area.keys():
+            point = centroids.get(land_key)
+            if (
+                not isinstance(point, list)
+                or len(point) != 2
+                or not isinstance(point[0], (int, float))
+                or not isinstance(point[1], (int, float))
+            ):
+                continue
+            land_points.append((land_key, float(point[0]), float(point[1])))
+
+        for river_key in missing:
+            point = centroids.get(river_key)
+            if (
+                not isinstance(point, list)
+                or len(point) != 2
+                or not isinstance(point[0], (int, float))
+                or not isinstance(point[1], (int, float))
+                or not land_points
+            ):
+                continue
+            rx = float(point[0])
+            ry = float(point[1])
+            best_land = None
+            best_dist = None
+            for land_key, lx, ly in land_points:
+                dist = (rx - lx) * (rx - lx) + (ry - ly) * (ry - ly)
+                if best_dist is None or dist < best_dist:
+                    best_dist = dist
+                    best_land = land_key
+            if best_land:
+                assignments_land[river_key] = best_land
+
+    # Last-resort by nearest land province ID, or preserve prior area/region.
+    missing = [key for key in candidate_rivers if key not in assignments_land]
+    if missing:
+        key_to_prov_id = {key: prov_id for prov_id, key, *_ in named_locations}
+        land_candidates: list[tuple[int, str]] = []
+        for land_key in land_to_area.keys():
+            prov_id = key_to_prov_id.get(land_key)
+            if prov_id is None:
+                continue
+            land_candidates.append((prov_id, land_key))
+
+        for river_key in missing:
+            prev_area = existing_loc_to_area.get(river_key)
+            if prev_area and prev_area in area_to_region:
+                prev_region = area_to_region[prev_area]
+                for land_key, area_tag in land_to_area.items():
+                    if area_tag == prev_area and land_to_region.get(land_key) == prev_region:
+                        assignments_land[river_key] = land_key
+                        break
+                if river_key in assignments_land:
+                    continue
+
+            prov_id = key_to_prov_id.get(river_key)
+            if prov_id is None or not land_candidates:
+                continue
+            nearest_land = sorted(
+                land_candidates,
+                key=lambda item: (abs(item[0] - prov_id), item[1]),
+            )[0][1]
+            assignments_land[river_key] = nearest_land
+
+    # Remove all rivers from areas, then reinsert via chosen land province owner.
+    for area_map in regions.values():
+        for area_tag, provinces in area_map.items():
+            if isinstance(provinces, list):
+                area_map[area_tag] = [p for p in provinces if p not in river_keys]
+
+    for river_key in candidate_rivers:
+        land_key = assignments_land.get(river_key)
+        if not land_key:
+            continue
+        area_tag = land_to_area.get(land_key)
+        region_tag = land_to_region.get(land_key)
+        if not area_tag or not region_tag:
+            continue
+        area_map = regions.setdefault(region_tag, {})
+        target = area_map.setdefault(area_tag, [])
+        if river_key not in target:
+            target.append(river_key)
+        location_to_region[river_key] = region_tag
+
+    return {
+        key: location_to_region[key]
+        for key in candidate_rivers
+        if key in location_to_region
+    }
+
 
 
 # ---------------- Main Port Map Function ---------------- #
@@ -1659,6 +1721,123 @@ def build_ir_building_mapping() -> dict[str, str]:
     return mapping
 
 
+FOOD_GOODS = {
+    "wheat",
+    "maize",
+    "rice",
+    "millet",
+    "legumes",
+    "potato",
+    "livestock",
+    "olives",
+    "fruit",
+    "wool",
+}
+FOREST_GOODS = {"wild_game", "fur", "beeswax", "lumber"}
+FOREST_VEGETATION = {"forest", "woods", "jungle"}
+WATER_TOPOGRAPHIES = {"ocean", "inland_sea", "lakes", "mountain_wasteland"}
+
+
+def _classify_rural_building(
+    raw_material: str | None,
+    vegetation: str | None,
+    is_coastal: bool,
+) -> str:
+    if raw_material == "fish" and is_coastal:
+        return "fishing_village"
+    if raw_material in FOOD_GOODS:
+        return "farming_village"
+    if raw_material in FOREST_GOODS or (vegetation in FOREST_VEGETATION):
+        return "forest_village"
+    return "market_village"
+
+
+def _build_country_prosperity(
+    country_locations: dict[str, list[int]],
+    id_to_key: dict[int, str],
+    civilization_values: dict[str, float],
+) -> dict[str, float]:
+    prosperity: dict[str, float] = {}
+    for tag, prov_ids in country_locations.items():
+        values: list[float] = []
+        for prov_id in prov_ids:
+            loc_key = id_to_key.get(prov_id)
+            if not loc_key:
+                continue
+            civ = civilization_values.get(loc_key)
+            if civ is None:
+                continue
+            values.append(float(civ))
+        avg = sum(values) / len(values) if values else 0.0
+        prosperity[tag] = max(0.0, min(avg / 100.0, 1.0))
+    return prosperity
+
+
+_EU5_RURAL_DISTRIBUTION_CACHE: dict[str, float] | None = None
+
+
+def _eu5_rural_distribution() -> dict[str, float]:
+    global _EU5_RURAL_DISTRIBUTION_CACHE
+    if _EU5_RURAL_DISTRIBUTION_CACHE is not None:
+        return _EU5_RURAL_DISTRIBUTION_CACHE
+
+    templates_path = eu5_game / "in_game" / "map_data" / "location_templates.txt"
+    if not templates_path.exists():
+        _EU5_RURAL_DISTRIBUTION_CACHE = {
+            "fishing_village": 0.1,
+            "farming_village": 0.5,
+            "forest_village": 0.2,
+            "market_village": 0.2,
+        }
+        return _EU5_RURAL_DISTRIBUTION_CACHE
+
+    tree = parse_tree(templates_path)
+    counts: dict[str, int] = defaultdict(int)
+    for _, value in tree.items():
+        block = value[0] if isinstance(value, list) and value else value
+        if not isinstance(block, (_pydt.Tree, dict)):
+            continue
+        topography = block["topography"] if "topography" in block else None
+        if isinstance(topography, list):
+            topography = topography[0] if topography else None
+        if isinstance(topography, str) and topography.strip().lower() in WATER_TOPOGRAPHIES:
+            continue
+
+        raw_material = block["raw_material"] if "raw_material" in block else None
+        if isinstance(raw_material, list):
+            raw_material = raw_material[0] if raw_material else None
+        if isinstance(raw_material, str):
+            raw_material = raw_material.strip()
+
+        vegetation = block["vegetation"] if "vegetation" in block else None
+        if isinstance(vegetation, list):
+            vegetation = vegetation[0] if vegetation else None
+        if isinstance(vegetation, str):
+            vegetation = vegetation.strip()
+
+        is_coastal = "natural_harbor_suitability" in block
+        kind = _classify_rural_building(raw_material, vegetation, is_coastal)
+        counts[kind] += 1
+
+    total = sum(counts.values())
+    if total <= 0:
+        _EU5_RURAL_DISTRIBUTION_CACHE = {
+            "fishing_village": 0.1,
+            "farming_village": 0.5,
+            "forest_village": 0.2,
+            "market_village": 0.2,
+        }
+        return _EU5_RURAL_DISTRIBUTION_CACHE
+
+    _EU5_RURAL_DISTRIBUTION_CACHE = {
+        "fishing_village": counts.get("fishing_village", 0) / total,
+        "farming_village": counts.get("farming_village", 0) / total,
+        "forest_village": counts.get("forest_village", 0) / total,
+        "market_village": counts.get("market_village", 0) / total,
+    }
+    return _EU5_RURAL_DISTRIBUTION_CACHE
+
+
 def build_ir_raw_materials(id_to_key: dict[int, str]) -> dict[str, str]:
     """Map I:R trade_goods to EU5 raw_material keys per location."""
     province_files = _iter_ir_province_files()
@@ -1747,6 +1926,32 @@ def build_ir_raw_materials(id_to_key: dict[int, str]) -> dict[str, str]:
     report_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print_written("file", report_path)
 
+    return result
+
+
+def build_ir_civilization_values(id_to_key: dict[int, str]) -> dict[str, float]:
+    province_files = _iter_ir_province_files()
+    if not province_files:
+        return {}
+
+    result: dict[str, float] = {}
+    for path in province_files:
+        tree = parse_tree(path)
+        for raw_id, data in tree.items():
+            try:
+                prov_id = int(raw_id)
+            except Exception:
+                continue
+            loc_key = id_to_key.get(prov_id)
+            if not loc_key or not isinstance(data, (_pydt.Tree, dict)):
+                continue
+            civ = data.get("civilization_value") if isinstance(data, dict) else data["civilization_value"]
+            if civ is None:
+                continue
+            try:
+                result[loc_key] = float(civ)
+            except Exception:
+                continue
     return result
 
 
@@ -2043,6 +2248,77 @@ def build_ir_harbor_suitability(
     return result
 
 
+def _setup_signature(buildings: dict[str, int]) -> tuple[tuple[str, int], ...]:
+    items: list[tuple[str, int]] = []
+    for key, value in sorted((buildings or {}).items()):
+        try:
+            level = int(value)
+        except Exception:
+            continue
+        if level > 0:
+            items.append((str(key), level))
+    return tuple(items)
+
+
+def _template_name_from_signature(signature: tuple[tuple[str, int], ...]) -> str:
+    if not signature:
+        return "ir_tpl_empty"
+
+    alias = {
+        "dock": "port",
+        "marketplace": "market",
+        "slave_market": "slave_market",
+        "castle": "castle",
+        "fortress": "fortress",
+        "temple": "temple",
+    }
+
+    tokens: list[str] = []
+    for building_key, level in signature:
+        token = alias.get(building_key, building_key)
+        tokens.append(f"{token}{level}")
+
+    name = "ir_tpl_" + "_".join(tokens)
+    if len(name) <= 96:
+        return name
+
+    # Keep names readable but bounded for parser/UI stability.
+    compact = "_".join(tokens[:5])
+    sig_hash = abs(hash(signature)) % (16**8)
+    return f"ir_tpl_{compact}_{sig_hash:08x}"
+
+
+def _dedupe_location_setup_templates(
+    location_to_setup: dict[str, str],
+    setup_definitions: dict[str, dict[str, int]],
+) -> tuple[dict[str, str], dict[str, dict[str, int]]]:
+    """Collapse per-location setup names into shared templates by building signature."""
+    signature_to_name: dict[tuple[tuple[str, int], ...], str] = {}
+    deduped_definitions: dict[str, dict[str, int]] = {}
+    deduped_location_to_setup: dict[str, str] = {}
+    used_names: set[str] = set()
+
+    for loc_key in sorted(location_to_setup.keys()):
+        source_setup = location_to_setup[loc_key]
+        signature = _setup_signature(setup_definitions.get(source_setup, {}))
+
+        setup_name = signature_to_name.get(signature)
+        if not setup_name:
+            base_name = _template_name_from_signature(signature)
+            setup_name = base_name
+            suffix = 2
+            while setup_name in used_names:
+                setup_name = f"{base_name}_{suffix}"
+                suffix += 1
+            signature_to_name[signature] = setup_name
+            used_names.add(setup_name)
+            deduped_definitions[setup_name] = {k: v for k, v in signature}
+
+        deduped_location_to_setup[loc_key] = setup_name
+
+    return deduped_location_to_setup, deduped_definitions
+
+
 def build_ir_location_building_setups(
     id_to_key: dict[int, str],
     locations_with_pops: set[str],
@@ -2281,6 +2557,7 @@ def build_ir_location_ranks(
     locations_with_pops: set[str],
     town_setup: str,
     location_town_setups: dict[str, str] | None = None,
+    coastal_land_locations: set[str] | None = None,
 ) -> dict[str, str]:
     """Build EU5 location rank data from Imperator province setup data."""
     province_files = _iter_ir_province_files()
@@ -2322,7 +2599,9 @@ def build_ir_location_ranks(
                 continue
             culture = data["culture"]
             group_tag = culture_to_group[str(culture)]
-            is_port = "port_building" in data and data["port_building"]
+            is_port = ("port_building" in data and data["port_building"]) or (
+                coastal_land_locations is not None and loc_key in coastal_land_locations
+            )
             if location_town_setups is not None:
                 setup = location_town_setups.get(loc_key, f"ir_loc_{loc_key}")
             else:
@@ -2835,6 +3114,7 @@ def _write_town_setups_and_ranks(
     id_to_key: dict[int, str],
     location_keys: set[str],
     default_map: dict,
+    coastal_land_locations: set[str],
 ) -> None:
     building_map = build_ir_building_mapping()
     rankable_locations = build_ir_rankable_locations(id_to_key, location_keys)
@@ -2846,6 +3126,163 @@ def _write_town_setups_and_ranks(
     )
     _merge_main_setup_buildings(setup_definitions, building_map, id_to_key)
 
+    raw_materials = build_ir_raw_materials(id_to_key)
+    terrain_map = build_ir_terrain_maps(id_to_key)
+    civilization_values = build_ir_civilization_values(id_to_key)
+
+    def setup_is_empty_or_port_only(buildings: dict[str, int]) -> bool:
+        if not buildings:
+            return True
+        return all(key == "dock" for key in buildings.keys())
+
+    def ensure_setup(loc_key: str) -> dict[str, int]:
+        setup_name = location_building_setups.get(loc_key, f"ir_loc_{loc_key}")
+        location_building_setups.setdefault(loc_key, setup_name)
+        return setup_definitions.setdefault(setup_name, {})
+
+    base_distribution = _eu5_rural_distribution()
+    country_locations = extract_ir_country_locations()
+    country_prosperity = _build_country_prosperity(
+        country_locations, id_to_key, civilization_values
+    )
+    loc_to_country: dict[str, str] = {}
+    for tag, prov_ids in country_locations.items():
+        for prov_id in prov_ids:
+            loc_key = id_to_key.get(prov_id)
+            if loc_key and loc_key not in loc_to_country:
+                loc_to_country[loc_key] = tag
+
+    rural_types = [
+        "fishing_village",
+        "farming_village",
+        "forest_village",
+        "market_village",
+    ]
+
+    def adjust_distribution(prosperity: float) -> dict[str, float]:
+        base_market = base_distribution.get("market_village", 0.0)
+        shift = (prosperity - 0.5) * 0.2
+        market = min(0.75, max(0.05, base_market + shift))
+        remaining = 1.0 - market
+        other_total = (
+            base_distribution.get("fishing_village", 0.0)
+            + base_distribution.get("farming_village", 0.0)
+            + base_distribution.get("forest_village", 0.0)
+        )
+        if other_total <= 0:
+            share = remaining / 3.0
+            return {
+                "fishing_village": share,
+                "farming_village": share,
+                "forest_village": share,
+                "market_village": market,
+            }
+        return {
+            "fishing_village": base_distribution.get("fishing_village", 0.0)
+            / other_total
+            * remaining,
+            "farming_village": base_distribution.get("farming_village", 0.0)
+            / other_total
+            * remaining,
+            "forest_village": base_distribution.get("forest_village", 0.0)
+            / other_total
+            * remaining,
+            "market_village": market,
+        }
+
+    def build_targets(dist: dict[str, float], count: int) -> dict[str, int]:
+        targets = {kind: int(round(dist.get(kind, 0.0) * count)) for kind in rural_types}
+        diff = count - sum(targets.values())
+        if diff == 0:
+            return targets
+        order = sorted(rural_types, key=lambda k: dist.get(k, 0.0), reverse=True)
+        idx = 0
+        while diff != 0 and order:
+            key = order[idx % len(order)]
+            if diff > 0:
+                targets[key] += 1
+                diff -= 1
+            elif targets[key] > 0:
+                targets[key] -= 1
+                diff += 1
+            idx += 1
+        return targets
+
+    def rural_candidates(loc_key: str) -> list[str]:
+        raw = raw_materials.get(loc_key)
+        vegetation = terrain_map.get(loc_key, (None, None))[1]
+        is_coastal = loc_key in coastal_land_locations
+        candidates: list[str] = []
+        if raw == "fish" and is_coastal:
+            candidates.append("fishing_village")
+        if raw in FOOD_GOODS:
+            candidates.append("farming_village")
+        if raw in FOREST_GOODS or vegetation in FOREST_VEGETATION:
+            candidates.append("forest_village")
+        candidates.append("market_village")
+        return candidates
+
+    rural_by_country: dict[str | None, list[str]] = defaultdict(list)
+    for loc_key in sorted(location_keys):
+        setup = ensure_setup(loc_key)
+        if loc_key in rankable_locations:
+            if setup_is_empty_or_port_only(setup):
+                setup.setdefault("marketplace", 1)
+                setup.setdefault("granary", 1)
+            continue
+
+        rural_by_country[loc_to_country.get(loc_key)].append(loc_key)
+
+    for country_tag, locations in sorted(rural_by_country.items(), key=lambda item: str(item[0])):
+        if not locations:
+            continue
+        prosperity = country_prosperity.get(country_tag, 0.0)
+        dist = adjust_distribution(prosperity)
+        targets = build_targets(dist, len(locations))
+
+        existing_counts: dict[str, int] = defaultdict(int)
+        pending: list[str] = []
+        for loc_key in locations:
+            setup = ensure_setup(loc_key)
+            existing = next((kind for kind in rural_types if kind in setup), None)
+            if existing:
+                existing_counts[existing] += 1
+                continue
+            pending.append(loc_key)
+
+        remaining = {
+            kind: max(0, targets.get(kind, 0) - existing_counts.get(kind, 0))
+            for kind in rural_types
+        }
+
+        for loc_key in sorted(pending):
+            setup = ensure_setup(loc_key)
+            candidates = rural_candidates(loc_key)
+            choice = None
+            for kind in candidates:
+                if remaining.get(kind, 0) > 0:
+                    choice = kind
+                    break
+            if choice is None:
+                choice = max(remaining, key=lambda k: remaining.get(k, 0))
+            setup[choice] = 1
+            if remaining.get(choice, 0) > 0:
+                remaining[choice] -= 1
+
+    # Coastal locations must have a port-capable setup to avoid map validation errors.
+    for loc_key in sorted(coastal_land_locations):
+        setup_name = location_building_setups.get(loc_key, f"ir_loc_{loc_key}")
+        location_building_setups.setdefault(loc_key, setup_name)
+        setup = setup_definitions.setdefault(setup_name, {})
+        if setup.get("dock", 0) < 1:
+            setup["dock"] = 1
+
+    # Collapse per-location setup names into shared named templates.
+    location_building_setups, setup_definitions = _dedupe_location_setup_templates(
+        location_building_setups,
+        setup_definitions,
+    )
+
     town_setups_dir = mod_root / "in_game" / "common" / "town_setups"
     town_setups_dir.mkdir(parents=True, exist_ok=True)
     town_setups_path = town_setups_dir / "ir_location_setups.txt"
@@ -2856,7 +3293,17 @@ def _write_town_setups_and_ranks(
         location_keys,
         town_setup="italian_city",
         location_town_setups=location_building_setups,
+        coastal_land_locations=coastal_land_locations,
     )
+
+    # Coastal settlements without an explicit rank entry still need a startup
+    # location block with both rank and town_setup for port validation.
+    for loc_key in sorted(coastal_land_locations):
+        if loc_key in rank_lines:
+            continue
+        setup = location_building_setups.get(loc_key, f"ir_loc_{loc_key}")
+        rank_lines[loc_key] = f"rank = rural_settlement town_setup = {setup}"
+
     rank_blocks = [(loc_key, [rank_lines[loc_key]]) for loc_key in sorted(rank_lines.keys())]
     _write_locations_block(
         iu_setup_start / "07_cities_and_buildings.txt", rank_blocks, encoding="utf-8"
@@ -2951,12 +3398,18 @@ def _write_start_setup_content(
     region_keys: set[str],
     continent_keys: set[str],
     subcontinent_keys: set[str],
+    coastal_land_locations: set[str],
 ) -> None:
     _copy_filtered_location_start_files(location_keys)
 
     pops_by_location = _write_pops_file(id_to_key)
     _write_institutions_file(pops_by_location, default_map)
-    _write_town_setups_and_ranks(id_to_key, set(pops_by_location.keys()), default_map)
+    _write_town_setups_and_ranks(
+        id_to_key,
+        set(pops_by_location.keys()),
+        default_map,
+        coastal_land_locations,
+    )
 
     _write_markets_file(id_to_key, location_keys, default_map, location_to_region)
     _write_roads_file(id_to_key, location_keys, default_map)
@@ -3295,6 +3748,14 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
         default_map.setdefault("volcanoes", set()).update(volcanoes)
 
     sea_zones = set(default_map.get("sea_zones", set())) if isinstance(default_map, dict) else set()
+    if isinstance(default_map, dict):
+        sea_zones.update(
+            {
+                key
+                for key in default_map.get("lakes", set())
+                if isinstance(key, str) and key.startswith("mare_hyrcanum_")
+            }
+        )
     coastal_land_locations = _write_reference_outputs(
         named_locations,
         id_to_key,
@@ -3351,6 +3812,7 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
         region_keys,
         continent_keys,
         subcontinent_keys,
+        coastal_land_locations,
     )
 
     _copy_and_validate_map_images()
