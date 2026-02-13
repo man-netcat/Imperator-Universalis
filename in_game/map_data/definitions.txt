@@ -248,7 +248,6 @@ europe = {
                 don_river_province = {  }
                 hypanis_river_province = {  }
                 ister_river_province = {  }
-                tyras_river_province = {  }
             }
             eastern_mediterranean_river_area = {
                 cydnus_river_province = {  }
@@ -276,7 +275,6 @@ europe = {
                 mare_phoenicium_province = {  }
                 mare_sardonium_province = {  }
                 mare_tyrrenum_province = {  }
-                sinus_gallicus_province = {  }
             }
             north_sea_river_area = {
                 albis_river_province = {  }

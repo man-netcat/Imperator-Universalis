@@ -731,7 +731,6 @@ discovered_provinces = {
 	sinai_province
 	sinkat_province
 	sinus_adenensis_province
-	sinus_gallicus_province
 	sirdarya_province
 	sivi_province
 	soducene_province
@@ -817,7 +816,6 @@ discovered_provinces = {
 	turdulia_orientalis_province
 	turonia_province
 	turuntia_province
-	tyras_river_province
 	ukrush_province
 	ultima_thule_province
 	upper_armenia_province
