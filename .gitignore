@@ -1,2 +1,6 @@
 __pycache__
 *.json
+
+# Ignore ANTLR-generated Java artifacts in the pyradox grammar output
+/tools/pyradox/src/pyradox/antlr/**/*.java
+/tools/pyradox/src/pyradox/antlr/.antlr/
