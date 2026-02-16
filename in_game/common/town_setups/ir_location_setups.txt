@@ -344,10 +344,6 @@ ir_deccan_town_coastal_03 = {
     marketplace = 1
 }
 
-ir_deccan_town_coastal_04 = {
-    temple = 1
-}
-
 ir_egyptian_city = {
     granary = 1
     marketplace = 1
@@ -367,6 +363,14 @@ ir_egyptian_city_03 = {
     granary = 2
     marketplace = 1
     mason = 1
+    temple = 1
+}
+
+ir_egyptian_city_04 = {
+    granary = 2
+    marketplace = 1
+    mason = 2
+    slave_market = 1
     temple = 1
 }
 
@@ -753,7 +757,7 @@ ir_italic_town_coastal_02 = {
 }
 
 ir_italic_town_coastal_03 = {
-    slave_market = 1
+    temple = 1
 }
 
 ir_italic_town_coastal_04 = {
@@ -805,6 +809,10 @@ ir_khorasan_town_04 = {
     temple = 1
 }
 
+ir_khorasan_town_05 = {
+    temple = 1
+}
+
 ir_khorasan_town_coastal = {
     granary = 1
     marketplace = 1
@@ -820,10 +828,6 @@ ir_nubian_town_02 = {
     granary = 1
     marketplace = 1
     mason = 1
-    temple = 1
-}
-
-ir_nubian_town_03 = {
     temple = 1
 }
 
@@ -888,7 +892,7 @@ ir_persian_city = {
 }
 
 ir_persian_city_02 = {
-    granary = 2
+    granary = 1
     marketplace = 1
     mason = 1
     slave_market = 1
@@ -896,9 +900,10 @@ ir_persian_city_02 = {
 }
 
 ir_persian_city_03 = {
-    granary = 1
+    granary = 2
     marketplace = 1
     mason = 1
+    slave_market = 1
     temple = 1
 }
 
@@ -906,7 +911,6 @@ ir_persian_city_04 = {
     granary = 1
     marketplace = 1
     mason = 1
-    slave_market = 1
     temple = 1
 }
 

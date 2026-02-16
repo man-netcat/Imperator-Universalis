@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import re
+
 from pathlib import Path
 from typing import Iterable, Mapping
 
@@ -77,12 +79,55 @@ def parse_localisation_text(text: str) -> dict[str, str]:
     return entries
 
 
+_LOCALISATION_TOKEN_RE = re.compile(r"\$([^$]+)\$")
+
+
+def _resolve_localisation_tokens(entries: dict[str, str]) -> dict[str, str]:
+    resolved: dict[str, str] = {}
+    resolving: set[str] = set()
+
+    def resolve_key(key: str) -> str:
+        if key in resolved:
+            return resolved[key]
+        if key in resolving:
+            return entries.get(key, "")
+
+        resolving.add(key)
+        value = entries.get(key, "")
+
+        # Resolve nested $KEY$ references in this value.
+        for _ in range(16):
+            changed = False
+
+            def repl(match: re.Match[str]) -> str:
+                nonlocal changed
+                token = match.group(1)
+                if token not in entries:
+                    return match.group(0)
+                changed = True
+                return resolve_key(token)
+
+            new_value = _LOCALISATION_TOKEN_RE.sub(repl, value)
+            if not changed:
+                break
+            value = new_value
+
+        resolving.remove(key)
+        resolved[key] = value
+        return value
+
+    for loc_key in list(entries.keys()):
+        resolve_key(loc_key)
+
+    return resolved
+
+
 def read_paradox_localisation(path: Path | Iterable[Path]) -> dict[str, str]:
     merged: dict[str, str] = {}
     for file_path in _iter_files(path):
         payload = file_path.read_text(encoding="utf-8-sig")
         merged.update(parse_localisation_text(payload))
-    return merged
+    return _resolve_localisation_tokens(merged)
 
 
 def _escape_localisation_value(value: str) -> str:

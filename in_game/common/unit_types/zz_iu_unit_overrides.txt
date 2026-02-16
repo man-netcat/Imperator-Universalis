@@ -1,0 +1,9 @@
+a_hobelars = {
+	country_potential = {
+		always = no
+	}
+
+	location_potential = {
+		always = no
+	}
+}

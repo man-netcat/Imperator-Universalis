@@ -151,7 +151,7 @@ aeclanum = { topography = flatland vegetation = grasslands climate = continental
 aegha = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = fur }
 aegidi = { topography = hills vegetation = woods climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = iron natural_harbor_suitability = 0.65 }
 aelal = { topography = flatland vegetation = grasslands climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = silver }
-aelana = { topography = flatland vegetation = grasslands climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = salt natural_harbor_suitability = 0.50 }
+aelana = { topography = flatland vegetation = grasslands climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = salt }
 aelia = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = wool }
 aeliae = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = wool }
 aemate = { topography = flatland vegetation = forest climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = dyes }
@@ -396,7 +396,9 @@ amiternum = { topography = flatland vegetation = forest climate = oceanic religi
 ammaedara = { topography = flatland vegetation = forest climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = tea }
 ammaia = { topography = flatland vegetation = forest climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = wool }
 ammattha = { topography = flatland vegetation = desert climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = horses }
-ammodeis_ochthes = { topography = flatland climate = continental }
+ammodeis_ochthes_0 = { topography = flatland climate = continental }
+ammodeis_ochthes_1 = { topography = flatland climate = continental }
+ammodeis_ochthes_2 = { topography = flatland climate = continental }
 ammodios = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = cloth }
 ammon = { topography = flatland vegetation = grasslands climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = horses }
 amorgos = { topography = hills vegetation = woods climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = silk natural_harbor_suitability = 0.45 }
@@ -477,7 +479,7 @@ ani_0 = { topography = flatland vegetation = grasslands climate = arctic religio
 ani_1 = { topography = mountains vegetation = sparse climate = arctic religion = ir_roman_pantheon culture = ir_puntic raw_material = lumber }
 anisa = { topography = hills vegetation = woods climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = horses }
 anisus = { topography = mountains vegetation = sparse climate = arctic religion = ir_roman_pantheon culture = ir_puntic raw_material = horses }
-ankale = { topography = flatland vegetation = desert climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = wool natural_harbor_suitability = 0.45 }
+ankale = { topography = flatland vegetation = desert climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = wool }
 ankui = { topography = flatland vegetation = desert climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = fur }
 ankyra = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = clay }
 ankyra_sidera = { topography = hills vegetation = woods climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = wool }
@@ -987,6 +989,7 @@ baesucci = { topography = hills vegetation = woods climate = continental religio
 baeterrae = { topography = flatland vegetation = grasslands climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = fish natural_harbor_suitability = 0.65 }
 baetis_0 = { topography = flatland climate = continental }
 baetis_1 = { topography = flatland climate = continental }
+baetis_2 = { topography = flatland climate = continental }
 baetocaece = { topography = flatland vegetation = forest climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = wool }
 bafalil = { topography = flatland vegetation = grasslands climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = wild_game }
 bagacum = { topography = flatland vegetation = grasslands climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = wool }
@@ -1340,6 +1343,11 @@ borysthenes_0 = { topography = flatland climate = continental }
 borysthenes_1 = { topography = flatland climate = continental }
 borysthenes_10 = { topography = flatland climate = continental }
 borysthenes_11 = { topography = flatland climate = continental }
+borysthenes_12 = { topography = flatland climate = continental }
+borysthenes_13 = { topography = flatland climate = continental }
+borysthenes_14 = { topography = flatland climate = continental }
+borysthenes_15 = { topography = flatland climate = continental }
+borysthenes_16 = { topography = flatland climate = continental }
 borysthenes_2 = { topography = flatland climate = continental }
 borysthenes_3 = { topography = flatland climate = continental }
 borysthenes_4 = { topography = flatland climate = continental }
@@ -2167,7 +2175,10 @@ devasabha = { topography = hills vegetation = woods climate = continental religi
 deventiasteno = { topography = flatland vegetation = forest climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = salt natural_harbor_suitability = 0.55 }
 devnimori = { topography = hills vegetation = woods climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = cloth }
 devona = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = leather }
-dexi_cheri = { topography = flatland climate = continental }
+dexi_cheri_0 = { topography = flatland climate = continental }
+dexi_cheri_1 = { topography = flatland climate = continental }
+dexi_cheri_2 = { topography = flatland climate = continental }
+dexi_cheri_3 = { topography = flatland climate = continental }
 dhahab = { topography = flatland vegetation = grasslands climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = tin }
 dhahir = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = wheat }
 dhammanahadika = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = wool }
@@ -2274,7 +2285,7 @@ doura = { topography = flatland vegetation = desert climate = arid religion = ir
 drapsake = { topography = hills vegetation = woods climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = horses }
 dravia = { topography = hills vegetation = woods climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = rice }
 drena = { topography = mountains vegetation = sparse climate = arctic religion = ir_roman_pantheon culture = ir_puntic raw_material = lumber }
-drepanum = { topography = flatland vegetation = desert climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = fish natural_harbor_suitability = 0.45 }
+drepanum = { topography = flatland vegetation = desert climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = fish }
 drepsiana = { topography = mountains vegetation = sparse climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = leather }
 drinum = { topography = flatland vegetation = grasslands climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = wine }
 drobeta = { topography = wetlands vegetation = woods climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = lumber }
@@ -2328,6 +2339,8 @@ dyagili = { topography = flatland vegetation = forest climate = arctic religion 
 dyardanes_0 = { topography = flatland climate = continental }
 dyardanes_1 = { topography = flatland climate = continental }
 dyardanes_2 = { topography = flatland climate = continental }
+dyardanes_3 = { topography = flatland climate = continental }
+dyardanes_4 = { topography = flatland climate = continental }
 dymar = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = horses }
 dyme_0 = { topography = flatland vegetation = desert climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = fish natural_harbor_suitability = 0.40 }
 dyme_1 = { topography = hills vegetation = woods climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = iron natural_harbor_suitability = 0.55 }
@@ -2581,6 +2594,8 @@ florentiola = { topography = flatland vegetation = forest climate = oceanic reli
 floriana = { topography = flatland vegetation = forest climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = leather }
 flumen_anas_0 = { topography = flatland climate = continental }
 flumen_anas_1 = { topography = flatland climate = continental }
+flumen_anas_2 = { topography = flatland climate = continental }
+flumen_anas_3 = { topography = flatland climate = continental }
 foetes = { topography = mountains vegetation = sparse climate = arctic religion = ir_roman_pantheon culture = ir_puntic raw_material = wheat }
 folla = { topography = flatland vegetation = forest climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = wild_game }
 follia = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = dyes }
@@ -2693,7 +2708,16 @@ ganges_14 = { topography = flatland climate = continental }
 ganges_15 = { topography = flatland climate = continental }
 ganges_16 = { topography = flatland climate = continental }
 ganges_17 = { topography = flatland climate = continental }
+ganges_18 = { topography = flatland climate = continental }
+ganges_19 = { topography = flatland climate = continental }
 ganges_2 = { topography = flatland climate = continental }
+ganges_20 = { topography = flatland climate = continental }
+ganges_21 = { topography = flatland climate = continental }
+ganges_22 = { topography = flatland climate = continental }
+ganges_23 = { topography = flatland climate = continental }
+ganges_24 = { topography = flatland climate = continental }
+ganges_25 = { topography = flatland climate = continental }
+ganges_26 = { topography = flatland climate = continental }
 ganges_3 = { topography = flatland climate = continental }
 ganges_4 = { topography = flatland climate = continental }
 ganges_5 = { topography = flatland climate = continental }
@@ -2726,6 +2750,8 @@ garsaura = { topography = flatland vegetation = grasslands climate = continental
 garuli = { topography = flatland vegetation = grasslands climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = horses }
 garumna_0 = { topography = flatland climate = continental }
 garumna_1 = { topography = flatland climate = continental }
+garumna_2 = { topography = flatland climate = continental }
+garumna_3 = { topography = flatland climate = continental }
 garzapur = { topography = flatland vegetation = farmland climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = clay }
 gash = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = clay }
 gathar = { topography = hills vegetation = woods climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = dyes }
@@ -3207,6 +3233,7 @@ iberian_gates = { topography = mountains vegetation = sparse climate = arctic }
 iberus_0 = { topography = flatland climate = continental }
 iberus_1 = { topography = flatland climate = continental }
 iberus_2 = { topography = flatland climate = continental }
+iberus_3 = { topography = flatland climate = continental }
 ibora = { topography = flatland vegetation = forest climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = leather }
 ibri = { topography = flatland vegetation = grasslands climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = horses }
 ichnae = { topography = flatland vegetation = desert climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = wild_game }
@@ -3288,6 +3315,8 @@ indraprastha = { topography = flatland vegetation = farmland climate = continent
 indur = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = fiber_crops }
 indus_0 = { topography = flatland climate = continental }
 indus_1 = { topography = flatland climate = continental }
+indus_10 = { topography = flatland climate = continental }
+indus_11 = { topography = flatland climate = continental }
 indus_2 = { topography = flatland climate = continental }
 indus_3 = { topography = flatland climate = continental }
 indus_4 = { topography = flatland climate = continental }
@@ -3295,6 +3324,7 @@ indus_5 = { topography = flatland climate = continental }
 indus_6 = { topography = flatland climate = continental }
 indus_7 = { topography = flatland climate = continental }
 indus_8 = { topography = flatland climate = continental }
+indus_9 = { topography = flatland climate = continental }
 ine = { topography = flatland vegetation = forest climate = arctic religion = ir_roman_pantheon culture = ir_puntic raw_material = horses }
 ingena = { topography = flatland vegetation = grasslands climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = clay natural_harbor_suitability = 0.70 }
 inhiminen = { topography = flatland vegetation = forest climate = arctic religion = ir_roman_pantheon culture = ir_puntic raw_material = wild_game }
@@ -3363,6 +3393,13 @@ istana = { topography = flatland vegetation = desert climate = arid religion = i
 istarava = { topography = mountains vegetation = sparse climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = fur }
 ister_0 = { topography = flatland climate = continental }
 ister_1 = { topography = flatland climate = continental }
+ister_10 = { topography = flatland climate = continental }
+ister_11 = { topography = flatland climate = continental }
+ister_12 = { topography = flatland climate = continental }
+ister_13 = { topography = flatland climate = continental }
+ister_14 = { topography = flatland climate = continental }
+ister_15 = { topography = flatland climate = continental }
+ister_16 = { topography = flatland climate = continental }
 ister_2 = { topography = flatland climate = continental }
 ister_3 = { topography = flatland climate = continental }
 ister_4 = { topography = flatland climate = continental }
@@ -3798,7 +3835,7 @@ klibanos = { topography = hills vegetation = woods climate = continental religio
 klimax = { topography = flatland vegetation = desert climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = wool }
 klossama = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = rice }
 klukhor_pass = { topography = mountains vegetation = sparse climate = oceanic }
-klysma = { topography = flatland vegetation = desert climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = cloth natural_harbor_suitability = 0.45 }
+klysma = { topography = flatland vegetation = desert climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = cloth }
 kmekhich = { topography = flatland vegetation = forest climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = iron }
 knidos = { topography = hills vegetation = woods climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = dyes natural_harbor_suitability = 0.80 }
 knossos = { topography = hills vegetation = woods climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = lumber natural_harbor_suitability = 0.50 }
@@ -3888,7 +3925,7 @@ korulin = { topography = flatland vegetation = grasslands climate = continental 
 koryi = { topography = mountains vegetation = sparse climate = arctic }
 kos = { topography = hills vegetation = woods climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = silk natural_harbor_suitability = 0.70 }
 kosala = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = fur }
-kosk = { topography = flatland vegetation = forest climate = arctic religion = ir_roman_pantheon culture = ir_puntic raw_material = clay natural_harbor_suitability = 0.75 }
+kosk = { topography = flatland vegetation = forest climate = arctic religion = ir_roman_pantheon culture = ir_puntic raw_material = clay }
 kossioia = { topography = mountains vegetation = sparse climate = continental }
 kot_kamalia = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = cloth }
 kota = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = rice }
@@ -4188,6 +4225,8 @@ liger_0 = { topography = flatland climate = continental }
 liger_1 = { topography = flatland climate = continental }
 liger_2 = { topography = flatland climate = continental }
 liger_3 = { topography = flatland climate = continental }
+liger_4 = { topography = flatland climate = continental }
+liger_5 = { topography = flatland climate = continental }
 lilybaeum = { topography = flatland vegetation = farmland climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = wheat natural_harbor_suitability = 0.40 }
 lim = { topography = flatland climate = continental }
 liman = { topography = hills vegetation = woods climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = wool }
@@ -4283,7 +4322,7 @@ lychnitis = { topography = lakes climate = continental }
 lyctus = { topography = hills vegetation = woods climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = fish natural_harbor_suitability = 0.55 }
 lydda = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = fiber_crops }
 lygia = { topography = flatland vegetation = forest climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = wheat }
-lykabettus_porphyrites = { topography = flatland vegetation = grasslands climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = stone natural_harbor_suitability = 0.75 }
+lykabettus_porphyrites = { topography = flatland vegetation = grasslands climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = stone }
 lykopolis = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = silver }
 lysimacheia = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = salt natural_harbor_suitability = 0.45 }
 lysobyki = { topography = flatland vegetation = forest climate = arctic religion = ir_roman_pantheon culture = ir_puntic raw_material = maize }
@@ -4445,7 +4484,7 @@ mapam = { topography = hills vegetation = woods climate = arctic religion = ir_r
 maphoris = { topography = flatland vegetation = desert climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = incense natural_harbor_suitability = 0.70 }
 marad = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = rice }
 maradah = { topography = flatland vegetation = desert climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = horses }
-marah = { topography = flatland vegetation = desert climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = fish natural_harbor_suitability = 0.45 }
+marah = { topography = flatland vegetation = desert climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = fish }
 marakanda = { topography = hills vegetation = woods climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = clay }
 marakhai = { topography = flatland vegetation = desert climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = wild_game }
 maran = { topography = flatland vegetation = forest climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = rice }
@@ -4847,6 +4886,8 @@ mare_lycium_3 = { topography = ocean climate = continental }
 mare_lycium_4 = { topography = ocean climate = continental }
 mare_myrtoum_0 = { topography = ocean climate = continental }
 mare_myrtoum_1 = { topography = ocean climate = continental }
+mare_myrtoum_2 = { topography = ocean climate = continental }
+mare_myrtoum_3 = { topography = ocean climate = continental }
 mare_orcadum = { topography = ocean climate = continental }
 mare_phoenicium_0 = { topography = ocean climate = continental }
 mare_phoenicium_1 = { topography = ocean climate = continental }
@@ -5528,7 +5569,20 @@ nikhshapaya = { topography = flatland vegetation = grasslands climate = oceanic 
 nikiou = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = rice }
 nikonia = { topography = wetlands vegetation = woods climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = fish natural_harbor_suitability = 0.70 }
 nikopolis = { topography = flatland vegetation = forest climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = lumber }
-nile = { topography = flatland climate = continental }
+nile_0 = { topography = flatland climate = continental }
+nile_1 = { topography = flatland climate = continental }
+nile_10 = { topography = flatland climate = continental }
+nile_11 = { topography = flatland climate = continental }
+nile_12 = { topography = flatland climate = continental }
+nile_13 = { topography = flatland climate = continental }
+nile_2 = { topography = flatland climate = continental }
+nile_3 = { topography = flatland climate = continental }
+nile_4 = { topography = flatland climate = continental }
+nile_5 = { topography = flatland climate = continental }
+nile_6 = { topography = flatland climate = continental }
+nile_7 = { topography = flatland climate = continental }
+nile_8 = { topography = flatland climate = continental }
+nile_9 = { topography = flatland climate = continental }
 nile_the_bolbitine_0 = { topography = flatland climate = continental }
 nile_the_bolbitine_1 = { topography = flatland climate = continental }
 nile_the_bolbitine_2 = { topography = flatland climate = continental }
@@ -5613,7 +5667,7 @@ numluli = { topography = flatland vegetation = forest climate = continental reli
 nura = { topography = hills vegetation = woods climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = iron natural_harbor_suitability = 0.35 }
 nure = { topography = flatland vegetation = farmland climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = wine natural_harbor_suitability = 0.70 }
 nuri = { topography = flatland vegetation = desert climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = lumber }
-nuweiba = { topography = flatland vegetation = desert climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = fish natural_harbor_suitability = 0.45 }
+nuweiba = { topography = flatland vegetation = desert climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = fish }
 nuzi = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = gems }
 nyang = { topography = mountains vegetation = sparse climate = arctic religion = ir_roman_pantheon culture = ir_puntic raw_material = stone }
 nyaunggan = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = wheat }
@@ -5738,7 +5792,21 @@ oceanus_sarmaticus_31 = { topography = ocean climate = continental }
 oceanus_sarmaticus_32 = { topography = ocean climate = continental }
 oceanus_sarmaticus_33 = { topography = ocean climate = continental }
 oceanus_sarmaticus_34 = { topography = ocean climate = continental }
+oceanus_sarmaticus_35 = { topography = ocean climate = continental }
+oceanus_sarmaticus_36 = { topography = ocean climate = continental }
+oceanus_sarmaticus_37 = { topography = ocean climate = continental }
+oceanus_sarmaticus_38 = { topography = ocean climate = continental }
+oceanus_sarmaticus_39 = { topography = ocean climate = continental }
 oceanus_sarmaticus_4 = { topography = ocean climate = continental }
+oceanus_sarmaticus_40 = { topography = ocean climate = continental }
+oceanus_sarmaticus_41 = { topography = ocean climate = continental }
+oceanus_sarmaticus_42 = { topography = ocean climate = continental }
+oceanus_sarmaticus_43 = { topography = ocean climate = continental }
+oceanus_sarmaticus_44 = { topography = ocean climate = continental }
+oceanus_sarmaticus_45 = { topography = ocean climate = continental }
+oceanus_sarmaticus_46 = { topography = ocean climate = continental }
+oceanus_sarmaticus_47 = { topography = ocean climate = continental }
+oceanus_sarmaticus_48 = { topography = ocean climate = continental }
 oceanus_sarmaticus_5 = { topography = ocean climate = continental }
 oceanus_sarmaticus_6 = { topography = ocean climate = continental }
 oceanus_sarmaticus_7 = { topography = ocean climate = continental }
@@ -5763,7 +5831,7 @@ ogenage = { topography = flatland vegetation = grasslands climate = arctic relig
 oggrunet = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = wool }
 ogorodniki = { topography = flatland vegetation = forest climate = arctic religion = ir_roman_pantheon culture = ir_puntic raw_material = fiber_crops }
 ogron = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = wild_game }
-ohut = { topography = flatland vegetation = forest climate = arctic religion = ir_roman_pantheon culture = ir_puntic raw_material = fiber_crops natural_harbor_suitability = 0.75 }
+ohut = { topography = flatland vegetation = forest climate = arctic religion = ir_roman_pantheon culture = ir_puntic raw_material = fiber_crops }
 oiasso = { topography = flatland vegetation = grasslands climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = goods_gold natural_harbor_suitability = 0.70 }
 oichalia_aitolias = { topography = mountains vegetation = sparse climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = rice }
 oichalia_euboias = { topography = hills vegetation = woods climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = fish natural_harbor_suitability = 0.40 }
@@ -6126,7 +6194,7 @@ petuaria = { topography = flatland vegetation = grasslands climate = oceanic rel
 peus = { topography = flatland vegetation = grasslands climate = arctic religion = ir_roman_pantheon culture = ir_puntic raw_material = horses }
 phakoussai = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = rice }
 phanagoria = { topography = wetlands vegetation = woods climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = cloth natural_harbor_suitability = 0.70 }
-pharan = { topography = flatland vegetation = grasslands climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = fish natural_harbor_suitability = 0.45 }
+pharan = { topography = flatland vegetation = grasslands climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = fish }
 pharangion = { topography = hills vegetation = woods climate = arctic religion = ir_roman_pantheon culture = ir_puntic raw_material = leather }
 pharazana = { topography = hills vegetation = woods climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = fiber_crops }
 pharbaithos = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = rice }
@@ -6154,7 +6222,7 @@ philoteris = { topography = flatland vegetation = grasslands climate = arid reli
 phlaouia_lambris = { topography = flatland vegetation = grasslands climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = copper natural_harbor_suitability = 0.70 }
 phoda = { topography = flatland vegetation = desert climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = horses }
 phoinike = { topography = hills vegetation = woods climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = wool natural_harbor_suitability = 0.45 }
-phoinikon = { topography = flatland vegetation = desert climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = glass natural_harbor_suitability = 0.45 }
+phoinikon = { topography = flatland vegetation = desert climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = glass }
 phoinikon_kome = { topography = flatland vegetation = desert climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = stone natural_harbor_suitability = 0.70 }
 phoklis = { topography = mountains vegetation = sparse climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = leather }
 phorana = { topography = flatland vegetation = desert climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = horses }
@@ -6348,107 +6416,6 @@ pripyat = { topography = flatland vegetation = grasslands climate = arctic relig
 prista = { topography = flatland vegetation = forest climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = wheat }
 propontis = { topography = ocean climate = continental }
 prostanna = { topography = hills vegetation = woods climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = wool }
-prov2607_0 = { topography = ocean climate = continental }
-prov2607_1 = { topography = ocean climate = continental }
-prov5854_0 = { topography = ocean climate = continental }
-prov5854_1 = { topography = ocean climate = continental }
-prov5854_10 = { topography = ocean climate = continental }
-prov5854_11 = { topography = ocean climate = continental }
-prov5854_12 = { topography = ocean climate = continental }
-prov5854_13 = { topography = ocean climate = continental }
-prov5854_2 = { topography = ocean climate = continental }
-prov5854_3 = { topography = ocean climate = continental }
-prov5854_4 = { topography = ocean climate = continental }
-prov5854_5 = { topography = ocean climate = continental }
-prov5854_6 = { topography = ocean climate = continental }
-prov5854_7 = { topography = ocean climate = continental }
-prov5854_8 = { topography = ocean climate = continental }
-prov5854_9 = { topography = ocean climate = continental }
-prov652_0 = { topography = ocean climate = continental }
-prov652_1 = { topography = ocean climate = continental }
-prov653_0 = { topography = ocean climate = continental }
-prov653_1 = { topography = ocean climate = continental }
-prov7687_0 = { topography = flatland climate = continental }
-prov7687_1 = { topography = flatland climate = continental }
-prov7687_10 = { topography = flatland climate = continental }
-prov7687_11 = { topography = flatland climate = continental }
-prov7687_12 = { topography = flatland climate = continental }
-prov7687_2 = { topography = flatland climate = continental }
-prov7687_3 = { topography = flatland climate = continental }
-prov7687_4 = { topography = flatland climate = continental }
-prov7687_5 = { topography = flatland climate = continental }
-prov7687_6 = { topography = flatland climate = continental }
-prov7687_7 = { topography = flatland climate = continental }
-prov7687_8 = { topography = flatland climate = continental }
-prov7687_9 = { topography = flatland climate = continental }
-prov7692_0 = { topography = flatland climate = continental }
-prov7692_1 = { topography = flatland climate = continental }
-prov7692_2 = { topography = flatland climate = continental }
-prov7701_0 = { topography = flatland climate = continental }
-prov7701_1 = { topography = flatland climate = continental }
-prov7701_2 = { topography = flatland climate = continental }
-prov7701_3 = { topography = flatland climate = continental }
-prov7701_4 = { topography = flatland climate = continental }
-prov7701_5 = { topography = flatland climate = continental }
-prov7701_6 = { topography = flatland climate = continental }
-prov7701_7 = { topography = flatland climate = continental }
-prov7701_8 = { topography = flatland climate = continental }
-prov7724 = { topography = flatland climate = continental }
-prov7741_0 = { topography = flatland climate = continental }
-prov7741_1 = { topography = flatland climate = continental }
-prov7767_0 = { topography = flatland climate = continental }
-prov7767_1 = { topography = flatland climate = continental }
-prov7771 = { topography = flatland climate = continental }
-prov7773_0 = { topography = flatland climate = continental }
-prov7773_1 = { topography = flatland climate = continental }
-prov7773_2 = { topography = flatland climate = continental }
-prov7773_3 = { topography = flatland climate = continental }
-prov7773_4 = { topography = flatland climate = continental }
-prov7773_5 = { topography = flatland climate = continental }
-prov7773_6 = { topography = flatland climate = continental }
-prov7783_0 = { topography = flatland climate = continental }
-prov7783_1 = { topography = flatland climate = continental }
-prov7846_0 = { topography = flatland climate = continental }
-prov7846_1 = { topography = flatland climate = continental }
-prov7846_2 = { topography = flatland climate = continental }
-prov7862_0 = { topography = flatland climate = continental }
-prov7862_1 = { topography = flatland climate = continental }
-prov7864_0 = { topography = flatland climate = continental }
-prov7864_1 = { topography = flatland climate = continental }
-prov7868_0 = { topography = flatland climate = continental }
-prov7868_1 = { topography = flatland climate = continental }
-prov7871_0 = { topography = flatland climate = continental }
-prov7871_1 = { topography = flatland climate = continental }
-prov7871_2 = { topography = flatland climate = continental }
-prov8035 = { topography = flatland climate = continental }
-prov8037 = { topography = flatland climate = continental }
-prov8042_0 = { topography = flatland climate = continental }
-prov8042_1 = { topography = flatland climate = continental }
-prov8042_2 = { topography = flatland climate = continental }
-prov8042_3 = { topography = flatland climate = continental }
-prov8042_4 = { topography = flatland climate = continental }
-prov8042_5 = { topography = flatland climate = continental }
-prov8047_0 = { topography = flatland climate = continental }
-prov8047_1 = { topography = flatland climate = continental }
-prov8047_2 = { topography = flatland climate = continental }
-prov8047_3 = { topography = flatland climate = continental }
-prov8047_4 = { topography = flatland climate = continental }
-prov8574_0 = { topography = flatland climate = continental }
-prov8574_1 = { topography = flatland climate = continental }
-prov8575_0 = { topography = flatland climate = continental }
-prov8575_1 = { topography = flatland climate = continental }
-prov8578_0 = { topography = flatland climate = continental }
-prov8578_1 = { topography = flatland climate = continental }
-prov8578_2 = { topography = flatland climate = continental }
-prov8586_0 = { topography = flatland climate = continental }
-prov8586_1 = { topography = flatland climate = continental }
-prov8586_2 = { topography = flatland climate = continental }
-prov8589_0 = { topography = flatland climate = continental }
-prov8589_1 = { topography = flatland climate = continental }
-prov9198_0 = { topography = flatland climate = continental }
-prov9198_1 = { topography = flatland climate = continental }
-prov9198_2 = { topography = flatland climate = continental }
-prov9198_3 = { topography = flatland climate = continental }
 prummu = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = stone }
 prymnessos = { topography = hills vegetation = woods climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = wheat }
 psel = { topography = flatland vegetation = grasslands climate = arctic religion = ir_roman_pantheon culture = ir_puntic raw_material = maize }
@@ -6638,11 +6605,20 @@ reunia = { topography = flatland vegetation = forest climate = oceanic religion 
 revacia = { topography = flatland vegetation = forest climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = fur }
 rha_0 = { topography = flatland climate = continental }
 rha_1 = { topography = flatland climate = continental }
+rha_10 = { topography = flatland climate = continental }
+rha_11 = { topography = flatland climate = continental }
 rha_2 = { topography = flatland climate = continental }
+rha_3 = { topography = flatland climate = continental }
+rha_4 = { topography = flatland climate = continental }
+rha_5 = { topography = flatland climate = continental }
+rha_6 = { topography = flatland climate = continental }
+rha_7 = { topography = flatland climate = continental }
+rha_8 = { topography = flatland climate = continental }
+rha_9 = { topography = flatland climate = continental }
 rhabaine = { topography = hills vegetation = woods climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = wine }
 rhacatia = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = horses }
 rhagai = { topography = hills vegetation = woods climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = cloth }
-rhaithou = { topography = flatland vegetation = desert climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = gems natural_harbor_suitability = 0.45 }
+rhaithou = { topography = flatland vegetation = desert climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = gems }
 rhamidava = { topography = flatland vegetation = forest climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = wheat }
 rhammanitai = { topography = hills vegetation = woods climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = wild_game }
 rhamna = { topography = mountains vegetation = sparse climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = lumber }
@@ -6660,12 +6636,16 @@ rhenus_4 = { topography = flatland climate = continental }
 rhenus_5 = { topography = flatland climate = continental }
 rhenus_6 = { topography = flatland climate = continental }
 rhenus_7 = { topography = flatland climate = continental }
+rhenus_8 = { topography = flatland climate = continental }
 rhithymna = { topography = hills vegetation = woods climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = glass natural_harbor_suitability = 0.40 }
 rhizaion = { topography = hills vegetation = woods climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = lumber natural_harbor_suitability = 0.70 }
 rhizon = { topography = hills vegetation = woods climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = fish natural_harbor_suitability = 0.40 }
 rhoda = { topography = flatland vegetation = grasslands climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = salt natural_harbor_suitability = 0.65 }
 rhodanousia = { topography = flatland vegetation = grasslands climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = fish natural_harbor_suitability = 0.65 }
-rhodanus = { topography = flatland climate = continental }
+rhodanus_0 = { topography = flatland climate = continental }
+rhodanus_1 = { topography = flatland climate = continental }
+rhodanus_2 = { topography = flatland climate = continental }
+rhodanus_3 = { topography = flatland climate = continental }
 rhodope = { topography = flatland vegetation = forest climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = iron }
 rhodopolis = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = lead }
 rhodos = { topography = hills vegetation = woods climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = glass natural_harbor_suitability = 0.75 }
@@ -7102,6 +7082,8 @@ seqindel = { topography = hills vegetation = woods climate = oceanic religion = 
 sequana_0 = { topography = flatland climate = continental }
 sequana_1 = { topography = flatland climate = continental }
 sequana_2 = { topography = flatland climate = continental }
+sequana_3 = { topography = flatland climate = continental }
+sequana_4 = { topography = flatland climate = continental }
 serakhis = { topography = hills vegetation = woods climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = horses }
 serapeion = { topography = flatland vegetation = desert climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = wool natural_harbor_suitability = 0.70 }
 serapieion = { topography = flatland vegetation = desert climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = wool }
@@ -7323,6 +7305,8 @@ sinus_arabicus_24 = { topography = ocean climate = continental }
 sinus_arabicus_25 = { topography = ocean climate = continental }
 sinus_arabicus_26 = { topography = ocean climate = continental }
 sinus_arabicus_27 = { topography = ocean climate = continental }
+sinus_arabicus_28 = { topography = ocean climate = continental }
+sinus_arabicus_29 = { topography = ocean climate = continental }
 sinus_arabicus_3 = { topography = ocean climate = continental }
 sinus_arabicus_4 = { topography = ocean climate = continental }
 sinus_arabicus_5 = { topography = ocean climate = continental }
@@ -7376,7 +7360,9 @@ sinus_gangeticus_7 = { topography = ocean climate = continental }
 sinus_gangeticus_8 = { topography = ocean climate = continental }
 sinus_gangeticus_9 = { topography = ocean climate = continental }
 sinus_genuensis = { topography = ocean climate = continental }
-sinus_heroopoliticus = { topography = ocean climate = continental }
+sinus_heroopoliticus_0 = { topography = ocean climate = continental }
+sinus_heroopoliticus_1 = { topography = ocean climate = continental }
+sinus_heroopoliticus_2 = { topography = ocean climate = continental }
 sinus_hipponensis = { topography = ocean climate = continental }
 sinus_laconicus = { topography = ocean climate = continental }
 sinus_liburnus_0 = { topography = ocean climate = continental }
@@ -7741,6 +7727,8 @@ tagus_0 = { topography = flatland climate = continental }
 tagus_1 = { topography = flatland climate = continental }
 tagus_2 = { topography = flatland climate = continental }
 tagus_3 = { topography = flatland climate = continental }
+tagus_4 = { topography = flatland climate = continental }
+tagus_5 = { topography = flatland climate = continental }
 taharene = { topography = flatland vegetation = desert climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = cloth }
 tahent = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = wheat }
 tahora = { topography = hills vegetation = woods climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = wool }
@@ -7788,7 +7776,8 @@ tambyziana = { topography = mountains vegetation = sparse climate = oceanic reli
 tamdjert = { topography = flatland vegetation = desert climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = wool }
 tamdoult = { topography = flatland vegetation = grasslands climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = wool }
 tamelrik = { topography = flatland vegetation = desert climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = leather }
-tamesis = { topography = flatland climate = continental }
+tamesis_0 = { topography = flatland climate = continental }
+tamesis_1 = { topography = flatland climate = continental }
 tamezmoute = { topography = flatland vegetation = grasslands climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = wool }
 tamiathis = { topography = wetlands vegetation = woods climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = fiber_crops natural_harbor_suitability = 0.75 }
 tammi = { topography = flatland vegetation = forest climate = arctic religion = ir_roman_pantheon culture = ir_puntic raw_material = lumber }
@@ -7804,10 +7793,16 @@ tanadaris = { topography = hills vegetation = woods climate = continental religi
 tanagra = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = wine }
 tanais_0 = { topography = wetlands vegetation = woods climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = horses natural_harbor_suitability = 0.70 }
 tanais_1 = { topography = flatland climate = continental }
+tanais_10 = { topography = flatland climate = continental }
+tanais_11 = { topography = flatland climate = continental }
 tanais_2 = { topography = flatland climate = continental }
 tanais_3 = { topography = flatland climate = continental }
 tanais_4 = { topography = flatland climate = continental }
 tanais_5 = { topography = flatland climate = continental }
+tanais_6 = { topography = flatland climate = continental }
+tanais_7 = { topography = flatland climate = continental }
+tanais_8 = { topography = flatland climate = continental }
+tanais_9 = { topography = flatland climate = continental }
 tanarke = { topography = flatland vegetation = grasslands climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = leather }
 tandi = { topography = hills vegetation = woods climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = stone }
 tandruk = { topography = mountains vegetation = sparse climate = arctic religion = ir_roman_pantheon culture = ir_puntic raw_material = stone }
@@ -9084,7 +9079,12 @@ vadina = { topography = flatland vegetation = forest climate = continental relig
 vaduma = { topography = flatland vegetation = desert climate = arid religion = ir_roman_pantheon culture = ir_puntic raw_material = fur }
 vagharshakert = { topography = flatland vegetation = forest climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = lumber }
 vagniacis = { topography = flatland vegetation = forest climate = oceanic religion = ir_roman_pantheon culture = ir_puntic raw_material = amber natural_harbor_suitability = 0.70 }
-vain = { topography = flatland climate = continental }
+vain_0 = { topography = flatland climate = continental }
+vain_1 = { topography = flatland climate = continental }
+vain_2 = { topography = flatland climate = continental }
+vain_3 = { topography = flatland climate = continental }
+vain_4 = { topography = flatland climate = continental }
+vain_5 = { topography = flatland climate = continental }
 vairagara = { topography = flatland vegetation = jungle climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = tin }
 vairata = { topography = hills vegetation = woods climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = lead }
 vaishali = { topography = flatland vegetation = farmland climate = continental religion = ir_roman_pantheon culture = ir_puntic raw_material = cloth }

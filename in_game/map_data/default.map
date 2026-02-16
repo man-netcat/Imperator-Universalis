@@ -169,6 +169,10 @@ impassable_mountains = {
     north_nilgiri
     northern_bayuda_desert
     oasis_parva
+    oceanus_sarmaticus_41
+    oceanus_sarmaticus_42
+    oceanus_sarmaticus_43
+    oceanus_sarmaticus_44
     olympus_mons
     omani_desert
     ona_mountains
@@ -178,10 +182,6 @@ impassable_mountains = {
     parnassus_mons
     parnes_mons
     pendactylos_mons
-    prov5854_6
-    prov5854_7
-    prov5854_8
-    prov5854_9
     psyllic_desert
     puntic_highlands
     qaleh
@@ -1031,13 +1031,21 @@ river_provinces = {
     albis_2
     albis_3
     albis_4
-    ammodeis_ochthes
+    ammodeis_ochthes_0
+    ammodeis_ochthes_1
+    ammodeis_ochthes_2
     baetis_0
     baetis_1
+    baetis_2
     borysthenes_0
     borysthenes_1
     borysthenes_10
     borysthenes_11
+    borysthenes_12
+    borysthenes_13
+    borysthenes_14
+    borysthenes_15
+    borysthenes_16
     borysthenes_2
     borysthenes_3
     borysthenes_4
@@ -1059,10 +1067,15 @@ river_provinces = {
     cauvery_4
     chenab
     cydnus
-    dexi_cheri
+    dexi_cheri_0
+    dexi_cheri_1
+    dexi_cheri_2
+    dexi_cheri_3
     dyardanes_0
     dyardanes_1
     dyardanes_2
+    dyardanes_3
+    dyardanes_4
     echedoros
     euphrates_0
     euphrates_1
@@ -1071,6 +1084,8 @@ river_provinces = {
     euphrates_4
     flumen_anas_0
     flumen_anas_1
+    flumen_anas_2
+    flumen_anas_3
     ganges_0
     ganges_1
     ganges_10
@@ -1081,7 +1096,16 @@ river_provinces = {
     ganges_15
     ganges_16
     ganges_17
+    ganges_18
+    ganges_19
     ganges_2
+    ganges_20
+    ganges_21
+    ganges_22
+    ganges_23
+    ganges_24
+    ganges_25
+    ganges_26
     ganges_3
     ganges_4
     ganges_5
@@ -1091,14 +1115,19 @@ river_provinces = {
     ganges_9
     garumna_0
     garumna_1
+    garumna_2
+    garumna_3
     godavari_0
     godavari_1
     hypanis
     iberus_0
     iberus_1
     iberus_2
+    iberus_3
     indus_0
     indus_1
+    indus_10
+    indus_11
     indus_2
     indus_3
     indus_4
@@ -1106,8 +1135,16 @@ river_provinces = {
     indus_6
     indus_7
     indus_8
+    indus_9
     ister_0
     ister_1
+    ister_10
+    ister_11
+    ister_12
+    ister_13
+    ister_14
+    ister_15
+    ister_16
     ister_2
     ister_3
     ister_4
@@ -1123,13 +1160,28 @@ river_provinces = {
     liger_1
     liger_2
     liger_3
+    liger_4
+    liger_5
     lim
     narmada_0
     narmada_1
     narmada_2
     narmada_3
     narmada_4
-    nile
+    nile_0
+    nile_1
+    nile_10
+    nile_11
+    nile_12
+    nile_13
+    nile_2
+    nile_3
+    nile_4
+    nile_5
+    nile_6
+    nile_7
+    nile_8
+    nile_9
     nile_the_bolbitine_0
     nile_the_bolbitine_1
     nile_the_bolbitine_2
@@ -1158,92 +1210,20 @@ river_provinces = {
     padus_4
     penner_0
     penner_1
-    prov7687_0
-    prov7687_1
-    prov7687_10
-    prov7687_11
-    prov7687_12
-    prov7687_2
-    prov7687_3
-    prov7687_4
-    prov7687_5
-    prov7687_6
-    prov7687_7
-    prov7687_8
-    prov7687_9
-    prov7692_0
-    prov7692_1
-    prov7692_2
-    prov7701_0
-    prov7701_1
-    prov7701_2
-    prov7701_3
-    prov7701_4
-    prov7701_5
-    prov7701_6
-    prov7701_7
-    prov7701_8
-    prov7724
-    prov7741_0
-    prov7741_1
-    prov7767_0
-    prov7767_1
-    prov7771
-    prov7773_0
-    prov7773_1
-    prov7773_2
-    prov7773_3
-    prov7773_4
-    prov7773_5
-    prov7773_6
-    prov7783_0
-    prov7783_1
-    prov7846_0
-    prov7846_1
-    prov7846_2
-    prov7862_0
-    prov7862_1
-    prov7864_0
-    prov7864_1
-    prov7868_0
-    prov7868_1
-    prov7871_0
-    prov7871_1
-    prov7871_2
-    prov8035
-    prov8037
-    prov8042_0
-    prov8042_1
-    prov8042_2
-    prov8042_3
-    prov8042_4
-    prov8042_5
-    prov8047_0
-    prov8047_1
-    prov8047_2
-    prov8047_3
-    prov8047_4
-    prov8574_0
-    prov8574_1
-    prov8575_0
-    prov8575_1
-    prov8578_0
-    prov8578_1
-    prov8578_2
-    prov8586_0
-    prov8586_1
-    prov8586_2
-    prov8589_0
-    prov8589_1
-    prov9198_0
-    prov9198_1
-    prov9198_2
-    prov9198_3
     pyramus_0
     pyramus_1
     rha_0
     rha_1
+    rha_10
+    rha_11
     rha_2
+    rha_3
+    rha_4
+    rha_5
+    rha_6
+    rha_7
+    rha_8
+    rha_9
     rhenus_0
     rhenus_1
     rhenus_2
@@ -1252,13 +1232,19 @@ river_provinces = {
     rhenus_5
     rhenus_6
     rhenus_7
-    rhodanus
+    rhenus_8
+    rhodanus_0
+    rhodanus_1
+    rhodanus_2
+    rhodanus_3
     satluj_0
     satluj_1
     satluj_2
     sequana_0
     sequana_1
     sequana_2
+    sequana_3
+    sequana_4
     sionna_0
     sionna_1
     sububus
@@ -1266,12 +1252,21 @@ river_provinces = {
     tagus_1
     tagus_2
     tagus_3
-    tamesis
+    tagus_4
+    tagus_5
+    tamesis_0
+    tamesis_1
     tanais_1
+    tanais_10
+    tanais_11
     tanais_2
     tanais_3
     tanais_4
     tanais_5
+    tanais_6
+    tanais_7
+    tanais_8
+    tanais_9
     tapi
     tigris_0
     tigris_1
@@ -1284,7 +1279,12 @@ river_provinces = {
     tyras_1
     tyras_2
     tyras_3
-    vain
+    vain_0
+    vain_1
+    vain_2
+    vain_3
+    vain_4
+    vain_5
     velho_0
     velho_1
     velho_2
@@ -1708,6 +1708,8 @@ sea_zones = {
     mare_lycium_4
     mare_myrtoum_0
     mare_myrtoum_1
+    mare_myrtoum_2
+    mare_myrtoum_3
     mare_orcadum
     mare_phoenicium_0
     mare_phoenicium_1
@@ -1932,7 +1934,21 @@ sea_zones = {
     oceanus_sarmaticus_32
     oceanus_sarmaticus_33
     oceanus_sarmaticus_34
+    oceanus_sarmaticus_35
+    oceanus_sarmaticus_36
+    oceanus_sarmaticus_37
+    oceanus_sarmaticus_38
+    oceanus_sarmaticus_39
     oceanus_sarmaticus_4
+    oceanus_sarmaticus_40
+    oceanus_sarmaticus_41
+    oceanus_sarmaticus_42
+    oceanus_sarmaticus_43
+    oceanus_sarmaticus_44
+    oceanus_sarmaticus_45
+    oceanus_sarmaticus_46
+    oceanus_sarmaticus_47
+    oceanus_sarmaticus_48
     oceanus_sarmaticus_5
     oceanus_sarmaticus_6
     oceanus_sarmaticus_7
@@ -1989,26 +2005,6 @@ sea_zones = {
     pontus_euxinus_8
     pontus_euxinus_9
     propontis
-    prov2607_0
-    prov2607_1
-    prov5854_0
-    prov5854_1
-    prov5854_10
-    prov5854_11
-    prov5854_12
-    prov5854_13
-    prov5854_2
-    prov5854_3
-    prov5854_4
-    prov5854_5
-    prov5854_6
-    prov5854_7
-    prov5854_8
-    prov5854_9
-    prov652_0
-    prov652_1
-    prov653_0
-    prov653_1
     rann_of_kutch_0
     rann_of_kutch_1
     sinus_adenensis_0
@@ -2040,6 +2036,8 @@ sea_zones = {
     sinus_arabicus_25
     sinus_arabicus_26
     sinus_arabicus_27
+    sinus_arabicus_28
+    sinus_arabicus_29
     sinus_arabicus_3
     sinus_arabicus_4
     sinus_arabicus_5
@@ -2093,7 +2091,9 @@ sea_zones = {
     sinus_gangeticus_8
     sinus_gangeticus_9
     sinus_genuensis
-    sinus_heroopoliticus
+    sinus_heroopoliticus_0
+    sinus_heroopoliticus_1
+    sinus_heroopoliticus_2
     sinus_hipponensis
     sinus_laconicus
     sinus_liburnus_0

@@ -31,6 +31,9 @@ locations = {
     adan = {
         rank = town town_setup = ir_arabian_town_coastal
     }
+    adana = {
+        rank = city town_setup = ir_anatolian_city
+    }
     adouli = {
         rank = town town_setup = ir_ethiopia_town_coastal_02
     }
@@ -80,25 +83,25 @@ locations = {
         rank = city town_setup = ir_hindustan_city
     }
     alexandreia_sakastenes = {
-        rank = city town_setup = ir_persian_city
+        rank = city town_setup = ir_persian_city_02
     }
     alexandria = {
         rank = city town_setup = ir_egyptian_city_coastal
     }
     alexandria_ad_caucasum = {
-        rank = city town_setup = ir_persian_city_02
+        rank = city town_setup = ir_persian_city_03
     }
     alexandria_margiana = {
-        rank = city town_setup = ir_persian_city_03
+        rank = city town_setup = ir_persian_city_04
     }
     alexandria_oxiana = {
-        rank = city town_setup = ir_persian_city_03
+        rank = city town_setup = ir_persian_city_04
     }
     alexandria_susiana = {
         rank = city town_setup = ir_crescent_city
     }
     alexandropolis = {
-        rank = city town_setup = ir_persian_city_03
+        rank = city town_setup = ir_persian_city_04
     }
     alexandrou_limen = {
         rank = city town_setup = ir_hindustan_city_coastal
@@ -173,7 +176,7 @@ locations = {
         rank = town town_setup = ir_anatolian_town_03
     }
     apameia = {
-        rank = city town_setup = ir_persian_city_04
+        rank = city town_setup = ir_persian_city_02
     }
     aphroditopolis = {
         rank = city town_setup = ir_egyptian_city_02
@@ -239,7 +242,7 @@ locations = {
         rank = city town_setup = ir_crescent_city_02
     }
     aspadana = {
-        rank = city town_setup = ir_persian_city_03
+        rank = city town_setup = ir_persian_city_04
     }
     aspendos = {
         rank = town town_setup = ir_anatolian_town_coastal_03
@@ -293,7 +296,7 @@ locations = {
         rank = city town_setup = ir_crescent_city
     }
     bactra = {
-        rank = city town_setup = ir_persian_city_03
+        rank = city town_setup = ir_persian_city_04
     }
     badaun = {
         rank = town town_setup = ir_hindustan_town
@@ -505,9 +508,6 @@ locations = {
     daphnai = {
         rank = rural_settlement town_setup = ir_egyptian_rural_settlement_coastal
     }
-    darou = {
-        rank = town town_setup = ir_nubian_town_03
-    }
     dasmenda = {
         rank = town town_setup = ir_anatolian_town_02
     }
@@ -587,7 +587,7 @@ locations = {
         rank = town town_setup = ir_iberian_town_coastal_03
     }
     ecbatana = {
-        rank = city town_setup = ir_persian_city_03
+        rank = city town_setup = ir_persian_city_04
     }
     elaea = {
         rank = town town_setup = ir_anatolian_town_coastal
@@ -863,7 +863,7 @@ locations = {
         rank = town town_setup = ir_crescent_town_02
     }
     karmana = {
-        rank = city town_setup = ir_persian_city_03
+        rank = city town_setup = ir_persian_city_04
     }
     karmanta = {
         rank = town town_setup = ir_bengal_town_coastal_03
@@ -887,7 +887,7 @@ locations = {
         rank = town town_setup = ir_hindustan_town
     }
     kaunos = {
-        rank = town town_setup = ir_anatolian_town_coastal_03
+        rank = town town_setup = ir_anatolian_town_coastal
     }
     kaushambi = {
         rank = city town_setup = ir_hindustan_city
@@ -911,7 +911,7 @@ locations = {
         rank = town town_setup = ir_deccan_town
     }
     khyunglung = {
-        rank = town town_setup = ir_khorasan_town_02
+        rank = town town_setup = ir_khorasan_town_05
     }
     kios = {
         rank = town town_setup = ir_anatolian_town_coastal_02
@@ -920,7 +920,7 @@ locations = {
         rank = town town_setup = ir_anatolian_town_coastal_03
     }
     klysma = {
-        rank = city town_setup = ir_egyptian_city_coastal_02
+        rank = city town_setup = ir_egyptian_city_04
     }
     knidos = {
         rank = town town_setup = ir_anatolian_town_coastal
@@ -944,7 +944,7 @@ locations = {
         rank = city town_setup = ir_khorasan_city
     }
     kophen = {
-        rank = city town_setup = ir_persian_city_03
+        rank = city town_setup = ir_persian_city_04
     }
     koreoura = {
         rank = town town_setup = ir_deccan_town_coastal_02
@@ -1166,7 +1166,7 @@ locations = {
         rank = town town_setup = ir_deccan_town_02
     }
     minnagara = {
-        rank = town town_setup = ir_deccan_town_coastal_04
+        rank = town town_setup = ir_deccan_town_coastal_03
     }
     missua = {
         rank = city town_setup = ir_numidian_city_coastal_03
@@ -1298,7 +1298,7 @@ locations = {
         rank = town town_setup = ir_crescent_town_02
     }
     oskobara = {
-        rank = city town_setup = ir_persian_city_03
+        rank = city town_setup = ir_persian_city_04
     }
     ostia = {
         rank = city town_setup = ir_italic_city_coastal
@@ -1334,7 +1334,7 @@ locations = {
         rank = town town_setup = ir_anatolian_town_coastal_02
     }
     pasargadai = {
-        rank = city town_setup = ir_persian_city_03
+        rank = city town_setup = ir_persian_city_04
     }
     passaron = {
         rank = town town_setup = ir_illyrian_town
@@ -1367,7 +1367,7 @@ locations = {
         rank = town town_setup = ir_anatolian_town
     }
     persepolis = {
-        rank = city town_setup = ir_persian_city_03
+        rank = city town_setup = ir_persian_city_04
     }
     perusia = {
         rank = town town_setup = ir_italic_town
@@ -1478,7 +1478,7 @@ locations = {
         rank = town town_setup = ir_deccan_town
     }
     rhagai = {
-        rank = city town_setup = ir_persian_city_03
+        rank = city town_setup = ir_persian_city_04
     }
     rhegium = {
         rank = town town_setup = ir_italic_town_coastal
@@ -1589,7 +1589,7 @@ locations = {
         rank = town town_setup = ir_persian_town_02
     }
     shushan = {
-        rank = city town_setup = ir_persian_city_03
+        rank = city town_setup = ir_persian_city_04
     }
     side = {
         rank = town town_setup = ir_anatolian_town_coastal
@@ -1688,7 +1688,7 @@ locations = {
         rank = city town_setup = ir_italic_city_coastal_02
     }
     tarmita = {
-        rank = city town_setup = ir_persian_city_03
+        rank = city town_setup = ir_persian_city_04
     }
     tarquini = {
         rank = city town_setup = ir_italic_city_coastal_03
