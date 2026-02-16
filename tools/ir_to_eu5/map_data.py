@@ -3487,15 +3487,155 @@ def _write_location_templates(
     print_written("file", location_templates)
 
 
+def _load_manual_holy_site_type_overrides() -> dict[str, str]:
+    overrides_path = Path(__file__).resolve().parent / "ir_holy_site_type_overrides.tsv"
+    overrides: dict[str, str] = {}
+    if not overrides_path.exists():
+        return overrides
+
+    allowed_types = {"shrine", "temple", "city", "mountain", "fire_temple"}
+    for line in overrides_path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        parts = line.split("	")
+        if len(parts) != 2:
+            continue
+        holy_site_key = parts[0].strip()
+        holy_site_type = parts[1].strip()
+        if not holy_site_key or holy_site_type not in allowed_types:
+            continue
+        overrides[holy_site_key] = holy_site_type
+    return overrides
+
+
+def _write_ir_holy_sites(id_to_key: dict[int, str], location_keys: set[str]) -> None:
+    deity_religion: dict[str, str] = {}
+    for deities_file in iter_ir_files("common/deities"):
+        tree = parse_tree(deities_file)
+        for deity_key, deity_data in tree.items():
+            if not isinstance(deity_key, str):
+                continue
+            religion = _get_tree_value(deity_data, "religion")
+            if isinstance(religion, str) and religion:
+                deity_religion[deity_key] = religion
+
+    omen_deity: dict[str, str] = {}
+    for setup_deities_file in iter_ir_files("setup/main/deities"):
+        tree = parse_tree(setup_deities_file)
+        manager = _get_tree_value(tree, "deity_manager")
+        deities_database = _get_tree_value(manager, "deities_database")
+        if not isinstance(deities_database, (_pydt.Tree, dict)):
+            continue
+        for _, deity_ref in deities_database.items():
+            omen_key = _get_tree_value(deity_ref, "key")
+            deity_key = _get_tree_value(deity_ref, "deity")
+            if isinstance(omen_key, str) and isinstance(deity_key, str) and omen_key:
+                omen_deity[omen_key] = deity_key
+
+    available_religions: set[str] = set()
+    ir_religions_path = mod_root / "in_game" / "common" / "religions" / "ir_religions.txt"
+    if ir_religions_path.exists():
+        ir_religions_tree = parse_tree(ir_religions_path)
+        available_religions = {str(k) for k in ir_religions_tree.keys()}
+
+    manual_holy_site_types = _load_manual_holy_site_type_overrides()
+
+    entries: list[tuple[str, str]] = []
+    seen_entry_keys: set[str] = set()
+    missing_manual_types: set[str] = set()
+
+    for provinces_file in iter_ir_files("setup/provinces"):
+        tree = parse_tree(provinces_file)
+        for raw_id, province_data in tree.items():
+            try:
+                province_id = int(str(raw_id))
+            except Exception:
+                continue
+
+            loc_key = id_to_key.get(province_id)
+            if not loc_key or loc_key not in location_keys:
+                continue
+
+            holy_site = _get_tree_value(province_data, "holy_site")
+            if not isinstance(holy_site, str) or not holy_site:
+                continue
+
+            deity_key = omen_deity.get(holy_site)
+            raw_religion = deity_religion.get(deity_key, "") if deity_key else ""
+            if not raw_religion:
+                fallback_religion = _get_tree_value(province_data, "religion")
+                raw_religion = fallback_religion if isinstance(fallback_religion, str) else ""
+            if not raw_religion:
+                continue
+
+            religion_tag = f"ir_{raw_religion}"
+            if available_religions and religion_tag not in available_religions:
+                continue
+
+            rank = _get_tree_value(province_data, "province_rank")
+            civ_raw = _get_tree_value(province_data, "civilization_value")
+            try:
+                civ_value = int(str(civ_raw))
+            except Exception:
+                civ_value = 0
+
+            holy_site_type = manual_holy_site_types.get(holy_site)
+            if holy_site_type is None:
+                holy_site_type = "temple" if rank in {"city", "city_metropolis"} else "shrine"
+                missing_manual_types.add(holy_site)
+
+            if rank == "city_metropolis":
+                importance = 5 if civ_value >= 55 else 4
+            elif rank == "city":
+                importance = 4 if civ_value >= 45 else 3
+            else:
+                importance = 2 if civ_value >= 35 else 1
+
+            base_entry_key = f"ir_{holy_site}_{loc_key}_holy_site"
+            entry_key = clean_name(base_entry_key)
+            suffix = 2
+            while entry_key in seen_entry_keys:
+                entry_key = clean_name(f"{base_entry_key}_{suffix}")
+                suffix += 1
+            seen_entry_keys.add(entry_key)
+
+            block = (
+                f"{entry_key} = {{\n"
+                f"    location = {loc_key}\n"
+                f"    type = {holy_site_type}\n"
+                f"    importance = {importance}\n"
+                f"    religions = {{ {religion_tag} }}\n"
+                "}\n"
+            )
+            entries.append((entry_key, block))
+
+    if missing_manual_types:
+        preview = ", ".join(sorted(missing_manual_types)[:20])
+        print(
+            "Warning: missing manual holy-site type overrides for "
+            + str(len(missing_manual_types))
+            + " I:R holy site keys; using fallback typing. First: "
+            + preview
+        )
+
+    entries.sort(key=lambda x: x[0])
+    out_path = mod_root / "in_game" / "common" / "holy_sites" / "ir_holy_sites.txt"
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text("\n".join(block for _, block in entries), encoding="utf-8-sig")
+    print_written("file", out_path)
+
+
 def _apply_map_content_overrides(
+    id_to_key: dict[int, str],
     location_keys: set[str],
     region_keys: set[str],
     continent_keys: set[str],
     subcontinent_keys: set[str],
 ) -> None:
-    # Copy-overs from EU5 scripted data are intentionally disabled.
-    # Only generate local map object overrides required by the mod.
-    _ = (location_keys, region_keys, continent_keys, subcontinent_keys)
+    # Keep only local generated map overrides and I:R-based holy sites.
+    _ = (region_keys, continent_keys, subcontinent_keys)
+    _write_ir_holy_sites(id_to_key, location_keys)
     _write_map_object_override_files()
 
 
@@ -6358,7 +6498,7 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
     if not script_region_keys:
         script_region_keys = region_keys
 
-    _apply_map_content_overrides(location_keys, script_region_keys, continent_keys, subcontinent_keys)
+    _apply_map_content_overrides(id_to_key, location_keys, script_region_keys, continent_keys, subcontinent_keys)
     _write_start_setup_content(
         id_to_key,
         location_keys,

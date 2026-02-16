@@ -1,0 +1,2603 @@
+﻿ir_omen_abhinandananatha_sringivera_holy_site = {
+    location = sringivera
+    type = shrine
+    importance = 1
+    religions = { ir_jainism }
+}
+
+ir_omen_abraham_hebron_holy_site = {
+    location = hebron
+    type = shrine
+    importance = 1
+    religions = { ir_judaism }
+}
+
+ir_omen_adgilis_deda_sagarejo_holy_site = {
+    location = sagarejo
+    type = shrine
+    importance = 1
+    religions = { ir_caucasian_religion }
+}
+
+ir_omen_aecorna_silicenis_holy_site = {
+    location = silicenis
+    type = shrine
+    importance = 1
+    religions = { ir_illyrian_pantheon }
+}
+
+ir_omen_aesernia_iuvanum_holy_site = {
+    location = iuvanum
+    type = shrine
+    importance = 1
+    religions = { ir_italic_pantheon }
+}
+
+ir_omen_agathyrus_uccrynyika_holy_site = {
+    location = uccrynyika
+    type = shrine
+    importance = 1
+    religions = { ir_indo_iranian_religion }
+}
+
+ir_omen_agdistis_myloukome_holy_site = {
+    location = myloukome
+    type = shrine
+    importance = 1
+    religions = { ir_anatolian_religion }
+}
+
+ir_omen_ahura_mazda_arabissos_holy_site = {
+    location = arabissos
+    type = fire_temple
+    importance = 1
+    religions = { ir_zoroaster }
+}
+
+ir_omen_ailiah_makarabah_holy_site = {
+    location = makarabah
+    type = shrine
+    importance = 1
+    religions = { ir_arabian_pantheon }
+}
+
+ir_omen_ajjuna_vaishali_holy_site = {
+    location = vaishali
+    type = temple
+    importance = 3
+    religions = { ir_ajivika }
+}
+
+ir_omen_al_kutbay_aelana_holy_site = {
+    location = aelana
+    type = shrine
+    importance = 1
+    religions = { ir_arabian_pantheon }
+}
+
+ir_omen_al_qaum_petra_holy_site = {
+    location = petra
+    type = temple
+    importance = 3
+    religions = { ir_arabian_pantheon }
+}
+
+ir_omen_al_uzza_taif_holy_site = {
+    location = taif
+    type = shrine
+    importance = 1
+    religions = { ir_arabian_pantheon }
+}
+
+ir_omen_alcis_erbia_holy_site = {
+    location = erbia
+    type = shrine
+    importance = 1
+    religions = { ir_germanic_religion }
+}
+
+ir_omen_alexander_alexandria_holy_site = {
+    location = alexandria
+    type = city
+    importance = 4
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_alilat_palmyra_holy_site = {
+    location = palmyra
+    type = temple
+    importance = 3
+    religions = { ir_arabian_pantheon }
+}
+
+ir_omen_almaqah_mariaba_holy_site = {
+    location = mariaba
+    type = temple
+    importance = 3
+    religions = { ir_arabian_pantheon }
+}
+
+ir_omen_altinos_altinum_holy_site = {
+    location = altinum
+    type = temple
+    importance = 3
+    religions = { ir_italic_pantheon }
+}
+
+ir_omen_amel_ali_opone_holy_site = {
+    location = opone
+    type = temple
+    importance = 3
+    religions = { ir_puntic_religion }
+}
+
+ir_omen_amesemi_nagaa_holy_site = {
+    location = nagaa
+    type = temple
+    importance = 3
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_amirani_archaiopolis_holy_site = {
+    location = archaiopolis
+    type = temple
+    importance = 3
+    religions = { ir_caucasian_religion }
+}
+
+ir_omen_amm_tamna_holy_site = {
+    location = tamna
+    type = temple
+    importance = 3
+    religions = { ir_arabian_pantheon }
+}
+
+ir_omen_ammon_ammon_holy_site = {
+    location = ammon
+    type = temple
+    importance = 3
+    religions = { ir_berber_religion }
+}
+
+ir_omen_amun_diospolis_magna_holy_site = {
+    location = diospolis_magna
+    type = temple
+    importance = 3
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_amurru_barbalissus_holy_site = {
+    location = barbalissus
+    type = shrine
+    importance = 1
+    religions = { ir_carthaginian_pantheon }
+}
+
+ir_omen_anahit_eriza_holy_site = {
+    location = eriza
+    type = shrine
+    importance = 1
+    religions = { ir_anahitic_religion }
+}
+
+ir_omen_anahita_persepolis_holy_site = {
+    location = persepolis
+    type = temple
+    importance = 4
+    religions = { ir_zoroaster }
+}
+
+ir_omen_anaitis_zela_holy_site = {
+    location = zela
+    type = temple
+    importance = 3
+    religions = { ir_zoroaster }
+}
+
+ir_omen_andinus_municipium_dardanorum_holy_site = {
+    location = municipium_dardanorum
+    type = shrine
+    importance = 1
+    religions = { ir_illyrian_pantheon }
+}
+
+ir_omen_angra_mainyu_gindes_holy_site = {
+    location = gindes
+    type = shrine
+    importance = 1
+    religions = { ir_mithra_religion }
+}
+
+ir_omen_anguipedia_issyk_holy_site = {
+    location = issyk
+    type = shrine
+    importance = 1
+    religions = { ir_indo_iranian_religion }
+}
+
+ir_omen_anhur_thinis_holy_site = {
+    location = thinis
+    type = shrine
+    importance = 1
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_antaeus_barke_holy_site = {
+    location = barke
+    type = temple
+    importance = 3
+    religions = { ir_berber_religion }
+}
+
+ir_omen_anterstatai_bovianum_holy_site = {
+    location = bovianum
+    type = temple
+    importance = 3
+    religions = { ir_italic_pantheon }
+}
+
+ir_omen_anti_tingis_holy_site = {
+    location = tingis
+    type = temple
+    importance = 3
+    religions = { ir_berber_religion }
+}
+
+ir_omen_anubis_lykopolis_holy_site = {
+    location = lykopolis
+    type = shrine
+    importance = 1
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_anuket_talmis_holy_site = {
+    location = talmis
+    type = shrine
+    importance = 1
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_anzar_laatamna_holy_site = {
+    location = laatamna
+    type = shrine
+    importance = 1
+    religions = { ir_berber_religion }
+}
+
+ir_omen_apedmak_meroe_holy_site = {
+    location = meroe
+    type = temple
+    importance = 3
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_aphrodite_areia_tarentum_holy_site = {
+    location = tarentum
+    type = temple
+    importance = 3
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_aphrodite_euploia_knidos_holy_site = {
+    location = knidos
+    type = temple
+    importance = 3
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_aphrodite_hoplimense_korinthos_holy_site = {
+    location = korinthos
+    type = temple
+    importance = 3
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_aphrodite_nea_paphos_holy_site = {
+    location = nea_paphos
+    type = temple
+    importance = 3
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_api_mykon_holy_site = {
+    location = mykon
+    type = shrine
+    importance = 1
+    religions = { ir_indo_iranian_religion }
+}
+
+ir_omen_apollo_delphi_holy_site = {
+    location = delphi
+    type = temple
+    importance = 3
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_apollo_didymaios_miletos_holy_site = {
+    location = miletos
+    type = temple
+    importance = 3
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_apsyrtus_apsaros_0_holy_site = {
+    location = apsaros_0
+    type = shrine
+    importance = 1
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_apulu_pyrgi_holy_site = {
+    location = pyrgi
+    type = temple
+    importance = 3
+    religions = { ir_italic_pantheon }
+}
+
+ir_omen_arensuphis_aborepi_holy_site = {
+    location = aborepi
+    type = temple
+    importance = 3
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_arethousa_syracusae_holy_site = {
+    location = syracusae
+    type = temple
+    importance = 3
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_argimpasa_samukh_holy_site = {
+    location = samukh
+    type = shrine
+    importance = 1
+    religions = { ir_indo_iranian_religion }
+}
+
+ir_omen_arhan_chabala_holy_site = {
+    location = chabala
+    type = mountain
+    importance = 1
+    religions = { ir_caucasian_religion }
+}
+
+ir_omen_ariadne_knossos_holy_site = {
+    location = knossos
+    type = temple
+    importance = 3
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_ariantes_exampeaus_holy_site = {
+    location = exampeaus
+    type = shrine
+    importance = 1
+    religions = { ir_indo_iranian_religion }
+}
+
+ir_omen_armazi_meschistha_harmozike_holy_site = {
+    location = meschistha_harmozike
+    type = temple
+    importance = 3
+    religions = { ir_caucasian_religion }
+}
+
+ir_omen_artemis_ephesos_holy_site = {
+    location = ephesos
+    type = temple
+    importance = 3
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_asclepius_epidauros_holy_site = {
+    location = epidauros
+    type = temple
+    importance = 4
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_asha_pasargadai_holy_site = {
+    location = pasargadai
+    type = fire_temple
+    importance = 3
+    religions = { ir_zoroaster }
+}
+
+ir_omen_asherah_narbata_holy_site = {
+    location = narbata
+    type = shrine
+    importance = 1
+    religions = { ir_carthaginian_pantheon }
+}
+
+ir_omen_ashima_damascus_holy_site = {
+    location = damascus
+    type = temple
+    importance = 3
+    religions = { ir_mesopotamian_religion }
+}
+
+ir_omen_ashshur_ashur_holy_site = {
+    location = ashur
+    type = temple
+    importance = 3
+    religions = { ir_mesopotamian_religion }
+}
+
+ir_omen_astarte_leuke_akte_holy_site = {
+    location = leuke_akte
+    type = temple
+    importance = 3
+    religions = { ir_carthaginian_pantheon }
+}
+
+ir_omen_astlik_andzevatsik_holy_site = {
+    location = andzevatsik
+    type = shrine
+    importance = 1
+    religions = { ir_anahitic_religion }
+}
+
+ir_omen_ataecina_myrtilis_holy_site = {
+    location = myrtilis
+    type = shrine
+    importance = 1
+    religions = { ir_animism }
+}
+
+ir_omen_atar_aris_holy_site = {
+    location = aris
+    type = fire_temple
+    importance = 1
+    religions = { ir_zoroaster }
+}
+
+ir_omen_atargatis_bambyce_holy_site = {
+    location = bambyce
+    type = temple
+    importance = 3
+    religions = { ir_carthaginian_pantheon }
+}
+
+ir_omen_athena_athens_holy_site = {
+    location = athens
+    type = temple
+    importance = 4
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_ati_muwer_lashang_holy_site = {
+    location = lashang
+    type = mountain
+    importance = 1
+    religions = { ir_bon_religion }
+}
+
+ir_omen_attis_kadoi_holy_site = {
+    location = kadoi
+    type = temple
+    importance = 3
+    religions = { ir_anatolian_religion }
+}
+
+ir_omen_ayaanle_apocopa_holy_site = {
+    location = apocopa
+    type = temple
+    importance = 3
+    religions = { ir_puntic_religion }
+}
+
+ir_omen_baal_hammon_pupput_holy_site = {
+    location = pupput
+    type = shrine
+    importance = 1
+    religions = { ir_carthaginian_pantheon }
+}
+
+ir_omen_baal_heliopolis_1_holy_site = {
+    location = heliopolis_1
+    type = temple
+    importance = 3
+    religions = { ir_carthaginian_pantheon }
+}
+
+ir_omen_baalat_byblos_holy_site = {
+    location = byblos
+    type = temple
+    importance = 3
+    religions = { ir_carthaginian_pantheon }
+}
+
+ir_omen_babai_gurgua_holy_site = {
+    location = gurgua
+    type = shrine
+    importance = 1
+    religions = { ir_nuragic_pantheon }
+}
+
+ir_omen_bacax_bulla_regia_holy_site = {
+    location = bulla_regia
+    type = shrine
+    importance = 1
+    religions = { ir_berber_religion }
+}
+
+ir_omen_baduhenna_amsivaria_holy_site = {
+    location = amsivaria
+    type = shrine
+    importance = 1
+    religions = { ir_germanic_religion }
+}
+
+ir_omen_bamyan_cartana_holy_site = {
+    location = cartana
+    type = mountain
+    importance = 1
+    religions = { ir_buddhism }
+}
+
+ir_omen_banebdjedet_mendes_holy_site = {
+    location = mendes
+    type = temple
+    importance = 3
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_barbale_didai_holy_site = {
+    location = didai
+    type = mountain
+    importance = 1
+    religions = { ir_caucasian_religion }
+}
+
+ir_omen_bardos_partaw_holy_site = {
+    location = partaw
+    type = shrine
+    importance = 1
+    religions = { ir_caucasian_religion }
+}
+
+ir_omen_barshamin_ani_1_holy_site = {
+    location = ani_1
+    type = temple
+    importance = 3
+    religions = { ir_anahitic_religion }
+}
+
+ir_omen_bastet_bubastis_holy_site = {
+    location = bubastis
+    type = shrine
+    importance = 1
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_bau_kuara_holy_site = {
+    location = kuara
+    type = temple
+    importance = 3
+    religions = { ir_mesopotamian_religion }
+}
+
+ir_omen_bendis_tamasidava_holy_site = {
+    location = tamasidava
+    type = shrine
+    importance = 1
+    religions = { ir_shamanism }
+}
+
+ir_omen_berecyntia_diospolis_lykou_holy_site = {
+    location = diospolis_lykou
+    type = temple
+    importance = 3
+    religions = { ir_anatolian_religion }
+}
+
+ir_omen_berobreo_ad_duos_pontes_holy_site = {
+    location = ad_duos_pontes
+    type = shrine
+    importance = 1
+    religions = { ir_druidism }
+}
+
+ir_omen_bethel_livias_holy_site = {
+    location = livias
+    type = shrine
+    importance = 1
+    religions = { ir_carthaginian_pantheon }
+}
+
+ir_omen_bhadrabahu_belgola_holy_site = {
+    location = belgola
+    type = temple
+    importance = 3
+    religions = { ir_jainism }
+}
+
+ir_omen_bharaddai_batesar_holy_site = {
+    location = batesar
+    type = shrine
+    importance = 1
+    religions = { ir_ajivika }
+}
+
+ir_omen_bhrigu_barygaza_holy_site = {
+    location = barygaza
+    type = temple
+    importance = 3
+    religions = { ir_hindu }
+}
+
+ir_omen_biriir_ina_barqo_gidheys_holy_site = {
+    location = gidheys
+    type = temple
+    importance = 3
+    religions = { ir_puntic_religion }
+}
+
+ir_omen_bodh_gaya_holy_site = {
+    location = gaya
+    type = temple
+    importance = 3
+    religions = { ir_buddhism }
+}
+
+ir_omen_boseli_tqvarcheli_holy_site = {
+    location = tqvarcheli
+    type = mountain
+    importance = 1
+    religions = { ir_caucasian_religion }
+}
+
+ir_omen_brahma_pushkara_holy_site = {
+    location = pushkara
+    type = shrine
+    importance = 1
+    religions = { ir_hindu }
+}
+
+ir_omen_brigantia_bremenium_holy_site = {
+    location = bremenium
+    type = shrine
+    importance = 1
+    religions = { ir_druidism }
+}
+
+ir_omen_buk_qadarif_holy_site = {
+    location = qadarif
+    type = shrine
+    importance = 1
+    religions = { ir_nilotic_pantheon }
+}
+
+ir_omen_caleb_joshua_ephraim_holy_site = {
+    location = ephraim
+    type = shrine
+    importance = 1
+    religions = { ir_judaism }
+}
+
+ir_omen_cataonian_apollo_baka_holy_site = {
+    location = baka
+    type = shrine
+    importance = 1
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_chemosh_madaba_holy_site = {
+    location = madaba
+    type = shrine
+    importance = 1
+    religions = { ir_carthaginian_pantheon }
+}
+
+ir_omen_chuu_taungthaman_holy_site = {
+    location = taungthaman
+    type = shrine
+    importance = 1
+    religions = { ir_burmese_religion }
+}
+
+ir_omen_colwic_abany_bagada_holy_site = {
+    location = bagada
+    type = shrine
+    importance = 1
+    religions = { ir_nilotic_pantheon }
+}
+
+ir_omen_cybele_pessinous_holy_site = {
+    location = pessinous
+    type = shrine
+    importance = 1
+    religions = { ir_anatolian_religion }
+}
+
+ir_omen_cyre_kyrene_holy_site = {
+    location = kyrene
+    type = temple
+    importance = 3
+    religions = { ir_berber_religion }
+}
+
+ir_omen_dali_modinakhe_holy_site = {
+    location = modinakhe
+    type = mountain
+    importance = 1
+    religions = { ir_caucasian_religion }
+}
+
+ir_omen_daniel_shushan_holy_site = {
+    location = shushan
+    type = temple
+    importance = 3
+    religions = { ir_judaism }
+}
+
+ir_omen_deborah_kadasa_holy_site = {
+    location = kadasa
+    type = temple
+    importance = 3
+    religions = { ir_judaism }
+}
+
+ir_omen_demeter_eleusis_holy_site = {
+    location = eleusis
+    type = shrine
+    importance = 1
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_deng_abliata_holy_site = {
+    location = abliata
+    type = temple
+    importance = 3
+    religions = { ir_nilotic_pantheon }
+}
+
+ir_omen_dercetius_saltigi_holy_site = {
+    location = saltigi
+    type = shrine
+    importance = 1
+    religions = { ir_animism }
+}
+
+ir_omen_derzelas_odessus_holy_site = {
+    location = odessus
+    type = temple
+    importance = 3
+    religions = { ir_shamanism }
+}
+
+ir_omen_diana_capua_holy_site = {
+    location = capua
+    type = temple
+    importance = 3
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_diana_nemorensis_lavinium_holy_site = {
+    location = lavinium
+    type = temple
+    importance = 3
+    religions = { ir_italic_pantheon }
+}
+
+ir_omen_diktean_zeus_hierapytna_holy_site = {
+    location = hierapytna
+    type = temple
+    importance = 3
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_dionysus_thebes_holy_site = {
+    location = thebes
+    type = temple
+    importance = 3
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_dioscuri_dioscurias_holy_site = {
+    location = dioscurias
+    type = temple
+    importance = 3
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_dracondracaena_scupi_holy_site = {
+    location = scupi
+    type = shrine
+    importance = 1
+    religions = { ir_illyrian_pantheon }
+}
+
+ir_omen_dualos_stobi_holy_site = {
+    location = stobi
+    type = temple
+    importance = 3
+    religions = { ir_illyrian_pantheon }
+}
+
+ir_omen_duillae_aeso_holy_site = {
+    location = aeso
+    type = mountain
+    importance = 1
+    religions = { ir_animism }
+}
+
+ir_omen_dumuzid_arbela_holy_site = {
+    location = arbela
+    type = temple
+    importance = 3
+    religions = { ir_mesopotamian_religion }
+}
+
+ir_omen_durdzuks_terekata_holy_site = {
+    location = terekata
+    type = mountain
+    importance = 1
+    religions = { ir_caucasian_religion }
+}
+
+ir_omen_ea_eridu_holy_site = {
+    location = eridu
+    type = shrine
+    importance = 1
+    religions = { ir_mesopotamian_religion }
+}
+
+ir_omen_eacus_bravum_holy_site = {
+    location = bravum
+    type = shrine
+    importance = 1
+    religions = { ir_animism }
+}
+
+ir_omen_eate_calagorris_holy_site = {
+    location = calagorris
+    type = shrine
+    importance = 1
+    religions = { ir_pre_indo_european_religion }
+}
+
+ir_omen_el_zenopolis_holy_site = {
+    location = zenopolis
+    type = shrine
+    importance = 1
+    religions = { ir_carthaginian_pantheon }
+}
+
+ir_omen_elijah_pella_1_holy_site = {
+    location = pella_1
+    type = temple
+    importance = 3
+    religions = { ir_judaism }
+}
+
+ir_omen_endouellicus_celtica_superioris_holy_site = {
+    location = celtica_superioris
+    type = shrine
+    importance = 1
+    religions = { ir_animism }
+}
+
+ir_omen_enejjaga_rayagada_holy_site = {
+    location = rayagada
+    type = temple
+    importance = 3
+    religions = { ir_ajivika }
+}
+
+ir_omen_enlil_nippur_holy_site = {
+    location = nippur
+    type = temple
+    importance = 3
+    religions = { ir_mesopotamian_religion }
+}
+
+ir_omen_ereshkigal_cutha_holy_site = {
+    location = cutha
+    type = temple
+    importance = 3
+    religions = { ir_mesopotamian_religion }
+}
+
+ir_omen_eshmun_melqart_kition_holy_site = {
+    location = kition
+    type = temple
+    importance = 3
+    religions = { ir_carthaginian_pantheon }
+}
+
+ir_omen_eshmun_sidon_holy_site = {
+    location = sidon
+    type = temple
+    importance = 3
+    religions = { ir_carthaginian_pantheon }
+}
+
+ir_omen_esther_ecbatana_holy_site = {
+    location = ecbatana
+    type = temple
+    importance = 3
+    religions = { ir_judaism }
+}
+
+ir_omen_ezekiel_aqola_holy_site = {
+    location = aqola
+    type = shrine
+    importance = 1
+    religions = { ir_judaism }
+}
+
+ir_omen_ezra_apologos_holy_site = {
+    location = apologos
+    type = shrine
+    importance = 1
+    religions = { ir_judaism }
+}
+
+ir_omen_fladukia_aternum_holy_site = {
+    location = aternum
+    type = temple
+    importance = 3
+    religions = { ir_italic_pantheon }
+}
+
+ir_omen_frijjo_maroia_holy_site = {
+    location = maroia
+    type = shrine
+    importance = 1
+    religions = { ir_germanic_religion }
+}
+
+ir_omen_fufluns_consentia_holy_site = {
+    location = consentia
+    type = shrine
+    importance = 1
+    religions = { ir_italic_pantheon }
+}
+
+ir_omen_ga_kamachia_holy_site = {
+    location = kamachia
+    type = mountain
+    importance = 1
+    religions = { ir_caucasian_religion }
+}
+
+ir_omen_gacim_kavtiskhevi_holy_site = {
+    location = kavtiskhevi
+    type = shrine
+    importance = 1
+    religions = { ir_caucasian_religion }
+}
+
+ir_omen_gal_cumania_holy_site = {
+    location = cumania
+    type = mountain
+    importance = 1
+    religions = { ir_caucasian_religion }
+}
+
+ir_omen_garang_jebel_moya_holy_site = {
+    location = jebel_moya
+    type = shrine
+    importance = 1
+    religions = { ir_nilotic_pantheon }
+}
+
+ir_omen_ge_rhodopolis_holy_site = {
+    location = rhodopolis
+    type = temple
+    importance = 3
+    religions = { ir_caucasian_religion }
+}
+
+ir_omen_gekho_khyunglung_holy_site = {
+    location = khyunglung
+    type = temple
+    importance = 3
+    religions = { ir_bon_religion }
+}
+
+ir_omen_gelonus_gelon_holy_site = {
+    location = gelon
+    type = temple
+    importance = 3
+    religions = { ir_indo_iranian_religion }
+}
+
+ir_omen_ghmerti_leukothea_holy_site = {
+    location = leukothea
+    type = shrine
+    importance = 1
+    religions = { ir_caucasian_religion }
+}
+
+ir_omen_glanis_avennio_holy_site = {
+    location = avennio
+    type = shrine
+    importance = 1
+    religions = { ir_druidism }
+}
+
+ir_omen_goitosyrus_cimus_holy_site = {
+    location = cimus
+    type = shrine
+    importance = 1
+    religions = { ir_indo_iranian_religion }
+}
+
+ir_omen_gordys_pinaka_holy_site = {
+    location = pinaka
+    type = temple
+    importance = 3
+    religions = { ir_hurrian_pantheon }
+}
+
+ir_omen_gurzil_thubactis_holy_site = {
+    location = thubactis
+    type = shrine
+    importance = 1
+    religions = { ir_berber_religion }
+}
+
+ir_omen_hadad_zeugma_holy_site = {
+    location = zeugma
+    type = temple
+    importance = 3
+    religions = { ir_carthaginian_pantheon }
+}
+
+ir_omen_hathor_tenthyris_holy_site = {
+    location = tenthyris
+    type = temple
+    importance = 3
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_heka_latopolis_holy_site = {
+    location = latopolis
+    type = temple
+    importance = 3
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_hekate_orikos_holy_site = {
+    location = orikos
+    type = shrine
+    importance = 1
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_helios_rhodos_holy_site = {
+    location = rhodos
+    type = temple
+    importance = 3
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_hephaestus_lemnos_holy_site = {
+    location = lemnos
+    type = temple
+    importance = 3
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_heqet_apollinopolis_mikra_holy_site = {
+    location = apollinopolis_mikra
+    type = shrine
+    importance = 1
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_hera_kandarene_kandara_holy_site = {
+    location = kandara
+    type = shrine
+    importance = 1
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_hera_samos_holy_site = {
+    location = samos
+    type = temple
+    importance = 3
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_heracles_acragas_holy_site = {
+    location = acragas
+    type = temple
+    importance = 3
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_hercle_populonia_holy_site = {
+    location = populonia
+    type = temple
+    importance = 3
+    religions = { ir_italic_pantheon }
+}
+
+ir_omen_heryshaf_herakleopolis_holy_site = {
+    location = herakleopolis
+    type = shrine
+    importance = 1
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_hestia_hermione_holy_site = {
+    location = hermione
+    type = temple
+    importance = 3
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_histria_pola_holy_site = {
+    location = pola
+    type = shrine
+    importance = 1
+    religions = { ir_illyrian_pantheon }
+}
+
+ir_omen_hludana_broborg_holy_site = {
+    location = broborg
+    type = shrine
+    importance = 1
+    religions = { ir_germanic_religion }
+}
+
+ir_omen_horus_apollinopolis_megale_holy_site = {
+    location = apollinopolis_megale
+    type = shrine
+    importance = 1
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_iakhsari_telavi_holy_site = {
+    location = telavi
+    type = mountain
+    importance = 1
+    religions = { ir_caucasian_religion }
+}
+
+ir_omen_ica_flanona_holy_site = {
+    location = flanona
+    type = shrine
+    importance = 1
+    religions = { ir_illyrian_pantheon }
+}
+
+ir_omen_idaea_miletopolis_holy_site = {
+    location = miletopolis
+    type = shrine
+    importance = 1
+    religions = { ir_anatolian_religion }
+}
+
+ir_omen_ifri_uthina_holy_site = {
+    location = uthina
+    type = shrine
+    importance = 1
+    religions = { ir_berber_religion }
+}
+
+ir_omen_indra_pataliputra_holy_site = {
+    location = pataliputra
+    type = city
+    importance = 4
+    religions = { ir_hindu }
+}
+
+ir_omen_irmin_uarinia_holy_site = {
+    location = uarinia
+    type = shrine
+    importance = 1
+    religions = { ir_germanic_religion }
+}
+
+ir_omen_irrawaddy_halin_holy_site = {
+    location = halin
+    type = temple
+    importance = 3
+    religions = { ir_burmese_religion }
+}
+
+ir_omen_ishara_ammodios_holy_site = {
+    location = ammodios
+    type = temple
+    importance = 3
+    religions = { ir_carthaginian_pantheon }
+}
+
+ir_omen_ishtar_uruk_holy_site = {
+    location = uruk
+    type = temple
+    importance = 3
+    religions = { ir_mesopotamian_religion }
+}
+
+ir_omen_isis_syene_holy_site = {
+    location = syene
+    type = temple
+    importance = 3
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_istaran_dur_sharrukin_holy_site = {
+    location = dur_sharrukin
+    type = shrine
+    importance = 1
+    religions = { ir_mesopotamian_religion }
+}
+
+ir_omen_joseph_phakoussai_holy_site = {
+    location = phakoussai
+    type = shrine
+    importance = 1
+    religions = { ir_judaism }
+}
+
+ir_omen_joshua_shekhem_holy_site = {
+    location = shekhem
+    type = temple
+    importance = 3
+    religions = { ir_judaism }
+}
+
+ir_omen_jupiter_roma_holy_site = {
+    location = roma
+    type = temple
+    importance = 3
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_juppiter_menzanas_cannae_holy_site = {
+    location = cannae
+    type = temple
+    importance = 3
+    religions = { ir_italic_pantheon }
+}
+
+ir_omen_kakasbos_telmessos_holy_site = {
+    location = telmessos
+    type = temple
+    importance = 3
+    religions = { ir_anatolian_religion }
+}
+
+ir_omen_kanya_devi_komari_holy_site = {
+    location = komari
+    type = shrine
+    importance = 1
+    religions = { ir_agama }
+}
+
+ir_omen_karmanor_tarrha_holy_site = {
+    location = tarrha
+    type = shrine
+    importance = 1
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_kartikeya_rohtak_holy_site = {
+    location = rohtak
+    type = temple
+    importance = 3
+    religions = { ir_hindu }
+}
+
+ir_omen_kaum_khata_holy_site = {
+    location = khata
+    type = shrine
+    importance = 1
+    religions = { ir_eastern_animism }
+}
+
+ir_omen_kem_wumi_holy_site = {
+    location = wumi
+    type = shrine
+    importance = 1
+    religions = { ir_eastern_animism }
+}
+
+ir_omen_khaldi_armaouira_holy_site = {
+    location = armaouira
+    type = temple
+    importance = 3
+    religions = { ir_armenian_religion }
+}
+
+ir_omen_khonsu_hibis_holy_site = {
+    location = hibis
+    type = shrine
+    importance = 1
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_kisa_sankicca_minagana_holy_site = {
+    location = minagana
+    type = temple
+    importance = 3
+    religions = { ir_ajivika }
+}
+
+ir_omen_kommagene_samosata_holy_site = {
+    location = samosata
+    type = temple
+    importance = 3
+    religions = { ir_mithra_religion }
+}
+
+ir_omen_kopala_aragvispiri_holy_site = {
+    location = aragvispiri
+    type = mountain
+    importance = 1
+    religions = { ir_caucasian_religion }
+}
+
+ir_omen_kowth_nhial_alwa_holy_site = {
+    location = alwa
+    type = temple
+    importance = 3
+    religions = { ir_nilotic_pantheon }
+}
+
+ir_omen_krishna_dvaraka_holy_site = {
+    location = dvaraka
+    type = temple
+    importance = 3
+    religions = { ir_hindu }
+}
+
+ir_omen_kroon_lashio_holy_site = {
+    location = lashio
+    type = shrine
+    importance = 1
+    religions = { ir_burmese_religion }
+}
+
+ir_omen_kubaba_kastabala_holy_site = {
+    location = kastabala
+    type = temple
+    importance = 3
+    religions = { ir_hurrian_pantheon }
+}
+
+ir_omen_kubera_mallia_1_holy_site = {
+    location = mallia_1
+    type = temple
+    importance = 3
+    religions = { ir_hindu }
+}
+
+ir_omen_kujii_taledan_holy_site = {
+    location = taledan
+    type = shrine
+    importance = 1
+    religions = { ir_burmese_religion }
+}
+
+ir_omen_kusinagara_kusinagara_holy_site = {
+    location = kusinagara
+    type = temple
+    importance = 3
+    religions = { ir_buddhism }
+}
+
+ir_omen_lahona_barium_holy_site = {
+    location = barium
+    type = temple
+    importance = 3
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_lamia_petras_mikros_holy_site = {
+    location = petras_mikros
+    type = shrine
+    importance = 1
+    religions = { ir_berber_religion }
+}
+
+ir_omen_latra_ainona_holy_site = {
+    location = ainona
+    type = shrine
+    importance = 1
+    religions = { ir_illyrian_pantheon }
+}
+
+ir_omen_lekos_derbent_holy_site = {
+    location = derbent
+    type = shrine
+    importance = 1
+    religions = { ir_caucasian_religion }
+}
+
+ir_omen_leukothea_telephis_holy_site = {
+    location = telephis
+    type = temple
+    importance = 3
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_lha_mo_lhasa_holy_site = {
+    location = lhasa
+    type = temple
+    importance = 3
+    religions = { ir_bon_religion }
+}
+
+ir_omen_lobegi_calagurris_iulia_holy_site = {
+    location = calagurris_iulia
+    type = shrine
+    importance = 1
+    religions = { ir_pre_indo_european_religion }
+}
+
+ir_omen_lugus_toarcius_holy_site = {
+    location = toarcius
+    type = shrine
+    importance = 1
+    religions = { ir_druidism }
+}
+
+ir_omen_lurraberri_lugdunum_convenarum_holy_site = {
+    location = lugdunum_convenarum
+    type = shrine
+    importance = 1
+    religions = { ir_pre_indo_european_religion }
+}
+
+ir_omen_ma_aniketos_komana_hierapolis_holy_site = {
+    location = komana_hierapolis
+    type = temple
+    importance = 3
+    religions = { ir_anatolian_religion }
+}
+
+ir_omen_ma_komana_pontike_holy_site = {
+    location = komana_pontike
+    type = temple
+    importance = 3
+    religions = { ir_anatolian_religion }
+}
+
+ir_omen_mahagiri_tagaung_holy_site = {
+    location = tagaung
+    type = mountain
+    importance = 1
+    religions = { ir_burmese_religion }
+}
+
+ir_omen_mahavir_jayanti_malini_holy_site = {
+    location = malini
+    type = temple
+    importance = 3
+    religions = { ir_jainism }
+}
+
+ir_omen_maher_aksum_holy_site = {
+    location = aksum
+    type = temple
+    importance = 3
+    religions = { ir_arabian_pantheon }
+}
+
+ir_omen_makkhali_gosala_sravasti_holy_site = {
+    location = sravasti
+    type = shrine
+    importance = 1
+    religions = { ir_ajivika }
+}
+
+ir_omen_mallarama_campa_holy_site = {
+    location = campa
+    type = temple
+    importance = 3
+    religions = { ir_ajivika }
+}
+
+ir_omen_manat_rabigh_holy_site = {
+    location = rabigh
+    type = shrine
+    importance = 1
+    religions = { ir_arabian_pantheon }
+}
+
+ir_omen_mandulis_pachora_holy_site = {
+    location = pachora
+    type = temple
+    importance = 3
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_maphitis_pompeii_holy_site = {
+    location = pompeii
+    type = shrine
+    importance = 1
+    religions = { ir_italic_pantheon }
+}
+
+ir_omen_marduk_babylon_1_holy_site = {
+    location = babylon_1
+    type = temple
+    importance = 4
+    religions = { ir_mesopotamian_religion }
+}
+
+ir_omen_mari_gebala_holy_site = {
+    location = gebala
+    type = shrine
+    importance = 1
+    religions = { ir_pre_indo_european_religion }
+}
+
+ir_omen_mastinam_cirta_holy_site = {
+    location = cirta
+    type = temple
+    importance = 3
+    religions = { ir_berber_religion }
+}
+
+ir_omen_mater_matuta_picenum_holy_site = {
+    location = picenum
+    type = temple
+    importance = 3
+    religions = { ir_italic_pantheon }
+}
+
+ir_omen_medaurus_rhizon_holy_site = {
+    location = rhizon
+    type = shrine
+    importance = 1
+    religions = { ir_shamanism }
+}
+
+ir_omen_melqart_tyrus_holy_site = {
+    location = tyrus
+    type = temple
+    importance = 3
+    religions = { ir_carthaginian_pantheon }
+}
+
+ir_omen_men_anaboura_holy_site = {
+    location = anaboura
+    type = shrine
+    importance = 1
+    religions = { ir_anatolian_religion }
+}
+
+ir_omen_menrva_volaterrae_holy_site = {
+    location = volaterrae
+    type = temple
+    importance = 3
+    religions = { ir_italic_pantheon }
+}
+
+ir_omen_menya_cherchen_holy_site = {
+    location = cherchen
+    type = temple
+    importance = 3
+    religions = { ir_eastern_animism }
+}
+
+ir_omen_mihr_bagariza_holy_site = {
+    location = bagariza
+    type = fire_temple
+    importance = 1
+    religions = { ir_anahitic_religion }
+}
+
+ir_omen_min_koptos_holy_site = {
+    location = koptos
+    type = shrine
+    importance = 1
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_miriam_cleopatris_holy_site = {
+    location = cleopatris
+    type = shrine
+    importance = 1
+    religions = { ir_judaism }
+}
+
+ir_omen_mithra_trapezous_holy_site = {
+    location = trapezous
+    type = fire_temple
+    importance = 3
+    religions = { ir_mithra_religion }
+}
+
+ir_omen_moneiba_iligh_holy_site = {
+    location = iligh
+    type = shrine
+    importance = 1
+    religions = { ir_berber_religion }
+}
+
+ir_omen_moses_horeb_mons_holy_site = {
+    location = horeb_mons
+    type = shrine
+    importance = 1
+    religions = { ir_judaism }
+}
+
+ir_omen_movakanos_shaki_holy_site = {
+    location = shaki
+    type = shrine
+    importance = 1
+    religions = { ir_caucasian_religion }
+}
+
+ir_omen_murugan_koti_holy_site = {
+    location = koti
+    type = temple
+    importance = 3
+    religions = { ir_agama }
+}
+
+ir_omen_mut_napata_holy_site = {
+    location = napata
+    type = temple
+    importance = 3
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_nabia_bracara_augusta_holy_site = {
+    location = bracara_augusta
+    type = shrine
+    importance = 1
+    religions = { ir_animism }
+}
+
+ir_omen_nabu_borsippa_holy_site = {
+    location = borsippa
+    type = temple
+    importance = 3
+    religions = { ir_mesopotamian_religion }
+}
+
+ir_omen_nana_tarsos_bithynias_holy_site = {
+    location = tarsos_bithynias
+    type = shrine
+    importance = 1
+    religions = { ir_anatolian_religion }
+}
+
+ir_omen_nanaya_isin_holy_site = {
+    location = isin
+    type = shrine
+    importance = 1
+    religions = { ir_mesopotamian_religion }
+}
+
+ir_omen_nanda_vaccha_candhoba_holy_site = {
+    location = candhoba
+    type = shrine
+    importance = 1
+    religions = { ir_ajivika }
+}
+
+ir_omen_nane_til_holy_site = {
+    location = til
+    type = shrine
+    importance = 1
+    religions = { ir_anahitic_religion }
+}
+
+ir_omen_nanna_tala_sabratha_holy_site = {
+    location = sabratha
+    type = shrine
+    importance = 1
+    religions = { ir_berber_religion }
+}
+
+ir_omen_nanshe_alexandria_susiana_holy_site = {
+    location = alexandria_susiana
+    type = temple
+    importance = 4
+    religions = { ir_mesopotamian_religion }
+}
+
+ir_omen_nehalennia_fletio_holy_site = {
+    location = fletio
+    type = shrine
+    importance = 1
+    religions = { ir_germanic_religion }
+}
+
+ir_omen_neith_sais_holy_site = {
+    location = sais
+    type = temple
+    importance = 3
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_neminatha_girinagara_holy_site = {
+    location = girinagara
+    type = temple
+    importance = 3
+    religions = { ir_jainism }
+}
+
+ir_omen_nergal_vologesias_holy_site = {
+    location = vologesias
+    type = temple
+    importance = 3
+    religions = { ir_mesopotamian_religion }
+}
+
+ir_omen_nerthus_herulia_borealis_holy_site = {
+    location = herulia_borealis
+    type = shrine
+    importance = 1
+    religions = { ir_germanic_religion }
+}
+
+ir_omen_nicaea_nicaea_holy_site = {
+    location = nicaea
+    type = temple
+    importance = 3
+    religions = { ir_anatolian_religion }
+}
+
+ir_omen_nidar_dioscoridus_holy_site = {
+    location = dioscoridus
+    type = temple
+    importance = 3
+    religions = { ir_puntic_religion }
+}
+
+ir_omen_ninazu_thannuris_holy_site = {
+    location = thannuris
+    type = shrine
+    importance = 1
+    religions = { ir_mesopotamian_religion }
+}
+
+ir_omen_ninurta_nineveh_holy_site = {
+    location = nineveh
+    type = temple
+    importance = 3
+    religions = { ir_mesopotamian_religion }
+}
+
+ir_omen_noah_hariza_holy_site = {
+    location = hariza
+    type = shrine
+    importance = 1
+    religions = { ir_judaism }
+}
+
+ir_omen_norax_nura_holy_site = {
+    location = nura
+    type = temple
+    importance = 3
+    religions = { ir_nuragic_pantheon }
+}
+
+ir_omen_nusku_carrhae_holy_site = {
+    location = carrhae
+    type = shrine
+    importance = 1
+    religions = { ir_mesopotamian_religion }
+}
+
+ir_omen_ogmios_brenodunum_holy_site = {
+    location = brenodunum
+    type = mountain
+    importance = 1
+    religions = { ir_druidism }
+}
+
+ir_omen_orgia_tyrsenia_holy_site = {
+    location = tyrsenia
+    type = shrine
+    importance = 1
+    religions = { ir_nuragic_pantheon }
+}
+
+ir_omen_orotalt_badais_holy_site = {
+    location = badais
+    type = shrine
+    importance = 1
+    religions = { ir_arabian_pantheon }
+}
+
+ir_omen_osiris_polybiane_holy_site = {
+    location = polybiane
+    type = shrine
+    importance = 1
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_padmaprabha_kalapriya_holy_site = {
+    location = kalapriya
+    type = shrine
+    importance = 1
+    religions = { ir_jainism }
+}
+
+ir_omen_papaios_tmakrat_holy_site = {
+    location = tmakrat
+    type = shrine
+    importance = 1
+    religions = { ir_indo_iranian_religion }
+}
+
+ir_omen_parshvanatha_manbhum_holy_site = {
+    location = manbhum
+    type = shrine
+    importance = 1
+    religions = { ir_jainism }
+}
+
+ir_omen_persephone_locri_0_holy_site = {
+    location = locri_0
+    type = temple
+    importance = 3
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_phasia_phasis_holy_site = {
+    location = phasis
+    type = temple
+    importance = 3
+    religions = { ir_caucasian_religion }
+}
+
+ir_omen_phrixus_zghuderi_holy_site = {
+    location = zghuderi
+    type = shrine
+    importance = 1
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_pkharmat_verks_holy_site = {
+    location = verks
+    type = mountain
+    importance = 1
+    religions = { ir_circassian_pantheon }
+}
+
+ir_omen_poseidon_delos_holy_site = {
+    location = delos
+    type = temple
+    importance = 3
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_ptah_memphis_holy_site = {
+    location = memphis
+    type = temple
+    importance = 4
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_purana_chintamani_holy_site = {
+    location = chintamani
+    type = shrine
+    importance = 1
+    religions = { ir_ajivika }
+}
+
+ir_omen_qetesh_hammon_holy_site = {
+    location = hammon
+    type = shrine
+    importance = 1
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_ra_heliopolis_0_holy_site = {
+    location = heliopolis_0
+    type = temple
+    importance = 3
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_rama_ayodhya_holy_site = {
+    location = ayodhya
+    type = temple
+    importance = 3
+    religions = { ir_hindu }
+}
+
+ir_omen_ramset_drapsake_holy_site = {
+    location = drapsake
+    type = temple
+    importance = 3
+    religions = { ir_vaksh_religion }
+}
+
+ir_omen_rasap_melqart_ebusus_holy_site = {
+    location = ebusus
+    type = temple
+    importance = 3
+    religions = { ir_carthaginian_pantheon }
+}
+
+ir_omen_redon_lissos_holy_site = {
+    location = lissos
+    type = shrine
+    importance = 1
+    religions = { ir_illyrian_pantheon }
+}
+
+ir_omen_reitia_ateste_holy_site = {
+    location = ateste
+    type = temple
+    importance = 3
+    religions = { ir_italic_pantheon }
+}
+
+ir_omen_rishabhanatha_moksha_kailash_holy_site = {
+    location = kailash
+    type = mountain
+    importance = 1
+    religions = { ir_jainism }
+}
+
+ir_omen_rishabhanatha_satrunavha_holy_site = {
+    location = satrunavha
+    type = shrine
+    importance = 1
+    religions = { ir_jainism }
+}
+
+ir_omen_rosmerta_scarponna_holy_site = {
+    location = scarponna
+    type = shrine
+    importance = 1
+    religions = { ir_druidism }
+}
+
+ir_omen_rudra_ujjayini_holy_site = {
+    location = ujjayini
+    type = temple
+    importance = 4
+    religions = { ir_hindu }
+}
+
+ir_omen_sabazios_gelbous_holy_site = {
+    location = gelbous
+    type = shrine
+    importance = 1
+    religions = { ir_shamanism }
+}
+
+ir_omen_samba_mulasthanapura_holy_site = {
+    location = mulasthanapura
+    type = temple
+    importance = 3
+    religions = { ir_hindu }
+}
+
+ir_omen_sambhavanatha_nimisa_holy_site = {
+    location = nimisa
+    type = temple
+    importance = 3
+    religions = { ir_jainism }
+}
+
+ir_omen_samson_gaza_holy_site = {
+    location = gaza
+    type = temple
+    importance = 3
+    religions = { ir_judaism }
+}
+
+ir_omen_samuel_jerusalem_holy_site = {
+    location = jerusalem
+    type = temple
+    importance = 3
+    religions = { ir_judaism }
+}
+
+ir_omen_sangarios_metropolis_phrygias_holy_site = {
+    location = metropolis_phrygias
+    type = temple
+    importance = 3
+    religions = { ir_anatolian_religion }
+}
+
+ir_omen_sangpo_bumtri_mon_bumtang_holy_site = {
+    location = mon_bumtang
+    type = mountain
+    importance = 1
+    religions = { ir_bon_religion }
+}
+
+ir_omen_saraswati_prayaga_holy_site = {
+    location = prayaga
+    type = temple
+    importance = 3
+    religions = { ir_hindu }
+}
+
+ir_omen_sardus_can_lesa_holy_site = {
+    location = lesa
+    type = mountain
+    importance = 1
+    religions = { ir_nuragic_pantheon }
+}
+
+ir_omen_satanaya_yelsa_holy_site = {
+    location = yelsa
+    type = shrine
+    importance = 1
+    religions = { ir_circassian_pantheon }
+}
+
+ir_omen_satya_shikharji_holy_site = {
+    location = shikharji
+    type = shrine
+    importance = 1
+    religions = { ir_jainism }
+}
+
+ir_omen_sayin_sabata_holy_site = {
+    location = sabata
+    type = temple
+    importance = 3
+    religions = { ir_arabian_pantheon }
+}
+
+ir_omen_scythes_borysthenia_holy_site = {
+    location = borysthenia
+    type = temple
+    importance = 3
+    religions = { ir_indo_iranian_religion }
+}
+
+ir_omen_sebiumeker_darou_holy_site = {
+    location = darou
+    type = temple
+    importance = 3
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_sekhmet_leontopolis_holy_site = {
+    location = leontopolis
+    type = temple
+    importance = 3
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_semnocosus_salaria_holy_site = {
+    location = salaria
+    type = shrine
+    importance = 1
+    religions = { ir_animism }
+}
+
+ir_omen_shahar_sigon_holy_site = {
+    location = sigon
+    type = shrine
+    importance = 1
+    religions = { ir_carthaginian_pantheon }
+}
+
+ir_omen_shaheded_visum_montis_holy_site = {
+    location = visum_montis
+    type = mountain
+    importance = 1
+    religions = { ir_berber_religion }
+}
+
+ir_omen_shamash_sippar_holy_site = {
+    location = sippar
+    type = temple
+    importance = 3
+    religions = { ir_mesopotamian_religion }
+}
+
+ir_omen_shams_zafar_holy_site = {
+    location = zafar
+    type = temple
+    importance = 3
+    religions = { ir_arabian_pantheon }
+}
+
+ir_omen_shavkhani_tzibile_holy_site = {
+    location = tzibile
+    type = mountain
+    importance = 1
+    religions = { ir_caucasian_religion }
+}
+
+ir_omen_shenlha_okar_zhongzhong_holy_site = {
+    location = zhongzhong
+    type = mountain
+    importance = 1
+    religions = { ir_bon_religion }
+}
+
+ir_omen_shiva_varanasi_holy_site = {
+    location = varanasi
+    type = temple
+    importance = 4
+    religions = { ir_hindu }
+}
+
+ir_omen_shoithrapati_siacus_holy_site = {
+    location = siacus
+    type = shrine
+    importance = 1
+    religions = { ir_mithra_religion }
+}
+
+ir_omen_shwemhtwehla_arakan_holy_site = {
+    location = arakan
+    type = shrine
+    importance = 1
+    religions = { ir_burmese_religion }
+}
+
+ir_omen_shwemyethna_beikthano_holy_site = {
+    location = beikthano
+    type = shrine
+    importance = 1
+    religions = { ir_burmese_religion }
+}
+
+ir_omen_sidpa_gyalmo_paro_kerchu_holy_site = {
+    location = paro_kerchu
+    type = mountain
+    importance = 1
+    religions = { ir_bon_religion }
+}
+
+ir_omen_sigiriya_avakana_holy_site = {
+    location = avakana
+    type = mountain
+    importance = 1
+    religions = { ir_buddhism }
+}
+
+ir_omen_sila_parami_patan_minara_holy_site = {
+    location = patan_minara
+    type = shrine
+    importance = 1
+    religions = { ir_buddhism }
+}
+
+ir_omen_sin_durum_holy_site = {
+    location = durum
+    type = shrine
+    importance = 1
+    religions = { ir_mesopotamian_religion }
+}
+
+ir_omen_sinifere_bida_holy_site = {
+    location = bida
+    type = shrine
+    importance = 1
+    religions = { ir_berber_religion }
+}
+
+ir_omen_sipylene_temnos_holy_site = {
+    location = temnos
+    type = shrine
+    importance = 1
+    religions = { ir_anatolian_religion }
+}
+
+ir_omen_sobek_krokodilopolis_holy_site = {
+    location = krokodilopolis
+    type = temple
+    importance = 3
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_soma_prabhasa_holy_site = {
+    location = prabhasa
+    type = temple
+    importance = 3
+    religions = { ir_hindu }
+}
+
+ir_omen_sorginak_lapurdum_holy_site = {
+    location = lapurdum
+    type = shrine
+    importance = 1
+    religions = { ir_pre_indo_european_religion }
+}
+
+ir_omen_sucellus_bibracte_holy_site = {
+    location = bibracte
+    type = temple
+    importance = 3
+    religions = { ir_druidism }
+}
+
+ir_omen_sumhu_samharam_holy_site = {
+    location = samharam
+    type = shrine
+    importance = 1
+    religions = { ir_arabian_pantheon }
+}
+
+ir_omen_swanco_hotan_holy_site = {
+    location = hotan
+    type = shrine
+    importance = 1
+    religions = { ir_eastern_animism }
+}
+
+ir_omen_tadenus_delminion_holy_site = {
+    location = delminion
+    type = shrine
+    importance = 1
+    religions = { ir_illyrian_pantheon }
+}
+
+ir_omen_tages_tarquini_holy_site = {
+    location = tarquini
+    type = temple
+    importance = 3
+    religions = { ir_italic_pantheon }
+}
+
+ir_omen_tamfana_marsia_holy_site = {
+    location = marsia
+    type = shrine
+    importance = 1
+    religions = { ir_germanic_religion }
+}
+
+ir_omen_tanit_carthago_holy_site = {
+    location = carthago
+    type = temple
+    importance = 3
+    religions = { ir_carthaginian_pantheon }
+}
+
+ir_omen_tannit_thugga_holy_site = {
+    location = thugga
+    type = shrine
+    importance = 1
+    religions = { ir_berber_religion }
+}
+
+ir_omen_thagimasadas_tanais_0_holy_site = {
+    location = tanais_0
+    type = temple
+    importance = 3
+    religions = { ir_indo_iranian_religion }
+}
+
+ir_omen_the_elements_supiyi_holy_site = {
+    location = supiyi
+    type = mountain
+    importance = 1
+    religions = { ir_bon_religion }
+}
+
+ir_omen_theispas_erebuni_holy_site = {
+    location = erebuni
+    type = shrine
+    importance = 1
+    religions = { ir_armenian_religion }
+}
+
+ir_omen_thoth_hermopolis_magna_holy_site = {
+    location = hermopolis_magna
+    type = shrine
+    importance = 1
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_thraetona_gazaka_holy_site = {
+    location = gazaka
+    type = temple
+    importance = 3
+    religions = { ir_mithra_religion }
+}
+
+ir_omen_thrax_tirizis_holy_site = {
+    location = tirizis
+    type = shrine
+    importance = 1
+    religions = { ir_shamanism }
+}
+
+ir_omen_tinia_arretium_holy_site = {
+    location = arretium
+    type = temple
+    importance = 3
+    religions = { ir_italic_pantheon }
+}
+
+ir_omen_tir_artaxata_holy_site = {
+    location = artaxata
+    type = temple
+    importance = 3
+    religions = { ir_anahitic_religion }
+}
+
+ir_omen_tishtar_barskhan_holy_site = {
+    location = barskhan
+    type = temple
+    importance = 3
+    religions = { ir_vaksh_religion }
+}
+
+ir_omen_tonpa_shenrab_barma_holy_site = {
+    location = barma
+    type = temple
+    importance = 3
+    religions = { ir_bon_religion }
+}
+
+ir_omen_tork_angegh_karkathiokerta_holy_site = {
+    location = karkathiokerta
+    type = temple
+    importance = 3
+    religions = { ir_anahitic_religion }
+}
+
+ir_omen_toutatis_mona_holy_site = {
+    location = mona
+    type = shrine
+    importance = 1
+    religions = { ir_druidism }
+}
+
+ir_omen_trapusa_and_bahalika_bactra_holy_site = {
+    location = bactra
+    type = temple
+    importance = 3
+    religions = { ir_buddhism }
+}
+
+ir_omen_tritonis_mendrion_holy_site = {
+    location = mendrion
+    type = shrine
+    importance = 1
+    religions = { ir_berber_religion }
+}
+
+ir_omen_trumsiate_reunia_holy_site = {
+    location = reunia
+    type = shrine
+    importance = 1
+    religions = { ir_italic_pantheon }
+}
+
+ir_omen_tsovinar_karchakhpyur_holy_site = {
+    location = karchakhpyur
+    type = shrine
+    importance = 1
+    religions = { ir_anahitic_religion }
+}
+
+ir_omen_tuisto_tuliphurdum_holy_site = {
+    location = tuliphurdum
+    type = shrine
+    importance = 1
+    religions = { ir_germanic_religion }
+}
+
+ir_omen_turan_volci_holy_site = {
+    location = volci
+    type = temple
+    importance = 3
+    religions = { ir_italic_pantheon }
+}
+
+ir_omen_turpal_volna_holy_site = {
+    location = volna
+    type = shrine
+    importance = 1
+    religions = { ir_circassian_pantheon }
+}
+
+ir_omen_uni_astarte_genua_holy_site = {
+    location = genua
+    type = temple
+    importance = 3
+    religions = { ir_italic_pantheon }
+}
+
+ir_omen_uni_perusia_holy_site = {
+    location = perusia
+    type = temple
+    importance = 3
+    religions = { ir_italic_pantheon }
+}
+
+ir_omen_vaelicus_platanus_holy_site = {
+    location = platanus
+    type = shrine
+    importance = 1
+    religions = { ir_druidism }
+}
+
+ir_omen_vagdavercustis_alisutum_holy_site = {
+    location = alisutum
+    type = shrine
+    importance = 1
+    religions = { ir_germanic_religion }
+}
+
+ir_omen_vahagn_ashtishat_holy_site = {
+    location = ashtishat
+    type = shrine
+    importance = 1
+    religions = { ir_anahitic_religion }
+}
+
+ir_omen_vakhsh_tarmita_holy_site = {
+    location = tarmita
+    type = temple
+    importance = 3
+    religions = { ir_vaksh_religion }
+}
+
+ir_omen_varuna_taxila_holy_site = {
+    location = taxila
+    type = temple
+    importance = 3
+    religions = { ir_hindu }
+}
+
+ir_omen_vata_aspadana_holy_site = {
+    location = aspadana
+    type = temple
+    importance = 3
+    religions = { ir_mithra_religion }
+}
+
+ir_omen_vea_veii_holy_site = {
+    location = veii
+    type = temple
+    importance = 3
+    religions = { ir_italic_pantheon }
+}
+
+ir_omen_vidasus_ad_fines_catariae_holy_site = {
+    location = ad_fines_catariae
+    type = shrine
+    importance = 1
+    religions = { ir_illyrian_pantheon }
+}
+
+ir_omen_vish_kaahka_pamir_holy_site = {
+    location = kaahka_pamir
+    type = mountain
+    importance = 1
+    religions = { ir_vaksh_religion }
+}
+
+ir_omen_vishnu_mathura_holy_site = {
+    location = mathura
+    type = temple
+    importance = 3
+    religions = { ir_hindu }
+}
+
+ir_omen_voltumna_visentium_holy_site = {
+    location = visentium
+    type = temple
+    importance = 3
+    religions = { ir_italic_pantheon }
+}
+
+ir_omen_waaq_mosylon_holy_site = {
+    location = mosylon
+    type = temple
+    importance = 3
+    religions = { ir_puntic_religion }
+}
+
+ir_omen_wadd_karna_holy_site = {
+    location = karna
+    type = temple
+    importance = 3
+    religions = { ir_arabian_pantheon }
+}
+
+ir_omen_wadjet_buto_holy_site = {
+    location = buto
+    type = temple
+    importance = 3
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_wagar_moundou_holy_site = {
+    location = moundou
+    type = temple
+    importance = 3
+    religions = { ir_puntic_religion }
+}
+
+ir_omen_wepwawet_sennar_holy_site = {
+    location = sennar
+    type = shrine
+    importance = 1
+    religions = { ir_egyptian_pantheon }
+}
+
+ir_omen_yamsh_sokkul_holy_site = {
+    location = sokkul
+    type = shrine
+    importance = 1
+    religions = { ir_vaksh_religion }
+}
+
+ir_omen_yeshe_walmo_dodong_holy_site = {
+    location = dodong
+    type = shrine
+    importance = 1
+    religions = { ir_bon_religion }
+}
+
+ir_omen_yima_kyropolis_holy_site = {
+    location = kyropolis
+    type = temple
+    importance = 3
+    religions = { ir_mithra_religion }
+}
+
+ir_omen_zadeni_zalissa_holy_site = {
+    location = zalissa
+    type = mountain
+    importance = 1
+    religions = { ir_caucasian_religion }
+}
+
+ir_omen_zalmoxis_ad_statuam_holy_site = {
+    location = ad_statuam
+    type = shrine
+    importance = 1
+    religions = { ir_shamanism }
+}
+
+ir_omen_zeus_dacieus_zoropassos_holy_site = {
+    location = zoropassos
+    type = shrine
+    importance = 1
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_zeus_olympia_holy_site = {
+    location = olympia
+    type = mountain
+    importance = 1
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_zhun_dawan_holy_site = {
+    location = dawan
+    type = shrine
+    importance = 1
+    religions = { ir_vaksh_religion }
+}
+
+ir_omen_zibelthiurdos_spinopara_holy_site = {
+    location = spinopara
+    type = shrine
+    importance = 1
+    religions = { ir_shamanism }
+}
+
+ir_omen_zis_menturia_holy_site = {
+    location = menturia
+    type = temple
+    importance = 3
+    religions = { ir_roman_pantheon }
+}
+
+ir_omen_zoroaster_ardabil_holy_site = {
+    location = ardabil
+    type = fire_temple
+    importance = 1
+    religions = { ir_zoroaster }
+}
+
+ir_omen_zurvan_zadrakarta_holy_site = {
+    location = zadrakarta
+    type = temple
+    importance = 3
+    religions = { ir_mithra_religion }
+}

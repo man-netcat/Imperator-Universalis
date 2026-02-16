@@ -20,7 +20,8 @@
       "setup/countries",
       "common/scripted_triggers",
       "common/advances",
-      "common/building_types"
+      "common/building_types",
+      "common/holy_sites"
     ]
   }
 }
