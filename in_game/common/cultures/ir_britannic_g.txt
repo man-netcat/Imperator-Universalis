@@ -7,6 +7,13 @@ ir_britannic = {
     language = ir_south_brittonic_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
+    opinions = {
+        ir_brigantic = kindred
+        ir_caledonian = kindred
+        ir_belgae = positive
+        ir_manavian = positive
+        ir_aremorican = positive
+    }
     culture_groups = { ir_britannic_g }
 }
 
@@ -14,6 +21,13 @@ ir_caledonian = {
     language = ir_pictish_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
+    opinions = {
+        ir_britannic = kindred
+        ir_cantian = kindred
+        ir_bellovacian = positive
+        ir_hibernian = positive
+        ir_arverni = positive
+    }
     culture_groups = { ir_britannic_g }
 }
 
@@ -21,6 +35,13 @@ ir_iceni = {
     language = ir_south_brittonic_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
+    opinions = {
+        ir_durotrigan = kindred
+        ir_ivernian = kindred
+        ir_morinian = positive
+        ir_manavian = positive
+        ir_haedui = positive
+    }
     culture_groups = { ir_britannic_g }
 }
 
@@ -28,6 +49,13 @@ ir_trinovantian = {
     language = ir_south_brittonic_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
+    opinions = {
+        ir_taexalian = kindred
+        ir_voluntian = kindred
+        ir_eburonian = positive
+        ir_manavian = positive
+        ir_pictonian = positive
+    }
     culture_groups = { ir_britannic_g }
 }
 
@@ -35,6 +63,13 @@ ir_cantian = {
     language = ir_south_brittonic_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
+    opinions = {
+        ir_caledonian = kindred
+        ir_coritani = kindred
+        ir_eburonian = positive
+        ir_manavian = positive
+        ir_aulercian = positive
+    }
     culture_groups = { ir_britannic_g }
 }
 
@@ -42,6 +77,13 @@ ir_durotrigan = {
     language = ir_south_brittonic_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
+    opinions = {
+        ir_dumnonian = kindred
+        ir_iceni = kindred
+        ir_eburonian = positive
+        ir_hibernian = positive
+        ir_eravisci = positive
+    }
     culture_groups = { ir_britannic_g }
 }
 
@@ -49,6 +91,13 @@ ir_dumnonian = {
     language = ir_south_brittonic_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
+    opinions = {
+        ir_dobunnian = kindred
+        ir_durotrigan = kindred
+        ir_bellovacian = positive
+        ir_manavian = positive
+        ir_cotinian = positive
+    }
     culture_groups = { ir_britannic_g }
 }
 
@@ -56,6 +105,13 @@ ir_dobunnian = {
     language = ir_south_brittonic_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
+    opinions = {
+        ir_demetian = kindred
+        ir_dumnonian = kindred
+        ir_belgae = positive
+        ir_hibernian = positive
+        ir_celtic_pannonian = positive
+    }
     culture_groups = { ir_britannic_g }
 }
 
@@ -63,6 +119,13 @@ ir_demetian = {
     language = ir_south_brittonic_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
+    opinions = {
+        ir_damnonian = kindred
+        ir_dobunnian = kindred
+        ir_aduatacian = positive
+        ir_manavian = positive
+        ir_carnuti = positive
+    }
     culture_groups = { ir_britannic_g }
 }
 
@@ -70,6 +133,13 @@ ir_ordovitian = {
     language = ir_south_brittonic_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
+    opinions = {
+        ir_monapian = kindred
+        ir_parisian = kindred
+        ir_aduatacian = positive
+        ir_hibernian = positive
+        ir_lepontic = positive
+    }
     culture_groups = { ir_britannic_g }
 }
 
@@ -77,6 +147,13 @@ ir_coritani = {
     language = ir_south_brittonic_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
+    opinions = {
+        ir_cantian = kindred
+        ir_cornovian = kindred
+        ir_morinian = positive
+        ir_hibernian = positive
+        ir_biturigan = positive
+    }
     culture_groups = { ir_britannic_g }
 }
 
@@ -84,6 +161,13 @@ ir_cornovian = {
     language = ir_south_brittonic_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
+    opinions = {
+        ir_coritani = kindred
+        ir_damnonian = kindred
+        ir_nervian = positive
+        ir_manavian = positive
+        ir_boian = positive
+    }
     culture_groups = { ir_britannic_g }
 }
 
@@ -91,6 +175,13 @@ ir_brigantic = {
     language = ir_cumbric_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
+    opinions = {
+        ir_votadinian = kindred
+        ir_britannic = kindred
+        ir_aduatacian = positive
+        ir_hibernian = positive
+        ir_allobrogian = positive
+    }
     culture_groups = { ir_britannic_g }
 }
 
@@ -98,6 +189,13 @@ ir_votadinian = {
     language = ir_cumbric_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
+    opinions = {
+        ir_voluntian = kindred
+        ir_brigantic = kindred
+        ir_nervian = positive
+        ir_manavian = positive
+        ir_santonian = positive
+    }
     culture_groups = { ir_britannic_g }
 }
 
@@ -105,6 +203,13 @@ ir_damnonian = {
     language = ir_south_brittonic_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
+    opinions = {
+        ir_cornovian = kindred
+        ir_demetian = kindred
+        ir_veliocassian = positive
+        ir_hibernian = positive
+        ir_carnian = positive
+    }
     culture_groups = { ir_britannic_g }
 }
 
@@ -112,6 +217,13 @@ ir_taexalian = {
     language = ir_pictish_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
+    opinions = {
+        ir_parisian = kindred
+        ir_trinovantian = kindred
+        ir_bellovacian = positive
+        ir_hibernian = positive
+        ir_noric = positive
+    }
     culture_groups = { ir_britannic_g }
 }
 
@@ -119,6 +231,13 @@ ir_parisian = {
     language = ir_cumbric_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
+    opinions = {
+        ir_ordovitian = kindred
+        ir_taexalian = kindred
+        ir_belgae = positive
+        ir_manavian = positive
+        ir_letobician = positive
+    }
     culture_groups = { ir_britannic_g }
 }
 
@@ -126,6 +245,13 @@ ir_monapian = {
     language = ir_pictish_dialect
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
+    opinions = {
+        ir_ivernian = kindred
+        ir_ordovitian = kindred
+        ir_veliocassian = positive
+        ir_manavian = positive
+        ir_lemovician = positive
+    }
     culture_groups = { ir_britannic_g }
 }
 
@@ -133,6 +259,13 @@ ir_ivernian = {
     language = ir_goidelic_lang
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
+    opinions = {
+        ir_iceni = kindred
+        ir_monapian = kindred
+        ir_nervian = positive
+        ir_hibernian = positive
+        ir_helvetian = positive
+    }
     culture_groups = { ir_britannic_g }
 }
 
@@ -140,6 +273,13 @@ ir_voluntian = {
     language = ir_goidelic_lang
     color = hsv { 0.57 0.70 0.40 }
     tags = { western_european_gfx european_gfx }
+    opinions = {
+        ir_trinovantian = kindred
+        ir_votadinian = kindred
+        ir_morinian = positive
+        ir_hibernian = positive
+        ir_salluvian = positive
+    }
     culture_groups = { ir_britannic_g }
 }
 

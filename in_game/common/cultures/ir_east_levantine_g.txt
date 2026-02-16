@@ -7,6 +7,14 @@ ir_aramaic = {
     language = ir_aramaic_lang
     color = hsv { 0.05 1.00 0.50 }
     tags = { levantine_gfx middle_east_gfx }
+    opinions = {
+        ir_cardukoi = kindred
+        ir_assyrian = kindred
+        ir_jaintia = positive
+        ir_gerrhan = positive
+        ir_carthaginian = positive
+        ir_hebrew = positive
+    }
     culture_groups = { ir_east_levantine_g }
 }
 
@@ -14,6 +22,13 @@ ir_assyrian = {
     language = ir_assyrian_lang
     color = hsv { 0.05 1.00 0.50 }
     tags = { levantine_gfx middle_east_gfx }
+    opinions = {
+        ir_aramaic = kindred
+        ir_babylonian = kindred
+        ir_mon = positive
+        ir_makan = positive
+        ir_hebrew = positive
+    }
     culture_groups = { ir_east_levantine_g }
 }
 
@@ -21,6 +36,13 @@ ir_babylonian = {
     language = ir_babylonian_lang
     color = hsv { 0.05 1.00 0.50 }
     tags = { levantine_gfx middle_east_gfx }
+    opinions = {
+        ir_assyrian = kindred
+        ir_cardukoi = kindred
+        ir_pubu = positive
+        ir_nabatean = positive
+        ir_phoenician = positive
+    }
     culture_groups = { ir_east_levantine_g }
 }
 
@@ -28,6 +50,13 @@ ir_cardukoi = {
     language = ir_assyrian_lang
     color = hsv { 0.05 1.00 0.50 }
     tags = { levantine_gfx middle_east_gfx }
+    opinions = {
+        ir_babylonian = kindred
+        ir_aramaic = kindred
+        ir_rhakine = positive
+        ir_qedarite = positive
+        ir_carthaginian = positive
+    }
     culture_groups = { ir_east_levantine_g }
 }
 

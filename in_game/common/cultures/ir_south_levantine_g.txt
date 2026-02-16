@@ -7,6 +7,14 @@ ir_makan = {
     language = ir_old_north_arabian_lang
     color = rgb { 70 50 150 }
     tags = { arabian_gfx levantine_gfx middle_east_gfx }
+    opinions = {
+        ir_gerrhan = kindred
+        ir_nabatean = kindred
+        ir_assyrian = positive
+        ir_mon = positive
+        ir_hadhrami = positive
+        ir_hebrew = positive
+    }
     culture_groups = { ir_south_levantine_g }
 }
 
@@ -14,6 +22,14 @@ ir_gerrhan = {
     language = ir_old_north_arabian_lang
     color = rgb { 70 50 150 }
     tags = { arabian_gfx levantine_gfx middle_east_gfx }
+    opinions = {
+        ir_yamama = kindred
+        ir_makan = kindred
+        ir_aramaic = positive
+        ir_jaintia = positive
+        ir_adite = positive
+        ir_carthaginian = positive
+    }
     culture_groups = { ir_south_levantine_g }
 }
 
@@ -21,6 +37,14 @@ ir_taif = {
     language = ir_old_north_arabian_lang
     color = rgb { 70 50 150 }
     tags = { arabian_gfx levantine_gfx middle_east_gfx }
+    opinions = {
+        ir_qedarite = kindred
+        ir_thamudi = kindred
+        ir_aramaic = positive
+        ir_shan = positive
+        ir_minaean = positive
+        ir_hebrew = positive
+    }
     culture_groups = { ir_south_levantine_g }
 }
 
@@ -28,6 +52,14 @@ ir_thamudi = {
     language = ir_old_north_arabian_lang
     color = rgb { 70 50 150 }
     tags = { arabian_gfx levantine_gfx middle_east_gfx }
+    opinions = {
+        ir_taif = kindred
+        ir_yamama = kindred
+        ir_assyrian = positive
+        ir_jaintia = positive
+        ir_qatabanian = positive
+        ir_phoenician = positive
+    }
     culture_groups = { ir_south_levantine_g }
 }
 
@@ -35,6 +67,14 @@ ir_yamama = {
     language = ir_old_north_arabian_lang
     color = rgb { 70 50 150 }
     tags = { arabian_gfx levantine_gfx middle_east_gfx }
+    opinions = {
+        ir_thamudi = kindred
+        ir_gerrhan = kindred
+        ir_babylonian = positive
+        ir_mon = positive
+        ir_samad = positive
+        ir_carthaginian = positive
+    }
     culture_groups = { ir_south_levantine_g }
 }
 
@@ -42,6 +82,14 @@ ir_nabatean = {
     language = ir_nabatean_lang
     color = rgb { 70 50 150 }
     tags = { arabian_gfx levantine_gfx middle_east_gfx }
+    opinions = {
+        ir_makan = kindred
+        ir_qedarite = kindred
+        ir_babylonian = positive
+        ir_pubu = positive
+        ir_himjar = positive
+        ir_phoenician = positive
+    }
     culture_groups = { ir_south_levantine_g }
 }
 
@@ -49,6 +97,14 @@ ir_qedarite = {
     language = ir_old_north_arabian_lang
     color = rgb { 70 50 150 }
     tags = { arabian_gfx levantine_gfx middle_east_gfx }
+    opinions = {
+        ir_nabatean = kindred
+        ir_taif = kindred
+        ir_cardukoi = positive
+        ir_rhakine = positive
+        ir_kindite = positive
+        ir_carthaginian = positive
+    }
     culture_groups = { ir_south_levantine_g }
 }
 

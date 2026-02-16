@@ -7,6 +7,14 @@ ir_numidian = {
     language = ir_numidian_lang
     color = hsv { 0.05 0.50 0.40 }
     tags = { amazigh_gfx maghrebi_gfx african_gfx }
+    opinions = {
+        ir_nigirtean = kindred
+        ir_perorsian = kindred
+        ir_berber = positive
+        ir_aquitani = positive
+        ir_middle_egyptian = positive
+        ir_rhakine = positive
+    }
     culture_groups = { ir_numidian_g }
 }
 
@@ -14,6 +22,14 @@ ir_gaetulian = {
     language = ir_gaetulian_lang
     color = hsv { 0.05 0.50 0.40 }
     tags = { amazigh_gfx maghrebi_gfx african_gfx }
+    opinions = {
+        ir_daphnitaean = kindred
+        ir_lixitoi = kindred
+        ir_lotophagoi = positive
+        ir_ilergetian = positive
+        ir_oasis_egyptian = positive
+        ir_mon = positive
+    }
     culture_groups = { ir_numidian_g }
 }
 
@@ -21,6 +37,14 @@ ir_melanogaetulian = {
     language = ir_gaetulian_lang
     color = hsv { 0.05 0.50 0.40 }
     tags = { amazigh_gfx maghrebi_gfx african_gfx }
+    opinions = {
+        ir_massylian = kindred
+        ir_nectiberean = kindred
+        ir_psyllic = positive
+        ir_turdetanian = positive
+        ir_oasis_egyptian = positive
+        ir_jaintia = positive
+    }
     culture_groups = { ir_numidian_g }
 }
 
@@ -28,6 +52,14 @@ ir_socossian = {
     language = ir_numidian_lang
     color = hsv { 0.05 0.50 0.40 }
     tags = { amazigh_gfx maghrebi_gfx african_gfx }
+    opinions = {
+        ir_pharusian = kindred
+        ir_abannaean = kindred
+        ir_libyan = positive
+        ir_contestanian = positive
+        ir_egyptian = positive
+        ir_mon = positive
+    }
     culture_groups = { ir_numidian_g }
 }
 
@@ -35,6 +67,14 @@ ir_massaesylian = {
     language = ir_numidian_lang
     color = hsv { 0.05 0.50 0.40 }
     tags = { amazigh_gfx maghrebi_gfx african_gfx }
+    opinions = {
+        ir_lixitoi = kindred
+        ir_massylian = kindred
+        ir_nasamonian = positive
+        ir_lacetanian = positive
+        ir_egyptian = positive
+        ir_rhakine = positive
+    }
     culture_groups = { ir_numidian_g }
 }
 
@@ -42,6 +82,14 @@ ir_massylian = {
     language = ir_numidian_lang
     color = hsv { 0.05 0.50 0.40 }
     tags = { amazigh_gfx maghrebi_gfx african_gfx }
+    opinions = {
+        ir_massaesylian = kindred
+        ir_melanogaetulian = kindred
+        ir_phazani = positive
+        ir_oretanian = positive
+        ir_middle_egyptian = positive
+        ir_shan = positive
+    }
     culture_groups = { ir_numidian_g }
 }
 
@@ -49,6 +97,14 @@ ir_autolalean = {
     language = ir_mauritanian_lang
     color = hsv { 0.05 0.50 0.40 }
     tags = { amazigh_gfx maghrebi_gfx african_gfx }
+    opinions = {
+        ir_abannaean = kindred
+        ir_canarian = kindred
+        ir_atlantean = positive
+        ir_ausetanian = positive
+        ir_middle_egyptian = positive
+        ir_mon = positive
+    }
     culture_groups = { ir_numidian_g }
 }
 
@@ -56,6 +112,14 @@ ir_lixitoi = {
     language = ir_mauritanian_lang
     color = hsv { 0.05 0.50 0.40 }
     tags = { amazigh_gfx maghrebi_gfx african_gfx }
+    opinions = {
+        ir_gaetulian = kindred
+        ir_massaesylian = kindred
+        ir_macaean = positive
+        ir_indiketian = positive
+        ir_upper_egyptian = positive
+        ir_pubu = positive
+    }
     culture_groups = { ir_numidian_g }
 }
 
@@ -63,6 +127,14 @@ ir_perorsian = {
     language = ir_mauritanian_lang
     color = hsv { 0.05 0.50 0.40 }
     tags = { amazigh_gfx maghrebi_gfx african_gfx }
+    opinions = {
+        ir_numidian = kindred
+        ir_pharusian = kindred
+        ir_garamantic = positive
+        ir_ausetanian = positive
+        ir_oasis_egyptian = positive
+        ir_shan = positive
+    }
     culture_groups = { ir_numidian_g }
 }
 
@@ -70,6 +142,14 @@ ir_canarian = {
     language = ir_canarian_lang
     color = hsv { 0.05 0.50 0.40 }
     tags = { amazigh_gfx maghrebi_gfx african_gfx }
+    opinions = {
+        ir_autolalean = kindred
+        ir_capariensian = kindred
+        ir_berber = positive
+        ir_bastetanian = positive
+        ir_oasis_egyptian = positive
+        ir_pubu = positive
+    }
     culture_groups = { ir_numidian_g }
 }
 
@@ -77,6 +157,14 @@ ir_nectiberean = {
     language = ir_mauritanian_lang
     color = hsv { 0.05 0.50 0.40 }
     tags = { amazigh_gfx maghrebi_gfx african_gfx }
+    opinions = {
+        ir_melanogaetulian = kindred
+        ir_nigirtean = kindred
+        ir_atarantian = positive
+        ir_turdulian = positive
+        ir_upper_egyptian = positive
+        ir_mon = positive
+    }
     culture_groups = { ir_numidian_g }
 }
 
@@ -84,6 +172,14 @@ ir_daphnitaean = {
     language = ir_mauritanian_lang
     color = hsv { 0.05 0.50 0.40 }
     tags = { amazigh_gfx maghrebi_gfx african_gfx }
+    opinions = {
+        ir_cetianian = kindred
+        ir_gaetulian = kindred
+        ir_libyan = positive
+        ir_ilercavonian = positive
+        ir_middle_egyptian = positive
+        ir_jaintia = positive
+    }
     culture_groups = { ir_numidian_g }
 }
 
@@ -91,6 +187,14 @@ ir_capariensian = {
     language = ir_mauritanian_lang
     color = hsv { 0.05 0.50 0.40 }
     tags = { amazigh_gfx maghrebi_gfx african_gfx }
+    opinions = {
+        ir_canarian = kindred
+        ir_cetianian = kindred
+        ir_garamantic = positive
+        ir_contestanian = positive
+        ir_upper_egyptian = positive
+        ir_rhakine = positive
+    }
     culture_groups = { ir_numidian_g }
 }
 
@@ -98,6 +202,14 @@ ir_abannaean = {
     language = ir_mauritanian_lang
     color = hsv { 0.05 0.50 0.40 }
     tags = { amazigh_gfx maghrebi_gfx african_gfx }
+    opinions = {
+        ir_socossian = kindred
+        ir_autolalean = kindred
+        ir_atarantian = positive
+        ir_aquitani = positive
+        ir_egyptian = positive
+        ir_jaintia = positive
+    }
     culture_groups = { ir_numidian_g }
 }
 
@@ -105,6 +217,14 @@ ir_cetianian = {
     language = ir_mauritanian_lang
     color = hsv { 0.05 0.50 0.40 }
     tags = { amazigh_gfx maghrebi_gfx african_gfx }
+    opinions = {
+        ir_capariensian = kindred
+        ir_daphnitaean = kindred
+        ir_gyzantian = positive
+        ir_edetanian = positive
+        ir_egyptian = positive
+        ir_shan = positive
+    }
     culture_groups = { ir_numidian_g }
 }
 
@@ -112,6 +232,14 @@ ir_pharusian = {
     language = ir_mauritanian_lang
     color = hsv { 0.05 0.50 0.40 }
     tags = { amazigh_gfx maghrebi_gfx african_gfx }
+    opinions = {
+        ir_perorsian = kindred
+        ir_socossian = kindred
+        ir_gyzantian = positive
+        ir_bastetanian = positive
+        ir_upper_egyptian = positive
+        ir_jaintia = positive
+    }
     culture_groups = { ir_numidian_g }
 }
 
@@ -119,6 +247,14 @@ ir_nigirtean = {
     language = ir_mauritanian_lang
     color = hsv { 0.05 0.50 0.40 }
     tags = { amazigh_gfx maghrebi_gfx african_gfx }
+    opinions = {
+        ir_nectiberean = kindred
+        ir_numidian = kindred
+        ir_atlantean = positive
+        ir_vasconian = positive
+        ir_egyptian = positive
+        ir_pubu = positive
+    }
     culture_groups = { ir_numidian_g }
 }
 

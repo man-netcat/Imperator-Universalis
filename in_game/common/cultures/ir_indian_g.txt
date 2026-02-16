@@ -7,6 +7,14 @@ ir_kannadan = {
     language = ir_kannada_lang
     color = hsv { 0.80 0.60 0.60 }
     tags = { persianate_gfx indian_gfx }
+    opinions = {
+        ir_cholan = kindred
+        ir_kuntalan = kindred
+        ir_kaccha = positive
+        ir_kasi = positive
+        ir_pyu = positive
+        ir_tamil = positive
+    }
     culture_groups = { ir_indian_g }
 }
 
@@ -14,6 +22,13 @@ ir_kuntalan = {
     language = ir_kannada_lang
     color = hsv { 0.80 0.60 0.60 }
     tags = { persianate_gfx indian_gfx }
+    opinions = {
+        ir_kannadan = kindred
+        ir_pandyan = kindred
+        ir_kosala = positive
+        ir_magadhi = positive
+        ir_sumpa = positive
+    }
     culture_groups = { ir_indian_g }
 }
 
@@ -21,6 +36,13 @@ ir_alupan = {
     language = ir_kannada_lang
     color = hsv { 0.80 0.60 0.60 }
     tags = { persianate_gfx indian_gfx }
+    opinions = {
+        ir_telugu = kindred
+        ir_andhran = kindred
+        ir_avanti = positive
+        ir_atavi = positive
+        ir_pyu = positive
+    }
     culture_groups = { ir_indian_g }
 }
 
@@ -28,6 +50,14 @@ ir_tamil = {
     language = ir_tamil_lang
     color = hsv { 0.80 0.60 0.60 }
     tags = { persianate_gfx indian_gfx }
+    opinions = {
+        ir_pandyan = kindred
+        ir_lankan = positive
+        ir_pandra = positive
+        ir_yarlung = positive
+        ir_kannadan = positive
+        ir_telugu = positive
+    }
     culture_groups = { ir_indian_g }
 }
 
@@ -35,6 +65,13 @@ ir_cholan = {
     language = ir_tamil_lang
     color = hsv { 0.80 0.60 0.60 }
     tags = { persianate_gfx indian_gfx }
+    opinions = {
+        ir_cheran = kindred
+        ir_kannadan = kindred
+        ir_gandhari = positive
+        ir_kamarupi = positive
+        ir_zhangzhung = positive
+    }
     culture_groups = { ir_indian_g }
 }
 
@@ -42,6 +79,13 @@ ir_cheran = {
     language = ir_tamil_lang
     color = hsv { 0.80 0.60 0.60 }
     tags = { persianate_gfx indian_gfx }
+    opinions = {
+        ir_assaka = kindred
+        ir_cholan = kindred
+        ir_dhivehi = positive
+        ir_kalingan = positive
+        ir_yarlung = positive
+    }
     culture_groups = { ir_indian_g }
 }
 
@@ -49,6 +93,13 @@ ir_pandyan = {
     language = ir_tamil_lang
     color = hsv { 0.80 0.60 0.60 }
     tags = { persianate_gfx indian_gfx }
+    opinions = {
+        ir_kuntalan = kindred
+        ir_tamil = kindred
+        ir_kuru = positive
+        ir_malla = positive
+        ir_tsang = positive
+    }
     culture_groups = { ir_indian_g }
 }
 
@@ -56,6 +107,13 @@ ir_telugu = {
     language = ir_telugu_lang
     color = hsv { 0.80 0.60 0.60 }
     tags = { persianate_gfx indian_gfx }
+    opinions = {
+        ir_alupan = kindred
+        ir_maharashtran = positive
+        ir_savara = positive
+        ir_zhangzhung = positive
+        ir_tamil = positive
+    }
     culture_groups = { ir_indian_g }
 }
 
@@ -63,6 +121,13 @@ ir_andhran = {
     language = ir_telugu_lang
     color = hsv { 0.80 0.60 0.60 }
     tags = { persianate_gfx indian_gfx }
+    opinions = {
+        ir_alupan = kindred
+        ir_assaka = kindred
+        ir_cedi = positive
+        ir_bangli = positive
+        ir_sumpa = positive
+    }
     culture_groups = { ir_indian_g }
 }
 
@@ -70,6 +135,13 @@ ir_assaka = {
     language = ir_prakrit_lang
     color = hsv { 0.80 0.60 0.60 }
     tags = { persianate_gfx indian_gfx }
+    opinions = {
+        ir_andhran = kindred
+        ir_cheran = kindred
+        ir_dardic = positive
+        ir_himalayan = positive
+        ir_tsang = positive
+    }
     culture_groups = { ir_indian_g }
 }
 

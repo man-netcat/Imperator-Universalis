@@ -7,6 +7,13 @@ ir_oretanian = {
     language = ir_tartessian_lang
     color = hsv { 0.07 1.00 1.00 }
     tags = { castilian_gfx portuguese_gfx basque_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_lacetanian = kindred
+        ir_turdetanian = kindred
+        ir_elesycian = positive
+        ir_umbrian = positive
+        ir_massylian = positive
+    }
     culture_groups = { ir_iberia_g }
 }
 
@@ -14,6 +21,13 @@ ir_contestanian = {
     language = ir_edetanian_lang
     color = hsv { 0.07 1.00 1.00 }
     tags = { castilian_gfx portuguese_gfx basque_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_bastetanian = kindred
+        ir_edetanian = kindred
+        ir_cantabrian = positive
+        ir_ligurian = positive
+        ir_capariensian = positive
+    }
     culture_groups = { ir_iberia_g }
 }
 
@@ -21,6 +35,13 @@ ir_bastetanian = {
     language = ir_tartessian_lang
     color = hsv { 0.07 1.00 1.00 }
     tags = { castilian_gfx portuguese_gfx basque_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_ausetanian = kindred
+        ir_contestanian = kindred
+        ir_callaecian = positive
+        ir_histrian = positive
+        ir_canarian = positive
+    }
     culture_groups = { ir_iberia_g }
 }
 
@@ -28,6 +49,13 @@ ir_ilercavonian = {
     language = ir_edetanian_lang
     color = hsv { 0.07 1.00 1.00 }
     tags = { castilian_gfx portuguese_gfx basque_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_edetanian = kindred
+        ir_ilergetian = kindred
+        ir_carpetanian = positive
+        ir_rhaetian = positive
+        ir_daphnitaean = positive
+    }
     culture_groups = { ir_iberia_g }
 }
 
@@ -35,6 +63,13 @@ ir_edetanian = {
     language = ir_edetanian_lang
     color = hsv { 0.07 1.00 1.00 }
     tags = { castilian_gfx portuguese_gfx basque_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_contestanian = kindred
+        ir_ilercavonian = kindred
+        ir_caristian = positive
+        ir_lucanian = positive
+        ir_cetianian = positive
+    }
     culture_groups = { ir_iberia_g }
 }
 
@@ -42,6 +77,13 @@ ir_lacetanian = {
     language = ir_lacetanian_lang
     color = hsv { 0.07 1.00 1.00 }
     tags = { castilian_gfx portuguese_gfx basque_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_indiketian = kindred
+        ir_oretanian = kindred
+        ir_couneian = positive
+        ir_siculian = positive
+        ir_massaesylian = positive
+    }
     culture_groups = { ir_iberia_g }
 }
 
@@ -49,6 +91,13 @@ ir_indiketian = {
     language = ir_lacetanian_lang
     color = hsv { 0.07 1.00 1.00 }
     tags = { castilian_gfx portuguese_gfx basque_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_ilergetian = kindred
+        ir_lacetanian = kindred
+        ir_celtician = positive
+        ir_samnite = positive
+        ir_lixitoi = positive
+    }
     culture_groups = { ir_iberia_g }
 }
 
@@ -56,6 +105,13 @@ ir_ausetanian = {
     language = ir_lacetanian_lang
     color = hsv { 0.07 1.00 1.00 }
     tags = { castilian_gfx portuguese_gfx basque_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_aquitani = kindred
+        ir_bastetanian = kindred
+        ir_autrigonian = positive
+        ir_etruscan = positive
+        ir_autolalean = positive
+    }
     culture_groups = { ir_iberia_g }
 }
 
@@ -63,6 +119,13 @@ ir_turdetanian = {
     language = ir_turdetanian_lang
     color = hsv { 0.07 1.00 1.00 }
     tags = { castilian_gfx portuguese_gfx basque_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_oretanian = kindred
+        ir_turdulian = kindred
+        ir_lobetanian = positive
+        ir_venetic = positive
+        ir_melanogaetulian = positive
+    }
     culture_groups = { ir_iberia_g }
 }
 
@@ -70,6 +133,13 @@ ir_turdulian = {
     language = ir_turdetanian_lang
     color = hsv { 0.07 1.00 1.00 }
     tags = { castilian_gfx portuguese_gfx basque_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_turdetanian = kindred
+        ir_vasconian = kindred
+        ir_lusitanian = positive
+        ir_bruttian = positive
+        ir_nectiberean = positive
+    }
     culture_groups = { ir_iberia_g }
 }
 
@@ -77,6 +147,13 @@ ir_ilergetian = {
     language = ir_lacetanian_lang
     color = hsv { 0.07 1.00 1.00 }
     tags = { castilian_gfx portuguese_gfx basque_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_ilercavonian = kindred
+        ir_indiketian = kindred
+        ir_celtiberian = positive
+        ir_roman = positive
+        ir_gaetulian = positive
+    }
     culture_groups = { ir_iberia_g }
 }
 
@@ -84,6 +161,13 @@ ir_vasconian = {
     language = ir_aquitanian_lang
     color = hsv { 0.07 1.00 1.00 }
     tags = { castilian_gfx portuguese_gfx basque_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_turdulian = kindred
+        ir_aquitani = kindred
+        ir_oppidanian = positive
+        ir_etruscan = positive
+        ir_nigirtean = positive
+    }
     culture_groups = { ir_iberia_g }
 }
 
@@ -91,6 +175,13 @@ ir_aquitani = {
     language = ir_aquitanian_lang
     color = hsv { 0.07 1.00 1.00 }
     tags = { castilian_gfx portuguese_gfx basque_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_vasconian = kindred
+        ir_ausetanian = kindred
+        ir_asturian = positive
+        ir_bruttian = positive
+        ir_abannaean = positive
+    }
     culture_groups = { ir_iberia_g }
 }
 

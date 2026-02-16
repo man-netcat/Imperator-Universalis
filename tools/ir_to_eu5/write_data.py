@@ -355,7 +355,389 @@ def write_culture_group_data(culture_data: list):
     write_blocks(out_path, blocks)
 
 
+_CULTURE_KINDRED_LIMIT = 2
+_CULTURE_POSITIVE_LIMIT = 99
+_CULTURE_NEUTRAL_LIMIT = 0
+_CULTURE_NEGATIVE_LIMIT = 99
+_CULTURE_ENEMY_LIMIT = 0
+
+_RELIGION_POSITIVE_LIMIT = 99
+_RELIGION_NEUTRAL_LIMIT = 0
+_RELIGION_NEGATIVE_LIMIT = 99
+_RELIGION_ENEMY_LIMIT = 0
+
+
+def _symmetrize_group_map(group_map: dict[str, set[str]]) -> dict[str, set[str]]:
+    out: dict[str, set[str]] = {key: set(value) for key, value in group_map.items()}
+    for left, rights in group_map.items():
+        out.setdefault(left, set())
+        for right in rights:
+            out.setdefault(right, set()).add(left)
+    return out
+
+
+
+def _symmetrize_pair_map(pair_map: dict[str, dict[str, str]]) -> dict[str, dict[str, str]]:
+    out: dict[str, dict[str, str]] = {src: dict(targets) for src, targets in pair_map.items()}
+    for src, targets in pair_map.items():
+        out.setdefault(src, {})
+        for target, relation in targets.items():
+            out.setdefault(target, {})
+            out[target].setdefault(src, relation)
+    return out
+
+
+
+# Culture relations are curated at group level to avoid ahistorical random pairs.
+_CULTURE_GROUP_POSITIVE_MAP = _symmetrize_group_map(
+    {
+        # Mediterranean / classical sphere
+        "ir_hellenic_g": {"ir_latin_g", "ir_anatolian_g", "ir_illyrian_group_g", "ir_thrace_group_g"},
+        "ir_latin_g": {"ir_iberia_g", "ir_celt_iberia_g", "ir_illyrian_group_g"},
+        "ir_anatolian_g": {"ir_caucasian_g", "ir_persia_g"},
+        "ir_illyrian_group_g": {"ir_thrace_group_g", "ir_celto_pannonian_group_g"},
+
+        # Celtic / western sphere
+        "ir_gallic_g": {"ir_belgae_group_g", "ir_gaelic_g", "ir_britannic_g", "ir_celt_iberia_g"},
+        "ir_belgae_group_g": {"ir_britannic_g", "ir_germanic_g"},
+        "ir_gaelic_g": {"ir_britannic_g"},
+        "ir_celt_iberia_g": {"ir_iberia_g", "ir_celto_pannonian_group_g"},
+
+        # Northern / Baltic sphere
+        "ir_germanic_g": {"ir_baltic_g", "ir_finnic_group_g", "ir_proto_european_g"},
+        "ir_baltic_g": {"ir_finnic_group_g", "ir_proto_european_g"},
+
+        # Steppe / Iranian / Indic sphere
+        "ir_persia_g": {"ir_bactrian_g", "ir_aryan_g", "ir_scythia_g"},
+        "ir_bactrian_g": {"ir_aryan_g", "ir_scythian_east_g"},
+        "ir_aryan_g": {"ir_indian_g", "ir_pracyan_g"},
+        "ir_indian_g": {"ir_pracyan_g", "ir_tibetan_g"},
+        "ir_pracyan_g": {"ir_tibetan_g", "ir_chinese_g"},
+        "ir_scythia_g": {"ir_scythian_east_g", "ir_proto_european_g"},
+        "ir_scythian_east_g": {"ir_proto_european_g"},
+
+        # Levant / Arabia / Africa sphere
+        "ir_east_levantine_g": {"ir_west_levantine_g", "ir_south_levantine_g", "ir_pu_g"},
+        "ir_west_levantine_g": {"ir_south_levantine_g", "ir_pu_g"},
+        "ir_south_levantine_g": {"ir_pu_g", "ir_south_arabian_g"},
+        "ir_pu_g": {"ir_north_african_g", "ir_numidian_g"},
+        "ir_north_african_g": {"ir_numidian_g", "ir_fezzani_g"},
+        "ir_numidian_g": {"ir_fezzani_g", "ir_iberia_g"},
+        "ir_south_arabian_g": {"ir_aksumite_group_g", "ir_fezzani_g"},
+        "ir_aksumite_group_g": {"ir_nilotic_group_g", "ir_meroitic_group_g"},
+        "ir_nilotic_group_g": {"ir_meroitic_group_g"},
+    }
+)
+
+_CULTURE_GROUP_NEUTRAL_MAP: dict[str, set[str]] = {}
+
+
+_CULTURE_GROUP_NEGATIVE_MAP: dict[str, set[str]] = {}
+_CULTURE_GROUP_ENEMY_MAP: dict[str, set[str]] = {}
+
+
+# Religion relations are curated at group level; no generic fallback pairs.
+_RELIGION_GROUP_POSITIVE_MAP = _symmetrize_group_map(
+    {
+        "ir_hellenic_group": {"ir_anatolian_group", "ir_canaanite_group"},
+        "ir_anatolian_group": {"ir_caucasian_group", "ir_mesopotamian_group"},
+        "ir_caucasian_group": {"ir_armenian_group"},
+        "ir_egyptian_group": {"ir_canaanite_group", "ir_berber_group"},
+        "ir_zoroastrian_group": {"ir_indo_iranian_group", "ir_mesopotamian_group"},
+        "ir_dharmic_group": {"ir_buddhist_group"},
+        "ir_shamanic_group": {"ir_eastern_animist_group", "ir_iberic_group"},
+        "ir_iberic_group": {"ir_celtic_group", "ir_germanic_group"},
+    }
+)
+
+_RELIGION_GROUP_NEUTRAL_MAP: dict[str, set[str]] = {}
+
+
+_RELIGION_GROUP_NEGATIVE_MAP = _symmetrize_group_map(
+    {
+        "ir_israelite_group": {"ir_canaanite_group"},
+    }
+)
+
+_RELIGION_GROUP_ENEMY_MAP: dict[str, set[str]] = {}
+
+
+# Explicit pair-level overrides for links that should cross (or bypass) group logic.
+# These emulate EU5-style hand-authored exceptions.
+_CULTURE_PAIR_RELATION_OVERRIDES = _symmetrize_pair_map(
+    {
+        "ir_roman": {
+            "ir_macedonian": "positive",
+            "ir_athenian": "positive",
+            "ir_carthaginian": "negative",
+        },
+        "ir_etruscan": {"ir_athenian": "positive"},
+        "ir_macedonian": {"ir_thracian": "positive"},
+        "ir_hebrew": {
+            "ir_aramaic": "positive",
+            "ir_phoenician": "positive",
+        },
+        "ir_phoenician": {"ir_egyptian": "positive"},
+        "ir_parthian": {"ir_scythian": "positive", "ir_sakan": "positive"},
+        "ir_tamil": {"ir_kannadan": "positive", "ir_telugu": "positive"},
+        "ir_puntic": {"ir_hadhrami": "positive"},
+    }
+)
+
+_RELIGION_PAIR_RELATION_OVERRIDES = _symmetrize_pair_map(
+    {
+        "ir_roman_pantheon": {
+            "ir_egyptian_pantheon": "positive",
+            "ir_carthaginian_pantheon": "positive",
+            "ir_mesopotamian_religion": "positive",
+        },
+        "ir_zoroaster": {
+            "ir_roman_pantheon": "positive",
+            "ir_mesopotamian_religion": "positive",
+        },
+        "ir_hindu": {"ir_buddhism": "positive"},
+        "ir_judaism": {
+            "ir_roman_pantheon": "positive",
+            "ir_carthaginian_pantheon": "negative",
+        },
+        "ir_caucasian_religion": {"ir_zoroaster": "positive"},
+    }
+)
+
+
+def _apply_pair_overrides(
+    source_tag: str,
+    opinions: list[tuple[str, str]],
+    override_map: dict[str, dict[str, str]],
+    valid_targets: set[str],
+) -> list[tuple[str, str]]:
+    overrides = override_map.get(source_tag)
+    if not overrides:
+        return opinions
+
+    out = [(target, rel) for target, rel in opinions if target not in overrides]
+    for target, relation in sorted(overrides.items()):
+        if target == source_tag or target not in valid_targets:
+            continue
+        out.append((target, relation))
+    return out
+
+
+def _append_opinions(
+    opinions: list[tuple[str, str]],
+    used: set[str],
+    candidates: list[str],
+    relation: str,
+    limit: int,
+) -> None:
+    if limit <= 0:
+        return
+    taken = 0
+    for candidate in candidates:
+        if candidate in used:
+            continue
+        used.add(candidate)
+        opinions.append((candidate, relation))
+        taken += 1
+        if taken >= limit:
+            break
+
+
+def _cyclic_neighbors(members: list[str], center: str, limit: int) -> list[str]:
+    if limit <= 0 or center not in members or len(members) <= 1:
+        return []
+
+    idx = members.index(center)
+    out: list[str] = []
+    seen: set[str] = set()
+    n = len(members)
+    step = 1
+    while len(out) < limit and step < n:
+        for offset in (-step, step):
+            pos = (idx + offset) % n
+            candidate = members[pos]
+            if candidate == center or candidate in seen:
+                continue
+            seen.add(candidate)
+            out.append(candidate)
+            if len(out) >= limit:
+                break
+        step += 1
+    return out
+
+
+def _pick_from_groups(
+    source_tag: str,
+    source_group_members: list[str],
+    group_members: dict[str, list[str]],
+    target_groups: set[str],
+) -> list[str]:
+    if not target_groups:
+        return []
+    source_index = 0
+    if source_group_members and source_tag in source_group_members:
+        source_index = source_group_members.index(source_tag)
+
+    out: list[str] = []
+    for target_group in sorted(target_groups):
+        members = group_members.get(target_group, [])
+        if not members:
+            continue
+        candidate = members[source_index % len(members)]
+        if candidate == source_tag:
+            continue
+        out.append(candidate)
+    return out
+
+
+def _build_culture_opinion_map(culture_data: list) -> dict[str, _pydt.Tree]:
+    culture_meta: dict[str, dict[str, str]] = {}
+    group_members: dict[str, list[str]] = defaultdict(list)
+
+    for culture_group in culture_data:
+        group_tag = str(culture_group.get("tag") or "")
+        if not group_tag:
+            continue
+        members = sorted(
+            [
+                str(culture.get("tag") or "")
+                for culture in culture_group.get("cultures", [])
+                if str(culture.get("tag") or "")
+            ]
+        )
+        for culture_tag in members:
+            culture_meta[culture_tag] = {"group": group_tag}
+            group_members[group_tag].append(culture_tag)
+
+    for members in group_members.values():
+        members.sort()
+
+    opinion_map: dict[str, _pydt.Tree] = {}
+    for culture_tag in sorted(culture_meta.keys()):
+        group = culture_meta[culture_tag]["group"]
+        source_group_members = group_members.get(group, [])
+
+        kindred_candidates = _cyclic_neighbors(source_group_members, culture_tag, _CULTURE_KINDRED_LIMIT)
+        positive_candidates = _pick_from_groups(
+            culture_tag,
+            source_group_members,
+            group_members,
+            _CULTURE_GROUP_POSITIVE_MAP.get(group, set()),
+        )
+        neutral_candidates = _pick_from_groups(
+            culture_tag,
+            source_group_members,
+            group_members,
+            _CULTURE_GROUP_NEUTRAL_MAP.get(group, set()),
+        )
+        negative_candidates = _pick_from_groups(
+            culture_tag,
+            source_group_members,
+            group_members,
+            _CULTURE_GROUP_NEGATIVE_MAP.get(group, set()),
+        )
+        enemy_candidates = _pick_from_groups(
+            culture_tag,
+            source_group_members,
+            group_members,
+            _CULTURE_GROUP_ENEMY_MAP.get(group, set()),
+        )
+
+        opinions: list[tuple[str, str]] = []
+        used: set[str] = set()
+        _append_opinions(opinions, used, kindred_candidates, "kindred", _CULTURE_KINDRED_LIMIT)
+        _append_opinions(opinions, used, positive_candidates, "positive", _CULTURE_POSITIVE_LIMIT)
+        _append_opinions(opinions, used, neutral_candidates, "neutral", _CULTURE_NEUTRAL_LIMIT)
+        _append_opinions(opinions, used, negative_candidates, "negative", _CULTURE_NEGATIVE_LIMIT)
+        _append_opinions(opinions, used, enemy_candidates, "enemy", _CULTURE_ENEMY_LIMIT)
+
+        opinions = _apply_pair_overrides(
+            culture_tag,
+            opinions,
+            _CULTURE_PAIR_RELATION_OVERRIDES,
+            set(culture_meta.keys()),
+        )
+
+        opinion_tree = _pydt.Tree()
+        for target_tag, relation in opinions:
+            opinion_tree.append(target_tag, relation)
+        opinion_map[culture_tag] = opinion_tree
+
+    return opinion_map
+
+
+def _build_religion_opinion_map(religion_data: list) -> dict[str, _pydt.Tree]:
+    religion_meta: dict[str, dict[str, str]] = {}
+    group_members: dict[str, list[str]] = defaultdict(list)
+
+    for religion in religion_data:
+        tag = str(religion.get("tag") or "")
+        if not tag:
+            continue
+        group = RELIGION_GROUP_MAP.get(tag, "ir_unknown_group")
+        religion_meta[tag] = {"group": group}
+        group_members[group].append(tag)
+
+    for members in group_members.values():
+        members.sort()
+
+    opinion_map: dict[str, _pydt.Tree] = {}
+    for religion_tag in sorted(religion_meta.keys()):
+        group = religion_meta[religion_tag]["group"]
+        source_group_members = group_members.get(group, [])
+
+        kindred_candidates = [tag for tag in source_group_members if tag != religion_tag]
+        positive_candidates = _pick_from_groups(
+            religion_tag,
+            source_group_members,
+            group_members,
+            _RELIGION_GROUP_POSITIVE_MAP.get(group, set()),
+        )
+        neutral_candidates = _pick_from_groups(
+            religion_tag,
+            source_group_members,
+            group_members,
+            _RELIGION_GROUP_NEUTRAL_MAP.get(group, set()),
+        )
+        negative_candidates = _pick_from_groups(
+            religion_tag,
+            source_group_members,
+            group_members,
+            _RELIGION_GROUP_NEGATIVE_MAP.get(group, set()),
+        )
+        enemy_candidates = _pick_from_groups(
+            religion_tag,
+            source_group_members,
+            group_members,
+            _RELIGION_GROUP_ENEMY_MAP.get(group, set()),
+        )
+
+        opinions: list[tuple[str, str]] = []
+        used: set[str] = set()
+        _append_opinions(opinions, used, kindred_candidates, "kindred", len(kindred_candidates))
+        _append_opinions(opinions, used, positive_candidates, "positive", _RELIGION_POSITIVE_LIMIT)
+        _append_opinions(opinions, used, neutral_candidates, "neutral", _RELIGION_NEUTRAL_LIMIT)
+        _append_opinions(opinions, used, negative_candidates, "negative", _RELIGION_NEGATIVE_LIMIT)
+        _append_opinions(opinions, used, enemy_candidates, "enemy", _RELIGION_ENEMY_LIMIT)
+
+        opinions = _apply_pair_overrides(
+            religion_tag,
+            opinions,
+            _RELIGION_PAIR_RELATION_OVERRIDES,
+            set(religion_meta.keys()),
+        )
+
+        opinion_tree = _pydt.Tree()
+        for target_tag, relation in opinions:
+            opinion_tree.append(target_tag, relation)
+        opinion_map[religion_tag] = opinion_tree
+
+    return opinion_map
+
+
 def write_culture_data(culture_data: list):
+    culture_opinion_map = _build_culture_opinion_map(culture_data)
+
     for culture_group in culture_data:
         blocks = []
 
@@ -401,13 +783,16 @@ def write_culture_data(culture_data: list):
             lines = []
             if culture_language:
                 lines.append(f"language = {culture_language}")
+            culture_opinions = culture_opinion_map.get(culture_tag, _pydt.Tree())
             lines.extend(
                 [
                     f"color = {culture_group['color']}",
                     f"tags = {{ {gfx_tags_str} }}",
-                    f"culture_groups = {{ {culture_group['tag']} }}",
                 ]
             )
+            if list(culture_opinions.items()):
+                lines.append(("opinions", convert_tree_to_blocks(culture_opinions)))
+            lines.append(f"culture_groups = {{ {culture_group['tag']} }}")
 
             blocks.append((culture["tag"], lines))
 
@@ -624,6 +1009,7 @@ def write_religion_group_data(religion_data: list):
 def write_religion_data(religion_data: list):
     out_path = iu_religions / "ir_religions.txt"
     existing_blocks = _existing_block_map(out_path)
+    religion_opinion_map = _build_religion_opinion_map(religion_data)
 
     blocks = []
     generated_tags: set[str] = set()
@@ -636,6 +1022,9 @@ def write_religion_data(religion_data: list):
             "color": religion["color"],
             "group": RELIGION_GROUP_MAP.get(tag, "ir_unknown_group"),
         }
+        religion_opinions = religion_opinion_map.get(tag, _pydt.Tree())
+        if list(religion_opinions.items()):
+            overrides["opinions"] = religion_opinions
         add_if_missing = {
             # Enable a single selectable aspect (Romuva-style pantheon mechanic).
             "religious_aspects": 1,

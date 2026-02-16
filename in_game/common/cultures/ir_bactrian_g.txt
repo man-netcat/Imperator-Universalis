@@ -7,6 +7,13 @@ ir_bactrian = {
     language = ir_bactrian_lang
     color = hsv { 0.03 0.70 0.70 }
     tags = { persianate_gfx central_asian_gfx persian_gfx middle_east_gfx }
+    opinions = {
+        ir_yuezhi = kindred
+        ir_margian = kindred
+        ir_avanti = positive
+        ir_amardian = positive
+        ir_agathyrsian = positive
+    }
     culture_groups = { ir_bactrian_g }
 }
 
@@ -14,6 +21,13 @@ ir_margian = {
     language = ir_sogdian_lang
     color = hsv { 0.03 0.70 0.70 }
     tags = { persianate_gfx central_asian_gfx persian_gfx middle_east_gfx }
+    opinions = {
+        ir_bactrian = kindred
+        ir_phryni = kindred
+        ir_cedi = positive
+        ir_cadusian = positive
+        ir_cimmerian = positive
+    }
     culture_groups = { ir_bactrian_g }
 }
 
@@ -21,6 +35,13 @@ ir_sogdian = {
     language = ir_sogdian_lang
     color = hsv { 0.03 0.70 0.70 }
     tags = { persianate_gfx central_asian_gfx persian_gfx middle_east_gfx }
+    opinions = {
+        ir_shule = kindred
+        ir_tayuan = kindred
+        ir_kaccha = positive
+        ir_gedrosian = positive
+        ir_siraci = positive
+    }
     culture_groups = { ir_bactrian_g }
 }
 
@@ -28,6 +49,13 @@ ir_shule = {
     language = ir_tocharian_lang
     color = hsv { 0.03 0.70 0.70 }
     tags = { persianate_gfx central_asian_gfx persian_gfx middle_east_gfx }
+    opinions = {
+        ir_saka = kindred
+        ir_sogdian = kindred
+        ir_gandhari = positive
+        ir_elamite = positive
+        ir_scythian = positive
+    }
     culture_groups = { ir_bactrian_g }
 }
 
@@ -35,6 +63,13 @@ ir_phryni = {
     language = ir_bactrian_lang
     color = hsv { 0.03 0.70 0.70 }
     tags = { persianate_gfx central_asian_gfx persian_gfx middle_east_gfx }
+    opinions = {
+        ir_margian = kindred
+        ir_saka = kindred
+        ir_dardic = positive
+        ir_carmanian = positive
+        ir_gelonian = positive
+    }
     culture_groups = { ir_bactrian_g }
 }
 
@@ -42,6 +77,13 @@ ir_tayuan = {
     language = ir_tocharian_lang
     color = hsv { 0.03 0.70 0.70 }
     tags = { persianate_gfx central_asian_gfx persian_gfx middle_east_gfx }
+    opinions = {
+        ir_sogdian = kindred
+        ir_tocharian = kindred
+        ir_kosala = positive
+        ir_hyrcanian = positive
+        ir_thyssagetaen = positive
+    }
     culture_groups = { ir_bactrian_g }
 }
 
@@ -49,6 +91,13 @@ ir_wusun = {
     language = ir_wusun_lang
     color = hsv { 0.03 0.70 0.70 }
     tags = { persianate_gfx central_asian_gfx persian_gfx middle_east_gfx }
+    opinions = {
+        ir_tocharian = kindred
+        ir_yuezhi = kindred
+        ir_lankan = positive
+        ir_pactyan = positive
+        ir_cimmerian = positive
+    }
     culture_groups = { ir_bactrian_g }
 }
 
@@ -56,6 +105,13 @@ ir_saka = {
     language = ir_saka_lang
     color = hsv { 0.03 0.70 0.70 }
     tags = { persianate_gfx central_asian_gfx persian_gfx middle_east_gfx }
+    opinions = {
+        ir_phryni = kindred
+        ir_shule = kindred
+        ir_dhivehi = positive
+        ir_cossian = positive
+        ir_sarmatian = positive
+    }
     culture_groups = { ir_bactrian_g }
 }
 
@@ -63,6 +119,13 @@ ir_yuezhi = {
     language = ir_yuezhi_lang
     color = hsv { 0.03 0.70 0.70 }
     tags = { persianate_gfx central_asian_gfx persian_gfx middle_east_gfx }
+    opinions = {
+        ir_wusun = kindred
+        ir_bactrian = kindred
+        ir_maharashtran = positive
+        ir_parecanian = positive
+        ir_gelonian = positive
+    }
     culture_groups = { ir_bactrian_g }
 }
 
@@ -70,6 +133,13 @@ ir_tocharian = {
     language = ir_tocharian_lang
     color = hsv { 0.03 0.70 0.70 }
     tags = { persianate_gfx central_asian_gfx persian_gfx middle_east_gfx }
+    opinions = {
+        ir_tayuan = kindred
+        ir_wusun = kindred
+        ir_kuru = positive
+        ir_median = positive
+        ir_agathyrsian = positive
+    }
     culture_groups = { ir_bactrian_g }
 }
 

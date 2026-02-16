@@ -7,6 +7,16 @@ ir_macedonian = {
     language = ir_macedonian_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_italiotian = kindred
+        ir_massalian = kindred
+        ir_cilician = positive
+        ir_messapian = positive
+        ir_bruttian = positive
+        ir_moesi = positive
+        ir_roman = positive
+        ir_thracian = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -14,6 +24,14 @@ ir_italiotian = {
     language = ir_doric_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_ionian = kindred
+        ir_macedonian = kindred
+        ir_cataonian = positive
+        ir_liburnian_culture = positive
+        ir_venetic = positive
+        ir_mariandynian = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -21,6 +39,15 @@ ir_thracian = {
     language = ir_thracian_lang
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_thessalian = kindred
+        ir_troan = kindred
+        ir_milyadian = positive
+        ir_deraemestian = positive
+        ir_samnite = positive
+        ir_triballoi = positive
+        ir_macedonian = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -28,6 +55,14 @@ ir_cretan = {
     language = ir_doric_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_ciliciote = kindred
+        ir_cypriot = kindred
+        ir_milyadian = positive
+        ir_pannonian = positive
+        ir_bruttian = positive
+        ir_mariandynian = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -35,6 +70,14 @@ ir_achaean = {
     language = ir_doric_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_troan = kindred
+        ir_aegean = kindred
+        ir_armenian = positive
+        ir_abrian = positive
+        ir_bruttian = positive
+        ir_bithynian = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -42,6 +85,14 @@ ir_argolian = {
     language = ir_doric_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_arcadian = kindred
+        ir_athenian = kindred
+        ir_isaurian = positive
+        ir_greco_illyrian = positive
+        ir_rhaetian = positive
+        ir_bithynian = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -49,6 +100,14 @@ ir_arcadian = {
     language = ir_arcado_cypriot_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_aetolian = kindred
+        ir_argolian = kindred
+        ir_cilician = positive
+        ir_deurian = positive
+        ir_lucanian = positive
+        ir_triballoi = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -56,6 +115,14 @@ ir_epirote = {
     language = ir_doric_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_enetoian = kindred
+        ir_euboean = kindred
+        ir_paphlagonian = positive
+        ir_dardanian = positive
+        ir_lucanian = positive
+        ir_bithynian = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -63,6 +130,14 @@ ir_boeotian = {
     language = ir_aeolic_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_athenian = kindred
+        ir_bosporan = kindred
+        ir_lalasian = positive
+        ir_liburnian = positive
+        ir_samnite = positive
+        ir_moesi = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -70,6 +145,14 @@ ir_peloponnesian = {
     language = ir_doric_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_pamphylian = kindred
+        ir_syracusan = kindred
+        ir_lalasian = positive
+        ir_taulantian = positive
+        ir_ligurian = positive
+        ir_bithynian = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -77,6 +160,15 @@ ir_athenian = {
     language = ir_attic_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_argolian = kindred
+        ir_boeotian = kindred
+        ir_kennataian = positive
+        ir_iapodian = positive
+        ir_mariandynian = positive
+        ir_etruscan = positive
+        ir_roman = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -84,6 +176,14 @@ ir_euboean = {
     language = ir_ionic_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_epirote = kindred
+        ir_greco_indian = kindred
+        ir_phrygian = positive
+        ir_deraemestian = positive
+        ir_rhaetian = positive
+        ir_mariandynian = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -91,6 +191,14 @@ ir_aetolian = {
     language = ir_doric_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_aeolian = kindred
+        ir_arcadian = kindred
+        ir_cataonian = positive
+        ir_deraemestian = positive
+        ir_ligurian = positive
+        ir_odrysi = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -98,6 +206,14 @@ ir_aegean = {
     language = ir_ionic_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_achaean = kindred
+        ir_aeolian = kindred
+        ir_cabalian = positive
+        ir_catari = positive
+        ir_etruscan = positive
+        ir_mariandynian = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -105,6 +221,14 @@ ir_greco_pontic = {
     language = ir_koine_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_greco_indian = kindred
+        ir_hellenistic = kindred
+        ir_armenian = positive
+        ir_greco_illyrian = positive
+        ir_samnite = positive
+        ir_odrysi = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -112,6 +236,14 @@ ir_greco_indian = {
     language = ir_koine_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_euboean = kindred
+        ir_greco_pontic = kindred
+        ir_pisidian = positive
+        ir_deurian = positive
+        ir_roman = positive
+        ir_moesi = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -119,6 +251,14 @@ ir_aeolian = {
     language = ir_aeolic_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_aegean = kindred
+        ir_aetolian = kindred
+        ir_cappadocian = positive
+        ir_dardanian = positive
+        ir_histrian = positive
+        ir_moesi = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -126,6 +266,14 @@ ir_troan = {
     language = ir_aeolic_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_thracian = kindred
+        ir_achaean = kindred
+        ir_morimenian = positive
+        ir_deurian = positive
+        ir_siculian = positive
+        ir_bithynian = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -133,6 +281,14 @@ ir_ionian = {
     language = ir_ionic_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_hellenistic = kindred
+        ir_italiotian = kindred
+        ir_cappadocian = positive
+        ir_liburnian = positive
+        ir_umbrian = positive
+        ir_bithynian = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -140,6 +296,14 @@ ir_cypriot = {
     language = ir_arcado_cypriot_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_cretan = kindred
+        ir_cyrenaican = kindred
+        ir_morimenian = positive
+        ir_taulantian = positive
+        ir_etruscan = positive
+        ir_moesi = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -147,6 +311,14 @@ ir_thessalian = {
     language = ir_aeolic_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_syriote = kindred
+        ir_thracian = kindred
+        ir_lydian = positive
+        ir_dardanian = positive
+        ir_roman = positive
+        ir_odrysi = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -154,6 +326,14 @@ ir_bosporan = {
     language = ir_koine_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_boeotian = kindred
+        ir_carian = kindred
+        ir_lycaonian = positive
+        ir_liburnian_culture = positive
+        ir_siculian = positive
+        ir_odrysi = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -161,6 +341,14 @@ ir_syracusan = {
     language = ir_doric_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_peloponnesian = kindred
+        ir_syriote = kindred
+        ir_lycaonian = positive
+        ir_abrian = positive
+        ir_lucanian = positive
+        ir_mariandynian = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -168,6 +356,14 @@ ir_cyrenaican = {
     language = ir_doric_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_cypriot = kindred
+        ir_enetoian = kindred
+        ir_mysian = positive
+        ir_abrian = positive
+        ir_histrian = positive
+        ir_odrysi = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -175,6 +371,14 @@ ir_massalian = {
     language = ir_ionic_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_macedonian = kindred
+        ir_pamphylian = kindred
+        ir_isaurian = positive
+        ir_paeonian = positive
+        ir_etruscan = positive
+        ir_odrysi = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -182,6 +386,14 @@ ir_pamphylian = {
     language = ir_pamphylian_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_massalian = kindred
+        ir_peloponnesian = kindred
+        ir_kennataian = positive
+        ir_pannonian = positive
+        ir_histrian = positive
+        ir_triballoi = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -189,6 +401,14 @@ ir_syriote = {
     language = ir_koine_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_syracusan = kindred
+        ir_thessalian = kindred
+        ir_lycian = positive
+        ir_catari = positive
+        ir_rhaetian = positive
+        ir_moesi = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -196,6 +416,14 @@ ir_ciliciote = {
     language = ir_koine_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_carian = kindred
+        ir_cretan = kindred
+        ir_lydian = positive
+        ir_paeonian = positive
+        ir_venetic = positive
+        ir_bithynian = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -203,6 +431,14 @@ ir_carian = {
     language = ir_carian_lang
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_bosporan = kindred
+        ir_ciliciote = kindred
+        ir_lycian = positive
+        ir_messapian = positive
+        ir_umbrian = positive
+        ir_triballoi = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -210,6 +446,14 @@ ir_enetoian = {
     language = ir_paphlagonian_lang
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_cyrenaican = kindred
+        ir_epirote = kindred
+        ir_oroandian = positive
+        ir_catari = positive
+        ir_ligurian = positive
+        ir_triballoi = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 
@@ -217,6 +461,14 @@ ir_hellenistic = {
     language = ir_koine_dialect
     color = hsv { 0.65 0.70 0.80 }
     tags = { greek_gfx east_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_greco_pontic = kindred
+        ir_ionian = kindred
+        ir_cabalian = positive
+        ir_iapodian = positive
+        ir_siculian = positive
+        ir_triballoi = positive
+    }
     culture_groups = { ir_hellenic_g }
 }
 

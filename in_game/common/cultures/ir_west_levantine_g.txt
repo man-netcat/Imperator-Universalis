@@ -7,6 +7,14 @@ ir_carthaginian = {
     language = ir_punic_lang
     color = hsv { 0.75 0.90 0.73 }
     tags = { levantine_gfx east_mediterranean_gfx maghrebi_gfx middle_east_gfx }
+    opinions = {
+        ir_phoenician = kindred
+        ir_hebrew = kindred
+        ir_aramaic = positive
+        ir_jaintia = positive
+        ir_gerrhan = positive
+        ir_roman = negative
+    }
     culture_groups = { ir_west_levantine_g }
 }
 
@@ -14,6 +22,14 @@ ir_phoenician = {
     language = ir_phoenician_lang
     color = hsv { 0.75 0.90 0.73 }
     tags = { levantine_gfx east_mediterranean_gfx maghrebi_gfx middle_east_gfx }
+    opinions = {
+        ir_carthaginian = kindred
+        ir_babylonian = positive
+        ir_pubu = positive
+        ir_nabatean = positive
+        ir_egyptian = positive
+        ir_hebrew = positive
+    }
     culture_groups = { ir_west_levantine_g }
 }
 
@@ -21,6 +37,14 @@ ir_hebrew = {
     language = ir_hebrew_lang
     color = hsv { 0.75 0.90 0.73 }
     tags = { israelite_gfx levantine_gfx middle_east_gfx }
+    opinions = {
+        ir_carthaginian = kindred
+        ir_assyrian = positive
+        ir_mon = positive
+        ir_makan = positive
+        ir_aramaic = positive
+        ir_phoenician = positive
+    }
     culture_groups = { ir_west_levantine_g }
 }
 

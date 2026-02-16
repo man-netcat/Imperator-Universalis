@@ -7,6 +7,13 @@ ir_aestian = {
     language = ir_aestian_lang
     color = hsv { 0.50 0.40 0.70 }
     tags = { baltic_gfx eastern_european_gfx european_gfx }
+    opinions = {
+        ir_sporic = kindred
+        ir_budinian = kindred
+        ir_androphagian = positive
+        ir_anglian = positive
+        ir_corsian = positive
+    }
     culture_groups = { ir_baltic_g }
 }
 
@@ -14,6 +21,13 @@ ir_sporic = {
     language = ir_neuric_lang
     color = hsv { 0.50 0.40 0.70 }
     tags = { baltic_gfx eastern_european_gfx european_gfx }
+    opinions = {
+        ir_neuric = kindred
+        ir_aestian = kindred
+        ir_fennic = positive
+        ir_gutones = positive
+        ir_talaiotic = positive
+    }
     culture_groups = { ir_baltic_g }
 }
 
@@ -21,6 +35,13 @@ ir_neuric = {
     language = ir_neuric_lang
     color = hsv { 0.50 0.40 0.70 }
     tags = { baltic_gfx eastern_european_gfx european_gfx }
+    opinions = {
+        ir_melanchlaenian = kindred
+        ir_sporic = kindred
+        ir_androphagian = positive
+        ir_gothonic = positive
+        ir_nuragic = positive
+    }
     culture_groups = { ir_baltic_g }
 }
 
@@ -28,6 +49,13 @@ ir_budinian = {
     language = ir_neuric_lang
     color = hsv { 0.50 0.40 0.70 }
     tags = { baltic_gfx eastern_european_gfx european_gfx }
+    opinions = {
+        ir_aestian = kindred
+        ir_chernolian = kindred
+        ir_fennic = positive
+        ir_bastarnae = positive
+        ir_nuragic = positive
+    }
     culture_groups = { ir_baltic_g }
 }
 
@@ -35,6 +63,13 @@ ir_chernolian = {
     language = ir_neuric_lang
     color = hsv { 0.50 0.40 0.70 }
     tags = { baltic_gfx eastern_european_gfx european_gfx }
+    opinions = {
+        ir_budinian = kindred
+        ir_melanchlaenian = kindred
+        ir_mordvin = positive
+        ir_cimbrian = positive
+        ir_talaiotic = positive
+    }
     culture_groups = { ir_baltic_g }
 }
 
@@ -42,6 +77,13 @@ ir_melanchlaenian = {
     language = ir_neuric_lang
     color = hsv { 0.50 0.40 0.70 }
     tags = { baltic_gfx eastern_european_gfx european_gfx }
+    opinions = {
+        ir_chernolian = kindred
+        ir_neuric = kindred
+        ir_volgaic = positive
+        ir_frisian = positive
+        ir_corsian = positive
+    }
     culture_groups = { ir_baltic_g }
 }
 

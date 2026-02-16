@@ -7,6 +7,11 @@ ir_albanian = {
     language = ir_albanian_caucasian_lang
     color = hsv { 0.12 0.45 0.68 }
     tags = { caucasian_gfx middle_east_gfx }
+    opinions = {
+        ir_abasgoi = kindred
+        ir_caspian = kindred
+        ir_cabalian = positive
+    }
     culture_groups = { ir_caucasian_g }
 }
 
@@ -14,6 +19,11 @@ ir_caspian = {
     language = ir_albanian_caucasian_lang
     color = hsv { 0.12 0.45 0.68 }
     tags = { caucasian_gfx middle_east_gfx }
+    opinions = {
+        ir_albanian = kindred
+        ir_colchian = kindred
+        ir_cappadocian = positive
+    }
     culture_groups = { ir_caucasian_g }
 }
 
@@ -21,6 +31,11 @@ ir_ibero = {
     language = ir_kartvelian_lang
     color = hsv { 0.12 0.45 0.68 }
     tags = { caucasian_gfx middle_east_gfx }
+    opinions = {
+        ir_gelaean = kindred
+        ir_lazi = kindred
+        ir_isaurian = positive
+    }
     culture_groups = { ir_caucasian_g }
 }
 
@@ -28,6 +43,11 @@ ir_sindi = {
     language = ir_north_caucasian_lang
     color = hsv { 0.12 0.45 0.68 }
     tags = { caucasian_gfx middle_east_gfx }
+    opinions = {
+        ir_sasperian = kindred
+        ir_suani = kindred
+        ir_lydian = positive
+    }
     culture_groups = { ir_caucasian_g }
 }
 
@@ -35,6 +55,11 @@ ir_maeotian = {
     language = ir_north_caucasian_lang
     color = hsv { 0.12 0.45 0.68 }
     tags = { caucasian_gfx middle_east_gfx }
+    opinions = {
+        ir_legian = kindred
+        ir_sasperian = kindred
+        ir_lycaonian = positive
+    }
     culture_groups = { ir_caucasian_g }
 }
 
@@ -42,6 +67,11 @@ ir_colchian = {
     language = ir_kartvelian_lang
     color = hsv { 0.12 0.45 0.68 }
     tags = { caucasian_gfx middle_east_gfx }
+    opinions = {
+        ir_caspian = kindred
+        ir_gelaean = kindred
+        ir_cataonian = positive
+    }
     culture_groups = { ir_caucasian_g }
 }
 
@@ -49,6 +79,11 @@ ir_abasgoi = {
     language = ir_north_caucasian_lang
     color = hsv { 0.12 0.45 0.68 }
     tags = { caucasian_gfx middle_east_gfx }
+    opinions = {
+        ir_suani = kindred
+        ir_albanian = kindred
+        ir_armenian = positive
+    }
     culture_groups = { ir_caucasian_g }
 }
 
@@ -56,6 +91,11 @@ ir_suani = {
     language = ir_kartvelian_lang
     color = hsv { 0.12 0.45 0.68 }
     tags = { caucasian_gfx middle_east_gfx }
+    opinions = {
+        ir_sindi = kindred
+        ir_abasgoi = kindred
+        ir_milyadian = positive
+    }
     culture_groups = { ir_caucasian_g }
 }
 
@@ -63,6 +103,11 @@ ir_lazi = {
     language = ir_kartvelian_lang
     color = hsv { 0.12 0.45 0.68 }
     tags = { caucasian_gfx middle_east_gfx }
+    opinions = {
+        ir_ibero = kindred
+        ir_legian = kindred
+        ir_kennataian = positive
+    }
     culture_groups = { ir_caucasian_g }
 }
 
@@ -70,6 +115,11 @@ ir_sasperian = {
     language = ir_north_caucasian_lang
     color = hsv { 0.12 0.45 0.68 }
     tags = { caucasian_gfx middle_east_gfx }
+    opinions = {
+        ir_maeotian = kindred
+        ir_sindi = kindred
+        ir_lycian = positive
+    }
     culture_groups = { ir_caucasian_g }
 }
 
@@ -77,6 +127,11 @@ ir_legian = {
     language = ir_albanian_caucasian_lang
     color = hsv { 0.12 0.45 0.68 }
     tags = { caucasian_gfx middle_east_gfx }
+    opinions = {
+        ir_lazi = kindred
+        ir_maeotian = kindred
+        ir_lalasian = positive
+    }
     culture_groups = { ir_caucasian_g }
 }
 
@@ -84,6 +139,11 @@ ir_gelaean = {
     language = ir_north_caucasian_lang
     color = hsv { 0.12 0.45 0.68 }
     tags = { caucasian_gfx middle_east_gfx }
+    opinions = {
+        ir_colchian = kindred
+        ir_ibero = kindred
+        ir_cilician = positive
+    }
     culture_groups = { ir_caucasian_g }
 }
 

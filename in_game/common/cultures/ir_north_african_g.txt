@@ -7,6 +7,14 @@ ir_egyptian = {
     language = ir_egyptian_lang
     color = hsv { 0.15 1.00 0.70 }
     tags = { egyptian_gfx maghrebi_gfx african_gfx }
+    opinions = {
+        ir_upper_egyptian = kindred
+        ir_middle_egyptian = kindred
+        ir_atarantian = positive
+        ir_abannaean = positive
+        ir_jaintia = positive
+        ir_phoenician = positive
+    }
     culture_groups = { ir_north_african_g }
 }
 
@@ -14,6 +22,13 @@ ir_upper_egyptian = {
     language = ir_egyptian_lang
     color = hsv { 0.15 1.00 0.70 }
     tags = { egyptian_gfx maghrebi_gfx african_gfx }
+    opinions = {
+        ir_oasis_egyptian = kindred
+        ir_egyptian = kindred
+        ir_garamantic = positive
+        ir_capariensian = positive
+        ir_rhakine = positive
+    }
     culture_groups = { ir_north_african_g }
 }
 
@@ -21,6 +36,13 @@ ir_middle_egyptian = {
     language = ir_egyptian_lang
     color = hsv { 0.15 1.00 0.70 }
     tags = { egyptian_gfx maghrebi_gfx african_gfx }
+    opinions = {
+        ir_egyptian = kindred
+        ir_oasis_egyptian = kindred
+        ir_atlantean = positive
+        ir_autolalean = positive
+        ir_mon = positive
+    }
     culture_groups = { ir_north_african_g }
 }
 
@@ -28,6 +50,13 @@ ir_oasis_egyptian = {
     language = ir_egyptian_lang
     color = hsv { 0.15 1.00 0.70 }
     tags = { egyptian_gfx maghrebi_gfx african_gfx }
+    opinions = {
+        ir_middle_egyptian = kindred
+        ir_upper_egyptian = kindred
+        ir_berber = positive
+        ir_canarian = positive
+        ir_pubu = positive
+    }
     culture_groups = { ir_north_african_g }
 }
 

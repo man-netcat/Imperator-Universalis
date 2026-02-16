@@ -7,6 +7,11 @@ ir_hibernian = {
     language = ir_goidelic_lang
     color = hsv { 0.43 0.90 0.60 }
     tags = { western_european_gfx european_gfx }
+    opinions = {
+        ir_manavian = kindred
+        ir_brigantic = positive
+        ir_allobrogian = positive
+    }
     culture_groups = { ir_gaelic_g }
 }
 
@@ -14,6 +19,11 @@ ir_manavian = {
     language = ir_goidelic_lang
     color = hsv { 0.43 0.90 0.60 }
     tags = { western_european_gfx european_gfx }
+    opinions = {
+        ir_hibernian = kindred
+        ir_britannic = positive
+        ir_aremorican = positive
+    }
     culture_groups = { ir_gaelic_g }
 }
 

@@ -7,6 +7,12 @@ ir_zhangzhung = {
     language = ir_tibetic_lang
     color = hsv { 0.95 1.00 0.80 }
     tags = { tibetan_gfx east_asian_gfx }
+    opinions = {
+        ir_yarlung = kindred
+        ir_pyu = kindred
+        ir_cholan = positive
+        ir_kamarupi = positive
+    }
     culture_groups = { ir_tibetan_g }
 }
 
@@ -14,6 +20,12 @@ ir_sumpa = {
     language = ir_tibetic_lang
     color = hsv { 0.95 1.00 0.80 }
     tags = { tibetan_gfx east_asian_gfx }
+    opinions = {
+        ir_pyu = kindred
+        ir_tsang = kindred
+        ir_andhran = positive
+        ir_bangli = positive
+    }
     culture_groups = { ir_tibetan_g }
 }
 
@@ -21,6 +33,12 @@ ir_yarlung = {
     language = ir_tibetic_lang
     color = hsv { 0.95 1.00 0.80 }
     tags = { tibetan_gfx east_asian_gfx }
+    opinions = {
+        ir_tsang = kindred
+        ir_zhangzhung = kindred
+        ir_cheran = positive
+        ir_kalingan = positive
+    }
     culture_groups = { ir_tibetan_g }
 }
 
@@ -28,6 +46,12 @@ ir_tsang = {
     language = ir_tibetic_lang
     color = hsv { 0.95 1.00 0.80 }
     tags = { tibetan_gfx east_asian_gfx }
+    opinions = {
+        ir_sumpa = kindred
+        ir_yarlung = kindred
+        ir_assaka = positive
+        ir_himalayan = positive
+    }
     culture_groups = { ir_tibetan_g }
 }
 
@@ -35,6 +59,12 @@ ir_pyu = {
     language = ir_tibetic_lang
     color = hsv { 0.95 1.00 0.80 }
     tags = { tibetan_gfx east_asian_gfx }
+    opinions = {
+        ir_zhangzhung = kindred
+        ir_sumpa = kindred
+        ir_alupan = positive
+        ir_atavi = positive
+    }
     culture_groups = { ir_tibetan_g }
 }
 

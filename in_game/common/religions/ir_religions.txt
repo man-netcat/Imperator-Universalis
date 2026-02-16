@@ -6,66 +6,125 @@
 ir_roman_pantheon = {
     color = hsv { 0.65 0.70 0.80 }
     group = ir_hellenic_group
+    opinions = {
+        ir_illyrian_pantheon = kindred
+        ir_italic_pantheon = kindred
+        ir_anatolian_religion = positive
+        ir_carthaginian_pantheon = positive
+        ir_egyptian_pantheon = positive
+        ir_judaism = positive
+        ir_mesopotamian_religion = positive
+        ir_zoroaster = positive
+    }
     religious_aspects = 1
 }
 
 ir_egyptian_pantheon = {
     color = hsv { 0.15 1.00 0.70 }
     group = ir_egyptian_group
+    opinions = {
+        ir_nilotic_pantheon = kindred
+        ir_puntic_religion = kindred
+        ir_berber_religion = positive
+        ir_carthaginian_pantheon = positive
+        ir_roman_pantheon = positive
+    }
     religious_aspects = 1
 }
 
 ir_carthaginian_pantheon = {
     color = hsv { 0.75 0.90 0.73 }
     group = ir_canaanite_group
+    opinions = {
+        ir_egyptian_pantheon = positive
+        ir_illyrian_pantheon = positive
+        ir_judaism = negative
+        ir_roman_pantheon = positive
+    }
     religious_aspects = 1
 }
 
 ir_shamanism = {
     color = hsv { 0.00 0.50 1.00 }
     group = ir_shamanic_group
+    opinions = {
+        ir_uralic_pantheon = kindred
+        ir_bon_religion = positive
+        ir_animism = positive
+    }
     religious_aspects = 1
 }
 
 ir_caucasian_religion = {
     color = hsv { 0.30 0.10 0.40 }
     group = ir_caucasian_group
+    opinions = {
+        ir_circassian_pantheon = kindred
+        ir_anatolian_religion = positive
+        ir_armenian_religion = positive
+        ir_zoroaster = positive
+    }
     religious_aspects = 1
 }
 
 ir_mesopotamian_religion = {
     color = hsv { 0.05 1.00 0.50 }
     group = ir_mesopotamian_group
+    opinions = {
+        ir_hurrian_pantheon = kindred
+        ir_hatti_religion = positive
+        ir_mithra_religion = positive
+        ir_roman_pantheon = positive
+        ir_zoroaster = positive
+    }
     religious_aspects = 1
 }
 
 ir_armenian_religion = {
     color = hsv { 0.40 0.90 0.30 }
     group = ir_armenian_group
+    opinions = {
+        ir_caucasian_religion = positive
+    }
     religious_aspects = 1
 }
 
 ir_anatolian_religion = {
     color = rgb { 255 135 35 }
     group = ir_anatolian_group
+    opinions = {
+        ir_hatti_religion = kindred
+        ir_caucasian_religion = positive
+        ir_illyrian_pantheon = positive
+        ir_hurrian_pantheon = positive
+    }
     religious_aspects = 1
 }
 
 ir_druidism = {
     color = hsv { 0.30 0.70 0.40 }
     group = ir_celtic_group
+    opinions = {
+        ir_animism = positive
+    }
     religious_aspects = 1
 }
 
 ir_germanic_religion = {
     color = hsv { 0.05 0.70 0.30 }
     group = ir_germanic_group
+    opinions = {
+        ir_animism = positive
+    }
     religious_aspects = 1
 }
 
 ir_indo_iranian_religion = {
     color = hsv { 0.20 0.50 0.80 }
     group = ir_indo_iranian_group
+    opinions = {
+        ir_anahitic_religion = positive
+    }
     religious_aspects = 1
 }
 
@@ -78,162 +137,328 @@ ir_arabian_pantheon = {
 ir_berber_religion = {
     color = hsv { 0.05 0.50 0.40 }
     group = ir_berber_group
+    opinions = {
+        ir_egyptian_pantheon = positive
+    }
     religious_aspects = 1
 }
 
 ir_nuragic_pantheon = {
     color = hsv { 0.20 0.25 0.50 }
     group = ir_iberic_group
+    opinions = {
+        ir_animism = kindred
+        ir_pre_indo_european_religion = kindred
+        ir_druidism = positive
+        ir_germanic_religion = positive
+        ir_uralic_pantheon = positive
+    }
     religious_aspects = 1
 }
 
 ir_pre_indo_european_religion = {
     color = hsv { 0.50 0.25 0.70 }
     group = ir_iberic_group
+    opinions = {
+        ir_animism = kindred
+        ir_nuragic_pantheon = kindred
+        ir_druidism = positive
+        ir_germanic_religion = positive
+        ir_shamanism = positive
+    }
     religious_aspects = 1
 }
 
 ir_italic_pantheon = {
     color = hsv { 0.00 0.91 0.55 }
     group = ir_hellenic_group
+    opinions = {
+        ir_illyrian_pantheon = kindred
+        ir_roman_pantheon = kindred
+        ir_hatti_religion = positive
+        ir_carthaginian_pantheon = positive
+    }
     religious_aspects = 1
 }
 
 ir_illyrian_pantheon = {
     color = hsv { 0.55 0.90 0.50 }
     group = ir_hellenic_group
+    opinions = {
+        ir_italic_pantheon = kindred
+        ir_roman_pantheon = kindred
+        ir_anatolian_religion = positive
+        ir_carthaginian_pantheon = positive
+    }
     religious_aspects = 1
 }
 
 ir_hurrian_pantheon = {
     color = rgb { 36 36 36 }
     group = ir_mesopotamian_group
+    opinions = {
+        ir_mesopotamian_religion = kindred
+        ir_anatolian_religion = positive
+        ir_anahitic_religion = positive
+    }
     religious_aspects = 1
 }
 
 ir_hatti_religion = {
     color = rgb { 200 200 200 }
     group = ir_anatolian_group
+    opinions = {
+        ir_anatolian_religion = kindred
+        ir_circassian_pantheon = positive
+        ir_italic_pantheon = positive
+        ir_mesopotamian_religion = positive
+    }
     religious_aspects = 1
 }
 
 ir_hindu = {
     color = hsv { 0.05 1.00 0.90 }
     group = ir_dharmic_group
+    opinions = {
+        ir_agama = kindred
+        ir_ajivika = kindred
+        ir_jainism = kindred
+        ir_buddhism = positive
+    }
     religious_aspects = 1
 }
 
 ir_agama = {
     color = hsv { 0.80 0.60 0.60 }
     group = ir_dharmic_group
+    opinions = {
+        ir_ajivika = kindred
+        ir_hindu = kindred
+        ir_jainism = kindred
+        ir_buddhism = positive
+    }
     religious_aspects = 1
 }
 
 ir_buddhism = {
     color = hsv { 0.15 0.70 1.00 }
     group = ir_buddhist_group
+    opinions = {
+        ir_agama = positive
+        ir_hindu = positive
+    }
     religious_aspects = 1
 }
 
 ir_jainism = {
     color = hsv { 0.70 0.20 0.20 }
     group = ir_dharmic_group
+    opinions = {
+        ir_agama = kindred
+        ir_ajivika = kindred
+        ir_hindu = kindred
+        ir_buddhism = positive
+    }
     religious_aspects = 1
 }
 
 ir_ajivika = {
     color = rgb { 26 153 0 }
     group = ir_dharmic_group
+    opinions = {
+        ir_agama = kindred
+        ir_hindu = kindred
+        ir_jainism = kindred
+        ir_buddhism = positive
+    }
     religious_aspects = 1
 }
 
 ir_zoroaster = {
     color = hsv { 0.52 0.77 0.72 }
     group = ir_zoroastrian_group
+    opinions = {
+        ir_anahitic_religion = kindred
+        ir_mithra_religion = kindred
+        ir_vaksh_religion = kindred
+        ir_indo_iranian_religion = positive
+        ir_caucasian_religion = positive
+        ir_mesopotamian_religion = positive
+        ir_roman_pantheon = positive
+    }
     religious_aspects = 1
 }
 
 ir_anahitic_religion = {
     color = rgb { 172 58 52 }
     group = ir_zoroastrian_group
+    opinions = {
+        ir_mithra_religion = kindred
+        ir_vaksh_religion = kindred
+        ir_zoroaster = kindred
+        ir_indo_iranian_religion = positive
+        ir_hurrian_pantheon = positive
+    }
     religious_aspects = 1
 }
 
 ir_mithra_religion = {
     color = rgb { 200 50 200 }
     group = ir_zoroastrian_group
+    opinions = {
+        ir_anahitic_religion = kindred
+        ir_vaksh_religion = kindred
+        ir_zoroaster = kindred
+        ir_indo_iranian_religion = positive
+        ir_mesopotamian_religion = positive
+    }
     religious_aspects = 1
 }
 
 ir_vaksh_religion = {
     color = rgb { 188 135 2 }
     group = ir_zoroastrian_group
+    opinions = {
+        ir_anahitic_religion = kindred
+        ir_mithra_religion = kindred
+        ir_zoroaster = kindred
+        ir_indo_iranian_religion = positive
+        ir_hurrian_pantheon = positive
+    }
     religious_aspects = 1
 }
 
 ir_animism = {
     color = hsv { 0.07 1.00 1.00 }
     group = ir_iberic_group
+    opinions = {
+        ir_nuragic_pantheon = kindred
+        ir_pre_indo_european_religion = kindred
+        ir_druidism = positive
+        ir_germanic_religion = positive
+        ir_shamanism = positive
+    }
     religious_aspects = 1
 }
 
 ir_eastern_animism = {
     color = hsv { 0.03 0.70 0.70 }
     group = ir_eastern_animist_group
+    opinions = {
+        ir_bon_religion = kindred
+        ir_burmese_religion = kindred
+        ir_chinese_religions = kindred
+        ir_matrist_religion = kindred
+        ir_uralic_pantheon = positive
+    }
     religious_aspects = 1
 }
 
 ir_bon_religion = {
     color = hsv { 0.95 1.00 0.80 }
     group = ir_eastern_animist_group
+    opinions = {
+        ir_burmese_religion = kindred
+        ir_chinese_religions = kindred
+        ir_eastern_animism = kindred
+        ir_matrist_religion = kindred
+        ir_shamanism = positive
+    }
     religious_aspects = 1
 }
 
 ir_matrist_religion = {
     color = hsv { 0.50 0.40 0.70 }
     group = ir_eastern_animist_group
+    opinions = {
+        ir_bon_religion = kindred
+        ir_burmese_religion = kindred
+        ir_chinese_religions = kindred
+        ir_eastern_animism = kindred
+        ir_shamanism = positive
+    }
     religious_aspects = 1
 }
 
 ir_puntic_religion = {
     color = hsv { 0.95 1.00 0.85 }
     group = ir_egyptian_group
+    opinions = {
+        ir_egyptian_pantheon = kindred
+        ir_nilotic_pantheon = kindred
+        ir_berber_religion = positive
+        ir_carthaginian_pantheon = positive
+    }
     religious_aspects = 1
 }
 
 ir_nilotic_pantheon = {
     color = hsv { 0.20 0.70 0.25 }
     group = ir_egyptian_group
+    opinions = {
+        ir_egyptian_pantheon = kindred
+        ir_puntic_religion = kindred
+        ir_berber_religion = positive
+        ir_carthaginian_pantheon = positive
+    }
     religious_aspects = 1
 }
 
 ir_uralic_pantheon = {
     color = hsv { 0.10 0.30 0.90 }
     group = ir_shamanic_group
+    opinions = {
+        ir_shamanism = kindred
+        ir_burmese_religion = positive
+        ir_nuragic_pantheon = positive
+    }
     religious_aspects = 1
 }
 
 ir_burmese_religion = {
     color = hsv { 0.96 0.66 0.30 }
     group = ir_eastern_animist_group
+    opinions = {
+        ir_bon_religion = kindred
+        ir_chinese_religions = kindred
+        ir_eastern_animism = kindred
+        ir_matrist_religion = kindred
+        ir_uralic_pantheon = positive
+    }
     religious_aspects = 1
 }
 
 ir_circassian_pantheon = {
     color = rgb { 12 133 73 }
     group = ir_caucasian_group
+    opinions = {
+        ir_caucasian_religion = kindred
+        ir_hatti_religion = positive
+        ir_armenian_religion = positive
+    }
     religious_aspects = 1
 }
 
 ir_judaism = {
     color = hsv { 0.65 1.00 1.00 }
     group = ir_israelite_group
+    opinions = {
+        ir_carthaginian_pantheon = negative
+        ir_roman_pantheon = positive
+    }
     religious_aspects = 1
 }
 
 ir_chinese_religions = {
     color = hsv { 0.10 0.90 1.00 }
     group = ir_eastern_animist_group
+    opinions = {
+        ir_bon_religion = kindred
+        ir_burmese_religion = kindred
+        ir_eastern_animism = kindred
+        ir_matrist_religion = kindred
+        ir_shamanism = positive
+    }
     religious_aspects = 1
 }
 

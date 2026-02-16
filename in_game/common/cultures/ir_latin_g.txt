@@ -7,6 +7,16 @@ ir_roman = {
     language = ir_latin_lang
     color = hsv { 0.00 0.91 0.55 }
     tags = { north_italian_gfx south_italian_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_rhaetian = kindred
+        ir_samnite = kindred
+        ir_celtiberian = positive
+        ir_ilergetian = positive
+        ir_iapodian = positive
+        ir_athenian = positive
+        ir_carthaginian = negative
+        ir_macedonian = positive
+    }
     culture_groups = { ir_latin_g }
 }
 
@@ -14,6 +24,14 @@ ir_venetic = {
     language = ir_venetic_dialect
     color = hsv { 0.00 0.91 0.55 }
     tags = { north_italian_gfx south_italian_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_umbrian = kindred
+        ir_bruttian = kindred
+        ir_lobetanian = positive
+        ir_ciliciote = positive
+        ir_turdetanian = positive
+        ir_paeonian = positive
+    }
     culture_groups = { ir_latin_g }
 }
 
@@ -21,6 +39,14 @@ ir_ligurian = {
     language = ir_ligurian_dialect
     color = hsv { 0.00 0.91 0.55 }
     tags = { north_italian_gfx south_italian_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_histrian = kindred
+        ir_lucanian = kindred
+        ir_cantabrian = positive
+        ir_aetolian = positive
+        ir_contestanian = positive
+        ir_deraemestian = positive
+    }
     culture_groups = { ir_latin_g }
 }
 
@@ -28,6 +54,15 @@ ir_etruscan = {
     language = ir_etruscan_lang
     color = hsv { 0.00 0.91 0.55 }
     tags = { north_italian_gfx south_italian_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_bruttian = kindred
+        ir_histrian = kindred
+        ir_autrigonian = positive
+        ir_aegean = positive
+        ir_ausetanian = positive
+        ir_catari = positive
+        ir_athenian = positive
+    }
     culture_groups = { ir_latin_g }
 }
 
@@ -35,6 +70,14 @@ ir_rhaetian = {
     language = ir_rhaetian_dialect
     color = hsv { 0.00 0.91 0.55 }
     tags = { north_italian_gfx south_italian_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_lucanian = kindred
+        ir_roman = kindred
+        ir_carpetanian = positive
+        ir_argolian = positive
+        ir_ilercavonian = positive
+        ir_greco_illyrian = positive
+    }
     culture_groups = { ir_latin_g }
 }
 
@@ -42,6 +85,14 @@ ir_umbrian = {
     language = ir_umbrian_lang
     color = hsv { 0.00 0.91 0.55 }
     tags = { north_italian_gfx south_italian_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_siculian = kindred
+        ir_venetic = kindred
+        ir_elesycian = positive
+        ir_carian = positive
+        ir_oretanian = positive
+        ir_messapian = positive
+    }
     culture_groups = { ir_latin_g }
 }
 
@@ -49,6 +100,14 @@ ir_samnite = {
     language = ir_oscan_lang
     color = hsv { 0.00 0.91 0.55 }
     tags = { north_italian_gfx south_italian_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_roman = kindred
+        ir_siculian = kindred
+        ir_celtician = positive
+        ir_boeotian = positive
+        ir_indiketian = positive
+        ir_liburnian = positive
+    }
     culture_groups = { ir_latin_g }
 }
 
@@ -56,6 +115,14 @@ ir_siculian = {
     language = ir_siculian_lang
     color = hsv { 0.00 0.91 0.55 }
     tags = { north_italian_gfx south_italian_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_samnite = kindred
+        ir_umbrian = kindred
+        ir_couneian = positive
+        ir_bosporan = positive
+        ir_lacetanian = positive
+        ir_liburnian_culture = positive
+    }
     culture_groups = { ir_latin_g }
 }
 
@@ -63,6 +130,14 @@ ir_bruttian = {
     language = ir_oscan_lang
     color = hsv { 0.00 0.91 0.55 }
     tags = { north_italian_gfx south_italian_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_venetic = kindred
+        ir_etruscan = kindred
+        ir_asturian = positive
+        ir_achaean = positive
+        ir_aquitani = positive
+        ir_abrian = positive
+    }
     culture_groups = { ir_latin_g }
 }
 
@@ -70,6 +145,14 @@ ir_lucanian = {
     language = ir_oscan_lang
     color = hsv { 0.00 0.91 0.55 }
     tags = { north_italian_gfx south_italian_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_ligurian = kindred
+        ir_rhaetian = kindred
+        ir_caristian = positive
+        ir_arcadian = positive
+        ir_edetanian = positive
+        ir_deurian = positive
+    }
     culture_groups = { ir_latin_g }
 }
 
@@ -77,6 +160,14 @@ ir_histrian = {
     language = ir_venetic_dialect
     color = hsv { 0.00 0.91 0.55 }
     tags = { north_italian_gfx south_italian_gfx west_mediterranean_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_etruscan = kindred
+        ir_ligurian = kindred
+        ir_callaecian = positive
+        ir_aeolian = positive
+        ir_bastetanian = positive
+        ir_dardanian = positive
+    }
     culture_groups = { ir_latin_g }
 }
 

@@ -7,6 +7,13 @@ ir_puntic = {
     language = ir_puntic_lang
     color = hsv { 0.00 0.00 0.10 }
     tags = { east_african_gfx african_gfx }
+    opinions = {
+        ir_ona = kindred
+        ir_aksumite = kindred
+        ir_lower_nubian = positive
+        ir_adabulian = positive
+        ir_hadhrami = positive
+    }
     culture_groups = { ir_aksumite_group_g }
 }
 
@@ -14,6 +21,13 @@ ir_aksumite = {
     language = ir_geez_lang
     color = hsv { 0.00 0.00 0.10 }
     tags = { east_african_gfx african_gfx }
+    opinions = {
+        ir_puntic = kindred
+        ir_athagaun = kindred
+        ir_lower_nubian = positive
+        ir_adabulian = positive
+        ir_adite = positive
+    }
     culture_groups = { ir_aksumite_group_g }
 }
 
@@ -21,6 +35,13 @@ ir_blemmyan = {
     language = ir_blemmye_lang
     color = hsv { 0.00 0.00 0.10 }
     tags = { east_african_gfx african_gfx }
+    opinions = {
+        ir_berberian = kindred
+        ir_blemmye = kindred
+        ir_meroitic = positive
+        ir_midobian = positive
+        ir_minaean = positive
+    }
     culture_groups = { ir_aksumite_group_g }
 }
 
@@ -28,6 +49,13 @@ ir_blemmye = {
     language = ir_blemmye_lang
     color = hsv { 0.00 0.00 0.10 }
     tags = { east_african_gfx african_gfx }
+    opinions = {
+        ir_blemmyan = kindred
+        ir_daamoti = kindred
+        ir_napatan = positive
+        ir_moyan = positive
+        ir_qatabanian = positive
+    }
     culture_groups = { ir_aksumite_group_g }
 }
 
@@ -35,6 +63,13 @@ ir_daamoti = {
     language = ir_geez_lang
     color = hsv { 0.00 0.00 0.10 }
     tags = { east_african_gfx african_gfx }
+    opinions = {
+        ir_blemmye = kindred
+        ir_erythraean = kindred
+        ir_lower_nubian = positive
+        ir_nubian = positive
+        ir_samad = positive
+    }
     culture_groups = { ir_aksumite_group_g }
 }
 
@@ -42,6 +77,13 @@ ir_ona = {
     language = ir_geez_lang
     color = hsv { 0.00 0.00 0.10 }
     tags = { east_african_gfx african_gfx }
+    opinions = {
+        ir_erythraean = kindred
+        ir_puntic = kindred
+        ir_napatan = positive
+        ir_zankorian = positive
+        ir_adite = positive
+    }
     culture_groups = { ir_aksumite_group_g }
 }
 
@@ -49,6 +91,13 @@ ir_athagaun = {
     language = ir_geez_lang
     color = hsv { 0.00 0.00 0.10 }
     tags = { east_african_gfx african_gfx }
+    opinions = {
+        ir_aksumite = kindred
+        ir_avalitian = kindred
+        ir_meroitic = positive
+        ir_alutan = positive
+        ir_hadhrami = positive
+    }
     culture_groups = { ir_aksumite_group_g }
 }
 
@@ -56,6 +105,13 @@ ir_avalitian = {
     language = ir_puntic_lang
     color = hsv { 0.00 0.00 0.10 }
     tags = { east_african_gfx african_gfx }
+    opinions = {
+        ir_athagaun = kindred
+        ir_berberian = kindred
+        ir_napatan = positive
+        ir_boran = positive
+        ir_himjar = positive
+    }
     culture_groups = { ir_aksumite_group_g }
 }
 
@@ -63,6 +119,13 @@ ir_berberian = {
     language = ir_gaetulian_lang
     color = hsv { 0.00 0.00 0.10 }
     tags = { east_african_gfx african_gfx }
+    opinions = {
+        ir_avalitian = kindred
+        ir_blemmyan = kindred
+        ir_lower_nubian = positive
+        ir_kumuzan = positive
+        ir_kindite = positive
+    }
     culture_groups = { ir_aksumite_group_g }
 }
 
@@ -70,6 +133,13 @@ ir_erythraean = {
     language = ir_puntic_lang
     color = hsv { 0.00 0.00 0.10 }
     tags = { east_african_gfx african_gfx }
+    opinions = {
+        ir_daamoti = kindred
+        ir_ona = kindred
+        ir_meroitic = positive
+        ir_rhizophagian = positive
+        ir_sheban = positive
+    }
     culture_groups = { ir_aksumite_group_g }
 }
 

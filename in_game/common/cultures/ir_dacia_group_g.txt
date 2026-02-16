@@ -7,6 +7,10 @@ ir_dacian = {
     language = ir_dacian_lang
     color = hsv { 0.00 0.50 1.00 }
     tags = { romanian_gfx eastern_european_gfx european_gfx }
+    opinions = {
+        ir_costoboci = kindred
+        ir_getian = kindred
+    }
     culture_groups = { ir_dacia_group_g }
 }
 
@@ -14,6 +18,10 @@ ir_getian = {
     language = ir_dacian_lang
     color = hsv { 0.00 0.50 1.00 }
     tags = { romanian_gfx eastern_european_gfx european_gfx }
+    opinions = {
+        ir_dacian = kindred
+        ir_harpii = kindred
+    }
     culture_groups = { ir_dacia_group_g }
 }
 
@@ -21,6 +29,10 @@ ir_harpii = {
     language = ir_dacian_lang
     color = hsv { 0.00 0.50 1.00 }
     tags = { romanian_gfx eastern_european_gfx european_gfx }
+    opinions = {
+        ir_getian = kindred
+        ir_ratacensi = kindred
+    }
     culture_groups = { ir_dacia_group_g }
 }
 
@@ -28,6 +40,10 @@ ir_costoboci = {
     language = ir_dacian_lang
     color = hsv { 0.00 0.50 1.00 }
     tags = { romanian_gfx eastern_european_gfx european_gfx }
+    opinions = {
+        ir_caucoensi = kindred
+        ir_dacian = kindred
+    }
     culture_groups = { ir_dacia_group_g }
 }
 
@@ -35,6 +51,10 @@ ir_buridavensi = {
     language = ir_dacian_lang
     color = hsv { 0.00 0.50 1.00 }
     tags = { romanian_gfx eastern_european_gfx european_gfx }
+    opinions = {
+        ir_biephi = kindred
+        ir_caucoensi = kindred
+    }
     culture_groups = { ir_dacia_group_g }
 }
 
@@ -42,6 +62,10 @@ ir_caucoensi = {
     language = ir_dacian_lang
     color = hsv { 0.00 0.50 1.00 }
     tags = { romanian_gfx eastern_european_gfx european_gfx }
+    opinions = {
+        ir_buridavensi = kindred
+        ir_costoboci = kindred
+    }
     culture_groups = { ir_dacia_group_g }
 }
 
@@ -49,6 +73,10 @@ ir_ratacensi = {
     language = ir_dacian_lang
     color = hsv { 0.00 0.50 1.00 }
     tags = { romanian_gfx eastern_european_gfx european_gfx }
+    opinions = {
+        ir_harpii = kindred
+        ir_biephi = kindred
+    }
     culture_groups = { ir_dacia_group_g }
 }
 
@@ -56,6 +84,10 @@ ir_biephi = {
     language = ir_dacian_lang
     color = hsv { 0.00 0.50 1.00 }
     tags = { romanian_gfx eastern_european_gfx european_gfx }
+    opinions = {
+        ir_ratacensi = kindred
+        ir_buridavensi = kindred
+    }
     culture_groups = { ir_dacia_group_g }
 }
 

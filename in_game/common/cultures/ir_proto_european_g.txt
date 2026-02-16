@@ -7,6 +7,14 @@ ir_nuragic = {
     language = ir_proto_european_lang
     color = hsv { 0.20 0.25 0.50 }
     tags = { western_european_gfx european_gfx }
+    opinions = {
+        ir_corsian = kindred
+        ir_talaiotic = kindred
+        ir_budinian = positive
+        ir_bastarnae = positive
+        ir_derbiccan = positive
+        ir_cimmerian = positive
+    }
     culture_groups = { ir_proto_european_g }
 }
 
@@ -14,6 +22,14 @@ ir_corsian = {
     language = ir_proto_european_lang
     color = hsv { 0.20 0.25 0.50 }
     tags = { western_european_gfx european_gfx }
+    opinions = {
+        ir_talaiotic = kindred
+        ir_nuragic = kindred
+        ir_aestian = positive
+        ir_anglian = positive
+        ir_alani = positive
+        ir_agathyrsian = positive
+    }
     culture_groups = { ir_proto_european_g }
 }
 
@@ -21,6 +37,14 @@ ir_talaiotic = {
     language = ir_proto_european_lang
     color = hsv { 0.20 0.25 0.50 }
     tags = { western_european_gfx european_gfx }
+    opinions = {
+        ir_nuragic = kindred
+        ir_corsian = kindred
+        ir_chernolian = positive
+        ir_cimbrian = positive
+        ir_jurcan = positive
+        ir_gelonian = positive
+    }
     culture_groups = { ir_proto_european_g }
 }
 

@@ -7,6 +7,14 @@ ir_taulantian = {
     language = ir_illyrian_lang
     color = hsv { 0.55 0.90 0.50 }
     tags = { south_slavic_gfx romanian_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_pannonian = kindred
+        ir_abrian = kindred
+        ir_galatian = positive
+        ir_cypriot = positive
+        ir_etruscan = positive
+        ir_moesi = positive
+    }
     culture_groups = { ir_illyrian_group_g }
 }
 
@@ -14,6 +22,14 @@ ir_abrian = {
     language = ir_illyrian_lang
     color = hsv { 0.55 0.90 0.50 }
     tags = { south_slavic_gfx romanian_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_taulantian = kindred
+        ir_catari = kindred
+        ir_galatian = positive
+        ir_achaean = positive
+        ir_bruttian = positive
+        ir_bithynian = positive
+    }
     culture_groups = { ir_illyrian_group_g }
 }
 
@@ -21,6 +37,14 @@ ir_dardanian = {
     language = ir_illyrian_lang
     color = hsv { 0.55 0.90 0.50 }
     tags = { south_slavic_gfx romanian_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_catari = kindred
+        ir_deraemestian = kindred
+        ir_galatian = positive
+        ir_aeolian = positive
+        ir_histrian = positive
+        ir_moesi = positive
+    }
     culture_groups = { ir_illyrian_group_g }
 }
 
@@ -28,6 +52,14 @@ ir_greco_illyrian = {
     language = ir_illyrian_lang
     color = hsv { 0.55 0.90 0.50 }
     tags = { south_slavic_gfx romanian_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_deurian = kindred
+        ir_iapodian = kindred
+        ir_tylian = positive
+        ir_argolian = positive
+        ir_rhaetian = positive
+        ir_bithynian = positive
+    }
     culture_groups = { ir_illyrian_group_g }
 }
 
@@ -35,6 +67,14 @@ ir_liburnian = {
     language = ir_illyrian_lang
     color = hsv { 0.55 0.90 0.50 }
     tags = { south_slavic_gfx romanian_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_iapodian = kindred
+        ir_liburnian_culture = kindred
+        ir_tylian = positive
+        ir_boeotian = positive
+        ir_samnite = positive
+        ir_moesi = positive
+    }
     culture_groups = { ir_illyrian_group_g }
 }
 
@@ -42,6 +82,14 @@ ir_liburnian_culture = {
     language = ir_illyrian_lang
     color = hsv { 0.55 0.90 0.50 }
     tags = { south_slavic_gfx romanian_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_liburnian = kindred
+        ir_messapian = kindred
+        ir_galatian = positive
+        ir_bosporan = positive
+        ir_siculian = positive
+        ir_odrysi = positive
+    }
     culture_groups = { ir_illyrian_group_g }
 }
 
@@ -49,6 +97,14 @@ ir_catari = {
     language = ir_illyrian_lang
     color = hsv { 0.55 0.90 0.50 }
     tags = { south_slavic_gfx romanian_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_abrian = kindred
+        ir_dardanian = kindred
+        ir_tylian = positive
+        ir_aegean = positive
+        ir_etruscan = positive
+        ir_mariandynian = positive
+    }
     culture_groups = { ir_illyrian_group_g }
 }
 
@@ -56,6 +112,14 @@ ir_deraemestian = {
     language = ir_illyrian_lang
     color = hsv { 0.55 0.90 0.50 }
     tags = { south_slavic_gfx romanian_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_dardanian = kindred
+        ir_deurian = kindred
+        ir_tylian = positive
+        ir_aetolian = positive
+        ir_ligurian = positive
+        ir_odrysi = positive
+    }
     culture_groups = { ir_illyrian_group_g }
 }
 
@@ -63,6 +127,14 @@ ir_deurian = {
     language = ir_illyrian_lang
     color = hsv { 0.55 0.90 0.50 }
     tags = { south_slavic_gfx romanian_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_deraemestian = kindred
+        ir_greco_illyrian = kindred
+        ir_galatian = positive
+        ir_arcadian = positive
+        ir_lucanian = positive
+        ir_triballoi = positive
+    }
     culture_groups = { ir_illyrian_group_g }
 }
 
@@ -70,6 +142,14 @@ ir_messapian = {
     language = ir_messapic_lang
     color = hsv { 0.55 0.90 0.50 }
     tags = { south_slavic_gfx romanian_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_liburnian_culture = kindred
+        ir_paeonian = kindred
+        ir_tylian = positive
+        ir_carian = positive
+        ir_umbrian = positive
+        ir_triballoi = positive
+    }
     culture_groups = { ir_illyrian_group_g }
 }
 
@@ -77,6 +157,14 @@ ir_paeonian = {
     language = ir_illyrian_lang
     color = hsv { 0.55 0.90 0.50 }
     tags = { south_slavic_gfx romanian_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_messapian = kindred
+        ir_pannonian = kindred
+        ir_galatian = positive
+        ir_ciliciote = positive
+        ir_venetic = positive
+        ir_bithynian = positive
+    }
     culture_groups = { ir_illyrian_group_g }
 }
 
@@ -84,6 +172,14 @@ ir_pannonian = {
     language = ir_illyrian_lang
     color = hsv { 0.55 0.90 0.50 }
     tags = { south_slavic_gfx romanian_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_paeonian = kindred
+        ir_taulantian = kindred
+        ir_tylian = positive
+        ir_cretan = positive
+        ir_bruttian = positive
+        ir_mariandynian = positive
+    }
     culture_groups = { ir_illyrian_group_g }
 }
 
@@ -91,6 +187,14 @@ ir_iapodian = {
     language = ir_illyrian_lang
     color = hsv { 0.55 0.90 0.50 }
     tags = { south_slavic_gfx romanian_gfx mediterranean_gfx european_gfx }
+    opinions = {
+        ir_greco_illyrian = kindred
+        ir_liburnian = kindred
+        ir_galatian = positive
+        ir_athenian = positive
+        ir_roman = positive
+        ir_mariandynian = positive
+    }
     culture_groups = { ir_illyrian_group_g }
 }
 

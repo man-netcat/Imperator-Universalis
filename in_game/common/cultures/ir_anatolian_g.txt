@@ -7,6 +7,13 @@ ir_cappadocian = {
     language = ir_cappadocian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
+    opinions = {
+        ir_cabalian = kindred
+        ir_cataonian = kindred
+        ir_caspian = positive
+        ir_aeolian = positive
+        ir_carmanian = positive
+    }
     culture_groups = { ir_anatolian_g }
 }
 
@@ -14,6 +21,13 @@ ir_phrygian = {
     language = ir_phrygian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
+    opinions = {
+        ir_paphlagonian = kindred
+        ir_pisidian = kindred
+        ir_gelaean = positive
+        ir_euboean = positive
+        ir_uxian = positive
+    }
     culture_groups = { ir_anatolian_g }
 }
 
@@ -21,6 +35,13 @@ ir_lycaonian = {
     language = ir_cappadocian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
+    opinions = {
+        ir_lalasian = kindred
+        ir_lycian = kindred
+        ir_maeotian = positive
+        ir_bosporan = positive
+        ir_pactyan = positive
+    }
     culture_groups = { ir_anatolian_g }
 }
 
@@ -28,6 +49,13 @@ ir_isaurian = {
     language = ir_isaurian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
+    opinions = {
+        ir_cilician = kindred
+        ir_kennataian = kindred
+        ir_ibero = positive
+        ir_argolian = positive
+        ir_gedrosian = positive
+    }
     culture_groups = { ir_anatolian_g }
 }
 
@@ -35,6 +63,13 @@ ir_paphlagonian = {
     language = ir_paphlagonian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
+    opinions = {
+        ir_oroandian = kindred
+        ir_phrygian = kindred
+        ir_colchian = positive
+        ir_epirote = positive
+        ir_utian = positive
+    }
     culture_groups = { ir_anatolian_g }
 }
 
@@ -42,6 +77,13 @@ ir_lycian = {
     language = ir_lycian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
+    opinions = {
+        ir_lycaonian = kindred
+        ir_lydian = kindred
+        ir_sasperian = positive
+        ir_carian = positive
+        ir_parecanian = positive
+    }
     culture_groups = { ir_anatolian_g }
 }
 
@@ -49,6 +91,13 @@ ir_mysian = {
     language = ir_mysian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
+    opinions = {
+        ir_morimenian = kindred
+        ir_oroandian = kindred
+        ir_albanian = positive
+        ir_cyrenaican = positive
+        ir_sarangian = positive
+    }
     culture_groups = { ir_anatolian_g }
 }
 
@@ -56,6 +105,13 @@ ir_cilician = {
     language = ir_cilician_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
+    opinions = {
+        ir_cataonian = kindred
+        ir_isaurian = kindred
+        ir_gelaean = positive
+        ir_arcadian = positive
+        ir_elamite = positive
+    }
     culture_groups = { ir_anatolian_g }
 }
 
@@ -63,6 +119,13 @@ ir_lydian = {
     language = ir_lydian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
+    opinions = {
+        ir_lycian = kindred
+        ir_milyadian = kindred
+        ir_sindi = positive
+        ir_ciliciote = positive
+        ir_parthian = positive
+    }
     culture_groups = { ir_anatolian_g }
 }
 
@@ -70,6 +133,13 @@ ir_armenian = {
     language = ir_armenian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { caucasian_gfx middle_east_gfx european_gfx }
+    opinions = {
+        ir_pisidian = kindred
+        ir_cabalian = kindred
+        ir_abasgoi = positive
+        ir_achaean = positive
+        ir_amardian = positive
+    }
     culture_groups = { ir_anatolian_g }
 }
 
@@ -77,6 +147,13 @@ ir_pisidian = {
     language = ir_pisidian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
+    opinions = {
+        ir_phrygian = kindred
+        ir_armenian = kindred
+        ir_ibero = positive
+        ir_greco_indian = positive
+        ir_amardian = positive
+    }
     culture_groups = { ir_anatolian_g }
 }
 
@@ -84,6 +161,13 @@ ir_milyadian = {
     language = ir_cabalian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
+    opinions = {
+        ir_lydian = kindred
+        ir_morimenian = kindred
+        ir_suani = positive
+        ir_cretan = positive
+        ir_pasargadi = positive
+    }
     culture_groups = { ir_anatolian_g }
 }
 
@@ -91,6 +175,13 @@ ir_cataonian = {
     language = ir_cappadocian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
+    opinions = {
+        ir_cappadocian = kindred
+        ir_cilician = kindred
+        ir_colchian = positive
+        ir_aetolian = positive
+        ir_cossian = positive
+    }
     culture_groups = { ir_anatolian_g }
 }
 
@@ -98,6 +189,13 @@ ir_lalasian = {
     language = ir_cabalian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
+    opinions = {
+        ir_kennataian = kindred
+        ir_lycaonian = kindred
+        ir_legian = positive
+        ir_boeotian = positive
+        ir_median = positive
+    }
     culture_groups = { ir_anatolian_g }
 }
 
@@ -105,6 +203,13 @@ ir_cabalian = {
     language = ir_cabalian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
+    opinions = {
+        ir_armenian = kindred
+        ir_cappadocian = kindred
+        ir_albanian = positive
+        ir_aegean = positive
+        ir_cadusian = positive
+    }
     culture_groups = { ir_anatolian_g }
 }
 
@@ -112,6 +217,13 @@ ir_oroandian = {
     language = ir_cabalian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
+    opinions = {
+        ir_mysian = kindred
+        ir_paphlagonian = kindred
+        ir_caspian = positive
+        ir_enetoian = positive
+        ir_sattagydian = positive
+    }
     culture_groups = { ir_anatolian_g }
 }
 
@@ -119,6 +231,13 @@ ir_morimenian = {
     language = ir_cabalian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
+    opinions = {
+        ir_milyadian = kindred
+        ir_mysian = kindred
+        ir_abasgoi = positive
+        ir_cypriot = positive
+        ir_sagartian = positive
+    }
     culture_groups = { ir_anatolian_g }
 }
 
@@ -126,6 +245,13 @@ ir_kennataian = {
     language = ir_cabalian_lang
     color = hsv { 0.32 0.45 0.90 }
     tags = { turkish_gfx east_mediterranean_gfx mediterranean_gfx middle_east_gfx }
+    opinions = {
+        ir_isaurian = kindred
+        ir_lalasian = kindred
+        ir_lazi = positive
+        ir_athenian = positive
+        ir_hyrcanian = positive
+    }
     culture_groups = { ir_anatolian_g }
 }
 

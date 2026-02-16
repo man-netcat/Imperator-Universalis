@@ -7,6 +7,13 @@ ir_kharesmian = {
     language = ir_sogdian_lang
     color = hsv { 0.20 0.50 0.80 }
     tags = { central_asian_gfx turkic_gfx mongol_gfx east_asian_gfx }
+    opinions = {
+        ir_jurcan = kindred
+        ir_khotanese = kindred
+        ir_cossian = positive
+        ir_corsian = positive
+        ir_sarmatian = positive
+    }
     culture_groups = { ir_scythia_g }
 }
 
@@ -14,6 +21,14 @@ ir_sakan = {
     language = ir_saka_lang
     color = hsv { 0.20 0.50 0.80 }
     tags = { central_asian_gfx turkic_gfx mongol_gfx east_asian_gfx }
+    opinions = {
+        ir_massagetaean = kindred
+        ir_alani = kindred
+        ir_hyrcanian = positive
+        ir_corsian = positive
+        ir_thyssagetaen = positive
+        ir_parthian = positive
+    }
     culture_groups = { ir_scythia_g }
 }
 
@@ -21,6 +36,13 @@ ir_khotanese = {
     language = ir_khotanese_lang
     color = hsv { 0.20 0.50 0.80 }
     tags = { central_asian_gfx turkic_gfx mongol_gfx east_asian_gfx }
+    opinions = {
+        ir_kharesmian = kindred
+        ir_massagetaean = kindred
+        ir_elamite = positive
+        ir_nuragic = positive
+        ir_scythian = positive
+    }
     culture_groups = { ir_scythia_g }
 }
 
@@ -28,6 +50,13 @@ ir_derbiccan = {
     language = ir_massagetaean_lang
     color = hsv { 0.20 0.50 0.80 }
     tags = { central_asian_gfx turkic_gfx mongol_gfx east_asian_gfx }
+    opinions = {
+        ir_alani = kindred
+        ir_jurcan = kindred
+        ir_cadusian = positive
+        ir_nuragic = positive
+        ir_cimmerian = positive
+    }
     culture_groups = { ir_scythia_g }
 }
 
@@ -35,6 +64,13 @@ ir_alani = {
     language = ir_alanic_lang
     color = hsv { 0.20 0.50 0.80 }
     tags = { central_asian_gfx turkic_gfx mongol_gfx east_asian_gfx }
+    opinions = {
+        ir_sakan = kindred
+        ir_derbiccan = kindred
+        ir_amardian = positive
+        ir_corsian = positive
+        ir_agathyrsian = positive
+    }
     culture_groups = { ir_scythia_g }
 }
 
@@ -42,6 +78,13 @@ ir_jurcan = {
     language = ir_scythian_lang
     color = hsv { 0.20 0.50 0.80 }
     tags = { central_asian_gfx turkic_gfx mongol_gfx east_asian_gfx }
+    opinions = {
+        ir_derbiccan = kindred
+        ir_kharesmian = kindred
+        ir_carmanian = positive
+        ir_talaiotic = positive
+        ir_gelonian = positive
+    }
     culture_groups = { ir_scythia_g }
 }
 
@@ -49,6 +92,13 @@ ir_massagetaean = {
     language = ir_massagetaean_lang
     color = hsv { 0.20 0.50 0.80 }
     tags = { central_asian_gfx turkic_gfx mongol_gfx east_asian_gfx }
+    opinions = {
+        ir_khotanese = kindred
+        ir_sakan = kindred
+        ir_gedrosian = positive
+        ir_talaiotic = positive
+        ir_siraci = positive
+    }
     culture_groups = { ir_scythia_g }
 }
 
