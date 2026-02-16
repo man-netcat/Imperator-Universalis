@@ -1,0 +1,54 @@
+building	location	assigned_tag	expected_owner	status	rationale
+castle	alexandria	EGY	EGY	ok	Ptolemaic capital and premier naval base of Egypt.
+castle	carthago	CAR	CAR	ok	Carthaginian imperial capital and western Mediterranean war hub.
+castle	roma	ROM	ROM	ok	Roman political and military center in central Italy.
+castle	pella_0	MAC	MAC	ok	Macedonian royal center and staging ground in Greece.
+castle	lysimacheia	TRE	TRE	ok	Thracian choke-point controlling Hellespont approaches.
+castle	antigoneia	PRY	PRY	ok	Early Seleucid Syrian stronghold in the successor wars context.
+castle	athens	ATH	ATH	ok	Strategic Aegean political and naval stronghold.
+castle	thebes	THE	THE	ok	Boeotian strategic center restored in the late 4th century BC.
+castle	korinthos	KOR	KOR	ok	Isthmus fortress-city controlling Peloponnesian land access.
+castle	amphipolis	MAC	MAC	ok	Macedonian treasury and military base on the Strymon corridor.
+castle	chalcis	BOE	BOE	ok	Euboean strait choke-point controlling central Greek sea lanes.
+castle	byzantion	BYZ	BYZ	ok	Bosporus gate between Aegean and Black Sea.
+castle	jerusalem	JUD	JUD	ok	Levantine hill stronghold and regional command node.
+castle	gaza	EGY	EGY	ok	Egypt-Levant gateway fortress controlling the southern coastal corridor.
+castle	pelusium	EGY	EGY	ok	Eastern gate of Egypt and primary Sinai invasion choke point.
+castle	damascus	PRY	PRY	ok	Major inland Syrian capital and operational hub of southern Syria.
+castle	tarsus	PRY	PRY	ok	Strategic Cilician center controlling passes between Anatolia and Syria.
+castle	tyrus	TYE	TYE	ok	Primary Levantine fortress-port with island-city defenses.
+castle	pergamon	MIT	MIT	ok	Naturally defensible acropolis fortress in western Anatolia.
+castle	ephesos	ION	ION	ok	Major fortified Ionian harbor with regional military value.
+castle	miletos	MLO	MLO	ok	Walled Ionian city anchoring Maeander approaches.
+castle	halikarnassos	HKS	HKS	ok	Strongly fortified Carian center and major coastal bastion.
+castle	persepolis	PES	PES	ok	Major Persian heartland fortress-administration center.
+castle	ecbatana	SEL	SEL	ok	Median highland capital and Iranian interior military center.
+castle	bactra	BAC	BAC	ok	Bactrian regional capital anchoring eastern frontier power.
+castle	babylon_1	SEL	SEL	ok	Mesopotamian imperial center controlling central river corridor.
+castle	seleucia_magna	SEL	SEL	ok	Seleucid royal capital on the Tigris from the early 3rd century BC.
+castle	shushan	SEL	SEL	ok	Seleucid administrative capital in Susiana linking Mesopotamia and Iran.
+castle	uruk	SEL	SEL	ok	Major enduring walled city of southern Mesopotamia.
+castle	pataliputra	MRY	MRY	ok	Mauryan imperial capital and principal recruitment base.
+castle	taxila	MRY	MRY	ok	Northwestern Indian hinge on transregional military routes.
+castle	sidon	SID	SID	ok	Phoenician coastal stronghold with strategic depth.
+castle	sparta	SPA	SPA	ok	Peloponnesian military center with persistent strategic value.
+castle	rhodos	RHO	RHO	ok	Fortified island naval bastion in the southeastern Aegean.
+castle	syracusae	SYR	SYR	ok	Dominant Sicilian fortress-city and fleet base.
+castle	sardis	SRD	SRD	ok	Western Anatolian inland stronghold guarding Lydia-Phrygia corridor.
+castle	massalia	MAS	MAS	ok	Western Greek fortified entrepot on Gallic frontier seas.
+stockade	memphis	EGY	EGY	ok	Major Nile military-administrative center secondary to Alexandria.
+stockade	capua	ROM	ROM	ok	Regional Campanian military center beneath the primary Roman core.
+stockade	zeugma	BMB	BMB	ok	Major Euphrates crossing point for army movement.
+stockade	nisibis_0	SEL	SEL	ok	Upper Mesopotamian frontier fortress on east-west route.
+stockade	petra	NBT	NBT	ok	Arabian caravan stronghold controlling desert communications.
+stockade	arbela	ADI	ADI	ok	Upper Mesopotamian operational base east of Tigris.
+stockade	charax	BPK	BPK	ok	Head-of-Gulf junction and river-mouth defense.
+stockade	sinope	SNP	SNP	ok	Black Sea promontory fort-port with regional projection.
+stockade	amisos	AMS	AMS	ok	Northern Anatolian military harbor and Pontic support base.
+stockade	ostia	ROM	ROM	ok	Rome's principal maritime gate requiring military garrisoning.
+stockade	messana	SYR	SYR	ok	Strait of Messina chokepoint for Italy-Sicily movement.
+stockade	neapolis	ROM	ROM	ok	Tyrrhenian military harbor supporting central Italian operations.
+stockade	argos	ARG	ARG	ok	Argolid fort node supporting Peloponnesian defense in depth.
+stockade	kyrene	CYR	CYR	ok	Cyrenaican regional military center between Egypt and Maghreb routes.
+stockade	madurai	PND	PND	ok	Deep south Indian military center in Tamil region.
+stockade	kajangala	MRY	MRY	ok	Mauryan eastern military corridor control point.

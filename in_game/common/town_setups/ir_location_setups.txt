@@ -1,642 +1,1537 @@
 # Auto-generated from Imperator buildings. Do not edit manually.
 
-ir_tpl_armory1 = {
-    armory = 1
-}
-
-ir_tpl_armory1_castle1 = {
-    armory = 1
-    castle = 1
-}
-
-ir_tpl_armory1_castle1_construction_center1_port1_minting_office2 = {
-    armory = 1
-    castle = 1
-    construction_center = 1
-    dock = 1
-    minting_office = 2
-}
-
-ir_tpl_armory1_castle1_mason1 = {
-    armory = 1
-    castle = 1
+ir_aparanta_city = {
+    granary = 2
+    marketplace = 1
     mason = 1
-}
-
-ir_tpl_armory1_castle1_port1 = {
-    armory = 1
-    castle = 1
-    dock = 1
-}
-
-ir_tpl_armory1_construction_center1_minting_office1 = {
-    armory = 1
-    construction_center = 1
-    minting_office = 1
-}
-
-ir_tpl_armory1_counting_house2_port2_minting_office3 = {
-    armory = 1
-    counting_house = 2
-    dock = 2
-    minting_office = 3
-}
-
-ir_tpl_armory1_port1 = {
-    armory = 1
-    dock = 1
-}
-
-ir_tpl_armory1_port1_granary1 = {
-    armory = 1
-    dock = 1
-    granary = 1
-}
-
-ir_tpl_armory1_port1_temple1 = {
-    armory = 1
-    dock = 1
     temple = 1
 }
 
-ir_tpl_armory2 = {
-    armory = 2
-}
-
-ir_tpl_armory2_castle1 = {
-    armory = 2
-    castle = 1
-}
-
-ir_tpl_armory2_counting_house1_market1_minting_office1 = {
-    armory = 2
-    counting_house = 1
+ir_aparanta_town = {
+    granary = 1
     marketplace = 1
-    minting_office = 1
+    mason = 1
+    temple = 1
 }
 
-ir_tpl_armory2_port1 = {
-    armory = 2
-    dock = 1
-}
-
-ir_tpl_barracks1 = {
-    barracks = 1
-}
-
-ir_tpl_barracks1_farming_village1 = {
-    barracks = 1
-    farming_village = 1
-}
-
-ir_tpl_barracks1_forest_village1 = {
-    barracks = 1
-    forest_village = 1
-}
-
-ir_tpl_barracks1_market_village1 = {
-    barracks = 1
-    market_village = 1
-}
-
-ir_tpl_barracks1_port1 = {
-    barracks = 1
-    dock = 1
-}
-
-ir_tpl_barracks1_port1_farming_village1 = {
-    barracks = 1
-    dock = 1
-    farming_village = 1
-}
-
-ir_tpl_barracks1_port1_fishing_village1 = {
-    barracks = 1
-    dock = 1
-    fishing_village = 1
-}
-
-ir_tpl_barracks1_port1_forest_village1 = {
-    barracks = 1
-    dock = 1
-    forest_village = 1
-}
-
-ir_tpl_barracks1_port1_market_village1 = {
-    barracks = 1
-    dock = 1
-    market_village = 1
-}
-
-ir_tpl_castle1 = {
-    castle = 1
-}
-
-ir_tpl_castle1_construction_center1_market_village1 = {
-    castle = 1
-    construction_center = 1
-    market_village = 1
-}
-
-ir_tpl_castle1_construction_center2 = {
-    castle = 1
-    construction_center = 2
-}
-
-ir_tpl_castle1_construction_center2_library1 = {
-    castle = 1
-    construction_center = 2
-    library = 1
-}
-
-ir_tpl_castle1_farming_village1 = {
-    castle = 1
-    farming_village = 1
-}
-
-ir_tpl_castle1_fishing_village1 = {
-    castle = 1
-    fishing_village = 1
-}
-
-ir_tpl_castle1_forest_village1 = {
-    castle = 1
-    forest_village = 1
-}
-
-ir_tpl_castle1_library1 = {
-    castle = 1
-    library = 1
-}
-
-ir_tpl_castle1_library4 = {
-    castle = 1
-    library = 4
-}
-
-ir_tpl_castle1_market1 = {
-    castle = 1
+ir_aparanta_town_02 = {
     marketplace = 1
 }
 
-ir_tpl_castle1_market_village1 = {
-    castle = 1
-    market_village = 1
+ir_aparanta_town_coastal = {
+    marketplace = 1
+    mason = 1
+    temple = 1
 }
 
-ir_tpl_castle1_minting_office1_tools_workshop1 = {
-    castle = 1
-    minting_office = 1
-    tools_workshop = 1
+ir_aparanta_town_coastal_02 = {
+    temple = 1
 }
 
-ir_tpl_castle1_port1 = {
-    castle = 1
-    dock = 1
+ir_aparanta_town_coastal_03 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
 }
 
-ir_tpl_castle1_port1_farming_village1 = {
-    castle = 1
-    dock = 1
-    farming_village = 1
+ir_arabian_city_coastal = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
 }
 
-ir_tpl_castle1_port1_farming_village1_library1 = {
-    castle = 1
-    dock = 1
-    farming_village = 1
-    library = 1
+ir_arabian_town = {
+    granary = 1
 }
 
-ir_tpl_castle1_port1_fishing_village1 = {
-    castle = 1
-    dock = 1
-    fishing_village = 1
+ir_arabian_town_02 = {
+    marketplace = 1
+    mason = 1
+    temple = 1
 }
 
-ir_tpl_castle1_port1_library1 = {
-    castle = 1
-    dock = 1
-    library = 1
-}
-
-ir_tpl_castle1_port1_library1_market1 = {
-    castle = 1
-    dock = 1
-    library = 1
+ir_arabian_town_03 = {
     marketplace = 1
 }
 
-ir_tpl_castle1_port1_market1 = {
-    castle = 1
-    dock = 1
+ir_arabian_town_04 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
+}
+
+ir_arabian_town_coastal = {
+    granary = 1
+}
+
+ir_arabian_town_coastal_02 = {
     marketplace = 1
 }
 
-ir_tpl_castle1_port1_market2 = {
-    castle = 1
-    dock = 1
+ir_arabian_town_coastal_03 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
+}
+
+ir_arabian_town_coastal_04 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_ariana_city = {
+    granary = 2
+    marketplace = 1
+    mason = 2
+    slave_market = 1
+    temple = 1
+}
+
+ir_ariana_city_02 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_ariana_town = {
+    marketplace = 1
+}
+
+ir_armenia_city = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_armenia_town = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_armorica_town_coastal = {
+    marketplace = 1
+}
+
+ir_asia_city = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_asia_city_coastal = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_asia_city_coastal_02 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
+}
+
+ir_asia_rural_settlement_coastal = {
+    market_village = 2
+}
+
+ir_asia_town = {
+    marketplace = 1
+}
+
+ir_asia_town_02 = {
+    temple = 1
+}
+
+ir_asia_town_coastal = {
+    marketplace = 1
+}
+
+ir_asia_town_coastal_02 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_asia_town_coastal_03 = {
+    temple = 1
+}
+
+ir_asia_town_coastal_04 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
+}
+
+ir_atlas_town_coastal = {
+    marketplace = 1
+}
+
+ir_avanti_city = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_avanti_city_02 = {
+    granary = 2
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_avanti_town = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_bactrian_city = {
+    granary = 2
+    marketplace = 1
+    mason = 2
+    slave_market = 1
+    temple = 1
+}
+
+ir_bactrian_city_02 = {
+    granary = 2
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
+}
+
+ir_bactrian_city_03 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_bactrian_town = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_bactrian_town_02 = {
+    marketplace = 1
+}
+
+ir_baetica_town = {
+    marketplace = 1
+}
+
+ir_baetica_town_02 = {
+    slave_market = 1
+}
+
+ir_baetica_town_03 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_baetica_town_04 = {
+    temple = 1
+}
+
+ir_baetica_town_coastal = {
+    granary = 1
+}
+
+ir_baetica_town_coastal_02 = {
+    marketplace = 1
+}
+
+ir_baetica_town_coastal_03 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
+}
+
+ir_baetica_town_coastal_04 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_baetica_town_coastal_05 = {
+    temple = 1
+}
+
+ir_bithynia_town = {
+    marketplace = 1
+}
+
+ir_bithynia_town_coastal = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_bithynia_town_coastal_02 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
+}
+
+ir_borysthenia_town = {
+    granary = 1
+}
+
+ir_britannic_town_coastal = {
+    marketplace = 1
+}
+
+ir_britannic_town_coastal_02 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_britannic_town_coastal_03 = {
+    granary = 1
+}
+
+ir_burma_town = {
+    marketplace = 1
+}
+
+ir_burma_town_02 = {
+    granary = 1
+}
+
+ir_burma_town_coastal = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_cappadocia_city = {
+    granary = 2
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_cappadocia_pontica_town = {
+    granary = 1
+}
+
+ir_cappadocia_pontica_town_02 = {
+    marketplace = 1
+}
+
+ir_cappadocia_pontica_town_coastal = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_cappadocia_town = {
+    granary = 1
+}
+
+ir_cappadocia_town_02 = {
+    marketplace = 1
+}
+
+ir_cappadocia_town_03 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_cilicia_city = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_cilicia_rural_settlement_coastal = {
+    market_village = 2
+}
+
+ir_cilicia_town = {
+    marketplace = 1
+}
+
+ir_cilicia_town_02 = {
+    temple = 1
+}
+
+ir_cilicia_town_coastal = {
+    temple = 1
+}
+
+ir_cilicia_town_coastal_02 = {
+    marketplace = 1
+}
+
+ir_cilicia_town_coastal_03 = {
+    slave_market = 1
+}
+
+ir_cilicia_town_coastal_04 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_colchis_town = {
+    slave_market = 1
+}
+
+ir_colchis_town_02 = {
+    marketplace = 1
+}
+
+ir_colchis_town_03 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_colchis_town_coastal = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_colchis_town_coastal_02 = {
+    marketplace = 1
+}
+
+ir_contestania_town = {
+    granary = 1
+}
+
+ir_contestania_town_coastal = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_contestania_town_coastal_02 = {
+    marketplace = 1
+}
+
+ir_cyrenaica_city = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
+}
+
+ir_cyrenaica_city_coastal = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_cyrenaica_town = {
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_cyrenaica_town_coastal = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
+}
+
+ir_cyrenaica_town_coastal_02 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_dacia_town = {
+    granary = 1
+}
+
+ir_dravida_town = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_dravida_town_02 = {
+    marketplace = 1
+}
+
+ir_dravida_town_coastal = {
+    marketplace = 1
+}
+
+ir_dravida_town_coastal_02 = {
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_dravida_town_coastal_03 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_egyptian_city = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_egyptian_city_02 = {
+    granary = 2
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_egyptian_city_coastal = {
+    granary = 2
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_egyptian_city_coastal_02 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
+}
+
+ir_egyptian_city_coastal_03 = {
+    granary = 2
+    marketplace = 1
+    mason = 2
+    slave_market = 1
+    temple = 1
+}
+
+ir_egyptian_city_coastal_04 = {
+    granary = 2
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
+}
+
+ir_egyptian_city_coastal_05 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_egyptian_rural_settlement_coastal = {
+    granary = 1
+}
+
+ir_fezzan_town = {
+    temple = 1
+}
+
+ir_fezzan_town_02 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
+}
+
+ir_fezzan_town_03 = {
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_galatia_town = {
+    marketplace = 1
+}
+
+ir_galatia_town_02 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_galatia_town_03 = {
+    temple = 1
+}
+
+ir_gaulish_city_coastal = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
+}
+
+ir_gaulish_town = {
+    granary = 1
+}
+
+ir_gaulish_town_02 = {
+    marketplace = 1
+}
+
+ir_gaulish_town_coastal = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_gaulish_town_coastal_02 = {
+    marketplace = 1
+}
+
+ir_gaulish_town_coastal_03 = {
+    temple = 1
+}
+
+ir_greek_city = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_greek_city_02 = {
+    granary = 2
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_greek_city_coastal = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
+}
+
+ir_greek_city_coastal_02 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_greek_city_coastal_03 = {
+    granary = 2
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_greek_city_coastal_04 = {
+    granary = 2
+    marketplace = 1
+    mason = 2
+    slave_market = 1
+    temple = 1
+}
+
+ir_greek_city_coastal_05 = {
+    granary = 1
     marketplace = 2
+    mason = 1
+    temple = 1
 }
 
-ir_tpl_castle1_port1_minting_office2 = {
-    castle = 1
-    dock = 1
-    minting_office = 2
+ir_greek_town = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
 }
 
-ir_tpl_castle1_port2_library1_minting_office1_university2 = {
-    castle = 1
-    dock = 2
-    library = 1
-    minting_office = 1
-    university = 2
-}
-
-ir_tpl_castle1_port3 = {
-    castle = 1
-    dock = 3
-}
-
-ir_tpl_castle1_port3_tools_workshop2 = {
-    castle = 1
-    dock = 3
-    tools_workshop = 2
-}
-
-ir_tpl_castle2_port1_library1 = {
-    castle = 2
-    dock = 1
-    library = 1
-}
-
-ir_tpl_castle2_port1_minting_office1 = {
-    castle = 2
-    dock = 1
-    minting_office = 1
-}
-
-ir_tpl_construction_center1 = {
-    construction_center = 1
-}
-
-ir_tpl_construction_center1_library1 = {
-    construction_center = 1
-    library = 1
-}
-
-ir_tpl_construction_center1_library2 = {
-    construction_center = 1
-    library = 2
-}
-
-ir_tpl_construction_center1_library2_market1 = {
-    construction_center = 1
-    library = 2
+ir_greek_town_02 = {
     marketplace = 1
 }
 
-ir_tpl_construction_center1_library5 = {
-    construction_center = 1
-    library = 5
+ir_greek_town_coastal = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
 }
 
-ir_tpl_construction_center1_port1 = {
-    construction_center = 1
-    dock = 1
+ir_greek_town_coastal_02 = {
+    temple = 1
 }
 
-ir_tpl_construction_center1_port1_library5 = {
-    construction_center = 1
-    dock = 1
-    library = 5
-}
-
-ir_tpl_construction_center2 = {
-    construction_center = 2
-}
-
-ir_tpl_construction_center2_library2 = {
-    construction_center = 2
-    library = 2
-}
-
-ir_tpl_construction_center2_library7 = {
-    construction_center = 2
-    library = 7
-}
-
-ir_tpl_construction_center2_market1 = {
-    construction_center = 2
+ir_greek_town_coastal_03 = {
     marketplace = 1
 }
 
-ir_tpl_construction_center2_market1_minting_office2 = {
-    construction_center = 2
+ir_himalayan_town = {
     marketplace = 1
-    minting_office = 2
 }
 
-ir_tpl_construction_center2_market2_minting_office2 = {
-    construction_center = 2
+ir_himalayan_town_02 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
+}
+
+ir_himalayan_town_03 = {
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_himalayan_town_04 = {
+    temple = 1
+}
+
+ir_illyrian_town_coastal = {
+    marketplace = 1
+}
+
+ir_illyrian_town_coastal_02 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_indian_city = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_indian_city_02 = {
+    granary = 2
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_indian_town = {
+    marketplace = 1
+}
+
+ir_indian_town_02 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_italic_city = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_italic_city_coastal = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_italic_city_coastal_02 = {
+    granary = 1
     marketplace = 2
-    minting_office = 2
+    mason = 1
+    temple = 1
 }
 
-ir_tpl_construction_center2_port1 = {
-    construction_center = 2
-    dock = 1
+ir_italic_city_coastal_03 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
 }
 
-ir_tpl_construction_center2_port1_library2 = {
-    construction_center = 2
-    dock = 1
-    library = 2
+ir_italic_city_coastal_04 = {
+    granary = 2
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
 }
 
-ir_tpl_construction_center2_port1_library2_minting_office1 = {
-    construction_center = 2
-    dock = 1
-    library = 2
-    minting_office = 1
+ir_italic_town = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
 }
 
-ir_tpl_construction_center2_port3_library2_market2 = {
-    construction_center = 2
-    dock = 3
-    library = 2
+ir_italic_town_02 = {
+    marketplace = 1
+}
+
+ir_italic_town_coastal = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_italic_town_coastal_02 = {
+    marketplace = 1
+}
+
+ir_karnata_town = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_karnata_town_02 = {
+    marketplace = 1
+}
+
+ir_karnata_town_coastal = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_karnata_town_coastal_02 = {
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_karnata_town_coastal_03 = {
+    marketplace = 1
+}
+
+ir_madhyadesa_city = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_madhyadesa_city_02 = {
+    granary = 2
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_madhyadesa_town = {
+    marketplace = 1
+}
+
+ir_madhyadesa_town_02 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_magna_graecia_city_coastal = {
+    granary = 2
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_magna_graecia_city_coastal_02 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
+}
+
+ir_magna_graecia_city_coastal_03 = {
+    granary = 1
     marketplace = 2
+    mason = 1
+    temple = 1
 }
 
-ir_tpl_construction_center3 = {
-    construction_center = 3
-}
-
-ir_tpl_construction_center3_library2 = {
-    construction_center = 3
-    library = 2
-}
-
-ir_tpl_construction_center3_library3 = {
-    construction_center = 3
-    library = 3
-}
-
-ir_tpl_construction_center3_library3_market1 = {
-    construction_center = 3
-    library = 3
-    marketplace = 1
-}
-
-ir_tpl_construction_center3_port1 = {
-    construction_center = 3
-    dock = 1
-}
-
-ir_tpl_construction_center4 = {
-    construction_center = 4
-}
-
-ir_tpl_counting_house1 = {
-    counting_house = 1
-}
-
-ir_tpl_counting_house1_granary1_library1_market1_minting_office1 = {
-    counting_house = 1
+ir_magna_graecia_city_coastal_04 = {
     granary = 1
-    library = 1
     marketplace = 1
-    minting_office = 1
+    mason = 1
+    temple = 1
 }
 
-ir_tpl_counting_house1_minting_office2 = {
-    counting_house = 1
-    minting_office = 2
+ir_magna_graecia_town = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
 }
 
-ir_tpl_counting_house1_port2_library1_market1 = {
-    counting_house = 1
-    dock = 2
-    library = 1
+ir_magna_graecia_town_02 = {
+    temple = 1
+}
+
+ir_magna_graecia_town_coastal = {
     marketplace = 1
 }
 
-ir_tpl_counting_house1_port2_minting_office2 = {
-    counting_house = 1
-    dock = 2
-    minting_office = 2
+ir_magna_graecia_town_coastal_02 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
 }
 
-ir_tpl_counting_house1_port3_library3_market2 = {
-    counting_house = 1
-    dock = 3
-    library = 3
+ir_magna_graecia_town_coastal_03 = {
+    granary = 1
+}
+
+ir_magna_graecia_town_coastal_04 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
+}
+
+ir_maru_city = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_maru_city_02 = {
+    granary = 2
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_maru_city_coastal = {
+    granary = 2
+    marketplace = 1
+    mason = 2
+    slave_market = 1
+    temple = 1
+}
+
+ir_maru_town = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_maru_town_02 = {
+    marketplace = 1
+}
+
+ir_maru_town_coastal = {
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_maru_town_coastal_02 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_mauretainia_town_coastal = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_media_city = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
+}
+
+ir_media_city_02 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_media_city_03 = {
+    granary = 2
+    marketplace = 1
+    mason = 2
+    slave_market = 1
+    temple = 1
+}
+
+ir_media_town = {
+    marketplace = 1
+}
+
+ir_media_town_02 = {
+    temple = 1
+}
+
+ir_media_town_03 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_media_town_coastal = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_mesopotamian_city = {
+    granary = 2
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_mesopotamian_city_02 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_mesopotamian_city_03 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
+}
+
+ir_mesopotamian_town = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_mesopotamian_town_02 = {
+    temple = 1
+}
+
+ir_mesopotamian_town_03 = {
+    granary = 1
+}
+
+ir_mesopotamian_town_04 = {
+    marketplace = 1
+}
+
+ir_moesia_town_coastal = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
+}
+
+ir_moesia_town_coastal_02 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_nubian_town = {
+    marketplace = 1
+}
+
+ir_nubian_town_02 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_nubian_town_03 = {
+    slave_market = 1
+}
+
+ir_numidia_town = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_numidia_town_coastal = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_numidian_city_coastal = {
+    granary = 1
     marketplace = 2
-}
-
-ir_tpl_farming_village1 = {
-    farming_village = 1
-}
-
-ir_tpl_farming_village1_slave_market1 = {
-    farming_village = 1
-    slave_market = 1
-}
-
-ir_tpl_fishing_village1 = {
-    fishing_village = 1
-}
-
-ir_tpl_forest_village1 = {
-    forest_village = 1
-}
-
-ir_tpl_forest_village1_slave_market1 = {
-    forest_village = 1
-    slave_market = 1
-}
-
-ir_tpl_forest_village1_temple1 = {
-    forest_village = 1
+    mason = 1
     temple = 1
 }
 
-ir_tpl_granary1 = {
+ir_numidian_city_coastal_02 = {
+    granary = 2
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_numidian_city_coastal_03 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
+}
+
+ir_numidian_town = {
     granary = 1
 }
 
-ir_tpl_granary1_market1 = {
+ir_numidian_town_coastal = {
     granary = 1
     marketplace = 1
-}
-
-ir_tpl_library1 = {
-    library = 1
-}
-
-ir_tpl_library1_market_village1 = {
-    library = 1
-    market_village = 1
-}
-
-ir_tpl_library1_temple1 = {
-    library = 1
+    mason = 1
     temple = 1
 }
 
-ir_tpl_library2 = {
-    library = 2
-}
-
-ir_tpl_library2_market1 = {
-    library = 2
-    marketplace = 1
-}
-
-ir_tpl_library2_temple1 = {
-    library = 2
-    temple = 1
-}
-
-ir_tpl_library4 = {
-    library = 4
-}
-
-ir_tpl_library5 = {
-    library = 5
-}
-
-ir_tpl_market1 = {
-    marketplace = 1
-}
-
-ir_tpl_market1_minting_office1 = {
-    marketplace = 1
-    minting_office = 1
-}
-
-ir_tpl_market1_temple1 = {
-    marketplace = 1
-    temple = 1
-}
-
-ir_tpl_market_village1 = {
-    market_village = 1
-}
-
-ir_tpl_market_village1_slave_market1 = {
-    market_village = 1
-    slave_market = 1
-}
-
-ir_tpl_minting_office2 = {
-    minting_office = 2
-}
-
-ir_tpl_minting_office3 = {
-    minting_office = 3
-}
-
-ir_tpl_port1 = {
-    dock = 1
-}
-
-ir_tpl_port1_farming_village1 = {
-    dock = 1
-    farming_village = 1
-}
-
-ir_tpl_port1_fishing_village1 = {
-    dock = 1
-    fishing_village = 1
-}
-
-ir_tpl_port1_forest_village1 = {
-    dock = 1
-    forest_village = 1
-}
-
-ir_tpl_port1_forest_village1_slave_market1 = {
-    dock = 1
-    forest_village = 1
-    slave_market = 1
-}
-
-ir_tpl_port1_granary1_market1 = {
-    dock = 1
+ir_palestine_city = {
     granary = 1
     marketplace = 1
-}
-
-ir_tpl_port1_library1 = {
-    dock = 1
-    library = 1
-}
-
-ir_tpl_port1_library3 = {
-    dock = 1
-    library = 3
-}
-
-ir_tpl_port1_market1 = {
-    dock = 1
-    marketplace = 1
-}
-
-ir_tpl_port1_market_village1 = {
-    dock = 1
-    market_village = 1
-}
-
-ir_tpl_port1_market_village1_slave_market1 = {
-    dock = 1
-    market_village = 1
-    slave_market = 1
-}
-
-ir_tpl_port1_minting_office2 = {
-    dock = 1
-    minting_office = 2
-}
-
-ir_tpl_port1_temple1 = {
-    dock = 1
+    mason = 1
     temple = 1
 }
 
-ir_tpl_port1_university1 = {
-    dock = 1
-    university = 1
-}
-
-ir_tpl_port2_granary1_market1 = {
-    dock = 2
+ir_palestine_city_coastal = {
     granary = 1
     marketplace = 1
-}
-
-ir_tpl_port2_market1 = {
-    dock = 2
-    marketplace = 1
-}
-
-ir_tpl_port3_library2_market1_minting_office1 = {
-    dock = 3
-    library = 2
-    marketplace = 1
-    minting_office = 1
-}
-
-ir_tpl_port3_market1 = {
-    dock = 3
-    marketplace = 1
-}
-
-ir_tpl_port4_market1 = {
-    dock = 4
-    marketplace = 1
-}
-
-ir_tpl_temple1 = {
+    mason = 1
     temple = 1
+}
+
+ir_palestine_city_coastal_02 = {
+    granary = 1
+    marketplace = 2
+    mason = 1
+    temple = 1
+}
+
+ir_palestine_town = {
+    temple = 1
+}
+
+ir_palestine_town_02 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_palestine_town_03 = {
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_palestine_town_04 = {
+    marketplace = 1
+}
+
+ir_palestine_town_coastal = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_palestine_town_coastal_02 = {
+    marketplace = 1
+}
+
+ir_parthia_city = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_parthia_city_coastal = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_parthia_rural_settlement_coastal = {
+    granary = 1
+}
+
+ir_parthia_town = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_parthia_town_coastal = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_persis_city = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_persis_city_02 = {
+    granary = 2
+    marketplace = 1
+    mason = 2
+    slave_market = 1
+    temple = 1
+}
+
+ir_persis_city_coastal = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
+}
+
+ir_pracya_city = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_pracya_city_02 = {
+    granary = 2
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_pracya_town = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_pracya_town_02 = {
+    marketplace = 1
+}
+
+ir_pracya_town_coastal = {
+    granary = 1
+}
+
+ir_pracya_town_coastal_02 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_punt_town = {
+    marketplace = 1
+}
+
+ir_punt_town_02 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_punt_town_03 = {
+    granary = 1
+}
+
+ir_punt_town_04 = {
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
+}
+
+ir_punt_town_coastal = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_punt_town_coastal_02 = {
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_punt_town_coastal_03 = {
+    marketplace = 1
+}
+
+ir_punt_town_coastal_04 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
+}
+
+ir_rhaetia_town = {
+    marketplace = 1
+}
+
+ir_sakia_town = {
+    marketplace = 1
+}
+
+ir_scythian_town_coastal = {
+    marketplace = 1
+}
+
+ir_sogdiana_city = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_sogdiana_town = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_sogdiana_town_02 = {
+    marketplace = 1
+}
+
+ir_syria_city = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_syria_city_coastal = {
+    granary = 1
+    marketplace = 2
+    mason = 1
+    temple = 1
+}
+
+ir_syria_town = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_syria_town_02 = {
+    marketplace = 1
+}
+
+ir_syria_town_03 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
+}
+
+ir_syria_town_04 = {
+    temple = 1
+}
+
+ir_syria_town_coastal = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
+}
+
+ir_syria_town_coastal_02 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_tarraconensis_town = {
+    granary = 1
+}
+
+ir_tarraconensis_town_coastal = {
+    marketplace = 1
+}
+
+ir_tarraconensis_town_coastal_02 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
+}
+
+ir_tarraconensis_town_coastal_03 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_taurica_town = {
+    marketplace = 1
+}
+
+ir_taurica_town_coastal = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_taurica_town_coastal_02 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    slave_market = 1
+    temple = 1
+}
+
+ir_taurica_town_coastal_03 = {
+    marketplace = 1
+}
+
+ir_tibet_town = {
+    temple = 1
+}
+
+ir_tibet_town_02 = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_vindhyaprstha_town = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_vindhyaprstha_town_02 = {
+    marketplace = 1
+}
+
+ir_vindhyaprstha_town_03 = {
+    granary = 1
+}
+
+ir_vindhyaprstha_town_04 = {
+    temple = 1
+}
+
+ir_vindhyaprstha_town_coastal = {
+    granary = 1
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_vindhyaprstha_town_coastal_02 = {
+    marketplace = 1
+    mason = 1
+    temple = 1
+}
+
+ir_vindhyaprstha_town_coastal_03 = {
+    marketplace = 1
 }

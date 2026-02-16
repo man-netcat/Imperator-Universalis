@@ -1,0 +1,20 @@
+government = {
+	reforms = {
+		ir_spartan_monarchy
+	}
+
+	# Societal Values
+	centralization_vs_decentralization = 20
+	traditionalist_vs_innovative = -20
+	spiritualist_vs_humanist = -30
+	aristocracy_vs_plutocracy = -50
+	serfdom_vs_free_subjects = 20
+	mercantilism_vs_free_trade = -20
+	belligerent_vs_conciliatory = 70
+	quality_vs_quantity = 50
+	offensive_vs_defensive = 50
+	land_vs_naval = -50
+	capital_economy_vs_traditional_economy = 60
+	individualism_vs_communalism = -10
+	outward_vs_inward = 0
+}

@@ -1846,6 +1846,212 @@ def write_blocks_with_comments(
     return out_path
 
 
+
+_IR_CLASSICAL_CULTURE_GROUPS = {
+    "ir_hellenic_g",
+    "ir_latin_g",
+    "ir_anatolian_g",
+    "ir_illyrian_group_g",
+    "ir_thrace_group_g",
+    "ir_caucasian_g",
+}
+
+_IR_IRANIC_CULTURE_GROUPS = {
+    "ir_persia_g",
+    "ir_bactrian_g",
+    "ir_aryan_g",
+}
+
+_IR_INDIAN_CULTURE_GROUPS = {
+    "ir_indian_g",
+    "ir_pracyan_g",
+}
+
+_IR_MERCANTILE_CULTURE_GROUPS = {
+    "ir_east_levantine_g",
+    "ir_west_levantine_g",
+    "ir_south_levantine_g",
+    "ir_pu_g",
+    "ir_north_african_g",
+    "ir_numidian_g",
+    "ir_south_arabian_g",
+    "ir_fezzani_g",
+    "ir_aksumite_group_g",
+    "ir_meroitic_group_g",
+}
+
+_IR_FRONTIER_CULTURE_GROUPS = {
+    "ir_germanic_g",
+    "ir_britannic_g",
+    "ir_gaelic_g",
+    "ir_gallic_g",
+    "ir_belgae_group_g",
+    "ir_celt_iberia_g",
+    "ir_celto_pannonian_group_g",
+    "ir_dacia_group_g",
+    "ir_baltic_g",
+    "ir_proto_european_g",
+    "ir_scythia_g",
+    "ir_scythian_east_g",
+    "ir_finnic_group_g",
+    "ir_nilotic_group_g",
+    "ir_tibetan_g",
+    "ir_chinese_g",
+}
+
+
+def _ir_culture_bucket(culture_group_tag: str | None) -> str:
+    if culture_group_tag in _IR_CLASSICAL_CULTURE_GROUPS:
+        return "classical"
+    if culture_group_tag in _IR_IRANIC_CULTURE_GROUPS:
+        return "iranic"
+    if culture_group_tag in _IR_INDIAN_CULTURE_GROUPS:
+        return "indian"
+    if culture_group_tag in _IR_MERCANTILE_CULTURE_GROUPS:
+        return "mercantile"
+    if culture_group_tag in _IR_FRONTIER_CULTURE_GROUPS:
+        return "frontier"
+    return "general"
+
+
+def _ir_religion_bucket(religion_tag: str | None) -> str:
+    religion_group = RELIGION_GROUP_MAP.get(religion_tag or "", "ir_unknown_group")
+    if religion_group in {"ir_dharmic_group", "ir_buddhist_group"}:
+        return "dharmic"
+    if religion_group in {"ir_zoroastrian_group", "ir_indo_iranian_group"}:
+        return "iranian"
+    if religion_group == "ir_israelite_group":
+        return "abrahamic"
+    return "folk"
+
+
+def _government_template_profile(
+    government_type: str,
+    culture_group_tag: str | None,
+    religion_tag: str | None,
+) -> tuple[str, list[str], list[str]]:
+    culture_bucket = _ir_culture_bucket(culture_group_tag)
+    religion_bucket = _ir_religion_bucket(religion_tag)
+
+    template_name = f"ir_start_{government_type}_{religion_bucket}_{culture_bucket}"
+
+    base_privileges_by_government = {
+        "monarchy": [
+            "auxilium_et_consilium",
+            "nobles_land_rights",
+            "noble_marriage_rights",
+            "noble_fortification_licenses",
+            "clergy_literacy_rights",
+            "clerical_advisory_council",
+            "market_fairs",
+            "formal_guilds",
+            "building_roads_rights",
+            "allow_hunting",
+            "communal_lands",
+        ],
+        "republic": [
+            "nobles_land_rights",
+            "noble_fortification_licenses",
+            "commercial_advisory_council",
+            "burghers_land_rights",
+            "building_rights",
+            "trade_monopolies",
+            "formal_guilds",
+            "clergy_literacy_rights",
+            "clerical_advisory_council",
+            "peasants_allowed_weapons_privilege",
+            "peasants_free_peasantry",
+            "partial_yield",
+        ],
+        "theocracy": [
+            "nobles_land_rights",
+            "noble_leaders_only",
+            "noble_fortification_licenses",
+            "clergy_literacy_rights",
+            "clergy_enforced_unity",
+            "clergy_strengthen_faith",
+            "clerical_advisory_council",
+            "market_fairs",
+            "formal_guilds",
+            "building_roads_rights",
+            "allow_hunting",
+            "partial_yield",
+        ],
+        "tribe": [
+            "nobles_land_rights",
+            "noble_marriage_rights",
+            "clerical_advisory_council",
+            "clergy_enforced_unity",
+            "market_fairs",
+            "formal_guilds",
+            "building_roads_rights",
+            "allow_hunting",
+            "peasants_allowed_weapons_privilege",
+            "peasants_free_peasantry",
+            "peasant_owns_their_food",
+            "tribes_tribal_levies",
+            "tribes_allow_gatherings",
+        ],
+    }
+
+    religion_privileges = {
+        "dharmic": ["embellish_great_works_of_faith", "clergy_in_administration"],
+        "iranian": ["clergy_land_rights", "religious_diplomats"],
+        "abrahamic": ["clergy_enforced_unity"],
+        "folk": [],
+    }
+
+    culture_privileges = {
+        "classical": ["nobility_council"],
+        "iranic": ["primacy_of_nobility"],
+        "indian": ["land_of_commerce", "allow_trade_center_sponsorship"],
+        "mercantile": ["land_of_commerce", "sponsor_maritime_contracts"],
+        "frontier": ["peasants_allowed_weapons_privilege"],
+        "general": [],
+    }
+
+    # Keep reforms exclusive to government-specific templates (ir_<government>),
+    # and use ir_start_* templates only for privilege flavoring.
+    reforms: list[str] = []
+
+    privileges = list(base_privileges_by_government.get(government_type, []))
+    privileges.extend(religion_privileges[religion_bucket])
+    privileges.extend(culture_privileges[culture_bucket])
+
+    return template_name, reforms, _dedupe(privileges)
+
+
+def _write_country_government_templates(
+    template_profiles: dict[str, dict[str, list[str]]],
+) -> None:
+    templates_dir = iu_setup_templates
+    templates_dir.mkdir(parents=True, exist_ok=True)
+
+    for stale_path in sorted(templates_dir.glob("ir_start_*.txt")):
+        stale_path.unlink()
+        print_written("file", stale_path)
+
+    for template_name in sorted(template_profiles.keys()):
+        profile = template_profiles[template_name]
+        reforms = [str(v) for v in profile.get("reforms", []) if v not in (None, "")]
+        privileges = [
+            str(v) for v in profile.get("privileges", []) if v not in (None, "")
+        ]
+
+        government_lines: list[object] = []
+        if reforms:
+            government_lines.append(("reforms", reforms))
+        if privileges:
+            government_lines.append(("privilege", privileges))
+
+        if not government_lines:
+            continue
+
+        write_blocks(
+            templates_dir / f"{template_name}.txt",
+            [("government", government_lines)],
+        )
+
 def write_10_countries(
     ten_countries_data,
     country_data,
@@ -1873,6 +2079,9 @@ def write_10_countries(
             group_tag = group.get("tag")
             for culture in group.get("cultures", []):
                 culture_to_group[culture.get("tag")] = group_tag
+
+    country_template_profiles: dict[str, dict[str, list[str]]] = {}
+    template_canonical_by_signature: dict[tuple[tuple[str, ...], tuple[str, ...]], str] = {}
 
     # build province mapping if provided
     location_to_province = (
@@ -1961,12 +2170,53 @@ def write_10_countries(
         except Exception:
             ir_gov_key = None
 
+        culture_group_tag = culture_to_group.get(country.get("culture"))
+        template_name, template_reforms, template_privileges = _government_template_profile(
+            government_type,
+            culture_group_tag,
+            country.get("religion"),
+        )
+
+        template_signature = (
+            tuple(template_reforms),
+            tuple(template_privileges),
+        )
+        canonical_template_name = template_canonical_by_signature.get(template_signature)
+        if canonical_template_name is None:
+            canonical_template_name = template_name
+            template_canonical_by_signature[template_signature] = canonical_template_name
+
+        existing_template_profile = country_template_profiles.get(canonical_template_name)
+        if existing_template_profile is None:
+            country_template_profiles[canonical_template_name] = {
+                "reforms": list(template_reforms),
+                "privileges": list(template_privileges),
+            }
+        else:
+            existing_template_profile["reforms"] = _dedupe(
+                existing_template_profile.get("reforms", []) + template_reforms
+            )
+            existing_template_profile["privileges"] = _dedupe(
+                existing_template_profile.get("privileges", []) + template_privileges
+            )
+
+        raw_reforms = merged_government.get("reforms", [])
+        normalized_reforms = [
+            str(item) for item in ensure_list(raw_reforms) if item not in (None, "")
+        ]
         if ir_gov_key:
-            reform_id = f"ir_{ir_gov_key}"
-            raw = merged_government.get("reforms", [])
-            normalized = [str(item) for item in ensure_list(raw) if item not in (None, "")]
-            normalized.append(reform_id)
-            merged_government["reforms"] = _dedupe(normalized)
+            normalized_reforms.append(f"ir_{ir_gov_key}")
+        normalized_reforms.extend(template_reforms)
+        if normalized_reforms:
+            merged_government["reforms"] = _dedupe(normalized_reforms)
+
+        raw_privileges = merged_government.get("privilege", [])
+        normalized_privileges = [
+            str(item) for item in ensure_list(raw_privileges) if item not in (None, "")
+        ]
+        normalized_privileges.extend(template_privileges)
+        if normalized_privileges:
+            merged_government["privilege"] = _dedupe(normalized_privileges)
 
         merged["government"] = merged_government
 
@@ -1982,36 +2232,28 @@ def write_10_countries(
                 court_language = _language_to_dialect_id(court_language)
                 merged["court_language"] = court_language
 
-        # --- include societal values template based on IR government type ---
-        societal_template_keys = {
-            "aristocratic_monarchy",
-            "despotic_monarchy",
-            "stratocratic_monarchy",
-            "theocratic_monarchy",
-            "aristocratic_republic",
-            "democratic_republic",
-            "oligarchic_republic",
-            "plutocratic_republic",
-            "tribal_chiefdom",
-            "tribal_federation",
-            "tribal_kingdom",
-        }
-
         # --- includes (preserve all, normalize) ---
         raw_include = base.get("include", [])
-        include_items = raw_include if isinstance(raw_include, list) else [raw_include]
+        include_items_raw = raw_include if isinstance(raw_include, list) else [raw_include]
+        include_items = [
+            normalize_value(item)
+            for item in include_items_raw
+            if item not in (None, "") and str(item).strip()
+        ]
 
-        if "expl_imperator_rome" not in include_items:
-            include_items = ["expl_imperator_rome", *include_items]
+        special_templates: list[str] = []
+        if ir_gov_key:
+            special_templates.append(f"ir_{ir_gov_key}")
+        special_templates.append(canonical_template_name)
 
-        if ir_gov_key in societal_template_keys:
-            societal_template = f"ir_{ir_gov_key}"
-            if societal_template not in include_items:
-                include_items = ["expl_imperator_rome", societal_template] + [
-                    x for x in include_items if x != "expl_imperator_rome"
-                ]
-
-        merged["include"] = include_items
+        preserved = [
+            item
+            for item in include_items
+            if item != "expl_imperator_rome" and item not in special_templates
+        ]
+        merged["include"] = _dedupe(
+            ["expl_imperator_rome", *special_templates, *preserved]
+        )
 
         # --- simple defaults ---
         merged.setdefault("country_rank", "rank_county")
@@ -2071,6 +2313,8 @@ def write_10_countries(
 
     nested = ("countries", [("countries", blocks)])
     top_line = "current_age = age_1_traditions"
+
+    _write_country_government_templates(country_template_profiles)
 
     write_blocks_with_comments(
         iu_setup_start / "10_countries.txt",

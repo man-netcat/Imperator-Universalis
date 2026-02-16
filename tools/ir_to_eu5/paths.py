@@ -155,3 +155,4 @@ iu_prescripted_coa = (
 )
 iu_map_data = mod_root / "in_game" / "map_data"
 iu_setup_start = mod_root / "main_menu" / "setup" / "start"
+iu_setup_templates = mod_root / "main_menu" / "setup" / "templates"

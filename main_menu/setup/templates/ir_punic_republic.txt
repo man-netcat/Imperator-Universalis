@@ -1,20 +1,20 @@
 government = {
 	reforms = {
-		ir_plutocratic_republic
+		ir_punic_republic
 	}
 
 	# Societal Values
 	centralization_vs_decentralization = 60
 	traditionalist_vs_innovative = -20
 	spiritualist_vs_humanist = -40
-	aristocracy_vs_plutocracy = 50
-	serfdom_vs_free_subjects = -10
+	aristocracy_vs_plutocracy = 40
+	serfdom_vs_free_subjects = 0
 	mercantilism_vs_free_trade = 50
 	belligerent_vs_conciliatory = 30
 	quality_vs_quantity = -10
 	offensive_vs_defensive = -10
-	land_vs_naval = 20
-	capital_economy_vs_traditional_economy = 80
-	individualism_vs_communalism = 30
-	outward_vs_inward = 0
+	land_vs_naval = 40
+	capital_economy_vs_traditional_economy = 90
+	individualism_vs_communalism = 20
+	outward_vs_inward = 30
 }

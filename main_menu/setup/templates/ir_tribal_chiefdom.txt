@@ -1,4 +1,8 @@
 government = {
+	reforms = {
+		ir_tribal_chiefdom
+	}
+
 	# Societal Values
 	centralization_vs_decentralization = 70
 	traditionalist_vs_innovative = -60

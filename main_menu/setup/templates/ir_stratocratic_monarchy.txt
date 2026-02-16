@@ -1,4 +1,8 @@
 government = {
+	reforms = {
+		ir_stratocratic_monarchy
+	}
+
 	# Societal Values
 	centralization_vs_decentralization = 20
 	traditionalist_vs_innovative = -20

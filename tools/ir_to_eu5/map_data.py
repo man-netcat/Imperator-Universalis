@@ -1,4 +1,5 @@
 ﻿import csv
+import hashlib
 import math
 import re
 import shutil
@@ -1721,6 +1722,212 @@ def build_ir_building_mapping() -> dict[str, str]:
     return mapping
 
 
+def _eu5_allowed_buildings_from_ir() -> set[str]:
+    allowed: set[str] = set()
+    for mapped_key in build_ir_building_mapping().values():
+        key_str = str(mapped_key).strip()
+        if key_str:
+            allowed.add(key_str)
+    return allowed
+
+
+FORT_LIKE_BUILDINGS = {
+    "castle",
+    "stockade",
+    "provincial_garrison",
+    "fortress_granary",
+}
+
+# 304 BC building tuning profile: temper high EU5 template levels for the much earlier start.
+BUILDING_LEVEL_SCALE_304BC = {
+    "castle": 0.22,
+    "stockade": 0.25,
+    "dock": 0.55,
+    "granary": 0.70,
+    "marketplace": 0.68,
+    "mason": 0.64,
+    "temple": 0.70,
+    "slave_market": 0.62,
+}
+
+BUILDING_MAX_LEVEL_304BC = {
+    "castle": 1,
+    "stockade": 1,
+    "dock": 1,
+    "temple": 1,
+    "granary": 2,
+    "marketplace": 2,
+    "mason": 2,
+    "slave_market": 2,
+}
+
+# Extra cap scaling by building type after global map-scope scaling.
+BUILDING_CAP_SCALE_304BC = {
+    "castle": 0.62,
+    "stockade": 0.60,
+    "dock": 0.75,
+    "granary": 0.62,
+    "marketplace": 0.90,
+    "mason": 0.55,
+    "temple": 0.94,
+    "slave_market": 0.63,
+}
+
+# Additional 304 BC downscaling for direct fort assignments written to 07_cities_and_buildings.txt.
+DIRECT_FORT_SCALE_304BC = {
+    "castle": 0.18,
+    "stockade": 0.10,
+}
+
+# Prominent 304 BC fortified centers (manual-only assignment).
+PROMINENT_CASTLE_LOCATIONS_304BC = (
+    "alexandria",
+    "carthago",
+    "roma",
+    "pella_0",
+    "lysimacheia",
+    "antigoneia",
+    "athens",
+    "thebes",
+    "korinthos",
+    "amphipolis",
+    "chalcis",
+    "byzantion",
+    "jerusalem",
+    "gaza",
+    "pelusium",
+    "damascus",
+    "tarsus",
+    "tyrus",
+    "pergamon",
+    "ephesos",
+    "miletos",
+    "halikarnassos",
+    "persepolis",
+    "ecbatana",
+    "bactra",
+    "babylon_1",
+    "seleucia_magna",
+    "shushan",
+    "uruk",
+    "pataliputra",
+    "taxila",
+    "sidon",
+    "sparta",
+    "rhodos",
+    "syracusae",
+    "sardis",
+    "massalia",
+)
+
+PROMINENT_STOCKADE_LOCATIONS_304BC = (
+    "memphis",
+    "capua",
+    "zeugma",
+    "nisibis_0",
+    "petra",
+    "arbela",
+    "charax",
+    "sinope",
+    "amisos",
+    "ostia",
+    "messana",
+    "neapolis",
+    "argos",
+    "kyrene",
+    "madurai",
+    "kajangala",
+)
+
+CASTLE_RATIONALE_304BC = {
+    "alexandria": "Ptolemaic capital and premier naval base of Egypt.",
+    "carthago": "Carthaginian imperial capital and western Mediterranean war hub.",
+    "roma": "Roman political and military center in central Italy.",
+    "pella_0": "Macedonian royal center and staging ground in Greece.",
+    "lysimacheia": "Thracian choke-point controlling Hellespont approaches.",
+    "antigoneia": "Early Seleucid Syrian stronghold in the successor wars context.",
+    "athens": "Strategic Aegean political and naval stronghold.",
+    "thebes": "Boeotian strategic center restored in the late 4th century BC.",
+    "korinthos": "Isthmus fortress-city controlling Peloponnesian land access.",
+    "amphipolis": "Macedonian treasury and military base on the Strymon corridor.",
+    "chalcis": "Euboean strait choke-point controlling central Greek sea lanes.",
+    "byzantion": "Bosporus gate between Aegean and Black Sea.",
+    "jerusalem": "Levantine hill stronghold and regional command node.",
+    "gaza": "Egypt-Levant gateway fortress controlling the southern coastal corridor.",
+    "pelusium": "Eastern gate of Egypt and primary Sinai invasion choke point.",
+    "damascus": "Major inland Syrian capital and operational hub of southern Syria.",
+    "tarsus": "Strategic Cilician center controlling passes between Anatolia and Syria.",
+    "tyrus": "Primary Levantine fortress-port with island-city defenses.",
+    "pergamon": "Naturally defensible acropolis fortress in western Anatolia.",
+    "ephesos": "Major fortified Ionian harbor with regional military value.",
+    "miletos": "Walled Ionian city anchoring Maeander approaches.",
+    "halikarnassos": "Strongly fortified Carian center and major coastal bastion.",
+    "persepolis": "Major Persian heartland fortress-administration center.",
+    "ecbatana": "Median highland capital and Iranian interior military center.",
+    "bactra": "Bactrian regional capital anchoring eastern frontier power.",
+    "babylon_1": "Mesopotamian imperial center controlling central river corridor.",
+    "seleucia_magna": "Seleucid royal capital on the Tigris from the early 3rd century BC.",
+    "shushan": "Seleucid administrative capital in Susiana linking Mesopotamia and Iran.",
+    "uruk": "Major enduring walled city of southern Mesopotamia.",
+    "pataliputra": "Mauryan imperial capital and principal recruitment base.",
+    "taxila": "Northwestern Indian hinge on transregional military routes.",
+    "sidon": "Phoenician coastal stronghold with strategic depth.",
+    "sparta": "Peloponnesian military center with persistent strategic value.",
+    "rhodos": "Fortified island naval bastion in the southeastern Aegean.",
+    "syracusae": "Dominant Sicilian fortress-city and fleet base.",
+    "sardis": "Western Anatolian inland stronghold guarding Lydia-Phrygia corridor.",
+    "massalia": "Western Greek fortified entrepot on Gallic frontier seas.",
+}
+
+STOCKADE_RATIONALE_304BC = {
+    "memphis": "Major Nile military-administrative center secondary to Alexandria.",
+    "capua": "Regional Campanian military center beneath the primary Roman core.",
+    "zeugma": "Major Euphrates crossing point for army movement.",
+    "nisibis_0": "Upper Mesopotamian frontier fortress on east-west route.",
+    "petra": "Arabian caravan stronghold controlling desert communications.",
+    "arbela": "Upper Mesopotamian operational base east of Tigris.",
+    "charax": "Head-of-Gulf junction and river-mouth defense.",
+    "sinope": "Black Sea promontory fort-port with regional projection.",
+    "amisos": "Northern Anatolian military harbor and Pontic support base.",
+    "ostia": "Rome's principal maritime gate requiring military garrisoning.",
+    "messana": "Strait of Messina chokepoint for Italy-Sicily movement.",
+    "neapolis": "Tyrrhenian military harbor supporting central Italian operations.",
+    "argos": "Argolid fort node supporting Peloponnesian defense in depth.",
+    "kyrene": "Cyrenaican regional military center between Egypt and Maghreb routes.",
+    "madurai": "Deep south Indian military center in Tamil region.",
+    "kajangala": "Mauryan eastern military corridor control point.",
+}
+
+
+def _tune_building_level_304bc(building_key: str, level) -> int:
+    try:
+        parsed = int(level)
+    except Exception:
+        try:
+            parsed = int(str(level).strip())
+        except Exception:
+            parsed = 0
+    if parsed <= 0:
+        return 0
+
+    key = str(building_key)
+    scaled = int(round(parsed * float(BUILDING_LEVEL_SCALE_304BC.get(key, 0.65))))
+    if scaled <= 0:
+        scaled = 1
+
+    max_level = int(BUILDING_MAX_LEVEL_304BC.get(key, 2))
+    return max(0, min(max_level, scaled))
+
+
+def _tune_template_vector_304bc(buildings: dict[str, int]) -> dict[str, int]:
+    tuned: dict[str, int] = {}
+    for building_key, level in (buildings or {}).items():
+        tuned_level = _tune_building_level_304bc(str(building_key), level)
+        if tuned_level > 0:
+            tuned[str(building_key)] = tuned_level
+    return tuned
+
+
 FOOD_GOODS = {
     "wheat",
     "maize",
@@ -1871,8 +2078,6 @@ def build_ir_raw_materials(id_to_key: dict[int, str]) -> dict[str, str]:
             total = sum(weights)
             if total <= 0:
                 return candidates[0]
-            import hashlib
-
             digest = hashlib.sha256(seed_key.encode("utf-8")).digest()
             r = int.from_bytes(digest, "big") / (1 << (8 * len(digest)))
             threshold = r * total
@@ -2284,8 +2489,9 @@ def _template_name_from_signature(signature: tuple[tuple[str, int], ...]) -> str
 
     # Keep names readable but bounded for parser/UI stability.
     compact = "_".join(tokens[:5])
-    sig_hash = abs(hash(signature)) % (16**8)
-    return f"ir_tpl_{compact}_{sig_hash:08x}"
+    sig_text = "|".join(f"{key}:{level}" for key, level in signature)
+    sig_hash = hashlib.md5(sig_text.encode("utf-8")).hexdigest()[:8]
+    return f"ir_tpl_{compact}_{sig_hash}"
 
 
 def _dedupe_location_setup_templates(
@@ -2572,9 +2778,7 @@ def build_ir_location_ranks(
         if not raw_rank:
             return None
         rank = str(raw_rank).strip().lower()
-        if rank == "city":
-            return "town"
-        if rank == "metropolis":
+        if rank == "city" or "metropolis" in rank:
             return "town"
         if rank == "settlement":
             return None
@@ -2624,7 +2828,7 @@ def build_ir_rankable_locations(
         if not raw_rank:
             return False
         rank = str(raw_rank).strip().lower()
-        return rank in ("city", "metropolis")
+        return rank == "city" or "metropolis" in rank
 
     rankable: set[str] = set()
     for path in province_files:
@@ -3110,203 +3314,2068 @@ def _merge_main_setup_buildings(
         )
 
 
+
+
+def _tree_block(value):
+    if isinstance(value, (_pydt.Tree, dict)):
+        return value
+    if isinstance(value, list) and value and isinstance(value[0], (_pydt.Tree, dict)):
+        return value[0]
+    return None
+
+
+def _to_int(value) -> int:
+    if value is None:
+        return 0
+    if isinstance(value, list):
+        value = value[0] if value else 0
+    if isinstance(value, (int, float)):
+        return int(value)
+    try:
+        return int(str(value).strip())
+    except Exception:
+        return 0
+
+
+def _allocate_levels(locations: list[str], extra_levels: int) -> dict[str, int]:
+    allocation: dict[str, int] = {}
+    if not locations or extra_levels <= 0:
+        return allocation
+    idx = 0
+    while extra_levels > 0:
+        loc_key = locations[idx % len(locations)]
+        allocation[loc_key] = allocation.get(loc_key, 0) + 1
+        extra_levels -= 1
+        idx += 1
+    return allocation
+
+
+def _to_float(value, default: float = 0.0) -> float:
+    if value is None:
+        return default
+    if isinstance(value, list):
+        value = value[0] if value else default
+    if isinstance(value, (int, float)):
+        return float(value)
+    try:
+        return float(str(value).strip())
+    except Exception:
+        return default
+
+
+def _scalar_text(value) -> str | None:
+    if isinstance(value, list):
+        value = value[0] if value else None
+    if value is None:
+        return None
+    text = str(value).strip()
+    return text if text else None
+
+
+def _load_location_template_index(path: Path) -> dict[str, dict[str, str]]:
+    if not path.exists():
+        return {}
+    try:
+        tree = parse_tree(path)
+    except Exception:
+        return {}
+
+    index: dict[str, dict[str, str]] = {}
+    for loc_key, raw_block in tree.items():
+        block = _tree_block(raw_block)
+        if not isinstance(block, (_pydt.Tree, dict)):
+            continue
+
+        info = {
+            "climate": _scalar_text(block["climate"] if "climate" in block else None) or "unknown",
+            "topography": _scalar_text(block["topography"] if "topography" in block else None)
+            or "unknown",
+            "vegetation": _scalar_text(block["vegetation"] if "vegetation" in block else None)
+            or "unknown",
+            "raw_material": _scalar_text(block["raw_material"] if "raw_material" in block else None)
+            or "unknown",
+            "coastal": "yes" if "natural_harbor_suitability" in block else "no",
+        }
+        index[str(loc_key)] = info
+    return index
+
+
+def _raw_material_bucket(raw_material: str | None) -> str:
+    if not raw_material:
+        return "other"
+    key = str(raw_material).strip().lower()
+    if key == "fish":
+        return "fish"
+    if key in FOOD_GOODS:
+        return "food"
+    if key in FOREST_GOODS:
+        return "forest"
+    if key in {
+        "iron",
+        "copper",
+        "gold",
+        "silver",
+        "lead",
+        "tin",
+        "salt",
+        "stone",
+        "gems",
+        "marble",
+    }:
+        return "minerals"
+    if key in {
+        "fiber_crops",
+        "cotton",
+        "silk",
+        "flax",
+        "wool",
+        "dyes",
+    }:
+        return "textiles"
+    return "other"
+
+
+def _location_geo_bucket(info: dict[str, str] | None) -> str:
+    if not info:
+        return "inland|unknown|unknown|other"
+    coast = "coastal" if info.get("coastal") == "yes" else "inland"
+    climate = info.get("climate", "unknown")
+    topography = info.get("topography", "unknown")
+    raw_bucket = _raw_material_bucket(info.get("raw_material"))
+    return f"{coast}|{climate}|{topography}|{raw_bucket}"
+
+
+def _base_development_rules() -> dict[str, float]:
+    return {
+        "base": -2.0,
+        "coastal": 5.0,
+        "river": 0.5,
+        "road": 2.0,
+        "city": 5.0,
+        "town": 2.0,
+        "grasslands": 1.0,
+        "farmland": 3.0,
+        "sparse": -1.0,
+        "forest": -2.0,
+        "woods": -1.0,
+        "desert": -3.0,
+        "jungle": -4.0,
+        "tropical": -3.0,
+        "subtropical": 2.0,
+        "oceanic": 1.0,
+        "arid": -4.0,
+        "cold_arid": -3.0,
+        "mediterranean": 2.0,
+        "continental": 1.0,
+        "arctic": -5.0,
+        "flatland": 1.0,
+        "mountains": -3.0,
+        "hills": -2.0,
+        "plateau": -1.0,
+        "wetlands": -4.0,
+    }
+
+
+def _location_development_components(
+    info: dict[str, str] | None,
+    rank: str | None,
+    development_rules: dict[str, float],
+) -> float:
+    total = float(development_rules.get("base", 0.0))
+    if rank in ("city", "town"):
+        total += float(development_rules.get(rank, 0.0))
+    if info:
+        if info.get("coastal") == "yes":
+            total += float(development_rules.get("coastal", 0.0))
+        climate = info.get("climate")
+        topography = info.get("topography")
+        vegetation = info.get("vegetation")
+        if climate:
+            total += float(development_rules.get(climate, 0.0))
+        if topography:
+            total += float(development_rules.get(topography, 0.0))
+        if vegetation:
+            total += float(development_rules.get(vegetation, 0.0))
+    return total
+
+
+def _map_values_to_reference_distribution(
+    source_values: dict[str, float],
+    reference_values: list[float],
+) -> dict[str, float]:
+    if not source_values:
+        return {}
+
+    src_sorted = sorted(source_values.items(), key=lambda item: (item[1], item[0]))
+    ref_sorted = sorted(reference_values)
+    if not ref_sorted:
+        ref_sorted = [value for _, value in src_sorted]
+
+    n = len(src_sorted)
+    m = len(ref_sorted)
+    out: dict[str, float] = {}
+
+    for idx, (loc_key, _) in enumerate(src_sorted):
+        if n == 1:
+            ref_idx = (m - 1) // 2 if m > 0 else 0
+        else:
+            position = idx / (n - 1)
+            ref_idx = int(round(position * (m - 1))) if m > 1 else 0
+        out[loc_key] = float(ref_sorted[ref_idx])
+
+    return out
+
+
+def build_ir_development_metrics(id_to_key: dict[int, str]) -> dict[str, dict[str, float | str]]:
+    province_files = _iter_ir_province_files()
+    if not province_files:
+        return {}
+
+    pop_weights = {
+        "nobles": 3.2,
+        "citizen": 2.4,
+        "freemen": 1.8,
+        "slaves": 1.0,
+        "tribesmen": 0.8,
+    }
+
+    road_pairs = _parse_ir_road_pairs()
+    degree: dict[int, int] = defaultdict(int)
+    for a_id, b_id in road_pairs:
+        degree[a_id] += 1
+        degree[b_id] += 1
+
+    ir_building_keys = _load_ir_building_keys()
+
+    metrics: dict[str, dict[str, float | str]] = {}
+    for path in province_files:
+        tree = parse_tree(path)
+        for raw_id, data in tree.items():
+            try:
+                prov_id = int(raw_id)
+            except Exception:
+                continue
+            loc_key = id_to_key.get(prov_id)
+            if not loc_key or not isinstance(data, (_pydt.Tree, dict)):
+                continue
+
+            weighted_pop = 0.0
+            total_pop = 0.0
+            for pop_key, pop_weight in pop_weights.items():
+                pop_block = data.get(pop_key) if isinstance(data, dict) else data[pop_key]
+                if pop_block is None:
+                    continue
+                entries = pop_block if isinstance(pop_block, list) else [pop_block]
+                for entry in entries:
+                    block = _tree_block(entry)
+                    if not isinstance(block, (_pydt.Tree, dict)):
+                        continue
+                    amount = _to_float(
+                        block.get("amount") if isinstance(block, dict) else block["amount"]
+                    )
+                    if amount <= 0:
+                        continue
+                    weighted_pop += amount * pop_weight
+                    total_pop += amount
+
+            civ = _to_float(
+                data.get("civilization_value") if isinstance(data, dict) else data["civilization_value"]
+            )
+            province_rank = _scalar_text(
+                data.get("province_rank") if isinstance(data, dict) else data["province_rank"]
+            )
+            rank_text = province_rank.lower() if province_rank else ""
+            rank_bonus = 0.0
+            if "metropolis" in rank_text:
+                rank_bonus = 2.8
+            elif rank_text == "city":
+                rank_bonus = 1.5
+
+            building_levels = 0.0
+            for building_key in ir_building_keys:
+                if isinstance(data, dict):
+                    raw_level = data.get(building_key)
+                else:
+                    raw_level = data[building_key] if building_key in data else None
+                if raw_level is None:
+                    continue
+                building_levels += max(0.0, _to_float(raw_level))
+
+            if isinstance(data, dict):
+                port_raw = data.get("port_building")
+            else:
+                port_raw = data["port_building"] if "port_building" in data else None
+            is_port = _to_float(port_raw, default=0.0) > 0.0
+
+            road_degree = degree.get(prov_id, 0)
+            pop_component = math.log1p(max(0.0, weighted_pop)) * 5.2
+            civ_component = (max(0.0, civ) / 100.0) * 7.0
+            road_bonus = min(2.0, math.log1p(max(0, road_degree)) * 1.1)
+            building_bonus = min(3.5, math.log1p(max(0.0, building_levels)) * 1.8)
+            port_bonus = 0.5 if is_port else 0.0
+
+            raw_score = (
+                pop_component
+                + civ_component
+                + rank_bonus
+                + road_bonus
+                + building_bonus
+                + port_bonus
+            )
+            if raw_score <= 0 and total_pop > 0:
+                raw_score = math.log1p(total_pop) * 3.0
+            if raw_score <= 0 and civ > 0:
+                raw_score = (civ / 100.0) * 3.0
+
+            metrics[loc_key] = {
+                "raw_score": raw_score,
+                "total_pop": total_pop,
+                "weighted_pop": weighted_pop,
+                "civilization_value": civ,
+                "province_rank": province_rank or "",
+                "road_degree": float(road_degree),
+                "building_levels": building_levels,
+                "is_port": 1.0 if is_port else 0.0,
+                "pop_component": pop_component,
+                "civ_component": civ_component,
+                "rank_bonus": rank_bonus,
+                "road_bonus": road_bonus,
+                "building_bonus": building_bonus,
+                "port_bonus": port_bonus,
+            }
+
+    return metrics
+
+
+def build_ir_raw_development_values(id_to_key: dict[int, str]) -> dict[str, float]:
+    metrics = build_ir_development_metrics(id_to_key)
+    return {
+        loc_key: float(values.get("raw_score", 0.0))
+        for loc_key, values in metrics.items()
+    }
+
+
+def _eu5_economy_targets() -> dict:
+    targets = {
+        "city_share": 0.25,
+        "avg_by_rank": {},
+        "rank_counts": {"city": 0, "town": 0, "rural_settlement": 0},
+        "all_buildings": [],
+        "building_totals": {},
+        "template_definitions": {},
+        "template_distribution": {},
+        "template_distribution_geo": {},
+        "template_development": {},
+        "development_by_rank": {},
+        "direct_building_totals": {},
+    }
+
+    setup_path = eu5_game / "main_menu" / "setup" / "start" / "07_cities_and_buildings.txt"
+    town_setups_path = eu5_game / "in_game" / "common" / "town_setups" / "00_default.txt"
+    location_templates_path = eu5_game / "in_game" / "map_data" / "location_templates.txt"
+    development_path = eu5_game / "main_menu" / "setup" / "start" / "14_development.txt"
+
+    if not setup_path.exists() or not town_setups_path.exists():
+        return targets
+
+    try:
+        setup_tree = parse_tree(setup_path)
+        setup_locations = _tree_block(setup_tree["locations"]) if "locations" in setup_tree else None
+        town_setups_tree = parse_tree(town_setups_path)
+    except Exception:
+        return targets
+
+    if not isinstance(setup_locations, (_pydt.Tree, dict)):
+        return targets
+
+    location_template_index = _load_location_template_index(location_templates_path)
+
+    development_rules = _base_development_rules()
+    if development_path.exists():
+        try:
+            development_tree = parse_tree(development_path)
+            development_block = (
+                _tree_block(development_tree["development"]) if "development" in development_tree else None
+            )
+            if isinstance(development_block, (_pydt.Tree, dict)):
+                for key, value in development_block.items():
+                    key_str = str(key)
+                    parsed = _to_float(value, default=float("nan"))
+                    if math.isnan(parsed):
+                        continue
+                    development_rules[key_str] = parsed
+        except Exception:
+            pass
+
+
+    allowed_buildings = _eu5_allowed_buildings_from_ir()
+    direct_building_totals: Counter = Counter()
+    try:
+        setup_text = setup_path.read_text(encoding="utf-8-sig")
+    except Exception:
+        setup_text = ""
+
+    if setup_text:
+        direct_pattern = re.compile(
+            r"^\s*([A-Za-z0-9_]+)\s*=\s*\{[^{}\n]*\blevel\s*=\s*([0-9]+)[^{}\n]*\blocation\s*=\s*([A-Za-z0-9_]+)[^{}\n]*\}",
+            re.MULTILINE,
+        )
+        for match in direct_pattern.finditer(setup_text):
+            building_key = str(match.group(1))
+            level = max(0, _to_int(match.group(2)))
+            if level <= 0:
+                continue
+            if allowed_buildings and building_key not in allowed_buildings:
+                continue
+            direct_building_totals[building_key] += level
+
+    template_definitions: dict[str, dict[str, int]] = {}
+    all_buildings: set[str] = set()
+    filtered_template_entries = 0
+    for template_name, raw_template in town_setups_tree.items():
+        block = _tree_block(raw_template)
+        if not isinstance(block, (_pydt.Tree, dict)):
+            continue
+        template_buildings: dict[str, int] = {}
+        for key, value in block.items():
+            key_str = str(key)
+            if key_str in ("rank", "town_setup"):
+                continue
+            if allowed_buildings and key_str not in allowed_buildings:
+                filtered_template_entries += 1
+                continue
+            level = _to_int(value)
+            if level <= 0:
+                continue
+            template_buildings[key_str] = level
+            all_buildings.add(key_str)
+        template_definitions[str(template_name)] = template_buildings
+
+    rank_counts: Counter = Counter()
+    totals_by_rank: dict[str, Counter] = defaultdict(Counter)
+    totals_all: Counter = Counter()
+    template_distribution: dict[str, Counter] = defaultdict(Counter)
+    template_distribution_geo: dict[str, Counter] = defaultdict(Counter)
+    template_dev_totals: Counter = Counter()
+    template_dev_counts: Counter = Counter()
+    development_by_rank: dict[str, list[float]] = defaultdict(list)
+
+    for loc_key, raw_loc_data in setup_locations.items():
+        loc_data = _tree_block(raw_loc_data)
+        if not isinstance(loc_data, (_pydt.Tree, dict)):
+            continue
+
+        rank_value = loc_data["rank"] if "rank" in loc_data else None
+        setup_name = loc_data["town_setup"] if "town_setup" in loc_data else None
+        if not rank_value or not setup_name:
+            continue
+
+        loc_key_str = str(loc_key)
+        rank = str(rank_value).strip()
+        setup_name = str(setup_name).strip()
+        if rank not in ("city", "town", "rural_settlement"):
+            continue
+        if setup_name not in template_definitions:
+            continue
+
+        info = location_template_index.get(loc_key_str, {})
+        is_coastal = info.get("coastal") == "yes"
+        geo_bucket = _location_geo_bucket(info)
+
+        rank_counts[rank] += 1
+        template_distribution[f"{rank}|any"][setup_name] += 1
+        template_distribution[f"{rank}|{'coastal' if is_coastal else 'inland'}"][setup_name] += 1
+        template_distribution_geo[f"{rank}|{geo_bucket}"][setup_name] += 1
+
+        dev_score = _location_development_components(info, rank, development_rules)
+        dev_score += float(development_rules.get(loc_key_str, 0.0))
+        development_by_rank[rank].append(dev_score)
+        template_dev_totals[setup_name] += dev_score
+        template_dev_counts[setup_name] += 1
+
+        for building_key, level in template_definitions[setup_name].items():
+            totals_by_rank[rank][building_key] += level
+            totals_all[building_key] += level
+
+    urban = rank_counts["city"] + rank_counts["town"]
+    if urban > 0:
+        targets["city_share"] = rank_counts["city"] / urban
+
+    targets["rank_counts"] = {
+        "city": rank_counts["city"],
+        "town": rank_counts["town"],
+        "rural_settlement": rank_counts["rural_settlement"],
+    }
+
+    avg_by_rank: dict[str, dict[str, float]] = {}
+    for rank in ("city", "town", "rural_settlement"):
+        count = rank_counts[rank]
+        rank_avg: dict[str, float] = {}
+        for building_key in sorted(all_buildings):
+            if count > 0:
+                rank_avg[building_key] = totals_by_rank[rank][building_key] / count
+            else:
+                rank_avg[building_key] = 0.0
+        avg_by_rank[rank] = rank_avg
+
+    for direct_building_key in direct_building_totals.keys():
+        all_buildings.add(str(direct_building_key))
+
+    targets["avg_by_rank"] = avg_by_rank
+    targets["all_buildings"] = sorted(all_buildings)
+    targets["building_totals"] = {
+        building_key: totals_all[building_key] for building_key in sorted(all_buildings)
+    }
+    for fort_key in FORT_LIKE_BUILDINGS:
+        if fort_key in direct_building_totals:
+            targets["building_totals"][fort_key] = max(0, _to_int(direct_building_totals[fort_key]))
+    targets["template_definitions"] = template_definitions
+    targets["template_distribution"] = {
+        key: dict(counter) for key, counter in template_distribution.items()
+    }
+    targets["template_distribution_geo"] = {
+        key: dict(counter) for key, counter in template_distribution_geo.items()
+    }
+    targets["template_development"] = {
+        template: (template_dev_totals[template] / template_dev_counts[template])
+        for template in sorted(template_dev_totals.keys())
+        if template_dev_counts[template] > 0
+    }
+    targets["development_by_rank"] = {
+        rank: sorted(values) for rank, values in development_by_rank.items()
+    }
+    targets["direct_building_totals"] = {
+        key: max(0, _to_int(value))
+        for key, value in sorted(direct_building_totals.items())
+    }
+
+    print(
+        "EU5 economy baseline: "
+        f"city_share={targets['city_share']:.3f}, "
+        f"cities={rank_counts['city']}, towns={rank_counts['town']}, "
+        f"rural={rank_counts['rural_settlement']}, "
+        f"templates={len(template_definitions)}, buildings={len(all_buildings)}, "
+        f"filtered_template_entries={filtered_template_entries}, "
+        f"direct_castles={targets['direct_building_totals'].get('castle', 0)}, "
+        f"direct_stockades={targets['direct_building_totals'].get('stockade', 0)}"
+    )
+    return targets
+
+
+def _write_economy_balance_report(
+    baseline_targets: dict,
+    rank_lines: dict[str, str],
+    location_building_setups: dict[str, str],
+    setup_definitions: dict[str, dict[str, int]],
+    direct_building_levels: dict[str, int] | None = None,
+) -> None:
+    baseline_buildings = set(baseline_targets.get("all_buildings", []))
+    generated_buildings = {
+        key for setup in setup_definitions.values() for key, level in setup.items() if _to_int(level) > 0
+    }
+    direct_buildings = {
+        key for key, level in (direct_building_levels or {}).items() if max(0, _to_int(level)) > 0
+    }
+    tracked = sorted(baseline_buildings | generated_buildings | direct_buildings)
+
+    rank_counts: Counter = Counter()
+    totals_by_rank: dict[str, Counter] = defaultdict(Counter)
+    generated_totals: Counter = Counter()
+
+    rank_pattern = re.compile(r"\brank\s*=\s*(city|town|rural_settlement)\b")
+
+    for loc_key, line in rank_lines.items():
+        match = rank_pattern.search(line)
+        if not match:
+            continue
+        rank = match.group(1)
+        rank_counts[rank] += 1
+
+        setup_name = location_building_setups.get(loc_key)
+        if not setup_name:
+            continue
+        setup = setup_definitions.get(setup_name, {})
+        for key in tracked:
+            level = max(0, _to_int(setup.get(key)))
+            totals_by_rank[rank][key] += level
+            generated_totals[key] += level
+
+    for key, level in (direct_building_levels or {}).items():
+        generated_totals[str(key)] += max(0, _to_int(level))
+
+    report_rows = []
+    report_rows.append(("metric", "baseline", "iu_generated"))
+
+    baseline_city = baseline_targets.get("rank_counts", {}).get("city", 0)
+    baseline_town = baseline_targets.get("rank_counts", {}).get("town", 0)
+    baseline_urban = baseline_city + baseline_town
+    baseline_city_share = (
+        (baseline_city / baseline_urban) if baseline_urban > 0 else baseline_targets.get("city_share", 0.25)
+    )
+
+    iu_city = rank_counts["city"]
+    iu_town = rank_counts["town"]
+    iu_urban = iu_city + iu_town
+    iu_city_share = (iu_city / iu_urban) if iu_urban > 0 else 0.0
+
+    report_rows.append(("urban_city_share", f"{baseline_city_share:.4f}", f"{iu_city_share:.4f}"))
+    report_rows.append(("rank_city_count", str(baseline_city), str(iu_city)))
+    report_rows.append(("rank_town_count", str(baseline_town), str(iu_town)))
+    report_rows.append(
+        (
+            "rank_rural_count",
+            str(baseline_targets.get("rank_counts", {}).get("rural_settlement", 0)),
+            str(rank_counts["rural_settlement"]),
+        )
+    )
+
+    baseline_totals = baseline_targets.get("building_totals", {})
+    scaled_caps = baseline_targets.get("scaled_building_caps", {})
+    if scaled_caps:
+        report_rows.append(("cap_scale_global", "1.0000", f"{float(baseline_targets.get('building_cap_scale', 1.0)):.4f}"))
+        report_rows.append(("cap_scale_fort", "1.0000", f"{float(baseline_targets.get('fort_cap_scale', 1.0)):.4f}"))
+    for key in tracked:
+        if scaled_caps:
+            report_rows.append(
+                (
+                    f"cap_{key}",
+                    str(max(0, _to_int(baseline_totals.get(key, 0)))),
+                    str(max(0, _to_int(scaled_caps.get(key, 0)))),
+                )
+            )
+        report_rows.append(
+            (
+                f"total_{key}",
+                str(max(0, _to_int(baseline_totals.get(key, 0)))),
+                str(max(0, _to_int(generated_totals.get(key, 0)))),
+            )
+        )
+
+    for rank in ("city", "town", "rural_settlement"):
+        count = rank_counts[rank]
+        baseline_avg = baseline_targets.get("avg_by_rank", {}).get(rank, {})
+        for key in tracked:
+            iu_avg = (totals_by_rank[rank][key] / count) if count > 0 else 0.0
+            report_rows.append(
+                (
+                    f"avg_{rank}_{key}",
+                    f"{float(baseline_avg.get(key, 0.0)):.4f}",
+                    f"{iu_avg:.4f}",
+                )
+            )
+
+    report_path = mod_root / "tools" / "ir_to_eu5" / "iu_economy_balance_report.tsv"
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    with report_path.open("w", encoding="utf-8") as f:
+        for row in report_rows:
+            f.write("\t".join(row) + "\n")
+    print_written("file", report_path)
+
+
 def _write_town_setups_and_ranks(
     id_to_key: dict[int, str],
     location_keys: set[str],
     default_map: dict,
     coastal_land_locations: set[str],
+    location_to_region: dict[str, str],
 ) -> None:
-    building_map = build_ir_building_mapping()
-    rankable_locations = build_ir_rankable_locations(id_to_key, location_keys)
-    location_building_setups, setup_definitions = build_ir_location_building_setups(
-        id_to_key,
-        location_keys,
-        building_map,
-        include_locations=rankable_locations,
-    )
-    _merge_main_setup_buildings(setup_definitions, building_map, id_to_key)
-
-    raw_materials = build_ir_raw_materials(id_to_key)
-    terrain_map = build_ir_terrain_maps(id_to_key)
+    location_keys = set(location_keys)
+    rankable_locations = build_ir_rankable_locations(id_to_key, location_keys) & location_keys
+    rankless_locations = location_keys - rankable_locations
     civilization_values = build_ir_civilization_values(id_to_key)
 
-    def setup_is_empty_or_port_only(buildings: dict[str, int]) -> bool:
-        if not buildings:
-            return True
-        return all(key == "dock" for key in buildings.keys())
+    economy_targets = _eu5_economy_targets()
+    city_share_target = max(0.05, min(0.95, float(economy_targets.get("city_share", 0.25))))
+    source_template_definitions = economy_targets.get("template_definitions", {})
+    template_distribution = {
+        key: Counter(value)
+        for key, value in economy_targets.get("template_distribution", {}).items()
+    }
+    template_distribution_geo = {
+        key: Counter(value)
+        for key, value in economy_targets.get("template_distribution_geo", {}).items()
+    }
+    source_template_development = {
+        key: float(value)
+        for key, value in economy_targets.get("template_development", {}).items()
+    }
 
-    def ensure_setup(loc_key: str) -> dict[str, int]:
-        setup_name = location_building_setups.get(loc_key, f"ir_loc_{loc_key}")
-        location_building_setups.setdefault(loc_key, setup_name)
-        return setup_definitions.setdefault(setup_name, {})
+    if not source_template_definitions:
+        raise RuntimeError("EU5 baseline templates could not be loaded; cannot distribute baseline buildings.")
 
-    base_distribution = _eu5_rural_distribution()
-    country_locations = extract_ir_country_locations()
-    country_prosperity = _build_country_prosperity(
-        country_locations, id_to_key, civilization_values
-    )
-    loc_to_country: dict[str, str] = {}
-    for tag, prov_ids in country_locations.items():
-        for prov_id in prov_ids:
-            loc_key = id_to_key.get(prov_id)
-            if loc_key and loc_key not in loc_to_country:
-                loc_to_country[loc_key] = tag
-
-    rural_types = [
-        "fishing_village",
-        "farming_village",
-        "forest_village",
-        "market_village",
-    ]
-
-    def adjust_distribution(prosperity: float) -> dict[str, float]:
-        base_market = base_distribution.get("market_village", 0.0)
-        shift = (prosperity - 0.5) * 0.2
-        market = min(0.75, max(0.05, base_market + shift))
-        remaining = 1.0 - market
-        other_total = (
-            base_distribution.get("fishing_village", 0.0)
-            + base_distribution.get("farming_village", 0.0)
-            + base_distribution.get("forest_village", 0.0)
-        )
-        if other_total <= 0:
-            share = remaining / 3.0
-            return {
-                "fishing_village": share,
-                "farming_village": share,
-                "forest_village": share,
-                "market_village": market,
-            }
-        return {
-            "fishing_village": base_distribution.get("fishing_village", 0.0)
-            / other_total
-            * remaining,
-            "farming_village": base_distribution.get("farming_village", 0.0)
-            / other_total
-            * remaining,
-            "forest_village": base_distribution.get("forest_village", 0.0)
-            / other_total
-            * remaining,
-            "market_village": market,
+    # Tune EU5 template vectors down to a 304 BC intensity profile.
+    template_definitions: dict[str, dict[str, int]] = {}
+    template_development: dict[str, float] = {}
+    for template_name, raw_buildings in source_template_definitions.items():
+        raw_vector = {
+            str(building_key): max(0, _to_int(level))
+            for building_key, level in (raw_buildings or {}).items()
+            if max(0, _to_int(level)) > 0
         }
+        tuned_vector = _tune_template_vector_304bc(raw_vector)
+        for fort_key in FORT_LIKE_BUILDINGS:
+            tuned_vector.pop(fort_key, None)
+        if not tuned_vector:
+            fallback_order = (
+                "marketplace",
+                "temple",
+                "granary",
+                "mason",
+                "slave_market",
+                "dock",
+            )
+            chosen_key = next((key for key in fallback_order if key in raw_vector), None)
+            if not chosen_key:
+                chosen_key = sorted(raw_vector.keys())[0] if raw_vector else "granary"
+            tuned_vector = {str(chosen_key): 1}
 
-    def build_targets(dist: dict[str, float], count: int) -> dict[str, int]:
-        targets = {kind: int(round(dist.get(kind, 0.0) * count)) for kind in rural_types}
-        diff = count - sum(targets.values())
-        if diff == 0:
-            return targets
-        order = sorted(rural_types, key=lambda k: dist.get(k, 0.0), reverse=True)
+        template_definitions[str(template_name)] = tuned_vector
+
+        raw_complexity = sum(raw_vector.values())
+        tuned_complexity = sum(tuned_vector.values())
+        source_dev = float(source_template_development.get(template_name, 0.0))
+        if raw_complexity > 0 and tuned_complexity > 0:
+            complexity_ratio = tuned_complexity / raw_complexity
+            template_development[str(template_name)] = source_dev * (0.60 + 0.40 * complexity_ratio)
+        elif tuned_complexity > 0:
+            template_development[str(template_name)] = source_dev
+        else:
+            template_development[str(template_name)] = 0.0
+
+    # Rank-specific target complexity to avoid overtuned low-tier settlements.
+    rank_complexity_limit = {
+        "city": 12,
+        "town": 7,
+        "rural_settlement": 4,
+    }
+
+    # Soft target for how many locations may end up fully empty after cap enforcement.
+    max_empty_share = 0.08
+
+    tracked_buildings = sorted(set(economy_targets.get("all_buildings", [])))
+    baseline_building_caps = {
+        str(key): max(0, _to_int(value))
+        for key, value in economy_targets.get("building_totals", {}).items()
+    }
+    for building_key in tracked_buildings:
+        baseline_building_caps.setdefault(building_key, 0)
+
+    baseline_rank_counts = economy_targets.get("rank_counts", {})
+    baseline_urban_count = max(
+        0,
+        _to_int(baseline_rank_counts.get("city", 0)) + _to_int(baseline_rank_counts.get("town", 0)),
+    )
+    baseline_rural_count = max(0, _to_int(baseline_rank_counts.get("rural_settlement", 0)))
+    rural_per_urban = (baseline_rural_count / baseline_urban_count) if baseline_urban_count > 0 else 0.0
+
+    target_rural_count = int(round(len(rankable_locations) * rural_per_urban))
+    if baseline_rural_count > 0 and rankless_locations:
+        target_rural_count = max(1, target_rural_count)
+    target_rural_count = min(len(rankless_locations), max(0, target_rural_count))
+
+    rural_candidates = sorted(
+        rankless_locations,
+        key=lambda k: (
+            0 if k in coastal_land_locations else 1,
+            -civilization_values.get(k, 0.0),
+            k,
+        ),
+    )
+    selected_rural_locations = set(rural_candidates[:target_rural_count])
+
+    active_locations = sorted(rankable_locations | selected_rural_locations)
+
+    baseline_total_locations = max(1, baseline_urban_count + baseline_rural_count)
+    iu_total_locations = len(active_locations)
+    location_coverage_scale = min(1.0, iu_total_locations / baseline_total_locations)
+
+    # EU5 start covers substantially more world space than I:R scope; downscale caps accordingly.
+    map_scope_scale = 0.70
+    global_building_cap_scale = max(0.25, min(1.0, location_coverage_scale * map_scope_scale))
+
+    # Fortification buildings are assigned directly in 07_cities_and_buildings building_manager.
+    fort_cap_scale = 0.0
+    fort_like_keys = set(FORT_LIKE_BUILDINGS)
+
+    building_caps: dict[str, int] = {}
+    for building_key, baseline_cap in baseline_building_caps.items():
+        per_building_scale = float(BUILDING_CAP_SCALE_304BC.get(building_key, 0.70))
+        scaled_cap = int(round(baseline_cap * global_building_cap_scale * per_building_scale))
+        if building_key in fort_like_keys:
+            scaled_cap = 0
+        elif baseline_cap > 0:
+            scaled_cap = max(1, scaled_cap)
+        building_caps[building_key] = max(0, scaled_cap)
+
+    direct_baseline_totals = {
+        str(key): max(0, _to_int(value))
+        for key, value in economy_targets.get("direct_building_totals", {}).items()
+    }
+    direct_fort_caps: dict[str, int] = {}
+    for fort_key in ("castle", "stockade"):
+        baseline_direct = max(0, _to_int(direct_baseline_totals.get(fort_key, 0)))
+        if baseline_direct <= 0:
+            baseline_direct = max(0, _to_int(baseline_building_caps.get(fort_key, 0)))
+        fort_scale = float(DIRECT_FORT_SCALE_304BC.get(fort_key, 0.10))
+        per_building_scale = float(BUILDING_CAP_SCALE_304BC.get(fort_key, 0.60))
+        scaled = int(round(baseline_direct * global_building_cap_scale * per_building_scale * fort_scale))
+        if baseline_direct > 0:
+            scaled = max(1, scaled)
+        direct_fort_caps[fort_key] = max(0, scaled)
+
+    if direct_fort_caps.get("castle", 0) > 0 and direct_fort_caps.get("stockade", 0) > 0:
+        direct_fort_caps["stockade"] = min(
+            direct_fort_caps["stockade"],
+            max(1, int(round(direct_fort_caps["castle"] * 0.35))),
+        )
+
+    economy_targets["scaled_building_caps"] = dict(building_caps)
+    economy_targets["scaled_direct_fort_caps"] = dict(direct_fort_caps)
+    economy_targets["building_cap_scale"] = float(global_building_cap_scale)
+    economy_targets["fort_cap_scale"] = float(fort_cap_scale)
+
+    print(
+        "Economy building caps scaled: "
+        + f"location_coverage={location_coverage_scale:.3f}, "
+        + f"global_scale={global_building_cap_scale:.3f}, "
+        + f"template_fort_scale={fort_cap_scale:.3f}, "
+        + f"direct_castles={direct_fort_caps.get('castle', 0)}, "
+        + f"direct_stockades={direct_fort_caps.get('stockade', 0)}"
+    )
+
+    ranked_urban = sorted(
+        rankable_locations,
+        key=lambda k: (civilization_values.get(k, 0.0), k),
+        reverse=True,
+    )
+    target_city_count = int(round(len(ranked_urban) * city_share_target))
+    if ranked_urban:
+        target_city_count = max(1, min(len(ranked_urban), target_city_count))
+
+    city_locations = set(ranked_urban[:target_city_count])
+
+    rank_by_location: dict[str, str] = {}
+    for loc_key in active_locations:
+        if loc_key in city_locations:
+            rank_by_location[loc_key] = "city"
+        elif loc_key in rankable_locations:
+            rank_by_location[loc_key] = "town"
+        else:
+            rank_by_location[loc_key] = "rural_settlement"
+
+    development_rank_by_location: dict[str, str] = {}
+    for loc_key in location_keys:
+        if loc_key in city_locations:
+            development_rank_by_location[loc_key] = "city"
+        elif loc_key in rankable_locations:
+            development_rank_by_location[loc_key] = "town"
+        else:
+            development_rank_by_location[loc_key] = "rural_settlement"
+
+    iu_template_index = _load_location_template_index(iu_map_data / "location_templates.txt")
+    geo_by_location = {
+        loc_key: _location_geo_bucket(iu_template_index.get(loc_key, {}))
+        for loc_key in location_keys
+    }
+
+    development_metrics = build_ir_development_metrics(id_to_key)
+    raw_development = {
+        loc_key: float(values.get("raw_score", 0.0))
+        for loc_key, values in development_metrics.items()
+    }
+    eu5_development_by_rank = {
+        rank: [float(value) for value in values]
+        for rank, values in economy_targets.get("development_by_rank", {}).items()
+    }
+
+    raw_values_by_rank: dict[str, dict[str, float]] = {
+        "city": {},
+        "town": {},
+        "rural_settlement": {},
+    }
+    for loc_key in location_keys:
+        rank = development_rank_by_location.get(loc_key, "rural_settlement")
+        fallback_raw = (civilization_values.get(loc_key, 0.0) / 100.0) * 6.0
+        raw_values_by_rank[rank][loc_key] = float(raw_development.get(loc_key, fallback_raw))
+
+    mapped_development: dict[str, float] = {}
+    for rank in ("city", "town", "rural_settlement"):
+        mapped = _map_values_to_reference_distribution(
+            raw_values_by_rank[rank],
+            eu5_development_by_rank.get(rank, []),
+        )
+        mapped_development.update(mapped)
+
+    all_reference_values = sorted(
+        value
+        for values in eu5_development_by_rank.values()
+        for value in values
+    )
+    default_development = all_reference_values[len(all_reference_values) // 2] if all_reference_values else 8.0
+    for loc_key in location_keys:
+        mapped_development.setdefault(loc_key, float(default_development))
+
+    development_metric_report_path = mod_root / "tools" / "ir_to_eu5" / "iu_ir_development_metric_report.tsv"
+    development_metric_report_path.parent.mkdir(parents=True, exist_ok=True)
+    with development_metric_report_path.open("w", encoding="utf-8") as report:
+        report.write(
+            "location	development_rank	ir_province_rank	total_pop	weighted_pop	civilization_value	road_degree	building_levels	is_port	raw_score	mapped_target\n"
+        )
+        for loc_key in sorted(location_keys):
+            metric = development_metrics.get(loc_key, {})
+            report.write(
+                "	".join(
+                    [
+                        loc_key,
+                        development_rank_by_location.get(loc_key, "rural_settlement"),
+                        str(metric.get("province_rank", "")),
+                        f"{float(metric.get('total_pop', 0.0)):.3f}",
+                        f"{float(metric.get('weighted_pop', 0.0)):.3f}",
+                        f"{float(metric.get('civilization_value', civilization_values.get(loc_key, 0.0))):.3f}",
+                        str(int(round(float(metric.get("road_degree", 0.0))))),
+                        f"{float(metric.get('building_levels', 0.0)):.3f}",
+                        str(int(round(float(metric.get("is_port", 0.0))))),
+                        f"{float(raw_development.get(loc_key, 0.0)):.3f}",
+                        f"{float(mapped_development.get(loc_key, default_development)):.3f}",
+                    ]
+                )
+                + "\n"
+            )
+    print_written("file", development_metric_report_path)
+
+    def scaled_template_counts(counter: Counter, target_total: int) -> Counter:
+        if target_total <= 0 or not counter:
+            return Counter()
+        source_total = sum(counter.values())
+        if source_total <= 0:
+            return Counter()
+
+        scaled = Counter()
+        for template_name, value in counter.items():
+            scaled[template_name] = int(round((value / source_total) * target_total))
+
+        diff = target_total - sum(scaled.values())
+        order = [name for name, _ in counter.most_common()]
         idx = 0
         while diff != 0 and order:
             key = order[idx % len(order)]
             if diff > 0:
-                targets[key] += 1
+                scaled[key] += 1
                 diff -= 1
-            elif targets[key] > 0:
-                targets[key] -= 1
+            elif scaled[key] > 0:
+                scaled[key] -= 1
                 diff += 1
             idx += 1
-        return targets
 
-    def rural_candidates(loc_key: str) -> list[str]:
-        raw = raw_materials.get(loc_key)
-        vegetation = terrain_map.get(loc_key, (None, None))[1]
-        is_coastal = loc_key in coastal_land_locations
-        candidates: list[str] = []
-        if raw == "fish" and is_coastal:
-            candidates.append("fishing_village")
-        if raw in FOOD_GOODS:
-            candidates.append("farming_village")
-        if raw in FOREST_GOODS or vegetation in FOREST_VEGETATION:
-            candidates.append("forest_village")
-        candidates.append("market_village")
-        return candidates
+        return Counter({k: v for k, v in scaled.items() if v > 0})
 
-    rural_by_country: dict[str | None, list[str]] = defaultdict(list)
-    for loc_key in sorted(location_keys):
-        setup = ensure_setup(loc_key)
-        if loc_key in rankable_locations:
-            if setup_is_empty_or_port_only(setup):
-                setup.setdefault("marketplace", 1)
-                setup.setdefault("granary", 1)
+    def pick_distribution(rank: str, geo_bucket: str, is_coastal: bool) -> Counter:
+        geo_key = f"{rank}|{geo_bucket}"
+        if geo_key in template_distribution_geo and template_distribution_geo[geo_key]:
+            return template_distribution_geo[geo_key]
+
+        direct_key = f"{rank}|{'coastal' if is_coastal else 'inland'}"
+        any_key = f"{rank}|any"
+        if direct_key in template_distribution and template_distribution[direct_key]:
+            return template_distribution[direct_key]
+        if any_key in template_distribution and template_distribution[any_key]:
+            return template_distribution[any_key]
+        for fallback_rank in ("town", "city", "rural_settlement"):
+            fallback_any = f"{fallback_rank}|any"
+            if fallback_any in template_distribution and template_distribution[fallback_any]:
+                return template_distribution[fallback_any]
+        return Counter({next(iter(template_definitions.keys())): 1})
+
+    # Add deterministic low-intensity variants so cap enforcement can downgrade without emptying locations.
+    base_template_names = sorted(template_definitions.keys())
+    signature_to_template: dict[tuple[tuple[str, int], ...], str] = {}
+    for template_name in base_template_names:
+        signature = _setup_signature(template_definitions.get(template_name, {}))
+        if signature:
+            signature_to_template.setdefault(signature, template_name)
+
+    def register_template_variant(
+        base_template: str,
+        suffix: str,
+        vector: dict[str, int],
+        dev_scale: float,
+    ) -> str | None:
+        cleaned = {k: max(0, _to_int(v)) for k, v in vector.items() if max(0, _to_int(v)) > 0}
+        signature = _setup_signature(cleaned)
+        if not signature:
+            return None
+
+        existing = signature_to_template.get(signature)
+        if existing:
+            return existing
+
+        candidate_name = f"{base_template}__{suffix}"
+        variant_name = candidate_name
+        serial = 2
+        while variant_name in template_definitions:
+            variant_name = f"{candidate_name}_{serial}"
+            serial += 1
+
+        template_definitions[variant_name] = cleaned
+        template_development[variant_name] = float(template_development.get(base_template, 0.0)) * dev_scale
+        signature_to_template[signature] = variant_name
+        return variant_name
+
+    relief_drop_order = (
+        "marketplace",
+        "granary",
+        "mason",
+        "slave_market",
+        "temple",
+        "castle",
+        "stockade",
+        "dock",
+    )
+    for template_name in base_template_names:
+        base_vector = {
+            key: max(0, _to_int(level))
+            for key, level in template_definitions.get(template_name, {}).items()
+            if max(0, _to_int(level)) > 0
+        }
+        if not base_vector:
             continue
 
-        rural_by_country[loc_to_country.get(loc_key)].append(loc_key)
+        register_template_variant(
+            template_name,
+            "l1",
+            {key: 1 for key in base_vector.keys()},
+            0.72,
+        )
 
-    for country_tag, locations in sorted(rural_by_country.items(), key=lambda item: str(item[0])):
-        if not locations:
-            continue
-        prosperity = country_prosperity.get(country_tag, 0.0)
-        dist = adjust_distribution(prosperity)
-        targets = build_targets(dist, len(locations))
-
-        existing_counts: dict[str, int] = defaultdict(int)
-        pending: list[str] = []
-        for loc_key in locations:
-            setup = ensure_setup(loc_key)
-            existing = next((kind for kind in rural_types if kind in setup), None)
-            if existing:
-                existing_counts[existing] += 1
+        for drop_key in relief_drop_order:
+            if drop_key not in base_vector:
                 continue
-            pending.append(loc_key)
+            reduced = {k: v for k, v in base_vector.items() if k != drop_key}
+            register_template_variant(template_name, f"drop_{drop_key}", reduced, 0.74)
 
-        remaining = {
-            kind: max(0, targets.get(kind, 0) - existing_counts.get(kind, 0))
-            for kind in rural_types
+        for soften_key in ("marketplace", "granary", "mason", "slave_market"):
+            if soften_key not in base_vector or base_vector[soften_key] <= 1:
+                continue
+            softened = dict(base_vector)
+            softened[soften_key] = max(1, softened[soften_key] - 1)
+            register_template_variant(template_name, f"soft_{soften_key}", softened, 0.80)
+
+    core_fallback_templates = [
+        ("ir_core_marketplace_1", {"marketplace": 1}, 0.26),
+        ("ir_core_temple_1", {"temple": 1}, 0.24),
+        ("ir_core_market_temple_1", {"marketplace": 1, "temple": 1}, 0.34),
+        ("ir_core_granary_1", {"granary": 1}, 0.19),
+        ("ir_core_mason_1", {"mason": 1}, 0.18),
+        ("ir_core_slave_market_1", {"slave_market": 1}, 0.16),
+    ]
+    core_template_names: list[str] = []
+    for preferred_name, vector, development_value in core_fallback_templates:
+        signature = _setup_signature(vector)
+        if not signature:
+            continue
+
+        existing = signature_to_template.get(signature)
+        if existing:
+            core_template_names.append(existing)
+            continue
+
+        template_name = preferred_name
+        serial = 2
+        while template_name in template_definitions:
+            template_name = f"{preferred_name}_{serial}"
+            serial += 1
+
+        template_definitions[template_name] = dict(vector)
+        template_development[template_name] = float(development_value)
+        signature_to_template[signature] = template_name
+        core_template_names.append(template_name)
+
+    template_complexity = {
+        name: sum(max(0, _to_int(level)) for level in buildings.values())
+        for name, buildings in template_definitions.items()
+    }
+
+    location_building_setups: dict[str, str] = {}
+
+    grouped_locations: dict[tuple[str, str, bool], list[str]] = defaultdict(list)
+    for loc_key in active_locations:
+        rank = rank_by_location[loc_key]
+        geo_bucket = geo_by_location.get(loc_key, "inland|unknown|unknown|other")
+        is_coastal = loc_key in coastal_land_locations
+        grouped_locations[(rank, geo_bucket, is_coastal)].append(loc_key)
+
+    for (rank, geo_bucket, is_coastal), locs in sorted(
+        grouped_locations.items(),
+        key=lambda item: (item[0][0], item[0][1], item[0][2]),
+    ):
+        source_counter = pick_distribution(rank, geo_bucket, is_coastal)
+        complexity_cap = rank_complexity_limit.get(rank)
+        if complexity_cap is not None:
+            complexity_filtered = Counter(
+                {
+                    template_name: count
+                    for template_name, count in source_counter.items()
+                    if template_complexity.get(template_name, 0) <= complexity_cap
+                }
+            )
+            if complexity_filtered:
+                source_counter = complexity_filtered
+
+        scaled_counter = scaled_template_counts(source_counter, len(locs))
+
+        expanded_templates: list[str] = []
+        for template_name, amount in scaled_counter.items():
+            expanded_templates.extend([template_name] * amount)
+
+        if len(expanded_templates) < len(locs):
+            fallback_template = source_counter.most_common(1)[0][0]
+            expanded_templates.extend([fallback_template] * (len(locs) - len(expanded_templates)))
+        elif len(expanded_templates) > len(locs):
+            expanded_templates = expanded_templates[: len(locs)]
+
+        rank_complexity_bias = {
+            "city": 1.00,
+            "town": 0.58,
+            "rural_settlement": 0.30,
+        }.get(rank, 0.60)
+
+        expanded_templates.sort(
+            key=lambda name: (
+                template_development.get(name, 0.0),
+                template_complexity.get(name, 0) * rank_complexity_bias,
+                source_counter.get(name, 0),
+                name,
+            ),
+            reverse=True,
+        )
+
+        ordered_locs = sorted(
+            locs,
+            key=lambda k: (mapped_development.get(k, 0.0), civilization_values.get(k, 0.0), k),
+            reverse=True,
+        )
+
+        for loc_key, template_name in zip(ordered_locs, expanded_templates):
+            location_building_setups[loc_key] = template_name
+
+    fallback_by_rank: dict[str, str] = {}
+    for rank in ("city", "town", "rural_settlement"):
+        any_key = f"{rank}|any"
+        if any_key in template_distribution and template_distribution[any_key]:
+            fallback_by_rank[rank] = template_distribution[any_key].most_common(1)[0][0]
+    global_fallback = next(iter(template_definitions.keys()))
+
+    for loc_key in active_locations:
+        if loc_key in location_building_setups:
+            continue
+        rank = rank_by_location[loc_key]
+        location_building_setups[loc_key] = fallback_by_rank.get(rank, global_fallback)
+
+    empty_setup_name = "ir_tpl_empty"
+    if empty_setup_name not in template_definitions:
+        template_definitions[empty_setup_name] = {}
+    template_development[empty_setup_name] = 0.0
+    template_complexity[empty_setup_name] = 0
+
+    template_vectors: dict[str, dict[str, int]] = {}
+    for setup_name, buildings in template_definitions.items():
+        vector: dict[str, int] = {}
+        for building_key, level in buildings.items():
+            parsed = max(0, _to_int(level))
+            if parsed > 0:
+                vector[str(building_key)] = parsed
+        template_vectors[setup_name] = vector
+
+    def compute_building_totals(assignments: dict[str, str]) -> Counter:
+        totals: Counter = Counter()
+        for setup_name in assignments.values():
+            vector = template_vectors.get(setup_name, {})
+            for building_key, level in vector.items():
+                if building_key in building_caps:
+                    totals[building_key] += level
+        return totals
+
+    def overage_sum(totals: Counter) -> int:
+        return sum(
+            max(0, totals.get(building_key, 0) - building_caps.get(building_key, 0))
+            for building_key in tracked_buildings
+        )
+
+    all_templates_desc = sorted(
+        (name for name in template_definitions.keys() if name != empty_setup_name),
+        key=lambda name: (
+            template_development.get(name, 0.0),
+            template_complexity.get(name, 0),
+            name,
+        ),
+        reverse=True,
+    )
+
+    candidate_cache: dict[tuple[str, str, bool], list[str]] = {}
+
+    def candidate_templates(rank: str, geo_bucket: str, is_coastal: bool) -> list[str]:
+        cache_key = (rank, geo_bucket, is_coastal)
+        if cache_key in candidate_cache:
+            return candidate_cache[cache_key]
+
+        ordered: list[str] = []
+        for source in (
+            pick_distribution(rank, geo_bucket, is_coastal),
+            template_distribution.get(f"{rank}|{'coastal' if is_coastal else 'inland'}", Counter()),
+            template_distribution.get(f"{rank}|any", Counter()),
+        ):
+            for template_name, _ in source.most_common():
+                if template_name in template_definitions:
+                    ordered.append(template_name)
+
+        ordered.extend(all_templates_desc)
+        ordered.append(empty_setup_name)
+
+        seen: set[str] = set()
+        deduped: list[str] = []
+        for template_name in ordered:
+            if template_name in seen:
+                continue
+            seen.add(template_name)
+            deduped.append(template_name)
+
+        candidate_cache[cache_key] = deduped
+        return deduped
+
+    cap_enforced = False
+    if tracked_buildings and building_caps:
+        cap_enforced = True
+        generated_totals = compute_building_totals(location_building_setups)
+        current_overage = overage_sum(generated_totals)
+
+        if current_overage > 0:
+            rank_priority = {"rural_settlement": 0, "town": 1, "city": 2}
+            downgrade_order = sorted(
+                active_locations,
+                key=lambda loc_key: (
+                    rank_priority.get(rank_by_location.get(loc_key, "rural_settlement"), 0),
+                    mapped_development.get(loc_key, 0.0),
+                    civilization_values.get(loc_key, 0.0),
+                    0 if loc_key not in coastal_land_locations else 1,
+                    loc_key,
+                ),
+            )
+
+            for _ in range(8):
+                if current_overage <= 0:
+                    break
+                changed = False
+
+                for loc_key in downgrade_order:
+                    if current_overage <= 0:
+                        break
+
+                    current_setup = location_building_setups.get(loc_key)
+                    if not current_setup or template_complexity.get(current_setup, 0) <= 0:
+                        continue
+
+                    current_vector = template_vectors.get(current_setup, {})
+                    if not any(
+                        current_vector.get(building_key, 0) > 0
+                        and generated_totals.get(building_key, 0) > building_caps.get(building_key, 0)
+                        for building_key in tracked_buildings
+                    ):
+                        continue
+
+                    rank = rank_by_location.get(loc_key, "rural_settlement")
+                    geo_bucket = geo_by_location.get(loc_key, "inland|unknown|unknown|other")
+                    is_coastal = loc_key in coastal_land_locations
+
+                    best_setup = None
+                    best_overage = current_overage
+                    best_development = -1e9
+                    best_complexity = 10**9
+
+                    for candidate_setup in candidate_templates(rank, geo_bucket, is_coastal):
+                        if candidate_setup == current_setup:
+                            continue
+                        candidate_vector = template_vectors.get(candidate_setup, {})
+
+                        affected = set(current_vector.keys()) | set(candidate_vector.keys())
+                        next_overage = current_overage
+                        for building_key in affected:
+                            if building_key not in building_caps:
+                                continue
+                            old_total = generated_totals.get(building_key, 0)
+                            old_over = max(0, old_total - building_caps[building_key])
+                            new_total = (
+                                old_total
+                                - current_vector.get(building_key, 0)
+                                + candidate_vector.get(building_key, 0)
+                            )
+                            next_overage += max(0, new_total - building_caps[building_key]) - old_over
+
+                        candidate_dev = template_development.get(candidate_setup, 0.0)
+                        candidate_comp = template_complexity.get(candidate_setup, 0)
+                        candidate_is_empty = 1 if candidate_setup == empty_setup_name else 0
+
+                        should_take = False
+                        if next_overage < best_overage:
+                            should_take = True
+                        elif next_overage == best_overage:
+                            if best_setup is None:
+                                should_take = True
+                            else:
+                                best_is_empty = 1 if best_setup == empty_setup_name else 0
+                                if candidate_is_empty < best_is_empty:
+                                    should_take = True
+                                elif candidate_is_empty == best_is_empty:
+                                    if rank == "city":
+                                        if candidate_dev > best_development:
+                                            should_take = True
+                                        elif candidate_dev == best_development and candidate_comp < best_complexity:
+                                            should_take = True
+                                    else:
+                                        if candidate_comp < best_complexity:
+                                            should_take = True
+                                        elif candidate_comp == best_complexity and candidate_dev > best_development:
+                                            should_take = True
+
+                        if should_take:
+                            best_setup = candidate_setup
+                            best_overage = next_overage
+                            best_development = candidate_dev
+                            best_complexity = candidate_comp
+
+                    if best_setup is None or best_overage >= current_overage:
+                        continue
+
+                    best_vector = template_vectors.get(best_setup, {})
+                    for building_key in set(current_vector.keys()) | set(best_vector.keys()):
+                        if building_key not in building_caps:
+                            continue
+                        generated_totals[building_key] = (
+                            generated_totals.get(building_key, 0)
+                            - current_vector.get(building_key, 0)
+                            + best_vector.get(building_key, 0)
+                        )
+
+                    location_building_setups[loc_key] = best_setup
+                    current_overage = best_overage
+                    changed = True
+
+                if not changed:
+                    break
+
+            if current_overage > 0:
+                for loc_key in downgrade_order:
+                    if current_overage <= 0:
+                        break
+
+                    current_setup = location_building_setups.get(loc_key)
+                    if not current_setup or template_complexity.get(current_setup, 0) <= 0:
+                        continue
+
+                    current_vector = template_vectors.get(current_setup, {})
+                    if not any(
+                        current_vector.get(building_key, 0) > 0
+                        and generated_totals.get(building_key, 0) > building_caps.get(building_key, 0)
+                        for building_key in tracked_buildings
+                    ):
+                        continue
+
+                    for building_key, level in current_vector.items():
+                        if building_key in building_caps:
+                            generated_totals[building_key] = max(
+                                0,
+                                generated_totals.get(building_key, 0) - level,
+                            )
+
+                    location_building_setups[loc_key] = empty_setup_name
+                    current_overage = overage_sum(generated_totals)
+
+        target_empty_count = int(round(len(active_locations) * max_empty_share))
+        current_empty_locations = [
+            loc_key
+            for loc_key in active_locations
+            if template_complexity.get(location_building_setups.get(loc_key, ""), 0) <= 0
+        ]
+        if len(current_empty_locations) > target_empty_count:
+            refill_candidates = sorted(
+                current_empty_locations,
+                key=lambda loc_key: (
+                    mapped_development.get(loc_key, 0.0),
+                    civilization_values.get(loc_key, 0.0),
+                    loc_key,
+                ),
+                reverse=True,
+            )
+
+            for loc_key in refill_candidates:
+                current_empty_count = sum(
+                    1
+                    for key in active_locations
+                    if template_complexity.get(location_building_setups.get(key, ""), 0) <= 0
+                )
+                if current_empty_count <= target_empty_count:
+                    break
+
+                rank = rank_by_location.get(loc_key, "rural_settlement")
+                geo_bucket = geo_by_location.get(loc_key, "inland|unknown|unknown|other")
+                is_coastal = loc_key in coastal_land_locations
+
+                options = [name for name in core_template_names if template_complexity.get(name, 0) > 0]
+                options.extend(
+                    [
+                        name
+                        for name in candidate_templates(rank, geo_bucket, is_coastal)
+                        if name != empty_setup_name and template_complexity.get(name, 0) > 0
+                    ]
+                )
+
+                deduped_options: list[str] = []
+                seen_options: set[str] = set()
+                for name in options:
+                    if name in seen_options:
+                        continue
+                    seen_options.add(name)
+                    deduped_options.append(name)
+                options = deduped_options
+
+                options.sort(
+                    key=lambda name: (
+                        0 if name in core_template_names else 1,
+                        template_complexity.get(name, 0),
+                        -template_development.get(name, 0.0),
+                        name,
+                    )
+                )
+
+                for candidate_setup in options:
+                    candidate_vector = template_vectors.get(candidate_setup, {})
+                    if not candidate_vector:
+                        continue
+                    if any(
+                        building_key in building_caps
+                        and generated_totals.get(building_key, 0) + level > building_caps.get(building_key, 0)
+                        for building_key, level in candidate_vector.items()
+                    ):
+                        continue
+
+                    location_building_setups[loc_key] = candidate_setup
+                    for building_key, level in candidate_vector.items():
+                        if building_key in building_caps:
+                            generated_totals[building_key] = generated_totals.get(building_key, 0) + level
+                    break
+
+        over_cap_buildings = [
+            key
+            for key in tracked_buildings
+            if generated_totals.get(key, 0) > building_caps.get(key, 0)
+        ]
+        if over_cap_buildings:
+            print(
+                "Economy cap enforcement warning: "
+                + str(len(over_cap_buildings))
+                + " building types still exceed EU5 baseline totals."
+            )
+        else:
+            built_locations = sum(
+                1
+                for setup_name in location_building_setups.values()
+                if template_complexity.get(setup_name, 0) > 0
+            )
+            print(
+                "Economy cap enforcement: all building totals are within EU5 baseline caps; "
+                + str(built_locations)
+                + " / "
+                + str(len(location_building_setups))
+                + " locations retain non-empty setups."
+            )
+
+    if not cap_enforced:
+        print("Economy cap enforcement skipped: EU5 baseline building totals unavailable.")
+        generated_totals = compute_building_totals(location_building_setups)
+
+    baseline_assignment_total = max(1, baseline_urban_count + baseline_rural_count)
+    target_assigned_locations = int(round(baseline_assignment_total * 0.62))
+    target_assigned_locations = max(500, min(700, target_assigned_locations))
+    target_assigned_locations = min(target_assigned_locations, len(active_locations))
+
+    def setup_is_non_empty(setup_name: str | None) -> bool:
+        if not setup_name:
+            return False
+        return template_complexity.get(setup_name, 0) > 0
+
+    def can_fit_setup(setup_name: str) -> bool:
+        vector = template_vectors.get(setup_name, {})
+        if not vector:
+            return False
+        return not any(
+            building_key in building_caps
+            and generated_totals.get(building_key, 0) + level > building_caps.get(building_key, 0)
+            for building_key, level in vector.items()
+        )
+
+    assigned_locations = [
+        loc_key
+        for loc_key in active_locations
+        if setup_is_non_empty(location_building_setups.get(loc_key))
+    ]
+
+    if len(assigned_locations) < target_assigned_locations:
+        refill_order = sorted(
+            [loc_key for loc_key in active_locations if loc_key not in set(assigned_locations)],
+            key=lambda loc_key: (
+                mapped_development.get(loc_key, 0.0),
+                civilization_values.get(loc_key, 0.0),
+                loc_key,
+            ),
+            reverse=True,
+        )
+
+        for loc_key in refill_order:
+            if len(assigned_locations) >= target_assigned_locations:
+                break
+
+            rank = rank_by_location.get(loc_key, "rural_settlement")
+            geo_bucket = geo_by_location.get(loc_key, "inland|unknown|unknown|other")
+            is_coastal = loc_key in coastal_land_locations
+
+            options = [name for name in core_template_names if setup_is_non_empty(name)]
+            options.extend(
+                [
+                    name
+                    for name in candidate_templates(rank, geo_bucket, is_coastal)
+                    if setup_is_non_empty(name)
+                ]
+            )
+
+            seen_options: set[str] = set()
+            deduped_options: list[str] = []
+            for name in options:
+                if name in seen_options:
+                    continue
+                seen_options.add(name)
+                deduped_options.append(name)
+
+            deduped_options.sort(
+                key=lambda name: (
+                    0 if name in core_template_names else 1,
+                    template_complexity.get(name, 0),
+                    -template_development.get(name, 0.0),
+                    name,
+                )
+            )
+
+            for candidate_setup in deduped_options:
+                if not can_fit_setup(candidate_setup):
+                    continue
+                location_building_setups[loc_key] = candidate_setup
+                for building_key, level in template_vectors.get(candidate_setup, {}).items():
+                    if building_key in building_caps:
+                        generated_totals[building_key] = generated_totals.get(building_key, 0) + level
+                assigned_locations.append(loc_key)
+                break
+
+    elif len(assigned_locations) > target_assigned_locations:
+        prune_order = sorted(
+            assigned_locations,
+            key=lambda loc_key: (
+                mapped_development.get(loc_key, 0.0),
+                civilization_values.get(loc_key, 0.0),
+                loc_key,
+            ),
+        )
+
+        for loc_key in prune_order:
+            if len(assigned_locations) <= target_assigned_locations:
+                break
+            setup_name = location_building_setups.get(loc_key)
+            if not setup_is_non_empty(setup_name):
+                continue
+            for building_key, level in template_vectors.get(setup_name, {}).items():
+                if building_key in building_caps:
+                    generated_totals[building_key] = max(0, generated_totals.get(building_key, 0) - level)
+            location_building_setups[loc_key] = empty_setup_name
+            assigned_locations.pop(assigned_locations.index(loc_key))
+
+    # Keep 07_cities_and_buildings sparse like EU5: only emit non-empty assigned locations.
+    location_building_setups = {
+        loc_key: setup_name
+        for loc_key, setup_name in location_building_setups.items()
+        if setup_is_non_empty(setup_name)
+    }
+    active_locations = sorted(location_building_setups.keys())
+
+    print(
+        "Economy assignment targeting: "
+        + str(len(active_locations))
+        + " / "
+        + str(len(rankable_locations | selected_rural_locations))
+        + " locations kept (target "
+        + str(target_assigned_locations)
+        + ")"
+    )
+
+    def region_profile_for_location(loc_key: str) -> str:
+        raw_region = to_region_key(location_to_region.get(loc_key, "")) if location_to_region.get(loc_key) else ""
+        stem = raw_region[:-7] if raw_region.endswith("_region") else raw_region
+        stem = re.sub(r"[^a-z0-9_]+", "_", stem.lower()).strip("_")
+
+        if not stem:
+            return "frontier"
+
+        alias_by_keyword = {
+            "greece": "greek",
+            "hellas": "greek",
+            "aegean": "greek",
+            "thrace": "greek",
+            "macedon": "greek",
+            "anatolia": "anatolian",
+            "asia_minor": "anatolian",
+            "italy": "italic",
+            "iberia": "iberian",
+            "france": "gaulish",
+            "gaul": "gaulish",
+            "britain": "britannic",
+            "scandinav": "nordic",
+            "german": "germanic",
+            "balkan": "illyrian",
+            "illyria": "illyrian",
+            "egypt": "egyptian",
+            "nubia": "nubian",
+            "maghreb": "numidian",
+            "africa": "numidian",
+            "levant": "levantine",
+            "mesopot": "mesopotamian",
+            "assyria": "mesopotamian",
+            "babyl": "mesopotamian",
+            "persia": "persian",
+            "iran": "persian",
+            "arabia": "arabian",
+            "caucas": "caucasian",
+            "india": "indian",
+            "sindh": "indian",
+            "gandhara": "indian",
+            "steppe": "scythian",
+            "scyth": "scythian",
+            "sarmatia": "scythian",
+            "bactria": "bactrian",
+        }
+        for keyword, alias in alias_by_keyword.items():
+            if keyword in stem:
+                return alias
+
+        stem = re.sub(r"(north|south|east|west|upper|lower)", "", stem)
+        stem = re.sub(r"_+", "_", stem).strip("_")
+        return stem or "frontier"
+
+    regional_setup_definitions: dict[str, dict[str, int]] = {}
+    regional_location_setups: dict[str, str] = {}
+    regional_name_counts: Counter = Counter()
+    regional_key_to_name: dict[tuple[str, tuple[tuple[str, int], ...]], str] = {}
+
+    for loc_key in sorted(location_building_setups.keys()):
+        source_setup = location_building_setups[loc_key]
+        source_vector = {
+            str(key): max(0, _to_int(level))
+            for key, level in template_definitions.get(source_setup, {}).items()
+            if max(0, _to_int(level)) > 0
         }
 
-        for loc_key in sorted(pending):
-            setup = ensure_setup(loc_key)
-            candidates = rural_candidates(loc_key)
-            choice = None
-            for kind in candidates:
-                if remaining.get(kind, 0) > 0:
-                    choice = kind
-                    break
-            if choice is None:
-                choice = max(remaining, key=lambda k: remaining.get(k, 0))
-            setup[choice] = 1
-            if remaining.get(choice, 0) > 0:
-                remaining[choice] -= 1
+        rank = rank_by_location.get(loc_key, "town")
+        profile = region_profile_for_location(loc_key)
 
-    # Coastal locations must have a port-capable setup to avoid map validation errors.
-    for loc_key in sorted(coastal_land_locations):
-        setup_name = location_building_setups.get(loc_key, f"ir_loc_{loc_key}")
-        location_building_setups.setdefault(loc_key, setup_name)
-        setup = setup_definitions.setdefault(setup_name, {})
-        if setup.get("dock", 0) < 1:
-            setup["dock"] = 1
+        for fort_key in fort_like_keys:
+            source_vector.pop(fort_key, None)
+        if not source_vector:
+            source_vector = {"granary": 1}
 
-    # Collapse per-location setup names into shared named templates.
-    location_building_setups, setup_definitions = _dedupe_location_setup_templates(
-        location_building_setups,
-        setup_definitions,
-    )
+        signature = _setup_signature(source_vector)
+        if not signature:
+            continue
+
+        coastal_suffix = "_coastal" if loc_key in coastal_land_locations else ""
+        base_name = f"ir_{profile}_{rank}{coastal_suffix}"
+
+        regional_key = (base_name, signature)
+        setup_name = regional_key_to_name.get(regional_key)
+        if not setup_name:
+            regional_name_counts[base_name] += 1
+            serial = regional_name_counts[base_name]
+            setup_name = base_name if serial == 1 else f"{base_name}_{serial:02d}"
+            regional_key_to_name[regional_key] = setup_name
+            regional_setup_definitions[setup_name] = {key: level for key, level in signature}
+
+        regional_location_setups[loc_key] = setup_name
+
+    location_building_setups = regional_location_setups
+    setup_definitions = regional_setup_definitions
+
+    if not setup_definitions:
+        setup_definitions = {"ir_frontier_town": {"granary": 1}}
 
     town_setups_dir = mod_root / "in_game" / "common" / "town_setups"
     town_setups_dir.mkdir(parents=True, exist_ok=True)
     town_setups_path = town_setups_dir / "ir_location_setups.txt"
     _write_town_setups_file(town_setups_path, setup_definitions)
 
-    rank_lines = build_ir_location_ranks(
-        id_to_key,
-        location_keys,
-        town_setup="italian_city",
-        location_town_setups=location_building_setups,
-        coastal_land_locations=coastal_land_locations,
+    rank_lines: dict[str, str] = {}
+    for loc_key in active_locations:
+        rank = rank_by_location[loc_key]
+        setup = location_building_setups[loc_key]
+        rank_lines[loc_key] = f"rank = {rank} town_setup = {setup}"
+
+    country_locations_for_forts = extract_ir_country_locations()
+    location_owner_by_key: dict[str, str] = {}
+    for tag, prov_ids in country_locations_for_forts.items():
+        tag_key = str(tag).strip()
+        for prov_id in (prov_ids or []):
+            loc_key = id_to_key.get(_to_int(prov_id))
+            if loc_key:
+                location_owner_by_key[loc_key] = tag_key
+
+    fort_candidates = set(location_keys)
+
+    requested_castle_locations = [
+        loc_key
+        for loc_key in PROMINENT_CASTLE_LOCATIONS_304BC
+        if loc_key in fort_candidates
+    ]
+    requested_castle_set = set(requested_castle_locations)
+
+    requested_stockade_locations = [
+        loc_key
+        for loc_key in PROMINENT_STOCKADE_LOCATIONS_304BC
+        if loc_key in fort_candidates and loc_key not in requested_castle_set
+    ]
+
+    requested_forts: list[tuple[str, str, str]] = []
+    requested_forts.extend(
+        ("castle", loc_key, CASTLE_RATIONALE_304BC.get(loc_key, ""))
+        for loc_key in requested_castle_locations
+    )
+    requested_forts.extend(
+        ("stockade", loc_key, STOCKADE_RATIONALE_304BC.get(loc_key, ""))
+        for loc_key in requested_stockade_locations
     )
 
-    # Coastal settlements without an explicit rank entry still need a startup
-    # location block with both rank and town_setup for port validation.
-    for loc_key in sorted(coastal_land_locations):
-        if loc_key in rank_lines:
+    verified_forts: list[tuple[str, str, str, str]] = []
+    verification_rows: list[tuple[str, str, str, str, str, str]] = []
+    seen_locations: set[str] = set()
+
+    for building_key, loc_key, rationale in requested_forts:
+        owner_tag = str(location_owner_by_key.get(loc_key, "")).strip()
+        status = "ok"
+
+        if loc_key in seen_locations:
+            status = "duplicate_location_dropped"
+            verification_rows.append((building_key, loc_key, "", owner_tag, status, rationale))
             continue
-        setup = location_building_setups.get(loc_key, f"ir_loc_{loc_key}")
-        rank_lines[loc_key] = f"rank = rural_settlement town_setup = {setup}"
+
+        if not owner_tag:
+            status = "missing_owner_dropped"
+            verification_rows.append((building_key, loc_key, "", owner_tag, status, rationale))
+            continue
+
+        if not re.fullmatch(r"[A-Z0-9_]{2,8}", owner_tag):
+            status = "invalid_owner_tag_dropped"
+            verification_rows.append((building_key, loc_key, "", owner_tag, status, rationale))
+            continue
+
+        seen_locations.add(loc_key)
+        verified_forts.append((building_key, loc_key, owner_tag, rationale))
+        verification_rows.append((building_key, loc_key, owner_tag, owner_tag, status, rationale))
+
+    castle_locations = [loc_key for building_key, loc_key, _, _ in verified_forts if building_key == "castle"]
+    stockade_locations = [loc_key for building_key, loc_key, _, _ in verified_forts if building_key == "stockade"]
+
+    direct_building_levels = {
+        "castle": len(castle_locations),
+        "stockade": len(stockade_locations),
+    }
+
+    building_manager_lines: list[str] = []
+    for building_key, loc_key, owner_tag, _ in verified_forts:
+        building_manager_lines.append(
+            f"{building_key} = {{ tag = {owner_tag} level = 1 location = {loc_key} }}"
+        )
+
+    fort_verify_report = mod_root / "tools" / "ir_to_eu5" / "iu_fort_assignment_verification.tsv"
+    fort_verify_report.parent.mkdir(parents=True, exist_ok=True)
+    with fort_verify_report.open("w", encoding="utf-8") as f:
+        f.write("building\tlocation\tassigned_tag\texpected_owner\tstatus\trationale\n")
+        for row in verification_rows:
+            f.write("\t".join(row) + "\n")
+    print_written("file", fort_verify_report)
+
+    dropped_forts = sum(1 for _, _, _, _, status, _ in verification_rows if status != "ok")
+    print(
+        "Economy direct fort assignment (manual-only, verified): "
+        + f"castles={len(castle_locations)}, "
+        + f"stockades={len(stockade_locations)}, "
+        + f"dropped={dropped_forts}"
+    )
+
+    development_rules = _base_development_rules()
+
+    def _fmt_num(value: float) -> str:
+        if abs(value - round(value)) < 1e-9:
+            return str(int(round(value)))
+        return f"{value:.3f}".rstrip("0").rstrip(".")
+
+    rule_order = [
+        "base",
+        "coastal",
+        "river",
+        "road",
+        "city",
+        "town",
+        "grasslands",
+        "farmland",
+        "sparse",
+        "forest",
+        "woods",
+        "desert",
+        "jungle",
+        "tropical",
+        "subtropical",
+        "oceanic",
+        "arid",
+        "cold_arid",
+        "mediterranean",
+        "continental",
+        "arctic",
+        "flatland",
+        "mountains",
+        "hills",
+        "plateau",
+        "wetlands",
+    ]
+
+    development_lines = [f"{key} = {_fmt_num(float(development_rules[key]))}" for key in rule_order]
+
+    base_components: dict[str, float] = {}
+    target_values: dict[str, float] = {}
+    raw_delta_by_location: dict[str, float] = {}
+    region_score_samples: dict[str, list[float]] = defaultdict(list)
+
+    for loc_key in sorted(location_keys):
+        rank = development_rank_by_location.get(loc_key)
+        info = iu_template_index.get(loc_key, {})
+        base_component = _location_development_components(info, rank, development_rules)
+        target_value = float(mapped_development.get(loc_key, base_component))
+        delta = target_value - base_component
+        base_components[loc_key] = base_component
+        target_values[loc_key] = target_value
+        raw_delta_by_location[loc_key] = delta
+        raw_region_tag = location_to_region.get(loc_key)
+        region_tag = to_region_key(raw_region_tag) if raw_region_tag else None
+        if region_tag:
+            region_score_samples[region_tag].append(raw_development.get(loc_key, target_value))
+
+    eu5_dev_path = eu5_game / "main_menu" / "setup" / "start" / "14_development.txt"
+    eu5_region_reference: list[float] = []
+    eu5_special_reference: list[float] = []
+    if eu5_dev_path.exists():
+        try:
+            eu5_dev_tree = parse_tree(eu5_dev_path)
+            dev_block = _tree_block(eu5_dev_tree["development"]) if "development" in eu5_dev_tree else None
+            if isinstance(dev_block, (_pydt.Tree, dict)):
+                for raw_key, raw_value in dev_block.items():
+                    key = str(raw_key)
+                    if key in rule_order:
+                        continue
+                    val = _to_float(raw_value, default=float("nan"))
+                    if math.isnan(val):
+                        continue
+                    if key.endswith("_region"):
+                        eu5_region_reference.append(val)
+                    elif not key.endswith("_area") and not key.endswith("_province"):
+                        eu5_special_reference.append(val)
+        except Exception:
+            eu5_region_reference = []
+            eu5_special_reference = []
+
+    if not eu5_region_reference:
+        eu5_region_reference = [0.0, 5.0, 10.0, 15.0, 20.0, 25.0, 30.0]
+    if not eu5_special_reference:
+        eu5_special_reference = [-5.0, -3.0, 1.0, 2.0, 3.0, 5.0, 7.0, 10.0]
+
+    region_source_scores: dict[str, float] = {
+        region_tag: (sum(scores) / len(scores))
+        for region_tag, scores in region_score_samples.items()
+        if scores
+    }
+    mapped_region_values = _map_values_to_reference_distribution(
+        region_source_scores,
+        sorted(eu5_region_reference),
+    )
+
+    region_delta_by_tag: dict[str, int] = {}
+    for region_tag, value in sorted(mapped_region_values.items()):
+        rounded = int(round(value))
+        if rounded == 0:
+            continue
+        region_delta_by_tag[region_tag] = rounded
+        development_lines.append(f"{region_tag} = {rounded}")
+    # Assign per-location overrides purely from I:R-derived development signals.
+    candidate_locations = sorted(active_locations)
+
+    capital_id_by_tag = _ir_country_capitals()
+    capital_location_to_tag: dict[str, str] = {}
+    for tag, capital_id in capital_id_by_tag.items():
+        loc_key = id_to_key.get(capital_id)
+        if loc_key:
+            capital_location_to_tag[loc_key] = str(tag)
+
+    country_location_counts = {
+        str(tag): len(locations)
+        for tag, locations in extract_ir_country_locations().items()
+        if isinstance(locations, list)
+    }
+
+    metric_source_scores: dict[str, float] = {}
+    for loc_key in candidate_locations:
+        rank = development_rank_by_location.get(loc_key, "rural_settlement")
+        raw_region_tag = location_to_region.get(loc_key, "")
+        region_tag = to_region_key(raw_region_tag) if raw_region_tag else ""
+
+        raw_score = raw_development.get(loc_key, target_values.get(loc_key, 0.0))
+        region_average = region_source_scores.get(region_tag, raw_score)
+        local_exception = raw_score - region_average
+
+        province_rank_text = str(
+            development_metrics.get(loc_key, {}).get("province_rank", "")
+        ).lower()
+        metropolis_bonus = 0.0
+        if "metropolis" in province_rank_text:
+            metropolis_bonus = 2.0
+        elif province_rank_text == "city":
+            metropolis_bonus = 0.4
+
+        capital_bonus = 0.0
+        capital_tag = capital_location_to_tag.get(loc_key, "")
+        if capital_tag:
+            country_size = country_location_counts.get(capital_tag, 0)
+            # Use only I:R country size data to bias notable state capitals upward.
+            capital_bonus = min(3.6, 0.90 * math.log1p(max(1, country_size)))
+
+        metric_source_scores[loc_key] = (
+            (0.78 * raw_score)
+            + (0.22 * local_exception)
+            + (0.60 * rank_priority.get(rank, 0))
+            + metropolis_bonus
+            + capital_bonus
+        )
+
+    max_special_overrides = min(80, len(candidate_locations))
+    positive_special_reference = sorted(value for value in eu5_special_reference if value > 0)
+    if not positive_special_reference:
+        positive_special_reference = [1.0, 2.0, 3.0, 5.0, 7.0, 10.0]
+
+    selected_keys = sorted(
+        candidate_locations,
+        key=lambda key: (metric_source_scores.get(key, 0.0), key),
+        reverse=True,
+    )[:max_special_overrides]
+
+    mapped_positive = _map_values_to_reference_distribution(
+        {loc_key: metric_source_scores.get(loc_key, 0.0) for loc_key in selected_keys},
+        positive_special_reference,
+    )
+
+    override_rows: list[dict[str, str]] = []
+    selected_special = 0
+    for loc_key in selected_keys:
+        mapped_value = float(mapped_positive.get(loc_key, positive_special_reference[0]))
+        final_delta = max(1, int(round(mapped_value)))
+        development_lines.append(f"{loc_key} = {final_delta}")
+        selected_special += 1
+
+        raw_region_tag = location_to_region.get(loc_key, "")
+        region_tag = to_region_key(raw_region_tag) if raw_region_tag else ""
+        override_rows.append(
+            {
+                "location": loc_key,
+                "development_rank": development_rank_by_location.get(loc_key, "rural_settlement"),
+                "region": region_tag,
+                "region_modifier": str(region_delta_by_tag.get(region_tag, 0)),
+                "target_value": f"{target_values.get(loc_key, 0.0):.3f}",
+                "metric_score": f"{metric_source_scores.get(loc_key, 0.0):.3f}",
+                "mapped_value": f"{mapped_value:.3f}",
+                "final_override": str(final_delta),
+            }
+        )
+
+    override_rows_sorted = sorted(
+        override_rows,
+        key=lambda row: (
+            int(row["final_override"]),
+            float(row["metric_score"]),
+            row["location"],
+        ),
+        reverse=True,
+    )
+
+    overrides_report_path = mod_root / "tools" / "ir_to_eu5" / "iu_location_development_overrides.tsv"
+    overrides_report_path.parent.mkdir(parents=True, exist_ok=True)
+    with overrides_report_path.open("w", encoding="utf-8") as f:
+        f.write(
+            "location	development_rank	region	region_modifier	target_value	metric_score	mapped_value	final_override\n"
+        )
+        for row in override_rows_sorted:
+            f.write(
+                "	".join(
+                    [
+                        row["location"],
+                        row["development_rank"],
+                        row["region"],
+                        row["region_modifier"],
+                        row["target_value"],
+                        row["metric_score"],
+                        row["mapped_value"],
+                        row["final_override"],
+                    ]
+                )
+                + "\n"
+            )
+    print_written("file", overrides_report_path)
+
+    print(
+        "Development special overrides: assigned "
+        + str(selected_special)
+        + " data-driven location overrides."
+    )
+
+    development_path = mod_root / "main_menu" / "setup" / "start" / "14_development.txt"
+    write_blocks(development_path, [("development", development_lines)], encoding="utf-8")
+
+    print(
+        "Economy calibration: active_locations="
+        + str(len(active_locations))
+        + ", promoted "
+        + str(len(city_locations))
+        + " urban locations to city rank (target city share "
+        + f"{city_share_target:.3f}), selected "
+        + str(len(selected_rural_locations))
+        + " rural locations (target "
+        + str(target_rural_count)
+        + ")"
+    )
+
+    _write_economy_balance_report(
+        economy_targets,
+        rank_lines,
+        location_building_setups,
+        setup_definitions,
+        direct_building_levels,
+    )
 
     rank_blocks = [(loc_key, [rank_lines[loc_key]]) for loc_key in sorted(rank_lines.keys())]
-    _write_locations_block(
-        iu_setup_start / "07_cities_and_buildings.txt", rank_blocks, encoding="utf-8"
+    cities_blocks: list[tuple[str, list[object]]] = [("locations", rank_blocks)]
+    if building_manager_lines:
+        cities_blocks.append(("building_manager", building_manager_lines))
+    write_blocks(
+        iu_setup_start / "07_cities_and_buildings.txt",
+        cities_blocks,
+        encoding="utf-8",
     )
 
 
@@ -3409,6 +5478,7 @@ def _write_start_setup_content(
         set(pops_by_location.keys()),
         default_map,
         coastal_land_locations,
+        location_to_region,
     )
 
     _write_markets_file(id_to_key, location_keys, default_map, location_to_region)
