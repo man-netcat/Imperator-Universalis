@@ -1,6 +1,7 @@
 ﻿ir_aristocratic_monarchy = {
 	age = age_1_traditions
 	government = monarchy
+	icon = feudal_nobility
 
 	country_modifier = {
 		global_nobles_estate_power = 0.15
@@ -14,6 +15,7 @@
 ir_despotic_monarchy = {
 	age = age_1_traditions
 	government = monarchy
+	icon = autocracy
 
 	country_modifier = {
 		global_crown_estate_power = 0.15
@@ -27,6 +29,7 @@ ir_despotic_monarchy = {
 ir_stratocratic_monarchy = {
 	age = age_1_traditions
 	government = monarchy
+	icon = military_regime_reform
 
 	country_modifier = {
 		levy_combat_efficiency_modifier = 0.10
@@ -40,6 +43,7 @@ ir_stratocratic_monarchy = {
 ir_spartan_monarchy = {
 	age = age_1_traditions
 	government = monarchy
+	icon = military_allotment
 
 	country_modifier = {
 		levy_combat_efficiency_modifier = 0.15
@@ -53,6 +57,7 @@ ir_spartan_monarchy = {
 ir_plutocratic_monarchy = {
 	age = age_1_traditions
 	government = monarchy
+	icon = plutocratic_ethos
 
 	country_modifier = {
 		global_burghers_estate_power = 0.15
@@ -66,6 +71,7 @@ ir_plutocratic_monarchy = {
 ir_satrapal_administration = {
 	age = age_1_traditions
 	government = monarchy
+	icon = patrimonialism
 	major = yes
 
 	country_modifier = {
@@ -80,6 +86,7 @@ ir_satrapal_administration = {
 ir_royal_companion_corps = {
 	age = age_1_traditions
 	government = monarchy
+	icon = local_army_organization
 
 	country_modifier = {
 		levy_combat_efficiency_modifier = 0.10
@@ -93,6 +100,7 @@ ir_royal_companion_corps = {
 ir_aristocratic_republic = {
 	age = age_1_traditions
 	government = republic
+	icon = noble_elite
 	major = yes
 
 	country_modifier = {
@@ -107,6 +115,7 @@ ir_aristocratic_republic = {
 ir_plutocratic_republic = {
 	age = age_1_traditions
 	government = republic
+	icon = merchant_republic
 
 	country_modifier = {
 		global_burghers_estate_power = 0.15
@@ -120,6 +129,7 @@ ir_plutocratic_republic = {
 ir_punic_republic = {
 	age = age_1_traditions
 	government = republic
+	icon = thalassocracy_reform
 
 	potential = {
 		num_of_ports > 0
@@ -138,6 +148,7 @@ ir_punic_republic = {
 ir_oligarchic_republic = {
 	age = age_1_traditions
 	government = republic
+	icon = signoria_reform
 
 	country_modifier = {
 		country_cabinet_efficiency = 0.10
@@ -151,6 +162,7 @@ ir_oligarchic_republic = {
 ir_democratic_republic = {
 	age = age_1_traditions
 	government = republic
+	icon = sortition
 
 	country_modifier = {
 		global_estate_target_satisfaction = small_permanent_target_satisfaction
@@ -164,6 +176,7 @@ ir_democratic_republic = {
 ir_city_state_republic = {
 	age = age_1_traditions
 	government = republic
+	icon = formalized_measures
 
 	potential = {
 		country_rank_level <= 2
@@ -181,6 +194,7 @@ ir_city_state_republic = {
 ir_maritime_league_republic = {
 	age = age_1_traditions
 	government = republic
+	icon = thalassocracy_reform
 
 	potential = {
 		num_of_ports > 0
@@ -198,6 +212,7 @@ ir_maritime_league_republic = {
 ir_theocratic_republic = {
 	age = age_1_traditions
 	government = republic
+	icon = administration_of_clerical_lands
 
 	country_modifier = {
 		global_pop_conversion_speed_modifier = 0.15
@@ -211,6 +226,7 @@ ir_theocratic_republic = {
 ir_theocratic_monarchy = {
 	age = age_1_traditions
 	government = theocracy
+	icon = feudal_theocracy
 
 	country_modifier = {
 		global_pop_conversion_speed_modifier = 0.15
@@ -225,6 +241,7 @@ ir_theocratic_monarchy = {
 ir_sacred_college_theocracy = {
 	age = age_1_traditions
 	government = theocracy
+	icon = legatus_natus
 
 	country_modifier = {
 		stability_investment = tiny_stability_investment
@@ -238,6 +255,7 @@ ir_sacred_college_theocracy = {
 ir_tribal_kingdom = {
 	age = age_1_traditions
 	government = tribe
+	icon = legacy_of_genghis
 
 	country_modifier = {
 		global_monthly_food_modifier = 0.15
@@ -251,6 +269,7 @@ ir_tribal_kingdom = {
 ir_tribal_federation = {
 	age = age_1_traditions
 	government = tribe
+	icon = family_sagas_reform
 
 	country_modifier = {
 		subject_loyalty = 15
@@ -264,6 +283,7 @@ ir_tribal_federation = {
 ir_tribal_chiefdom = {
 	age = age_1_traditions
 	government = tribe
+	icon = cossacks_reform
 
 	country_modifier = {
 		global_monthly_food_modifier = 0.15
@@ -277,6 +297,7 @@ ir_tribal_chiefdom = {
 ir_confederated_tribal_council = {
 	age = age_1_traditions
 	government = tribe
+	icon = haudenosaunee_clan_mothers
 
 	country_modifier = {
 		diplomatic_reputation = 2

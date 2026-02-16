@@ -26,3 +26,16 @@
   ir_tribes_pastoral_corridors_desc: "Tribal groups secure recognized migration and grazing corridors across frontier lands."
   ir_tribes_council_autonomy: "Council Autonomy"
   ir_tribes_council_autonomy_desc: "Clan councils gain formal autonomy in confederate decision-making and diplomacy."
+
+  ir_peasants_communal_fields: "Communal Field Rights"
+  ir_peasants_communal_fields_desc: "Village communities retain protected access to communal lands and shared agricultural rights."
+  ir_peasants_levy_service: "Levy Service Obligations"
+  ir_peasants_levy_service_desc: "Rural communities provide structured levy service in return for recognized local protections."
+  ir_peasants_tax_relief: "Peasant Tax Relief"
+  ir_peasants_tax_relief_desc: "Peasant households receive tax relief to stabilize agrarian productivity and social order."
+
+  ir_burghers_caravan_brokers: "Caravan Brokerage Rights"
+  ir_burghers_caravan_brokers_desc: "Urban merchants are licensed to broker long-distance caravan traffic and overland exchange."
+
+  ir_clergy_sacred_law_scholars: "Sacred Law Scholars"
+  ir_clergy_sacred_law_scholars_desc: "Recognized scholar-priests shape legal interpretation and reinforce religious legitimacy."

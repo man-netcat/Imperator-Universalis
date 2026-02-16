@@ -5,22 +5,14 @@
 
 government = {
     privilege = {
-        nobles_land_rights
-        noble_marriage_rights
-        clerical_advisory_council
-        clergy_enforced_unity
-        market_fairs
-        formal_guilds
-        building_roads_rights
-        allow_hunting
-        peasants_allowed_weapons_privilege
-        peasants_free_peasantry
-        peasant_owns_their_food
-        tribes_tribal_levies
-        tribes_allow_gatherings
-        clergy_land_rights
-        religious_diplomats
-        nobility_council
+        ir_tribes_warband_rights
+        ir_tribes_pastoral_corridors
+        ir_tribes_council_autonomy
+        ir_nobles_companion_cavalry
+        ir_clergy_state_cult
+        ir_peasants_levy_service
+        ir_clergy_temple_lands
+        ir_nobility_council_rights
     }
 }
 

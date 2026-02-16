@@ -5,12 +5,11 @@
 
 government = {
     privilege = {
-        ir_nobles_land_grants
-        ir_nobles_companion_cavalry
-        ir_nobility_council_rights
         ir_clergy_state_cult
-        ir_burghers_tax_farming
-        ir_burghers_guild_charters
+        ir_clergy_temple_lands
+        ir_clergy_oracular_colleges
+        ir_clergy_sacred_law_scholars
+        ir_nobles_land_grants
         ir_peasants_communal_fields
         ir_burghers_port_contracts
         ir_burghers_caravan_brokers

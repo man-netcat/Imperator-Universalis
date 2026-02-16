@@ -1925,6 +1925,110 @@ def _ir_religion_bucket(religion_tag: str | None) -> str:
     return "folk"
 
 
+IR_PRIVILEGE_KEYS = {
+    "ir_nobles_companion_cavalry",
+    "ir_nobles_land_grants",
+    "ir_nobility_council_rights",
+    "ir_burghers_port_contracts",
+    "ir_burghers_tax_farming",
+    "ir_burghers_guild_charters",
+    "ir_burghers_caravan_brokers",
+    "ir_clergy_state_cult",
+    "ir_clergy_temple_lands",
+    "ir_clergy_oracular_colleges",
+    "ir_clergy_sacred_law_scholars",
+    "ir_tribes_warband_rights",
+    "ir_tribes_pastoral_corridors",
+    "ir_tribes_council_autonomy",
+    "ir_peasants_communal_fields",
+    "ir_peasants_levy_service",
+    "ir_peasants_tax_relief",
+}
+
+# Base-game to I:U mapping. Keep this explicit so generated templates can
+# safely consume either EU5 or I:U privilege IDs.
+BASE_TO_IR_PRIVILEGE_MAP = {
+    "nobles_land_rights": "ir_nobles_land_grants",
+    "noble_leaders_only": "ir_nobles_companion_cavalry",
+    "nobility_council": "ir_nobility_council_rights",
+    "sponsor_maritime_contracts": "ir_burghers_port_contracts",
+    "trade_monopolies": "ir_burghers_tax_farming",
+    "formal_guilds": "ir_burghers_guild_charters",
+    "dedicated_merchant_courts": "ir_burghers_caravan_brokers",
+    "clergy_religious_state": "ir_clergy_state_cult",
+    "clergy_land_rights": "ir_clergy_temple_lands",
+    "clerical_advisory_council": "ir_clergy_oracular_colleges",
+    "state_official_oaths": "ir_clergy_sacred_law_scholars",
+    "tribes_tribal_levies": "ir_tribes_warband_rights",
+    "tribes_pasture_access": "ir_tribes_pastoral_corridors",
+    "tribal_autonomy": "ir_tribes_council_autonomy",
+    "communal_lands": "ir_peasants_communal_fields",
+    "peasants_fewer_levies": "ir_peasants_levy_service",
+    "peasants_no_poll_tax_privilege": "ir_peasants_tax_relief",
+}
+
+# Explicit icon source mapping from EU5 base icon IDs.
+IR_PRIVILEGE_ICON_BASE = {
+    "ir_nobles_companion_cavalry": "noble_leaders_only",
+    "ir_nobles_land_grants": "nobles_land_rights",
+    "ir_nobility_council_rights": "nobility_council",
+    "ir_burghers_port_contracts": "sponsor_maritime_contracts",
+    "ir_burghers_tax_farming": "trade_monopolies",
+    "ir_burghers_guild_charters": "formal_guilds",
+    "ir_burghers_caravan_brokers": "dedicated_merchant_courts",
+    "ir_clergy_state_cult": "clergy_religious_state",
+    "ir_clergy_temple_lands": "clergy_land_rights",
+    "ir_clergy_oracular_colleges": "clerical_advisory_council",
+    "ir_clergy_sacred_law_scholars": "state_official_oaths",
+    "ir_tribes_warband_rights": "tribes_tribal_levies",
+    "ir_tribes_pastoral_corridors": "tribes_pasture_access",
+    "ir_tribes_council_autonomy": "tribal_autonomy",
+    "ir_peasants_communal_fields": "communal_lands",
+    "ir_peasants_levy_service": "peasants_fewer_levies",
+    "ir_peasants_tax_relief": "peasants_no_poll_tax_privilege",
+}
+
+
+def _to_ir_privilege_key(privilege_key: str) -> str | None:
+    key = str(privilege_key)
+    if key in IR_PRIVILEGE_KEYS or key.startswith("ir_"):
+        return key
+    return BASE_TO_IR_PRIVILEGE_MAP.get(key)
+
+
+def _normalize_privilege_keys(privileges: list[str]) -> list[str]:
+    normalized: list[str] = []
+    for privilege_key in privileges:
+        mapped = _to_ir_privilege_key(privilege_key)
+        if mapped:
+            normalized.append(mapped)
+    return _dedupe(normalized)
+
+
+def _sync_privilege_icons() -> None:
+    src_dir = eu5_game / "main_menu" / "gfx" / "interface" / "icons" / "privileges"
+    dst_dir = mod_root / "main_menu" / "gfx" / "interface" / "icons" / "privileges"
+    if not src_dir.exists():
+        print("Warning: missing EU5 privilege icon dir", src_dir)
+        return
+
+    dst_dir.mkdir(parents=True, exist_ok=True)
+    fallback_icon = src_dir / "_default.dds"
+
+    for ir_key in sorted(IR_PRIVILEGE_ICON_BASE.keys()):
+        base_key = IR_PRIVILEGE_ICON_BASE[ir_key]
+        src_icon = src_dir / f"{base_key}.dds"
+        dst_icon = dst_dir / f"{ir_key}.dds"
+        if src_icon.exists():
+            shutil.copy2(src_icon, dst_icon)
+        elif fallback_icon.exists():
+            shutil.copy2(fallback_icon, dst_icon)
+            print(f"Warning: missing icon for {base_key}, using _default.dds")
+        else:
+            continue
+        print_written("file", dst_icon)
+
+
 def _government_template_profile(
     government_type: str,
     culture_group_tag: str | None,
@@ -1937,76 +2041,53 @@ def _government_template_profile(
 
     base_privileges_by_government = {
         "monarchy": [
-            "auxilium_et_consilium",
             "nobles_land_rights",
-            "noble_marriage_rights",
-            "noble_fortification_licenses",
-            "clergy_literacy_rights",
-            "clerical_advisory_council",
-            "market_fairs",
+            "noble_leaders_only",
+            "nobility_council",
+            "clergy_religious_state",
+            "trade_monopolies",
             "formal_guilds",
-            "building_roads_rights",
-            "allow_hunting",
             "communal_lands",
         ],
         "republic": [
-            "nobles_land_rights",
-            "noble_fortification_licenses",
-            "commercial_advisory_council",
-            "burghers_land_rights",
-            "building_rights",
+            "nobility_council",
             "trade_monopolies",
             "formal_guilds",
-            "clergy_literacy_rights",
+            "dedicated_merchant_courts",
             "clerical_advisory_council",
-            "peasants_allowed_weapons_privilege",
-            "peasants_free_peasantry",
-            "partial_yield",
+            "peasants_no_poll_tax_privilege",
         ],
         "theocracy": [
-            "nobles_land_rights",
-            "noble_leaders_only",
-            "noble_fortification_licenses",
-            "clergy_literacy_rights",
-            "clergy_enforced_unity",
-            "clergy_strengthen_faith",
+            "clergy_religious_state",
+            "clergy_land_rights",
             "clerical_advisory_council",
-            "market_fairs",
-            "formal_guilds",
-            "building_roads_rights",
-            "allow_hunting",
-            "partial_yield",
+            "state_official_oaths",
+            "nobles_land_rights",
+            "communal_lands",
         ],
         "tribe": [
-            "nobles_land_rights",
-            "noble_marriage_rights",
-            "clerical_advisory_council",
-            "clergy_enforced_unity",
-            "market_fairs",
-            "formal_guilds",
-            "building_roads_rights",
-            "allow_hunting",
-            "peasants_allowed_weapons_privilege",
-            "peasants_free_peasantry",
-            "peasant_owns_their_food",
             "tribes_tribal_levies",
-            "tribes_allow_gatherings",
+            "tribes_pasture_access",
+            "tribal_autonomy",
+            "noble_leaders_only",
+            "clergy_religious_state",
+            "peasants_fewer_levies",
         ],
     }
 
     religion_privileges = {
-        "dharmic": ["embellish_great_works_of_faith", "clergy_in_administration"],
-        "iranian": ["clergy_land_rights", "religious_diplomats"],
-        "abrahamic": ["clergy_enforced_unity"],
-        "folk": [],
+        "dharmic": ["clerical_advisory_council", "communal_lands"],
+        "iranian": ["noble_leaders_only", "clergy_land_rights"],
+        "abrahamic": ["clergy_religious_state", "state_official_oaths"],
+        "folk": ["nobility_council"],
     }
 
     culture_privileges = {
         "classical": ["nobility_council"],
-        "iranic": ["primacy_of_nobility"],
-        "indian": ["land_of_commerce", "allow_trade_center_sponsorship"],
-        "mercantile": ["land_of_commerce", "sponsor_maritime_contracts"],
-        "frontier": ["peasants_allowed_weapons_privilege"],
+        "iranic": ["noble_leaders_only"],
+        "indian": ["trade_monopolies", "communal_lands"],
+        "mercantile": ["sponsor_maritime_contracts", "dedicated_merchant_courts"],
+        "frontier": ["peasants_fewer_levies"],
         "general": [],
     }
 
@@ -2014,11 +2095,11 @@ def _government_template_profile(
     # and use ir_start_* templates only for privilege flavoring.
     reforms: list[str] = []
 
-    privileges = list(base_privileges_by_government.get(government_type, []))
-    privileges.extend(religion_privileges[religion_bucket])
-    privileges.extend(culture_privileges[culture_bucket])
+    raw_privileges = list(base_privileges_by_government.get(government_type, []))
+    raw_privileges.extend(religion_privileges[religion_bucket])
+    raw_privileges.extend(culture_privileges[culture_bucket])
 
-    return template_name, reforms, _dedupe(privileges)
+    return template_name, reforms, _normalize_privilege_keys(raw_privileges)
 
 
 def _write_country_government_templates(
@@ -2210,13 +2291,8 @@ def write_10_countries(
         if normalized_reforms:
             merged_government["reforms"] = _dedupe(normalized_reforms)
 
-        raw_privileges = merged_government.get("privilege", [])
-        normalized_privileges = [
-            str(item) for item in ensure_list(raw_privileges) if item not in (None, "")
-        ]
-        normalized_privileges.extend(template_privileges)
-        if normalized_privileges:
-            merged_government["privilege"] = _dedupe(normalized_privileges)
+        # Privileges are assigned via included templates only, never directly per country.
+        merged_government.pop("privilege", None)
 
         merged["government"] = merged_government
 

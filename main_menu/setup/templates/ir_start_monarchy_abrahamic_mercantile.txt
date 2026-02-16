@@ -5,20 +5,16 @@
 
 government = {
     privilege = {
-        auxilium_et_consilium
-        nobles_land_rights
-        noble_marriage_rights
-        noble_fortification_licenses
-        clergy_literacy_rights
-        clerical_advisory_council
-        market_fairs
-        formal_guilds
-        building_roads_rights
-        allow_hunting
-        communal_lands
-        clergy_enforced_unity
-        land_of_commerce
-        sponsor_maritime_contracts
+        ir_nobles_land_grants
+        ir_nobles_companion_cavalry
+        ir_nobility_council_rights
+        ir_clergy_state_cult
+        ir_burghers_tax_farming
+        ir_burghers_guild_charters
+        ir_peasants_communal_fields
+        ir_clergy_sacred_law_scholars
+        ir_burghers_port_contracts
+        ir_burghers_caravan_brokers
     }
 }
 

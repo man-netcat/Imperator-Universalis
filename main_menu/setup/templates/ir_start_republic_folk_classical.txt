@@ -5,19 +5,12 @@
 
 government = {
     privilege = {
-        nobles_land_rights
-        noble_fortification_licenses
-        commercial_advisory_council
-        burghers_land_rights
-        building_rights
-        trade_monopolies
-        formal_guilds
-        clergy_literacy_rights
-        clerical_advisory_council
-        peasants_allowed_weapons_privilege
-        peasants_free_peasantry
-        partial_yield
-        nobility_council
+        ir_nobility_council_rights
+        ir_burghers_tax_farming
+        ir_burghers_guild_charters
+        ir_burghers_caravan_brokers
+        ir_clergy_oracular_colleges
+        ir_peasants_tax_relief
     }
 }
 

@@ -5,19 +5,13 @@
 
 government = {
     privilege = {
-        nobles_land_rights
-        noble_leaders_only
-        noble_fortification_licenses
-        clergy_literacy_rights
-        clergy_enforced_unity
-        clergy_strengthen_faith
-        clerical_advisory_council
-        market_fairs
-        formal_guilds
-        building_roads_rights
-        allow_hunting
-        partial_yield
-        nobility_council
+        ir_clergy_state_cult
+        ir_clergy_temple_lands
+        ir_clergy_oracular_colleges
+        ir_clergy_sacred_law_scholars
+        ir_nobles_land_grants
+        ir_peasants_communal_fields
+        ir_nobility_council_rights
     }
 }
 

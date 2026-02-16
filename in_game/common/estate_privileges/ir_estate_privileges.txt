@@ -1,7 +1,8 @@
-﻿# 304 BC focused estate privileges inspired by EU5 base and Imperator structures.
+﻿# Estate privileges inspired by EU5 base and Imperator structures.
 
 ir_nobles_companion_cavalry = {
 	estate = nobles_estate
+	icon = noble_leaders_only
 	potential = {
 		OR = {
 			government_type = government_type:monarchy
@@ -18,6 +19,7 @@ ir_nobles_companion_cavalry = {
 
 ir_nobles_land_grants = {
 	estate = nobles_estate
+	icon = nobles_land_rights
 	country_modifier = {
 		global_nobles_estate_power = 0.33
 		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
@@ -29,6 +31,7 @@ ir_nobles_land_grants = {
 
 ir_nobility_council_rights = {
 	estate = nobles_estate
+	icon = nobility_council
 	country_modifier = {
 		global_nobles_estate_power = 0.20
 		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
@@ -39,6 +42,7 @@ ir_nobility_council_rights = {
 
 ir_burghers_port_contracts = {
 	estate = burghers_estate
+	icon = sponsor_maritime_contracts
 	potential = {
 		num_of_ports > 0
 	}
@@ -53,6 +57,7 @@ ir_burghers_port_contracts = {
 
 ir_burghers_tax_farming = {
 	estate = burghers_estate
+	icon = trade_monopolies
 	country_modifier = {
 		global_burghers_estate_power = 0.25
 		burghers_estate_target_satisfaction = medium_privilege_target_satisfaction
@@ -64,6 +69,7 @@ ir_burghers_tax_farming = {
 
 ir_burghers_guild_charters = {
 	estate = burghers_estate
+	icon = formal_guilds
 	country_modifier = {
 		global_burghers_estate_power = 0.20
 		burghers_estate_target_satisfaction = medium_privilege_target_satisfaction
@@ -74,6 +80,7 @@ ir_burghers_guild_charters = {
 
 ir_clergy_state_cult = {
 	estate = clergy_estate
+	icon = clergy_religious_state
 	country_modifier = {
 		global_clergy_estate_power = 0.25
 		clergy_estate_target_satisfaction = medium_privilege_target_satisfaction
@@ -84,6 +91,7 @@ ir_clergy_state_cult = {
 
 ir_clergy_temple_lands = {
 	estate = clergy_estate
+	icon = clergy_land_rights
 	country_modifier = {
 		global_clergy_estate_power = 0.25
 		clergy_estate_target_satisfaction = medium_privilege_target_satisfaction
@@ -95,6 +103,7 @@ ir_clergy_temple_lands = {
 
 ir_clergy_oracular_colleges = {
 	estate = clergy_estate
+	icon = clerical_advisory_council
 	country_modifier = {
 		global_clergy_estate_power = 0.20
 		clergy_estate_target_satisfaction = medium_privilege_target_satisfaction
@@ -106,6 +115,7 @@ ir_clergy_oracular_colleges = {
 
 ir_tribes_warband_rights = {
 	estate = tribes_estate
+	icon = tribes_tribal_levies
 	potential = {
 		government_type = government_type:tribe
 	}
@@ -119,6 +129,7 @@ ir_tribes_warband_rights = {
 
 ir_tribes_pastoral_corridors = {
 	estate = tribes_estate
+	icon = tribes_pasture_access
 	potential = {
 		government_type = government_type:tribe
 	}
@@ -132,6 +143,7 @@ ir_tribes_pastoral_corridors = {
 
 ir_tribes_council_autonomy = {
 	estate = tribes_estate
+	icon = tribal_autonomy
 	potential = {
 		government_type = government_type:tribe
 	}
@@ -142,3 +154,61 @@ ir_tribes_council_autonomy = {
 		monthly_towards_decentralization = societal_value_monthly_move
 	}
 }
+
+ir_peasants_communal_fields = {
+	estate = peasants_estate
+	icon = communal_lands
+	country_modifier = {
+		global_peasants_estate_power = 0.20
+		peasants_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_monthly_food_modifier = 0.08
+		monthly_towards_communalism = societal_value_minor_monthly_move
+	}
+}
+
+ir_peasants_levy_service = {
+	estate = peasants_estate
+	icon = peasants_fewer_levies
+	country_modifier = {
+		global_peasants_estate_power = 0.15
+		peasants_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_army_levy_size_modifier = 0.05
+		monthly_towards_belligerent = societal_value_minor_monthly_move
+	}
+}
+
+ir_peasants_tax_relief = {
+	estate = peasants_estate
+	icon = peasants_no_poll_tax_privilege
+	country_modifier = {
+		global_peasants_estate_power = 0.20
+		peasants_estate_target_satisfaction = medium_privilege_target_satisfaction
+		tax_income_efficiency = -0.05
+		monthly_towards_free_subjects = societal_value_minor_monthly_move
+	}
+}
+
+ir_burghers_caravan_brokers = {
+	estate = burghers_estate
+	icon = dedicated_merchant_courts
+	country_modifier = {
+		global_burghers_estate_power = 0.20
+		burghers_estate_target_satisfaction = medium_privilege_target_satisfaction
+		trade_efficiency = 0.08
+		global_merchant_capacity_modifier = 0.10
+		monthly_towards_outward = societal_value_minor_monthly_move
+	}
+}
+
+ir_clergy_sacred_law_scholars = {
+	estate = clergy_estate
+	icon = state_official_oaths
+	country_modifier = {
+		global_clergy_estate_power = 0.20
+		clergy_estate_target_satisfaction = medium_privilege_target_satisfaction
+		stability_investment = tiny_stability_investment
+		country_cabinet_efficiency = 0.03
+		monthly_towards_traditionalist = societal_value_minor_monthly_move
+	}
+}
+
