@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "Imperator Universalis",
   "id": "imperatoruniversalis",
   "version": "1",
@@ -17,7 +17,12 @@
       "common/situations",
       "common/estate_privileges",
       "common/government_reforms",
-      "setup/countries"
+      "setup/countries",
+      "common/scripted_triggers",
+      "common/advances",
+      "common/building_types",
+      "common/cabinet_actions",
+      "common/country_interactions"
     ]
   }
 }

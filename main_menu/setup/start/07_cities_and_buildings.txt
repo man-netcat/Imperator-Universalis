@@ -5,10 +5,10 @@
 
 locations = {
     abasenia = {
-        rank = town town_setup = ir_punt_town_coastal
+        rank = town town_setup = ir_ethiopia_town_coastal
     }
     abdera = {
-        rank = town town_setup = ir_greek_town_coastal
+        rank = town town_setup = ir_illyrian_town_coastal
     }
     abliata = {
         rank = town town_setup = ir_nubian_town
@@ -17,490 +17,490 @@ locations = {
         rank = town town_setup = ir_nubian_town
     }
     abuyya = {
-        rank = town town_setup = ir_maru_town
+        rank = town town_setup = ir_hindustan_town
     }
     abydos = {
-        rank = town town_setup = ir_asia_town_coastal
+        rank = town town_setup = ir_anatolian_town_coastal
     }
     acholla = {
         rank = city town_setup = ir_numidian_city_coastal
     }
     acragas = {
-        rank = city town_setup = ir_magna_graecia_city_coastal
+        rank = city town_setup = ir_italic_city_coastal
     }
     adan = {
         rank = town town_setup = ir_arabian_town_coastal
     }
     adouli = {
-        rank = town town_setup = ir_punt_town_coastal_02
+        rank = town town_setup = ir_ethiopia_town_coastal_02
     }
     adraha = {
-        rank = town town_setup = ir_palestine_town
+        rank = town town_setup = ir_crescent_town
     }
     adramyttion = {
-        rank = town town_setup = ir_asia_town_coastal
+        rank = town town_setup = ir_anatolian_town_coastal
     }
     aeclanum = {
-        rank = town town_setup = ir_magna_graecia_town
+        rank = town town_setup = ir_italic_town
     }
     agatha = {
         rank = town town_setup = ir_gaulish_town_coastal
     }
     ahicchatra = {
-        rank = city town_setup = ir_madhyadesa_city
+        rank = city town_setup = ir_hindustan_city
     }
     aigina = {
-        rank = city town_setup = ir_greek_city_coastal
+        rank = city town_setup = ir_illyrian_city_coastal
     }
     airakina = {
-        rank = town town_setup = ir_avanti_town
+        rank = town town_setup = ir_hindustan_town
     }
     ake_ptolemais = {
-        rank = town town_setup = ir_palestine_town_coastal
+        rank = town town_setup = ir_crescent_town_coastal
     }
     akmoneia = {
-        rank = town town_setup = ir_galatia_town
+        rank = town town_setup = ir_anatolian_town
     }
     aksum = {
-        rank = town town_setup = ir_punt_town
+        rank = town town_setup = ir_ethiopia_town
     }
     aleria = {
         rank = city town_setup = ir_italic_city_coastal
     }
     alexandreia_areia = {
-        rank = city town_setup = ir_ariana_city
+        rank = city town_setup = ir_persian_city
     }
     alexandreia_bactriane = {
-        rank = city town_setup = ir_bactrian_city
+        rank = city town_setup = ir_persian_city
     }
     alexandreia_eschate = {
-        rank = city town_setup = ir_sogdiana_city
+        rank = city town_setup = ir_khorasan_city
     }
     alexandreia_nikaia = {
-        rank = city town_setup = ir_indian_city
+        rank = city town_setup = ir_hindustan_city
     }
     alexandreia_sakastenes = {
-        rank = city town_setup = ir_ariana_city
+        rank = city town_setup = ir_persian_city
     }
     alexandria = {
         rank = city town_setup = ir_egyptian_city_coastal
     }
     alexandria_ad_caucasum = {
-        rank = city town_setup = ir_bactrian_city_02
+        rank = city town_setup = ir_persian_city_02
     }
     alexandria_margiana = {
-        rank = city town_setup = ir_bactrian_city_03
+        rank = city town_setup = ir_persian_city_03
     }
     alexandria_oxiana = {
-        rank = city town_setup = ir_bactrian_city_03
+        rank = city town_setup = ir_persian_city_03
     }
     alexandria_susiana = {
-        rank = city town_setup = ir_mesopotamian_city
+        rank = city town_setup = ir_crescent_city
     }
     alexandropolis = {
-        rank = city town_setup = ir_ariana_city_02
+        rank = city town_setup = ir_persian_city_03
     }
     alexandrou_limen = {
-        rank = city town_setup = ir_maru_city_coastal
+        rank = city town_setup = ir_hindustan_city_coastal
     }
     alosgyni = {
-        rank = town town_setup = ir_vindhyaprstha_town_coastal
+        rank = town town_setup = ir_deccan_town_coastal
     }
     altinum = {
-        rank = town town_setup = ir_gaulish_town_coastal_02
+        rank = town town_setup = ir_italic_town_coastal
     }
     alwa = {
         rank = town town_setup = ir_nubian_town_02
     }
     amarda = {
-        rank = rural_settlement town_setup = ir_parthia_rural_settlement_coastal
+        rank = rural_settlement town_setup = ir_khorasan_rural_settlement_coastal
     }
     amaseia = {
-        rank = town town_setup = ir_cappadocia_pontica_town
+        rank = town town_setup = ir_anatolian_town_02
     }
     amathe = {
-        rank = town town_setup = ir_syria_town
+        rank = town town_setup = ir_crescent_town_02
     }
     ambaloda = {
-        rank = town town_setup = ir_madhyadesa_town
+        rank = town town_setup = ir_hindustan_town_02
     }
     ambrakia = {
-        rank = city town_setup = ir_greek_city_coastal_02
+        rank = city town_setup = ir_illyrian_city_coastal_02
     }
     amisos = {
-        rank = town town_setup = ir_bithynia_town_coastal
+        rank = town town_setup = ir_anatolian_town_coastal_02
     }
     ammon = {
-        rank = city town_setup = ir_cyrenaica_city
-    }
-    amphipolis = {
-        rank = city town_setup = ir_greek_city_coastal
-    }
-    anatachara = {
-        rank = city town_setup = ir_indian_city_02
-    }
-    ancona = {
-        rank = city town_setup = ir_italic_city_coastal_02
-    }
-    andhapura = {
-        rank = town town_setup = ir_vindhyaprstha_town_coastal_02
-    }
-    andijan = {
-        rank = town town_setup = ir_sogdiana_town
-    }
-    ani_1 = {
-        rank = town town_setup = ir_cappadocia_pontica_town_02
-    }
-    ankyra = {
-        rank = town town_setup = ir_galatia_town_02
-    }
-    antaiopolis = {
         rank = city town_setup = ir_egyptian_city
     }
+    amphipolis = {
+        rank = city town_setup = ir_illyrian_city_coastal
+    }
+    anatachara = {
+        rank = city town_setup = ir_hindustan_city_02
+    }
+    ancona = {
+        rank = city town_setup = ir_italic_city_coastal
+    }
+    andhapura = {
+        rank = town town_setup = ir_deccan_town_coastal_02
+    }
+    andijan = {
+        rank = town town_setup = ir_khorasan_town
+    }
+    ani_1 = {
+        rank = town town_setup = ir_anatolian_town
+    }
+    ankyra = {
+        rank = town town_setup = ir_anatolian_town_03
+    }
+    antaiopolis = {
+        rank = city town_setup = ir_egyptian_city_02
+    }
     antigoneia = {
-        rank = city town_setup = ir_syria_city
+        rank = city town_setup = ir_crescent_city_02
     }
     antipolis = {
         rank = town town_setup = ir_gaulish_town_coastal
     }
     anuradhapura = {
-        rank = town town_setup = ir_dravida_town
+        rank = town town_setup = ir_deccan_town
     }
     apamea_ad_tigridem = {
-        rank = city town_setup = ir_mesopotamian_city_02
+        rank = city town_setup = ir_crescent_city_02
     }
     apamea_cibotus = {
-        rank = town town_setup = ir_galatia_town_02
+        rank = town town_setup = ir_anatolian_town_03
     }
     apameia = {
-        rank = city town_setup = ir_media_city
+        rank = city town_setup = ir_persian_city_04
     }
     aphroditopolis = {
-        rank = city town_setup = ir_egyptian_city
+        rank = city town_setup = ir_egyptian_city_02
     }
     apocopa = {
-        rank = town town_setup = ir_punt_town_coastal_03
+        rank = town town_setup = ir_ethiopia_town_coastal_03
     }
     apollonia = {
-        rank = city town_setup = ir_greek_city_coastal
+        rank = city town_setup = ir_illyrian_city_coastal
     }
     apollonia_palaistinias = {
-        rank = town town_setup = ir_palestine_town_coastal
+        rank = town town_setup = ir_crescent_town_coastal
     }
     araba = {
         rank = town town_setup = ir_nubian_town_02
     }
     arachotus = {
-        rank = town town_setup = ir_ariana_town
+        rank = town town_setup = ir_persian_town
     }
     arados = {
-        rank = town town_setup = ir_syria_town_coastal
+        rank = town town_setup = ir_crescent_town_coastal
     }
     arambys = {
-        rank = town town_setup = ir_atlas_town_coastal
+        rank = town town_setup = ir_numidian_town_coastal
     }
     arbela = {
-        rank = town town_setup = ir_mesopotamian_town
+        rank = town town_setup = ir_crescent_town_03
     }
     archaiopolis = {
-        rank = town town_setup = ir_colchis_town
+        rank = town town_setup = ir_caucasian_town
     }
     argos = {
-        rank = town town_setup = ir_greek_town_coastal
+        rank = town town_setup = ir_illyrian_town_coastal
     }
     armaouira = {
-        rank = city town_setup = ir_armenia_city
+        rank = city town_setup = ir_caucasian_city
     }
     aromata = {
-        rank = town town_setup = ir_punt_town_coastal
+        rank = town town_setup = ir_ethiopia_town_coastal_02
     }
     arpi = {
-        rank = town town_setup = ir_magna_graecia_town_coastal
+        rank = town town_setup = ir_italic_town_coastal
     }
     arretium = {
         rank = town town_setup = ir_italic_town
     }
     artaxata = {
-        rank = town town_setup = ir_armenia_town
+        rank = town town_setup = ir_caucasian_town_02
     }
     artobriga = {
-        rank = town town_setup = ir_rhaetia_town
+        rank = town town_setup = ir_germanic_town
     }
     arunda = {
-        rank = town town_setup = ir_baetica_town
+        rank = town town_setup = ir_iberian_town
     }
     ascalon = {
-        rank = city town_setup = ir_palestine_city_coastal
+        rank = city town_setup = ir_crescent_city_coastal
     }
     ashdod = {
-        rank = town town_setup = ir_palestine_town_coastal_02
+        rank = town town_setup = ir_crescent_town_coastal_02
     }
     ashur = {
-        rank = city town_setup = ir_mesopotamian_city_02
+        rank = city town_setup = ir_crescent_city_02
     }
     aspadana = {
-        rank = city town_setup = ir_media_city_02
+        rank = city town_setup = ir_persian_city_03
     }
     aspendos = {
-        rank = town town_setup = ir_cilicia_town_coastal
+        rank = town town_setup = ir_anatolian_town_coastal_03
     }
     assos = {
-        rank = town town_setup = ir_asia_town_coastal_02
+        rank = town town_setup = ir_anatolian_town_coastal_02
     }
     astakos = {
-        rank = town town_setup = ir_bithynia_town_coastal
+        rank = town town_setup = ir_anatolian_town_coastal_02
     }
     astigi = {
-        rank = town town_setup = ir_baetica_town_02
+        rank = town town_setup = ir_iberian_town_02
     }
     atavi = {
-        rank = town town_setup = ir_vindhyaprstha_town
+        rank = town town_setup = ir_deccan_town
     }
     aternum = {
-        rank = town town_setup = ir_italic_town_coastal
+        rank = town town_setup = ir_italic_town_coastal_02
     }
     ateste = {
-        rank = town town_setup = ir_gaulish_town
+        rank = town town_setup = ir_italic_town_02
     }
     athani = {
-        rank = town town_setup = ir_aparanta_town
+        rank = town town_setup = ir_deccan_town
     }
     athens = {
-        rank = city town_setup = ir_greek_city_coastal_03
+        rank = city town_setup = ir_illyrian_city_coastal_02
     }
     augila = {
-        rank = town town_setup = ir_fezzan_town
+        rank = town town_setup = ir_egyptian_town
     }
     avaricum = {
-        rank = town town_setup = ir_gaulish_town_02
+        rank = town town_setup = ir_gaulish_town
     }
     ayanakagraha = {
-        rank = town town_setup = ir_avanti_town
+        rank = town town_setup = ir_hindustan_town
     }
     aykudi = {
-        rank = town town_setup = ir_karnata_town
+        rank = town town_setup = ir_deccan_town
     }
     ayodhya = {
-        rank = city town_setup = ir_madhyadesa_city_02
+        rank = city town_setup = ir_hindustan_city_02
     }
     baal_saphon = {
-        rank = town town_setup = ir_baetica_town_coastal
+        rank = town town_setup = ir_iberian_town_coastal
     }
     babylon_0 = {
-        rank = city town_setup = ir_egyptian_city
+        rank = city town_setup = ir_egyptian_city_02
     }
     babylon_1 = {
-        rank = city town_setup = ir_mesopotamian_city
+        rank = city town_setup = ir_crescent_city
     }
     bactra = {
-        rank = city town_setup = ir_bactrian_city_03
+        rank = city town_setup = ir_persian_city_03
     }
     badaun = {
-        rank = town town_setup = ir_madhyadesa_town_02
+        rank = town town_setup = ir_hindustan_town
     }
     bagdata = {
-        rank = city town_setup = ir_mesopotamian_city_02
+        rank = city town_setup = ir_crescent_city_02
     }
     balipura = {
-        rank = town town_setup = ir_pracya_town
+        rank = town town_setup = ir_bengal_town
     }
     balita = {
-        rank = town town_setup = ir_karnata_town_coastal
+        rank = town town_setup = ir_deccan_town_coastal
     }
     bambyce = {
-        rank = town town_setup = ir_syria_town_02
+        rank = town town_setup = ir_crescent_town_03
     }
     bargylia = {
-        rank = town town_setup = ir_asia_town_coastal
+        rank = town town_setup = ir_anatolian_town_coastal
     }
     bargysi = {
-        rank = town town_setup = ir_pracya_town_coastal
+        rank = town town_setup = ir_bengal_town_coastal
     }
     barisal = {
-        rank = town town_setup = ir_pracya_town_coastal_02
+        rank = town town_setup = ir_bengal_town_coastal_02
     }
     barium = {
-        rank = town town_setup = ir_magna_graecia_town_coastal_02
+        rank = town town_setup = ir_italic_town_coastal
     }
     barke = {
-        rank = town town_setup = ir_cyrenaica_town
+        rank = town town_setup = ir_egyptian_town_02
     }
     barma = {
         rank = town town_setup = ir_tibet_town
     }
     barskhan = {
-        rank = town town_setup = ir_sogdiana_town_02
+        rank = town town_setup = ir_khorasan_town_02
     }
     barwani = {
-        rank = town town_setup = ir_aparanta_town
+        rank = town town_setup = ir_deccan_town
     }
     barygaza = {
-        rank = town town_setup = ir_aparanta_town_coastal
+        rank = town town_setup = ir_deccan_town_coastal_02
     }
     basti = {
-        rank = town town_setup = ir_contestania_town
+        rank = town town_setup = ir_iberian_town_03
     }
     batnai = {
-        rank = town town_setup = ir_mesopotamian_town_02
+        rank = town town_setup = ir_crescent_town
     }
     belgola = {
-        rank = town town_setup = ir_karnata_town
+        rank = town town_setup = ir_deccan_town
     }
     berenike = {
         rank = city town_setup = ir_egyptian_city_coastal_02
     }
     bergoule = {
-        rank = town town_setup = ir_greek_town
+        rank = town town_setup = ir_illyrian_town
     }
     berytus = {
-        rank = town town_setup = ir_syria_town_coastal_02
+        rank = town town_setup = ir_crescent_town_coastal
     }
     betul = {
-        rank = town town_setup = ir_aparanta_town
+        rank = town town_setup = ir_deccan_town
     }
     bhaddavati = {
-        rank = town town_setup = ir_vindhyaprstha_town
+        rank = town town_setup = ir_deccan_town
     }
     bhojapuri = {
-        rank = town town_setup = ir_avanti_town
+        rank = town town_setup = ir_hindustan_town
     }
     binnayaga = {
-        rank = town town_setup = ir_avanti_town
+        rank = town town_setup = ir_hindustan_town
     }
     bisanthe = {
-        rank = city town_setup = ir_greek_city_coastal
+        rank = city town_setup = ir_illyrian_city_coastal_02
     }
     borsippa = {
-        rank = city town_setup = ir_mesopotamian_city_02
+        rank = city town_setup = ir_crescent_city_02
     }
     borysthenia = {
-        rank = town town_setup = ir_taurica_town
+        rank = town town_setup = ir_scythian_town
     }
     boukephalia = {
-        rank = city town_setup = ir_indian_city
+        rank = city town_setup = ir_hindustan_city
     }
     bovianum = {
-        rank = town town_setup = ir_magna_graecia_town
+        rank = town town_setup = ir_italic_town
     }
     brahmanaka = {
-        rank = city town_setup = ir_maru_city
+        rank = city town_setup = ir_hindustan_city
     }
     brak = {
-        rank = town town_setup = ir_fezzan_town
+        rank = town town_setup = ir_egyptian_town
     }
     buca = {
-        rank = town town_setup = ir_italic_town_coastal_02
+        rank = town town_setup = ir_italic_town_coastal
     }
     buridava = {
-        rank = town town_setup = ir_dacia_town
+        rank = town town_setup = ir_carpathia_town
     }
     buto = {
-        rank = city town_setup = ir_egyptian_city
+        rank = city town_setup = ir_egyptian_city_02
     }
     byblos = {
-        rank = town town_setup = ir_syria_town_coastal
+        rank = town town_setup = ir_crescent_town_coastal
     }
     byzantion = {
-        rank = town town_setup = ir_greek_town_coastal
+        rank = town town_setup = ir_illyrian_town_coastal
     }
     cadota = {
-        rank = town town_setup = ir_himalayan_town
+        rank = town town_setup = ir_khorasan_town_02
     }
     callatis = {
-        rank = town town_setup = ir_moesia_town_coastal
+        rank = town town_setup = ir_illyrian_town_coastal_02
     }
     campa = {
-        rank = town town_setup = ir_pracya_town
+        rank = town town_setup = ir_bengal_town
     }
     cannae = {
-        rank = city town_setup = ir_magna_graecia_city_coastal_02
+        rank = city town_setup = ir_italic_city_coastal_02
     }
     capua = {
-        rank = city town_setup = ir_magna_graecia_city_coastal_03
+        rank = city town_setup = ir_italic_city_coastal
     }
     caritra = {
-        rank = town town_setup = ir_vindhyaprstha_town_coastal
+        rank = town town_setup = ir_deccan_town_coastal_02
     }
     carmo = {
-        rank = town town_setup = ir_baetica_town
+        rank = town town_setup = ir_iberian_town
     }
     carteia = {
-        rank = town town_setup = ir_baetica_town_coastal_02
+        rank = town town_setup = ir_iberian_town_coastal_02
     }
     carthago = {
-        rank = city town_setup = ir_numidian_city_coastal_02
+        rank = city town_setup = ir_numidian_city_coastal
     }
     castulo = {
-        rank = town town_setup = ir_baetica_town_03
+        rank = town town_setup = ir_iberian_town
     }
     catana = {
-        rank = city town_setup = ir_magna_graecia_city_coastal_02
+        rank = city town_setup = ir_italic_city_coastal_02
     }
     chalcedon = {
-        rank = town town_setup = ir_bithynia_town_coastal_02
+        rank = town town_setup = ir_anatolian_town_coastal_04
     }
     chalcis = {
-        rank = city town_setup = ir_greek_city_coastal
+        rank = city town_setup = ir_illyrian_city_coastal_03
     }
     chalkis_libanou = {
-        rank = town town_setup = ir_syria_town_02
+        rank = town town_setup = ir_crescent_town_03
     }
     charax = {
-        rank = town town_setup = ir_taurica_town_coastal
+        rank = town town_setup = ir_scythian_town_coastal
     }
     charinda = {
-        rank = city town_setup = ir_parthia_city_coastal
+        rank = city town_setup = ir_khorasan_city_coastal
     }
     charmodara = {
-        rank = town town_setup = ir_mesopotamian_town_03
+        rank = town town_setup = ir_crescent_town
     }
     cherchen = {
-        rank = town town_setup = ir_himalayan_town_02
+        rank = town town_setup = ir_khorasan_town_03
     }
     chersonesos = {
-        rank = town town_setup = ir_taurica_town_coastal_02
+        rank = town town_setup = ir_scythian_town_coastal_02
     }
     chersonesos_vanavasi = {
-        rank = town town_setup = ir_karnata_town_coastal
+        rank = town town_setup = ir_deccan_town_coastal
     }
     chios = {
-        rank = town town_setup = ir_asia_town_coastal_02
+        rank = town town_setup = ir_anatolian_town_coastal_02
     }
     chust = {
-        rank = town town_setup = ir_sogdiana_town
+        rank = town town_setup = ir_khorasan_town_02
     }
     cirta = {
-        rank = town town_setup = ir_numidia_town
+        rank = town town_setup = ir_numidian_town
     }
     clusium = {
         rank = city town_setup = ir_italic_city
     }
     colossae = {
-        rank = town town_setup = ir_galatia_town
+        rank = town town_setup = ir_anatolian_town
     }
     cortona = {
         rank = town town_setup = ir_italic_town
     }
     croton = {
-        rank = city town_setup = ir_magna_graecia_city_coastal_03
+        rank = city town_setup = ir_italic_city_coastal_02
     }
     ctesiphon = {
-        rank = city town_setup = ir_mesopotamian_city
+        rank = city town_setup = ir_crescent_city
     }
     curubis = {
         rank = city town_setup = ir_numidian_city_coastal_02
     }
     cutha = {
-        rank = city town_setup = ir_mesopotamian_city_02
+        rank = city town_setup = ir_crescent_city_02
     }
     cydamus = {
-        rank = town town_setup = ir_fezzan_town_02
+        rank = town town_setup = ir_egyptian_town_03
     }
     damascus = {
-        rank = city town_setup = ir_syria_city
+        rank = city town_setup = ir_crescent_city_02
     }
     damoh = {
-        rank = town town_setup = ir_madhyadesa_town_02
+        rank = town town_setup = ir_hindustan_town
     }
     daphnai = {
         rank = rural_settlement town_setup = ir_egyptian_rural_settlement_coastal
@@ -509,67 +509,67 @@ locations = {
         rank = town town_setup = ir_nubian_town_03
     }
     dasmenda = {
-        rank = town town_setup = ir_cappadocia_town
+        rank = town town_setup = ir_anatolian_town_02
     }
     dausa = {
-        rank = town town_setup = ir_avanti_town
+        rank = town town_setup = ir_hindustan_town
     }
     delos = {
-        rank = town town_setup = ir_greek_town_coastal
+        rank = town town_setup = ir_illyrian_town_coastal_03
     }
     delphi = {
-        rank = city town_setup = ir_greek_city_coastal_04
+        rank = city town_setup = ir_illyrian_city_coastal_04
     }
     deogarh_0 = {
-        rank = city town_setup = ir_maru_city_02
+        rank = city town_setup = ir_hindustan_city_02
     }
     deogarh_1 = {
-        rank = town town_setup = ir_vindhyaprstha_town_02
+        rank = town town_setup = ir_deccan_town_02
     }
     deoghar = {
-        rank = town town_setup = ir_pracya_town
+        rank = town town_setup = ir_bengal_town
     }
     dertosa = {
-        rank = town town_setup = ir_tarraconensis_town_coastal
+        rank = town town_setup = ir_iberian_town_coastal_02
     }
     detta = {
-        rank = town town_setup = ir_maru_town_coastal
+        rank = town town_setup = ir_hindustan_town_coastal
     }
     devagiri = {
-        rank = town town_setup = ir_aparanta_town_02
+        rank = town town_setup = ir_deccan_town_02
     }
     devaprayaga = {
-        rank = town town_setup = ir_madhyadesa_town_02
+        rank = town town_setup = ir_hindustan_town
     }
     devnimori = {
-        rank = town town_setup = ir_avanti_town
+        rank = town town_setup = ir_hindustan_town
     }
     dhar = {
-        rank = city town_setup = ir_avanti_city
+        rank = city town_setup = ir_hindustan_city
     }
     dhavagarta = {
-        rank = town town_setup = ir_avanti_town
+        rank = town town_setup = ir_hindustan_town
     }
     dion = {
-        rank = city town_setup = ir_greek_city_coastal_04
+        rank = city town_setup = ir_illyrian_city_coastal_04
     }
     dioscurias = {
-        rank = town town_setup = ir_colchis_town_coastal
+        rank = town town_setup = ir_caucasian_town_coastal
     }
     diospolis_1 = {
-        rank = city town_setup = ir_egyptian_city
+        rank = city town_setup = ir_egyptian_city_02
     }
     diospolis_magna = {
-        rank = city town_setup = ir_egyptian_city
+        rank = city town_setup = ir_egyptian_city_02
     }
     dokimeion = {
-        rank = town town_setup = ir_galatia_town_03
+        rank = town town_setup = ir_anatolian_town_02
     }
     doliche = {
-        rank = town town_setup = ir_syria_town
+        rank = town town_setup = ir_crescent_town_02
     }
     drapsake = {
-        rank = town town_setup = ir_bactrian_town
+        rank = town town_setup = ir_persian_town_02
     }
     dur = {
         rank = town town_setup = ir_arabian_town_coastal_02
@@ -581,229 +581,229 @@ locations = {
         rank = town town_setup = ir_britannic_town_coastal
     }
     dvaraka = {
-        rank = town town_setup = ir_maru_town_coastal_02
+        rank = town town_setup = ir_hindustan_town_coastal_02
     }
     ebusus = {
-        rank = town town_setup = ir_contestania_town_coastal
+        rank = town town_setup = ir_iberian_town_coastal_03
     }
     ecbatana = {
-        rank = city town_setup = ir_media_city_02
+        rank = city town_setup = ir_persian_city_03
     }
     elaea = {
-        rank = town town_setup = ir_asia_town_coastal
+        rank = town town_setup = ir_anatolian_town_coastal
     }
     elankon = {
-        rank = town town_setup = ir_karnata_town_coastal
+        rank = town town_setup = ir_deccan_town_coastal
     }
     elis = {
-        rank = city town_setup = ir_greek_city_coastal_05
+        rank = city town_setup = ir_illyrian_city_coastal_02
     }
     elousa = {
-        rank = city town_setup = ir_palestine_city
+        rank = city town_setup = ir_crescent_city_02
     }
     embadina = {
-        rank = town town_setup = ir_indian_town
+        rank = town town_setup = ir_hindustan_town_02
     }
     emmaous = {
-        rank = town town_setup = ir_palestine_town_02
+        rank = town town_setup = ir_crescent_town_02
     }
     emporiae = {
-        rank = town town_setup = ir_tarraconensis_town_coastal_02
+        rank = town town_setup = ir_iberian_town_coastal_04
     }
     ephesos = {
-        rank = city town_setup = ir_asia_city_coastal
+        rank = city town_setup = ir_anatolian_city_coastal
     }
     epidamnos = {
-        rank = town town_setup = ir_greek_town_coastal_02
+        rank = town town_setup = ir_illyrian_town_coastal_04
     }
     epidauros = {
-        rank = city town_setup = ir_greek_city_coastal_02
+        rank = city town_setup = ir_illyrian_city_coastal
     }
     epidauros_illyrikos = {
-        rank = town town_setup = ir_illyrian_town_coastal
+        rank = town town_setup = ir_illyrian_town_coastal_03
     }
     epora = {
-        rank = town town_setup = ir_baetica_town_03
+        rank = town town_setup = ir_iberian_town_04
     }
     erakaccha = {
-        rank = town town_setup = ir_madhyadesa_town_02
+        rank = town town_setup = ir_hindustan_town
     }
     eretria = {
-        rank = town town_setup = ir_greek_town_coastal
+        rank = town town_setup = ir_illyrian_town_coastal
     }
     erythrai = {
-        rank = town town_setup = ir_asia_town_coastal_03
+        rank = town town_setup = ir_anatolian_town_coastal_03
     }
     euesperides = {
-        rank = town town_setup = ir_cyrenaica_town_coastal
+        rank = town town_setup = ir_egyptian_town_coastal
     }
     fathabad = {
-        rank = town town_setup = ir_pracya_town_02
+        rank = town town_setup = ir_bengal_town_02
     }
     gadara = {
-        rank = town town_setup = ir_palestine_town_02
+        rank = town town_setup = ir_crescent_town_02
     }
     gadir_0 = {
-        rank = town town_setup = ir_baetica_town_coastal_03
+        rank = town town_setup = ir_iberian_town_coastal_04
     }
     gadir_1 = {
-        rank = town town_setup = ir_atlas_town_coastal
+        rank = town town_setup = ir_numidian_town_coastal
     }
     ganga = {
-        rank = town town_setup = ir_karnata_town
+        rank = town town_setup = ir_deccan_town
     }
     gangra = {
-        rank = town town_setup = ir_bithynia_town
+        rank = town town_setup = ir_anatolian_town
     }
     garama = {
-        rank = town town_setup = ir_fezzan_town_03
+        rank = town town_setup = ir_egyptian_town_02
     }
     garsaura = {
-        rank = town town_setup = ir_cappadocia_town_02
+        rank = town town_setup = ir_anatolian_town
     }
     garuli = {
-        rank = town town_setup = ir_bactrian_town
+        rank = town town_setup = ir_persian_town_02
     }
     gauzaka = {
-        rank = city town_setup = ir_bactrian_city
+        rank = city town_setup = ir_persian_city
     }
     gaya = {
-        rank = town town_setup = ir_pracya_town
+        rank = town town_setup = ir_bengal_town
     }
     gaza = {
-        rank = city town_setup = ir_palestine_city_coastal_02
+        rank = city town_setup = ir_crescent_city_coastal_02
     }
     gazaka = {
-        rank = town town_setup = ir_media_town
+        rank = town town_setup = ir_persian_town
     }
     gela = {
-        rank = town town_setup = ir_magna_graecia_town_coastal_02
+        rank = town town_setup = ir_italic_town_coastal_02
     }
     gelon = {
-        rank = town town_setup = ir_borysthenia_town
+        rank = town town_setup = ir_scythian_town_02
     }
     genua = {
-        rank = town town_setup = ir_gaulish_town_coastal_02
+        rank = town town_setup = ir_italic_town_coastal
     }
     gergis = {
-        rank = town town_setup = ir_numidian_town_coastal
+        rank = town town_setup = ir_numidian_town_coastal_02
     }
     gerrha = {
         rank = town town_setup = ir_arabian_town_coastal_03
     }
     ghosundi = {
-        rank = town town_setup = ir_avanti_town
+        rank = town town_setup = ir_hindustan_town
     }
     gidheys = {
-        rank = town town_setup = ir_punt_town
+        rank = town town_setup = ir_ethiopia_town
     }
     girinagara = {
-        rank = town town_setup = ir_maru_town_02
+        rank = town town_setup = ir_hindustan_town_02
     }
     gokanna = {
-        rank = town town_setup = ir_dravida_town_coastal
+        rank = town town_setup = ir_deccan_town_coastal_03
     }
     gorgippia = {
-        rank = town town_setup = ir_taurica_town_coastal_03
+        rank = town town_setup = ir_scythian_town_coastal
     }
     gortyna = {
-        rank = town town_setup = ir_greek_town_coastal
+        rank = town town_setup = ir_illyrian_town_coastal
     }
     gramera = {
-        rank = town town_setup = ir_burma_town
+        rank = town town_setup = ir_bengal_town_02
     }
     gurganj = {
-        rank = town town_setup = ir_sakia_town
+        rank = town town_setup = ir_khorasan_town_02
     }
     hadad = {
-        rank = town town_setup = ir_syria_town_02
+        rank = town town_setup = ir_crescent_town_03
     }
     hadrametum = {
-        rank = city town_setup = ir_numidian_city_coastal
+        rank = city town_setup = ir_numidian_city_coastal_03
     }
     halikarnassos = {
-        rank = city town_setup = ir_asia_city_coastal_02
+        rank = city town_setup = ir_anatolian_city_coastal_02
     }
     hasta_0 = {
-        rank = town town_setup = ir_baetica_town_coastal_02
+        rank = town town_setup = ir_iberian_town_coastal_02
     }
     hastinapura = {
-        rank = city town_setup = ir_madhyadesa_city
+        rank = city town_setup = ir_hindustan_city
     }
     hatra = {
-        rank = city town_setup = ir_mesopotamian_city_02
+        rank = city town_setup = ir_crescent_city_02
     }
     hatria = {
-        rank = town town_setup = ir_gaulish_town
+        rank = town town_setup = ir_italic_town_03
     }
     heliopolis_0 = {
-        rank = city town_setup = ir_egyptian_city
-    }
-    heliopolis_1 = {
-        rank = town town_setup = ir_syria_town
-    }
-    hemeroskopeion = {
-        rank = town town_setup = ir_contestania_town_coastal
-    }
-    hemesa = {
-        rank = town town_setup = ir_syria_town_02
-    }
-    heraclea = {
-        rank = city town_setup = ir_magna_graecia_city_coastal_04
-    }
-    heraclea_minoa = {
-        rank = city town_setup = ir_magna_graecia_city_coastal_04
-    }
-    herakleia_pontike = {
-        rank = town town_setup = ir_bithynia_town_coastal
-    }
-    hermione = {
-        rank = town town_setup = ir_greek_town_coastal_03
-    }
-    hermopolis_mikra = {
         rank = city town_setup = ir_egyptian_city_02
     }
+    heliopolis_1 = {
+        rank = town town_setup = ir_crescent_town_02
+    }
+    hemeroskopeion = {
+        rank = town town_setup = ir_iberian_town_coastal_04
+    }
+    hemesa = {
+        rank = town town_setup = ir_crescent_town_03
+    }
+    heraclea = {
+        rank = city town_setup = ir_italic_city_coastal_03
+    }
+    heraclea_minoa = {
+        rank = city town_setup = ir_italic_city_coastal_03
+    }
+    herakleia_pontike = {
+        rank = town town_setup = ir_anatolian_town_coastal_02
+    }
+    hermione = {
+        rank = town town_setup = ir_illyrian_town_coastal_03
+    }
+    hermopolis_mikra = {
+        rank = city town_setup = ir_egyptian_city_03
+    }
     hierapytna = {
-        rank = town town_setup = ir_greek_town_coastal
+        rank = town town_setup = ir_illyrian_town_coastal_02
     }
     hippo_regius = {
-        rank = town town_setup = ir_numidia_town_coastal
+        rank = town town_setup = ir_numidian_town_coastal_02
     }
     hipponium = {
-        rank = town town_setup = ir_magna_graecia_town_coastal_02
+        rank = town town_setup = ir_italic_town_coastal_02
     }
     histria = {
-        rank = town town_setup = ir_moesia_town_coastal_02
+        rank = town town_setup = ir_illyrian_town_coastal
     }
     hormirzad = {
-        rank = city town_setup = ir_persis_city_coastal
+        rank = city town_setup = ir_persian_city_coastal
     }
     igilgili = {
-        rank = town town_setup = ir_numidia_town_coastal
+        rank = town town_setup = ir_numidian_town_coastal_02
     }
     iguvium = {
         rank = town town_setup = ir_italic_town
     }
     ilion = {
-        rank = town town_setup = ir_asia_town_coastal_02
+        rank = town town_setup = ir_anatolian_town_coastal_02
     }
     ilipla = {
-        rank = town town_setup = ir_baetica_town
+        rank = town town_setup = ir_iberian_town
     }
     indraprastha = {
-        rank = city town_setup = ir_madhyadesa_city
+        rank = city town_setup = ir_hindustan_city
     }
     indur = {
-        rank = town town_setup = ir_vindhyaprstha_town_02
+        rank = town town_setup = ir_deccan_town_02
     }
     iol = {
-        rank = town town_setup = ir_numidia_town_coastal
+        rank = town town_setup = ir_numidian_town_coastal_02
     }
     ioppe = {
-        rank = town town_setup = ir_palestine_town_coastal_02
+        rank = town town_setup = ir_crescent_town_coastal_02
     }
     iporca = {
-        rank = town town_setup = ir_baetica_town_04
+        rank = town town_setup = ir_iberian_town
     }
     iram = {
         rank = town town_setup = ir_arabian_town
@@ -812,472 +812,472 @@ locations = {
         rank = town town_setup = ir_britannic_town_coastal_02
     }
     issa = {
-        rank = town town_setup = ir_illyrian_town_coastal_02
+        rank = town town_setup = ir_illyrian_town_coastal
     }
     italica = {
-        rank = town town_setup = ir_baetica_town
+        rank = town town_setup = ir_iberian_town
     }
     jagdalpur = {
-        rank = town town_setup = ir_vindhyaprstha_town_03
+        rank = town town_setup = ir_deccan_town_03
     }
     jambukola_pattana = {
-        rank = town town_setup = ir_dravida_town_coastal
+        rank = town town_setup = ir_deccan_town_coastal_03
     }
     jaugada = {
-        rank = town town_setup = ir_vindhyaprstha_town_coastal_03
+        rank = town town_setup = ir_deccan_town_coastal_03
     }
     jayapura_1 = {
-        rank = town town_setup = ir_pracya_town
+        rank = town town_setup = ir_bengal_town
     }
     jericho = {
-        rank = town town_setup = ir_palestine_town_02
+        rank = town town_setup = ir_crescent_town_02
     }
     jerusalem = {
-        rank = town town_setup = ir_palestine_town_03
+        rank = town town_setup = ir_crescent_town_04
     }
     kadasa = {
-        rank = town town_setup = ir_syria_town
+        rank = town town_setup = ir_crescent_town_02
     }
     kajangala = {
-        rank = town town_setup = ir_pracya_town
+        rank = town town_setup = ir_bengal_town
     }
     kalinganagara = {
-        rank = town town_setup = ir_vindhyaprstha_town_coastal
+        rank = town town_setup = ir_deccan_town_coastal
     }
     kalyani_asika = {
-        rank = town town_setup = ir_aparanta_town
+        rank = town town_setup = ir_deccan_town
     }
     kanopos = {
         rank = rural_settlement town_setup = ir_egyptian_rural_settlement_coastal
     }
     kanyakubja = {
-        rank = city town_setup = ir_madhyadesa_city_02
+        rank = city town_setup = ir_hindustan_city_02
     }
     karali = {
-        rank = city town_setup = ir_italic_city_coastal_03
+        rank = city town_setup = ir_italic_city_coastal_02
     }
     karige = {
-        rank = town town_setup = ir_dravida_town_coastal_02
+        rank = town town_setup = ir_deccan_town_coastal_02
     }
     karkathiokerta = {
-        rank = town town_setup = ir_mesopotamian_town
+        rank = town town_setup = ir_crescent_town_02
     }
     karmana = {
-        rank = city town_setup = ir_ariana_city_02
+        rank = city town_setup = ir_persian_city_03
     }
     karmanta = {
-        rank = town town_setup = ir_burma_town_coastal
+        rank = town town_setup = ir_bengal_town_coastal_03
     }
     karna = {
         rank = town town_setup = ir_arabian_town_02
     }
     karnasuvarna = {
-        rank = town town_setup = ir_pracya_town
+        rank = town town_setup = ir_bengal_town
     }
     karur = {
-        rank = town town_setup = ir_dravida_town_02
+        rank = town town_setup = ir_deccan_town_02
     }
     kashgar = {
-        rank = town town_setup = ir_himalayan_town_03
+        rank = town town_setup = ir_khorasan_town_04
     }
     kastabala = {
-        rank = town town_setup = ir_cilicia_town
+        rank = town town_setup = ir_anatolian_town
     }
     katheria = {
-        rank = town town_setup = ir_madhyadesa_town_02
+        rank = town town_setup = ir_hindustan_town
     }
     kaunos = {
-        rank = town town_setup = ir_asia_town_coastal_03
+        rank = town town_setup = ir_anatolian_town_coastal_03
     }
     kaushambi = {
-        rank = city town_setup = ir_madhyadesa_city
+        rank = city town_setup = ir_hindustan_city
     }
     kelenderis = {
-        rank = town town_setup = ir_cilicia_town_coastal_02
+        rank = town town_setup = ir_anatolian_town_coastal
     }
     kelonai = {
-        rank = city town_setup = ir_mesopotamian_city_03
+        rank = city town_setup = ir_crescent_city_03
     }
     kerkinitis = {
-        rank = town town_setup = ir_taurica_town_coastal
+        rank = town town_setup = ir_scythian_town_coastal_02
     }
     kerkouane = {
-        rank = city town_setup = ir_numidian_city_coastal_03
+        rank = city town_setup = ir_numidian_city_coastal_04
     }
     khargone = {
-        rank = town town_setup = ir_aparanta_town
+        rank = town town_setup = ir_deccan_town
     }
     kheta = {
-        rank = town town_setup = ir_aparanta_town
+        rank = town town_setup = ir_deccan_town
     }
     khyunglung = {
-        rank = town town_setup = ir_himalayan_town_04
+        rank = town town_setup = ir_khorasan_town_02
     }
     kios = {
-        rank = town town_setup = ir_bithynia_town_coastal
+        rank = town town_setup = ir_anatolian_town_coastal_02
     }
     kition = {
-        rank = town town_setup = ir_cilicia_town_coastal_03
+        rank = town town_setup = ir_anatolian_town_coastal_03
     }
     klysma = {
         rank = city town_setup = ir_egyptian_city_coastal_02
     }
     knidos = {
-        rank = town town_setup = ir_asia_town_coastal
+        rank = town town_setup = ir_anatolian_town_coastal
     }
     knossos = {
-        rank = town town_setup = ir_greek_town_coastal
+        rank = town town_setup = ir_illyrian_town_coastal
     }
     kodumbalur = {
-        rank = town town_setup = ir_dravida_town_02
+        rank = town town_setup = ir_deccan_town_02
     }
     kolkoi = {
-        rank = town town_setup = ir_dravida_town_coastal_02
+        rank = town town_setup = ir_deccan_town_coastal_02
     }
     komana_hierapolis = {
-        rank = town town_setup = ir_cappadocia_town_02
+        rank = town town_setup = ir_anatolian_town
     }
     komana_pontike = {
-        rank = town town_setup = ir_cappadocia_pontica_town
+        rank = town town_setup = ir_anatolian_town_02
     }
     komish = {
-        rank = city town_setup = ir_parthia_city
+        rank = city town_setup = ir_khorasan_city
     }
     kophen = {
-        rank = city town_setup = ir_bactrian_city_03
+        rank = city town_setup = ir_persian_city_03
     }
     koreoura = {
-        rank = town town_setup = ir_karnata_town_coastal_02
+        rank = town town_setup = ir_deccan_town_coastal_02
     }
     korinthos = {
-        rank = town town_setup = ir_greek_town_coastal
+        rank = town town_setup = ir_illyrian_town_coastal
     }
     korkyra = {
-        rank = town town_setup = ir_greek_town_coastal_03
+        rank = town town_setup = ir_illyrian_town_coastal_03
     }
     kos = {
-        rank = rural_settlement town_setup = ir_asia_rural_settlement_coastal
+        rank = rural_settlement town_setup = ir_anatolian_rural_settlement_coastal
     }
     kot_kamalia = {
-        rank = city town_setup = ir_indian_city_02
+        rank = city town_setup = ir_hindustan_city_02
     }
     kotais = {
-        rank = town town_setup = ir_colchis_town_02
+        rank = town town_setup = ir_caucasian_town_03
     }
     koti = {
-        rank = town town_setup = ir_dravida_town_coastal_03
+        rank = town town_setup = ir_deccan_town_coastal
     }
     koussai = {
-        rank = city town_setup = ir_egyptian_city
+        rank = city town_setup = ir_egyptian_city_02
     }
     krokodilopolis = {
-        rank = city town_setup = ir_egyptian_city
+        rank = city town_setup = ir_egyptian_city_02
     }
     kuara = {
-        rank = city town_setup = ir_mesopotamian_city_02
+        rank = city town_setup = ir_crescent_city_02
     }
     kuche = {
-        rank = town town_setup = ir_himalayan_town_03
+        rank = town town_setup = ir_khorasan_town_04
     }
     kusinagara = {
-        rank = town town_setup = ir_pracya_town
+        rank = town town_setup = ir_bengal_town
     }
     kydonia = {
-        rank = town town_setup = ir_greek_town_coastal
+        rank = town town_setup = ir_illyrian_town_coastal
     }
     kyme = {
-        rank = town town_setup = ir_asia_town_coastal
+        rank = town town_setup = ir_anatolian_town_coastal
     }
     kyrene = {
-        rank = town town_setup = ir_cyrenaica_town_coastal
+        rank = town town_setup = ir_egyptian_town_coastal_02
     }
     kyropolis = {
-        rank = town town_setup = ir_media_town_coastal
+        rank = town town_setup = ir_persian_town_coastal
     }
     kyropolis_baktriane = {
-        rank = town town_setup = ir_sogdiana_town_02
+        rank = town town_setup = ir_khorasan_town_02
     }
     kyzikos = {
-        rank = town town_setup = ir_asia_town_coastal_02
+        rank = town town_setup = ir_anatolian_town_coastal_04
     }
     lamia = {
-        rank = city town_setup = ir_greek_city_coastal_02
+        rank = city town_setup = ir_illyrian_city_coastal_05
     }
     lampsakos = {
-        rank = town town_setup = ir_asia_town_coastal_02
+        rank = town town_setup = ir_anatolian_town_coastal
     }
     larissa_0 = {
-        rank = city town_setup = ir_greek_city
+        rank = city town_setup = ir_illyrian_city
     }
     larsa = {
-        rank = town town_setup = ir_mesopotamian_town
+        rank = town town_setup = ir_crescent_town_02
     }
     latopolis = {
-        rank = city town_setup = ir_egyptian_city
+        rank = city town_setup = ir_egyptian_city_02
     }
     lavinium = {
-        rank = city town_setup = ir_italic_city_coastal_04
+        rank = city town_setup = ir_italic_city_coastal_02
     }
     lemnos = {
-        rank = town town_setup = ir_greek_town_coastal
+        rank = town town_setup = ir_illyrian_town_coastal
     }
     leontopolis = {
-        rank = city town_setup = ir_egyptian_city
+        rank = city town_setup = ir_egyptian_city_02
     }
     lepreon = {
-        rank = town town_setup = ir_greek_town_coastal
+        rank = town town_setup = ir_illyrian_town_coastal
     }
     leptis_minor = {
-        rank = city town_setup = ir_numidian_city_coastal_03
+        rank = city town_setup = ir_numidian_city_coastal_04
     }
     leukas = {
-        rank = town town_setup = ir_greek_town_coastal
+        rank = town town_setup = ir_illyrian_town_coastal
     }
     leuke_akte = {
-        rank = town town_setup = ir_syria_town_coastal_02
+        rank = town town_setup = ir_crescent_town_coastal
     }
     lhasa = {
         rank = town town_setup = ir_tibet_town_02
     }
     locri_0 = {
-        rank = town town_setup = ir_magna_graecia_town_coastal
+        rank = town town_setup = ir_italic_town_coastal
     }
     lysimacheia = {
-        rank = city town_setup = ir_greek_city_coastal_02
+        rank = city town_setup = ir_illyrian_city_coastal_06
     }
     madhyamika = {
-        rank = town town_setup = ir_avanti_town
+        rank = town town_setup = ir_hindustan_town
     }
     madra = {
-        rank = city town_setup = ir_indian_city
+        rank = city town_setup = ir_hindustan_city
     }
     madurai = {
-        rank = town town_setup = ir_dravida_town
+        rank = town town_setup = ir_deccan_town
     }
     mahisha = {
-        rank = town town_setup = ir_karnata_town
+        rank = town town_setup = ir_deccan_town
     }
     mahismati = {
-        rank = city town_setup = ir_aparanta_city
+        rank = city town_setup = ir_deccan_city
     }
     mai_adrasha = {
-        rank = town town_setup = ir_punt_town_02
+        rank = town town_setup = ir_ethiopia_town_02
     }
     malao = {
-        rank = town town_setup = ir_punt_town_coastal_04
+        rank = town town_setup = ir_ethiopia_town_coastal_04
     }
     malayana = {
-        rank = town town_setup = ir_dravida_town
+        rank = town town_setup = ir_deccan_town
     }
     malini = {
-        rank = town town_setup = ir_pracya_town
+        rank = town town_setup = ir_bengal_town
     }
     mallia_1 = {
-        rank = city town_setup = ir_indian_city
+        rank = city town_setup = ir_hindustan_city
     }
     mallos = {
-        rank = city town_setup = ir_cilicia_city
+        rank = city town_setup = ir_anatolian_city
     }
     maltecoria = {
-        rank = town town_setup = ir_maru_town_coastal
+        rank = town town_setup = ir_hindustan_town_coastal
     }
     marakanda = {
-        rank = town town_setup = ir_sogdiana_town_02
+        rank = town town_setup = ir_khorasan_town_02
     }
     margineia = {
-        rank = town town_setup = ir_bactrian_town_02
+        rank = town town_setup = ir_persian_town
     }
     mariaba = {
         rank = town town_setup = ir_arabian_town_02
     }
     marisa = {
-        rank = town town_setup = ir_palestine_town_04
+        rank = town town_setup = ir_crescent_town_03
     }
     markash = {
-        rank = town town_setup = ir_mesopotamian_town_04
+        rank = town town_setup = ir_crescent_town_03
     }
     massalia = {
         rank = town town_setup = ir_gaulish_town_coastal
     }
     mastia = {
-        rank = town town_setup = ir_contestania_town_coastal_02
+        rank = town town_setup = ir_iberian_town_coastal_02
     }
     mathura = {
-        rank = city town_setup = ir_avanti_city
+        rank = city town_setup = ir_hindustan_city
     }
     mayurasattapattinam = {
-        rank = town town_setup = ir_dravida_town_coastal_02
+        rank = town town_setup = ir_deccan_town_coastal_02
     }
     mazaka = {
-        rank = town town_setup = ir_cappadocia_town_02
+        rank = town town_setup = ir_anatolian_town
     }
     mediana = {
-        rank = town town_setup = ir_media_town_02
+        rank = town town_setup = ir_persian_town_03
     }
     megalopolis = {
-        rank = town town_setup = ir_greek_town
+        rank = town town_setup = ir_illyrian_town
     }
     megara_0 = {
-        rank = city town_setup = ir_greek_city_coastal
+        rank = city town_setup = ir_illyrian_city_coastal
     }
     mehsana = {
-        rank = town town_setup = ir_maru_town_02
+        rank = town town_setup = ir_hindustan_town_02
     }
     melange = {
-        rank = town town_setup = ir_dravida_town_coastal
+        rank = town town_setup = ir_deccan_town_coastal_03
     }
     melitia = {
-        rank = town town_setup = ir_cappadocia_town_03
+        rank = town town_setup = ir_anatolian_town_03
     }
     memphis = {
-        rank = city town_setup = ir_egyptian_city
+        rank = city town_setup = ir_egyptian_city_02
     }
     mendes = {
-        rank = city town_setup = ir_egyptian_city
+        rank = city town_setup = ir_egyptian_city_02
     }
     menturia = {
-        rank = town town_setup = ir_magna_graecia_town_coastal_03
+        rank = town town_setup = ir_italic_town_coastal_03
     }
     meroe = {
         rank = town town_setup = ir_nubian_town
     }
     meschistha_harmozike = {
-        rank = town town_setup = ir_colchis_town_03
+        rank = town town_setup = ir_caucasian_town_02
     }
     messana = {
-        rank = town town_setup = ir_magna_graecia_town_coastal_02
+        rank = town town_setup = ir_italic_town_coastal_02
     }
     messene = {
-        rank = city town_setup = ir_greek_city_coastal_03
+        rank = city town_setup = ir_illyrian_city_coastal_02
     }
     metapontum = {
-        rank = town town_setup = ir_magna_graecia_town_coastal_04
+        rank = town town_setup = ir_italic_town_coastal_02
     }
     mezber = {
-        rank = town town_setup = ir_punt_town_02
+        rank = town town_setup = ir_ethiopia_town_02
     }
     mihintale = {
-        rank = town town_setup = ir_dravida_town
+        rank = town town_setup = ir_deccan_town
     }
     miletos = {
-        rank = town town_setup = ir_asia_town_coastal_04
+        rank = town town_setup = ir_anatolian_town_coastal_04
     }
     minagana = {
-        rank = town town_setup = ir_vindhyaprstha_town_02
+        rank = town town_setup = ir_deccan_town_02
     }
     minnagara = {
-        rank = town town_setup = ir_aparanta_town_coastal_02
+        rank = town town_setup = ir_deccan_town_coastal_04
     }
     missua = {
         rank = city town_setup = ir_numidian_city_coastal_03
     }
     miyana = {
-        rank = town town_setup = ir_media_town_03
+        rank = town town_setup = ir_persian_town_02
     }
     modgagiri = {
-        rank = city town_setup = ir_pracya_city
+        rank = city town_setup = ir_bengal_city
     }
     mopsouestia = {
-        rank = city town_setup = ir_cilicia_city
+        rank = city town_setup = ir_anatolian_city
     }
     mosali = {
-        rank = town town_setup = ir_vindhyaprstha_town_coastal
+        rank = town town_setup = ir_deccan_town_coastal
     }
     mosylon = {
-        rank = town town_setup = ir_punt_town_coastal_04
+        rank = town town_setup = ir_ethiopia_town_coastal_04
     }
     moundou = {
-        rank = town town_setup = ir_punt_town_coastal
+        rank = town town_setup = ir_ethiopia_town_coastal_02
     }
     mousopalle = {
-        rank = town town_setup = ir_karnata_town_coastal_03
+        rank = town town_setup = ir_deccan_town_coastal_03
     }
     mulasthanapura = {
-        rank = city town_setup = ir_maru_city
+        rank = city town_setup = ir_hindustan_city
     }
     mundigak = {
-        rank = town town_setup = ir_ariana_town
+        rank = town town_setup = ir_persian_town
     }
     muziris = {
-        rank = town town_setup = ir_karnata_town_coastal
+        rank = town town_setup = ir_deccan_town_coastal
     }
     mylasa = {
-        rank = town town_setup = ir_asia_town
+        rank = town town_setup = ir_anatolian_town
     }
     myriandros = {
-        rank = rural_settlement town_setup = ir_cilicia_rural_settlement_coastal
+        rank = rural_settlement town_setup = ir_anatolian_rural_settlement_coastal
     }
     mytilene = {
-        rank = town town_setup = ir_asia_town_coastal_02
+        rank = town town_setup = ir_anatolian_town_coastal_02
     }
     nabadwipa = {
-        rank = town town_setup = ir_pracya_town
+        rank = town town_setup = ir_bengal_town
     }
     nadikagama = {
-        rank = city town_setup = ir_pracya_city_02
+        rank = city town_setup = ir_bengal_city_02
     }
     nagaa = {
         rank = town town_setup = ir_nubian_town
     }
     nagarjunikonda = {
-        rank = town town_setup = ir_vindhyaprstha_town
+        rank = town town_setup = ir_deccan_town_02
     }
     nalanda = {
-        rank = town town_setup = ir_pracya_town_02
+        rank = town town_setup = ir_bengal_town_02
     }
     nandipuri = {
-        rank = town town_setup = ir_aparanta_town
+        rank = town town_setup = ir_deccan_town
     }
     nasikya = {
-        rank = town town_setup = ir_aparanta_town
+        rank = town town_setup = ir_deccan_town
     }
     naukratis = {
-        rank = city town_setup = ir_egyptian_city_02
+        rank = city town_setup = ir_egyptian_city_03
     }
     naura_0 = {
-        rank = town town_setup = ir_sogdiana_town
+        rank = town town_setup = ir_khorasan_town
     }
     naxos = {
-        rank = town town_setup = ir_greek_town_coastal
+        rank = town town_setup = ir_illyrian_town_coastal
     }
     nea_paphos = {
-        rank = town town_setup = ir_cilicia_town_coastal_04
+        rank = town town_setup = ir_anatolian_town_coastal_02
     }
     neapolis = {
-        rank = city town_setup = ir_magna_graecia_city_coastal_02
+        rank = city town_setup = ir_italic_city_coastal_04
     }
     neiloupolis = {
-        rank = city town_setup = ir_egyptian_city
+        rank = city town_setup = ir_egyptian_city_02
     }
     nevasa = {
-        rank = town town_setup = ir_aparanta_town_02
+        rank = town town_setup = ir_deccan_town_02
     }
     nimisa = {
-        rank = town town_setup = ir_madhyadesa_town_02
+        rank = town town_setup = ir_hindustan_town
     }
     nineveh = {
-        rank = city town_setup = ir_mesopotamian_city_02
+        rank = city town_setup = ir_crescent_city_02
     }
     nippur = {
-        rank = city town_setup = ir_mesopotamian_city_02
+        rank = city town_setup = ir_crescent_city_02
     }
     nisibis_0 = {
-        rank = city town_setup = ir_mesopotamian_city_02
+        rank = city town_setup = ir_crescent_city_02
     }
     nokhar = {
-        rank = town town_setup = ir_indian_town_02
+        rank = town town_setup = ir_hindustan_town
     }
     nuceria = {
-        rank = town town_setup = ir_magna_graecia_town_02
+        rank = town town_setup = ir_italic_town_03
     }
     nura = {
         rank = city town_setup = ir_italic_city_coastal
     }
     odessus = {
-        rank = town town_setup = ir_moesia_town_coastal_02
+        rank = town town_setup = ir_illyrian_town_coastal
     }
     oea = {
-        rank = town town_setup = ir_cyrenaica_town_coastal_02
+        rank = town town_setup = ir_egyptian_town_coastal_03
     }
     olbia = {
         rank = town town_setup = ir_scythian_town_coastal
@@ -1286,622 +1286,622 @@ locations = {
         rank = town town_setup = ir_arabian_town_coastal_04
     }
     opis = {
-        rank = city town_setup = ir_mesopotamian_city_02
+        rank = city town_setup = ir_crescent_city_02
     }
     opone = {
-        rank = town town_setup = ir_punt_town_coastal_04
+        rank = town town_setup = ir_ethiopia_town_coastal_04
     }
     oreus = {
-        rank = town town_setup = ir_greek_town_coastal_03
+        rank = town town_setup = ir_illyrian_town_coastal_03
     }
     orontessos = {
-        rank = town town_setup = ir_mesopotamian_town
+        rank = town town_setup = ir_crescent_town_02
     }
     oskobara = {
-        rank = city town_setup = ir_bactrian_city_03
+        rank = city town_setup = ir_persian_city_03
     }
     ostia = {
-        rank = city town_setup = ir_italic_city_coastal_03
+        rank = city town_setup = ir_italic_city_coastal
     }
     paestum = {
-        rank = town town_setup = ir_magna_graecia_town_coastal
+        rank = town town_setup = ir_italic_town_coastal
     }
     palaiogonoi = {
-        rank = town town_setup = ir_dravida_town_02
+        rank = town town_setup = ir_deccan_town_02
     }
     palaipatmai = {
-        rank = town town_setup = ir_aparanta_town_coastal_03
+        rank = town town_setup = ir_deccan_town_coastal_03
     }
     pali = {
-        rank = town town_setup = ir_vindhyaprstha_town
+        rank = town town_setup = ir_deccan_town
     }
     paliouros = {
-        rank = town town_setup = ir_cyrenaica_town_coastal_02
+        rank = town town_setup = ir_egyptian_town_coastal_03
     }
     palmyra = {
-        rank = town town_setup = ir_syria_town_03
+        rank = town town_setup = ir_crescent_town_05
     }
     panorumus = {
-        rank = town town_setup = ir_magna_graecia_town_coastal_02
+        rank = town town_setup = ir_italic_town_coastal_02
     }
     pantikapaion = {
-        rank = town town_setup = ir_taurica_town_coastal_03
+        rank = town town_setup = ir_scythian_town_coastal
     }
     paraetonium = {
-        rank = city town_setup = ir_cyrenaica_city_coastal
-    }
-    parium = {
-        rank = town town_setup = ir_asia_town_coastal_02
-    }
-    pasargadai = {
-        rank = city town_setup = ir_persis_city
-    }
-    passaron = {
-        rank = town town_setup = ir_greek_town
-    }
-    patala = {
-        rank = town town_setup = ir_maru_town
-    }
-    pataliputra = {
-        rank = city town_setup = ir_pracya_city
-    }
-    patara = {
-        rank = town town_setup = ir_cilicia_town_coastal
-    }
-    patavium = {
-        rank = town town_setup = ir_gaulish_town_coastal_03
-    }
-    patigrabana = {
-        rank = town town_setup = ir_parthia_town
-    }
-    pattithana = {
-        rank = town town_setup = ir_aparanta_town
-    }
-    pella_0 = {
-        rank = city town_setup = ir_greek_city_02
-    }
-    pelusium = {
         rank = city town_setup = ir_egyptian_city_coastal_03
     }
+    parium = {
+        rank = town town_setup = ir_anatolian_town_coastal_02
+    }
+    pasargadai = {
+        rank = city town_setup = ir_persian_city_03
+    }
+    passaron = {
+        rank = town town_setup = ir_illyrian_town
+    }
+    patala = {
+        rank = town town_setup = ir_hindustan_town
+    }
+    pataliputra = {
+        rank = city town_setup = ir_bengal_city
+    }
+    patara = {
+        rank = town town_setup = ir_anatolian_town_coastal_05
+    }
+    patavium = {
+        rank = town town_setup = ir_italic_town_coastal
+    }
+    patigrabana = {
+        rank = town town_setup = ir_khorasan_town
+    }
+    pattithana = {
+        rank = town town_setup = ir_deccan_town
+    }
+    pella_0 = {
+        rank = city town_setup = ir_illyrian_city_02
+    }
+    pelusium = {
+        rank = city town_setup = ir_egyptian_city_coastal_04
+    }
     pergamon = {
-        rank = town town_setup = ir_asia_town
+        rank = town town_setup = ir_anatolian_town
     }
     persepolis = {
-        rank = city town_setup = ir_persis_city
+        rank = city town_setup = ir_persian_city_03
     }
     perusia = {
         rank = town town_setup = ir_italic_town
     }
     petra = {
-        rank = town town_setup = ir_palestine_town_03
+        rank = town town_setup = ir_crescent_town_04
     }
     pharnake = {
-        rank = town town_setup = ir_syria_town_04
+        rank = town town_setup = ir_crescent_town
     }
     pharsalos = {
-        rank = city town_setup = ir_greek_city
+        rank = city town_setup = ir_illyrian_city
     }
     pharsana = {
-        rank = town town_setup = ir_ariana_town
+        rank = town town_setup = ir_persian_town
     }
     phasis = {
-        rank = town town_setup = ir_colchis_town_coastal_02
+        rank = town town_setup = ir_caucasian_town_coastal_02
     }
     pherai = {
-        rank = city town_setup = ir_greek_city
+        rank = city town_setup = ir_illyrian_city
     }
     philippoi = {
-        rank = city town_setup = ir_greek_city
+        rank = city town_setup = ir_illyrian_city
     }
     picenum = {
-        rank = town town_setup = ir_italic_town_coastal_02
+        rank = town town_setup = ir_italic_town_coastal
     }
     pisae = {
-        rank = city town_setup = ir_gaulish_city_coastal
+        rank = city town_setup = ir_italic_city_coastal_02
     }
     plestia = {
         rank = town town_setup = ir_italic_town
     }
     polymedion = {
-        rank = town town_setup = ir_asia_town_coastal
+        rank = town town_setup = ir_anatolian_town_coastal
     }
     polyrrenia = {
-        rank = town town_setup = ir_greek_town_coastal
+        rank = town town_setup = ir_illyrian_town_coastal
     }
     populonia = {
-        rank = city town_setup = ir_italic_city_coastal_03
+        rank = city town_setup = ir_italic_city_coastal_02
     }
     portus_veneris = {
-        rank = town town_setup = ir_gaulish_town_coastal
+        rank = town town_setup = ir_italic_town_coastal
     }
     poteidaia = {
-        rank = town town_setup = ir_greek_town_coastal
+        rank = town town_setup = ir_illyrian_town_coastal
     }
     prabhasa = {
-        rank = town town_setup = ir_maru_town_coastal_02
+        rank = town town_setup = ir_hindustan_town_coastal_02
     }
     praesidium_0 = {
-        rank = town town_setup = ir_baetica_town_coastal_04
+        rank = town town_setup = ir_iberian_town_coastal_03
     }
     prayaga = {
-        rank = city town_setup = ir_madhyadesa_city
+        rank = city town_setup = ir_hindustan_city
     }
     priene = {
-        rank = town town_setup = ir_asia_town_coastal
+        rank = town town_setup = ir_anatolian_town_coastal
     }
     pselkis = {
         rank = town town_setup = ir_nubian_town
     }
     pundra = {
-        rank = city town_setup = ir_pracya_city
+        rank = city town_setup = ir_bengal_city
     }
     pura = {
-        rank = town town_setup = ir_ariana_town
+        rank = town town_setup = ir_persian_town
     }
     purushapura = {
-        rank = town town_setup = ir_indian_town_02
+        rank = town town_setup = ir_hindustan_town
     }
     pushkalavati = {
-        rank = town town_setup = ir_indian_town_02
+        rank = town town_setup = ir_hindustan_town
     }
     pydna = {
-        rank = city town_setup = ir_greek_city_coastal
+        rank = city town_setup = ir_illyrian_city_coastal_02
     }
     pyrgi = {
-        rank = town town_setup = ir_italic_town_coastal
+        rank = town town_setup = ir_italic_town_coastal_04
     }
     qandala = {
-        rank = town town_setup = ir_punt_town_coastal_03
+        rank = town town_setup = ir_ethiopia_town_coastal_03
     }
     qohaito = {
-        rank = town town_setup = ir_punt_town_03
+        rank = town town_setup = ir_ethiopia_town_03
     }
     qom = {
-        rank = city town_setup = ir_media_city_03
+        rank = city town_setup = ir_persian_city
     }
     rabbat_ammon = {
-        rank = town town_setup = ir_palestine_town_02
+        rank = town town_setup = ir_crescent_town_02
     }
     raichur = {
-        rank = town town_setup = ir_aparanta_town
+        rank = town town_setup = ir_deccan_town
     }
     rajagagriha = {
-        rank = town town_setup = ir_pracya_town
+        rank = town town_setup = ir_bengal_town
     }
     ramagiri = {
-        rank = town town_setup = ir_vindhyaprstha_town_02
+        rank = town town_setup = ir_deccan_town_02
     }
     ravenna = {
-        rank = town town_setup = ir_italic_town_coastal_02
+        rank = town town_setup = ir_italic_town_coastal
     }
     rayagada = {
-        rank = town town_setup = ir_vindhyaprstha_town
+        rank = town town_setup = ir_deccan_town
     }
     rhagai = {
-        rank = city town_setup = ir_media_city_02
+        rank = city town_setup = ir_persian_city_03
     }
     rhegium = {
-        rank = town town_setup = ir_magna_graecia_town_coastal
+        rank = town town_setup = ir_italic_town_coastal
     }
     rhoda = {
-        rank = town town_setup = ir_tarraconensis_town_coastal_03
+        rank = town town_setup = ir_iberian_town_coastal_03
     }
     rhodopolis = {
-        rank = town town_setup = ir_colchis_town
+        rank = town town_setup = ir_caucasian_town
     }
     rhodos = {
-        rank = city town_setup = ir_asia_city_coastal
+        rank = city town_setup = ir_anatolian_city_coastal
     }
     rinokoloura = {
-        rank = city town_setup = ir_egyptian_city_coastal_04
+        rank = city town_setup = ir_egyptian_city_coastal_02
     }
     rohtak = {
-        rank = city town_setup = ir_madhyadesa_city
+        rank = city town_setup = ir_hindustan_city
     }
     roma = {
         rank = city town_setup = ir_italic_city
     }
     roruka = {
-        rank = town town_setup = ir_maru_town
+        rank = town town_setup = ir_hindustan_town
     }
     rusellae = {
         rank = town town_setup = ir_italic_town
     }
     rusicade = {
-        rank = town town_setup = ir_numidia_town_coastal
+        rank = town town_setup = ir_numidian_town_coastal_02
     }
     rusuccuru = {
-        rank = town town_setup = ir_numidia_town_coastal
+        rank = town town_setup = ir_numidian_town_coastal_02
     }
     sabata = {
         rank = town town_setup = ir_arabian_town_02
     }
     saguntum = {
-        rank = town town_setup = ir_contestania_town_coastal_02
+        rank = town town_setup = ir_iberian_town_coastal_02
     }
     saharsa = {
-        rank = city town_setup = ir_pracya_city
+        rank = city town_setup = ir_bengal_city
     }
     sais = {
-        rank = city town_setup = ir_egyptian_city_02
+        rank = city town_setup = ir_egyptian_city_03
     }
     sakala = {
-        rank = town town_setup = ir_indian_town_02
+        rank = town town_setup = ir_hindustan_town
     }
     salamis_kyprias = {
-        rank = town town_setup = ir_cilicia_town_coastal_04
+        rank = town town_setup = ir_anatolian_town_coastal_04
     }
     samapa = {
-        rank = town town_setup = ir_vindhyaprstha_town_coastal
+        rank = town town_setup = ir_deccan_town_coastal
     }
     samos = {
-        rank = town town_setup = ir_asia_town_coastal
+        rank = town town_setup = ir_anatolian_town_coastal
     }
     samosata = {
-        rank = town town_setup = ir_mesopotamian_town_04
+        rank = town town_setup = ir_crescent_town_03
     }
     sanaphar = {
         rank = city town_setup = ir_italic_city_coastal_03
     }
     sardis = {
-        rank = city town_setup = ir_asia_city
+        rank = city town_setup = ir_anatolian_city
     }
     saringiy = {
-        rank = city town_setup = ir_parthia_city_coastal
+        rank = city town_setup = ir_khorasan_city_coastal
     }
     scythopolis = {
-        rank = town town_setup = ir_palestine_town_04
+        rank = town town_setup = ir_crescent_town_03
     }
     sebennytos = {
-        rank = city town_setup = ir_egyptian_city
+        rank = city town_setup = ir_egyptian_city_02
     }
     seglamen = {
-        rank = town town_setup = ir_punt_town_04
+        rank = town town_setup = ir_ethiopia_town_04
     }
     selanpura = {
-        rank = town town_setup = ir_pracya_town
+        rank = town town_setup = ir_bengal_town
     }
     seleucia_magna = {
-        rank = city town_setup = ir_mesopotamian_city_02
+        rank = city town_setup = ir_crescent_city_02
     }
     selinus = {
-        rank = town town_setup = ir_magna_graecia_town_coastal_02
+        rank = town town_setup = ir_italic_town_coastal_04
     }
     sembel = {
-        rank = town town_setup = ir_punt_town_02
+        rank = town town_setup = ir_ethiopia_town
     }
     serapeion = {
-        rank = town town_setup = ir_cyrenaica_town_coastal
+        rank = town town_setup = ir_egyptian_town_coastal
     }
     sesamos = {
-        rank = town town_setup = ir_bithynia_town_coastal
+        rank = town town_setup = ir_anatolian_town_coastal_02
     }
     seuthopolis = {
-        rank = town town_setup = ir_greek_town_02
+        rank = town town_setup = ir_illyrian_town_02
     }
     shabwa = {
         rank = town town_setup = ir_arabian_town_02
     }
     shekhem = {
-        rank = town town_setup = ir_palestine_town_02
+        rank = town town_setup = ir_crescent_town_02
     }
     shiram = {
-        rank = town town_setup = ir_media_town_03
+        rank = town town_setup = ir_persian_town_02
     }
     shushan = {
-        rank = city town_setup = ir_persis_city
+        rank = city town_setup = ir_persian_city_03
     }
     side = {
-        rank = town town_setup = ir_cilicia_town_coastal_02
+        rank = town town_setup = ir_anatolian_town_coastal
     }
     sidon = {
-        rank = town town_setup = ir_syria_town_coastal
+        rank = town town_setup = ir_crescent_town_coastal
     }
     sikyon = {
-        rank = town town_setup = ir_greek_town_coastal
+        rank = town town_setup = ir_illyrian_town_coastal
     }
     sillyon = {
-        rank = town town_setup = ir_cilicia_town_coastal_02
+        rank = town town_setup = ir_anatolian_town_coastal
     }
     sindhumana = {
-        rank = city town_setup = ir_maru_city_02
+        rank = city town_setup = ir_hindustan_city_02
     }
     sinope = {
-        rank = town town_setup = ir_bithynia_town_coastal
+        rank = town town_setup = ir_anatolian_town_coastal_02
     }
     sippar = {
-        rank = city town_setup = ir_mesopotamian_city_02
+        rank = city town_setup = ir_crescent_city_02
     }
     sirwa = {
         rank = town town_setup = ir_arabian_town_03
     }
     sitapur = {
-        rank = town town_setup = ir_madhyadesa_town_02
+        rank = town town_setup = ir_hindustan_town
     }
     smyrna = {
-        rank = town town_setup = ir_asia_town_coastal_02
+        rank = town town_setup = ir_anatolian_town_coastal_02
     }
     soloi_1 = {
-        rank = town town_setup = ir_cilicia_town_coastal_02
+        rank = town town_setup = ir_anatolian_town_coastal
     }
     soluntum = {
-        rank = town town_setup = ir_magna_graecia_town_coastal
+        rank = town town_setup = ir_italic_town_coastal
     }
     sopattinam = {
-        rank = town town_setup = ir_dravida_town_coastal_03
+        rank = town town_setup = ir_deccan_town_coastal
     }
     sparta = {
-        rank = city town_setup = ir_greek_city
+        rank = city town_setup = ir_illyrian_city
     }
     srihatta = {
-        rank = town town_setup = ir_burma_town_02
+        rank = town town_setup = ir_bengal_town_03
     }
     sripatha = {
-        rank = town town_setup = ir_avanti_town
+        rank = town town_setup = ir_hindustan_town
     }
     sthanishvara = {
-        rank = city town_setup = ir_madhyadesa_city_02
+        rank = city town_setup = ir_hindustan_city_02
     }
     stobi = {
-        rank = town town_setup = ir_greek_town_02
+        rank = town town_setup = ir_illyrian_town_02
     }
     stratos = {
-        rank = town town_setup = ir_greek_town
+        rank = town town_setup = ir_illyrian_town
     }
     sulcis = {
-        rank = city town_setup = ir_italic_city_coastal_03
+        rank = city town_setup = ir_italic_city_coastal
     }
     sumsumaragiri = {
-        rank = town town_setup = ir_madhyadesa_town_02
+        rank = town town_setup = ir_hindustan_town
     }
     surparaka = {
-        rank = town town_setup = ir_aparanta_town_coastal_03
+        rank = town town_setup = ir_deccan_town_coastal
     }
     syene = {
         rank = town town_setup = ir_nubian_town_02
     }
     synnada = {
-        rank = town town_setup = ir_galatia_town
+        rank = town town_setup = ir_anatolian_town
     }
     syracusae = {
-        rank = town town_setup = ir_magna_graecia_town_coastal_02
+        rank = town town_setup = ir_italic_town_coastal_02
     }
     tacape = {
-        rank = town town_setup = ir_numidian_town_coastal
+        rank = town town_setup = ir_numidian_town_coastal_02
     }
     tamna = {
         rank = town town_setup = ir_arabian_town_04
     }
     tamralipti = {
-        rank = town town_setup = ir_vindhyaprstha_town_coastal
+        rank = town town_setup = ir_deccan_town_coastal
     }
     tanagra = {
-        rank = town town_setup = ir_greek_town
+        rank = town town_setup = ir_illyrian_town
     }
     tapia = {
-        rank = town town_setup = ir_aparanta_town
+        rank = town town_setup = ir_deccan_town
     }
     taposiris = {
-        rank = city town_setup = ir_egyptian_city_coastal_05
+        rank = city town_setup = ir_egyptian_city_coastal_04
     }
     tarentum = {
-        rank = city town_setup = ir_magna_graecia_city_coastal_03
+        rank = city town_setup = ir_italic_city_coastal_02
     }
     tarmita = {
-        rank = city town_setup = ir_bactrian_city_03
+        rank = city town_setup = ir_persian_city_03
     }
     tarquini = {
-        rank = city town_setup = ir_italic_city_coastal
+        rank = city town_setup = ir_italic_city_coastal_03
     }
     tarsus = {
-        rank = town town_setup = ir_cilicia_town_coastal_04
+        rank = town town_setup = ir_anatolian_town_coastal_04
     }
     taryana = {
-        rank = city town_setup = ir_persis_city_02
+        rank = city town_setup = ir_persian_city
     }
     taucheira = {
-        rank = town town_setup = ir_cyrenaica_town_coastal_02
+        rank = town town_setup = ir_egyptian_town_coastal_02
     }
     taurasia = {
-        rank = town town_setup = ir_gaulish_town
+        rank = town town_setup = ir_italic_town_03
     }
     taxila = {
-        rank = city town_setup = ir_indian_city
+        rank = city town_setup = ir_hindustan_city
     }
     telephis = {
-        rank = town town_setup = ir_colchis_town
+        rank = town town_setup = ir_caucasian_town
     }
     telmessos = {
-        rank = town town_setup = ir_cilicia_town_coastal_02
+        rank = town town_setup = ir_anatolian_town_coastal
     }
     tenthyris = {
-        rank = city town_setup = ir_egyptian_city
+        rank = city town_setup = ir_egyptian_city_02
     }
     thapsus = {
         rank = city town_setup = ir_numidian_city_coastal_03
     }
     tharros = {
-        rank = town town_setup = ir_italic_town_coastal_02
+        rank = town town_setup = ir_italic_town_coastal
     }
     theodosia = {
-        rank = town town_setup = ir_taurica_town_coastal_03
+        rank = town town_setup = ir_scythian_town_coastal
     }
     thermai = {
-        rank = town town_setup = ir_magna_graecia_town_coastal
+        rank = town town_setup = ir_italic_town_coastal
     }
     thermon = {
-        rank = town town_setup = ir_greek_town
+        rank = town town_setup = ir_illyrian_town
     }
     thespiai = {
-        rank = town town_setup = ir_greek_town_coastal
+        rank = town town_setup = ir_illyrian_town_coastal
     }
     thessalonica = {
-        rank = city town_setup = ir_greek_city_coastal
+        rank = city town_setup = ir_illyrian_city_coastal
     }
     thurii = {
-        rank = town town_setup = ir_magna_graecia_town_coastal_02
+        rank = town town_setup = ir_italic_town_coastal_04
     }
     thyateira = {
-        rank = town town_setup = ir_asia_town
+        rank = town town_setup = ir_anatolian_town
     }
     tibur = {
         rank = city town_setup = ir_italic_city
     }
     tigranocerta = {
-        rank = town town_setup = ir_mesopotamian_town_04
+        rank = town town_setup = ir_crescent_town_03
     }
     tingis = {
-        rank = town town_setup = ir_mauretainia_town_coastal
+        rank = town town_setup = ir_numidian_town_coastal_02
     }
     tirumala = {
-        rank = town town_setup = ir_dravida_town
+        rank = town town_setup = ir_deccan_town
     }
     tiruperur = {
-        rank = town town_setup = ir_karnata_town
+        rank = town town_setup = ir_deccan_town
     }
     tlos = {
-        rank = town town_setup = ir_cilicia_town_02
+        rank = town town_setup = ir_anatolian_town_02
     }
     tosali = {
-        rank = town town_setup = ir_vindhyaprstha_town_coastal
+        rank = town town_setup = ir_deccan_town_coastal
     }
     tragonica = {
-        rank = city town_setup = ir_persis_city_02
+        rank = city town_setup = ir_persian_city
     }
     tralles = {
-        rank = town town_setup = ir_asia_town_02
+        rank = town town_setup = ir_anatolian_town_02
     }
     trapezous = {
-        rank = town town_setup = ir_cappadocia_pontica_town_coastal
+        rank = town town_setup = ir_anatolian_town_coastal_02
     }
     tregoritum = {
-        rank = town town_setup = ir_armorica_town_coastal
+        rank = town town_setup = ir_gaulish_town_coastal_02
     }
     triparadeisos = {
-        rank = town town_setup = ir_syria_town
+        rank = town town_setup = ir_crescent_town_02
     }
     tripolis = {
-        rank = town town_setup = ir_syria_town_coastal
+        rank = town town_setup = ir_crescent_town_coastal_03
     }
     turris_tamaleni = {
-        rank = town town_setup = ir_numidian_town
+        rank = town town_setup = ir_numidian_town_02
     }
     tyana = {
-        rank = city town_setup = ir_cappadocia_city
+        rank = city town_setup = ir_anatolian_city_02
     }
     tylos = {
         rank = city town_setup = ir_arabian_city_coastal
     }
     tyndaris = {
-        rank = town town_setup = ir_magna_graecia_town_coastal
+        rank = town town_setup = ir_italic_town_coastal
     }
     tyrannosboas = {
-        rank = town town_setup = ir_aparanta_town_coastal_03
+        rank = town town_setup = ir_deccan_town_coastal
     }
     tyras_0 = {
         rank = town town_setup = ir_scythian_town_coastal
     }
     tyrus = {
-        rank = city town_setup = ir_syria_city_coastal
+        rank = city town_setup = ir_crescent_city_coastal
     }
     ujjayini = {
-        rank = city town_setup = ir_avanti_city_02
+        rank = city town_setup = ir_hindustan_city_02
     }
     urayur = {
-        rank = town town_setup = ir_dravida_town
+        rank = town town_setup = ir_deccan_town
     }
     urci = {
-        rank = town town_setup = ir_baetica_town_coastal_05
+        rank = town town_setup = ir_iberian_town_coastal
     }
     uruk = {
-        rank = city town_setup = ir_mesopotamian_city_02
+        rank = city town_setup = ir_crescent_city_02
     }
     utica = {
         rank = city town_setup = ir_numidian_city_coastal_03
     }
     vairata = {
-        rank = town town_setup = ir_avanti_town
+        rank = town town_setup = ir_hindustan_town
     }
     vaishali = {
-        rank = city town_setup = ir_pracya_city
+        rank = city town_setup = ir_bengal_city
     }
     valuraka = {
-        rank = town town_setup = ir_aparanta_town
+        rank = town town_setup = ir_deccan_town
     }
     vanavasi = {
-        rank = town town_setup = ir_karnata_town_02
+        rank = town town_setup = ir_deccan_town_02
     }
     vanci = {
-        rank = town town_setup = ir_karnata_town
+        rank = town town_setup = ir_deccan_town
     }
     varanasi = {
-        rank = city town_setup = ir_madhyadesa_city_02
+        rank = city town_setup = ir_hindustan_city_02
     }
     varendra = {
-        rank = city town_setup = ir_pracya_city
+        rank = city town_setup = ir_bengal_city
     }
     vayapata = {
-        rank = town town_setup = ir_aparanta_town
+        rank = town town_setup = ir_deccan_town
     }
     veii = {
         rank = city town_setup = ir_italic_city
     }
     velia = {
-        rank = town town_setup = ir_magna_graecia_town_coastal_02
+        rank = town town_setup = ir_italic_town_coastal_02
     }
     venta = {
         rank = town town_setup = ir_britannic_town_coastal_03
     }
     verona = {
-        rank = town town_setup = ir_gaulish_town
+        rank = town town_setup = ir_italic_town_03
     }
     vetulonia = {
         rank = city town_setup = ir_italic_city_coastal_03
     }
     vinitapura = {
-        rank = town town_setup = ir_vindhyaprstha_town_04
+        rank = town town_setup = ir_deccan_town_02
     }
     visentium = {
         rank = town town_setup = ir_italic_town
     }
     vishpauzatis = {
-        rank = town town_setup = ir_parthia_town
+        rank = town town_setup = ir_khorasan_town
     }
     volaterrae = {
-        rank = town town_setup = ir_italic_town_02
+        rank = town town_setup = ir_italic_town_04
     }
     volci = {
         rank = city town_setup = ir_italic_city_coastal_03
     }
     vologesias = {
-        rank = city town_setup = ir_mesopotamian_city_02
+        rank = city town_setup = ir_crescent_city_02
     }
     voluca = {
-        rank = town town_setup = ir_tarraconensis_town
+        rank = town town_setup = ir_iberian_town_02
     }
     yakaris = {
-        rank = town town_setup = ir_aparanta_town
+        rank = town town_setup = ir_deccan_town
     }
     yathill = {
         rank = town town_setup = ir_arabian_town_04
     }
     yeha = {
-        rank = town town_setup = ir_punt_town
+        rank = town town_setup = ir_ethiopia_town
     }
     yutian = {
-        rank = town town_setup = ir_himalayan_town_02
+        rank = town town_setup = ir_khorasan_town_03
     }
     zadrakarta = {
-        rank = town town_setup = ir_parthia_town_coastal
+        rank = town town_setup = ir_khorasan_town_coastal
     }
     zafar = {
         rank = town town_setup = ir_arabian_town_03
     }
     zeleia = {
-        rank = town town_setup = ir_asia_town_coastal
+        rank = town town_setup = ir_anatolian_town_coastal
     }
     zeugma = {
-        rank = town town_setup = ir_syria_town_04
+        rank = town town_setup = ir_crescent_town
     }
 }
 

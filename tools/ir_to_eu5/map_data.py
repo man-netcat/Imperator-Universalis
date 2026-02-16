@@ -2624,6 +2624,163 @@ def _select_town_setup(
     return setup.get("town", default_town_setup)
 
 
+# Curated market hubs for the 304 BC conversion.
+# Each tuple is (display_label, candidate_location_keys in priority order).
+HARDCODED_MARKET_HUBS_304BC: list[tuple[str, list[str]]] = [
+    ("Alexandria", ["alexandria"]),
+    ("Rhodes", ["rhodos"]),
+    ("Athens", ["athens"]),
+    ("Piraeus", ["pira"]),
+    ("Corinth", ["korinthos"]),
+    ("Carthage", ["carthago"]),
+    ("Syracuse", ["syracusae"]),
+    ("Tyre", ["tyrus"]),
+    ("Gaza", ["gaza"]),
+    ("Damascus", ["damascus"]),
+    ("Pelusium", ["pelusium"]),
+    ("Babylon", ["babylon_1", "babylon_0"]),
+    ("Seleucia-on-the-Tigris", ["seleucia_magna"]),
+    ("Susa", ["alexandria_susiana"]),
+    ("Ecbatana", ["ecbatana"]),
+    ("Gerrha", ["gerrha"]),
+    ("Petra", ["petra"]),
+    ("Omana", ["omana"]),
+    ("Pataliputra", ["pataliputra"]),
+    ("Taxila", ["taxila"]),
+    ("Ujjain", ["ujjayini"]),
+    ("Madurai", ["madurai"]),
+    ("Massalia", ["massalia"]),
+    ("Emporion", ["emporiae"]),
+    ("Gades", ["gadir_0", "gadir_1"]),
+    ("Tartessos", ["tartessos", "tartessia", "gadir_1"]),
+    ("Saguntum", ["saguntum"]),
+    ("Narbo", ["narbo"]),
+    ("Tolosa", ["tolosa"]),
+    ("Avaricum", ["avaricum"]),
+    # Underrepresented Western fringe: British Isles & Ireland.
+    ("Londinium", ["londinium"]),
+    ("Camulodunum", ["camulodunum"]),
+    ("Eboracum", ["eboracum"]),
+    ("Deva", ["deva"]),
+    ("Isca Dumnoniorum", ["isca_dumnoniorum"]),
+    ("Eblana", ["eblana"]),
+    ("Lindum", ["lindum"]),
+    ("Byzantion", ["byzantion"]),
+    ("Callatis", ["callatis"]),
+    ("Olbia", ["olbia"]),
+    ("Chersonesos Taurica", ["chersonesos"]),
+    ("Panticapaeum", ["pantikapaion"]),
+    ("Phasis", ["phasis"]),
+    ("Tanais", ["tanais_0"]),
+    ("Sinope", ["sinope"]),
+    ("Amisos", ["amisos"]),
+    ("Trapezus", ["trapezous", "trapezon"]),
+    ("Artaxata", ["artaxata"]),
+    ("Tigranocerta", ["tigranocerta"]),
+    ("Nisibis", ["nisibis_0", "nisibis_1"]),
+    ("Hatra", ["hatra"]),
+    ("Dura-Europos", ["dura"]),
+    ("Charax Spasinu", ["charax"]),
+    ("Opis", ["opis"]),
+    ("Uruk", ["uruk"]),
+    ("Borsippa", ["borsippa"]),
+    ("Dedan", ["dedan"]),
+    ("Hegra", ["hegra"]),
+    ("Qaryat al-Faw", ["karna", "mariaba", "dedan"]),
+    ("Najran", ["mariaba", "sabata", "karna"]),
+    ("Adulis", ["adouli"]),
+    ("Avalites", ["aualites"]),
+    ("Opone", ["opone"]),
+    ("Rhapta", ["mosylon", "opone"]),
+    ("Bactra", ["bactra"]),
+    ("Alexandria Eschate", ["alexandreia_eschate"]),
+    ("Marakanda", ["marakanda"]),
+    ("Cyropolis", ["cyropolis_persica"]),
+    ("Kashgar", ["kashgar"]),
+    ("Korkai", ["koti"]),
+    ("Arikamedu Region Port", ["mayurasattapattinam", "kanci", "kancipuram"]),
+    ("Tamralipti", ["tamralipti"]),
+]
+
+MARKET_REGION_MINIMUMS_304BC: dict[str, int] = {
+    # Regional floor guarantees for underrepresented 304 BC trade zones.
+    "north_german_region": 2,
+    "scandinavian_region": 2,
+    "carpathia_region": 2,
+    "baltic_region": 2,
+}
+
+
+def _is_within_hops(
+    start: str,
+    targets: set[str],
+    neighbors: dict,
+    max_hops: int,
+) -> bool:
+    if not targets or max_hops < 0:
+        return False
+
+    queue: list[tuple[str, int]] = [(start, 0)]
+    visited: set[str] = {start}
+    index = 0
+    while index < len(queue):
+        node, depth = queue[index]
+        index += 1
+
+        if depth > 0 and node in targets:
+            return True
+        if depth >= max_hops:
+            continue
+
+        edge_map = neighbors.get(node, {}) if isinstance(neighbors, dict) else {}
+        if not isinstance(edge_map, dict):
+            continue
+
+        for neighbor_key in edge_map.keys():
+            if not isinstance(neighbor_key, str) or neighbor_key in visited:
+                continue
+            visited.add(neighbor_key)
+            queue.append((neighbor_key, depth + 1))
+
+    return False
+
+
+
+def _resolve_hardcoded_market_hubs(
+    location_keys: set[str],
+    excluded: set[str],
+) -> list[str]:
+    markets: list[str] = []
+    seen: set[str] = set()
+    unresolved_labels: list[str] = []
+
+    for label, candidates in HARDCODED_MARKET_HUBS_304BC:
+        chosen = None
+        for key in candidates:
+            if key in location_keys and key not in excluded:
+                chosen = key
+                break
+        if chosen is None:
+            unresolved_labels.append(label)
+            continue
+        if chosen in seen:
+            continue
+        seen.add(chosen)
+        markets.append(chosen)
+
+    if unresolved_labels:
+        print(
+            "Markets hardcode: unresolved hubs="
+            + str(len(unresolved_labels))
+            + " ("
+            + ", ".join(unresolved_labels)
+            + ")"
+        )
+
+    return markets
+
+
+
 def _build_market_keys(
     id_to_key: dict[int, str],
     location_keys: set[str],
@@ -2633,23 +2790,171 @@ def _build_market_keys(
     country_capitals: dict[str, int],
     top_capitals: int = 35,
     max_markets: int = 35,
+    min_markets: int = 90,
+    min_market_hops: int = 5,
 ) -> list[str]:
     excluded = _non_land_keys(default_map)
-    road_pairs = _parse_ir_road_pairs()
-    degree: dict[int, int] = defaultdict(int)
-    for a_id, b_id in road_pairs:
-        degree[a_id] += 1
-        degree[b_id] += 1
+    target_markets = max(0, min_markets)
+    region_minimums = {
+        key: int(count)
+        for key, count in MARKET_REGION_MINIMUMS_304BC.items()
+        if isinstance(count, int) and count > 0
+    }
 
     def valid_id(pid: int) -> bool:
-        key = id_to_key[pid]
-        return key in location_keys and key not in excluded
+        key = id_to_key.get(pid)
+        return key is not None and key in location_keys and key not in excluded
 
     top_country_tags = sorted(
         country_locations.keys(),
         key=lambda tag: len(country_locations.get(tag, [])),
         reverse=True,
     )
+
+    def _capital_keys(tags: list[str]) -> list[str]:
+        cap_keys: list[str] = []
+        for tag in tags:
+            cap_id = country_capitals.get(tag)
+            if cap_id is None or not valid_id(cap_id):
+                continue
+            cap_key = id_to_key[cap_id]
+            if cap_key not in cap_keys:
+                cap_keys.append(cap_key)
+        return cap_keys
+
+    spacing_immune_capital_keys = _capital_keys(top_country_tags[:30])
+    all_capital_keys = _capital_keys(top_country_tags)
+
+    road_degree: dict[str, int] = {}
+    for a_id, b_id in _parse_ir_road_pairs():
+        a_key = id_to_key.get(a_id)
+        b_key = id_to_key.get(b_id)
+        if a_key in location_keys and a_key not in excluded:
+            road_degree[a_key] = road_degree.get(a_key, 0) + 1
+        if b_key in location_keys and b_key not in excluded:
+            road_degree[b_key] = road_degree.get(b_key, 0) + 1
+    road_ranked_keys = sorted(road_degree.keys(), key=lambda key: (-road_degree[key], key))
+    all_land_keys = sorted(key for key in location_keys if key not in excluded)
+
+    region_candidate_keys: dict[str, list[str]] = {region_key: [] for region_key in region_minimums.keys()}
+    for source in (road_ranked_keys, all_capital_keys, all_land_keys):
+        for key in source:
+            region_key = location_to_region.get(key)
+            if region_key not in region_candidate_keys:
+                continue
+            if key not in region_candidate_keys[region_key]:
+                region_candidate_keys[region_key].append(key)
+
+    neighbor_payload = load_location_neighbors()
+    neighbors = neighbor_payload.get("neighbors", {}) if isinstance(neighbor_payload, dict) else {}
+    enforce_spacing = isinstance(neighbors, dict) and bool(neighbors) and min_market_hops > 1
+    if min_market_hops > 1 and not enforce_spacing:
+        print("Markets: neighbor graph unavailable; skipping hop-spacing enforcement.")
+
+    def _append_if_valid(markets: list[str], key: str, *, ignore_spacing: bool = False) -> bool:
+        if key in markets:
+            return False
+        if key not in location_keys or key in excluded:
+            return False
+        if (
+            enforce_spacing
+            and not ignore_spacing
+            and _is_within_hops(key, set(markets), neighbors, min_market_hops - 1)
+        ):
+            return False
+        markets.append(key)
+        return True
+
+    def _append_from(markets: list[str], source: list[str], *, ignore_spacing: bool = False) -> int:
+        added = 0
+        for key in source:
+            if _append_if_valid(markets, key, ignore_spacing=ignore_spacing):
+                added += 1
+        return added
+
+    def _enforce_region_minimums(markets: list[str]) -> tuple[int, list[str]]:
+        if not region_minimums:
+            return 0, []
+        added = 0
+        missing: list[str] = []
+        for region_key, min_count in region_minimums.items():
+            current = sum(1 for key in markets if location_to_region.get(key) == region_key)
+            needed = min_count - current
+            if needed <= 0:
+                continue
+            for candidate in region_candidate_keys.get(region_key, []):
+                if _append_if_valid(markets, candidate):
+                    added += 1
+                    needed -= 1
+                    if needed <= 0:
+                        break
+            if needed > 0:
+                missing.append(f"{region_key}(-{needed})")
+        return added, missing
+
+    def _extend_to_target(markets: list[str]) -> int:
+        if not target_markets or len(markets) >= target_markets:
+            return 0
+        added = 0
+        for source in (all_capital_keys, road_ranked_keys, all_land_keys):
+            for key in source:
+                if _append_if_valid(markets, key):
+                    added += 1
+                if len(markets) >= target_markets:
+                    return added
+        return added
+
+    hardcoded_markets = _resolve_hardcoded_market_hubs(location_keys, excluded)
+    if hardcoded_markets:
+        merged: list[str] = []
+        added_immune_capitals = _append_from(
+            merged,
+            spacing_immune_capital_keys,
+            ignore_spacing=True,
+        )
+        curated_added = _append_from(merged, hardcoded_markets)
+        added_regions, missing_regions = _enforce_region_minimums(merged)
+        added_fill = _extend_to_target(merged)
+        print(
+            "Markets hardcode: using "
+            + str(curated_added)
+            + " curated hubs"
+            + (
+                " + "
+                + str(added_immune_capitals)
+                + " spacing-immune top-30 capitals"
+                if added_immune_capitals
+                else ""
+            )
+            + (
+                " + "
+                + str(added_regions)
+                + " regional guarantees"
+                if added_regions
+                else ""
+            )
+            + (
+                " + "
+                + str(added_fill)
+                + " deterministic fillers to reach "
+                + str(target_markets)
+                if added_fill
+                else ""
+            )
+            + "."
+        )
+        if missing_regions:
+            print("Markets warning: unmet regional minimums: " + ", ".join(missing_regions))
+        if target_markets and len(merged) < target_markets:
+            print(
+                "Markets warning: only "
+                + str(len(merged))
+                + " markets could be assigned while keeping minimum hop spacing of "
+                + str(min_market_hops)
+                + " (excluding spacing-immune capitals)."
+            )
+        return merged
+
     preferred_capitals: list[int] = []
     for tag in top_country_tags[:top_capitals]:
         cap_id = country_capitals.get(tag)
@@ -2660,14 +2965,26 @@ def _build_market_keys(
     preferred_capitals = _dedupe(preferred_capitals)
 
     markets: list[str] = []
+    _append_from(markets, spacing_immune_capital_keys, ignore_spacing=True)
     for pid in preferred_capitals:
         key = id_to_key[pid]
-        if key not in markets:
-            markets.append(key)
-        if len(markets) >= max_markets:
+        if _append_if_valid(markets, key) and len(markets) >= max_markets:
             break
 
+    _enforce_region_minimums(markets)
+    _extend_to_target(markets)
+
+    if target_markets and len(markets) < target_markets:
+        print(
+            "Markets warning: only "
+            + str(len(markets))
+            + " markets could be assigned while keeping minimum hop spacing of "
+            + str(min_market_hops)
+            + " (excluding spacing-immune capitals)."
+        )
+
     return markets
+
 
 
 def _get_tree_value(data, key: str):
@@ -3204,10 +3521,15 @@ def _apply_map_content_overrides(
     fallback_continent = next(iter(sorted(continent_keys))) if continent_keys else None
     fallback_subcontinent = next(iter(sorted(subcontinent_keys))) if subcontinent_keys else None
 
-    # Scripted triggers still need location-aware patching.
-    scripted_triggers_root = eu5_game / "in_game" / "common" / "scripted_triggers"
-    if scripted_triggers_root.exists():
-        for src in scripted_triggers_root.rglob("*.txt"):
+    # Script-driven data files still need location-aware patching.
+    script_roots = [
+        eu5_game / "in_game" / "common" / "scripted_triggers",
+        eu5_game / "in_game" / "common" / "advances",
+    ]
+    for script_root in script_roots:
+        if not script_root.exists():
+            continue
+        for src in script_root.rglob("*.txt"):
             rel = src.relative_to(eu5_game / "in_game")
             dst = mod_root / "in_game" / rel
             _patch_script_file_references(
@@ -5172,6 +5494,8 @@ def _write_town_setups_and_ranks(
 
     eu5_dev_path = eu5_game / "main_menu" / "setup" / "start" / "14_development.txt"
     eu5_region_reference: list[float] = []
+    eu5_region_values_by_key: dict[str, float] = {}
+    eu5_area_reference: list[float] = []
     eu5_special_reference: list[float] = []
     if eu5_dev_path.exists():
         try:
@@ -5187,14 +5511,21 @@ def _write_town_setups_and_ranks(
                         continue
                     if key.endswith("_region"):
                         eu5_region_reference.append(val)
-                    elif not key.endswith("_area") and not key.endswith("_province"):
+                        eu5_region_values_by_key[key] = val
+                    elif key.endswith("_area"):
+                        eu5_area_reference.append(val)
+                    elif not key.endswith("_province"):
                         eu5_special_reference.append(val)
         except Exception:
             eu5_region_reference = []
+            eu5_region_values_by_key = {}
+            eu5_area_reference = []
             eu5_special_reference = []
 
     if not eu5_region_reference:
         eu5_region_reference = [0.0, 5.0, 10.0, 15.0, 20.0, 25.0, 30.0]
+    if not eu5_area_reference:
+        eu5_area_reference = [-10.0, -5.0, -3.0, 0.0, 3.0, 5.0, 7.0]
     if not eu5_special_reference:
         eu5_special_reference = [-5.0, -3.0, 1.0, 2.0, 3.0, 5.0, 7.0, 10.0]
 
@@ -5209,12 +5540,133 @@ def _write_town_setups_and_ranks(
     )
 
     region_delta_by_tag: dict[str, int] = {}
+    region_score_mean = (
+        (sum(region_source_scores.values()) / len(region_source_scores))
+        if region_source_scores
+        else 0.0
+    )
+    region_global_boost = 10
+    preferred_region_values: dict[str, int] = {
+        # --- India (highest densities west of China in 304 BC) ---
+        "madhyadesa_region": 30,
+        "bengal_region": 29,
+        "hindustan_region": 28,
+        "avanti_region": 27,
+        "dravida_region": 27,
+        "gandhara_region": 27,
+        "karnata_region": 26,
+
+        # --- Nile (very high, but still below Gangetic plain) ---
+        "lower_egypt_region": 28,
+        "egypt_region": 27,
+        "upper_egypt_region": 20,
+        "nubia_region": 13,
+        "ethiopia_region": 12,
+        "punt_region": 11,
+
+        # --- Mesopotamia / Iran plateau (high bureaucratic agrarian cores) ---
+        "mesopotamia_region": 27,
+        "assyria_region": 23,
+        "media_region": 24,
+        "persis_region": 24,
+        "parthia_region": 21,
+        "khorasan_region": 18,
+
+        # --- Levant / Fertile Crescent / Syria (trade + administration + constant war) ---
+        "syria_region": 27,
+        "crescent_region": 22,
+        "palestine_region": 21,
+        "cilicia_region": 21,
+        "arabia_felix_region": 18,
+        "arabia_region": 14,
+
+        # --- Hellenic world (dense urban coasts; should feel richer than Italy) ---
+        "greece_region": 26,
+        "macedonia_region": 20,
+        "thrace_region": 19,
+        "anatolia_region": 23,
+        "bithynia_region": 20,
+        "colchis_region": 16,
+
+        # --- North Africa / Carthaginian sphere (strong coastal, weak interior) ---
+        "cyrenaica_region": 17,
+        "maghreb_region": 18,
+        "numidia_region": 14,
+        "mauretainia_region": 10,
+        "africa_region": 15,
+
+        # --- Italy (rising, organized, but not the dense core yet) ---
+        "italy_region": 18,
+        "central_italy_region": 20,
+        "magna_graecia_region": 21,
+
+        # --- Iberia (moderate; pockets of strength, not fully urbanized) ---
+        "iberia_region": 15,
+        "baetica_region": 16,
+        "tarraconensis_region": 12,
+        "lusitania_region": 10,
+
+        # --- Gaul (lower density; proto-urban pockets only) ---
+        "france_region": 13,
+        "transalpine_gaul_region": 11,
+        "central_gaul_region": 10,
+        "aquitaine_region": 9,
+        "armorica_region": 9,
+        "belgica_region": 8,
+
+        # --- Britain & North (very low in 304 BC) ---
+        "great_britain_region": 7,
+        "britain_region": 6,
+        "scandinavian_region": 5,
+        "baltic_region": 6,
+
+        # --- Germania (sparse, decentralized) ---
+        "south_german_region": 8,
+        "north_german_region": 7,
+        "germania_superior_region": 6,
+
+        # --- Balkans / inland Europe (moderate-low) ---
+        "illyria_region": 10,
+        "carpathia_region": 8,
+        "pannonia_region": 7,
+
+        # --- Steppe / Crimea (strategic, mobile, low settlement density) ---
+        "steppes_region": 6,
+        "taurica_region": 7,
+
+        # --- Mountains / high plateau (routes, not population cores) ---
+        "tibet_region": 4,
+        "himalayan_region": 3,
+    }
+
+
     for region_tag, value in sorted(mapped_region_values.items()):
-        rounded = int(round(value))
+        forced_value = preferred_region_values.get(region_tag)
+        if forced_value is not None:
+            rounded = int(forced_value)
+        else:
+            eu5_base_value = eu5_region_values_by_key.get(region_tag)
+            if eu5_base_value is not None:
+                # Emulate EU5 regional baseline directly, then apply requested global uplift.
+                rounded = int(round(eu5_base_value))
+            else:
+                rounded = int(round(value))
+                if region_score_mean > 0.0:
+                    relative_strength = region_source_scores.get(region_tag, region_score_mean) / region_score_mean
+                    # I:R regions are denser than full-world EU5 coverage; scale stronger regions up modestly.
+                    dynamic_uplift = max(0, min(5, int(round((relative_strength - 0.86) * 6.0))))
+                    rounded = min(35, rounded + dynamic_uplift)
+                rounded += region_global_boost
         if rounded == 0:
             continue
         region_delta_by_tag[region_tag] = rounded
         development_lines.append(f"{region_tag} = {rounded}")
+
+    for region_tag, forced_value in sorted(preferred_region_values.items()):
+        if region_tag in region_delta_by_tag:
+            continue
+        region_delta_by_tag[region_tag] = int(forced_value)
+        development_lines.append(f"{region_tag} = {int(forced_value)}")
     # Assign per-location overrides purely from I:R-derived development signals.
     candidate_locations = sorted(active_locations)
 
@@ -5265,10 +5717,13 @@ def _write_town_setups_and_ranks(
             + capital_bonus
         )
 
-    max_special_overrides = min(80, len(candidate_locations))
+    max_special_overrides = min(100, len(candidate_locations))
     positive_special_reference = sorted(value for value in eu5_special_reference if value > 0)
+    positive_area_reference = sorted(value for value in eu5_area_reference if value > 0)
     if not positive_special_reference:
         positive_special_reference = [1.0, 2.0, 3.0, 5.0, 7.0, 10.0]
+    if not positive_area_reference:
+        positive_area_reference = [1.0, 3.0, 5.0, 7.0]
 
     selected_keys = sorted(
         candidate_locations,
@@ -5276,16 +5731,38 @@ def _write_town_setups_and_ranks(
         reverse=True,
     )[:max_special_overrides]
 
-    mapped_positive = _map_values_to_reference_distribution(
-        {loc_key: metric_source_scores.get(loc_key, 0.0) for loc_key in selected_keys},
-        positive_special_reference,
+    selected_scores = {
+        loc_key: metric_source_scores.get(loc_key, 0.0) for loc_key in selected_keys
+    }
+    score_min = min(selected_scores.values()) if selected_scores else 0.0
+    score_max = max(selected_scores.values()) if selected_scores else 1.0
+    score_span = max(1e-9, score_max - score_min)
+
+    eu5_region_sorted = sorted(eu5_region_reference)
+    region_q3 = eu5_region_sorted[int(0.75 * (len(eu5_region_sorted) - 1))] if eu5_region_sorted else 25.0
+    special_cap = int(
+        round(
+            min(
+                24.0,
+                max(
+                    12.0,
+                    max(positive_special_reference)
+                    + max(positive_area_reference)
+                    + (0.25 * region_q3),
+                ),
+            )
+        )
     )
+    special_floor = 2
 
     override_rows: list[dict[str, str]] = []
     selected_special = 0
     for loc_key in selected_keys:
-        mapped_value = float(mapped_positive.get(loc_key, positive_special_reference[0]))
-        final_delta = max(1, int(round(mapped_value)))
+        score = selected_scores.get(loc_key, score_min)
+        normalized = (score - score_min) / score_span
+        # Convex scaling gives the very top I:R urban hubs a stronger boost.
+        mapped_value = special_floor + ((special_cap - special_floor) * (normalized ** 0.72))
+        final_delta = max(special_floor, int(round(mapped_value)))
         development_lines.append(f"{loc_key} = {final_delta}")
         selected_special += 1
 
@@ -5397,6 +5874,7 @@ def _write_markets_file(
         country_capitals,
         top_capitals=35,
         max_markets=35,
+        min_markets=90,
     )
     _write_assignment_block(
         markets_dst,
@@ -5537,6 +6015,38 @@ def _build_location_to_region_map(regions: dict[str, dict[str, list[str]]]) -> d
                 continue
             for key in provinces:
                 location_to_region.setdefault(key, region_tag)
+    return location_to_region
+
+
+def _build_location_to_region_map_from_hierarchy(
+    hierarchy: _pydt.Tree | dict,
+) -> dict[str, str]:
+    """Build location -> final EU5 region mapping from generated definitions hierarchy."""
+    location_to_region: dict[str, str] = {}
+
+    def _walk(node, current_region: str | None = None) -> None:
+        block = _tree_block(node)
+        if not isinstance(block, (_pydt.Tree, dict)):
+            return
+        for raw_key, raw_value in block.items():
+            key = str(raw_key)
+            next_region = current_region
+            if key.endswith("_region"):
+                next_region = key
+
+            child = _tree_block(raw_value)
+            if isinstance(child, (_pydt.Tree, dict)):
+                _walk(child, next_region)
+                continue
+
+            if not next_region:
+                continue
+            values = raw_value if isinstance(raw_value, list) else [raw_value]
+            for value in values:
+                if isinstance(value, str) and value:
+                    location_to_region.setdefault(value, next_region)
+
+    _walk(hierarchy)
     return location_to_region
 
 
@@ -5740,9 +6250,22 @@ def _build_region_hierarchy(
     hierarchy = build_full_hierarchy(regions, normalized_superregion_map, continent_map)
     write_blocks(iu_map_data / "definitions.txt", hierarchy_to_blocks(hierarchy))
 
+    final_location_to_region = _build_location_to_region_map_from_hierarchy(hierarchy)
+    if not final_location_to_region:
+        final_location_to_region = {
+            key: to_region_key(raw_region)
+            for key, raw_region in location_to_region.items()
+            if isinstance(key, str) and isinstance(raw_region, str)
+        }
+    else:
+        for key, raw_region in location_to_region.items():
+            if not isinstance(key, str) or not isinstance(raw_region, str):
+                continue
+            final_location_to_region.setdefault(key, to_region_key(raw_region))
+
     return (
         regions,
-        location_to_region,
+        final_location_to_region,
         area_keys,
         region_keys,
         continent_keys,
@@ -5872,7 +6395,17 @@ def port_map_data(default_culture: str | None = None, default_religion: str | No
         harbor_suitability_map,
     )
 
-    _apply_map_content_overrides(location_keys, region_keys, continent_keys, subcontinent_keys)
+    script_region_keys = set(
+        superregion
+        for sub in normalized_superregion_map.values()
+        if isinstance(sub, dict)
+        for superregion in sub.keys()
+        if isinstance(superregion, str)
+    )
+    if not script_region_keys:
+        script_region_keys = region_keys
+
+    _apply_map_content_overrides(location_keys, script_region_keys, continent_keys, subcontinent_keys)
     _write_start_setup_content(
         id_to_key,
         location_keys,
