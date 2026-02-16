@@ -3493,83 +3493,10 @@ def _apply_map_content_overrides(
     continent_keys: set[str],
     subcontinent_keys: set[str],
 ) -> None:
-    # --- Filter building triggers that reference missing locations ---
-    src_building_triggers = (
-        eu5_game / "in_game" / "common" / "scripted_triggers" / "building_triggers.txt"
-    )
-    dst_building_triggers = (
-        mod_root / "in_game" / "common" / "scripted_triggers" / "building_triggers.txt"
-    )
-    if src_building_triggers.exists():
-        dst_building_triggers.parent.mkdir(parents=True, exist_ok=True)
-        with src_building_triggers.open(encoding="utf-8-sig") as src, dst_building_triggers.open(
-            "w", encoding="utf-8-sig"
-        ) as dst:
-            for line in src:
-                stripped = line.strip()
-                if stripped.startswith("location_key") and "=" in stripped:
-                    _, value = stripped.split("=", 1)
-                    key = value.strip().split()[0]
-                    if key not in location_keys:
-                        continue
-                dst.write(line)
-        print_written("file", dst_building_triggers)
-
-    # --- Filter/override holy sites that reference missing locations ---
-    src_holy_sites = eu5_game / "in_game" / "common" / "holy_sites"
-    dst_holy_sites = mod_root / "in_game" / "common" / "holy_sites"
-    fallback_location = next(iter(sorted(location_keys))) if location_keys else None
-    if src_holy_sites.exists():
-        dst_holy_sites.mkdir(parents=True, exist_ok=True)
-        for hs_file in src_holy_sites.glob("*.txt"):
-            tree = parse_tree(hs_file)
-            filtered = _pydt.Tree()
-            for tag, data in tree.items():
-                loc = None
-                if isinstance(data, _pydt.Tree):
-                    loc = data["location"] if "location" in data else None
-                elif isinstance(data, dict):
-                    loc = data.get("location")
-                if isinstance(loc, str) and loc not in location_keys and fallback_location:
-                    data["location"] = fallback_location
-                filtered[tag] = data
-            write_blocks(dst_holy_sites / hs_file.name, filtered)
-
-    # --- Empty map object locators/overrides to avoid unknown location references ---
+    # Copy-overs from EU5 scripted data are intentionally disabled.
+    # Only generate local map object overrides required by the mod.
+    _ = (location_keys, region_keys, continent_keys, subcontinent_keys)
     _write_map_object_override_files()
-
-    # --- Patch scripts referencing missing locations/regions ---
-    if location_keys:
-        fallback_location = next(iter(sorted(location_keys)))
-    else:
-        fallback_location = None
-    fallback_region = next(iter(sorted(region_keys))) if region_keys else None
-    fallback_continent = next(iter(sorted(continent_keys))) if continent_keys else None
-    fallback_subcontinent = next(iter(sorted(subcontinent_keys))) if subcontinent_keys else None
-
-    # Script-driven data files still need location-aware patching.
-    script_roots = [
-        eu5_game / "in_game" / "common" / "scripted_triggers",
-        eu5_game / "in_game" / "common" / "advances",
-    ]
-    for script_root in script_roots:
-        if not script_root.exists():
-            continue
-        for src in script_root.rglob("*.txt"):
-            rel = src.relative_to(eu5_game / "in_game")
-            dst = mod_root / "in_game" / rel
-            _patch_script_file_references(
-                src,
-                dst,
-                location_keys=location_keys,
-                region_keys=region_keys,
-                continent_keys=continent_keys,
-                subcontinent_keys=subcontinent_keys,
-                fallback_location=fallback_location,
-                fallback_region=fallback_region,
-                fallback_continent=fallback_continent,
-                fallback_subcontinent=fallback_subcontinent,
-            )
 
 
 def _copy_filtered_location_start_files(location_keys: set[str]) -> None:
