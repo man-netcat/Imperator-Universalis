@@ -932,25 +932,55 @@ def assign_unmapped_water_to_regions(
             )[0][1]
             assignments_land[water_key] = nearest_land
 
-    # Remove all water tiles from existing areas, then reinsert via chosen land province owner.
+    # Remove all water tiles from existing (land) areas.
+    # They are re-added as dedicated water-only areas inside proximate regions.
     for area_map in regions.values():
         for area_tag, provinces in area_map.items():
             if isinstance(provinces, list):
                 area_map[area_tag] = [p for p in provinces if p not in water_keys]
 
+    region_to_sea: dict[str, list[str]] = defaultdict(list)
+    region_to_lakes: dict[str, list[str]] = defaultdict(list)
+
     for water_key in candidate_water:
         land_key = assignments_land.get(water_key)
         if not land_key:
             continue
-        area_tag = land_to_area.get(land_key)
         region_tag = land_to_region.get(land_key)
-        if not area_tag or not region_tag:
+        if not region_tag:
+            continue
+
+        location_to_region[water_key] = region_tag
+        if water_key in lakes:
+            region_to_lakes[region_tag].append(water_key)
+        else:
+            region_to_sea[region_tag].append(water_key)
+
+    def _unique_area_tag(area_map: dict[str, list[str]], preferred: str) -> str:
+        if preferred not in area_map:
+            return preferred
+        i = 1
+        while f"{preferred}_{i:02d}" in area_map:
+            i += 1
+        return f"{preferred}_{i:02d}"
+
+    for region_tag, keys in sorted(region_to_sea.items()):
+        if not keys:
             continue
         area_map = regions.setdefault(region_tag, {})
-        target = area_map.setdefault(area_tag, [])
-        if water_key not in target:
-            target.append(water_key)
-        location_to_region[water_key] = region_tag
+        base = region_tag[: -len('_area')] if region_tag.endswith('_area') else region_tag
+        preferred = f"{base}_coastal_sea_province"
+        area_tag = _unique_area_tag(area_map, preferred)
+        area_map[area_tag] = sorted(set(keys))
+
+    for region_tag, keys in sorted(region_to_lakes.items()):
+        if not keys:
+            continue
+        area_map = regions.setdefault(region_tag, {})
+        base = region_tag[: -len('_area')] if region_tag.endswith('_area') else region_tag
+        preferred = f"{base}_coastal_lakes_province"
+        area_tag = _unique_area_tag(area_map, preferred)
+        area_map[area_tag] = sorted(set(keys))
 
     return {
         key: location_to_region[key]
@@ -1355,22 +1385,18 @@ def build_full_hierarchy(region_map, superregion_map, continent_map):
                     nested[continent][subcontinent][superregion][region] = target
                     for area, provinces in area_map.items():
                         target[area] = provinces
-    # Add any regions not covered by the superregion map to a regular hierarchy bucket.
-    missing_regions = set(region_map.keys()) - set(seen_regions.keys())
+    # Warn if a region is not represented in the superregion map.
+    # Missing regions should be fixed in data.py rather than routed into synthetic hierarchy nodes.
+    missing_regions = {
+        region
+        for region, area_map in region_map.items()
+        if region not in seen_regions and region_has_locations(area_map)
+    }
     if missing_regions:
-        fallback_continent = "europe"
-        fallback_subcontinent = "western_europe"
-        fallback_superregion = "generated_regions_region"
-        nested.setdefault(fallback_continent, {})
-        nested[fallback_continent].setdefault(fallback_subcontinent, {})
-        nested[fallback_continent][fallback_subcontinent].setdefault(
-            fallback_superregion, {}
+        print(
+            "Warning: unmapped regions in superregion hierarchy: "
+            + ", ".join(sorted(missing_regions))
         )
-        bucket = nested[fallback_continent][fallback_subcontinent][
-            fallback_superregion
-        ]
-        for region in sorted(missing_regions):
-            bucket[region] = region_map[region]
 
     return nested
 

@@ -31,9 +31,6 @@ locations = {
     adan = {
         rank = town town_setup = ir_arabian_town_coastal
     }
-    adana = {
-        rank = city town_setup = ir_anatolian_city
-    }
     adouli = {
         rank = town town_setup = ir_ethiopia_town_coastal_02
     }
@@ -508,6 +505,9 @@ locations = {
     daphnai = {
         rank = rural_settlement town_setup = ir_egyptian_rural_settlement_coastal
     }
+    darou = {
+        rank = town town_setup = ir_nubian_town_03
+    }
     dasmenda = {
         rank = town town_setup = ir_anatolian_town_02
     }
@@ -887,7 +887,7 @@ locations = {
         rank = town town_setup = ir_hindustan_town
     }
     kaunos = {
-        rank = town town_setup = ir_anatolian_town_coastal
+        rank = town town_setup = ir_anatolian_town_coastal_03
     }
     kaushambi = {
         rank = city town_setup = ir_hindustan_city
@@ -911,7 +911,7 @@ locations = {
         rank = town town_setup = ir_deccan_town
     }
     khyunglung = {
-        rank = town town_setup = ir_khorasan_town_05
+        rank = town town_setup = ir_khorasan_town_02
     }
     kios = {
         rank = town town_setup = ir_anatolian_town_coastal_02
@@ -1166,7 +1166,7 @@ locations = {
         rank = town town_setup = ir_deccan_town_02
     }
     minnagara = {
-        rank = town town_setup = ir_deccan_town_coastal_03
+        rank = town town_setup = ir_deccan_town_coastal_04
     }
     missua = {
         rank = city town_setup = ir_numidian_city_coastal_03

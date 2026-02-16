@@ -134,6 +134,8 @@ discovered_provinces = {
 	aemilla_province
 	aeolia_province
 	aetolia_province
+	africa_coastal_lakes_province
+	africa_coastal_sea_province
 	africa_meridionalis_province
 	africa_septentrionalis_province
 	ahicchatra_province
@@ -144,6 +146,7 @@ discovered_provinces = {
 	alania_orientalis_province
 	alania_proper_province
 	alania_province
+	albania_coastal_lakes_province
 	albis_river_province
 	allaqi_province
 	allobrogia_province
@@ -162,13 +165,20 @@ discovered_provinces = {
 	anga_province
 	anupa_province
 	apamene_province
+	aparanta_coastal_sea_province
 	aparanta_province
 	apulensis_province
+	aquitaine_coastal_lakes_province
+	aquitaine_coastal_sea_province
 	aquitania_occidentalis_province
 	aquitania_orientalis_province
 	arabia_ad_sinus_province
+	arabia_coastal_lakes_province
+	arabia_coastal_sea_province
 	arabia_deserta_province
 	arabia_felix_centralis_province
+	arabia_felix_coastal_lakes_province
+	arabia_felix_coastal_sea_province
 	arabia_felix_occidentalis_province
 	arabia_felix_orientalis_province
 	arabia_maritimae_province
@@ -179,29 +189,39 @@ discovered_provinces = {
 	arcadia_province
 	ardashir_province
 	aria_province
+	ariana_coastal_lakes_province
+	ariana_coastal_sea_province
 	ariminum_province
 	aristavos_province
+	armenia_coastal_lakes_province
 	armenia_maior_province
 	armenia_minor_province
 	armorica_centralis_province
+	armorica_coastal_lakes_province
+	armorica_coastal_sea_province
 	armorica_maioris_province
 	armorica_minoris_province
 	aromata_province
 	arran_province
 	artshak_province
 	asculum_province
+	asia_coastal_lakes_province
+	asia_coastal_sea_province
 	asika_province
 	asir_province
 	asmaka_province
 	asoristan_province
 	aspadana_province
 	aspisi_province
+	assyria_coastal_lakes_province
 	asturia_meridionalis_province
 	asturia_septentrionalis_province
 	aswan_province
 	atara_province
 	atbaras_province
 	aternum_province
+	atlas_coastal_lakes_province
+	atlas_coastal_sea_province
 	atyrau_province
 	autrigonia_province
 	avanti_province
@@ -210,6 +230,7 @@ discovered_provinces = {
 	ayrarat_province
 	babylonia_province
 	bactria_province
+	baetica_coastal_sea_province
 	baetica_cordubensis_province
 	baetica_hispalensis_province
 	baetis_river_province
@@ -219,10 +240,13 @@ discovered_provinces = {
 	bastetania_province
 	bayuda_province
 	beishan_province
+	belgica_coastal_sea_province
 	bellovacia_province
 	beth_daraye_province
 	biebrzankski_province
 	biggeronia_province
+	bithynia_coastal_lakes_province
+	bithynia_coastal_sea_province
 	bithynia_inferior_province
 	bithynia_superior_province
 	bituriga_occidentalis_province
@@ -232,6 +256,7 @@ discovered_provinces = {
 	boioa_meridionalis_province
 	boioa_septentrionalis_province
 	borysthenes_river_province
+	borysthenia_coastal_lakes_province
 	borysthenia_maioris_province
 	borysthenia_minor_province
 	borysthenia_province
@@ -239,12 +264,17 @@ discovered_provinces = {
 	bosproranum_province
 	brahmani_province
 	brigantia_province
+	britain_coastal_sea_province
 	britannia_secunda_meridionalis_province
 	britannia_secunda_septentrionalis_province
 	bructeria_province
 	budinia_province
 	buria_province
+	burma_coastal_lakes_province
+	burma_coastal_sea_province
 	cadurcia_province
+	caledonia_coastal_lakes_province
+	caledonia_coastal_sea_province
 	caledonia_meridionalis_province
 	caledonia_occidentalis_province
 	caledonia_septentrionalis_province
@@ -257,8 +287,11 @@ discovered_provinces = {
 	cantabria_province
 	cantiacia_province
 	cappadocia_cataonia_province
+	cappadocia_coastal_lakes_province
 	cappadocia_garsauritis_province
 	cappadocia_melitene_province
+	cappadocia_pontica_coastal_lakes_province
+	cappadocia_pontica_coastal_sea_province
 	cappadocia_province
 	cappadocia_saravene_province
 	carmania_province
@@ -279,8 +312,11 @@ discovered_provinces = {
 	celticia_maoioris_province
 	celticia_minoris_province
 	cenomannia_province
+	central_asian_steppes_coastal_lakes_province
 	central_delta_province
 	central_greece_province
+	central_italy_coastal_lakes_province
+	central_italy_coastal_sea_province
 	central_massif_province
 	central_omana_province
 	cessetania_province
@@ -293,16 +329,22 @@ discovered_provinces = {
 	chomolangma_province
 	chrononis_province
 	chu_province
+	cilicia_coastal_lakes_province
+	cilicia_coastal_sea_province
 	cilicia_pedias_province
 	cilicia_trachea_province
 	cimbrica_inferioris_province
 	cimbrica_superioris_province
+	cisalpine_gaul_coastal_lakes_province
+	cisalpine_gaul_coastal_sea_province
 	ciscarpathia_province
 	clepia_province
 	coastal_caria_province
+	colchis_coastal_sea_province
 	colchis_province
 	commagene_province
 	confluenta_province
+	contestania_coastal_sea_province
 	contestania_meridionalis_province
 	contestania_septentrionalis_province
 	corduene_province
@@ -314,6 +356,7 @@ discovered_provinces = {
 	croton_province
 	cydnus_river_province
 	cyprus_province
+	cyrenaica_coastal_sea_province
 	cyrenaica_inferioris_province
 	cyrenaica_superioris_province
 	cyropolis_province
@@ -344,6 +387,8 @@ discovered_provinces = {
 	don_river_province
 	donbas_province
 	drangiana_province
+	dravida_coastal_lakes_province
+	dravida_coastal_sea_province
 	dufar_province
 	dumnonia_province
 	durotrigia_province
@@ -379,10 +424,12 @@ discovered_provinces = {
 	gaetulia_occidentalis_province
 	gaetulia_orientalis_province
 	gaetulia_septentrionalis_province
+	galatia_coastal_lakes_province
 	galatia_province
 	galatia_trocmi_province
 	galilee_province
 	galindia_province
+	gallaecia_coastal_sea_province
 	gallikos_river_province
 	gandhara_province
 	ganuenta_province
@@ -391,6 +438,8 @@ discovered_provinces = {
 	gash_province
 	gedrosia_province
 	gelonia_province
+	germania_coastal_lakes_province
+	germania_coastal_sea_province
 	germanicum_province
 	gerrha_province
 	getia_occidentalis_province
@@ -403,6 +452,8 @@ discovered_provinces = {
 	girgiri_province
 	godavari_river_province
 	gorodets_province
+	greece_coastal_lakes_province
+	greece_coastal_sea_province
 	gugark_province
 	hadramut_occidentalis_province
 	hadramut_orientalis_province
@@ -424,12 +475,15 @@ discovered_provinces = {
 	hibernia_occidentalis_province
 	hibernia_orientalis_province
 	hibernia_septentrionalis_province
+	himalayan_coastal_lakes_province
 	himka_province
 	histria_province
 	hull_river_province
 	hypania_minoris_province
 	hypania_province
 	hypanis_river_province
+	hyperborea_coastal_lakes_province
+	hyperborea_coastal_sea_province
 	hyrcania_province
 	hyrcania_superior_province
 	iazygia_majoris_province
@@ -438,6 +492,8 @@ discovered_provinces = {
 	ichthyophagia_province
 	ilercavonia_province
 	ilergetia_province
+	illyria_coastal_lakes_province
+	illyria_coastal_sea_province
 	illyria_graeca_province
 	ilmandu_inferior_province
 	ilmandu_superior_province
@@ -461,6 +517,7 @@ discovered_provinces = {
 	kamarupa_province
 	kamata_province
 	kapchagay_province
+	karnata_coastal_sea_province
 	kartub_province
 	kasi_province
 	kasmira_province
@@ -489,14 +546,20 @@ discovered_provinces = {
 	lixus_province
 	lobetania_province
 	lotophagia_province
+	lower_egypt_coastal_lakes_province
+	lower_egypt_coastal_sea_province
 	lower_moulouya_province
+	lower_nubia_coastal_lakes_province
 	lugia_province
+	lusitania_coastal_sea_province
 	lusitania_meridionalis_province
 	lusitania_septentrionalis_province
 	luxor_province
 	lycaonia_province
 	lycia_province
 	lydia_province
+	macedonia_coastal_lakes_province
+	macedonia_coastal_sea_province
 	macedonia_province
 	macedonia_salutaris_province
 	machelonia_province
@@ -505,6 +568,7 @@ discovered_provinces = {
 	maeotia_minores_province
 	maeotia_province
 	magadha_province
+	magna_graecia_coastal_sea_province
 	mahendragiri_province
 	malacita_province
 	malayas_province
@@ -541,9 +605,12 @@ discovered_provinces = {
 	marrakesh_province
 	marsignia_province
 	marsonia_province
+	maru_coastal_sea_province
 	maru_province
 	mastiania_province
 	matsya_province
+	mauretainia_coastal_lakes_province
+	mauretainia_coastal_sea_province
 	mauretania_caesariensis_centralis_province
 	mauretania_caesariensis_maioris_province
 	mauretania_caesariensis_minoris_province
@@ -553,6 +620,7 @@ discovered_provinces = {
 	mauretania_tingitana_septentrionalis_province
 	media_atropatene_province
 	media_choromithrene_province
+	media_coastal_lakes_province
 	media_felix_province
 	media_province
 	mediomatricia_province
@@ -562,9 +630,11 @@ discovered_provinces = {
 	menapia_orientalis_province
 	meroe_province
 	meshan_province
+	mesopotamia_coastal_lakes_province
 	milograd_province
 	milyas_province
 	minsk_province
+	moesia_coastal_sea_province
 	moesia_occidentalis_province
 	moesia_orientalis_province
 	moesia_prima_occidentalis_province
@@ -603,7 +673,10 @@ discovered_provinces = {
 	north_tambapamni_province
 	north_tarim_province
 	north_tondainadu_province
+	nubia_coastal_lakes_province
 	numidia_centralis_province
+	numidia_coastal_lakes_province
+	numidia_coastal_sea_province
 	numidia_maioris_province
 	numidia_minoris_province
 	numidia_occidentalis_province
@@ -622,6 +695,8 @@ discovered_provinces = {
 	oxiana_ultima_province
 	ozeros_province
 	pactya_province
+	palestine_coastal_lakes_province
+	palestine_coastal_sea_province
 	palmyra_province
 	palus_maeotis_province
 	pamir_province
@@ -629,6 +704,7 @@ discovered_provinces = {
 	pancala_province
 	panchanada_province
 	pandiya_province
+	pannonia_coastal_lakes_province
 	pannonia_prima_occidentalis_province
 	pannonia_prima_orientalis_province
 	pannonia_secunda_province
@@ -642,6 +718,7 @@ discovered_provinces = {
 	pars_province
 	parsatunik_province
 	parskahayk_province
+	parthia_coastal_lakes_province
 	parthia_komishene_province
 	parthia_province
 	parva_province
@@ -650,6 +727,7 @@ discovered_provinces = {
 	penner_river_province
 	peraea_province
 	persepolis_province
+	persis_coastal_sea_province
 	pharodenia_province
 	phazania_province
 	philistia_province
@@ -666,10 +744,14 @@ discovered_provinces = {
 	pontus_province
 	porolissensis_inferioris_province
 	porolissensis_province
+	pracya_coastal_lakes_province
+	pracya_coastal_sea_province
 	psyllia_province
 	ptolemais_province
 	pubu_province
 	pundra_province
+	punt_coastal_lakes_province
+	punt_coastal_sea_province
 	punt_province
 	pyramus_river_province
 	pyu_province
@@ -681,6 +763,7 @@ discovered_provinces = {
 	raha_ulterior_province
 	raurica_province
 	remia_province
+	rhaetia_coastal_lakes_province
 	rhagai_province
 	rhine_river_province
 	rhodanus_river_province
@@ -692,6 +775,7 @@ discovered_provinces = {
 	rutubis_province
 	sagartia_province
 	saharan_atlas_province
+	sakia_coastal_lakes_province
 	samaria_province
 	samatata_province
 	sardinia_meridionalis_province
@@ -710,7 +794,10 @@ discovered_provinces = {
 	savia_orientalis_province
 	saxony_province
 	scandia_insula_province
+	scandinavia_coastal_lakes_province
+	scandinavia_coastal_sea_province
 	scythia_ad_pontem_province
+	scythia_coastal_sea_province
 	scythia_prima_province
 	scythia_province
 	scythia_trans_montem_province
@@ -735,6 +822,7 @@ discovered_provinces = {
 	sivi_province
 	soducene_province
 	soffegin_province
+	sogdiana_coastal_lakes_province
 	sogdiana_province
 	sophene_province
 	souss_province
@@ -764,6 +852,7 @@ discovered_provinces = {
 	syr_province
 	syracene_province
 	syracuse_province
+	syria_coastal_sea_province
 	syria_coele_province
 	syria_cyrrestice_province
 	syria_province
@@ -781,18 +870,24 @@ discovered_provinces = {
 	taraz_province
 	tarentum_province
 	tarim_province
+	tarraconensis_coastal_sea_province
+	taurica_coastal_lakes_province
+	taurica_coastal_sea_province
 	taurica_province
 	taxila_province
 	tayk_province
 	thames_river_province
 	thessaly_province
+	thrace_coastal_sea_province
 	thracia_province
 	thyssagetia_occidentalis_province
 	thyssagetia_orientalis_province
 	thyssagetia_ulterior_province
+	tibet_coastal_lakes_province
 	tigris_province
 	tigurinia_province
 	touggourt_province
+	transalpine_gaul_coastal_sea_province
 	transborysthenia_province
 	transcarpathia_centralis_province
 	transcarpathia_occidentalis_province
@@ -820,6 +915,7 @@ discovered_provinces = {
 	ultima_thule_province
 	upper_armenia_province
 	upper_draa_province
+	upper_egypt_coastal_sea_province
 	upper_jaxartia_province
 	upper_macedonia_province
 	upper_mesopotamia_province
@@ -838,6 +934,8 @@ discovered_provinces = {
 	veh_kavad_province
 	velho_province
 	veliocassia_province
+	venedia_coastal_lakes_province
+	venedia_coastal_sea_province
 	venedia_province
 	venetia_province
 	veshapur_province
@@ -845,6 +943,8 @@ discovered_provinces = {
 	vettonia_septentrionalis_province
 	viadria_province
 	vidarbha_province
+	vindhyaprstha_coastal_lakes_province
+	vindhyaprstha_coastal_sea_province
 	vindya_province
 	vishpauzatis_province
 	vistual_river_province

@@ -124,7 +124,7 @@ adada	rural_settlement	settlement	6.000	7.200	13.000	0	0.000	0	11.851	-3.000
 adage	rural_settlement	settlement	1.000	0.800	6.000	0	0.000	0	3.476	-8.000
 adam	rural_settlement	settlement	3.000	2.400	5.000	0	0.000	0	6.714	-8.000
 adan	town	city	7.000	9.800	18.000	0	1.000	1	16.881	-2.000
-adana	city	city	5.000	9.200	33.000	3	0.000	0	17.411	-2.000
+adana	city	city	5.000	9.200	33.000	3	0.000	0	17.411	-3.000
 adatha	rural_settlement	settlement	5.000	7.000	18.000	0	0.000	0	12.073	-3.000
 adedou_kome	rural_settlement	settlement	8.000	10.400	10.000	0	1.000	1	15.102	-3.000
 adi_gelamo	rural_settlement	settlement	6.000	10.400	23.000	0	0.000	0	14.265	-3.000
@@ -280,7 +280,7 @@ albulae	rural_settlement	settlement	4.000	6.000	9.000	0	0.000	0	10.749	-3.000
 album_intimilium	rural_settlement	settlement	12.000	15.400	10.000	0	0.000	0	15.246	-3.000
 alces	rural_settlement	settlement	8.000	9.200	11.000	0	0.000	0	12.846	-3.000
 aleria	city	city	13.000	21.000	39.000	0	1.000	1	22.051	4.000
-alesia	town	city	10.000	10.600	14.000	0	0.000	0	15.225	-4.000
+alesia	town	city	10.000	10.600	14.000	0	0.000	0	15.225	-3.000
 alesia_germanica	rural_settlement	settlement	4.000	5.400	0.000	0	0.000	0	9.653	-3.000
 alexandreia_areia	city	city	10.000	18.200	44.000	0	0.000	0	19.946	2.000
 alexandreia_bactriane	city	city	31.000	46.000	34.000	0	0.000	0	23.901	7.000
@@ -463,7 +463,7 @@ annike	rural_settlement	settlement	1.000	0.800	0.000	0	0.000	0	3.056	-8.000
 ano_kotradis	rural_settlement	settlement	3.000	3.600	13.000	0	0.000	0	8.845	-3.000
 anoppi	rural_settlement	settlement	3.000	3.400	5.000	0	0.000	0	8.054	-3.000
 ansibaria	rural_settlement	settlement	4.000	4.800	0.000	0	0.000	0	9.141	-3.000
-antaiopolis	city	city	9.000	13.800	36.000	0	0.000	0	18.032	-1.000
+antaiopolis	city	city	9.000	13.800	36.000	0	0.000	0	18.032	-2.000
 antaranjiya	rural_settlement	settlement	8.000	12.000	28.000	0	0.000	0	15.298	-3.000
 antecaria	rural_settlement	settlement	5.000	5.000	8.000	0	0.000	0	9.877	-3.000
 antentia	rural_settlement	settlement	7.000	13.600	21.000	0	0.000	0	15.411	-3.000
@@ -705,7 +705,7 @@ artiaca	rural_settlement	settlement	5.000	5.200	9.000	0	0.000	0	10.118	-3.000
 artigi	rural_settlement	settlement	5.000	5.000	11.000	0	0.000	0	10.087	-3.000
 artilne	rural_settlement	settlement	2.000	1.600	0.000	0	0.000	0	4.969	-8.000
 artoarta	rural_settlement	settlement	5.000	4.400	19.000	0	0.000	0	10.099	-3.000
-artobriga	town	city	20.000	18.200	16.000	0	0.000	0	17.986	-1.000
+artobriga	town	city	20.000	18.200	16.000	0	0.000	0	17.986	0.000
 artousia	rural_settlement	settlement	7.000	6.800	29.000	0	0.000	0	12.711	-3.000
 arucci	rural_settlement	settlement	7.000	8.600	17.000	0	0.000	0	12.951	-3.000
 arukai	rural_settlement	settlement	2.000	1.800	3.000	0	0.000	0	5.564	-8.000
@@ -728,7 +728,7 @@ asangai	rural_settlement	settlement	5.000	4.400	23.000	0	0.000	0	10.379	-3.000
 asani	rural_settlement	settlement	3.000	2.600	28.000	2	0.000	0	9.829	-3.000
 asbana	rural_settlement	settlement	10.000	14.000	22.000	0	0.000	0	15.622	-3.000
 ascalingium	rural_settlement	settlement	2.000	1.800	3.000	0	0.000	0	5.564	-8.000
-ascalon	city	city	9.000	14.400	33.000	2	0.000	0	19.237	1.000
+ascalon	city	city	9.000	14.400	33.000	2	0.000	0	19.237	0.000
 ascaucalis	rural_settlement	settlement	1.000	0.800	3.000	0	0.000	0	3.266	-8.000
 asciburgia	rural_settlement	settlement	4.000	4.200	0.000	0	0.000	0	8.573	-3.000
 asciburgium	rural_settlement	settlement	6.000	5.800	9.000	0	0.000	0	10.598	-3.000
@@ -1921,7 +1921,7 @@ darkus	rural_settlement	settlement	4.000	7.400	24.000	2	0.000	0	13.955	-3.000
 darman	rural_settlement	settlement	3.000	5.200	18.000	0	0.000	0	10.748	-3.000
 darnis	rural_settlement	settlement	3.000	6.000	21.000	0	0.000	0	11.589	-3.000
 daroideia	rural_settlement	settlement	5.000	5.200	27.000	0	0.000	0	11.378	-3.000
-darou	town	city	8.000	11.000	25.000	0	0.000	0	16.172	-3.000
+darou	town	city	8.000	11.000	25.000	0	0.000	0	16.172	-2.000
 darur	rural_settlement	settlement	4.000	5.400	11.000	0	0.000	0	10.423	-3.000
 dasapura	rural_settlement	settlement	15.000	23.800	26.000	0	0.000	0	18.516	-3.000
 dashband	rural_settlement	settlement	3.000	5.200	19.000	0	0.000	0	10.818	-3.000
@@ -2953,7 +2953,7 @@ ichnae	rural_settlement	settlement	5.000	7.400	23.000	0	0.000	0	12.677	-3.000
 ichthyaleia	rural_settlement	settlement	6.000	6.800	19.000	0	0.000	0	12.011	-3.000
 iciodoro	rural_settlement	settlement	5.000	5.000	9.000	0	0.000	0	9.947	-3.000
 iconeia	rural_settlement	settlement	2.000	1.600	0.000	0	0.000	0	4.969	-8.000
-iconium	city	city	4.000	6.000	35.000	3	0.000	0	15.594	-4.000
+iconium	city	city	4.000	6.000	35.000	3	0.000	0	15.594	-5.000
 icorigium	rural_settlement	settlement	4.000	4.200	9.000	0	0.000	0	9.203	-3.000
 icosium	rural_settlement	settlement	3.000	3.400	26.000	0	1.000	1	11.272	-3.000
 iculisma	rural_settlement	settlement	9.000	10.800	11.000	0	0.000	0	13.604	-3.000
@@ -3441,7 +3441,7 @@ khur	rural_settlement	settlement	2.000	2.600	28.000	0	0.000	0	8.621	-3.000
 khurra	rural_settlement	settlement	3.000	3.400	5.000	0	0.000	0	8.054	-3.000
 khushab	rural_settlement	settlement	10.000	15.600	24.000	0	0.000	0	16.289	-3.000
 khuvara	rural_settlement	settlement	4.000	4.400	28.000	0	0.000	0	10.729	-3.000
-khyunglung	town	city	11.000	15.600	13.000	0	0.000	0	17.019	-2.000
+khyunglung	town	city	11.000	15.600	13.000	0	0.000	0	17.019	-1.000
 kiakis	rural_settlement	settlement	2.000	1.800	18.000	0	0.000	0	6.614	-8.000
 kibyra	rural_settlement	settlement	5.000	7.000	13.000	0	0.000	0	11.723	-3.000
 kichpa	rural_settlement	settlement	7.000	5.600	5.000	0	0.000	0	10.163	-3.000
@@ -3617,7 +3617,7 @@ krugli	rural_settlement	settlement	3.000	2.600	6.000	0	0.000	0	7.081	-8.000
 kryptos_limen	rural_settlement	settlement	5.000	6.000	8.000	0	1.000	1	12.426	-3.000
 ksabi_0	rural_settlement	settlement	2.000	1.800	3.000	0	0.000	0	5.564	-8.000
 ksabi_1	rural_settlement	settlement	1.000	0.800	5.000	0	0.000	0	3.406	-8.000
-kuara	city	city	15.000	19.000	33.000	2	0.000	0	20.596	3.000
+kuara	city	city	15.000	19.000	33.000	2	0.000	0	20.596	2.000
 kuche	town	city	32.000	48.200	25.000	0	0.000	0	23.509	8.000
 kucherquduq	rural_settlement	settlement	3.000	2.400	6.000	0	0.000	0	6.784	-8.000
 kuchynivka	rural_settlement	settlement	3.000	2.600	7.000	0	0.000	0	7.151	-8.000
@@ -6062,7 +6062,7 @@ siphnos	rural_settlement	settlement	3.000	3.800	19.000	0	0.000	0	9.487	-3.000
 siphrios	rural_settlement	settlement	4.000	4.600	31.000	2	0.000	0	12.337	-3.000
 sipia	rural_settlement	settlement	5.000	5.000	9.000	0	0.000	0	9.947	-3.000
 sipia_occidentalis	rural_settlement	settlement	4.000	4.200	9.000	0	0.000	0	9.203	-3.000
-sippar	city	city	9.000	12.200	33.000	2	0.000	0	18.436	0.000
+sippar	city	city	9.000	12.200	33.000	2	0.000	0	18.436	-1.000
 siqdit	rural_settlement	settlement	5.000	5.400	29.000	0	0.000	0	11.683	-3.000
 siraganon	rural_settlement	settlement	4.000	3.400	19.000	0	0.000	0	9.034	-3.000
 sirake	rural_settlement	settlement	2.000	1.600	21.000	0	0.000	0	6.439	-8.000
@@ -6514,7 +6514,7 @@ tene	rural_settlement	settlement	4.000	4.400	25.000	0	0.000	0	10.519	-3.000
 tenetis	rural_settlement	settlement	4.000	5.400	6.000	0	0.000	0	10.073	-3.000
 tennagora	rural_settlement	settlement	6.000	8.800	18.000	0	0.000	0	13.128	-3.000
 tenos	rural_settlement	settlement	5.000	8.000	24.000	0	0.000	0	13.106	-3.000
-tenthyris	city	city	12.000	19.600	36.000	0	0.000	0	19.752	2.000
+tenthyris	city	city	12.000	19.600	36.000	0	0.000	0	19.752	1.000
 tepidae	rural_settlement	settlement	4.000	4.400	11.000	0	0.000	0	9.539	-3.000
 teracatriae	rural_settlement	settlement	3.000	2.400	3.000	0	0.000	0	6.574	-8.000
 terai	rural_settlement	settlement	8.000	10.600	0.000	0	0.000	0	12.745	-3.000
@@ -6634,7 +6634,7 @@ thyrrheion	rural_settlement	settlement	4.000	8.400	28.000	0	0.000	0	13.612	-3.00
 thysdrus	rural_settlement	settlement	7.000	14.200	26.000	0	0.000	0	15.971	-3.000
 tiamat	rural_settlement	settlement	8.000	10.400	20.000	0	0.000	0	14.055	-3.000
 tiasum	rural_settlement	settlement	6.000	6.000	10.000	0	0.000	0	10.819	-3.000
-tibion	city	city	6.000	8.000	31.000	0	0.000	0	15.096	-5.000
+tibion	town	city	6.000	8.000	31.000	0	0.000	0	15.096	-4.000
 tibirsia	rural_settlement	settlement	2.000	2.600	0.000	0	0.000	0	6.661	-8.000
 tibiscua	rural_settlement	settlement	4.000	5.000	0.000	0	0.000	0	9.317	-3.000
 tibiscum	rural_settlement	settlement	4.000	4.200	8.000	0	0.000	0	9.133	-3.000
@@ -6721,7 +6721,7 @@ tolitum	rural_settlement	settlement	2.000	2.600	0.000	0	0.000	0	6.661	-8.000
 toll	rural_settlement	settlement	2.000	1.800	0.000	0	0.000	0	5.354	-8.000
 toloha	rural_settlement	settlement	5.000	7.000	20.000	0	0.000	0	12.213	-3.000
 tolosa	rural_settlement	settlement	11.000	14.400	11.000	0	0.000	0	14.989	-3.000
-tomis	city	city	7.000	9.400	31.000	0	0.000	0	15.847	-3.000
+tomis	city	city	7.000	9.400	31.000	0	0.000	0	15.847	-4.000
 tomisa	rural_settlement	settlement	13.000	22.200	29.000	2	0.000	0	19.588	-3.000
 tondana	rural_settlement	settlement	6.000	10.400	19.000	0	0.000	0	13.985	-3.000
 tongobriga	rural_settlement	settlement	6.000	5.800	11.000	0	1.000	1	12.486	-3.000

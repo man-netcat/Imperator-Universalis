@@ -20,9 +20,7 @@
       "setup/countries",
       "common/scripted_triggers",
       "common/advances",
-      "common/building_types",
-      "common/cabinet_actions",
-      "common/country_interactions"
+      "common/building_types"
     ]
   }
 }

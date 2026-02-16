@@ -795,7 +795,6 @@ BPL_f = {
     adjective = BPL_ADJ
     tag = BPL
     areas = {
-        pontus_area
         taurica_area
     }
     form_effect = {
@@ -1634,7 +1633,7 @@ GEE_f = {
         tribocia_province
         tulingia_province
         vangionia_province
-        venedia_province
+        venedia_area
         vistulia_province
     }
     form_effect = {

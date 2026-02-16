@@ -1127,6 +1127,7 @@ superregion_map = {
             "vistulia_region",
             "venedia_region",
             "hyperborea_region",
+            "baltic_river_region",
         ],
         "steppes_region": [
             "sarmatia_europea_region",
