@@ -324,6 +324,20 @@ ir_culture_group_graphical_map = {
     "ir_meroitic_group_g": ["egyptian_gfx", "east_african_gfx", "african_gfx"],
     "ir_aksumite_group_g": ["east_african_gfx", "african_gfx"],
     "ir_proto_european_g": ["western_european_gfx", "european_gfx"],
+    "ir_nilotic_group_g": ["east_african_gfx", "african_gfx"],
+    "ir_pu_g": ["levantine_gfx", "maghrebi_gfx", "middle_east_gfx"],
+    "ir_fezzani_g": ["amazigh_gfx", "maghrebi_gfx", "african_gfx"],
+    "ir_finnic_group_g": ["eastern_european_gfx", "european_gfx"],
+    "ir_scythian_east_g": ["central_asian_gfx", "middle_east_gfx"],
+    "ir_south_arabian_g": ["arabian_gfx", "middle_east_gfx"],
+    "ir_thrace_group_g": [
+        "greek_gfx",
+        "east_mediterranean_gfx",
+        "mediterranean_gfx",
+        "eastern_european_gfx",
+        "european_gfx",
+    ],
+    "ir_chinese_g": ["chinese_gfx", "east_asian_gfx"],
 }
 
 # Per-culture overrides for languages.

@@ -5044,7 +5044,7 @@ character_db = {
         tag = MAC
         birth_date = 436.8.8
         spouse = mac_pleistarchos_antipatrid
-        female = True
+        female = yes
     }
     egy_ptolemaios_lagid_2 = {
         # Ptolemaioslagid_dynasty
