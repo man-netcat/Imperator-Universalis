@@ -2020,6 +2020,193 @@ def write_localisation_files(
     ):
         _write_loc(out_path, entries)
 
+    # --- Generate per-language location name files from Imperator province names ---
+    try:
+        prov_csv = Path(__file__).parent / "province_id_to_key.csv"
+        id_to_key: dict[str, str] = {}
+        if prov_csv.exists():
+            import csv
+
+            # Support both semicolon and comma separated formats
+            with prov_csv.open(encoding="utf-8") as f:
+                sample = f.read(1024)
+                f.seek(0)
+                dialect = ";" if ";" in sample.splitlines()[0] else ","
+                reader = csv.reader(f, delimiter=dialect)
+                next(reader, None)  # skip header
+                for row in reader:
+                    if not row:
+                        continue
+                    try:
+                        pid = row[0].strip()
+                        key = row[1].strip()
+                    except Exception:
+                        continue
+                    if pid and key:
+                        id_to_key[pid] = key
+
+        # Collect culture-specific province names from Imperator localisation
+        # Iterate both base and mod localisation paths (mod overrides base)
+        name_maps: dict[str, dict[str, str]] = {}
+        import re
+
+        prov_re = re.compile(r"^\s*PROV(\d+)(?:_([a-z0-9_]+))?:\d+\s+\"(.*)\"", re.IGNORECASE)
+        from .paths import ir_localisation_paths
+
+        # Build helper maps for culture->group and country tags
+        culture_to_group_map: dict[str, str] = {}
+        for group in culture_data:
+            gtag = group.get("tag")
+            for cult in group.get("cultures", []):
+                ctag = cult.get("tag")
+                if ctag:
+                    culture_to_group_map[ctag] = gtag
+
+        country_tag_set = {c.get("tag") for c in country_data if c.get("tag")}
+
+        for loc_dir in ir_localisation_paths:
+            prov_file = loc_dir / "provincenames_l_english.yml"
+            if not prov_file.exists():
+                continue
+            for line in prov_file.read_text(encoding="utf-8").splitlines():
+                m = prov_re.match(line)
+                if not m:
+                    continue
+                pid, suffix, name = m.group(1), m.group(2), m.group(3)
+                if not suffix:
+                    # skip base province names (non-culture-specific)
+                    continue
+                # Map province id -> location key (IU)
+                loc_key = id_to_key.get(pid)
+                if not loc_key:
+                    continue
+
+                # Heuristics to map suffix -> IU language id
+                lang_id = None
+                # If suffix matches a country tag (likely uppercase, e.g. EGY), map via country->culture
+                if isinstance(suffix, str) and suffix in country_tag_set:
+                    country_obj = next((c for c in country_data if c.get("tag") == suffix), None)
+                    culture_tag = country_obj.get("culture") if country_obj else None
+                    if culture_tag:
+                        # per-culture override
+                        lang_id = ir_culture_language_overrides.get(culture_tag)
+                        if not lang_id:
+                            group_tag = culture_to_group_map.get(culture_tag)
+                            if group_tag:
+                                lang_id = ir_culture_group_language_map.get(group_tag)
+                if not lang_id:
+                    # suffix may be a culture/group name; prefer group mapping first
+                    group_tag = f"ir_{suffix}_g"
+                    if group_tag in ir_culture_group_language_map:
+                        lang_id = ir_culture_group_language_map[group_tag]
+                    else:
+                        # try per-culture override (ir_<suffix>)
+                        culture_tag = f"ir_{suffix}"
+                        lang_id = ir_culture_language_overrides.get(culture_tag)
+                if not lang_id:
+                    # fallback to guessed language id
+                    lang_id = f"ir_{suffix}_lang"
+
+                # Normalize dialects to parent language where appropriate
+                lang_id = _dialect_parent_language(lang_id) or lang_id
+
+                # Determine Eu5 language key (e.g. greek_language) or prefer IU language id
+                base_key = None
+                if isinstance(lang_id, str):
+                    # Prefer mod-provided IU language localisation keys if present
+                    try:
+                        if lang_id in language_entries:
+                            base_key = lang_id
+                        else:
+                            parent_lang = _dialect_parent_language(lang_id)
+                            if parent_lang and parent_lang in language_entries:
+                                base_key = parent_lang
+                    except NameError:
+                        # language_entries may not be in scope; ignore and fall back
+                        pass
+
+                    # Fall back to existing behaviour: map to base-game language keys
+                    if not base_key:
+                        base_key = ir_language_base_color_map.get(lang_id)
+                        # Try to find a culture group mapping that targets this language
+                        if not base_key:
+                            parent_lang = _dialect_parent_language(lang_id) or lang_id
+                            for group_tag, mapped_lang in ir_culture_group_language_map.items():
+                                if mapped_lang == parent_lang:
+                                    base_key = ir_culture_group_base_language_map.get(group_tag)
+                                    if base_key:
+                                        break
+                        # fallback to heuristic: ir_greek_lang -> greek_language
+                        if not base_key:
+                            heur = str(lang_id)
+                            if heur.startswith("ir_"):
+                                heur = heur[3:]
+                            if heur.endswith("_lang"):
+                                heur = heur[: -len("_lang")]
+                            base_key = f"{heur}_language"
+
+                # localisation lookup key: <location>.<language_key>
+                loc_name_key = f"{loc_key}.{base_key}"
+
+                # File key to write: location_names_<base>_l_english.yml
+                file_key = base_key[:-len("_language")] if base_key.endswith("_language") else base_key
+
+                # If we stripped a trailing '_language' from the base when choosing
+                # the file key (e.g. 'IOA_language' -> 'IOA'), ensure the key used
+                # inside that tag-specific file does not keep the '_language'
+                # suffix. Use <location>.<file_key> for entries written under a
+                # stripped file_key to avoid keys like `.IOA_language` inside
+                # `location_names_IOA_l_english.yml`.
+                if file_key == base_key:
+                    key_for_file = loc_name_key
+                else:
+                    key_for_file = f"{loc_key}.{file_key}"
+
+                name_maps.setdefault(file_key, {})[key_for_file] = name
+
+                # ALSO emit culture-specific and tag-specific keys so the mod
+                # can provide per-culture or per-country overrides directly.
+                # culture_tag may be like 'ir_roman' or similar when resolved
+                if 'culture_tag' in locals() and culture_tag:
+                    def _strip_lang_suffix(k: str) -> str:
+                        if not k:
+                            return k
+                        if k.endswith("_language"):
+                            return k[: -len("_language")]
+                        if k.endswith("_lang"):
+                            return k[: -len("_lang")]
+                        return k
+
+                    cult_key = _strip_lang_suffix(culture_tag)
+                    cult_loc_key = f"{loc_key}.{cult_key}"
+                    name_maps.setdefault(cult_key, {})[cult_loc_key] = name
+
+                # If the original suffix was a country tag (uppercase), write
+                # a tag-specific file too (e.g. location_names_EGY_l_english.yml)
+                if isinstance(suffix, str) and suffix in country_tag_set:
+                    tag_key = suffix
+                    # ensure any accidental language suffix is removed from tag names
+                    if isinstance(tag_key, str) and (tag_key.endswith("_language") or tag_key.endswith("_lang")):
+                        if tag_key.endswith("_language"):
+                            tag_key = tag_key[: -len("_language")]
+                        else:
+                            tag_key = tag_key[: -len("_lang")]
+                    tag_loc_key = f"{loc_key}.{tag_key}"
+                    name_maps.setdefault(tag_key, {})[tag_loc_key] = name
+
+        # Write out location name files
+        loc_dir = iu_localisation / "location_names"
+        loc_dir.mkdir(parents=True, exist_ok=True)
+        for file_key, entries in name_maps.items():
+            if not entries:
+                continue
+            out_path = loc_dir / f"location_names_{file_key}_l_english.yml"
+            # Use same writer helper to ensure encoding/header
+            _write_loc(out_path, entries)
+    except Exception:
+        # Non-fatal; do not break overall localisation writing on errors here.
+        pass
+
 def write_coa_file(coa_data: _pydt.Tree):
     write_blocks(iu_prescripted_coa, coa_data, encoding="utf-8")
 
