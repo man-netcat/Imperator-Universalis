@@ -233,9 +233,8 @@ def _merge_container_block_text(top_key: str, existing: str, incoming: str) -> s
         ordered_keys.append(key)
         merged[key] = block
     for key, block in incoming_inner:
-        if key in merged:
-            continue
-        ordered_keys.append(key)
+        if key not in merged:
+            ordered_keys.append(key)
         merged[key] = block
 
     lines = [f"{top_key} = {{"]
@@ -313,7 +312,6 @@ def extract_coa_data_from_files(
     relative_display_fn: Callable[[Path], str],
 ) -> _pydt.Tree:
     coa_tree = _pydt.Tree()
-    seen_tags: set[str] = set()
     skipped_blocks: list[str] = []
 
     if coa_files:
@@ -322,18 +320,15 @@ def extract_coa_data_from_files(
             for key, block_text in extract_assignment_blocks(text):
                 if key in {"template", "coat_of_arms_template_lists"}:
                     continue
-                if key in seen_tags:
-                    continue
                 try:
                     parsed = parse_txt(_replace_tga_with_dds_text(block_text), filename=f"{coa_file}:{key}")
                 except ParseWarning:
                     skipped_blocks.append(f"{relative_display_fn(coa_file)}::{key}")
                     continue
                 if key in parsed:
-                    seen_tags.add(key)
                     coa_tree[key] = parsed[key]
 
-    if not seen_tags:
+    if not coa_tree:
         coa_tree = parse_tree_fn(fallback_coa_file)
 
     if skipped_blocks:
@@ -379,7 +374,7 @@ def extract_coa_template_behaviour_from_files(
 
             if key == "template":
                 for inner_key, inner_block in extract_assignment_blocks(extract_block_body(block_text)):
-                    if inner_key in template_entries or inner_key in existing_template_names:
+                    if inner_key in existing_template_names:
                         continue
                     transformed_inner = _normalize_coa_text(
                         inner_block,
@@ -389,7 +384,7 @@ def extract_coa_template_behaviour_from_files(
                         group_to_cultures,
                     )
                     template_entries[inner_key] = transformed_inner
-            elif key.endswith("_template_lists") and key not in template_list_blocks:
+            elif key.endswith("_template_lists"):
                 template_list_blocks[key] = normalized
 
     blocks: list[str] = []
@@ -408,7 +403,7 @@ def extract_coa_template_behaviour_from_files(
     output_file_order: list[str] = []
 
     for file_path in template_list_sources:
-        if file_path.name in {"color_lists.txt", "country_color_lists.txt"}:
+        if file_path.name in {"country_color_lists.txt"}:
             continue
 
         text = file_path.read_text(encoding="utf-8-sig")

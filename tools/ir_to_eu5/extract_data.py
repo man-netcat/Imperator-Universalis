@@ -246,8 +246,28 @@ def _iter_ir_overlay_files(relative_dir: str, pattern: str = "*.txt") -> list[Pa
     return iter_overlay_files(ir_mod, ir_game, relative_dir, pattern)
 
 
+def _order_base_then_mod(paths: list[Path]) -> list[Path]:
+    """Return paths in effective load order: base ascending, then mod ascending."""
+    if not ir_mod:
+        return sorted(paths)
+
+    base_paths: list[Path] = []
+    mod_paths: list[Path] = []
+
+    for path in paths:
+        try:
+            path.relative_to(ir_mod)
+            mod_paths.append(path)
+        except ValueError:
+            base_paths.append(path)
+
+    return sorted(base_paths) + sorted(mod_paths)
+
+
 def extract_coa_data():
-    coa_files = _iter_ir_overlay_files("common/coat_of_arms/coat_of_arms", pattern="*.txt")
+    coa_files = _order_base_then_mod(
+        _iter_ir_overlay_files("common/coat_of_arms/coat_of_arms", pattern="*.txt")
+    )
     return extract_coa_data_from_files(
         coa_files=coa_files,
         fallback_coa_file=ir_prescripted_coa,
@@ -260,9 +280,11 @@ def extract_coa_template_behaviour(
     culture_data: list[dict[str, Any]],
     religion_data: list[dict[str, Any]],
 ) -> tuple[list[str], dict[str, str]]:
-    coa_files = _iter_ir_overlay_files("common/coat_of_arms/coat_of_arms", pattern="*.txt")
-    template_list_sources = _iter_ir_overlay_files(
-        "common/coat_of_arms/template_lists", pattern="*.txt"
+    coa_files = _order_base_then_mod(
+        _iter_ir_overlay_files("common/coat_of_arms/coat_of_arms", pattern="*.txt")
+    )
+    template_list_sources = _order_base_then_mod(
+        _iter_ir_overlay_files("common/coat_of_arms/template_lists", pattern="*.txt")
     )
     existing_template_dir = iu_prescripted_coa.parent
     existing_template_files = [
