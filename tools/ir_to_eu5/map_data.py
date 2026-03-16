@@ -2806,6 +2806,121 @@ def _resolve_hardcoded_market_hubs(
     return markets
 
 
+def _build_market_keys_by_region_development(
+    id_to_key: dict[int, str],
+    location_keys: set[str],
+    default_map: dict,
+    location_to_region: dict[str, str],
+    *,
+    locations_per_market: int = 120,
+    min_markets_per_region: int = 1,
+    max_markets_per_region: int = 8,
+    capital_bonus_by_key: dict[str, float] | None = None,
+) -> list[str]:
+    excluded = _non_land_keys(default_map)
+    dev_values = build_ir_raw_development_values(id_to_key)
+    capital_bonus_by_key = dict(capital_bonus_by_key or {})
+
+    region_to_candidates: dict[str, list[str]] = defaultdict(list)
+    for loc_key in location_keys:
+        if loc_key in excluded:
+            continue
+        region_key = location_to_region.get(loc_key)
+        if not region_key:
+            continue
+        region_to_candidates[region_key].append(loc_key)
+
+    markets: list[str] = []
+    for region_key in sorted(region_to_candidates.keys()):
+        candidates = region_to_candidates[region_key]
+        region_market_count = (len(candidates) + max(1, int(locations_per_market)) - 1) // max(
+            1, int(locations_per_market)
+        )
+        region_market_count = max(int(min_markets_per_region), int(region_market_count))
+        region_market_count = min(int(max_markets_per_region), int(region_market_count))
+
+        candidates.sort(
+            key=lambda k: (
+                -(float(dev_values.get(k, 0.0)) + float(capital_bonus_by_key.get(k, 0.0))),
+                k,
+            )
+        )
+        markets.extend(candidates[:region_market_count])
+
+    return _dedupe(markets)
+
+
+def _build_location_to_area_map_from_definitions(
+    definitions_path: Path,
+    location_keys: set[str],
+    excluded: set[str],
+) -> dict[str, str]:
+    if not definitions_path.exists():
+        return {}
+
+    tree = parse_tree(definitions_path)
+    data = tree.to_python()
+    loc_to_area: dict[str, str] = {}
+
+    def walk(node, current_area: str | None) -> None:
+        if isinstance(node, dict):
+            for key, value in node.items():
+                if isinstance(key, str) and key.endswith("_area"):
+                    walk(value, key)
+                else:
+                    walk(value, current_area)
+            return
+        if isinstance(node, list):
+            for item in node:
+                walk(item, current_area)
+            return
+        if isinstance(node, str) and current_area:
+            if node in location_keys and node not in excluded:
+                loc_to_area.setdefault(node, current_area)
+
+    walk(data, None)
+    return loc_to_area
+
+
+def _build_market_keys_by_area_development(
+    id_to_key: dict[int, str],
+    location_keys: set[str],
+    default_map: dict,
+    *,
+    markets_per_area: int = 2,
+    capital_bonus_by_key: dict[str, float] | None = None,
+) -> list[str]:
+    excluded = _non_land_keys(default_map)
+    dev_values = build_ir_raw_development_values(id_to_key)
+    capital_bonus_by_key = dict(capital_bonus_by_key or {})
+
+    definitions_path = iu_map_data / "definitions.txt"
+    location_to_area = _build_location_to_area_map_from_definitions(
+        definitions_path,
+        location_keys,
+        excluded,
+    )
+
+    area_to_candidates: dict[str, list[str]] = defaultdict(list)
+    for loc_key, area_key in location_to_area.items():
+        if not isinstance(area_key, str):
+            continue
+        area_to_candidates[area_key].append(loc_key)
+
+    markets: list[str] = []
+    for area_key in sorted(area_to_candidates.keys()):
+        candidates = area_to_candidates[area_key]
+        candidates.sort(
+            key=lambda k: (
+                -(float(dev_values.get(k, 0.0)) + float(capital_bonus_by_key.get(k, 0.0))),
+                k,
+            )
+        )
+        markets.extend(candidates[: max(0, int(markets_per_area))])
+
+    return _dedupe(markets)
+
+
 
 def _build_market_keys(
     id_to_key: dict[int, str],
@@ -5958,16 +6073,23 @@ def _write_markets_file(
     markets_dst = mod_root / "main_menu" / "setup" / "start" / "03_markets.txt"
     country_locations = extract_ir_country_locations()
     country_capitals = _ir_country_capitals()
-    markets = _build_market_keys(
+    excluded = _non_land_keys(default_map)
+    capital_bonus_by_key: dict[str, float] = {}
+    for tag, cap_id in country_capitals.items():
+        loc_key = id_to_key.get(cap_id)
+        if not loc_key or loc_key not in location_keys or loc_key in excluded:
+            continue
+        size = len(country_locations.get(tag, []))
+        # Keep this small; it should only break ties between otherwise-similar urban hubs.
+        bonus = min(5.0, float(size) / 20.0)
+        if bonus > capital_bonus_by_key.get(loc_key, 0.0):
+            capital_bonus_by_key[loc_key] = bonus
+    markets = _build_market_keys_by_area_development(
         id_to_key,
         location_keys,
         default_map,
-        location_to_region,
-        country_locations,
-        country_capitals,
-        top_capitals=35,
-        max_markets=35,
-        min_markets=90,
+        markets_per_area=2,
+        capital_bonus_by_key=capital_bonus_by_key,
     )
     _write_assignment_block(
         markets_dst,
